@@ -683,6 +683,29 @@ def parse_declared_dulat_token(token: str) -> Tuple[str, str]:
     return lemma, hom
 
 
+def extract_homonyms_for_lemma(analysis_field: str, dulat_field: str, lemma: str) -> set:
+    """
+    Collect homonym markers for a lemma from row-level analysis (col3)
+    and declared DULAT entries (col4).
+    """
+    out = set()
+    lemma_norm = normalize_surface(lemma)
+
+    analysis_variants = split_semicolon_field(analysis_field) or ([analysis_field.strip()] if analysis_field else [])
+    for a_var in analysis_variants:
+        a_txt = (a_var or "").strip()
+        m = re.match(rf"^{re.escape(lemma)}\(([IV]+)\)", a_txt)
+        if m:
+            out.add(m.group(1))
+
+    for d_var in split_semicolon_field(dulat_field):
+        for dtok in split_csv_field(d_var):
+            d_lemma, d_hom = parse_declared_dulat_token(dtok)
+            if d_hom and normalize_surface(d_lemma) == lemma_norm:
+                out.add(d_hom)
+    return out
+
+
 def variant_is_weak_initial_y_verb(analysis_variant: str, d_field: str) -> bool:
     a_txt = (analysis_variant or "").strip()
     if "[" not in a_txt:
@@ -749,6 +772,7 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
     lemma_stem_ids: Dict[Tuple[str, str], set] = {}
     lemma_stem_lines: Dict[Tuple[str, str], set] = {}
     seen_pairs: List[Tuple[str, Tuple[str, str]]] = []
+    token_rows: List[Dict[str, str]] = []
     entry_index: Dict[Tuple[str, str], set] = {}
     entry_gender_index: Dict[Tuple[str, str], set] = {}
     for _entry_id, (lemma, hom, pos, _gloss) in entry_meta.items():
@@ -951,6 +975,16 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
         # Keep only structural checks (above) and skip morphology-specific lint.
         if is_raw_cuc_row:
             continue
+
+        token_rows.append(
+            {
+                "line_no": str(i),
+                "line_id": line_id,
+                "surface": surface,
+                "analysis_field": parts[2] if len(parts) >= 3 else analysis,
+                "dulat_field": parts[3] if len(parts) >= 4 else "",
+            }
+        )
 
         # Unicode constraints in columns 2-3
         for bad in ("ʕ", "ʿ", "ả", "ỉ", "ủ"):
@@ -1361,6 +1395,77 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                     break
             if "ʔ" in alt and "(ʔ" not in alt:
                 issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Alt form uses ʔ without preceding '('"))
+
+    # Formula-sensitive homonym checks for l:
+    #   tbˤ w l yṯb ilm  -> l(II) "not"
+    #   idk l ytn       -> l(III) "truly/certainly"
+    for idx in range(len(token_rows) - 4):
+        seq = [token_rows[idx + k]["surface"] for k in range(5)]
+        if seq != ["tbˤ", "w", "l", "yṯb", "ilm"]:
+            continue
+        l_row = token_rows[idx + 2]
+        homs = extract_homonyms_for_lemma(l_row.get("analysis_field", ""), l_row.get("dulat_field", ""), "l")
+        line_no = int(l_row.get("line_no", "0") or 0)
+        line_id = l_row.get("line_id", "")
+        analysis_field = l_row.get("analysis_field", "")
+        if "II" not in homs:
+            issues.append(
+                Issue(
+                    "error",
+                    str(path),
+                    line_no,
+                    line_id,
+                    "l",
+                    analysis_field,
+                    "Formula tbˤ w l yṯb ilm expects l(II) ('not')",
+                )
+            )
+        elif homs != {"II"}:
+            issues.append(
+                Issue(
+                    "warning",
+                    str(path),
+                    line_no,
+                    line_id,
+                    "l",
+                    analysis_field,
+                    "Formula tbˤ w l yṯb ilm should use a single l(II) reading",
+                )
+            )
+
+    for idx in range(len(token_rows) - 2):
+        seq = [token_rows[idx + k]["surface"] for k in range(3)]
+        if seq != ["idk", "l", "ytn"]:
+            continue
+        l_row = token_rows[idx + 1]
+        homs = extract_homonyms_for_lemma(l_row.get("analysis_field", ""), l_row.get("dulat_field", ""), "l")
+        line_no = int(l_row.get("line_no", "0") or 0)
+        line_id = l_row.get("line_id", "")
+        analysis_field = l_row.get("analysis_field", "")
+        if "III" not in homs:
+            issues.append(
+                Issue(
+                    "error",
+                    str(path),
+                    line_no,
+                    line_id,
+                    "l",
+                    analysis_field,
+                    "Formula idk l ytn expects l(III) ('truly/certainly')",
+                )
+            )
+        elif homs != {"III"}:
+            issues.append(
+                Issue(
+                    "warning",
+                    str(path),
+                    line_no,
+                    line_id,
+                    "l",
+                    analysis_field,
+                    "Formula idk l ytn should use a single l(III) reading",
+                )
+            )
 
     # Consistency checks
     # Group ids by analysis variant per surface for easier review

@@ -79,35 +79,38 @@ For full rules and examples, see `agent/Morphological_Labeling_Agent_Guide.md`.
      2) global mention frequency (common entry before rare),
      3) tablet-family fit (`PN/TN/DN` narrow to one family -> down-rank outside it).
 10. If still tied after reverse mentions, check TCS/Smith module context for the same tablet/column and apply only DULAT-valid choices.
-11. If `[/`:
+11. Apply formula-level `l` priors when sequence matches exactly:
+   - `tbʕ w l yṯb ỉlm` -> `l(II)` (`adv.`, `not`),
+   - `ỉdk l ytn ...` -> `l(III)` (`functor`, `truly/certainly`).
+12. If `[/`:
    - check both verb root and nominal lemma,
    - if only noun survives but `[` exists, flag mismatch.
-12. Validate clitics separately:
+13. Validate clitics separately:
    - `+` suffix/enclitic parts,
    - `~` postclitics,
    - post-`[` segments excluding pure stem markers (`:d`, `:l`, `:pass`),
    - skip parts with no reconstructed letters.
-13. Use reference translation (if provided) to resolve remaining homonym ambiguity.
-14. If two adjacent tokens are both unresolved, combine surfaces and retry `forms` lookup.
-15. Validate stem markers against DULAT stems.
-16. Write `col3` with all parse variants (`variant1; variant2; ...`).
-17. Write aligned `col4/col5/col6`:
+14. Use reference translation (if provided) to resolve remaining homonym ambiguity.
+15. If two adjacent tokens are both unresolved, combine surfaces and retry `forms` lookup.
+16. Validate stem markers against DULAT stems.
+17. Write `col3` with all parse variants (`variant1; variant2; ...`).
+18. Write aligned `col4/col5/col6`:
    - same number of semicolon groups as `col3`,
    - per-group comma counts aligned across `col4/col5/col6`,
    - POS alternatives for one morpheme must use `/` inside that one `col5` comma-slot.
-18. Keep DULAT gloss compact:
+19. Keep DULAT gloss compact:
    - no full article bodies, bibliography, or HTML tags (`<b>`, `<i>`, `<br>`, etc.),
    - prefer a short lexical gloss (roughly 1-8 words),
    - for `DN/TN/PN/GN`, prefer the canonical name gloss (for example `Ugarit`, `Baalu`, `El`, `ʿAnatu`) over literal/common-noun glosses.
-19. Keep comment field for residual notes only (translation rationale, uncertainty, text-critical notes), not duplicated DULAT/POS/gloss payload.
-20. For noun POS in `col5`, include DULAT gender when available:
+20. Keep comment field for residual notes only (translation rationale, uncertainty, text-critical notes), not duplicated DULAT/POS/gloss payload.
+21. For noun POS in `col5`, include DULAT gender when available:
    - use `n. m.` or `n. f.` (for example `n. f.`, `n. m./DN`).
-21. For broken `x` tokens:
+22. For broken `x` tokens:
    - if token is only `x...`, skip lexical lookup,
    - if token has a single `x` (not x-only), query UDB concordance with `x -> -`,
    - if token has `xx...`, query UDB concordance with each `xx...` run replaced by `—`,
    - normalize ayin in lookup (`ʿ/ʕ/ˤ`) before deciding no-hit.
-22. Reconstructability check (mandatory):
+23. Reconstructability check (mandatory):
    - each semicolon variant in `col3` must reconstruct exactly to `col2`,
    - if it does not, revise the parse (usually missing clitic/ending or misplaced marker).
 
@@ -170,6 +173,9 @@ Compatibility with DULAT:
     - for example `!y!(yṯb[;!y!ṯb[` with `/y-ṯ-b/;/ṯ-b/`.
 12. Nouns with DULAT sg/pl same-form behavior can stay unsplit and should get a short comment note:
     - add `Plurale tantum?` in comment instead of forcing `/t=` or plural split markers.
+13. Formula disambiguation for `l`:
+   - `tbʕ w l yṯb ỉlm` -> `l(II)` (`not`),
+   - `ỉdk l ytn ...` -> `l(III)` (`truly/certainly`).
 
 ## 7. Minimal Output Policy
 

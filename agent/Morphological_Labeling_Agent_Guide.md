@@ -364,27 +364,31 @@ For each token line:
    - parts after `+`,
    - post-`[` tail segments (except pure stem markers like `:d`, `:l`, `:pass`),
    - ignore clitic segments that reconstruct to empty lexeme.
-11. If a reference translation is provided, use it to break residual homonym ties.
-12. If token `n` and token `n+1` are both unresolved after normal checks:
+11. Apply fixed formula priors for `l` homonym disambiguation when sequence matches:
+   - `tbʕ w l yṯb ỉlm` -> choose `l(II)` (`adv.`, `not`),
+   - `ỉdk l ytn ...` -> choose `l(III)` (`functor`, `truly/certainly`).
+   Treat these as high-confidence defaults unless local textual evidence explicitly overrides.
+12. If a reference translation is provided, use it to break residual homonym ties.
+13. If token `n` and token `n+1` are both unresolved after normal checks:
     - concatenate their surfaces,
     - attempt `forms` lookup on the combined surface,
     - if a valid entry is found, annotate as merged analysis with comment note.
-13. Validate stem markers against DULAT form morphology:
+14. Validate stem markers against DULAT form morphology:
    - default is `G` if unmarked,
    - if DULAT has no `G` for this verb, some stem marker must be present (`]š]`, `]t]`, `:d`, `:l`, `:pass`, etc.),
    - if marker is present, DULAT must contain compatible stem family.
-14. Emit `col3` variants (`variant1; variant2; ...`).
-15. Emit aligned `col4` DULAT entries:
+15. Emit `col3` variants (`variant1; variant2; ...`).
+16. Emit aligned `col4` DULAT entries:
     - one semicolon group per `col3` variant,
     - comma-separated within a group when the variant has multiple lexemes.
-16. Emit aligned `col5` POS tags:
+17. Emit aligned `col5` POS tags:
     - one semicolon group per `col3` variant,
     - comma-separated within a group for multi-lexeme variants,
     - if unresolved, keep POS options within one lexeme slot separated by `/`.
-17. Emit aligned `col6` glosses:
+18. Emit aligned `col6` glosses:
     - one semicolon group per `col3` variant,
     - comma-separated within a group for multi-lexeme variants.
-18. Keep comments for residual non-structured notes only:
+19. Keep comments for residual non-structured notes only:
     - translation evidence,
     - text-critical uncertainty,
     - rationale for disambiguation (`DN/PN/n`, stem choice, segmentation).
@@ -519,7 +523,15 @@ Use these patterns on any tablet; do not depend on tablet-specific IDs.
   - when imperative context is supported, allow no preformative marker: `!!(ytn[`,
   - do not force prefix preformative unless context demands prefix conjugation.
 
-### 7.11 Ambiguous `yX...` prefix forms across two roots
+### 7.11 Formula-level `l` disambiguation
+
+- Pattern A (negation formula): `tbʕ w l yṯb ỉlm`
+  - enforce `l(II)` (`adv.`, gloss `not`).
+- Pattern B (journey-opening formula): `ỉdk l ytn pnm ...`
+  - enforce `l(III)` (`functor`, gloss `truly/certainly`).
+- These two formula rules outrank generic frequency priors for `l(I/II/III)` unless a local edition note explicitly justifies an override.
+
+### 7.12 Ambiguous `yX...` prefix forms across two roots
 
 - Pattern: same surface `yX...` can be analyzed either as weak-initial `/y-.../` (with hidden `(y`) or as a consonantal root without initial `y`.
 - Rule:
@@ -527,7 +539,7 @@ Use these patterns on any tablet; do not depend on tablet-specific IDs.
   - Example: `!y!(yṯb[;!y!ṯb[` with `/y-ṯ-b/;/ṯ-b/`.
   - resolve primary reading using line context and translation/commentary, but preserve defensible alternate if still viable.
 
-### 7.12 Nouns with sg/pl same-form behavior
+### 7.13 Nouns with sg/pl same-form behavior
 
 - Pattern: DULAT form inventory attests both singular and plural for the same written noun form (for example `hmlt`).
 - Rule:
