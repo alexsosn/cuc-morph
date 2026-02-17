@@ -184,6 +184,7 @@ Compatibility with DULAT:
 1. If one DULAT candidate remains: emit one variant in `col3` and aligned `col4/col5/col6`.
 2. If several remain: keep explicit candidate list in comment.
 3. If no valid candidate remains: mark unresolved and explain why in comment.
+   - for fully unresolved variant, use `?` in `col3/col4/col5/col6` (not only in lexical columns).
 4. Never silently guess across homonyms.
 5. Before final unresolved status, test merge fallback for consecutive unresolved token pairs.
 6. Final file must be structurally aligned:

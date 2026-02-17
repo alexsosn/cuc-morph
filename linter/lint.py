@@ -893,6 +893,8 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                     if all(is_unresolved_placeholder(x) for x in d_tokens):
                         unresolved_declared_variant_indexes.add(vi)
                         # Explicit unresolved placeholder variant.
+                        if not is_unresolved_placeholder(a_var):
+                            issues.append(Issue("warning", str(path), i, line_id, surface, a_var, "Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)"))
                         if p_tokens and any(not is_unresolved_placeholder(x) for x in p_tokens):
                             issues.append(Issue("warning", str(path), i, line_id, surface, a_var, "Unresolved DULAT placeholder '?' should use '?' or empty POS"))
                         if g_tokens and any(not is_unresolved_placeholder(x) for x in g_tokens):
@@ -1080,6 +1082,8 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
             for a_var in (analysis_variants or [analysis]):
                 a_txt = (a_var or "").strip()
                 if not a_txt:
+                    continue
+                if is_unresolved_placeholder(a_txt):
                     continue
                 reconstructed = normalize_surface(reconstruct_surface_from_analysis(a_txt))
                 if reconstructed != expected_norm:

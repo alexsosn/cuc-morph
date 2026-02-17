@@ -48,11 +48,13 @@ Output line must preserve `col1` and `col2` exactly and use this structured sche
 6. `col6`: semicolon-separated gloss sets aligned to `col3` variants.
    - for multi-lexeme variants, separate gloss items by comma in the same order as `col4`.
 7. Optional comment after `#` for residual notes only (translation rationale, uncertainty, text-critical notes).
+8. For fully unresolved tokens, use `?` consistently in `col3`, `col4`, `col5`, and `col6` for that variant.
 
 Mandatory invariant:
 
 - each `col3` semicolon variant must reconstruct exactly to `col2` surface.
 - if a variant does not reconstruct, treat it as an error and repair the parse before finalizing.
+- exception: unresolved placeholder variants marked as `?` in `col3` are exempt from reconstructability checks.
 
 Separator hierarchy (must be consistent across columns):
 
