@@ -1472,9 +1472,10 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                     }
                     has_f_gender = any(g.startswith("f") for g in gender_values)
                     head_lemma = (matched[0].lemma or "").strip()
-                    has_t_split = re.search(r"/t=?($|[+;])", analysis) is not None
-                    has_t_plural_split = re.search(r"/t=($|[+;])", analysis) is not None
-                    has_m_split = re.search(r"/m=?($|[+;])", analysis) is not None
+                    analysis_trim = analysis.rstrip()
+                    has_t_split = re.search(r"/t=?(?=\s*$|[+;,])", analysis_trim) is not None
+                    has_t_plural_split = re.search(r"/t=(?=\s*$|[+;,])", analysis_trim) is not None
+                    has_m_split = re.search(r"/m=?(?=\s*$|[+;,])", analysis_trim) is not None
                     surface_form_has_fem = any("f." in m for m in surface_form_morphs)
                     surface_form_has_pl = any("pl." in m for m in surface_form_morphs)
                     noun_like = not is_pronoun and (is_proper_noun or any(tag in pos for tag in ("n.", "dn", "gn", "tn", "mn")))
@@ -1490,9 +1491,10 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                             issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Noun/adjective lacks '/' ending"))
 
                     # Gender-aware checks from DULAT metadata.
-                    if noun_like and has_f_gender and head_lemma.endswith("t") and has_t_split and not (is_plurale_tantum_marked and has_t_plural_split):
-                        issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Feminine -t is part of DULAT noun lexeme; do not split as '/t'"))
-                    if noun_like and has_f_gender and (not head_lemma.endswith("t")) and surface.endswith("t") and surface_form_has_pl and not has_t_plural_split:
+                    # For feminine plural noun forms, '/t=' is the expected split ending.
+                    if noun_like and has_f_gender and surface.endswith("t") and surface_form_has_pl and has_t_split and not has_t_plural_split:
+                        issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Feminine plural noun in DULAT should use '/t='"))
+                    if noun_like and has_f_gender and (not head_lemma.endswith("t")) and surface.endswith("t") and surface_form_has_pl and not has_t_split:
                         issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Feminine plural noun in DULAT should be tagged with '/t='"))
                     if (adjectival or deverbal_like) and surface.endswith("t") and surface_form_has_fem and not has_t_split:
                         issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Feminine adjective/participle in DULAT should mark '-t' explicitly"))
@@ -1532,7 +1534,7 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                         "pl." in morph
                         and surface.endswith(("m", "t"))
                         and "/" in analysis
-                        and not analysis.endswith(("/m", "/t", "/m=", "/t="))
+                        and not analysis_trim.endswith(("/m", "/t", "/m=", "/t="))
                         and not is_plurale_tantum_marked
                     ):
                         issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Plural form missing split ending"))
@@ -1804,8 +1806,8 @@ def main():
     parser = argparse.ArgumentParser(description="Morphology linter")
     parser.add_argument("files", nargs="+", help="Input labeled files (.txt) or raw CUC tablet files (.tsv)")
     parser.add_argument("--html", help="Write HTML report to file")
-    parser.add_argument("--dulat", default="data/dulat_cache.sqlite", help="Path to DULAT sqlite")
-    parser.add_argument("--udb", default="data/udb_cache.sqlite", help="Path to UDB sqlite")
+    parser.add_argument("--dulat", default="sources/dulat_cache.sqlite", help="Path to DULAT sqlite")
+    parser.add_argument("--udb", default="sources/udb_cache.sqlite", help="Path to UDB sqlite")
     parser.add_argument(
         "--input-format",
         choices=["auto", "labeled", "cuc_tablets_tsv"],

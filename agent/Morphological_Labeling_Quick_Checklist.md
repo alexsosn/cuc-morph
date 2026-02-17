@@ -136,6 +136,10 @@ For full rules and examples, see `agent/Morphological_Labeling_Agent_Guide.md`.
 10. Pronominal suffixes with `+`: `mlk/+h`.
 11. Postclitic with `~`: `!y!rgm[~n`.
 12. Homonym disambiguation in lemma: `il(I)/`, `-h(I)` vs `-h(II)`.
+13. Feminine noun/adjective endings:
+    - lexeme-final `-t` nouns: f.sg `.../t`, f.pl `.../t=` (for example `am(t/t`, `am(t/t=`).
+    - nouns with no `-t` in singular but `-t` in plural: use `.../t=` (for example `gg/t=`).
+    - adjectives/participles: f.sg `.../t`, f.pl `.../t=` (for example `kbd/t`, `kbd/t=`).
 
 ## 4. Stem Marker Checks
 

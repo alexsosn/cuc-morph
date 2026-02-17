@@ -165,6 +165,15 @@ Markers do not have to appear immediately after `[`. They can appear after tense
 - Preferred pattern: `nš(y[t:n` for `/n-š-y/` (SC 1c), rather than substitution-style `nš(y&t[:n`.
 - This rule does not apply to deverbal nominal forms marked `[/...` (for example participles).
 
+### 3.6 Feminine `-t` handling in nouns/adjectives
+
+- For feminine noun lexemes ending in `-t`, use `.../t` in feminine singular and `.../t=` in feminine plural.
+  - Example: `am(t/t` (sg), `am(t/t=` (pl).
+- For nouns where singular does not have feminine `-t` but plural does, use `.../t=` in plural.
+  - Example: `gg/t=`.
+- For adjectives and participles, feminine singular is `.../t` and feminine plural is `.../t=`.
+  - Example: `kbd/t` (f.sg), `kbd/t=` (f.pl).
+
 ---
 
 ## 4. DULAT and UDB Data Access
