@@ -1329,11 +1329,14 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                     head_lemma = (matched[0].lemma or "").strip()
                     has_t_split = re.search(r"/t=?($|[+;])", analysis) is not None
                     has_t_plural_split = re.search(r"/t=($|[+;])", analysis) is not None
+                    has_m_split = re.search(r"/m=?($|[+;])", analysis) is not None
                     surface_form_has_fem = any("f." in m for m in surface_form_morphs)
                     surface_form_has_pl = any("pl." in m for m in surface_form_morphs)
                     noun_like = not is_pronoun and (is_proper_noun or any(tag in pos for tag in ("n.", "dn", "gn", "tn", "mn")))
                     adjectival = "adj" in pos
                     deverbal_like = "[/" in analysis
+                    pos_field_text = parts[4] if len(parts) >= 5 else ""
+                    is_plurale_tantum_marked = has_plurale_tantum_note(annotation_text) or has_plurale_tantum_note(pos_field_text)
 
                     if "vb" in pos and "[" not in analysis:
                         issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Verb lacks '[' ending"))
@@ -1342,7 +1345,7 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                             issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Noun/adjective lacks '/' ending"))
 
                     # Gender-aware checks from DULAT metadata.
-                    if noun_like and has_f_gender and head_lemma.endswith("t") and has_t_split:
+                    if noun_like and has_f_gender and head_lemma.endswith("t") and has_t_split and not (is_plurale_tantum_marked and has_t_plural_split):
                         issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Feminine -t is part of DULAT noun lexeme; do not split as '/t'"))
                     if noun_like and has_f_gender and (not head_lemma.endswith("t")) and surface.endswith("t") and surface_form_has_pl and not has_t_plural_split:
                         issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Feminine plural noun in DULAT should be tagged with '/t='"))
@@ -1350,6 +1353,21 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                         issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Feminine adjective/participle in DULAT should mark '-t' explicitly"))
                     if (adjectival or deverbal_like) and surface.endswith("t") and surface_form_has_fem and surface_form_has_pl and has_t_split and not has_t_plural_split:
                         issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Feminine plural adjective/participle in DULAT should use '/t='"))
+                    # Variant-level pl.tant. checks are only reliable on single-variant rows.
+                    if (
+                        noun_like
+                        and is_plurale_tantum_marked
+                        and "/" in analysis
+                        and "+" not in analysis
+                        and ";" not in analysis
+                        and "," not in analysis
+                        and ";" not in pos_field_text
+                        and "," not in pos_field_text
+                    ):
+                        if surface.endswith("t") and not has_t_plural_split:
+                            issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Plurale tantum noun ending in '-t' should mark plural with '/t='"))
+                        if surface.endswith("m") and not has_m_split:
+                            issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Plurale tantum noun ending in '-m' should mark plural with '/m'"))
 
                     # Morpheme link checks
                     morph_values = set()
@@ -1357,8 +1375,6 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                         morph_values.add((matched[0].morph or "").lower())
                     morph_values.update(surface_form_morphs)
                     morph = " ; ".join(sorted(morph_values))
-                    pos_field_text = parts[4] if len(parts) >= 5 else ""
-                    is_plurale_tantum_marked = has_plurale_tantum_note(annotation_text) or has_plurale_tantum_note(pos_field_text)
                     if ("suff" in morph and ("pn" in morph or "pers." in morph)) and "+" not in analysis:
                         lemma_letters = re.sub(r"[^A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]", "", head_lemma or "")
                         if len(normalize_surface(surface_clean)) > len(normalize_surface(lemma_letters)):

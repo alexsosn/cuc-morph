@@ -544,10 +544,12 @@ Use these patterns on any tablet; do not depend on tablet-specific IDs.
 
 - Pattern: DULAT form inventory attests both singular and plural for the same written noun form (for example `hmlt`).
 - Rule:
-  - keep the noun analysis unsplit when morphologically appropriate,
+  - keep lexeme identification explicit in `col3` and keep plural ending split explicit,
+  - use `.../m` for `-m` plural endings (for example `nš(m/m`),
+  - use `.../t=` for feminine plural `-t` endings (for example `hml(t/t=`),
   - mark the noun POS in `col5` with `pl. tant.` (or `pl. tant.?` when tentative),
   - keep plurale-tantum marking out of comments,
-  - do not force plural split endings solely to satisfy number-marking expectations.
+  - linter must validate these split endings for marked pluralia tantum nouns.
 
 ---
 

@@ -174,6 +174,7 @@ Compatibility with DULAT:
     - for example `!y!(yṯb[;!y!ṯb[` with `/y-ṯ-b/;/ṯ-b/`.
 12. Nouns with DULAT sg/pl same-form behavior can stay unsplit and should be marked in POS:
     - add `pl. tant.` in POS `col5` (or `pl. tant.?` when tentative), not in comments.
+    - keep plural ending explicit in `col3`: `.../m` for `-m` plural (for example `nš(m/m`) and `.../t=` for feminine `-t` plural (for example `hml(t/t=`).
 13. Formula disambiguation for `l`:
    - `tbʕ w l yṯb ỉlm` -> `l(II)` (`not`),
    - `ỉdk l ytn ...` -> `l(III)` (`truly/certainly`).
