@@ -44,11 +44,13 @@ Output line must preserve `col1` and `col2` exactly and use this structured sche
    - for multi-lexeme variants, separate POS morpheme slots by comma in the same order as `col4`.
    - if one morpheme still has multiple POS options, separate those options by `/` inside that morpheme slot.
    - for noun POS slots with DULAT gender available, include gender explicitly as `n. m.` or `n. f.` (for example `n. f.`, `n. m./DN`).
+   - for adjective POS slots with DULAT gender available, include gender explicitly as `adj. m.` or `adj. f.`.
    - for pluralia tantum nouns, add `pl. tant.` in the same noun POS slot (or `pl. tant.?` for tentative cases) and keep this marker out of comments.
 6. `col6`: semicolon-separated gloss sets aligned to `col3` variants.
    - for multi-lexeme variants, separate gloss items by comma in the same order as `col4`.
 7. Optional comment after `#` for residual notes only (translation rationale, uncertainty, text-critical notes).
 8. For fully unresolved tokens, use `?` consistently in `col3`, `col4`, `col5`, and `col6` for that variant.
+9. For repeated long surface sequences (formulaic parallels), keep `col3/col4/col5/col6` aligned across occurrences unless you record an explicit reason for divergence in comments.
 
 Mandatory invariant:
 
@@ -853,4 +855,4 @@ This appendix is optional and may be skipped when working on other tablets/proje
 5. `10049 rkb rkb(I)[/` - deverbal requiring dual verb/noun pathway check.
 6. `10132 atm !!at(w[~m(II)` - post-verbal clitic split from head verb.
 7. `139819 yˤn !y!ˤn(y(I)[` - homonym-enforced verbal disambiguation.
-8. `139777 š &š` - CUC marks this token as uncertain/excised; keep token order and mark unresolved lexical slots as `?` (or leave empty where project file still uses empties), with a short note.
+8. `139777 š &š` - CUC marks this token as uncertain/excised; keep token order and mark unresolved lexical slots as `?` in `col3/col4/col5/col6`, with a short note.

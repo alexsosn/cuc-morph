@@ -637,6 +637,7 @@ def split_pos_options(value: str) -> List[str]:
 
 NOUN_GENDER_POS_RE = re.compile(r"n\.\s*(m|f)\.?(?=\s|$|[,;])", re.IGNORECASE)
 NOUN_BASE_POS_RE = re.compile(r"\bn\.\s*", re.IGNORECASE)
+ADJ_GENDER_POS_RE = re.compile(r"adj\.\s*(m|f)\.?(?=\s|$|[,;])", re.IGNORECASE)
 
 
 def normalize_pos_option_for_validation(value: str) -> str:
@@ -649,6 +650,7 @@ def normalize_pos_option_for_validation(value: str) -> str:
     tok = strip_plurale_tantum_marker(tok)
     tok = NOUN_GENDER_POS_RE.sub("n ", tok)
     tok = NOUN_BASE_POS_RE.sub("n ", tok)
+    tok = ADJ_GENDER_POS_RE.sub("adj.", tok)
     tok = re.sub(r"\s+([,;])", r"\1", tok)
     tok = re.sub(r"\s+", " ", tok).strip()
     return tok.lower()
@@ -656,6 +658,16 @@ def normalize_pos_option_for_validation(value: str) -> str:
 
 def extract_noun_gender_from_pos(value: str) -> Optional[str]:
     m = NOUN_GENDER_POS_RE.search(value or "")
+    if not m:
+        return None
+    g = (m.group(1) or "").lower().rstrip(".")
+    if g in {"m", "f"}:
+        return f"{g}."
+    return None
+
+
+def extract_adj_gender_from_pos(value: str) -> Optional[str]:
+    m = ADJ_GENDER_POS_RE.search(value or "")
     if not m:
         return None
     g = (m.group(1) or "").lower().rstrip(".")
@@ -905,11 +917,52 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                     if not d_tokens:
                         issues.append(Issue("error", str(path), i, line_id, surface, a_var, "Missing DULAT entry token(s) in column 4"))
                         continue
-                    if all(is_unresolved_placeholder(x) for x in d_tokens):
+                    unresolved_analysis = is_unresolved_placeholder(a_var)
+                    unresolved_declared = all(is_unresolved_placeholder(x) for x in d_tokens)
+                    if unresolved_analysis:
+                        if not unresolved_declared:
+                            issues.append(
+                                Issue(
+                                    "warning",
+                                    str(path),
+                                    i,
+                                    line_id,
+                                    surface,
+                                    a_var,
+                                    "Morphology placeholder '?' should use unresolved DULAT placeholder '?' in column 4",
+                                )
+                            )
+                        if p_tokens and any(not is_unresolved_placeholder(x) for x in p_tokens):
+                            issues.append(
+                                Issue(
+                                    "warning",
+                                    str(path),
+                                    i,
+                                    line_id,
+                                    surface,
+                                    a_var,
+                                    "Unresolved morphology placeholder '?' should use '?' or empty POS",
+                                )
+                            )
+                        if g_tokens and any(not is_unresolved_placeholder(x) for x in g_tokens):
+                            issues.append(
+                                Issue(
+                                    "warning",
+                                    str(path),
+                                    i,
+                                    line_id,
+                                    surface,
+                                    a_var,
+                                    "Unresolved morphology placeholder '?' should use '?' or empty gloss",
+                                )
+                            )
+                        if unresolved_declared:
+                            unresolved_declared_variant_indexes.add(vi)
+                        continue
+                    if unresolved_declared:
                         unresolved_declared_variant_indexes.add(vi)
                         # Explicit unresolved placeholder variant.
-                        if not is_unresolved_placeholder(a_var):
-                            issues.append(Issue("warning", str(path), i, line_id, surface, a_var, "Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)"))
+                        issues.append(Issue("warning", str(path), i, line_id, surface, a_var, "Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)"))
                         if p_tokens and any(not is_unresolved_placeholder(x) for x in p_tokens):
                             issues.append(Issue("warning", str(path), i, line_id, surface, a_var, "Unresolved DULAT placeholder '?' should use '?' or empty POS"))
                         if g_tokens and any(not is_unresolved_placeholder(x) for x in g_tokens):
@@ -960,7 +1013,9 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                                     issues.append(Issue("error", str(path), i, line_id, surface, a_var, f"POS token '{opt}' not allowed for {dtok}; choose one of: {allowed_list}"))
 
                             noun_like_token = any(re.search(r"\bn(?:\.|\b)", (opt or "").lower()) for opt in pos_tok_opts)
+                            adj_like_token = any("adj." in (opt or "").lower() for opt in pos_tok_opts)
                             noun_gender = extract_noun_gender_from_pos(pos_tok)
+                            adj_gender = extract_adj_gender_from_pos(pos_tok)
                             if noun_like_token and len(gender_matches) == 1:
                                 expected_gender = next(iter(gender_matches))
                                 if noun_gender is None:
@@ -985,6 +1040,32 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                                             surface,
                                             a_var,
                                             f"Noun POS gender mismatch for {dtok}: expected n. {expected_gender}, got n. {noun_gender}",
+                                        )
+                                    )
+                            if adj_like_token and len(gender_matches) == 1:
+                                expected_gender = next(iter(gender_matches))
+                                if adj_gender is None:
+                                    issues.append(
+                                        Issue(
+                                            "warning",
+                                            str(path),
+                                            i,
+                                            line_id,
+                                            surface,
+                                            a_var,
+                                            f"Adjective POS should include DULAT gender marker for {dtok}: adj. {expected_gender}",
+                                        )
+                                    )
+                                elif adj_gender != expected_gender:
+                                    issues.append(
+                                        Issue(
+                                            "error",
+                                            str(path),
+                                            i,
+                                            line_id,
+                                            surface,
+                                            a_var,
+                                            f"Adjective POS gender mismatch for {dtok}: expected adj. {expected_gender}, got adj. {adj_gender}",
                                         )
                                     )
                             selected_pos_by_declared[(normalize_surface(lemma_tok), hom_tok or "")] = pos_tok
@@ -1029,6 +1110,8 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                 "surface": surface,
                 "analysis_field": parts[2] if len(parts) >= 3 else analysis,
                 "dulat_field": parts[3] if len(parts) >= 4 else "",
+                "pos_field": parts[4] if len(parts) >= 5 else "",
+                "gloss_field": parts[5] if len(parts) >= 6 else "",
             }
         )
 
@@ -1561,6 +1644,67 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                     "Formula idk l ytn should use a single l(III) reading",
                 )
             )
+
+    # Long repeated sequences are usually formulaic parallels.
+    # Surface-identical windows should not drift in col3-col6 payload unless
+    # there is explicit reason to keep them different.
+    parallel_window = 8
+    parallel_occurrences: Dict[Tuple[str, ...], List[int]] = {}
+    for start in range(len(token_rows) - parallel_window + 1):
+        window = token_rows[start : start + parallel_window]
+        surfaces = tuple((row.get("surface", "") or "").strip() for row in window)
+        if not all(surfaces):
+            continue
+        if any("x" in s.lower() for s in surfaces):
+            continue
+        if (surfaces[0] or "").lower() in {"d", "w", "l", "b", "m", "n", "p"}:
+            continue
+        # Reduce noise from high-frequency function-word chains.
+        lexical_slots = 0
+        for s in surfaces:
+            letters = re.sub(r"[^A-Za-zˤḫṣṯẓġḏḥṭš]", "", s)
+            if len(letters) >= 2:
+                lexical_slots += 1
+        if lexical_slots < 4:
+            continue
+        parallel_occurrences.setdefault(surfaces, []).append(start)
+
+    for surfaces, starts in parallel_occurrences.items():
+        if len(starts) <= 1:
+            continue
+        payload_to_spans: Dict[Tuple[Tuple[str, str, str, str], ...], List[Tuple[str, str]]] = {}
+        for start in starts:
+            window = token_rows[start : start + parallel_window]
+            payload = tuple(
+                (
+                    (row.get("analysis_field", "") or "").strip(),
+                    (row.get("dulat_field", "") or "").strip(),
+                    (row.get("pos_field", "") or "").strip(),
+                    (row.get("gloss_field", "") or "").strip(),
+                )
+                for row in window
+            )
+            span = (window[0].get("line_id", ""), window[-1].get("line_id", ""))
+            payload_to_spans.setdefault(payload, []).append(span)
+        if len(payload_to_spans) <= 1:
+            continue
+        span_parts = []
+        for spans in payload_to_spans.values():
+            ids = [f"{a}-{b}" if a and b else (a or b) for a, b in spans]
+            span_parts.append(",".join(ids))
+        surface_key = " ".join(surfaces)
+        issues.append(
+            Issue(
+                "info",
+                str(path),
+                0,
+                "",
+                surface_key,
+                "",
+                "Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: "
+                + " ; ".join(span_parts),
+            )
+        )
 
     # Consistency checks
     # Group ids by analysis variant per surface for easier review

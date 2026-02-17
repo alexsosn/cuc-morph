@@ -108,6 +108,7 @@ For full rules and examples, see `agent/Morphological_Labeling_Agent_Guide.md`.
 20. Keep comment field for residual notes only (translation rationale, uncertainty, text-critical notes), not duplicated DULAT/POS/gloss payload.
 21. For noun POS in `col5`, include DULAT gender when available:
    - use `n. m.` or `n. f.` (for example `n. f.`, `n. m./DN`).
+   - for adjective POS with DULAT gender available, use `adj. m.` or `adj. f.`.
    - for pluralia tantum, add `pl. tant.` in that noun POS slot (or `pl. tant.?` when tentative) instead of writing this in comments.
 22. For broken `x` tokens:
    - if token is only `x...`, skip lexical lookup,
@@ -117,6 +118,7 @@ For full rules and examples, see `agent/Morphological_Labeling_Agent_Guide.md`.
 23. Reconstructability check (mandatory):
    - each semicolon variant in `col3` must reconstruct exactly to `col2`,
    - if it does not, revise the parse (usually missing clitic/ending or misplaced marker).
+   - for repeated long surface sequences (formulaic parallels), align `col3/col4/col5/col6` across occurrences unless a comment explicitly justifies divergence.
 
 ## 3. Symbol Rules (High-Risk)
 
@@ -269,4 +271,4 @@ Use only as a pattern reference; not required for new tablets.
 5. `10049 rkb rkb(I)[/` -> deverbal check against both `/r-k-b/` and `rkb(I)`.
 6. `10132 atm !!at(w[~m(II)` -> root before `[`, clitic after `[` is separate.
 7. `139819 yˤn !y!ˤn(y(I)[` -> homonym `(I)` enforced before contextual disambiguation.
-8. `139777 š &š` -> CUC marks this as uncertain/excised; keep token in sequence and mark unresolved DULAT/POS/gloss as `?` (or keep existing empties if preserving prior file style), with a short note.
+8. `139777 š &š` -> CUC marks this as uncertain/excised; keep token in sequence and mark unresolved `col3/col4/col5/col6` as `?`, with a short note.
