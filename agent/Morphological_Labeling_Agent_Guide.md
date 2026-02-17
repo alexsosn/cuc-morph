@@ -715,9 +715,11 @@ Use all available translation layers, but do not let any single translation over
 For each suspicious token:
 
 1. Anchor token by `id` and CUC line context.
-2. Read the immediate translation segment in the primary and alternative translations.
-3. Check commentary/notes for emendations, restored letters, alternate segmentation, and stem/POS claims.
-4. Classify discrepancy type:
+2. Cross-check the same local segment against UDB line text/witnesses.
+3. If CUC and UDB numeration appears shifted, align by local token sequence and neighboring anchors, not line number alone.
+4. Read the immediate translation segment in the primary and alternative translations.
+5. Check commentary/notes for emendations, restored letters, alternate segmentation, and stem/POS claims.
+6. Classify discrepancy type:
    - lexical (different headword),
    - POS (noun vs verb/preposition/particle),
    - stem (G vs D/Š/Xt/etc.),
@@ -840,4 +842,4 @@ This appendix is optional and may be skipped when working on other tablets/proje
 5. `10049 rkb rkb(I)[/` - deverbal requiring dual verb/noun pathway check.
 6. `10132 atm !!at(w[~m(II)` - post-verbal clitic split from head verb.
 7. `139819 yˤn !y!ˤn(y(I)[` - homonym-enforced verbal disambiguation.
-8. `139777 š &š` - CUC marks this token as uncertain/excised; keep token order but leave DULAT/POS/gloss empty and annotate as spelling mistake.
+8. `139777 š &š` - CUC marks this token as uncertain/excised; keep token order and mark unresolved lexical slots as `?` (or leave empty where project file still uses empties), with a short note.

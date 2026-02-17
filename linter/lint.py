@@ -580,6 +580,11 @@ def split_csv_field(value: str) -> List[str]:
     return [x for x in out if x != ""]
 
 
+def is_unresolved_placeholder(value: str) -> bool:
+    tok = (value or "").strip()
+    return bool(tok) and re.fullmatch(r"\?+", tok) is not None
+
+
 POS_LABEL_NORMALIZATION = {
     "det. / rel. functor": "det. or rel. functor",
     "subordinating / completive functor": "Subordinating or completive functor",
@@ -837,6 +842,7 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
         gloss_variants: List[str] = []
         # For clitic ambiguity resolution: map declared col4 token -> selected col5 POS
         selected_pos_by_declared: Dict[Tuple[str, str], str] = {}
+        unresolved_declared_variant_indexes = set()
 
         # Structured 6-column format:
         # 1=id, 2=surface, 3=analysis variants, 4=DULAT entries, 5=POS tags, 6=glosses
@@ -883,6 +889,14 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
 
                     if not d_tokens:
                         issues.append(Issue("error", str(path), i, line_id, surface, a_var, "Missing DULAT entry token(s) in column 4"))
+                        continue
+                    if all(is_unresolved_placeholder(x) for x in d_tokens):
+                        unresolved_declared_variant_indexes.add(vi)
+                        # Explicit unresolved placeholder variant.
+                        if p_tokens and any(not is_unresolved_placeholder(x) for x in p_tokens):
+                            issues.append(Issue("warning", str(path), i, line_id, surface, a_var, "Unresolved DULAT placeholder '?' should use '?' or empty POS"))
+                        if g_tokens and any(not is_unresolved_placeholder(x) for x in g_tokens):
+                            issues.append(Issue("warning", str(path), i, line_id, surface, a_var, "Unresolved DULAT placeholder '?' should use '?' or empty gloss"))
                         continue
                     if len(p_tokens) > len(d_tokens):
                         issues.append(Issue("error", str(path), i, line_id, surface, a_var, "POS tokens must map to existing DULAT tokens in column 4"))
@@ -960,7 +974,7 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
 
             if analysis_variants and dulat_variants:
                 first_d = split_csv_field(dulat_variants[0])
-                if first_d:
+                if first_d and not all(is_unresolved_placeholder(x) for x in first_d):
                     declared_head, declared_hom = parse_declared_dulat_token(first_d[0])
         seen_pairs.append((line_id, (surface, analysis)))
 
@@ -1237,6 +1251,7 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
             (not lexeme and (not surface_clean or surface_clean in {"ˤ", "ʕ", "ʿ"}))
             or (lexeme in {"ˤ", "ʕ", "ʿ"})
             or is_surface_only_excised
+            or (0 in unresolved_declared_variant_indexes)
         )
         lookup_mode = "surface"
         if skip_dulat:

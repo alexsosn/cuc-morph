@@ -196,20 +196,21 @@ Compatibility with DULAT:
 Use this pass after initial morphology is complete.
 
 1. Align by token `id` + line context (`<tablet>.json`/UDB/other concordance if available).
-2. Compare in-file word-by-word comment with:
+2. Cross-check the same segment against UDB line text; if CUC/UDB numeration is shifted, align by neighboring token sequence, not line number alone.
+3. Compare in-file word-by-word comment with:
    - primary translation,
    - alternative translation(s),
    - commentary/notes editions,
    - any user-supplied philological references.
-3. Flag only morphology-relevant discrepancies:
+4. Flag only morphology-relevant discrepancies:
    - lexical headword,
    - POS,
    - stem,
    - proper-name class (`DN/PN/TN` vs common noun),
    - segmentation.
-4. Ignore purely stylistic/literary differences (comment-only; no parse change).
-5. Validate every alternative with DULAT before editing parse.
-6. If two adjacent unresolved tokens persist, test merged lookup using translation cue.
+5. Ignore purely stylistic/literary differences (comment-only; no parse change).
+6. Validate every alternative with DULAT before editing parse.
+7. If two adjacent unresolved tokens persist, test merged lookup using translation cue.
 
 ## 9. Promote to Structured Variants vs Keep Comment-Only
 
@@ -263,4 +264,4 @@ Use only as a pattern reference; not required for new tablets.
 5. `10049 rkb rkb(I)[/` -> deverbal check against both `/r-k-b/` and `rkb(I)`.
 6. `10132 atm !!at(w[~m(II)` -> root before `[`, clitic after `[` is separate.
 7. `139819 yˤn !y!ˤn(y(I)[` -> homonym `(I)` enforced before contextual disambiguation.
-8. `139777 š &š` -> CUC marks this as uncertain/excised; keep token in sequence but leave DULAT/POS/gloss empty and note spelling mistake.
+8. `139777 š &š` -> CUC marks this as uncertain/excised; keep token in sequence and mark unresolved DULAT/POS/gloss as `?` (or keep existing empties if preserving prior file style), with a short note.
