@@ -839,7 +839,7 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
     for i, raw in enumerate(lines, 1):
         if not raw.strip():
             continue
-        if input_format in {"auto", "cuc_tablets_tsv"} and is_cuc_separator_line(raw):
+        if is_cuc_separator_line(raw):
             continue
         comment = ""
         core = raw
