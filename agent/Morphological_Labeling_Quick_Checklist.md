@@ -13,18 +13,20 @@ For full rules and examples, see `agent/Morphological_Labeling_Agent_Guide.md`.
    - raw CUC TSV: `python linter/lint.py 'cuc_tablets_tsv/KTU 1.5.tsv' --input-format cuc_tablets_tsv --dulat sources/dulat_cache.sqlite --udb sources/udb_cache.sqlite`
    - labeled output: `python linter/lint.py 'out/KTU 1.5.tsv' --input-format labeled --dulat sources/dulat_cache.sqlite --udb sources/udb_cache.sqlite`
    - mixed/unknown: `python linter/lint.py 'out/KTU 1.5.tsv' --input-format auto --dulat sources/dulat_cache.sqlite --udb sources/udb_cache.sqlite`.
-4. If local DULAT+UDB server is available (`http://127.0.0.1:8000`), use:
+4. For quick token-id -> line-reference lookup in current TSV files, use:
+   - `python3 scripts/token_ref_index.py --id 139891 --glob 'out/KTU 1.*.tsv'`
+5. If local DULAT+UDB server is available (`http://127.0.0.1:8000`), use:
    - `/concordance/?word=...` for UDB pattern probing (broken `x` cases),
    - `/api/entries/?q=...` for DULAT candidate extraction,
    - `/api/references/?ref=...` for line-level reverse mentions (`mentions[]`),
    - `/api/openapi.json` to verify current API parameters.
    - note: wildcard probing is done via `/concordance/`, not `/api/concordance/`.
-5. Reverse-reference tables (direct DB fallback):
+6. Reverse-reference tables (direct DB fallback):
    - DULAT: `dulat_reverse_refs(norm_ref, entry_id, payload)`,
    - UDB: `ktu_to_dulat(ktu_ref, entry_id, payload)`,
    - UDB mapping: `reverse_index(norm_ref, target)`.
    Use these when one surface form maps to multiple DULAT entries.
-6. Translation/commentary modules:
+7. Translation/commentary modules:
    - UI: `/modules/TCS/`, `/modules/Smith/`
    - DB: `sources/modules_cache.sqlite` (`module_records`, `module_refs`)
    Use this as contextual evidence for unresolved lexical/POS ties after DULAT + reverse mentions.

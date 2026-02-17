@@ -71,6 +71,7 @@ Linter mode for this format:
 - raw source: `python linter/lint.py 'cuc_tablets_tsv/KTU 1.5.tsv' --input-format cuc_tablets_tsv --dulat sources/dulat_cache.sqlite --udb sources/udb_cache.sqlite`
 - labeled file: `python linter/lint.py 'out/KTU 1.5.tsv' --input-format labeled --dulat sources/dulat_cache.sqlite --udb sources/udb_cache.sqlite`
 - mixed project runs: `python linter/lint.py 'out/KTU 1.5.tsv' --input-format auto --dulat sources/dulat_cache.sqlite --udb sources/udb_cache.sqlite`.
+- token-id to KTU header lookup: `python3 scripts/token_ref_index.py --id 139891 --glob 'out/KTU 1.*.tsv'`
 
 ---
 

@@ -1131,6 +1131,10 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                 continue
             if part.startswith(":"):
                 continue
+            if ":" in part:
+                # Post-[ finite endings can carry stem labels (e.g., t:n).
+                # These are verbal morphology, not clitic lexeme parts.
+                continue
             if not has_letters(strip_markers_simple(part)):
                 continue
             if part in seen_clitics:
