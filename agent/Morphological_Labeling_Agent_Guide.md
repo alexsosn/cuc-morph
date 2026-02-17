@@ -44,6 +44,7 @@ Output line must preserve `col1` and `col2` exactly and use this structured sche
    - for multi-lexeme variants, separate POS morpheme slots by comma in the same order as `col4`.
    - if one morpheme still has multiple POS options, separate those options by `/` inside that morpheme slot.
    - for noun POS slots with DULAT gender available, include gender explicitly as `n. m.` or `n. f.` (for example `n. f.`, `n. m./DN`).
+   - for pluralia tantum nouns, add `pl. tant.` in the same noun POS slot (or `pl. tant.?` for tentative cases) and keep this marker out of comments.
 6. `col6`: semicolon-separated gloss sets aligned to `col3` variants.
    - for multi-lexeme variants, separate gloss items by comma in the same order as `col4`.
 7. Optional comment after `#` for residual notes only (translation rationale, uncertainty, text-critical notes).
@@ -544,7 +545,8 @@ Use these patterns on any tablet; do not depend on tablet-specific IDs.
 - Pattern: DULAT form inventory attests both singular and plural for the same written noun form (for example `hmlt`).
 - Rule:
   - keep the noun analysis unsplit when morphologically appropriate,
-  - annotate a short comment note `Plurale tantum?`,
+  - mark the noun POS in `col5` with `pl. tant.` (or `pl. tant.?` when tentative),
+  - keep plurale-tantum marking out of comments,
   - do not force plural split endings solely to satisfy number-marking expectations.
 
 ---

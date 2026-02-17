@@ -105,6 +105,7 @@ For full rules and examples, see `agent/Morphological_Labeling_Agent_Guide.md`.
 20. Keep comment field for residual notes only (translation rationale, uncertainty, text-critical notes), not duplicated DULAT/POS/gloss payload.
 21. For noun POS in `col5`, include DULAT gender when available:
    - use `n. m.` or `n. f.` (for example `n. f.`, `n. m./DN`).
+   - for pluralia tantum, add `pl. tant.` in that noun POS slot (or `pl. tant.?` when tentative) instead of writing this in comments.
 22. For broken `x` tokens:
    - if token is only `x...`, skip lexical lookup,
    - if token has a single `x` (not x-only), query UDB concordance with `x -> -`,
@@ -171,8 +172,8 @@ Compatibility with DULAT:
 10. `/y-t-n/` short/imperative `tn` forms can be represented without preformative as `!!(ytn[` when context supports imperative.
 11. Ambiguous `yX...` prefix forms may require two variants when DULAT supports both roots:
     - for example `!y!(yṯb[;!y!ṯb[` with `/y-ṯ-b/;/ṯ-b/`.
-12. Nouns with DULAT sg/pl same-form behavior can stay unsplit and should get a short comment note:
-    - add `Plurale tantum?` in comment instead of forcing `/t=` or plural split markers.
+12. Nouns with DULAT sg/pl same-form behavior can stay unsplit and should be marked in POS:
+    - add `pl. tant.` in POS `col5` (or `pl. tant.?` when tentative), not in comments.
 13. Formula disambiguation for `l`:
    - `tbʕ w l yṯb ỉlm` -> `l(II)` (`not`),
    - `ỉdk l ytn ...` -> `l(III)` (`truly/certainly`).

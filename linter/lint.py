@@ -148,20 +148,29 @@ LETTER_RE = re.compile(r"[A-Za-zˤʔḫṣṯẓġḏḥṭš]")
 ANALYSIS_SURFACE_LETTER_RE = re.compile(r"[A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]")
 
 
+PL_TANT_RE = re.compile(
+    r"(?:\bpl\.?\s*tant\b|\bplur(?:ale)?\.?\s*tant(?:um|u)?\b)\.?\??",
+    flags=re.IGNORECASE,
+)
+
+
+def strip_plurale_tantum_marker(text: str) -> str:
+    src = text or ""
+    t = PL_TANT_RE.sub("", src)
+    if t == src:
+        return src.strip()
+    # Remove punctuation residues left after marker stripping.
+    t = re.sub(r"\s*[.;,]+\s*$", "", t)
+    t = re.sub(r"\s+[.;,](?=\s|$)", " ", t)
+    t = re.sub(r"\s{2,}", " ", t)
+    return t.strip()
+
+
 def has_plurale_tantum_note(text: str) -> bool:
-    t = (text or "").lower()
-    if "plur" not in t or "tant" not in t:
+    t = (text or "")
+    if "pl" not in t.lower() and "plur" not in t.lower():
         return False
-    for marker in (
-        "plurale tantum",
-        "plur tantum",
-        "plur. tant",
-        "plur tant.",
-        "plur tantu",
-    ):
-        if marker in t:
-            return True
-    return bool(re.search(r"\bplur(?:ale)?\.?\s*tant(?:um|u)?\b", t))
+    return PL_TANT_RE.search(t) is not None
 
 
 def has_unprefixed_reconstructed_sequence(s: str, allow_weak_y_cluster: bool = False) -> bool:
@@ -621,7 +630,8 @@ def split_pos_options(value: str) -> List[str]:
     return [normalize_pos_label(p) for p in parts if p]
 
 
-NOUN_GENDER_POS_RE = re.compile(r"n\.\s*(m\.|f\.)", re.IGNORECASE)
+NOUN_GENDER_POS_RE = re.compile(r"n\.\s*(m|f)\.?(?=\s|$|[,;])", re.IGNORECASE)
+NOUN_BASE_POS_RE = re.compile(r"\bn\.\s*", re.IGNORECASE)
 
 
 def normalize_pos_option_for_validation(value: str) -> str:
@@ -631,7 +641,10 @@ def normalize_pos_option_for_validation(value: str) -> str:
     DULAT noun labels encoded as plain n.
     """
     tok = normalize_pos_label((value or "").strip())
-    tok = NOUN_GENDER_POS_RE.sub("n.", tok)
+    tok = strip_plurale_tantum_marker(tok)
+    tok = NOUN_GENDER_POS_RE.sub("n ", tok)
+    tok = NOUN_BASE_POS_RE.sub("n ", tok)
+    tok = re.sub(r"\s+([,;])", r"\1", tok)
     tok = re.sub(r"\s+", " ", tok).strip()
     return tok.lower()
 
@@ -640,8 +653,10 @@ def extract_noun_gender_from_pos(value: str) -> Optional[str]:
     m = NOUN_GENDER_POS_RE.search(value or "")
     if not m:
         return None
-    g = (m.group(1) or "").lower()
-    return g if g in {"m.", "f."} else None
+    g = (m.group(1) or "").lower().rstrip(".")
+    if g in {"m", "f"}:
+        return f"{g}."
+    return None
 
 
 def is_cuc_separator_line(raw: str) -> bool:
@@ -913,7 +928,7 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                                     allowed_list = ", ".join(sorted(allowed))
                                     issues.append(Issue("error", str(path), i, line_id, surface, a_var, f"POS token '{opt}' not allowed for {dtok}; choose one of: {allowed_list}"))
 
-                            noun_like_token = any("n." in (opt or "").lower() for opt in pos_tok_opts)
+                            noun_like_token = any(re.search(r"\bn(?:\.|\b)", (opt or "").lower()) for opt in pos_tok_opts)
                             noun_gender = extract_noun_gender_from_pos(pos_tok)
                             if noun_like_token and len(gender_matches) == 1:
                                 expected_gender = next(iter(gender_matches))
@@ -1342,20 +1357,22 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                         morph_values.add((matched[0].morph or "").lower())
                     morph_values.update(surface_form_morphs)
                     morph = " ; ".join(sorted(morph_values))
+                    pos_field_text = parts[4] if len(parts) >= 5 else ""
+                    is_plurale_tantum_marked = has_plurale_tantum_note(annotation_text) or has_plurale_tantum_note(pos_field_text)
                     if ("suff" in morph and ("pn" in morph or "pers." in morph)) and "+" not in analysis:
                         lemma_letters = re.sub(r"[^A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]", "", head_lemma or "")
                         if len(normalize_surface(surface_clean)) > len(normalize_surface(lemma_letters)):
                             issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Suffixed pronominal form in DULAT should use '+' in analysis"))
                     # DULAT "prefc., suff." can mark finite prefix-conjugation
                     # endings (e.g., -n) rather than clitic +suffix slots.
-                    if "suff." in morph and "+" not in analysis and "prefc." not in morph:
+                    if "suff." in morph and "+" not in analysis and "prefc." not in morph and not is_plurale_tantum_marked:
                         issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Suffix form without '+'"))
                     if (
                         "pl." in morph
                         and surface.endswith(("m", "t"))
                         and "/" in analysis
                         and not analysis.endswith(("/m", "/t", "/m=", "/t="))
-                        and not has_plurale_tantum_note(annotation_text)
+                        and not is_plurale_tantum_marked
                     ):
                         issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Plural form missing split ending"))
 
