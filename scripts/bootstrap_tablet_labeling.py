@@ -233,7 +233,7 @@ def process_file(in_path: Path, out_path: Path, forms_map: Dict[str, List[Entry]
 def main() -> None:
     parser = argparse.ArgumentParser(description="Bootstrap KTU tablet to structured morphology TSV.")
     parser.add_argument("input", nargs="+", help="Input raw cuc_tablets_tsv files")
-    parser.add_argument("--dulat-db", default="data/dulat_cache.sqlite", help="Path to dulat cache sqlite")
+    parser.add_argument("--dulat-db", default="sources/dulat_cache.sqlite", help="Path to dulat cache sqlite")
     parser.add_argument("--out-dir", default="results", help="Output directory")
     args = parser.parse_args()
 

@@ -700,8 +700,8 @@ def refine_file(
 def main() -> None:
     ap = argparse.ArgumentParser(description="Refine morphology TSV using reverse mentions + clitic splitting")
     ap.add_argument("files", nargs="+", help="TSV files to refine")
-    ap.add_argument("--dulat-db", default="data/dulat_cache.sqlite")
-    ap.add_argument("--udb-db", default="data/udb_cache.sqlite")
+    ap.add_argument("--dulat-db", default="sources/dulat_cache.sqlite")
+    ap.add_argument("--udb-db", default="sources/udb_cache.sqlite")
     ap.add_argument("--in-place", action="store_true", help="Rewrite files in place")
     ap.add_argument("--out-dir", default="results", help="Output dir if not --in-place")
     args = ap.parse_args()
