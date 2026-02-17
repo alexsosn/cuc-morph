@@ -635,9 +635,9 @@ def split_pos_options(value: str) -> List[str]:
     return [normalize_pos_label(p) for p in parts if p]
 
 
-NOUN_GENDER_POS_RE = re.compile(r"n\.\s*(m|f)\.?(?=\s|$|[,;])", re.IGNORECASE)
+NOUN_GENDER_POS_RE = re.compile(r"n\.\s*(m|f)\.?(?=\s|$|[,;/])", re.IGNORECASE)
 NOUN_BASE_POS_RE = re.compile(r"\bn\.\s*", re.IGNORECASE)
-ADJ_GENDER_POS_RE = re.compile(r"adj\.\s*(m|f)\.?(?=\s|$|[,;])", re.IGNORECASE)
+ADJ_GENDER_POS_RE = re.compile(r"adj\.\s*(m|f)\.?(?=\s|$|[,;/])", re.IGNORECASE)
 
 
 def normalize_pos_option_for_validation(value: str) -> str:
