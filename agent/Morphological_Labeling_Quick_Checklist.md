@@ -1,7 +1,7 @@
 # Morphological Labeling Quick Checklist (Operator Mode)
 
 Use this checklist during annotation of a new unlabeled file.
-For full rules and examples, see `Morphological_Labeling_Agent_Guide.md`.
+For full rules and examples, see `agent/Morphological_Labeling_Agent_Guide.md`.
 
 ## 1. Preflight
 
@@ -10,9 +10,9 @@ For full rules and examples, see `Morphological_Labeling_Agent_Guide.md`.
    - keep separator rows starting with `#----------------------------`,
    - token rows are `id<TAB>surface<TAB>surface` where `col3` is only a placeholder.
 3. Use linter format mode explicitly when needed:
-   - raw CUC TSV: `python morph_lint.py 'cuc_tablets_tsv/KTU 1.5.tsv' --input-format cuc_tablets_tsv`
-   - labeled output: `python morph_lint.py results/KTU_1.5.txt --input-format labeled`
-   - mixed/unknown: `--input-format auto`.
+   - raw CUC TSV: `python linter/lint.py 'cuc_tablets_tsv/KTU 1.5.tsv' --input-format cuc_tablets_tsv --dulat sources/dulat_cache.sqlite --udb sources/udb_cache.sqlite`
+   - labeled output: `python linter/lint.py 'out/KTU 1.5.tsv' --input-format labeled --dulat sources/dulat_cache.sqlite --udb sources/udb_cache.sqlite`
+   - mixed/unknown: `python linter/lint.py 'out/KTU 1.5.tsv' --input-format auto --dulat sources/dulat_cache.sqlite --udb sources/udb_cache.sqlite`.
 4. If local DULAT+UDB server is available (`http://127.0.0.1:8000`), use:
    - `/concordance/?word=...` for UDB pattern probing (broken `x` cases),
    - `/api/entries/?q=...` for DULAT candidate extraction,
@@ -26,11 +26,11 @@ For full rules and examples, see `Morphological_Labeling_Agent_Guide.md`.
    Use these when one surface form maps to multiple DULAT entries.
 6. Translation/commentary modules:
    - UI: `/modules/TCS/`, `/modules/Smith/`
-   - DB: `data/modules_cache.sqlite` (`module_records`, `module_refs`)
+   - DB: `sources/modules_cache.sqlite` (`module_records`, `module_refs`)
    Use this as contextual evidence for unresolved lexical/POS ties after DULAT + reverse mentions.
 7. Verb-specific refinement aid:
-   - `data/notarius.compact.html`
-   - extracted evidence JSON: `data/notarius_evidence_claims.json`
+   - `sources/notarius.compact.html`
+   - extracted evidence JSON: `sources/notarius_evidence_claims.json`
    - helper: `scripts/notarius_refinement_pass.py`
    Use primarily for stem/voice/infinitive-participle decision points.
 8. Output format per line:

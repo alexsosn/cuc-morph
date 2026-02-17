@@ -2,18 +2,18 @@
 
 This guide defines how to produce morphological labeling for a new unlabeled Ugaritic file, using:
 
-- `Tagging conventions updated.txt` (authoritative tagging policy),
-- attested practice in checked project files (for example `KTU_1.3 Martjin_Tania_checked.txt`),
+- `agent/Tagging conventions.txt` (authoritative tagging policy),
+- attested practice in checked project files (for example `data/KTU_1.3 Martjin_Tania_checked.txt`),
 - lexical and form evidence from:
-  - `data/dulat_cache.sqlite` (DULAT),
-  - `data/udb_cache.sqlite` (UDB, secondary check).
+  - `sources/dulat_cache.sqlite` (DULAT),
+  - `sources/udb_cache.sqlite` (UDB, secondary check).
 
 Use this guide as an execution protocol, not as general background.
 
 Companion files:
 
-- `Morphological_Labeling_Quick_Checklist.md` (fast execution checklist),
-- `Ugaritic_Morphology_Reference.md` (feature and stem reference from `morphology.py`).
+- `agent/Morphological_Labeling_Quick_Checklist.md` (fast execution checklist),
+- `agent/Ugaritic_Morphology_Reference.md` (feature and stem reference from `linter/morphology.py`).
 
 ---
 
@@ -65,9 +65,9 @@ Do not duplicate structured `DULAT/POS/gloss` payload in comments.
 
 Linter mode for this format:
 
-- raw source: `python morph_lint.py 'cuc_tablets_tsv/KTU 1.5.tsv' --input-format cuc_tablets_tsv`
-- labeled file: `python morph_lint.py results/KTU_1.5.txt --input-format labeled`
-- mixed project runs: `--input-format auto` (default).
+- raw source: `python linter/lint.py 'cuc_tablets_tsv/KTU 1.5.tsv' --input-format cuc_tablets_tsv --dulat sources/dulat_cache.sqlite --udb sources/udb_cache.sqlite`
+- labeled file: `python linter/lint.py 'out/KTU 1.5.tsv' --input-format labeled --dulat sources/dulat_cache.sqlite --udb sources/udb_cache.sqlite`
+- mixed project runs: `python linter/lint.py 'out/KTU 1.5.tsv' --input-format auto --dulat sources/dulat_cache.sqlite --udb sources/udb_cache.sqlite`.
 
 ---
 
@@ -159,7 +159,7 @@ Markers do not have to appear immediately after `[`. They can appear after tense
 
 ### 4.1 DULAT database and key tables
 
-Path: `data/dulat_cache.sqlite`
+Path: `sources/dulat_cache.sqlite`
 
 Primary tables used:
 
@@ -179,7 +179,7 @@ Recommended checks:
 
 ### 4.2 UDB database and key table
 
-Path: `data/udb_cache.sqlite`
+Path: `sources/udb_cache.sqlite`
 
 Primary table:
 
@@ -294,7 +294,7 @@ Use module resources as a second-pass disambiguation layer after lexical matchin
 Module sources:
 
 - Web UI: `/modules/`, `/modules/TCS/`, `/modules/Smith/`
-- DB: `data/modules_cache.sqlite`
+- DB: `sources/modules_cache.sqlite`
   - `modules(id, title, ...)`
   - `module_records(module_id, record_id, ref_norm, content_text, ...)`
   - `module_refs(record_id, ref_norm, ref_display, ref_system)`
@@ -314,8 +314,8 @@ Important limitation:
 
 Notarius (verb-focused reference):
 
-- Source HTML: `data/notarius.compact.html`
-- Extracted evidence (recommended): `data/notarius_evidence_claims.json`, `data/notarius_evidence_context.json`
+- Source HTML: `sources/notarius.compact.html`
+- Extracted evidence (recommended): `sources/notarius_evidence_claims.json`, `sources/notarius_evidence_context.json`
 - Supporting script: `scripts/notarius_refinement_pass.py`
 
 Use Notarius evidence to prioritize checks for:
@@ -550,7 +550,7 @@ Use DULAT `forms.morphology` stem evidence.
   - acceptable if DULAT has `G`,
   - otherwise missing-marker error.
 
-Reference stem inventory from `morphology.py` includes:
+Reference stem inventory from `linter/morphology.py` includes:
 
 - `G, Gt, Gpass., N, D, Dpass., tD, Dt, L, Lt, tL, Lpass., R, Š, Špass., Št`
 

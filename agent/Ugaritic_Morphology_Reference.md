@@ -1,11 +1,11 @@
 # Ugaritic Morphology Reference (Project Use)
 
-Primary source: `morphology.py`.
+Primary source: `linter/morphology.py`.
 This file is a compact, agent-oriented reference for feature names and stem inventory used in labeling decisions.
 
 ## 1. Verbal Stem Inventory
 
-From `stems` in `morphology.py`:
+From `stems` in `linter/morphology.py`:
 
 - `G`: basic/ground stem.
 - `Gt`: G with infixed `-t-` (often reflexive-like).
@@ -100,7 +100,7 @@ Project marker mapping in analyses:
 
 ## 4. G-Stem Pattern Vowel Labels
 
-From `Stem` in `morphology.py`:
+From `Stem` in `linter/morphology.py`:
 
 - `u` -> qatal
 - `i` -> qatil
@@ -123,7 +123,7 @@ From `morphology["pos"]` and `POS` enum:
 
 ## 6. G-Stem Strong Templates (Reference)
 
-These are model paradigms included in `morphology.py`:
+These are model paradigms included in `linter/morphology.py`:
 
 - G suffix conjugation:
   - qatal pattern `/1a2a3a/`,
