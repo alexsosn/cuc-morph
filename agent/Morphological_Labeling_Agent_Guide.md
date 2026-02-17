@@ -157,6 +157,12 @@ Examples:
 
 Markers do not have to appear immediately after `[`. They can appear after tense/person material (for example `kl(l[t:d`, `ṣm(t[t:d`).
 
+### 3.5 Weak-final SC `-t` forms
+
+- For finite non-prefix verbs from weak-final roots (`/...-...-y/`, `/...-...-w/`) where surface ends with `t`, encode suffix-conjugation ending as `[t` (not `t[`).
+- Preferred pattern: `nš(y[t:n` for `/n-š-y/` (SC 1c), rather than substitution-style `nš(y&t[:n`.
+- This rule does not apply to deverbal nominal forms marked `[/...` (for example participles).
+
 ---
 
 ## 4. DULAT and UDB Data Access

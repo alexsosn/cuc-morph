@@ -745,6 +745,21 @@ def variant_is_weak_initial_y_prefix_form(analysis_variant: str, d_field: str) -
     return bool(re.search(r"![ytan]!", a_txt))
 
 
+def variant_root_radicals(d_field: str) -> Optional[Tuple[str, str, str]]:
+    d_tokens = split_csv_field(d_field)
+    if not d_tokens:
+        return None
+    lemma_tok, _hom_tok = parse_declared_dulat_token(d_tokens[0])
+    lemma_tok = (lemma_tok or "").strip()
+    if not (lemma_tok.startswith("/") and lemma_tok.endswith("/")):
+        return None
+    core = lemma_tok[1:-1]
+    radicals = [seg.strip() for seg in core.split("-") if seg.strip()]
+    if len(radicals) != 3:
+        return None
+    return radicals[0], radicals[1], radicals[2]
+
+
 def entry_pos_options(pos_raw: str) -> List[str]:
     """
     Convert DULAT POS cell into acceptable single-tag values.
@@ -1051,6 +1066,30 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                         surface,
                         a_txt,
                         "For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
+                    )
+                )
+            root_radicals = variant_root_radicals(d_field)
+            has_prefix_preformative = bool(re.search(r"![ytan](?:=|==|===)?!", a_txt))
+            if (
+                root_radicals
+                and root_radicals[2] in {"y", "w"}
+                and root_radicals[1] != "t"
+                and surface.endswith("t")
+                and "[" in a_txt
+                and "/" not in a_txt
+                and not has_prefix_preformative
+                and "[t" not in a_txt
+                and not is_unresolved_placeholder(a_txt)
+            ):
+                issues.append(
+                    Issue(
+                        "warning",
+                        str(path),
+                        i,
+                        line_id,
+                        surface,
+                        a_txt,
+                        "Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
                     )
                 )
             allow_weak_y_cluster = is_weak_initial_y_verb and "(y" in a_txt
