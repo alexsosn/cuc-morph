@@ -740,6 +740,8 @@ Upgrade to explicit semicolon variants in `col3/col4/col5/col6` if all condition
 3. Translation/commentary disagreement is specific to this line/token (not generic stylistic wording).
 4. Alternative affects morphology/POS/stem/segmentation, not only literary nuance.
 
+If published interpretations diverge and both readings are DULAT-attested, keep both as explicit semicolon variants; order variants by strongest lexical/stem evidence and retain the other published reading as secondary.
+
 Keep as comment-only if:
 
 1. Difference is purely interpretive or stylistic.

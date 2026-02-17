@@ -221,6 +221,7 @@ Promote to explicit semicolon variants in `col3/col4/col5/col6` when all are tru
 2. DULAT supports a lexical path (entry/root/stem).
 3. Translation note is line-specific.
 4. Difference changes morphology or segmentation.
+5. If two published readings are both DULAT-attested, keep both; order primary by stronger lexical/stem evidence and keep the other as secondary variant.
 
 Keep comment-only when:
 
