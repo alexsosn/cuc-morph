@@ -2,6 +2,18 @@
 
 ## 2026-02-18
 
+- Added trigram formula discovery utility: `scripts/discover_formula_trigrams.py` (profiles top adjacent three-token formulas and dominant parsing payloads in `out/KTU 1.*.tsv`).
+- Added hardcoded trigram formula normalization layer:
+  - config: `pipeline/config/formula_trigram_rules.py`
+  - step: `pipeline/steps/formula_trigram.py`
+  - pipeline wiring: `pipeline/tablet_parsing.py` (runs before bigram disambiguation).
+- Hardcoded high-confidence formula trigrams from corpus frequency/context:
+  - `rbt aṯrt ym` -> enforce `rbt (I)` (`n. f.`, `Lady`)
+  - `zbl bˤl arṣ` -> enforce `zbl (I)` (`n. m.`, `prince`)
+  - `idk l ttn` and `l ttn pnm` -> enforce `l (III)` (`functor`, `certainly`)
+  - `il tˤḏr bˤl` -> enforce `bʕl (II)` as `DN` (`Baʿlu`)
+- Added unit tests for trigram rule application and DULAT-safety guards.
+- Applied trigram normalization across `out/KTU 1.*.tsv` (34 row updates in 10 tablets) and refreshed reports.
 - Expanded hardcoded formula-bigram normalization with three additional high-confidence rules:
   - `bn il` -> enforce `bn (I)` (`n. m.`, `son`)
   - `bn ilm` -> enforce `bn (I)` (`n. m.`, `son`)

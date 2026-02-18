@@ -5628,6 +5628,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv  skn ilib
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv  ilibh b qdš ztr ˤmh l arṣ mšṣu Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 144281-144288 ; 144379-144386
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv  qdš ztr ˤmh l arṣ mšṣu qṭrh l Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 144283-144290 ; 144381-144388
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv  qdš Surface qdš parsed inconsistently: qdš(I)/ (ids: 144153,144176,144189,144203,144259,144381,144483); qdš(II)/ (ids: 144283)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv  l Surface l parsed inconsistently: l(I) (ids: 144260,144262,144267,144286,144290,144350,144365,144384,144388,144400,144404,144454,144486,144531,144551,144698,144709,144714,144737,144742,144757,144776,144780,144845,144884,144888,144896,144941,144947,144950,144959,145009,145025,145041,145057,145065,145106); l(III) (ids: 145087)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv  bnt Surface bnt parsed inconsistently: b(I)/t= (ids: 144537); bnt(II)/ (ids: 144559,144570,144580,144590,144601,144853,144872)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv  ˤnt Surface ˤnt parsed inconsistently: ˤn(I)/t= (ids: 144948,145050); ˤnt(I)/ (ids: 144911,144956,145127)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:29 144162 ynlln Surface not found in UDB concordance
@@ -5722,6 +5723,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv:240 1562
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv  hlmn ṯnm qdqd ṯlṯid ˤl udn špk km Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 145423-145430 ; 145489-145496
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv  ṯnm qdqd ṯlṯid ˤl udn špk km šiy Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 145424-145431 ; 145490-145497
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv  ˤnt Surface ˤnt parsed inconsistently: ˤn(I)/t= (ids: 145514); ˤnt(I)/ (ids: 145192,145228,145244,145311,145317,145361,145386)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv  l Surface l parsed inconsistently: l(I) (ids: 145251,145284,145312,145359,145368,145403,145408,145435,145452,145470,145474,145501,145534); l(III) (ids: 145230,145319)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv  diy Surface diy parsed inconsistently: diy(I)/ (ids: 145397); diy(II)/ (ids: 145464)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv:10 145148 aṯbr Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv:38 145170 bgdlt Surface not found in UDB concordance
@@ -6044,6 +6046,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  bn bht ks
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  l Surface l parsed inconsistently: l(I) (ids: 138194,138206,138211,138271,138301,138304,138381,138604,138608,138651,138654,138664,138694,138712,138892,138910,138922,139039,139065,139109,139153,139202,139211,139276,139280,139395,139412,139416,139475,139481,139550,139596,139642,139709,139722); l(II) (ids: 138126,138148,138277,138501,138675,138793,138813,138868,138884,138888,138920,138961,139113,139472,139563,139585,139674,139727)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  bt Surface bt parsed inconsistently: bt(I)/ (ids: 138173,138177,138835,138839,138843,138917,139099,139181,139185,139435,139647); bt(II)/ (ids: 138147,138812,138867,138985,139430)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  k Surface k parsed inconsistently: k(I) (ids: 138262,138662,139680,139684,139707,139717); k(III) (ids: 138154,138265,138323,138369,138498,138705,138819,138874,139046,139542,139600)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  rbt Surface rbt parsed inconsistently: rbt(I)/ (ids: 138162,138186,138377,138388,138515,138523,138528,138548,138600,138610,138724,138766,138827,138879); rbt/ (ids: 138395,138882,138971,139100,139706)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  ˤrpt Surface ˤrpt parsed inconsistently: ˤrp(t/t= (ids: 138458,138486,139115); ˤrpt/t (ids: 138908,139458,139495)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  lk Surface lk parsed inconsistently: (hlk[ (ids: 139582); l(I)+k (ids: 138986,139474)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:66 138170 btar Surface not found in UDB concordance
@@ -6213,6 +6216,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.57.tsv:11 149317
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.57.tsv:12 149318 pš Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.57.tsv:28 149329 mgx Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  tšu Surface tšu parsed inconsistently: !t!(n&š(š&u(ʔ[ (ids: 140516,140616); !t!nš(ʔ&u[ (ids: 140786,141059)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  rbt Surface rbt parsed inconsistently: rbt(I)/ (ids: 140643,140658,140686); rbt/ (ids: 140648)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  yṯb Surface yṯb parsed inconsistently: !y!(yṯb[ (ids: 140703,141150,141289); !y!ṯb[ (ids: 141226)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:118 140546 kgmn Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:151 140572 yḥmrm Surface not found in UDB concordance
@@ -6467,4 +6471,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:49 151516
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:75 151535 xẓk Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:88 151545 šdr Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.98.tsv:23 151701 gˤl Surface not found in UDB concordance
-Total issues: 6466
+Total issues: 6470

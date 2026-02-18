@@ -52,7 +52,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 I:13						
 138160	bnh	bn(I)/+h	bn (I), -h (I)	n. m.,pers. pn.	son, his /her	
 138161	mṯb	mṯb/	mṯb	n. m.	residence	
-138162	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
+138162	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 # KTU 1.4 I:14						
 138163	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 138164	ym	ym(II)/	ym (II)	n. m.	sea	
@@ -84,7 +84,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138184	mˤ	mˤ(I)	mʕ (I)	postpositional emph. adv.	please!	TCS i 21-22 directive emphasis
 # KTU 1.4 I:21						
 138185	mgn	mgn(I)/	mgn (I)	n. m.	gift	
-138186	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
+138186	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 138187	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 138188	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 I:22						
@@ -325,7 +325,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 II:28						
 138375	ḫrṣ	ḫrṣ/	ḫrṣ	n. m.	gold	
 138376	šmḫ	!!šmḫ[/	/š-m-ḫ/	vb	to be glad	
-138377	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
+138377	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 138378	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 # KTU 1.4 II:29						
 138379	ym	ym(II)/	ym (II)	n. m.	sea	
@@ -339,7 +339,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138386	apqym	apq/+ym	ảpq, ym (I)	n. m.,n. m.	spring, day	
 # KTU 1.4 II:31						
 138387	dgy	dgy/	dgy	n. m.	triton	
-138388	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
+138388	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 138389	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 138390	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 II:32						
@@ -508,7 +508,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138513	ˤnt	ˤnt(I)/	ʕnt (I)	DN	ʿAnatu	
 # KTU 1.4 III:25						
 138514	tmgnn	!t!mg(n&n[:d	/m-g-n/	vb	to wine and dine	DULAT /m-g-n/ also allows 'offer/present/entreat'; UNP ii 25-33 context favors petition/offering over 'regale'
-138515	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
+138515	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 138516	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 138517	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 III:26						
@@ -518,13 +518,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 III:27						
 138521	w	w	w	conj.	and	
 138522	tˤn	!t!ˤn(y(I)[	/ʕ-n-y/ (I)	vb	to answer	
-138523	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
+138523	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 138524	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 138525	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 III:28						
 138526	ik	ik	ỉk	interr. functor	how?	
 138527	tmgnn	!t!mg(n&n[:d	/m-g-n/	vb	to wine and dine	
-138528	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
+138528	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 # KTU 1.4 III:29						
 138529	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 138530	ym	ym(II)/	ym (II)	n. m.	sea	
@@ -550,7 +550,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138546	nmgn	!n!mgn[	/m-g-n/	vb	to wine and dine	UNP iii 33-36 favors cohortative 'let us entreat/offer'; DULAT /m-g-n/ includes offer/present
 # KTU 1.4 III:34						
 138547	km	k(I)+m	k (I), -m (I)	prep., morph.	like,	
-138548	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
+138548	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 138549	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 138550	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 III:35						
@@ -624,7 +624,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138597	abn	ab/+n;abn/;!a!bn[	ảb;ảbn;/b-n/	n. m.;n. f.;vb	father;stone;to understand	
 138598	w	w	w	conj.	and	
 138599	tˤn	!t!ˤn(y(I)[	/ʕ-n-y/ (I)	vb	to answer	
-138600	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
+138600	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 # KTU 1.4 IV:2						
 138601	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 138602	ym	ym(II)/	ym (II)	n. m.	sea	
@@ -636,7 +636,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138607	amrr	amrr/	ảmrr	DN	Blessed	
 138608	l	l(I)	l (I)	prep.	to	
 138609	dgy	dgy/	dgy	n. m.	triton	
-138610	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
+138610	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 # KTU 1.4 IV:4						
 138611	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 138612	ym	ym(II)/	ym (II)	n. m.	sea	
@@ -778,7 +778,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 IV:31						
 138722	ik	ik	ỉk	interr. functor	how?	
 138723	mġyt	mġy[t	/m-ġ-y/	vb	to come	
-138724	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
+138724	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 138725	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 138726	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 IV:32						
@@ -829,7 +829,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 IV:40						
 138764	w	w	w	conj.	and	
 138765	tˤn	!t!ˤn(y(I)[	/ʕ-n-y/ (I)	vb	to answer	
-138766	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
+138766	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 138767	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 138768	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 IV:41						
@@ -903,7 +903,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138825	bnh	bn(I)/+h	bn (I), -h (I)	n. m.,pers. pn.	son, his /her	
 # KTU 1.4 IV:53						
 138826	mṯb	mṯb/	mṯb	n. m.	residence	
-138827	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
+138827	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 138828	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 138829	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 IV:54						
@@ -966,7 +966,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 V:2						
 138877	w	w	w	conj.	and	
 138878	tˤn	!t!ˤn(y(I)[	/ʕ-n-y/ (I)	vb	to answer	
-138879	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
+138879	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 138880	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 138881	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 V:3						

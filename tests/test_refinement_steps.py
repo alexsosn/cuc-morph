@@ -18,6 +18,7 @@ from pipeline.steps.base import (
     parse_tsv_line,
 )
 from pipeline.steps.formula_bigram import FormulaBigramFixer
+from pipeline.steps.formula_trigram import FormulaTrigramFixer
 from pipeline.steps.known_ambiguities import KnownAmbiguityExpander
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
@@ -130,6 +131,95 @@ class FormulaBigramFixerTest(unittest.TestCase):
             self.assertEqual(result.rows_changed, 1)
             line = path.read_text(encoding="utf-8").splitlines()[2]
             self.assertIn("\tbˤl(II)/\tbʕl (II)\tDN\tBaʿlu\t", line)
+
+
+class FormulaTrigramFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = FormulaTrigramFixer()
+
+    def test_disambiguates_rbt_athirat_ym_to_lady(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\trbt\trbt/;rbt(I)/;rbt(II)/\trb(b)t;rbt (I);rbt (II)\tnum.;n. f.;"
+                    "n. f.\tten thousand;Lady;seine\t\n"
+                    "2\taṯrt\taṯrt(II)/\tảṯrt (II)\tDN\tAsherah\t\n"
+                    "3\tym\tym(II)/\tym (II)\tn. m.\tsea\t\n"
+                ),
+                encoding="utf-8",
+            )
+            result = self.fixer.refine_file(path)
+            self.assertEqual(result.rows_changed, 1)
+            line = path.read_text(encoding="utf-8").splitlines()[1]
+            self.assertIn("\trbt(I)/\trbt (I)\tn. f.\tLady\t", line)
+
+    def test_disambiguates_journey_formula_l_to_functor(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tidk\tidk\tỉdk\tnarrative adv. functor\tthen\t\n"
+                    "2\tl\tl(I);l(II);l(III)\tl (I);l (II);l (III)\tprep.;adv.;functor\t"
+                    "to;no;certainly\t\n"
+                    "3\tttn\tytn[\t/y-t-n/\tvb\tto give\t\n"
+                    "4\tpnm\tpn(m/m\tpnm\tn. m. pl. tant.\tface\t\n"
+                ),
+                encoding="utf-8",
+            )
+            result = self.fixer.refine_file(path)
+            self.assertEqual(result.rows_changed, 1)
+            line = path.read_text(encoding="utf-8").splitlines()[2]
+            self.assertIn("\tl(III)\tl (III)\tfunctor\tcertainly\t", line)
+
+    def test_disambiguates_il_tader_baal_to_dn(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\til\til(I)/\tỉl (I)\tn. m.\tgod\t\n"
+                    "2\ttˤḏr\ttˤḏr/\ttʕḏr\tn. m.\thelp\t\n"
+                    "3\tbˤl\tbˤl(II)/;bˤl[\tbʕl (II);/b-ʕ-l/\tn. m./DN;vb\tBaʿlu;to make\t\n"
+                ),
+                encoding="utf-8",
+            )
+            result = self.fixer.refine_file(path)
+            self.assertEqual(result.rows_changed, 1)
+            line = path.read_text(encoding="utf-8").splitlines()[3]
+            self.assertIn("\tbˤl(II)/\tbʕl (II)\tDN\tBaʿlu\t", line)
+
+    def test_skips_when_target_dulat_not_present(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tidk\tidk\tỉdk\tnarrative adv. functor\tthen\t\n"
+                    "2\tl\tl(I)\tl (I)\tprep.\tto\t\n"
+                    "3\tttn\tytn[\t/y-t-n/\tvb\tto give\t\n"
+                ),
+                encoding="utf-8",
+            )
+            result = self.fixer.refine_file(path)
+            self.assertEqual(result.rows_changed, 0)
+
+    def test_does_not_rewrite_single_variant_style(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\trbt\trb(t(I)/t\trbt (I)\tn. f.\tLady\t\n"
+                    "2\taṯrt\taṯrt(II)/\tảṯrt (II)\tDN\tAsherah\t\n"
+                    "3\tym\tym(II)/\tym (II)\tn. m.\tsea\t\n"
+                ),
+                encoding="utf-8",
+            )
+            result = self.fixer.refine_file(path)
+            self.assertEqual(result.rows_changed, 0)
 
 
 class StaticGate:
