@@ -345,6 +345,21 @@ def verb_root_lookup_keys(lexeme: str) -> List[str]:
     return out
 
 
+def choose_lookup_candidates(
+    lexeme: str,
+    lexeme_candidates: List["DulatEntry"],
+    surface_candidates: List["DulatEntry"],
+) -> Tuple[List["DulatEntry"], str]:
+    """Pick candidate source and lookup mode, with lexeme->surface fallback."""
+    if lexeme:
+        if lexeme_candidates:
+            return lexeme_candidates, "lexeme"
+        if surface_candidates:
+            return surface_candidates, "surface-fallback"
+        return [], "lexeme"
+    return surface_candidates, "surface"
+
+
 def analysis_has_missing_suffix_plus(analysis: str, surface: str) -> bool:
     """True if analysis/surface pair strongly indicates missing '+' suffix split."""
     if "+" in (analysis or ""):
@@ -2168,11 +2183,12 @@ def lint_file(
             if skip_dulat:
                 d_candidates = []
             else:
-                if lexeme:
-                    d_candidates = lexeme_candidates
-                    lookup_mode = "lexeme"
-                else:
-                    d_candidates = dulat_forms.get(normalize_surface(surface_clean), [])
+                surface_candidates = dulat_forms.get(normalize_surface(surface_clean), [])
+                d_candidates, lookup_mode = choose_lookup_candidates(
+                    lexeme=lexeme,
+                    lexeme_candidates=lexeme_candidates,
+                    surface_candidates=surface_candidates,
+                )
                 if d_candidates:
                     if is_verb:
                         vb_only = [c for c in d_candidates if "vb" in c.pos.lower()]
@@ -2197,6 +2213,18 @@ def lint_file(
                         )
                     )
                 else:
+                    if lookup_mode == "surface-fallback":
+                        issues.append(
+                            Issue(
+                                "warning",
+                                str(path),
+                                i,
+                                line_id,
+                                surface,
+                                analysis,
+                                "Lexeme parse did not match DULAT; matched by surface form",
+                            )
+                        )
                     # Stem presence: if DULAT has no G-stem for this verb, require a :stem marker
                     if (is_verb_global or is_deverbal) and verb_candidates_for_stem:
                         stems = set()

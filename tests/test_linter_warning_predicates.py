@@ -6,6 +6,7 @@ from linter.lint import (
     analysis_has_invalid_enclitic_plus,
     analysis_has_missing_plural_split,
     analysis_has_missing_suffix_plus,
+    choose_lookup_candidates,
     row_has_ambiguous_l_in_offering_sequence,
     row_has_baal_labourer_in_ktu1,
     row_has_mixed_baal_dn_labourer_reading,
@@ -35,6 +36,19 @@ class LinterWarningPredicateTest(unittest.TestCase):
         keys = verb_root_lookup_keys("dk")
         self.assertIn("/d-k/", keys)
         self.assertIn("d-k/", keys)
+
+    def test_choose_lookup_candidates_prefers_lexeme_then_surface(self) -> None:
+        picked, mode = choose_lookup_candidates("ydk", [1], [2])
+        self.assertEqual(mode, "lexeme")
+        self.assertEqual(picked, [1])
+
+        picked, mode = choose_lookup_candidates("ydk", [], [2])
+        self.assertEqual(mode, "surface-fallback")
+        self.assertEqual(picked, [2])
+
+        picked, mode = choose_lookup_candidates("", [], [3])
+        self.assertEqual(mode, "surface")
+        self.assertEqual(picked, [3])
 
     def test_enclitic_plus_is_invalid(self) -> None:
         self.assertTrue(analysis_has_invalid_enclitic_plus("bˤd~+n"))

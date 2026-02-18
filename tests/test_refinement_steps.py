@@ -23,6 +23,7 @@ from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
 from pipeline.steps.plural_split import PluralSplitFixer
 from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
+from pipeline.steps.surface_option_propagation import SurfaceOptionPropagationFixer
 from pipeline.steps.weak_final_sc import WeakFinalSuffixConjugationFixer
 from pipeline.steps.weak_verb import WeakVerbFixer
 
@@ -340,6 +341,92 @@ class KnownAmbiguityExpanderTest(unittest.TestCase):
         row = TabletRow("1", "ydh", "yd(I)/+h", "yd (I), -h (I)", "n. f.,pers. pn.", "hand", "")
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "yd(I)/+h")
+
+
+class SurfaceOptionPropagationFixerTest(unittest.TestCase):
+    def test_propagates_richer_payload_for_same_surface(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            rich = root / "KTU 1.1.tsv"
+            poor = root / "KTU 1.2.tsv"
+
+            rich.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tydk\t"
+                    "yd(I)/+k;yd(I)/+k=;yd(II)/+k;yd(II)/+k=;!y!dk[;!y=!dk[\t"
+                    "yd (I), -k (I);yd (I), -k (I);yd (II), -k (I);yd (II), -k (I);"
+                    "d-k(-k)/;d-k(-k)/\t"
+                    "n. f.,pers. pn.;n. f.,pers. pn.;n. m.,pers. pn.;n. m.,pers. pn.;vb;vb\t"
+                    "hand, your(s);hand, your(s);love, your(s);love, your(s);"
+                    "to be pounded;to be pounded\t\n"
+                ),
+                encoding="utf-8",
+            )
+            poor.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "2\tydk\t!y!dk[\td-k(-k)/\tvb\tto be pounded\t\n"
+                ),
+                encoding="utf-8",
+            )
+
+            fixer = SurfaceOptionPropagationFixer(corpus_dir=root)
+            result = fixer.refine_file(poor)
+            self.assertEqual(result.rows_changed, 1)
+            line = poor.read_text(encoding="utf-8").splitlines()[1]
+            self.assertIn("yd(I)/+k;yd(I)/+k=", line)
+            self.assertIn(";!y=!dk[", line)
+
+    def test_requires_dulat_overlap(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            rich = root / "KTU 1.1.tsv"
+            poor = root / "KTU 1.2.tsv"
+
+            rich.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\taaa\taaa/;bbb/\taaa;bbb\tn. m.;n. m.\tone;two\t\n"
+                ),
+                encoding="utf-8",
+            )
+            poor.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "2\taaa\taaa/\tccc\tn. m.\tone\t\n"
+                ),
+                encoding="utf-8",
+            )
+
+            fixer = SurfaceOptionPropagationFixer(corpus_dir=root)
+            result = fixer.refine_file(poor)
+            self.assertEqual(result.rows_changed, 0)
+
+    def test_skips_short_surface_tokens(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            rich = root / "KTU 1.1.tsv"
+            poor = root / "KTU 1.2.tsv"
+
+            rich.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tl\tl(I);l(II)\tl (I);l (II)\tprep.;adv.\tto;no\t\n"
+                ),
+                encoding="utf-8",
+            )
+            poor.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "2\tl\tl(I)\tl (I)\tprep.\tto\t\n"
+                ),
+                encoding="utf-8",
+            )
+
+            fixer = SurfaceOptionPropagationFixer(corpus_dir=root, min_surface_len=3)
+            result = fixer.refine_file(poor)
+            self.assertEqual(result.rows_changed, 0)
 
 
 class WeakFinalSuffixConjugationFixerTest(unittest.TestCase):

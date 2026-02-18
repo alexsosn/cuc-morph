@@ -20,6 +20,7 @@ from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
 from pipeline.steps.plural_split import PluralSplitFixer
 from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
+from pipeline.steps.surface_option_propagation import SurfaceOptionPropagationFixer
 from pipeline.steps.weak_final_sc import WeakFinalSuffixConjugationFixer
 from pipeline.steps.weak_verb import WeakVerbFixer
 
@@ -59,6 +60,7 @@ class TabletParsingPipeline:
             SuffixCliticFixer(gate=self.morph_gate),
             WeakVerbFixer(),
             WeakFinalSuffixConjugationFixer(),
+            SurfaceOptionPropagationFixer(corpus_dir=self.config.out_dir),
             AttestationSortFixer(index=self.attestation_index),
             KnownAmbiguityExpander(),
             # Keep schema pass last so any content-changing steps still end in

@@ -2,6 +2,10 @@
 
 ## 2026-02-18
 
+- Generalized DULAT matching in the linter: when analysis-derived lexeme lookup fails but the surface form exists in DULAT, the linter now falls back to surface matching and reports a dedicated warning (`Lexeme parse did not match DULAT; matched by surface form`) instead of a hard `No DULAT entry found` error.
+- Added reusable `SurfaceOptionPropagationFixer` pipeline step to propagate richer aligned option sets (`col3`-`col6`) across parallel rows sharing the same surface token when DULAT overlap confirms compatibility.
+- Wired `SurfaceOptionPropagationFixer` into `TabletParsingPipeline` before attestation sorting so propagated options are normalized/sorted consistently downstream.
+- Added tests for lookup fallback selection and surface-option propagation (positive case + overlap guard + short-surface guard).
 - Added `KnownAmbiguityExpander` pipeline refinement step and wired it into `TabletParsingPipeline` so known high-value ambiguities are preserved on every run (currently `ydk` and `šlmm` full option sets).
 - Added unit tests for pipeline ambiguity expansion behavior (`ydk`, `šlmm`, and non-matching rows).
 - Follow-up test cleanup: restored `WeakVerbFixer` non-weak/non-verb assertions to `WeakVerbFixerTest` class scope after adding ambiguity-step tests.
