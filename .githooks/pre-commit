@@ -14,13 +14,46 @@ if [[ ! -x ".venv/bin/python" ]]; then
   exit 1
 fi
 
-if ! command -v uv >/dev/null 2>&1; then
-  echo "uv is required for pre-commit checks but was not found." >&2
+py_mm="$(".venv/bin/python" -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')"
+if [[ "$py_mm" != "3.13" ]]; then
+  echo "Expected .venv Python 3.13, found $py_mm. Recreate .venv with Python 3.13." >&2
   exit 1
 fi
 
-run_uv() {
-  UV_CACHE_DIR=.uv-cache uv run --python .venv/bin/python "$@"
+use_uv_run=false
+if command -v uv >/dev/null 2>&1; then
+  if UV_CACHE_DIR=.uv-cache uv run --python .venv/bin/python python -c "import sys; sys.exit(0)" >/dev/null 2>&1; then
+    use_uv_run=true
+  else
+    echo "uv run is unavailable; falling back to direct .venv execution." >&2
+  fi
+fi
+
+run_python() {
+  if [[ "$use_uv_run" == "true" ]]; then
+    UV_CACHE_DIR=.uv-cache uv run --python .venv/bin/python python "$@"
+    return
+  fi
+  ".venv/bin/python" "$@"
+}
+
+run_ruff() {
+  if [[ "$use_uv_run" == "true" ]]; then
+    UV_CACHE_DIR=.uv-cache uv run --python .venv/bin/python ruff "$@"
+    return
+  fi
+
+  if [[ -x ".venv/bin/ruff" ]]; then
+    ".venv/bin/ruff" "$@"
+    return
+  fi
+
+  if command -v ruff >/dev/null 2>&1; then
+    ruff "$@"
+    return
+  fi
+
+  run_python -m ruff "$@"
 }
 
 staged_py_files=()
@@ -33,16 +66,14 @@ done <<< "$staged_files"
 
 if (( ${#staged_py_files[@]} > 0 )); then
   echo "Running ruff format/check on staged Python files ..."
-  run_uv ruff format "${staged_py_files[@]}"
-  run_uv ruff check --fix "${staged_py_files[@]}"
+  run_ruff format "${staged_py_files[@]}"
+  run_ruff check --fix "${staged_py_files[@]}"
+  run_ruff check "${staged_py_files[@]}"
   git add "${staged_py_files[@]}"
 fi
 
-echo "Running repo-wide Ruff checks ..."
-run_uv ruff check
-
 echo "Running full test suite ..."
-run_uv python -m unittest discover -s tests -v
+run_python -m unittest discover -s tests -v
 
 # Run lint-report generation only when lint-relevant files are staged.
 if ! printf '%s\n' "$staged_files" | grep -E -q '^(out/.*\.tsv|linter/|scripts/(generate_lint_reports|parse_lint_reports|install_git_hooks|run_tablet_parsing_pipeline)\.py|lint_reports/|pipeline/|reports/|\.github/workflows/morphology-lint\.yml)'; then
@@ -50,6 +81,6 @@ if ! printf '%s\n' "$staged_files" | grep -E -q '^(out/.*\.tsv|linter/|scripts/(
 fi
 
 echo "Generating morphology lint reports under reports/ ..."
-run_uv python scripts/generate_lint_reports.py
+run_python scripts/generate_lint_reports.py
 
 git add reports/

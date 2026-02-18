@@ -6,7 +6,7 @@ This repository now generates morphology lint reports locally and commits them u
 
 ### One-time setup
 
-1. Create virtual environment: `python3 -m venv .venv`
+1. Create Python 3.13 virtual environment: `UV_CACHE_DIR=.uv-cache uv venv --python 3.13 .venv`
 2. Configure tracked Git hooks: `./scripts/install_git_hooks.sh`
 
 ### Pre-commit behavior
@@ -14,7 +14,7 @@ This repository now generates morphology lint reports locally and commits them u
 On every commit attempt, the pre-commit hook:
 
 1. Runs `ruff format` and `ruff check --fix` on staged Python files
-2. Runs repo-wide Ruff checks (`ruff check`) and fails commit on any warning/error
+2. Runs `ruff check` on staged Python files and fails commit on any warning/error
 3. Runs the full test suite (`python -m unittest discover -s tests -v`) and fails commit if tests fail
 4. For lint-relevant staged changes (`out/*.tsv`, `linter/**`, report tooling), runs `scripts/generate_lint_reports.py` with local DB access (`sources/dulat_cache.sqlite`, `sources/udb_cache.sqlite`)
 5. Regenerates `reports/*` and stages updated Python/report files automatically
