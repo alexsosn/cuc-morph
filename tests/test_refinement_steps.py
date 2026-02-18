@@ -403,6 +403,89 @@ class SurfaceOptionPropagationFixerTest(unittest.TestCase):
             result = fixer.refine_file(poor)
             self.assertEqual(result.rows_changed, 0)
 
+    def test_requires_aligned_variant_subset_match(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            rich = root / "KTU 1.1.tsv"
+            poor = root / "KTU 1.2.tsv"
+
+            rich.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\taaa\taaa/;bbb/\td1;d2\tn. m.;vb\tone;two\t\n"
+                ),
+                encoding="utf-8",
+            )
+            poor.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "2\taaa\taaa/\td1\tvb\tone\t\n"
+                ),
+                encoding="utf-8",
+            )
+
+            fixer = SurfaceOptionPropagationFixer(corpus_dir=root)
+            result = fixer.refine_file(poor)
+            self.assertEqual(result.rows_changed, 0)
+
+    def test_skips_surface_with_competing_rich_payloads(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            rich1 = root / "KTU 1.1.tsv"
+            rich2 = root / "KTU 1.2.tsv"
+            poor = root / "KTU 1.3.tsv"
+
+            rich1.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tbbb\txxx/;yyy/\tdx;dy\tn. m.;vb\ta;b\t\n"
+                ),
+                encoding="utf-8",
+            )
+            rich2.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "2\tbbb\txxx/;zzz/\tdx;dz\tn. m.;vb\ta;c\t\n"
+                ),
+                encoding="utf-8",
+            )
+            poor.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "3\tbbb\txxx/\tdx\tn. m.\ta\t\n"
+                ),
+                encoding="utf-8",
+            )
+
+            fixer = SurfaceOptionPropagationFixer(corpus_dir=root)
+            result = fixer.refine_file(poor)
+            self.assertEqual(result.rows_changed, 0)
+
+    def test_skips_payload_with_non_matching_reconstruction(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            rich = root / "KTU 1.1.tsv"
+            poor = root / "KTU 1.2.tsv"
+
+            rich.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tbth\tbt(II)/+h;bt(I)/\tbt (II), -h (I);bt (I)\tn. f.;n. f.\thouse;house\t\n"
+                ),
+                encoding="utf-8",
+            )
+            poor.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "2\tbth\tbt(II)/+h\tbt (II), -h (I)\tn. f.\thouse\t\n"
+                ),
+                encoding="utf-8",
+            )
+
+            fixer = SurfaceOptionPropagationFixer(corpus_dir=root)
+            result = fixer.refine_file(poor)
+            self.assertEqual(result.rows_changed, 0)
+
     def test_skips_short_surface_tokens(self) -> None:
         with tempfile.TemporaryDirectory() as tmp_dir:
             root = Path(tmp_dir)

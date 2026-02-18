@@ -2,31 +2,53 @@
 
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Mapping, Tuple
 
+from pipeline.steps.analysis_utils import normalize_surface, reconstruct_surface_from_analysis
 from pipeline.steps.base import RefinementStep, TabletRow, parse_tsv_line
 
-_SEMICOLON_FIELDS = ("analysis", "dulat", "pos", "gloss")
+VariantTuple = Tuple[str, str, str, str]
 
 
 def _split_variants(value: str) -> List[str]:
     return [v.strip() for v in (value or "").split(";") if v.strip()]
 
 
-def _variant_count(value: str) -> int:
-    variants = _split_variants(value)
-    return len(variants) if variants else (1 if (value or "").strip() else 0)
+def _aligned_variants(
+    analysis: str,
+    dulat: str,
+    pos: str,
+    gloss: str,
+) -> Tuple[VariantTuple, ...]:
+    """Return aligned option tuples for columns 3-6, or empty tuple if malformed."""
+    columns = [
+        _split_variants(analysis),
+        _split_variants(dulat),
+        _split_variants(pos),
+        _split_variants(gloss),
+    ]
+    counts = [len(col) for col in columns]
+    if any(count == 0 for count in counts):
+        return ()
+    if len(set(counts)) != 1:
+        return ()
+    return tuple(zip(columns[0], columns[1], columns[2], columns[3]))
 
 
 @dataclass(frozen=True)
 class SurfacePayload:
     """Canonical aligned col3-col6 payload for one surface token."""
 
+    variants: Tuple[VariantTuple, ...]
     analysis: str
     dulat: str
     pos: str
     gloss: str
-    variant_count: int
+    source_rows: int
+
+    @property
+    def variant_count(self) -> int:
+        return len(self.variants)
 
 
 class SurfaceOptionPropagationFixer(RefinementStep):
@@ -62,13 +84,16 @@ class SurfaceOptionPropagationFixer(RefinementStep):
         if payload is None:
             return row
 
-        current_count = _variant_count(row.analysis)
-        if current_count >= payload.variant_count:
+        current_variants = _aligned_variants(row.analysis, row.dulat, row.pos, row.gloss)
+        if not current_variants:
             return row
 
-        row_dulat = set(_split_variants(row.dulat))
-        payload_dulat = set(_split_variants(payload.dulat))
-        if row_dulat and payload_dulat and not (row_dulat & payload_dulat):
+        if len(current_variants) >= payload.variant_count:
+            return row
+
+        # High-confidence requirement: existing row must be an aligned subset of
+        # the canonical payload's aligned option tuples.
+        if not set(current_variants).issubset(set(payload.variants)):
             return row
 
         return TabletRow(
@@ -83,6 +108,7 @@ class SurfaceOptionPropagationFixer(RefinementStep):
 
     def _build_payload_index(self, corpus_dir: Path, file_glob: str) -> Dict[str, SurfacePayload]:
         by_surface: Dict[str, SurfacePayload] = {}
+        by_surface_payload_counts: Dict[str, Dict[Tuple[VariantTuple, ...], int]] = {}
         for path in sorted(corpus_dir.glob(file_glob)):
             for raw in path.read_text(encoding="utf-8").splitlines():
                 if not raw or raw.lstrip().startswith("#"):
@@ -97,22 +123,53 @@ class SurfaceOptionPropagationFixer(RefinementStep):
                 if len(surface) < self._min_surface_len:
                     continue
 
-                counts = [_variant_count(getattr(row, field)) for field in _SEMICOLON_FIELDS]
-                if any(count == 0 for count in counts):
+                variants = _aligned_variants(
+                    row.analysis,
+                    row.dulat,
+                    row.pos,
+                    row.gloss,
+                )
+                if len(variants) <= 1:
                     continue
-                if len(set(counts)) != 1:
-                    continue
-                if counts[0] <= 1:
+                if not self._variants_reconstruct_to_surface(variants, surface):
                     continue
 
-                payload = SurfacePayload(
-                    analysis=row.analysis,
-                    dulat=row.dulat,
-                    pos=row.pos,
-                    gloss=row.gloss,
-                    variant_count=counts[0],
-                )
-                current = by_surface.get(surface)
-                if current is None or payload.variant_count > current.variant_count:
-                    by_surface[surface] = payload
+                counters = by_surface_payload_counts.setdefault(surface, {})
+                counters[variants] = counters.get(variants, 0) + 1
+        for surface, payload_counts in by_surface_payload_counts.items():
+            payload = self._select_canonical_payload(payload_counts)
+            if payload is not None:
+                by_surface[surface] = payload
         return by_surface
+
+    def _select_canonical_payload(
+        self,
+        payload_counts: Mapping[Tuple[VariantTuple, ...], int],
+    ) -> SurfacePayload | None:
+        if not payload_counts:
+            return None
+        max_variants = max(len(variants) for variants in payload_counts)
+        richest = [variants for variants in payload_counts if len(variants) == max_variants]
+        if len(richest) != 1:
+            return None
+        selected = richest[0]
+        return SurfacePayload(
+            variants=selected,
+            analysis=";".join(item[0] for item in selected),
+            dulat=";".join(item[1] for item in selected),
+            pos=";".join(item[2] for item in selected),
+            gloss=";".join(item[3] for item in selected),
+            source_rows=payload_counts[selected],
+        )
+
+    def _variants_reconstruct_to_surface(
+        self,
+        variants: Tuple[VariantTuple, ...],
+        surface: str,
+    ) -> bool:
+        expected = normalize_surface(surface)
+        for analysis, _dulat, _pos, _gloss in variants:
+            reconstructed = normalize_surface(reconstruct_surface_from_analysis(analysis))
+            if reconstructed != expected:
+                return False
+        return True

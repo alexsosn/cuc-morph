@@ -2,6 +2,11 @@
 
 ## 2026-02-18
 
+- Tightened `SurfaceOptionPropagationFixer` safeguards to prevent low-confidence ambiguity spreading:
+  - require aligned tuple-subset matching across `analysis`/`DULAT`/`POS`/`gloss` before expansion,
+  - skip surfaces with competing equally-rich canonical payloads,
+  - require all propagated analysis variants to reconstruct to the exact surface form.
+- Added regression tests for the new safeguards (aligned-subset requirement, competing payload skip, and reconstruction gate).
 - Generalized DULAT matching in the linter: when analysis-derived lexeme lookup fails but the surface form exists in DULAT, the linter now falls back to surface matching and reports a dedicated warning (`Lexeme parse did not match DULAT; matched by surface form`) instead of a hard `No DULAT entry found` error.
 - Added reusable `SurfaceOptionPropagationFixer` pipeline step to propagate richer aligned option sets (`col3`-`col6`) across parallel rows sharing the same surface token when DULAT overlap confirms compatibility.
 - Wired `SurfaceOptionPropagationFixer` into `TabletParsingPipeline` before attestation sorting so propagated options are normalized/sorted consistently downstream.
