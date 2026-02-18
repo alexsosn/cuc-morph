@@ -9,7 +9,7 @@
 147633	ḫrḫb	?	?	?	?	DULAT: NOT FOUND
 147634	m	l(I)	l (I)	prep.	to
 #---------------------------- KTU 1.24 3
-147635	lk	l(I)	l (I)	prep.	to
+147635	lk	l(I)+k	l (I)	prep.	to
 147636	aġzt	aġzt/	ảġzt	n. f.	wedding
 147637	b	b	b	prep.	in
 147638	srr	srr[	/s-r-r/	vb	to set
@@ -38,14 +38,14 @@
 #---------------------------- KTU 1.24 8
 147657	ˤnha	?	?	?	?	DULAT: NOT FOUND
 147658	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly
-147659	ydh	yd(I)/	yd (I)	n. f.	hand
+147659	ydh	yd(I)/+h	yd (I)	n. f.	hand
 147660	tzdn	!t!zd[	/z-d/	vb	to boil
 147661	š	š/	š	n. m.	ram
 #---------------------------- KTU 1.24 9
 147662	pt	?	?	?	?	DULAT: NOT FOUND
 147663	lbšrh	?	?	?	?	DULAT: NOT FOUND
 147664	dm	dm(I);dm(II)/;ˤbd(I)/	dm (I);dm (II);ʕbd (I)	functor;n. m.;n. m.	since;blood;servant
-147665	abh	ab/	ảb	n. m.	father
+147665	abh	ab/+h	ảb	n. m.	father
 147666	yḥ	ḥw(I)[	/ḥ-w/y-y/ (I)	vb	to live
 #---------------------------- KTU 1.24 10
 147667	wyn	?	?	?	?	DULAT: NOT FOUND
@@ -60,7 +60,7 @@
 #---------------------------- KTU 1.24 12
 147675	ˤnh	ˤn(I)/	ʕn (I)	n. f.	eye
 147676	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly
-147677	ydh	yd(I)/	yd (I)	n. f.	hand
+147677	ydh	yd(I)/+h	yd (I)	n. f.	hand
 147678	tzdn	!t!zd[	/z-d/	vb	to boil
 147679	xxxn	?	?	?	?	DULAT: NOT FOUND
 #---------------------------- KTU 1.24 13
@@ -103,7 +103,7 @@
 147710	th	ˤl(I)+h(I);ˤl(I)+h(II);aḫt(I)/+h(I)	ʕl (I),-h (I);ʕl (I),-h (II);ảḫt (I),-h (I)	prep.,pers. pn./morph.;prep.,adv. functor;n. f.,pers. pn./morph.	upon,his /her (hers) / its;upon,to;sister (related by blood),his /her (hers) / its
 147711	w	w	w	conj.	and
 147712	atn	ytn[	/y-t-n/	vb	to give
-147713	mhrh	mhr(I)/;mhr(II)/;mhr(III)/	mhr (I);mhr (II);mhr (III)	n. m.;n. m.;n. m.	warrior (trained;warrior strength;dowry
+147713	mhrh	mhr(I)/;mhr(II)/+h;mhr(III)/+h	mhr (I);mhr (II);mhr (III)	n. m.;n. m.;n. m.	warrior (trained;warrior strength;dowry
 147714	la	la/	lả	n. m.	power
 #---------------------------- KTU 1.24 20
 147715	bh	b	b	prep.	in
@@ -120,7 +120,7 @@
 #---------------------------- KTU 1.24 22
 147725	nim	?	?	?	?	DULAT: NOT FOUND
 147726	atn	ytn[	/y-t-n/	vb	to give
-147727	šdh	šd(I)/	šd (I)	n. m.	open field
+147727	šdh	šd(I)/+h	šd (I)	n. m.	open field
 147728	krmm	kr/m	krm	n. m.	vineyard
 #---------------------------- KTU 1.24 23
 147729	šd	šd(I)/;šd(II)/;šdy[	šd (I);šd (II);/š-d-y/	n. m.;n. m.;vb	open field;a strip;to pour
@@ -142,10 +142,10 @@
 147742	bˤl	bˤl(II)/;bˤl(I)/;bˤl[	bʕl (II);bʕl (I);/b-ʕ-l/	n. m./DN;n. m.;vb	Baʿlu;labourer;to make
 147743	trḫ	!t!rḫ[	/t-r-ḫ/	vb	to marry
 147744	pdry	pdr(I)/+y(I);pdr(I)/+y(II)	pdr (I),-y (I);pdr (I),-y (II)	n. m.,prep.;n. m.,postp. functor	town,my;town,yes
-147745	bth	bt(II)/	bt (II)	n. m.	house
+147745	bth	bt(II)/+h	bt (II)	n. m.	house
 #---------------------------- KTU 1.24 27
 147746	aqrbk	?	?	?	?	DULAT: NOT FOUND
-147747	abh	ab/	ảb	n. m.	father
+147747	abh	ab/+h	ảb	n. m.	father
 147748	bˤl	bˤl(II)/;bˤl(I)/;bˤl[	bʕl (II);bʕl (I);/b-ʕ-l/	n. m./DN;n. m.;vb	Baʿlu;labourer;to make
 #---------------------------- KTU 1.24 28
 147749	yġtr	!y!ġtr[	/ġ-t-r/	vb	to implore
@@ -153,7 +153,7 @@
 147751	t	ˤl(I);k(I);lqḥ[	ʕl (I);k (I);/l-q-ḥ/	prep.;prep.;vb	upon;like;to get hold of
 #---------------------------- KTU 1.24 29
 147752	rḫ	?	?	?	?	DULAT: NOT FOUND
-147753	lk	l(I)	l (I)	prep.	to
+147753	lk	l(I)+k	l (I)	prep.	to
 147754	ybrdmy	?	?	?	?	DULAT: NOT FOUND
 147755	bta	?	?	?	?	DULAT: NOT FOUND
 #---------------------------- KTU 1.24 30
@@ -169,9 +169,9 @@
 147764	wn	w+n(I);w+n(II);w+n(III)	w,-n (I);w,-n (II);w,-n (III)	conj.,morph.;conj.,pers. pn./morph./vb;conj.,pers. pn./morph.	and,Sun;and,me;and,our
 147765	ˤn	ˤn(I)/;ˤn[;ˤn(II)/	ʕn (I);/ʕ-n/;ʕn (II)	n. f.;vb;n. f.	eye;to see;furrow
 #---------------------------- KTU 1.24 32
-147766	ˤmn	ˤm(I)	ʕm (I)	prep.	to
+147766	ˤmn	ˤm(I)+n	ʕm (I)	prep.	to
 147767	nkl	?	?	?	?	DULAT: NOT FOUND
-147768	ḫtny	ḫtn[;ḫtn(I)/	/ḫ-t-n/;ḫtn (I)	vb;n. m.	to become a son-in-law;relationship by marriage
+147768	ḫtny	ḫtn[;ḫtn(I)/+ny	/ḫ-t-n/;ḫtn (I)	vb;n. m.	to become a son-in-law;relationship by marriage
 147769	aḫr	aḫr	ảḫr	adv./prep./conj.	afterwards
 #---------------------------- KTU 1.24 33
 147770	nkl	?	?	?	?	DULAT: NOT FOUND
@@ -186,7 +186,7 @@
 #---------------------------- KTU 1.24 35
 147778	kp	kp/	kp	n. f.	palm (of the hand)
 147779	mznm	mzn/	mzn	n. m.	weight
-147780	iḫh	aḫ(I)/	ảḫ (I)	n. m.	brother (by blood)
+147780	iḫh	aḫ(I)/+h	ảḫ (I)	n. m.	brother (by blood)
 147781	yṯˤr	!y!ṯˤr[	/ṯ-ʕ-r/	vb	to prepare (the table)
 #---------------------------- KTU 1.24 36
 147782	mšrrm	mšrr/	mšrr	n. m.	pointer (of the balance)
@@ -239,7 +239,7 @@
 147820	ḏpid	?	?	?	?	DULAT: NOT FOUND
 147821	hn	hn	hn	deictic functor/adv.	behold!
 147822	b	b	b	prep.	in
-147823	py	p(III)/	p (III)	n. m.	mouth
+147823	py	p(III)/+y	p (III)	n. m.	mouth
 147824	sp	sp/	sp	n. m.	bowl
 #---------------------------- KTU 1.24 46
 147825	rhn	pẓr[+hn(I);ġtr[+hn(I);rks/+hn(I)	/p-ẓ-r/,-hn (I);/ġ-t-r/,-hn (I);rks,-hn (I)	vb,suff. pers. pn.;vb,suff. pers. pn.;n. m.,suff. pers. pn.	to free,their;to implore,their;belt,their
@@ -253,7 +253,7 @@
 147832	y	y	y	prep. functor	oh!
 #---------------------------- KTU 1.24 48
 147833	ṯtqt	?	?	?	?	DULAT: NOT FOUND
-147834	ˤmh	ˤm(I)	ʕm (I)	prep.	to
+147834	ˤmh	ˤm(I)+h	ʕm (I)	prep.	to
 147835	bqˤt	?	?	?	?	DULAT: NOT FOUND
 #---------------------------- KTU 1.24 49
 147836	tqˤt	?	?	?	?	DULAT: NOT FOUND

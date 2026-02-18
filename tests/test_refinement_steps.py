@@ -171,6 +171,18 @@ class SuffixCliticFixerTest(unittest.TestCase):
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "abn/")
 
+    def test_adds_suffix_to_lemma_style_prep(self) -> None:
+        fixer = SuffixCliticFixer(gate=StaticGate(suffix_tokens={"l (I)"}))
+        row = TabletRow("1", "lnh", "l(I)", "l (I)", "prep.", "to", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "l(I)+h")
+
+    def test_adds_suffix_to_homonym_noun_with_slash(self) -> None:
+        fixer = SuffixCliticFixer(gate=StaticGate(suffix_tokens={"šmm (I)"}))
+        row = TabletRow("1", "šmmh", "šmm(I)/", "šmm (I)", "n. m.", "heavens", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "šmm(I)/+h")
+
 
 class WeakVerbFixerTest(unittest.TestCase):
     def setUp(self) -> None:

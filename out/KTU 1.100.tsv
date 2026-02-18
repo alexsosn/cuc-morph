@@ -5,7 +5,7 @@
 151711	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length
 151712	ˤn	ˤn(I)/;ˤn[;ˤn(II)/	ʕn (I);/ʕ-n/;ʕn (II)	n. f.;vb;n. f.	eye;to see;furrow
 151713	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length
-151714	abn	abn/;ab/;!a!bn[	ảbn;ảb;/b-n/	n. f.;n. m.;vb	stone;father;to understand
+151714	abn	abn/;ab/+n;!a!bn[	ảbn;ảb;/b-n/	n. f.;n. m.;vb	stone;father;to understand
 151715	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length
 151716	šmm	šm(I)/m	šmm (I)	n. m.	heavens
 151717	w	w	w	conj.	and
@@ -35,11 +35,11 @@
 151738	nḥš	nḥš/	nḥš	n. m.	serpent
 #---------------------------- KTU 1.100 5
 151739	ˤxqšr	?	?	?	?	DULAT: NOT FOUND
-151740	lnh	l(I)	l (I)	prep.	to
+151740	lnh	l(I)+h	l (I)	prep.	to
 151741	mlḫš	mlḫš/	mlḫš	n. m.	conjuror
 151742	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing
-151743	lnh	l(I)	l (I)	prep.	to
-151744	ydy	yd(I)/;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
+151743	lnh	l(I)+h	l (I)	prep.	to
+151744	ydy	yd(I)/+y;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
 #---------------------------- KTU 1.100 6
 151745	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom
 151746	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold
@@ -73,12 +73,12 @@
 151770	šmrr	šmrr/	šmrr	n. m.	poisoning
 151771	nḥš	nḥš/	nḥš	n. m.	serpent
 151772	ˤqšr	aqšr/	ảqšr	adj. m.	which sloughs its skin
-151773	lnh	l(I)	l (I)	prep.	to
+151773	lnh	l(I)+h	l (I)	prep.	to
 #---------------------------- KTU 1.100 11
 151774	mlḫš	mlḫš/	mlḫš	n. m.	conjuror
 151775	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing
-151776	lnh	l(I)	l (I)	prep.	to
-151777	ydy	yd(I)/;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
+151776	lnh	l(I)+h	l (I)	prep.	to
+151777	ydy	yd(I)/+y;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
 151778	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom
 151779	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold
 151780	yṯq	ṯqy[	/ṯ-q-y/	vb	to elevate
@@ -111,12 +111,12 @@
 #---------------------------- KTU 1.100 16
 151803	nḥš	nḥš/	nḥš	n. m.	serpent
 151804	ˤqšr	aqšr/	ảqšr	adj. m.	which sloughs its skin
-151805	lnh	l(I)	l (I)	prep.	to
+151805	lnh	l(I)+h	l (I)	prep.	to
 151806	mlḫš	mlḫš/	mlḫš	n. m.	conjuror
 151807	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing
-151808	lnh	l(I)	l (I)	prep.	to
+151808	lnh	l(I)+h	l (I)	prep.	to
 #---------------------------- KTU 1.100 17
-151809	ydy	yd(I)/;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
+151809	ydy	yd(I)/+y;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
 151810	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom
 151811	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold
 151812	yṯq	ṯqy[	/ṯ-q-y/	vb	to elevate
@@ -150,13 +150,13 @@
 151836	šmrr	šmrr/	šmrr	n. m.	poisoning
 151837	nḥš	nḥš/	nḥš	n. m.	serpent
 151838	ˤqšr	aqšr/	ảqšr	adj. m.	which sloughs its skin
-151839	lnh	l(I)	l (I)	prep.	to
+151839	lnh	l(I)+h	l (I)	prep.	to
 151840	ml	?	?	?	?	DULAT: NOT FOUND
 #---------------------------- KTU 1.100 22
 151841	ḫš	?	?	?	?	DULAT: NOT FOUND
 151842	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing
-151843	lnh	l(I)	l (I)	prep.	to
-151844	ydy	yd(I)/;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
+151843	lnh	l(I)+h	l (I)	prep.	to
+151844	ydy	yd(I)/+y;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
 151845	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom
 151846	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold
 151847	yṯq	ṯqy[	/ṯ-q-y/	vb	to elevate
@@ -190,11 +190,11 @@
 #---------------------------- KTU 1.100 27
 151871	nḥš	nḥš/	nḥš	n. m.	serpent
 151872	ˤqšr	aqšr/	ảqšr	adj. m.	which sloughs its skin
-151873	lnh	l(I)	l (I)	prep.	to
+151873	lnh	l(I)+h	l (I)	prep.	to
 151874	mlḫš	mlḫš/	mlḫš	n. m.	conjuror
 151875	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing
-151876	lnh	l(I)	l (I)	prep.	to
-151877	ydy	yd(I)/;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
+151876	lnh	l(I)+h	l (I)	prep.	to
+151877	ydy	yd(I)/+y;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
 #---------------------------- KTU 1.100 28
 151878	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom
 151879	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold
@@ -228,10 +228,10 @@
 #---------------------------- KTU 1.100 32
 151904	nḥš	nḥš/	nḥš	n. m.	serpent
 151905	ˤqšr	aqšr/	ảqšr	adj. m.	which sloughs its skin
-151906	lnh	l(I)	l (I)	prep.	to
+151906	lnh	l(I)+h	l (I)	prep.	to
 151907	mlḫšabd	?	?	?	?	DULAT: NOT FOUND
-151908	lnh	l(I)	l (I)	prep.	to
-151909	ydy	yd(I)/;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
+151908	lnh	l(I)+h	l (I)	prep.	to
+151909	ydy	yd(I)/+y;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
 #---------------------------- KTU 1.100 33
 151910	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom
 151911	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold
@@ -268,11 +268,11 @@
 151938	rr	?	?	?	?	DULAT: NOT FOUND
 151939	nḥš	nḥš/	nḥš	n. m.	serpent
 151940	ˤqšr	aqšr/	ảqšr	adj. m.	which sloughs its skin
-151941	lnh	l(I)	l (I)	prep.	to
+151941	lnh	l(I)+h	l (I)	prep.	to
 151942	mlḫšabd	?	?	?	?	DULAT: NOT FOUND
-151943	lnh	l(I)	l (I)	prep.	to
+151943	lnh	l(I)+h	l (I)	prep.	to
 #---------------------------- KTU 1.100 38
-151944	ydy	yd(I)/;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
+151944	ydy	yd(I)/+y;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
 151945	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom
 151946	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold
 151947	yṯq	ṯqy[	/ṯ-q-y/	vb	to elevate
@@ -305,11 +305,11 @@
 #---------------------------- KTU 1.100 42
 151971	nḥš	nḥš/	nḥš	n. m.	serpent
 151972	ˤqšr	aqšr/	ảqšr	adj. m.	which sloughs its skin
-151973	lnh	l(I)	l (I)	prep.	to
+151973	lnh	l(I)+h	l (I)	prep.	to
 151974	mlḫš	mlḫš/	mlḫš	n. m.	conjuror
 151975	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing
-151976	lnh	l(I)	l (I)	prep.	to
-151977	ydy	yd(I)/;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
+151976	lnh	l(I)+h	l (I)	prep.	to
+151977	ydy	yd(I)/+y;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
 #---------------------------- KTU 1.100 43
 151978	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom
 151979	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold
@@ -344,13 +344,13 @@
 152004	šmrr	šmrr/	šmrr	n. m.	poisoning
 152005	nḥš	nḥš/	nḥš	n. m.	serpent
 152006	ˤqšr	aqšr/	ảqšr	adj. m.	which sloughs its skin
-152007	lnh	l(I)	l (I)	prep.	to
+152007	lnh	l(I)+h	l (I)	prep.	to
 152008	mlḫ	?	?	?	?	DULAT: NOT FOUND
 152009	š	š/	š	n. m.	ram
 152010	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing
 #---------------------------- KTU 1.100 48
-152011	lnh	l(I)	l (I)	prep.	to
-152012	ydy	yd(I)/;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
+152011	lnh	l(I)+h	l (I)	prep.	to
+152012	ydy	yd(I)/+y;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
 152013	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom
 152014	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold
 152015	yṯq	ṯqy[	/ṯ-q-y/	vb	to elevate
@@ -377,7 +377,7 @@
 152032	šḥr	šḥr/	šḥr	n. m.	dawn
 152033	w	w	w	conj.	and
 152034	šlm	šlm[;šlm(I)/;šlm(III)/	/š-l-m/;šlm (I);šlm (III)	vb;n. m.;adj. m.	to be well;peace;pure
-152035	šmmh	šmm(I)/	šmm (I)	n. m.	heavens
+152035	šmmh	šmm(I)/+h	šmm (I)	n. m.	heavens
 152036	mnt	mnt(I)/	mnt (I)	n. f.	portion
 152037	nṯk	nṯk(II)/;!n!ṯk[;nṯk(I)/	nṯk (II);/n-ṯ-k/;nṯk (I)	n. m.;vb;n. m.	bite;to bite;biter
 152038	nḥš	nḥš/	nḥš	n. m.	serpent
@@ -385,12 +385,12 @@
 152039	šmrr	šmrr/	šmrr	n. m.	poisoning
 152040	nḥš	nḥš/	nḥš	n. m.	serpent
 152041	ˤqšr	aqšr/	ảqšr	adj. m.	which sloughs its skin
-152042	lnh	l(I)	l (I)	prep.	to
+152042	lnh	l(I)+h	l (I)	prep.	to
 152043	mlḫš	mlḫš/	mlḫš	n. m.	conjuror
 #---------------------------- KTU 1.100 54
 152044	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing
-152045	lnh	l(I)	l (I)	prep.	to
-152046	ydy	yd(I)/;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
+152045	lnh	l(I)+h	l (I)	prep.	to
+152046	ydy	yd(I)/+y;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
 152047	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom
 152048	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold
 152049	yṯq	ṯqy[	/ṯ-q-y/	vb	to elevate
@@ -417,7 +417,7 @@
 #---------------------------- KTU 1.100 58
 152067	ˤm	ˤm(I)	ʕm (I)	prep.	to
 152068	ḥrn	ḥr(I)/+n(I);ḥr(I)/+n(II);ḥr(I)/+n(III)	ḥr (I),-n (I);ḥr (I),-n (II);ḥr (I),-n (III)	n. m.,morph.;n. m.,pers. pn./morph./vb;n. m.,pers. pn./morph.	intestine(s),Sun;intestine(s),me;intestine(s),our
-152069	mṣdh	mṣd(I)/;mṣd(II)/;mṣd(III)/	mṣd (I);mṣd (II);mṣd (III)	n. m.;n. m.;TN	(feast / banquet of) game;large fortified tower;mṣd (III)
+152069	mṣdh	mṣd(I)/+h;mṣd(II)/+h;mṣd(III)/	mṣd (I);mṣd (II);mṣd (III)	n. m.;n. m.;TN	(feast / banquet of) game;large fortified tower;mṣd (III)
 152070	mnt	mnt(I)/	mnt (I)	n. f.	portion
 152071	nṯk	nṯk(II)/;!n!ṯk[;nṯk(I)/	nṯk (II);/n-ṯ-k/;nṯk (I)	n. m.;vb;n. m.	bite;to bite;biter
 152072	nḥš	nḥš/	nḥš	n. m.	serpent
@@ -425,17 +425,17 @@
 152073	šmrr	šmrr/	šmrr	n. m.	poisoning
 152074	nḥš	nḥš/	nḥš	n. m.	serpent
 152075	ˤqšr	aqšr/	ảqšr	adj. m.	which sloughs its skin
-152076	lnh	l(I)	l (I)	prep.	to
+152076	lnh	l(I)+h	l (I)	prep.	to
 152077	mlḫš	mlḫš/	mlḫš	n. m.	conjuror
 #---------------------------- KTU 1.100 60
 152078	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing
-152079	lnh	l(I)	l (I)	prep.	to
-152080	ydy	yd(I)/;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
+152079	lnh	l(I)+h	l (I)	prep.	to
+152080	ydy	yd(I)/+y;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
 152081	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom
 #---------------------------- KTU 1.100 61
 152082	b	b	b	prep.	in
 152083	ḥrn	ḥr(I)/+n(I);ḥr(I)/+n(II);ḥr(I)/+n(III)	ḥr (I),-n (I);ḥr (I),-n (II);ḥr (I),-n (III)	n. m.,morph.;n. m.,pers. pn./morph./vb;n. m.,pers. pn./morph.	intestine(s),Sun;intestine(s),me;intestine(s),our
-152084	pnm	pn/m	pnm	n. m.	face
+152084	pnm	pn/m+nm	pnm	n. m.	face
 152085	trġnw	?	?	?	?	DULAT: NOT FOUND
 152086	w	w	w	conj.	and
 152087	tṯkl	!t!ṯkl[	/ṯ-k-l/	vb	be childless
@@ -447,7 +447,7 @@
 152092	qdm	qdm[	/q-d-m/	vb	to proceed
 #---------------------------- KTU 1.100 63
 152093	idk	idk	ỉdk	narrative adv. functor	then
-152094	pnm	pn/m	pnm	n. m.	face
+152094	pnm	pn/m+nm	pnm	n. m.	face
 152095	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly
 152096	ytn	!y!tn[	/y-t-n/	vb	to give
 152097	tk	tk/	tk	n. m.	centre
@@ -457,7 +457,7 @@
 152100	w	w	w	conj.	and
 152101	aršḫ	?	?	?	?	DULAT: NOT FOUND
 152102	ṯrrt	ṯrrt/	ṯrrt	adj. f.	powerful
-152103	ydy	yd(I)/;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
+152103	ydy	yd(I)/+y;!y!dy(I)[;!y!dy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip
 152104	b	b	b	prep.	in
 152105	ˤṣm	ˤṣ/	ʕṣ	n. m.	tree
 152106	ˤr	ˤr(I)/;ˤr(II)/	ʕr (I);ʕr (II)	n. f.;n. m.	city;donkey
@@ -470,7 +470,7 @@
 152112	ˤrˤrm	ˤrˤr/	ʕrʕr	n. m.	tamarisk
 152113	ynˤrah	?	?	?	?	DULAT: NOT FOUND
 #---------------------------- KTU 1.100 66
-152114	ssnm	ssn(I)/	ssn (I)	n. m.	date-palm branch
+152114	ssnm	ssn(I)/+nm	ssn (I)	n. m.	date-palm branch
 152115	ysynh	!y!nsy(II)[	/n-s-y/ (II)	vb	to remove
 152116	ˤdtm	ˤdt(I)/	ʕdt (I)	n. f.	assembly
 152117	yˤdynh	!y!ˤdy[	/ʕ-d-y/	vb	to make disappear / remove
@@ -481,7 +481,7 @@
 152121	mġy	mġy[	/m-ġ-y/	vb	to come
 152122	ḥrn	ḥr(I)/+n(I);ḥr(I)/+n(II);ḥr(I)/+n(III)	ḥr (I),-n (I);ḥr (I),-n (II);ḥr (I),-n (III)	n. m.,morph.;n. m.,pers. pn./morph./vb;n. m.,pers. pn./morph.	intestine(s),Sun;intestine(s),me;intestine(s),our
 152123	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly
-152124	bth	bt(II)/	bt (II)	n. m.	house
+152124	bth	bt(II)/+h	bt (II)	n. m.	house
 152125	w	w	w	conj.	and
 #---------------------------- KTU 1.100 68
 152126	yštql	?	?	?	?	DULAT: NOT FOUND
@@ -496,14 +496,14 @@
 152134	km	k(I);k(III);k(IV)	k (I);k (III);k (IV)	prep.;Subordinating or completive functor;adv.	like;when;thus
 152135	plg	plg[;plg/	/p-l-g/;plg	vb;n. m.	to be split;stream
 #---------------------------- KTU 1.100 70
-152136	bˤdh	bˤd	bʕd	adv. or prep.	behind
+152136	bˤdh	bˤd+h	bʕd	adv. or prep.	behind
 152137	bhtm	b(II)/t=	bt (II)	n. m.	house
 152138	mnt	mnt(I)/	mnt (I)	n. f.	portion
-152139	bˤdh	bˤd	bʕd	adv. or prep.	behind
+152139	bˤdh	bˤd+h	bʕd	adv. or prep.	behind
 152140	bhtm	b(II)/t=	bt (II)	n. m.	house
 152141	sgrt	sgrt/;sgr[	sgrt;/s-g-r/	n. f.;vb	room;to close
 #---------------------------- KTU 1.100 71
-152142	bˤdh	bˤd	bʕd	adv. or prep.	behind
+152142	bˤdh	bˤd+h	bʕd	adv. or prep.	behind
 152143	ˤdbt	ˤdb[	/ʕ-d-b/	vb	to leave > to put in
 152144	ṯlṯ	ṯlṯ(I)/;ṯlṯ(V)/;ṯlṯ(II)/	ṯlṯ (I);ṯlṯ (V);ṯlṯ (II)	n. num.;n. m.;adj. m. ord. num.	three;copper;third
 152145	ptḥ	ptḥ[;ptḥ/	/p-t-ḥ/;ptḥ	vb;n. m.	to open;entrance
@@ -525,19 +525,19 @@
 152159	tn	ˤl(I)+n(I);ˤl(I)+n(II);ˤl(I)+n(III)	ʕl (I),-n (I);ʕl (I),-n (II);ʕl (I),-n (III)	prep.,morph.;prep.,pers. pn./morph./vb;prep.,pers. pn./morph.	upon,Sun;upon,me;upon,our
 152160	km	k(I);k(III);k(IV)	k (I);k (III);k (IV)	prep.;Subordinating or completive functor;adv.	like;when;thus
 #---------------------------- KTU 1.100 74
-152161	mhry	mhr(III)/	mhr (III)	n. m.	dowry
+152161	mhry	mhr(III)/+y	mhr (III)	n. m.	dowry
 152162	w	w	w	conj.	and
 152163	bn	bn(I)/;bn(II);bn[	bn (I);bn (II);/b-n/	n. m.;prep.;vb	son;between;to understand
 152164	bṯn	bṯn/	bṯn	n. m.	serpent
-152165	itnny	itnn/	ỉtnn	n. m.	present
+152165	itnny	itnn/+ny	ỉtnn	n. m.	present
 #---------------------------- KTU 1.100 75
 152166	ytt	!y!tn[	/y-t-n/	vb	to give
 152167	nḥšm	nḥš/	nḥš	n. m.	serpent
-152168	mhrk	mhr(I)/;mhr(III)/	mhr (I);mhr (III)	n. m.;n. m.	warrior (trained;dowry
+152168	mhrk	mhr(I)/;mhr(III)/+k	mhr (I);mhr (III)	n. m.;n. m.	warrior (trained;dowry
 152169	bn	bn(I)/;bn(II);bn[	bn (I);bn (II);/b-n/	n. m.;prep.;vb	son;between;to understand
 152170	bṯn	bṯn/	bṯn	n. m.	serpent
 #---------------------------- KTU 1.100 76
-152171	itnnk	itnn/	ỉtnn	n. m.	present
+152171	itnnk	itnn/+k	ỉtnn	n. m.	present
 #---------------------------- KTU 1.100 77
 152172	aṯr	aṯr(I);aṯr(III);ʔṯr[	ảṯr (I);ảṯr (III);/ʔ-ṯ-r/	adv. or prep.;interr. adv.;vb	then;where;to go
 152173	ršp	ršp/	ršp	DN	Rašap

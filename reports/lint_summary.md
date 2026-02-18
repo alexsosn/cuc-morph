@@ -1,43 +1,43 @@
 ## Morphology Lint Summary
 
 - Files checked: `139`
-- Total issues: `9763`
+- Total issues: `8602`
 - Fallback-parsed issue lines: `232`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 6592 |
-| WARNING | 1748 |
+| ERROR | 5987 |
+| WARNING | 1192 |
 | INFO | 1197 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 4328 |
+| ERROR | Analysis does not reconstruct to surface | 3807 |
 | INFO | Surface not found in UDB concordance | 1197 |
-| WARNING | Suffix form without '+' | 1138 |
 | ERROR | No DULAT entry found for lexeme/surface | 784 |
+| WARNING | Suffix form without '+' | 582 |
 | WARNING | Plural form missing split ending | 496 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 280 |
 | ERROR | Missing DULAT entry token(s) in column 4 | 175 |
 | ERROR | DULAT comment does not match candidates | 150 |
-| ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 145 |
 | ERROR | Non-G stem in DULAT requires stem marker | 142 |
 | ERROR | Unknown DULAT token in column 4 | 112 |
 | ERROR | Noun/adjective lacks '/' ending | 72 |
 | ERROR | Each reconstructed letter must be prefixed by '(' | 64 |
 | ERROR | POS token not allowed for declared DULAT entry | 54 |
+| ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 45 |
 | ERROR | ydy For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y' | 38 |
 | WARNING | TODO/uncertain marker in comment | 37 |
 | ERROR | yṯb For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y' | 33 |
 | ERROR | yṣq For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y' | 30 |
 | WARNING | Feminine plural noun in DULAT should use '/t=' | 30 |
+| ERROR | No DULAT entry found for clitic part | 29 |
 | ERROR | Multiple DULAT candidates for lexeme | 23 |
 | ERROR | Deverbal form matches both verb and noun entries in DULAT | 13 |
-| ERROR | No DULAT entry found for clitic part | 13 |
 | ERROR | ytn For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y' | 13 |
 | WARNING | Feminine adjective/participle in DULAT should mark '-t' explicitly | 13 |
 | ERROR | POS tokens must map to existing DULAT tokens in column 4 | 8 |

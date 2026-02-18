@@ -15,7 +15,7 @@ from pipeline.steps.dulat_gate import DulatMorphGate
 _SUFFIX_SEGMENTS = ("hm", "hn", "km", "kn", "ny", "nm", "nn", "h", "k", "n", "y")
 
 # POS patterns that commonly carry suffixes
-_SUFFIXABLE_POS_PREFIXES = {"n.", "adj.", "prep.", "adv."}
+_SUFFIXABLE_POS_PREFIXES = {"n.", "adj.", "prep.", "adv.", "vb"}
 
 
 class SuffixCliticFixer(RefinementStep):
@@ -126,7 +126,10 @@ class SuffixCliticFixer(RefinementStep):
             hom = m.group(2) or ""
             return base + hom + "/+" + suffix
 
-        return analysis_variant
+        # Surface-form-specific fallback: if DULAT confirms this surface is a
+        # suffixal form but the analysis is lemma-style (e.g., l(I), šmm(I)/),
+        # append +suffix conservatively.
+        return analysis_variant + "+" + suffix
 
     def _is_suffix_dulat_token(self, token: str, surface: str) -> bool:
         if not token or token == "?":

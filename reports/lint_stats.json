@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-18T10:55:25.962929+00:00",
+  "generated_at_utc": "2026-02-18T11:04:15.141926+00:00",
   "files_checked": 139,
-  "total_issues": 9763,
+  "total_issues": 8602,
   "fallback_parsed": 232,
   "by_severity": {
-    "ERROR": 6592,
-    "WARNING": 1748,
+    "ERROR": 5987,
+    "WARNING": 1192,
     "INFO": 1197
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 4328
+      "count": 3807
     },
     {
       "severity": "INFO",
@@ -20,14 +20,14 @@
       "count": 1197
     },
     {
-      "severity": "WARNING",
-      "problem_type": "Suffix form without '+'",
-      "count": 1138
-    },
-    {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for lexeme/surface",
       "count": 784
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "Suffix form without '+'",
+      "count": 582
     },
     {
       "severity": "WARNING",
@@ -48,11 +48,6 @@
       "severity": "ERROR",
       "problem_type": "DULAT comment does not match candidates",
       "count": 150
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Suffixed pronominal form in DULAT should use '+' in analysis",
-      "count": 145
     },
     {
       "severity": "ERROR",
@@ -81,6 +76,11 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "Suffixed pronominal form in DULAT should use '+' in analysis",
+      "count": 45
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "ydy For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
       "count": 38
     },
@@ -106,17 +106,17 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "No DULAT entry found for clitic part",
+      "count": 29
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "Multiple DULAT candidates for lexeme",
       "count": 23
     },
     {
       "severity": "ERROR",
       "problem_type": "Deverbal form matches both verb and noun entries in DULAT",
-      "count": 13
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "No DULAT entry found for clitic part",
       "count": 13
     },
     {

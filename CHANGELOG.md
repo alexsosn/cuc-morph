@@ -23,3 +23,5 @@
 - Added DULAT-backed token/form gate (`pipeline/steps/dulat_gate.py`) and wired `PluralSplitFixer`/`SuffixCliticFixer` to require matching DULAT evidence before rewriting analyses.
 - Added refinement safety guard in `pipeline/tablet_parsing.py` to abort when any step changes too high a share of rows unless explicitly overridden.
 - Extended pipeline CLI with safeguard controls (`--max-step-change-ratio`, `--allow-large-step-changes`) and reran full `out/KTU 1.*.tsv` + reports with the guarded step chain.
+- Refined `SuffixCliticFixer` fallback for lemma-style analyses (e.g., `l(I)`, `šmm(I)/`) when exact DULAT surface forms are suffixal, and added regression tests for these patterns.
+- Applied the improved suffix step across non-curated `out/KTU 1.*.tsv` files and regenerated reports (substantial reduction in suffix-related warnings/errors).
