@@ -50,3 +50,6 @@
 - Updated row serialization in pipeline steps to always emit 7 columns (`id`, `surface`, `analysis`, `DULAT`, `POS`, `gloss`, `comment`).
 - Added strict linter check for `out/*.tsv` rows that are not exactly 7 columns and fixed parsing so `#` inside column-7 comments is preserved.
 - Applied schema formatting across all `out/KTU 1.*.tsv` files; separator rows now use `# KTU ...` and data rows are normalized to 7 columns.
+- Extended `TsvSchemaFormatter` to enforce a canonical TSV header row (`id`, `surface form`, `morphological parsing`, `DULAT`, `POS`, `gloss`, `comments`) and escape double quotes in data cells for safer GitHub TSV rendering.
+- Added linter support for headered `out/*.tsv`: require a valid first header row and skip it from numeric-ID/content checks.
+- Re-applied schema formatting across all `out/*.tsv` files to inject headers and quote-escape existing comments/glosses.

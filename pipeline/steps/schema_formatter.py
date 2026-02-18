@@ -1,10 +1,13 @@
 """Format TSV schema for labeled output files.
 
 Responsibilities:
+- enforce canonical header row for 7-column schema
 - normalize separator lines to '# KTU ...'
 - enforce exactly 7 tab-separated columns for data rows
+- escape double quotes in data columns for GitHub TSV rendering
 """
 
+import re
 from pathlib import Path
 
 from pipeline.steps.base import (
@@ -13,6 +16,18 @@ from pipeline.steps.base import (
     is_separator_line,
     normalize_separator_line,
 )
+
+HEADER_COLUMNS = [
+    "id",
+    "surface form",
+    "morphological parsing",
+    "DULAT",
+    "POS",
+    "gloss",
+    "comments",
+]
+HEADER_ROW = "\t".join(HEADER_COLUMNS)
+HEADER_COLUMNS_LOWER = [value.lower() for value in HEADER_COLUMNS]
 
 
 class TsvSchemaFormatter(RefinementStep):
@@ -30,8 +45,15 @@ class TsvSchemaFormatter(RefinementStep):
         out_lines: list[str] = []
         rows_processed = 0
         rows_changed = 0
+        header_found = False
 
         for raw in lines:
+            if self._is_header_row(raw):
+                header_found = True
+                if raw != HEADER_ROW:
+                    rows_changed += 1
+                continue
+
             if not raw.strip():
                 out_lines.append(raw)
                 continue
@@ -55,15 +77,25 @@ class TsvSchemaFormatter(RefinementStep):
                 rows_changed += 1
             out_lines.append(normalized)
 
+        if not header_found:
+            rows_changed += 1
+        out_lines = [HEADER_ROW] + out_lines
+
         path.write_text("\n".join(out_lines) + "\n", encoding="utf-8")
         return StepResult(file=path.name, rows_processed=rows_processed, rows_changed=rows_changed)
+
+    def _is_header_row(self, raw: str) -> bool:
+        parts = [part.strip().lower() for part in raw.split("\t")]
+        return parts == HEADER_COLUMNS_LOWER
 
     def _normalize_columns(self, parts: list[str]) -> str:
         if len(parts) < 7:
             fixed = parts + [""] * (7 - len(parts))
-            return "\t".join(fixed)
-        if len(parts) > 7:
+        elif len(parts) > 7:
             merged_comment = " ".join(p.strip() for p in parts[6:] if p.strip())
             fixed = parts[:6] + [merged_comment]
-            return "\t".join(fixed)
-        return "\t".join(parts)
+        else:
+            fixed = parts
+
+        escaped = [re.sub(r'(?<!\\)"', r'\\"', part) for part in fixed]
+        return "\t".join(escaped)

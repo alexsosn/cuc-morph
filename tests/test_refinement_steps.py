@@ -424,6 +424,7 @@ class OfferingListLPrepFixerTest(unittest.TestCase):
 class TsvSchemaFormatterTest(unittest.TestCase):
     def setUp(self) -> None:
         self.fixer = TsvSchemaFormatter()
+        self.header = "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments"
 
     def test_normalizes_separator_and_expands_to_7_columns(self) -> None:
         content = textwrap.dedent(
@@ -436,10 +437,11 @@ class TsvSchemaFormatterTest(unittest.TestCase):
             f = Path(tmp_dir) / "test.tsv"
             f.write_text(content, encoding="utf-8")
             result = self.fixer.refine_file(f)
-            self.assertEqual(result.rows_changed, 2)
+            self.assertEqual(result.rows_changed, 3)
             lines = f.read_text(encoding="utf-8").splitlines()
-            self.assertEqual(lines[0], "# KTU 1.5 I:4")
-            self.assertEqual(lines[1], "100\tabc\tabc/\tabc\tn. m.\tthing\t")
+            self.assertEqual(lines[0], self.header)
+            self.assertEqual(lines[1], "# KTU 1.5 I:4")
+            self.assertEqual(lines[2], "100\tabc\tabc/\tabc\tn. m.\tthing\t")
 
     def test_merges_extra_columns_into_comment(self) -> None:
         content = textwrap.dedent(
@@ -452,9 +454,41 @@ class TsvSchemaFormatterTest(unittest.TestCase):
             f = Path(tmp_dir) / "test.tsv"
             f.write_text(content, encoding="utf-8")
             result = self.fixer.refine_file(f)
-            self.assertEqual(result.rows_changed, 1)
+            self.assertEqual(result.rows_changed, 2)
             lines = f.read_text(encoding="utf-8").splitlines()
-            self.assertEqual(lines[1], "101\tabc\tabc/\tabc\tn. m.\tthing\tc1 c2")
+            self.assertEqual(lines[0], self.header)
+            self.assertEqual(lines[2], "101\tabc\tabc/\tabc\tn. m.\tthing\tc1 c2")
+
+    def test_escapes_quotes_in_data_columns(self) -> None:
+        content = textwrap.dedent(
+            """\
+            # KTU 1.5 I:4
+            102\tabc\tabc/\tabc\tn. m.\tthing\tUNP: "quoted"
+            """
+        )
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            f = Path(tmp_dir) / "test.tsv"
+            f.write_text(content, encoding="utf-8")
+            result = self.fixer.refine_file(f)
+            self.assertEqual(result.rows_changed, 2)
+            lines = f.read_text(encoding="utf-8").splitlines()
+            self.assertEqual(lines[2], '102\tabc\tabc/\tabc\tn. m.\tthing\tUNP: \\"quoted\\"')
+
+    def test_preserves_existing_header_without_change(self) -> None:
+        content = textwrap.dedent(
+            """\
+            id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments
+            # KTU 1.5 I:4
+            103\tabc\tabc/\tabc\tn. m.\tthing\t
+            """
+        )
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            f = Path(tmp_dir) / "test.tsv"
+            f.write_text(content, encoding="utf-8")
+            result = self.fixer.refine_file(f)
+            self.assertEqual(result.rows_changed, 0)
+            lines = f.read_text(encoding="utf-8").splitlines()
+            self.assertEqual(lines[0], self.header)
 
 
 class RefineFileIntegrationTest(unittest.TestCase):

@@ -164,6 +164,16 @@ _OFFERING_SURFACES = {
     normalize_surface("ynt"),
 }
 
+OUT_TSV_HEADER_COLUMNS = [
+    "id",
+    "surface form",
+    "morphological parsing",
+    "dulat",
+    "pos",
+    "gloss",
+    "comments",
+]
+
 
 PL_TANT_RE = re.compile(
     r"(?:\bpl\.?\s*tant\b|\bplur(?:ale)?\.?\s*tant(?:um|u)?\b)\.?\??",
@@ -896,6 +906,13 @@ def is_cuc_separator_line(raw: str) -> bool:
     return raw.lstrip().startswith("#")
 
 
+def is_out_tsv_header_row(parts: List[str]) -> bool:
+    if len(parts) != 7:
+        return False
+    lowered = [part.strip().lower() for part in parts]
+    return lowered == OUT_TSV_HEADER_COLUMNS
+
+
 def is_cuc_placeholder_row(parts: List[str]) -> bool:
     """
     Raw cuc_tablets_tsv token rows are typically:
@@ -1029,6 +1046,7 @@ def lint_file(
     issues: List[Issue] = []
 
     lines = path.read_text(encoding="utf-8").splitlines()
+    is_out_tsv_file = path.parent.name == "out"
 
     # Baseline map for CUC comparison
     baseline_map = {}
@@ -1040,16 +1058,40 @@ def lint_file(
             if len(parts) >= 2:
                 baseline_map[parts[0]] = parts[1]
 
+    if is_out_tsv_file:
+        first_non_empty_line = None
+        for line_no, raw in enumerate(lines, 1):
+            if raw.strip():
+                first_non_empty_line = (line_no, raw)
+                break
+        if first_non_empty_line is None or not is_out_tsv_header_row(
+            first_non_empty_line[1].split("\t")
+        ):
+            line_no = first_non_empty_line[0] if first_non_empty_line else 1
+            issues.append(
+                Issue(
+                    "error",
+                    str(path),
+                    line_no,
+                    "",
+                    "",
+                    "",
+                    "Missing or invalid TSV header row in out/*.tsv",
+                )
+            )
+
     data_parts_by_line: Dict[int, List[str]] = {}
     data_line_numbers: List[int] = []
     for line_no, raw in enumerate(lines, 1):
         if not raw.strip() or is_cuc_separator_line(raw):
             continue
         core = raw
-        if "#" in raw:
+        if (not is_out_tsv_file) and "#" in raw:
             core, _comment = raw.split("#", 1)
             core = core.rstrip()
         parts = core.split("\t")
+        if is_out_tsv_file and is_out_tsv_header_row(parts):
+            continue
         if len(parts) >= 3:
             data_parts_by_line[line_no] = parts
             data_line_numbers.append(line_no)
@@ -1088,8 +1130,6 @@ def lint_file(
         key = (normalize_surface(lemma), hom or "")
         entry_gender_index.setdefault(key, set()).add(g)
 
-    is_out_tsv_file = path.parent.name == "out"
-
     for i, raw in enumerate(lines, 1):
         if not raw.strip():
             continue
@@ -1102,6 +1142,8 @@ def lint_file(
             core = core.rstrip()
             comment = comment.strip()
         parts = core.split("\t")
+        if is_out_tsv_file and is_out_tsv_header_row(parts):
+            continue
 
         if is_out_tsv_file and len(parts) != 7:
             issues.append(
