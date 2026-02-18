@@ -1,0 +1,237 @@
+name: Morphology Lint
+
+on:
+  push:
+    paths:
+      - 'out/*.tsv'
+      - 'linter/**'
+      - 'sources/*.sqlite'
+      - '.github/workflows/morphology-lint.yml'
+  pull_request:
+    paths:
+      - 'out/*.tsv'
+      - 'linter/**'
+      - 'sources/*.sqlite'
+      - '.github/workflows/morphology-lint.yml'
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run morphology linter and build statistics
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python3 - <<'PY'
+          from __future__ import annotations
+
+          import os
+          import re
+          import subprocess
+          from collections import Counter
+          from pathlib import Path
+
+          out_dir = Path("out")
+          files = sorted(out_dir.glob("*.tsv"))
+          if not files:
+              raise SystemExit("No TSV files found under out/.")
+
+          dulat_db = Path("sources/dulat_cache.sqlite")
+          udb_db = Path("sources/udb_cache.sqlite")
+          if not dulat_db.exists():
+              raise SystemExit(f"Missing DULAT sqlite: {dulat_db}")
+          if not udb_db.exists():
+              raise SystemExit(f"Missing UDB sqlite: {udb_db}")
+
+          cmd = [
+              "python3",
+              "linter/lint.py",
+              "--dulat",
+              str(dulat_db),
+              "--udb",
+              str(udb_db),
+              *[str(f) for f in files],
+          ]
+
+          result = subprocess.run(cmd, capture_output=True, text=True, check=False)
+
+          lint_output = result.stdout
+          lint_stderr = result.stderr
+
+          Path("lint_report.txt").write_text(lint_output, encoding="utf-8")
+          Path("lint_stderr.txt").write_text(lint_stderr, encoding="utf-8")
+
+          # Parse issue lines: "ERROR <file>:<line> <id> <surface> <message>"
+          # `<file>` can contain spaces (e.g. "out/KTU 1.4.tsv"), and `<surface>`
+          # can occasionally contain spaces too, so message extraction uses known
+          # lint-message prefixes rather than fixed token offsets.
+          line_re = re.compile(r"^(ERROR|WARNING|INFO)\s+(.+?):(\d+)\s+(\S+)\s+(.*)$")
+          total_re = re.compile(r"^Total issues:\s+(\d+)\s*$")
+
+          by_level = Counter()
+          by_type = Counter()
+          fallback_parsed = 0
+
+          message_prefixes = sorted(
+              [
+                  "No DULAT entry found for lexeme/surface",
+                  "No DULAT entry found for clitic part:",
+                  "Missing DULAT entry token(s) in column 4",
+                  "Column 4 count must match analysis variant count",
+                  "Column 5 count must match analysis variant count",
+                  "Column 6 count should match analysis variant count",
+                  "Morphology placeholder '?' should use unresolved DULAT placeholder '?' in column 4",
+                  "Unresolved morphology placeholder '?' should use '?' or empty POS",
+                  "Unresolved morphology placeholder '?' should use '?' or empty gloss",
+                  "Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)",
+                  "Unresolved DULAT placeholder '?' should use '?' or empty POS",
+                  "Unresolved DULAT placeholder '?' should use '?' or empty gloss",
+                  "POS tokens must map to existing DULAT tokens in column 4",
+                  "Gloss tokens must map to existing DULAT tokens in column 4",
+                  "Empty DULAT token in column 4",
+                  "Unknown DULAT token in column 4:",
+                  "DULAT comment does not match candidates",
+                  "POS ambiguous in DULAT:",
+                  "POS token",
+                  "Disallowed character in columns 2-3:",
+                  "Analysis does not reconstruct to surface",
+                  "Each reconstructed letter must be prefixed by '('",
+                  "ʔ must be preceded by '(' in column 3",
+                  "Noun/adjective lacks '/' ending",
+                  "Verb lacks '[' ending",
+                  "Deverbal form matches both verb and noun entries in DULAT",
+                  "Deverbal form marked with '[' but only noun entry found in DULAT",
+                  "Non-G stem in DULAT requires stem marker",
+                  "Š stem marker present but DULAT lacks Š/Št/Špass",
+                  "Xt stem marker present but DULAT lacks *t stem",
+                  "D stem marker present but DULAT lacks D/Dt",
+                  "Suffixed pronominal form in DULAT should use '+' in analysis",
+                  "Suffix form without '+'",
+                  "Plural form missing split ending",
+                  "Feminine plural noun in DULAT should use '/t='",
+                  "Feminine plural noun in DULAT should be tagged with '/t='",
+                  "Feminine adjective/participle in DULAT should mark '-t' explicitly",
+                  "Feminine plural adjective/participle in DULAT should use '/t='",
+                  "Plurale tantum noun ending in '-t' should mark plural with '/t='",
+                  "Plurale tantum noun ending in '-m' should mark plural with '/m'",
+                  "Multiple DULAT candidates for lexeme:",
+                  "Multiple DULAT candidates for surface:",
+                  "Surface not found in UDB concordance",
+                  "Surface ",
+                  "Repeated ",
+                  "TODO/uncertain marker in comment:",
+              ],
+              key=len,
+              reverse=True,
+          )
+
+          def extract_message(rest: str) -> tuple[str, bool]:
+              for prefix in message_prefixes:
+                  idx = rest.find(prefix)
+                  if idx != -1:
+                      return rest[idx:].strip(), False
+              return rest.strip(), True
+
+          def normalize_message(msg: str) -> str:
+              if msg.startswith("POS token "):
+                  return "POS token not allowed for declared DULAT entry"
+              if msg.startswith("POS ambiguous in DULAT:"):
+                  return "POS ambiguous in DULAT"
+              if msg.startswith("Unknown DULAT token in column 4:"):
+                  return "Unknown DULAT token in column 4"
+              if msg.startswith("No DULAT entry found for clitic part:"):
+                  return "No DULAT entry found for clitic part"
+              if msg.startswith("Multiple DULAT candidates for lexeme:"):
+                  return "Multiple DULAT candidates for lexeme"
+              if msg.startswith("Multiple DULAT candidates for surface:"):
+                  return "Multiple DULAT candidates for surface"
+              if msg.startswith("Surface ") and " parsed inconsistently:" in msg:
+                  return "Surface parsed inconsistently across IDs"
+              if msg.startswith("Repeated ") and "has inconsistent col3-col6 payload across parallels:" in msg:
+                  return "Repeated sequence has inconsistent col3-col6 payload across parallels"
+              if msg.startswith("TODO/uncertain marker in comment:"):
+                  return "TODO/uncertain marker in comment"
+              if msg.startswith("Analysis does not reconstruct to surface"):
+                  return "Analysis does not reconstruct to surface"
+              return msg
+
+          total_issues = None
+          for raw in lint_output.splitlines():
+              m = line_re.match(raw)
+              if m:
+                  level = m.group(1)
+                  rest = m.group(5)
+                  msg, used_fallback = extract_message(rest)
+                  if used_fallback:
+                      fallback_parsed += 1
+                  msg = normalize_message(msg)
+                  by_level[level] += 1
+                  by_type[(level, msg)] += 1
+                  continue
+              t = total_re.match(raw)
+              if t:
+                  total_issues = int(t.group(1))
+
+          if total_issues is None:
+              total_issues = sum(by_level.values())
+
+          # Markdown summary
+          summary_lines = []
+          summary_lines.append("## Morphology Lint Summary")
+          summary_lines.append("")
+          summary_lines.append(f"- Files checked: `{len(files)}`")
+          summary_lines.append(f"- Total issues: `{total_issues}`")
+          summary_lines.append(f"- Fallback-parsed issue lines: `{fallback_parsed}`")
+          summary_lines.append("")
+
+          summary_lines.append("### By Severity")
+          summary_lines.append("")
+          summary_lines.append("| Severity | Count |")
+          summary_lines.append("|---|---:|")
+          for level in ("ERROR", "WARNING", "INFO"):
+              summary_lines.append(f"| {level} | {by_level.get(level, 0)} |")
+          summary_lines.append("")
+
+          summary_lines.append("### By Problem Type")
+          summary_lines.append("")
+          summary_lines.append("| Severity | Problem Type | Count |")
+          summary_lines.append("|---|---|---:|")
+
+          for (level, msg), count in sorted(by_type.items(), key=lambda x: (-x[1], x[0][0], x[0][1])):
+              safe_msg = msg.replace("|", "\\|")
+              summary_lines.append(f"| {level} | {safe_msg} | {count} |")
+
+          summary = "\n".join(summary_lines) + "\n"
+          Path("lint_summary.md").write_text(summary, encoding="utf-8")
+
+          step_summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+          if step_summary_path:
+              with open(step_summary_path, "a", encoding="utf-8") as fh:
+                  fh.write(summary)
+
+          print(summary)
+
+          # Fail only if linter process itself failed unexpectedly.
+          if result.returncode != 0:
+              raise SystemExit(result.returncode)
+          PY
+
+      - name: Upload lint artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: morphology-lint
+          path: |
+            lint_report.txt
+            lint_stderr.txt
+            lint_summary.md
