@@ -187,6 +187,20 @@ class PluralSplitFixerTest(unittest.TestCase):
         result = fixer.refine_row(row)
         self.assertEqual(result.analysis, "dqt(I)/")
 
+    def test_repairs_truncated_lemma_before_split_m(self) -> None:
+        fixer = PluralSplitFixer(gate=StaticGate(plural_tokens={"šlm (II)"}))
+        row = TabletRow(
+            "1",
+            "šlmm",
+            "šl(II)/m",
+            "šlm (II)",
+            "n. m.",
+            "communion victim / sacrifice",
+            "",
+        )
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "šlm(II)/m")
+
 
 class SuffixCliticFixerTest(unittest.TestCase):
     def setUp(self) -> None:

@@ -11,6 +11,7 @@ from linter.lint import (
     row_has_mixed_baal_dn_labourer_reading,
     variant_has_baad_plus_n,
     variant_has_lexeme_terminal_single_suffix_split,
+    verb_root_lookup_keys,
 )
 
 
@@ -29,6 +30,11 @@ class LinterWarningPredicateTest(unittest.TestCase):
 
     def test_suffix_not_flagged_without_suffix_shape(self) -> None:
         self.assertFalse(analysis_has_missing_suffix_plus("ˤl(I)", "ˤl"))
+
+    def test_verb_root_lookup_keys_include_non_slash_variant(self) -> None:
+        keys = verb_root_lookup_keys("dk")
+        self.assertIn("/d-k/", keys)
+        self.assertIn("d-k/", keys)
 
     def test_enclitic_plus_is_invalid(self) -> None:
         self.assertTrue(analysis_has_invalid_enclitic_plus("bˤd~+n"))

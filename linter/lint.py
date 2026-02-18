@@ -328,6 +328,23 @@ def detect_suffix_segment(surface: str) -> Optional[str]:
     return None
 
 
+def verb_root_lookup_keys(lexeme: str) -> List[str]:
+    """Return normalized root spellings used for verb lemma-map lookups."""
+    letters = (lexeme or "").strip()
+    if not letters:
+        return []
+    root = "-".join(list(letters))
+    keys = [f"/{root}/", f"{root}/", f"/{root}", root]
+    out: List[str] = []
+    seen = set()
+    for key in keys:
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(key)
+    return out
+
+
 def analysis_has_missing_suffix_plus(analysis: str, surface: str) -> bool:
     """True if analysis/surface pair strongly indicates missing '+' suffix split."""
     if "+" in (analysis or ""):
@@ -2068,8 +2085,8 @@ def lint_file(
                 lex_key = normalize_surface(lexeme)
                 base_candidates.extend(lemma_map.get(lex_key, []))
                 if is_verb_global:
-                    root = "/" + "-".join(list(lexeme)) + "/"
-                    root_candidates.extend(lemma_map.get(normalize_surface(root), []))
+                    for root_key in verb_root_lookup_keys(lexeme):
+                        root_candidates.extend(lemma_map.get(normalize_surface(root_key), []))
                 verb_candidates_for_stem = [
                     c for c in (base_candidates + root_candidates) if "vb" in c.pos.lower()
                 ]

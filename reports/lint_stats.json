@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-02-18T19:23:01.343941+00:00",
+  "generated_at_utc": "2026-02-18T19:51:28.050682+00:00",
   "files_checked": 139,
-  "total_issues": 6574,
+  "total_issues": 6494,
   "fallback_parsed": 0,
   "by_severity": {
-    "ERROR": 5055,
+    "ERROR": 4975,
     "WARNING": 153,
     "INFO": 1197
   },
@@ -12,7 +12,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3330
+      "count": 3290
     },
     {
       "severity": "INFO",
@@ -22,7 +22,7 @@
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 632
+      "count": 555
     },
     {
       "severity": "ERROR",
@@ -36,13 +36,13 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "Unknown DULAT token in column 4",
-      "count": 114
+      "problem_type": "Non-G stem in DULAT requires stem marker",
+      "count": 134
     },
     {
       "severity": "ERROR",
-      "problem_type": "Non-G stem in DULAT requires stem marker",
-      "count": 97
+      "problem_type": "Unknown DULAT token in column 4",
+      "count": 114
     },
     {
       "severity": "ERROR",

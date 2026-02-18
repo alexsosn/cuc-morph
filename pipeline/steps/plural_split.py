@@ -73,6 +73,14 @@ class PluralSplitFixer(RefinementStep):
         if not self._is_plural_dulat_token(dulat_tok, surface):
             return var
 
+        repaired = self._repair_truncated_lemma_before_split(
+            var=var,
+            dulat_tok=dulat_tok,
+            surface=surface,
+        )
+        if repaired != var:
+            return repaired
+
         # Already has explicit split (contains /m or /t=)?
         if var.endswith(("/m", "/t", "/m=", "/t=")):
             return var
@@ -125,6 +133,52 @@ class PluralSplitFixer(RefinementStep):
         if self._gate is None:
             return False
         return self._gate.is_plural_token(token, surface=surface)
+
+    def _repair_truncated_lemma_before_split(
+        self,
+        var: str,
+        dulat_tok: str,
+        surface: str,
+    ) -> str:
+        """Repair malformed split variants like šl(II)/m -> šlm(II)/m.
+
+        A previous split pass can accidentally drop a lemma-final consonant
+        before the homonym marker. This method restores the consonant when:
+        - variant has an explicit split ending (/m or /t=),
+        - DULAT lemma ends with that same consonant, and
+        - current reconstruction is exactly one letter short of the surface.
+        """
+        split_idx = var.rfind("/")
+        if split_idx <= 0:
+            return var
+
+        split_suffix = var[split_idx + 1 :]
+        if split_suffix not in {"m", "t", "t="}:
+            return var
+        split_letter = "m" if split_suffix == "m" else "t"
+
+        prefix = var[:split_idx]
+        hom_match = re.search(r"\([IVX]+\)$", prefix)
+        if not hom_match:
+            return var
+        stem = prefix[: hom_match.start()]
+        hom = hom_match.group(0)
+        if not stem:
+            return var
+
+        lemma_letters = _declared_lemma_letters(dulat_tok)
+        if not lemma_letters.endswith(split_letter):
+            return var
+
+        surface_norm = normalize_surface(surface)
+        recon_norm = normalize_surface(reconstruct_surface_from_analysis(var))
+        if not surface_norm or recon_norm != surface_norm[:-1]:
+            return var
+
+        if normalize_surface(stem).endswith(split_letter):
+            return var
+
+        return f"{stem}{split_letter}{hom}/{split_suffix}"
 
 
 def _declared_lemma_letters(dulat_token: str) -> str:
