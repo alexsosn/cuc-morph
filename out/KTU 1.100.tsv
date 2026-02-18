@@ -2,11 +2,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.100 1						
 151708	um	um/	ủm	n. f.	mother	
 151709	pḥl	pḥl/	pḥl	n. m.	ass	
-151710	pḥlt	pḥlt/;pḥl/	pḥlt;pḥl	n. f.;n. m.	mare;ass	
+151710	pḥlt	pḥl/;pḥlt/	pḥl;pḥlt	n. m.;n. f.	ass;mare	
 151711	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length	
 151712	ˤn	ˤn(I)/;ˤn[;ˤn(II)/	ʕn (I);/ʕ-n/;ʕn (II)	n. f.;vb;n. f.	eye;to see;furrow	
 151713	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length	
-151714	abn	abn/;ab/+n;!a!bn[	ảbn;ảb;/b-n/	n. f.;n. m.;vb	stone;father;to understand	
+151714	abn	ab/+n;abn/;!a!bn[	ảb;ảbn;/b-n/	n. m.;n. f.;vb	father;stone;to understand	
 151715	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length	
 151716	šmm	šm(I)/m	šmm (I)	n. m.	heavens	
 151717	w	w	w	conj.	and	
@@ -30,7 +30,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151733	thmtm	thmt/	thmt	n. f.	Primordial Ocean	
 # KTU 1.100 4						
 151734	mnt	mnt(I)/	mnt (I)	n. f.	portion	
-151735	nṯk	nṯk(II)/;!n!ṯk[;nṯk(I)/	nṯk (II);/n-ṯ-k/;nṯk (I)	n. m.;vb;n. m.	bite;to bite;biter	
+151735	nṯk	nṯk(II)/;nṯk(I)/;!n!ṯk[	nṯk (II);nṯk (I);/n-ṯ-k/	n. m.;n. m.;vb	bite;biter;to bite	
 151736	nḥš	nḥš/	nḥš	n. m.	serpent	
 151737	šmrr	šmrr/	šmrr	n. m.	poisoning	
 151738	nḥš	nḥš/	nḥš	n. m.	serpent	
@@ -38,12 +38,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151739	ˤxqšr	?	?	?	?	DULAT: NOT FOUND
 151740	lnh	l(I)+h	l (I)	prep.	to	
 151741	mlḫš	mlḫš/	mlḫš	n. m.	conjuror	
-151742	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing	
+151742	abd	ʔbd[;abd(I)/	/ʔ-b-d/;ảbd (I)	vb;n. m.	be missing;ruin	
 151743	lnh	l(I)+h	l (I)	prep.	to	
 151744	ydy	yd(I)/+y;!y!(ydy(I)[;!y!(ydy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip	
 # KTU 1.100 6						
-151745	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom	
-151746	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold	
+151745	ḥmt	ḥmt(III)/;ḥmt(I)/	ḥmt (III);ḥmt (I)	n. f.;n. f.	venom;wall	
+151746	hlm	hlm;hlm[;hl	hlm;/h-l-m/;hl	conj. functor;vb;deictic adv. functor	and so;to hit;behold	
 151747	yṯq	ṯqy[	/ṯ-q-y/	vb	to elevate	
 151748	nḥš	nḥš/	nḥš	n. m.	serpent	
 151749	yšlḥm	!y!]š]lḥm(I)[	/l-ḥ-m/ (I)	vb	to eat	
@@ -68,7 +68,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151765	mrym	mrym/	mrym	n. m.	height	
 151766	ṣpn	ṣpn/	ṣpn	TN/DN	north	
 151767	mnty	mnt(I)/	mnt (I)	n. f.	portion	
-151768	nṯk	nṯk(II)/;!n!ṯk[;nṯk(I)/	nṯk (II);/n-ṯ-k/;nṯk (I)	n. m.;vb;n. m.	bite;to bite;biter	
+151768	nṯk	nṯk(II)/;nṯk(I)/;!n!ṯk[	nṯk (II);nṯk (I);/n-ṯ-k/	n. m.;n. m.;vb	bite;biter;to bite	
 # KTU 1.100 10						
 151769	nḥš	nḥš/	nḥš	n. m.	serpent	
 151770	šmrr	šmrr/	šmrr	n. m.	poisoning	
@@ -77,11 +77,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151773	lnh	l(I)+h	l (I)	prep.	to	
 # KTU 1.100 11						
 151774	mlḫš	mlḫš/	mlḫš	n. m.	conjuror	
-151775	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing	
+151775	abd	ʔbd[;abd(I)/	/ʔ-b-d/;ảbd (I)	vb;n. m.	be missing;ruin	
 151776	lnh	l(I)+h	l (I)	prep.	to	
 151777	ydy	yd(I)/+y;!y!(ydy(I)[;!y!(ydy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip	
-151778	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom	
-151779	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold	
+151778	ḥmt	ḥmt(III)/;ḥmt(I)/	ḥmt (III);ḥmt (I)	n. f.;n. f.	venom;wall	
+151779	hlm	hlm;hlm[;hl	hlm;/h-l-m/;hl	conj. functor;vb;deictic adv. functor	and so;to hit;behold	
 151780	yṯq	ṯqy[	/ṯ-q-y/	vb	to elevate	
 # KTU 1.100 12						
 151781	nḥš	nḥš/	nḥš	n. m.	serpent	
@@ -106,7 +106,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151797	dgn	dgn(I)/	dgn (I)	n. m.	grain	
 151798	ttlh	ttl/	ttl	TN	ttl	
 151799	mnt	mnt(I)/	mnt (I)	n. f.	portion	
-151800	nṯk	nṯk(II)/;!n!ṯk[;nṯk(I)/	nṯk (II);/n-ṯ-k/;nṯk (I)	n. m.;vb;n. m.	bite;to bite;biter	
+151800	nṯk	nṯk(II)/;nṯk(I)/;!n!ṯk[	nṯk (II);nṯk (I);/n-ṯ-k/	n. m.;n. m.;vb	bite;biter;to bite	
 151801	nḥš	nḥš/	nḥš	n. m.	serpent	
 151802	šmrr	šmrr/	šmrr	n. m.	poisoning	
 # KTU 1.100 16						
@@ -114,12 +114,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151804	ˤqšr	aqšr/	ảqšr	adj. m.	which sloughs its skin	
 151805	lnh	l(I)+h	l (I)	prep.	to	
 151806	mlḫš	mlḫš/	mlḫš	n. m.	conjuror	
-151807	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing	
+151807	abd	ʔbd[;abd(I)/	/ʔ-b-d/;ảbd (I)	vb;n. m.	be missing;ruin	
 151808	lnh	l(I)+h	l (I)	prep.	to	
 # KTU 1.100 17						
 151809	ydy	yd(I)/+y;!y!(ydy(I)[;!y!(ydy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip	
-151810	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom	
-151811	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold	
+151810	ḥmt	ḥmt(III)/;ḥmt(I)/	ḥmt (III);ḥmt (I)	n. f.;n. f.	venom;wall	
+151811	hlm	hlm;hlm[;hl	hlm;/h-l-m/;hl	conj. functor;vb;deictic adv. functor	and so;to hit;behold	
 151812	yṯq	ṯqy[	/ṯ-q-y/	vb	to elevate	
 151813	nḥš	nḥš/	nḥš	n. m.	serpent	
 151814	yšlḥm	!y!]š]lḥm(I)[	/l-ḥ-m/ (I)	vb	to eat	
@@ -140,12 +140,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151827	bl	bl(I);bl(II);bl(III)/	bl (I);bl (II);bl (III)	adv. or emph. functor;prep.;n. m.	no;without;blended beer	
 151828	ˤt	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.100 20						
-151829	ˤnt	ˤnt(I)/;ˤnt(II);ˤn(I)/t=	ʕnt (I);ʕnt (II);ʕn (I)	DN;adv.;n. f.	sister;now;eye	
+151829	ˤnt	ˤn(I)/t=;ˤnt(I)/;ˤnt(II)	ʕn (I);ʕnt (I);ʕnt (II)	n. f.;DN;adv.	eye;sister;now	
 151830	wˤ	?	?	?	?	DULAT: NOT FOUND
 151831	rṯtrt	?	?	?	?	DULAT: NOT FOUND
 151832	inbbh	inbb/	ỉnbb	TN	god (of the) mountain	
 151833	mnt	mnt(I)/	mnt (I)	n. f.	portion	
-151834	nṯk	nṯk(II)/;!n!ṯk[;nṯk(I)/	nṯk (II);/n-ṯ-k/;nṯk (I)	n. m.;vb;n. m.	bite;to bite;biter	
+151834	nṯk	nṯk(II)/;nṯk(I)/;!n!ṯk[	nṯk (II);nṯk (I);/n-ṯ-k/	n. m.;n. m.;vb	bite;biter;to bite	
 # KTU 1.100 21						
 151835	nḥš	nḥš/	nḥš	n. m.	serpent	
 151836	šmrr	šmrr/	šmrr	n. m.	poisoning	
@@ -155,11 +155,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151840	ml	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.100 22						
 151841	ḫš	?	?	?	?	DULAT: NOT FOUND
-151842	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing	
+151842	abd	ʔbd[;abd(I)/	/ʔ-b-d/;ảbd (I)	vb;n. m.	be missing;ruin	
 151843	lnh	l(I)+h	l (I)	prep.	to	
 151844	ydy	yd(I)/+y;!y!(ydy(I)[;!y!(ydy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip	
-151845	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom	
-151846	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold	
+151845	ḥmt	ḥmt(III)/;ḥmt(I)/	ḥmt (III);ḥmt (I)	n. f.;n. f.	venom;wall	
+151846	hlm	hlm;hlm[;hl	hlm;/h-l-m/;hl	conj. functor;vb;deictic adv. functor	and so;to hit;behold	
 151847	yṯq	ṯqy[	/ṯ-q-y/	vb	to elevate	
 # KTU 1.100 23						
 151848	nḥš	nḥš/	nḥš	n. m.	serpent	
@@ -185,7 +185,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151865	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 151866	lrgth	?	?	?	?	DULAT: NOT FOUND
 151867	mnt	mnt(I)/	mnt (I)	n. f.	portion	
-151868	nṯk	nṯk(II)/;!n!ṯk[;nṯk(I)/	nṯk (II);/n-ṯ-k/;nṯk (I)	n. m.;vb;n. m.	bite;to bite;biter	
+151868	nṯk	nṯk(II)/;nṯk(I)/;!n!ṯk[	nṯk (II);nṯk (I);/n-ṯ-k/	n. m.;n. m.;vb	bite;biter;to bite	
 151869	nḥš	nḥš/	nḥš	n. m.	serpent	
 151870	šmrr	šmrr/	šmrr	n. m.	poisoning	
 # KTU 1.100 27						
@@ -193,12 +193,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151872	ˤqšr	aqšr/	ảqšr	adj. m.	which sloughs its skin	
 151873	lnh	l(I)+h	l (I)	prep.	to	
 151874	mlḫš	mlḫš/	mlḫš	n. m.	conjuror	
-151875	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing	
+151875	abd	ʔbd[;abd(I)/	/ʔ-b-d/;ảbd (I)	vb;n. m.	be missing;ruin	
 151876	lnh	l(I)+h	l (I)	prep.	to	
 151877	ydy	yd(I)/+y;!y!(ydy(I)[;!y!(ydy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip	
 # KTU 1.100 28						
-151878	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom	
-151879	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold	
+151878	ḥmt	ḥmt(III)/;ḥmt(I)/	ḥmt (III);ḥmt (I)	n. f.;n. f.	venom;wall	
+151879	hlm	hlm;hlm[;hl	hlm;/h-l-m/;hl	conj. functor;vb;deictic adv. functor	and so;to hit;behold	
 151880	yṯq	ṯqy[	/ṯ-q-y/	vb	to elevate	
 151881	nḥš	nḥš/	nḥš	n. m.	serpent	
 151882	yšlḥm	!y!]š]lḥm(I)[	/l-ḥ-m/ (I)	vb	to eat	
@@ -223,7 +223,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151898	ršp	ršp/	ršp	DN	Rašap	
 151899	bbth	bbt(I)/	bbt (I)	TN	bbt (I)	
 151900	mnt	mnt(I)/	mnt (I)	n. f.	portion	
-151901	nṯk	nṯk(II)/;!n!ṯk[;nṯk(I)/	nṯk (II);/n-ṯ-k/;nṯk (I)	n. m.;vb;n. m.	bite;to bite;biter	
+151901	nṯk	nṯk(II)/;nṯk(I)/;!n!ṯk[	nṯk (II);nṯk (I);/n-ṯ-k/	n. m.;n. m.;vb	bite;biter;to bite	
 151902	nḥš	nḥš/	nḥš	n. m.	serpent	
 151903	šmrr	šmrr/	šmrr	n. m.	poisoning	
 # KTU 1.100 32						
@@ -234,8 +234,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151908	lnh	l(I)+h	l (I)	prep.	to	
 151909	ydy	yd(I)/+y;!y!(ydy(I)[;!y!(ydy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip	
 # KTU 1.100 33						
-151910	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom	
-151911	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold	
+151910	ḥmt	ḥmt(III)/;ḥmt(I)/	ḥmt (III);ḥmt (I)	n. f.;n. f.	venom;wall	
+151911	hlm	hlm;hlm[;hl	hlm;/h-l-m/;hl	conj. functor;vb;deictic adv. functor	and so;to hit;behold	
 151912	yṯq	ṯqy[	/ṯ-q-y/	vb	to elevate	
 151913	nḥš	nḥš/	nḥš	n. m.	serpent	
 151914	yšlḥm	!y!]š]lḥm(I)[	/l-ḥ-m/ (I)	vb	to eat	
@@ -262,9 +262,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151932	kmṯ	?	?	?	?	DULAT: NOT FOUND
 151933	ḥryth	ḥryt/	ḥryt	TN	ḥryt	
 151934	mnt	mnt(I)/	mnt (I)	n. f.	portion	
-151935	nṯk	nṯk(II)/;!n!ṯk[;nṯk(I)/	nṯk (II);/n-ṯ-k/;nṯk (I)	n. m.;vb;n. m.	bite;to bite;biter	
+151935	nṯk	nṯk(II)/;nṯk(I)/;!n!ṯk[	nṯk (II);nṯk (I);/n-ṯ-k/	n. m.;n. m.;vb	bite;biter;to bite	
 151936	nḥš	nḥš/	nḥš	n. m.	serpent	
-151937	šm	šm(I)/;š/	šm (I);š	n. m.;n. m.	name;ram	
+151937	šm	š/;šm(I)/	š;šm (I)	n. m.;n. m.	ram;name	
 # KTU 1.100 37						
 151938	rr	?	?	?	?	DULAT: NOT FOUND
 151939	nḥš	nḥš/	nḥš	n. m.	serpent	
@@ -274,8 +274,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151943	lnh	l(I)+h	l (I)	prep.	to	
 # KTU 1.100 38						
 151944	ydy	yd(I)/+y;!y!(ydy(I)[;!y!(ydy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip	
-151945	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom	
-151946	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold	
+151945	ḥmt	ḥmt(III)/;ḥmt(I)/	ḥmt (III);ḥmt (I)	n. f.;n. f.	venom;wall	
+151946	hlm	hlm;hlm[;hl	hlm;/h-l-m/;hl	conj. functor;vb;deictic adv. functor	and so;to hit;behold	
 151947	yṯq	ṯqy[	/ṯ-q-y/	vb	to elevate	
 151948	nḥš	nḥš/	nḥš	n. m.	serpent	
 151949	yšlḥm	!y!]š]lḥm(I)[	/l-ḥ-m/ (I)	vb	to eat	
@@ -300,7 +300,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151965	mlk	mlk[;mlk(II)/	/m-l-k/;mlk (II)	vb;n. m.	to reign;kingdom (power and territory)	
 151966	ˤṯtrth	ˤṯtrt(II)/	ʕṯtrt (II)	TN	ʕṯtrt (II)	
 151967	mnt	mnt(I)/	mnt (I)	n. f.	portion	
-151968	nṯk	nṯk(II)/;!n!ṯk[;nṯk(I)/	nṯk (II);/n-ṯ-k/;nṯk (I)	n. m.;vb;n. m.	bite;to bite;biter	
+151968	nṯk	nṯk(II)/;nṯk(I)/;!n!ṯk[	nṯk (II);nṯk (I);/n-ṯ-k/	n. m.;n. m.;vb	bite;biter;to bite	
 151969	nḥš	nḥš/	nḥš	n. m.	serpent	
 151970	šmrr	šmrr/	šmrr	n. m.	poisoning	
 # KTU 1.100 42						
@@ -308,12 +308,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151972	ˤqšr	aqšr/	ảqšr	adj. m.	which sloughs its skin	
 151973	lnh	l(I)+h	l (I)	prep.	to	
 151974	mlḫš	mlḫš/	mlḫš	n. m.	conjuror	
-151975	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing	
+151975	abd	ʔbd[;abd(I)/	/ʔ-b-d/;ảbd (I)	vb;n. m.	be missing;ruin	
 151976	lnh	l(I)+h	l (I)	prep.	to	
 151977	ydy	yd(I)/+y;!y!(ydy(I)[;!y!(ydy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip	
 # KTU 1.100 43						
-151978	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom	
-151979	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold	
+151978	ḥmt	ḥmt(III)/;ḥmt(I)/	ḥmt (III);ḥmt (I)	n. f.;n. f.	venom;wall	
+151979	hlm	hlm;hlm[;hl	hlm;/h-l-m/;hl	conj. functor;vb;deictic adv. functor	and so;to hit;behold	
 151980	yṯq	ṯqy[	/ṯ-q-y/	vb	to elevate	
 151981	nḥš	nḥš/	nḥš	n. m.	serpent	
 151982	yšlḥm	!y!]š]lḥm(I)[	/l-ḥ-m/ (I)	vb	to eat	
@@ -339,7 +339,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151999	ḫss	?	?	?	?	DULAT: NOT FOUND
 152000	kptrh	kptr/	kptr	TN	Crete	
 152001	mnt	mnt(I)/	mnt (I)	n. f.	portion	
-152002	nṯk	nṯk(II)/;!n!ṯk[;nṯk(I)/	nṯk (II);/n-ṯ-k/;nṯk (I)	n. m.;vb;n. m.	bite;to bite;biter	
+152002	nṯk	nṯk(II)/;nṯk(I)/;!n!ṯk[	nṯk (II);nṯk (I);/n-ṯ-k/	n. m.;n. m.;vb	bite;biter;to bite	
 152003	nḥš	nḥš/	nḥš	n. m.	serpent	
 # KTU 1.100 47						
 152004	šmrr	šmrr/	šmrr	n. m.	poisoning	
@@ -348,12 +348,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152007	lnh	l(I)+h	l (I)	prep.	to	
 152008	mlḫ	?	?	?	?	DULAT: NOT FOUND
 152009	š	š/	š	n. m.	ram	
-152010	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing	
+152010	abd	ʔbd[;abd(I)/	/ʔ-b-d/;ảbd (I)	vb;n. m.	be missing;ruin	
 # KTU 1.100 48						
 152011	lnh	l(I)+h	l (I)	prep.	to	
 152012	ydy	yd(I)/+y;!y!(ydy(I)[;!y!(ydy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip	
-152013	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom	
-152014	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold	
+152013	ḥmt	ḥmt(III)/;ḥmt(I)/	ḥmt (III);ḥmt (I)	n. f.;n. f.	venom;wall	
+152014	hlm	hlm;hlm[;hl	hlm;/h-l-m/;hl	conj. functor;vb;deictic adv. functor	and so;to hit;behold	
 152015	yṯq	ṯqy[	/ṯ-q-y/	vb	to elevate	
 152016	nḥš	nḥš/	nḥš	n. m.	serpent	
 # KTU 1.100 49						
@@ -377,10 +377,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.100 52						
 152032	šḥr	šḥr/	šḥr	n. m.	dawn	
 152033	w	w	w	conj.	and	
-152034	šlm	šlm[;šlm(I)/;šlm(III)/	/š-l-m/;šlm (I);šlm (III)	vb;n. m.;adj. m.	to be well;peace;pure	
+152034	šlm	šlm(I)/;šlm[;šlm(III)/	šlm (I);/š-l-m/;šlm (III)	n. m.;vb;adj. m.	peace;to be well;pure	
 152035	šmmh	šmm(I)/+h	šmm (I)	n. m.	heavens	
 152036	mnt	mnt(I)/	mnt (I)	n. f.	portion	
-152037	nṯk	nṯk(II)/;!n!ṯk[;nṯk(I)/	nṯk (II);/n-ṯ-k/;nṯk (I)	n. m.;vb;n. m.	bite;to bite;biter	
+152037	nṯk	nṯk(II)/;nṯk(I)/;!n!ṯk[	nṯk (II);nṯk (I);/n-ṯ-k/	n. m.;n. m.;vb	bite;biter;to bite	
 152038	nḥš	nḥš/	nḥš	n. m.	serpent	
 # KTU 1.100 53						
 152039	šmrr	šmrr/	šmrr	n. m.	poisoning	
@@ -389,11 +389,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152042	lnh	l(I)+h	l (I)	prep.	to	
 152043	mlḫš	mlḫš/	mlḫš	n. m.	conjuror	
 # KTU 1.100 54						
-152044	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing	
+152044	abd	ʔbd[;abd(I)/	/ʔ-b-d/;ảbd (I)	vb;n. m.	be missing;ruin	
 152045	lnh	l(I)+h	l (I)	prep.	to	
 152046	ydy	yd(I)/+y;!y!(ydy(I)[;!y!(ydy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip	
-152047	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom	
-152048	hlm	hlm[;hlm;hl	/h-l-m/;hlm;hl	vb;conj. functor;deictic adv. functor	to hit;and so;behold	
+152047	ḥmt	ḥmt(III)/;ḥmt(I)/	ḥmt (III);ḥmt (I)	n. f.;n. f.	venom;wall	
+152048	hlm	hlm;hlm[;hl	hlm;/h-l-m/;hl	conj. functor;vb;deictic adv. functor	and so;to hit;behold	
 152049	yṯq	ṯqy[	/ṯ-q-y/	vb	to elevate	
 # KTU 1.100 55						
 152050	nḥš	nḥš/	nḥš	n. m.	serpent	
@@ -418,9 +418,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.100 58						
 152067	ˤm	ˤm(I)	ʕm (I)	prep.	to	
 152068	ḥrn	ḥr(I)/+n(I);ḥr(I)/+n(II);ḥr(I)/+n(III)	ḥr (I),-n (I);ḥr (I),-n (II);ḥr (I),-n (III)	n. m.,morph.;n. m.,pers. pn./morph./vb;n. m.,pers. pn./morph.	intestine(s),Sun;intestine(s),me;intestine(s),our	
-152069	mṣdh	mṣd(I)/+h;mṣd(II)/+h;mṣd(III)/	mṣd (I);mṣd (II);mṣd (III)	n. m.;n. m.;TN	(feast / banquet of) game;large fortified tower;mṣd (III)	
+152069	mṣdh	mṣd(I)/+h;mṣd(III)/;mṣd(II)/+h	mṣd (I);mṣd (III);mṣd (II)	n. m.;TN;n. m.	(feast / banquet of) game;mṣd (III);large fortified tower	
 152070	mnt	mnt(I)/	mnt (I)	n. f.	portion	
-152071	nṯk	nṯk(II)/;!n!ṯk[;nṯk(I)/	nṯk (II);/n-ṯ-k/;nṯk (I)	n. m.;vb;n. m.	bite;to bite;biter	
+152071	nṯk	nṯk(II)/;nṯk(I)/;!n!ṯk[	nṯk (II);nṯk (I);/n-ṯ-k/	n. m.;n. m.;vb	bite;biter;to bite	
 152072	nḥš	nḥš/	nḥš	n. m.	serpent	
 # KTU 1.100 59						
 152073	šmrr	šmrr/	šmrr	n. m.	poisoning	
@@ -429,10 +429,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152076	lnh	l(I)+h	l (I)	prep.	to	
 152077	mlḫš	mlḫš/	mlḫš	n. m.	conjuror	
 # KTU 1.100 60						
-152078	abd	abd(I)/;ʔbd[	ảbd (I);/ʔ-b-d/	n. m.;vb	ruin;be missing	
+152078	abd	ʔbd[;abd(I)/	/ʔ-b-d/;ảbd (I)	vb;n. m.	be missing;ruin	
 152079	lnh	l(I)+h	l (I)	prep.	to	
 152080	ydy	yd(I)/+y;!y!(ydy(I)[;!y!(ydy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip	
-152081	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom	
+152081	ḥmt	ḥmt(III)/;ḥmt(I)/	ḥmt (III);ḥmt (I)	n. f.;n. f.	venom;wall	
 # KTU 1.100 61						
 152082	b	b	b	prep.	in	
 152083	ḥrn	ḥr(I)/+n(I);ḥr(I)/+n(II);ḥr(I)/+n(III)	ḥr (I),-n (I);ḥr (I),-n (II);ḥr (I),-n (III)	n. m.,morph.;n. m.,pers. pn./morph./vb;n. m.,pers. pn./morph.	intestine(s),Sun;intestine(s),me;intestine(s),our	
@@ -489,12 +489,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152127	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
 152128	ḥẓrh	ḥẓr/	ḥẓr	n. m.	mansion	
 152129	tlu	lʔy(II)[	/l-ʔ-y/w/ (II)	vb	to lose strength	
-152130	ḥmt	ḥmt(I)/;ḥmt(III)/	ḥmt (I);ḥmt (III)	n. f.;n. f.	wall;venom	
-152131	km	k(I);k(III);k(IV)	k (I);k (III);k (IV)	prep.;Subordinating or completive functor;adv.	like;when;thus	
+152130	ḥmt	ḥmt(III)/;ḥmt(I)/	ḥmt (III);ḥmt (I)	n. f.;n. f.	venom;wall	
+152131	km	k(III);k(I);k(IV)	k (III);k (I);k (IV)	Subordinating or completive functor;prep.;adv.	when;like;thus	
 152132	nḫl	nḫl(I)/	nḫl (I)	n. m.	torrent	
 # KTU 1.100 69						
 152133	tplg	!t!plg[	/p-l-g/	vb	to be split	
-152134	km	k(I);k(III);k(IV)	k (I);k (III);k (IV)	prep.;Subordinating or completive functor;adv.	like;when;thus	
+152134	km	k(III);k(I);k(IV)	k (III);k (I);k (IV)	Subordinating or completive functor;prep.;adv.	when;like;thus	
 152135	plg	plg[;plg/	/p-l-g/;plg	vb;n. m.	to be split;stream	
 # KTU 1.100 70						
 152136	bˤdh	bˤd+h	bʕd	adv. or prep.	behind	
@@ -502,7 +502,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152138	mnt	mnt(I)/	mnt (I)	n. f.	portion	
 152139	bˤdh	bˤd+h	bʕd	adv. or prep.	behind	
 152140	bhtm	b(II)/t=	bt (II)	n. m.	house	
-152141	sgrt	sgrt/;sgr[	sgrt;/s-g-r/	n. f.;vb	room;to close	
+152141	sgrt	sgr[;sgrt/	/s-g-r/;sgrt	vb;n. f.	to close;room	
 # KTU 1.100 71						
 152142	bˤdh	bˤd+h	bʕd	adv. or prep.	behind	
 152143	ˤdbt	ˤdb[	/ʕ-d-b/	vb	to leave > to put in	
@@ -524,7 +524,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152157	y	y	y	prep. functor	oh!	
 152158	ḥr	ḥr(I)/	ḥr (I)	n. m.	intestine(s)	
 152159	tn	ˤl(I)+n(I);ˤl(I)+n(II);ˤl(I)+n(III)	ʕl (I),-n (I);ʕl (I),-n (II);ʕl (I),-n (III)	prep.,morph.;prep.,pers. pn./morph./vb;prep.,pers. pn./morph.	upon,Sun;upon,me;upon,our	
-152160	km	k(I);k(III);k(IV)	k (I);k (III);k (IV)	prep.;Subordinating or completive functor;adv.	like;when;thus	
+152160	km	k(III);k(I);k(IV)	k (III);k (I);k (IV)	Subordinating or completive functor;prep.;adv.	when;like;thus	
 # KTU 1.100 74						
 152161	mhry	mhr(III)/+y	mhr (III)	n. m.	dowry	
 152162	w	w	w	conj.	and	
@@ -540,7 +540,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.100 76						
 152171	itnnk	itnn/+k	ỉtnn	n. m.	present	
 # KTU 1.100 77						
-152172	aṯr	aṯr(I);aṯr(III);ʔṯr[	ảṯr (I);ảṯr (III);/ʔ-ṯ-r/	adv. or prep.;interr. adv.;vb	then;where;to go	
+152172	aṯr	aṯr(I);ʔṯr[;aṯr(III)	ảṯr (I);/ʔ-ṯ-r/;ảṯr (III)	adv. or prep.;vb;interr. adv.	then;to go;where	
 152173	ršp	ršp/	ršp	DN	Rašap	
 152174	ˤṯtrt	ˤṯtrt(II)/	ʕṯtrt (II)	TN	ʕṯtrt (II)	
 # KTU 1.100 78						
@@ -549,5 +549,5 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152177	mrh	mr(VII)/	mr (VII)	TN	mr (VII)	
 # KTU 1.100 79						
 152178	mnt	mnt(I)/	mnt (I)	n. f.	portion	
-152179	nṯk	nṯk(II)/;!n!ṯk[;nṯk(I)/	nṯk (II);/n-ṯ-k/;nṯk (I)	n. m.;vb;n. m.	bite;to bite;biter	
+152179	nṯk	nṯk(II)/;nṯk(I)/;!n!ṯk[	nṯk (II);nṯk (I);/n-ṯ-k/	n. m.;n. m.;vb	bite;biter;to bite	
 152180	nḥš	nḥš/	nḥš	n. m.	serpent	

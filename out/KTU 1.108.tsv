@@ -45,7 +45,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.108 6						
 153248	w	w	w	conj.	and	
 153249	tšt	!t!št[;šty[	/š-t/;/š-t-y/	vb;vb	to place;to drink	
-153250	ˤnt	ˤnt(I)/;ˤnt(II);ˤn(I)/t=	ʕnt (I);ʕnt (II);ʕn (I)	DN;adv.;n. f.	sister;now;eye	
+153250	ˤnt	ˤn(I)/t=;ˤnt(I)/;ˤnt(II)	ʕn (I);ʕnt (I);ʕnt (II)	n. f.;DN;adv.	eye;sister;now	
 153251	gṯr	gṯr/	gṯr	DN	überlegen stark	
 153252	bˤlt	bˤlt/	bʕlt	n. f.	lady	
 153253	mlk	mlk[;mlk(II)/	/m-l-k/;mlk (II)	vb;n. m.	to reign;kingdom (power and territory)	
@@ -55,20 +55,20 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153256	drkt	drkt/	drkt	n. f.	rule	
 153257	bˤlt	bˤlt/	bʕlt	n. f.	lady	
 153258	šmm	šm(I)/m	šmm (I)	n. m.	heavens	
-153259	rmm	rm[;rm(I)/	/r-m/;rm (I)	vb;adj. m.	to go up;high	
+153259	rmm	rm(I)/;rm[	rm (I);/r-m/	adj. m.;vb	high;to go up	
 # KTU 1.108 8						
 153260	bˤlt	bˤlt/	bʕlt	n. f.	lady	
 153261	kpṯ	kpṯ/	kpṯ	n. m.	floor	
 153262	w	w	w	conj.	and	
-153263	ˤnt	ˤnt(I)/;ˤnt(II);ˤn(I)/t=	ʕnt (I);ʕnt (II);ʕn (I)	DN;adv.;n. f.	sister;now;eye	
+153263	ˤnt	ˤn(I)/t=;ˤnt(I)/;ˤnt(II)	ʕn (I);ʕnt (I);ʕnt (II)	n. f.;DN;adv.	eye;sister;now	
 153264	di	dʔy[;ndʔ[	/d-ʔ-y/;/n-d-ʔ/	vb;vb	to fly;to frighten away	
 153265	dit	dʔy[t	/d-ʔ-y/	vb	to fly	
 153266	rḫpt	rḫp[	/r-ḫ-p/	vb	to hover	
 # KTU 1.108 9						
 153267	b	b	b	prep.	in	
 153268	šmm	šm(I)/m	šmm (I)	n. m.	heavens	
-153269	rmm	rm[;rm(I)/	/r-m/;rm (I)	vb;adj. m.	to go up;high	
-153270	aklt	aklt(I)/;aklt(II)/;!a!ʔkl[	ảklt (I);ảklt (II);/ʔ-k-l/	adj. f. or n. f.;n. f.;vb	devouring;waste land;to eat	
+153269	rmm	rm(I)/;rm[	rm (I);/r-m/	adj. m.;vb	high;to go up	
+153270	aklt	!a!ʔkl[;aklt(II)/;aklt(I)/	/ʔ-k-l/;ảklt (II);ảklt (I)	vb;n. f.;adj. f. or n. f.	to eat;waste land;devouring	
 153271	ˤglxl	?	?	?	?	DULAT: NOT FOUND
 153272	mšt	mšt(I)	mšt (I)	?	?	
 # KTU 1.108 10						
@@ -93,7 +93,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.108 13						
 153289	xxxxxxxxxḥ	?	?	?	?	DULAT: NOT FOUND
 153290	yšt	!y!št[;šty[	/š-t/;/š-t-y/	vb;vb	to place;to drink	
-153291	ilh	ilh/;il(I)/t=	ỉlh;ỉlt (I)	DN;n. f.	the ‘Divine One’;goddess	
+153291	ilh	il(I)/t=;ilh/	ỉlt (I);ỉlh	n. f.;DN	goddess;the ‘Divine One’	
 # KTU 1.108 14						
 153292	xxxxxxxxxxxh	?	?	?	?	DULAT: NOT FOUND
 153293	iṯmh	iṯm(I)/	ỉṯm (I)	n. m.	firm-fleshed cattle	
@@ -142,7 +142,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153327	b	b	b	prep.	in	
 153328	nmrth	nmrt/+h	nmrt	n. f.	splendour	
 153329	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
-153330	r	pẓr[;rks/;rḥb(I)/	/p-ẓ-r/;rks;rḥb (I)	vb;n. m.;adj. m.	to free;belt;wide	
+153330	r	rḥb(I)/;pẓr[;rks/	rḥb (I);/p-ẓ-r/;rks	adj. m.;vb;n. m.	wide;to free;belt	
 # KTU 1.108 24						
 153331	pi	?	?	?	?	DULAT: NOT FOUND
 153332	arṣ	arṣ/	ảrṣ	n. f.	earth	
@@ -164,6 +164,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153346	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 # KTU 1.108 27						
 153347	w	w	w	conj.	and	
-153348	nˤmt	nˤmt(I)/;nˤmt(II)/;nˤm(I)/	nʕmt (I);nʕmt (II);nʕm (I)	adj. f.;n. f.;adj. m.	graceful;delight;handsome	
+153348	nˤmt	nˤm(I)/;nˤmt(I)/;nˤmt(II)/	nʕm (I);nʕmt (I);nʕmt (II)	adj. m.;adj. f.;n. f.	handsome;graceful;delight	
 153349	šnt	šnt(I)/	šnt (I)	n. f.	year	
 153350	il	il(I)/	ỉl (I)	n. m.	god	

@@ -55,3 +55,7 @@
 - Re-applied schema formatting across all `out/*.tsv` files to inject headers and quote-escape existing comments/glosses.
 - Switched quote escaping from backslash style to RFC TSV quoting (for example `"..."` with doubled inner quotes `""`) to satisfy GitHub TSV parser requirements.
 - Normalized separator rows to full 7-column TSV shape (for example `# KTU ...` in column 1 plus six empty columns) so files remain tabular under GitHub rendering.
+- Added regeneratable DULAT attestation index support (`pipeline/dulat_attestation_index.py`) based on the `attestations` table, plus CLI builder script `scripts/build_dulat_attestation_index.py`.
+- Added `AttestationSortFixer` and pipeline wiring to reorder aligned parsing options (`col3`–`col6`, and aligned `col7` comments) by DULAT attestation frequency descending, using the first DULAT entry per option when multiple entries/clitics are present.
+- Applied attestation-based option sorting across all `out/*.tsv` files (1,036 rows updated in 112 tablets).
+- Hardened base refinement separator handling to preserve separator row TSV column shape across all steps after schema normalization.

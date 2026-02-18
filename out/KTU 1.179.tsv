@@ -43,7 +43,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156101	al	al(I);al(II)	ảl (I);ảl (II)	neg. functor;pos. functor	no;surely	
 156102	kbkb	kbkb/	kbkb	n. m.	heavenly body	
 # KTU 1.179 9						
-156103	dm	dm(I);dm(II)/;ˤbd(I)/	dm (I);dm (II);ʕbd (I)	functor;n. m.;n. m.	since;blood;servant	
+156103	dm	ˤbd(I)/;dm(II)/;dm(I)	ʕbd (I);dm (II);dm (I)	n. m.;n. m.;functor	servant;blood;since	
 156104	kbkb	kbkb/	kbkb	n. m.	heavenly body	
 156105	šmm	šm(I)/m	šmm (I)	n. m.	heavens	
 156106	wthm	?	?	?	?	DULAT: NOT FOUND
@@ -143,9 +143,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156179	mḫrh	mḫr(II)/+h(I);mḫr(II)/+h(II)	mḫr (II),-h (I);mḫr (II),-h (II)	n. m.,pers. pn./morph.;n. m.,adv. functor	tax collector,his /her (hers) / its;tax collector,to	
 # KTU 1.179 31						
 156180	rḥq	rḥq[;rḥq/	/r-ḥ-q/;rḥq	vb;adj. m.	to go away;distant	
-156181	abn	abn/;ab/+n;!a!bn[	ảbn;ảb;/b-n/	n. f.;n. m.;vb	stone;father;to understand	
+156181	abn	ab/+n;abn/;!a!bn[	ảb;ảbn;/b-n/	n. m.;n. f.;vb	father;stone;to understand	
 156182	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
-156183	abn	abn/;ab/+n;!a!bn[	ảbn;ảb;/b-n/	n. f.;n. m.;vb	stone;father;to understand	
+156183	abn	ab/+n;abn/;!a!bn[	ảb;ảbn;/b-n/	n. m.;n. f.;vb	father;stone;to understand	
 156184	w	w	w	conj.	and	
 156185	pslt	pslt(II)/	pslt (II)	n. f.	sculpture	
 156186	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
@@ -156,9 +156,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156190	b	b	b	prep.	in	
 156191	špth	špt/	špt	n. f.	lip	
 156192	rḥqt	rḥq[	/r-ḥ-q/	vb	to go away	
-156193	abn	abn/;ab/+n;!a!bn[	ảbn;ảb;/b-n/	n. f.;n. m.;vb	stone;father;to understand	
+156193	abn	ab/+n;abn/;!a!bn[	ảb;ảbn;/b-n/	n. m.;n. f.;vb	father;stone;to understand	
 156194	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
-156195	abn	abn/;ab/+n;!a!bn[	ảbn;ảb;/b-n/	n. f.;n. m.;vb	stone;father;to understand	
+156195	abn	ab/+n;abn/;!a!bn[	ảb;ảbn;/b-n/	n. m.;n. f.;vb	father;stone;to understand	
 # KTU 1.179 33						
 156196	ˤrb	ˤrb(I)[;ˤrb(II)[;ˤrb(I)/	/ʕ-r-b/ (I);/ʕ-r-b/ (II);ʕrb (I)	vb;vb;n. m.	to enter;to give a guarantee or pledge;entry	
 156197	ḥrn	ḥr(I)/+n(I);ḥr(I)/+n(II);ḥr(I)/+n(III)	ḥr (I),-n (I);ḥr (I),-n (II);ḥr (I),-n (III)	n. m.,morph.;n. m.,pers. pn./morph./vb;n. m.,pers. pn./morph.	intestine(s),Sun;intestine(s),me;intestine(s),our	
@@ -224,14 +224,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156250	spr	spr(II)/;spr[;spr(I)/	spr (II);/s-p-r/;spr (I)	n. m.;vb;n. m.	tablet / register;to count;scribe	
 156251	ilmlk	?	?	?	?	DULAT: NOT FOUND
 156252	šbny	šbny/	šbny	GN	šbny	
-156253	lmd	lmd[;lmd/	/l-m-d/;lmd	vb;adj. m. or n. m.	to teach;trained	
+156253	lmd	lmd/;lmd[	lmd;/l-m-d/	adj. m. or n. m.;vb	trained;to teach	
 156254	atn	ytn[	/y-t-n/	vb	to give	
 156255	prln	prln/	prln	n. m.	diviner	
 # KTU 1.179 41						
-156256	r	pẓr[;rks/;rḥb(I)/	/p-ẓ-r/;rks;rḥb (I)	vb;n. m.;adj. m.	to free;belt;wide	
+156256	r	rḥb(I)/;pẓr[;rks/	rḥb (I);/p-ẓ-r/;rks	adj. m.;vb;n. m.	wide;to free;belt	
 156257	bbx	?	?	?	?	DULAT: NOT FOUND
 156258	w	w	w	conj.	and	
-156259	mspr	mspr/;spr[	mspr;/s-p-r/	n. m.;vb	recitation;to count	
+156259	mspr	spr[;mspr/	/s-p-r/;mspr	vb;n. m.	to count;recitation	
 156260	hwt	hwt(I)/	hwt (I)	n. f.	word	
 # KTU 1.179 42						
 156261	xxrbh	?	?	?	?	DULAT: NOT FOUND

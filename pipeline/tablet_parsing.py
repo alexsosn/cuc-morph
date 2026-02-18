@@ -7,7 +7,9 @@ from typing import Dict, List, Optional, Sequence
 import scripts.bootstrap_tablet_labeling as bootstrap
 import scripts.refine_results_mentions as refine
 from lint_reports.generator import LintReportGenerator
+from pipeline.dulat_attestation_index import DulatAttestationIndex
 from pipeline.instruction_refiner import InstructionRefiner
+from pipeline.steps.attestation_sort import AttestationSortFixer
 from pipeline.steps.baal_labourer_ktu1 import BaalLabourerKtu1Fixer
 from pipeline.steps.baal_plural import BaalPluralGodListFixer
 from pipeline.steps.base import RefinementStep
@@ -42,6 +44,7 @@ class TabletParsingPipeline:
         self.config = config
         self.instruction_refiner = InstructionRefiner(dulat_db=self.config.dulat_db)
         self.morph_gate = DulatMorphGate(self.config.dulat_db)
+        self.attestation_index = DulatAttestationIndex.from_sqlite(self.config.dulat_db)
         self._refinement_steps: List[RefinementStep] = [
             # AlephPrefixFixer disabled: changes (ʔ in analysis break DULAT
             # lexeme extraction, causing net increase in lint issues.
@@ -55,6 +58,7 @@ class TabletParsingPipeline:
             SuffixCliticFixer(gate=self.morph_gate),
             WeakVerbFixer(),
             WeakFinalSuffixConjugationFixer(),
+            AttestationSortFixer(index=self.attestation_index),
         ]
 
     def discover_source_files(self) -> List[Path]:

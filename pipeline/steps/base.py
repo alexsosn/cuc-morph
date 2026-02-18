@@ -75,6 +75,15 @@ def normalize_separator_line(raw: str) -> str:
     return f"# {m.group(1)}"
 
 
+def normalize_separator_row(raw: str) -> str:
+    """Normalize separator while preserving existing TSV column count."""
+    parts = raw.split("\t")
+    normalized = normalize_separator_line(parts[0] if parts else raw)
+    if len(parts) <= 1:
+        return normalized
+    return "\t".join([normalized] + [""] * (len(parts) - 1))
+
+
 def is_unresolved(row: TabletRow) -> bool:
     """Check if a row is fully unresolved (all ? markers)."""
     return row.analysis.strip() == "?"
@@ -104,7 +113,7 @@ class RefinementStep(abc.ABC):
                 out_lines.append(raw)
                 continue
             if is_separator_line(raw):
-                out_lines.append(normalize_separator_line(raw))
+                out_lines.append(normalize_separator_row(raw))
                 continue
 
             row = parse_tsv_line(raw)

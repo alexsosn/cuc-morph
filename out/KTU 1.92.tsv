@@ -26,7 +26,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151342	ladr	?	?	?	?	DULAT: NOT FOUND
 151343	tl	tl(I)/;tl(II)/	tl (I);tl (II)	n. m.;n. m.	hill;weapon	
 # KTU 1.92 8						
-151344	tṯb	tṯb/;!t!ṯb[;yṯb[	tṯb;/ṯ-b/;/y-ṯ-b/	DN;vb;vb	tṯb;to return;to sit down	
+151344	tṯb	!t!ṯb[;yṯb[;tṯb/	/ṯ-b/;/y-ṯ-b/;tṯb	vb;vb;DN	to return;to sit down;tṯb	
 151345	ˤṯtrt	ˤṯtrt(II)/	ʕṯtrt (II)	TN	ʕṯtrt (II)	
 151346	bġlx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.92 9						
@@ -94,7 +94,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151393	krm	krm/	krm	n. m.	vineyard	
 151394	ar	a/	ả	n.	light	
 # KTU 1.92 25						
-151395	h	ˤl(I);hnd/;aḫt(I)/	ʕl (I);hnd;ảḫt (I)	prep.;dem. adj./pn.;n. f.	upon;this;sister (related by blood)	
+151395	h	ˤl(I);aḫt(I)/;hnd/	ʕl (I);ảḫt (I);hnd	prep.;n. f.;dem. adj./pn.	upon;sister (related by blood);this	
 151396	mḥtrt	mḥtrt/	mḥtrt	n. f.	green (garment)	
 151397	pṯtm	pṯ(I)/t=	pṯt (I)	n. m.	linen	
 # KTU 1.92 26						
@@ -108,7 +108,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151404	kkbkbm	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.92 28						
 151405	xb	?	?	?	?	DULAT: NOT FOUND
-151406	km	k(I);k(III);k(IV)	k (I);k (III);k (IV)	prep.;Subordinating or completive functor;adv.	like;when;thus	
+151406	km	k(III);k(I);k(IV)	k (III);k (I);k (IV)	Subordinating or completive functor;prep.;adv.	when;like;thus	
 151407	kbkbt	kbkb/t=	kbkb	n. m.	heavenly body	
 151408	kṯn	kṯ(I)/+n(I);kṯ(I)/+n(II);kṯ(I)/+n(III)	kṯ (I),-n (I);kṯ (I),-n (II);kṯ (I),-n (III)	n. f.,morph.;n. f.,pers. pn./morph./vb;n. f.,pers. pn./morph.	flask,Sun;flask,me;flask,our	
 # KTU 1.92 29						
@@ -147,7 +147,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151436	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
 151437	n	l(I);ˤl(I);mġy[	l (I);ʕl (I);/m-ġ-y/	prep.;prep.;vb	to;upon;to come	
 # KTU 1.92 35						
-151438	ġr	ġr(I)/;ġr(III)/;ġr(V)/	ġr (I);ġr (III);ġr (V)	n. m.;n. m.;n. m.	mountain;skin;total	
+151438	ġr	ġr(I)/;ġr(V)/;ġr(III)/	ġr (I);ġr (V);ġr (III)	n. m.;n. m.;n. m.	mountain;total;skin	
 151439	xxxxx	?	?	?	?	
 151440	al	al(I);al(II)	ảl (I);ảl (II)	neg. functor;pos. functor	no;surely	
 151441	ttn	ytn[	/y-t-n/	vb	to give	

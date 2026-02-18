@@ -6,12 +6,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153588	b	b	b	prep.	in	
 153589	ym	ym(I)/;ym(II)/	ym (I);ym (II)	n. m.;n. m.	day;sea	
 # KTU 1.112 2						
-153590	ḥdṯ	ḥdṯ(I)/;ḥdṯ(II)/	ḥdṯ (I);ḥdṯ (II)	adj.;n. m.	new;new moon	
+153590	ḥdṯ	ḥdṯ(II)/;ḥdṯ(I)/	ḥdṯ (II);ḥdṯ (I)	n. m.;adj.	new moon;new	
 153591	ḫḏrġl	ḫḏrġl/	ḫḏrġl	n. m.	assistant	
 153592	xxxx	?	?	?	?	
 # KTU 1.112 3						
 153593	ṯn	ṯn(I)/	ṯn (I)	num.	two	
-153594	šm	šm(I)/;š/	šm (I);š	n. m.;n. m.	name;ram	
+153594	šm	š/;šm(I)/	š;šm (I)	n. m.;n. m.	ram;name	
 153595	ḫmnh	ḫmn(I)/	ḫmn (I)	n. m.	chapel	
 153596	w	w	w	conj.	and	
 153597	ṯql	ṯql/	ṯql	n. m.	shekel	
@@ -52,11 +52,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.112 10						
 153626	bšbˤ	?	?	?	?	DULAT: NOT FOUND
 153627	ym	ym(I)/;ym(II)/	ym (I);ym (II)	n. m.;n. m.	day;sea	
-153628	ḥdṯ	ḥdṯ(I)/;ḥdṯ(II)/	ḥdṯ (I);ḥdṯ (II)	adj.;n. m.	new;new moon	
+153628	ḥdṯ	ḥdṯ(II)/;ḥdṯ(I)/	ḥdṯ (II);ḥdṯ (I)	n. m.;adj.	new moon;new	
 153629	yrtḥṣ	r]t]ḥṣ[	/r-ḥ-ṣ/	vb	to wash	
 # KTU 1.112 11						
 153630	mlk	mlk[;mlk(II)/	/m-l-k/;mlk (II)	vb;n. m.	to reign;kingdom (power and territory)	
-153631	brr	brr/;br/	brr;br(r)	adj. m.;n. m.	pure;tin	
+153631	brr	br/;brr/	br(r);brr	n. m.;adj. m.	tin;pure	
 153632	b	b	b	prep.	in	
 153633	ṯmnt	ṯmn(I)/	ṯmn(y) (I)	num.	eight	
 153634	iynm	iyn/	ỉyn	n. m.	disaster	
@@ -90,7 +90,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153657	m	l(I)	l (I)	prep.	to	
 # KTU 1.112 17						
 153658	lk	l(I)+k	l (I)	prep.	to	
-153659	brr	brr/;br/	brr;br(r)	adj. m.;n. m.	pure;tin	
+153659	brr	br/;brr/	br(r);brr	n. m.;adj. m.	tin;pure	
 153660	b	b	b	prep.	in	
 153661	arbˤt	arbˤ/	ảrbʕ	num.	four	
 # KTU 1.112 18						
@@ -98,9 +98,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153663	yrdn	!y!(yrd[+n(I);!y!(yrd[+n(II);!y!(yrd[+n(III)	/y-r-d/,-n (I);/y-r-d/,-n (II);/y-r-d/,-n (III)	vb,morph.;vb,pers. pn./morph./vb;vb,pers. pn./morph.	to go down,Sun;to go down,me;to go down,our	
 153664	gṯrm	gṯr/+m(I);gṯr/+m(II)	gṯr,-m (I);gṯr,-m (II)	DN,morph.;DN,emph. or det. encl. morph.	überlegen stark,;überlegen stark,und das (ist) so!	
 # KTU 1.112 19						
-153665	mṣdh	mṣd(I)/+h;mṣd(II)/+h;mṣd(III)/	mṣd (I);mṣd (II);mṣd (III)	n. m.;n. m.;TN	(feast / banquet of) game;large fortified tower;mṣd (III)	
+153665	mṣdh	mṣd(I)/+h;mṣd(III)/;mṣd(II)/+h	mṣd (I);mṣd (III);mṣd (II)	n. m.;TN;n. m.	(feast / banquet of) game;mṣd (III);large fortified tower	
 153666	ṯn	ṯn(I)/	ṯn (I)	num.	two	
-153667	šm	šm(I)/;š/	šm (I);š	n. m.;n. m.	name;ram	
+153667	šm	š/;šm(I)/	š;šm (I)	n. m.;n. m.	ram;name	
 153668	lgṯrm	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.112 20						
 153669	w	w	w	conj.	and	
@@ -113,7 +113,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153675	yšr	!y!šr(I)[	/š-r/ (I)	vb	to sing	
 153676	b	b	b	prep.	in	
 153677	ḫmš	ḫmš(I)/	ḫmš (I)	n. num.	five	
-153678	ˤ	ˤrš/;ˤšr(I)/;ṣpn/	ʕrš;ʕšr (I);ṣpn	n. f.;n. num.;TN/DN	bed;ten;north	
+153678	ˤ	ṣpn/;ˤšr(I)/;ˤrš/	ṣpn;ʕšr (I);ʕrš	TN/DN;n. num.;n. f.	north;ten;bed	
 # KTU 1.112 22						
 153679	šrh	šr(IV)/;šry[	šr (IV);/š-r-y/w/	n. m.;vb	navel;to release	
 153680	šnpt	šnpt/	šnpt	n. f.	wave- offering	
@@ -131,7 +131,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153690	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
 153691	aṯrt	aṯrt(I)/	ảṯrt (I)	n. f.	back part (of the head)	
 153692	ṯn	ṯn(I)/	ṯn (I)	num.	two	
-153693	šm	šm(I)/;š/	šm (I);š	n. m.;n. m.	name;ram	
+153693	šm	š/;šm(I)/	š;šm (I)	n. m.;n. m.	ram;name	
 153694	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
 153695	btbt	?	?	?	?	DULAT: NOT FOUND
 153696	w	w	w	conj.	and	

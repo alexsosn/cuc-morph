@@ -139,7 +139,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 I:26						
 140563	tṭbḫ	!t!ṭbḫ[	/ṭ-b-ḫ/	vb	to sacrifice, butcher, slaughter	
 140564	šbˤm	šbˤ(I)/m	šbʕ (I)	n. num.	seven	
-140565	yˤlm	!y!ˤlm[;yˤl(I)/m	/ʕ-l-m/;yʕl (I)	vb;n. m.	to be known;mountain goat	Ambiguous DULAT candidates kept as variants
+140565	yˤlm	yˤl(I)/m;!y!ˤlm[	yʕl (I);/ʕ-l-m/	n. m.;vb	mountain goat;to be known	Ambiguous DULAT candidates kept as variants
 # KTU 1.6 I:27						
 140566	k	k(III)	k (III)	Subordinating or completive functor	when	UDB 6 I:27: 00- writes kgmn and as such appears in CPU. In fact Dietrich - Loretz - Sanmartín, UF 8 (1976) p. 432 understood it as a substantive whose meaning would be “three years o...
 140567	gmn	gmn(I)/	gmn (I)	n. m.	funeral offering	
@@ -238,14 +238,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140643	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 140644	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 140645	ym	ym(II)/	ym (II)	n. m.	sea	
-140646	šmˤ	šmˤ/;!!šmˤ[	šmʕ;/š-m-ʕ/	n. m.;vb	auditor;to hear	
+140646	šmˤ	!!šmˤ[;šmˤ/	/š-m-ʕ/;šmʕ	vb;n. m.	to hear;auditor	
 # KTU 1.6 I:45						
 140647	l	l(I)	l (I)	prep.	to	
 140648	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 140649	aṯrtym	aṯrt(II)/+ym(II)/;aṯrt(II)/+ym	ảṯrt (II), ym (II);ảṯrt (II)	DN,n. m.;DN	ʾAṯiratu, sea;ʾAṯiratu	"TCS I:43-55 reads title ""ʾAṯiratu of the Sea""; second variant treats it as a frozen divine epithet."
 140650	tn	!!(ytn[	/y-t-n/	vb	to give, hand over, grant, bestow	"TCS I:45 (""Give one of your sons ..."") supports imperative from /y-t-n/"
 # KTU 1.6 I:46						
-140651	aḥd	!a!ḥd(y[;aḥd/	/ḥ-d-y/;ảḥd	vb;adj. num.	to see, look, observe;one, oneself	Ambiguous DULAT candidates kept as variants; UDB 6 I:46: R1reads according to CTA I, p.39. | UDB variants: R1-1=aḥd . b . b nk [.] amlkn; 00-1=aḥd . b . b nk . am . lkn
+140651	aḥd	aḥd/;!a!ḥd(y[	ảḥd;/ḥ-d-y/	adj. num.;vb	one, oneself;to see, look, observe	Ambiguous DULAT candidates kept as variants; UDB 6 I:46: R1reads according to CTA I, p.39. | UDB variants: R1-1=aḥd . b . b nk [.] amlkn; 00-1=aḥd . b . b nk . am . lkn
 140652	b	b	b	prep.	in	
 140653	bnk	bn(I)/+k	bn (I), -k (I)	n. m.,pers. pn.	son, your(s)	
 140654	am	!a!mlk[	/m-l-k/	vb	to reign, rule	
@@ -693,7 +693,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141016	btlt	btlt/	btlt	n. f.	virgin	
 # KTU 1.6 III:23						
 141017	ˤnt	ˤnt(I)/	ʕnt (I)	DN	ʿAnatu	
-141018	šmˤ	šmˤ/;!!šmˤ[	šmʕ;/š-m-ʕ/	n. m.;vb	auditor;to hear	
+141018	šmˤ	!!šmˤ[;šmˤ/	/š-m-ʕ/;šmʕ	vb;n. m.	to hear;auditor	
 141019	l	l(I)	l (I)	prep.	to	
 141020	btlt	btlt/	btlt	n. f.	virgin	
 141021	ˤnt	ˤnt(I)/	ʕnt (I)	DN	ʿAnatu	
@@ -899,10 +899,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141180	w	w	w	conj.	and	
 141181	yṣḥ	!y!ṣḥ[	/ṣ-ḥ/	vb	to exclaim, shout	
 141182	ˤlk	ˤl(I)+k	ʕl (I)	prep.	upon, on top of	
-141183	bˤlm	bˤl(I)/m;bˤl(II)/m	bʕl (I);bʕl (II)	n. m.;n. m.	labourer, unskilled labourer;lord	Ambiguous DULAT candidates kept as variants
+141183	bˤlm	bˤl(II)/m;bˤl(I)/m	bʕl (II);bʕl (I)	n. m.;n. m.	lord;labourer, unskilled labourer	Ambiguous DULAT candidates kept as variants
 # KTU 1.6 V:12						
 141184	pht	ph(y[t(II)	/p-h-y/	vb	to see, espy	
-141185	qlt	qlt(II)/;qlt(I)/	qlt (II);qlt (I)	n. f.;n. f.	(messenger-)service;dishonor/humiliation	
+141185	qlt	qlt(I)/;qlt(II)/	qlt (I);qlt (II)	n. f.;n. f.	dishonor/humiliation;(messenger-)service	
 141186	ˤlk	ˤl(I)+k	ʕl (I)	prep.	upon, on top of	
 141187	pht	ph(y[t(II)	/p-h-y/	vb	to see, espy	
 # KTU 1.6 V:13						
@@ -945,20 +945,20 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141218	b	b	b	prep.	in	
 141219	ym	ym(II)/	ym (II)	n. m.	sea	
 141220	tn	!!(ytn[	/y-t-n/	vb	to give, hand over, grant, bestow	"TCS V:20 context (""So give one of your brothers ..."") supports /y-t-n/; replaces previous tnn(I)/"
-141221	aḥd	!a!ḥd(y[;aḥd/	/ḥ-d-y/;ảḥd	vb;adj. num.	to see, look, observe;one, oneself	Ambiguous DULAT candidates kept as variants
+141221	aḥd	aḥd/;!a!ḥd(y[	ảḥd;/ḥ-d-y/	adj. num.;vb	one, oneself;to see, look, observe	Ambiguous DULAT candidates kept as variants
 # KTU 1.6 V:20						
 141222	b	b	b	prep.	in	
 141223	aḫk	aḫ(I)/+k	ảḫ (I), -k (I)	n. m.,pers. pn.	brother, your(s)	
 141224	ispa	!i!sp(ʔ&a[	/s-p-ʔ/	vb	to devour, eat, consume	
 141225	w	w	w	conj.	and	
-141226	yṯb	!y!(yṯb[;!y!ṯb[	/y-ṯ-b/;/ṯ-b/	vb;vb	to linger, stop, calm down;to return, turn round, go back, make one’s way, go through	"De Moor: ""(anger) will turn away""; TCS: ""(the anger) would go away""."
+141226	yṯb	!y!ṯb[;!y!(yṯb[	/ṯ-b/;/y-ṯ-b/	vb;vb	to return, turn round, go back, make one’s way, go through;to linger, stop, calm down	TCS: ""(the anger) would go away"".";"De Moor: ""(anger) will turn away""
 # KTU 1.6 V:21						
 141227	ap	ap(I)	ảp (I)	adv.	also	UDB 6 V:21: -92-
 141228	d	d	d	det. or rel. functor	the one(s) of	
 141229	anšt	!a!(ʔnš[~t(II);anšt/	/ʔ-n-š/;ảnšt	vb;n. f.	to languish, fall ill;illness, weakness	Ambiguous DULAT candidates kept as variants
 141230	im	im	ỉm	conj.	if	
 # KTU 1.6 V:22						
-141231	aḥd	!a!ḥd(y[;aḥd/	/ḥ-d-y/;ảḥd	vb;adj. num.	to see, look, observe;one, oneself	Ambiguous DULAT candidates kept as variants; UDB 6 V:22: 00- reads: šq (?) n . CTA I, p. 42, reads: l[-- ] n . The string šqn is hapax, but accepts analysis. The string l--n admits several restorations: lbšn, lḫšn, lṭpn, lẓpn,...
+141231	aḥd	aḥd/;!a!ḥd(y[	ảḥd;/ḥ-d-y/	adj. num.;vb	one, oneself;to see, look, observe	UDB 6 V:22: 00- reads: šq (?) n . CTA I, p. 42, reads: l[-- ] n . The string šqn is hapax, but accepts analysis. The string l--n admits several restorations: lbšn, lḫšn, lṭpn, lẓpn,...;Ambiguous DULAT candidates kept as variants
 141232	b	b	b	prep.	in	
 141233	aḫk	aḫ(I)/+k	ảḫ (I), -k (I)	n. m.,pers. pn.	brother, your(s)	
 141234	l	l(I)	l (I)	prep.	to	
@@ -979,7 +979,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 V:26						
 141246	w	w	w	conj.	and	UDB 6 V:26: Vide CTA I, p. 42. | UDB variants: R1-1=w . yʿ l . aṭ/ḥ[------]; 00-1=w . y (?) ʿ (?)l . a ḥ [ … ]
 141247	yql	!y!ql[	/q-l/	vb	to fall	
-141248	aḥd	!a!ḥd(y[;aḥd/	/ḥ-d-y/;ảḥd	vb;adj. num.	to see, look, observe;one, oneself	Ambiguous DULAT candidates kept as variants
+141248	aḥd	aḥd/;!a!ḥd(y[	ảḥd;/ḥ-d-y/	adj. num.;vb	one, oneself;to see, look, observe	Ambiguous DULAT candidates kept as variants
 # KTU 1.6 V:27						
 141249	štxx	?	?	?	?	DULAT: NOT FOUND; UDB 6 V:27: Vide CTA I, p. 42. | UDB variants: R1-1=št --[-------]; 00-1=št (?)--[ … ]
 # KTU 1.6 V:28						
@@ -1097,7 +1097,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141336	tṣḥ	!t!ṣḥ[	/ṣ-ḥ/	vb	to exclaim, shout	
 141337	l	l(I)	l (I)	prep.	to	
 141338	mt	mt(II)/	mt (II)	n. m.	death	
-141339	šmˤ	šmˤ/;!!šmˤ[	šmʕ;/š-m-ʕ/	n. m.;vb	auditor;to hear	
+141339	šmˤ	!!šmˤ[;šmˤ/	/š-m-ʕ/;šmʕ	vb;n. m.	to hear;auditor	
 141340	mˤ	mˤ(I)	mʕ (I)	postpositional emph. adv.	please!	
 # KTU 1.6 VI:24						
 141341	l	l(I)	l (I)	prep.	to	UDB 6 VI:24: R1 assumes the Broken Sring: tmtḫṣ.

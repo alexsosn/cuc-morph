@@ -5,10 +5,18 @@ import textwrap
 import unittest
 from pathlib import Path
 
+from pipeline.dulat_attestation_index import DulatAttestationIndex
 from pipeline.steps.aleph_prefix import AlephPrefixFixer
+from pipeline.steps.attestation_sort import AttestationSortFixer
 from pipeline.steps.baal_labourer_ktu1 import BaalLabourerKtu1Fixer
 from pipeline.steps.baal_plural import BaalPluralGodListFixer
-from pipeline.steps.base import TabletRow, is_separator_line, is_unresolved, parse_tsv_line
+from pipeline.steps.base import (
+    TabletRow,
+    is_separator_line,
+    is_unresolved,
+    normalize_separator_row,
+    parse_tsv_line,
+)
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
 from pipeline.steps.plural_split import PluralSplitFixer
@@ -76,6 +84,16 @@ class BaseHelpersTest(unittest.TestCase):
         self.assertEqual(
             row_with_comment.to_tsv(),
             "1\tx\t?\t?\t?\t?\tDULAT: NOT FOUND",
+        )
+
+    def test_normalize_separator_row_preserves_tab_shape(self) -> None:
+        self.assertEqual(
+            normalize_separator_row("#---------------------------- KTU 1.5 I:4\t\t\t\t\t\t"),
+            "# KTU 1.5 I:4\t\t\t\t\t\t",
+        )
+        self.assertEqual(
+            normalize_separator_row("#---------------------------- KTU 1.5 I:4"),
+            "# KTU 1.5 I:4",
         )
 
 
@@ -419,6 +437,70 @@ class OfferingListLPrepFixerTest(unittest.TestCase):
             f.write_text(content, encoding="utf-8")
             result = self.fixer.refine_file(f)
             self.assertEqual(result.rows_changed, 3)
+
+
+class AttestationSortFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.index = DulatAttestationIndex(
+            counts_by_key={
+                ("bʕl", "II"): 200,
+                ("ʕbd", ""): 20,
+                ("il", "I"): 600,
+                ("mlk", ""): 120,
+            },
+            max_count_by_lemma={
+                "bʕl": 200,
+                "ʕbd": 20,
+                "il": 600,
+                "mlk": 120,
+            },
+        )
+        self.fixer = AttestationSortFixer(index=self.index)
+
+    def test_reorders_aligned_variants_by_attestation_count(self) -> None:
+        row = TabletRow(
+            line_id="1",
+            surface="x",
+            analysis="a1;a2;a3",
+            dulat="ʕbd;bʕl (II);ỉl (I)",
+            pos="p1;p2;p3",
+            gloss="g1;g2;g3",
+            comment="free comment",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "a3;a2;a1")
+        self.assertEqual(result.dulat, "ỉl (I);bʕl (II);ʕbd")
+        self.assertEqual(result.pos, "p3;p2;p1")
+        self.assertEqual(result.gloss, "g3;g2;g1")
+        self.assertEqual(result.comment, "free comment")
+
+    def test_uses_first_dulat_entry_before_comma_for_ranking(self) -> None:
+        row = TabletRow(
+            line_id="2",
+            surface="x",
+            analysis="a1;a2",
+            dulat="mlk, -m (I);ʕbd, -k (I)",
+            pos="p1;p2",
+            gloss="g1;g2",
+            comment="c1;c2",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "a1;a2")
+        self.assertEqual(result.comment, "c1;c2")
+
+    def test_reorders_comment_when_comment_variants_are_aligned(self) -> None:
+        row = TabletRow(
+            line_id="3",
+            surface="x",
+            analysis="a1;a2",
+            dulat="ʕbd;bʕl (II)",
+            pos="p1;p2",
+            gloss="g1;g2",
+            comment="c1;c2",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "a2;a1")
+        self.assertEqual(result.comment, "c2;c1")
 
 
 class TsvSchemaFormatterTest(unittest.TestCase):

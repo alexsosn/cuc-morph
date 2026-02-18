@@ -457,8 +457,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 III:15						
 138472	pglt	pglt/t	pglt	n. f.	unclean offering	
 138473	b	b	b	prep.	in	
-138474	ṯlḥny	ṯlḥny(II)/;ṯlḥn/+y	ṯlḥny (II);ṯlḥn, -y (I)	GN;n. m.,prep.	my table;table, of	"UNP/TCS iii 14-16 favors ""my table""; DULAT also attests ṯlḥny as form of ṯlḥn [n.] ""table""."
-138475	qlt	qlt(II)/;qlt(I)/	qlt (II);qlt (I)	n. f.;n. f.	(messenger-)service;dishonor/humiliation	"UNP/TCS iii 14-16 favors ""dishonor/humiliation"""
+138474	ṯlḥny	ṯlḥn/+y;ṯlḥny(II)/	ṯlḥn, -y (I);ṯlḥny (II)	n. m.,prep.;GN	table, of;my table	DULAT also attests ṯlḥny as form of ṯlḥn [n.] ""table"".";"UNP/TCS iii 14-16 favors ""my table""
+138475	qlt	qlt(I)/;qlt(II)/	qlt (I);qlt (II)	n. f.;n. f.	dishonor/humiliation;(messenger-)service	"UNP/TCS iii 14-16 favors ""dishonor/humiliation"""
 # KTU 1.4 III:16						
 138476	b	b	b	prep.	in	
 138477	ks	ks(I)/	ks (I)	n. m.	cup	
@@ -566,14 +566,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138558	aliyn	aliyn/	ảlỉyn	adj. m.	The Very / Most Powerful	
 138559	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 # KTU 1.4 III:38						
-138560	xxxrbt	rbt(I)/;urbt/;ˤrb[	rbt (I);ủrbt;/ʕ-r-b/ (I)	n. f.;n. f.;vb	Lady;window;to enter	Initial signs broken (xxx-); TCS/UNP/Wyatt: “Great Lady”. UDB concordance pattern —rbt -> rbt, ủrbt, ʕrbt.
+138560	xxxrbt	ˤrb[;rbt(I)/;urbt/	/ʕ-r-b/ (I);rbt (I);ủrbt	vb;n. f.;n. f.	to enter;Lady;window	Initial signs broken (xxx-); TCS/UNP/Wyatt: “Great Lady”. UDB concordance pattern —rbt -> rbt, ủrbt, ʕrbt.
 138561	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 138562	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 III:39						
 138563	xxxbtlt	btlt/	btlt	n. f.	virgin	initial signs broken (xxx-); TCS/UNP/Wyatt: “Virgin ʿAnatu”
 138564	ˤnt	ˤnt(I)/	ʕnt (I)	DN	ʿAnatu	
 # KTU 1.4 III:40						
-138565	xxxtlḥm	lḥm(II)[;!t!lḥm[	/l-ḥ-m/ (II);/l-ḥ-m/ (I)	vb;vb	to fight;to eat	"UDB concordance pattern —tlḥm -> tlḥm (single hit); second variant reflects /l-ḥ-m/ (I) ""to eat"" (attested tlḥm G prefc. in DULAT forms)."
+138565	xxxtlḥm	!t!lḥm[;lḥm(II)[	/l-ḥ-m/ (I);/l-ḥ-m/ (II)	vb;vb	to eat;to fight	second variant reflects /l-ḥ-m/ (I) ""to eat"" (attested tlḥm G prefc. in DULAT forms).";"UDB concordance pattern —tlḥm -> tlḥm (single hit)
 138566	tšty	!t!šty[	/š-t-y/	vb	to drink	
 # KTU 1.4 III:41						
 138567	ilm	il(I)/m	ỉl (I)	n. m.	god	
@@ -628,7 +628,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 IV:2						
 138601	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 138602	ym	ym(II)/	ym (II)	n. m.	sea	
-138603	šmˤ	šmˤ/;!!šmˤ[	šmʕ;/š-m-ʕ/	n. m.;vb	auditor;to hear	"UNP iv 1-4 imperative ""Hear!""; DULAT supports both noun šmʕ and verb /š-m-ʕ/."
+138603	šmˤ	!!šmˤ[;šmˤ/	/š-m-ʕ/;šmʕ	vb;n. m.	to hear;auditor	DULAT supports both noun šmʕ and verb /š-m-ʕ/.";"UNP iv 1-4 imperative ""Hear!""
 138604	l	l(I)	l (I)	prep.	to	
 138605	qdš	qdš(I)/	qdš (I)	adj. m.	holy	
 # KTU 1.4 IV:3						
@@ -934,19 +934,19 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138850	pid	pid/	pỉd	n. m.	heart	
 # KTU 1.4 IV:59						
 138851	p	p(I)	p (I)	conj. functor	and	
-138852	ˤbd	ˤbd[;ˤbd/	/ʕ-b-d/;ʕbd	vb;n. m.	to work (a field);servant	"UNP iv 58-62 nominal clause ""am I a servant...""; DULAT allows noun ʕbd ""servant""."
+138852	ˤbd	ˤbd/;ˤbd[	ʕbd;/ʕ-b-d/	n. m.;vb	servant;to work (a field)	DULAT allows noun ʕbd ""servant"".";"UNP iv 58-62 nominal clause ""am I a servant...""
 138853	an	an(I)	ản (I)	pers. pn.	I	
 138854	ˤnn	ˤnn/	ʕnn	n. m.	manservant	
 138855	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 # KTU 1.4 IV:60						
 138856	p	p(I)	p (I)	conj. functor	and	
-138857	ˤbd	ˤbd[;ˤbd/	/ʕ-b-d/;ʕbd	vb;n. m.	to work (a field);servant	"Same clause as 138852, nominal ""servant""."
+138857	ˤbd	ˤbd/;ˤbd[	ʕbd;/ʕ-b-d/	n. m.;vb	servant;to work (a field)	"Same clause as 138852, nominal ""servant""."
 138858	ank	ank/	ảnk	pers. pn.	I	
 138859	aḫd	aḫd[	/ʔ-ḫ-d(/ḏ)/	vb	to collect  to take	
 138860	ulṯ	ulṯ/	ủlṯ	n. m.	trowel	
 # KTU 1.4 IV:61						
 138861	hm	hm(II)	hm (II)	conj.	if	
-138862	amt	amt(II)/;amt(I)/	ảmt (II);ảmt (I)	n. f.;n. f.	elbow;maidservant	"UNP iv 58-62 favors ""servant-girl"""
+138862	amt	amt(I)/;amt(II)/	ảmt (I);ảmt (II)	n. f.;n. f.	maidservant;elbow	"UNP iv 58-62 favors ""servant-girl"""
 138863	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 138864	tlbn	!t!lbn[	/l-b-n/	vb	to make bricks	
 # KTU 1.4 IV:62						
@@ -1098,8 +1098,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138983	yblt	!y!blt[	/b-l-t/	vb	to open wide	
 138984	ytn	!y!(ytn[	/y-t-n/	vb	to give	
 # KTU 1.4 V:28						
-138985	bt	bt(I)/;bt(II)/	bt (I);bt (II)	n. f.;n. m.	daughter;house	"UNP v 29-31 ""let a house be given to you""; context favors bt(II) house."
-138986	lk	(hlk[;l(I)+k	/h-l-k/;l (I), -k (I)	vb;prep., pers. pn.	to go;to, your(s)	"Same phrase requires preposition+suffix ""to you"", not /h-l-k/."
+138985	bt	bt(II)/;bt(I)/	bt (II);bt (I)	n. m.;n. f.	house;daughter	context favors bt(II) house.";"UNP v 29-31 ""let a house be given to you""
+138986	lk	l(I)+k;(hlk[	l (I), -k (I);/h-l-k/	prep., pers. pn.;vb	to, your(s);to go	"Same phrase requires preposition+suffix ""to you"", not /h-l-k/."
 138987	km	k(I)+m	k (I), -m (I)	prep., morph.	like,	
 138988	aḫk	aḫ(I)/+k	ảḫ (I), -k (I)	n. m.,pers. pn.	brother, your(s)	
 138989	w	w	w	conj.	and	
@@ -1252,7 +1252,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139106	w	w	w	conj.	and	
 139107	ḫss	ḫss/	ḫss	element of DN	klug	
 # KTU 1.4 V:59						
-139108	šmˤ	šmˤ/;!!šmˤ[	šmʕ;/š-m-ʕ/	n. m.;vb	auditor;to hear	"UNP vi 4-6 imperative ""Hear!""; DULAT supports verbal /š-m-ʕ/."
+139108	šmˤ	!!šmˤ[;šmˤ/	/š-m-ʕ/;šmʕ	vb;n. m.	to hear;auditor	DULAT supports verbal /š-m-ʕ/.";"UNP vi 4-6 imperative ""Hear!""
 139109	l	l(I)	l (I)	prep.	to	
 139110	aliyn	aliyn/	ảlỉyn	adj. m.	The Very / Most Powerful	
 139111	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
@@ -1712,9 +1712,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 VII:23						
 139472	l	l(II)	l (II)	adv.	no	
 139473	rgmt	rgm[	/r-g-m/	vb	to say  tell  announce  communicate  inform	
-139474	lk	(hlk[;l(I)+k	/h-l-k/;l (I), -k (I)	vb;prep., pers. pn.	to go;to, your(s)	"In quote context this is dative ""to you"", not /h-l-k/."
+139474	lk	l(I)+k;(hlk[	l (I), -k (I);/h-l-k/	prep., pers. pn.;vb	to, your(s);to go	"In quote context this is dative ""to you"", not /h-l-k/."
 139475	l	l(I)	l (I)	prep.	to	
-139476	ali	ali(y&n/;aliyn/	ảlỉy;ảlỉyn	adj. m.;adj. m.	the Most Powerful;the Most Powerful	"UNP vii 24-29 has vocative ""O Mighty Baal""; merge with next token as aliyn."
+139476	ali	aliyn/;ali(y&n/	ảlỉyn;ảlỉy	adj. m.;adj. m.	the Most Powerful;the Most Powerful	merge with next token as aliyn.";"UNP vii 24-29 has vocative ""O Mighty Baal""
 # KTU 1.4 VII:24						
 139477	yn	yn/	yn	n. m.	wine	Continuation of aliyn in this context (not wine).
 139478	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	

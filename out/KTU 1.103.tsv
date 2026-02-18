@@ -5,7 +5,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152310	k	k(III);k(I);k(II)	k (III);k (I);k (II)	Subordinating or completive functor;prep.;emph. functor	when;like;yes	
 152311	tld	yld[	/y-l-d/	vb	to give birth (to)	
 152312	at	at(I)/	ảt (I)	pers. pn.	you	
-152313	abn	abn/;ab/+n;!a!bn[	ảbn;ảb;/b-n/	n. f.;n. m.;vb	stone;father;to understand	
+152313	abn	ab/+n;abn/;!a!bn[	ảb;ảbn;/b-n/	n. m.;n. f.;vb	father;stone;to understand	
 152314	madtn	madt(I)/+n	mảdt (I)	n. f.	great quantity	
 152315	tqln	!t!ql[	/q-l/	vb	to fall (down)	
 152316	bḥwt	?	?	?	?	DULAT: NOT FOUND
@@ -90,7 +90,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.103 13						
 152384	mlkn	mlk(I)	mlk (I)		king	
 152385	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
-152386	ypq	!y!(ypq[;!y!pq[	/y-p-q/;/p-q/	vb;vb	to get;to obtain	
+152386	ypq	!y!pq[;!y!(ypq[	/p-q/;/y-p-q/	vb;vb	to obtain;to get	
 152387	špḥ	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.103 14						
 152388	w	w	w	conj.	and	
@@ -169,7 +169,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152447	ymnmlkn	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.103 29						
 152448	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
-152449	ypq	!y!(ypq[;!y!pq[	/y-p-q/;/p-q/	vb;vb	to get;to obtain	
+152449	ypq	!y!pq[;!y!(ypq[	/p-q/;/y-p-q/	vb;vb	to obtain;to get	
 152450	špḥ	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.103 30						
 152451	w	w	w	conj.	and	
@@ -252,7 +252,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152516	hy	hy/	hy	pers. pn.	she	
 152517	št	št[;št(II)/;št(I)/	/š-t/;št (II);št (I)	vb;n. f.;n. m.	to place;raíz;base	
 152518	w	w	w	conj.	and	
-152519	ydu	ndʔ[;dʔy[	/n-d-ʔ/;/d-ʔ-y/	vb;vb	to frighten away;to fly	
+152519	ydu	dʔy[;ndʔ[	/d-ʔ-y/;/n-d-ʔ/	vb;vb	to fly;to frighten away	
 # KTU 1.103 43						
 152520	w	w	w	conj.	and	
 152521	xxxxxx	?	?	?	?	
@@ -277,7 +277,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152537	w	w	w	conj.	and	
 152538	xxxx	?	?	?	?	
 152539	mlkn	mlk(I)	mlk (I)		king	
-152540	yd	yd(I)/;yd(II)/;bd(IV)	yd (I);yd (II);bd (IV)	n. f.;n. m.;prep.	hand;love;into the hands of	
+152540	yd	yd(I)/;bd(IV);yd(II)/	yd (I);bd (IV);yd (II)	n. f.;prep.;n. m.	hand;into the hands of;love	
 152541	ḫrdh	ḫrd/	ḫrd	n. m.	(royal) guard	
 152542	yddll	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.103 47						
@@ -371,7 +371,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.103 59						
 152619	w	w	w	conj.	and	
 152620	in	in/	ỉn	n. m.	lack of	
-152621	yd	yd(I)/;yd(II)/;bd(IV)	yd (I);yd (II);bd (IV)	n. f.;n. m.;prep.	hand;love;into the hands of	
+152621	yd	yd(I)/;bd(IV);yd(II)/	yd (I);bd (IV);yd (II)	n. f.;prep.;n. m.	hand;into the hands of;love	
 152622	šmal	šmal/	šmảl	adj. m. or n. m.	left	
 152623	bh	b	b	prep.	in	
 152624	ḥwt	ḥwt/	ḥwt	n. f.	country	

@@ -1,7 +1,7 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.161 1						
 155115	spr	spr(II)/;spr[;spr(I)/	spr (II);/s-p-r/;spr (I)	n. m.;vb;n. m.	tablet / register;to count;scribe	
-155116	dbḥ	dbḥ[;dbḥ/	/d-b-ḥ/;dbḥ	vb;n. m.	to sacrifice;sacrifice	
+155116	dbḥ	dbḥ/;dbḥ[	dbḥ;/d-b-ḥ/	n. m.;vb	sacrifice;to sacrifice	
 155117	ẓlm	ẓl(I)/m	ẓl (I)	n. m.	shade	
 # KTU 1.161 2						
 155118	qritm	qrʔ[	/q-r-ʔ/	vb	to call	
@@ -89,7 +89,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155182	bˤlk	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu	
 155183	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
 155184	kisih	?	?	?	?	DULAT: NOT FOUND
-155185	aṯr	aṯr(I);aṯr(III);ʔṯr[	ảṯr (I);ảṯr (III);/ʔ-ṯ-r/	adv. or prep.;interr. adv.;vb	then;where;to go	
+155185	aṯr	aṯr(I);ʔṯr[;aṯr(III)	ảṯr (I);/ʔ-ṯ-r/;ảṯr (III)	adv. or prep.;vb;interr. adv.	then;to go;where	
 # KTU 1.161 21						
 155186	bˤlk	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu	
 155187	arṣ	arṣ/	ảrṣ	n. f.	earth	
@@ -150,20 +150,20 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155233	tqdm	!t!qdm[	/q-d-m/	vb	to proceed	
 155234	ˤṣr	ˤṣr(I)/	ʕṣr (I)	n. f.	bird	
 # KTU 1.161 31						
-155235	šlm	šlm[;šlm(I)/;šlm(III)/	/š-l-m/;šlm (I);šlm (III)	vb;n. m.;adj. m.	to be well;peace;pure	
-155236	šlm	šlm[;šlm(I)/;šlm(III)/	/š-l-m/;šlm (I);šlm (III)	vb;n. m.;adj. m.	to be well;peace;pure	
+155235	šlm	šlm(I)/;šlm[;šlm(III)/	šlm (I);/š-l-m/;šlm (III)	n. m.;vb;adj. m.	peace;to be well;pure	
+155236	šlm	šlm(I)/;šlm[;šlm(III)/	šlm (I);/š-l-m/;šlm (III)	n. m.;vb;adj. m.	peace;to be well;pure	
 155237	ˤmrpi	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.161 32						
 155238	w	w	w	conj.	and	
-155239	šlm	šlm[;šlm(I)/;šlm(III)/	/š-l-m/;šlm (I);šlm (III)	vb;n. m.;adj. m.	to be well;peace;pure	
+155239	šlm	šlm(I)/;šlm[;šlm(III)/	šlm (I);/š-l-m/;šlm (III)	n. m.;vb;adj. m.	peace;to be well;pure	
 155240	bah	?	?	?	?	DULAT: NOT FOUND
-155241	šlm	šlm[;šlm(I)/;šlm(III)/	/š-l-m/;šlm (I);šlm (III)	vb;n. m.;adj. m.	to be well;peace;pure	
+155241	šlm	šlm(I)/;šlm[;šlm(III)/	šlm (I);/š-l-m/;šlm (III)	n. m.;vb;adj. m.	peace;to be well;pure	
 155242	ṯryl	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.161 33						
-155243	šlm	šlm[;šlm(I)/;šlm(III)/	/š-l-m/;šlm (I);šlm (III)	vb;n. m.;adj. m.	to be well;peace;pure	
+155243	šlm	šlm(I)/;šlm[;šlm(III)/	šlm (I);/š-l-m/;šlm (III)	n. m.;vb;adj. m.	peace;to be well;pure	
 155244	bth	bt(II)/+h	bt (II)	n. m.	house	
-155245	šlm	šlm[;šlm(I)/;šlm(III)/	/š-l-m/;šlm (I);šlm (III)	vb;n. m.;adj. m.	to be well;peace;pure	
+155245	šlm	šlm(I)/;šlm[;šlm(III)/	šlm (I);/š-l-m/;šlm (III)	n. m.;vb;adj. m.	peace;to be well;pure	
 155246	ugrt	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.161 34						
-155247	šlm	šlm[;šlm(I)/;šlm(III)/	/š-l-m/;šlm (I);šlm (III)	vb;n. m.;adj. m.	to be well;peace;pure	
-155248	ṯġrh	ṯġr(I)/;ṯġr(II)/	ṯġr (I);ṯġr (II)	n. m.;n. m.	gate;gatekeeper	
+155247	šlm	šlm(I)/;šlm[;šlm(III)/	šlm (I);/š-l-m/;šlm (III)	n. m.;vb;adj. m.	peace;to be well;pure	
+155248	ṯġrh	ṯġr(II)/;ṯġr(I)/	ṯġr (II);ṯġr (I)	n. m.;n. m.	gatekeeper;gate	

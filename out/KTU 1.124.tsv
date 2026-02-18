@@ -16,7 +16,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.124 4						
 154385	w	w	w	conj.	and	
 154386	yˤny	!y!ˤny(I)[	/ʕ-n-y/ (I)	vb	to answer	
-154387	nn	gr[;grš[	/g-r(-y)/;/g-r-š/	vb;vb	to attack;to eject	
+154387	nn	grš[;gr[	/g-r-š/;/g-r(-y)/	vb;vb	to eject;to attack	
 154388	dtn	d+n(I);d+n(II);d+n(III)	d,-n (I);d,-n (II);d,-n (III)	det. or rel. functor,morph.;det. or rel. functor,pers. pn./morph./vb;det. or rel. functor,pers. pn./morph.	the one(s) of,Sun;the one(s) of,me;the one(s) of,our	
 # KTU 1.124 5						
 154389	tˤny	!t!ˤny(I)[	/ʕ-n-y/ (I)	vb	to answer	
@@ -30,7 +30,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154396	ḥrn	ḥr(I)/+n(I);ḥr(I)/+n(II);ḥr(I)/+n(III)	ḥr (I),-n (I);ḥr (I),-n (II);ḥr (I),-n (III)	n. m.,morph.;n. m.,pers. pn./morph./vb;n. m.,pers. pn./morph.	intestine(s),Sun;intestine(s),me;intestine(s),our	
 154397	trḥ	trḥ/	trḥ	n. m.	flask	
 # KTU 1.124 7						
-154398	ḥdṯ	ḥdṯ(I)/;ḥdṯ(II)/	ḥdṯ (I);ḥdṯ (II)	adj.;n. m.	new;new moon	
+154398	ḥdṯ	ḥdṯ(II)/;ḥdṯ(I)/	ḥdṯ (II);ḥdṯ (I)	n. m.;adj.	new moon;new	
 154399	mr	mr(I)/;mr(IV)/;mr(II)/	mr (I);mr (IV);mr (II)	n. m.;adj. m.;adj. m.	myrrh;valiant;bitter	
 154400	qḥ	lqḥ[	/l-q-ḥ/	vb	to get hold of	
 154401	w	w	w	conj.	and	
@@ -63,7 +63,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.124 13						
 154423	w	w	w	conj.	and	
 154424	yˤny	!y!ˤny(I)[	/ʕ-n-y/ (I)	vb	to answer	
-154425	nn	gr[;grš[	/g-r(-y)/;/g-r-š/	vb;vb	to attack;to eject	
+154425	nn	grš[;gr[	/g-r-š/;/g-r(-y)/	vb;vb	to eject;to attack	
 # KTU 1.124 14						
 154426	dtn	d+n(I);d+n(II);d+n(III)	d,-n (I);d,-n (II);d,-n (III)	det. or rel. functor,morph.;det. or rel. functor,pers. pn./morph./vb;det. or rel. functor,pers. pn./morph.	the one(s) of,Sun;the one(s) of,me;the one(s) of,our	
 154427	btn	btn(I)/	btn (I)	n. m.	inside of the house	
@@ -75,6 +75,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154432	lklb	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.124 16						
 154433	w	w	w	conj.	and	
-154434	aṯr	aṯr(I);aṯr(III);ʔṯr[	ảṯr (I);ảṯr (III);/ʔ-ṯ-r/	adv. or prep.;interr. adv.;vb	then;where;to go	
+154434	aṯr	aṯr(I);ʔṯr[;aṯr(III)	ảṯr (I);/ʔ-ṯ-r/;ảṯr (III)	adv. or prep.;vb;interr. adv.	then;to go;where	
 154435	in	in/	ỉn	n. m.	lack of	
 154436	mr	mr(I)/;mr(IV)/;mr(II)/	mr (I);mr (IV);mr (II)	n. m.;adj. m.;adj. m.	myrrh;valiant;bitter	

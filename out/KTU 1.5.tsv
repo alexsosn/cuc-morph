@@ -11,7 +11,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139776	ˤqltn	ˤqltn/	ʕqltn	adj. m.	winding	
 139777	š	?	?	?	?	spelling mistake?
 # KTU 1.5 I:3						
-139778	šlyṭ	šlyṭ/;]š]l(w&yṭ/[;]š]lyṭ/[;]š]lyṭ/[;šlyṭ/	šlyṭ;/l-w-ṭ/;/l-y-ṭ/;/l-y-ṭ/;šlyṭ	n. m.;vb;vb;vb;DN m.	tyrant/powerful;enwrap/encircle;enwrap/encircle;curse;Šaliyaṭu	
+139778	šlyṭ	šlyṭ/;šlyṭ/;]š]l(w&yṭ/[;]š]lyṭ/[;]š]lyṭ/[	šlyṭ;šlyṭ;/l-w-ṭ/;/l-y-ṭ/;/l-y-ṭ/	n. m.;DN m.;vb;vb;vb	tyrant/powerful;Šaliyaṭu;enwrap/encircle;enwrap/encircle;curse	
 139779	d	d	d	det. or rel. functor	the one(s) of	
 139780	šbˤt	šbˤ(I)/t	šbʕ (I)	n. num.	seven	
 139781	rašm	r(i&aš(I)/m	rỉš (I)	n. m.	head	
@@ -27,7 +27,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139789	uṭm	uṭ/+m	ủṭ, -m (I)	n. m.,morph.	span,	???
 # KTU 1.5 I:6						
 139790	ḏrqm	ḏrq/m	ḏrq	n. m.	fragment	???
-139791	amtm	amt/m;!a!mt[~m;amt(II)/+m	ảmt (I);/m-t/, -m (I);ảmt (II), -m (I)	n. f.;vb, morph.;n. f.,morph.	(female) slave;to die, enclitic;elbow, enclitic	
+139791	amtm	!a!mt[~m;amt/m;amt(II)/+m	/m-t/, -m (I);ảmt (I);ảmt (II), -m (I)	vb, morph.;n. f.;n. f.,morph.	to die, enclitic;(female) slave;elbow, enclitic	
 139792	l	l(III)	l (III)	functor	certainly	
 139793	yrt	!y!(yr(d&t[	/y-r-d/	vb	to go down	
 # KTU 1.5 I:7						
@@ -82,7 +82,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139835	npš	npš(I)/	npš (I)	n. f.	throat	
 139836	lbim	lb(u&i/m	lbủ	n. m.	lion	Wyatt p117 n11 also notes possible maritime/monster construal in this passage.
 # KTU 1.5 I:15						
-139837	thw	thw/;th(m&w/	thw;thm	n. m.;n. m.	steppe;ocean/deep	Wyatt p117 n11, conjectural restoration toward thm “deep/ocean”.
+139837	thw	th(m&w/;thw/	thm;thw	n. m.;n. m.	ocean/deep;steppe	Wyatt p117 n11, conjectural restoration toward thm “deep/ocean”.
 139838	hm	hm(II)	hm (II)	conj.	if	
 139839	brlt	brlt/	brlt	n. f.	hunger	
 139840	anḫr	anḫr/	ảnḫr	n. m.	dolphin?	
@@ -100,13 +100,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 I:18						
 139850	hm	hm(II)	hm (II)	conj.	if	
 139851	imt	imt/	ỉmt	n. f.	truth	Wyatt p119 n16 treats one repeated imt as likely dittography.
-139852	imt	imt/;!i!mt[:d	ỉmt;/m-t/	n. f.;vb.	truth;kill	Wyatt p119 n16-20, conjectural verbal reading “I kill”; imt as verbal form is not directly attested in DULAT forms.
+139852	imt	!i!mt[:d;imt/	/m-t/;ỉmt	vb.;n. f.	kill;truth	imt as verbal form is not directly attested in DULAT forms.;Wyatt p119 n16-20, conjectural verbal reading “I kill”
 139853	npš	npš(I)/	npš (I)	n. f.	throat	
 139854	blt	bl(y[t:d;blt[	/b-l-y/;/b-l-t/	vb;vb	to devour;to open wide	???
 # KTU 1.5 I:19						
 139855	ḥmr	ḥmr(I)/	ḥmr (I)	n. m.	donkey	
 139856	p	p(I)	p (I)	conj. functor	and	
-139857	imt	imt/;!i!mt[:d	ỉmt;/m-t/	n. f.;vb.	truth;kill	Wyatt p119 n20 allows verbal /m-t/ interpretation in this cluster.
+139857	imt	!i!mt[:d;imt/	/m-t/;ỉmt	vb.;n. f.	kill;truth	Wyatt p119 n20 allows verbal /m-t/ interpretation in this cluster.
 139858	b	b	b	prep.	in	
 139859	klat	klat/	klảt(n)	n. f.	both	!!!???
 # KTU 1.5 I:20						
@@ -147,7 +147,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139889	yn	yn/	yn	n. m.	wine	
 # KTU 1.5 I:26						
 139890	p	p(I)	p (I)	conj. functor	and	UNP keeps the drinking sequence here
-139891	nšt	nš(y[t:n;!n!št(y[	/n-š-y/;/š-t-y/	vb;vb	to be forgotten;to drink	"DULAT and Notarius [377] support /n-š-y/ N suffc. 1cs ""I was forgotten""; TCS and UNP: /š-t-y/, ""let us drink""."
+139891	nšt	!n!št(y[;nš(y[t:n	/š-t-y/;/n-š-y/	vb;vb	to drink;to be forgotten	TCS and UNP: /š-t-y/, ""let us drink"".";"DULAT and Notarius [377] support /n-š-y/ N suffc. 1cs ""I was forgotten""
 139892	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 139893	ṭˤn	ṭˤn[	/ṭ-ʕ-n/	vb	to smite	likely /ṭ-ʕ-n/ (cf. following iṭˤnk and UDB [ṭ]ʿn); Del Olmo I:26 renders this hemistich as “ataque/herida”
 139894	iṭˤnk	!i!ṭˤn[+k	/ṭ-ʕ-n/, -k (I)	vb, pers. pn.	to smite, your(s)	
@@ -810,7 +810,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140412	dgn	dgn(I)/	dgn (I)	n. m.	grain	
 140413	my	my(I)	my (I)	pn. interr.	who?	contextually “what?”)
 140414	hmlt	hml(t/t=	hmlt	n. f. pl. tant.?	multitude	
-140415	aṯr	aṯr[/;aṯr(I)	/ʔ-ṯ-r/;ảṯr (I)	vb;adv. or prep.	to follow;afterwards	Wyatt p128 n60: “After Baal I shall go down...”.
+140415	aṯr	aṯr(I);aṯr[/	ảṯr (I);/ʔ-ṯ-r/	adv. or prep.;vb	afterwards;to follow	Wyatt p128 n60: “After Baal I shall go down...”.
 # KTU 1.5 VI:25						
 140416	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 140417	ard	!(ʔ&a!(yrd[	/y-r-d/	vb	to go down	
