@@ -14,6 +14,7 @@ from pipeline.steps.baal_labourer_ktu1 import BaalLabourerKtu1Fixer
 from pipeline.steps.baal_plural import BaalPluralGodListFixer
 from pipeline.steps.base import RefinementStep
 from pipeline.steps.dulat_gate import DulatMorphGate
+from pipeline.steps.known_ambiguities import KnownAmbiguityExpander
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
 from pipeline.steps.plural_split import PluralSplitFixer
@@ -59,6 +60,7 @@ class TabletParsingPipeline:
             WeakVerbFixer(),
             WeakFinalSuffixConjugationFixer(),
             AttestationSortFixer(index=self.attestation_index),
+            KnownAmbiguityExpander(),
             # Keep schema pass last so any content-changing steps still end in
             # strict 7-column/quote-safe TSV for GitHub rendering.
             TsvSchemaFormatter(),

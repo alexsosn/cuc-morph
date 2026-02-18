@@ -17,6 +17,7 @@ from pipeline.steps.base import (
     normalize_separator_row,
     parse_tsv_line,
 )
+from pipeline.steps.known_ambiguities import KnownAmbiguityExpander
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
 from pipeline.steps.plural_split import PluralSplitFixer
@@ -292,6 +293,43 @@ class WeakVerbFixerTest(unittest.TestCase):
         row = TabletRow("1", "ttn", "!t!tn[", "/y-t-n/", "vb", "to give", "")
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "!t!(ytn[")
+
+
+class KnownAmbiguityExpanderTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = KnownAmbiguityExpander()
+
+    def test_expands_ydk_to_full_ambiguity_set(self) -> None:
+        row = TabletRow("1", "ydk", "!y!dk[", "d-k(-k)/", "vb", "to be pounded", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(
+            result.analysis,
+            "yd(I)/+k;yd(I)/+k=;yd(II)/+k;yd(II)/+k=;!y!dk[;!y=!dk[",
+        )
+        self.assertEqual(
+            result.dulat,
+            "yd (I), -k (I);yd (I), -k (I);yd (II), -k (I);yd (II), -k (I);d-k(-k)/;d-k(-k)/",
+        )
+
+    def test_expands_shlmm_to_enclitic_and_plural_variants(self) -> None:
+        row = TabletRow(
+            "1",
+            "šlmm",
+            "šlm(II)/m",
+            "šlm (II)",
+            "n. m.",
+            "communion victim / sacrifice",
+            "",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "šlm(II)/~m;šlm(II)/m")
+        self.assertEqual(result.dulat, "šlm (II);šlm (II)")
+        self.assertEqual(result.pos, "n. m.;n. m.")
+
+    def test_non_matching_surface_is_unchanged(self) -> None:
+        row = TabletRow("1", "ydh", "yd(I)/+h", "yd (I), -h (I)", "n. f.,pers. pn.", "hand", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "yd(I)/+h")
 
     def test_non_weak_initial_verb_unchanged(self) -> None:
         row = TabletRow("1", "tqru", "tqrʔ[", "/q-r-ʔ/", "vb", "to call", "")
