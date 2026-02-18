@@ -38,7 +38,7 @@ if (( ${#staged_py_files[@]} > 0 )); then
 fi
 
 # Run lint-report generation only when lint-relevant files are staged.
-if ! printf '%s\n' "$staged_files" | grep -E -q '^(out/.*\.tsv|linter/|scripts/(generate_lint_reports|parse_lint_reports|install_git_hooks)\.py|lint_reports/|reports/|\.github/workflows/morphology-lint\.yml)'; then
+if ! printf '%s\n' "$staged_files" | grep -E -q '^(out/.*\.tsv|linter/|scripts/(generate_lint_reports|parse_lint_reports|install_git_hooks|run_tablet_parsing_pipeline)\.py|lint_reports/|pipeline/|reports/|\.github/workflows/morphology-lint\.yml)'; then
   exit 0
 fi
 

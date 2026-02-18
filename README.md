@@ -28,6 +28,15 @@ Generated files include:
 - `reports/lint_issue_types_trend.svg`
 - `reports/lint_trends.md`
 
+## Tablet Parsing Pipeline
+
+Use the reusable pipeline to process new tablets from `cuc_tablets_tsv` into `out` and regenerate reports:
+
+- Dry-run target discovery: `UV_CACHE_DIR=.uv-cache uv run --python .venv/bin/python python scripts/run_tablet_parsing_pipeline.py --dry-run`
+- Parse only missing tablets (default): `UV_CACHE_DIR=.uv-cache uv run --python .venv/bin/python python scripts/run_tablet_parsing_pipeline.py`
+- Parse specific tablets: `UV_CACHE_DIR=.uv-cache uv run --python .venv/bin/python python scripts/run_tablet_parsing_pipeline.py --files 'KTU 1.181.tsv' 'KTU 1.182.tsv'`
+- Reprocess existing outputs too: `UV_CACHE_DIR=.uv-cache uv run --python .venv/bin/python python scripts/run_tablet_parsing_pipeline.py --include-existing`
+
 ## GitHub Actions
 
 GitHub Actions no longer runs the linter itself. It parses committed files under `reports/` and publishes the summary in the workflow UI.
