@@ -13,3 +13,5 @@
 - Added unit tests for pipeline target selection and dry-run behavior.
 - Added instruction-driven refinement (`pipeline/instruction_refiner.py`) to normalize disallowed col2/col3 characters and force unresolved `?` rows when DULAT is explicitly missing.
 - Applied instruction-driven cleanup to newly parsed `out/KTU 1.*.tsv` tablets (excluding curated `KTU 1.1-1.6`) and refreshed reports.
+- Extended instruction-driven refinement to inject DULAT-backed POS gender markers for `n.`/`adj.` slots when gender is uniquely known (including pipeline wiring and unit tests).
+- Re-ran refinement across non-curated `out/KTU 1.*.tsv` outputs and regenerated reports, removing 8,350 warning-level issues in this pass.

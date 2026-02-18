@@ -41,7 +41,7 @@ Pipeline stages are:
 
 1. Bootstrap from DULAT form matches
 2. Mention-aware refinement (`scripts/refine_results_mentions.py` logic)
-3. Instruction-driven cleanup for high-confidence cases (normalize disallowed col2/col3 characters and enforce unresolved `?` rows where DULAT is missing)
+3. Instruction-driven cleanup for high-confidence cases (normalize disallowed col2/col3 characters, enforce unresolved `?` rows where DULAT is missing, and enrich `n.`/`adj.` POS slots with DULAT gender where uniquely known)
 4. Report regeneration under `reports/`
 
 ## GitHub Actions

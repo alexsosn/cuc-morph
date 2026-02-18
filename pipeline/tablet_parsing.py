@@ -27,7 +27,7 @@ class TabletParsingPipeline:
 
     def __init__(self, config: PipelineConfig) -> None:
         self.config = config
-        self.instruction_refiner = InstructionRefiner()
+        self.instruction_refiner = InstructionRefiner(dulat_db=self.config.dulat_db)
 
     def discover_source_files(self) -> List[Path]:
         return sorted(self.config.source_dir.glob(self.config.source_glob))
