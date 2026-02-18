@@ -1,7 +1,8 @@
-"""Fix weak-initial verb forms missing !...! preformative markers.
+"""Fix weak-initial /y-/ prefix forms in analysis variants.
 
-When a verb root starts with /y-.../ and the surface has a prefix preformative
-(t, y, a, n, i), the analysis must wrap that prefix in !...! markers.
+For weak-initial verbs in prefix conjugation, analysis should encode:
+- prefix preformative in ``!...!``
+- hidden initial radical as ``(y`` immediately after that marker.
 """
 
 import re
@@ -11,12 +12,12 @@ from pipeline.steps.base import RefinementStep, TabletRow
 # Preformative consonants for prefix conjugation
 _PREFORMATIVES = {"t", "y", "a", "n", "i"}
 
-# Root pattern like /y-d-y/ or /ʔ-b-d/
-_ROOT_RE = re.compile(r"^/([A-Za-zˤʔḫṣṯẓġḏḥṭš])-")
+_WEAK_INITIAL_Y_RE = re.compile(r"^\s*/y-")
+_PREFORMATIVE_MARKER_RE = re.compile(r"^!([ytani])(?:=|==|===)?!")
 
 
 class WeakVerbFixer(RefinementStep):
-    """Add !...! preformative markers for weak-initial verb prefix forms."""
+    """Normalize weak-initial /y-/ prefix forms."""
 
     @property
     def name(self) -> str:
@@ -33,10 +34,6 @@ class WeakVerbFixer(RefinementStep):
 
         # Only verbs
         if "vb" not in pos:
-            return row
-
-        # Already has !...! markers
-        if "!" in analysis:
             return row
 
         # Must be a verb form (has '[' ending)
@@ -75,28 +72,42 @@ class WeakVerbFixer(RefinementStep):
         )
 
     def _fix_variant(self, var: str, dulat_var: str, pos_var: str, surface: str) -> str:
-        """Fix one analysis variant if it's a weak-initial verb missing preformative."""
+        """Fix one analysis variant if it is weak-initial /y-/ prefix form."""
         if "vb" not in pos_var:
             return var
         if "[" not in var:
             return var
-        if "!" in var:
+
+        if not _WEAK_INITIAL_Y_RE.match(dulat_var):
             return var
 
-        # Check if DULAT variant is a root
-        m = _ROOT_RE.match(dulat_var)
+        marked = self._normalize_marked_variant(var)
+        if marked != var:
+            return marked
+
+        return self._normalize_unmarked_variant(var, surface)
+
+    def _normalize_marked_variant(self, var: str) -> str:
+        """Ensure weak-initial marked variant has '(y' after !preformative!."""
+        m = _PREFORMATIVE_MARKER_RE.match(var)
         if not m:
             return var
 
-        # Surface must start with a preformative
+        prefix_marker = m.group(0)
+        remainder = var[m.end() :]
+        if remainder.startswith("(y"):
+            return var
+        if remainder.startswith("y"):
+            remainder = "(y" + remainder[1:]
+        else:
+            remainder = "(y" + remainder
+        return prefix_marker + remainder
+
+    def _normalize_unmarked_variant(self, var: str, surface: str) -> str:
+        """Add !preformative! and '(y' for unmarked weak-initial prefix forms."""
         if not surface or surface[0] not in _PREFORMATIVES:
             return var
-
         prefix = surface[0]
-
-        # Check analysis starts with the same preformative letter
         if not var.startswith(prefix):
             return var
-
-        # Wrap the prefix letter in !...!
-        return "!" + prefix + "!" + var[1:]
+        return f"!{prefix}!(y{var[1:]}"

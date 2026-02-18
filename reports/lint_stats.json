@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-02-18T11:04:15.141926+00:00",
+  "generated_at_utc": "2026-02-18T11:29:41.010437+00:00",
   "files_checked": 139,
-  "total_issues": 8602,
-  "fallback_parsed": 232,
+  "total_issues": 8223,
+  "fallback_parsed": 19,
   "by_severity": {
-    "ERROR": 5987,
+    "ERROR": 5609,
     "WARNING": 1192,
     "INFO": 1197
   },
@@ -12,7 +12,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3807
+      "count": 3806
     },
     {
       "severity": "INFO",
@@ -22,7 +22,7 @@
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 784
+      "count": 714
     },
     {
       "severity": "WARNING",
@@ -46,18 +46,18 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "DULAT comment does not match candidates",
-      "count": 150
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "Non-G stem in DULAT requires stem marker",
-      "count": 142
+      "count": 112
     },
     {
       "severity": "ERROR",
       "problem_type": "Unknown DULAT token in column 4",
       "count": 112
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "DULAT comment does not match candidates",
+      "count": 86
     },
     {
       "severity": "ERROR",
@@ -80,24 +80,9 @@
       "count": 45
     },
     {
-      "severity": "ERROR",
-      "problem_type": "ydy For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 38
-    },
-    {
       "severity": "WARNING",
       "problem_type": "TODO/uncertain marker in comment",
       "count": 37
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yṯb For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 33
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yṣq For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 30
     },
     {
       "severity": "WARNING",
@@ -120,11 +105,6 @@
       "count": 13
     },
     {
-      "severity": "ERROR",
-      "problem_type": "ytn For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 13
-    },
-    {
       "severity": "WARNING",
       "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
       "count": 13
@@ -140,11 +120,6 @@
       "count": 8
     },
     {
-      "severity": "ERROR",
-      "problem_type": "yṣi For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 7
-    },
-    {
       "severity": "WARNING",
       "problem_type": "Deverbal form marked with '[' but only noun entry found in DULAT",
       "count": 7
@@ -156,32 +131,7 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "ynqm For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yṣu For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yṯṯb For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "Verb lacks '[' ending",
-      "count": 5
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ylt For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 5
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yṣa For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
       "count": 5
     },
     {
@@ -190,94 +140,9 @@
       "count": 5
     },
     {
-      "severity": "ERROR",
-      "problem_type": "ybl For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ydˤt For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yld For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yrd For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ypˤ For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yrdn For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ytnn For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ytnt For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yšn For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yṣan For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 3
-    },
-    {
       "severity": "WARNING",
       "problem_type": "blt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
       "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "atnk For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ydˤnn For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yh For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yrdt For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yrty For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yry For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yṣat For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 2
     },
     {
       "severity": "WARNING",
@@ -307,86 +172,6 @@
     {
       "severity": "ERROR",
       "problem_type": "Xt stem marker present but DULAT lacks *t stem",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ašld For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "aṯbn For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ybln For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yblnh For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ydˤ For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ydˤtk For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ymnn For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ynpˤ For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ynq For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ypq For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yrdm For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yrt For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yrṯ For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ytt For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yšṣi For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yṣm For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
       "count": 1
     },
     {

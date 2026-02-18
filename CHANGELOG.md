@@ -25,3 +25,5 @@
 - Extended pipeline CLI with safeguard controls (`--max-step-change-ratio`, `--allow-large-step-changes`) and reran full `out/KTU 1.*.tsv` + reports with the guarded step chain.
 - Refined `SuffixCliticFixer` fallback for lemma-style analyses (e.g., `l(I)`, `šmm(I)/`) when exact DULAT surface forms are suffixal, and added regression tests for these patterns.
 - Applied the improved suffix step across non-curated `out/KTU 1.*.tsv` files and regenerated reports (substantial reduction in suffix-related warnings/errors).
+- Refined `WeakVerbFixer` for weak-initial `/y-/` prefix forms to enforce `!preformative!` + hidden `(y` normalization (including conversion of `!y!y...` to `!y!(y...`) and added focused unit tests.
+- Applied a weak-verb-only refinement pass to `out/KTU 1.*.tsv` and regenerated reports, eliminating all weak-initial `(y` lint errors and reducing total issues from `8602` to `8223`.

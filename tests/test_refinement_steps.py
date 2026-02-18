@@ -188,15 +188,30 @@ class WeakVerbFixerTest(unittest.TestCase):
     def setUp(self) -> None:
         self.fixer = WeakVerbFixer()
 
-    def test_prefix_y_wrapped(self) -> None:
-        row = TabletRow("1", "yṯṯb", "yṯṯb[", "/y-ṯ-b/", "vb", "to sit down", "")
+    def test_prefix_y_wrapped_and_hidden_y_reconstructed(self) -> None:
+        row = TabletRow("1", "yṯb", "yṯb[", "/y-ṯ-b/", "vb", "to sit down", "")
         result = self.fixer.refine_row(row)
-        self.assertEqual(result.analysis, "!y!ṯṯb[")
+        self.assertEqual(result.analysis, "!y!(yṯb[")
 
-    def test_prefix_t_wrapped(self) -> None:
+    def test_existing_preformative_adds_hidden_initial_y(self) -> None:
+        row = TabletRow("1", "yṯb", "!y!ṯb[", "/y-ṯ-b/", "vb", "to sit down", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!y!(yṯb[")
+
+    def test_existing_surface_y_after_preformative_becomes_hidden_y(self) -> None:
+        row = TabletRow("1", "ybl", "!y!ybl[", "/y-b-l/", "vb", "to carry", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!y!(ybl[")
+
+    def test_t_preformative_variant_gets_hidden_initial_y(self) -> None:
+        row = TabletRow("1", "ttn", "!t!tn[", "/y-t-n/", "vb", "to give", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!t!(ytn[")
+
+    def test_non_weak_initial_verb_unchanged(self) -> None:
         row = TabletRow("1", "tqru", "tqrʔ[", "/q-r-ʔ/", "vb", "to call", "")
         result = self.fixer.refine_row(row)
-        self.assertEqual(result.analysis, "!t!qrʔ[")
+        self.assertEqual(result.analysis, "tqrʔ[")
 
     def test_non_verb_unchanged(self) -> None:
         row = TabletRow("1", "yd", "yd/", "yd (I)", "n. f.", "hand", "")
