@@ -9,12 +9,19 @@ if [[ -z "${staged_files//[$'\t\r\n ']}" ]]; then
   exit 0
 fi
 
-ruff_bin=""
-if [[ -x ".venv/bin/ruff" ]]; then
-  ruff_bin=".venv/bin/ruff"
-elif command -v ruff >/dev/null 2>&1; then
-  ruff_bin="$(command -v ruff)"
+if [[ ! -x ".venv/bin/python" ]]; then
+  echo "Missing .venv/bin/python. Create the virtual environment before commit." >&2
+  exit 1
 fi
+
+if ! command -v uv >/dev/null 2>&1; then
+  echo "uv is required for pre-commit checks but was not found." >&2
+  exit 1
+fi
+
+run_uv() {
+  UV_CACHE_DIR=.uv-cache uv run --python .venv/bin/python "$@"
+}
 
 staged_py_files=()
 while IFS= read -r path; do
@@ -25,29 +32,24 @@ while IFS= read -r path; do
 done <<< "$staged_files"
 
 if (( ${#staged_py_files[@]} > 0 )); then
-  if [[ -z "$ruff_bin" ]]; then
-    echo "Ruff is required for Python pre-commit checks but was not found." >&2
-    exit 1
-  fi
-
   echo "Running ruff format/check on staged Python files ..."
-  "$ruff_bin" format "${staged_py_files[@]}"
-  "$ruff_bin" check --fix "${staged_py_files[@]}"
-  "$ruff_bin" check "${staged_py_files[@]}"
+  run_uv ruff format "${staged_py_files[@]}"
+  run_uv ruff check --fix "${staged_py_files[@]}"
   git add "${staged_py_files[@]}"
 fi
+
+echo "Running repo-wide Ruff checks ..."
+run_uv ruff check
+
+echo "Running full test suite ..."
+run_uv python -m unittest discover -s tests -v
 
 # Run lint-report generation only when lint-relevant files are staged.
 if ! printf '%s\n' "$staged_files" | grep -E -q '^(out/.*\.tsv|linter/|scripts/(generate_lint_reports|parse_lint_reports|install_git_hooks|run_tablet_parsing_pipeline)\.py|lint_reports/|pipeline/|reports/|\.github/workflows/morphology-lint\.yml)'; then
   exit 0
 fi
 
-if [[ ! -x ".venv/bin/python" ]]; then
-  echo "Missing .venv/bin/python. Create the virtual environment before commit." >&2
-  exit 1
-fi
-
 echo "Generating morphology lint reports under reports/ ..."
-.venv/bin/python scripts/generate_lint_reports.py
+run_uv python scripts/generate_lint_reports.py
 
 git add reports/

@@ -12,7 +12,6 @@ from __future__ import annotations
 
 import argparse
 import html
-import json
 import math
 import re
 import sqlite3
@@ -21,7 +20,9 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Sequence, Set, Tuple
 
-SEPARATOR_RE = re.compile(r"^#-+\s*KTU\s+(\d+\.\d+)\s+([IVX]+):(\d+)\s*$", re.IGNORECASE)
+SEPARATOR_RE = re.compile(
+    r"^#-+\s*KTU\s+(\d+\.\d+)\s+([IVX]+):(\d+)\s*$", re.IGNORECASE
+)
 
 LOOKUP_NORMALIZE = str.maketrans(
     {
@@ -81,6 +82,7 @@ class Variant:
 
 
 # ------------------ helpers ------------------
+
 
 def normalize_lookup(s: str) -> str:
     return (s or "").translate(LOOKUP_NORMALIZE).strip()
@@ -168,7 +170,9 @@ def normalize_pos_label(pos: str) -> str:
 
 
 def pos_token(e: Entry) -> str:
-    parts = [normalize_pos_label(p.strip()) for p in (e.pos or "").split(",") if p.strip()]
+    parts = [
+        normalize_pos_label(p.strip()) for p in (e.pos or "").split(",") if p.strip()
+    ]
     if not parts:
         return ""
     # In col5 one morpheme slot can keep alternatives with '/'
@@ -181,7 +185,9 @@ def is_verb_pos(pos: str) -> bool:
 
 def is_nominal_pos(pos: str) -> bool:
     p = (pos or "").lower()
-    return any(k in p for k in ("n.", "adj", "dn", "pn", "tn", "gn", "mn", "num", "element"))
+    return any(
+        k in p for k in ("n.", "adj", "dn", "pn", "tn", "gn", "mn", "num", "element")
+    )
 
 
 def extract_letters(text: str) -> str:
@@ -224,7 +230,9 @@ def stem_marker_from_morph(morph_values: Sequence[str]) -> str:
     return ""
 
 
-def analysis_for_entry(surface: str, e: Entry, morph_values: Optional[Sequence[str]] = None) -> str:
+def analysis_for_entry(
+    surface: str, e: Entry, morph_values: Optional[Sequence[str]] = None
+) -> str:
     s = normalize_analysis(surface)
     hom = f"({e.hom})" if e.hom else ""
     stem_marker = stem_marker_from_morph(morph_values or [])
@@ -253,7 +261,7 @@ def suffix_fragment(e: Entry) -> str:
 
 
 def gloss_for_entry(e: Entry, multi_slot: bool = False) -> str:
-    pos_up = (e.pos or "")
+    pos_up = e.pos or ""
     if any(tag in pos_up for tag in ("DN", "PN", "TN", "GN")):
         # Prefer canonical name rendering for proper names if available.
         base = compact_gloss(e.wiki_tr) or compact_gloss(e.gloss) or entry_label(e)
@@ -268,19 +276,32 @@ def gloss_for_entry(e: Entry, multi_slot: bool = False) -> str:
 
 # ------------------ loading ------------------
 
-def load_entries(dulat_db: Path) -> Tuple[Dict[int, Entry], Dict[str, List[Entry]], Dict[str, List[Entry]], Dict[str, List[Entry]], Dict[Tuple[str, int], Set[str]]]:
+
+def load_entries(
+    dulat_db: Path,
+) -> Tuple[
+    Dict[int, Entry],
+    Dict[str, List[Entry]],
+    Dict[str, List[Entry]],
+    Dict[str, List[Entry]],
+    Dict[Tuple[str, int], Set[str]],
+]:
     conn = sqlite3.connect(str(dulat_db))
     cur = conn.cursor()
 
     # compact gloss preference
     sense_map: Dict[int, str] = {}
-    cur.execute("SELECT entry_id, definition FROM senses WHERE definition IS NOT NULL AND trim(definition) != '' ORDER BY entry_id, id")
+    cur.execute(
+        "SELECT entry_id, definition FROM senses WHERE definition IS NOT NULL AND trim(definition) != '' ORDER BY entry_id, id"
+    )
     for entry_id, definition in cur.fetchall():
         if entry_id not in sense_map:
             sense_map[entry_id] = compact_gloss(definition)
 
     trans_map: Dict[int, str] = {}
-    cur.execute("SELECT entry_id, text FROM translations WHERE text IS NOT NULL AND trim(text) != '' ORDER BY entry_id, rowid")
+    cur.execute(
+        "SELECT entry_id, text FROM translations WHERE text IS NOT NULL AND trim(text) != '' ORDER BY entry_id, rowid"
+    )
     for entry_id, text in cur.fetchall():
         if entry_id not in trans_map:
             trans_map[entry_id] = compact_gloss(text)
@@ -310,7 +331,9 @@ def load_entries(dulat_db: Path) -> Tuple[Dict[int, Entry], Dict[str, List[Entry
 
     forms_map: Dict[str, List[Entry]] = {}
     forms_morph: Dict[Tuple[str, int], Set[str]] = {}
-    cur.execute("SELECT text, entry_id FROM forms WHERE text IS NOT NULL AND trim(text) != ''")
+    cur.execute(
+        "SELECT text, entry_id FROM forms WHERE text IS NOT NULL AND trim(text) != ''"
+    )
     for txt, entry_id in cur.fetchall():
         e = entries_by_id.get(int(entry_id))
         if not e:
@@ -318,7 +341,9 @@ def load_entries(dulat_db: Path) -> Tuple[Dict[int, Entry], Dict[str, List[Entry
         k = normalize_lookup(txt)
         if k:
             forms_map.setdefault(k, []).append(e)
-    cur.execute("SELECT text, entry_id, morphology FROM forms WHERE text IS NOT NULL AND trim(text) != ''")
+    cur.execute(
+        "SELECT text, entry_id, morphology FROM forms WHERE text IS NOT NULL AND trim(text) != ''"
+    )
     for txt, entry_id, morph in cur.fetchall():
         k = normalize_lookup(txt)
         if not k:
@@ -331,7 +356,9 @@ def load_entries(dulat_db: Path) -> Tuple[Dict[int, Entry], Dict[str, List[Entry
 
 def load_reverse_mentions(
     dulat_db: Path, udb_db: Path
-) -> Tuple[Dict[str, Set[int]], Dict[int, int], Dict[int, Set[str]], Dict[int, Dict[str, int]]]:
+) -> Tuple[
+    Dict[str, Set[int]], Dict[int, int], Dict[int, Set[str]], Dict[int, Dict[str, int]]
+]:
     out: Dict[str, Set[int]] = {}
     entry_ref_count: Counter = Counter()
     entry_tablets: Dict[int, Set[str]] = defaultdict(set)
@@ -376,10 +403,16 @@ def load_reverse_mentions(
                     entry_family_count[eid][fam] += 1
     conn.close()
 
-    return out, dict(entry_ref_count), dict(entry_tablets), {k: dict(v) for k, v in entry_family_count.items()}
+    return (
+        out,
+        dict(entry_ref_count),
+        dict(entry_tablets),
+        {k: dict(v) for k, v in entry_family_count.items()},
+    )
 
 
 # ------------------ refinement ------------------
+
 
 def score_variant(
     v: Variant,
@@ -410,7 +443,14 @@ def score_variant(
             s += 3
         elif ltxt and ltxt[0] == surf[:1]:
             s += 1
-        if is_verb_pos(pe.pos) and normalize_analysis(surface)[:1] in {"y", "t", "a", "n", "i", "u"}:
+        if is_verb_pos(pe.pos) and normalize_analysis(surface)[:1] in {
+            "y",
+            "t",
+            "a",
+            "n",
+            "i",
+            "u",
+        }:
             s += 1
         if is_verb_pos(pe.pos) and len(surf) <= 2:
             s -= 2
@@ -422,9 +462,13 @@ def score_variant(
             s -= 1
 
         # Use DULAT form morphology (for this exact surface) as generic tie-breaker.
-        fm = " | ".join(sorted(forms_morph.get((normalize_lookup(surface), pe.entry_id), set()))).lower()
+        fm = " | ".join(
+            sorted(forms_morph.get((normalize_lookup(surface), pe.entry_id), set()))
+        ).lower()
         if fm:
-            ends_pron_suffix = bool(re.search(r"(y|k|h|hm|hn|km|kn|n)$", normalize_lookup(surface)))
+            ends_pron_suffix = bool(
+                re.search(r"(y|k|h|hm|hn|km|kn|n)$", normalize_lookup(surface))
+            )
             if "pn." in fm:
                 s += 5 if ends_pron_suffix else 3
             if "suff" in fm:
@@ -458,7 +502,11 @@ def score_variant(
             top_ratio = fam_counts[top_family] / total if total else 0.0
             if cur_family not in fam_counts:
                 pos_raw = pe.pos or ""
-                if ("PN" in pos_raw or "TN" in pos_raw) and total >= 6 and top_ratio >= 0.8:
+                if (
+                    ("PN" in pos_raw or "TN" in pos_raw)
+                    and total >= 6
+                    and top_ratio >= 0.8
+                ):
                     s -= 8
                 elif "DN" in pos_raw and total >= 6 and top_ratio >= 0.9:
                     s -= 4
@@ -492,7 +540,9 @@ def build_variants(
 ) -> List[Variant]:
     s_norm = normalize_lookup(surface)
     direct_all = dedupe_entries(forms_map.get(s_norm, []))
-    direct_pref = [e for e in direct_all if (e.pos or "").strip() and (e.pos or "").strip() != "→"]
+    direct_pref = [
+        e for e in direct_all if (e.pos or "").strip() and (e.pos or "").strip() != "→"
+    ]
     direct = direct_pref if direct_pref else direct_all
     direct_ids = {e.entry_id for e in direct}
 
@@ -506,12 +556,20 @@ def build_variants(
                 continue
             base_norm = s_norm[: -len(suf)]
             base_all = dedupe_entries(forms_map.get(base_norm, []))
-            base_pref = [e for e in base_all if (e.pos or "").strip() and (e.pos or "").strip() != "→"]
+            base_pref = [
+                e
+                for e in base_all
+                if (e.pos or "").strip() and (e.pos or "").strip() != "→"
+            ]
             base_entries = base_pref if base_pref else base_all
             if not base_entries:
                 continue
             suffix_all = dedupe_entries(suffix_map.get(suf, []))
-            suffix_pref = [e for e in suffix_all if (e.pos or "").strip() and (e.pos or "").strip() != "→"]
+            suffix_pref = [
+                e
+                for e in suffix_all
+                if (e.pos or "").strip() and (e.pos or "").strip() != "→"
+            ]
             suffix_entries = suffix_pref if suffix_pref else suffix_all
             if not suffix_entries:
                 continue
@@ -551,7 +609,10 @@ def build_variants(
     single_entry_variants = [v for v in variants if len(v.entries) == 1]
     if len(single_entry_variants) >= 2:
         counts = sorted(
-            ((entry_ref_count.get(v.entries[0].entry_id, 0), v.entries[0].entry_id) for v in single_entry_variants),
+            (
+                (entry_ref_count.get(v.entries[0].entry_id, 0), v.entries[0].entry_id)
+                for v in single_entry_variants
+            ),
             reverse=True,
         )
         top_n, top_id = counts[0]
@@ -563,14 +624,22 @@ def build_variants(
                 elif len(v.entries) == 1:
                     v.score -= 2
 
-    variants.sort(key=lambda v: (-v.score, len(v.entries), tuple(entry_label(e) for e in v.entries)))
+    variants.sort(
+        key=lambda v: (
+            -v.score,
+            len(v.entries),
+            tuple(entry_label(e) for e in v.entries),
+        )
+    )
     # Collapse to one variant when evidence is strongly skewed.
     if len(variants) > 1 and (variants[0].score - variants[1].score) >= 6:
         return [variants[0]]
     return variants[:max_variants]
 
 
-def render_variant(surface: str, v: Variant, forms_morph: Dict[Tuple[str, int], Set[str]]) -> Tuple[str, str, str, str]:
+def render_variant(
+    surface: str, v: Variant, forms_morph: Dict[Tuple[str, int], Set[str]]
+) -> Tuple[str, str, str, str]:
     entries = list(v.entries)
     if len(entries) == 1:
         e = entries[0]
@@ -582,7 +651,9 @@ def render_variant(surface: str, v: Variant, forms_morph: Dict[Tuple[str, int], 
         return a, d, p, g
 
     base, suf = entries[0], entries[1]
-    mv = sorted(forms_morph.get((normalize_lookup(v.base_surface), base.entry_id), set()))
+    mv = sorted(
+        forms_morph.get((normalize_lookup(v.base_surface), base.entry_id), set())
+    )
     a = f"{analysis_for_entry(v.base_surface, base, morph_values=mv)}+{suffix_fragment(suf)}"
     d = f"{entry_label(base)},{entry_label(suf)}"
     p = f"{pos_token(base)},{pos_token(suf)}"
@@ -698,7 +769,9 @@ def refine_file(
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description="Refine morphology TSV using reverse mentions + clitic splitting")
+    ap = argparse.ArgumentParser(
+        description="Refine morphology TSV using reverse mentions + clitic splitting"
+    )
     ap.add_argument("files", nargs="+", help="TSV files to refine")
     ap.add_argument("--dulat-db", default="sources/dulat_cache.sqlite")
     ap.add_argument("--udb-db", default="sources/udb_cache.sqlite")
@@ -706,9 +779,11 @@ def main() -> None:
     ap.add_argument("--out-dir", default="results", help="Output dir if not --in-place")
     args = ap.parse_args()
 
-    _entries_by_id, forms_map, _lemma_map, suffix_map, forms_morph = load_entries(Path(args.dulat_db))
-    reverse_mentions, entry_ref_count, entry_tablets, entry_family_count = load_reverse_mentions(
-        Path(args.dulat_db), Path(args.udb_db)
+    _entries_by_id, forms_map, _lemma_map, suffix_map, forms_morph = load_entries(
+        Path(args.dulat_db)
+    )
+    reverse_mentions, entry_ref_count, entry_tablets, entry_family_count = (
+        load_reverse_mentions(Path(args.dulat_db), Path(args.udb_db))
     )
 
     out_dir = Path(args.out_dir)

@@ -15,3 +15,5 @@
 - Applied instruction-driven cleanup to newly parsed `out/KTU 1.*.tsv` tablets (excluding curated `KTU 1.1-1.6`) and refreshed reports.
 - Extended instruction-driven refinement to inject DULAT-backed POS gender markers for `n.`/`adj.` slots when gender is uniquely known (including pipeline wiring and unit tests).
 - Re-ran refinement across non-curated `out/KTU 1.*.tsv` outputs and regenerated reports, removing 8,350 warning-level issues in this pass.
+- Strengthened `.githooks/pre-commit` to use `uv` + `.venv` for repo-wide Ruff checks and full test-suite execution before commit; kept report regeneration for lint-relevant staged changes.
+- Cleared pre-existing Ruff blockers in helper scripts (`scripts/generate_lint_reports.py`, `scripts/refine_results_mentions.py`, `scripts/notarius_refinement_pass.py`) and modules (`lint_reports/charts.py`, `linter/lint.py`) so the stricter gate passes.

@@ -16,7 +16,7 @@ import json
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Sequence, Tuple
+from typing import Dict, Iterable, List, Sequence
 
 
 SEPARATOR_RE = re.compile(
@@ -90,7 +90,9 @@ class Evidence:
     text: str
 
 
-def load_evidence(evidence_path: Path, min_claim_strength: str) -> Dict[str, List[Evidence]]:
+def load_evidence(
+    evidence_path: Path, min_claim_strength: str
+) -> Dict[str, List[Evidence]]:
     rank = {"none": 0, "weak": 1, "moderate": 2, "strong": 3}
     threshold = rank.get(min_claim_strength, 2)
     data = json.loads(evidence_path.read_text(encoding="utf-8"))
@@ -157,7 +159,11 @@ def detect_suggestions(analysis: str, ev: Evidence) -> List[str]:
     has_verb = "[" in analysis
     has_inf = "[/" in analysis
     has_pass = ":pass" in analysis
-    has_nstem = bool(re.search(r"![^!]+!n", analysis)) or "!n!" in analysis or analysis.startswith("n")
+    has_nstem = (
+        bool(re.search(r"![^!]+!n", analysis))
+        or "!n!" in analysis
+        or analysis.startswith("n")
+    )
     has_t_infix = "]t]" in analysis
     has_s_infix = "]š]" in analysis
 
@@ -174,7 +180,9 @@ def detect_suggestions(analysis: str, ev: Evidence) -> List[str]:
     if "s_stem" in tags and not has_s_infix:
         suggestions.append("consider Š marker ]š] or OR variant")
     if "debated" in tags:
-        suggestions.append("text-critical/debated in Notarius; keep OR in comment if needed")
+        suggestions.append(
+            "text-critical/debated in Notarius; keep OR in comment if needed"
+        )
     return suggestions
 
 
@@ -297,7 +305,10 @@ def print_summary(hits: Sequence[Hit]) -> None:
     print(f"Matched evidence hits: {len(hits)}")
     print(f"Unique token rows matched: {len(unique_rows)}")
     print(f"Actionable suggestion hits: {actionable}")
-    print("By claim strength:", ", ".join(f"{k}={v}" for k, v in sorted(by_strength.items())))
+    print(
+        "By claim strength:",
+        ", ".join(f"{k}={v}" for k, v in sorted(by_strength.items())),
+    )
     print("By file:")
     for f, n in sorted(by_file.items()):
         print(f"  - {f}: {n}")
@@ -308,7 +319,9 @@ def print_summary(hits: Sequence[Hit]) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Run Notarius-based refinement pass on results files.")
+    parser = argparse.ArgumentParser(
+        description="Run Notarius-based refinement pass on results files."
+    )
     parser.add_argument(
         "--evidence",
         default="data/notarius_evidence_claims.json",
@@ -343,8 +356,12 @@ def main() -> None:
         raise SystemExit("No result files matched.")
 
     id_to_ref = map_ids_to_refs(Path(args.cuc_dir))
-    evidence_by_ref = load_evidence(Path(args.evidence), min_claim_strength=args.min_claim_strength)
-    hits = collect_hits(result_files, id_to_ref=id_to_ref, evidence_by_ref=evidence_by_ref)
+    evidence_by_ref = load_evidence(
+        Path(args.evidence), min_claim_strength=args.min_claim_strength
+    )
+    hits = collect_hits(
+        result_files, id_to_ref=id_to_ref, evidence_by_ref=evidence_by_ref
+    )
     write_report(hits, Path(args.report))
     print_summary(hits)
     print(f"Report written: {args.report}")
