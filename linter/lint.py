@@ -1381,6 +1381,7 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
             (not lexeme and (not surface_clean or surface_clean in {"ˤ", "ʕ", "ʿ"}))
             or (lexeme in {"ˤ", "ʕ", "ʿ"})
             or is_surface_only_excised
+            or is_unresolved_placeholder(analysis_plain)
             or (0 in unresolved_declared_variant_indexes)
         )
         lookup_mode = "surface"
