@@ -1,0 +1,219 @@
+"""Unit tests for pipeline refinement steps (unittest-discover compatible)."""
+
+import tempfile
+import textwrap
+import unittest
+from pathlib import Path
+
+from pipeline.steps.aleph_prefix import AlephPrefixFixer
+from pipeline.steps.base import TabletRow, is_separator_line, is_unresolved, parse_tsv_line
+from pipeline.steps.noun_closure import NounPosClosureFixer
+from pipeline.steps.plural_split import PluralSplitFixer
+from pipeline.steps.suffix_fixer import SuffixCliticFixer
+from pipeline.steps.weak_verb import WeakVerbFixer
+
+
+class ParseTsvLineTest(unittest.TestCase):
+    def test_data_row(self) -> None:
+        row = parse_tsv_line("12345\tum\tum/\tủm\tn. f.\tmother")
+        self.assertIsNotNone(row)
+        assert row is not None
+        self.assertEqual(row.line_id, "12345")
+        self.assertEqual(row.surface, "um")
+        self.assertEqual(row.analysis, "um/")
+        self.assertEqual(row.dulat, "ủm")
+        self.assertEqual(row.pos, "n. f.")
+        self.assertEqual(row.gloss, "mother")
+        self.assertEqual(row.comment, "")
+
+    def test_data_row_with_comment(self) -> None:
+        row = parse_tsv_line("12345\tum\t?\t?\t?\t?\tDULAT: NOT FOUND")
+        self.assertIsNotNone(row)
+        assert row is not None
+        self.assertEqual(row.comment, "DULAT: NOT FOUND")
+
+    def test_separator_returns_none(self) -> None:
+        self.assertIsNone(parse_tsv_line("#---- KTU 1.100 1"))
+
+    def test_empty_line_returns_none(self) -> None:
+        self.assertIsNone(parse_tsv_line(""))
+
+
+class BaseHelpersTest(unittest.TestCase):
+    def test_is_separator_line(self) -> None:
+        self.assertTrue(is_separator_line("#---- KTU 1.100 1"))
+        self.assertFalse(is_separator_line("12345\tum\tum/"))
+
+    def test_is_unresolved(self) -> None:
+        unresolved = TabletRow("1", "x", "?", "?", "?", "?", "DULAT: NOT FOUND")
+        resolved = TabletRow("1", "um", "um/", "ủm", "n. f.", "mother", "")
+        self.assertTrue(is_unresolved(unresolved))
+        self.assertFalse(is_unresolved(resolved))
+
+    def test_tablet_row_to_tsv(self) -> None:
+        row = TabletRow("1", "um", "um/", "ủm", "n. f.", "mother", "")
+        self.assertEqual(row.to_tsv(), "1\tum\tum/\tủm\tn. f.\tmother")
+        row_with_comment = TabletRow("1", "x", "?", "?", "?", "?", "DULAT: NOT FOUND")
+        self.assertEqual(
+            row_with_comment.to_tsv(),
+            "1\tx\t?\t?\t?\t?\tDULAT: NOT FOUND",
+        )
+
+
+class AlephPrefixFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = AlephPrefixFixer()
+
+    def test_bare_aleph_gets_prefix(self) -> None:
+        row = TabletRow("1", "ảb", "ʔb/", "ʔb", "n. m.", "father", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "(ʔb/")
+
+    def test_already_prefixed_unchanged(self) -> None:
+        row = TabletRow("1", "ảb", "(ʔb/", "ʔb", "n. m.", "father", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "(ʔb/")
+
+    def test_root_notation_skipped(self) -> None:
+        row = TabletRow("1", "abd", "/ʔ-b-d/", "/ʔ-b-d/", "vb", "be missing", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "/ʔ-b-d/")
+
+
+class NounPosClosureFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = NounPosClosureFixer()
+
+    def test_noun_without_slash_gets_slash(self) -> None:
+        row = TabletRow("1", "bn", "bn", "bn (I)", "n. m.", "son", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "bn/")
+
+    def test_verb_unchanged(self) -> None:
+        row = TabletRow("1", "yṯb", "yṯb[", "/y-ṯ-b/", "vb", "to sit", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "yṯb[")
+
+    def test_multi_variant_partial_fix(self) -> None:
+        row = TabletRow(
+            "1",
+            "mlk",
+            "mlk;mlk(II)/",
+            "/m-l-k/;mlk (II)",
+            "vb;n. m.",
+            "to reign;kingdom",
+            "",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "mlk;mlk(II)/")
+
+
+class PluralSplitFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = PluralSplitFixer()
+
+    def test_masc_plural_m_split(self) -> None:
+        row = TabletRow("1", "nhrm", "nhrm/", "nhr (I)", "n. m.", "river", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "nhr/m")
+
+    def test_masc_plural_with_homonym(self) -> None:
+        row = TabletRow("1", "nhrm", "nhrm(I)/", "nhr (I)", "n. m.", "river", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "nhr(I)/m")
+
+    def test_non_noun_unchanged(self) -> None:
+        row = TabletRow("1", "yṯbm", "yṯbm[", "/y-ṯ-b/", "vb", "to sit", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "yṯbm[")
+
+
+class SuffixCliticFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = SuffixCliticFixer()
+
+    def test_suffix_h_injected(self) -> None:
+        row = TabletRow("1", "npšh", "npšh/", "npš", "n. f.", "throat", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "npš/+h")
+
+    def test_already_has_plus_unchanged(self) -> None:
+        row = TabletRow("1", "npšh", "npš/+h", "npš", "n. f.", "throat", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "npš/+h")
+
+    def test_verb_not_changed(self) -> None:
+        row = TabletRow("1", "yblh", "yblh[", "/y-b-l/", "vb", "to carry", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "yblh[")
+
+
+class WeakVerbFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = WeakVerbFixer()
+
+    def test_prefix_y_wrapped(self) -> None:
+        row = TabletRow("1", "yṯṯb", "yṯṯb[", "/y-ṯ-b/", "vb", "to sit down", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!y!ṯṯb[")
+
+    def test_prefix_t_wrapped(self) -> None:
+        row = TabletRow("1", "tqru", "tqrʔ[", "/q-r-ʔ/", "vb", "to call", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!t!qrʔ[")
+
+    def test_non_verb_unchanged(self) -> None:
+        row = TabletRow("1", "yd", "yd/", "yd (I)", "n. f.", "hand", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "yd/")
+
+
+class RefineFileIntegrationTest(unittest.TestCase):
+    def test_refine_file_preserves_structure(self) -> None:
+        content = textwrap.dedent(
+            """\
+            #---- KTU 1.100 1
+            12345\tum\tum/\tủm\tn. f.\tmother
+            12346\tx\t?\t?\t?\t?\tDULAT: NOT FOUND
+            #---- KTU 1.100 2
+            12347\tbn\tbn\tbn (I)\tn. m.\tson
+        """
+        )
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            f = Path(tmp_dir) / "test.tsv"
+            f.write_text(content, encoding="utf-8")
+
+            fixer = NounPosClosureFixer()
+            result = fixer.refine_file(f)
+
+            self.assertEqual(result.rows_processed, 3)
+            self.assertEqual(result.rows_changed, 1)
+
+            lines = f.read_text(encoding="utf-8").splitlines()
+            self.assertEqual(lines[0], "#---- KTU 1.100 1")
+            self.assertTrue(lines[2].startswith("12346\tx\t?"))
+            self.assertIn("bn/", lines[4])
+
+    def test_refine_file_idempotent(self) -> None:
+        content = textwrap.dedent(
+            """\
+            #---- KTU 1.100 1
+            12345\tum\tum/\tủm\tn. f.\tmother
+        """
+        )
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            f = Path(tmp_dir) / "test.tsv"
+            f.write_text(content, encoding="utf-8")
+
+            fixer = NounPosClosureFixer()
+            r1 = fixer.refine_file(f)
+            r2 = fixer.refine_file(f)
+
+            self.assertEqual(r1.rows_changed, 0)
+            self.assertEqual(r2.rows_changed, 0)
+
+
+if __name__ == "__main__":
+    unittest.main()

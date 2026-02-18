@@ -19,3 +19,4 @@
 - Cleared pre-existing Ruff blockers in helper scripts (`scripts/generate_lint_reports.py`, `scripts/refine_results_mentions.py`, `scripts/notarius_refinement_pass.py`) and modules (`lint_reports/charts.py`, `linter/lint.py`) so the stricter gate passes.
 - Migrated project runtime baseline to Python 3.13 (`pyproject.toml` + hook guard) and updated setup docs accordingly.
 - Added pre-commit safeguard fallback: when `uv run` is unavailable, checks execute directly via `.venv` so commits remain enforceable.
+- Converted refinement-step tests to `unittest.TestCase` style so they run under `unittest discover` in pre-commit.
