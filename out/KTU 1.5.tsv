@@ -32,7 +32,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139793	yrt	!y!(yr(d&t[	/y-r-d/	vb	to go down	
 # KTU 1.5 I:7						
 139794	b	b	b	prep.	in	
-139795	npš	npš(I)/	npš (I)	n. f.	throat	
+139795	npš	npš(I)/;npš(II)/	npš (I);npš (II)	n. f.;n. m.	throat;red wool	
 139796	bn	bn(I)/	bn (I)	n. m.	son	
 139797	ilm	il(I)/m	ỉl (I)	n. m.	god	
 139798	mt	mt(II)/	mt (II)	n. m.	death	
@@ -79,7 +79,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139832	p	p(I)	p (I)	conj. functor	and	
 139833	np	np(š(I)/	npš (I)	n. f.	throat	line break
 139834	š	&š				line break
-139835	npš	npš(I)/	npš (I)	n. f.	throat	
+139835	npš	npš(I)/;npš(II)/	npš (I);npš (II)	n. f.;n. m.	throat;red wool	
 139836	lbim	lb(u&i/m	lbủ	n. m.	lion	Wyatt p117 n11 also notes possible maritime/monster construal in this passage.
 # KTU 1.5 I:15						
 139837	thw	th(m&w/;thw/	thm;thw	n. m.;n. m.	ocean/deep;steppe	Wyatt p117 n11, conjectural restoration toward thm “deep/ocean”.
@@ -101,16 +101,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139850	hm	hm(II)	hm (II)	conj.	if	
 139851	imt	imt/	ỉmt	n. f.	truth	Wyatt p119 n16 treats one repeated imt as likely dittography.
 139852	imt	!i!mt[:d;imt/	/m-t/;ỉmt	vb.;n. f.	kill;truth	imt as verbal form is not directly attested in DULAT forms.;Wyatt p119 n16-20, conjectural verbal reading “I kill”
-139853	npš	npš(I)/	npš (I)	n. f.	throat	
+139853	npš	npš(I)/;npš(II)/	npš (I);npš (II)	n. f.;n. m.	throat;red wool	
 139854	blt	bl(y[t:d;blt[	/b-l-y/;/b-l-t/	vb;vb	to devour;to open wide	???
 # KTU 1.5 I:19						
-139855	ḥmr	ḥmr(I)/	ḥmr (I)	n. m.	donkey	
+139855	ḥmr	ḥmr(I)/;ḥmr(II)/	ḥmr (I);ḥmr (II)	n. m.;adj.	donkey;red	
 139856	p	p(I)	p (I)	conj. functor	and	
 139857	imt	!i!mt[:d;imt/	/m-t/;ỉmt	vb.;n. f.	kill;truth	Wyatt p119 n20 allows verbal /m-t/ interpretation in this cluster.
 139858	b	b	b	prep.	in	
 139859	klat	klat/	klảt(n)	n. f.	both	!!!???
 # KTU 1.5 I:20						
-139860	ydy	!y!(ydy(I)[	/y-d-y/ (I)	vb	to throw	
+139860	ydy	yd(I)/+y;!y!(ydy(I)[;!y!(ydy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip	
 139861	ilḥm	!(ʔ&i!lḥm(I)[	/l-ḥ-m/ (I)	vb	to eat	
 139862	hm	hm(II)	hm (II)	conj.	if	
 139863	šbˤ	šbˤ(I)/	šbʕ (I)	n. num.	seven	
@@ -138,7 +138,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139881	lḥmm	lḥm(I)[+m	/l-ḥ-m/ (I), -m (I)	vb, morph.	to eat,	
 139882	ˤm	ˤm(I)	ʕm (I)	prep.	to	
 139883	aḫy	aḫ(I)/+y	ảḫ (I), -y (I)	n. m.,prep.	brother, my	
-139884	lḥm	lḥm/	lḥm	n. m.	grain	
+139884	lḥm	lḥm(I)[;lḥm/;lḥm(I)/	/l-ḥ-m/ (I);lḥm;lḥ (I)	vb;n. m.;n. f.	to eat;grain;cheek	
 # KTU 1.5 I:25						
 139885	w	w	w	conj.	and	
 139886	štp	št(y&p[	/š-t-y/	vb	to drink	likely /š-t-y/ “drink”; Del Olmo (I:25) keeps explicit drinking sequence
@@ -232,7 +232,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139958	tḥm	tḥm/	tḥm	n. m.	message	
 139959	aliyn	aliyn/	ảlỉyn	adj. m.	The Very / Most Powerful	
 139960	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
-139961	hwt	hwt(I)/	hwt (I)	n. f.	word	
+139961	hwt	hwt(I)/;hw(t(I)/t	hwt (I);hwt (I)	n. f.;n. f.	word;matter	
 139962	aliy	aliy/	ảlỉy	adj. m.	The Most Powerful	
 # KTU 1.5 II:11						
 139963	qrdm	qrd(I)/m	qrd (I)	n. m.	hero	
@@ -255,7 +255,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139978	idk	idk	ỉdk	narrative adv. functor	then	
 # KTU 1.5 II:14						
 139979	l	l(III)	l (III)	functor	truly	
-139980	ytn	!y!(ytn[	/y-t-n/	vb	to give	
+139980	ytn	!y!(ytn[;!y!(ytn[	/y-t-n/;/y-t-n/	vb;vb	to give;to grant	
 139981	pnm	pn(m/m	pnm	n. m. pl. tant.	face	
 139982	ṯˤm	ṯˤ(II)/m	ṯʕ (II)	n. m.	Hero	
 139983	bn	bn(I)/	bn (I)	n. m.	son	
@@ -282,7 +282,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 II:18						
 140001	bn	bn(I)/	bn (I)	n. m.	son	
 140002	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
-140003	hwt	hwt(I)/	hwt (I)	n. f.	word	
+140003	hwt	hwt(I)/;hw(t(I)/t	hwt (I);hwt (I)	n. f.;n. f.	word;matter	
 140004	aliyn	aliyn/	ảlỉyn	adj. m.	The Very / Most Powerful	
 140005	qrdm	qrd(I)/m	qrd (I)	n. m.	hero	
 # KTU 1.5 II:19						
@@ -300,7 +300,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140016	ilm	il(I)/m	ỉl (I)	n. m.	god	
 140017	mt	mt(II)/	mt (II)	n. m.	death	
 # KTU 1.5 II:21						
-140018	ytn	!y!(ytn[	/y-t-n/	vb	to give	
+140018	ytn	!y!(ytn[;!y!(ytn[	/y-t-n/;/y-t-n/	vb;vb	to give;to grant	
 140019	gh	g/+h	g, -h (I)	n. m.,pers. pn.	(loud) voice, his /her	
 140020	w	w	w	conj.	and	
 140021	aṣḥ	!(ʔ&a!ṣḥ[	/ṣ-ḥ/	vb	to exclaim	
@@ -334,7 +334,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140041	ṯbt	ṯbt/	ṯbt	n. f.	seat	
 140042	x	?	?	?	?	
 # KTU 1.5 III:3						
-140043	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
+140043	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
 140044	ṯbt	ṯbt/	ṯbt	n. f.	seat	
 140045	ḥšn	ḥšn/	ḥšn	n. m.	?	
 # KTU 1.5 III:4						
@@ -366,7 +366,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 III:10						
 140066	ydd	!y!(ndd[	/n-d-d/	vb	to go	
 140067	b	b	b	prep.	in	
-140068	qrb	qrb/	qrb	n. m.	inside	
+140068	qrb	qrb[;qrb/	/q-r-b/;qrb	vb;n. m.	to approach;inside	
 # KTU 1.5 III:11						
 140069	al	al(I)	ảl (I)	neg. functor	no	
 140070	ašṯt	!(ʔ&a!š(t&ṯ[t	/š-t(-t)/	vb	devastate	likely /š-t/ (cf. DULAT form ảšt); surface ṯ appears secondary
@@ -384,7 +384,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140079	lk	(hlk[	/h-l-k/	vb	to go  go away	
 140080	ilm	il(I)/m	ỉl (I)	n. m.	god	
 # KTU 1.5 III:15						
-140081	nˤm	nˤm(I)/	nʕm (I)	adj. m.	handsome	
+140081	nˤm	nˤm(I)/;nˤm(II)/	nʕm (I);nʕm (II)	adj. m.;n. m.	handsome;grace	
 140082	ilm	il(I)/m	ỉl (I)	n. m.	god	
 140083						
 # KTU 1.5 III:16						
@@ -400,7 +400,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 III:19						
 140091	ydd	!y!(ndd[	/n-d-d/	vb	to go	
 140092	b	b	b	prep.	in	
-140093	qrb	qrb/	qrb	n. m.	inside	
+140093	qrb	qrb[;qrb/	/q-r-b/;qrb	vb;n. m.	to approach;inside	
 140094						
 # KTU 1.5 III:20						
 140095	w	w	w	conj.	and	
@@ -430,7 +430,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 III:26						
 140114	ydd	!y!(ndd[	/n-d-d/	vb	to go	
 140115	b	b	b	prep.	in	
-140116	qrb	qrb/	qrb	n. m.	inside	
+140116	qrb	qrb[;qrb/	/q-r-b/;qrb	vb;n. m.	to approach;inside	
 # KTU 1.5 III:27						
 140117	ṯmm	ṯmm[	/ṯ-m-m/	vb	to be appalled	
 140118	w	w	w	conj.	and	
@@ -559,7 +559,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140208	ššrt	ššr(t/t	ššrt	n. f.	chain	
 # KTU 1.5 V:4						
 140209	xxxxxk	?	?	?	?	UDB: [-----]g/ḫt̊; could be /+k, /+k=, /+(nk (not in DULAT), /~k, or a lexeme ending in -k.
-140210	npš	npš(I)/	npš (I)	n. f.	throat	Wyatt: “appetite / life”.
+140210	npš	npš(I)/;npš(II)/	npš (I);npš (II)	n. f.;n. m.	throat;red wool	Wyatt: “appetite / life”.
 140211	ˤgl	ˤgl(I)/	ʕgl (I)	n. m.	calf	
 # KTU 1.5 V:5						
 140212	xxx	?	?	?	?	
@@ -627,7 +627,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140263	rdm	(yrd[/m	/y-r-d/, -k (I)	vb, pers. pn.	to go down, your(s)	Del Olmo V:16 aligns with “los que bajan...”
 140264	arṣ	arṣ/	ảrṣ	n. f.	earth	
 140265	w	w	w	conj.	and	
-140266	tdˤ	!t!(ydˤ(I)[	/y-d-ʕ/ (I)	vb	to know	Wyatt p125 n46 reads vocative force in “you will know, god, that you are mortal”.
+140266	tdˤ	!t!(ydˤ(I)[;!t!(ydˤ(II)[	/y-d-ʕ/ (I);/y-d-ʕ/ (II)	vb;vb	to know;to sweat	Wyatt p125 n46 reads vocative force in “you will know, god, that you are mortal”.
 140267	ilm	il(I)/m	ỉl (I)	n. m.	god	
 # KTU 1.5 V:17						
 140268	k	k(III)	k (III)	Subordinating or completive functor	when	
@@ -650,7 +650,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140282	ˤmnh	ˤm(I)&n+h(I)	ʕm (I), -h (I)	prep., pers. pn.	to, his /her	“with her”; extra surface n likely enclitic in this sequence
 140283	šbˤ	šbˤ(I)/	šbʕ (I)	n. num.	seven	
 140284	l	l(I)	l (I)	prep.	to	
-140285	šbˤm	šbˤ(I)/m	šbʕ (I)	n. num.	seven	
+140285	šbˤm	šbˤ(I)/m;šbˤ/m	šbʕ (I);šbʕm	n. num.;n. num.	seven;seventy	
 # KTU 1.5 V:21						
 140286	tšˤly	tšˤly				
 140287	ṯmn	ṯmn(I)/	ṯmn (I)			
@@ -729,7 +729,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140346	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 # KTU 1.5 VI:10						
 140347	ḫlq	ḫlq/	ḫlq	adj. m. or n. m.	ruined	
-140348	zbl	zbl(I)/	zbl (I)	n. m.	prince	
+140348	zbl	zbl(I)/;zbl(III)/	zbl (I);zbl (III)	n. m.;n. m.	prince;one carried	
 140349	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 140350	arṣ	arṣ/	ảrṣ	n. f.	earth	
 # KTU 1.5 VI:11						
@@ -770,9 +770,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140379	mizrtm	mizrt/+m	mỉzrt, -m (I)	n. f.,morph.	garment,	
 140380	ġr	ġr(I)/	ġr (I)	n. m.	mountain	
 140381	b	b	b	prep.	in	
-140382	abn	abn/	ảbn	n. f.	stone	
+140382	abn	ab/+n;abn/;!a!bn[	ảb;ảbn;/b-n/	n. m.;n. f.;vb	father;stone;to understand	
 # KTU 1.5 VI:18						
-140383	ydy	!y!(ydy(I)[	/y-d-y/ (I)	vb	to throw	
+140383	ydy	yd(I)/+y;!y!(ydy(I)[;!y!(ydy(II)[	yd (I);/y-d-y/ (I);/y-d-y/ (II)	n. f.;vb;vb	hand;to throw;to rip	
 140384	psltm	pslt(I)/m	pslt (I)	n. f.	braid	Wyatt p128 n55 prefers “side-locks/twin braids” over “flint”.
 140385	b	b	b	prep.	in	
 140386	yˤr	!y!ˤr[	/ʕ-r/	vb	to become agitated	
@@ -792,7 +792,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140397	ap	ap(II)/	ảp (II)	n. m.	nose	
 140398	lb	lb/	lb	n. m.	heart	
 140399	k	k(I)	k (I)	prep.	like	
-140400	ˤmq	ˤmq(I)/	ʕmq (I)	n. m.	valley	
+140400	ˤmq	ˤmq(I)/;ˤmq(II)/	ʕmq (I);ʕmq (II)	n. m.;adj. m.	valley;tough	
 140401	yṯlṯ	!y!ṯlṯ[:d	/ṯ-l-ṯ/	vb	to repeat for the third time	
 # KTU 1.5 VI:22						
 140402	bmt	bmt/	bmt	n. f.	back	Wyatt p128 n57 notes alternative “back” in this mourning tricolon.
@@ -826,7 +826,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140426	ġr	ġr(I)/	ġr (I)	n. m.	mountain	
 # KTU 1.5 VI:27						
 140427	l	l(I)	l (I)	prep.	to	
-140428	kbd	kbd(I)/	kbd (I)	n.	liver	in context likely locative “midst/interior” (Wyatt p129: “every mountain in the midst of the earth”).
+140428	kbd	kbd(II)/;kbd(I)/;kbd[	kbd (II);kbd (I);/k-b-d/	n. m.;n.;vb	total (quantity or price);liver;to honour	in context likely locative “midst/interior” (Wyatt p129: “every mountain in the midst of the earth”).
 140429	arṣ	arṣ/	ảrṣ	n. f.	earth	
 140430	kl	kl/	kl	n. m.	totality	
 140431	gbˤ	gbˤ/	gbʕ	n. m.	hill	

@@ -2,6 +2,9 @@
 
 ## 2026-02-18
 
+- Added explicit `SURFACE_OPTION_PROPAGATION_ALLOWLIST` (`pipeline/config/surface_option_allowlist.py`) and wired `TabletParsingPipeline` to run `SurfaceOptionPropagationFixer` only on lint-vetted surfaces.
+- Applied whitelist-only propagation across `out/KTU 1.*.tsv`: 384 rows in 54 files updated, with zero newly introduced lint issues and one resolved lint issue versus baseline.
+- Excluded currently unsafe surfaces from propagation (`anš`, `imt`, `tbn`, `ˤnn`) based on lint-delta vetting.
 - Tightened `SurfaceOptionPropagationFixer` safeguards to prevent low-confidence ambiguity spreading:
   - require aligned tuple-subset matching across `analysis`/`DULAT`/`POS`/`gloss` before expansion,
   - skip surfaces with competing equally-rich canonical payloads,

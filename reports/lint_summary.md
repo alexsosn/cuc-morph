@@ -1,14 +1,14 @@
 ## Morphology Lint Summary
 
 - Files checked: `139`
-- Total issues: `6460`
+- Total issues: `6456`
 - Fallback-parsed issue lines: `457`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 4460 |
+| ERROR | 4459 |
 | WARNING | 628 |
 | INFO | 1197 |
 
@@ -22,7 +22,7 @@
 | ERROR | Missing DULAT entry token(s) in column 4 | 171 |
 | ERROR | No DULAT entry found for lexeme/surface | 98 |
 | ERROR | Non-G stem in DULAT requires stem marker | 98 |
-| ERROR | DULAT comment does not match candidates | 97 |
+| ERROR | DULAT comment does not match candidates | 96 |
 | ERROR | Unknown DULAT token in column 4 | 77 |
 | ERROR | Noun/adjective lacks '/' ending | 75 |
 | ERROR | Each reconstructed letter must be prefixed by '(' | 64 |

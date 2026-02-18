@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, List, Mapping, Tuple
+from typing import Dict, Iterable, List, Mapping, Set, Tuple
 
 from pipeline.steps.analysis_utils import normalize_surface, reconstruct_surface_from_analysis
 from pipeline.steps.base import RefinementStep, TabletRow, parse_tsv_line
@@ -65,8 +65,14 @@ class SurfaceOptionPropagationFixer(RefinementStep):
         corpus_dir: Path,
         file_glob: str = "KTU 1.*.tsv",
         min_surface_len: int = 3,
+        allowed_surfaces: Iterable[str] | None = None,
     ) -> None:
         self._min_surface_len = min_surface_len
+        self._allowed_surfaces: Set[str] | None = (
+            {s.strip() for s in allowed_surfaces if s and s.strip()}
+            if allowed_surfaces is not None
+            else None
+        )
         self._payload_by_surface = self._build_payload_index(
             corpus_dir=corpus_dir, file_glob=file_glob
         )
@@ -78,6 +84,8 @@ class SurfaceOptionPropagationFixer(RefinementStep):
     def refine_row(self, row: TabletRow) -> TabletRow:
         surface = (row.surface or "").strip()
         if len(surface) < self._min_surface_len:
+            return row
+        if self._allowed_surfaces is not None and surface not in self._allowed_surfaces:
             return row
 
         payload = self._payload_by_surface.get(surface)
@@ -121,6 +129,8 @@ class SurfaceOptionPropagationFixer(RefinementStep):
 
                 surface = (row.surface or "").strip()
                 if len(surface) < self._min_surface_len:
+                    continue
+                if self._allowed_surfaces is not None and surface not in self._allowed_surfaces:
                     continue
 
                 variants = _aligned_variants(

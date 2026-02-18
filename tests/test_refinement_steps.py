@@ -511,6 +511,37 @@ class SurfaceOptionPropagationFixerTest(unittest.TestCase):
             result = fixer.refine_file(poor)
             self.assertEqual(result.rows_changed, 0)
 
+    def test_respects_allowed_surfaces(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            rich = root / "KTU 1.1.tsv"
+            poor = root / "KTU 1.2.tsv"
+
+            rich.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tydk\t"
+                    "yd(I)/+k;yd(I)/+k=;yd(II)/+k;yd(II)/+k=;!y!dk[;!y=!dk[\t"
+                    "yd (I), -k (I);yd (I), -k (I);yd (II), -k (I);yd (II), -k (I);"
+                    "d-k(-k)/;d-k(-k)/\t"
+                    "n. f.,pers. pn.;n. f.,pers. pn.;n. m.,pers. pn.;n. m.,pers. pn.;vb;vb\t"
+                    "hand, your(s);hand, your(s);love, your(s);love, your(s);"
+                    "to be pounded;to be pounded\t\n"
+                ),
+                encoding="utf-8",
+            )
+            poor.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "2\tydk\t!y!dk[\td-k(-k)/\tvb\tto be pounded\t\n"
+                ),
+                encoding="utf-8",
+            )
+
+            fixer = SurfaceOptionPropagationFixer(corpus_dir=root, allowed_surfaces={"npš"})
+            result = fixer.refine_file(poor)
+            self.assertEqual(result.rows_changed, 0)
+
 
 class WeakFinalSuffixConjugationFixerTest(unittest.TestCase):
     def setUp(self) -> None:

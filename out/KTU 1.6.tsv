@@ -5,14 +5,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 I:2						
 140453	ġr	ġr(I)/	ġr (I)	n. m.	mountain	UDB 6 I:2: 00- and CTA I, p. 38 read ab and correct as abn. R1- accepts the correction. | UDB variants: R1-1=ġr . b ab[n] . td . psl t m [. b yʿr]; 00-1=ġr . b ab (abn) . td . psl t...
 140454	b	b	b	prep.	in	
-140455	abn	abn/	ảbn	n. f.	stone	
+140455	abn	ab/+n;abn/;!a!bn[	ảb;ảbn;/b-n/	n. m.;n. f.;vb	father;stone;to understand	
 140456	td	!t!(n&d(d[	/n-d(-y)/	vb	to throw, emit	
 140457	psltm	pslt(I)/m	pslt (I)	n. f.	braid	
 140458	b	b	b	prep.	in	
 140459	yˤr	!y!(yˤr[	/y-ʕ-r/	vb	to be frightened	
 # KTU 1.6 I:3						
 140460	thdy	!t!hdy[	/h-d-y/	vb	to lacerate	
-140461	lḥm	lḥm/	lḥm	n. m.	grain	
+140461	lḥm	lḥm(I)[;lḥm/;lḥm(I)/	/l-ḥ-m/ (I);lḥm;lḥ (I)	vb;n. m.;n. f.	to eat;grain;cheek	
 140462	w	w	w	conj.	and	
 140463	dqn	dqn(I)/	dqn (I)	n. m.	beard	
 140464	tṯlṯ	!t!ṯlṯ[	/ṯ-l-ṯ/	vb	to repeat for the third time	
@@ -26,7 +26,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140470	ap	ap(I)	ảp (I)	adv.	also	
 140471	lb	lb/	lb	n. m.	heart	
 140472	k	k(III)	k (III)	Subordinating or completive functor	when	
-140473	ˤmq	ˤmq(I)/	ʕmq (I)	n. m.	valley	
+140473	ˤmq	ˤmq(I)/;ˤmq(II)/	ʕmq (I);ʕmq (II)	n. m.;adj. m.	valley;tough	
 140474	tṯlṯ	!t!ṯlṯ[	/ṯ-l-ṯ/	vb	to repeat for the third time	
 140475	bmt	bmt/	bmt	n. f.	back	
 # KTU 1.6 I:6						
@@ -47,7 +47,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140488	arṣ	arṣ/	ảrṣ	n. f.	earth	
 140489	ˤmh	ˤm(II)/+h(I)	ʕm (II)	n. m.	lineage, ancestors	
 140490	trd	!t!(y&r(r&d(d[	/y-r-d/	vb	to go down, descend	
-140491	nrt	nrt(I)/	nrt (I)	n. f.	lantern	
+140491	nrt	nrt(I)/;nrt(II)/	nrt (I);nrt (II)	n. f.;n. f.	lantern;ploughed land	
 # KTU 1.6 I:9						
 140492	ilm	il(I)/m	ỉl (I)	n. m.	god	
 140493	špš	špš/	špš	n.	sun	
@@ -63,7 +63,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 I:11						
 140502	tṣḥ	!t!ṣḥ[	/ṣ-ḥ/	vb	to exclaim, shout	
 140503	l	l(I)	l (I)	prep.	to	
-140504	nrt	nrt(I)/	nrt (I)	n. f.	lantern	
+140504	nrt	nrt(I)/;nrt(II)/	nrt (I);nrt (II)	n. f.;n. f.	lantern;ploughed land	
 140505	ilm	il(I)/m	ỉl (I)	n. m.	god	
 140506	špš	špš/	špš	n.	sun	
 # KTU 1.6 I:12						
@@ -74,7 +74,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140511	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 # KTU 1.6 I:13						
 140512	tšmˤ	!t!šmˤ[	/š-m-ʕ/	vb	to hear, listen	
-140513	nrt	nrt(I)/	nrt (I)	n. f.	lantern	
+140513	nrt	nrt(I)/;nrt(II)/	nrt (I);nrt (II)	n. f.;n. f.	lantern;ploughed land	
 140514	ilm	il(I)/m	ỉl (I)	n. m.	god	
 140515	špš	špš/	špš	n.	sun	
 # KTU 1.6 I:14						
@@ -103,7 +103,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140534	ilm	il(I)/m	ỉl (I)	n. m.	god	
 140535	arṣ	arṣ/	ảrṣ	n. f.	earth	
 140536	tṭbḫ	!t!ṭbḫ[	/ṭ-b-ḫ/	vb	to sacrifice, butcher, slaughter	
-140537	šbˤm	šbˤ(I)/m	šbʕ (I)	n. num.	seven	
+140537	šbˤm	šbˤ(I)/m;šbˤ/m	šbʕ (I);šbʕm	n. num.;n. num.	seven;seventy	
 # KTU 1.6 I:19						
 140538	rumm	rum/m	rủm	n. m.	wild bull	UDB 6 I:19: 00- writes kgmn and as such appears in CPU. In fact Dietrich - Loretz - Sanmartín, UF 8 (1976) p. 432 understood it as a substantive whose meaning would be “three years o...
 140539	k	k(III)	k (III)	Subordinating or completive functor	when	
@@ -112,7 +112,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 I:20						
 140542	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 140543	tṭbḫ	!t!ṭbḫ[	/ṭ-b-ḫ/	vb	to sacrifice, butcher, slaughter	
-140544	šbˤm	šbˤ(I)/m	šbʕ (I)	n. num.	seven	
+140544	šbˤm	šbˤ(I)/m;šbˤ/m	šbʕ (I);šbʕm	n. num.;n. num.	seven;seventy	
 140545	alpm	alp(II)/m	ảlp (II)	num.	(one	
 # KTU 1.6 I:21						
 140546	kgmn	kgmn				DULAT: NOT FOUND; UDB 6 I:21: 00- writes kgmn and as such appears in CPU. In fact Dietrich - Loretz - Sanmartín, UF 8 (1976) p. 432 understood it as a substantive whose meaning would be “three years o...
@@ -120,7 +120,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140548	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 # KTU 1.6 I:22						
 140549	tṭbḫ	!t!ṭbḫ[	/ṭ-b-ḫ/	vb	to sacrifice, butcher, slaughter	UDB 6 I:22: -84-
-140550	šbˤm	šbˤ(I)/m	šbʕ (I)	n. num.	seven	
+140550	šbˤm	šbˤ(I)/m;šbˤ/m	šbʕ (I);šbʕm	n. num.;n. num.	seven;seventy	
 140551	ṣin	ṣin(I)/	ṣỉn (I)	n. f.	ewe	
 # KTU 1.6 I:23						
 140552	k	k(III)	k (III)	Subordinating or completive functor	when	UDB 6 I:23: 00- writes kgmn and as such appears in CPU. In fact Dietrich - Loretz - Sanmartín, UF 8 (1976) p. 432 understood it as a substantive whose meaning would be “three years o...
@@ -129,7 +129,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140555	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 # KTU 1.6 I:24						
 140556	tṭbḫ	!t!ṭbḫ[	/ṭ-b-ḫ/	vb	to sacrifice, butcher, slaughter	
-140557	šbˤm	šbˤ(I)/m	šbʕ (I)	n. num.	seven	
+140557	šbˤm	šbˤ(I)/m;šbˤ/m	šbʕ (I);šbʕm	n. num.;n. num.	seven;seventy	
 140558	aylm	ayl(I)/m	ảyl (I)	n. m.	deer	
 # KTU 1.6 I:25						
 140559	k	k(III)	k (III)	Subordinating or completive functor	when	UDB 6 I:25: 00- writes kgmn and as such appears in CPU. In fact Dietrich - Loretz - Sanmartín, UF 8 (1976) p. 432 understood it as a substantive whose meaning would be “three years o...
@@ -138,7 +138,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140562	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 # KTU 1.6 I:26						
 140563	tṭbḫ	!t!ṭbḫ[	/ṭ-b-ḫ/	vb	to sacrifice, butcher, slaughter	
-140564	šbˤm	šbˤ(I)/m	šbʕ (I)	n. num.	seven	
+140564	šbˤm	šbˤ(I)/m;šbˤ/m	šbʕ (I);šbʕm	n. num.;n. num.	seven;seventy	
 140565	yˤlm	yˤl(I)/m;!y!ˤlm[	yʕl (I);/ʕ-l-m/	n. m.;vb	mountain goat;to be known	Ambiguous DULAT candidates kept as variants
 # KTU 1.6 I:27						
 140566	k	k(III)	k (III)	Subordinating or completive functor	when	UDB 6 I:27: 00- writes kgmn and as such appears in CPU. In fact Dietrich - Loretz - Sanmartín, UF 8 (1976) p. 432 understood it as a substantive whose meaning would be “three years o...
@@ -147,7 +147,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140569	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 # KTU 1.6 I:28						
 140570	tṭbḫ	!t!ṭbḫ[	/ṭ-b-ḫ/	vb	to sacrifice, butcher, slaughter	
-140571	šbˤm	šbˤ(I)/m	šbʕ (I)	n. num.	seven	
+140571	šbˤm	šbˤ(I)/m;šbˤ/m	šbʕ (I);šbʕm	n. num.;n. num.	seven;seventy	
 140572	yḥmrm	yḥmr/m				DULAT: NOT FOUND
 # KTU 1.6 I:29						
 140573	k	k(III)	k (III)	Subordinating or completive functor	when	UDB 6 I:29: 00- writes kgmn and as such appears in CPU. In fact Dietrich - Loretz - Sanmartín, UF 8 (1976) p. 432 understood it as a substantive whose meaning would be “three years o...
@@ -176,7 +176,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140592	il	il(I)/	ỉl (I)	n. m.	god	
 140593	mbk	mbk/	mbk	n. m.	source	
 140594	nhrm	nhr/m	nhr	n. m.	river	
-140595	qrb	qrb/	qrb	n. m.	inside	
+140595	qrb	qrb[;qrb/	/q-r-b/;qrb	vb;n. m.	to approach;inside	
 # KTU 1.6 I:34						
 140596	apq	apq/	ảpq	n. m.	spring	
 140597	thmtm	thmt/m	thmt	n. f.	Primordial Ocean	
@@ -226,7 +226,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140633	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 140634	k	k(III)	k (III)	Subordinating or completive functor	when	
 140635	ḫlq	ḫlq/	ḫlq	adj. m. or n. m.	ruined	
-140636	zbl	zbl(I)/	zbl (I)	n. m.	prince	
+140636	zbl	zbl(I)/;zbl(III)/	zbl (I);zbl (III)	n. m.;n. m.	prince;one carried	
 140637	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 # KTU 1.6 I:43						
 140638	arṣ	arṣ/	ảrṣ	n. f.	earth	
@@ -235,13 +235,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140641	il	il(I)/	ỉl (I)	n. m.	god	
 # KTU 1.6 I:44						
 140642	l	l(I)	l (I)	prep.	to	
-140643	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
+140643	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
 140644	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 140645	ym	ym(II)/	ym (II)	n. m.	sea	
 140646	šmˤ	!!šmˤ[;šmˤ/	/š-m-ʕ/;šmʕ	vb;n. m.	to hear;auditor	
 # KTU 1.6 I:45						
 140647	l	l(I)	l (I)	prep.	to	
-140648	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
+140648	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
 140649	aṯrtym	aṯrt(II)/+ym(II)/;aṯrt(II)/+ym	ảṯrt (II), ym (II);ảṯrt (II)	DN,n. m.;DN	ʾAṯiratu, sea;ʾAṯiratu	TCS I:43-55 reads title 'ʾAṯiratu of the Sea'; second variant treats it as a frozen divine epithet.
 140650	tn	!!(ytn[	/y-t-n/	vb	to give, hand over, grant, bestow	TCS I:45 ('Give one of your sons ...') supports imperative from /y-t-n/
 # KTU 1.6 I:46						
@@ -253,7 +253,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 I:47						
 140656	w	w	w	conj.	and	
 140657	tˤn	!t!ˤn[	/ʕ-n-w/	vb	to be / remain depressed, humbled	
-140658	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
+140658	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
 140659	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 140660	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.6 I:48						
@@ -287,11 +287,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 I:53						
 140684	w	w	w	conj.	and	
 140685	ˤn	ˤn(I)/	ʕn (I)	n. f.	eye	
-140686	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
+140686	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
 140687	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 140688	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.6 I:54						
-140689	blt	blt[	/b-l-t/	vb	to open wide	
+140689	blt	bl(y[t:d;blt[	/b-l-y/;/b-l-t/	vb;vb	to devour;to open wide	
 140690	nmlk	!n!mlk[				DULAT: NOT FOUND
 140691	ˤṯtr	ˤṯtr				DULAT: NOT FOUND
 140692	ˤrẓ	ˤrẓ/	ʕrẓ	adj. m.	the Terrible	
@@ -443,20 +443,20 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 II:16						
 140810	ġr	ġr(I)/	ġr (I)	n. m.	mountain	
 140811	l	l(I)	l (I)	prep.	to	
-140812	kbd	kbd(I)/	kbd (I)	n.	liver	
+140812	kbd	kbd(II)/;kbd(I)/;kbd[	kbd (II);kbd (I);/k-b-d/	n. m.;n.;vb	total (quantity or price);liver;to honour	
 140813	arṣ	arṣ/	ảrṣ	n. f.	earth	
 140814	kl	kl/	kl	n. m.	totality	
 140815	gbˤ	gbˤ/	gbʕ	n. m.	hill	
 # KTU 1.6 II:17						
 140816	l	l(I)	l (I)	prep.	to	
-140817	kbd	kbd(I)/	kbd (I)	n.	liver	
+140817	kbd	kbd(II)/;kbd(I)/;kbd[	kbd (II);kbd (I);/k-b-d/	n. m.;n.;vb	total (quantity or price);liver;to honour	
 140818	šdm	šd(I)/m	šd (I)	n. m.	open field	
-140819	npš	npš(I)/	npš (I)	n. f.	throat	
+140819	npš	npš(I)/;npš(II)/	npš (I);npš (II)	n. f.;n. m.	throat;red wool	
 140820	ḫsrt	ḫsr[/t	/ḫ-s-r/	vb	to fail, be missing, lacking	
 # KTU 1.6 II:18						
 140821	bn	bn(I)/	bn (I)	n. m.	son	
 140822	nšm	nš(m/m	nšm	n. m. pl. tant.	people	
-140823	npš	npš(I)/	npš (I)	n. f.	throat	
+140823	npš	npš(I)/;npš(II)/	npš (I);npš (II)	n. f.;n. m.	throat;red wool	
 140824	hmlt	hml(t/t=	hmlt	n. f. pl. tant.?	multitude	
 # KTU 1.6 II:19						
 140825	arṣ	arṣ/	ảrṣ	n. f.	earth	
@@ -489,7 +489,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140848	nḫtu	!n!ḫt(ʔ&u[	/ḫ-t-ʔ/	vb	to be ground up, crushed, annihilated	
 140849	hw	hw/	hw	pers. pn.	he, it	
 # KTU 1.6 II:24						
-140850	nrt	nrt(I)/	nrt (I)	n. f.	lantern	
+140850	nrt	nrt(I)/;nrt(II)/	nrt (I);nrt (II)	n. f.;n. f.	lantern;ploughed land	
 140851	ilm	il(I)/m	ỉl (I)	n. m.	god	
 140852	špš	špš/	špš	n.	sun	
 140853	ṣḥrrt	ṣḥrr[/t	/ṣ-ḥ-r-r/	vb	to roast, burn	
@@ -566,14 +566,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140912	tklyy	!t!kly[+y(I)				DULAT: NOT FOUND
 # KTU 1.6 II:37						
 140913	nprm	npr(I)/m	npr (I)	n. m.	flyer, bird	
-140914	šir	šir(I)/	šỉr (I)	n. m.	flesh	
+140914	šir	šir(I)/;šir(II)/	šỉr (I);šỉr (II)	n. m.;n. m.	flesh;strip	
 140915	l	l(I)	l (I)	prep.	to	
-140916	šir	šir(I)/	šỉr (I)	n. m.	flesh	
+140916	šir	šir(I)/;šir(II)/	šỉr (I);šỉr (II)	n. m.;n. m.	flesh;strip	
 140917	yṣḥ	!y!ṣḥ[	/ṣ-ḥ/	vb	to exclaim, shout	
 # KTU 1.6 III:1						
 140918	k	k(III)	k (III)	Subordinating or completive functor	when	
 140919	ḫlq	ḫlq/	ḫlq	adj. m. or n. m.	ruined	
-140920	zbl	zbl(I)/	zbl (I)	n. m.	prince	
+140920	zbl	zbl(I)/;zbl(III)/	zbl (I);zbl (III)	n. m.;n. m.	prince;one carried	
 140921	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 140922	arṣ	arṣ/	ảrṣ	n. f.	earth	
 # KTU 1.6 III:2						
@@ -586,7 +586,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140928	w	w	w	conj.	and	
 140929	hm	hm(II)	hm (II)	conj.	if	
 140930	iṯ	iṯ(I)/	ỉṯ (I)	n. m.	presence, existence	
-140931	zbl	zbl(I)/	zbl (I)	n. m.	prince	
+140931	zbl	zbl(I)/;zbl(III)/	zbl (I);zbl (III)	n. m.;n. m.	prince;one carried	
 140932	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 140933	arṣ	arṣ/	ảrṣ	n. f.	earth	
 # KTU 1.6 III:4						
@@ -619,7 +619,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 III:9						
 140956	xk	?	?	?	?	DULAT: NOT FOUND
 140957	iṯ	iṯ(I)/	ỉṯ (I)	n. m.	presence, existence	
-140958	zbl	zbl(I)/	zbl (I)	n. m.	prince	
+140958	zbl	zbl(I)/;zbl(III)/	zbl (I);zbl (III)	n. m.;n. m.	prince;one carried	
 140959	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 140960	arṣ	arṣ/	ảrṣ	n. f.	earth	
 # KTU 1.6 III:10						
@@ -673,7 +673,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140999	tnḫ	!t!nḫ[	/n-ḫ/	vb	to rest	
 141000	b	b	b	prep.	in	
 141001	irty	irt/+y(I)	ỉrt	n. f.	breast	
-141002	npš	npš(I)/	npš (I)	n. f.	throat	
+141002	npš	npš(I)/;npš(II)/	npš (I);npš (II)	n. f.;n. m.	throat;red wool	
 # KTU 1.6 III:20						
 141003	k	k(III)	k (III)	Subordinating or completive functor	when	
 141004	ḥy	ḥy(I)/	ḥy (I)	adj. m.	alive	
@@ -682,7 +682,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 III:21						
 141007	k	k(III)	k (III)	Subordinating or completive functor	when	
 141008	iṯ	iṯ(I)/	ỉṯ (I)	n. m.	presence, existence	
-141009	zbl	zbl(I)/	zbl (I)	n. m.	prince	
+141009	zbl	zbl(I)/;zbl(III)/	zbl (I);zbl (III)	n. m.;n. m.	prince;one carried	
 141010	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 141011	arṣ	arṣ/	ảrṣ	n. f.	earth	
 # KTU 1.6 III:22						
@@ -700,7 +700,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 III:24						
 141022	rgm	rgm/	rgm	n. m.	word  expression  saying	UDB 6 III:24: 00- and CTA I, p. 38 read il and correct as ilm. R1- accepts the correction. | UDB variants: R1-1=rg m . l nrt . il[m] . špš; 00-1=rg m . l nrt . il (ilm) . špš
 141023	l	l(I)	l (I)	prep.	to	
-141024	nrt	nrt(I)/	nrt (I)	n. f.	lantern	
+141024	nrt	nrt(I)/;nrt(II)/	nrt (I);nrt (II)	n. f.;n. f.	lantern;ploughed land	
 141025	ilm	il(I)/m	ỉl (I)	n. m.	god	
 141026	špš	špš/	špš	n.	sun	
 # KTU 1.6 IV:1						
@@ -725,7 +725,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141042	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 # KTU 1.6 IV:5						
 141043	iy	iy	ỉy	interr. adv.	where?	
-141044	zbl	zbl(I)/	zbl (I)	n. m.	prince	
+141044	zbl	zbl(I)/;zbl(III)/	zbl (I);zbl (III)	n. m.;n. m.	prince;one carried	
 141045	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 141046	arṣ	arṣ/	ảrṣ	n. f.	earth	
 # KTU 1.6 IV:6						
@@ -740,7 +740,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141054	pnm	pn(m(I)/+m(I)	pnm, -m (I)	n. m. pl. tant., morph.	face,	
 # KTU 1.6 IV:8						
 141055	ˤm	ˤm(I)	ʕm (I)	prep.	to	
-141056	nrt	nrt(I)/	nrt (I)	n. f.	lantern	
+141056	nrt	nrt(I)/;nrt(II)/	nrt (I);nrt (II)	n. f.;n. f.	lantern;ploughed land	
 141057	ilm	il(I)/m	ỉl (I)	n. m.	god	
 141058	špš	špš/	špš	n.	sun	
 # KTU 1.6 IV:9						
@@ -754,7 +754,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141065	il	il(I)/	ỉl (I)	n. m.	god	
 141066	abk	ab/+k	ảb, -k (I)	n. m., pers. pn./morph.	father, your(s)	
 # KTU 1.6 IV:11						
-141067	hwt	hwt(I)/	hwt (I)	n. f.	word	
+141067	hwt	hwt(I)/;hw(t(I)/t	hwt (I);hwt (I)	n. f.;n. f.	word;matter	
 141068	lṭpn	lṭpn/	lṭpn	adj. m.	Benevolent	
 141069	ḥtkk	ḥtk(I)/+k	ḥtk (I)	n. m.	ruler > progenitor, father	
 # KTU 1.6 IV:12						
@@ -779,13 +779,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141085	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 # KTU 1.6 IV:16						
 141086	iy	iy	ỉy	interr. adv.	where?	UDB 6 IV:16: -90-
-141087	zbl	zbl(I)/	zbl (I)	n. m.	prince	
+141087	zbl	zbl(I)/;zbl(III)/	zbl (I);zbl (III)	n. m.;n. m.	prince;one carried	
 141088	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 141089	arṣ	arṣ/	ảrṣ	n. f.	earth	
 # KTU 1.6 IV:17						
 141090	w	w	w	conj.	and	
 141091	tˤn	!t!ˤn[	/ʕ-n-w/	vb	to be / remain depressed, humbled	
-141092	nrt	nrt(I)/	nrt (I)	n. f.	lantern	
+141092	nrt	nrt(I)/;nrt(II)/	nrt (I);nrt (II)	n. f.;n. f.	lantern;ploughed land	
 141093	ilm	il(I)/m	ỉl (I)	n. m.	god	
 141094	špš	špš/	špš	n.	sun	
 # KTU 1.6 IV:18						
@@ -825,7 +825,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141123	yġrk	!y!(nġr[+k				DULAT: NOT FOUND
 # KTU 1.6 IV:24						
 141124	tġrk	!t!(nġr[+k	/n-ġ-r/	vb	to protect, guard	UDB 6 IV:24: Vide CTA I, p. 41. | UDB variants: R1-1=tġrk . š-[-----]; 00-1=tġrk . š-[ … ]
-141125	šlm	šlm(I)/	šlm (I)	n. m.	peace	
+141125	šlm	šlm(I)/;šlm[;šlm(III)/	šlm (I);/š-l-m/;šlm (III)	n. m.;vb;adj. m.	peace;to be well;pure	
 # KTU 1.6 IV:25						
 141126	yštd	!y!štd[	/š-d-y/	vb	to pour	UDB 6 IV:25: R1 reads according to CTA I, p. 41. | UDB variants: R1-1=y št d . [-------]; 00-1=y št d . [ … ]; Notarius [484]: possible Gt-oriented reinterpretation (uncertain).
 141127	x	?	?	?	?	
@@ -852,7 +852,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141141	dkym	dkym				DULAT: NOT FOUND; UDB 6 V:3: -91-
 141142	ymḫṣ	!y!mḫṣ[	/m-ḫ-ṣ/	vb	to wound, beat, crush, kill	
 141143	b	b	b	prep.	in	
-141144	ṣmd	ṣmd/	ṣmd	n. m.	pair	
+141144	ṣmd	ṣmd/;ṣmd[	ṣmd;/ṣ-m-d/	n. m.;vb	pair;to harness	
 # KTU 1.6 V:4						
 141145	ṣġrm	ṣġr(I)/m	ṣġr (I)	adj. m.	small, of tender years, young	UDB 6 V:4: 00- reads: ṣ ġ r m . Epigraphic error. CTA I, p. 41, reads: ṣ ḥr m t . See also CTA II, fig. 25 (autography). R1-reads according to CTA. | UDB variants: R1-1=ṣ ḥr m t . y...
 141146	ymṣḫ	!y!mṣ(ḥ&ḫ[				DULAT: NOT FOUND
@@ -878,12 +878,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141163	yrḫm	yrḫm				DULAT: NOT FOUND
 # KTU 1.6 V:8						
 141164	l	l(I)	l (I)	prep.	to	UDB 6 V:8: 00- reads: [mk]. CTA I, p. 41, reads: [m] k . R1 reads according to CTA. | UDB variants: R1-1=l šn t . [m] k . b šbʿ; 00-1=l šn t . [mk] . b šbʿ
-141165	šnt	šnt(I)/	šnt (I)	n. f.	year	
+141165	šnt	šnt(I)/;šn(w[t;šnt(II)/	šnt (I);/š-n-w/;šnt (II)	n. f.;vb;n. f.	year;to change: a) reflex.;sleep	
 141166	mk	mk(I)/	mk (I)	n. m.	large puddle	
 141167	b	b	b	prep.	in	
 141168	šbˤ	šbˤ(I)/	šbʕ (I)	n. num.	seven	
 # KTU 1.6 V:9						
-141169	šnt	šnt(I)/	šnt (I)	n. f.	year	UDB 6 V:9: 00- reads: w . - k (?). CTA I, p. 41, reads: w[--]. In n. 14 comments: “Virolleaud: whn (?) lecture matériellement plus plausible que wrk que suppose la copie. Toutefois...
+141169	šnt	šnt(I)/;šn(w[t;šnt(II)/	šnt (I);/š-n-w/;šnt (II)	n. f.;vb;n. f.	year;to change: a) reflex.;sleep	UDB 6 V:9: 00- reads: w . - k (?). CTA I, p. 41, reads: w[--]. In n. 14 comments: “Virolleaud: whn (?) lecture matériellement plus plausible que wrk que suppose la copie. Toutefois...
 141170	w	w	w	conj.	and	
 141171	kr	kr[	/k-r/	vb	to be hot, furious, enraged	
 141172	bn	bn(I)/	bn (I)	n. m.	son	
@@ -1000,7 +1000,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141259	u	u	ủ	conj.	or	
 # KTU 1.6 VI:4						
 141260	dnh	d+nh				DULAT: NOT FOUND; UDB 6 VI:4: R1 reads according to CTA I, p. 42. | UDB variants: R1-1=[--------] h; 00-1=[ … ] h
-141261	ytn	!y!(ytn[	/y-t-n/	vb	to give	
+141261	ytn	!y!(ytn[;!y!(ytn[	/y-t-n/;/y-t-n/	vb;vb	to give;to grant	
 141262	aḫh	aḫ(I)/+h(I)	ảḫ (I), -h (I)	n. m.,pers. pn.	brother, his /her	
 # KTU 1.6 VI:5						
 141263	xxxxxxxxx	?	?	?	?	DULAT: NOT FOUND; UDB 6 VI:5: R1 reads according to CTA I, p. 42. | UDB variants: R1-1=[-------]mt; 00-1=[ … ]mt
@@ -1027,7 +1027,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141279	p	p(I)	p (I)	conj. functor	and	UDB 6 VI:10: R1 reads according to CTA I, p. 42. | UDB variants: R1-1=p [-]n . aḫym . ytn . bʿl; 00-1=p [ … ]n . aḫym . ytn . bʿl
 141280	hn	hn(II)	hn (II)	adv.	here	
 141281	aḫym	aḫ(I)/m	ảḫ (I)	n. m.	brother	
-141282	ytn	!y!(ytn[	/y-t-n/	vb	to give	
+141282	ytn	!y!(ytn[;!y!(ytn[	/y-t-n/;/y-t-n/	vb;vb	to give;to grant	
 141283	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 141284	s	(r(k(s/	rks	n. m.	belt	
 # KTU 1.6 VI:11						
@@ -1174,7 +1174,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141399	hn	hn(II)	hn (II)	adv.	here	
 # KTU 1.6 VI:38						
 141400	xxxx	?	?	?	?	UDB 6 VI:38: Vide CTA I, p. 43. | UDB variants: R1-1=[-----]š n -[----]; 00-1=[ … ] šn -[ … ]
-141401	šnt	šnt(I)/	šnt (I)	n. f.	year	
+141401	šnt	šnt(I)/;šn(w[t;šnt(II)/	šnt (I);/š-n-w/;šnt (II)	n. f.;vb;n. f.	year;to change: a) reflex.;sleep	
 # KTU 1.6 VI:39						
 141402	xxxxxxxx	?	?	?	?	UDB 6 VI:39: Vide CTA I, p. 43. | UDB variants: R1-1=[------]--d/l/p it; 00-1=[ … ]--[ … ]-- d / l (?) it
 141403	il	il(I)/	ỉl (I)	n. m.	god	
@@ -1191,13 +1191,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141411	l	l(I)	l (I)	prep.	to	
 141412	tštql	!t!]š]]t]ql[;!t!]t]šql[	/q-l/;/š-q-l/	vb;vb	to go down, proceed;to head to	Notarius [480-481]: strong split between Št and Gt analyses; both retained.
 # KTU 1.6 VI:43						
-141413	šir	šir(I)/	šỉr (I)	n. m.	flesh	UDB 6 VI:43: Vide CTA I, p. 43. | UDB variants: R1-1=[--] r / k . ṭry . ap . l tlḥm; 00-1=[ … ] r / k . ṭry . ap . l tlḥm
+141413	šir	šir(I)/;šir(II)/	šỉr (I);šỉr (II)	n. m.;n. m.	flesh;strip	UDB 6 VI:43: Vide CTA I, p. 43. | UDB variants: R1-1=[--] r / k . ṭry . ap . l tlḥm; 00-1=[ … ] r / k . ṭry . ap . l tlḥm
 141414	ṭry	ṭry(I)/	ṭry (I)	adj. m.	fresh food	
 141415	ap	ap(I)	ảp (I)	adv.	also	
 141416	l	l(I)	l (I)	prep.	to	
 141417	tlḥm	!t!lḥm(I)[	/l-ḥ-m/ (I)	vb	to eat	
 # KTU 1.6 VI:44						
-141418	lḥm	lḥm/	lḥm	n. m.	grain	
+141418	lḥm	lḥm(I)[;lḥm/;lḥm(I)/	/l-ḥ-m/ (I);lḥm;lḥ (I)	vb;n. m.;n. f.	to eat;grain;cheek	
 141419	trmmt	trmmt				DULAT: NOT FOUND
 141420	l	l(I)	l (I)	prep.	to	
 141421	tšt	!t!št[	/š-t-y/	vb	to drink	
@@ -1242,7 +1242,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141451	w	w	w	conj.	and	
 141452	ḫss	ḫss/	ḫss	element of DN	klug	
 # KTU 1.6 VI:54						
-141453	spr	spr(I)/	spr (I)	n. m.	scribe	
+141453	spr	spr(II)/;spr[;spr(I)/	spr (II);/s-p-r/;spr (I)	n. m.;vb;n. m.	tablet / register;to count;scribe	
 141454	ilmlk	ilmlk				DULAT: NOT FOUND
 141455	šbny	šbny/	šbny	GN	?	
 # KTU 1.6 VI:55						
@@ -1255,7 +1255,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141461	rb	rb(I)/	rb (I)	adj. m.	great	
 141462	nqdm	nqd/m	nqd	n. m.	head shepherd, chief shepherd	
 # KTU 1.6 VI:57						
-141463	ṯˤy	ṯˤy(I)/	ṯʕy (I)	n. m.	minister	
+141463	ṯˤy	ṯˤy(I)/;ṯˤy[	ṯʕy (I);/ṯ-ʕ-y/	n. m.;vb	minister;to offer	
 141464	nqmd	nqmd/	nqmd	PN	king	
 141465	mlk	mlk(I)/	mlk (I)	?	king	
 141466	ugrt	ugrt/	ủgrt	TN	Ugarit	

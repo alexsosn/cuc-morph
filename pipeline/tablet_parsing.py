@@ -7,6 +7,7 @@ from typing import Dict, List, Optional, Sequence
 import scripts.bootstrap_tablet_labeling as bootstrap
 import scripts.refine_results_mentions as refine
 from lint_reports.generator import LintReportGenerator
+from pipeline.config.surface_option_allowlist import SURFACE_OPTION_PROPAGATION_ALLOWLIST
 from pipeline.dulat_attestation_index import DulatAttestationIndex
 from pipeline.instruction_refiner import InstructionRefiner
 from pipeline.steps.attestation_sort import AttestationSortFixer
@@ -60,7 +61,10 @@ class TabletParsingPipeline:
             SuffixCliticFixer(gate=self.morph_gate),
             WeakVerbFixer(),
             WeakFinalSuffixConjugationFixer(),
-            SurfaceOptionPropagationFixer(corpus_dir=self.config.out_dir),
+            SurfaceOptionPropagationFixer(
+                corpus_dir=self.config.out_dir,
+                allowed_surfaces=SURFACE_OPTION_PROPAGATION_ALLOWLIST,
+            ),
             AttestationSortFixer(index=self.attestation_index),
             KnownAmbiguityExpander(),
             # Keep schema pass last so any content-changing steps still end in
