@@ -59,3 +59,6 @@
 - Added `AttestationSortFixer` and pipeline wiring to reorder aligned parsing options (`col3`–`col6`, and aligned `col7` comments) by DULAT attestation frequency descending, using the first DULAT entry per option when multiple entries/clitics are present.
 - Applied attestation-based option sorting across all `out/*.tsv` files (1,036 rows updated in 112 tablets).
 - Hardened base refinement separator handling to preserve separator row TSV column shape across all steps after schema normalization.
+- Added a final `TsvSchemaFormatter` pass at the end of the refinement chain so later steps cannot reintroduce non-canonical quoting/shape issues.
+- Switched schema formatter quote handling to GitHub-safe normalization: embedded double quotes in data fields are converted to single quotes.
+- Re-applied schema formatting to `out/*.tsv` and removed remaining double-quote patterns that triggered GitHub TSV "Illegal quoting" rendering errors.

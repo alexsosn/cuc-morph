@@ -557,7 +557,7 @@ class TsvSchemaFormatterTest(unittest.TestCase):
             self.assertEqual(result.rows_changed, 3)
             lines = f.read_text(encoding="utf-8").splitlines()
             self.assertEqual(lines[1], self.separator)
-            self.assertEqual(lines[2], '102\tabc\tabc/\tabc\tn. m.\tthing\t"UNP: ""quoted"""')
+            self.assertEqual(lines[2], "102\tabc\tabc/\tabc\tn. m.\tthing\tUNP: 'quoted'")
 
     def test_preserves_existing_header_without_change(self) -> None:
         content = textwrap.dedent(

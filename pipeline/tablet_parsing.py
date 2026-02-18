@@ -59,6 +59,9 @@ class TabletParsingPipeline:
             WeakVerbFixer(),
             WeakFinalSuffixConjugationFixer(),
             AttestationSortFixer(index=self.attestation_index),
+            # Keep schema pass last so any content-changing steps still end in
+            # strict 7-column/quote-safe TSV for GitHub rendering.
+            TsvSchemaFormatter(),
         ]
 
     def discover_source_files(self) -> List[Path]:

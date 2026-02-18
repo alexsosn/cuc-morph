@@ -5,7 +5,7 @@ Responsibilities:
 - normalize separator lines to '# KTU ...'
 - keep separator rows in 7-column TSV shape
 - enforce exactly 7 tab-separated columns for data rows
-- escape double quotes using RFC-style TSV quoting for GitHub rendering
+- normalize embedded double quotes to single quotes for GitHub rendering
 """
 
 import re
@@ -104,10 +104,21 @@ class TsvSchemaFormatter(RefinementStep):
         return "\t".join(escaped)
 
     def _escape_field(self, value: str) -> str:
-        # Normalize legacy backslash escaping from previous formatter pass.
+        # Canonicalize legacy escaping.
         normalized = value.replace('\\"', '"')
+
         if _RFC_QUOTED_FIELD_RE.fullmatch(normalized):
-            return normalized
-        if '"' in normalized or "\t" in normalized:
-            return '"' + normalized.replace('"', '""') + '"'
-        return normalized
+            inner = normalized[1:-1]
+            while '""' in inner:
+                inner = inner.replace('""', '"')
+        else:
+            inner = normalized
+            # Previous passes may leave doubled quotes as literal text.
+            while '""' in inner:
+                inner = inner.replace('""', '"')
+
+        # GitHub's TSV renderer is fragile around quoting; keep text quote-free.
+        inner = inner.replace('"', "'")
+        if "\t" in inner:
+            return '"' + inner.replace('"', '""') + '"'
+        return inner
