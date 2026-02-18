@@ -62,3 +62,4 @@
 - Added a final `TsvSchemaFormatter` pass at the end of the refinement chain so later steps cannot reintroduce non-canonical quoting/shape issues.
 - Switched schema formatter quote handling to GitHub-safe normalization: embedded double quotes in data fields are converted to single quotes.
 - Re-applied schema formatting to `out/*.tsv` and removed remaining double-quote patterns that triggered GitHub TSV "Illegal quoting" rendering errors.
+- Refined `KTU 1.1` lines with DULAT/UDB-backed parses in the `tlsmn`/`twtḥ` formula and nearby broken context (`ḫršnr`, `tḥmk`, `rdyk`), plus normalized `tptq` Gt stem marking (`]t]`) for correct DULAT mapping.

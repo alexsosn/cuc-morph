@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-02-18T18:04:36.043273+00:00",
+  "generated_at_utc": "2026-02-18T19:11:17.015463+00:00",
   "files_checked": 139,
-  "total_issues": 6589,
+  "total_issues": 6577,
   "fallback_parsed": 0,
   "by_severity": {
-    "ERROR": 5070,
+    "ERROR": 5058,
     "WARNING": 153,
     "INFO": 1197
   },
@@ -22,7 +22,7 @@
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 640
+      "count": 632
     },
     {
       "severity": "ERROR",
@@ -32,7 +32,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 175
+      "count": 171
     },
     {
       "severity": "ERROR",

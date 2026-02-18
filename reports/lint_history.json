@@ -8088,5 +8088,49 @@
       "Xt stem marker present but DULAT lacks *t stem": 1,
       "Š stem marker present but DULAT lacks Š/Št/Špass": 1
     }
+  },
+  {
+    "timestamp_utc": "2026-02-18T19:11:17.041444+00:00",
+    "git_head": "1b583f7499f5",
+    "git_branch": "main",
+    "report_signature": "33f3fd196c6c165b1e9ed7494993824d5b04771b",
+    "files_checked": 139,
+    "total_issues": 6577,
+    "by_severity": {
+      "ERROR": 5058,
+      "WARNING": 153,
+      "INFO": 1197
+    },
+    "issue_types": {
+      "Analysis does not reconstruct to surface": 3333,
+      "Surface not found in UDB concordance": 1197,
+      "No DULAT entry found for lexeme/surface": 632,
+      "ʔ must be preceded by '(' in column 3": 299,
+      "Missing DULAT entry token(s) in column 4": 171,
+      "Unknown DULAT token in column 4": 114,
+      "Non-G stem in DULAT requires stem marker": 97,
+      "DULAT comment does not match candidates": 89,
+      "Noun/adjective lacks '/' ending": 72,
+      "Each reconstructed letter must be prefixed by '('": 64,
+      "POS token not allowed for declared DULAT entry": 54,
+      "Suffixed pronominal form in DULAT should use '+' in analysis": 42,
+      "TODO/uncertain marker in comment": 37,
+      "Suffix form without '+'": 35,
+      "Feminine adjective/participle in DULAT should mark '-t' explicitly": 32,
+      "Feminine plural noun in DULAT should use '/t='": 30,
+      "No DULAT entry found for clitic part": 29,
+      "Multiple DULAT candidates for lexeme": 23,
+      "Deverbal form matches both verb and noun entries in DULAT": 13,
+      "Plural form missing split ending": 12,
+      "POS tokens must map to existing DULAT tokens in column 4": 8,
+      "Deverbal form marked with '[' but only noun entry found in DULAT": 7,
+      "POS ambiguous in DULAT": 6,
+      "Verb lacks '[' ending": 5,
+      "D stem marker present but DULAT lacks D/Dt": 3,
+      "Disallowed character in columns 2-3: ʕ": 1,
+      "Multiple DULAT candidates for surface": 1,
+      "Xt stem marker present but DULAT lacks *t stem": 1,
+      "Š stem marker present but DULAT lacks Š/Št/Špass": 1
+    }
   }
 ]
