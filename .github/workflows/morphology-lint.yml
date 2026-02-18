@@ -26,6 +26,14 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Restore lint history cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .lint-history
+          key: morphology-lint-history-${{ github.ref_name }}-${{ github.run_id }}
+          restore-keys: |
+            morphology-lint-history-${{ github.ref_name }}-
+
       - name: Run morphology linter and build statistics
         shell: bash
         run: |
@@ -34,10 +42,12 @@ jobs:
           python3 - <<'PY'
           from __future__ import annotations
 
+          import json
           import os
           import re
           import subprocess
           from collections import Counter
+          from datetime import datetime, timezone
           from pathlib import Path
 
           out_dir = Path("out")
@@ -202,6 +212,31 @@ jobs:
 
           summary = "\n".join(summary_lines) + "\n"
           Path("lint_summary.md").write_text(summary, encoding="utf-8")
+          stats_payload = {
+              "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+              "files_checked": len(files),
+              "total_issues": total_issues,
+              "fallback_parsed": fallback_parsed,
+              "by_severity": {
+                  "ERROR": by_level.get("ERROR", 0),
+                  "WARNING": by_level.get("WARNING", 0),
+                  "INFO": by_level.get("INFO", 0),
+              },
+              "by_problem_type": [
+                  {
+                      "severity": level,
+                      "problem_type": msg,
+                      "count": count,
+                  }
+                  for (level, msg), count in sorted(
+                      by_type.items(), key=lambda x: (-x[1], x[0][0], x[0][1])
+                  )
+              ],
+          }
+          Path("lint_stats.json").write_text(
+              json.dumps(stats_payload, ensure_ascii=False, indent=2),
+              encoding="utf-8",
+          )
 
           step_summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
           if step_summary_path:
@@ -215,6 +250,186 @@ jobs:
               raise SystemExit(result.returncode)
           PY
 
+      - name: Install plotting dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m pip install --disable-pip-version-check matplotlib
+
+      - name: Build trend plots from push history
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          python3 - <<'PY'
+          from __future__ import annotations
+
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          import matplotlib
+          matplotlib.use("Agg")
+          import matplotlib.pyplot as plt
+
+          stats_path = Path("lint_stats.json")
+          if not stats_path.exists():
+              raise SystemExit("Missing lint_stats.json")
+          stats = json.loads(stats_path.read_text(encoding="utf-8"))
+
+          history_dir = Path(".lint-history")
+          history_dir.mkdir(parents=True, exist_ok=True)
+          history_path = history_dir / "history.json"
+
+          history = []
+          if history_path.exists():
+              try:
+                  payload = json.loads(history_path.read_text(encoding="utf-8"))
+                  if isinstance(payload, list):
+                      history = payload
+              except Exception:
+                  history = []
+
+          issue_type_counts = {}
+          for row in stats.get("by_problem_type", []):
+              if not isinstance(row, dict):
+                  continue
+              problem_type = (row.get("problem_type") or "").strip() or "(unknown)"
+              count = int(row.get("count", 0) or 0)
+              issue_type_counts[problem_type] = issue_type_counts.get(problem_type, 0) + count
+
+          run_id = str(os.environ.get("GITHUB_RUN_ID", "local"))
+          run_number = int(os.environ.get("GITHUB_RUN_NUMBER", "0") or 0)
+          ref_name = os.environ.get("GITHUB_REF_NAME", "local")
+          sha = (os.environ.get("GITHUB_SHA", "") or "")[:12]
+
+          entry = {
+              "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+              "run_id": run_id,
+              "run_number": run_number,
+              "ref_name": ref_name,
+              "sha": sha,
+              "total_issues": int(stats.get("total_issues", 0) or 0),
+              "by_severity": {
+                  "ERROR": int((stats.get("by_severity") or {}).get("ERROR", 0) or 0),
+                  "WARNING": int((stats.get("by_severity") or {}).get("WARNING", 0) or 0),
+                  "INFO": int((stats.get("by_severity") or {}).get("INFO", 0) or 0),
+              },
+              "issue_types": issue_type_counts,
+          }
+
+          existing_index = None
+          for idx, item in enumerate(history):
+              if str(item.get("run_id", "")) == run_id:
+                  existing_index = idx
+                  break
+          if existing_index is None:
+              history.append(entry)
+          else:
+              history[existing_index] = entry
+
+          history = sorted(
+              history,
+              key=lambda x: (
+                  int(x.get("run_number", 0) or 0),
+                  str(x.get("run_id", "")),
+              ),
+          )[-200:]
+          history_path.write_text(json.dumps(history, ensure_ascii=False, indent=2), encoding="utf-8")
+
+          runs = history[-60:] if history else [entry]
+          x = list(range(len(runs)))
+          labels = [str(r.get("run_number", "?")) for r in runs]
+          tick_step = max(1, len(x) // 12) if x else 1
+
+          severity_png = Path("lint_severity_trend.png")
+          fig, ax = plt.subplots(figsize=(10, 4.5))
+          sev_colors = {
+              "ERROR": "#d62728",
+              "WARNING": "#ff7f0e",
+              "INFO": "#1f77b4",
+          }
+          for sev in ("ERROR", "WARNING", "INFO"):
+              y = [int((r.get("by_severity") or {}).get(sev, 0) or 0) for r in runs]
+              ax.plot(x, y, marker="o", linewidth=2.0, markersize=3.5, label=sev, color=sev_colors[sev])
+          ax.set_title(f"Morphology Lint Trend by Severity ({ref_name})")
+          ax.set_xlabel("Workflow run number")
+          ax.set_ylabel("Issue count")
+          ax.grid(True, alpha=0.25)
+          if x:
+              ax.set_xticks(x[::tick_step])
+              ax.set_xticklabels(labels[::tick_step], rotation=45, ha="right")
+          ax.legend(loc="upper right")
+          fig.tight_layout()
+          fig.savefig(severity_png, dpi=160)
+          plt.close(fig)
+
+          totals = {}
+          for run in runs:
+              for issue_type, count in (run.get("issue_types") or {}).items():
+                  totals[issue_type] = totals.get(issue_type, 0) + int(count or 0)
+          top_issue_types = [
+              issue_type
+              for issue_type, _count in sorted(totals.items(), key=lambda kv: (-kv[1], kv[0]))[:8]
+          ]
+
+          issue_type_png = Path("lint_issue_types_trend.png")
+          fig2, ax2 = plt.subplots(figsize=(12, 5.5))
+          if top_issue_types:
+              for issue_type in top_issue_types:
+                  y = [int((r.get("issue_types") or {}).get(issue_type, 0) or 0) for r in runs]
+                  ax2.plot(x, y, linewidth=1.8, marker="o", markersize=2.8, label=issue_type)
+          else:
+              ax2.plot(x, [0 for _ in x], linewidth=1.8, marker="o", markersize=2.8, label="No issues")
+          ax2.set_title(f"Morphology Lint Trend by Issue Type ({ref_name})")
+          ax2.set_xlabel("Workflow run number")
+          ax2.set_ylabel("Issue count")
+          ax2.grid(True, alpha=0.25)
+          if x:
+              ax2.set_xticks(x[::tick_step])
+              ax2.set_xticklabels(labels[::tick_step], rotation=45, ha="right")
+          ax2.legend(loc="upper left", bbox_to_anchor=(1.02, 1), borderaxespad=0.0, fontsize=8)
+          fig2.tight_layout()
+          fig2.savefig(issue_type_png, dpi=160, bbox_inches="tight")
+          plt.close(fig2)
+
+          trend_lines = []
+          trend_lines.append("## Morphology Lint Trends")
+          trend_lines.append("")
+          trend_lines.append(f"- Reference: `{ref_name}`")
+          trend_lines.append(f"- History points used: `{len(runs)}`")
+          trend_lines.append(f"- Current run: `#{run_number}` (`{sha}`)")
+          trend_lines.append(f"- Plot artifacts: `{severity_png}` and `{issue_type_png}`")
+          trend_lines.append("")
+          trend_lines.append("### Current Severity Snapshot")
+          trend_lines.append("")
+          trend_lines.append("| Severity | Count |")
+          trend_lines.append("|---|---:|")
+          for sev in ("ERROR", "WARNING", "INFO"):
+              trend_lines.append(f"| {sev} | {entry['by_severity'].get(sev, 0)} |")
+          trend_text = "\n".join(trend_lines) + "\n"
+          Path("lint_trends.md").write_text(trend_text, encoding="utf-8")
+
+          step_summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+          if step_summary_path:
+              with open(step_summary_path, "a", encoding="utf-8") as fh:
+                  fh.write("\n")
+                  fh.write(trend_text)
+                  fh.write("\n")
+                  fh.write(
+                      "Trend plot images are available in the `morphology-lint` artifact (`lint_severity_trend.png`, `lint_issue_types_trend.png`).\n"
+                  )
+          PY
+
+      - name: Save lint history cache
+        if: always()
+        continue-on-error: true
+        uses: actions/cache/save@v4
+        with:
+          path: .lint-history
+          key: morphology-lint-history-${{ github.ref_name }}-${{ github.run_id }}
+
       - name: Upload lint artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -223,3 +438,8 @@ jobs:
             lint_report.txt
             lint_stderr.txt
             lint_summary.md
+            lint_stats.json
+            lint_trends.md
+            lint_severity_trend.png
+            lint_issue_types_trend.png
+            .lint-history/history.json
