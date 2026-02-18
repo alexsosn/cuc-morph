@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root="$(git rev-parse --show-toplevel)"
+cd "$repo_root"
+
+# Run only when lint-relevant files are staged.
+staged_files="$(git diff --cached --name-only)"
+if ! printf '%s\n' "$staged_files" | grep -E -q '^(out/.*\.tsv|linter/|scripts/generate_lint_reports\.py|lint_reports/|reports/|\.github/workflows/morphology-lint\.yml)'; then
+  exit 0
+fi
+
+if [[ ! -x ".venv/bin/python" ]]; then
+  echo "Missing .venv/bin/python. Create the virtual environment before commit." >&2
+  exit 1
+fi
+
+echo "Generating morphology lint reports under reports/ ..."
+.venv/bin/python scripts/generate_lint_reports.py
+
+git add reports/

@@ -1,20 +1,30 @@
-name: Morphology Lint
+name: Morphology Lint Reports
 
 on:
   push:
     paths:
       - 'out/*.tsv'
+      - 'reports/**'
       - 'linter/**'
+      - 'lint_reports/**'
+      - 'scripts/generate_lint_reports.py'
+      - 'scripts/parse_lint_reports.py'
+      - '.githooks/pre-commit'
       - '.github/workflows/morphology-lint.yml'
   pull_request:
     paths:
       - 'out/*.tsv'
+      - 'reports/**'
       - 'linter/**'
+      - 'lint_reports/**'
+      - 'scripts/generate_lint_reports.py'
+      - 'scripts/parse_lint_reports.py'
+      - '.githooks/pre-commit'
       - '.github/workflows/morphology-lint.yml'
   workflow_dispatch:
 
 jobs:
-  lint:
+  parse_reports:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,420 +36,22 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Restore lint history cache
-        uses: actions/cache/restore@v4
-        with:
-          path: .lint-history
-          key: morphology-lint-history-${{ github.ref_name }}-${{ github.run_id }}
-          restore-keys: |
-            morphology-lint-history-${{ github.ref_name }}-
-
-      - name: Run morphology linter and build statistics
+      - name: Parse committed lint reports
         shell: bash
         run: |
           set -euo pipefail
+          python3 scripts/parse_lint_reports.py
 
-          python3 - <<'PY'
-          from __future__ import annotations
-
-          import json
-          import os
-          import re
-          import subprocess
-          from collections import Counter
-          from datetime import datetime, timezone
-          from pathlib import Path
-
-          out_dir = Path("out")
-          files = sorted(out_dir.glob("*.tsv"))
-          if not files:
-              raise SystemExit("No TSV files found under out/.")
-
-          cmd = [
-              "python3",
-              "linter/lint.py",
-              "--no-db",
-              *[str(f) for f in files],
-          ]
-
-          result = subprocess.run(cmd, capture_output=True, text=True, check=False)
-
-          lint_output = result.stdout
-          lint_stderr = result.stderr
-
-          Path("lint_report.txt").write_text(lint_output, encoding="utf-8")
-          Path("lint_stderr.txt").write_text(lint_stderr, encoding="utf-8")
-
-          # Parse issue lines: "ERROR <file>:<line> <id> <surface> <message>"
-          # `<file>` can contain spaces (e.g. "out/KTU 1.4.tsv"), and `<surface>`
-          # can occasionally contain spaces too, so message extraction uses known
-          # lint-message prefixes rather than fixed token offsets.
-          line_re = re.compile(r"^(ERROR|WARNING|INFO)\s+(.+?):(\d+)\s+(\S+)\s+(.*)$")
-          total_re = re.compile(r"^Total issues:\s+(\d+)\s*$")
-
-          by_level = Counter()
-          by_type = Counter()
-          fallback_parsed = 0
-
-          message_prefixes = sorted(
-              [
-                  "No DULAT entry found for lexeme/surface",
-                  "No DULAT entry found for clitic part:",
-                  "Missing DULAT entry token(s) in column 4",
-                  "Column 4 count must match analysis variant count",
-                  "Column 5 count must match analysis variant count",
-                  "Column 6 count should match analysis variant count",
-                  "Morphology placeholder '?' should use unresolved DULAT placeholder '?' in column 4",
-                  "Unresolved morphology placeholder '?' should use '?' or empty POS",
-                  "Unresolved morphology placeholder '?' should use '?' or empty gloss",
-                  "Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)",
-                  "Unresolved DULAT placeholder '?' should use '?' or empty POS",
-                  "Unresolved DULAT placeholder '?' should use '?' or empty gloss",
-                  "POS tokens must map to existing DULAT tokens in column 4",
-                  "Gloss tokens must map to existing DULAT tokens in column 4",
-                  "Empty DULAT token in column 4",
-                  "Unknown DULAT token in column 4:",
-                  "DULAT comment does not match candidates",
-                  "POS ambiguous in DULAT:",
-                  "POS token",
-                  "Disallowed character in columns 2-3:",
-                  "Analysis does not reconstruct to surface",
-                  "Each reconstructed letter must be prefixed by '('",
-                  "ʔ must be preceded by '(' in column 3",
-                  "Noun/adjective lacks '/' ending",
-                  "Verb lacks '[' ending",
-                  "Deverbal form matches both verb and noun entries in DULAT",
-                  "Deverbal form marked with '[' but only noun entry found in DULAT",
-                  "Non-G stem in DULAT requires stem marker",
-                  "Š stem marker present but DULAT lacks Š/Št/Špass",
-                  "Xt stem marker present but DULAT lacks *t stem",
-                  "D stem marker present but DULAT lacks D/Dt",
-                  "Suffixed pronominal form in DULAT should use '+' in analysis",
-                  "Suffix form without '+'",
-                  "Plural form missing split ending",
-                  "Feminine plural noun in DULAT should use '/t='",
-                  "Feminine plural noun in DULAT should be tagged with '/t='",
-                  "Feminine adjective/participle in DULAT should mark '-t' explicitly",
-                  "Feminine plural adjective/participle in DULAT should use '/t='",
-                  "Plurale tantum noun ending in '-t' should mark plural with '/t='",
-                  "Plurale tantum noun ending in '-m' should mark plural with '/m'",
-                  "Multiple DULAT candidates for lexeme:",
-                  "Multiple DULAT candidates for surface:",
-                  "Surface not found in UDB concordance",
-                  "Surface ",
-                  "Repeated ",
-                  "TODO/uncertain marker in comment:",
-              ],
-              key=len,
-              reverse=True,
-          )
-
-          def extract_message(rest: str) -> tuple[str, bool]:
-              for prefix in message_prefixes:
-                  idx = rest.find(prefix)
-                  if idx != -1:
-                      return rest[idx:].strip(), False
-              return rest.strip(), True
-
-          def normalize_message(msg: str) -> str:
-              if msg.startswith("POS token "):
-                  return "POS token not allowed for declared DULAT entry"
-              if msg.startswith("POS ambiguous in DULAT:"):
-                  return "POS ambiguous in DULAT"
-              if msg.startswith("Unknown DULAT token in column 4:"):
-                  return "Unknown DULAT token in column 4"
-              if msg.startswith("No DULAT entry found for clitic part:"):
-                  return "No DULAT entry found for clitic part"
-              if msg.startswith("Multiple DULAT candidates for lexeme:"):
-                  return "Multiple DULAT candidates for lexeme"
-              if msg.startswith("Multiple DULAT candidates for surface:"):
-                  return "Multiple DULAT candidates for surface"
-              if msg.startswith("Surface ") and " parsed inconsistently:" in msg:
-                  return "Surface parsed inconsistently across IDs"
-              if msg.startswith("Repeated ") and "has inconsistent col3-col6 payload across parallels:" in msg:
-                  return "Repeated sequence has inconsistent col3-col6 payload across parallels"
-              if msg.startswith("TODO/uncertain marker in comment:"):
-                  return "TODO/uncertain marker in comment"
-              if msg.startswith("Analysis does not reconstruct to surface"):
-                  return "Analysis does not reconstruct to surface"
-              return msg
-
-          total_issues = None
-          for raw in lint_output.splitlines():
-              m = line_re.match(raw)
-              if m:
-                  level = m.group(1)
-                  rest = m.group(5)
-                  msg, used_fallback = extract_message(rest)
-                  if used_fallback:
-                      fallback_parsed += 1
-                  msg = normalize_message(msg)
-                  by_level[level] += 1
-                  by_type[(level, msg)] += 1
-                  continue
-              t = total_re.match(raw)
-              if t:
-                  total_issues = int(t.group(1))
-
-          if total_issues is None:
-              total_issues = sum(by_level.values())
-
-          # Markdown summary
-          summary_lines = []
-          summary_lines.append("## Morphology Lint Summary")
-          summary_lines.append("")
-          summary_lines.append(f"- Files checked: `{len(files)}`")
-          summary_lines.append(f"- Total issues: `{total_issues}`")
-          summary_lines.append(f"- Fallback-parsed issue lines: `{fallback_parsed}`")
-          summary_lines.append("")
-
-          summary_lines.append("### By Severity")
-          summary_lines.append("")
-          summary_lines.append("| Severity | Count |")
-          summary_lines.append("|---|---:|")
-          for level in ("ERROR", "WARNING", "INFO"):
-              summary_lines.append(f"| {level} | {by_level.get(level, 0)} |")
-          summary_lines.append("")
-
-          summary_lines.append("### By Problem Type")
-          summary_lines.append("")
-          summary_lines.append("| Severity | Problem Type | Count |")
-          summary_lines.append("|---|---|---:|")
-
-          for (level, msg), count in sorted(by_type.items(), key=lambda x: (-x[1], x[0][0], x[0][1])):
-              safe_msg = msg.replace("|", "\\|")
-              summary_lines.append(f"| {level} | {safe_msg} | {count} |")
-
-          summary = "\n".join(summary_lines) + "\n"
-          Path("lint_summary.md").write_text(summary, encoding="utf-8")
-          stats_payload = {
-              "generated_at_utc": datetime.now(timezone.utc).isoformat(),
-              "files_checked": len(files),
-              "total_issues": total_issues,
-              "fallback_parsed": fallback_parsed,
-              "by_severity": {
-                  "ERROR": by_level.get("ERROR", 0),
-                  "WARNING": by_level.get("WARNING", 0),
-                  "INFO": by_level.get("INFO", 0),
-              },
-              "by_problem_type": [
-                  {
-                      "severity": level,
-                      "problem_type": msg,
-                      "count": count,
-                  }
-                  for (level, msg), count in sorted(
-                      by_type.items(), key=lambda x: (-x[1], x[0][0], x[0][1])
-                  )
-              ],
-          }
-          Path("lint_stats.json").write_text(
-              json.dumps(stats_payload, ensure_ascii=False, indent=2),
-              encoding="utf-8",
-          )
-
-          step_summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
-          if step_summary_path:
-              with open(step_summary_path, "a", encoding="utf-8") as fh:
-                  fh.write(summary)
-
-          print(summary)
-
-          # Fail only if linter process itself failed unexpectedly.
-          if result.returncode != 0:
-              raise SystemExit(result.returncode)
-          PY
-
-      - name: Install plotting dependencies
-        shell: bash
-        run: |
-          set -euo pipefail
-          python3 -m pip install --disable-pip-version-check matplotlib
-
-      - name: Build trend plots from push history
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          python3 - <<'PY'
-          from __future__ import annotations
-
-          import json
-          import os
-          from datetime import datetime, timezone
-          from pathlib import Path
-
-          import matplotlib
-          matplotlib.use("Agg")
-          import matplotlib.pyplot as plt
-
-          stats_path = Path("lint_stats.json")
-          if not stats_path.exists():
-              raise SystemExit("Missing lint_stats.json")
-          stats = json.loads(stats_path.read_text(encoding="utf-8"))
-
-          history_dir = Path(".lint-history")
-          history_dir.mkdir(parents=True, exist_ok=True)
-          history_path = history_dir / "history.json"
-
-          history = []
-          if history_path.exists():
-              try:
-                  payload = json.loads(history_path.read_text(encoding="utf-8"))
-                  if isinstance(payload, list):
-                      history = payload
-              except Exception:
-                  history = []
-
-          issue_type_counts = {}
-          for row in stats.get("by_problem_type", []):
-              if not isinstance(row, dict):
-                  continue
-              problem_type = (row.get("problem_type") or "").strip() or "(unknown)"
-              count = int(row.get("count", 0) or 0)
-              issue_type_counts[problem_type] = issue_type_counts.get(problem_type, 0) + count
-
-          run_id = str(os.environ.get("GITHUB_RUN_ID", "local"))
-          run_number = int(os.environ.get("GITHUB_RUN_NUMBER", "0") or 0)
-          ref_name = os.environ.get("GITHUB_REF_NAME", "local")
-          sha = (os.environ.get("GITHUB_SHA", "") or "")[:12]
-
-          entry = {
-              "timestamp_utc": datetime.now(timezone.utc).isoformat(),
-              "run_id": run_id,
-              "run_number": run_number,
-              "ref_name": ref_name,
-              "sha": sha,
-              "total_issues": int(stats.get("total_issues", 0) or 0),
-              "by_severity": {
-                  "ERROR": int((stats.get("by_severity") or {}).get("ERROR", 0) or 0),
-                  "WARNING": int((stats.get("by_severity") or {}).get("WARNING", 0) or 0),
-                  "INFO": int((stats.get("by_severity") or {}).get("INFO", 0) or 0),
-              },
-              "issue_types": issue_type_counts,
-          }
-
-          existing_index = None
-          for idx, item in enumerate(history):
-              if str(item.get("run_id", "")) == run_id:
-                  existing_index = idx
-                  break
-          if existing_index is None:
-              history.append(entry)
-          else:
-              history[existing_index] = entry
-
-          history = sorted(
-              history,
-              key=lambda x: (
-                  int(x.get("run_number", 0) or 0),
-                  str(x.get("run_id", "")),
-              ),
-          )[-200:]
-          history_path.write_text(json.dumps(history, ensure_ascii=False, indent=2), encoding="utf-8")
-
-          runs = history[-60:] if history else [entry]
-          x = list(range(len(runs)))
-          labels = [str(r.get("run_number", "?")) for r in runs]
-          tick_step = max(1, len(x) // 12) if x else 1
-
-          severity_png = Path("lint_severity_trend.png")
-          fig, ax = plt.subplots(figsize=(10, 4.5))
-          sev_colors = {
-              "ERROR": "#d62728",
-              "WARNING": "#ff7f0e",
-              "INFO": "#1f77b4",
-          }
-          for sev in ("ERROR", "WARNING", "INFO"):
-              y = [int((r.get("by_severity") or {}).get(sev, 0) or 0) for r in runs]
-              ax.plot(x, y, marker="o", linewidth=2.0, markersize=3.5, label=sev, color=sev_colors[sev])
-          ax.set_title(f"Morphology Lint Trend by Severity ({ref_name})")
-          ax.set_xlabel("Workflow run number")
-          ax.set_ylabel("Issue count")
-          ax.grid(True, alpha=0.25)
-          if x:
-              ax.set_xticks(x[::tick_step])
-              ax.set_xticklabels(labels[::tick_step], rotation=45, ha="right")
-          ax.legend(loc="upper right")
-          fig.tight_layout()
-          fig.savefig(severity_png, dpi=160)
-          plt.close(fig)
-
-          totals = {}
-          for run in runs:
-              for issue_type, count in (run.get("issue_types") or {}).items():
-                  totals[issue_type] = totals.get(issue_type, 0) + int(count or 0)
-          top_issue_types = [
-              issue_type
-              for issue_type, _count in sorted(totals.items(), key=lambda kv: (-kv[1], kv[0]))[:8]
-          ]
-
-          issue_type_png = Path("lint_issue_types_trend.png")
-          fig2, ax2 = plt.subplots(figsize=(12, 5.5))
-          if top_issue_types:
-              for issue_type in top_issue_types:
-                  y = [int((r.get("issue_types") or {}).get(issue_type, 0) or 0) for r in runs]
-                  ax2.plot(x, y, linewidth=1.8, marker="o", markersize=2.8, label=issue_type)
-          else:
-              ax2.plot(x, [0 for _ in x], linewidth=1.8, marker="o", markersize=2.8, label="No issues")
-          ax2.set_title(f"Morphology Lint Trend by Issue Type ({ref_name})")
-          ax2.set_xlabel("Workflow run number")
-          ax2.set_ylabel("Issue count")
-          ax2.grid(True, alpha=0.25)
-          if x:
-              ax2.set_xticks(x[::tick_step])
-              ax2.set_xticklabels(labels[::tick_step], rotation=45, ha="right")
-          ax2.legend(loc="upper left", bbox_to_anchor=(1.02, 1), borderaxespad=0.0, fontsize=8)
-          fig2.tight_layout()
-          fig2.savefig(issue_type_png, dpi=160, bbox_inches="tight")
-          plt.close(fig2)
-
-          trend_lines = []
-          trend_lines.append("## Morphology Lint Trends")
-          trend_lines.append("")
-          trend_lines.append(f"- Reference: `{ref_name}`")
-          trend_lines.append(f"- History points used: `{len(runs)}`")
-          trend_lines.append(f"- Current run: `#{run_number}` (`{sha}`)")
-          trend_lines.append(f"- Plot artifacts: `{severity_png}` and `{issue_type_png}`")
-          trend_lines.append("")
-          trend_lines.append("### Current Severity Snapshot")
-          trend_lines.append("")
-          trend_lines.append("| Severity | Count |")
-          trend_lines.append("|---|---:|")
-          for sev in ("ERROR", "WARNING", "INFO"):
-              trend_lines.append(f"| {sev} | {entry['by_severity'].get(sev, 0)} |")
-          trend_text = "\n".join(trend_lines) + "\n"
-          Path("lint_trends.md").write_text(trend_text, encoding="utf-8")
-
-          step_summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
-          if step_summary_path:
-              with open(step_summary_path, "a", encoding="utf-8") as fh:
-                  fh.write("\n")
-                  fh.write(trend_text)
-                  fh.write("\n")
-                  fh.write(
-                      "Trend plot images are available in the `morphology-lint` artifact (`lint_severity_trend.png`, `lint_issue_types_trend.png`).\n"
-                  )
-          PY
-
-      - name: Save lint history cache
-        if: always()
-        continue-on-error: true
-        uses: actions/cache/save@v4
-        with:
-          path: .lint-history
-          key: morphology-lint-history-${{ github.ref_name }}-${{ github.run_id }}
-
-      - name: Upload lint artifacts
+      - name: Upload committed reports
         uses: actions/upload-artifact@v4
         with:
-          name: morphology-lint
+          name: morphology-lint-reports
           path: |
-            lint_report.txt
-            lint_stderr.txt
-            lint_summary.md
-            lint_stats.json
-            lint_trends.md
-            lint_severity_trend.png
-            lint_issue_types_trend.png
-            .lint-history/history.json
+            reports/lint_report.txt
+            reports/lint_stderr.txt
+            reports/lint_summary.md
+            reports/lint_stats.json
+            reports/lint_history.json
+            reports/lint_trends.md
+            reports/lint_severity_trend.svg
+            reports/lint_issue_types_trend.svg

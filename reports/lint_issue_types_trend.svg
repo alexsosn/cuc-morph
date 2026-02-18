@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="560">
+<rect x="0" y="0" width="1300" height="560" fill="#ffffff"/>
+<text x="70" y="30" font-size="20" font-family="Arial" fill="#111">Morphology Lint Trend by Issue Type</text>
+<line x1="70" y1="490" x2="1040" y2="490" stroke="#e6e6e6" stroke-width="1"/>
+<text x="62" y="494" font-size="11" font-family="Arial" fill="#333" text-anchor="end">0</text>
+<line x1="70" y1="402" x2="1040" y2="402" stroke="#e6e6e6" stroke-width="1"/>
+<text x="62" y="406" font-size="11" font-family="Arial" fill="#333" text-anchor="end">76</text>
+<line x1="70" y1="314" x2="1040" y2="314" stroke="#e6e6e6" stroke-width="1"/>
+<text x="62" y="318" font-size="11" font-family="Arial" fill="#333" text-anchor="end">153</text>
+<line x1="70" y1="226" x2="1040" y2="226" stroke="#e6e6e6" stroke-width="1"/>
+<text x="62" y="230" font-size="11" font-family="Arial" fill="#333" text-anchor="end">229</text>
+<line x1="70" y1="138" x2="1040" y2="138" stroke="#e6e6e6" stroke-width="1"/>
+<text x="62" y="142" font-size="11" font-family="Arial" fill="#333" text-anchor="end">306</text>
+<line x1="70" y1="50" x2="1040" y2="50" stroke="#e6e6e6" stroke-width="1"/>
+<text x="62" y="54" font-size="11" font-family="Arial" fill="#333" text-anchor="end">382</text>
+<line x1="70" y1="490" x2="1040" y2="490" stroke="#333" stroke-width="1.2"/>
+<line x1="70" y1="50" x2="70" y2="490" stroke="#333" stroke-width="1.2"/>
+<line x1="70" y1="490" x2="70" y2="494" stroke="#666" stroke-width="1"/>
+<text x="70" y="508" font-size="10" font-family="Arial" fill="#333" text-anchor="middle">1</text>
+<polyline fill="none" stroke="#d62728" stroke-width="2.2" points="70,50"/>
+<circle cx="70" cy="50" r="2.5" fill="#d62728"/>
+<line x1="1060" y1="74" x2="1082" y2="74" stroke="#d62728" stroke-width="2.5"/>
+<text x="1088" y="78" font-size="11" font-family="Arial" fill="#111">No DULAT entry found for lexeme/surface</text>
+<polyline fill="none" stroke="#ff7f0e" stroke-width="2.2" points="70,277"/>
+<circle cx="70" cy="277" r="2.5" fill="#ff7f0e"/>
+<line x1="1060" y1="94" x2="1082" y2="94" stroke="#ff7f0e" stroke-width="2.5"/>
+<text x="1088" y="98" font-size="11" font-family="Arial" fill="#111">Analysis does not reconstruct to surface</text>
+<polyline fill="none" stroke="#1f77b4" stroke-width="2.2" points="70,288"/>
+<circle cx="70" cy="288" r="2.5" fill="#1f77b4"/>
+<line x1="1060" y1="114" x2="1082" y2="114" stroke="#1f77b4" stroke-width="2.5"/>
+<text x="1088" y="118" font-size="11" font-family="Arial" fill="#111">Missing DULAT entry token(s) in column 4</text>
+<polyline fill="none" stroke="#2ca02c" stroke-width="2.2" points="70,306"/>
+<circle cx="70" cy="306" r="2.5" fill="#2ca02c"/>
+<line x1="1060" y1="134" x2="1082" y2="134" stroke="#2ca02c" stroke-width="2.5"/>
+<text x="1088" y="138" font-size="11" font-family="Arial" fill="#111">Surface not found in UDB concordance</text>
+<polyline fill="none" stroke="#9467bd" stroke-width="2.2" points="70,349"/>
+<circle cx="70" cy="349" r="2.5" fill="#9467bd"/>
+<line x1="1060" y1="154" x2="1082" y2="154" stroke="#9467bd" stroke-width="2.5"/>
+<text x="1088" y="158" font-size="11" font-family="Arial" fill="#111">Suffix form without '+'</text>
+<polyline fill="none" stroke="#8c564b" stroke-width="2.2" points="70,407"/>
+<circle cx="70" cy="407" r="2.5" fill="#8c564b"/>
+<line x1="1060" y1="174" x2="1082" y2="174" stroke="#8c564b" stroke-width="2.5"/>
+<text x="1088" y="178" font-size="11" font-family="Arial" fill="#111">Noun/adjective lacks '/' ending</text>
+<polyline fill="none" stroke="#e377c2" stroke-width="2.2" points="70,416"/>
+<circle cx="70" cy="416" r="2.5" fill="#e377c2"/>
+<line x1="1060" y1="194" x2="1082" y2="194" stroke="#e377c2" stroke-width="2.5"/>
+<text x="1088" y="198" font-size="11" font-family="Arial" fill="#111">Each reconstructed letter must be prefixed by '('</text>
+<polyline fill="none" stroke="#7f7f7f" stroke-width="2.2" points="70,416"/>
+<circle cx="70" cy="416" r="2.5" fill="#7f7f7f"/>
+<line x1="1060" y1="214" x2="1082" y2="214" stroke="#7f7f7f" stroke-width="2.5"/>
+<text x="1088" y="218" font-size="11" font-family="Arial" fill="#111">Plural form missing split ending</text>
+<text x="555" y="540" font-size="11" font-family="Arial" fill="#444">Run sequence</text>
+</svg>
