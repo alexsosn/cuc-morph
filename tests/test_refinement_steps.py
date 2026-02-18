@@ -542,6 +542,91 @@ class SurfaceOptionPropagationFixerTest(unittest.TestCase):
             result = fixer.refine_file(poor)
             self.assertEqual(result.rows_changed, 0)
 
+    def test_collapses_duplicate_variants_and_merges_gloss_with_slash(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            rich = root / "KTU 1.1.tsv"
+            poor = root / "KTU 1.2.tsv"
+
+            rich.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tytn\t!y!(ytn[;!y!(ytn[\t/y-t-n/;/y-t-n/\tvb;vb\tto give;to grant\t\n"
+                ),
+                encoding="utf-8",
+            )
+            poor.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "2\tytn\t!y!(ytn[\t/y-t-n/\tvb\tto give\t\n"
+                ),
+                encoding="utf-8",
+            )
+
+            fixer = SurfaceOptionPropagationFixer(corpus_dir=root, allowed_surfaces={"ytn"})
+            result = fixer.refine_file(poor)
+            self.assertEqual(result.rows_changed, 1)
+            line = poor.read_text(encoding="utf-8").splitlines()[1]
+            self.assertIn("\t!y!(ytn[\t/y-t-n/\tvb\tto give/to grant\t", line)
+
+    def test_harmonizes_glosses_for_same_dulat_entry(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            rich = root / "KTU 1.1.tsv"
+            poor = root / "KTU 1.2.tsv"
+
+            rich.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\thwt\thwt(I)/;hw(t(I)/t\thwt (I);hwt (I)\tn. f.;n. f.\tword;matter\t\n"
+                ),
+                encoding="utf-8",
+            )
+            poor.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "2\thwt\thwt(I)/\thwt (I)\tn. f.\tword\t\n"
+                ),
+                encoding="utf-8",
+            )
+
+            fixer = SurfaceOptionPropagationFixer(corpus_dir=root, allowed_surfaces={"hwt"})
+            result = fixer.refine_file(poor)
+            self.assertEqual(result.rows_changed, 1)
+            line = poor.read_text(encoding="utf-8").splitlines()[1]
+            self.assertIn(
+                "\thwt(I)/;hw(t(I)/t\thwt (I);hwt (I)\tn. f.;n. f.\tword/matter;word/matter\t",
+                line,
+            )
+
+    def test_normalizes_weak_final_w_variant_to_substitution_marker(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            rich = root / "KTU 1.1.tsv"
+            poor = root / "KTU 1.2.tsv"
+
+            rich.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\ttˤny\t!t!ˤny(I)[;!t!ˤny[\t/ʕ-n-y/ (I);/ʕ-n-w/\tvb;vb\t"
+                    "to answer;to be depressed\t\n"
+                ),
+                encoding="utf-8",
+            )
+            poor.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "2\ttˤny\t!t!ˤny(I)[\t/ʕ-n-y/ (I)\tvb\tto answer\t\n"
+                ),
+                encoding="utf-8",
+            )
+
+            fixer = SurfaceOptionPropagationFixer(corpus_dir=root, allowed_surfaces={"tˤny"})
+            result = fixer.refine_file(poor)
+            self.assertEqual(result.rows_changed, 1)
+            line = poor.read_text(encoding="utf-8").splitlines()[1]
+            self.assertIn("!t!ˤny(I)[;!t!ˤn(w&y[", line)
+
 
 class WeakFinalSuffixConjugationFixerTest(unittest.TestCase):
     def setUp(self) -> None:
@@ -610,6 +695,22 @@ class BaalPluralGodListFixerTest(unittest.TestCase):
         )
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "bˤl(II)/")
+
+    def test_collapses_plural_mixed_baal_ambiguity(self) -> None:
+        row = TabletRow(
+            "154108",
+            "bˤlm",
+            "bˤl(II)/m;bˤl(I)/m",
+            "bʕl (II);bʕl (I)",
+            "n. m.;n. m.",
+            "lord;labourer, unskilled labourer",
+            "",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "bˤl(II)/m")
+        self.assertEqual(result.dulat, "bʕl (II)")
+        self.assertEqual(result.pos, "n. m.")
+        self.assertEqual(result.gloss, "lord")
 
 
 class BaalLabourerKtu1FixerTest(unittest.TestCase):

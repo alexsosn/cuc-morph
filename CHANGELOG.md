@@ -2,6 +2,18 @@
 
 ## 2026-02-18
 
+- Refined `SurfaceOptionPropagationFixer` canonicalization to prevent malformed propagated ambiguity bundles:
+  - collapse duplicated `(analysis, DULAT, POS)` variants and merge same-entry glosses with `/`,
+  - harmonize glosses across variants that share the same `(DULAT, POS)` entry pair,
+  - normalize weak-final `/...-...-w/` prefix variants from `...y[` to `...(w&y[` when needed,
+  - compare subset compatibility by `(analysis, DULAT, POS)` instead of gloss text so canonical gloss rewrites can apply safely.
+- Updated propagation allowlist to exclude `abn` and `bˤlm` from automatic cross-tablet propagation.
+- Expanded `BaalPluralGodListFixer` to collapse mixed `bˤlm` plural rows already encoded as `bˤl(II)/m;bˤl(I)/m` to `bˤl(II)/m` (`lord`) in `KTU 1.*`.
+- Repaired affected tablet rows:
+  - fixed duplicated `ytn` alternatives (`!y!(ytn[;!y!(ytn[` -> single parse + slash-gloss),
+  - fixed `hwt` gloss alignment to `word/matter;word/matter` when both options map to `hwt (I)`,
+  - fixed `tˤny` weak-final `w` option to `!t!ˤn(w&y[`,
+  - restored `out/KTU 1.3.tsv` to pre-whitelist state except requested row `9910` (`abn/;!a!bn[`).
 - Added explicit `SURFACE_OPTION_PROPAGATION_ALLOWLIST` (`pipeline/config/surface_option_allowlist.py`) and wired `TabletParsingPipeline` to run `SurfaceOptionPropagationFixer` only on lint-vetted surfaces.
 - Applied whitelist-only propagation across `out/KTU 1.*.tsv`: 384 rows in 54 files updated, with zero newly introduced lint issues and one resolved lint issue versus baseline.
 - Excluded currently unsafe surfaces from propagation (`anš`, `imt`, `tbn`, `ˤnn`) based on lint-delta vetting.

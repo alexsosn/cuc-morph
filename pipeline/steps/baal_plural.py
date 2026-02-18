@@ -52,16 +52,14 @@ class BaalPluralGodListFixer(RefinementStep):
         gloss_variants: list[str],
     ) -> bool:
         has_ii_singular_style = any(v in {"bˤl(II)/", "bˤlm(II)/"} for v in analysis_variants)
+        has_ii_plural_style = "bˤl(II)/m" in analysis_variants
         has_i_plural = "bˤl(I)/m" in analysis_variants
-        if not (has_ii_singular_style and has_i_plural):
+        if not ((has_ii_singular_style or has_ii_plural_style) and has_i_plural):
             return False
 
         has_dulat_pair = {"bʕl (II)", "bʕl (I)"}.issubset(set(dulat_variants))
         if not has_dulat_pair:
             return False
 
-        # Restrict to the problematic mixed rows (DN+labourer ambiguity).
-        has_dn = any("DN" in p for p in pos_variants)
-        has_baalu_gloss = any("Baʿlu" in g for g in gloss_variants)
         has_labourer_gloss = any("labourer" in g for g in gloss_variants)
-        return has_dn and has_baalu_gloss and has_labourer_gloss
+        return has_labourer_gloss

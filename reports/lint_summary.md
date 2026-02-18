@@ -1,7 +1,7 @@
 ## Morphology Lint Summary
 
 - Files checked: `139`
-- Total issues: `6456`
+- Total issues: `6462`
 - Fallback-parsed issue lines: `457`
 
 ### By Severity

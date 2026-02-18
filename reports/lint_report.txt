@@ -5903,6 +5903,11 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ttpp anhb
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ˤṣk ˤbṣk ˤmy pˤnk tlsmn ˤmy twtḥ išdk Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9879-9886 ; 10087-10094
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ˤbṣk ˤmy pˤnk tlsmn ˤmy twtḥ išdk dm Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9880-9887 ; 10088-10095
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ˤmy pˤnk tlsmn ˤmy twtḥ išdk dm rgm Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9881-9888 ; 10089-10096
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  šmm ˤm arṣ thmt ˤmn kbkbm abn brq Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9904-9911 ; 10120-10127
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ˤm arṣ thmt ˤmn kbkbm abn brq d Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9905-9912 ; 10121-10128
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  arṣ thmt ˤmn kbkbm abn brq d l Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9906-9913 ; 10122-10129
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  thmt ˤmn kbkbm abn brq d l tdˤ Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9907-9914 ; 10123-10130
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ˤmn kbkbm abn brq d l tdˤ šmm Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9908-9915 ; 10124-10131
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  atm w ank ibġyh b tk ġry il Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9924-9931 ; 10132-10139
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ank ibġyh b tk ġry il ṣpn b Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9926-9933 ; 10134-10141
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ibġyh b tk ġry il ṣpn b qdš Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9927-9934 ; 10135-10142
@@ -5960,7 +5965,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  mhrm Surf
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  šbˤt Surface šbˤt parsed inconsistently: šbˤ(I)/t (ids: 10000,10394,10464); šbˤ(II)[t (ids: 9688)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ksat Surface ksat parsed inconsistently: ks(u&a(t/t= (ids: 9771,9773); ks(u&a/t= (ids: 9696)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ṯlḥnt Surface ṯlḥnt parsed inconsistently: ṯlḥn/t (ids: 9700); ṯlḥn/t= (ids: 9774)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  kbd Surface kbd parsed inconsistently: !!kbd[:d (ids: 9843); kbd(II)/ (ids: 10080,10084,10165,10169,10192,10196,9722,9872,9876); kbd[:d (ids: 10678)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  kbd Surface kbd parsed inconsistently: !!kbd[:d (ids: 9843); kbd(I)/ (ids: 10080,10084,10165,10169,10192,10196,9722,9872,9876); kbd[:d (ids: 10678)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  tḥspn Surface tḥspn parsed inconsistently: !t!ḥsp[n (ids: 10258); !t!ḥsp[~n (ids: 9781)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  mh Surface mh parsed inconsistently: mh (ids: 10259,10479); mh/ (ids: 9782)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ˤrpt Surface ˤrpt parsed inconsistently: ˤrp(t/t= (ids: 10050,10062,10178,9791,9980); ˤrpt (ids: 10609)
@@ -5974,6 +5979,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  btlt Surf
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  hwt Surface hwt parsed inconsistently: hw&t (ids: 10679); hw(t(I)/t (ids: 10696,9857); hwt(I)/ (ids: 10066,10101,9894)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ˤmy Surface ˤmy parsed inconsistently: ˤm(I)+y (ids: 10089,10092,9884); ˤm+y (ids: 9881)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ly Surface ly parsed inconsistently: l(I)+y (ids: 10098,10319,9890); l(I)/+y (ids: 10324)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  tdˤ Surface tdˤ parsed inconsistently: !t!(ydˤ(I)[ (ids: 10130,9914,9918); !t!(ydˤ(II)[ (ids: 9955)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  nšm Surface nšm parsed inconsistently: nš(m/m (ids: 9919); nš/m (ids: 10113)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  atm Surface atm parsed inconsistently: !!at(w[~m(II) (ids: 10132,9924); atm (ids: 10206)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ibġyh Surface ibġyh parsed inconsistently: !(ʔ&i!bġy[+h (ids: 10135); !i!bġy[+h (ids: 9927)
@@ -6457,4 +6463,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:49 151516
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:75 151535 xẓk Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:88 151545 šdr Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.98.tsv:23 151701 gˤl Surface not found in UDB concordance
-Total issues: 6456
+Total issues: 6462

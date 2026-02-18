@@ -1,7 +1,6 @@
 """Lint-vetted allowlist for safe surface-option propagation."""
 
 SURFACE_OPTION_PROPAGATION_ALLOWLIST: tuple[str, ...] = (
-    "abn",
     "adr",
     "alp",
     "asr",
@@ -9,7 +8,6 @@ SURFACE_OPTION_PROPAGATION_ALLOWLIST: tuple[str, ...] = (
     "blt",
     "bnt",
     "bˤl",
-    "bˤlm",
     "bṯt",
     "dbbm",
     "dbḥ",
