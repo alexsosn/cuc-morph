@@ -53,3 +53,5 @@
 - Extended `TsvSchemaFormatter` to enforce a canonical TSV header row (`id`, `surface form`, `morphological parsing`, `DULAT`, `POS`, `gloss`, `comments`) and escape double quotes in data cells for safer GitHub TSV rendering.
 - Added linter support for headered `out/*.tsv`: require a valid first header row and skip it from numeric-ID/content checks.
 - Re-applied schema formatting across all `out/*.tsv` files to inject headers and quote-escape existing comments/glosses.
+- Switched quote escaping from backslash style to RFC TSV quoting (for example `"..."` with doubled inner quotes `""`) to satisfy GitHub TSV parser requirements.
+- Normalized separator rows to full 7-column TSV shape (for example `# KTU ...` in column 1 plus six empty columns) so files remain tabular under GitHub rendering.

@@ -3,8 +3,9 @@
 Responsibilities:
 - enforce canonical header row for 7-column schema
 - normalize separator lines to '# KTU ...'
+- keep separator rows in 7-column TSV shape
 - enforce exactly 7 tab-separated columns for data rows
-- escape double quotes in data columns for GitHub TSV rendering
+- escape double quotes using RFC-style TSV quoting for GitHub rendering
 """
 
 import re
@@ -28,6 +29,7 @@ HEADER_COLUMNS = [
 ]
 HEADER_ROW = "\t".join(HEADER_COLUMNS)
 HEADER_COLUMNS_LOWER = [value.lower() for value in HEADER_COLUMNS]
+_RFC_QUOTED_FIELD_RE = re.compile(r'^"(?:[^"]|"")*"$')
 
 
 class TsvSchemaFormatter(RefinementStep):
@@ -60,9 +62,10 @@ class TsvSchemaFormatter(RefinementStep):
 
             if is_separator_line(raw):
                 normalized_sep = normalize_separator_line(raw)
-                if normalized_sep != raw:
+                normalized_sep_row = "\t".join([normalized_sep] + [""] * 6)
+                if normalized_sep_row != raw:
                     rows_changed += 1
-                out_lines.append(normalized_sep)
+                out_lines.append(normalized_sep_row)
                 continue
 
             parts = raw.split("\t")
@@ -97,5 +100,14 @@ class TsvSchemaFormatter(RefinementStep):
         else:
             fixed = parts
 
-        escaped = [re.sub(r'(?<!\\)"', r'\\"', part) for part in fixed]
+        escaped = [self._escape_field(part) for part in fixed]
         return "\t".join(escaped)
+
+    def _escape_field(self, value: str) -> str:
+        # Normalize legacy backslash escaping from previous formatter pass.
+        normalized = value.replace('\\"', '"')
+        if _RFC_QUOTED_FIELD_RE.fullmatch(normalized):
+            return normalized
+        if '"' in normalized or "\t" in normalized:
+            return '"' + normalized.replace('"', '""') + '"'
+        return normalized
