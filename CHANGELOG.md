@@ -2,6 +2,19 @@
 
 ## 2026-02-18
 
+- Added frequency-based formula-bigram discovery utility: `scripts/discover_formula_bigrams.py` (profiles top adjacent-token combinations and dominant parsing payloads in `out/KTU 1.*.tsv`).
+- Added hardcoded DN-epithet bigram normalization layer:
+  - config: `pipeline/config/formula_bigram_rules.py`
+  - step: `pipeline/steps/formula_bigram.py`
+  - pipeline wiring: `pipeline/tablet_parsing.py` (runs before offering-`l` disambiguation).
+- Hardcoded high-confidence formula bigrams from corpus frequency detection:
+  - `aliyn bˤl` -> enforce `bˤl (II)` as `DN` (`Baʿlu`)
+  - `zbl bˤl` -> enforce `bˤl (II)` as `DN` (`Baʿlu`)
+  - `bˤl ṣpn` -> enforce `bˤl (II)` as `DN` (`Baʿlu`)
+  - `btlt ˤnt` -> enforce `ʕnt (I)` as `DN` (`ʿAnatu`)
+  - `rbt aṯrt` -> enforce `ảṯrt (II)` as `DN` (`Asherah`)
+- Added unit tests for formula-bigram rule application and safety guards.
+- Applied formula-bigram normalization + follow-up offering-`l` cleanup across `out/KTU 1.*.tsv` (53 direct formula-row updates + 5 context updates).
 - Refined `SurfaceOptionPropagationFixer` canonicalization to prevent malformed propagated ambiguity bundles:
   - collapse duplicated `(analysis, DULAT, POS)` variants and merge same-entry glosses with `/`,
   - harmonize glosses across variants that share the same `(DULAT, POS)` entry pair,

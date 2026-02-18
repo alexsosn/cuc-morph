@@ -12,7 +12,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9509	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	TCS/UNP: “Mighty Baʿlu” (name usage) before zbl bʕl arṣ
 9510	sid	s(ʔ&id[/	/s-ʔ-d/	vb	to support, comfort	the form is an active participle in nominal use
 9511	zbl	zbl/	zbl (I)	n. m.	prince	
-9512	bˤl	bˤl(II)/	bʕl (II)	n. m.	lord	TCS/UNP title formula zbl bʕl arṣ = “Prince, lord of the earth”
+9512	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	TCS/UNP title formula zbl bʕl arṣ = “Prince, lord of the earth”
 # KTU 1.3 I:4						
 9513	arṣ	arṣ/	ảrṣ	n. f.	earth, ground	
 9514	qm	qm[/	/q-m/	vb	to stand up	most probably active participle
@@ -960,7 +960,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10295	mṯb	mṯb/	mṯb	n. m.	residence, mansion, dwelling place	
 10296	rbt	rb(t(I)/t	rbt (I)	n. f.	Lady	
 # KTU 1.3 IV:50						
-10297	aṯrt	aṯr(t(II)/t	ảṯrt (II)	DN	Asherah	
+10297	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 10298	ym	ym(II)/	ym (II)	n. m.	sea	
 10299	mṯb	mṯb/	mṯb	n. m.	residence, mansion, dwelling place	
 10300	pdry	pdry/	pdry	DN	fatty	
@@ -984,7 +984,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10315	tˤn	!t!ˤn(y(I)[	/ʕ-n-y/ (I)	vb	to answer, reply, say	
 # KTU 1.3 IV:54						
 10316	btlt	btl(t/t	btlt	n. f.	virgin	
-10317	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu	
+10317	ˤnt	ˤnt(I)/	ʕnt (I)	DN	ʿAnatu	
 10318	yṯb	!y!ṯb[	/ṯ-b/	vb	to return, turn round, go back, make one’s way, go through	ROOT ṯ-b
 10319	ly	l(I)+y	l (I)	prep.	to, towards, up to	
 10320	ṯr	ṯr(I)/	ṯr (I)	n. m.	bull	
@@ -1115,7 +1115,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10425	mt	mt(II)/	mt (II)	n. m.	death	
 10426	w  tˤn	w  !t!ˤn(y(I)/				SPLIT!; DULAT: NOT FOUND
 10427	btlt	btl(t/t	btlt	n. f.	virgin	
-10428	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu	
+10428	ˤnt	ˤnt(I)/	ʕnt (I)	DN	ʿAnatu	
 # KTU 1.3 V:20						
 10429	bnt	bn(t(I)/t	bnt (I)	n. f.	masonry, building, construction, creation	
 10430	bht	bht/	bht	→		MERGE WITH NEXT, is pron suffix
@@ -1180,12 +1180,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10480	taršn	!t!(ʔ&arš[n	/ʔ-r-š/	vb	to request, wish, demand, claim	
 10481	l	l	l (I)	prep.	to, towards, up to	
 10482	btlt	btl(t/t	btlt	n. f.	virgin	
-10483	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu	
+10483	ˤnt	ˤnt(I)/	ʕnt (I)	DN	ʿAnatu	
 10484	w	w	w	conj.	and	
 # KTU 1.3 V:30						
 10485	tˤn	!t!ˤn(y[	/ʕ-n-y/ (I)	vb	to answer, reply, say	
 10486	btlt	btl(t(I)/t	btlt	n. f.	virgin	
-10487	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu	
+10487	ˤnt	ˤnt(I)/	ʕnt (I)	DN	ʿAnatu	
 10488	tḥmk	tḥm/+k	tḥm, -k (I)	n. m.,pers. pn.	message, your(s)	
 # KTU 1.3 V:31						
 10489	il	il(I)/	ỉl (I)	DN	El	
@@ -1254,7 +1254,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10543	mṯb	mṯb/	mṯb	n. m.	residence, mansion, dwelling place	
 # KTU 1.3 V:41						
 10544	rbt	rb(t(I)/t	rbt (I)	n. f.	Lady	
-10545	aṯrt	aṯr(t(II)/t	ảṯrt (II)	DN	Asherah	
+10545	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 10546	ym	ym(II)/	ym (II)	n. m.	sea	
 10547	mṯb	mṯb/	mṯb	n. m.	residence, mansion, dwelling place	
 10548	pdry	pdry/	pdry	DN	fatty	
@@ -1292,7 +1292,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10569	mgn	mgn(I)/	mgn (I)	n. m.	gift, present	
 # KTU 1.3 VI:2						
 10570	rbt	rb(I)/t	rb (I)	adj. m.	great, large	
-10571	aṯrt	aṯr(t(II)/t	ảṯrt (II)	DN	Asherah	
+10571	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
 10572	ym	ym(II)/	ym (II)	n. m.	sea	
 10573	mġẓ	mġẓ/	mġẓ	n. m.	present, gift	
 # KTU 1.3 VI:3						

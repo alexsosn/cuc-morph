@@ -17,6 +17,7 @@ from pipeline.steps.base import (
     normalize_separator_row,
     parse_tsv_line,
 )
+from pipeline.steps.formula_bigram import FormulaBigramFixer
 from pipeline.steps.known_ambiguities import KnownAmbiguityExpander
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
@@ -26,6 +27,58 @@ from pipeline.steps.suffix_fixer import SuffixCliticFixer
 from pipeline.steps.surface_option_propagation import SurfaceOptionPropagationFixer
 from pipeline.steps.weak_final_sc import WeakFinalSuffixConjugationFixer
 from pipeline.steps.weak_verb import WeakVerbFixer
+
+
+class FormulaBigramFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = FormulaBigramFixer()
+
+    def test_disambiguates_aliyn_baal_to_dn(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\taliyn\taliyn/\tảlỉyn\tadj. m.\tThe Very / Most Powerful\t\n"
+                    "2\tbˤl\tbˤl(II)/;bˤl[\tbʕl (II);/b-ʕ-l/\tn. m./DN;vb\tBaʿlu;to make\t\n"
+                ),
+                encoding="utf-8",
+            )
+            result = self.fixer.refine_file(path)
+            self.assertEqual(result.rows_changed, 1)
+            lines = path.read_text(encoding="utf-8").splitlines()
+            self.assertIn("\tbˤl(II)/\tbʕl (II)\tDN\tBaʿlu\t", lines[2])
+
+    def test_disambiguates_btlt_anat_to_dn(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tbtlt\tbtlt/\tbtlt\tn. f.\tvirgin\t\n"
+                    "2\tˤnt\tˤn(I)/t=;ˤnt(I)/;ˤnt(II)\tʕn (I);ʕnt (I);ʕnt (II)\t"
+                    "n. f.;DN;adv.\teye;sister;now\t\n"
+                ),
+                encoding="utf-8",
+            )
+            result = self.fixer.refine_file(path)
+            self.assertEqual(result.rows_changed, 1)
+            lines = path.read_text(encoding="utf-8").splitlines()
+            self.assertIn("\tˤnt(I)/\tʕnt (I)\tDN\tʿAnatu\t", lines[2])
+
+    def test_skips_when_dulat_target_not_present(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\taliyn\taliyn/\tảlỉyn\tadj. m.\tThe Very / Most Powerful\t\n"
+                    "2\tbˤl\tbˤl(I)/\tbʕl (I)\tn. m.\tlabourer\t\n"
+                ),
+                encoding="utf-8",
+            )
+            result = self.fixer.refine_file(path)
+            self.assertEqual(result.rows_changed, 0)
 
 
 class StaticGate:

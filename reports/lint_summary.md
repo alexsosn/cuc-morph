@@ -1,14 +1,14 @@
 ## Morphology Lint Summary
 
 - Files checked: `139`
-- Total issues: `6462`
+- Total issues: `6465`
 - Fallback-parsed issue lines: `457`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 4459 |
+| ERROR | 4458 |
 | WARNING | 628 |
 | INFO | 1197 |
 
@@ -26,7 +26,7 @@
 | ERROR | Unknown DULAT token in column 4 | 77 |
 | ERROR | Noun/adjective lacks '/' ending | 75 |
 | ERROR | Each reconstructed letter must be prefixed by '(' | 64 |
-| ERROR | POS token not allowed for declared DULAT entry | 54 |
+| ERROR | POS token not allowed for declared DULAT entry | 53 |
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 42 |
 | WARNING | Suffix form without '+' | 40 |
 | WARNING | TODO/uncertain marker in comment | 37 |
