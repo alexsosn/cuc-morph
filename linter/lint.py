@@ -795,7 +795,18 @@ def pos_token_is_ambiguous(pos_tok: str) -> bool:
 # Linter
 # -----------------------------
 
-def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, lemma_map: Dict[str, List[DulatEntry]], entry_stems: Dict[int, set], entry_gender: Dict[int, str], udb_words, baseline: Optional[Path], input_format: str = "auto"):
+def lint_file(
+    path: Path,
+    dulat_forms: Dict[str, List[DulatEntry]],
+    entry_meta,
+    lemma_map: Dict[str, List[DulatEntry]],
+    entry_stems: Dict[int, set],
+    entry_gender: Dict[int, str],
+    udb_words,
+    baseline: Optional[Path],
+    input_format: str = "auto",
+    db_checks: bool = True,
+):
     issues: List[Issue] = []
 
     lines = path.read_text(encoding="utf-8").splitlines()
@@ -978,6 +989,16 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
                         if not lemma_tok:
                             issues.append(Issue("error", str(path), i, line_id, surface, a_var, "Empty DULAT token in column 4"))
                             continue
+
+                        if di < len(p_tokens):
+                            pos_tok = p_tokens[di].strip()
+                            if is_known_slash_pos_label(pos_tok):
+                                suggested = normalize_pos_label(pos_tok)
+                                issues.append(Issue("warning", str(path), i, line_id, surface, a_var, f"Replace '/' with 'or' in POS label: '{pos_tok}' -> '{suggested}'"))
+
+                        if not db_checks:
+                            continue
+
                         key = (normalize_surface(lemma_tok), hom_tok or "")
                         pos_matches = set(entry_index.get(key, set()))
                         gender_matches = set(entry_gender_index.get(key, set()))
@@ -996,9 +1017,6 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
 
                         if di < len(p_tokens):
                             pos_tok = p_tokens[di].strip()
-                            if is_known_slash_pos_label(pos_tok):
-                                suggested = normalize_pos_label(pos_tok)
-                                issues.append(Issue("warning", str(path), i, line_id, surface, a_var, f"Replace '/' with 'or' in POS label: '{pos_tok}' -> '{suggested}'"))
                             allowed = set()
                             for pos_raw in pos_matches:
                                 for opt in entry_pos_options(pos_raw):
@@ -1227,340 +1245,341 @@ def lint_file(path: Path, dulat_forms: Dict[str, List[DulatEntry]], entry_meta, 
             if udb_key not in udb_words:
                 issues.append(Issue("info", str(path), i, line_id, surface, analysis, "Surface not found in UDB concordance"))
 
-        # Handle clitic splits (e.g., b+h=). Base lexeme is checked normally.
-        analysis_for_lexeme = analysis
-        clitic_parts: List[str] = []
-        if "+" in analysis:
-            parts = analysis.split("+")
-            base_part = parts[0].strip()
-            clitic_parts.extend([p for p in parts[1:] if p.strip()])
-            analysis_for_lexeme = base_part
+        if db_checks:
+            # Handle clitic splits (e.g., b+h=). Base lexeme is checked normally.
+            analysis_for_lexeme = analysis
+            clitic_parts: List[str] = []
+            if "+" in analysis:
+                parts = analysis.split("+")
+                base_part = parts[0].strip()
+                clitic_parts.extend([p for p in parts[1:] if p.strip()])
+                analysis_for_lexeme = base_part
 
-        if "[" in analysis:
-            base, tail = analysis.split("[", 1)
-            analysis_for_lexeme = base.strip()
-            tail = tail.strip()
-            if tail:
-                for seg in tail.split("+"):
-                    seg = seg.strip()
-                    if seg:
-                        clitic_parts.append(seg)
+            if "[" in analysis:
+                base, tail = analysis.split("[", 1)
+                analysis_for_lexeme = base.strip()
+                tail = tail.strip()
+                if tail:
+                    for seg in tail.split("+"):
+                        seg = seg.strip()
+                        if seg:
+                            clitic_parts.append(seg)
 
-        seen_clitics = set()
-        for part in clitic_parts:
-            part = part.lstrip("~")
-            if not part:
-                continue
-            if part.startswith(":"):
-                continue
-            if ":" in part:
-                # Post-[ finite endings can carry stem labels (e.g., t:n).
-                # These are verbal morphology, not clitic lexeme parts.
-                continue
-            if not has_letters(strip_markers_simple(part)):
-                continue
-            if part in seen_clitics:
-                continue
-            seen_clitics.add(part)
-            part_lexeme, _, part_hom = extract_lexeme_from_analysis(part)
-            if not part_lexeme:
-                continue
-            part_candidates: List[DulatEntry] = []
-            if part_lexeme:
-                # In +clitic slots, prefer suffix entries (-x) over free lexemes (x)
-                # when both exist; this avoids false ambiguity for parts like +k, +h.
-                suffix_candidates = lemma_map.get(normalize_surface("-" + part_lexeme), [])
-                if suffix_candidates:
-                    part_candidates.extend(suffix_candidates)
-                else:
-                    part_candidates.extend(lemma_map.get(normalize_surface(part_lexeme), []))
-                if part_hom:
-                    part_candidates = [c for c in part_candidates if c.homonym == part_hom]
-            if not part_candidates:
-                part_surface = strip_markers_simple(part)
-                if part_surface:
-                    part_candidates.extend(dulat_forms.get(normalize_surface(part_surface), []))
+            seen_clitics = set()
+            for part in clitic_parts:
+                part = part.lstrip("~")
+                if not part:
+                    continue
+                if part.startswith(":"):
+                    continue
+                if ":" in part:
+                    # Post-[ finite endings can carry stem labels (e.g., t:n).
+                    # These are verbal morphology, not clitic lexeme parts.
+                    continue
+                if not has_letters(strip_markers_simple(part)):
+                    continue
+                if part in seen_clitics:
+                    continue
+                seen_clitics.add(part)
+                part_lexeme, _, part_hom = extract_lexeme_from_analysis(part)
+                if not part_lexeme:
+                    continue
+                part_candidates: List[DulatEntry] = []
+                if part_lexeme:
+                    # In +clitic slots, prefer suffix entries (-x) over free lexemes (x)
+                    # when both exist; this avoids false ambiguity for parts like +k, +h.
+                    suffix_candidates = lemma_map.get(normalize_surface("-" + part_lexeme), [])
+                    if suffix_candidates:
+                        part_candidates.extend(suffix_candidates)
+                    else:
+                        part_candidates.extend(lemma_map.get(normalize_surface(part_lexeme), []))
                     if part_hom:
                         part_candidates = [c for c in part_candidates if c.homonym == part_hom]
-            if not part_candidates:
-                issues.append(Issue("error", str(path), i, line_id, surface, analysis, f"No DULAT entry found for clitic part: {part}"))
-            else:
-                pos_set = {c.pos for c in part_candidates if c.pos}
-                if len(pos_set) > 1:
-                    # DULAT ambiguity for clitics is acceptable if column 5
-                    # resolves it. Report only when POS selection itself is
-                    # ambiguous.
-                    selected_pos_tok = ""
-                    norm_part = normalize_surface(part_lexeme)
-                    cand_keys = [
-                        (norm_part, part_hom or ""),
-                        (normalize_surface("-" + part_lexeme), part_hom or ""),
-                    ]
-                    if part_hom:
-                        cand_keys.extend([
-                            (norm_part, ""),
-                            (normalize_surface("-" + part_lexeme), ""),
-                        ])
-                    for ck in cand_keys:
-                        if ck in selected_pos_by_declared and selected_pos_by_declared[ck]:
-                            selected_pos_tok = selected_pos_by_declared[ck]
-                            break
-                    if selected_pos_tok and pos_token_is_ambiguous(selected_pos_tok):
-                        pos_list = ", ".join(sorted(pos_set))
-                        issues.append(Issue("info", str(path), i, line_id, surface, analysis, f"POS ambiguous in DULAT for clitic part {part}: {pos_list}; POS column token is ambiguous: {selected_pos_tok}"))
+                if not part_candidates:
+                    part_surface = strip_markers_simple(part)
+                    if part_surface:
+                        part_candidates.extend(dulat_forms.get(normalize_surface(part_surface), []))
+                        if part_hom:
+                            part_candidates = [c for c in part_candidates if c.homonym == part_hom]
+                if not part_candidates:
+                    issues.append(Issue("error", str(path), i, line_id, surface, analysis, f"No DULAT entry found for clitic part: {part}"))
+                else:
+                    pos_set = {c.pos for c in part_candidates if c.pos}
+                    if len(pos_set) > 1:
+                        # DULAT ambiguity for clitics is acceptable if column 5
+                        # resolves it. Report only when POS selection itself is
+                        # ambiguous.
+                        selected_pos_tok = ""
+                        norm_part = normalize_surface(part_lexeme)
+                        cand_keys = [
+                            (norm_part, part_hom or ""),
+                            (normalize_surface("-" + part_lexeme), part_hom or ""),
+                        ]
+                        if part_hom:
+                            cand_keys.extend([
+                                (norm_part, ""),
+                                (normalize_surface("-" + part_lexeme), ""),
+                            ])
+                        for ck in cand_keys:
+                            if ck in selected_pos_by_declared and selected_pos_by_declared[ck]:
+                                selected_pos_tok = selected_pos_by_declared[ck]
+                                break
+                        if selected_pos_tok and pos_token_is_ambiguous(selected_pos_tok):
+                            pos_list = ", ".join(sorted(pos_set))
+                            issues.append(Issue("info", str(path), i, line_id, surface, analysis, f"POS ambiguous in DULAT for clitic part {part}: {pos_list}; POS column token is ambiguous: {selected_pos_tok}"))
 
-        # DULAT candidates (prefer lexeme from base analysis)
-        analysis_for_lexeme = strip_missing(analysis_for_lexeme).strip()
-        is_verb_global = "[" in analysis
-        lexeme, is_verb, lex_hom = extract_lexeme_from_analysis(analysis_for_lexeme)
-        if is_verb_global:
-            is_verb = True
-            if lexeme and lexeme[0] in {"a", "i", "u"}:
-                lexeme = "ʔ" + lexeme[1:]
-        is_noun = ("/" in analysis_for_lexeme) and (not is_verb_global)
-        is_deverbal = is_verb_global and ("/" in analysis)
-        has_sh_stem = "]š]" in analysis
-        has_t_stem = "]t]" in analysis
-        has_colon_stem = re.search(r":[A-Za-z]+", analysis) is not None
-        analysis_has_stem = has_sh_stem or has_t_stem or has_colon_stem
-
-        base_candidates: List[DulatEntry] = []
-        root_candidates: List[DulatEntry] = []
-        verb_candidates_for_stem: List[DulatEntry] = []
-        if lexeme:
-            lex_key = normalize_surface(lexeme)
-            base_candidates.extend(lemma_map.get(lex_key, []))
+            # DULAT candidates (prefer lexeme from base analysis)
+            analysis_for_lexeme = strip_missing(analysis_for_lexeme).strip()
+            is_verb_global = "[" in analysis
+            lexeme, is_verb, lex_hom = extract_lexeme_from_analysis(analysis_for_lexeme)
             if is_verb_global:
-                root = "/"+ "-".join(list(lexeme)) + "/"
-                root_candidates.extend(lemma_map.get(normalize_surface(root), []))
-            verb_candidates_for_stem = [c for c in (base_candidates + root_candidates) if "vb" in c.pos.lower()]
-            if lex_hom:
-                verb_candidates_for_stem = [c for c in verb_candidates_for_stem if c.homonym == lex_hom]
+                is_verb = True
+                if lexeme and lexeme[0] in {"a", "i", "u"}:
+                    lexeme = "ʔ" + lexeme[1:]
+            is_noun = ("/" in analysis_for_lexeme) and (not is_verb_global)
+            is_deverbal = is_verb_global and ("/" in analysis)
+            has_sh_stem = "]š]" in analysis
+            has_t_stem = "]t]" in analysis
+            has_colon_stem = re.search(r":[A-Za-z]+", analysis) is not None
+            analysis_has_stem = has_sh_stem or has_t_stem or has_colon_stem
 
-        lexeme_candidates: List[DulatEntry] = []
-        if is_deverbal and lexeme:
-            verb_candidates = [c for c in (base_candidates + root_candidates) if "vb" in c.pos.lower()]
-            noun_candidates = [c for c in base_candidates if "vb" not in c.pos.lower()]
-            if lex_hom:
-                verb_candidates = [c for c in verb_candidates if c.homonym == lex_hom]
-                noun_candidates = [c for c in noun_candidates if c.homonym == lex_hom]
-            if verb_candidates and noun_candidates:
-                issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Deverbal form matches both verb and noun entries in DULAT"))
-            elif noun_candidates and not verb_candidates:
-                issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Deverbal form marked with '[' but only noun entry found in DULAT"))
-            lexeme_candidates = dedupe_entries(verb_candidates + noun_candidates)
-        elif base_candidates or root_candidates:
-            lexeme_candidates = base_candidates + root_candidates
-
-            # Prefer verb/non-verb candidates based on analysis
-            if lexeme_candidates:
-                if is_verb:
-                    lexeme_candidates = [c for c in lexeme_candidates if "vb" in c.pos.lower()]
-                elif is_noun:
-                    non_vb = [c for c in lexeme_candidates if "vb" not in c.pos.lower()]
-                    if non_vb:
-                        lexeme_candidates = non_vb
-                else:
-                    non_vb = [c for c in lexeme_candidates if "vb" not in c.pos.lower()]
-                    if non_vb:
-                        lexeme_candidates = non_vb
-                if lex_hom:
-                    lexeme_candidates = [c for c in lexeme_candidates if c.homonym == lex_hom]
-
-        analysis_plain = analysis.strip()
-        # Surface-only excised tokens (for example "&š") intentionally carry no lexical parse.
-        is_surface_only_excised = (
-            analysis_plain.startswith("&")
-            and "/" not in analysis_plain
-            and "[" not in analysis_plain
-            and "(" not in analysis_plain
-            and "+" not in analysis_plain
-            and "~" not in analysis_plain
-        )
-        skip_dulat = (
-            (not lexeme and (not surface_clean or surface_clean in {"ˤ", "ʕ", "ʿ"}))
-            or (lexeme in {"ˤ", "ʕ", "ʿ"})
-            or is_surface_only_excised
-            or is_unresolved_placeholder(analysis_plain)
-            or (0 in unresolved_declared_variant_indexes)
-        )
-        lookup_mode = "surface"
-        if skip_dulat:
-            d_candidates = []
-        else:
+            base_candidates: List[DulatEntry] = []
+            root_candidates: List[DulatEntry] = []
+            verb_candidates_for_stem: List[DulatEntry] = []
             if lexeme:
-                d_candidates = lexeme_candidates
-                lookup_mode = "lexeme"
+                lex_key = normalize_surface(lexeme)
+                base_candidates.extend(lemma_map.get(lex_key, []))
+                if is_verb_global:
+                    root = "/" + "-".join(list(lexeme)) + "/"
+                    root_candidates.extend(lemma_map.get(normalize_surface(root), []))
+                verb_candidates_for_stem = [c for c in (base_candidates + root_candidates) if "vb" in c.pos.lower()]
+                if lex_hom:
+                    verb_candidates_for_stem = [c for c in verb_candidates_for_stem if c.homonym == lex_hom]
+
+            lexeme_candidates: List[DulatEntry] = []
+            if is_deverbal and lexeme:
+                verb_candidates = [c for c in (base_candidates + root_candidates) if "vb" in c.pos.lower()]
+                noun_candidates = [c for c in base_candidates if "vb" not in c.pos.lower()]
+                if lex_hom:
+                    verb_candidates = [c for c in verb_candidates if c.homonym == lex_hom]
+                    noun_candidates = [c for c in noun_candidates if c.homonym == lex_hom]
+                if verb_candidates and noun_candidates:
+                    issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Deverbal form matches both verb and noun entries in DULAT"))
+                elif noun_candidates and not verb_candidates:
+                    issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Deverbal form marked with '[' but only noun entry found in DULAT"))
+                lexeme_candidates = dedupe_entries(verb_candidates + noun_candidates)
+            elif base_candidates or root_candidates:
+                lexeme_candidates = base_candidates + root_candidates
+
+                # Prefer verb/non-verb candidates based on analysis
+                if lexeme_candidates:
+                    if is_verb:
+                        lexeme_candidates = [c for c in lexeme_candidates if "vb" in c.pos.lower()]
+                    elif is_noun:
+                        non_vb = [c for c in lexeme_candidates if "vb" not in c.pos.lower()]
+                        if non_vb:
+                            lexeme_candidates = non_vb
+                    else:
+                        non_vb = [c for c in lexeme_candidates if "vb" not in c.pos.lower()]
+                        if non_vb:
+                            lexeme_candidates = non_vb
+                    if lex_hom:
+                        lexeme_candidates = [c for c in lexeme_candidates if c.homonym == lex_hom]
+
+            analysis_plain = analysis.strip()
+            # Surface-only excised tokens (for example "&š") intentionally carry no lexical parse.
+            is_surface_only_excised = (
+                analysis_plain.startswith("&")
+                and "/" not in analysis_plain
+                and "[" not in analysis_plain
+                and "(" not in analysis_plain
+                and "+" not in analysis_plain
+                and "~" not in analysis_plain
+            )
+            skip_dulat = (
+                (not lexeme and (not surface_clean or surface_clean in {"ˤ", "ʕ", "ʿ"}))
+                or (lexeme in {"ˤ", "ʕ", "ʿ"})
+                or is_surface_only_excised
+                or is_unresolved_placeholder(analysis_plain)
+                or (0 in unresolved_declared_variant_indexes)
+            )
+            lookup_mode = "surface"
+            if skip_dulat:
+                d_candidates = []
             else:
-                d_candidates = dulat_forms.get(normalize_surface(surface_clean), [])
-            if d_candidates:
-                if is_verb:
-                    vb_only = [c for c in d_candidates if "vb" in c.pos.lower()]
-                    if vb_only:
-                        d_candidates = vb_only
-                elif is_noun:
-                    non_vb = [c for c in d_candidates if "vb" not in c.pos.lower()]
-                    if non_vb:
-                        d_candidates = non_vb
-
-        if not skip_dulat:
-            if not d_candidates:
-                issues.append(Issue("error", str(path), i, line_id, surface, analysis, "No DULAT entry found for lexeme/surface"))
-            else:
-                # Stem presence: if DULAT has no G-stem for this verb, require a :stem marker
-                if (is_verb_global or is_deverbal) and verb_candidates_for_stem:
-                    stems = set()
-                    for c in verb_candidates_for_stem:
-                        stems.update(entry_stems.get(c.entry_id, set()))
-                    if stems and "G" not in stems and not analysis_has_stem:
-                        issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Non-G stem in DULAT requires stem marker"))
-                    if has_sh_stem and not ({"Š", "Št", "Špass"} & stems):
-                        issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Š stem marker present but DULAT lacks Š/Št/Špass"))
-                    if has_t_stem and not ({"Gt", "Št", "Dt", "Lt", "Nt"} & stems):
-                        issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Xt stem marker present but DULAT lacks *t stem"))
-                    if ":d" in analysis and "D" not in stems and "Dt" not in stems:
-                        issues.append(Issue("error", str(path), i, line_id, surface, analysis, "D stem marker present but DULAT lacks D/Dt"))
-                    if ":l" in analysis and "L" not in stems and "Lt" not in stems:
-                        issues.append(Issue("error", str(path), i, line_id, surface, analysis, "L stem marker present but DULAT lacks L/Lt"))
-                    if ":pass" in analysis and not ({"Špass", "Gpass", "Dpass", "N"} & stems):
-                        issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Passive stem marker present but DULAT lacks passive/N stem"))
-
-                # POS ambiguity
-                pos_set = {c.pos for c in d_candidates if c.pos}
-                if declared_head:
-                    head, hom = declared_head, (declared_hom or "")
+                if lexeme:
+                    d_candidates = lexeme_candidates
+                    lookup_mode = "lexeme"
                 else:
-                    head, hom = parse_dulat_comment(raw)
-                if head:
-                    pos_set = {c.pos for c in d_candidates if c.pos and c.lemma == head and c.homonym == hom}
-                if len(pos_set) > 1:
-                    pos_list = ", ".join(sorted(pos_set))
-                    issues.append(Issue("error", str(path), i, line_id, surface, analysis, f"POS ambiguous in DULAT: {pos_list}"))
+                    d_candidates = dulat_forms.get(normalize_surface(surface_clean), [])
+                if d_candidates:
+                    if is_verb:
+                        vb_only = [c for c in d_candidates if "vb" in c.pos.lower()]
+                        if vb_only:
+                            d_candidates = vb_only
+                    elif is_noun:
+                        non_vb = [c for c in d_candidates if "vb" not in c.pos.lower()]
+                        if non_vb:
+                            d_candidates = non_vb
 
-                # Unambiguous DULAT entry
-                if len(d_candidates) > 1 and head:
-                    if not any(c.lemma == head and c.homonym == hom for c in d_candidates):
-                        issues.append(Issue("error", str(path), i, line_id, surface, analysis, "DULAT comment does not match candidates"))
-                elif len(d_candidates) > 1 and not head:
-                    cand_list = []
-                    for c in d_candidates:
-                        hom = f"({c.homonym})" if c.homonym else ""
-                        gloss = c.gloss or "—"
-                        cand_list.append(f"{c.lemma}{hom} [{c.pos}] — {gloss}")
-                    msg = f"Multiple DULAT candidates for {lookup_mode}: " + "; ".join(cand_list)
-                    issues.append(Issue("error", str(path), i, line_id, surface, analysis, msg))
-
-                # POS -> noun/verb ending checks
-                if head:
-                    matched = [c for c in d_candidates if c.lemma == head and c.homonym == hom]
+            if not skip_dulat:
+                if not d_candidates:
+                    issues.append(Issue("error", str(path), i, line_id, surface, analysis, "No DULAT entry found for lexeme/surface"))
                 else:
-                    matched = d_candidates
-                if matched:
-                    pos_raw = matched[0].pos or ""
-                    pos = pos_raw.lower()
-                    is_pronoun = "pn." in pos
-                    is_proper_noun = "PN" in pos_raw
-                    matched_entry_ids = {m.entry_id for m in matched}
-                    surface_form_morphs = {
-                        (f.morph or "").lower()
-                        for f in dulat_forms.get(normalize_surface(surface_clean), [])
-                        if f.entry_id in matched_entry_ids and (f.morph or "").strip()
-                    }
-                    gender_values = {
-                        (entry_gender.get(eid) or "").lower()
-                        for eid in matched_entry_ids
-                        if (entry_gender.get(eid) or "").strip()
-                    }
-                    has_f_gender = any(g.startswith("f") for g in gender_values)
-                    head_lemma = (matched[0].lemma or "").strip()
-                    analysis_trim = analysis.rstrip()
-                    has_t_split = re.search(r"/t=?(?=\s*$|[+;,])", analysis_trim) is not None
-                    has_t_plural_split = re.search(r"/t=(?=\s*$|[+;,])", analysis_trim) is not None
-                    has_m_split = re.search(r"/m=?(?=\s*$|[+;,])", analysis_trim) is not None
-                    surface_form_has_fem = any("f." in m for m in surface_form_morphs)
-                    surface_form_has_pl = any("pl." in m for m in surface_form_morphs)
-                    noun_like = not is_pronoun and (is_proper_noun or any(tag in pos for tag in ("n.", "dn", "gn", "tn", "mn")))
-                    adjectival = "adj" in pos
-                    deverbal_like = "[/" in analysis
-                    pos_field_text = parts[4] if len(parts) >= 5 else ""
-                    is_plurale_tantum_marked = has_plurale_tantum_note(annotation_text) or has_plurale_tantum_note(pos_field_text)
+                    # Stem presence: if DULAT has no G-stem for this verb, require a :stem marker
+                    if (is_verb_global or is_deverbal) and verb_candidates_for_stem:
+                        stems = set()
+                        for c in verb_candidates_for_stem:
+                            stems.update(entry_stems.get(c.entry_id, set()))
+                        if stems and "G" not in stems and not analysis_has_stem:
+                            issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Non-G stem in DULAT requires stem marker"))
+                        if has_sh_stem and not ({"Š", "Št", "Špass"} & stems):
+                            issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Š stem marker present but DULAT lacks Š/Št/Špass"))
+                        if has_t_stem and not ({"Gt", "Št", "Dt", "Lt", "Nt"} & stems):
+                            issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Xt stem marker present but DULAT lacks *t stem"))
+                        if ":d" in analysis and "D" not in stems and "Dt" not in stems:
+                            issues.append(Issue("error", str(path), i, line_id, surface, analysis, "D stem marker present but DULAT lacks D/Dt"))
+                        if ":l" in analysis and "L" not in stems and "Lt" not in stems:
+                            issues.append(Issue("error", str(path), i, line_id, surface, analysis, "L stem marker present but DULAT lacks L/Lt"))
+                        if ":pass" in analysis and not ({"Špass", "Gpass", "Dpass", "N"} & stems):
+                            issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Passive stem marker present but DULAT lacks passive/N stem"))
 
-                    if "vb" in pos and "[" not in analysis:
-                        issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Verb lacks '[' ending"))
-                    if not is_pronoun and (is_proper_noun or any(tag in pos for tag in ("n.", "adj", "dn", "gn", "tn", "mn"))):
-                        if "/" not in analysis:
-                            issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Noun/adjective lacks '/' ending"))
+                    # POS ambiguity
+                    pos_set = {c.pos for c in d_candidates if c.pos}
+                    if declared_head:
+                        head, hom = declared_head, (declared_hom or "")
+                    else:
+                        head, hom = parse_dulat_comment(raw)
+                    if head:
+                        pos_set = {c.pos for c in d_candidates if c.pos and c.lemma == head and c.homonym == hom}
+                    if len(pos_set) > 1:
+                        pos_list = ", ".join(sorted(pos_set))
+                        issues.append(Issue("error", str(path), i, line_id, surface, analysis, f"POS ambiguous in DULAT: {pos_list}"))
 
-                    # Gender-aware checks from DULAT metadata.
-                    # For feminine plural noun forms, '/t=' is the expected split ending.
-                    if noun_like and has_f_gender and surface.endswith("t") and surface_form_has_pl and has_t_split and not has_t_plural_split:
-                        issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Feminine plural noun in DULAT should use '/t='"))
-                    if noun_like and has_f_gender and (not head_lemma.endswith("t")) and surface.endswith("t") and surface_form_has_pl and not has_t_split:
-                        issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Feminine plural noun in DULAT should be tagged with '/t='"))
-                    if (adjectival or deverbal_like) and surface.endswith("t") and surface_form_has_fem and not has_t_split:
-                        issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Feminine adjective/participle in DULAT should mark '-t' explicitly"))
-                    if (adjectival or deverbal_like) and surface.endswith("t") and surface_form_has_fem and surface_form_has_pl and has_t_split and not has_t_plural_split:
-                        issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Feminine plural adjective/participle in DULAT should use '/t='"))
-                    # Variant-level pl.tant. checks are only reliable on single-variant rows.
-                    if (
-                        noun_like
-                        and is_plurale_tantum_marked
-                        and "/" in analysis
-                        and "+" not in analysis
-                        and ";" not in analysis
-                        and "," not in analysis
-                        and ";" not in pos_field_text
-                        and "," not in pos_field_text
-                    ):
-                        if surface.endswith("t") and not has_t_plural_split:
-                            issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Plurale tantum noun ending in '-t' should mark plural with '/t='"))
-                        if surface.endswith("m") and not has_m_split:
-                            issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Plurale tantum noun ending in '-m' should mark plural with '/m'"))
+                    # Unambiguous DULAT entry
+                    if len(d_candidates) > 1 and head:
+                        if not any(c.lemma == head and c.homonym == hom for c in d_candidates):
+                            issues.append(Issue("error", str(path), i, line_id, surface, analysis, "DULAT comment does not match candidates"))
+                    elif len(d_candidates) > 1 and not head:
+                        cand_list = []
+                        for c in d_candidates:
+                            hom = f"({c.homonym})" if c.homonym else ""
+                            gloss = c.gloss or "—"
+                            cand_list.append(f"{c.lemma}{hom} [{c.pos}] — {gloss}")
+                        msg = f"Multiple DULAT candidates for {lookup_mode}: " + "; ".join(cand_list)
+                        issues.append(Issue("error", str(path), i, line_id, surface, analysis, msg))
 
-                    # Morpheme link checks
-                    morph_values = set()
-                    if (matched[0].morph or "").strip():
-                        morph_values.add((matched[0].morph or "").lower())
-                    morph_values.update(surface_form_morphs)
-                    morph = " ; ".join(sorted(morph_values))
-                    if ("suff" in morph and ("pn" in morph or "pers." in morph)) and "+" not in analysis:
-                        lemma_letters = re.sub(r"[^A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]", "", head_lemma or "")
-                        if len(normalize_surface(surface_clean)) > len(normalize_surface(lemma_letters)):
-                            issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Suffixed pronominal form in DULAT should use '+' in analysis"))
-                    # DULAT "prefc., suff." can mark finite prefix-conjugation
-                    # endings (e.g., -n) rather than clitic +suffix slots.
-                    if "suff." in morph and "+" not in analysis and "prefc." not in morph and not is_plurale_tantum_marked:
-                        issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Suffix form without '+'"))
-                    if (
-                        "pl." in morph
-                        and surface.endswith(("m", "t"))
-                        and "/" in analysis
-                        and not analysis_trim.endswith(("/m", "/t", "/m=", "/t="))
-                        and not is_plurale_tantum_marked
-                    ):
-                        issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Plural form missing split ending"))
+                    # POS -> noun/verb ending checks
+                    if head:
+                        matched = [c for c in d_candidates if c.lemma == head and c.homonym == hom]
+                    else:
+                        matched = d_candidates
+                    if matched:
+                        pos_raw = matched[0].pos or ""
+                        pos = pos_raw.lower()
+                        is_pronoun = "pn." in pos
+                        is_proper_noun = "PN" in pos_raw
+                        matched_entry_ids = {m.entry_id for m in matched}
+                        surface_form_morphs = {
+                            (f.morph or "").lower()
+                            for f in dulat_forms.get(normalize_surface(surface_clean), [])
+                            if f.entry_id in matched_entry_ids and (f.morph or "").strip()
+                        }
+                        gender_values = {
+                            (entry_gender.get(eid) or "").lower()
+                            for eid in matched_entry_ids
+                            if (entry_gender.get(eid) or "").strip()
+                        }
+                        has_f_gender = any(g.startswith("f") for g in gender_values)
+                        head_lemma = (matched[0].lemma or "").strip()
+                        analysis_trim = analysis.rstrip()
+                        has_t_split = re.search(r"/t=?(?=\s*$|[+;,])", analysis_trim) is not None
+                        has_t_plural_split = re.search(r"/t=(?=\s*$|[+;,])", analysis_trim) is not None
+                        has_m_split = re.search(r"/m=?(?=\s*$|[+;,])", analysis_trim) is not None
+                        surface_form_has_fem = any("f." in m for m in surface_form_morphs)
+                        surface_form_has_pl = any("pl." in m for m in surface_form_morphs)
+                        noun_like = not is_pronoun and (is_proper_noun or any(tag in pos for tag in ("n.", "dn", "gn", "tn", "mn")))
+                        adjectival = "adj" in pos
+                        deverbal_like = "[/" in analysis
+                        pos_field_text = parts[4] if len(parts) >= 5 else ""
+                        is_plurale_tantum_marked = has_plurale_tantum_note(annotation_text) or has_plurale_tantum_note(pos_field_text)
 
-                    # Consistency tracking by surface
-                    surface_to_analyses.setdefault(surface, set()).add(analysis)
-                    surface_to_ids.setdefault(surface, set()).add(line_id)
-                    stem_markers = set()
-                    if ":d" in analysis:
-                        stem_markers.add(":d")
-                    if ":l" in analysis:
-                        stem_markers.add(":l")
-                    if ":pass" in analysis:
-                        stem_markers.add(":pass")
-                    if "]š]" in analysis:
-                        stem_markers.add("]š]")
-                    if "]t]" in analysis:
-                        stem_markers.add("]t]")
-                    if stem_markers:
-                        lemma_key = head or (matched[0].lemma if matched else "")
-                        if lemma_key:
-                            lemma_to_stems.setdefault(lemma_key, set()).update(stem_markers)
-                            for marker in stem_markers:
-                                lemma_stem_ids.setdefault((lemma_key, marker), set()).add(line_id)
-                                lemma_stem_lines.setdefault((lemma_key, marker), set()).add(str(i))
+                        if "vb" in pos and "[" not in analysis:
+                            issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Verb lacks '[' ending"))
+                        if not is_pronoun and (is_proper_noun or any(tag in pos for tag in ("n.", "adj", "dn", "gn", "tn", "mn"))):
+                            if "/" not in analysis:
+                                issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Noun/adjective lacks '/' ending"))
+
+                        # Gender-aware checks from DULAT metadata.
+                        # For feminine plural noun forms, '/t=' is the expected split ending.
+                        if noun_like and has_f_gender and surface.endswith("t") and surface_form_has_pl and has_t_split and not has_t_plural_split:
+                            issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Feminine plural noun in DULAT should use '/t='"))
+                        if noun_like and has_f_gender and (not head_lemma.endswith("t")) and surface.endswith("t") and surface_form_has_pl and not has_t_split:
+                            issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Feminine plural noun in DULAT should be tagged with '/t='"))
+                        if (adjectival or deverbal_like) and surface.endswith("t") and surface_form_has_fem and not has_t_split:
+                            issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Feminine adjective/participle in DULAT should mark '-t' explicitly"))
+                        if (adjectival or deverbal_like) and surface.endswith("t") and surface_form_has_fem and surface_form_has_pl and has_t_split and not has_t_plural_split:
+                            issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Feminine plural adjective/participle in DULAT should use '/t='"))
+                        # Variant-level pl.tant. checks are only reliable on single-variant rows.
+                        if (
+                            noun_like
+                            and is_plurale_tantum_marked
+                            and "/" in analysis
+                            and "+" not in analysis
+                            and ";" not in analysis
+                            and "," not in analysis
+                            and ";" not in pos_field_text
+                            and "," not in pos_field_text
+                        ):
+                            if surface.endswith("t") and not has_t_plural_split:
+                                issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Plurale tantum noun ending in '-t' should mark plural with '/t='"))
+                            if surface.endswith("m") and not has_m_split:
+                                issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Plurale tantum noun ending in '-m' should mark plural with '/m'"))
+
+                        # Morpheme link checks
+                        morph_values = set()
+                        if (matched[0].morph or "").strip():
+                            morph_values.add((matched[0].morph or "").lower())
+                        morph_values.update(surface_form_morphs)
+                        morph = " ; ".join(sorted(morph_values))
+                        if ("suff" in morph and ("pn" in morph or "pers." in morph)) and "+" not in analysis:
+                            lemma_letters = re.sub(r"[^A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]", "", head_lemma or "")
+                            if len(normalize_surface(surface_clean)) > len(normalize_surface(lemma_letters)):
+                                issues.append(Issue("error", str(path), i, line_id, surface, analysis, "Suffixed pronominal form in DULAT should use '+' in analysis"))
+                        # DULAT "prefc., suff." can mark finite prefix-conjugation
+                        # endings (e.g., -n) rather than clitic +suffix slots.
+                        if "suff." in morph and "+" not in analysis and "prefc." not in morph and not is_plurale_tantum_marked:
+                            issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Suffix form without '+'"))
+                        if (
+                            "pl." in morph
+                            and surface.endswith(("m", "t"))
+                            and "/" in analysis
+                            and not analysis_trim.endswith(("/m", "/t", "/m=", "/t="))
+                            and not is_plurale_tantum_marked
+                        ):
+                            issues.append(Issue("warning", str(path), i, line_id, surface, analysis, "Plural form missing split ending"))
+
+                        # Consistency tracking by surface
+                        surface_to_analyses.setdefault(surface, set()).add(analysis)
+                        surface_to_ids.setdefault(surface, set()).add(line_id)
+                        stem_markers = set()
+                        if ":d" in analysis:
+                            stem_markers.add(":d")
+                        if ":l" in analysis:
+                            stem_markers.add(":l")
+                        if ":pass" in analysis:
+                            stem_markers.add(":pass")
+                        if "]š]" in analysis:
+                            stem_markers.add("]š]")
+                        if "]t]" in analysis:
+                            stem_markers.add("]t]")
+                        if stem_markers:
+                            lemma_key = head or (matched[0].lemma if matched else "")
+                            if lemma_key:
+                                lemma_to_stems.setdefault(lemma_key, set()).update(stem_markers)
+                                for marker in stem_markers:
+                                    lemma_stem_ids.setdefault((lemma_key, marker), set()).add(line_id)
+                                    lemma_stem_lines.setdefault((lemma_key, marker), set()).add(str(i))
 
         # Alt forms in comments
         for alt in extract_alt_forms(comment):
@@ -1810,6 +1829,11 @@ def main():
     parser.add_argument("--dulat", default="sources/dulat_cache.sqlite", help="Path to DULAT sqlite")
     parser.add_argument("--udb", default="sources/udb_cache.sqlite", help="Path to UDB sqlite")
     parser.add_argument(
+        "--no-db",
+        action="store_true",
+        help="Run only checks that do not require DULAT/UDB sqlite databases",
+    )
+    parser.add_argument(
         "--input-format",
         choices=["auto", "labeled", "cuc_tablets_tsv"],
         default="auto",
@@ -1817,8 +1841,16 @@ def main():
     )
     args = parser.parse_args()
 
-    dulat_forms, entry_meta, lemma_map, entry_stems, entry_gender = load_dulat(Path(args.dulat))
-    udb_words = load_udb_words(Path(args.udb)) if Path(args.udb).exists() else None
+    if args.no_db:
+        dulat_forms = {}
+        entry_meta = {}
+        lemma_map = {}
+        entry_stems = {}
+        entry_gender = {}
+        udb_words = None
+    else:
+        dulat_forms, entry_meta, lemma_map, entry_stems, entry_gender = load_dulat(Path(args.dulat))
+        udb_words = load_udb_words(Path(args.udb)) if Path(args.udb).exists() else None
 
     all_issues: List[Issue] = []
 
@@ -1832,7 +1864,18 @@ def main():
             candidate = fpath.with_name(fpath.stem + "_original.txt")
             if candidate.exists():
                 baseline = candidate
-        issues = lint_file(fpath, dulat_forms, entry_meta, lemma_map, entry_stems, entry_gender, udb_words, baseline, input_format=args.input_format)
+        issues = lint_file(
+            fpath,
+            dulat_forms,
+            entry_meta,
+            lemma_map,
+            entry_stems,
+            entry_gender,
+            udb_words,
+            baseline,
+            input_format=args.input_format,
+            db_checks=(not args.no_db),
+        )
         all_issues.extend(issues)
 
     # CLI output

@@ -5,13 +5,11 @@ on:
     paths:
       - 'out/*.tsv'
       - 'linter/**'
-      - 'sources/*.sqlite'
       - '.github/workflows/morphology-lint.yml'
   pull_request:
     paths:
       - 'out/*.tsv'
       - 'linter/**'
-      - 'sources/*.sqlite'
       - '.github/workflows/morphology-lint.yml'
   workflow_dispatch:
 
@@ -47,20 +45,10 @@ jobs:
           if not files:
               raise SystemExit("No TSV files found under out/.")
 
-          dulat_db = Path("sources/dulat_cache.sqlite")
-          udb_db = Path("sources/udb_cache.sqlite")
-          if not dulat_db.exists():
-              raise SystemExit(f"Missing DULAT sqlite: {dulat_db}")
-          if not udb_db.exists():
-              raise SystemExit(f"Missing UDB sqlite: {udb_db}")
-
           cmd = [
               "python3",
               "linter/lint.py",
-              "--dulat",
-              str(dulat_db),
-              "--udb",
-              str(udb_db),
+              "--no-db",
               *[str(f) for f in files],
           ]
 
