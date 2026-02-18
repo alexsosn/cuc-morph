@@ -4113,10 +4113,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.49.tsv:6 149189
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.49.tsv:23 149201 ˤlm Analysis does not reconstruct to surface (reconstructs as: ʕl)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.49.tsv:23 149201 ˤlm Suffixed pronominal form in DULAT should use '+' in analysis
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.49.tsv:35 149210 šˤrt No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:14 139778 šlyṭ POS token 'DN m.' not allowed for šlyṭ; choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:14 139778 šlyṭ Unknown DULAT token in column 4: /l-w-ṭ/
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:14 139778 šlyṭ Unknown DULAT token in column 4: /l-y-ṭ/
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:14 139778 šlyṭ Unknown DULAT token in column 4: /l-y-ṭ/
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:22 139785 krs Unknown DULAT token in column 4: /r-s/
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:22 139785 krs Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:22 139785 krs Each reconstructed letter must be prefixed by '('
@@ -4124,10 +4120,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:22 139785
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:40 139800 mh Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:42 139801 mrt Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:81 139834 š Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:103 139852 imt POS token 'vb.' not allowed for /m-t/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:103 139852 imt D stem marker present but DULAT lacks D/Dt
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:109 139857 imt POS token 'vb.' not allowed for /m-t/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:109 139857 imt D stem marker present but DULAT lacks D/Dt
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:215 139944 nn No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:275 139995 tša Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:313 140027 un No DULAT entry found for lexeme/surface
@@ -4158,7 +4150,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:531 14018
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:531 140188 li No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:544 140197 tˤddn Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:544 140197 tˤddn No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:552 140202 bˤl POS token 'DN m.' not allowed for bʕl (II); choose one of: dn, n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:568 140215 n No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:576 140222 qḥ Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:608 140247 ša Each reconstructed letter must be prefixed by '('
@@ -6275,7 +6266,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv  šmm Surf
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv  l Surface l parsed inconsistently: l(I) (ids: 139918,139922,139949,139965,140053,140057,140073,140101,140252,140284,140288,140304,140329,140333,140338,140341,140357,140360,140363,140366,140371,140375,140427,140435,140443,140446); l(II) (ids: 139807,139954,139975,140194); l(III) (ids: 139792,139811,139979)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv  mt Surface mt parsed inconsistently: mt(I)/ (ids: 140064,140089,140112,140344,140408); mt(II)/ (ids: 139798,139826,139952,139968,139985,140009,140017)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv  ydd Surface ydd parsed inconsistently: !y!(ndd[ (ids: 140066,140091,140114); ydd(I)/ (ids: 139802,139828,139955)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv  imt Surface imt parsed inconsistently: !i!mt[:d (ids: 139852,139857); imt/ (ids: 139851)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv  imt Surface imt parsed inconsistently: !i!mt[ (ids: 139852,139857); imt/ (ids: 139851)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv  lḥm Surface lḥm parsed inconsistently: lḥ(I)/m (ids: 140154,140157,140388); lḥm/ (ids: 139884)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv  ap Surface ap parsed inconsistently: ap(I) (ids: 140420); ap(II)/ (ids: 140142,140397)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv  a Surface a parsed inconsistently: !(ʔ&a!(I)[ (ids: 140342); a (ids: 140151)
@@ -6577,4 +6568,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:49 151516
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:75 151535 xẓk Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:88 151545 šdr Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.98.tsv:23 151701 gˤl Surface not found in UDB concordance
-Total issues: 6577
+Total issues: 6568

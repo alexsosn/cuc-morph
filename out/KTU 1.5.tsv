@@ -11,7 +11,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139776	ˤqltn	ˤqltn/	ʕqltn	adj. m.	winding	
 139777	š	?	?	?	?	spelling mistake?
 # KTU 1.5 I:3						
-139778	šlyṭ	šlyṭ/;šlyṭ/;]š]l(w&yṭ/[;]š]lyṭ/[;]š]lyṭ/[	šlyṭ;šlyṭ;/l-w-ṭ/;/l-y-ṭ/;/l-y-ṭ/	n. m.;DN m.;vb;vb;vb	tyrant/powerful;Šaliyaṭu;enwrap/encircle;enwrap/encircle;curse	
+139778	šlyṭ	šlyṭ/	šlyṭ	n. m.	tyrant/powerful	Non-DULAT alternatives retained in comment history; keep DULAT-backed nominal parse as primary.
 139779	d	d	d	det. or rel. functor	the one(s) of	
 139780	šbˤt	šbˤ(I)/t	šbʕ (I)	n. num.	seven	
 139781	rašm	r(i&aš(I)/m	rỉš (I)	n. m.	head	
@@ -100,13 +100,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 I:18						
 139850	hm	hm(II)	hm (II)	conj.	if	
 139851	imt	imt/	ỉmt	n. f.	truth	Wyatt p119 n16 treats one repeated imt as likely dittography.
-139852	imt	!i!mt[:d;imt/	/m-t/;ỉmt	vb.;n. f.	kill;truth	imt as verbal form is not directly attested in DULAT forms.;Wyatt p119 n16-20, conjectural verbal reading “I kill”
+139852	imt	!i!mt[;imt/	/m-t/;ỉmt	vb;n. f.	kill;truth	imt as verbal form is not directly attested in DULAT forms.;Wyatt p119 n16-20, conjectural verbal reading “I kill”
 139853	npš	npš(I)/	npš (I)	n. f.	throat	
 139854	blt	bl(y[t:d;blt[	/b-l-y/;/b-l-t/	vb;vb	to devour;to open wide	???
 # KTU 1.5 I:19						
 139855	ḥmr	ḥmr(I)/	ḥmr (I)	n. m.	donkey	
 139856	p	p(I)	p (I)	conj. functor	and	
-139857	imt	!i!mt[:d;imt/	/m-t/;ỉmt	vb.;n. f.	kill;truth	Wyatt p119 n20 allows verbal /m-t/ interpretation in this cluster.
+139857	imt	!i!mt[;imt/	/m-t/;ỉmt	vb;n. f.	kill;truth	Wyatt p119 n20 allows verbal /m-t/ interpretation in this cluster.
 139858	b	b	b	prep.	in	
 139859	klat	klat/	klảt(n)	n. f.	both	!!!???
 # KTU 1.5 I:20						
@@ -549,7 +549,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140200	xxxxxxxxxxxx	?	?	?	?	
 140201	aliyn	aliyn/	ảlỉyn	adj. m.	The Very or Most Powerful	
 # KTU 1.5 V:2						
-140202	bˤl	bˤl(II)/	bʕl (II)	DN m.	Baʿlu	
+140202	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 140203	xxxxxx	?	?	?	?	
 140204	ipd	ipd/	ỉpd	n. m.	tunic	Very uncertain. Wyatt gives alternatives: “torch” or “tunic/cloak”.
 140205	prk	pr(II)/+k	pr (II), -k (I)	n. m.,pers. pn.	young bull/bullock, your(s)	Very uncertain. Wyatt: “of your bull/sovereignty”.

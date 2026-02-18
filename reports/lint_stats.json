@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-02-18T19:11:17.015463+00:00",
+  "generated_at_utc": "2026-02-18T19:18:00.454393+00:00",
   "files_checked": 139,
-  "total_issues": 6577,
+  "total_issues": 6568,
   "fallback_parsed": 0,
   "by_severity": {
-    "ERROR": 5058,
+    "ERROR": 5049,
     "WARNING": 153,
     "INFO": 1197
   },
@@ -37,7 +37,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Unknown DULAT token in column 4",
-      "count": 114
+      "count": 111
     },
     {
       "severity": "ERROR",
@@ -62,7 +62,7 @@
     {
       "severity": "ERROR",
       "problem_type": "POS token not allowed for declared DULAT entry",
-      "count": 54
+      "count": 50
     },
     {
       "severity": "ERROR",
@@ -132,7 +132,7 @@
     {
       "severity": "ERROR",
       "problem_type": "D stem marker present but DULAT lacks D/Dt",
-      "count": 3
+      "count": 1
     },
     {
       "severity": "ERROR",
