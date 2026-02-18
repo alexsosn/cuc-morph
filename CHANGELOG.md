@@ -2,6 +2,8 @@
 
 ## 2026-02-18
 
+- Reverted the recent `out/KTU 1.5.tsv` simplification pass for the user-flagged rows (`139778`, `139852`, `139857`, `140202`) and restored the prior multi-option analyses/POS values.
+- Propagated the validated `KTU 1.1` formula fixes to true parallels in other tablets: `tḥmk -> tḥm/+k` with `tḥm, -k (I)` / `n. m.,pers. pn.` / `message, your(s)` in `out/KTU 1.3.tsv` (`10488`, `10496`) and `out/KTU 1.4.tsv` (`138769`, `138777`), and `twtḥ -> !t!w]t]ḥ(y[` in `out/KTU 1.7.tsv` (`141600`).
 - Moved morphology lint report generation from GitHub Actions to a local pre-commit workflow.
 - Added `scripts/generate_lint_reports.py` and `lint_reports/` modules to run linter with local DULAT/UDB databases and materialize committed reports under `reports/`.
 - Added tracked hook `.githooks/pre-commit` and installer `scripts/install_git_hooks.sh` to enforce report refresh before commit.
