@@ -1,9 +1,12 @@
 """Base class and shared types for pipeline refinement steps."""
 
 import abc
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Optional
+
+_SEPARATOR_RE = re.compile(r"^\s*#\s*(?:-+\s*)?(KTU\s+.+?)\s*$")
 
 
 @dataclass
@@ -19,9 +22,15 @@ class TabletRow:
     comment: str
 
     def to_tsv(self) -> str:
-        parts = [self.line_id, self.surface, self.analysis, self.dulat, self.pos, self.gloss]
-        if self.comment:
-            parts.append(self.comment)
+        parts = [
+            self.line_id,
+            self.surface,
+            self.analysis,
+            self.dulat,
+            self.pos,
+            self.gloss,
+            self.comment,
+        ]
         return "\t".join(parts)
 
 
@@ -58,6 +67,14 @@ def is_separator_line(raw: str) -> bool:
     return raw.lstrip().startswith("#")
 
 
+def normalize_separator_line(raw: str) -> str:
+    """Normalize separator to compact form: '# KTU ...'."""
+    m = _SEPARATOR_RE.match(raw or "")
+    if not m:
+        return raw
+    return f"# {m.group(1)}"
+
+
 def is_unresolved(row: TabletRow) -> bool:
     """Check if a row is fully unresolved (all ? markers)."""
     return row.analysis.strip() == "?"
@@ -83,8 +100,11 @@ class RefinementStep(abc.ABC):
         rows_changed = 0
 
         for raw in lines:
-            if is_separator_line(raw) or not raw.strip():
+            if not raw.strip():
                 out_lines.append(raw)
+                continue
+            if is_separator_line(raw):
+                out_lines.append(normalize_separator_line(raw))
                 continue
 
             row = parse_tsv_line(raw)

@@ -46,3 +46,7 @@
 - Added `BaalLabourerKtu1Fixer` and pipeline wiring to remove `bʕl (I)` "labourer" from `KTU 1.*` `bˤl` ambiguity rows while preserving `bʕl (II)` and `/b-ʕ-l/`.
 - Added linter predicate/guard for forbidden `bʕl (I)` "labourer" usage in `KTU 1.*` plus unit tests for both fixer and predicate.
 - Applied the rule across `out/KTU 1.*.tsv` (171 rows in 50 tablets), including `152715` in `KTU 1.105`.
+- Added `TsvSchemaFormatter` and pipeline wiring to normalize separator rows to compact `# KTU ...` format and enforce exactly 7 columns on labeled rows.
+- Updated row serialization in pipeline steps to always emit 7 columns (`id`, `surface`, `analysis`, `DULAT`, `POS`, `gloss`, `comment`).
+- Added strict linter check for `out/*.tsv` rows that are not exactly 7 columns and fixed parsing so `#` inside column-7 comments is preserved.
+- Applied schema formatting across all `out/KTU 1.*.tsv` files; separator rows now use `# KTU ...` and data rows are normalized to 7 columns.

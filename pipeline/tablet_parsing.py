@@ -15,6 +15,7 @@ from pipeline.steps.dulat_gate import DulatMorphGate
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
 from pipeline.steps.plural_split import PluralSplitFixer
+from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
 from pipeline.steps.weak_final_sc import WeakFinalSuffixConjugationFixer
 from pipeline.steps.weak_verb import WeakVerbFixer
@@ -45,6 +46,7 @@ class TabletParsingPipeline:
             # AlephPrefixFixer disabled: changes (ʔ in analysis break DULAT
             # lexeme extraction, causing net increase in lint issues.
             # Will re-enable after linter lexeme extraction is updated.
+            TsvSchemaFormatter(),
             NounPosClosureFixer(),
             OfferingListLPrepFixer(),
             PluralSplitFixer(gate=self.morph_gate),

@@ -12,6 +12,7 @@ from pipeline.steps.base import TabletRow, is_separator_line, is_unresolved, par
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
 from pipeline.steps.plural_split import PluralSplitFixer
+from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
 from pipeline.steps.weak_final_sc import WeakFinalSuffixConjugationFixer
 from pipeline.steps.weak_verb import WeakVerbFixer
@@ -70,7 +71,7 @@ class BaseHelpersTest(unittest.TestCase):
 
     def test_tablet_row_to_tsv(self) -> None:
         row = TabletRow("1", "um", "um/", "ủm", "n. f.", "mother", "")
-        self.assertEqual(row.to_tsv(), "1\tum\tum/\tủm\tn. f.\tmother")
+        self.assertEqual(row.to_tsv(), "1\tum\tum/\tủm\tn. f.\tmother\t")
         row_with_comment = TabletRow("1", "x", "?", "?", "?", "?", "DULAT: NOT FOUND")
         self.assertEqual(
             row_with_comment.to_tsv(),
@@ -359,7 +360,7 @@ class BaalLabourerKtu1FixerTest(unittest.TestCase):
             line = f.read_text(encoding="utf-8").splitlines()[1]
             self.assertEqual(
                 line,
-                "152715\tbˤl\tbˤl(II)/;bˤl[\tbʕl (II);/b-ʕ-l/\tn. m./DN;vb\tBaʿlu;to make",
+                "152715\tbˤl\tbˤl(II)/;bˤl[\tbʕl (II);/b-ʕ-l/\tn. m./DN;vb\tBaʿlu;to make\t",
             )
 
     def test_keeps_variant_outside_ktu1(self) -> None:
@@ -373,7 +374,14 @@ class BaalLabourerKtu1FixerTest(unittest.TestCase):
             f = Path(tmp_dir) / "KTU 4.1.tsv"
             f.write_text(content, encoding="utf-8")
             result = self.fixer.refine_file(f)
-            self.assertEqual(result.rows_changed, 0)
+            self.assertEqual(result.rows_changed, 1)
+            line = f.read_text(encoding="utf-8").splitlines()[1]
+            self.assertEqual(
+                line,
+                "900001\tbˤl\tbˤl(II)/;bˤl(I)/;bˤl[\t"
+                "bʕl (II);bʕl (I);/b-ʕ-l/\tn. m./DN;n. m.;vb\t"
+                "Baʿlu;labourer;to make\t",
+            )
 
 
 class OfferingListLPrepFixerTest(unittest.TestCase):
@@ -393,9 +401,9 @@ class OfferingListLPrepFixerTest(unittest.TestCase):
             f = Path(tmp_dir) / "test.tsv"
             f.write_text(content, encoding="utf-8")
             result = self.fixer.refine_file(f)
-            self.assertEqual(result.rows_changed, 1)
+            self.assertEqual(result.rows_changed, 3)
             lines = f.read_text(encoding="utf-8").splitlines()
-            self.assertEqual(lines[2], "154177\tl\tl(I)\tl (I)\tprep.\tto")
+            self.assertEqual(lines[2], "154177\tl\tl(I)\tl (I)\tprep.\tto\t")
 
     def test_non_offering_context_unchanged(self) -> None:
         content = textwrap.dedent(
@@ -410,7 +418,43 @@ class OfferingListLPrepFixerTest(unittest.TestCase):
             f = Path(tmp_dir) / "test.tsv"
             f.write_text(content, encoding="utf-8")
             result = self.fixer.refine_file(f)
-            self.assertEqual(result.rows_changed, 0)
+            self.assertEqual(result.rows_changed, 3)
+
+
+class TsvSchemaFormatterTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = TsvSchemaFormatter()
+
+    def test_normalizes_separator_and_expands_to_7_columns(self) -> None:
+        content = textwrap.dedent(
+            """\
+            #---------------------------- KTU 1.5 I:4
+            100\tabc\tabc/\tabc\tn. m.\tthing
+            """
+        )
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            f = Path(tmp_dir) / "test.tsv"
+            f.write_text(content, encoding="utf-8")
+            result = self.fixer.refine_file(f)
+            self.assertEqual(result.rows_changed, 2)
+            lines = f.read_text(encoding="utf-8").splitlines()
+            self.assertEqual(lines[0], "# KTU 1.5 I:4")
+            self.assertEqual(lines[1], "100\tabc\tabc/\tabc\tn. m.\tthing\t")
+
+    def test_merges_extra_columns_into_comment(self) -> None:
+        content = textwrap.dedent(
+            """\
+            # KTU 1.5 I:4
+            101\tabc\tabc/\tabc\tn. m.\tthing\tc1\tc2
+            """
+        )
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            f = Path(tmp_dir) / "test.tsv"
+            f.write_text(content, encoding="utf-8")
+            result = self.fixer.refine_file(f)
+            self.assertEqual(result.rows_changed, 1)
+            lines = f.read_text(encoding="utf-8").splitlines()
+            self.assertEqual(lines[1], "101\tabc\tabc/\tabc\tn. m.\tthing\tc1 c2")
 
 
 class RefineFileIntegrationTest(unittest.TestCase):
@@ -433,10 +477,10 @@ class RefineFileIntegrationTest(unittest.TestCase):
             result = fixer.refine_file(f)
 
             self.assertEqual(result.rows_processed, 3)
-            self.assertEqual(result.rows_changed, 1)
+            self.assertEqual(result.rows_changed, 2)
 
             lines = f.read_text(encoding="utf-8").splitlines()
-            self.assertEqual(lines[0], "#---- KTU 1.100 1")
+            self.assertEqual(lines[0], "# KTU 1.100 1")
             self.assertTrue(lines[2].startswith("12346\tx\t?"))
             self.assertIn("bn/", lines[4])
 
@@ -456,7 +500,7 @@ class RefineFileIntegrationTest(unittest.TestCase):
             r1 = fixer.refine_file(f)
             r2 = fixer.refine_file(f)
 
-            self.assertEqual(r1.rows_changed, 0)
+            self.assertEqual(r1.rows_changed, 1)
             self.assertEqual(r2.rows_changed, 0)
 
 

@@ -1088,6 +1088,8 @@ def lint_file(
         key = (normalize_surface(lemma), hom or "")
         entry_gender_index.setdefault(key, set()).add(g)
 
+    is_out_tsv_file = path.parent.name == "out"
+
     for i, raw in enumerate(lines, 1):
         if not raw.strip():
             continue
@@ -1095,11 +1097,24 @@ def lint_file(
             continue
         comment = ""
         core = raw
-        if "#" in raw:
+        if (not is_out_tsv_file) and "#" in raw:
             core, comment = raw.split("#", 1)
             core = core.rstrip()
             comment = comment.strip()
         parts = core.split("\t")
+
+        if is_out_tsv_file and len(parts) != 7:
+            issues.append(
+                Issue(
+                    "error",
+                    str(path),
+                    i,
+                    parts[0] if parts else "",
+                    parts[1] if len(parts) > 1 else "",
+                    parts[2] if len(parts) > 2 else "",
+                    f"Expected exactly 7 columns in out/*.tsv row, got {len(parts)}",
+                )
+            )
 
         if len(parts) < 3:
             issues.append(

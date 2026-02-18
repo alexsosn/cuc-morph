@@ -1,7 +1,7 @@
 ## Morphology Lint Trends
 
-- History points used: `22`
-- Latest git head: `83503b518b38`
+- History points used: `24`
+- Latest git head: `967b908327ac`
 
 ### Current Severity Snapshot
 
