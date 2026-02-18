@@ -2,6 +2,12 @@
 
 ## 2026-02-18
 
+- Expanded hardcoded formula-bigram normalization with three additional high-confidence rules:
+  - `bn il` -> enforce `bn (I)` (`n. m.`, `son`)
+  - `bn ilm` -> enforce `bn (I)` (`n. m.`, `son`)
+  - `bt bˤl` -> enforce `bʕl (II)` as `DN` (`Baʿlu`)
+- Added regression tests for all three new formula bigram rules in `tests/test_refinement_steps.py`.
+- Applied the updated formula-bigram pass across `out/KTU 1.*.tsv` (34 row updates in 11 tablets) and regenerated lint reports.
 - Added frequency-based formula-bigram discovery utility: `scripts/discover_formula_bigrams.py` (profiles top adjacent-token combinations and dominant parsing payloads in `out/KTU 1.*.tsv`).
 - Added hardcoded DN-epithet bigram normalization layer:
   - config: `pipeline/config/formula_bigram_rules.py`

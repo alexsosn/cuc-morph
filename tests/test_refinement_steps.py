@@ -80,6 +80,57 @@ class FormulaBigramFixerTest(unittest.TestCase):
             result = self.fixer.refine_file(path)
             self.assertEqual(result.rows_changed, 0)
 
+    def test_disambiguates_bn_il_to_noun_son(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tbn\tbn(I)/;bn(II);bn[\tbn (I);bn (II);/b-n/\tn. m.;prep.;vb\t"
+                    "son;between;to build\t\n"
+                    "2\til\til(I)/\tỉl (I)\tn. m.\tgod\t\n"
+                ),
+                encoding="utf-8",
+            )
+            result = self.fixer.refine_file(path)
+            self.assertEqual(result.rows_changed, 1)
+            line = path.read_text(encoding="utf-8").splitlines()[1]
+            self.assertIn("\tbn(I)/\tbn (I)\tn. m.\tson\t", line)
+
+    def test_disambiguates_bn_ilm_to_noun_son(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tbn\tbn(I)/;bn(II);bn[\tbn (I);bn (II);/b-n/\tn. m.;prep.;vb\t"
+                    "son;between;to build\t\n"
+                    "2\tilm\til(I)/m\tỉl (I)\tn. m.\tgods\t\n"
+                ),
+                encoding="utf-8",
+            )
+            result = self.fixer.refine_file(path)
+            self.assertEqual(result.rows_changed, 1)
+            line = path.read_text(encoding="utf-8").splitlines()[1]
+            self.assertIn("\tbn(I)/\tbn (I)\tn. m.\tson\t", line)
+
+    def test_disambiguates_bt_baal_to_dn(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tbt\tbt(II)/;bt(I)/;b(III)/t=\tbt (II);bt (I);bt (III)\tn. m.;"
+                    "n. f.;n. m.\thouse;daughter;length\t\n"
+                    "2\tbˤl\tbˤl(II)/;bˤl[\tbʕl (II);/b-ʕ-l/\tn. m./DN;vb\tBaʿlu;to make\t\n"
+                ),
+                encoding="utf-8",
+            )
+            result = self.fixer.refine_file(path)
+            self.assertEqual(result.rows_changed, 1)
+            line = path.read_text(encoding="utf-8").splitlines()[2]
+            self.assertIn("\tbˤl(II)/\tbʕl (II)\tDN\tBaʿlu\t", line)
+
 
 class StaticGate:
     """Small test double for DULAT feature-gating behavior."""

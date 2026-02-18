@@ -79,6 +79,42 @@ FORMULA_BIGRAM_RULES: tuple[FormulaBigramRule, ...] = (
         note="Epithets formula: Virgin ʿAnatu.",
     ),
     FormulaBigramRule(
+        first_surface="bn",
+        second_surface="il",
+        first_target=TokenParse(
+            analysis="bn(I)/",
+            dulat="bn (I)",
+            pos="n. m.",
+            gloss="son",
+        ),
+        min_count=24,
+        note="Formula sequence: bn il.",
+    ),
+    FormulaBigramRule(
+        first_surface="bn",
+        second_surface="ilm",
+        first_target=TokenParse(
+            analysis="bn(I)/",
+            dulat="bn (I)",
+            pos="n. m.",
+            gloss="son",
+        ),
+        min_count=21,
+        note="Formula sequence: bn ilm.",
+    ),
+    FormulaBigramRule(
+        first_surface="bt",
+        second_surface="bˤl",
+        second_target=TokenParse(
+            analysis="bˤl(II)/",
+            dulat="bʕl (II)",
+            pos="DN",
+            gloss="Baʿlu",
+        ),
+        min_count=11,
+        note="Formula sequence: bt bˤl.",
+    ),
+    FormulaBigramRule(
         first_surface="rbt",
         second_surface="aṯrt",
         second_target=TokenParse(
