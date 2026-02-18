@@ -167,7 +167,7 @@ Markers do not have to appear immediately after `[`. They can appear after tense
 
 ### 3.6 Feminine `-t` handling in nouns/adjectives
 
-- For feminine noun lexemes ending in `-t`, use `.../t` in feminine singular and `.../t=` in feminine plural.
+- For feminine noun lexemes ending in `-t`, use `...(t/t` in feminine singular and `...(t/t=` in feminine plural.
   - Example: `am(t/t` (sg), `am(t/t=` (pl).
 - For nouns where singular does not have feminine `-t` but plural does, use `.../t=` in plural.
   - Example: `gg/t=`.
