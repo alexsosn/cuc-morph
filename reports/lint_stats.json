@@ -1,33 +1,33 @@
 {
-  "generated_at_utc": "2026-02-18T03:32:06.560634+00:00",
+  "generated_at_utc": "2026-02-18T09:28:58.621700+00:00",
   "files_checked": 139,
-  "total_issues": 24496,
-  "fallback_parsed": 9237,
+  "total_issues": 22131,
+  "fallback_parsed": 8414,
   "by_severity": {
-    "ERROR": 11885,
-    "WARNING": 11275,
+    "ERROR": 10125,
+    "WARNING": 10583,
     "INFO": 1197
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
-      "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 4760
+      "problem_type": "Analysis does not reconstruct to surface",
+      "count": 4328
     },
     {
       "severity": "ERROR",
       "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 2666
+      "count": 2190
     },
     {
       "severity": "ERROR",
-      "problem_type": "Disallowed character in columns 2-3: ʿ",
-      "count": 1572
+      "problem_type": "No DULAT entry found for lexeme/surface",
+      "count": 1603
     },
     {
       "severity": "WARNING",
-      "problem_type": "Column 6 count should match analysis variant count",
-      "count": 1332
+      "problem_type": "Suffix form without '+'",
+      "count": 1209
     },
     {
       "severity": "INFO",
@@ -35,44 +35,24 @@
       "count": 1197
     },
     {
-      "severity": "ERROR",
-      "problem_type": "POS tokens must map to existing DULAT tokens in column 4",
-      "count": 834
+      "severity": "WARNING",
+      "problem_type": "Plural form missing split ending",
+      "count": 882
     },
     {
       "severity": "ERROR",
       "problem_type": "Noun/adjective lacks '/' ending",
-      "count": 792
+      "count": 629
     },
     {
-      "severity": "WARNING",
-      "problem_type": "b Noun POS should include DULAT gender marker for lb: n. m.",
-      "count": 475
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "Plural form missing split ending",
-      "count": 399
+      "severity": "ERROR",
+      "problem_type": "ʔ must be preceded by '(' in column 3",
+      "count": 280
     },
     {
       "severity": "ERROR",
       "problem_type": "Multiple DULAT candidates for lexeme",
-      "count": 281
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Column 5 count must match analysis variant count",
-      "count": 225
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "Suffix form without '+'",
-      "count": 218
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "POS ambiguous in DULAT",
-      "count": 213
+      "count": 255
     },
     {
       "severity": "WARNING",
@@ -81,8 +61,8 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "Analysis does not reconstruct to surface",
-      "count": 185
+      "problem_type": "POS ambiguous in DULAT",
+      "count": 202
     },
     {
       "severity": "WARNING",
@@ -91,18 +71,33 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "š Noun POS should include DULAT gender marker for šrt (II): n. f.",
-      "count": 170
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "bʿl Noun POS should include DULAT gender marker for bʕl (I): n. m.",
+      "problem_type": "bˤl Noun POS should include DULAT gender marker for bʕl (II): n. m.",
       "count": 156
     },
     {
       "severity": "WARNING",
-      "problem_type": "bʿl Noun POS should include DULAT gender marker for bʕl (II): n. m.",
-      "count": 156
+      "problem_type": "bˤl Noun POS should include DULAT gender marker for bʕl (I): n. m.",
+      "count": 149
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Suffixed pronominal form in DULAT should use '+' in analysis",
+      "count": 145
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mlk Noun POS should include DULAT gender marker for mlk (II): n. m.",
+      "count": 115
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Unknown DULAT token in column 4",
+      "count": 112
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Non-G stem in DULAT requires stem marker",
+      "count": 110
     },
     {
       "severity": "WARNING",
@@ -125,16 +120,6 @@
       "count": 91
     },
     {
-      "severity": "ERROR",
-      "problem_type": "POS token not allowed for declared DULAT entry",
-      "count": 87
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ilm Noun POS should include DULAT gender marker for ảl (III): n. m.",
-      "count": 87
-    },
-    {
       "severity": "WARNING",
       "problem_type": "ilm Noun POS should include DULAT gender marker for ỉl (I): n. m.",
       "count": 87
@@ -155,29 +140,14 @@
       "count": 77
     },
     {
-      "severity": "WARNING",
-      "problem_type": "gdlt Noun POS should include DULAT gender marker for gdlt (II): n. f.",
-      "count": 77
-    },
-    {
       "severity": "ERROR",
       "problem_type": "Each reconstructed letter must be prefixed by '('",
       "count": 64
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿnt Noun POS should include DULAT gender marker for ʕn (I): n. f.",
+      "problem_type": "ˤnt Noun POS should include DULAT gender marker for ʕn (I): n. f.",
       "count": 64
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "DULAT comment does not match candidates",
-      "count": 61
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Non-G stem in DULAT requires stem marker",
-      "count": 61
     },
     {
       "severity": "WARNING",
@@ -186,18 +156,23 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mt Noun POS should include DULAT gender marker for mt (I): n. m.",
-      "count": 58
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "mt Noun POS should include DULAT gender marker for mt (II): n. m.",
       "count": 58
     },
     {
       "severity": "WARNING",
-      "problem_type": "ṯn Noun POS should include DULAT gender marker for ṯn (III): n. m.",
-      "count": 53
+      "problem_type": "mt Noun POS should include DULAT gender marker for mt (I): n. m.",
+      "count": 55
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "POS token not allowed for declared DULAT entry",
+      "count": 54
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "DULAT comment does not match candidates",
+      "count": 51
     },
     {
       "severity": "WARNING",
@@ -211,27 +186,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿl Noun POS should include DULAT gender marker for ʕl (III): n. m.",
-      "count": 47
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "št Noun POS should include DULAT gender marker for št (I): n. m.",
-      "count": 45
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "št Noun POS should include DULAT gender marker for št (II): n. f.",
-      "count": 45
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ṯlṯ Adjective POS should include DULAT gender marker for ṯlṯ (II): adj. m.",
       "count": 45
     },
     {
       "severity": "WARNING",
-      "problem_type": "ṯlṯ Noun POS should include DULAT gender marker for ṯlṯ (III): n. m.",
+      "problem_type": "ṯlṯ Noun POS should include DULAT gender marker for ṯlṯ (V): n. m.",
       "count": 45
     },
     {
@@ -241,7 +201,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "št Noun POS should include DULAT gender marker for št (II): n. f.",
+      "count": 43
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ġzr Noun POS should include DULAT gender marker for ġzr: n. m.",
+      "count": 42
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "št Noun POS should include DULAT gender marker for št (I): n. m.",
+      "count": 42
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤṣrm Noun POS should include DULAT gender marker for ʕṣr (I): n. f.",
       "count": 42
     },
     {
@@ -266,16 +241,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "yd Noun POS should include DULAT gender marker for yd (II): n. m.",
-      "count": 39
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Verb lacks '[' ending",
-      "count": 38
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ap Noun POS should include DULAT gender marker for ảp (II): n. m.",
       "count": 38
     },
@@ -286,13 +251,23 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ḥrn Noun POS should include DULAT gender marker for ḥr (I): n. m.",
+      "count": 36
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṯkmn Noun POS should include DULAT gender marker for ṯkm: n. m.",
+      "count": 36
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "npš Noun POS should include DULAT gender marker for npš (I): n. f.",
       "count": 35
     },
     {
-      "severity": "WARNING",
-      "problem_type": "npš Noun POS should include DULAT gender marker for npš (II): n. m.",
-      "count": 35
+      "severity": "ERROR",
+      "problem_type": "Verb lacks '[' ending",
+      "count": 34
     },
     {
       "severity": "WARNING",
@@ -311,13 +286,8 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "dqt Noun POS should include DULAT gender marker for dqt (II): n. f.",
+      "problem_type": "pdry Noun POS should include DULAT gender marker for pdr (I): n. m.",
       "count": 34
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "yṯb Noun POS should include DULAT gender marker for yṯb: n. m.",
-      "count": 33
     },
     {
       "severity": "WARNING",
@@ -342,11 +312,6 @@
     {
       "severity": "WARNING",
       "problem_type": "p Noun POS should include DULAT gender marker for p (III): n. m.",
-      "count": 31
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ʿlm Noun POS should include DULAT gender marker for ʕlm (I): n. m.",
       "count": 31
     },
     {
@@ -381,18 +346,18 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ṯʿ Noun POS should include DULAT gender marker for ṯʕ (I): n. m.",
+      "problem_type": "ṯˤ Noun POS should include DULAT gender marker for ṯʕ (II): n. m.",
       "count": 29
     },
     {
       "severity": "WARNING",
-      "problem_type": "ṯʿ Noun POS should include DULAT gender marker for ṯʕ (II): n. m.",
-      "count": 29
+      "problem_type": "ṯˤ Noun POS should include DULAT gender marker for ṯʕ (I): n. m.",
+      "count": 28
     },
     {
       "severity": "WARNING",
-      "problem_type": "śśw Noun POS should include DULAT gender marker for s:śs/św: n. m.",
-      "count": 27
+      "problem_type": "aph Noun POS should include DULAT gender marker for ảp (II): n. m.",
+      "count": 26
     },
     {
       "severity": "WARNING",
@@ -402,11 +367,6 @@
     {
       "severity": "WARNING",
       "problem_type": "rpi Noun POS should include DULAT gender marker for rpủ: n. m.",
-      "count": 25
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "šm Noun POS should include DULAT gender marker for š: n. m.",
       "count": 25
     },
     {
@@ -431,7 +391,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "šm Noun POS should include DULAT gender marker for š: n. m.",
+      "count": 23
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "aṯt Noun POS should include DULAT gender marker for ảṯt: n. f.",
+      "count": 22
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥry Noun POS should include DULAT gender marker for ḥr (I): n. m.",
       "count": 22
     },
     {
@@ -446,17 +416,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "rbt Noun POS should include DULAT gender marker for rbt (II): n. f.",
-      "count": 21
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ydh Noun POS should include DULAT gender marker for yd (I): n. f.",
-      "count": 21
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ydh Noun POS should include DULAT gender marker for yd (II): n. m.",
       "count": 21
     },
     {
@@ -471,7 +431,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "Feminine plural noun in DULAT should be tagged with '/t='",
+      "count": 20
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "dm Noun POS should include DULAT gender marker for dm (II): n. m.",
+      "count": 20
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "dm Noun POS should include DULAT gender marker for ʕbd (I): n. m.",
       "count": 20
     },
     {
@@ -482,16 +452,6 @@
     {
       "severity": "WARNING",
       "problem_type": "ṯr Noun POS should include DULAT gender marker for ṯr (I): n. m.",
-      "count": 20
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ṯr Noun POS should include DULAT gender marker for ṯr (III): n. m.",
-      "count": 20
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ṯr Noun POS should include DULAT gender marker for ṯr (IV): n. f.",
       "count": 20
     },
     {
@@ -511,17 +471,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "bnt Noun POS should include DULAT gender marker for bnt (III): n. m.",
-      "count": 19
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "bth Noun POS should include DULAT gender marker for bt (I): n. f.",
-      "count": 19
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "bth Noun POS should include DULAT gender marker for bt (II): n. m.",
+      "count": 19
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "r Adjective POS should include DULAT gender marker for rḥb (I): adj. m.",
       "count": 19
     },
     {
@@ -531,22 +486,22 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ydy Noun POS should include DULAT gender marker for ydy (I): n. m.",
+      "problem_type": "ydy Noun POS should include DULAT gender marker for yd (I): n. f.",
       "count": 19
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿrb Noun POS should include DULAT gender marker for ʕrb (I): n. m.",
+      "problem_type": "ˤrb Noun POS should include DULAT gender marker for ʕrb (I): n. m.",
       "count": 19
     },
     {
       "severity": "WARNING",
-      "problem_type": "bʿlm Noun POS should include DULAT gender marker for bʕl (I): n. m.",
+      "problem_type": "bˤlm Noun POS should include DULAT gender marker for bʕl (I): n. m.",
       "count": 18
     },
     {
       "severity": "WARNING",
-      "problem_type": "bʿlm Noun POS should include DULAT gender marker for bʕl (II): n. m.",
+      "problem_type": "bˤlm Noun POS should include DULAT gender marker for bʕl (II): n. m.",
       "count": 18
     },
     {
@@ -556,12 +511,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "pġt Noun POS should include DULAT gender marker for pġt: n. f.",
+      "problem_type": "ilhm Noun POS should include DULAT gender marker for ỉl (I): n. m.",
       "count": 18
     },
     {
       "severity": "WARNING",
-      "problem_type": "pġt Noun POS should include DULAT gender marker for pġy: n. m.",
+      "problem_type": "pġt Noun POS should include DULAT gender marker for pġt: n. f.",
       "count": 18
     },
     {
@@ -571,48 +526,28 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ġr Noun POS should include DULAT gender marker for ġr (II): n. m.",
-      "count": 18
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ġr Noun POS should include DULAT gender marker for ġr (III): n. m.",
-      "count": 18
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "šmn Adjective POS should include DULAT gender marker for šmn (II): adj. m.",
-      "count": 18
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "šmn Noun POS should include DULAT gender marker for šmn (I): n. m.",
       "count": 18
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿn Noun POS should include DULAT gender marker for ʕn (I): n. f.",
+      "problem_type": "ˤn Noun POS should include DULAT gender marker for ʕn (I): n. f.",
       "count": 18
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿn Noun POS should include DULAT gender marker for ʕn (II): n. f.",
+      "problem_type": "ˤn Noun POS should include DULAT gender marker for ʕn (II): n. f.",
       "count": 18
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿšrt Noun POS should include DULAT gender marker for ʕšr(t) (I): n. m.",
+      "problem_type": "ˤšrt Noun POS should include DULAT gender marker for ʕšrt (II): n. f.",
       "count": 18
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿšrt Noun POS should include DULAT gender marker for ʕšrt (II): n. f.",
-      "count": 18
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ḫmš Adjective POS should include DULAT gender marker for ḫmš (II): adj. m.",
-      "count": 18
+      "problem_type": "bnt Noun POS should include DULAT gender marker for bnt (III): n. m.",
+      "count": 17
     },
     {
       "severity": "WARNING",
@@ -636,12 +571,17 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "qrt Noun POS should include DULAT gender marker for qrt (II): n. f.",
+      "problem_type": "um Noun POS should include DULAT gender marker for ủm: n. f.",
       "count": 17
     },
     {
       "severity": "WARNING",
-      "problem_type": "um Noun POS should include DULAT gender marker for ủm: n. f.",
+      "problem_type": "ġr Noun POS should include DULAT gender marker for ġr (III): n. m.",
+      "count": 17
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ġr Noun POS should include DULAT gender marker for ġr (V): n. m.",
       "count": 17
     },
     {
@@ -656,12 +596,17 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "šmʿ Noun POS should include DULAT gender marker for šmʕ: n. m.",
+      "problem_type": "šmˤ Noun POS should include DULAT gender marker for šmʕ: n. m.",
       "count": 17
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿqšr Adjective POS should include DULAT gender marker for ảqšr: adj. m.",
+      "problem_type": "ˤqšr Adjective POS should include DULAT gender marker for ảqšr: adj. m.",
+      "count": 17
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṯn Noun POS should include DULAT gender marker for ṯn (III): n. m.",
       "count": 17
     },
     {
@@ -701,17 +646,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ḥwt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
-      "count": 16
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "abh Noun POS should include DULAT gender marker for ảb: n. m.",
       "count": 15
     },
     {
       "severity": "WARNING",
-      "problem_type": "bʿlt Noun POS should include DULAT gender marker for bʕlt: n. f.",
+      "problem_type": "bˤlt Noun POS should include DULAT gender marker for bʕlt: n. f.",
       "count": 15
     },
     {
@@ -731,28 +671,13 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "rbt Adjective POS should include DULAT gender marker for rb (I): adj. m.",
+      "count": 15
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "šnt Noun POS should include DULAT gender marker for šnt (I): n. f.",
       "count": 15
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "šnt Noun POS should include DULAT gender marker for šnt (II): n. f.",
-      "count": 15
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "šnt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
-      "count": 15
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "aṯrh Noun POS should include DULAT gender marker for ảṯr (II): n. m.",
-      "count": 14
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "bty Noun POS should include DULAT gender marker for bt (I): n. f.",
-      "count": 14
     },
     {
       "severity": "WARNING",
@@ -761,7 +686,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "hlk Noun POS should include DULAT gender marker for hlk (I): n. m.",
+      "problem_type": "lbh Noun POS should include DULAT gender marker for lb: n. m.",
       "count": 14
     },
     {
@@ -796,12 +721,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "pḫr Noun POS should include DULAT gender marker for pḫr (II): n. m.",
-      "count": 14
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "šr Noun POS should include DULAT gender marker for šr (I): n. m.",
+      "problem_type": "yrḫm Noun POS should include DULAT gender marker for yrḫ: n. m.",
       "count": 14
     },
     {
@@ -811,22 +731,27 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿbd Noun POS should include DULAT gender marker for ʕbd (I): n. m.",
+      "problem_type": "šr Noun POS should include DULAT gender marker for šr (III): n. m.",
       "count": 14
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿnh Noun POS should include DULAT gender marker for ʕn (I): n. f.",
+      "problem_type": "ˤbd Noun POS should include DULAT gender marker for ʕbd (I): n. m.",
       "count": 14
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿšr Noun POS should include DULAT gender marker for ʕšr(t) (I): n. m.",
+      "problem_type": "ˤnh Noun POS should include DULAT gender marker for ʕn (I): n. f.",
       "count": 14
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿṣr Noun POS should include DULAT gender marker for ʕṣr (I): n. f.",
+      "problem_type": "ˤšr Noun POS should include DULAT gender marker for ʕšr(t) (I): n. m.",
+      "count": 14
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤṣr Noun POS should include DULAT gender marker for ʕṣr (I): n. f.",
       "count": 14
     },
     {
@@ -846,6 +771,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
+      "count": 13
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "dqtm Adjective POS should include DULAT gender marker for dqt (I): adj. f.",
       "count": 13
     },
@@ -856,7 +786,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "h Noun POS should include DULAT gender marker for mṭt: n. f.",
+      "problem_type": "h Noun POS should include DULAT gender marker for ảḫt (I): n. f.",
       "count": 13
     },
     {
@@ -891,22 +821,17 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "qḥ Noun POS should include DULAT gender marker for rqḥ (II): n. m.",
-      "count": 13
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "riš Noun POS should include DULAT gender marker for rỉš (I): n. m.",
       "count": 13
     },
     {
       "severity": "WARNING",
-      "problem_type": "ytn Noun POS should include DULAT gender marker for ytn (I): n. m.",
+      "problem_type": "yd Noun POS should include DULAT gender marker for yd (II): n. m.",
       "count": 13
     },
     {
       "severity": "WARNING",
-      "problem_type": "Feminine plural noun in DULAT should be tagged with '/t='",
+      "problem_type": "abn Noun POS should include DULAT gender marker for ảb: n. m.",
       "count": 12
     },
     {
@@ -916,17 +841,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "arṣy Noun POS should include DULAT gender marker for ảrṣ: n. f.",
+      "count": 12
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ibrn Noun POS should include DULAT gender marker for ỉbr (I): n. m.",
+      "count": 12
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mṯt Noun POS should include DULAT gender marker for mṯt: n. f.",
       "count": 12
     },
     {
       "severity": "WARNING",
-      "problem_type": "nʿm Adjective POS should include DULAT gender marker for nʕm (I): adj. m.",
+      "problem_type": "nˤm Adjective POS should include DULAT gender marker for nʕm (I): adj. m.",
       "count": 12
     },
     {
       "severity": "WARNING",
-      "problem_type": "nʿm Noun POS should include DULAT gender marker for nʕm (II): n. m.",
+      "problem_type": "nˤm Noun POS should include DULAT gender marker for nʕm (II): n. m.",
       "count": 12
     },
     {
@@ -961,17 +896,22 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿd Noun POS should include DULAT gender marker for ʕd (II): n. m.",
+      "problem_type": "ˤd Noun POS should include DULAT gender marker for ʕd (II): n. m.",
       "count": 12
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿr Noun POS should include DULAT gender marker for ʕr (I): n. f.",
+      "problem_type": "ˤd Noun POS should include DULAT gender marker for ʕd (III): n. m.",
       "count": 12
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿr Noun POS should include DULAT gender marker for ʕr (II): n. m.",
+      "problem_type": "ˤr Noun POS should include DULAT gender marker for ʕr (I): n. f.",
+      "count": 12
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤr Noun POS should include DULAT gender marker for ʕr (II): n. m.",
       "count": 12
     },
     {
@@ -982,16 +922,6 @@
     {
       "severity": "WARNING",
       "problem_type": "abd Noun POS should include DULAT gender marker for ảbd (I): n. m.",
-      "count": 11
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "akl Adjective POS should include DULAT gender marker for ảkl (I): adj. m.",
-      "count": 11
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "akl Noun POS should include DULAT gender marker for ảkl (I): n. m.",
       "count": 11
     },
     {
@@ -1026,12 +956,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "pḫr Noun POS should include DULAT gender marker for pḫr (II): n. m.",
+      "count": 11
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "rpum Noun POS should include DULAT gender marker for rpủ: n. m.",
       "count": 11
     },
     {
       "severity": "WARNING",
-      "problem_type": "ṯʿy Noun POS should include DULAT gender marker for ṯʕy (I): n. m.",
+      "problem_type": "šr Noun POS should include DULAT gender marker for šr (IV): n. m.",
+      "count": 11
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṯˤy Noun POS should include DULAT gender marker for ṯʕy (I): n. m.",
       "count": 11
     },
     {
@@ -1047,21 +987,6 @@
     {
       "severity": "WARNING",
       "problem_type": "alpm Noun POS should include DULAT gender marker for ảlp (I): n. m.",
-      "count": 10
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "i Adjective POS should include DULAT gender marker for mrủ (I): adj. m.",
-      "count": 10
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "i Noun POS should include DULAT gender marker for mrủ (I): n. m.",
-      "count": 10
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "i Noun POS should include DULAT gender marker for ṣbủ (II): n. m.",
       "count": 10
     },
     {
@@ -1091,12 +1016,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ks Noun POS should include DULAT gender marker for ks/śm(n): n. m.",
-      "count": 10
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mrṣ Noun POS should include DULAT gender marker for mrṣ: n. m.",
+      "problem_type": "ks Noun POS should include DULAT gender marker for ks: n. m.",
       "count": 10
     },
     {
@@ -1126,6 +1046,21 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "a Adjective POS should include DULAT gender marker for mrủ (I): adj. m.",
+      "count": 9
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "a Noun POS should include DULAT gender marker for mrủ (I): n. m.",
+      "count": 9
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "a Noun POS should include DULAT gender marker for ảhl: n. m.",
+      "count": 9
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "amt Noun POS should include DULAT gender marker for ảmt (I): n. f.",
       "count": 9
     },
@@ -1141,6 +1076,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ddn Noun POS should include DULAT gender marker for dd (II): n. m.",
+      "count": 9
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "hkly Noun POS should include DULAT gender marker for hkl: n. m.",
       "count": 9
     },
@@ -1151,7 +1091,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "nʿmn Adjective POS should include DULAT gender marker for nʕmn (I): adj. m.",
+      "problem_type": "npškn Noun POS should include DULAT gender marker for npš (I): n. f.",
+      "count": 9
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "nˤmn Adjective POS should include DULAT gender marker for nʕmn (I): adj. m.",
       "count": 9
     },
     {
@@ -1181,11 +1126,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "zbl Noun POS should include DULAT gender marker for zbl (III): n. m.",
-      "count": 9
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "zbln Noun POS should include DULAT gender marker for zbln: n. m.",
       "count": 9
     },
@@ -1197,11 +1137,6 @@
     {
       "severity": "WARNING",
       "problem_type": "šmal Noun POS should include DULAT gender marker for šmảl: n. m.",
-      "count": 9
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ʿdb Adjective POS should include DULAT gender marker for ʕdb: adj. m.",
       "count": 9
     },
     {
@@ -1221,7 +1156,7 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "Unknown DULAT token in column 4",
+      "problem_type": "POS tokens must map to existing DULAT tokens in column 4",
       "count": 8
     },
     {
@@ -1256,17 +1191,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mk Noun POS should include DULAT gender marker for mk (I): n. m.",
-      "count": 8
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "mrkbt Noun POS should include DULAT gender marker for mrkbt: n. f.",
       "count": 8
     },
     {
       "severity": "WARNING",
-      "problem_type": "mtm Noun POS should include DULAT gender marker for mt (I): n. m.",
+      "problem_type": "mrṣ Noun POS should include DULAT gender marker for mrṣ: n. m.",
       "count": 8
     },
     {
@@ -1301,6 +1231,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "rḥmy Noun POS should include DULAT gender marker for rḥ (III): n. m.",
+      "count": 8
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "snnt Noun POS should include DULAT gender marker for snnt: n. f.",
       "count": 8
     },
@@ -1331,37 +1266,37 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿpr Noun POS should include DULAT gender marker for ʕpr (I): n. m.",
+      "problem_type": "zbl Noun POS should include DULAT gender marker for zbl (III): n. m.",
       "count": 8
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿrš Noun POS should include DULAT gender marker for ʕrš: n. f.",
+      "problem_type": "ˤpr Noun POS should include DULAT gender marker for ʕpr (I): n. m.",
       "count": 8
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿz Adjective POS should include DULAT gender marker for ʕz (III): adj. m.",
+      "problem_type": "ˤrš Noun POS should include DULAT gender marker for ʕrš: n. f.",
       "count": 8
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿz Noun POS should include DULAT gender marker for ʕz (I): n. m.",
+      "problem_type": "ˤz Adjective POS should include DULAT gender marker for ʕz (III): adj. m.",
       "count": 8
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿz Noun POS should include DULAT gender marker for ʕz (II): n. m.",
+      "problem_type": "ˤz Noun POS should include DULAT gender marker for ʕz (II): n. m.",
       "count": 8
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿz Noun POS should include DULAT gender marker for ʕz (III): n. m.",
+      "problem_type": "ˤz Noun POS should include DULAT gender marker for ʕz (III): n. m.",
       "count": 8
     },
     {
       "severity": "WARNING",
-      "problem_type": "ṣʿ Noun POS should include DULAT gender marker for ṣʕ (I): n. m.",
+      "problem_type": "ṣˤ Noun POS should include DULAT gender marker for ṣʕ (I): n. m.",
       "count": 8
     },
     {
@@ -1381,11 +1316,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "adr Noun POS should include DULAT gender marker for ảdr (II): n. m.",
-      "count": 7
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "aliyn Adjective POS should include DULAT gender marker for ảlỉyn: adj. m.",
       "count": 7
     },
@@ -1401,32 +1331,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "amr Noun POS should include DULAT gender marker for ỉmr (I): n. m.",
-      "count": 7
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "aṯth Noun POS should include DULAT gender marker for ảṯt: n. f.",
       "count": 7
     },
     {
       "severity": "WARNING",
-      "problem_type": "bd Noun POS should include DULAT gender marker for bd (I): n. m.",
-      "count": 7
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "bṣql Noun POS should include DULAT gender marker for bṣql: n. m.",
-      "count": 7
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "dd Adjective POS should include DULAT gender marker for dd (I): adj. m.",
-      "count": 7
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "dd Noun POS should include DULAT gender marker for dd (I): n. m.",
       "count": 7
     },
     {
@@ -1437,11 +1347,6 @@
     {
       "severity": "WARNING",
       "problem_type": "dn Noun POS should include DULAT gender marker for dn (I): n. m.",
-      "count": 7
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "dn Noun POS should include DULAT gender marker for dn (II): n. m.",
       "count": 7
     },
     {
@@ -1481,17 +1386,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mid Noun POS should include DULAT gender marker for mỉ/ủd: n. m.",
-      "count": 7
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "mlḫš Noun POS should include DULAT gender marker for mlḫš: n. m.",
       "count": 7
     },
     {
       "severity": "WARNING",
-      "problem_type": "my Noun POS should include DULAT gender marker for mh/y: n. m.",
+      "problem_type": "mtm Noun POS should include DULAT gender marker for mt (I): n. m.",
       "count": 7
     },
     {
@@ -1511,7 +1411,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "pʿnh Noun POS should include DULAT gender marker for pʕn: n. f.",
+      "problem_type": "pˤnh Noun POS should include DULAT gender marker for pʕn: n. f.",
       "count": 7
     },
     {
@@ -1521,22 +1421,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "rḥ Noun POS should include DULAT gender marker for rḥ (II): n. m.",
-      "count": 7
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "sswm Noun POS should include DULAT gender marker for s:śs/św: n. m.",
-      "count": 7
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "tk Noun POS should include DULAT gender marker for tk: n. m.",
       "count": 7
     },
     {
       "severity": "WARNING",
-      "problem_type": "tʿḏr Noun POS should include DULAT gender marker for tʕḏr: n. m.",
+      "problem_type": "tˤḏr Noun POS should include DULAT gender marker for tʕḏr: n. m.",
       "count": 7
     },
     {
@@ -1561,11 +1451,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "yṣi Noun POS should include DULAT gender marker for yṣủ (I): n. m.",
-      "count": 7
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "šmt Noun POS should include DULAT gender marker for šm (I): n. m.",
       "count": 7
     },
@@ -1581,22 +1466,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿlyh Noun POS should include DULAT gender marker for ʕly (II): n. m.",
+      "problem_type": "ˤlyh Noun POS should include DULAT gender marker for ʕly (II): n. m.",
       "count": 7
     },
     {
       "severity": "WARNING",
       "problem_type": "ḥr Noun POS should include DULAT gender marker for ḥr (I): n. m.",
-      "count": 7
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ṯb Noun POS should include DULAT gender marker for ṯb: n. m.",
-      "count": 7
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ṯrm Noun POS should include DULAT gender marker for ṯr (I): n. m.",
       "count": 7
     },
     {
@@ -1610,13 +1485,13 @@
       "count": 7
     },
     {
-      "severity": "WARNING",
-      "problem_type": "anšt Noun POS should include DULAT gender marker for ảnšt: n. f.",
+      "severity": "ERROR",
+      "problem_type": "yṯṯb For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
       "count": 6
     },
     {
       "severity": "WARNING",
-      "problem_type": "ar Noun POS should include DULAT gender marker for ả/ỉr: n. m.",
+      "problem_type": "anšt Noun POS should include DULAT gender marker for ảnšt: n. f.",
       "count": 6
     },
     {
@@ -1627,6 +1502,16 @@
     {
       "severity": "WARNING",
       "problem_type": "aṯtm Noun POS should include DULAT gender marker for ảṯt: n. f.",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "dn Noun POS should include DULAT gender marker for dn (II): n. m.",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "dnty Noun POS should include DULAT gender marker for dnt (II): n. f.",
       "count": 6
     },
     {
@@ -1656,27 +1541,42 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "mntn Noun POS should include DULAT gender marker for mnt (I): n. f.",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mqmh Noun POS should include DULAT gender marker for mqm: n. m.",
       "count": 6
     },
     {
       "severity": "WARNING",
-      "problem_type": "nʿmt Adjective POS should include DULAT gender marker for nʕm (I): adj. m.",
+      "problem_type": "nˤmt Adjective POS should include DULAT gender marker for nʕm (I): adj. m.",
       "count": 6
     },
     {
       "severity": "WARNING",
-      "problem_type": "nʿmt Adjective POS should include DULAT gender marker for nʕmt (I): adj. f.",
+      "problem_type": "nˤmt Adjective POS should include DULAT gender marker for nʕmt (I): adj. f.",
       "count": 6
     },
     {
       "severity": "WARNING",
-      "problem_type": "nʿmt Noun POS should include DULAT gender marker for nʕmt (II): n. f.",
+      "problem_type": "nˤmt Noun POS should include DULAT gender marker for nʕmt (II): n. f.",
       "count": 6
     },
     {
       "severity": "WARNING",
       "problem_type": "pnh Noun POS should include DULAT gender marker for pnm: n. m.",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "prˤm Noun POS should include DULAT gender marker for prʕ (I): n. m.",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "qty Noun POS should include DULAT gender marker for qt: n. m.",
       "count": 6
     },
     {
@@ -1687,6 +1587,11 @@
     {
       "severity": "WARNING",
       "problem_type": "qẓ Noun POS should include DULAT gender marker for qẓ: n. m.",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "rbt Noun POS should include DULAT gender marker for rbt (II): n. f.",
       "count": 6
     },
     {
@@ -1702,6 +1607,11 @@
     {
       "severity": "WARNING",
       "problem_type": "rm Noun POS should include DULAT gender marker for rm (II): n. m.",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "sdn Noun POS should include DULAT gender marker for sd: n. m.",
       "count": 6
     },
     {
@@ -1751,42 +1661,32 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿ Noun POS should include DULAT gender marker for ʕrš: n. f.",
+      "problem_type": "ˤ Noun POS should include DULAT gender marker for ʕrš: n. f.",
       "count": 6
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿly Adjective POS should include DULAT gender marker for ʕly (I): adj. m.",
+      "problem_type": "ˤṣm Noun POS should include DULAT gender marker for ʕṣ: n. m.",
       "count": 6
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿly Noun POS should include DULAT gender marker for ʕly (II): n. m.",
+      "problem_type": "ˤẓm Adjective POS should include DULAT gender marker for ʕẓm (II): adj. m.",
       "count": 6
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿṣm Noun POS should include DULAT gender marker for ʕṣ: n. m.",
-      "count": 6
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ʿẓm Adjective POS should include DULAT gender marker for ʕẓm (II): adj. m.",
-      "count": 6
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ʿẓm Noun POS should include DULAT gender marker for ʕẓm (I): n. f.",
-      "count": 6
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ḥlm Noun POS should include DULAT gender marker for ḥl (I): n. m.",
+      "problem_type": "ˤẓm Noun POS should include DULAT gender marker for ʕẓm (I): n. f.",
       "count": 6
     },
     {
       "severity": "WARNING",
       "problem_type": "ḥlm Noun POS should include DULAT gender marker for ḥlm (I): n. m.",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥwtn Noun POS should include DULAT gender marker for ḥwt: n. f.",
       "count": 6
     },
     {
@@ -1801,17 +1701,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ṯrm Noun POS should include DULAT gender marker for ṯr (I): n. m.",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ẓr Noun POS should include DULAT gender marker for ẓr (I): n. m.",
       "count": 6
     },
     {
       "severity": "WARNING",
       "problem_type": "ad Noun POS should include DULAT gender marker for ảd: n. m.",
-      "count": 5
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "at Noun POS should include DULAT gender marker for ảt (II): n. f.",
       "count": 5
     },
     {
@@ -1842,6 +1742,11 @@
     {
       "severity": "WARNING",
       "problem_type": "dg Noun POS should include DULAT gender marker for dg (I): n. m.",
+      "count": 5
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "gd Noun POS should include DULAT gender marker for ṯỉgt: n. f.",
       "count": 5
     },
     {
@@ -1897,6 +1802,16 @@
     {
       "severity": "WARNING",
       "problem_type": "mgdl Noun POS should include DULAT gender marker for mgdl: n. m.",
+      "count": 5
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mk Noun POS should include DULAT gender marker for mk (I): n. m.",
+      "count": 5
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mn Noun POS should include DULAT gender marker for mn (III): n. m.",
       "count": 5
     },
     {
@@ -1961,17 +1876,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "trḫ Noun POS should include DULAT gender marker for trḫ: n. m.",
-      "count": 5
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ypkn Noun POS should include DULAT gender marker for yp: n. m.",
-      "count": 5
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "yt Adjective POS should include DULAT gender marker for tḥtyt: adj. f.",
       "count": 5
     },
     {
@@ -1986,22 +1891,17 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿrm Adjective POS should include DULAT gender marker for ʕrm (I): adj. m.",
+      "problem_type": "ˤrm Adjective POS should include DULAT gender marker for ʕrm (I): adj. m.",
       "count": 5
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿrm Noun POS should include DULAT gender marker for ʕr (I): n. f.",
+      "problem_type": "ˤrm Noun POS should include DULAT gender marker for ʕr (I): n. f.",
       "count": 5
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿrpt Noun POS should include DULAT gender marker for ʕrpt: n. f.",
-      "count": 5
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ʿšrm Noun POS should include DULAT gender marker for ʕšr (II): n. m.",
+      "problem_type": "ˤrpt Noun POS should include DULAT gender marker for ʕrpt: n. f.",
       "count": 5
     },
     {
@@ -2041,7 +1941,17 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "ʔ must be preceded by '(' in column 3",
+      "problem_type": "ydˤt For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "adnh Noun POS should include DULAT gender marker for ảdn (I): n. m.",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "alty Noun POS should include DULAT gender marker for ảlt (I): n. f.",
       "count": 4
     },
     {
@@ -2082,6 +1992,26 @@
     {
       "severity": "WARNING",
       "problem_type": "brq Noun POS should include DULAT gender marker for brq (I): n. m.",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "btkh Noun POS should include DULAT gender marker for bt (II): n. m.",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bˤd Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.'",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bˤdh Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.'",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "dbrh Noun POS should include DULAT gender marker for dbr (II): n. m.",
       "count": 4
     },
     {
@@ -2141,12 +2071,17 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mdb Noun POS should include DULAT gender marker for mdb: n. m.",
+      "problem_type": "kty Noun POS should include DULAT gender marker for kt (I): n. f.",
       "count": 4
     },
     {
       "severity": "WARNING",
-      "problem_type": "mh Noun POS should include DULAT gender marker for mh/y: n. m.",
+      "problem_type": "lṣbh Noun POS should include DULAT gender marker for lṣb: n. m.",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mdb Noun POS should include DULAT gender marker for mdb: n. m.",
       "count": 4
     },
     {
@@ -2157,11 +2092,6 @@
     {
       "severity": "WARNING",
       "problem_type": "mlkt Noun POS should include DULAT gender marker for mlkt: n. f.",
-      "count": 4
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mm Noun POS should include DULAT gender marker for mh/y: n. m.",
       "count": 4
     },
     {
@@ -2191,17 +2121,17 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mym Noun POS should include DULAT gender marker for mh/y: n. m.",
-      "count": 4
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mštʿltm Noun POS should include DULAT gender marker for mštʕlt: n. f.",
+      "problem_type": "mštˤltm Noun POS should include DULAT gender marker for mštʕlt: n. f.",
       "count": 4
     },
     {
       "severity": "WARNING",
       "problem_type": "mṭr Noun POS should include DULAT gender marker for mṭr: n. m.",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mṯty Noun POS should include DULAT gender marker for mṯt: n. f.",
       "count": 4
     },
     {
@@ -2221,7 +2151,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "nhrm Noun POS should include DULAT gender marker for nhr: n. m.",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "nni Noun POS should include DULAT gender marker for nnủ (I): n. m.",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "npṣh Noun POS should include DULAT gender marker for npṣ: n. m.",
       "count": 4
     },
     {
@@ -2241,17 +2181,17 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "nʿmm Adjective POS should include DULAT gender marker for nʕm (I): adj. m.",
+      "problem_type": "nˤmm Adjective POS should include DULAT gender marker for nʕm (I): adj. m.",
       "count": 4
     },
     {
       "severity": "WARNING",
-      "problem_type": "nʿr Noun POS should include DULAT gender marker for nʕr (I): n. m.",
+      "problem_type": "nˤr Noun POS should include DULAT gender marker for nʕr (I): n. m.",
       "count": 4
     },
     {
       "severity": "WARNING",
-      "problem_type": "nʿr Noun POS should include DULAT gender marker for nʕr (II): n. m.",
+      "problem_type": "nˤr Noun POS should include DULAT gender marker for nʕr (II): n. m.",
       "count": 4
     },
     {
@@ -2271,7 +2211,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "pʿnm Noun POS should include DULAT gender marker for pʕn: n. f.",
+      "problem_type": "pˤnm Noun POS should include DULAT gender marker for pʕn: n. f.",
       "count": 4
     },
     {
@@ -2286,7 +2226,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "qṣʿt Noun POS should include DULAT gender marker for qṣʕt: n. f.",
+      "problem_type": "qṣˤt Noun POS should include DULAT gender marker for qṣʕt: n. f.",
       "count": 4
     },
     {
@@ -2297,6 +2237,16 @@
     {
       "severity": "WARNING",
       "problem_type": "rġbn Noun POS should include DULAT gender marker for rġbn: n. m.",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "rḥ Noun POS should include DULAT gender marker for rḥ (II): n. m.",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "rḥmy Noun POS should include DULAT gender marker for rḥm: n. f.",
       "count": 4
     },
     {
@@ -2316,17 +2266,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "skn Noun POS should include DULAT gender marker for skn (II): n. m.",
-      "count": 4
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "skn Noun POS should include DULAT gender marker for skn (III): n. m.",
-      "count": 4
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "sp Noun POS should include DULAT gender marker for sp: n. m.",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "th Noun POS should include DULAT gender marker for ảḫt (I): n. f.",
       "count": 4
     },
     {
@@ -2351,17 +2296,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ybl Noun POS should include DULAT gender marker for ybl (I): n. m.",
-      "count": 4
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ybl Noun POS should include DULAT gender marker for ybl (III): n. m.",
-      "count": 4
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "yld Noun POS should include DULAT gender marker for yld: n. m.",
+      "problem_type": "urm Noun POS should include DULAT gender marker for ủr: n. m.",
       "count": 4
     },
     {
@@ -2372,6 +2307,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ġb Noun POS should include DULAT gender marker for ġb (I): n. m.",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ġlmm Noun POS should include DULAT gender marker for ġlm: n. m.",
       "count": 4
     },
     {
@@ -2416,27 +2356,27 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿlmh Noun POS should include DULAT gender marker for ʕlm (I): n. m.",
+      "problem_type": "ˤlmh Noun POS should include DULAT gender marker for ʕlm (I): n. m.",
       "count": 4
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿmh Noun POS should include DULAT gender marker for ʕm (II): n. m.",
+      "problem_type": "ˤqh Noun POS should include DULAT gender marker for ʕq: n. m.",
       "count": 4
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿrbm Noun POS should include DULAT gender marker for ʕrb (II): n. m.",
+      "problem_type": "ˤrbm Noun POS should include DULAT gender marker for ʕrb (II): n. m.",
       "count": 4
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿrgz Noun POS should include DULAT gender marker for ʕrgz (I): n. m.",
+      "problem_type": "ˤrgz Noun POS should include DULAT gender marker for ʕrgz (I): n. m.",
       "count": 4
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿṣ Noun POS should include DULAT gender marker for ʕṣ: n. m.",
+      "problem_type": "ˤṣ Noun POS should include DULAT gender marker for ʕṣ: n. m.",
       "count": 4
     },
     {
@@ -2447,6 +2387,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ḥgb Noun POS should include DULAT gender marker for ḥgb: n. m.",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥmrh Noun POS should include DULAT gender marker for ḥmr (I): n. m.",
       "count": 4
     },
     {
@@ -2486,6 +2431,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ṭly Noun POS should include DULAT gender marker for ṭl: n. m.",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ṯkmt Noun POS should include DULAT gender marker for ṯkmt: n. f.",
       "count": 4
     },
@@ -2495,18 +2445,8 @@
       "count": 4
     },
     {
-      "severity": "WARNING",
-      "problem_type": "ṯlṯt Adjective POS should include DULAT gender marker for ṯlṯ (II): adj. m.",
-      "count": 4
-    },
-    {
       "severity": "ERROR",
-      "problem_type": "Suffixed pronominal form in DULAT should use '+' in analysis",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
+      "problem_type": "ytnt For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
       "count": 3
     },
     {
@@ -2552,6 +2492,11 @@
     {
       "severity": "WARNING",
       "problem_type": "alt Noun POS should include DULAT gender marker for ảlt (II): n. f.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "apkn Noun POS should include DULAT gender marker for ảp (II): n. m.",
       "count": 3
     },
     {
@@ -2616,6 +2561,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "brlthm Noun POS should include DULAT gender marker for brlt: n. f.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "brḥ Adjective POS should include DULAT gender marker for brḥ: adj. m.",
       "count": 3
     },
@@ -2651,7 +2601,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "drʿ Noun POS should include DULAT gender marker for d/ḏrʕ: n. m.",
+      "problem_type": "dġṯhm Noun POS should include DULAT gender marker for dġṯ: n. m.",
       "count": 3
     },
     {
@@ -2686,6 +2636,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ggn Noun POS should include DULAT gender marker for gg (I): n. m.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ghm Noun POS should include DULAT gender marker for g: n. m.",
       "count": 3
     },
@@ -2711,7 +2666,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "hlkt Noun POS should include DULAT gender marker for hlkt: n. f.",
+      "problem_type": "hlk Noun POS should include DULAT gender marker for hlk (I): n. m.",
       "count": 3
     },
     {
@@ -2722,6 +2677,11 @@
     {
       "severity": "WARNING",
       "problem_type": "hrm Noun POS should include DULAT gender marker for hr (I): n. m.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ild Noun POS should include DULAT gender marker for ỉl (I): n. m.",
       "count": 3
     },
     {
@@ -2741,7 +2701,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ksm Noun POS should include DULAT gender marker for ks/śm(n): n. m.",
+      "problem_type": "kltd Noun POS should include DULAT gender marker for klt (I): n. f.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "kltd Noun POS should include DULAT gender marker for klt (II): n. f.",
       "count": 3
     },
     {
@@ -2761,7 +2726,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "kṯn Noun POS should include DULAT gender marker for kṯ (I): n. f.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lbn Noun POS should include DULAT gender marker for lb: n. m.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lbnn Noun POS should include DULAT gender marker for lb: n. m.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "lbš Noun POS should include DULAT gender marker for lbš: n. m.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lbšn Noun POS should include DULAT gender marker for lbš: n. m.",
       "count": 3
     },
     {
@@ -2776,6 +2761,21 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "lmd Noun POS should include DULAT gender marker for lmd: n. m.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lmd Replace '/' with 'or' in POS label: 'adj./n.' -> 'adj. or n.'",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lytn Noun POS should include DULAT gender marker for lyt: n. f.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mdl Noun POS should include DULAT gender marker for mdl (I): n. m.",
       "count": 3
     },
@@ -2786,7 +2786,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mdrʿ Noun POS should include DULAT gender marker for mdrʕ: n. m.",
+      "problem_type": "mdrˤ Noun POS should include DULAT gender marker for mdrʕ: n. m.",
       "count": 3
     },
     {
@@ -2821,6 +2821,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "mt Noun POS should include DULAT gender marker for mt (III): n. m.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mznm Noun POS should include DULAT gender marker for mzn: n. m.",
       "count": 3
     },
@@ -2831,7 +2836,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mʿnh Noun POS should include DULAT gender marker for mʕn: n. m.",
+      "problem_type": "mˤnh Noun POS should include DULAT gender marker for mʕn: n. m.",
       "count": 3
     },
     {
@@ -2846,7 +2851,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mṭʿt Noun POS should include DULAT gender marker for mṭʕt: n. f.",
+      "problem_type": "mṭˤt Noun POS should include DULAT gender marker for mṭʕt: n. f.",
       "count": 3
     },
     {
@@ -2866,7 +2871,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "nʿmh Noun POS should include DULAT gender marker for nʕm (II): n. m.",
+      "problem_type": "nˤmh Noun POS should include DULAT gender marker for nʕm (II): n. m.",
       "count": 3
     },
     {
@@ -2896,22 +2901,17 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "prs Noun POS should include DULAT gender marker for prś/s: n. m.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "py Noun POS should include DULAT gender marker for p (III): n. m.",
       "count": 3
     },
     {
       "severity": "WARNING",
-      "problem_type": "pʿn Noun POS should include DULAT gender marker for pʕn: n. f.",
+      "problem_type": "pˤn Noun POS should include DULAT gender marker for pʕn: n. f.",
       "count": 3
     },
     {
       "severity": "WARNING",
-      "problem_type": "pʿny Noun POS should include DULAT gender marker for pʕn: n. f.",
+      "problem_type": "pˤny Noun POS should include DULAT gender marker for pʕn: n. f.",
       "count": 3
     },
     {
@@ -2922,6 +2922,11 @@
     {
       "severity": "WARNING",
       "problem_type": "pḥmm Noun POS should include DULAT gender marker for pḥm: n. m.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "pṯtn Noun POS should include DULAT gender marker for pṯt (I): n. m.",
       "count": 3
     },
     {
@@ -2947,6 +2952,11 @@
     {
       "severity": "WARNING",
       "problem_type": "qrd Noun POS should include DULAT gender marker for qrd (I): n. m.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "qty Noun POS should include DULAT gender marker for ṯỉgt: n. f.",
       "count": 3
     },
     {
@@ -2986,6 +2996,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "rḥbn Adjective POS should include DULAT gender marker for rḥb (I): adj. m.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "rḥbt Noun POS should include DULAT gender marker for rḥbt: n. f.",
       "count": 3
     },
@@ -2997,11 +3012,6 @@
     {
       "severity": "WARNING",
       "problem_type": "tdrq Noun POS should include DULAT gender marker for tdrq: n. m.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "thmt Noun POS should include DULAT gender marker for thm: n. m.",
       "count": 3
     },
     {
@@ -3026,16 +3036,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "tlm Noun POS should include DULAT gender marker for tl (I): n. m.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "tlm Noun POS should include DULAT gender marker for tl (II): n. m.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "tlm Noun POS should include DULAT gender marker for tlm: n. m.",
       "count": 3
     },
@@ -3056,17 +3056,12 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "trmn Noun POS should include DULAT gender marker for tr (I): n. m.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "tzġ Noun POS should include DULAT gender marker for tzġ: n. m.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "tštk Noun POS should include DULAT gender marker for tšt: n. f.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "tḥ Adjective POS should include DULAT gender marker for tḥtyt: adj. f.",
       "count": 3
     },
     {
@@ -3101,11 +3096,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ytnt Noun POS should include DULAT gender marker for ytnt: n. f.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "yṯnm Adjective POS should include DULAT gender marker for yṯn: adj. m.",
       "count": 3
     },
@@ -3126,22 +3116,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ġrm Noun POS should include DULAT gender marker for ġr (IV): n. m.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ġrm Noun POS should include DULAT gender marker for ġrm: n. m.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ġzrm Noun POS should include DULAT gender marker for ġzr: n. m.",
       "count": 3
     },
     {
       "severity": "WARNING",
-      "problem_type": "śśwm Noun POS should include DULAT gender marker for s:śs/św: n. m.",
+      "problem_type": "šdkm Noun POS should include DULAT gender marker for šd (I): n. m.",
       "count": 3
     },
     {
@@ -3156,32 +3136,32 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "šʿtqt Noun POS should include DULAT gender marker for škllt: n. f.",
+      "problem_type": "šˤtqt Noun POS should include DULAT gender marker for škllt: n. f.",
       "count": 3
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿdmt Noun POS should include DULAT gender marker for ʕdmt: n. f.",
+      "problem_type": "ˤdmt Noun POS should include DULAT gender marker for ʕdmt: n. f.",
       "count": 3
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿdn Noun POS should include DULAT gender marker for ʕdn (I): n. m.",
+      "problem_type": "ˤdn Noun POS should include DULAT gender marker for ʕdn (I): n. m.",
       "count": 3
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿdn Noun POS should include DULAT gender marker for ʕdn (III): n. m.",
+      "problem_type": "ˤdn Noun POS should include DULAT gender marker for ʕdn (III): n. m.",
       "count": 3
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿmy Noun POS should include DULAT gender marker for ʕm (II): n. m.",
+      "problem_type": "ˤnk Noun POS should include DULAT gender marker for ʕn (I): n. f.",
       "count": 3
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿnk Noun POS should include DULAT gender marker for ʕn (I): n. f.",
+      "problem_type": "ˤšrt Noun POS should include DULAT gender marker for ʕšr(t) (I): n. m.",
       "count": 3
     },
     {
@@ -3202,11 +3182,6 @@
     {
       "severity": "WARNING",
       "problem_type": "ḥbl Noun POS should include DULAT gender marker for ḥbl (II): n. m.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ḥrš Noun POS should include DULAT gender marker for ʕrš: n. f.",
       "count": 3
     },
     {
@@ -3242,11 +3217,6 @@
     {
       "severity": "WARNING",
       "problem_type": "ḥtt Noun POS should include DULAT gender marker for ḥtt: n. m.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ḥtt Noun POS should include DULAT gender marker for ḫtt: n. m.",
       "count": 3
     },
     {
@@ -3311,26 +3281,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ṭbḫ Noun POS should include DULAT gender marker for qmṣ (I): n. m.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ṭbḫ Noun POS should include DULAT gender marker for ṭbḫ: n. m.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ṭḫ Noun POS should include DULAT gender marker for ṭbḫ: n. m.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ṯbr Noun POS should include DULAT gender marker for ṯbr: n. m.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ṯiṭ Noun POS should include DULAT gender marker for ṯỉṭ: n. m.",
       "count": 3
     },
@@ -3360,8 +3310,33 @@
       "count": 3
     },
     {
+      "severity": "ERROR",
+      "problem_type": "atnk For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ydˤnn For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yrdt For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yṣat For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
+      "count": 2
+    },
+    {
       "severity": "WARNING",
       "problem_type": "abnm Noun POS should include DULAT gender marker for ảbn: n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "adnh Noun POS should include DULAT gender marker for ảd: n. m.",
       "count": 2
     },
     {
@@ -3396,17 +3371,42 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ak Noun POS should include DULAT gender marker for ảhl: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ak Noun POS should include DULAT gender marker for ảġzr: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "all Noun POS should include DULAT gender marker for ảll (I): n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "apq Noun POS should include DULAT gender marker for ảpq: n. m.",
+      "problem_type": "alty Noun POS should include DULAT gender marker for ảlt (II): n. f.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "argmn Noun POS should include DULAT gender marker for ả/ỉrgmn: n. m.",
+      "problem_type": "amth Noun POS should include DULAT gender marker for ảmt (II): n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "apkm Noun POS should include DULAT gender marker for ảp (II): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "apm Noun POS should include DULAT gender marker for ảp (II): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "apq Noun POS should include DULAT gender marker for ảpq: n. m.",
       "count": 2
     },
     {
@@ -3426,11 +3426,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "aylt Noun POS should include DULAT gender marker for ảyl (I): n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "aylt Noun POS should include DULAT gender marker for ảylt (I): n. f.",
       "count": 2
     },
@@ -3441,22 +3436,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "aḫ Noun POS should include DULAT gender marker for ảḫ (II): n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "aḫm Noun POS should include DULAT gender marker for ảḫ (I): n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
       "problem_type": "aḫy Noun POS should include DULAT gender marker for ảḫ (I): n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "aṯrk Noun POS should include DULAT gender marker for ảṯr (II): n. m.",
       "count": 2
     },
     {
@@ -3476,17 +3461,12 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "bhty Noun POS should include DULAT gender marker for bt (II): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "bkrk Noun POS should include DULAT gender marker for bkr: n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "bky Noun POS should include DULAT gender marker for bky: n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "bkyt Noun POS should include DULAT gender marker for bkyt: n. f.",
       "count": 2
     },
     {
@@ -3506,6 +3486,16 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "bnt Noun POS should include DULAT gender marker for bt (I): n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bnym Noun POS should include DULAT gender marker for bn (I): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "bnšm Noun POS should include DULAT gender marker for bnš: n. m.",
       "count": 2
     },
@@ -3516,7 +3506,17 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "bʿlk Noun POS should include DULAT gender marker for bʕl (II): n. m.",
+      "problem_type": "bšrk Noun POS should include DULAT gender marker for bšr: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bšry Noun POS should include DULAT gender marker for bšr: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bˤlk Noun POS should include DULAT gender marker for bʕl (II): n. m.",
       "count": 2
     },
     {
@@ -3527,6 +3527,16 @@
     {
       "severity": "WARNING",
       "problem_type": "dbbm Noun POS should include DULAT gender marker for dbb (II): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "dbh Noun POS should include DULAT gender marker for db: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "dbḥh Noun POS should include DULAT gender marker for dbḥ: n. m.",
       "count": 2
     },
     {
@@ -3556,6 +3566,26 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "dqtd Adjective POS should include DULAT gender marker for dqt (I): adj. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "dqtd Noun POS should include DULAT gender marker for dqt (I): n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "dqth Adjective POS should include DULAT gender marker for dqt (I): adj. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "dqth Noun POS should include DULAT gender marker for dqt (I): n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "drktk Noun POS should include DULAT gender marker for drkt: n. f.",
       "count": 2
     },
@@ -3576,7 +3606,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "dʿt Noun POS should include DULAT gender marker for dʕt (II): n. f.",
+      "problem_type": "dˤt Noun POS should include DULAT gender marker for dʕt (II): n. f.",
       "count": 2
     },
     {
@@ -3591,7 +3621,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "gmlm Noun POS should include DULAT gender marker for gml (I): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "gmm Noun POS should include DULAT gender marker for g: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "gp Noun POS should include DULAT gender marker for gp (I): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "gpny Noun POS should include DULAT gender marker for gpn (II): n. m.",
       "count": 2
     },
     {
@@ -3607,11 +3652,6 @@
     {
       "severity": "WARNING",
       "problem_type": "iln Noun POS should include DULAT gender marker for ỉl (I): n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "iln Noun POS should include DULAT gender marker for ỉln (I): n. m.",
       "count": 2
     },
     {
@@ -3676,12 +3716,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "kp Noun POS should include DULAT gender marker for kp: n. f.",
+      "problem_type": "knth Noun POS should include DULAT gender marker for knt: n. f.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "krm Noun POS should include DULAT gender marker for kr: n. m.",
+      "problem_type": "kp Noun POS should include DULAT gender marker for kp: n. f.",
       "count": 2
     },
     {
@@ -3696,12 +3736,27 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ksi Noun POS should include DULAT gender marker for ks/śủ: n. f.",
+      "problem_type": "krpnh Noun POS should include DULAT gender marker for krpn: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ksh Noun POS should include DULAT gender marker for ks (I): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ksi Noun POS should include DULAT gender marker for ks: n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
       "problem_type": "kslh Noun POS should include DULAT gender marker for ksl: n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ksm Noun POS should include DULAT gender marker for ks: n. m.",
       "count": 2
     },
     {
@@ -3712,6 +3767,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ktp Noun POS should include DULAT gender marker for ktp (I): n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "kty Noun POS should include DULAT gender marker for kt (II): n. f.",
       "count": 2
     },
     {
@@ -3736,12 +3796,37 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "lbky Noun POS should include DULAT gender marker for lb: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "lim Noun POS should include DULAT gender marker for lỉm (I): n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
       "problem_type": "lla Noun POS should include DULAT gender marker for llủ: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "llay Noun POS should include DULAT gender marker for llủ: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lmdh Adjective POS should include DULAT gender marker for lmd: adj. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lmdh Noun POS should include DULAT gender marker for lmd: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lmdh Replace '/' with 'or' in POS label: 'adj./n.' -> 'adj. or n.'",
       "count": 2
     },
     {
@@ -3756,22 +3841,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "md Adjective POS should include DULAT gender marker for lmd: adj. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "md Noun POS should include DULAT gender marker for md (II): n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
       "problem_type": "mddt Noun POS should include DULAT gender marker for mddt (II): n. f.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mddt Noun POS should include DULAT gender marker for ysmsmt: n. f.",
       "count": 2
     },
     {
@@ -3836,6 +3911,16 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "mprhm Noun POS should include DULAT gender marker for mhr (II): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mrbdh Noun POS should include DULAT gender marker for mrbd (I): n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mri Adjective POS should include DULAT gender marker for mrủ (I): adj. m.",
       "count": 2
     },
@@ -3876,7 +3961,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mrzʿy Adjective POS should include DULAT gender marker for mrzʕy: adj. m.",
+      "problem_type": "mrzˤy Adjective POS should include DULAT gender marker for mrzʕy: adj. m.",
       "count": 2
     },
     {
@@ -3911,11 +3996,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mtk Noun POS should include DULAT gender marker for mtk: n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "mtnt Noun POS should include DULAT gender marker for mtnt: n. f.",
       "count": 2
     },
@@ -3936,17 +4016,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mʿlt Noun POS should include DULAT gender marker for mʕlt: n. f.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mʿrb Noun POS should include DULAT gender marker for mʕrb (I): n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mʿrb Noun POS should include DULAT gender marker for mʕrb (II): n. m.",
+      "problem_type": "mˤlt Noun POS should include DULAT gender marker for mʕlt: n. f.",
       "count": 2
     },
     {
@@ -3957,6 +4027,11 @@
     {
       "severity": "WARNING",
       "problem_type": "mḫmšt Noun POS should include DULAT gender marker for mḫmšt: n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mḫrh Noun POS should include DULAT gender marker for mḫr (II): n. m.",
       "count": 2
     },
     {
@@ -3986,17 +4061,17 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mṯpẓ Noun POS should include DULAT gender marker for mṯpṭ/ẓ: n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "nat Noun POS should include DULAT gender marker for nảt: n. f.",
       "count": 2
     },
     {
       "severity": "WARNING",
       "problem_type": "ndr Noun POS should include DULAT gender marker for ndr: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ndrm Noun POS should include DULAT gender marker for ndr: n. m.",
       "count": 2
     },
     {
@@ -4017,11 +4092,6 @@
     {
       "severity": "WARNING",
       "problem_type": "nkr Adjective POS should include DULAT gender marker for nkr: adj. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "npk Noun POS should include DULAT gender marker for nb/pk (I): n. m.",
       "count": 2
     },
     {
@@ -4111,12 +4181,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "prʿ Adjective POS should include DULAT gender marker for prʕ (II): adj. m.",
+      "problem_type": "prˤ Adjective POS should include DULAT gender marker for prʕ (II): adj. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "prʿ Noun POS should include DULAT gender marker for prʕ (I): n. m.",
+      "problem_type": "prˤ Noun POS should include DULAT gender marker for prʕ (I): n. m.",
       "count": 2
     },
     {
@@ -4131,7 +4201,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "pʿnk Noun POS should include DULAT gender marker for pʕn: n. f.",
+      "problem_type": "pˤnk Noun POS should include DULAT gender marker for pʕn: n. f.",
       "count": 2
     },
     {
@@ -4156,7 +4226,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "qbʿt Noun POS should include DULAT gender marker for qbʕt: n. f.",
+      "problem_type": "qbˤt Noun POS should include DULAT gender marker for qbʕt: n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "qdšh Adjective POS should include DULAT gender marker for qdš (I): adj. m.",
       "count": 2
     },
     {
@@ -4186,12 +4261,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "qʿl Noun POS should include DULAT gender marker for qʕl (I): n. m.",
+      "problem_type": "qˤl Noun POS should include DULAT gender marker for qʕl (I): n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "qʿl Noun POS should include DULAT gender marker for qʕl (II): n. m.",
+      "problem_type": "qˤl Noun POS should include DULAT gender marker for qʕl (II): n. m.",
       "count": 2
     },
     {
@@ -4206,12 +4281,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "qṣʿth Noun POS should include DULAT gender marker for qṣʕt: n. f.",
+      "problem_type": "qṣˤth Noun POS should include DULAT gender marker for qṣʕt: n. f.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "qṣʿtk Noun POS should include DULAT gender marker for qṣʕt: n. f.",
+      "problem_type": "qṣˤtk Noun POS should include DULAT gender marker for qṣʕt: n. f.",
       "count": 2
     },
     {
@@ -4251,12 +4326,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "rˤtm Noun POS should include DULAT gender marker for rʕt: n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "rḥb Adjective POS should include DULAT gender marker for rḥb (I): adj. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
+      "problem_type": "rṯy Noun POS should include DULAT gender marker for rṯ: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "s Noun POS should include DULAT gender marker for rks: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "sh Noun POS should include DULAT gender marker for rks: n. m.",
       "count": 2
     },
     {
@@ -4271,7 +4361,17 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "tbk Noun POS should include DULAT gender marker for tbk: n. m.",
+      "problem_type": "tmtm Adjective POS should include DULAT gender marker for tm: adj. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "tnn Noun POS should include DULAT gender marker for ảḫt (I): n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "tnqth Noun POS should include DULAT gender marker for tnqt (II): n. f.",
       "count": 2
     },
     {
@@ -4296,17 +4396,27 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "tʿrth Noun POS should include DULAT gender marker for tʕrt: n. f.",
+      "problem_type": "tˤrth Noun POS should include DULAT gender marker for tʕrt: n. f.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "udmʿt Noun POS should include DULAT gender marker for dmʕt: n. f.",
+      "problem_type": "tḥmm Noun POS should include DULAT gender marker for tḥm: n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "udmʿth Noun POS should include DULAT gender marker for dmʕt: n. f.",
+      "problem_type": "udmˤt Noun POS should include DULAT gender marker for dmʕt: n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "udmˤth Noun POS should include DULAT gender marker for dmʕt: n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ulm Noun POS should include DULAT gender marker for ủl: n. m.",
       "count": 2
     },
     {
@@ -4336,7 +4446,17 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "uṣbʿth Noun POS should include DULAT gender marker for ủṣbʕ: n. f.",
+      "problem_type": "uṣbˤth Noun POS should include DULAT gender marker for ủṣbʕ: n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "uṭm Noun POS should include DULAT gender marker for ủṭ: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "uṯḫt Noun POS should include DULAT gender marker for ủṯḫt: n. f.",
       "count": 2
     },
     {
@@ -4371,7 +4491,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "yrdt Noun POS should include DULAT gender marker for yrdt: n. f.",
+      "problem_type": "yrḫh Noun POS should include DULAT gender marker for yrḫ: n. m.",
       "count": 2
     },
     {
@@ -4381,17 +4501,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ysmsm Noun POS should include DULAT gender marker for ysmsmt: n. f.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "yġlm Noun POS should include DULAT gender marker for yġl: n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "yʿlm Noun POS should include DULAT gender marker for yʕl (I): n. m.",
+      "problem_type": "yˤlm Noun POS should include DULAT gender marker for yʕl (I): n. m.",
       "count": 2
     },
     {
@@ -4406,12 +4521,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ġrm Noun POS should include DULAT gender marker for ġr (IV): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ġrm Noun POS should include DULAT gender marker for ġrm: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ġz Noun POS should include DULAT gender marker for ġz: n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
       "problem_type": "ġzm Noun POS should include DULAT gender marker for ġz: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šdy Noun POS should include DULAT gender marker for šd (I): n. m.",
       "count": 2
     },
     {
@@ -4441,6 +4571,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "šmny Noun POS should include DULAT gender marker for šmn (I): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "šmtr Noun POS should include DULAT gender marker for šmtr (I): n. m.",
       "count": 2
     },
@@ -4452,11 +4587,6 @@
     {
       "severity": "WARNING",
       "problem_type": "šnth Noun POS should include DULAT gender marker for šn: n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "šnth Noun POS should include DULAT gender marker for šnt (II): n. f.",
       "count": 2
     },
     {
@@ -4501,17 +4631,17 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "šʿr Noun POS should include DULAT gender marker for šʕr: n. m.",
+      "problem_type": "šˤr Noun POS should include DULAT gender marker for šʕr: n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "šʿrm Noun POS should include DULAT gender marker for šʕrm: n. m.",
+      "problem_type": "šˤrm Noun POS should include DULAT gender marker for šʕrm: n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "šʿrt Noun POS should include DULAT gender marker for šʕrt (I): n. f.",
+      "problem_type": "šˤrt Noun POS should include DULAT gender marker for šʕrt (I): n. f.",
       "count": 2
     },
     {
@@ -4521,107 +4651,117 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿbdh Noun POS should include DULAT gender marker for ʕbd (I): n. m.",
+      "problem_type": "ˤbdh Noun POS should include DULAT gender marker for ʕbd (I): n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿbrm Noun POS should include DULAT gender marker for ʕbr (I): n. m.",
+      "problem_type": "ˤbrm Noun POS should include DULAT gender marker for ʕbr (I): n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿdh Noun POS should include DULAT gender marker for ʕd (III): n. m.",
+      "problem_type": "ˤdh Noun POS should include DULAT gender marker for ʕd (III): n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿdt Noun POS should include DULAT gender marker for ʕdt (I): n. f.",
+      "problem_type": "ˤdt Noun POS should include DULAT gender marker for ʕdt (I): n. f.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿdt Noun POS should include DULAT gender marker for ʕdt (II): n. f.",
+      "problem_type": "ˤdt Noun POS should include DULAT gender marker for ʕdt (II): n. f.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿlt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
+      "problem_type": "ˤglm Noun POS should include DULAT gender marker for ʕgl (I): n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿmq Adjective POS should include DULAT gender marker for ʕmq (II): adj. m.",
+      "problem_type": "ˤlm Noun POS should include DULAT gender marker for ʕlm (I): n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿmq Noun POS should include DULAT gender marker for ʕmq (I): n. m.",
+      "problem_type": "ˤlt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿnm Noun POS should include DULAT gender marker for ʕn (I): n. f.",
+      "problem_type": "ˤmq Adjective POS should include DULAT gender marker for ʕmq (II): adj. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿpt Noun POS should include DULAT gender marker for ʕp (I): n. m.",
+      "problem_type": "ˤmq Noun POS should include DULAT gender marker for ʕmq (I): n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿpʿph Noun POS should include DULAT gender marker for ʕpʕp: n. m.",
+      "problem_type": "ˤnm Noun POS should include DULAT gender marker for ʕn (I): n. f.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿq Noun POS should include DULAT gender marker for ʕq: n. m.",
+      "problem_type": "ˤpt Noun POS should include DULAT gender marker for ʕp (I): n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿqrb Noun POS should include DULAT gender marker for ʕqrb: n. f.",
+      "problem_type": "ˤpˤph Noun POS should include DULAT gender marker for ʕpʕp: n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿrgzm Noun POS should include DULAT gender marker for ʕrgz (I): n. m.",
+      "problem_type": "ˤq Noun POS should include DULAT gender marker for ʕq: n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿrhm Noun POS should include DULAT gender marker for ʕr (I): n. f.",
+      "problem_type": "ˤqrb Noun POS should include DULAT gender marker for ʕqrb: n. f.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿrq Noun POS should include DULAT gender marker for ʕrq: n. m.",
+      "problem_type": "ˤrgzm Noun POS should include DULAT gender marker for ʕrgz (I): n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿršm Noun POS should include DULAT gender marker for ʕrš: n. f.",
+      "problem_type": "ˤrhm Noun POS should include DULAT gender marker for ʕr (I): n. f.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿtq Adjective POS should include DULAT gender marker for ʕtq: adj. m.",
+      "problem_type": "ˤrq Noun POS should include DULAT gender marker for ʕrq: n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿwr Noun POS should include DULAT gender marker for ʕwr: n. m.",
+      "problem_type": "ˤršm Noun POS should include DULAT gender marker for ʕrš: n. f.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿwrt Noun POS should include DULAT gender marker for ʕwr: n. m.",
+      "problem_type": "ˤtq Adjective POS should include DULAT gender marker for ʕtq: adj. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿṯrb Noun POS should include DULAT gender marker for ʕṯrb: n. m.",
+      "problem_type": "ˤwr Noun POS should include DULAT gender marker for ʕwr: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤwrt Noun POS should include DULAT gender marker for ʕwr: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤṯrb Noun POS should include DULAT gender marker for ʕṯrb: n. m.",
       "count": 2
     },
     {
@@ -4651,6 +4791,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ḥbšy Noun POS should include DULAT gender marker for ḥbš (I): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḥdr Noun POS should include DULAT gender marker for ḥdr: n. m.",
       "count": 2
     },
@@ -4672,6 +4817,16 @@
     {
       "severity": "WARNING",
       "problem_type": "ḥmdrt Noun POS should include DULAT gender marker for ḥmdrt: n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥmytkm Noun POS should include DULAT gender marker for ḥmt (I): n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥmḥmth Noun POS should include DULAT gender marker for ḥmḥmt: n. f.",
       "count": 2
     },
     {
@@ -4726,6 +4881,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ḥṭbh Noun POS should include DULAT gender marker for ḥṭb (I): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḥṯrt Adjective POS should include DULAT gender marker for ḥṯrt: adj. f.",
       "count": 2
     },
@@ -4751,6 +4911,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ḫmnd Noun POS should include DULAT gender marker for ḫmn (I): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḫmr Noun POS should include DULAT gender marker for ḫmr: n. m.",
       "count": 2
     },
@@ -4767,6 +4932,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ḫḏḏ Noun POS should include DULAT gender marker for ḫḏ(ḏ): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṣbuh Noun POS should include DULAT gender marker for ṣbủ (I): n. m.",
       "count": 2
     },
     {
@@ -4806,7 +4976,17 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ṣʿṣ Noun POS should include DULAT gender marker for ṣʕṣ: n. m.",
+      "problem_type": "ṣˤṣ Noun POS should include DULAT gender marker for ṣʕṣ: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṭlm Noun POS should include DULAT gender marker for ṭl: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṯdm Noun POS should include DULAT gender marker for ṯd: n. m.",
       "count": 2
     },
     {
@@ -4836,6 +5016,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ṯqlm Noun POS should include DULAT gender marker for ṯql: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ṯrh Noun POS should include DULAT gender marker for ṯr (I): n. m.",
       "count": 2
     },
@@ -4861,7 +5046,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ṯʿm Noun POS should include DULAT gender marker for ṯʕ (II): n. m.",
+      "problem_type": "ṯˤm Noun POS should include DULAT gender marker for ṯʕ (II): n. m.",
       "count": 2
     },
     {
@@ -4906,6 +5091,46 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "ašld For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "aṯbn For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ybln For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yblnh For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ydˤtk For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ynpˤ For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yrdm For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yšṣi For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "Š stem marker present but DULAT lacks Š/Št/Špass",
       "count": 1
     },
@@ -4921,7 +5146,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "admd Adjective POS should include DULAT gender marker for ảdm (II): adj. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "admd Noun POS should include DULAT gender marker for ảdm (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "adn Noun POS should include DULAT gender marker for ảdn (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "adnd Noun POS should include DULAT gender marker for ảdn (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "adr Noun POS should include DULAT gender marker for ảdr (II): n. m.",
       "count": 1
     },
     {
@@ -4937,6 +5182,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ahlhm Noun POS should include DULAT gender marker for ảhl: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "aklth Noun POS should include DULAT gender marker for ảklt (II): n. f.",
       "count": 1
     },
     {
@@ -4986,7 +5236,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "apʿ Noun POS should include DULAT gender marker for ảpʕ: n. m.",
+      "problem_type": "apˤ Noun POS should include DULAT gender marker for ảpʕ: n. m.",
       "count": 1
     },
     {
@@ -5032,6 +5282,11 @@
     {
       "severity": "WARNING",
       "problem_type": "asrm Noun POS should include DULAT gender marker for ảsr: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "atk Noun POS should include DULAT gender marker for ṯảt: n. f.",
       "count": 1
     },
     {
@@ -5131,7 +5386,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "bqr Noun POS should include DULAT gender marker for m/bqr: n. m.",
+      "problem_type": "brd Noun POS should include DULAT gender marker for br (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "brd Noun POS should include DULAT gender marker for br(r): n. m.",
       "count": 1
     },
     {
@@ -5141,7 +5401,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "brltk Noun POS should include DULAT gender marker for brlt: n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "brqm Noun POS should include DULAT gender marker for brq (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "brtk Noun POS should include DULAT gender marker for brt: n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bth Noun POS should include DULAT gender marker for bt (I): n. f.",
       "count": 1
     },
     {
@@ -5171,27 +5446,37 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "bʿlh Noun POS should include DULAT gender marker for bʕl (II): n. m.",
+      "problem_type": "bˤdhm Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.'",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "bʿlhn Noun POS should include DULAT gender marker for bʕl (II): n. m.",
+      "problem_type": "bˤdn Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.'",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "bʿlkm Noun POS should include DULAT gender marker for bʕl (II): n. m.",
+      "problem_type": "bˤlh Noun POS should include DULAT gender marker for bʕl (II): n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "bʿln Noun POS should include DULAT gender marker for bʕl (II): n. m.",
+      "problem_type": "bˤlhn Noun POS should include DULAT gender marker for bʕl (II): n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "bʿlny Noun POS should include DULAT gender marker for bʕl (II): n. m.",
+      "problem_type": "bˤlkm Noun POS should include DULAT gender marker for bʕl (II): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bˤln Noun POS should include DULAT gender marker for bʕl (II): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bˤlny Noun POS should include DULAT gender marker for bʕl (II): n. m.",
       "count": 1
     },
     {
@@ -5251,6 +5536,21 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "dlthm Adjective POS should include DULAT gender marker for dl: adj. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "dlthm Adjective POS should include DULAT gender marker for dlt (II): adj. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "dlthm Noun POS should include DULAT gender marker for dlt (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "dlḥt Adjective POS should include DULAT gender marker for dlḥt: adj. f.",
       "count": 1
     },
@@ -5266,7 +5566,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "dmʿt Noun POS should include DULAT gender marker for dmʕt: n. f.",
+      "problem_type": "dmˤt Noun POS should include DULAT gender marker for dmʕt: n. f.",
       "count": 1
     },
     {
@@ -5296,6 +5596,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "dqth Noun POS should include DULAT gender marker for dqt (II): n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "drk Noun POS should include DULAT gender marker for dr: n. m.",
       "count": 1
     },
@@ -5311,7 +5616,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "dʿtm Noun POS should include DULAT gender marker for dʕt (I): n. f.",
+      "problem_type": "dˤtm Noun POS should include DULAT gender marker for dʕt (I): n. f.",
       "count": 1
     },
     {
@@ -5381,6 +5686,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "gk Noun POS should include DULAT gender marker for ṯỉgt: n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "glṯ Noun POS should include DULAT gender marker for glṯ: n. m.",
       "count": 1
     },
@@ -5396,7 +5706,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "gmlm Noun POS should include DULAT gender marker for gml (II): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "gnh Noun POS should include DULAT gender marker for gn (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "gpny Noun POS should include DULAT gender marker for gpn (I): n. m.",
       "count": 1
     },
     {
@@ -5422,11 +5742,6 @@
     {
       "severity": "WARNING",
       "problem_type": "hmlt Noun POS should include DULAT gender marker for hmlt: n. f.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "hrt Noun POS should include DULAT gender marker for hr (II): n. m.",
       "count": 1
     },
     {
@@ -5467,6 +5782,11 @@
     {
       "severity": "WARNING",
       "problem_type": "imt Noun POS should include DULAT gender marker for ỉmt: n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ind Noun POS should include DULAT gender marker for ỉn: n. m.",
       "count": 1
     },
     {
@@ -5631,7 +5951,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ksat Noun POS should include DULAT gender marker for ks/śủ: n. f.",
+      "problem_type": "ksat Noun POS should include DULAT gender marker for ks: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ksh Noun POS should include DULAT gender marker for ks: n. m.",
       "count": 1
     },
     {
@@ -5826,12 +6151,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mdrʿh Noun POS should include DULAT gender marker for mdrʕ: n. m.",
+      "problem_type": "mdrˤh Noun POS should include DULAT gender marker for mdrʕ: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "mdʿ Noun POS should include DULAT gender marker for mdʕ (II): n. m.",
+      "problem_type": "mdˤ Noun POS should include DULAT gender marker for mdʕ (II): n. m.",
       "count": 1
     },
     {
@@ -5901,12 +6226,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mmh Noun POS should include DULAT gender marker for mh/y: n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mmʿm Noun POS should include DULAT gender marker for mmʕ: n. m.",
+      "problem_type": "mmˤm Noun POS should include DULAT gender marker for mmʕ: n. m.",
       "count": 1
     },
     {
@@ -5926,12 +6246,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mqr Noun POS should include DULAT gender marker for m/bqr: n. m.",
+      "problem_type": "mprhm Noun POS should include DULAT gender marker for mpr: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "mrbʿt Noun POS should include DULAT gender marker for mrbʕt: n. f.",
+      "problem_type": "mrbˤt Noun POS should include DULAT gender marker for mrbʕt: n. f.",
       "count": 1
     },
     {
@@ -5996,6 +6316,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "mtm Noun POS should include DULAT gender marker for mt (III): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mtrn Noun POS should include DULAT gender marker for mtrn: n. m.",
       "count": 1
     },
@@ -6011,7 +6336,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mšbʿthn Noun POS should include DULAT gender marker for mšbʕt: n. f.",
+      "problem_type": "mšbˤthn Noun POS should include DULAT gender marker for mšbʕt: n. f.",
       "count": 1
     },
     {
@@ -6041,22 +6366,32 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mʿbd Noun POS should include DULAT gender marker for mʕbd: n. m.",
+      "problem_type": "mˤbd Noun POS should include DULAT gender marker for mʕbd: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "mʿmʿ Noun POS should include DULAT gender marker for mʕmʕ: n. m.",
+      "problem_type": "mˤmˤ Noun POS should include DULAT gender marker for mʕmʕ: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "mʿqbk Noun POS should include DULAT gender marker for mʕqb (I): n. m.",
+      "problem_type": "mˤqbk Noun POS should include DULAT gender marker for mʕqb (I): n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "mʿt Noun POS should include DULAT gender marker for mʕt: n. f.",
+      "problem_type": "mˤrb Noun POS should include DULAT gender marker for mʕrb (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mˤrb Noun POS should include DULAT gender marker for mʕrb (II): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mˤt Noun POS should include DULAT gender marker for mʕt: n. f.",
       "count": 1
     },
     {
@@ -6077,6 +6412,16 @@
     {
       "severity": "WARNING",
       "problem_type": "mḫnm Noun POS should include DULAT gender marker for mḫn: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mḫṣk Noun POS should include DULAT gender marker for mḫṣ (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mḫṣk Noun POS should include DULAT gender marker for mḫṣ (II): n. m.",
       "count": 1
     },
     {
@@ -6171,11 +6516,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "nbk Noun POS should include DULAT gender marker for nb/pk (I): n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "nbluh Noun POS should include DULAT gender marker for nblủ: n. m.",
       "count": 1
     },
@@ -6191,7 +6531,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "nh Noun POS should include DULAT gender marker for ʕn (I): n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "nk Noun POS should include DULAT gender marker for bld: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "nk Noun POS should include DULAT gender marker for ʕn (I): n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "nkyt Noun POS should include DULAT gender marker for nkyt: n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "nm Noun POS should include DULAT gender marker for ʕn (I): n. f.",
       "count": 1
     },
     {
@@ -6236,6 +6596,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "npṣk Noun POS should include DULAT gender marker for npṣ: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "npṣm Noun POS should include DULAT gender marker for npṣ: n. m.",
       "count": 1
     },
@@ -6276,17 +6641,17 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "nʿl Noun POS should include DULAT gender marker for nʕl: n. m.",
+      "problem_type": "nˤl Noun POS should include DULAT gender marker for nʕl: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "nʿmy Noun POS should include DULAT gender marker for nʕmy (I): n. f.",
+      "problem_type": "nˤlm Noun POS should include DULAT gender marker for nʕl: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "nʿmy Noun POS should include DULAT gender marker for ysmsmt: n. f.",
+      "problem_type": "nˤmy Noun POS should include DULAT gender marker for nʕmy (I): n. f.",
       "count": 1
     },
     {
@@ -6346,7 +6711,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "prʿt Noun POS should include DULAT gender marker for prʕt: n. f.",
+      "problem_type": "prˤt Noun POS should include DULAT gender marker for prʕt: n. f.",
       "count": 1
     },
     {
@@ -6361,12 +6726,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "pšʿ Noun POS should include DULAT gender marker for pšʕ: n. m.",
+      "problem_type": "pšˤ Noun POS should include DULAT gender marker for pšʕ: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "pʿnt Noun POS should include DULAT gender marker for pʕn: n. f.",
+      "problem_type": "pˤnt Noun POS should include DULAT gender marker for pʕn: n. f.",
       "count": 1
     },
     {
@@ -6396,12 +6761,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "qbˤthm Noun POS should include DULAT gender marker for qbʕt: n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "qbṣt Noun POS should include DULAT gender marker for qbṣt: n. f.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "qdm Noun POS should include DULAT gender marker for qdm (I): n. m.",
+      "problem_type": "qd Noun POS should include DULAT gender marker for qn: n. m.",
       "count": 1
     },
     {
@@ -6416,22 +6786,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "qdšh Noun POS should include DULAT gender marker for qdš (II): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "qdšm Adjective POS should include DULAT gender marker for qdš (I): adj. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "qlt Noun POS should include DULAT gender marker for qlt (I): n. f.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "qlt Noun POS should include DULAT gender marker for qlt (II): n. f.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "qlʿ Noun POS should include DULAT gender marker for qlʕ: n. m.",
+      "problem_type": "qlˤ Noun POS should include DULAT gender marker for qlʕ: n. m.",
       "count": 1
     },
     {
@@ -6541,6 +6906,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "qṭrk Noun POS should include DULAT gender marker for qṭr: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "qẓrt Noun POS should include DULAT gender marker for qẓrt: n. f.",
       "count": 1
     },
@@ -6552,6 +6922,11 @@
     {
       "severity": "WARNING",
       "problem_type": "rhm Noun POS should include DULAT gender marker for tr (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "rhn Noun POS should include DULAT gender marker for rks: n. m.",
       "count": 1
     },
     {
@@ -6576,27 +6951,37 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "rqd Adjective POS should include DULAT gender marker for rq (II): adj. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "rqth Noun POS should include DULAT gender marker for rqt: n. f.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "rʿh Noun POS should include DULAT gender marker for rʕ: n. m.",
+      "problem_type": "ry Noun POS should include DULAT gender marker for rks: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "rʿt Noun POS should include DULAT gender marker for rʕt: n. f.",
+      "problem_type": "rˤh Noun POS should include DULAT gender marker for rʕ: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "rʿy Noun POS should include DULAT gender marker for rʕ: n. m.",
+      "problem_type": "rˤt Noun POS should include DULAT gender marker for rʕt: n. f.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "rʿy Noun POS should include DULAT gender marker for rʕy (I): n. m.",
+      "problem_type": "rˤy Noun POS should include DULAT gender marker for rʕ: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "rˤy Noun POS should include DULAT gender marker for rʕy (I): n. m.",
       "count": 1
     },
     {
@@ -6656,11 +7041,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "spsg Noun POS should include DULAT gender marker for ś:sp/bś:sg: n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ssnm Noun POS should include DULAT gender marker for ssn (I): n. m.",
       "count": 1
     },
@@ -6711,7 +7091,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "tm Noun POS should include DULAT gender marker for mtnt: n. f.",
+      "problem_type": "tmntk Noun POS should include DULAT gender marker for tmn (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "tmntk Noun POS should include DULAT gender marker for tmnt: n. f.",
       "count": 1
     },
     {
@@ -6751,22 +7136,27 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "tšlm Noun POS should include DULAT gender marker for tšlm: n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "tšyt Noun POS should include DULAT gender marker for tšyt: n. f.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "tʿlgt Noun POS should include DULAT gender marker for tʕlgt: n. f.",
+      "problem_type": "tˤlgt Noun POS should include DULAT gender marker for tʕlgt: n. f.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "tʿrty Noun POS should include DULAT gender marker for tʕrt: n. f.",
+      "problem_type": "tˤrty Noun POS should include DULAT gender marker for tʕrt: n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "tḥmd Noun POS should include DULAT gender marker for tḥm: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ulkn Noun POS should include DULAT gender marker for ủl: n. m.",
       "count": 1
     },
     {
@@ -6777,6 +7167,11 @@
     {
       "severity": "WARNING",
       "problem_type": "umhthm Noun POS should include DULAT gender marker for ủm: n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "umkm Noun POS should include DULAT gender marker for ủm: n. f.",
       "count": 1
     },
     {
@@ -6801,7 +7196,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "uzʿrt Adjective POS should include DULAT gender marker for ủzʕrt: adj. f.",
+      "problem_type": "uzˤrt Adjective POS should include DULAT gender marker for ủzʕrt: adj. f.",
       "count": 1
     },
     {
@@ -6821,7 +7216,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "uṣbʿt Noun POS should include DULAT gender marker for ủṣbʕ: n. f.",
+      "problem_type": "uṣbˤt Noun POS should include DULAT gender marker for ủṣbʕ: n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "uṣbˤtk Noun POS should include DULAT gender marker for ủṣbʕ: n. f.",
       "count": 1
     },
     {
@@ -6841,22 +7241,17 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ydt Noun POS should include DULAT gender marker for ydt: n. f.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ydt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ydty Noun POS should include DULAT gender marker for yd (I): n. f.",
       "count": 1
     },
     {
       "severity": "WARNING",
       "problem_type": "ygb Noun POS should include DULAT gender marker for ygb: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "yld Noun POS should include DULAT gender marker for yld: n. m.",
       "count": 1
     },
     {
@@ -6886,6 +7281,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "yry Noun POS should include DULAT gender marker for yr: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "yrṯ Noun POS should include DULAT gender marker for yrṯ (I): n. m.",
       "count": 1
     },
@@ -6897,6 +7297,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ysmm Noun POS should include DULAT gender marker for ysm (II): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ysmsm Noun POS should include DULAT gender marker for ysmsmt: n. f.",
       "count": 1
     },
     {
@@ -6957,6 +7362,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ġlh Noun POS should include DULAT gender marker for ġl (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ġlmk Noun POS should include DULAT gender marker for ġlm: n. m.",
       "count": 1
     },
     {
@@ -7026,6 +7436,16 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "šdd Noun POS should include DULAT gender marker for šd (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šdd Noun POS should include DULAT gender marker for šd (II): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "šdh Noun POS should include DULAT gender marker for šd (I): n. m.",
       "count": 1
     },
@@ -7037,6 +7457,11 @@
     {
       "severity": "WARNING",
       "problem_type": "šib Noun POS should include DULAT gender marker for šả:ỉb: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šilhm Noun POS should include DULAT gender marker for šỉl (I): n. m.",
       "count": 1
     },
     {
@@ -7056,6 +7481,16 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "šk Noun POS should include DULAT gender marker for š: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šk Noun POS should include DULAT gender marker for šrt (II): n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "škllt Noun POS should include DULAT gender marker for škllt: n. f.",
       "count": 1
     },
@@ -7071,7 +7506,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "šmny Noun POS should include DULAT gender marker for š: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "šmḫt Noun POS should include DULAT gender marker for šmḫt: n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šnt Noun POS should include DULAT gender marker for šnt (II): n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šnt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
       "count": 1
     },
     {
@@ -7086,7 +7536,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "šnʿt Noun POS should include DULAT gender marker for šnʕt: n. f.",
+      "problem_type": "šnˤt Noun POS should include DULAT gender marker for šnʕt: n. f.",
       "count": 1
     },
     {
@@ -7111,7 +7561,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "šrʿ Noun POS should include DULAT gender marker for šrʕ: n. m.",
+      "problem_type": "šrˤ Noun POS should include DULAT gender marker for šrʕ: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "št Noun POS should include DULAT gender marker for št (III): n. m.",
       "count": 1
     },
     {
@@ -7126,157 +7581,142 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿbdn Noun POS should include DULAT gender marker for ʕbd (I): n. m.",
+      "problem_type": "ˤbdn Noun POS should include DULAT gender marker for ʕbd (I): n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿbk Noun POS should include DULAT gender marker for ʕbk: n. m.",
+      "problem_type": "ˤbk Noun POS should include DULAT gender marker for ʕbk: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿbṣk Noun POS should include DULAT gender marker for ʕbṣ (I): n. m.",
+      "problem_type": "ˤbṣk Noun POS should include DULAT gender marker for ʕbṣ (I): n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿdbt Noun POS should include DULAT gender marker for ʕdbt: n. f.",
+      "problem_type": "ˤdnhm Noun POS should include DULAT gender marker for ʕdn (II): n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿdnhm Noun POS should include DULAT gender marker for ʕdn (II): n. m.",
+      "problem_type": "ˤdtm Noun POS should include DULAT gender marker for ʕdt (I): n. f.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿdtm Noun POS should include DULAT gender marker for ʕdt (I): n. f.",
+      "problem_type": "ˤgl Noun POS should include DULAT gender marker for ʕgl (I): n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿgl Noun POS should include DULAT gender marker for ʕgl (I): n. m.",
+      "problem_type": "ˤglh Noun POS should include DULAT gender marker for ʕgl (I): n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿglh Noun POS should include DULAT gender marker for ʕgl (I): n. m.",
+      "problem_type": "ˤmdm Noun POS should include DULAT gender marker for ʕmd: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿllmn Adjective POS should include DULAT gender marker for ʕllmy/n: adj. m.",
+      "problem_type": "ˤmk Noun POS should include DULAT gender marker for ʕm (II): n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿllmn Noun POS should include DULAT gender marker for ʕllmy/n: n. m.",
+      "problem_type": "ˤnkm Noun POS should include DULAT gender marker for ʕn (I): n. f.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿllmy Adjective POS should include DULAT gender marker for ʕllmy/n: adj. m.",
+      "problem_type": "ˤnn Noun POS should include DULAT gender marker for ʕn (I): n. f.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿllmy Noun POS should include DULAT gender marker for ʕllmy/n: n. m.",
+      "problem_type": "ˤnn Noun POS should include DULAT gender marker for ʕnn: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿmdm Noun POS should include DULAT gender marker for ʕmd: n. m.",
+      "problem_type": "ˤnq Noun POS should include DULAT gender marker for ʕnq: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿmk Noun POS should include DULAT gender marker for ʕm (II): n. m.",
+      "problem_type": "ˤntd Noun POS should include DULAT gender marker for ʕn (I): n. f.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿnkm Noun POS should include DULAT gender marker for ʕn (I): n. f.",
+      "problem_type": "ˤntd Noun POS should include DULAT gender marker for ʕn (II): n. f.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿnn Noun POS should include DULAT gender marker for ʕn (I): n. f.",
+      "problem_type": "ˤpˤpk Noun POS should include DULAT gender marker for ʕpʕp: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿnn Noun POS should include DULAT gender marker for ʕnn: n. m.",
+      "problem_type": "ˤqrbn Noun POS should include DULAT gender marker for ʕqrbn: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿnq Noun POS should include DULAT gender marker for ʕnq: n. m.",
+      "problem_type": "ˤrk Noun POS should include DULAT gender marker for ʕrk (I): n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿpʿpk Noun POS should include DULAT gender marker for ʕpʕp: n. m.",
+      "problem_type": "ˤrkm Noun POS should include DULAT gender marker for ʕrk (II): n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿqrbn Noun POS should include DULAT gender marker for ʕqrbn: n. m.",
+      "problem_type": "ˤrwt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿrk Noun POS should include DULAT gender marker for ʕrk (I): n. m.",
+      "problem_type": "ˤršh Noun POS should include DULAT gender marker for ʕrš: n. f.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿrkm Noun POS should include DULAT gender marker for ʕrk (II): n. m.",
+      "problem_type": "ˤrˤrm Noun POS should include DULAT gender marker for ʕrʕr: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿrwt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
+      "problem_type": "ˤzk Noun POS should include DULAT gender marker for ʕz (I): n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿršh Noun POS should include DULAT gender marker for ʕrš: n. f.",
+      "problem_type": "ˤzm Noun POS should include DULAT gender marker for ʕz (II): n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿrʿrm Noun POS should include DULAT gender marker for ʕrʕr: n. m.",
+      "problem_type": "ˤḏrt Noun POS should include DULAT gender marker for ʕḏrt: n. f.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿzk Noun POS should include DULAT gender marker for ʕz (I): n. m.",
+      "problem_type": "ˤṣk Noun POS should include DULAT gender marker for ʕṣ: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿzm Noun POS should include DULAT gender marker for ʕz (II): n. m.",
+      "problem_type": "ˤṭ Noun POS should include DULAT gender marker for ʕṭ: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "ʿḏrt Noun POS should include DULAT gender marker for ʕḏrt: n. f.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ʿṣk Noun POS should include DULAT gender marker for ʕṣ: n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ʿṭ Noun POS should include DULAT gender marker for ʕṭ: n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ʿṭrṭrt Noun POS should include DULAT gender marker for ʕṭrṭrt: n. f.",
+      "problem_type": "ˤṭrṭrt Noun POS should include DULAT gender marker for ʕṭrṭrt: n. f.",
       "count": 1
     },
     {
@@ -7306,6 +7746,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ḏrthm Noun POS should include DULAT gender marker for ḏrt: n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḥbrh Noun POS should include DULAT gender marker for ḥbr (III): n. m.",
       "count": 1
     },
@@ -7326,7 +7771,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ḥdṯh Noun POS should include DULAT gender marker for ḥdṯ (II): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥdṯm Noun POS should include DULAT gender marker for ḥdṯ (II): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḥkm Adjective POS should include DULAT gender marker for ḥkm: adj. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥlm Noun POS should include DULAT gender marker for ḥl (I): n. m.",
       "count": 1
     },
     {
@@ -7366,6 +7826,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ḥnn Noun POS should include DULAT gender marker for ḥn: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḥnth Noun POS should include DULAT gender marker for ḥnt: n. f.",
       "count": 1
     },
@@ -7392,11 +7857,6 @@
     {
       "severity": "WARNING",
       "problem_type": "ḥršm Noun POS should include DULAT gender marker for ḥrš (I): n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ḥršm Noun POS should include DULAT gender marker for ḥrš (II): n. m.",
       "count": 1
     },
     {
@@ -7431,6 +7891,16 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ḥytk Noun POS should include DULAT gender marker for ḥyt (I): n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥṭbh Noun POS should include DULAT gender marker for ḥṭbt: n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḥṭbt Noun POS should include DULAT gender marker for ḥṭbt: n. f.",
       "count": 1
     },
@@ -7441,7 +7911,32 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ḥẓk Noun POS should include DULAT gender marker for ḥẓ: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥẓrk Noun POS should include DULAT gender marker for ḥẓr: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḫ Noun POS should include DULAT gender marker for ṭbḫ: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḫd Noun POS should include DULAT gender marker for ṭbḫ: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḫld Noun POS should include DULAT gender marker for ḫl: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḫlh Noun POS should include DULAT gender marker for ḫl: n. m.",
       "count": 1
     },
     {
@@ -7461,27 +7956,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ḫlq Adjective POS should include DULAT gender marker for ḫlq: adj. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ḫlq Noun POS should include DULAT gender marker for ḫlq: n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ḫlu Noun POS should include DULAT gender marker for ḫlủ: n. m.",
       "count": 1
     },
     {
       "severity": "WARNING",
       "problem_type": "ḫlṣ Noun POS should include DULAT gender marker for ḫlṣ: n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ḫmšt Noun POS should include DULAT gender marker for ḫmšt: n. f.",
       "count": 1
     },
     {
@@ -7546,7 +8026,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ḫrṣp Noun POS should include DULAT gender marker for ḫrṣ/ẓp: n. m.",
+      "problem_type": "ḫrṣp Noun POS should include DULAT gender marker for ḫrṣ: n. m.",
       "count": 1
     },
     {
@@ -7592,6 +8072,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ṣbr Noun POS should include DULAT gender marker for ṣbr: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṣbuh Noun POS should include DULAT gender marker for ṣbủ (II): n. m.",
       "count": 1
     },
     {
@@ -7657,11 +8142,6 @@
     {
       "severity": "WARNING",
       "problem_type": "ṣġrthn Adjective POS should include DULAT gender marker for ṣġrt (I): adj. f.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ṣḥq Noun POS should include DULAT gender marker for ṣḥq: n. m.",
       "count": 1
     },
     {
@@ -7821,7 +8301,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ṯʿh Noun POS should include DULAT gender marker for ṯʕ (II): n. m.",
+      "problem_type": "ṯˤh Noun POS should include DULAT gender marker for ṯʕ (II): n. m.",
       "count": 1
     },
     {

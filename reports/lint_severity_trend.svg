@@ -17,20 +17,25 @@
 <line x1="70" y1="50" x2="70" y2="450" stroke="#333" stroke-width="1.2"/>
 <line x1="70" y1="450" x2="70" y2="454" stroke="#666" stroke-width="1"/>
 <text x="70" y="468" font-size="10" font-family="Arial" fill="#333" text-anchor="middle">1</text>
+<line x1="455" y1="450" x2="455" y2="454" stroke="#666" stroke-width="1"/>
+<text x="455" y="468" font-size="10" font-family="Arial" fill="#333" text-anchor="middle">2</text>
 <line x1="840" y1="450" x2="840" y2="454" stroke="#666" stroke-width="1"/>
-<text x="840" y="468" font-size="10" font-family="Arial" fill="#333" text-anchor="middle">2</text>
-<polyline fill="none" stroke="#d62728" stroke-width="2.2" points="70,415 840,50"/>
+<text x="840" y="468" font-size="10" font-family="Arial" fill="#333" text-anchor="middle">3</text>
+<polyline fill="none" stroke="#d62728" stroke-width="2.2" points="70,415 455,50 840,109"/>
 <circle cx="70" cy="415" r="2.5" fill="#d62728"/>
-<circle cx="840" cy="50" r="2.5" fill="#d62728"/>
+<circle cx="455" cy="50" r="2.5" fill="#d62728"/>
+<circle cx="840" cy="109" r="2.5" fill="#d62728"/>
 <line x1="860" y1="74" x2="882" y2="74" stroke="#d62728" stroke-width="2.5"/>
 <text x="888" y="78" font-size="11" font-family="Arial" fill="#111">ERROR</text>
-<polyline fill="none" stroke="#ff7f0e" stroke-width="2.2" points="70,441 840,71"/>
+<polyline fill="none" stroke="#ff7f0e" stroke-width="2.2" points="70,441 455,71 840,94"/>
 <circle cx="70" cy="441" r="2.5" fill="#ff7f0e"/>
-<circle cx="840" cy="71" r="2.5" fill="#ff7f0e"/>
+<circle cx="455" cy="71" r="2.5" fill="#ff7f0e"/>
+<circle cx="840" cy="94" r="2.5" fill="#ff7f0e"/>
 <line x1="860" y1="94" x2="882" y2="94" stroke="#ff7f0e" stroke-width="2.5"/>
 <text x="888" y="98" font-size="11" font-family="Arial" fill="#111">WARNING</text>
-<polyline fill="none" stroke="#1f77b4" stroke-width="2.2" points="70,445 840,410"/>
+<polyline fill="none" stroke="#1f77b4" stroke-width="2.2" points="70,445 455,410 840,410"/>
 <circle cx="70" cy="445" r="2.5" fill="#1f77b4"/>
+<circle cx="455" cy="410" r="2.5" fill="#1f77b4"/>
 <circle cx="840" cy="410" r="2.5" fill="#1f77b4"/>
 <line x1="860" y1="114" x2="882" y2="114" stroke="#1f77b4" stroke-width="2.5"/>
 <text x="888" y="118" font-size="11" font-family="Arial" fill="#111">INFO</text>
