@@ -18,6 +18,9 @@ _SUFFIX_SEGMENTS = ("hm", "hn", "km", "kn", "ny", "nm", "nn", "h", "k", "n", "y"
 # POS patterns that commonly carry suffixes
 _SUFFIXABLE_POS_PREFIXES = {"n.", "adj.", "prep.", "adv.", "vb"}
 _LEMMA_STYLE_RE = re.compile(r"^[A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]+(?:\([IVX]+\))?$")
+_TOKEN_RE = re.compile(r"^(.*?)(?:\s*\(([IVX]+)\))?$")
+_LEMMA_LETTER_RE = re.compile(r"[^A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]")
+_EXPLICIT_SUFFIX_NY_RE = re.compile(r",\s*-[ny](?:\s|\(|$)", re.IGNORECASE)
 
 
 class SuffixCliticFixer(RefinementStep):
@@ -90,27 +93,45 @@ class SuffixCliticFixer(RefinementStep):
         suffix: str,
         surface: str,
     ) -> str:
+        normalized = self._normalize_existing_plus(
+            analysis_variant=analysis_variant,
+            dulat_token=dulat_token,
+            suffix=suffix,
+        )
+        if normalized != analysis_variant:
+            return normalized
+
         # Already has '+' — suffix already marked
-        if "+" in analysis_variant:
-            return analysis_variant
+        if "+" in normalized:
+            return normalized
 
         # Must have noun-like/adjectival POS for suffix injection
         first_pos = pos_variant.split(",")[0].strip() if pos_variant else ""
         if not any(first_pos.startswith(p) for p in _SUFFIXABLE_POS_PREFIXES):
-            return analysis_variant
+            return normalized
 
         # Require DULAT evidence that this token supports pronominal suffixes.
         if not self._is_suffix_dulat_token(dulat_token, surface):
-            return analysis_variant
+            return normalized
+
+        # Do not force + after enclitic marker.
+        if "~" in normalized:
+            return normalized
+
+        # If lemma already ends with the same letter and DULAT does not
+        # explicitly encode that suffixal reading for this variant, keep it as
+        # lexeme-final letter (e.g., mṯn, lšn, klny).
+        if self._should_keep_lexeme_terminal_letter(dulat_token=dulat_token, suffix=suffix):
+            return normalized
 
         if not self._is_confident_suffix_variant(
-            analysis_variant=analysis_variant,
+            analysis_variant=normalized,
             surface=surface,
             suffix=suffix,
         ):
-            return analysis_variant
+            return normalized
 
-        return self._inject_suffix(analysis_variant, suffix)
+        return self._inject_suffix(normalized, suffix)
 
     def _is_confident_suffix_variant(
         self,
@@ -167,6 +188,56 @@ class SuffixCliticFixer(RefinementStep):
         # suffixal form but the analysis is lemma-style (e.g., l(I), šmm(I)/),
         # append +suffix conservatively.
         return analysis_variant + "+" + suffix
+
+    def _normalize_existing_plus(
+        self,
+        analysis_variant: str,
+        dulat_token: str,
+        suffix: str,
+    ) -> str:
+        """Revert known bad '+suffix' encodings."""
+        v = analysis_variant
+
+        # Enclitic marker uses "~x", not "~+x".
+        if "~+" in v:
+            v = v.replace("~+", "~")
+
+        # For lexemes ending in n/y, avoid converting the final lexeme letter
+        # into a synthetic suffix split unless DULAT explicitly marks it.
+        if self._should_keep_lexeme_terminal_letter(dulat_token=dulat_token, suffix=suffix):
+            if suffix in {"n", "y"}:
+                v = v.replace(f"/+{suffix}", f"{suffix}/")
+
+        # bʕd + enclitic n should be represented as ~n.
+        if self._is_baad_enclitic_n(dulat_token=dulat_token) and "+n" in v:
+            v = v.replace("+n", "~n")
+            v = v.replace("~+n", "~n")
+
+        return v
+
+    def _should_keep_lexeme_terminal_letter(self, dulat_token: str, suffix: str) -> bool:
+        if suffix not in {"n", "y"}:
+            return False
+        if _EXPLICIT_SUFFIX_NY_RE.search(dulat_token or ""):
+            return False
+        lemma_letters = self._declared_lemma_letters(dulat_token)
+        if not lemma_letters:
+            return False
+        return lemma_letters.endswith(suffix)
+
+    def _declared_lemma_letters(self, dulat_token: str) -> str:
+        token = (dulat_token or "").strip()
+        if not token or token.startswith("/"):
+            return ""
+        if "," in token:
+            token = token.split(",", 1)[0].strip()
+        m = _TOKEN_RE.match(token)
+        lemma = (m.group(1) if m else token).strip()
+        return _LEMMA_LETTER_RE.sub("", normalize_surface(lemma)).lower()
+
+    def _is_baad_enclitic_n(self, dulat_token: str) -> bool:
+        lemma_letters = self._declared_lemma_letters(dulat_token)
+        return lemma_letters == normalize_surface("bʕd")
 
     def _is_suffix_dulat_token(self, token: str, surface: str) -> bool:
         if not token or token == "?":

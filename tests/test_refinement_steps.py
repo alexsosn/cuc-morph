@@ -214,6 +214,24 @@ class SuffixCliticFixerTest(unittest.TestCase):
         result = fixer.refine_row(row)
         self.assertEqual(result.analysis, "hmlk/")
 
+    def test_reverts_enclitic_plus_pattern(self) -> None:
+        fixer = SuffixCliticFixer(gate=StaticGate(suffix_tokens={"bʕd"}))
+        row = TabletRow("1", "bˤdn", "bˤd~+n", "bʕd", "adv., prep.", "behind", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "bˤd~n")
+
+    def test_reverts_lexeme_final_n_split(self) -> None:
+        fixer = SuffixCliticFixer(gate=StaticGate(suffix_tokens={"mṯn"}))
+        row = TabletRow("1", "mṯn", "mṯ/+n", "mṯn", "n. m.", "repetition", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "mṯn/")
+
+    def test_reverts_lexeme_final_n_split_for_lshan(self) -> None:
+        fixer = SuffixCliticFixer(gate=StaticGate(suffix_tokens={"lšn"}))
+        row = TabletRow("1", "lšn", "lš/+n", "lšn", "n. f.", "tongue", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "lšn/")
+
 
 class WeakVerbFixerTest(unittest.TestCase):
     def setUp(self) -> None:

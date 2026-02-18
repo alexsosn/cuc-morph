@@ -1,15 +1,15 @@
 ## Morphology Lint Summary
 
 - Files checked: `139`
-- Total issues: `6612`
+- Total issues: `6615`
 - Fallback-parsed issue lines: `0`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 5064 |
-| WARNING | 126 |
+| ERROR | 5065 |
+| WARNING | 128 |
 | INFO | 1197 |
 
 ### By Problem Type
@@ -18,18 +18,18 @@
 |---|---|---:|
 | ERROR | Analysis does not reconstruct to surface | 3351 |
 | INFO | Surface not found in UDB concordance | 1197 |
-| ERROR | No DULAT entry found for lexeme/surface | 625 |
+| ERROR | No DULAT entry found for lexeme/surface | 628 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 280 |
 | ERROR | Missing DULAT entry token(s) in column 4 | 175 |
+| ERROR | Unknown DULAT token in column 4 | 114 |
 | ERROR | Non-G stem in DULAT requires stem marker | 112 |
-| ERROR | Unknown DULAT token in column 4 | 112 |
-| ERROR | DULAT comment does not match candidates | 88 |
+| ERROR | DULAT comment does not match candidates | 84 |
 | ERROR | Noun/adjective lacks '/' ending | 72 |
 | ERROR | Each reconstructed letter must be prefixed by '(' | 64 |
 | ERROR | POS token not allowed for declared DULAT entry | 54 |
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 42 |
 | WARNING | TODO/uncertain marker in comment | 37 |
-| WARNING | Suffix form without '+' | 32 |
+| WARNING | Suffix form without '+' | 34 |
 | WARNING | Feminine plural noun in DULAT should use '/t=' | 30 |
 | ERROR | No DULAT entry found for clitic part | 29 |
 | ERROR | Multiple DULAT candidates for lexeme | 23 |

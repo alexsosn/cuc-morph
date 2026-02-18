@@ -150,6 +150,8 @@ def has_letters(s: str) -> bool:
 LETTER_RE = re.compile(r"[A-Za-zˤʔḫṣṯẓġḏḥṭš]")
 ANALYSIS_SURFACE_LETTER_RE = re.compile(r"[A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]")
 _CLITIC_SUFFIX_SEGMENTS = ("hm", "hn", "km", "kn", "ny", "nm", "nn", "h", "k", "n", "y")
+_DECLARED_SUFFIX_NY_RE = re.compile(r",\s*-[ny](?:\s|\(|$)", flags=re.IGNORECASE)
+_DECLARED_LEMMA_LETTER_RE = re.compile(r"[^A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]")
 
 
 PL_TANT_RE = re.compile(
@@ -349,6 +351,53 @@ def analysis_has_missing_plural_split(analysis: str, surface: str) -> bool:
         if recon == target:
             return True
     return False
+
+
+def analysis_has_invalid_enclitic_plus(analysis: str) -> bool:
+    """True when analysis uses invalid '~+x' enclitic encoding."""
+    variants = split_semicolon_field(analysis) or [analysis]
+    return any("~+" in (v or "") for v in variants)
+
+
+def variant_has_lexeme_terminal_single_suffix_split(
+    analysis_variant: str, declared_token: str
+) -> bool:
+    """Detect '/+n' or '/+y' split when n/y belongs to declared lemma.
+
+    Intended to catch false splits like:
+    - mṯ/+n  with DULAT token mṯn
+    - lš/+n  with DULAT token lšn
+    """
+    a_txt = (analysis_variant or "").strip()
+    if not a_txt:
+        return False
+    m_suffix = re.search(r"/\+([ny])(?![A-Za-z])", a_txt)
+    if not m_suffix:
+        return False
+    suffix = m_suffix.group(1)
+
+    d_tok = (declared_token or "").strip()
+    if not d_tok:
+        return False
+    if _DECLARED_SUFFIX_NY_RE.search(d_tok):
+        return False
+
+    lemma_raw, _hom = parse_declared_dulat_token(d_tok)
+    if not lemma_raw or lemma_raw.startswith("/"):
+        return False
+    lemma_letters = _DECLARED_LEMMA_LETTER_RE.sub("", normalize_surface(lemma_raw)).lower()
+    return bool(lemma_letters) and lemma_letters.endswith(suffix)
+
+
+def variant_has_baad_plus_n(analysis_variant: str, declared_token: str) -> bool:
+    """Detect bʕd forms where enclitic n is encoded with '+' instead of '~'."""
+    a_txt = (analysis_variant or "").strip()
+    if not a_txt or "+n" not in a_txt:
+        return False
+    d_tok = (declared_token or "").strip()
+    lemma_raw, _hom = parse_declared_dulat_token(d_tok)
+    lemma_letters = _DECLARED_LEMMA_LETTER_RE.sub("", normalize_surface(lemma_raw)).lower()
+    return lemma_letters == normalize_surface("bʕd")
 
 
 def dedupe_entries(entries: List["DulatEntry"]) -> List["DulatEntry"]:
@@ -1479,6 +1528,42 @@ def lint_file(
             if not a_txt:
                 continue
             d_field = dulat_variants[vi] if vi < len(dulat_variants) else ""
+            if "~+" in a_txt:
+                issues.append(
+                    Issue(
+                        "error",
+                        str(path),
+                        i,
+                        line_id,
+                        surface,
+                        a_txt,
+                        "Enclitic marker '~' must not be followed by '+' (use '~n'/'~y')",
+                    )
+                )
+            if variant_has_lexeme_terminal_single_suffix_split(a_txt, d_field):
+                issues.append(
+                    Issue(
+                        "warning",
+                        str(path),
+                        i,
+                        line_id,
+                        surface,
+                        a_txt,
+                        "Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token",
+                    )
+                )
+            if variant_has_baad_plus_n(a_txt, d_field):
+                issues.append(
+                    Issue(
+                        "warning",
+                        str(path),
+                        i,
+                        line_id,
+                        surface,
+                        a_txt,
+                        "For bʕd with enclitic n, use '~n' (not '+n')",
+                    )
+                )
             is_weak_initial_y_verb = variant_is_weak_initial_y_verb(a_txt, d_field)
             if variant_is_weak_initial_y_prefix_form(a_txt, d_field) and "(y" not in a_txt:
                 issues.append(

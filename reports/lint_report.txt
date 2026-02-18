@@ -343,7 +343,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:98 1523
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:117 152407 ḥ Analysis does not reconstruct to surface (reconstructs as: lqḥ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:120 152410 yuḫd ʔ must be preceded by '(' in column 3
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:120 152410 yuḫd Analysis does not reconstruct to surface (reconstructs as: yʔḫd)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:125 152414 mṯn DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:130 152418 tp Analysis does not reconstruct to surface (reconstructs as: npy)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:155 152436 bh Analysis does not reconstruct to surface (reconstructs as: b)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:159 152439 ḫrṣp Analysis does not reconstruct to surface (reconstructs as: ḫrṣ)
@@ -1402,7 +1401,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:323 1429
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:327 142986 šbˤm DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:328 142987 ṯry Analysis does not reconstruct to surface (reconstructs as: ṯr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:331 142989 ẓbyy Analysis does not reconstruct to surface (reconstructs as: ẓby)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:331 142989 ẓbyy No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:335 142992 rbt Analysis does not reconstruct to surface (reconstructs as: rb)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:345 142999 ˤšrt Analysis does not reconstruct to surface (reconstructs as: ʕšr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:350 143003 t Analysis does not reconstruct to surface (reconstructs as: ʕl)
@@ -1991,7 +1989,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:400 1444
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:400 144477 km Analysis does not reconstruct to surface (reconstructs as: k)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:400 144477 km Analysis does not reconstruct to surface (reconstructs as: k)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:401 144478 aryy Analysis does not reconstruct to surface (reconstructs as: ary)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:401 144478 aryy No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:403 144479 nṣb No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:404 144480 skn No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:405 144481 iliby Analysis does not reconstruct to surface (reconstructs as: ilib)
@@ -2165,7 +2162,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1058 145
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1065 145033 mtm Analysis does not reconstruct to surface (reconstructs as: mt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1065 145033 mtm Analysis does not reconstruct to surface (reconstructs as: mt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1065 145033 mtm Analysis does not reconstruct to surface (reconstructs as: mt)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1069 145036 mṯn DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1070 145037 rgmm Analysis does not reconstruct to surface (reconstructs as: rgm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1070 145037 rgmm No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1072 145039 qštm Analysis does not reconstruct to surface (reconstructs as: qšt)
@@ -2623,6 +2619,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:534 1459
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:536 145983 pnh Analysis does not reconstruct to surface (reconstructs as: pnmh)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:537 145984 tdˤ Analysis does not reconstruct to surface (reconstructs as: ydʕ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:538 145985 bˤdn POS token 'adv. or prep.' not allowed for bʕd; choose one of: adv., prep.
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:538 145985 bˤdn No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:546 145991 anš Analysis does not reconstruct to surface (reconstructs as: ʔnš)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:547 145992 dt Analysis does not reconstruct to surface (reconstructs as: d)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:548 145993 ẓrh Analysis does not reconstruct to surface (reconstructs as: ẓr)
@@ -3523,6 +3520,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:515 9920 
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:528 9931 il Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:550 9949 tṭṭ Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:551 9950 bˤdn POS tokens must map to existing DULAT tokens in column 4
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:551 9950 bˤdn No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:558 9956 tġṣ Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:562 9959 anš Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:577 9972 mn Missing DULAT entry token(s) in column 4
@@ -3546,7 +3544,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:834 10189
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:839 10193 awṣ Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:839 10193 awṣ Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:844 10198 ap POS tokens must map to existing DULAT tokens in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:846 10199 mṯn DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:849 10202 lk Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:850 10203 lk Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:875 10224 ṯlṯ Noun/adjective lacks '/' ending
@@ -3588,6 +3585,10 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1190 1048
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1199 10497 mlkn Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1204 10501 in Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1207 10503 ˤlnh No DULAT entry found for lexeme/surface
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1208 10504 klnyy Unknown DULAT token in column 4: kl (I)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1208 10504 klnyy No DULAT entry found for lexeme/surface
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1212 10507 klnyy Unknown DULAT token in column 4: kl (I)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1212 10507 klnyy No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1220 10514 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1222 10516 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1223 10517 mlk Missing DULAT entry token(s) in column 4
@@ -3646,7 +3647,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:150 1480
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:19 138134 yknnh Analysis does not reconstruct to surface (reconstructs as: ykh)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:23 138137 rt Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:61 138167 knyt Analysis does not reconstruct to surface (reconstructs as: knytt)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:78 138180 mṯn DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:91 138190 qnyt Analysis does not reconstruct to surface (reconstructs as: qnt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:119 138212 rbbt Analysis does not reconstruct to surface (reconstructs as: rbt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:130 138221 dt Analysis does not reconstruct to surface (reconstructs as: d)
@@ -3662,6 +3662,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:247 13831
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:251 138317 ˤnh Analysis does not reconstruct to surface (reconstructs as: ʕn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:257 138322 aṯtrt Analysis does not reconstruct to surface (reconstructs as: aṯrt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:272 138333 tṭṭ Analysis does not reconstruct to surface (reconstructs as: tnṭṭ)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:273 138334 bˤdn No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:281 138340 tġṣ Analysis does not reconstruct to surface (reconstructs as: tnġṣ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:282 138341 pnt Analysis does not reconstruct to surface (reconstructs as: pntt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:285 138343 anš Each reconstructed letter must be prefixed by '('
@@ -5076,6 +5077,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.146.tsv:6 154
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:61 142778 ṯlṯh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:268 142941 kmhm Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:275 142946 kmhm Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:331 142989 ẓbyy Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:32 143215 tbkyk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:202 143352 krtn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:358 143467 tbˤrn Suffix form without '+'
@@ -5084,6 +5086,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.166.tsv:68 15
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:145 144261 tbrknn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:261 144360 ḥbqh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:380 144460 aṯbn Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:401 144478 aryy Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:460 144528 ymġyn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1040 145011 šrgk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1043 145014 uḫryt Feminine adjective/participle in DULAT should mark '-t' explicitly
@@ -6612,4 +6615,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:48 151516
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:74 151535 xẓk Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:87 151545 šdr Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.98.tsv:22 151701 gˤl Surface not found in UDB concordance
-Total issues: 6612
+Total issues: 6615

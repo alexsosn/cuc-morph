@@ -34,3 +34,6 @@
 - Added shared reconstruction utilities (`pipeline/steps/analysis_utils.py`) and predicate tests for linter warning precision.
 - Tightened linter warning predicates for `"Suffix form without '+'"` and `"Plural form missing split ending"` to trigger only on analysis/surface pairs with explicit missing-split evidence.
 - Applied plural/suffix refinements across `out/KTU 1.*.tsv` and regenerated reports: total issues `8199 -> 6612`, warning count `1173 -> 126`, with `"Suffix form without '+'"` reduced to `32` and `"Plural form missing split ending"` reduced to `10`.
+- Corrected enclitic/suffix encoding for lexeme-final `n/y` and enclitic `~` forms in `SuffixCliticFixer`: normalize `~+x` to `~x`, preserve lemma-final `n/y` (e.g., `mṯn`, `lšn`), and enforce `bʕd~n` instead of `bʕd+n`.
+- Added linter guards for invalid enclitic `~+` usage and for false `/+n`/`/+y` splits when `n/y` is part of the declared lexeme (with unit tests).
+- Reverted affected `out/*.tsv` cases (including the requested `9950`, `10199`, `10504`, `138180`, `139921`) and restored `klnyy` alternative parsing as `klny~y;kl(I)+ny~y`.

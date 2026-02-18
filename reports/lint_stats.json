@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-02-18T11:49:08.180308+00:00",
+  "generated_at_utc": "2026-02-18T12:05:24.124178+00:00",
   "files_checked": 139,
-  "total_issues": 6612,
+  "total_issues": 6615,
   "fallback_parsed": 0,
   "by_severity": {
-    "ERROR": 5064,
-    "WARNING": 126,
+    "ERROR": 5065,
+    "WARNING": 128,
     "INFO": 1197
   },
   "by_problem_type": [
@@ -22,7 +22,7 @@
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 625
+      "count": 628
     },
     {
       "severity": "ERROR",
@@ -36,18 +36,18 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "Unknown DULAT token in column 4",
+      "count": 114
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "Non-G stem in DULAT requires stem marker",
       "count": 112
     },
     {
       "severity": "ERROR",
-      "problem_type": "Unknown DULAT token in column 4",
-      "count": 112
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "DULAT comment does not match candidates",
-      "count": 88
+      "count": 84
     },
     {
       "severity": "ERROR",
@@ -77,7 +77,7 @@
     {
       "severity": "WARNING",
       "problem_type": "Suffix form without '+'",
-      "count": 32
+      "count": 34
     },
     {
       "severity": "WARNING",
