@@ -1,7 +1,7 @@
 #---------------------------- KTU 1.179 1
 156068	b	b	b	prep.	in
-156069	bt	bt(II)/;bt(I)/;bt(III)/	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length
-156070	ytn	ytn[	/y-t-n/	vb	to give
+156069	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length
+156070	ytn	!y!tn[	/y-t-n/	vb	to give
 #---------------------------- KTU 1.179 2
 156071	x	?	?	?	?
 156072	tḥt	tḥt(I)	tḥt (I)	prep.	under
@@ -44,7 +44,7 @@
 #---------------------------- KTU 1.179 9
 156103	dm	dm(I);dm(II)/;ˤbd(I)/	dm (I);dm (II);ʕbd (I)	functor;n. m.;n. m.	since;blood;servant
 156104	kbkb	kbkb/	kbkb	n. m.	heavenly body
-156105	šmm	šmm(I)/	šmm (I)	n. m.	heavens
+156105	šmm	šm(I)/m	šmm (I)	n. m.	heavens
 156106	wthm	?	?	?	?	DULAT: NOT FOUND
 #---------------------------- KTU 1.179 10
 156107	kbkb	kbkb/	kbkb	n. m.	heavenly body
@@ -138,7 +138,7 @@
 156175	xh	?	?	?	?	DULAT: NOT FOUND
 156176	w	w	w	conj.	and
 156177	ysb	sbb[	/s:ś-b-b/	vb	to turn round
-156178	bt	bt(II)/;bt(I)/;bt(III)/	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length
+156178	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length
 156179	mḫrh	mḫr(II)/+h(I);mḫr(II)/+h(II)	mḫr (II),-h (I);mḫr (II),-h (II)	n. m.,pers. pn./morph.;n. m.,adv. functor	tax collector,his /her (hers) / its;tax collector,to
 #---------------------------- KTU 1.179 31
 156180	rḥq	rḥq[;rḥq/	/r-ḥ-q/;rḥq	vb;adj. m.	to go away;distant
@@ -162,7 +162,7 @@
 156196	ˤrb	ˤrb(I)[;ˤrb(II)[;ˤrb(I)/	/ʕ-r-b/ (I);/ʕ-r-b/ (II);ʕrb (I)	vb;vb;n. m.	to enter;to give a guarantee or pledge;entry
 156197	ḥrn	ḥr(I)/+n(I);ḥr(I)/+n(II);ḥr(I)/+n(III)	ḥr (I),-n (I);ḥr (I),-n (II);ḥr (I),-n (III)	n. m.,morph.;n. m.,pers. pn./morph./vb;n. m.,pers. pn./morph.	intestine(s),Sun;intestine(s),me;intestine(s),our
 156198	bth	bt(II)/	bt (II)	n. m.	house
-156199	ytn	ytn[	/y-t-n/	vb	to give
+156199	ytn	!y!tn[	/y-t-n/	vb	to give
 156200	gh	g/	g	n. m.	(loud) voice
 156201	w	w	w	conj.	and
 156202	yṣḥ	!y!ṣḥ[	/ṣ-ḥ/	vb	to exclaim
@@ -176,12 +176,12 @@
 156209	mlkt	mlkt/	mlkt	n. f.	queen
 156210	mntn	mnt(I)/+n(I);mnt(I)/+n(II);mnt(I)/+n(III)	mnt (I),-n (I);mnt (I),-n (II);mnt (I),-n (III)	n. f.,morph.;n. f.,pers. pn./morph./vb;n. f.,pers. pn./morph.	portion,Sun;portion,me;portion,our
 156211	mrbdh	mrbd(I)/+h(I);mrbd(I)/+h(II)	mrbd (I),-h (I);mrbd (I),-h (II)	n. f.,pers. pn./morph.;n. f.,adv. functor	bedspread,his /her (hers) / its;bedspread,to
-156212	ytn	ytn[	/y-t-n/	vb	to give
+156212	ytn	!y!tn[	/y-t-n/	vb	to give
 #---------------------------- KTU 1.179 35
 156213	xxxnh	?	?	?	?	DULAT: NOT FOUND
 156214	w	w	w	conj.	and
 156215	ḫlm	ḫl/	ḫl	n. m.	pain
-156216	aṯt	aṯt/	ảṯt	n. f.	woman
+156216	aṯt	aṯ/t=	ảṯt	n. f.	woman
 156217	iṯt	?	?	?	?	DULAT: NOT FOUND
 156218	k	k(III);k(I);k(II)	k (III);k (I);k (II)	Subordinating or completive functor;prep.;emph. functor	when;like;yes
 156219	yṯnyn	!y!ṯny[+n(I);!y!ṯny[+n(II);!y!ṯny[+n(III)	/ṯ-n-y/,-n (I);/ṯ-n-y/,-n (II);/ṯ-n-y/,-n (III)	vb,morph.;vb,pers. pn./morph./vb;vb,pers. pn./morph.	to repeat,Sun;to repeat,me;to repeat,our
@@ -202,14 +202,14 @@
 156232	btkh	bt(II)/+h(I);bt(II)/+h(II)	bt (II),-h (I);bt (II),-h (II)	n. m.,pers. pn./morph.;n. m.,adv. functor	house,his /her (hers) / its;house,to
 156233	w	w	w	conj.	and
 156234	tqdmnnn	!t!qdm[+n(I);!t!qdm[+n(II);!t!qdm[+n(III)	/q-d-m/,-n (I);/q-d-m/,-n (II);/q-d-m/,-n (III)	vb,morph.;vb,pers. pn./morph./vb;vb,pers. pn./morph.	to proceed,Sun;to proceed,me;to proceed,our
-156235	ilht	ilt(I)/	ỉlt (I)	n. f.	goddess
+156235	ilht	il(I)/t=	ỉlt (I)	n. f.	goddess
 #---------------------------- KTU 1.179 38
 156236	xxxn	?	?	?	?	DULAT: NOT FOUND
 156237	nrt	nrt(I)/;nrt(II)/	nrt (I);nrt (II)	n. f.;n. f.	lantern;ploughed land
 156238	il	il(I)/	ỉl (I)	n. m.	god
 156239	špš	špš/	špš	n.	sun
 156240	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly
-156241	ymt	ym(I)/;!y!mt[	ym (I);/m-t/	n. m.;vb	day;to die
+156241	ymt	y(I)/m;!y!mt[	ym (I);/m-t/	n. m.;vb	day;to die
 156242	špš	špš/	špš	n.	sun
 #---------------------------- KTU 1.179 39
 156243	xxxḥnt	?	?	?	?	DULAT: NOT FOUND

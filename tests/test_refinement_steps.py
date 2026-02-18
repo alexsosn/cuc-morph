@@ -13,6 +13,20 @@ from pipeline.steps.suffix_fixer import SuffixCliticFixer
 from pipeline.steps.weak_verb import WeakVerbFixer
 
 
+class StaticGate:
+    """Small test double for DULAT feature-gating behavior."""
+
+    def __init__(self, plural_tokens=None, suffix_tokens=None) -> None:
+        self._plural = set(plural_tokens or [])
+        self._suffix = set(suffix_tokens or [])
+
+    def is_plural_token(self, token: str, surface: str = "") -> bool:
+        return token in self._plural
+
+    def has_suffix_token(self, token: str, surface: str = "") -> bool:
+        return token in self._suffix
+
+
 class ParseTsvLineTest(unittest.TestCase):
     def test_data_row(self) -> None:
         row = parse_tsv_line("12345\tum\tum/\tủm\tn. f.\tmother")
@@ -110,7 +124,7 @@ class NounPosClosureFixerTest(unittest.TestCase):
 
 class PluralSplitFixerTest(unittest.TestCase):
     def setUp(self) -> None:
-        self.fixer = PluralSplitFixer()
+        self.fixer = PluralSplitFixer(gate=StaticGate(plural_tokens={"nhr (I)"}))
 
     def test_masc_plural_m_split(self) -> None:
         row = TabletRow("1", "nhrm", "nhrm/", "nhr (I)", "n. m.", "river", "")
@@ -127,10 +141,15 @@ class PluralSplitFixerTest(unittest.TestCase):
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "yṯbm[")
 
+    def test_singular_lexeme_ending_with_m_is_unchanged(self) -> None:
+        row = TabletRow("1", "um", "um/", "ủm", "n. f.", "mother", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "um/")
+
 
 class SuffixCliticFixerTest(unittest.TestCase):
     def setUp(self) -> None:
-        self.fixer = SuffixCliticFixer()
+        self.fixer = SuffixCliticFixer(gate=StaticGate(suffix_tokens={"npš"}))
 
     def test_suffix_h_injected(self) -> None:
         row = TabletRow("1", "npšh", "npšh/", "npš", "n. f.", "throat", "")
@@ -146,6 +165,11 @@ class SuffixCliticFixerTest(unittest.TestCase):
         row = TabletRow("1", "yblh", "yblh[", "/y-b-l/", "vb", "to carry", "")
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "yblh[")
+
+    def test_false_suffix_candidate_without_dulat_support_unchanged(self) -> None:
+        row = TabletRow("1", "abn", "abn/", "ảbn", "n. f.", "stone", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "abn/")
 
 
 class WeakVerbFixerTest(unittest.TestCase):

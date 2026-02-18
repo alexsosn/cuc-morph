@@ -8,6 +8,12 @@ import scripts.bootstrap_tablet_labeling as bootstrap
 import scripts.refine_results_mentions as refine
 from lint_reports.generator import LintReportGenerator
 from pipeline.instruction_refiner import InstructionRefiner
+from pipeline.steps.base import RefinementStep
+from pipeline.steps.dulat_gate import DulatMorphGate
+from pipeline.steps.noun_closure import NounPosClosureFixer
+from pipeline.steps.plural_split import PluralSplitFixer
+from pipeline.steps.suffix_fixer import SuffixCliticFixer
+from pipeline.steps.weak_verb import WeakVerbFixer
 
 
 @dataclass(frozen=True)
@@ -20,6 +26,8 @@ class PipelineConfig:
     udb_db: Path
     include_existing: bool = False
     source_glob: str = "KTU 1.*.tsv"
+    max_step_change_ratio: float = 0.25
+    allow_large_step_changes: bool = False
 
 
 class TabletParsingPipeline:
@@ -28,6 +36,16 @@ class TabletParsingPipeline:
     def __init__(self, config: PipelineConfig) -> None:
         self.config = config
         self.instruction_refiner = InstructionRefiner(dulat_db=self.config.dulat_db)
+        self.morph_gate = DulatMorphGate(self.config.dulat_db)
+        self._refinement_steps: List[RefinementStep] = [
+            # AlephPrefixFixer disabled: changes (ʔ in analysis break DULAT
+            # lexeme extraction, causing net increase in lint issues.
+            # Will re-enable after linter lexeme extraction is updated.
+            NounPosClosureFixer(),
+            PluralSplitFixer(gate=self.morph_gate),
+            SuffixCliticFixer(gate=self.morph_gate),
+            WeakVerbFixer(),
+        ]
 
     def discover_source_files(self) -> List[Path]:
         return sorted(self.config.source_dir.glob(self.config.source_glob))
@@ -35,16 +53,12 @@ class TabletParsingPipeline:
     def discover_out_files(self) -> List[Path]:
         return sorted(self.config.out_dir.glob(self.config.source_glob))
 
-    def select_targets(
-        self, explicit_names: Optional[Sequence[str]] = None
-    ) -> List[Path]:
+    def select_targets(self, explicit_names: Optional[Sequence[str]] = None) -> List[Path]:
         source_files = self.discover_source_files()
         source_by_name = {item.name: item for item in source_files}
 
         if explicit_names:
-            names = sorted(
-                set(name.strip() for name in explicit_names if name and name.strip())
-            )
+            names = sorted(set(name.strip() for name in explicit_names if name and name.strip()))
             return [source_by_name[name] for name in names if name in source_by_name]
 
         if self.config.include_existing:
@@ -63,8 +77,8 @@ class TabletParsingPipeline:
         return {"bootstrap_written": written}
 
     def refine_targets(self, targets: Sequence[Path]) -> Dict[str, int]:
-        _entries_by_id, forms_map, _lemma_map, suffix_map, forms_morph = (
-            refine.load_entries(self.config.dulat_db)
+        _entries_by_id, forms_map, _lemma_map, suffix_map, forms_morph = refine.load_entries(
+            self.config.dulat_db
         )
         reverse_mentions, entry_ref_count, entry_tablets, entry_family_count = (
             refine.load_reverse_mentions(
@@ -115,6 +129,41 @@ class TabletParsingPipeline:
         )
         return generator.run()
 
+    def apply_refinement_steps(self, targets: Sequence[Path]) -> Dict[str, int]:
+        """Run all registered refinement steps on target output files."""
+        target_out_files = [self.config.out_dir / src.name for src in targets]
+        total_changed = 0
+        step_details: Dict[str, int] = {}
+        for step in self._refinement_steps:
+            step_changed = 0
+            step_rows = 0
+            for path in target_out_files:
+                result = step.refine_file(path)
+                step_changed += result.rows_changed
+                step_rows += result.rows_processed
+
+            if (
+                step_rows > 0
+                and not self.config.allow_large_step_changes
+                and (float(step_changed) / float(step_rows)) > self.config.max_step_change_ratio
+            ):
+                ratio = float(step_changed) / float(step_rows)
+                raise RuntimeError(
+                    "Refinement safeguard tripped for step '%s': %d/%d rows changed (%.2f%%),"
+                    " above max %.2f%%."
+                    % (
+                        step.name,
+                        step_changed,
+                        step_rows,
+                        ratio * 100.0,
+                        self.config.max_step_change_ratio * 100.0,
+                    )
+                )
+            step_details[f"step_{step.name}_changed"] = step_changed
+            total_changed += step_changed
+        step_details["refinement_steps_total_changed"] = total_changed
+        return step_details
+
     def run(
         self, explicit_names: Optional[Sequence[str]] = None, dry_run: bool = False
     ) -> Dict[str, object]:
@@ -133,6 +182,7 @@ class TabletParsingPipeline:
         summary.update(self.bootstrap_targets(targets))
         summary.update(self.refine_targets(targets))
         summary.update(self.instruction_refine_targets(targets))
+        summary.update(self.apply_refinement_steps(targets))
         summary["report_exit_code"] = self.regenerate_reports()
 
         return summary

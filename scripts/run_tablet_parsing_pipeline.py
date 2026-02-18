@@ -41,6 +41,17 @@ def build_parser() -> argparse.ArgumentParser:
         help="Reprocess files already present in out/",
     )
     parser.add_argument(
+        "--max-step-change-ratio",
+        type=float,
+        default=0.25,
+        help="Safety threshold per step: max changed_rows/processed_rows ratio (default: 0.25)",
+    )
+    parser.add_argument(
+        "--allow-large-step-changes",
+        action="store_true",
+        help="Disable per-step change-ratio safeguard",
+    )
+    parser.add_argument(
         "--files",
         nargs="*",
         default=None,
@@ -65,6 +76,8 @@ def main() -> int:
         dulat_db=Path(args.dulat_db),
         udb_db=Path(args.udb_db),
         include_existing=bool(args.include_existing),
+        max_step_change_ratio=float(args.max_step_change_ratio),
+        allow_large_step_changes=bool(args.allow_large_step_changes),
     )
     pipeline = TabletParsingPipeline(config=config)
     summary = pipeline.run(explicit_names=args.files, dry_run=bool(args.dry_run))

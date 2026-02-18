@@ -37,13 +37,15 @@ Use the reusable pipeline to process new tablets from `cuc_tablets_tsv` into `ou
 - Parse only missing tablets (default): `UV_CACHE_DIR=.uv-cache uv run --python .venv/bin/python python scripts/run_tablet_parsing_pipeline.py`
 - Parse specific tablets: `UV_CACHE_DIR=.uv-cache uv run --python .venv/bin/python python scripts/run_tablet_parsing_pipeline.py --files 'KTU 1.181.tsv' 'KTU 1.182.tsv'`
 - Reprocess existing outputs too: `UV_CACHE_DIR=.uv-cache uv run --python .venv/bin/python python scripts/run_tablet_parsing_pipeline.py --include-existing`
+- Tighten/relax step safety threshold: `python scripts/run_tablet_parsing_pipeline.py --max-step-change-ratio 0.20` or `python scripts/run_tablet_parsing_pipeline.py --allow-large-step-changes`
 
 Pipeline stages are:
 
 1. Bootstrap from DULAT form matches
 2. Mention-aware refinement (`scripts/refine_results_mentions.py` logic)
 3. Instruction-driven cleanup for high-confidence cases (normalize disallowed col2/col3 characters, enforce unresolved `?` rows where DULAT is missing, and enrich `n.`/`adj.` POS slots with DULAT gender where uniquely known)
-4. Report regeneration under `reports/`
+4. Step chain with DULAT-gated fixes (`noun-pos-closure`, `plural-split`, `suffix-clitic`, `weak-verb`) and per-step safety threshold checks
+5. Report regeneration under `reports/`
 
 ## GitHub Actions
 

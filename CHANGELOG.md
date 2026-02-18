@@ -20,3 +20,6 @@
 - Migrated project runtime baseline to Python 3.13 (`pyproject.toml` + hook guard) and updated setup docs accordingly.
 - Added pre-commit safeguard fallback: when `uv run` is unavailable, checks execute directly via `.venv` so commits remain enforceable.
 - Converted refinement-step tests to `unittest.TestCase` style so they run under `unittest discover` in pre-commit.
+- Added DULAT-backed token/form gate (`pipeline/steps/dulat_gate.py`) and wired `PluralSplitFixer`/`SuffixCliticFixer` to require matching DULAT evidence before rewriting analyses.
+- Added refinement safety guard in `pipeline/tablet_parsing.py` to abort when any step changes too high a share of rows unless explicitly overridden.
+- Extended pipeline CLI with safeguard controls (`--max-step-change-ratio`, `--allow-large-step-changes`) and reran full `out/KTU 1.*.tsv` + reports with the guarded step chain.
