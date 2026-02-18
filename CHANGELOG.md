@@ -11,3 +11,5 @@
 - Bootstrapped first-pass structured morphology outputs for all remaining `cuc_tablets_tsv/KTU 1.*.tsv` files into `out/` (coverage now matches all `KTU 1.*` sources).
 - Added reusable tablet parsing pipeline (`pipeline/tablet_parsing.py` + `scripts/run_tablet_parsing_pipeline.py`) to automate missing/new tablet processing: bootstrap, mention-based refinement, and report regeneration.
 - Added unit tests for pipeline target selection and dry-run behavior.
+- Added instruction-driven refinement (`pipeline/instruction_refiner.py`) to normalize disallowed col2/col3 characters and force unresolved `?` rows when DULAT is explicitly missing.
+- Applied instruction-driven cleanup to newly parsed `out/KTU 1.*.tsv` tablets (excluding curated `KTU 1.1-1.6`) and refreshed reports.

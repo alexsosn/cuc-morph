@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-02-18T09:31:51.782318+00:00",
+  "generated_at_utc": "2026-02-18T09:42:19.687750+00:00",
   "files_checked": 139,
-  "total_issues": 22131,
-  "fallback_parsed": 8414,
+  "total_issues": 17933,
+  "fallback_parsed": 8399,
   "by_severity": {
-    "ERROR": 10125,
-    "WARNING": 10583,
+    "ERROR": 5944,
+    "WARNING": 10566,
     "INFO": 1197
   },
   "by_problem_type": [
@@ -15,19 +15,9 @@
       "count": 4328
     },
     {
-      "severity": "ERROR",
-      "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 2190
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 1603
-    },
-    {
       "severity": "WARNING",
       "problem_type": "Suffix form without '+'",
-      "count": 1209
+      "count": 1207
     },
     {
       "severity": "INFO",
@@ -41,18 +31,13 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "Noun/adjective lacks '/' ending",
-      "count": 629
+      "problem_type": "No DULAT entry found for lexeme/surface",
+      "count": 451
     },
     {
       "severity": "ERROR",
       "problem_type": "ʔ must be preceded by '(' in column 3",
       "count": 280
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Multiple DULAT candidates for lexeme",
-      "count": 255
     },
     {
       "severity": "WARNING",
@@ -61,8 +46,8 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "POS ambiguous in DULAT",
-      "count": 202
+      "problem_type": "Missing DULAT entry token(s) in column 4",
+      "count": 175
     },
     {
       "severity": "WARNING",
@@ -138,6 +123,11 @@
       "severity": "WARNING",
       "problem_type": "gdlt Noun POS should include DULAT gender marker for gdlt (I): n. f.",
       "count": 77
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Noun/adjective lacks '/' ending",
+      "count": 72
     },
     {
       "severity": "ERROR",
@@ -265,11 +255,6 @@
       "count": 35
     },
     {
-      "severity": "ERROR",
-      "problem_type": "Verb lacks '[' ending",
-      "count": 34
-    },
-    {
       "severity": "WARNING",
       "problem_type": "arṣ Noun POS should include DULAT gender marker for ảrṣ: n. f.",
       "count": 34
@@ -383,6 +368,11 @@
       "severity": "WARNING",
       "problem_type": "ql Noun POS should include DULAT gender marker for ql (II): n. m.",
       "count": 24
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Multiple DULAT candidates for lexeme",
+      "count": 23
     },
     {
       "severity": "WARNING",
@@ -1486,6 +1476,11 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "POS ambiguous in DULAT",
+      "count": 6
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "yṯṯb For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y'",
       "count": 6
     },
@@ -1708,6 +1703,11 @@
       "severity": "WARNING",
       "problem_type": "ẓr Noun POS should include DULAT gender marker for ẓr (I): n. m.",
       "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Verb lacks '[' ending",
+      "count": 5
     },
     {
       "severity": "WARNING",
@@ -1997,16 +1997,6 @@
     {
       "severity": "WARNING",
       "problem_type": "btkh Noun POS should include DULAT gender marker for bt (II): n. m.",
-      "count": 4
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "bˤd Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.'",
-      "count": 4
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "bˤdh Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.'",
       "count": 4
     },
     {
@@ -2762,11 +2752,6 @@
     {
       "severity": "WARNING",
       "problem_type": "lmd Noun POS should include DULAT gender marker for lmd: n. m.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "lmd Replace '/' with 'or' in POS label: 'adj./n.' -> 'adj. or n.'",
       "count": 3
     },
     {
@@ -3822,11 +3807,6 @@
     {
       "severity": "WARNING",
       "problem_type": "lmdh Noun POS should include DULAT gender marker for lmd: n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "lmdh Replace '/' with 'or' in POS label: 'adj./n.' -> 'adj. or n.'",
       "count": 2
     },
     {
@@ -5442,16 +5422,6 @@
     {
       "severity": "WARNING",
       "problem_type": "bšr Noun POS should include DULAT gender marker for bšr: n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "bˤdhm Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.'",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "bˤdn Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.'",
       "count": 1
     },
     {

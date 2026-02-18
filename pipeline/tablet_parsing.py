@@ -7,6 +7,7 @@ from typing import Dict, List, Optional, Sequence
 import scripts.bootstrap_tablet_labeling as bootstrap
 import scripts.refine_results_mentions as refine
 from lint_reports.generator import LintReportGenerator
+from pipeline.instruction_refiner import InstructionRefiner
 
 
 @dataclass(frozen=True)
@@ -26,6 +27,7 @@ class TabletParsingPipeline:
 
     def __init__(self, config: PipelineConfig) -> None:
         self.config = config
+        self.instruction_refiner = InstructionRefiner()
 
     def discover_source_files(self) -> List[Path]:
         return sorted(self.config.source_dir.glob(self.config.source_glob))
@@ -94,6 +96,15 @@ class TabletParsingPipeline:
             "refine_changed": changed_total,
         }
 
+    def instruction_refine_targets(self, targets: Sequence[Path]) -> Dict[str, int]:
+        target_out_files = [self.config.out_dir / src.name for src in targets]
+        result = self.instruction_refiner.refine_files(target_out_files)
+        return {
+            "instruction_refine_files": result.files,
+            "instruction_refine_rows": result.rows,
+            "instruction_refine_changed": result.changed,
+        }
+
     def regenerate_reports(self) -> int:
         generator = LintReportGenerator(
             out_dir=self.config.out_dir,
@@ -121,6 +132,7 @@ class TabletParsingPipeline:
 
         summary.update(self.bootstrap_targets(targets))
         summary.update(self.refine_targets(targets))
+        summary.update(self.instruction_refine_targets(targets))
         summary["report_exit_code"] = self.regenerate_reports()
 
         return summary

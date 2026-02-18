@@ -1,15 +1,15 @@
 ## Morphology Lint Summary
 
 - Files checked: `139`
-- Total issues: `22131`
-- Fallback-parsed issue lines: `8414`
+- Total issues: `17933`
+- Fallback-parsed issue lines: `8399`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 10125 |
-| WARNING | 10583 |
+| ERROR | 5944 |
+| WARNING | 10566 |
 | INFO | 1197 |
 
 ### By Problem Type
@@ -17,16 +17,13 @@
 | Severity | Problem Type | Count |
 |---|---|---:|
 | ERROR | Analysis does not reconstruct to surface | 4328 |
-| ERROR | Missing DULAT entry token(s) in column 4 | 2190 |
-| ERROR | No DULAT entry found for lexeme/surface | 1603 |
-| WARNING | Suffix form without '+' | 1209 |
+| WARNING | Suffix form without '+' | 1207 |
 | INFO | Surface not found in UDB concordance | 1197 |
 | WARNING | Plural form missing split ending | 882 |
-| ERROR | Noun/adjective lacks '/' ending | 629 |
+| ERROR | No DULAT entry found for lexeme/surface | 451 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 280 |
-| ERROR | Multiple DULAT candidates for lexeme | 255 |
 | WARNING | il Noun POS should include DULAT gender marker for ỉl (I): n. m. | 204 |
-| ERROR | POS ambiguous in DULAT | 202 |
+| ERROR | Missing DULAT entry token(s) in column 4 | 175 |
 | WARNING | š Noun POS should include DULAT gender marker for š: n. m. | 170 |
 | WARNING | bˤl Noun POS should include DULAT gender marker for bʕl (II): n. m. | 156 |
 | WARNING | bˤl Noun POS should include DULAT gender marker for bʕl (I): n. m. | 149 |
@@ -42,6 +39,7 @@
 | WARNING | ym Noun POS should include DULAT gender marker for ym (I): n. m. | 80 |
 | WARNING | ym Noun POS should include DULAT gender marker for ym (II): n. m. | 80 |
 | WARNING | gdlt Noun POS should include DULAT gender marker for gdlt (I): n. f. | 77 |
+| ERROR | Noun/adjective lacks '/' ending | 72 |
 | ERROR | Each reconstructed letter must be prefixed by '(' | 64 |
 | WARNING | ˤnt Noun POS should include DULAT gender marker for ʕn (I): n. f. | 64 |
 | WARNING | alp Noun POS should include DULAT gender marker for ảlp (I): n. m. | 60 |
@@ -67,7 +65,6 @@
 | WARNING | ḥrn Noun POS should include DULAT gender marker for ḥr (I): n. m. | 36 |
 | WARNING | ṯkmn Noun POS should include DULAT gender marker for ṯkm: n. m. | 36 |
 | WARNING | npš Noun POS should include DULAT gender marker for npš (I): n. f. | 35 |
-| ERROR | Verb lacks '[' ending | 34 |
 | WARNING | arṣ Noun POS should include DULAT gender marker for ảrṣ: n. f. | 34 |
 | WARNING | dqt Adjective POS should include DULAT gender marker for dqt (I): adj. f. | 34 |
 | WARNING | dqt Noun POS should include DULAT gender marker for dqt (I): n. f. | 34 |
@@ -91,6 +88,7 @@
 | WARNING | šm Noun POS should include DULAT gender marker for šm (I): n. m. | 25 |
 | WARNING | ql Noun POS should include DULAT gender marker for ql (I): n. m. | 24 |
 | WARNING | ql Noun POS should include DULAT gender marker for ql (II): n. m. | 24 |
+| ERROR | Multiple DULAT candidates for lexeme | 23 |
 | WARNING | ab Noun POS should include DULAT gender marker for ảb: n. m. | 23 |
 | WARNING | šm Noun POS should include DULAT gender marker for š: n. m. | 23 |
 | WARNING | aṯt Noun POS should include DULAT gender marker for ảṯt: n. f. | 22 |
@@ -311,6 +309,7 @@
 | WARNING | ḥr Noun POS should include DULAT gender marker for ḥr (I): n. m. | 7 |
 | WARNING | ṯġr Noun POS should include DULAT gender marker for ṯġr (I): n. m. | 7 |
 | WARNING | ṯġr Noun POS should include DULAT gender marker for ṯġr (II): n. m. | 7 |
+| ERROR | POS ambiguous in DULAT | 6 |
 | ERROR | yṯṯb For weak-initial /y-.../ prefix forms, mark preformative in !...! and reconstruct hidden initial radical as '(y' | 6 |
 | WARNING | anšt Noun POS should include DULAT gender marker for ảnšt: n. f. | 6 |
 | WARNING | aḫh Noun POS should include DULAT gender marker for ảḫ (I): n. m. | 6 |
@@ -356,6 +355,7 @@
 | WARNING | ṭl Noun POS should include DULAT gender marker for ṭl: n. m. | 6 |
 | WARNING | ṯrm Noun POS should include DULAT gender marker for ṯr (I): n. m. | 6 |
 | WARNING | ẓr Noun POS should include DULAT gender marker for ẓr (I): n. m. | 6 |
+| ERROR | Verb lacks '[' ending | 5 |
 | WARNING | ad Noun POS should include DULAT gender marker for ảd: n. m. | 5 |
 | WARNING | bnš Noun POS should include DULAT gender marker for bnš: n. m. | 5 |
 | WARNING | btm Noun POS should include DULAT gender marker for bt (I): n. f. | 5 |
@@ -414,8 +414,6 @@
 | WARNING | brlth Noun POS should include DULAT gender marker for brlt: n. f. | 4 |
 | WARNING | brq Noun POS should include DULAT gender marker for brq (I): n. m. | 4 |
 | WARNING | btkh Noun POS should include DULAT gender marker for bt (II): n. m. | 4 |
-| WARNING | bˤd Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.' | 4 |
-| WARNING | bˤdh Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.' | 4 |
 | WARNING | dbrh Noun POS should include DULAT gender marker for dbr (II): n. m. | 4 |
 | WARNING | gl Noun POS should include DULAT gender marker for gl (II): n. m. | 4 |
 | WARNING | gl Noun POS should include DULAT gender marker for gl (III): n. m. | 4 |
@@ -567,7 +565,6 @@
 | WARNING | lg Noun POS should include DULAT gender marker for lg (I): n. m. | 3 |
 | WARNING | lmd Adjective POS should include DULAT gender marker for lmd: adj. m. | 3 |
 | WARNING | lmd Noun POS should include DULAT gender marker for lmd: n. m. | 3 |
-| WARNING | lmd Replace '/' with 'or' in POS label: 'adj./n.' -> 'adj. or n.' | 3 |
 | WARNING | lytn Noun POS should include DULAT gender marker for lyt: n. f. | 3 |
 | WARNING | mdl Noun POS should include DULAT gender marker for mdl (I): n. m. | 3 |
 | WARNING | mdl Noun POS should include DULAT gender marker for mdl (II): n. m. | 3 |
@@ -779,7 +776,6 @@
 | WARNING | llay Noun POS should include DULAT gender marker for llủ: n. m. | 2 |
 | WARNING | lmdh Adjective POS should include DULAT gender marker for lmd: adj. m. | 2 |
 | WARNING | lmdh Noun POS should include DULAT gender marker for lmd: n. m. | 2 |
-| WARNING | lmdh Replace '/' with 'or' in POS label: 'adj./n.' -> 'adj. or n.' | 2 |
 | WARNING | lrmnm Noun POS should include DULAT gender marker for lrmn: n. m. | 2 |
 | WARNING | mbk Noun POS should include DULAT gender marker for mbk: n. m. | 2 |
 | WARNING | md Noun POS should include DULAT gender marker for md (II): n. m. | 2 |
@@ -1103,8 +1099,6 @@
 | WARNING | bwtm Noun POS should include DULAT gender marker for bt (II): n. m. | 1 |
 | WARNING | bz Noun POS should include DULAT gender marker for bz: n. m. | 1 |
 | WARNING | bšr Noun POS should include DULAT gender marker for bšr: n. m. | 1 |
-| WARNING | bˤdhm Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.' | 1 |
-| WARNING | bˤdn Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.' | 1 |
 | WARNING | bˤlh Noun POS should include DULAT gender marker for bʕl (II): n. m. | 1 |
 | WARNING | bˤlhn Noun POS should include DULAT gender marker for bʕl (II): n. m. | 1 |
 | WARNING | bˤlkm Noun POS should include DULAT gender marker for bʕl (II): n. m. | 1 |

@@ -37,6 +37,13 @@ Use the reusable pipeline to process new tablets from `cuc_tablets_tsv` into `ou
 - Parse specific tablets: `UV_CACHE_DIR=.uv-cache uv run --python .venv/bin/python python scripts/run_tablet_parsing_pipeline.py --files 'KTU 1.181.tsv' 'KTU 1.182.tsv'`
 - Reprocess existing outputs too: `UV_CACHE_DIR=.uv-cache uv run --python .venv/bin/python python scripts/run_tablet_parsing_pipeline.py --include-existing`
 
+Pipeline stages are:
+
+1. Bootstrap from DULAT form matches
+2. Mention-aware refinement (`scripts/refine_results_mentions.py` logic)
+3. Instruction-driven cleanup for high-confidence cases (normalize disallowed col2/col3 characters and enforce unresolved `?` rows where DULAT is missing)
+4. Report regeneration under `reports/`
+
 ## GitHub Actions
 
 GitHub Actions no longer runs the linter itself. It parses committed files under `reports/` and publishes the summary in the workflow UI.
