@@ -294,6 +294,16 @@ class WeakVerbFixerTest(unittest.TestCase):
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "!t!(ytn[")
 
+    def test_non_weak_initial_verb_unchanged(self) -> None:
+        row = TabletRow("1", "tqru", "tqrʔ[", "/q-r-ʔ/", "vb", "to call", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "tqrʔ[")
+
+    def test_non_verb_unchanged(self) -> None:
+        row = TabletRow("1", "yd", "yd/", "yd (I)", "n. f.", "hand", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "yd/")
+
 
 class KnownAmbiguityExpanderTest(unittest.TestCase):
     def setUp(self) -> None:
@@ -330,16 +340,6 @@ class KnownAmbiguityExpanderTest(unittest.TestCase):
         row = TabletRow("1", "ydh", "yd(I)/+h", "yd (I), -h (I)", "n. f.,pers. pn.", "hand", "")
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "yd(I)/+h")
-
-    def test_non_weak_initial_verb_unchanged(self) -> None:
-        row = TabletRow("1", "tqru", "tqrʔ[", "/q-r-ʔ/", "vb", "to call", "")
-        result = self.fixer.refine_row(row)
-        self.assertEqual(result.analysis, "tqrʔ[")
-
-    def test_non_verb_unchanged(self) -> None:
-        row = TabletRow("1", "yd", "yd/", "yd (I)", "n. f.", "hand", "")
-        result = self.fixer.refine_row(row)
-        self.assertEqual(result.analysis, "yd/")
 
 
 class WeakFinalSuffixConjugationFixerTest(unittest.TestCase):

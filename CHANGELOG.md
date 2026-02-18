@@ -4,6 +4,7 @@
 
 - Added `KnownAmbiguityExpander` pipeline refinement step and wired it into `TabletParsingPipeline` so known high-value ambiguities are preserved on every run (currently `ydk` and `šlmm` full option sets).
 - Added unit tests for pipeline ambiguity expansion behavior (`ydk`, `šlmm`, and non-matching rows).
+- Follow-up test cleanup: restored `WeakVerbFixer` non-weak/non-verb assertions to `WeakVerbFixerTest` class scope after adding ambiguity-step tests.
 - Expanded ambiguous lexeme rows to preserve all user-provided parsing alternatives for later contextual disambiguation:
   - `ydk`: added six aligned options (`yd(I)/+k`, `yd(I)/+k=`, `yd(II)/+k`, `yd(II)/+k=`, `!y!dk[`, `!y=!dk[`) with aligned DULAT/POS/gloss variants.
   - `šlmm`: added both nominal alternatives (`šlm(II)/~m` and `šlm(II)/m`) with aligned DULAT/POS/gloss variants.
