@@ -43,3 +43,6 @@
 - Added context-aware `OfferingListLPrepFixer` and wired it into the parsing pipeline to normalize sacrificial offering-list sequences (`offering noun + l + recipient`) from ambiguous `l(I);l(II);l(III)` to `l(I)` (`prep.`, `to`).
 - Added a linter predicate for offering-list `l` ambiguity and unit tests for both the new refinement step and predicate.
 - Applied the offering-list `l` normalization across `out/KTU 1.*.tsv` (34 rows in 17 tablets), including `KTU 1.119` row `154177`.
+- Added `BaalLabourerKtu1Fixer` and pipeline wiring to remove `bʕl (I)` "labourer" from `KTU 1.*` `bˤl` ambiguity rows while preserving `bʕl (II)` and `/b-ʕ-l/`.
+- Added linter predicate/guard for forbidden `bʕl (I)` "labourer" usage in `KTU 1.*` plus unit tests for both fixer and predicate.
+- Applied the rule across `out/KTU 1.*.tsv` (171 rows in 50 tablets), including `152715` in `KTU 1.105`.

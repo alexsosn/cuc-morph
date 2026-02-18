@@ -6,6 +6,7 @@ import unittest
 from pathlib import Path
 
 from pipeline.steps.aleph_prefix import AlephPrefixFixer
+from pipeline.steps.baal_labourer_ktu1 import BaalLabourerKtu1Fixer
 from pipeline.steps.baal_plural import BaalPluralGodListFixer
 from pipeline.steps.base import TabletRow, is_separator_line, is_unresolved, parse_tsv_line
 from pipeline.steps.noun_closure import NounPosClosureFixer
@@ -337,6 +338,42 @@ class BaalPluralGodListFixerTest(unittest.TestCase):
         )
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "bˤl(II)/")
+
+
+class BaalLabourerKtu1FixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = BaalLabourerKtu1Fixer()
+
+    def test_removes_labourer_variant_in_ktu1(self) -> None:
+        content = (
+            "#---- KTU 1.105 25\n"
+            "152715\tbˤl\tbˤl(II)/;bˤl(I)/;bˤl[\t"
+            "bʕl (II);bʕl (I);/b-ʕ-l/\tn. m./DN;n. m.;vb\t"
+            "Baʿlu;labourer;to make\n"
+        )
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            f = Path(tmp_dir) / "KTU 1.105.tsv"
+            f.write_text(content, encoding="utf-8")
+            result = self.fixer.refine_file(f)
+            self.assertEqual(result.rows_changed, 1)
+            line = f.read_text(encoding="utf-8").splitlines()[1]
+            self.assertEqual(
+                line,
+                "152715\tbˤl\tbˤl(II)/;bˤl[\tbʕl (II);/b-ʕ-l/\tn. m./DN;vb\tBaʿlu;to make",
+            )
+
+    def test_keeps_variant_outside_ktu1(self) -> None:
+        content = (
+            "#---- KTU 4.1 1\n"
+            "900001\tbˤl\tbˤl(II)/;bˤl(I)/;bˤl[\t"
+            "bʕl (II);bʕl (I);/b-ʕ-l/\tn. m./DN;n. m.;vb\t"
+            "Baʿlu;labourer;to make\n"
+        )
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            f = Path(tmp_dir) / "KTU 4.1.tsv"
+            f.write_text(content, encoding="utf-8")
+            result = self.fixer.refine_file(f)
+            self.assertEqual(result.rows_changed, 0)
 
 
 class OfferingListLPrepFixerTest(unittest.TestCase):

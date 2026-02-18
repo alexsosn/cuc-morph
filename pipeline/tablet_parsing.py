@@ -8,6 +8,7 @@ import scripts.bootstrap_tablet_labeling as bootstrap
 import scripts.refine_results_mentions as refine
 from lint_reports.generator import LintReportGenerator
 from pipeline.instruction_refiner import InstructionRefiner
+from pipeline.steps.baal_labourer_ktu1 import BaalLabourerKtu1Fixer
 from pipeline.steps.baal_plural import BaalPluralGodListFixer
 from pipeline.steps.base import RefinementStep
 from pipeline.steps.dulat_gate import DulatMorphGate
@@ -47,6 +48,7 @@ class TabletParsingPipeline:
             NounPosClosureFixer(),
             OfferingListLPrepFixer(),
             PluralSplitFixer(gate=self.morph_gate),
+            BaalLabourerKtu1Fixer(),
             BaalPluralGodListFixer(),
             SuffixCliticFixer(gate=self.morph_gate),
             WeakVerbFixer(),

@@ -446,6 +446,28 @@ def row_has_ambiguous_l_in_offering_sequence(
     return _pos_looks_nominal(next_pos_text)
 
 
+def row_has_baal_labourer_in_ktu1(
+    file_path: str,
+    surface: str,
+    analysis_field: str,
+    dulat_field: str,
+    pos_field: str,
+    gloss_field: str,
+) -> bool:
+    """Detect forbidden bʕl(I) 'labourer' variant in KTU 1.* rows."""
+    if not Path(file_path).name.startswith("KTU 1."):
+        return False
+    if (surface or "").strip() != "bˤl":
+        return False
+    if "bˤl(I)/" not in (analysis_field or ""):
+        return False
+    if "bʕl (I)" not in (dulat_field or ""):
+        return False
+    if "n. m." not in (pos_field or ""):
+        return False
+    return "labourer" in (gloss_field or "").lower()
+
+
 def row_has_mixed_baal_dn_labourer_reading(
     surface: str,
     analysis_field: str,
@@ -1150,6 +1172,26 @@ def lint_file(
                         surface,
                         analysis,
                         "In offering-list sequences, parse 'l' as l(I) preposition",
+                    )
+                )
+
+            if row_has_baal_labourer_in_ktu1(
+                file_path=str(path),
+                surface=surface,
+                analysis_field=parts[2],
+                dulat_field=parts[3],
+                pos_field=parts[4],
+                gloss_field=parts[5],
+            ):
+                issues.append(
+                    Issue(
+                        "error",
+                        str(path),
+                        i,
+                        line_id,
+                        surface,
+                        analysis,
+                        "In KTU 1.*, remove bʕl(I) 'labourer' and keep bʕl (II) /b-ʕ-l/ readings",
                     )
                 )
 
