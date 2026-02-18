@@ -2,7 +2,7 @@
 
 This guide defines how to produce morphological labeling for a new unlabeled Ugaritic file, using:
 
-- `agent/Tagging conventions.txt` (authoritative tagging policy),
+- `agent/Tagging conventions.md` (authoritative tagging policy),
 - attested practice in checked project files (for example `data/KTU_1.3 Martjin_Tania_checked.txt`),
 - lexical and form evidence from:
   - `sources/dulat_cache.sqlite` (DULAT),
