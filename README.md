@@ -13,9 +13,10 @@ This repository now generates morphology lint reports locally and commits them u
 
 When staged changes touch lint-relevant files (`out/*.tsv`, `linter/**`, report tooling), the pre-commit hook:
 
-1. Runs `scripts/generate_lint_reports.py` with local DB access (`sources/dulat_cache.sqlite`, `sources/udb_cache.sqlite`)
-2. Regenerates `reports/*`
-3. Stages updated `reports/*` automatically
+1. Runs `ruff format` and `ruff check --fix` on staged Python files (prefers `.venv/bin/ruff`, falls back to `ruff` on `PATH`)
+2. Runs `scripts/generate_lint_reports.py` with local DB access (`sources/dulat_cache.sqlite`, `sources/udb_cache.sqlite`) for lint-relevant staged changes
+3. Regenerates `reports/*`
+4. Stages updated Python files and `reports/*` automatically
 
 Generated files include:
 

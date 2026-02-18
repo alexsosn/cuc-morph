@@ -4,9 +4,41 @@ set -euo pipefail
 repo_root="$(git rev-parse --show-toplevel)"
 cd "$repo_root"
 
-# Run only when lint-relevant files are staged.
-staged_files="$(git diff --cached --name-only)"
-if ! printf '%s\n' "$staged_files" | grep -E -q '^(out/.*\.tsv|linter/|scripts/generate_lint_reports\.py|lint_reports/|reports/|\.github/workflows/morphology-lint\.yml)'; then
+staged_files="$(git diff --cached --name-only --diff-filter=ACMR)"
+if [[ -z "${staged_files//[$'\t\r\n ']}" ]]; then
+  exit 0
+fi
+
+ruff_bin=""
+if [[ -x ".venv/bin/ruff" ]]; then
+  ruff_bin=".venv/bin/ruff"
+elif command -v ruff >/dev/null 2>&1; then
+  ruff_bin="$(command -v ruff)"
+fi
+
+staged_py_files=()
+while IFS= read -r path; do
+  [[ -z "$path" ]] && continue
+  if [[ "$path" == *.py ]] && [[ -f "$path" ]]; then
+    staged_py_files+=("$path")
+  fi
+done <<< "$staged_files"
+
+if (( ${#staged_py_files[@]} > 0 )); then
+  if [[ -z "$ruff_bin" ]]; then
+    echo "Ruff is required for Python pre-commit checks but was not found." >&2
+    exit 1
+  fi
+
+  echo "Running ruff format/check on staged Python files ..."
+  "$ruff_bin" format "${staged_py_files[@]}"
+  "$ruff_bin" check --fix "${staged_py_files[@]}"
+  "$ruff_bin" check "${staged_py_files[@]}"
+  git add "${staged_py_files[@]}"
+fi
+
+# Run lint-report generation only when lint-relevant files are staged.
+if ! printf '%s\n' "$staged_files" | grep -E -q '^(out/.*\.tsv|linter/|scripts/(generate_lint_reports|parse_lint_reports|install_git_hooks)\.py|lint_reports/|reports/|\.github/workflows/morphology-lint\.yml)'; then
   exit 0
 fi
 
