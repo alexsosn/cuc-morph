@@ -400,6 +400,38 @@ def variant_has_baad_plus_n(analysis_variant: str, declared_token: str) -> bool:
     return lemma_letters == normalize_surface("bʕd")
 
 
+def row_has_mixed_baal_dn_labourer_reading(
+    surface: str,
+    analysis_field: str,
+    dulat_field: str,
+    pos_field: str,
+    gloss_field: str,
+) -> bool:
+    """Detect known bad bˤlm ambiguity: Baʿlu(DN) + labourer plural mix."""
+    if normalize_surface((surface or "").strip()) != normalize_surface("bʕlm"):
+        return False
+
+    analysis_variants = split_semicolon_field(analysis_field)
+    dulat_variants = split_semicolon_field(dulat_field)
+    pos_variants = split_semicolon_field(pos_field)
+    gloss_variants = split_semicolon_field(gloss_field)
+
+    has_ii_variant = any(v in {"bˤl(II)/", "bˤlm(II)/"} for v in analysis_variants)
+    has_i_plural_variant = "bˤl(I)/m" in analysis_variants
+    if not (has_ii_variant and has_i_plural_variant):
+        return False
+
+    has_dulat_ii = "bʕl (II)" in dulat_variants
+    has_dulat_i = "bʕl (I)" in dulat_variants
+    if not (has_dulat_ii and has_dulat_i):
+        return False
+
+    has_dn = any("DN" in p for p in pos_variants)
+    has_baalu = any("baʿlu" in (g or "").lower() for g in gloss_variants)
+    has_labourer = any("labourer" in (g or "").lower() for g in gloss_variants)
+    return has_dn and has_baalu and has_labourer
+
+
 def dedupe_entries(entries: List["DulatEntry"]) -> List["DulatEntry"]:
     seen = set()
     out = []
@@ -1026,6 +1058,25 @@ def lint_file(
             has_core_letters = has_letters(strip_missing(surface).strip()) or any(
                 has_letters(strip_missing(v)) for v in analysis_variants if v
             )
+
+            if row_has_mixed_baal_dn_labourer_reading(
+                surface=surface,
+                analysis_field=parts[2],
+                dulat_field=parts[3],
+                pos_field=parts[4],
+                gloss_field=parts[5],
+            ):
+                issues.append(
+                    Issue(
+                        "error",
+                        str(path),
+                        i,
+                        line_id,
+                        surface,
+                        analysis,
+                        "bˤlm must not mix Baʿlu(DN) with labourer plural; use noun plural bˤl(II)/m",
+                    )
+                )
 
             if analysis_variants:
                 analysis = analysis_variants[0]

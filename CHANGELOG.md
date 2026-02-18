@@ -37,3 +37,6 @@
 - Corrected enclitic/suffix encoding for lexeme-final `n/y` and enclitic `~` forms in `SuffixCliticFixer`: normalize `~+x` to `~x`, preserve lemma-final `n/y` (e.g., `mṯn`, `lšn`), and enforce `bʕd~n` instead of `bʕd+n`.
 - Added linter guards for invalid enclitic `~+` usage and for false `/+n`/`/+y` splits when `n/y` is part of the declared lexeme (with unit tests).
 - Reverted affected `out/*.tsv` cases (including the requested `9950`, `10199`, `10504`, `138180`, `139921`) and restored `klnyy` alternative parsing as `klny~y;kl(I)+ny~y`.
+- Added `BaalPluralGodListFixer` and wired it into the parsing pipeline to normalize mixed `bˤlm` ambiguity rows to a single noun plural reading (`bˤl(II)/m`, `bʕl (II)`, `n. m.`, `lord`).
+- Added a linter predicate/rule to flag the known bad `bˤlm` mix (`Baʿlu` DN + `labourer` plural) and unit tests for both the rule and the refinement step.
+- Applied the fixer across `out/KTU 1.*.tsv` and corrected all currently matching rows (20 rows in 8 tablets), including `149082`.

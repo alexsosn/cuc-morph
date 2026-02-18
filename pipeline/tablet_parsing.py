@@ -8,6 +8,7 @@ import scripts.bootstrap_tablet_labeling as bootstrap
 import scripts.refine_results_mentions as refine
 from lint_reports.generator import LintReportGenerator
 from pipeline.instruction_refiner import InstructionRefiner
+from pipeline.steps.baal_plural import BaalPluralGodListFixer
 from pipeline.steps.base import RefinementStep
 from pipeline.steps.dulat_gate import DulatMorphGate
 from pipeline.steps.noun_closure import NounPosClosureFixer
@@ -44,6 +45,7 @@ class TabletParsingPipeline:
             # Will re-enable after linter lexeme extraction is updated.
             NounPosClosureFixer(),
             PluralSplitFixer(gate=self.morph_gate),
+            BaalPluralGodListFixer(),
             SuffixCliticFixer(gate=self.morph_gate),
             WeakVerbFixer(),
             WeakFinalSuffixConjugationFixer(),

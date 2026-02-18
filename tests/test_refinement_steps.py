@@ -6,6 +6,7 @@ import unittest
 from pathlib import Path
 
 from pipeline.steps.aleph_prefix import AlephPrefixFixer
+from pipeline.steps.baal_plural import BaalPluralGodListFixer
 from pipeline.steps.base import TabletRow, is_separator_line, is_unresolved, parse_tsv_line
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.plural_split import PluralSplitFixer
@@ -301,6 +302,40 @@ class WeakFinalSuffixConjugationFixerTest(unittest.TestCase):
         row = TabletRow("1", "klt", "kl(I)/t=", "klt (I)", "n. f.", "bride", "")
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "kl(I)/t=")
+
+
+class BaalPluralGodListFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = BaalPluralGodListFixer()
+
+    def test_collapses_mixed_baal_ambiguity(self) -> None:
+        row = TabletRow(
+            "149082",
+            "bˤlm",
+            "bˤl(II)/;bˤl(I)/m",
+            "bʕl (II);bʕl (I)",
+            "n. m./DN;n. m.",
+            "Baʿlu;labourer",
+            "",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "bˤl(II)/m")
+        self.assertEqual(result.dulat, "bʕl (II)")
+        self.assertEqual(result.pos, "n. m.")
+        self.assertEqual(result.gloss, "lord")
+
+    def test_unrelated_baal_entry_unchanged(self) -> None:
+        row = TabletRow(
+            "1",
+            "bˤl",
+            "bˤl(II)/",
+            "bʕl (II)",
+            "n. m./DN",
+            "Baʿlu",
+            "",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "bˤl(II)/")
 
 
 class RefineFileIntegrationTest(unittest.TestCase):

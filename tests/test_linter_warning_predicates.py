@@ -6,6 +6,7 @@ from linter.lint import (
     analysis_has_invalid_enclitic_plus,
     analysis_has_missing_plural_split,
     analysis_has_missing_suffix_plus,
+    row_has_mixed_baal_dn_labourer_reading,
     variant_has_baad_plus_n,
     variant_has_lexeme_terminal_single_suffix_split,
 )
@@ -44,6 +45,28 @@ class LinterWarningPredicateTest(unittest.TestCase):
     def test_baad_enclitic_plus_detected(self) -> None:
         self.assertTrue(variant_has_baad_plus_n("bˤd+n", "bʕd"))
         self.assertFalse(variant_has_baad_plus_n("ˤl(I)+n", "ʕl (I)"))
+
+    def test_baal_mixed_dn_labourer_detected(self) -> None:
+        self.assertTrue(
+            row_has_mixed_baal_dn_labourer_reading(
+                surface="bˤlm",
+                analysis_field="bˤl(II)/;bˤl(I)/m",
+                dulat_field="bʕl (II);bʕl (I)",
+                pos_field="n. m./DN;n. m.",
+                gloss_field="Baʿlu;labourer",
+            )
+        )
+
+    def test_baal_single_plural_lord_not_flagged(self) -> None:
+        self.assertFalse(
+            row_has_mixed_baal_dn_labourer_reading(
+                surface="bˤlm",
+                analysis_field="bˤl(II)/m",
+                dulat_field="bʕl (II)",
+                pos_field="n. m.",
+                gloss_field="lord",
+            )
+        )
 
 
 if __name__ == "__main__":
