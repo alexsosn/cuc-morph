@@ -1,7 +1,9 @@
 # Tagging conventions
 
 At this stage we decided not to reconstruct consonants, doubling, vowels and other grammatical markings that do not appear on the surface and concentrate on the visible elements. Altogether, if a sign is part of a lexeme, but it does not appear in a word, it is added to the word by "(". If a sign occurs in a word but it does not occur in the lexeme in DULAT, it is preceded by "&". E.g., in case of a scribal error corrected by editors, the ‘(’ precedes the ‘&’, as in wsp - (k&wsp “silver”. Otherwise, at this stage we don't reconstruct missing signs.
-Important: when several consecutive letters are reconstructed, each letter must be marked separately with "(". E.g. š(lyṭ/ is not allowed; use š(l(y(ṭ/.
+
+Important: when several consecutive letters are reconstructed, each letter must be marked separately with "(".
+
 The signs ( and & are also can also be used for aleph letters (u, i, a).
 Comments about variants can be added after  #
 
@@ -90,8 +92,6 @@ ks(u/&a accusative
 
 u, i and a are inflectional ending, and are placed after the "/". However, we put an ampersand in front of it, because a word only has this ending if it ends with aleph.
 
-
-
 Plural forms without feminine ending will have two vocalizations: pl. rpủm, rpỉm
 Final aleph nouns with feminine ending t do not have these variations, as the case ending was added after the t ending.
 
@@ -104,8 +104,10 @@ pit singular /piˀtu/
 pat plural /piˀātu/
 ```
 
-pit is our paradigmatic lexical form in singular, but if it occurs in the plural, its vocalization changes, and we encode it with:
+`pit` is our paradigmatic lexical form in singular, but if it occurs in the plural, its vocalization changes, and we encode it with:
+```
 p(i&a(t/t=
+```
 
 ### (3) Prosthetic aleph
 
@@ -160,6 +162,7 @@ The assimilated letter n, either of the root or the N-stem, is added by means of
 Some difficult cases, especially those that involve aleph letters:
 
 In verbs with aleph in the root, the ʔ should be visible, because we follow the lexicon DULAT, which uses "ʔ" in verbs. E.g., the G participle feminine plural of š-ʔ-b has the surface text šibt. We encode it as š(ʔ&ib[/t= "those (f,) who draw water". It consists of the following parts:
+
 * š the first radical
 * (ʔ the second radical, not realized in the realized text.
 * &i the vowel after the ʔ, which is realized in the give text but is not found in the lexeme.  
@@ -222,7 +225,8 @@ qtl[/
 
 The enclitic particles are prefixed with “~” in the encoding.
 
-Energic nun
+### Energic nun
+
 Energic nun is a mysterious enclitic particle in the Ugaritic language. It can occur as single or double nun:
 ```
 ~n
@@ -235,7 +239,8 @@ A special case of energic nun is when it incorporates a pronominal suffix with a
 85856 tluan !t!l(ʔ&u(y(I)[~+(n&an #an is a variant of nn
 ```
 
-Directive h
+### Directive h
+
 Directive h is encoded as ~h.
 
 ## VARIANTS
