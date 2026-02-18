@@ -1,13 +1,13 @@
 ## Morphology Lint Trends
 
-- History points used: `32`
-- Latest git head: `f5c9504128c9`
+- History points used: `33`
+- Latest git head: `38a1d974b4ec`
 
 ### Current Severity Snapshot
 
 | Severity | Count |
 |---|---:|
-| ERROR | 4975 |
+| ERROR | 4902 |
 | WARNING | 153 |
 | INFO | 1197 |
 

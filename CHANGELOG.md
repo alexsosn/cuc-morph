@@ -2,9 +2,13 @@
 
 ## 2026-02-18
 
+- Expanded ambiguous lexeme rows to preserve all user-provided parsing alternatives for later contextual disambiguation:
+  - `ydk`: added six aligned options (`yd(I)/+k`, `yd(I)/+k=`, `yd(II)/+k`, `yd(II)/+k=`, `!y!dk[`, `!y=!dk[`) with aligned DULAT/POS/gloss variants.
+  - `šlmm`: added both nominal alternatives (`šlm(II)/~m` and `šlm(II)/m`) with aligned DULAT/POS/gloss variants.
+- Normalized DULAT token spelling to `d-k(-k)/` in `out/*.tsv` so multi-option `ydk` rows remain linter-clean while keeping the expanded ambiguity.
 - Fixed false-positive `No DULAT entry found for lexeme/surface` hits for `ydk` by expanding verb-root lookup keys in `linter/lint.py` to support both slash-wrapped (`/d-k/`) and non-leading-slash (`d-k/`) lemma conventions used in DULAT.
 - Hardened `PluralSplitFixer` against malformed homonym plural splits (for example `šl(II)/m`) by repairing truncated lemma-final consonants when DULAT + surface reconstruction evidence is explicit.
-- Normalized high-confidence TSV rows accordingly: `d-k(-k)` -> `/d-k(-k)/` and `šl(II)/m` -> `šlm(II)/m` across `out/*.tsv`, eliminating `ydk` and `šlmm` from `No DULAT entry found` top offenders.
+- Normalized high-confidence TSV rows accordingly (including `šl(II)/m` -> `šlm(II)/m` and `d-k(-k)/` token normalization) across `out/*.tsv`, eliminating `ydk` and `šlmm` from `No DULAT entry found` top offenders.
 - Reverted the recent `out/KTU 1.5.tsv` simplification pass for the user-flagged rows (`139778`, `139852`, `139857`, `140202`) and restored the prior multi-option analyses/POS values.
 - Propagated the validated `KTU 1.1` formula fixes to true parallels in other tablets: `tḥmk -> tḥm/+k` with `tḥm, -k (I)` / `n. m.,pers. pn.` / `message, your(s)` in `out/KTU 1.3.tsv` (`10488`, `10496`) and `out/KTU 1.4.tsv` (`138769`, `138777`), and `twtḥ -> !t!w]t]ḥ(y[` in `out/KTU 1.7.tsv` (`141600`).
 - Moved morphology lint report generation from GitHub Actions to a local pre-commit workflow.
