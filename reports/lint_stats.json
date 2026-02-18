@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-18T11:41:06.311576+00:00",
+  "generated_at_utc": "2026-02-18T11:49:08.180308+00:00",
   "files_checked": 139,
-  "total_issues": 8199,
+  "total_issues": 6612,
   "fallback_parsed": 0,
   "by_severity": {
-    "ERROR": 5604,
-    "WARNING": 1173,
+    "ERROR": 5064,
+    "WARNING": 126,
     "INFO": 1197
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3801
+      "count": 3351
     },
     {
       "severity": "INFO",
@@ -22,17 +22,7 @@
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 714
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "Suffix form without '+'",
-      "count": 582
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "Plural form missing split ending",
-      "count": 496
+      "count": 625
     },
     {
       "severity": "ERROR",
@@ -57,7 +47,7 @@
     {
       "severity": "ERROR",
       "problem_type": "DULAT comment does not match candidates",
-      "count": 86
+      "count": 88
     },
     {
       "severity": "ERROR",
@@ -77,12 +67,17 @@
     {
       "severity": "ERROR",
       "problem_type": "Suffixed pronominal form in DULAT should use '+' in analysis",
-      "count": 45
+      "count": 42
     },
     {
       "severity": "WARNING",
       "problem_type": "TODO/uncertain marker in comment",
       "count": 37
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "Suffix form without '+'",
+      "count": 32
     },
     {
       "severity": "WARNING",
@@ -107,16 +102,16 @@
     {
       "severity": "WARNING",
       "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
-      "count": 13
+      "count": 10
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "Plural form missing split ending",
+      "count": 10
     },
     {
       "severity": "ERROR",
       "problem_type": "POS tokens must map to existing DULAT tokens in column 4",
-      "count": 8
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "Feminine plural noun in DULAT should be tagged with '/t='",
       "count": 8
     },
     {

@@ -29,3 +29,8 @@
 - Applied a weak-verb-only refinement pass to `out/KTU 1.*.tsv` and regenerated reports, eliminating all weak-initial `(y` lint errors and reducing total issues from `8602` to `8223`.
 - Added `WeakFinalSuffixConjugationFixer` to normalize weak-final finite forms with surface `-t` from `[` to `[t` when DULAT root is `/...-...-(y|w)/` (non-prefixed SC context), with dedicated tests.
 - Applied the weak-final SC fixer across `out/KTU 1.*.tsv` and regenerated reports, eliminating all weak-final `"[t"` warnings.
+- Refined `PluralSplitFixer` for lemma-style plural surfaces (for example `il(I)/` + surface `ilm` -> `il(I)/m`) using DULAT-gated morphology plus analysis-to-surface reconstruction checks; kept safeguards for lexemes whose lemma already ends in `m/t`.
+- Refined `SuffixCliticFixer` confidence checks via analysis/surface reconstruction while preserving lemma-style suffix injection for DULAT-confirmed forms.
+- Added shared reconstruction utilities (`pipeline/steps/analysis_utils.py`) and predicate tests for linter warning precision.
+- Tightened linter warning predicates for `"Suffix form without '+'"` and `"Plural form missing split ending"` to trigger only on analysis/surface pairs with explicit missing-split evidence.
+- Applied plural/suffix refinements across `out/KTU 1.*.tsv` and regenerated reports: total issues `8199 -> 6612`, warning count `1173 -> 126`, with `"Suffix form without '+'"` reduced to `32` and `"Plural form missing split ending"` reduced to `10`.

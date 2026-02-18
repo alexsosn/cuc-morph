@@ -149,6 +149,7 @@ def has_letters(s: str) -> bool:
 
 LETTER_RE = re.compile(r"[A-Za-zˤʔḫṣṯẓġḏḥṭš]")
 ANALYSIS_SURFACE_LETTER_RE = re.compile(r"[A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]")
+_CLITIC_SUFFIX_SEGMENTS = ("hm", "hn", "km", "kn", "ny", "nm", "nn", "h", "k", "n", "y")
 
 
 PL_TANT_RE = re.compile(
@@ -176,9 +177,7 @@ def has_plurale_tantum_note(text: str) -> bool:
     return PL_TANT_RE.search(t) is not None
 
 
-def has_unprefixed_reconstructed_sequence(
-    s: str, allow_weak_y_cluster: bool = False
-) -> bool:
+def has_unprefixed_reconstructed_sequence(s: str, allow_weak_y_cluster: bool = False) -> bool:
     """
     Enforce explicit per-letter reconstruction marking:
     every reconstructed letter must be preceded by '('.
@@ -225,12 +224,7 @@ def has_unprefixed_reconstructed_sequence(
         if j < len(s) and LETTER_RE.match(s[j]):
             # Allow weak-initial y-root cluster when only initial y
             # is reconstructed in prefix forms (e.g., "(ytn", "(yṯb").
-            if (
-                allow_weak_y_cluster
-                and s[i:j] == "(y"
-                and j < len(s)
-                and LETTER_RE.match(s[j])
-            ):
+            if allow_weak_y_cluster and s[i:j] == "(y" and j < len(s) and LETTER_RE.match(s[j]):
                 i = j + 1
                 continue
             return True
@@ -273,11 +267,7 @@ def reconstruct_surface_from_analysis(analysis: str) -> str:
 
         if ch == "(":
             if i + 1 < n and ANALYSIS_SURFACE_LETTER_RE.match(a[i + 1]):
-                if (
-                    i + 3 < n
-                    and a[i + 2] == "&"
-                    and ANALYSIS_SURFACE_LETTER_RE.match(a[i + 3])
-                ):
+                if i + 3 < n and a[i + 2] == "&" and ANALYSIS_SURFACE_LETTER_RE.match(a[i + 3]):
                     out.append(a[i + 3])
                     i += 4
                     continue
@@ -304,6 +294,61 @@ def reconstruct_surface_from_analysis(analysis: str) -> str:
         i += 1
 
     return "".join(out)
+
+
+def detect_suffix_segment(surface: str) -> Optional[str]:
+    """Return recognized clitic suffix segment from surface, if present."""
+    s = normalize_surface((surface or "").strip())
+    for seg in _CLITIC_SUFFIX_SEGMENTS:
+        if len(s) > len(seg) and s.endswith(seg):
+            return seg
+    return None
+
+
+def analysis_has_missing_suffix_plus(analysis: str, surface: str) -> bool:
+    """True if analysis/surface pair strongly indicates missing '+' suffix split."""
+    if "+" in (analysis or ""):
+        return False
+    seg = detect_suffix_segment(surface)
+    if not seg:
+        return False
+
+    s_norm = normalize_surface(surface)
+    base = s_norm[: -len(seg)]
+    variants = split_semicolon_field(analysis) or [analysis]
+    for var in variants:
+        v = (var or "").strip()
+        if not v:
+            continue
+        core = v.rstrip("/")
+        if core.endswith(seg):
+            return True
+        recon = normalize_surface(reconstruct_surface_from_analysis(v))
+        if recon == base:
+            return True
+    return False
+
+
+def analysis_has_missing_plural_split(analysis: str, surface: str) -> bool:
+    """True if analysis/surface pair strongly indicates missing /m or /t= split."""
+    s_norm = normalize_surface(surface)
+    if not s_norm.endswith(("m", "t")):
+        return False
+    target = s_norm[:-1]
+
+    variants = split_semicolon_field(analysis) or [analysis]
+    for var in variants:
+        v = (var or "").strip()
+        if not v:
+            continue
+        if "/" not in v:
+            continue
+        if v.endswith(("/m", "/t", "/m=", "/t=")):
+            continue
+        recon = normalize_surface(reconstruct_surface_from_analysis(v))
+        if recon == target:
+            return True
+    return False
 
 
 def dedupe_entries(entries: List["DulatEntry"]) -> List["DulatEntry"]:
@@ -393,15 +438,11 @@ def load_dulat(dulat_db: Path):
                 for stem_item in data_obj.get("stems_structured") or []:
                     stem_name = stem_item.get("name", "")
                     if stem_name:
-                        entry_stems.setdefault(entry_id, set()).update(
-                            extract_stems(stem_name)
-                        )
+                        entry_stems.setdefault(entry_id, set()).update(extract_stems(stem_name))
                 for form_item in data_obj.get("forms_structured") or []:
                     morph = form_item.get("morphology", "")
                     if morph:
-                        entry_stems.setdefault(entry_id, set()).update(
-                            extract_stems(morph)
-                        )
+                        entry_stems.setdefault(entry_id, set()).update(extract_stems(morph))
             except Exception:
                 pass
 
@@ -741,9 +782,7 @@ def parse_declared_dulat_token(token: str) -> Tuple[str, str]:
     return lemma, hom
 
 
-def extract_homonyms_for_lemma(
-    analysis_field: str, dulat_field: str, lemma: str
-) -> set:
+def extract_homonyms_for_lemma(analysis_field: str, dulat_field: str, lemma: str) -> set:
     """
     Collect homonym markers for a lemma from row-level analysis (col3)
     and declared DULAT entries (col4).
@@ -958,11 +997,7 @@ def lint_file(
                         "Column 4 count must match analysis variant count",
                     )
                 )
-            if (
-                analysis_variants
-                and pos_variants
-                and len(pos_variants) != len(analysis_variants)
-            ):
+            if analysis_variants and pos_variants and len(pos_variants) != len(analysis_variants):
                 issues.append(
                     Issue(
                         "error",
@@ -1011,9 +1046,7 @@ def lint_file(
                         # Prefer right-splitting so commas inside the main gloss
                         # do not inflate token count for clitic/enclitic tails.
                         g_tokens = [
-                            p.strip()
-                            for p in g_field.rsplit(",", len(d_tokens) - 1)
-                            if p.strip()
+                            p.strip() for p in g_field.rsplit(",", len(d_tokens) - 1) if p.strip()
                         ]
 
                     if not d_tokens:
@@ -1030,9 +1063,7 @@ def lint_file(
                         )
                         continue
                     unresolved_analysis = is_unresolved_placeholder(a_var)
-                    unresolved_declared = all(
-                        is_unresolved_placeholder(x) for x in d_tokens
-                    )
+                    unresolved_declared = all(is_unresolved_placeholder(x) for x in d_tokens)
                     if unresolved_analysis:
                         if not unresolved_declared:
                             issues.append(
@@ -1046,9 +1077,7 @@ def lint_file(
                                     "Morphology placeholder '?' should use unresolved DULAT placeholder '?' in column 4",
                                 )
                             )
-                        if p_tokens and any(
-                            not is_unresolved_placeholder(x) for x in p_tokens
-                        ):
+                        if p_tokens and any(not is_unresolved_placeholder(x) for x in p_tokens):
                             issues.append(
                                 Issue(
                                     "warning",
@@ -1060,9 +1089,7 @@ def lint_file(
                                     "Unresolved morphology placeholder '?' should use '?' or empty POS",
                                 )
                             )
-                        if g_tokens and any(
-                            not is_unresolved_placeholder(x) for x in g_tokens
-                        ):
+                        if g_tokens and any(not is_unresolved_placeholder(x) for x in g_tokens):
                             issues.append(
                                 Issue(
                                     "warning",
@@ -1091,9 +1118,7 @@ def lint_file(
                                 "Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)",
                             )
                         )
-                        if p_tokens and any(
-                            not is_unresolved_placeholder(x) for x in p_tokens
-                        ):
+                        if p_tokens and any(not is_unresolved_placeholder(x) for x in p_tokens):
                             issues.append(
                                 Issue(
                                     "warning",
@@ -1105,9 +1130,7 @@ def lint_file(
                                     "Unresolved DULAT placeholder '?' should use '?' or empty POS",
                                 )
                             )
-                        if g_tokens and any(
-                            not is_unresolved_placeholder(x) for x in g_tokens
-                        ):
+                        if g_tokens and any(not is_unresolved_placeholder(x) for x in g_tokens):
                             issues.append(
                                 Issue(
                                     "warning",
@@ -1211,13 +1234,9 @@ def lint_file(
                             allowed = set()
                             for pos_raw in pos_matches:
                                 for opt in entry_pos_options(pos_raw):
-                                    allowed.add(
-                                        normalize_pos_option_for_validation(opt)
-                                    )
+                                    allowed.add(normalize_pos_option_for_validation(opt))
                                     for sub_opt in split_pos_options(opt):
-                                        allowed.add(
-                                            normalize_pos_option_for_validation(sub_opt)
-                                        )
+                                        allowed.add(normalize_pos_option_for_validation(sub_opt))
                             pos_tok_opts = split_pos_options(pos_tok) if pos_tok else []
                             for opt in pos_tok_opts:
                                 opt_norm = normalize_pos_option_for_validation(opt)
@@ -1452,9 +1471,7 @@ def lint_file(
                         "'&' appears before '('",
                     )
                 )
-        variant_texts = analysis_variants or (
-            [analysis.strip()] if analysis.strip() else []
-        )
+        variant_texts = analysis_variants or ([analysis.strip()] if analysis.strip() else [])
         if not variant_texts:
             variant_texts = [analysis]
         for vi, a_var in enumerate(variant_texts):
@@ -1463,10 +1480,7 @@ def lint_file(
                 continue
             d_field = dulat_variants[vi] if vi < len(dulat_variants) else ""
             is_weak_initial_y_verb = variant_is_weak_initial_y_verb(a_txt, d_field)
-            if (
-                variant_is_weak_initial_y_prefix_form(a_txt, d_field)
-                and "(y" not in a_txt
-            ):
+            if variant_is_weak_initial_y_prefix_form(a_txt, d_field) and "(y" not in a_txt:
                 issues.append(
                     Issue(
                         "error",
@@ -1568,9 +1582,7 @@ def lint_file(
                     continue
                 if is_unresolved_placeholder(a_txt):
                     continue
-                reconstructed = normalize_surface(
-                    reconstruct_surface_from_analysis(a_txt)
-                )
+                reconstructed = normalize_surface(reconstruct_surface_from_analysis(a_txt))
                 if reconstructed != expected_norm:
                     issues.append(
                         Issue(
@@ -1585,11 +1597,7 @@ def lint_file(
                     )
 
         # UDB compare
-        if (
-            udb_words is not None
-            and surface_clean
-            and surface_clean not in {"ˤ", "ʕ", "ʿ"}
-        ):
+        if udb_words is not None and surface_clean and surface_clean not in {"ˤ", "ʕ", "ʿ"}:
             udb_key = normalize_udb(surface_clean)
             if udb_key not in udb_words:
                 issues.append(
@@ -1647,29 +1655,19 @@ def lint_file(
                 if part_lexeme:
                     # In +clitic slots, prefer suffix entries (-x) over free lexemes (x)
                     # when both exist; this avoids false ambiguity for parts like +k, +h.
-                    suffix_candidates = lemma_map.get(
-                        normalize_surface("-" + part_lexeme), []
-                    )
+                    suffix_candidates = lemma_map.get(normalize_surface("-" + part_lexeme), [])
                     if suffix_candidates:
                         part_candidates.extend(suffix_candidates)
                     else:
-                        part_candidates.extend(
-                            lemma_map.get(normalize_surface(part_lexeme), [])
-                        )
+                        part_candidates.extend(lemma_map.get(normalize_surface(part_lexeme), []))
                     if part_hom:
-                        part_candidates = [
-                            c for c in part_candidates if c.homonym == part_hom
-                        ]
+                        part_candidates = [c for c in part_candidates if c.homonym == part_hom]
                 if not part_candidates:
                     part_surface = strip_markers_simple(part)
                     if part_surface:
-                        part_candidates.extend(
-                            dulat_forms.get(normalize_surface(part_surface), [])
-                        )
+                        part_candidates.extend(dulat_forms.get(normalize_surface(part_surface), []))
                         if part_hom:
-                            part_candidates = [
-                                c for c in part_candidates if c.homonym == part_hom
-                            ]
+                            part_candidates = [c for c in part_candidates if c.homonym == part_hom]
                 if not part_candidates:
                     issues.append(
                         Issue(
@@ -1702,15 +1700,10 @@ def lint_file(
                                 ]
                             )
                         for ck in cand_keys:
-                            if (
-                                ck in selected_pos_by_declared
-                                and selected_pos_by_declared[ck]
-                            ):
+                            if ck in selected_pos_by_declared and selected_pos_by_declared[ck]:
                                 selected_pos_tok = selected_pos_by_declared[ck]
                                 break
-                        if selected_pos_tok and pos_token_is_ambiguous(
-                            selected_pos_tok
-                        ):
+                        if selected_pos_tok and pos_token_is_ambiguous(selected_pos_tok):
                             pos_list = ", ".join(sorted(pos_set))
                             issues.append(
                                 Issue(
@@ -1749,9 +1742,7 @@ def lint_file(
                     root = "/" + "-".join(list(lexeme)) + "/"
                     root_candidates.extend(lemma_map.get(normalize_surface(root), []))
                 verb_candidates_for_stem = [
-                    c
-                    for c in (base_candidates + root_candidates)
-                    if "vb" in c.pos.lower()
+                    c for c in (base_candidates + root_candidates) if "vb" in c.pos.lower()
                 ]
                 if lex_hom:
                     verb_candidates_for_stem = [
@@ -1761,20 +1752,12 @@ def lint_file(
             lexeme_candidates: List[DulatEntry] = []
             if is_deverbal and lexeme:
                 verb_candidates = [
-                    c
-                    for c in (base_candidates + root_candidates)
-                    if "vb" in c.pos.lower()
+                    c for c in (base_candidates + root_candidates) if "vb" in c.pos.lower()
                 ]
-                noun_candidates = [
-                    c for c in base_candidates if "vb" not in c.pos.lower()
-                ]
+                noun_candidates = [c for c in base_candidates if "vb" not in c.pos.lower()]
                 if lex_hom:
-                    verb_candidates = [
-                        c for c in verb_candidates if c.homonym == lex_hom
-                    ]
-                    noun_candidates = [
-                        c for c in noun_candidates if c.homonym == lex_hom
-                    ]
+                    verb_candidates = [c for c in verb_candidates if c.homonym == lex_hom]
+                    noun_candidates = [c for c in noun_candidates if c.homonym == lex_hom]
                 if verb_candidates and noun_candidates:
                     issues.append(
                         Issue(
@@ -1806,25 +1789,17 @@ def lint_file(
                 # Prefer verb/non-verb candidates based on analysis
                 if lexeme_candidates:
                     if is_verb:
-                        lexeme_candidates = [
-                            c for c in lexeme_candidates if "vb" in c.pos.lower()
-                        ]
+                        lexeme_candidates = [c for c in lexeme_candidates if "vb" in c.pos.lower()]
                     elif is_noun:
-                        non_vb = [
-                            c for c in lexeme_candidates if "vb" not in c.pos.lower()
-                        ]
+                        non_vb = [c for c in lexeme_candidates if "vb" not in c.pos.lower()]
                         if non_vb:
                             lexeme_candidates = non_vb
                     else:
-                        non_vb = [
-                            c for c in lexeme_candidates if "vb" not in c.pos.lower()
-                        ]
+                        non_vb = [c for c in lexeme_candidates if "vb" not in c.pos.lower()]
                         if non_vb:
                             lexeme_candidates = non_vb
                     if lex_hom:
-                        lexeme_candidates = [
-                            c for c in lexeme_candidates if c.homonym == lex_hom
-                        ]
+                        lexeme_candidates = [c for c in lexeme_candidates if c.homonym == lex_hom]
 
             analysis_plain = analysis.strip()
             # Surface-only excised tokens (for example "&š") intentionally carry no lexical parse.
@@ -1941,9 +1916,7 @@ def lint_file(
                                     "L stem marker present but DULAT lacks L/Lt",
                                 )
                             )
-                        if ":pass" in analysis and not (
-                            {"Špass", "Gpass", "Dpass", "N"} & stems
-                        ):
+                        if ":pass" in analysis and not ({"Špass", "Gpass", "Dpass", "N"} & stems):
                             issues.append(
                                 Issue(
                                     "error",
@@ -1984,9 +1957,7 @@ def lint_file(
 
                     # Unambiguous DULAT entry
                     if len(d_candidates) > 1 and head:
-                        if not any(
-                            c.lemma == head and c.homonym == hom for c in d_candidates
-                        ):
+                        if not any(c.lemma == head and c.homonym == hom for c in d_candidates):
                             issues.append(
                                 Issue(
                                     "error",
@@ -2004,23 +1975,14 @@ def lint_file(
                             hom = f"({c.homonym})" if c.homonym else ""
                             gloss = c.gloss or "—"
                             cand_list.append(f"{c.lemma}{hom} [{c.pos}] — {gloss}")
-                        msg = (
-                            f"Multiple DULAT candidates for {lookup_mode}: "
-                            + "; ".join(cand_list)
+                        msg = f"Multiple DULAT candidates for {lookup_mode}: " + "; ".join(
+                            cand_list
                         )
-                        issues.append(
-                            Issue(
-                                "error", str(path), i, line_id, surface, analysis, msg
-                            )
-                        )
+                        issues.append(Issue("error", str(path), i, line_id, surface, analysis, msg))
 
                     # POS -> noun/verb ending checks
                     if head:
-                        matched = [
-                            c
-                            for c in d_candidates
-                            if c.lemma == head and c.homonym == hom
-                        ]
+                        matched = [c for c in d_candidates if c.lemma == head and c.homonym == hom]
                     else:
                         matched = d_candidates
                     if matched:
@@ -2031,11 +1993,8 @@ def lint_file(
                         matched_entry_ids = {m.entry_id for m in matched}
                         surface_form_morphs = {
                             (f.morph or "").lower()
-                            for f in dulat_forms.get(
-                                normalize_surface(surface_clean), []
-                            )
-                            if f.entry_id in matched_entry_ids
-                            and (f.morph or "").strip()
+                            for f in dulat_forms.get(normalize_surface(surface_clean), [])
+                            if f.entry_id in matched_entry_ids and (f.morph or "").strip()
                         }
                         gender_values = {
                             (entry_gender.get(eid) or "").lower()
@@ -2045,21 +2004,13 @@ def lint_file(
                         has_f_gender = any(g.startswith("f") for g in gender_values)
                         head_lemma = (matched[0].lemma or "").strip()
                         analysis_trim = analysis.rstrip()
-                        has_t_split = (
-                            re.search(r"/t=?(?=\s*$|[+;,])", analysis_trim) is not None
-                        )
+                        has_t_split = re.search(r"/t=?(?=\s*$|[+;,])", analysis_trim) is not None
                         has_t_plural_split = (
                             re.search(r"/t=(?=\s*$|[+;,])", analysis_trim) is not None
                         )
-                        has_m_split = (
-                            re.search(r"/m=?(?=\s*$|[+;,])", analysis_trim) is not None
-                        )
-                        surface_form_has_fem = any(
-                            "f." in m for m in surface_form_morphs
-                        )
-                        surface_form_has_pl = any(
-                            "pl." in m for m in surface_form_morphs
-                        )
+                        has_m_split = re.search(r"/m=?(?=\s*$|[+;,])", analysis_trim) is not None
+                        surface_form_has_fem = any("f." in m for m in surface_form_morphs)
+                        surface_form_has_pl = any("pl." in m for m in surface_form_morphs)
                         noun_like = not is_pronoun and (
                             is_proper_noun
                             or any(tag in pos for tag in ("n.", "dn", "gn", "tn", "mn"))
@@ -2085,10 +2036,7 @@ def lint_file(
                             )
                         if not is_pronoun and (
                             is_proper_noun
-                            or any(
-                                tag in pos
-                                for tag in ("n.", "adj", "dn", "gn", "tn", "mn")
-                            )
+                            or any(tag in pos for tag in ("n.", "adj", "dn", "gn", "tn", "mn"))
                         ):
                             if "/" not in analysis:
                                 issues.append(
@@ -2248,6 +2196,10 @@ def lint_file(
                             and "+" not in analysis
                             and "prefc." not in morph
                             and not is_plurale_tantum_marked
+                            and analysis_has_missing_suffix_plus(
+                                analysis=analysis,
+                                surface=surface_clean,
+                            )
                         ):
                             issues.append(
                                 Issue(
@@ -2266,6 +2218,10 @@ def lint_file(
                             and "/" in analysis
                             and not analysis_trim.endswith(("/m", "/t", "/m=", "/t="))
                             and not is_plurale_tantum_marked
+                            and analysis_has_missing_plural_split(
+                                analysis=analysis,
+                                surface=surface_clean,
+                            )
                         ):
                             issues.append(
                                 Issue(
@@ -2296,16 +2252,14 @@ def lint_file(
                         if stem_markers:
                             lemma_key = head or (matched[0].lemma if matched else "")
                             if lemma_key:
-                                lemma_to_stems.setdefault(lemma_key, set()).update(
-                                    stem_markers
-                                )
+                                lemma_to_stems.setdefault(lemma_key, set()).update(stem_markers)
                                 for marker in stem_markers:
-                                    lemma_stem_ids.setdefault(
-                                        (lemma_key, marker), set()
-                                    ).add(line_id)
-                                    lemma_stem_lines.setdefault(
-                                        (lemma_key, marker), set()
-                                    ).add(str(i))
+                                    lemma_stem_ids.setdefault((lemma_key, marker), set()).add(
+                                        line_id
+                                    )
+                                    lemma_stem_lines.setdefault((lemma_key, marker), set()).add(
+                                        str(i)
+                                    )
 
         # Alt forms in comments
         for alt in extract_alt_forms(comment):
@@ -2474,9 +2428,7 @@ def lint_file(
     for surfaces, starts in parallel_occurrences.items():
         if len(starts) <= 1:
             continue
-        payload_to_spans: Dict[
-            Tuple[Tuple[str, str, str, str], ...], List[Tuple[str, str]]
-        ] = {}
+        payload_to_spans: Dict[Tuple[Tuple[str, str, str, str], ...], List[Tuple[str, str]]] = {}
         for start in starts:
             window = token_rows[start : start + parallel_window]
             payload = tuple(
@@ -2637,9 +2589,7 @@ def main():
     parser.add_argument(
         "--dulat", default="sources/dulat_cache.sqlite", help="Path to DULAT sqlite"
     )
-    parser.add_argument(
-        "--udb", default="sources/udb_cache.sqlite", help="Path to UDB sqlite"
-    )
+    parser.add_argument("--udb", default="sources/udb_cache.sqlite", help="Path to UDB sqlite")
     parser.add_argument(
         "--no-db",
         action="store_true",
@@ -2661,9 +2611,7 @@ def main():
         entry_gender = {}
         udb_words = None
     else:
-        dulat_forms, entry_meta, lemma_map, entry_stems, entry_gender = load_dulat(
-            Path(args.dulat)
-        )
+        dulat_forms, entry_meta, lemma_map, entry_stems, entry_gender = load_dulat(Path(args.dulat))
         udb_words = load_udb_words(Path(args.udb)) if Path(args.udb).exists() else None
 
     all_issues: List[Issue] = []

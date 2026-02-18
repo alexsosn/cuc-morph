@@ -147,6 +147,24 @@ class PluralSplitFixerTest(unittest.TestCase):
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "um/")
 
+    def test_lemma_style_plural_surface_m_gets_split(self) -> None:
+        fixer = PluralSplitFixer(gate=StaticGate(plural_tokens={"ỉl (I)"}))
+        row = TabletRow("1", "ilm", "il(I)/", "ỉl (I)", "n. m.", "god", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "il(I)/m")
+
+    def test_lemma_style_plural_surface_t_gets_split(self) -> None:
+        fixer = PluralSplitFixer(gate=StaticGate(plural_tokens={"kṯr (I)"}))
+        row = TabletRow("1", "kṯrt", "kṯr(I)/", "kṯr (I)", "n. f.", "Kothar", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "kṯr(I)/t=")
+
+    def test_singular_t_form_not_forced_to_plural(self) -> None:
+        fixer = PluralSplitFixer(gate=StaticGate(plural_tokens={"dqt (I)"}))
+        row = TabletRow("1", "dqt", "dqt(I)/", "dqt (I)", "n. f.", "small", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "dqt(I)/")
+
 
 class SuffixCliticFixerTest(unittest.TestCase):
     def setUp(self) -> None:
@@ -183,6 +201,18 @@ class SuffixCliticFixerTest(unittest.TestCase):
         row = TabletRow("1", "šmmh", "šmm(I)/", "šmm (I)", "n. m.", "heavens", "")
         result = fixer.refine_row(row)
         self.assertEqual(result.analysis, "šmm(I)/+h")
+
+    def test_adds_suffix_when_reconstruction_matches_surface_base(self) -> None:
+        fixer = SuffixCliticFixer(gate=StaticGate(suffix_tokens={"l (I)"}))
+        row = TabletRow("1", "ln", "l(I)", "l (I)", "prep.", "to", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "l(I)+n")
+
+    def test_no_suffix_injection_when_reconstruction_does_not_match(self) -> None:
+        fixer = SuffixCliticFixer(gate=StaticGate(suffix_tokens={"l (I)"}))
+        row = TabletRow("1", "lhn", "hmlk/", "l (I)", "prep.", "to", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "hmlk/")
 
 
 class WeakVerbFixerTest(unittest.TestCase):

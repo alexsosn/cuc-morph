@@ -8,6 +8,7 @@ the suffix in the analysis.
 import re
 from typing import Optional
 
+from pipeline.steps.analysis_utils import normalize_surface, reconstruct_surface_from_analysis
 from pipeline.steps.base import RefinementStep, TabletRow
 from pipeline.steps.dulat_gate import DulatMorphGate
 
@@ -16,6 +17,7 @@ _SUFFIX_SEGMENTS = ("hm", "hn", "km", "kn", "ny", "nm", "nn", "h", "k", "n", "y"
 
 # POS patterns that commonly carry suffixes
 _SUFFIXABLE_POS_PREFIXES = {"n.", "adj.", "prep.", "adv.", "vb"}
+_LEMMA_STYLE_RE = re.compile(r"^[A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]+(?:\([IVX]+\))?$")
 
 
 class SuffixCliticFixer(RefinementStep):
@@ -101,7 +103,42 @@ class SuffixCliticFixer(RefinementStep):
         if not self._is_suffix_dulat_token(dulat_token, surface):
             return analysis_variant
 
+        if not self._is_confident_suffix_variant(
+            analysis_variant=analysis_variant,
+            surface=surface,
+            suffix=suffix,
+        ):
+            return analysis_variant
+
         return self._inject_suffix(analysis_variant, suffix)
+
+    def _is_confident_suffix_variant(
+        self,
+        analysis_variant: str,
+        surface: str,
+        suffix: str,
+    ) -> bool:
+        """Return True when suffix insertion is supported by variant/surface shape."""
+        # Direct shape evidence in analysis string.
+        core = analysis_variant.rstrip("/")
+        if core.endswith(suffix):
+            return True
+        if re.match(r"^(.+?)" + re.escape(suffix) + r"(\([IVX]+\))?/$", analysis_variant):
+            return True
+        if (
+            _LEMMA_STYLE_RE.match(analysis_variant)
+            and "/" not in analysis_variant
+            and "[" not in analysis_variant
+        ):
+            return True
+
+        # Fallback: analysis reconstructs to the surface without suffix.
+        surface_norm = normalize_surface(surface)
+        if not surface_norm.endswith(suffix):
+            return False
+        base_surface = surface_norm[: -len(suffix)]
+        analysis_surface = normalize_surface(reconstruct_surface_from_analysis(analysis_variant))
+        return analysis_surface == base_surface
 
     def _inject_suffix(self, analysis_variant: str, suffix: str) -> str:
         """Try to inject '+' before the suffix in a single analysis variant."""

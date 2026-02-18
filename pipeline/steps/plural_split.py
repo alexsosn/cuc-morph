@@ -3,6 +3,7 @@
 import re
 from typing import Optional
 
+from pipeline.steps.analysis_utils import normalize_surface, reconstruct_surface_from_analysis
 from pipeline.steps.base import RefinementStep, TabletRow
 from pipeline.steps.dulat_gate import DulatMorphGate
 
@@ -10,6 +11,8 @@ from pipeline.steps.dulat_gate import DulatMorphGate
 # e.g. nhrm/ → nhr/m or nhrt/ → nhr/t=
 _PLURAL_M_RE = re.compile(r"^([A-Za-zˤʔḫṣṯẓġḏḥṭš()\[\]!&~:]+?)m(\([IVX]+\))?/$")
 _PLURAL_T_RE = re.compile(r"^([A-Za-zˤʔḫṣṯẓġḏḥṭš()\[\]!&~:]+?)t(\([IVX]+\))?/$")
+_TOKEN_RE = re.compile(r"^(.*?)(?:\s*\(([IVX]+)\))?$")
+_LEMMA_LETTER_RE = re.compile(r"[^A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]")
 
 
 class PluralSplitFixer(RefinementStep):
@@ -61,9 +64,9 @@ class PluralSplitFixer(RefinementStep):
 
     def _fix_variant(self, var: str, pos_v: str, dulat_tok: str, surface: str) -> str:
         """Fix a single analysis variant if it needs plural split."""
-        # Only fix noun-like slots
+        # Only fix noun/adjective slots.
         first_slot = pos_v.split(",")[0].strip() if pos_v else ""
-        if not first_slot.startswith("n."):
+        if not (first_slot.startswith("n.") or first_slot.startswith("adj.")):
             return var
 
         # Require DULAT evidence that the token has plural morphology.
@@ -71,22 +74,48 @@ class PluralSplitFixer(RefinementStep):
             return var
 
         # Already has explicit split (contains /m or /t=)?
-        if re.search(r"/[mt]", var):
+        if var.endswith(("/m", "/t", "/m=", "/t=")):
             return var
+
+        lemma_letters = _declared_lemma_letters(dulat_tok)
 
         # Try masculine plural: Xm/ → X/m
         m = _PLURAL_M_RE.match(var)
-        if m:
+        if m and not lemma_letters.endswith("m"):
             base = m.group(1)
             hom = m.group(2) or ""
             return f"{base}{hom}/m"
 
         # Try feminine plural: Xt/ → X/t=
         m = _PLURAL_T_RE.match(var)
-        if m:
+        if m and not lemma_letters.endswith("t"):
             base = m.group(1)
             hom = m.group(2) or ""
             return f"{base}{hom}/t="
+
+        # Fallback for lemma-style analyses (e.g., il(I)/ for surface ilm):
+        # if analysis reconstructs to the surface without final m/t, append split.
+        if not var.endswith("/"):
+            return var
+        if "/" not in var:
+            return var
+
+        surface_norm = normalize_surface(surface)
+        if not surface_norm:
+            return var
+        analysis_surface = normalize_surface(reconstruct_surface_from_analysis(var))
+        if (
+            surface_norm.endswith("m")
+            and not lemma_letters.endswith("m")
+            and analysis_surface == surface_norm[:-1]
+        ):
+            return f"{var}m"
+        if (
+            surface_norm.endswith("t")
+            and not lemma_letters.endswith("t")
+            and analysis_surface == surface_norm[:-1]
+        ):
+            return f"{var}t="
 
         return var
 
@@ -96,3 +125,17 @@ class PluralSplitFixer(RefinementStep):
         if self._gate is None:
             return False
         return self._gate.is_plural_token(token, surface=surface)
+
+
+def _declared_lemma_letters(dulat_token: str) -> str:
+    token = (dulat_token or "").strip()
+    if not token:
+        return ""
+    if "," in token:
+        token = token.split(",", 1)[0].strip()
+    if token.startswith("/"):
+        return ""
+    m = _TOKEN_RE.match(token)
+    lemma = (m.group(1) if m else token).strip()
+    letters = _LEMMA_LETTER_RE.sub("", normalize_surface(lemma)).lower()
+    return letters
