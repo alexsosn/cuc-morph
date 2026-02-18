@@ -40,3 +40,6 @@
 - Added `BaalPluralGodListFixer` and wired it into the parsing pipeline to normalize mixed `bˤlm` ambiguity rows to a single noun plural reading (`bˤl(II)/m`, `bʕl (II)`, `n. m.`, `lord`).
 - Added a linter predicate/rule to flag the known bad `bˤlm` mix (`Baʿlu` DN + `labourer` plural) and unit tests for both the rule and the refinement step.
 - Applied the fixer across `out/KTU 1.*.tsv` and corrected all currently matching rows (20 rows in 8 tablets), including `149082`.
+- Added context-aware `OfferingListLPrepFixer` and wired it into the parsing pipeline to normalize sacrificial offering-list sequences (`offering noun + l + recipient`) from ambiguous `l(I);l(II);l(III)` to `l(I)` (`prep.`, `to`).
+- Added a linter predicate for offering-list `l` ambiguity and unit tests for both the new refinement step and predicate.
+- Applied the offering-list `l` normalization across `out/KTU 1.*.tsv` (34 rows in 17 tablets), including `KTU 1.119` row `154177`.

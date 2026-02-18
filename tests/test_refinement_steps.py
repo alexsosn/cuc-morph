@@ -9,6 +9,7 @@ from pipeline.steps.aleph_prefix import AlephPrefixFixer
 from pipeline.steps.baal_plural import BaalPluralGodListFixer
 from pipeline.steps.base import TabletRow, is_separator_line, is_unresolved, parse_tsv_line
 from pipeline.steps.noun_closure import NounPosClosureFixer
+from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
 from pipeline.steps.plural_split import PluralSplitFixer
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
 from pipeline.steps.weak_final_sc import WeakFinalSuffixConjugationFixer
@@ -336,6 +337,43 @@ class BaalPluralGodListFixerTest(unittest.TestCase):
         )
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "bˤl(II)/")
+
+
+class OfferingListLPrepFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = OfferingListLPrepFixer()
+
+    def test_collapses_ambiguous_l_in_offering_sequence(self) -> None:
+        content = textwrap.dedent(
+            """\
+            #---- KTU 1.119 1
+            154176\tgdlt\tgdl(I)/t=\tgdlt (I)\tn. f.\thead of cattle
+            154177\tl\tl(I);l(II);l(III)\tl (I);l (II);l (III)\tprep.;adv.;functor\tto;no;certainly
+            154178\tbˤlm\tbˤl(II)/m\tbʕl (II)\tn. m.\tlord
+            """
+        )
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            f = Path(tmp_dir) / "test.tsv"
+            f.write_text(content, encoding="utf-8")
+            result = self.fixer.refine_file(f)
+            self.assertEqual(result.rows_changed, 1)
+            lines = f.read_text(encoding="utf-8").splitlines()
+            self.assertEqual(lines[2], "154177\tl\tl(I)\tl (I)\tprep.\tto")
+
+    def test_non_offering_context_unchanged(self) -> None:
+        content = textwrap.dedent(
+            """\
+            #---- KTU 1.1 1
+            135588\tḥẓr\tḥẓr/\tḥẓr\tn. m.\tmansion
+            135589\tl\tl(I);l(II);l(III)\tl (I);l (II);l (III)\tprep.;adv.;functor\tto;no;certainly
+            135590\tpˤn\tpˤn/\tpʕn\tn. f.\tfoot
+            """
+        )
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            f = Path(tmp_dir) / "test.tsv"
+            f.write_text(content, encoding="utf-8")
+            result = self.fixer.refine_file(f)
+            self.assertEqual(result.rows_changed, 0)
 
 
 class RefineFileIntegrationTest(unittest.TestCase):

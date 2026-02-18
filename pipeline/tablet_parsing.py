@@ -12,6 +12,7 @@ from pipeline.steps.baal_plural import BaalPluralGodListFixer
 from pipeline.steps.base import RefinementStep
 from pipeline.steps.dulat_gate import DulatMorphGate
 from pipeline.steps.noun_closure import NounPosClosureFixer
+from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
 from pipeline.steps.plural_split import PluralSplitFixer
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
 from pipeline.steps.weak_final_sc import WeakFinalSuffixConjugationFixer
@@ -44,6 +45,7 @@ class TabletParsingPipeline:
             # lexeme extraction, causing net increase in lint issues.
             # Will re-enable after linter lexeme extraction is updated.
             NounPosClosureFixer(),
+            OfferingListLPrepFixer(),
             PluralSplitFixer(gate=self.morph_gate),
             BaalPluralGodListFixer(),
             SuffixCliticFixer(gate=self.morph_gate),

@@ -6,6 +6,7 @@ from linter.lint import (
     analysis_has_invalid_enclitic_plus,
     analysis_has_missing_plural_split,
     analysis_has_missing_suffix_plus,
+    row_has_ambiguous_l_in_offering_sequence,
     row_has_mixed_baal_dn_labourer_reading,
     variant_has_baad_plus_n,
     variant_has_lexeme_terminal_single_suffix_split,
@@ -65,6 +66,30 @@ class LinterWarningPredicateTest(unittest.TestCase):
                 dulat_field="bʕl (II)",
                 pos_field="n. m.",
                 gloss_field="lord",
+            )
+        )
+
+    def test_offering_sequence_l_ambiguity_detected(self) -> None:
+        self.assertTrue(
+            row_has_ambiguous_l_in_offering_sequence(
+                surface="l",
+                analysis_field="l(I);l(II);l(III)",
+                pos_field="prep.;adv.;functor",
+                prev_surface="gdlt",
+                prev_pos="n. f.",
+                next_pos="DN",
+            )
+        )
+
+    def test_non_offering_l_ambiguity_not_detected(self) -> None:
+        self.assertFalse(
+            row_has_ambiguous_l_in_offering_sequence(
+                surface="l",
+                analysis_field="l(I);l(II);l(III)",
+                pos_field="prep.;adv.;functor",
+                prev_surface="ḥẓr",
+                prev_pos="n. m.",
+                next_pos="n. f.",
             )
         )
 

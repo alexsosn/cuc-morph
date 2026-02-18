@@ -152,6 +152,17 @@ ANALYSIS_SURFACE_LETTER_RE = re.compile(r"[A-Za-zˤʔḫṣṯẓġḏḥṭšʕ
 _CLITIC_SUFFIX_SEGMENTS = ("hm", "hn", "km", "kn", "ny", "nm", "nn", "h", "k", "n", "y")
 _DECLARED_SUFFIX_NY_RE = re.compile(r",\s*-[ny](?:\s|\(|$)", flags=re.IGNORECASE)
 _DECLARED_LEMMA_LETTER_RE = re.compile(r"[^A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]")
+_OFFERING_SURFACES = {
+    normalize_surface("gdlt"),
+    normalize_surface("alp"),
+    normalize_surface("alpm"),
+    normalize_surface("šnpt"),
+    normalize_surface("ʕr"),
+    normalize_surface("npš"),
+    normalize_surface("ššrt"),
+    normalize_surface("š"),
+    normalize_surface("ynt"),
+}
 
 
 PL_TANT_RE = re.compile(
@@ -398,6 +409,41 @@ def variant_has_baad_plus_n(analysis_variant: str, declared_token: str) -> bool:
     lemma_raw, _hom = parse_declared_dulat_token(d_tok)
     lemma_letters = _DECLARED_LEMMA_LETTER_RE.sub("", normalize_surface(lemma_raw)).lower()
     return lemma_letters == normalize_surface("bʕd")
+
+
+def _pos_looks_nominal(pos_text: str) -> bool:
+    p = (pos_text or "").strip()
+    if not p:
+        return False
+    return any(tag in p for tag in ("n.", "adj.", "num.", "DN", "PN", "TN"))
+
+
+def row_has_ambiguous_l_in_offering_sequence(
+    surface: str,
+    analysis_field: str,
+    pos_field: str,
+    prev_surface: str,
+    prev_pos: str,
+    next_pos: str,
+) -> bool:
+    """Detect offering-list context where ambiguous `l` should be preposition."""
+    if (surface or "").strip() != "l":
+        return False
+    if (analysis_field or "").strip() != "l(I);l(II);l(III)":
+        return False
+    if (pos_field or "").strip() != "prep.;adv.;functor":
+        return False
+
+    prev_surface_norm = normalize_surface((prev_surface or "").strip())
+    if prev_surface_norm not in _OFFERING_SURFACES:
+        return False
+    if not _pos_looks_nominal(prev_pos):
+        return False
+
+    next_pos_text = (next_pos or "").strip()
+    if "vb" in next_pos_text:
+        return False
+    return _pos_looks_nominal(next_pos_text)
 
 
 def row_has_mixed_baal_dn_labourer_reading(
@@ -972,6 +1018,28 @@ def lint_file(
             if len(parts) >= 2:
                 baseline_map[parts[0]] = parts[1]
 
+    data_parts_by_line: Dict[int, List[str]] = {}
+    data_line_numbers: List[int] = []
+    for line_no, raw in enumerate(lines, 1):
+        if not raw.strip() or is_cuc_separator_line(raw):
+            continue
+        core = raw
+        if "#" in raw:
+            core, _comment = raw.split("#", 1)
+            core = core.rstrip()
+        parts = core.split("\t")
+        if len(parts) >= 3:
+            data_parts_by_line[line_no] = parts
+            data_line_numbers.append(line_no)
+
+    prev_data_line: Dict[int, Optional[int]] = {}
+    next_data_line: Dict[int, Optional[int]] = {}
+    for idx, line_no in enumerate(data_line_numbers):
+        prev_data_line[line_no] = data_line_numbers[idx - 1] if idx > 0 else None
+        next_data_line[line_no] = (
+            data_line_numbers[idx + 1] if idx + 1 < len(data_line_numbers) else None
+        )
+
     prev_id = None
 
     # For parsing consistency (by surface form)
@@ -1058,6 +1126,32 @@ def lint_file(
             has_core_letters = has_letters(strip_missing(surface).strip()) or any(
                 has_letters(strip_missing(v)) for v in analysis_variants if v
             )
+
+            prev_parts = data_parts_by_line.get(prev_data_line.get(i) or -1)
+            next_parts = data_parts_by_line.get(next_data_line.get(i) or -1)
+            prev_surface = prev_parts[1] if prev_parts and len(prev_parts) > 1 else ""
+            prev_pos_field = prev_parts[4] if prev_parts and len(prev_parts) > 4 else ""
+            next_pos_field = next_parts[4] if next_parts and len(next_parts) > 4 else ""
+
+            if row_has_ambiguous_l_in_offering_sequence(
+                surface=surface,
+                analysis_field=parts[2],
+                pos_field=parts[4],
+                prev_surface=prev_surface,
+                prev_pos=prev_pos_field,
+                next_pos=next_pos_field,
+            ):
+                issues.append(
+                    Issue(
+                        "warning",
+                        str(path),
+                        i,
+                        line_id,
+                        surface,
+                        analysis,
+                        "In offering-list sequences, parse 'l' as l(I) preposition",
+                    )
+                )
 
             if row_has_mixed_baal_dn_labourer_reading(
                 surface=surface,
