@@ -8,3 +8,4 @@
 - Added report parser `scripts/parse_lint_reports.py` and simplified `.github/workflows/morphology-lint.yml` to parse committed reports only.
 - Added unit tests for lint output parsing and SVG trend chart rendering.
 - Updated pre-commit hook to run Ruff on staged Python files (`ruff format` + `ruff check --fix` + `ruff check`) before report generation.
+- Bootstrapped first-pass structured morphology outputs for all remaining `cuc_tablets_tsv/KTU 1.*.tsv` files into `out/` (coverage now matches all `KTU 1.*` sources).
