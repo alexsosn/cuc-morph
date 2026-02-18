@@ -10,6 +10,7 @@ from pipeline.steps.base import TabletRow, is_separator_line, is_unresolved, par
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.plural_split import PluralSplitFixer
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
+from pipeline.steps.weak_final_sc import WeakFinalSuffixConjugationFixer
 from pipeline.steps.weak_verb import WeakVerbFixer
 
 
@@ -217,6 +218,41 @@ class WeakVerbFixerTest(unittest.TestCase):
         row = TabletRow("1", "yd", "yd/", "yd (I)", "n. f.", "hand", "")
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "yd/")
+
+
+class WeakFinalSuffixConjugationFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = WeakFinalSuffixConjugationFixer()
+
+    def test_weak_final_y_gets_sc_t_marker(self) -> None:
+        row = TabletRow("1", "dit", "dʔy[", "/d-ʔ-y/", "vb", "to fly", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "dʔy[t")
+
+    def test_weak_final_w_gets_sc_t_marker(self) -> None:
+        row = TabletRow("1", "šnwt", "šnw[", "/š-n-w/", "vb", "to change", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "šnw[t")
+
+    def test_prefixed_form_unchanged(self) -> None:
+        row = TabletRow("1", "tkly", "!t!kly[", "/k-l-y/", "vb", "to finish", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!t!kly[")
+
+    def test_middle_radical_t_unchanged(self) -> None:
+        row = TabletRow("1", "ytt", "ytn[", "/y-t-n/", "vb", "to give", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "ytn[")
+
+    def test_already_marked_unchanged(self) -> None:
+        row = TabletRow("1", "dit", "dʔy[t", "/d-ʔ-y/", "vb", "to fly", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "dʔy[t")
+
+    def test_non_verb_variant_unchanged(self) -> None:
+        row = TabletRow("1", "klt", "kl(I)/t=", "klt (I)", "n. f.", "bride", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "kl(I)/t=")
 
 
 class RefineFileIntegrationTest(unittest.TestCase):

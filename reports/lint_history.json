@@ -7451,5 +7451,50 @@
       "ˤrwt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'": 1,
       "ṯnt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'": 1
     }
+  },
+  {
+    "timestamp_utc": "2026-02-18T11:41:06.331497+00:00",
+    "git_head": "9aa0a1d44f52",
+    "git_branch": "feature/pipeline-refinement-steps",
+    "report_signature": "1fc295bae441867687dde826ce161436df6fb2ab",
+    "files_checked": 139,
+    "total_issues": 8199,
+    "by_severity": {
+      "ERROR": 5604,
+      "WARNING": 1173,
+      "INFO": 1197
+    },
+    "issue_types": {
+      "Analysis does not reconstruct to surface": 3801,
+      "Surface not found in UDB concordance": 1197,
+      "No DULAT entry found for lexeme/surface": 714,
+      "Suffix form without '+'": 582,
+      "Plural form missing split ending": 496,
+      "ʔ must be preceded by '(' in column 3": 280,
+      "Missing DULAT entry token(s) in column 4": 175,
+      "Non-G stem in DULAT requires stem marker": 112,
+      "Unknown DULAT token in column 4": 112,
+      "DULAT comment does not match candidates": 86,
+      "Noun/adjective lacks '/' ending": 72,
+      "Each reconstructed letter must be prefixed by '('": 64,
+      "POS token not allowed for declared DULAT entry": 54,
+      "Suffixed pronominal form in DULAT should use '+' in analysis": 45,
+      "TODO/uncertain marker in comment": 37,
+      "Feminine plural noun in DULAT should use '/t='": 30,
+      "No DULAT entry found for clitic part": 29,
+      "Multiple DULAT candidates for lexeme": 23,
+      "Deverbal form matches both verb and noun entries in DULAT": 13,
+      "Feminine adjective/participle in DULAT should mark '-t' explicitly": 13,
+      "POS tokens must map to existing DULAT tokens in column 4": 8,
+      "Feminine plural noun in DULAT should be tagged with '/t='": 8,
+      "Deverbal form marked with '[' but only noun entry found in DULAT": 7,
+      "POS ambiguous in DULAT": 6,
+      "Verb lacks '[' ending": 5,
+      "D stem marker present but DULAT lacks D/Dt": 1,
+      "Disallowed character in columns 2-3: ʕ": 1,
+      "Multiple DULAT candidates for surface": 1,
+      "Xt stem marker present but DULAT lacks *t stem": 1,
+      "Š stem marker present but DULAT lacks Š/Št/Špass": 1
+    }
   }
 ]

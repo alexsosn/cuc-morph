@@ -27,3 +27,5 @@
 - Applied the improved suffix step across non-curated `out/KTU 1.*.tsv` files and regenerated reports (substantial reduction in suffix-related warnings/errors).
 - Refined `WeakVerbFixer` for weak-initial `/y-/` prefix forms to enforce `!preformative!` + hidden `(y` normalization (including conversion of `!y!y...` to `!y!(y...`) and added focused unit tests.
 - Applied a weak-verb-only refinement pass to `out/KTU 1.*.tsv` and regenerated reports, eliminating all weak-initial `(y` lint errors and reducing total issues from `8602` to `8223`.
+- Added `WeakFinalSuffixConjugationFixer` to normalize weak-final finite forms with surface `-t` from `[` to `[t` when DULAT root is `/...-...-(y|w)/` (non-prefixed SC context), with dedicated tests.
+- Applied the weak-final SC fixer across `out/KTU 1.*.tsv` and regenerated reports, eliminating all weak-final `"[t"` warnings.

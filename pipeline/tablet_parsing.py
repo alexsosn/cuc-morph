@@ -13,6 +13,7 @@ from pipeline.steps.dulat_gate import DulatMorphGate
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.plural_split import PluralSplitFixer
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
+from pipeline.steps.weak_final_sc import WeakFinalSuffixConjugationFixer
 from pipeline.steps.weak_verb import WeakVerbFixer
 
 
@@ -45,6 +46,7 @@ class TabletParsingPipeline:
             PluralSplitFixer(gate=self.morph_gate),
             SuffixCliticFixer(gate=self.morph_gate),
             WeakVerbFixer(),
+            WeakFinalSuffixConjugationFixer(),
         ]
 
     def discover_source_files(self) -> List[Path]:

@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-18T11:29:41.010437+00:00",
+  "generated_at_utc": "2026-02-18T11:41:06.311576+00:00",
   "files_checked": 139,
-  "total_issues": 8223,
-  "fallback_parsed": 19,
+  "total_issues": 8199,
+  "fallback_parsed": 0,
   "by_severity": {
-    "ERROR": 5609,
-    "WARNING": 1192,
+    "ERROR": 5604,
+    "WARNING": 1173,
     "INFO": 1197
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3806
+      "count": 3801
     },
     {
       "severity": "INFO",
@@ -135,26 +135,6 @@
       "count": 5
     },
     {
-      "severity": "WARNING",
-      "problem_type": "klt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
-      "count": 5
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "blt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "bkyt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ˤlt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
-      "count": 2
-    },
-    {
       "severity": "ERROR",
       "problem_type": "D stem marker present but DULAT lacks D/Dt",
       "count": 1
@@ -177,41 +157,6 @@
     {
       "severity": "ERROR",
       "problem_type": "Š stem marker present but DULAT lacks Š/Št/Špass",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "bkt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "dit Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mġyt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "šnt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "šnwt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ˤrwt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ṯnt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
       "count": 1
     }
   ]

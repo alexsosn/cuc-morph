@@ -1,22 +1,22 @@
 ## Morphology Lint Summary
 
 - Files checked: `139`
-- Total issues: `8223`
-- Fallback-parsed issue lines: `19`
+- Total issues: `8199`
+- Fallback-parsed issue lines: `0`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 5609 |
-| WARNING | 1192 |
+| ERROR | 5604 |
+| WARNING | 1173 |
 | INFO | 1197 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3806 |
+| ERROR | Analysis does not reconstruct to surface | 3801 |
 | INFO | Surface not found in UDB concordance | 1197 |
 | ERROR | No DULAT entry found for lexeme/surface | 714 |
 | WARNING | Suffix form without '+' | 582 |
@@ -41,19 +41,8 @@
 | WARNING | Deverbal form marked with '[' but only noun entry found in DULAT | 7 |
 | ERROR | POS ambiguous in DULAT | 6 |
 | ERROR | Verb lacks '[' ending | 5 |
-| WARNING | klt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t' | 5 |
-| WARNING | blt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t' | 3 |
-| WARNING | bkyt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t' | 2 |
-| WARNING | ˤlt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t' | 2 |
 | ERROR | D stem marker present but DULAT lacks D/Dt | 1 |
 | ERROR | Disallowed character in columns 2-3: ʕ | 1 |
 | ERROR | Multiple DULAT candidates for surface | 1 |
 | ERROR | Xt stem marker present but DULAT lacks *t stem | 1 |
 | ERROR | Š stem marker present but DULAT lacks Š/Št/Špass | 1 |
-| WARNING | bkt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t' | 1 |
-| WARNING | dit Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t' | 1 |
-| WARNING | mġyt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t' | 1 |
-| WARNING | šnt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t' | 1 |
-| WARNING | šnwt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t' | 1 |
-| WARNING | ˤrwt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t' | 1 |
-| WARNING | ṯnt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t' | 1 |
