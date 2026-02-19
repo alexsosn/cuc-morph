@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-02-18T23:10:29.387406+00:00",
+  "generated_at_utc": "2026-02-19T00:16:28.467049+00:00",
   "files_checked": 139,
-  "total_issues": 6470,
+  "total_issues": 6466,
   "fallback_parsed": 457,
   "by_severity": {
-    "ERROR": 4458,
+    "ERROR": 4454,
     "WARNING": 628,
     "INFO": 1197
   },
@@ -27,7 +27,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 171
+      "count": 170
     },
     {
       "severity": "ERROR",
@@ -52,7 +52,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Noun/adjective lacks '/' ending",
-      "count": 75
+      "count": 74
     },
     {
       "severity": "ERROR",
@@ -97,7 +97,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Multiple DULAT candidates for lexeme",
-      "count": 23
+      "count": 22
     },
     {
       "severity": "WARNING",
@@ -190,11 +190,6 @@
       "count": 7
     },
     {
-      "severity": "ERROR",
-      "problem_type": "POS ambiguous in DULAT",
-      "count": 6
-    },
-    {
       "severity": "WARNING",
       "problem_type": "tbˤ Lexeme parse did not match DULAT; matched by surface form",
       "count": 6
@@ -203,6 +198,11 @@
       "severity": "WARNING",
       "problem_type": "šblt Lexeme parse did not match DULAT; matched by surface form",
       "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "POS ambiguous in DULAT",
+      "count": 5
     },
     {
       "severity": "WARNING",

@@ -1,14 +1,14 @@
 ## Morphology Lint Summary
 
 - Files checked: `139`
-- Total issues: `6470`
+- Total issues: `6466`
 - Fallback-parsed issue lines: `457`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 4458 |
+| ERROR | 4454 |
 | WARNING | 628 |
 | INFO | 1197 |
 
@@ -19,12 +19,12 @@
 | ERROR | Analysis does not reconstruct to surface | 3290 |
 | INFO | Surface not found in UDB concordance | 1197 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 299 |
-| ERROR | Missing DULAT entry token(s) in column 4 | 171 |
+| ERROR | Missing DULAT entry token(s) in column 4 | 170 |
 | ERROR | No DULAT entry found for lexeme/surface | 98 |
 | ERROR | Non-G stem in DULAT requires stem marker | 98 |
 | ERROR | DULAT comment does not match candidates | 96 |
 | ERROR | Unknown DULAT token in column 4 | 77 |
-| ERROR | Noun/adjective lacks '/' ending | 75 |
+| ERROR | Noun/adjective lacks '/' ending | 74 |
 | ERROR | Each reconstructed letter must be prefixed by '(' | 64 |
 | ERROR | POS token not allowed for declared DULAT entry | 53 |
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 42 |
@@ -33,7 +33,7 @@
 | WARNING | Feminine adjective/participle in DULAT should mark '-t' explicitly | 32 |
 | WARNING | Feminine plural noun in DULAT should use '/t=' | 30 |
 | ERROR | No DULAT entry found for clitic part | 29 |
-| ERROR | Multiple DULAT candidates for lexeme | 23 |
+| ERROR | Multiple DULAT candidates for lexeme | 22 |
 | WARNING | aṯt Lexeme parse did not match DULAT; matched by surface form | 22 |
 | ERROR | Deverbal form matches both verb and noun entries in DULAT | 13 |
 | WARNING | nkt Lexeme parse did not match DULAT; matched by surface form | 13 |
@@ -52,9 +52,9 @@
 | WARNING | mid Lexeme parse did not match DULAT; matched by surface form | 7 |
 | WARNING | nši Lexeme parse did not match DULAT; matched by surface form | 7 |
 | WARNING | šmt Lexeme parse did not match DULAT; matched by surface form | 7 |
-| ERROR | POS ambiguous in DULAT | 6 |
 | WARNING | tbˤ Lexeme parse did not match DULAT; matched by surface form | 6 |
 | WARNING | šblt Lexeme parse did not match DULAT; matched by surface form | 6 |
+| ERROR | POS ambiguous in DULAT | 5 |
 | WARNING | btm Lexeme parse did not match DULAT; matched by surface form | 5 |
 | WARNING | limm Lexeme parse did not match DULAT; matched by surface form | 5 |
 | WARNING | t Lexeme parse did not match DULAT; matched by surface form | 5 |

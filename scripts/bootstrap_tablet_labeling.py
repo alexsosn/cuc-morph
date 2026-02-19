@@ -16,7 +16,6 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Tuple
 
-
 LOOKUP_NORMALIZE = str.maketrans(
     {
         "ʿ": "ʕ",
@@ -101,20 +100,35 @@ def load_dulat_forms(db_path: Path) -> Dict[str, List[Entry]]:
                 hom = m.group(2)
         meta[entry_id] = (lemma, hom, pos or "")
 
-    forms_map: Dict[str, List[Entry]] = {}
-    cur.execute("SELECT text, entry_id FROM forms")
-    for form_text, entry_id in cur.fetchall():
-        if not form_text or entry_id not in meta:
-            continue
-        lemma, hom, pos = meta[entry_id]
-        e = Entry(
+    entries_by_id: Dict[int, Entry] = {}
+    for entry_id, (lemma, hom, pos) in meta.items():
+        entries_by_id[entry_id] = Entry(
             entry_id=entry_id,
             lemma=lemma,
             hom=hom,
             pos=pos,
             gloss=gloss_map.get(entry_id, ""),
         )
-        forms_map.setdefault(normalize_lookup(form_text), []).append(e)
+
+    forms_map: Dict[str, List[Entry]] = {}
+    cur.execute("SELECT text, entry_id FROM forms")
+    for form_text, entry_id in cur.fetchall():
+        if not form_text or entry_id not in entries_by_id:
+            continue
+        forms_map.setdefault(normalize_lookup(form_text), []).append(entries_by_id[entry_id])
+
+    explicit_form_keys = set(forms_map.keys())
+
+    # Conservative fallback: if DULAT has an entry lemma but no `forms` row for
+    # that same token, index the lemma itself so bootstrap can still propose
+    # candidates (for example tnn).
+    for entry in entries_by_id.values():
+        lemma_key = normalize_lookup(entry.lemma)
+        if not lemma_key or " " in lemma_key:
+            continue
+        if lemma_key in explicit_form_keys:
+            continue
+        forms_map.setdefault(lemma_key, []).append(entry)
 
     conn.close()
     return forms_map
@@ -179,7 +193,9 @@ def build_row(line_id: str, surface: str, entries: List[Entry], max_variants: in
         return "\t".join([line_id, surface, surface, "", "", "", ""])
 
     if not entries:
-        return "\t".join([line_id, surface, surface.translate(ANALYSIS_ORTHO), "", "", "", "DULAT: NOT FOUND"])
+        return "\t".join(
+            [line_id, surface, surface.translate(ANALYSIS_ORTHO), "", "", "", "DULAT: NOT FOUND"]
+        )
 
     entries = dedupe_entries(entries)
     entries.sort(key=lambda e: (-score_candidate(surface, e), e.lemma, e.hom, e.pos))
@@ -222,7 +238,7 @@ def process_file(in_path: Path, out_path: Path, forms_map: Dict[str, List[Entry]
             out_lines.append(raw)
             continue
         line_id = (parts[0] or "").strip()
-        surface = (parts[1] or "")
+        surface = parts[1] or ""
         key = normalize_lookup(surface)
         entries = forms_map.get(key, [])
         out_lines.append(build_row(line_id, surface, entries))
@@ -231,9 +247,15 @@ def process_file(in_path: Path, out_path: Path, forms_map: Dict[str, List[Entry]
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Bootstrap KTU tablet to structured morphology TSV.")
+    parser = argparse.ArgumentParser(
+        description="Bootstrap KTU tablet to structured morphology TSV."
+    )
     parser.add_argument("input", nargs="+", help="Input raw cuc_tablets_tsv files")
-    parser.add_argument("--dulat-db", default="sources/dulat_cache.sqlite", help="Path to dulat cache sqlite")
+    parser.add_argument(
+        "--dulat-db",
+        default="sources/dulat_cache.sqlite",
+        help="Path to dulat cache sqlite",
+    )
     parser.add_argument("--out-dir", default="results", help="Output directory")
     args = parser.parse_args()
 
