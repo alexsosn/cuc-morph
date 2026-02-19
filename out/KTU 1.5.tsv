@@ -11,7 +11,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139776	ˤqltn	ˤqltn/	ʕqltn	adj. m.	winding	
 139777	š	?	?	?	?	spelling mistake?
 # KTU 1.5 I:3						
-139778	šlyṭ	šlyṭ/;šlyṭ/;]š]l(w&yṭ/[;]š]lyṭ/[;]š]lyṭ/[	šlyṭ;šlyṭ;/l-w-ṭ/;/l-y-ṭ/;/l-y-ṭ/	n. m.;DN m.;vb;vb;vb	tyrant/powerful;Šaliyaṭu;enwrap/encircle;enwrap/encircle;curse	
+139778	šlyṭ	šlyṭ/	šlyṭ	n. m.	tyrant/powerful	TCS translates the formula as “close-coiling”; DULAT supports nominal šlyṭ.
 139779	d	d	d	det. or rel. functor	the one(s) of	
 139780	šbˤt	šbˤ(I)/t	šbʕ (I)	n. num.	seven	
 139781	rašm	r(i&aš(I)/m	rỉš (I)	n. m.	head	
@@ -19,7 +19,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139782	tṯkḥ	!t!ṯkḥ[	/ṯ-k-ḥ/	vb	to burn	Wyatt p115 n7: first colon in tlkḥ.ttrp.šmm is “heat / become hot”.
 139783	ttrp	!t!]t]rp(y[:d	/r-p-y/	vb	to slacken	Wyatt p115 n7 keeps Dt /r-p-y/, with alternatives “droop / convulse”.
 139784	šmm	šm(m(I)/m	šmm (I)	n. m.	heavens	
-139785	krs	k(I),r(ks/;k(I),r(ks/[	k (I),rks;k (I),/r-s/	prep.,n. m.;prep.,vb	like, belt;like, fold?	UNP: 'but let me tear you to pieces', Gibson: 'with a breaking in pieces', TCS: 'like the folds (?)', noun or verbal noun?
+139785	krs	krs/	krs	n. m.	belt	TCS note 212: often analyzed as k + rs (verbal noun?); keep lexical krs baseline here.
 # KTU 1.5 I:5						
 139786	ipdk	ipd/+k	ỉpd, -k (I)	n. m.,pers. pn.	tunic, your(s)	???
 139787	ank	ank	ảnk	pers. pn.	I	
@@ -37,9 +37,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139797	ilm	il(I)/m	ỉl (I)	n. m.	god	
 139798	mt	mt(II)/	mt (II)	n. m.	death	
 139799	b	b	b	prep.	in	
-139800	mh	&m&h				UDB: 'R1 assumes the Broken String: mhmrt.'
+139800	mh	?	?	?	?	UDB: 'R1 assumes the Broken String: mhmrt.'
 # KTU 1.5 I:8						
-139801	mrt	(hmrt/	hmrt	n. f.	drain, sink	
+139801	mrt	?	?	?	?	Possibly part of mhmrt (cf. TCS note 215), but segmentation is uncertain.
 139802	ydd	ydd(I)/	ydd (I)	adj. m.	loved	
 139803	il	il(I)/	ỉl (I)	n. m.	god	
 139804	ġzr	ġzr/	ġzr	n. m.	lad	
@@ -78,7 +78,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139831	ġzr	ġzr/	ġzr	n. m.	lad	
 139832	p	p(I)	p (I)	conj. functor	and	
 139833	np	np(š(I)/	npš (I)	n. f.	throat	line break
-139834	š	&š				line break
+139834	š	?	?	?	?	line break
 139835	npš	npš(I)/	npš (I)	n. f.	throat	
 139836	lbim	lb(u&i/m	lbủ	n. m.	lion	Wyatt p117 n11 also notes possible maritime/monster construal in this passage.
 # KTU 1.5 I:15						
@@ -100,13 +100,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 I:18						
 139850	hm	hm(II)	hm (II)	conj.	if	
 139851	imt	imt/	ỉmt	n. f.	truth	Wyatt p119 n16 treats one repeated imt as likely dittography.
-139852	imt	!i!mt[:d;imt/	/m-t/;ỉmt	vb.;n. f.	kill;truth	imt as verbal form is not directly attested in DULAT forms.;Wyatt p119 n16-20, conjectural verbal reading “I kill”
+139852	imt	!i!mt[;imt/	/m-t/;ỉmt	vb;n. f.	kill;truth	imt as verbal form is not directly attested in DULAT forms.;Wyatt p119 n16-20, conjectural verbal reading “I kill”
 139853	npš	npš(I)/	npš (I)	n. f.	throat	
 139854	blt	bl(y[t:d;blt[	/b-l-y/;/b-l-t/	vb;vb	to devour;to open wide	???
 # KTU 1.5 I:19						
 139855	ḥmr	ḥmr(I)/;ḥmr(II)/	ḥmr (I);ḥmr (II)	n. m.;adj.	donkey;red	
 139856	p	p(I)	p (I)	conj. functor	and	
-139857	imt	!i!mt[:d;imt/	/m-t/;ỉmt	vb.;n. f.	kill;truth	Wyatt p119 n20 allows verbal /m-t/ interpretation in this cluster.
+139857	imt	!i!mt[;imt/	/m-t/;ỉmt	vb;n. f.	kill;truth	Wyatt p119 n20 allows verbal /m-t/ interpretation in this cluster.
 139858	b	b	b	prep.	in	
 139859	klat	klat/	klảt(n)	n. f.	both	!!!???
 # KTU 1.5 I:20						
@@ -147,7 +147,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139889	yn	yn/	yn	n. m.	wine	
 # KTU 1.5 I:26						
 139890	p	p(I)	p (I)	conj. functor	and	UNP keeps the drinking sequence here
-139891	nšt	!n!št(y[;nš(y[t:n	/š-t-y/;/n-š-y/	vb;vb	to drink;to be forgotten	TCS and UNP: /š-t-y/, 'let us drink'.';'DULAT and Notarius [377] support /n-š-y/ N suffc. 1cs 'I was forgotten'
+139891	nšt	!n!št(y[;nš(y[t:n	/š-t-y/;/n-š-y/	vb;vb	to drink;to be forgotten	TCS/UNP keep /š-t-y/ "drink"; DULAT + Notarius [377] support /n-š-y/ N suffix conjugation 1cs "I was forgotten".
 139892	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 139893	ṭˤn	ṭˤn[	/ṭ-ʕ-n/	vb	to smite	likely /ṭ-ʕ-n/ (cf. following iṭˤnk and UDB [ṭ]ʿn); Del Olmo I:26 renders this hemistich as “ataque/herida”
 139894	iṭˤnk	!i!ṭˤn[+k	/ṭ-ʕ-n/, -k (I)	vb, pers. pn.	to smite, your(s)	
@@ -164,7 +164,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 I:29						
 139903	bṯn	bṯn/	bṯn	n. m.	serpent	
 139904	ˤqltn	ˤqltn/	ʕqltn	adj. m.	winding	
-139905	šlyṭ	šlyṭ/	šlyṭ	n. m.	tyrant	
+139905	šlyṭ	šlyṭ/	šlyṭ	n. m.	tyrant/powerful	
 # KTU 1.5 I:30						
 139906	d	d	d	det. or rel. functor	the one(s) of	
 139907	šbˤt	šbˤ(I)/t	šbʕ (I)	n. num.	seven	
@@ -173,7 +173,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 I:31						
 139910	ttrp	!t!]t]rp(y[:d	/r-p-y/	vb	to slacken	
 139911	šmm	šmm(I)/	šmm (I)	n. m.	heavens	
-139912	krs	krs/	krs			
+139912	krs	krs/	krs	n. m.	belt	
 139913	ipdk	ipd/+k	ỉpd, -k (I)	n. m.,pers. pn.	tunic, your(s)	
 # KTU 1.5 II:1						
 139914	xxxxxxxyxḫm	?	?	?	?	
@@ -212,7 +212,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139942	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 # KTU 1.5 II:7						
 139943	ṯtˤ	ṯtˤ[	/ṯ-t-ʕ/	vb	to be frightened	
-139944	nn	-n(IV)&n	-n (IV)	pers. pn.	(for) him	enclitic continuation of previous verbal form (cf. CUC/udb ṯtʿnn as one word)
+139944	nn	-n(IV)&n	-n (IV)	pers. pn.	(for) him	
 139945	rkb	rkb(I)/;rkb[/	rkb (I);/r-k-b/	n. m.;vb	charioteer;to mount (especially a chariot)	
 139946	ˤrpt	ˤrp(t/t=	ʕrpt	n. f.	cloud(s)	
 # KTU 1.5 II:8						
@@ -249,7 +249,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 II:13						
 139973	tbˤ	tbˤ[	/t-b-ʕ/	vb	to go	
 139974	w	w	w	conj.	and	
-139975	l	l(II)	l (II)	adv.	no	
+139975	l	l(II)	l (II)	adv.	not	
 139976	yṯb	!y!(yṯb[	/y-ṯ-b/	vb	to sit down	
 139977	ilm	il(I)/m	ỉl (I)	n. m.	god	
 139978	idk	idk	ỉdk	narrative adv. functor	then	
@@ -310,7 +310,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140024	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 140025	xxxxxx	?	?	?	?	
 140026	yqr	!y!qr(ʔ[	/q-r-ʔ/	vb	to call	Del Olmo II:22 keeps segmentation yqr.un
-140027	un	&u-n(IV)	-n (IV)	pers. pn.	(for) him	second segment of yqr.un (alt. merged yqrun)
+140027	un	&u-n(IV)	-n (IV)	pers. pn.	(for) him	
 140028	hd	hd/	hd(d)	DN	Champion	
 # KTU 1.5 II:23						
 140029	xxxxxxxxxp	?	?	?	?	
@@ -320,10 +320,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140032	qẓb	qẓb/	qẓb	DN		
 # KTU 1.5 II:25						
 140033	xxxxxxxxxx	?	?	?	?	
-140034	šmḥy	šmḥy				
+140034	šmḥy	?	?	?	?	
 # KTU 1.5 II:26						
 140035	xxxxxxxxxxxtbˤ	?	?	?	?	
-140036	ṯ	ṯ				
+140036	ṯ	?	?	?	?	
 # KTU 1.5 II:27						
 140037	xxxxxxxxxxxxtnṮnm	?	?	?	?	
 # KTU 1.5 III:1						
@@ -342,7 +342,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140047	arṣ	arṣ/	ảrṣ	n. f.	earth	
 140048	ḥšn	ḥšn/	ḥšn	n. m.	?	
 # KTU 1.5 III:5						
-140049	tˤtd	tˤtd				
+140049	tˤtd	?	?	?	?	
 140050	tkl	!t!kl(y[:d	/k-l-y/	vb	to finish  be finished  to empty  be emptied	
 140051						
 # KTU 1.5 III:6						
@@ -452,13 +452,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140129	šdk	šd(I)/+k	šd (I), -k (I)	n. m.,pers. pn.	open field, your(s)	
 # KTU 1.5 IV:3						
 140130	w	w	w	conj.	and	
-140131	lṭlb	lṭlb				
+140131	lṭlb	?	?	?	?	
 140132						
 # KTU 1.5 IV:4						
 140133	mit	mit/	mỉt	n. f.	a hundred	
 140134	rḥm	rḥ(III)/m	rḥ (III)	n. m.	millstone	
 # KTU 1.5 IV:5						
-140135	tṭlb	tṭlb				
+140135	tṭlb	?	?	?	?	
 140136	arṣ	arṣ/	ảrṣ	n. f.	earth	
 # KTU 1.5 IV:6						
 140137	yšu	!y!(nš(ʔ&u[	/n-š-ʔ/	vb	to raise	
@@ -479,7 +479,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 IV:10						
 140149	b	b	b	prep.	in	
 140150	ṯmnt	ṯmn(I)/t	ṯmn (I)			Del Olmo IV:8-9 parallels “siete servidores / ocho asistentes”; Wyatt p123 n37 retains “eight boars/officers” alternative.
-140151	a	a				DULAT: NOT FOUND; broken context after bṯmnt, UNP note 167 proposes [hnzrm] “attendants”
+140151	a	?	?	?	?	DULAT: NOT FOUND; broken context after bṯmnt, UNP note 167 proposes [hnzrm] “attendants”
 # KTU 1.5 IV:11						
 140152	yqrb	!y!qrb[	/q-r-b/	vb	to approach	
 140153	x	?	?	?	?	
@@ -521,14 +521,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140181						
 # KTU 1.5 IV:20						
 140182	w	w	w	conj.	and	
-140183	tṯtnyn	tṯtnyn				
+140183	tṯtnyn	?	?	?	?	
 # KTU 1.5 IV:21						
 140184	tˤl	!t!ˤl(y[	/ʕ-l-y/	vb	to go up	
 140185	trṯ	trṯ/	trṯ	n. m.	new wine	
 # KTU 1.5 IV:22						
 140186	bt	bt(I)/	bt (I)	n. f.	daughter	
 140187	il	il(I)/	ỉl (I)	n. m.	god	
-140188	li	li(I)[				
+140188	li	?	?	?	?	
 # KTU 1.5 IV:23						
 140189	ˤl	ˤl(III)/	ʕl (III)	n. m.	offspring	
 140190	ḥbš	ḥbš(I)/	ḥbš (I)	n. m.	cinch	
@@ -541,7 +541,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140195	lik	l(ʔ&ik[	/l-ʔ-k/	vb	to send	
 140196	tlšx	!t!lšn[;tlš(II)/;tlšn/	/l-š-n/;tlš (II);tlšn	vb;PN;PN	to slander;PN;PN	UDB concordance pattern tlš- -> tlšn (1 hit).
 # KTU 1.5 IV:26						
-140197	tˤddn	tˤddn				
+140197	tˤddn	?	?	?	?	
 # KTU 1.5 IV:27						
 140198	niṣ	n(ʔ&iṣ[/	/n-ʔ-ṣ/	vb	to despise	
 140199	px	?	?	?	?	
@@ -565,7 +565,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140212	xxx	?	?	?	?	
 140213	bnk	bn(I)/+k	bn (I), -k (I)	n. m.,pers. pn.	son, your(s)	
 140214	ašt	!(ʔ&a!št[	/š-t/	vb	to place	OR with next token: aštn (UDB R1; Del Olmo V:5 ast.n)
-140215	n	-n(IV)	-n (IV)	pers. pn.	(for) him	enclitic -n (3ms/3fs); some readings merge with previous as aštn
+140215	n	-n(IV)	-n (IV)	pers. pn.	(for) him	
 140216	b	b	b	prep.	in	
 140217	ḫrt	ḫrt/	ḫrt	n. f.	cave	
 # KTU 1.5 V:6						
@@ -652,7 +652,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140284	l	l(I)	l (I)	prep.	to	
 140285	šbˤm	šbˤ(I)/m;šbˤ/m	šbʕ (I);šbʕm	n. num.;n. num.	seven;seventy	
 # KTU 1.5 V:21						
-140286	tšˤly	tšˤly				
+140286	tšˤly	?	?	?	?	
 140287	ṯmn	ṯmn(I)/	ṯmn (I)			
 140288	l	l(I)	l (I)	prep.	to	
 140289	ṯmnym	ṯmnym/	ṯmnym	num.	eighty	
@@ -669,7 +669,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 V:24						
 140298	ipd	ipd/	ỉpd	n. m.	tunic	
 140299	xxxx	?	?	?	?	
-140300	ulh	ulh				
+140300	ulh	?	?	?	?	
 140301	mġẓ	mġẓ/	mġẓ	n. m.	present	
 # KTU 1.5 V:25						
 140302	ymnh	ymn(I)/+h	ymn (I), -h (I)	n. m.,pers. pn.	right, his /her	
@@ -721,7 +721,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140339	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 140340	npl	npl[	/n-p-l/	vb	to fall	
 140341	l	l(I)	l (I)	prep.	to	
-140342	a	!(ʔ&a!(I)[				
+140342	a	?	?	?	?	
 # KTU 1.5 VI:9						
 140343	rṣ	(arṣ/	ảrṣ	n. f.	earth	likely part of arṣ sequence with previous token a (segmentation uncertain)
 140344	mt	mt(I)/	mt (I)	n. m.	dead person	
@@ -733,7 +733,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140349	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 140350	arṣ	arṣ/	ảrṣ	n. f.	earth	
 # KTU 1.5 VI:11						
-140351	apnk	apn(I)+k	ảpn (I), -k (I)	n. f.,pers. pn.	wheel, your(s)	
+140351	apnk	apn(I)/+k	ảpn (I), -k (I)	n. f.,pers. pn.	wheel, your(s)	
 140352	lṭpn	lṭpn/	lṭpn	adj. m.	Benevolent	
 140353	ilxx	?	?	?	?	
 # KTU 1.5 VI:12						

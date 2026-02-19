@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-02-19T01:27:40.762257+00:00",
+  "generated_at_utc": "2026-02-19T02:22:09.152989+00:00",
   "files_checked": 139,
-  "total_issues": 6453,
-  "fallback_parsed": 457,
+  "total_issues": 6411,
+  "fallback_parsed": 456,
   "by_severity": {
-    "ERROR": 4444,
-    "WARNING": 628,
+    "ERROR": 4405,
+    "WARNING": 626,
     "INFO": 1197
   },
   "by_problem_type": [
@@ -27,12 +27,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 170
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 98
+      "count": 156
     },
     {
       "severity": "ERROR",
@@ -46,23 +41,28 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "No DULAT entry found for lexeme/surface",
+      "count": 89
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "Unknown DULAT token in column 4",
-      "count": 77
+      "count": 73
     },
     {
       "severity": "ERROR",
       "problem_type": "Noun/adjective lacks '/' ending",
-      "count": 74
+      "count": 72
     },
     {
       "severity": "ERROR",
       "problem_type": "Each reconstructed letter must be prefixed by '('",
-      "count": 64
+      "count": 61
     },
     {
       "severity": "ERROR",
       "problem_type": "POS token not allowed for declared DULAT entry",
-      "count": 63
+      "count": 60
     },
     {
       "severity": "ERROR",
@@ -77,7 +77,7 @@
     {
       "severity": "WARNING",
       "problem_type": "TODO/uncertain marker in comment",
-      "count": 37
+      "count": 36
     },
     {
       "severity": "WARNING",
@@ -95,14 +95,14 @@
       "count": 29
     },
     {
-      "severity": "ERROR",
-      "problem_type": "Multiple DULAT candidates for lexeme",
-      "count": 22
-    },
-    {
       "severity": "WARNING",
       "problem_type": "aṯt Lexeme parse did not match DULAT; matched by surface form",
       "count": 22
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Multiple DULAT candidates for lexeme",
+      "count": 21
     },
     {
       "severity": "ERROR",
@@ -273,11 +273,6 @@
       "severity": "WARNING",
       "problem_type": "ḫbtkm Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "D stem marker present but DULAT lacks D/Dt",
-      "count": 3
     },
     {
       "severity": "WARNING",
@@ -586,12 +581,12 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "Disallowed character in columns 2-3: ʕ",
+      "problem_type": "D stem marker present but DULAT lacks D/Dt",
       "count": 1
     },
     {
       "severity": "ERROR",
-      "problem_type": "Multiple DULAT candidates for surface",
+      "problem_type": "Disallowed character in columns 2-3: ʕ",
       "count": 1
     },
     {
@@ -777,11 +772,6 @@
     {
       "severity": "WARNING",
       "problem_type": "la Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "li Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {

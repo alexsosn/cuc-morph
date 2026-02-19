@@ -1,15 +1,15 @@
 ## Morphology Lint Summary
 
 - Files checked: `139`
-- Total issues: `6453`
-- Fallback-parsed issue lines: `457`
+- Total issues: `6411`
+- Fallback-parsed issue lines: `456`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 4444 |
-| WARNING | 628 |
+| ERROR | 4405 |
+| WARNING | 626 |
 | INFO | 1197 |
 
 ### By Problem Type
@@ -19,22 +19,22 @@
 | ERROR | Analysis does not reconstruct to surface | 3275 |
 | INFO | Surface not found in UDB concordance | 1197 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 299 |
-| ERROR | Missing DULAT entry token(s) in column 4 | 170 |
-| ERROR | No DULAT entry found for lexeme/surface | 98 |
+| ERROR | Missing DULAT entry token(s) in column 4 | 156 |
 | ERROR | Non-G stem in DULAT requires stem marker | 98 |
 | ERROR | DULAT comment does not match candidates | 91 |
-| ERROR | Unknown DULAT token in column 4 | 77 |
-| ERROR | Noun/adjective lacks '/' ending | 74 |
-| ERROR | Each reconstructed letter must be prefixed by '(' | 64 |
-| ERROR | POS token not allowed for declared DULAT entry | 63 |
+| ERROR | No DULAT entry found for lexeme/surface | 89 |
+| ERROR | Unknown DULAT token in column 4 | 73 |
+| ERROR | Noun/adjective lacks '/' ending | 72 |
+| ERROR | Each reconstructed letter must be prefixed by '(' | 61 |
+| ERROR | POS token not allowed for declared DULAT entry | 60 |
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 42 |
 | WARNING | Suffix form without '+' | 40 |
-| WARNING | TODO/uncertain marker in comment | 37 |
+| WARNING | TODO/uncertain marker in comment | 36 |
 | WARNING | Feminine adjective/participle in DULAT should mark '-t' explicitly | 32 |
 | WARNING | Feminine plural noun in DULAT should use '/t=' | 30 |
 | ERROR | No DULAT entry found for clitic part | 29 |
-| ERROR | Multiple DULAT candidates for lexeme | 22 |
 | WARNING | aṯt Lexeme parse did not match DULAT; matched by surface form | 22 |
+| ERROR | Multiple DULAT candidates for lexeme | 21 |
 | ERROR | Deverbal form matches both verb and noun entries in DULAT | 13 |
 | WARNING | nkt Lexeme parse did not match DULAT; matched by surface form | 13 |
 | WARNING | Feminine plural noun in DULAT should be tagged with '/t=' | 12 |
@@ -69,7 +69,6 @@
 | WARNING | yḥ Lexeme parse did not match DULAT; matched by surface form | 4 |
 | WARNING | ḥmyt Lexeme parse did not match DULAT; matched by surface form | 4 |
 | WARNING | ḫbtkm Lexeme parse did not match DULAT; matched by surface form | 4 |
-| ERROR | D stem marker present but DULAT lacks D/Dt | 3 |
 | WARNING | bˤdn Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | bˤlkm Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | dblt Lexeme parse did not match DULAT; matched by surface form | 3 |
@@ -131,8 +130,8 @@
 | WARNING | ˤnm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ˤnnh Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ḥtkk Lexeme parse did not match DULAT; matched by surface form | 2 |
+| ERROR | D stem marker present but DULAT lacks D/Dt | 1 |
 | ERROR | Disallowed character in columns 2-3: ʕ | 1 |
-| ERROR | Multiple DULAT candidates for surface | 1 |
 | ERROR | Xt stem marker present but DULAT lacks *t stem | 1 |
 | ERROR | Š stem marker present but DULAT lacks Š/Št/Špass | 1 |
 | WARNING | Plurale tantum noun ending in '-m' should mark plural with '/m' | 1 |
@@ -170,7 +169,6 @@
 | WARNING | ištm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ktpm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | la Lexeme parse did not match DULAT; matched by surface form | 1 |
-| WARNING | li Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | llim Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | lṭšt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | mat Lexeme parse did not match DULAT; matched by surface form | 1 |
