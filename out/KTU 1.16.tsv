@@ -32,7 +32,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 I:6						
 143215	tbkyk	!t!bky[	/b-k-y/	vb	to weep	
 143216	ab	ab/	ảb	n. m.	father	
-143217	ġr	ġr(I)/;ġr(V)/;ġr(III)/	ġr (I);ġr (V);ġr (III)	n. m.;n. m.;n. m.	mountain;total;skin	
+143217	ġr	ġr(I)/;ġr(III)/	ġr (I);ġr (III)	n. m.;n. m.	mountain;skin	
 143218	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 # KTU 1.16 I:7						
 143219	ṣpn	ṣpn/	ṣpn	TN/DN	north	
@@ -41,7 +41,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 I:8						
 143222	nny	ˤl(I)+ny;grš[+y(I);grš[+y(II)	ʕl (I),-ny;/g-r-š/,-y (I);/g-r-š/,-y (II)	prep.,suff. pn. morph.;vb,prep.;vb,postp. functor	upon,our;to eject,my;to eject,yes	
 143223	ḥlm	ḥlm(I)/	ḥlm (I)	n. m.	dream	
-143224	adr	adr(I)/;adr(II)/	ảdr (I);ảdr (II)	adj. m. or n. m.;n. m.	wonderful;granary	
+143224	adr	adr(I)/	ảdr (I)	adj. m. or n. m.	wonderful	
 143225	ḥl	ḥl(I)/;ḥl(II)/	ḥl (I);ḥl (II)	n. m.;adj.	strength;desacralised	
 # KTU 1.16 I:9						
 143226	rḥb	rḥb(I)/	rḥb (I)	adj. m.	wide	
@@ -148,7 +148,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143308	aḫtk	aḫt(I)/+k	ảḫt (I)	n. f.	sister (related by blood)	
 # KTU 1.16 I:29						
 143309	ṯtmnt	?	?	?	?	DULAT: NOT FOUND
-143310	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length	
+143310	bt	bt(II)/;bt(I)/	bt (II);bt (I)	n. m.;n. f.	house;daughter	
 143311	ḥmḥmth	ḥmḥmt/+h(I);ḥmḥmt/+h(II)	ḥmḥmt,-h (I);ḥmḥmt,-h (II)	n. f.,pers. pn./morph.;n. f.,adv. functor	pregnancy,his /her (hers) / its;pregnancy,to	
 # KTU 1.16 I:30						
 143312	dnn	dn(III)/+nn	dn (III)	n. m.	strength	
@@ -359,12 +359,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143467	tbˤrn	!t!bˤr(II)[	/b-ʕ-r/ (II)	vb	to abandon	
 143468	xxx	?	?	?	?	
 # KTU 1.16 II:19						
-143469	mn	mn(IV);mn(III)/	mn (IV);mn (III)	?;n. m.	?;mina	
+143469	mn	mn(IV)	mn (IV)	?	?	
 143470	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 143471	k	k(III);k(I);k(II)	k (III);k (I);k (II)	Subordinating or completive functor;prep.;emph. functor	when;like;yes	
 143472	mrṣ	mrṣ[;mrṣ/	/m-r-ṣ/;mrṣ	vb;n. m.	to fall ill;illness	
 # KTU 1.16 II:20						
-143473	mn	mn(IV);mn(III)/	mn (IV);mn (III)	?;n. m.	?;mina	
+143473	mn	mn(IV)	mn (IV)	?	?	
 143474	k	k(III);k(I);k(II)	k (III);k (I);k (II)	Subordinating or completive functor;prep.;emph. functor	when;like;yes	
 143475	dw	dw/	dw	n. m.	sick person	
 143476	krt	krt/	krt	PN	krt	
@@ -387,12 +387,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143489	mmndˤ	?	?	?	?	DULAT: NOT FOUND
 143490	krt	krt/	krt	PN	krt	
 143491	mġy	mġy[	/m-ġ-y/	vb	to come	
-143492	ˤrb	ˤrb(I)[;ˤrb(II)[;ˤrb(I)/	/ʕ-r-b/ (I);/ʕ-r-b/ (II);ʕrb (I)	vb;vb;n. m.	to enter;to give a guarantee or pledge;entry	
+143492	ˤrb	ˤrb(I)[;ˤrb(I)/	/ʕ-r-b/ (I);ʕrb (I)	vb;n. m.	to enter;entry	
 # KTU 1.16 II:25						
 143493	w	w	w	conj.	and	
 143494	qbr	qbr(I)/	qbr (I)	n. m.	grave	
 143495	tṣr	nṣr[;!t!ṣr[	/n-ṣ-r/;/ṣ-r(-r)/	vb;vb	to sob;to besiege	
-143496	ql	ql[;ql(I)/;ql(II)/	/q-l/;ql (I);ql (II)	vb;n. m.;n. m.	to fall (down);voice;swift (courier	
+143496	ql	ql[;ql(I)/	/q-l/;ql (I)	vb;n. m.	to fall (down);voice	
 143497	rm	rm(I)/;rm[;rm(II)/	rm (I);/r-m/;rm (II)	adj. m.;vb;n. m.	high;to go up;erection	
 # KTU 1.16 II:26						
 143498	tṣr	nṣr[;!t!ṣr[	/n-ṣ-r/;/ṣ-r(-r)/	vb;vb	to sob;to besiege	
@@ -428,7 +428,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143521	ġzr	ġzr/	ġzr	n. m.	lad	
 143522	ilḥu	?	?	?	?	DULAT: NOT FOUND
 143523	tbk	bky[	/b-k-y/	vb	to weep	
-143524	ql	ql[;ql(I)/;ql(II)/	/q-l/;ql (I);ql (II)	vb;n. m.;n. m.	to fall (down);voice;swift (courier	
+143524	ql	ql[;ql(I)/	/q-l/;ql (I)	vb;n. m.	to fall (down);voice	
 # KTU 1.16 II:34						
 143525	trm	!t!rm[;tr(I)/m;trmt/	/r-m/;tr (I);trmt	vb;n. m.;n. f.	to go up;pole;offering	
 143526	tṣr	nṣr[;!t!ṣr[	/n-ṣ-r/;/ṣ-r(-r)/	vb;vb	to sob;to besiege	
@@ -489,7 +489,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143571	tbkyk	!t!bky[	/b-k-y/	vb	to weep	
 # KTU 1.16 II:45						
 143572	ab	ab/	ảb	n. m.	father	
-143573	ġr	ġr(I)/;ġr(V)/;ġr(III)/	ġr (I);ġr (V);ġr (III)	n. m.;n. m.;n. m.	mountain;total;skin	
+143573	ġr	ġr(I)/;ġr(III)/	ġr (I);ġr (III)	n. m.;n. m.	mountain;skin	
 143574	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 143575	ṣpn	ṣpn/	ṣpn	TN/DN	north	
 143576	ḥlm	ḥlm(I)/	ḥlm (I)	n. m.	dream	
@@ -497,7 +497,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143577	qdš	qdš(I)/;qdš(II)/	qdš (I);qdš (II)	adj. m.;n. m.	holy;sanctuary	
 143578	nny	ˤl(I)+ny;grš[+y(I);grš[+y(II)	ʕl (I),-ny;/g-r-š/,-y (I);/g-r-š/,-y (II)	prep.,suff. pn. morph.;vb,prep.;vb,postp. functor	upon,our;to eject,my;to eject,yes	
 143579	ḥlm	ḥlm(I)/	ḥlm (I)	n. m.	dream	
-143580	adr	adr(I)/;adr(II)/	ảdr (I);ảdr (II)	adj. m. or n. m.;n. m.	wonderful;granary	
+143580	adr	adr(I)/	ảdr (I)	adj. m. or n. m.	wonderful	
 # KTU 1.16 II:47						
 143581	ḥl	ḥl(I)/;ḥl(II)/	ḥl (I);ḥl (II)	n. m.;adj.	strength;desacralised	
 143582	rḥb	rḥb(I)/	rḥb (I)	adj. m.	wide	
@@ -532,7 +532,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143604	bkym	bky[	/b-k-y/	vb	to weep	
 143605	xxxxxxx	?	?	?	?	
 # KTU 1.16 II:55						
-143606	ġr	ġr(I)/;ġr(V)/;ġr(III)/	ġr (I);ġr (V);ġr (III)	n. m.;n. m.;n. m.	mountain;total;skin	
+143606	ġr	ġr(I)/;ġr(III)/	ġr (I);ġr (III)	n. m.;n. m.	mountain;skin	
 143607	yib	?	?	?	?	DULAT: NOT FOUND
 143608	xxxxx	?	?	?	?	
 # KTU 1.16 II:56						
@@ -631,7 +631,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143681	b	b	b	prep.	in	
 143682	qbˤthm	qbˤt/+hm	qbʕt,-hm	n. f.,pers. pn./morph.	goblet,their	
 # KTU 1.16 III:17						
-143683	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length	
+143683	bt	bt(II)/;bt(I)/	bt (II);bt (I)	n. m.;n. f.	house;daughter	
 143684	krt	krt/	krt	PN	krt	
 143685	txxxx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.16 IV:1						
@@ -671,7 +671,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 IV:7						
 143714	ilš	?	?	?	?	DULAT: NOT FOUND
 143715	ngr	ngr/	ngr	n. m.	herald	
-143716	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length	
+143716	bt	bt(II)/;bt(I)/	bt (II);bt (I)	n. m.;n. f.	house;daughter	
 143717	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 # KTU 1.16 IV:8						
 143718	w	w	w	conj.	and	
@@ -694,7 +694,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 IV:11						
 143733	ilš	?	?	?	?	DULAT: NOT FOUND
 143734	ngr	ngr/	ngr	n. m.	herald	
-143735	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length	
+143735	bt	bt(II)/;bt(I)/	bt (II);bt (I)	n. m.;n. f.	house;daughter	
 143736	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 # KTU 1.16 IV:12						
 143737	w	w	w	conj.	and	
@@ -922,7 +922,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143900	ttbˤ	?	?	?	?	DULAT: NOT FOUND
 143901	šˤtqt	škll/t=	škllt	n. f.	emaciated	
 # KTU 1.16 VI:3						
-143902	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length	
+143902	bt	bt(II)/;bt(I)/	bt (II);bt (I)	n. m.;n. f.	house;daughter	
 143903	krt	krt/	krt	PN	krt	
 143904	bu	bʔ[	/b-ʔ/	vb	to enter	
 143905	tbu	!t!bʔ[	/b-ʔ/	vb	to enter	
@@ -1082,7 +1082,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144028	tṯpt	?	?	?	?	DULAT: NOT FOUND
 144029	ṯpṭ	ṯpṭ[;ṯpṭ(II)/;ṯpṭ(I)/	/ṯ-p-ṭ/;ṯpṭ (II);ṯpṭ (I)	vb;n. m.;n. m.	to judge;judge;case	
 144030	qṣr	qṣr(I)/;qṣr(II)/	qṣr (I);qṣr (II)	adj. m.;n. m.	short;anklebone	
-144031	npš	npš(I)/;npš(II)/	npš (I);npš (II)	n. f.;n. m.	throat;red wool	
+144031	npš	npš(I)/	npš (I)	n. f.	throat	
 # KTU 1.16 VI:35						
 144032	km	k(III);k(I);k(IV)	k (III);k (I);k (IV)	Subordinating or completive functor;prep.;adv.	when;like;thus	
 144033	aḫt	aḫ(I)/t=	ảḫt (I)	n. f.	sister (related by blood)	
@@ -1142,14 +1142,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144077	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
 144078	tdn	!t!dn[	/d-n/	vb	to judge	
 # KTU 1.16 VI:46						
-144079	dn	dn(I)/;dn(II)/	dn (I);dn (II)	n. m.;n. m.	judgment;vessel	
+144079	dn	dn(I)/	dn (I)	n. m.	judgment	
 144080	almnt	almnt/	ảlmnt	n. f.	widow	
 144081	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
 144082	tṯpṭ	!t!ṯpṭ[	/ṯ-p-ṭ/	vb	to judge	
 # KTU 1.16 VI:47						
 144083	ṯpṭ	ṯpṭ[;ṯpṭ(II)/;ṯpṭ(I)/	/ṯ-p-ṭ/;ṯpṭ (II);ṯpṭ (I)	vb;n. m.;n. m.	to judge;judge;case	
 144084	qṣr	qṣr(I)/;qṣr(II)/	qṣr (I);qṣr (II)	adj. m.;n. m.	short;anklebone	
-144085	npš	npš(I)/;npš(II)/	npš (I);npš (II)	n. f.;n. m.	throat;red wool	
+144085	npš	npš(I)/	npš (I)	n. f.	throat	
 144086	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
 144087	tdy	ydy(I)[	/y-d-y/ (I)	vb	to throw	
 # KTU 1.16 VI:48						

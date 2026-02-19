@@ -21,7 +21,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.14 I:7						
 141691	krt	krt/	krt	PN	krt	
 141692	ˤrwt	ˤrw[t	/ʕ-r-w/	vb	to be consumed	
-141693	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length	
+141693	bt	bt(II)/;bt(I)/	bt (II);bt (I)	n. m.;n. f.	house;daughter	
 # KTU 1.14 I:8						
 141694	mlk	mlk[;mlk(II)/	/m-l-k/;mlk (II)	vb;n. m.	to reign;kingdom (power and territory)	
 141695	itdb	ʔ]t]bd[	/ʔ-b-d/	vb	be missing	
@@ -151,7 +151,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141791	ḏhrth	ḏhrt/+h	ḏhrt	n. f.	vision	
 # KTU 1.14 I:37						
 141792	ab	ab/	ảb	n. m.	father	
-141793	adm	adm(I)/;ʔdm[;adm(II)/	ảdm (I);/ʔ-d-m/;ảdm (II)	n. m.;vb;adj. m.	man;to be;obtained	
+141793	adm	adm(I)/;ʔdm[	ảdm (I);/ʔ-d-m/	n. m.;vb	man;to be	
 141794	w	w	w	conj.	and	
 141795	yqrb	!y!qrb[	/q-r-b/	vb	to approach	
 # KTU 1.14 I:38						
@@ -179,7 +179,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.14 I:43						
 141813	k	k(III);k(I);k(II)	k (III);k (I);k (II)	Subordinating or completive functor;prep.;emph. functor	when;like;yes	
 141814	ab	ab/	ảb	n. m.	father	
-141815	adm	adm(I)/;ʔdm[;adm(II)/	ảdm (I);/ʔ-d-m/;ảdm (II)	n. m.;vb;adj. m.	man;to be;obtained	
+141815	adm	adm(I)/;ʔdm[	ảdm (I);/ʔ-d-m/	n. m.;vb	man;to be	
 141816	xx	?	?	?	?	
 # KTU 1.14 I:44						
 141817	ṯxxx	?	?	?	?	DULAT: NOT FOUND
@@ -256,7 +256,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141869	ˤd	ˤd(III)/;ˤd(II)/	ʕd (III);ʕd (II)	n. m.;n. m.	throne;time	
 141870	ṯkm	ṯkm/	ṯkm	n. m.	shoulder	
 # KTU 1.14 II:12						
-141871	ˤrb	ˤrb(I)[;ˤrb(II)[;ˤrb(I)/	/ʕ-r-b/ (I);/ʕ-r-b/ (II);ʕrb (I)	vb;vb;n. m.	to enter;to give a guarantee or pledge;entry	
+141871	ˤrb	ˤrb(I)[;ˤrb(I)/	/ʕ-r-b/ (I);ʕrb (I)	vb;n. m.	to enter;entry	
 141872	b	b	b	prep.	in	
 141873	ẓl	ẓl(I)/	ẓl (I)	n. m.	shade	
 141874	ḫmt	ḫmt/	ḫmt	n. f.	tent	
@@ -286,12 +286,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141892	dbḥ	dbḥ/;dbḥ[	dbḥ;/d-b-ḥ/	n. m.;vb	sacrifice;to sacrifice	
 141893	ṣq	ṣq/	ṣq	adj. m.	distressed	
 141894	b	b	b	prep.	in	
-141895	gl	gl(II)/;gl(III)/	gl (II);gl (III)	n. m.;n. m.	cup;small	
+141895	gl	gl(II)/	gl (II)	n. m.	cup	
 141896	ḥtṯ	ḥtṯ/	ḥtṯ	n. m.	silver	
 # KTU 1.14 II:19						
 141897	yn	yn/	yn	n. m.	wine	
 141898	b	b	b	prep.	in	
-141899	gl	gl(II)/;gl(III)/	gl (II);gl (III)	n. m.;n. m.	cup;small	
+141899	gl	gl(II)/	gl (II)	n. m.	cup	
 141900	ḫrṣ	ḫrṣ/	ḫrṣ	n. m.	gold	
 141901	nbt	nbt/	nbt	n. f.	honey	
 # KTU 1.14 II:20						
@@ -343,7 +343,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.14 II:29						
 141939	ḥṭt	ḥṭ/t=	ḥṭt	n. f.	wheat	
 141940	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
-141941	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length	
+141941	bt	bt(II)/;bt(I)/	bt (II);bt (I)	n. m.;n. f.	house;daughter	
 141942	ḫbr	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.14 II:30						
 141943	yip	ʔpy[	/ʔ-p-y/	vb	to bake (in the oven)	
@@ -398,12 +398,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141982	km	k(III);k(I);k(IV)	k (III);k (I);k (IV)	Subordinating or completive functor;prep.;adv.	when;like;thus	
 141983	yr	yr/	yr	n. m.	early rain	
 # KTU 1.14 II:41						
-141984	aṯr	aṯr(I);!a!ṯr[;aṯr(III)	ảṯr (I);/ʔ-ṯ-r/;ảṯr (III)	adv. or prep.;vb;interr. adv.	then;to go;where	
+141984	aṯr	aṯr(I);!a!ṯr[	ảṯr (I);/ʔ-ṯ-r/	adv. or prep.;vb	then;to go	
 141985	ṯn	ṯn(I)/	ṯn (I)	num.	two	
 141986	ṯn	ṯn(I)/	ṯn (I)	num.	two	
 141987	hlk	hlk[;hlk(I)/;hlk(II)	/h-l-k/;hlk (I);hlk (II)	vb;n. m.;deictic adv. functor	to go;walk;behold!	
 # KTU 1.14 II:42						
-141988	aṯr	aṯr(I);!a!ṯr[;aṯr(III)	ảṯr (I);/ʔ-ṯ-r/;ảṯr (III)	adv. or prep.;vb;interr. adv.	then;to go;where	
+141988	aṯr	aṯr(I);!a!ṯr[	ảṯr (I);/ʔ-ṯ-r/	adv. or prep.;vb	then;to go	
 141989	ṯlṯ	ṯlṯ(I)/;ṯlṯ(V)/;ṯlṯ(II)/	ṯlṯ (I);ṯlṯ (V);ṯlṯ (II)	n. num.;n. m.;adj. m. ord. num.	three;copper;third	
 141990	klhm	kl/+hm	kl	n. m.	totality (of)	
 # KTU 1.14 II:43						
@@ -538,7 +538,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142095	ibrh	ibr(I)/+h	ỉbr (I)	n. m.	bull	
 # KTU 1.14 III:17						
 142096	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
-142097	ql	ql[;ql(I)/;ql(II)/	/q-l/;ql (I);ql (II)	vb;n. m.;n. m.	to fall (down);voice;swift (courier	
+142097	ql	ql[;ql(I)/	/q-l/;ql (I)	vb;n. m.	to fall (down);voice	
 142098	nhqt	nhqt/	nhqt	n. f.	braying	
 142099	ḥmrh	ḥmr(I)/+h(I);ḥmr(I)/+h(II);ḥmr(II)/+h(I)	ḥmr (I),-h (I);ḥmr (I),-h (II);ḥmr (II),-h (I)	n. m.,pers. pn./morph.;n. m.,adv. functor;adj.,pers. pn./morph.	donkey,his /her (hers) / its;donkey,to;red,his /her (hers) / its	
 # KTU 1.14 III:18						
@@ -616,7 +616,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142158	ušn	ušn/	ủšn	n. m.	present	
 # KTU 1.14 III:32						
 142159	ab	ab/	ảb	n. m.	father	
-142160	adm	adm(I)/;ʔdm[;adm(II)/	ảdm (I);/ʔ-d-m/;ảdm (II)	n. m.;vb;adj. m.	man;to be;obtained	
+142160	adm	adm(I)/;ʔdm[	ảdm (I);/ʔ-d-m/	n. m.;vb	man;to be	
 142161	w	w	w	conj.	and	
 142162	ṯṯb	]š]ṯb[	/ṯ-b/	vb	to return	
 # KTU 1.14 III:33						
@@ -696,7 +696,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142222	b	b	b	prep.	in	
 142223	ḏrty	ḏrt/+y	ḏrt	n. f.	vision	
 142224	ab	ab/	ảb	n. m.	father	
-142225	adm	adm(I)/;ʔdm[;adm(II)/	ảdm (I);/ʔ-d-m/;ảdm (II)	n. m.;vb;adj. m.	man;to be;obtained	
+142225	adm	adm(I)/;ʔdm[	ảdm (I);/ʔ-d-m/	n. m.;vb	man;to be	
 # KTU 1.14 III:48						
 142226	wld	?	?	?	?	DULAT: NOT FOUND
 142227	špḥ	?	?	?	?	DULAT: NOT FOUND
@@ -731,7 +731,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142250	ˤd	ˤd(III)/;ˤd(II)/	ʕd (III);ʕd (II)	n. m.;n. m.	throne;time	
 142251	ṯkm	ṯkm/	ṯkm	n. m.	shoulder	
 # KTU 1.14 III:55						
-142252	ˤrb	ˤrb(I)[;ˤrb(II)[;ˤrb(I)/	/ʕ-r-b/ (I);/ʕ-r-b/ (II);ʕrb (I)	vb;vb;n. m.	to enter;to give a guarantee or pledge;entry	
+142252	ˤrb	ˤrb(I)[;ˤrb(I)/	/ʕ-r-b/ (I);ʕrb (I)	vb;n. m.	to enter;entry	
 142253	b	b	b	prep.	in	
 142254	ẓl	ẓl(I)/	ẓl (I)	n. m.	shade	
 142255	ḫmt	ḫmt/	ḫmt	n. f.	tent	
@@ -757,12 +757,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.14 IV:1						
 142271	yṣq	!y!(yṣq[	/y-ṣ-q/	vb	to pour (out)	
 142272	b	b	b	prep.	in	
-142273	gl	gl(II)/;gl(III)/	gl (II);gl (III)	n. m.;n. m.	cup;small	
+142273	gl	gl(II)/	gl (II)	n. m.	cup	
 142274	ḥtṯ	ḥtṯ/	ḥtṯ	n. m.	silver	
 142275	yn	yn/	yn	n. m.	wine	
 # KTU 1.14 IV:2						
 142276	b	b	b	prep.	in	
-142277	gl	gl(II)/;gl(III)/	gl (II);gl (III)	n. m.;n. m.	cup;small	
+142277	gl	gl(II)/	gl (II)	n. m.	cup	
 142278	ḫrṣ	ḫrṣ/	ḫrṣ	n. m.	gold	
 142279	nbt	nbt/	nbt	n. f.	honey	
 142280	w	w	w	conj.	and	
@@ -806,7 +806,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.14 IV:10						
 142311	ḥtt	ḥtt/	ḥtt	n. m.	terror	
 142312	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
-142313	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length	
+142313	bt	bt(II)/;bt(I)/	bt (II);bt (I)	n. m.;n. f.	house;daughter	
 142314	ḫbr	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.14 IV:11						
 142315	yip	ʔpy[	/ʔ-p-y/	vb	to bake (in the oven)	
@@ -849,12 +849,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142345	km	k(III);k(I);k(IV)	k (III);k (I);k (IV)	Subordinating or completive functor;prep.;adv.	when;like;thus	
 142346	yr	yr/	yr	n. m.	early rain	
 # KTU 1.14 IV:19						
-142347	aṯr	aṯr(I);!a!ṯr[;aṯr(III)	ảṯr (I);/ʔ-ṯ-r/;ảṯr (III)	adv. or prep.;vb;interr. adv.	then;to go;where	
+142347	aṯr	aṯr(I);!a!ṯr[	ảṯr (I);/ʔ-ṯ-r/	adv. or prep.;vb	then;to go	
 142348	ṯn	ṯn(I)/;ṯn(II)/;ṯn(III)/	ṯn (I);ṯn (II);ṯn (III)	num.;num./adj.;n. m.	two;second;crimson (cloth	
 142349	ṯn	ṯn(I)/;ṯn(II)/;ṯn(III)/	ṯn (I);ṯn (II);ṯn (III)	num.;num./adj.;n. m.	two;second;crimson (cloth	
 142350	hlk	hlk[;hlk(I)/;hlk(II)	/h-l-k/;hlk (I);hlk (II)	vb;n. m.;deictic adv. functor	to go;walk;behold!	
 # KTU 1.14 IV:20						
-142351	aṯr	aṯr(I);!a!ṯr[;aṯr(III)	ảṯr (I);/ʔ-ṯ-r/;ảṯr (III)	adv. or prep.;vb;interr. adv.	then;to go;where	
+142351	aṯr	aṯr(I);!a!ṯr[	ảṯr (I);/ʔ-ṯ-r/	adv. or prep.;vb	then;to go	
 142352	ṯlṯ	ṯlṯ(I)/;ṯlṯ(V)/;ṯlṯ(II)/	ṯlṯ (I);ṯlṯ (V);ṯlṯ (II)	n. num.;n. m.;adj. m. ord. num.	three;copper;third	
 142353	klhm	kl/+hm	kl	n. m.	totality (of)	
 # KTU 1.14 IV:21						
@@ -1029,7 +1029,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.14 V:9						
 142483	ibrh	ibr(I)/+h	ỉbr (I)	n. m.	bull	
 142484	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
-142485	ql	ql[;ql(I)/;ql(II)/	/q-l/;ql (I);ql (II)	vb;n. m.;n. m.	to fall (down);voice;swift (courier	
+142485	ql	ql[;ql(I)/	/q-l/;ql (I)	vb;n. m.	to fall (down);voice	
 142486	nhqt	nhqt/	nhqt	n. f.	braying	
 # KTU 1.14 V:10						
 142487	ḥmrh	ḥmr(I)/+h(I);ḥmr(I)/+h(II);ḥmr(II)/+h(I)	ḥmr (I),-h (I);ḥmr (I),-h (II);ḥmr (II),-h (I)	n. m.,pers. pn./morph.;n. m.,adv. functor;adj.,pers. pn./morph.	donkey,his /her (hers) / its;donkey,to;red,his /her (hers) / its	
@@ -1162,7 +1162,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142581	w	w	w	conj.	and	
 142582	ušn	ušn/	ủšn	n. m.	present	
 142583	ab	ab/	ảb	n. m.	father	
-142584	adm	adm(I)/;ʔdm[;adm(II)/	ảdm (I);/ʔ-d-m/;ảdm (II)	n. m.;vb;adj. m.	man;to be;obtained	
+142584	adm	adm(I)/;ʔdm[	ảdm (I);/ʔ-d-m/	n. m.;vb	man;to be	
 # KTU 1.14 V:44						
 142585	rḥq	rḥq[;rḥq/	/r-ḥ-q/;rḥq	vb;adj. m.	to go away;distant	
 142586	mlk	mlk[;mlk(II)/	/m-l-k/;mlk (II)	vb;n. m.	to reign;kingdom (power and territory)	
@@ -1229,7 +1229,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142633	il	il(I)/	ỉl (I)	n. m.	god	
 142634	ušn	ušn/	ủšn	n. m.	present	
 142635	ab	ab/	ảb	n. m.	father	
-142636	adm	adm(I)/;ʔdm[;adm(II)/	ảdm (I);/ʔ-d-m/;ảdm (II)	n. m.;vb;adj. m.	man;to be;obtained	
+142636	adm	adm(I)/;ʔdm[	ảdm (I);/ʔ-d-m/	n. m.;vb	man;to be	
 # KTU 1.14 VI:14						
 142637	rḥq	rḥq[;rḥq/	/r-ḥ-q/;rḥq	vb;adj. m.	to go away;distant	
 142638	mlk	mlk[;mlk(II)/	/m-l-k/;mlk (II)	vb;n. m.	to reign;kingdom (power and territory)	
@@ -1313,7 +1313,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142698	b	b	b	prep.	in	
 142699	ḏrty	ḏrt/+y	ḏrt	n. f.	vision	
 142700	ab	ab/	ảb	n. m.	father	
-142701	adm	adm(I)/;ʔdm[;adm(II)/	ảdm (I);/ʔ-d-m/;ảdm (II)	n. m.;vb;adj. m.	man;to be;obtained	
+142701	adm	adm(I)/;ʔdm[	ảdm (I);/ʔ-d-m/	n. m.;vb	man;to be	
 # KTU 1.14 VI:33						
 142702	wld	?	?	?	?	DULAT: NOT FOUND
 142703	špḥ	?	?	?	?	DULAT: NOT FOUND

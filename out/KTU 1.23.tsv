@@ -147,7 +147,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.23 25						
 147218	špš	špš/	špš	n.	sun	
 147219	mṣprt	mṣprt/	mṣprt	n. f.	she who rearranges	
-147220	dlthm	dlt(I)/+hm;dl/+hm;dlt(II)/+hm	dlt (I),-hm;dl,-hm;dlt (II),-hm	n. m.,pers. pn./morph.;adj. m.,pers. pn./morph.;adj. f.,pers. pn./morph.	door,their;poor,their;poor (woman),their	
+147220	dlthm	dl/+hm;dlt(II)/+hm	dl,-hm;dlt (II),-hm	adj. m.,pers. pn./morph.;adj. f.,pers. pn./morph.	poor,their;poor (woman),their	
 # KTU 1.23 26						
 147221	w	w	w	conj.	and	
 147222	ġnbm	ġnb/m	ġnb	n. m.	grape(s)	
@@ -315,9 +315,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147365	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
 147366	pḥmm	pḥ/m	pḥm	n. m.	ember	
 147367	btm	b(II)/t=;bt(I)/	bt (II);bt (I)	n. m.;n. f.	house;daughter	
-147368	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length	
+147368	bt	bt(II)/;bt(I)/	bt (II);bt (I)	n. m.;n. f.	house;daughter	
 147369	il	il(I)/	ỉl (I)	n. m.	god	
-147370	bt	bt(II)/;bt(I)/;b(III)/t=	bt (II);bt (I);bt (III)	n. m.;n. f.;n. m.	house;daughter;length	
+147370	bt	bt(II)/;bt(I)/	bt (II);bt (I)	n. m.;n. f.	house;daughter	
 147371	il	il(I)/	ỉl (I)	n. m.	god	
 # KTU 1.23 46						
 147372	w	w	w	conj.	and	
@@ -544,7 +544,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147570	hm	hm(II)	hm (II)	conj./interr. functor	if	
 147571	ˤm	ˤm(I)	ʕm (I)	prep.	to	
 147572	n	l(I);ˤl(I);mġy[	l (I);ʕl (I);/m-ġ-y/	prep.;prep.;vb	to;upon;to come	
-147573	ġr	ġr(I)/;ġr(V)/;ġr(III)/	ġr (I);ġr (V);ġr (III)	n. m.;n. m.;n. m.	mountain;total;skin	
+147573	ġr	ġr(I)/;ġr(III)/	ġr (I);ġr (III)	n. m.;n. m.	mountain;skin	
 147574	mdrˤ	mdrˤ/	mdrʕ	n. m.	sown land	
 147575	y	y	y	prep. functor	oh!	
 147576	nġr	!n!ġr[	/n-ġ-r/	vb	to protect	
@@ -558,7 +558,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147583	bˤdhm	bˤd+hm	bʕd	adv. or prep.	behind	
 # KTU 1.23 71						
 147584	w	w	w	conj.	and	
-147585	ˤrb	ˤrb(I)[;ˤrb(II)[;ˤrb(I)/	/ʕ-r-b/ (I);/ʕ-r-b/ (II);ʕrb (I)	vb;vb;n. m.	to enter;to give a guarantee or pledge;entry	
+147585	ˤrb	ˤrb(I)[;ˤrb(I)/	/ʕ-r-b/ (I);ʕrb (I)	vb;n. m.	to enter;entry	
 147586	hm	hm(II)	hm (II)	conj./interr. functor	if	
 147587	hm	hm(II)	hm (II)	conj./interr. functor	if	
 147588	iṯ	iṯ(I)/	ỉṯ (I)	n. m.	presence	
@@ -591,7 +591,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147612	iṯ	iṯ(I)/	ỉṯ (I)	n. m.	presence	
 147613	yn	yn/	yn	n. m.	wine	
 147614	d	d	d	det. or rel. functor	the one(s) of	
-147615	ˤrb	ˤrb(I)[;ˤrb(II)[;ˤrb(I)/	/ʕ-r-b/ (I);/ʕ-r-b/ (II);ʕrb (I)	vb;vb;n. m.	to enter;to give a guarantee or pledge;entry	
+147615	ˤrb	ˤrb(I)[;ˤrb(I)/	/ʕ-r-b/ (I);ʕrb (I)	vb;n. m.	to enter;entry	
 147616	b	b	b	prep.	in	
 147617	ṯkl	ṯkl/	ṯkl	n. m.	sterility	
 # KTU 1.23 75						

@@ -1,14 +1,14 @@
 ## Morphology Lint Summary
 
 - Files checked: `139`
-- Total issues: `6460`
+- Total issues: `6454`
 - Fallback-parsed issue lines: `457`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 4448 |
+| ERROR | 4444 |
 | WARNING | 628 |
 | INFO | 1197 |
 
@@ -16,7 +16,7 @@
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3284 |
+| ERROR | Analysis does not reconstruct to surface | 3280 |
 | INFO | Surface not found in UDB concordance | 1197 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 299 |
 | ERROR | Missing DULAT entry token(s) in column 4 | 170 |

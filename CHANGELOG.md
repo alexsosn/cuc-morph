@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-02-19
+
+- Reversed the temporary `tnn`-only fallback scope and restored global KTU1-family homonym preference in bootstrap fallback (`scripts/bootstrap_tablet_labeling.py`): for lemma fallback rows, prefer homonyms attested in `CAT/KTU 1.*` when available.
+- Added `Ktu1FamilyHomonymPruner` (`pipeline/steps/ktu1_family_homonym_pruner.py`) and wired it into `TabletParsingPipeline` to remove non-KTU1 homonym variants from aligned multi-option rows in `out/KTU 1.*.tsv` when at least one KTU1-attested homonym exists.
+- Added unit coverage for the new pruner and updated bootstrap fallback tests (`tests/test_refinement_steps.py`, `tests/test_bootstrap_tablet_labeling.py`).
+- Applied the new KTU1-family pruning rule across `out/KTU 1.*.tsv` (325 rows updated across 70 tablets) and regenerated lint reports under `reports/`.
+
 ## 2026-02-18
 
 - Added conservative lemma-key fallback to `scripts/bootstrap_tablet_labeling.py` for DULAT entries that exist in `entries` but are missing from `forms`, while preserving explicit-form priority when form rows exist.

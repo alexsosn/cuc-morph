@@ -20,6 +20,7 @@ from pipeline.steps.base import (
 from pipeline.steps.formula_bigram import FormulaBigramFixer
 from pipeline.steps.formula_trigram import FormulaTrigramFixer
 from pipeline.steps.known_ambiguities import KnownAmbiguityExpander
+from pipeline.steps.ktu1_family_homonym_pruner import Ktu1FamilyHomonymPruner
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
 from pipeline.steps.plural_split import PluralSplitFixer
@@ -215,6 +216,87 @@ class FormulaTrigramFixerTest(unittest.TestCase):
                     "1\trbt\trb(t(I)/t\trbt (I)\tn. f.\tLady\t\n"
                     "2\taṯrt\taṯrt(II)/\tảṯrt (II)\tDN\tAsherah\t\n"
                     "3\tym\tym(II)/\tym (II)\tn. m.\tsea\t\n"
+                ),
+                encoding="utf-8",
+            )
+            result = self.fixer.refine_file(path)
+            self.assertEqual(result.rows_changed, 0)
+
+
+class Ktu1FamilyHomonymPrunerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = Ktu1FamilyHomonymPruner(
+            label_families={
+                "bt (I)": {"1", "2"},
+                "bt (II)": {"1", "2"},
+                "bt (III)": {"3"},
+                "ql (I)": {"1"},
+                "ql (II)": {"4"},
+                "npš (I)": {"1"},
+                "npš (II)": {"4"},
+                "abc (I)": {"4"},
+                "abc (II)": {"5"},
+            }
+        )
+
+    def test_prunes_non_ktu1_homonym_when_ktu1_exists(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tbt\tbt(II)/;bt(I)/;b(III)/t=\tbt (II);bt (I);bt (III)\tn. m.;"
+                    "n. f.;n. m.\thouse;daughter;length\t\n"
+                ),
+                encoding="utf-8",
+            )
+            result = self.fixer.refine_file(path)
+            self.assertEqual(result.rows_changed, 1)
+            line = path.read_text(encoding="utf-8").splitlines()[1]
+            self.assertEqual(
+                line,
+                "1\tbt\tbt(II)/;bt(I)/\tbt (II);bt (I)\tn. m.;n. f.\thouse;daughter\t",
+            )
+
+    def test_keeps_when_no_ktu1_homonym_available(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tabc\tabc(I)/;abc(II)/\tabc (I);abc (II)\tn. m.;PN\tfirst;second\t\n"
+                ),
+                encoding="utf-8",
+            )
+            result = self.fixer.refine_file(path)
+            self.assertEqual(result.rows_changed, 0)
+
+    def test_keeps_non_homonym_variant_and_prunes_non_ktu1_homonym(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tql\tql[;ql(I)/;ql(II)/\t/q-l/;ql (I);ql (II)\tvb;n. m.;n. m.\t"
+                    "to call;voice;voice-alt\t\n"
+                ),
+                encoding="utf-8",
+            )
+            result = self.fixer.refine_file(path)
+            self.assertEqual(result.rows_changed, 1)
+            line = path.read_text(encoding="utf-8").splitlines()[1]
+            self.assertEqual(
+                line,
+                "1\tql\tql[;ql(I)/\t/q-l/;ql (I)\tvb;n. m.\tto call;voice\t",
+            )
+
+    def test_non_ktu1_file_unchanged(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 4.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tnpš\tnpš(I)/;npš(II)/\tnpš (I);npš (II)\tn. f.;n. f.\tself;person\t\n"
                 ),
                 encoding="utf-8",
             )

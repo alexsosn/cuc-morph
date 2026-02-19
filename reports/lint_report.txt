@@ -1846,8 +1846,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:790 1447
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:793 144800 ṣdk Analysis does not reconstruct to surface (reconstructs as: ṣd)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:799 144805 ṣdk Analysis does not reconstruct to surface (reconstructs as: ṣd)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:823 144823 mri Analysis does not reconstruct to surface (reconstructs as: mru)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:823 144823 mri Analysis does not reconstruct to surface (reconstructs as: mru)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:823 144823 mri Analysis does not reconstruct to surface (reconstructs as: mru)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:833 144832 dm Analysis does not reconstruct to surface (reconstructs as: ʕbd)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:835 144834 ymlun ʔ must be preceded by '(' in column 3
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:835 144834 ymlun Analysis does not reconstruct to surface (reconstructs as: ymlʔn)
@@ -2745,8 +2743,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.22.tsv:64 14689
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.22.tsv:68 146898 tštr Analysis does not reconstruct to surface (reconstructs as: štr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.22.tsv:69 146899 ˤpt Analysis does not reconstruct to surface (reconstructs as: ʕp)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.22.tsv:73 146902 alpm Analysis does not reconstruct to surface (reconstructs as: alp)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.22.tsv:80 146908 mri Analysis does not reconstruct to surface (reconstructs as: mru)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.22.tsv:80 146908 mri Analysis does not reconstruct to surface (reconstructs as: mru)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.22.tsv:80 146908 mri Analysis does not reconstruct to surface (reconstructs as: mru)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.22.tsv:83 146911 dt Analysis does not reconstruct to surface (reconstructs as: d)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.22.tsv:88 146915 llim Analysis does not reconstruct to surface (reconstructs as: llu)
@@ -5525,8 +5521,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  ġr bˤl
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  bˤl ṣpn ḥlm qdš nny ḥlm adr ḥl Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 143218-143225 ; 143574-143581
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  ṣpn ḥlm qdš nny ḥlm adr ḥl rḥb Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 143219-143226 ; 143575-143582
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  ḥlm qdš nny ḥlm adr ḥl rḥb mknpt Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 143220-143227 ; 143576-143583
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  tṯwy šqlt b ġlt ydk l tdn dn Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 144018-144025 ; 144072-144079
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  šqlt b ġlt ydk l tdn dn almnt Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 144019-144026 ; 144073-144080
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  km aḫt ˤrš mdw anšt ˤrš zbln rd Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 144032-144039 ; 144099-144106
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  aḫt ˤrš mdw anšt ˤrš zbln rd l Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 144033-144040 ; 144100-144107
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  ˤrš mdw anšt ˤrš zbln rd l mlk Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 144034-144041 ; 144101-144108
@@ -6461,4 +6455,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:49 151516
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:75 151535 xẓk Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:88 151545 šdr Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.98.tsv:23 151701 gˤl Surface not found in UDB concordance
-Total issues: 6460
+Total issues: 6454

@@ -18,6 +18,7 @@ from pipeline.steps.dulat_gate import DulatMorphGate
 from pipeline.steps.formula_bigram import FormulaBigramFixer
 from pipeline.steps.formula_trigram import FormulaTrigramFixer
 from pipeline.steps.known_ambiguities import KnownAmbiguityExpander
+from pipeline.steps.ktu1_family_homonym_pruner import Ktu1FamilyHomonymPruner
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
 from pipeline.steps.plural_split import PluralSplitFixer
@@ -62,6 +63,7 @@ class TabletParsingPipeline:
             PluralSplitFixer(gate=self.morph_gate),
             BaalLabourerKtu1Fixer(),
             BaalPluralGodListFixer(),
+            Ktu1FamilyHomonymPruner(dulat_db=self.config.dulat_db),
             SuffixCliticFixer(gate=self.morph_gate),
             WeakVerbFixer(),
             WeakFinalSuffixConjugationFixer(),

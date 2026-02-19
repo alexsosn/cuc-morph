@@ -304,7 +304,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138357	ˤnt	ˤnt(I)/	ʕnt (I)	DN	ʿAnatu	
 138358	mḫṣy	mḫṣ[	/m-ḫ-ṣ/	vb	to wound	
 138359	hm	hm(II)	hm (II)	conj.	if	
-138360	mḫṣ	mḫṣ[;mḫṣ(I)/;mḫṣ(II)/	/m-ḫ-ṣ/;mḫṣ (I);mḫṣ (II)	vb;n. m.;n. m.	to wound;weaver;striking instrument	
+138360	mḫṣ	mḫṣ[;mḫṣ(II)/	/m-ḫ-ṣ/;mḫṣ (II)	vb;n. m.	to wound;striking instrument	
 # KTU 1.4 II:25						
 138361	bny	bny/	bny	n. m.	architect  builder	
 138362	hm	hm(II)	hm (II)	conj.	if	
@@ -458,7 +458,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138472	pglt	pglt/t	pglt	n. f.	unclean offering	
 138473	b	b	b	prep.	in	
 138474	ṯlḥny	ṯlḥn/+y;ṯlḥny(II)/	ṯlḥn, -y (I);ṯlḥny (II)	n. m.,prep.;GN	table, of;my table	DULAT also attests ṯlḥny as form of ṯlḥn [n.] 'table'.';'UNP/TCS iii 14-16 favors 'my table'
-138475	qlt	qlt(I)/;qlt(II)/	qlt (I);qlt (II)	n. f.;n. f.	dishonor/humiliation;(messenger-)service	UNP/TCS iii 14-16 favors 'dishonor/humiliation'
+138475	qlt	qlt(I)/	qlt (I)	n. f.	dishonor/humiliation	UNP/TCS iii 14-16 favors 'dishonor/humiliation'
 # KTU 1.4 III:16						
 138476	b	b	b	prep.	in	
 138477	ks	ks(I)/	ks (I)	n. m.	cup	
@@ -481,7 +481,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138491	w	w	w	conj.	and	
 138492	dbḥ	dbḥ/;dbḥ[	dbḥ;/d-b-ḥ/	n. m.;vb	sacrifice;to sacrifice	
 # KTU 1.4 III:20						
-138493	dnt	dnt(II)/;dnt(I)/	dnt (II);dnt (I)	n. f.;n.	plight;lechery	UNP/TCS iii 18-21 favors degraded/lewd-feast nuance
+138493	dnt	dnt(I)/	dnt (I)	n.	lechery	UNP/TCS iii 18-21 favors degraded/lewd-feast nuance
 138494	w	w	w	conj.	and	
 138495	dbḥ	dbḥ/;dbḥ[	dbḥ;/d-b-ḥ/	n. m.;vb	sacrifice;to sacrifice	
 138496	tdmm	tdmm/	tdmm	n. m.	lascivious	
@@ -573,7 +573,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138563	xxxbtlt	btlt/	btlt	n. f.	virgin	initial signs broken (xxx-); TCS/UNP/Wyatt: “Virgin ʿAnatu”
 138564	ˤnt	ˤnt(I)/	ʕnt (I)	DN	ʿAnatu	
 # KTU 1.4 III:40						
-138565	xxxtlḥm	!t!lḥm[;lḥm(II)[	/l-ḥ-m/ (I);/l-ḥ-m/ (II)	vb;vb	to eat;to fight	second variant reflects /l-ḥ-m/ (I) 'to eat' (attested tlḥm G prefc. in DULAT forms).';'UDB concordance pattern —tlḥm -> tlḥm (single hit)
+138565	xxxtlḥm	!t!lḥm[	/l-ḥ-m/ (I)	vb	to eat	second variant reflects /l-ḥ-m/ (I) 'to eat' (attested tlḥm G prefc. in DULAT forms).';'UDB concordance pattern —tlḥm -> tlḥm (single hit)
 138566	tšty	!t!šty[	/š-t-y/	vb	to drink	
 # KTU 1.4 III:41						
 138567	ilm	il(I)/m	ỉl (I)	n. m.	god	
@@ -1081,7 +1081,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138969	alp	alp(I)/;alp(II)/	ảlp (I);ảlp (II)	n. m.;num.	(head of) cattle;(one	
 138970	šd	šd(I)/	šd (I)	n. m.	open field	
 138971	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
-138972	kmn	kmn(II)/;kmn(I)/	kmn (II);kmn (I)	n. m.;n. m.	cumin;acre	
+138972	kmn	kmn(I)/	kmn (I)	n. m.	acre	
 # KTU 1.4 V:25						
 138973	ṣḥq	ṣḥq/	ṣḥq	n. m.	laughter	
 138974	btlt	btlt/	btlt	n. f.	virgin	
@@ -1243,7 +1243,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139099	bt	bt(I)/	bt (I)	n. f.	daughter	
 # KTU 1.4 V:57						
 139100	rbt	rbt/;rbt(I)/;rbt(II)/	rb(b)t;rbt (I);rbt (II)	num.;n. f.;n. f.	ten thousand;Lady;seine	
-139101	kmn	kmn(II)/;kmn(I)/	kmn (II);kmn (I)	n. m.;n. m.	cumin;acre	
+139101	kmn	kmn(I)/	kmn (I)	n. m.	acre	
 139102	hkl	hkl/	hkl	n. m.	palace	
 # KTU 1.4 V:58						
 139103	w	w	w	conj.	and	
@@ -1651,7 +1651,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 VII:11						
 139423	ṯmnym	ṯmnym/	ṯmnym	num.	eighty	
 139424	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
-139425	mḫṣ	mḫṣ[;mḫṣ(I)/;mḫṣ(II)/	/m-ḫ-ṣ/;mḫṣ (I);mḫṣ (II)	vb;n. m.;n. m.	to wound;weaver;striking instrument	
+139425	mḫṣ	mḫṣ[;mḫṣ(II)/	/m-ḫ-ṣ/;mḫṣ (II)	vb;n. m.	to wound;striking instrument	
 # KTU 1.4 VII:12						
 139426	tšˤm	tšˤm/	tšʕm	n. num.	ninety	
 139427	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
@@ -1659,7 +1659,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 VII:13						
 139429	b	b	b	prep.	in	
 139430	bt	bt(II)/	bt (II)	n. m.	house  building	
-139431	ˤrb	ˤrb(I)[;ˤrb(II)[;ˤrb(I)/	/ʕ-r-b/ (I);/ʕ-r-b/ (II);ʕrb (I)	vb;vb;n. m.	to enter;to give a guarantee or pledge;entry	
+139431	ˤrb	ˤrb(I)[;ˤrb(I)/	/ʕ-r-b/ (I);ʕrb (I)	vb;n. m.	to enter;entry	
 139432	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu	
 139433	b	b	b	prep.	in	
 139434	qrb	qrb[;qrb/	/q-r-b/;qrb	vb;n. m.	to approach;inside	

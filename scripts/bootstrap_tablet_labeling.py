@@ -50,14 +50,6 @@ POS_LABEL_NORMALIZATION = {
     "tn/toponymic element": "TN or toponymic element",
 }
 
-KTU1_FAMILY_FILTER_LEMMAS: frozenset[str] = frozenset(
-    {
-        # User-approved strict fallback case: tnn(II) is CAT 4-only and should
-        # not be auto-added in KTU 1 fallback rows.
-        "tnn",
-    }
-)
-
 
 def normalize_lookup(s: str) -> str:
     return (s or "").translate(LOOKUP_NORMALIZE).strip()
@@ -148,10 +140,8 @@ def load_dulat_forms(db_path: Path) -> Dict[str, List[Entry]]:
 
     # Conservative fallback: if DULAT has an entry lemma but no `forms` row for
     # that same token, index the lemma itself so bootstrap can still propose
-    # candidates (for example tnn).
-    #
-    # Family filtering is intentionally opt-in per lemma; most cross-family
-    # homonyms remain contextually relevant (commercial/admin terminology, PNs).
+    # candidates (for example tnn). When KTU 1 attestations are present among
+    # homonyms, prefer that family to avoid importing KTU 4-only readings.
     fallback_by_key: Dict[str, List[Entry]] = {}
     for entry in entries_by_id.values():
         lemma_key = normalize_lookup(entry.lemma)
@@ -162,11 +152,8 @@ def load_dulat_forms(db_path: Path) -> Dict[str, List[Entry]]:
         fallback_by_key.setdefault(lemma_key, []).append(entry)
 
     for lemma_key, candidates in fallback_by_key.items():
-        if lemma_key in KTU1_FAMILY_FILTER_LEMMAS:
-            ktu1_candidates = [entry for entry in candidates if "1" in entry.families]
-            selected = ktu1_candidates if ktu1_candidates else candidates
-        else:
-            selected = candidates
+        ktu1_candidates = [entry for entry in candidates if "1" in entry.families]
+        selected = ktu1_candidates if ktu1_candidates else candidates
         forms_map.setdefault(lemma_key, []).extend(selected)
 
     conn.close()
