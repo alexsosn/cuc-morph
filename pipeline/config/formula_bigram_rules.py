@@ -123,6 +123,12 @@ FORMULA_BIGRAM_RULES: tuple[FormulaBigramRule, ...] = (
             pos="n. m.",
             gloss="bull",
         ),
+        second_target=TokenParse(
+            analysis="il(I)/",
+            dulat="ỉl (I)",
+            pos="DN",
+            gloss="ˀIlu",
+        ),
         min_count=8,
         note="Epithet formula: ṯr il (Bull Ilu).",
     ),

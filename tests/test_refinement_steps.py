@@ -146,9 +146,10 @@ class FormulaBigramFixerTest(unittest.TestCase):
                 encoding="utf-8",
             )
             result = self.fixer.refine_file(path)
-            self.assertEqual(result.rows_changed, 1)
-            line = path.read_text(encoding="utf-8").splitlines()[1]
-            self.assertIn("\tṯr(I)/\tṯr (I)\tn. m.\tbull\t", line)
+            self.assertEqual(result.rows_changed, 2)
+            lines = path.read_text(encoding="utf-8").splitlines()
+            self.assertIn("\tṯr(I)/\tṯr (I)\tn. m.\tbull\t", lines[1])
+            self.assertIn("\til(I)/\tỉl (I)\tDN\tˀIlu\t", lines[2])
 
 
 class FormulaTrigramFixerTest(unittest.TestCase):

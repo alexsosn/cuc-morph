@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-02-19T01:14:10.050690+00:00",
+  "generated_at_utc": "2026-02-19T01:18:16.235101+00:00",
   "files_checked": 139,
-  "total_issues": 6453,
+  "total_issues": 6468,
   "fallback_parsed": 457,
   "by_severity": {
-    "ERROR": 4444,
+    "ERROR": 4459,
     "WARNING": 628,
     "INFO": 1197
   },
@@ -56,13 +56,13 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "Each reconstructed letter must be prefixed by '('",
-      "count": 64
+      "problem_type": "POS token not allowed for declared DULAT entry",
+      "count": 68
     },
     {
       "severity": "ERROR",
-      "problem_type": "POS token not allowed for declared DULAT entry",
-      "count": 53
+      "problem_type": "Each reconstructed letter must be prefixed by '('",
+      "count": 64
     },
     {
       "severity": "ERROR",

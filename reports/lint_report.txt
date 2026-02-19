@@ -2,6 +2,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:52 135581
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:52 135581 šb Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:56 135584 bb Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:56 135584 bb Noun/adjective lacks '/' ending
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:80 135604 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:83 135607 lṯpn Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:83 135607 lṯpn No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:91 135614 bˤp Missing DULAT entry token(s) in column 4
@@ -11,6 +12,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:129 13564
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:129 135643 ksu Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:157 135668 ḫss Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:157 135668 ḫss Noun/adjective lacks '/' ending
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:167 135677 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:171 135680 lṯpn Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:171 135680 lṯpn No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:188 135693 ḥšqk Missing DULAT entry token(s) in column 4
@@ -34,6 +36,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:287 13578
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:298 135789 šnm No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:299 135790 lpˤn Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:299 135790 lpˤn No DULAT entry found for lexeme/surface
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:310 135799 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:332 135815 gm DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:339 135821 lp Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:339 135821 lp No DULAT entry found for lexeme/surface
@@ -69,6 +72,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:557 13599
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:557 135992 bṣpn No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:560 135994 išqb Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:560 135994 išqb No DULAT entry found for lexeme/surface
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:574 136005 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:583 136011 wġr Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:583 136011 wġr No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:591 136018 ši Missing DULAT entry token(s) in column 4
@@ -1729,6 +1733,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:136 1442
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:140 144256 uzrm Analysis does not reconstruct to surface (reconstructs as: uzr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:146 144261 tbrknn Analysis does not reconstruct to surface (reconstructs as: tbrk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:146 144261 tbrknn Non-G stem in DULAT requires stem marker
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:149 144264 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:154 144268 bny Analysis does not reconstruct to surface (reconstructs as: bnny)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:155 144269 bnwt Analysis does not reconstruct to surface (reconstructs as: bnt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:166 144278 hklh Analysis does not reconstruct to surface (reconstructs as: hkl)
@@ -2605,17 +2610,21 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:565 13651
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:576 136523 ubl Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:576 136523 ubl No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:582 136528 nn DULAT comment does not match candidates
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:596 136541 il POS token 'DN' not allowed for ỉl (I); choose one of: n
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:611 136555 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:620 136563 ksa Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:620 136563 ksa Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:625 136568 mṯpṭk POS token 'n.' not allowed for mṯpṭ; choose one of: pn
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:628 136571 ˤṯtr Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:628 136571 ˤṯtr Noun/adjective lacks '/' ending
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:636 136578 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:646 136588 kbn Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:646 136588 kbn Multiple DULAT candidates for lexeme: kbn [PN] — —; kb/pl(n) [PN] — —
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:646 136588 kbn Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:649 136590 lbdm Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:654 136595 kṯrmyṯb Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:654 136595 kṯrmyṯb No DULAT entry found for lexeme/surface
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:665 136605 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:677 136616 wim Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:677 136616 wim No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:693 136631 yṯṯbṯpṭ Missing DULAT entry token(s) in column 4
@@ -3194,6 +3203,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:132 1480
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:142 148037 pamt Analysis does not reconstruct to surface (reconstructs as: pam)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:145 148040 yrdt Analysis does not reconstruct to surface (reconstructs as: yrd)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:151 148045 bhtm Analysis does not reconstruct to surface (reconstructs as: bt)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:14 138129 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:20 138134 yknnh Analysis does not reconstruct to surface (reconstructs as: ykh)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:24 138137 rt Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:62 138167 knyt Analysis does not reconstruct to surface (reconstructs as: knytt)
@@ -3208,6 +3218,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:195 13827
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:214 138287 ymnh Analysis does not reconstruct to surface (reconstructs as: ymn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:240 138307 tˤpp Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:240 138307 tˤpp No DULAT entry found for lexeme/surface
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:242 138309 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:248 138314 bnwt Analysis does not reconstruct to surface (reconstructs as: bntt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:252 138317 ˤnh Analysis does not reconstruct to surface (reconstructs as: ʕn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:258 138322 aṯtrt Analysis does not reconstruct to surface (reconstructs as: aṯrt)
@@ -3244,6 +3255,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:526 13852
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:531 138531 tġẓyn Analysis does not reconstruct to surface (reconstructs as: tġẓn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:533 138532 qnyt Analysis does not reconstruct to surface (reconstructs as: qnt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:535 138534 mgntm Analysis does not reconstruct to surface (reconstructs as: tmgt)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:538 138536 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:542 138540 ġẓtm Analysis does not reconstruct to surface (reconstructs as: yġẓt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:545 138542 bnwt Analysis does not reconstruct to surface (reconstructs as: bntt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:546 138543 wtˤn Analysis does not reconstruct to surface (reconstructs as: tʕn)
@@ -3268,6 +3280,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:791 13873
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:799 138739 ˤst Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:799 138739 ˤst No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:828 138763 tˤrrk Analysis does not reconstruct to surface (reconstructs as: ttrrk)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:869 138796 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:875 138801 yknnh Analysis does not reconstruct to surface (reconstructs as: ykh)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:912 138832 knyt Analysis does not reconstruct to surface (reconstructs as: knytt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:937 138852 ˤbd DULAT comment does not match candidates
@@ -3772,6 +3785,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:717 14103
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:732 141047 ttbˤ Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:732 141047 ttbˤ Multiple DULAT candidates for lexeme: /t-b-ʕ/ [vb] — to go, leave, depart; /t-b-ʕ/ [vb] — to go, leave, depart; /t-b-ʕ/ [vb] — to go, leave, depart
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:747 141059 tšu Analysis does not reconstruct to surface (reconstructs as: tnšu)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:754 141065 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:771 141079 yštk DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:775 141082 mḥrṯth Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:787 141091 tˤn DULAT comment does not match candidates
@@ -3832,6 +3846,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1108 1413
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1108 141346 tmtḫ Analysis does not reconstruct to surface (reconstructs as: ttmḫ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1108 141346 tmtḫ Multiple DULAT candidates for lexeme: /m-ḫ-ṣ/ [vb] — to wound, beat, crush, kill; /m-ḫ-ṣ/ [vb] — to wound, beat, crush, kill; /m-ḫ-ṣ/ [vb] — to wound, beat, crush, kill
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1110 141347 ṣ Analysis does not reconstruct to surface (reconstructs as: )
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1120 141355 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1123 141358 ysˤ Analysis does not reconstruct to surface (reconstructs as: ynsʕ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1129 141363 ksa Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1129 141363 ksa Noun/adjective lacks '/' ending
@@ -6454,4 +6469,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:49 151516
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:75 151535 xẓk Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:88 151545 šdr Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.98.tsv:23 151701 gˤl Surface not found in UDB concordance
-Total issues: 6453
+Total issues: 6468

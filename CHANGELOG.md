@@ -8,6 +8,7 @@
 - Applied the new KTU1-family pruning rule across `out/KTU 1.*.tsv` (325 rows updated across 70 tablets) and regenerated lint reports under `reports/`.
 - Added hardcoded bigram normalization for `ṯr il` in `pipeline/config/formula_bigram_rules.py` to force `ṯr (I)` (`n. m.`, `bull`) in the epithet formula “Bull Ilu”.
 - Added regression coverage in `tests/test_refinement_steps.py` and applied the bigram pass across `out/KTU 1.*.tsv`, removing remaining `ṯr (IV)` “foul-smelling” ambiguity in `ṯr il` contexts.
+- Tightened the same `ṯr il` rule to force the second token `il` to `DN` with gloss `ˀIlu` (instead of nominal readings such as `n. m. god`/`El`) for all occurrences of the epithet formula.
 
 ## 2026-02-18
 
