@@ -6,6 +6,8 @@
 - Added `Ktu1FamilyHomonymPruner` (`pipeline/steps/ktu1_family_homonym_pruner.py`) and wired it into `TabletParsingPipeline` to remove non-KTU1 homonym variants from aligned multi-option rows in `out/KTU 1.*.tsv` when at least one KTU1-attested homonym exists.
 - Added unit coverage for the new pruner and updated bootstrap fallback tests (`tests/test_refinement_steps.py`, `tests/test_bootstrap_tablet_labeling.py`).
 - Applied the new KTU1-family pruning rule across `out/KTU 1.*.tsv` (325 rows updated across 70 tablets) and regenerated lint reports under `reports/`.
+- Added hardcoded bigram normalization for `ṯr il` in `pipeline/config/formula_bigram_rules.py` to force `ṯr (I)` (`n. m.`, `bull`) in the epithet formula “Bull Ilu”.
+- Added regression coverage in `tests/test_refinement_steps.py` and applied the bigram pass across `out/KTU 1.*.tsv`, removing remaining `ṯr (IV)` “foul-smelling” ambiguity in `ṯr il` contexts.
 
 ## 2026-02-18
 

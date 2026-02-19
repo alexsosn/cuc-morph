@@ -133,6 +133,23 @@ class FormulaBigramFixerTest(unittest.TestCase):
             line = path.read_text(encoding="utf-8").splitlines()[2]
             self.assertIn("\tbˤl(II)/\tbʕl (II)\tDN\tBaʿlu\t", line)
 
+    def test_disambiguates_thr_il_to_bull(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tṯr\tṯr(I)/;ṯr(IV)/\tṯr (I);ṯr (IV)\tn. m.;n. f.\tbull;"
+                    "foul-smelling\t\n"
+                    "2\til\til(I)/\tỉl (I)\tn. m.\tgod\t\n"
+                ),
+                encoding="utf-8",
+            )
+            result = self.fixer.refine_file(path)
+            self.assertEqual(result.rows_changed, 1)
+            line = path.read_text(encoding="utf-8").splitlines()[1]
+            self.assertIn("\tṯr(I)/\tṯr (I)\tn. m.\tbull\t", line)
+
 
 class FormulaTrigramFixerTest(unittest.TestCase):
     def setUp(self) -> None:

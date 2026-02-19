@@ -115,6 +115,18 @@ FORMULA_BIGRAM_RULES: tuple[FormulaBigramRule, ...] = (
         note="Formula sequence: bt bˤl.",
     ),
     FormulaBigramRule(
+        first_surface="ṯr",
+        second_surface="il",
+        first_target=TokenParse(
+            analysis="ṯr(I)/",
+            dulat="ṯr (I)",
+            pos="n. m.",
+            gloss="bull",
+        ),
+        min_count=8,
+        note="Epithet formula: ṯr il (Bull Ilu).",
+    ),
+    FormulaBigramRule(
         first_surface="rbt",
         second_surface="aṯrt",
         second_target=TokenParse(
