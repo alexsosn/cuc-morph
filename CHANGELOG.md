@@ -9,6 +9,8 @@
 - Added hardcoded bigram normalization for `ṯr il` in `pipeline/config/formula_bigram_rules.py` to force `ṯr (I)` (`n. m.`, `bull`) in the epithet formula “Bull Ilu”.
 - Added regression coverage in `tests/test_refinement_steps.py` and applied the bigram pass across `out/KTU 1.*.tsv`, removing remaining `ṯr (IV)` “foul-smelling” ambiguity in `ṯr il` contexts.
 - Tightened the same `ṯr il` rule to force the second token `il` to `DN` with gloss `ˀIlu` (instead of nominal readings such as `n. m. god`/`El`) for all occurrences of the epithet formula.
+- Fixed slash-variant DN handling in `scripts/refine_results_mentions.py` for lemmas like `ỉ/ủšḫry`: prevent truncation to one-letter headwords in col3/col4, prefer the observed long surface shape in analysis when slash variants collapse to a short fragment, and added regression tests in `tests/test_refine_results_mentions.py`.
+- Corrected affected rows for `ušḫry/išḫry` in `out/KTU 1.102.tsv`, `out/KTU 1.118.tsv`, `out/KTU 1.119.tsv`, `out/KTU 1.39.tsv`, and `out/KTU 1.47.tsv`.
 
 ## 2026-02-18
 

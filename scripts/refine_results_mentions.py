@@ -20,9 +20,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Sequence, Set, Tuple
 
-SEPARATOR_RE = re.compile(
-    r"^#-+\s*KTU\s+(\d+\.\d+)\s+([IVX]+):(\d+)\s*$", re.IGNORECASE
-)
+SEPARATOR_RE = re.compile(r"^#-+\s*KTU\s+(\d+\.\d+)\s+([IVX]+):(\d+)\s*$", re.IGNORECASE)
 
 LOOKUP_NORMALIZE = str.maketrans(
     {
@@ -156,7 +154,12 @@ def parse_optional_hom(lemma: str, hom: str) -> Tuple[str, str]:
 def entry_label(e: Entry) -> str:
     lemma = (e.lemma or "").strip()
     if not (lemma.startswith("/") and lemma.endswith("/")) and "/" in lemma:
-        lemma = lemma.split("/", 1)[0].strip()
+        first = lemma.split("/", 1)[0].strip()
+        # Some DULAT headwords encode orthographic alternatives like
+        # ỉ/ủšḫry. Keeping only the first short fragment would destroy
+        # lexical identity (ỉ), so preserve the full slash lemma.
+        if len(extract_letters(first)) > 2:
+            lemma = first
     if e.hom:
         return f"{lemma} ({e.hom})"
     return lemma
@@ -170,9 +173,7 @@ def normalize_pos_label(pos: str) -> str:
 
 
 def pos_token(e: Entry) -> str:
-    parts = [
-        normalize_pos_label(p.strip()) for p in (e.pos or "").split(",") if p.strip()
-    ]
+    parts = [normalize_pos_label(p.strip()) for p in (e.pos or "").split(",") if p.strip()]
     if not parts:
         return ""
     # In col5 one morpheme slot can keep alternatives with '/'
@@ -185,9 +186,7 @@ def is_verb_pos(pos: str) -> bool:
 
 def is_nominal_pos(pos: str) -> bool:
     p = (pos or "").lower()
-    return any(
-        k in p for k in ("n.", "adj", "dn", "pn", "tn", "gn", "mn", "num", "element")
-    )
+    return any(k in p for k in ("n.", "adj", "dn", "pn", "tn", "gn", "mn", "num", "element"))
 
 
 def extract_letters(text: str) -> str:
@@ -230,9 +229,7 @@ def stem_marker_from_morph(morph_values: Sequence[str]) -> str:
     return ""
 
 
-def analysis_for_entry(
-    surface: str, e: Entry, morph_values: Optional[Sequence[str]] = None
-) -> str:
+def analysis_for_entry(surface: str, e: Entry, morph_values: Optional[Sequence[str]] = None) -> str:
     s = normalize_analysis(surface)
     hom = f"({e.hom})" if e.hom else ""
     stem_marker = stem_marker_from_morph(morph_values or [])
@@ -248,6 +245,16 @@ def analysis_for_entry(
         return f"{stem_marker}{stem}{hom}["
 
     lex = lemma_to_letters(e.lemma, fallback=s)
+    if (
+        "/" in (e.lemma or "")
+        and not ((e.lemma or "").startswith("/") and (e.lemma or "").endswith("/"))
+        and len(lex) <= 2
+        and len(s) >= 4
+    ):
+        # Slash-variant lemmas like ỉ/ủšḫry can collapse to a one-letter
+        # fragment if we keep only the first variant. For long surfaces,
+        # prefer the observed token shape.
+        lex = s
     if is_nominal_pos(e.pos):
         return f"{lex}{hom}/"
     return f"{lex}{hom}"
@@ -292,7 +299,10 @@ def load_entries(
     # compact gloss preference
     sense_map: Dict[int, str] = {}
     cur.execute(
-        "SELECT entry_id, definition FROM senses WHERE definition IS NOT NULL AND trim(definition) != '' ORDER BY entry_id, id"
+        "SELECT entry_id, definition "
+        "FROM senses "
+        "WHERE definition IS NOT NULL AND trim(definition) != '' "
+        "ORDER BY entry_id, id"
     )
     for entry_id, definition in cur.fetchall():
         if entry_id not in sense_map:
@@ -300,7 +310,10 @@ def load_entries(
 
     trans_map: Dict[int, str] = {}
     cur.execute(
-        "SELECT entry_id, text FROM translations WHERE text IS NOT NULL AND trim(text) != '' ORDER BY entry_id, rowid"
+        "SELECT entry_id, text "
+        "FROM translations "
+        "WHERE text IS NOT NULL AND trim(text) != '' "
+        "ORDER BY entry_id, rowid"
     )
     for entry_id, text in cur.fetchall():
         if entry_id not in trans_map:
@@ -331,9 +344,7 @@ def load_entries(
 
     forms_map: Dict[str, List[Entry]] = {}
     forms_morph: Dict[Tuple[str, int], Set[str]] = {}
-    cur.execute(
-        "SELECT text, entry_id FROM forms WHERE text IS NOT NULL AND trim(text) != ''"
-    )
+    cur.execute("SELECT text, entry_id FROM forms WHERE text IS NOT NULL AND trim(text) != ''")
     for txt, entry_id in cur.fetchall():
         e = entries_by_id.get(int(entry_id))
         if not e:
@@ -356,9 +367,7 @@ def load_entries(
 
 def load_reverse_mentions(
     dulat_db: Path, udb_db: Path
-) -> Tuple[
-    Dict[str, Set[int]], Dict[int, int], Dict[int, Set[str]], Dict[int, Dict[str, int]]
-]:
+) -> Tuple[Dict[str, Set[int]], Dict[int, int], Dict[int, Set[str]], Dict[int, Dict[str, int]]]:
     out: Dict[str, Set[int]] = {}
     entry_ref_count: Counter = Counter()
     entry_tablets: Dict[int, Set[str]] = defaultdict(set)
@@ -466,9 +475,7 @@ def score_variant(
             sorted(forms_morph.get((normalize_lookup(surface), pe.entry_id), set()))
         ).lower()
         if fm:
-            ends_pron_suffix = bool(
-                re.search(r"(y|k|h|hm|hn|km|kn|n)$", normalize_lookup(surface))
-            )
+            ends_pron_suffix = bool(re.search(r"(y|k|h|hm|hn|km|kn|n)$", normalize_lookup(surface)))
             if "pn." in fm:
                 s += 5 if ends_pron_suffix else 3
             if "suff" in fm:
@@ -485,7 +492,8 @@ def score_variant(
         if ref_n <= 2:
             s -= 2
 
-        # Tablet-distribution prior: penalize narrow PN/TN/DN entries outside their attested tablet set.
+        # Tablet-distribution prior: penalize narrow PN/TN/DN entries
+        # outside their attested tablet set.
         cur_tab = tablet_id_from_ref(current_ref)
         cur_family = tablet_family(cur_tab)
         tabs = entry_tablets.get(pe.entry_id, set())
@@ -502,11 +510,7 @@ def score_variant(
             top_ratio = fam_counts[top_family] / total if total else 0.0
             if cur_family not in fam_counts:
                 pos_raw = pe.pos or ""
-                if (
-                    ("PN" in pos_raw or "TN" in pos_raw)
-                    and total >= 6
-                    and top_ratio >= 0.8
-                ):
+                if ("PN" in pos_raw or "TN" in pos_raw) and total >= 6 and top_ratio >= 0.8:
                     s -= 8
                 elif "DN" in pos_raw and total >= 6 and top_ratio >= 0.9:
                     s -= 4
@@ -540,9 +544,7 @@ def build_variants(
 ) -> List[Variant]:
     s_norm = normalize_lookup(surface)
     direct_all = dedupe_entries(forms_map.get(s_norm, []))
-    direct_pref = [
-        e for e in direct_all if (e.pos or "").strip() and (e.pos or "").strip() != "→"
-    ]
+    direct_pref = [e for e in direct_all if (e.pos or "").strip() and (e.pos or "").strip() != "→"]
     direct = direct_pref if direct_pref else direct_all
     direct_ids = {e.entry_id for e in direct}
 
@@ -557,18 +559,14 @@ def build_variants(
             base_norm = s_norm[: -len(suf)]
             base_all = dedupe_entries(forms_map.get(base_norm, []))
             base_pref = [
-                e
-                for e in base_all
-                if (e.pos or "").strip() and (e.pos or "").strip() != "→"
+                e for e in base_all if (e.pos or "").strip() and (e.pos or "").strip() != "→"
             ]
             base_entries = base_pref if base_pref else base_all
             if not base_entries:
                 continue
             suffix_all = dedupe_entries(suffix_map.get(suf, []))
             suffix_pref = [
-                e
-                for e in suffix_all
-                if (e.pos or "").strip() and (e.pos or "").strip() != "→"
+                e for e in suffix_all if (e.pos or "").strip() and (e.pos or "").strip() != "→"
             ]
             suffix_entries = suffix_pref if suffix_pref else suffix_all
             if not suffix_entries:
@@ -651,9 +649,7 @@ def render_variant(
         return a, d, p, g
 
     base, suf = entries[0], entries[1]
-    mv = sorted(
-        forms_morph.get((normalize_lookup(v.base_surface), base.entry_id), set())
-    )
+    mv = sorted(forms_morph.get((normalize_lookup(v.base_surface), base.entry_id), set()))
     a = f"{analysis_for_entry(v.base_surface, base, morph_values=mv)}+{suffix_fragment(suf)}"
     d = f"{entry_label(base)},{entry_label(suf)}"
     p = f"{pos_token(base)},{pos_token(suf)}"
@@ -782,8 +778,8 @@ def main() -> None:
     _entries_by_id, forms_map, _lemma_map, suffix_map, forms_morph = load_entries(
         Path(args.dulat_db)
     )
-    reverse_mentions, entry_ref_count, entry_tablets, entry_family_count = (
-        load_reverse_mentions(Path(args.dulat_db), Path(args.udb_db))
+    reverse_mentions, entry_ref_count, entry_tablets, entry_family_count = load_reverse_mentions(
+        Path(args.dulat_db), Path(args.udb_db)
     )
 
     out_dir = Path(args.out_dir)

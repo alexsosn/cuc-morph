@@ -270,9 +270,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.101.tsv:98 1522
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.101.tsv:99 152261 tiḫd ʔ must be preceded by '(' in column 3
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.101.tsv:99 152261 tiḫd Analysis does not reconstruct to surface (reconstructs as: tʔḫd)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.101.tsv:103 152265 tšt Analysis does not reconstruct to surface (reconstructs as: šty)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.102.tsv:6 152276 ušḫry POS token 'DN' not allowed for ỉ; choose one of: interj., →
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.102.tsv:6 152276 ušḫry Analysis does not reconstruct to surface (reconstructs as: i)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.102.tsv:6 152276 ušḫry DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.102.tsv:31 152290 iltm Analysis does not reconstruct to surface (reconstructs as: ilt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.102.tsv:32 152291 ḫnqtm Analysis does not reconstruct to surface (reconstructs as: ḫnqt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:6 152311 tld Analysis does not reconstruct to surface (reconstructs as: yld)
@@ -692,9 +689,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.117.tsv:41 1540
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.117.tsv:43 154095 nṣ Analysis does not reconstruct to surface (reconstructs as: nsk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.117.tsv:45 154096 m Analysis does not reconstruct to surface (reconstructs as: l)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.117.tsv:51 154101 ṯbtk Analysis does not reconstruct to surface (reconstructs as: ṯbt)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.118.tsv:51 154129 ušḫry POS token 'DN' not allowed for ỉ; choose one of: interj., →
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.118.tsv:51 154129 ušḫry Analysis does not reconstruct to surface (reconstructs as: i)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.118.tsv:51 154129 ušḫry DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.118.tsv:72 154141 mlkm Analysis does not reconstruct to surface (reconstructs as: mlk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.119.tsv:31 154168 šbˤt Analysis does not reconstruct to surface (reconstructs as: šbʕ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.119.tsv:34 154170 yrtḥṣ Analysis does not reconstruct to surface (reconstructs as: rtḥṣ)
@@ -704,9 +698,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.119.tsv:53 1541
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.119.tsv:60 154192 bˤd POS token 'adv. or prep.' not allowed for bʕd; choose one of: adv., prep.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.119.tsv:73 154203 ṯmnt Analysis does not reconstruct to surface (reconstructs as: ṯmn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.119.tsv:79 154208 mdgl Analysis does not reconstruct to surface (reconstructs as: mgdl)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.119.tsv:95 154222 išḫry POS token 'DN' not allowed for ỉ; choose one of: interj., →
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.119.tsv:95 154222 išḫry Analysis does not reconstruct to surface (reconstructs as: i)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.119.tsv:95 154222 išḫry DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.119.tsv:155 154271 mlkm Analysis does not reconstruct to surface (reconstructs as: mlk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.119.tsv:161 154276 ṯġrkm Analysis does not reconstruct to surface (reconstructs as: ṯġr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.119.tsv:164 154278 ḥmytkm Analysis does not reconstruct to surface (reconstructs as: ḥmtkm)
@@ -3194,9 +3185,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:31 14794
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:71 147976 mlun Analysis does not reconstruct to surface (reconstructs as: mlu)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:73 147978 ḫṣth Analysis does not reconstruct to surface (reconstructs as: ḫṣt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:92 147995 ṯrmnm Analysis does not reconstruct to surface (reconstructs as: ṯrmn)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:99 148001 ušḫry POS token 'DN' not allowed for ỉ; choose one of: interj., →
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:99 148001 ušḫry Analysis does not reconstruct to surface (reconstructs as: i)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:99 148001 ušḫry DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:130 148027 iltm Analysis does not reconstruct to surface (reconstructs as: ilt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:131 148028 ḫnqtm Analysis does not reconstruct to surface (reconstructs as: ḫnqt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:132 148029 dqtm Analysis does not reconstruct to surface (reconstructs as: dqt)
@@ -3591,9 +3579,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.46.tsv:90 14902
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.46.tsv:97 149032 dqtm Analysis does not reconstruct to surface (reconstructs as: dqt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.46.tsv:102 149036 mtntm Analysis does not reconstruct to surface (reconstructs as: mtnt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.46.tsv:131 149062 kbdm Analysis does not reconstruct to surface (reconstructs as: kbd)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.47.tsv:53 149102 ušḫry POS token 'DN' not allowed for ỉ; choose one of: interj., →
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.47.tsv:53 149102 ušḫry Analysis does not reconstruct to surface (reconstructs as: i)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.47.tsv:53 149102 ušḫry DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.47.tsv:74 149114 mlkm Analysis does not reconstruct to surface (reconstructs as: mlk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.48.tsv:12 149122 btm Analysis does not reconstruct to surface (reconstructs as: bt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.48.tsv:12 149122 btm Analysis does not reconstruct to surface (reconstructs as: bt)
@@ -6469,4 +6454,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:49 151516
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:75 151535 xẓk Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:88 151545 šdr Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.98.tsv:23 151701 gˤl Surface not found in UDB concordance
-Total issues: 6468
+Total issues: 6453

@@ -1,14 +1,14 @@
 ## Morphology Lint Summary
 
 - Files checked: `139`
-- Total issues: `6468`
+- Total issues: `6453`
 - Fallback-parsed issue lines: `457`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 4459 |
+| ERROR | 4444 |
 | WARNING | 628 |
 | INFO | 1197 |
 
@@ -16,17 +16,17 @@
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3280 |
+| ERROR | Analysis does not reconstruct to surface | 3275 |
 | INFO | Surface not found in UDB concordance | 1197 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 299 |
 | ERROR | Missing DULAT entry token(s) in column 4 | 170 |
 | ERROR | No DULAT entry found for lexeme/surface | 98 |
 | ERROR | Non-G stem in DULAT requires stem marker | 98 |
-| ERROR | DULAT comment does not match candidates | 96 |
+| ERROR | DULAT comment does not match candidates | 91 |
 | ERROR | Unknown DULAT token in column 4 | 77 |
 | ERROR | Noun/adjective lacks '/' ending | 74 |
-| ERROR | POS token not allowed for declared DULAT entry | 68 |
 | ERROR | Each reconstructed letter must be prefixed by '(' | 64 |
+| ERROR | POS token not allowed for declared DULAT entry | 63 |
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 42 |
 | WARNING | Suffix form without '+' | 40 |
 | WARNING | TODO/uncertain marker in comment | 37 |
