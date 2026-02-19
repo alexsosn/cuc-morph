@@ -5,6 +5,7 @@
 - Added conservative lemma-key fallback to `scripts/bootstrap_tablet_labeling.py` for DULAT entries that exist in `entries` but are missing from `forms`, while preserving explicit-form priority when form rows exist.
 - Added unit tests for bootstrap fallback behavior and precedence (`tests/test_bootstrap_tablet_labeling.py`).
 - Corrected `out/KTU 1.6.tsv` row `141444` (`tnn`) from `DULAT: NOT FOUND` to DULAT-backed ambiguity (`tnn (I)`/`tnn (II)`) with explicit fallback comment.
+- Normalized remaining mis-propagated `tnn` rows in `out/KTU 1.16.tsv` (`143862`) and `out/KTU 1.82.tsv` (`150000`) to the same DULAT-backed ambiguity payload.
 - Added trigram formula discovery utility: `scripts/discover_formula_trigrams.py` (profiles top adjacent three-token formulas and dominant parsing payloads in `out/KTU 1.*.tsv`).
 - Added hardcoded trigram formula normalization layer:
   - config: `pipeline/config/formula_trigram_rules.py`

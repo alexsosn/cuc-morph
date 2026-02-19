@@ -1460,9 +1460,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:843 1438
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:847 143851 ymlu ʔ must be preceded by '(' in column 3
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:847 143851 ymlu Analysis does not reconstruct to surface (reconstructs as: ymlʔ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:854 143856 dt Analysis does not reconstruct to surface (reconstructs as: d)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:861 143862 tnn Analysis does not reconstruct to surface (reconstructs as: ʕlnn)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:861 143862 tnn Analysis does not reconstruct to surface (reconstructs as: aḫtnn)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:861 143862 tnn Analysis does not reconstruct to surface (reconstructs as: ʕsysnn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:895 143882 šˤtqt Analysis does not reconstruct to surface (reconstructs as: škllt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:900 143885 ˤrm Analysis does not reconstruct to surface (reconstructs as: ʕr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:903 143887 di ʔ must be preceded by '(' in column 3
@@ -4083,9 +4080,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.80.tsv:27 14995
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.81.tsv:40 149986 n Analysis does not reconstruct to surface (reconstructs as: l)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.81.tsv:40 149986 n Analysis does not reconstruct to surface (reconstructs as: ʕl)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.81.tsv:40 149986 n Analysis does not reconstruct to surface (reconstructs as: mġy)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:6 150000 tnn Analysis does not reconstruct to surface (reconstructs as: ʕlnn)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:6 150000 tnn Analysis does not reconstruct to surface (reconstructs as: aḫtnn)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:6 150000 tnn Analysis does not reconstruct to surface (reconstructs as: ʕsysnn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:8 150002 ygl Analysis does not reconstruct to surface (reconstructs as: gly)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:30 150022 km Analysis does not reconstruct to surface (reconstructs as: k)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:30 150022 km Analysis does not reconstruct to surface (reconstructs as: k)
@@ -6467,4 +6461,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:49 151516
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:75 151535 xẓk Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:88 151545 šdr Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.98.tsv:23 151701 gˤl Surface not found in UDB concordance
-Total issues: 6466
+Total issues: 6460
