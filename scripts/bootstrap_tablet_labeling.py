@@ -76,6 +76,17 @@ class Entry:
     hom: str
     pos: str
     gloss: str
+    families: frozenset[str]
+
+
+def _citation_family(citation: str) -> str:
+    m = re.search(r"\bCAT\s+(\d+)\.", citation or "")
+    if m:
+        return m.group(1)
+    m = re.search(r"\bKTU\s+(\d+)\.", citation or "")
+    if m:
+        return m.group(1)
+    return ""
 
 
 def load_dulat_forms(db_path: Path) -> Dict[str, List[Entry]]:
@@ -100,6 +111,13 @@ def load_dulat_forms(db_path: Path) -> Dict[str, List[Entry]]:
                 hom = m.group(2)
         meta[entry_id] = (lemma, hom, pos or "")
 
+    entry_families: Dict[int, set[str]] = {}
+    cur.execute("SELECT entry_id, citation FROM attestations")
+    for entry_id, citation in cur.fetchall():
+        fam = _citation_family(citation or "")
+        if fam:
+            entry_families.setdefault(entry_id, set()).add(fam)
+
     entries_by_id: Dict[int, Entry] = {}
     for entry_id, (lemma, hom, pos) in meta.items():
         entries_by_id[entry_id] = Entry(
@@ -108,6 +126,7 @@ def load_dulat_forms(db_path: Path) -> Dict[str, List[Entry]]:
             hom=hom,
             pos=pos,
             gloss=gloss_map.get(entry_id, ""),
+            families=frozenset(entry_families.get(entry_id, set())),
         )
 
     forms_map: Dict[str, List[Entry]] = {}
@@ -121,14 +140,21 @@ def load_dulat_forms(db_path: Path) -> Dict[str, List[Entry]]:
 
     # Conservative fallback: if DULAT has an entry lemma but no `forms` row for
     # that same token, index the lemma itself so bootstrap can still propose
-    # candidates (for example tnn).
+    # candidates (for example tnn). When KTU 1 attestations are present among
+    # homonyms, prefer that family to avoid importing KTU 4-only PN readings.
+    fallback_by_key: Dict[str, List[Entry]] = {}
     for entry in entries_by_id.values():
         lemma_key = normalize_lookup(entry.lemma)
         if not lemma_key or " " in lemma_key:
             continue
         if lemma_key in explicit_form_keys:
             continue
-        forms_map.setdefault(lemma_key, []).append(entry)
+        fallback_by_key.setdefault(lemma_key, []).append(entry)
+
+    for lemma_key, candidates in fallback_by_key.items():
+        ktu1_candidates = [entry for entry in candidates if "1" in entry.families]
+        selected = ktu1_candidates if ktu1_candidates else candidates
+        forms_map.setdefault(lemma_key, []).extend(selected)
 
     conn.close()
     return forms_map

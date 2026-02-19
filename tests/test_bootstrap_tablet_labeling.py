@@ -17,10 +17,37 @@ def _init_bootstrap_schema(conn: sqlite3.Connection) -> None:
     cur.execute(
         "CREATE TABLE forms(entry_id INTEGER, text TEXT, morphology TEXT, cert TEXT, notes TEXT)"
     )
+    cur.execute(
+        "CREATE TABLE attestations("
+        "entry_id INTEGER, ug TEXT, translation TEXT, citation TEXT, kind TEXT)"
+    )
     conn.commit()
 
 
 class BootstrapTabletLabelingTest(unittest.TestCase):
+    def test_fallback_prefers_ktu1_family_for_homonym_lemmas(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            conn = sqlite3.connect(db_path)
+            _init_bootstrap_schema(conn)
+            cur = conn.cursor()
+            cur.execute(
+                "INSERT INTO entries(entry_id, lemma, homonym, pos) VALUES (1, 'tnn', 'I', 'DN')"
+            )
+            cur.execute(
+                "INSERT INTO entries(entry_id, lemma, homonym, pos) VALUES (2, 'tnn', 'II', 'PN')"
+            )
+            cur.execute("INSERT INTO translations(entry_id, text) VALUES (1, 'dragon')")
+            cur.execute("INSERT INTO attestations(entry_id, citation) VALUES (1, 'CAT 1.6 VI:51')")
+            cur.execute("INSERT INTO attestations(entry_id, citation) VALUES (2, 'CAT 4.35:13')")
+            conn.commit()
+            conn.close()
+
+            forms_map = load_dulat_forms(db_path)
+            self.assertIn("tnn", forms_map)
+            ids = {e.entry_id for e in forms_map["tnn"]}
+            self.assertEqual(ids, {1})
+
     def test_load_dulat_forms_falls_back_to_lemma_when_form_missing(self) -> None:
         with tempfile.TemporaryDirectory() as tmp_dir:
             db_path = Path(tmp_dir) / "dulat.sqlite"
@@ -34,6 +61,8 @@ class BootstrapTabletLabelingTest(unittest.TestCase):
                 "INSERT INTO entries(entry_id, lemma, homonym, pos) VALUES (2, 'tnn', 'II', 'PN')"
             )
             cur.execute("INSERT INTO translations(entry_id, text) VALUES (1, 'dragon')")
+            cur.execute("INSERT INTO attestations(entry_id, citation) VALUES (1, 'CAT 1.6 VI:51')")
+            cur.execute("INSERT INTO attestations(entry_id, citation) VALUES (2, 'CAT 1.16 V:31')")
             conn.commit()
             conn.close()
 
@@ -77,6 +106,7 @@ class BootstrapTabletLabelingTest(unittest.TestCase):
                 "INSERT INTO entries(entry_id, lemma, homonym, pos) VALUES (1, 'tnn', 'I', 'DN')"
             )
             cur.execute("INSERT INTO translations(entry_id, text) VALUES (1, 'dragon')")
+            cur.execute("INSERT INTO attestations(entry_id, citation) VALUES (1, 'CAT 1.6 VI:51')")
             conn.commit()
             conn.close()
 
