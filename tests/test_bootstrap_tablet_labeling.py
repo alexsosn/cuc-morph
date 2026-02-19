@@ -48,6 +48,30 @@ class BootstrapTabletLabelingTest(unittest.TestCase):
             ids = {e.entry_id for e in forms_map["tnn"]}
             self.assertEqual(ids, {1})
 
+    def test_fallback_keeps_cross_family_homonyms_for_other_lemmas(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            conn = sqlite3.connect(db_path)
+            _init_bootstrap_schema(conn)
+            cur = conn.cursor()
+            cur.execute(
+                "INSERT INTO entries(entry_id, lemma, homonym, pos) VALUES (1, 'abc', 'I', 'n. m.')"
+            )
+            cur.execute(
+                "INSERT INTO entries(entry_id, lemma, homonym, pos) VALUES (2, 'abc', 'II', 'PN')"
+            )
+            cur.execute("INSERT INTO translations(entry_id, text) VALUES (1, 'first')")
+            cur.execute("INSERT INTO translations(entry_id, text) VALUES (2, 'second')")
+            cur.execute("INSERT INTO attestations(entry_id, citation) VALUES (1, 'CAT 1.1 I:1')")
+            cur.execute("INSERT INTO attestations(entry_id, citation) VALUES (2, 'CAT 4.35:13')")
+            conn.commit()
+            conn.close()
+
+            forms_map = load_dulat_forms(db_path)
+            self.assertIn("abc", forms_map)
+            ids = {e.entry_id for e in forms_map["abc"]}
+            self.assertEqual(ids, {1, 2})
+
     def test_load_dulat_forms_falls_back_to_lemma_when_form_missing(self) -> None:
         with tempfile.TemporaryDirectory() as tmp_dir:
             db_path = Path(tmp_dir) / "dulat.sqlite"

@@ -4,6 +4,7 @@
 
 - Added conservative lemma-key fallback to `scripts/bootstrap_tablet_labeling.py` for DULAT entries that exist in `entries` but are missing from `forms`, while preserving explicit-form priority when form rows exist.
 - Refined lemma fallback to prefer KTU 1-attested homonyms when available (using `attestations.citation` family parsing) so KTU 4-only homonyms are not imported into `KTU 1.*` fallback parses.
+- Narrowed family-based fallback pruning to an explicit lemma allowlist (`tnn` only) so other cross-family homonym variants remain available for contextual interpretation.
 - Added unit tests for bootstrap fallback behavior and precedence (`tests/test_bootstrap_tablet_labeling.py`).
 - Corrected `out/KTU 1.6.tsv` row `141444` (`tnn`) from `DULAT: NOT FOUND` to DULAT-backed ambiguity (`tnn (I)`/`tnn (II)`) with explicit fallback comment.
 - Normalized remaining mis-propagated `tnn` rows in `out/KTU 1.16.tsv` (`143862`) and `out/KTU 1.82.tsv` (`150000`) to the same DULAT-backed ambiguity payload.
