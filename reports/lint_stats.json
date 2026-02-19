@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-19T02:22:09.152989+00:00",
+  "generated_at_utc": "2026-02-19T12:41:52.002354+00:00",
   "files_checked": 139,
-  "total_issues": 6411,
+  "total_issues": 6432,
   "fallback_parsed": 456,
   "by_severity": {
-    "ERROR": 4405,
-    "WARNING": 626,
+    "ERROR": 4425,
+    "WARNING": 627,
     "INFO": 1197
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3275
+      "count": 3273
     },
     {
       "severity": "INFO",
@@ -27,7 +27,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 156
+      "count": 157
     },
     {
       "severity": "ERROR",
@@ -42,12 +42,12 @@
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 89
+      "count": 91
     },
     {
       "severity": "ERROR",
       "problem_type": "Unknown DULAT token in column 4",
-      "count": 73
+      "count": 77
     },
     {
       "severity": "ERROR",
@@ -56,13 +56,13 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "Each reconstructed letter must be prefixed by '('",
-      "count": 61
+      "problem_type": "POS token not allowed for declared DULAT entry",
+      "count": 66
     },
     {
       "severity": "ERROR",
-      "problem_type": "POS token not allowed for declared DULAT entry",
-      "count": 60
+      "problem_type": "Each reconstructed letter must be prefixed by '('",
+      "count": 63
     },
     {
       "severity": "ERROR",
@@ -230,6 +230,11 @@
       "count": 5
     },
     {
+      "severity": "ERROR",
+      "problem_type": "D stem marker present but DULAT lacks D/Dt",
+      "count": 4
+    },
+    {
       "severity": "WARNING",
       "problem_type": "bht Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
@@ -273,6 +278,11 @@
       "severity": "WARNING",
       "problem_type": "ḫbtkm Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Š stem marker present but DULAT lacks Š/Št/Špass",
+      "count": 3
     },
     {
       "severity": "WARNING",
@@ -358,6 +368,11 @@
       "severity": "WARNING",
       "problem_type": "ḫbtkn Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Xt stem marker present but DULAT lacks *t stem",
+      "count": 2
     },
     {
       "severity": "WARNING",
@@ -581,7 +596,7 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "D stem marker present but DULAT lacks D/Dt",
+      "problem_type": "Column 4 count must match analysis variant count",
       "count": 1
     },
     {
@@ -590,13 +605,8 @@
       "count": 1
     },
     {
-      "severity": "ERROR",
-      "problem_type": "Xt stem marker present but DULAT lacks *t stem",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Š stem marker present but DULAT lacks Š/Št/Špass",
+      "severity": "WARNING",
+      "problem_type": "Column 6 count should match analysis variant count",
       "count": 1
     },
     {
