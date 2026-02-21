@@ -1,68 +1,72 @@
 ## Morphology Lint Summary
 
 - Files checked: `139`
-- Total issues: `6432`
-- Fallback-parsed issue lines: `456`
+- Total issues: `6412`
+- Fallback-parsed issue lines: `544`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 4425 |
-| WARNING | 627 |
+| ERROR | 4316 |
+| WARNING | 715 |
 | INFO | 1197 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3273 |
+| ERROR | Analysis does not reconstruct to surface | 3282 |
 | INFO | Surface not found in UDB concordance | 1197 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 299 |
-| ERROR | Missing DULAT entry token(s) in column 4 | 157 |
 | ERROR | Non-G stem in DULAT requires stem marker | 98 |
-| ERROR | DULAT comment does not match candidates | 91 |
-| ERROR | No DULAT entry found for lexeme/surface | 91 |
+| ERROR | Missing DULAT entry token(s) in column 4 | 93 |
+| ERROR | DULAT comment does not match candidates | 92 |
+| ERROR | No DULAT entry found for lexeme/surface | 85 |
 | ERROR | Unknown DULAT token in column 4 | 77 |
-| ERROR | Noun/adjective lacks '/' ending | 72 |
 | ERROR | POS token not allowed for declared DULAT entry | 66 |
-| ERROR | Each reconstructed letter must be prefixed by '(' | 63 |
+| ERROR | Each reconstructed letter must be prefixed by '(' | 62 |
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 42 |
 | WARNING | Suffix form without '+' | 40 |
+| ERROR | Noun/adjective lacks '/' ending | 36 |
 | WARNING | TODO/uncertain marker in comment | 36 |
 | WARNING | Feminine adjective/participle in DULAT should mark '-t' explicitly | 32 |
 | WARNING | Feminine plural noun in DULAT should use '/t=' | 30 |
 | ERROR | No DULAT entry found for clitic part | 29 |
 | WARNING | aṯt Lexeme parse did not match DULAT; matched by surface form | 22 |
-| ERROR | Multiple DULAT candidates for lexeme | 21 |
+| ERROR | Multiple DULAT candidates for lexeme | 14 |
 | ERROR | Deverbal form matches both verb and noun entries in DULAT | 13 |
 | WARNING | nkt Lexeme parse did not match DULAT; matched by surface form | 13 |
 | WARNING | Feminine plural noun in DULAT should be tagged with '/t=' | 12 |
 | WARNING | Plural form missing split ending | 12 |
 | WARNING | bhtm Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | pamt Lexeme parse did not match DULAT; matched by surface form | 12 |
-| ERROR | Verb lacks '[' ending | 9 |
+| WARNING | špḥ Noun POS should include DULAT gender marker for špḥ: n. m. | 12 |
 | WARNING | yˤn Lexeme parse did not match DULAT; matched by surface form | 9 |
 | ERROR | POS tokens must map to existing DULAT tokens in column 4 | 8 |
 | WARNING | km Lexeme parse did not match DULAT; matched by surface form | 8 |
 | WARNING | mrkbt Lexeme parse did not match DULAT; matched by surface form | 8 |
 | WARNING | snnt Lexeme parse did not match DULAT; matched by surface form | 8 |
 | WARNING | tr Lexeme parse did not match DULAT; matched by surface form | 8 |
+| ERROR | Verb lacks '[' ending | 7 |
 | WARNING | Deverbal form marked with '[' but only noun entry found in DULAT | 7 |
 | WARNING | mid Lexeme parse did not match DULAT; matched by surface form | 7 |
 | WARNING | nši Lexeme parse did not match DULAT; matched by surface form | 7 |
 | WARNING | šmt Lexeme parse did not match DULAT; matched by surface form | 7 |
 | WARNING | tbˤ Lexeme parse did not match DULAT; matched by surface form | 6 |
 | WARNING | šblt Lexeme parse did not match DULAT; matched by surface form | 6 |
-| ERROR | POS ambiguous in DULAT | 5 |
 | WARNING | btm Lexeme parse did not match DULAT; matched by surface form | 5 |
 | WARNING | limm Lexeme parse did not match DULAT; matched by surface form | 5 |
 | WARNING | t Lexeme parse did not match DULAT; matched by surface form | 5 |
 | WARNING | trḫ Lexeme parse did not match DULAT; matched by surface form | 5 |
 | WARNING | uṣbˤth Lexeme parse did not match DULAT; matched by surface form | 5 |
+| WARNING | šp Noun POS should include DULAT gender marker for šp: n. m. | 5 |
 | ERROR | D stem marker present but DULAT lacks D/Dt | 4 |
 | WARNING | bht Lexeme parse did not match DULAT; matched by surface form | 4 |
+| WARNING | dry Noun POS should include DULAT gender marker for dr: n. m. | 4 |
+| WARNING | l In offering-list sequences, parse 'l' as l(I) preposition | 4 |
 | WARNING | pat Lexeme parse did not match DULAT; matched by surface form | 4 |
+| WARNING | pḏh Noun POS should include DULAT gender marker for pḏ: n. m. | 4 |
 | WARNING | qṣˤt Lexeme parse did not match DULAT; matched by surface form | 4 |
 | WARNING | skn Lexeme parse did not match DULAT; matched by surface form | 4 |
 | WARNING | ydm Lexeme parse did not match DULAT; matched by surface form | 4 |
@@ -76,6 +80,7 @@
 | WARNING | dblt Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | drkth Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | gm Lexeme parse did not match DULAT; matched by surface form | 3 |
+| WARNING | lḥn Noun POS should include DULAT gender marker for lḥ (II): n. m. | 3 |
 | WARNING | mrkbthm Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | mṭˤt Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | n Lexeme parse did not match DULAT; matched by surface form | 3 |
@@ -87,7 +92,10 @@
 | WARNING | tḥ Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | yšu Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | šˤtqt Lexeme parse did not match DULAT; matched by surface form | 3 |
+| WARNING | ḏrˤ Noun POS should include DULAT gender marker for ḏrʕ (I): n. f. | 3 |
 | WARNING | ḫbtkn Lexeme parse did not match DULAT; matched by surface form | 3 |
+| WARNING | ḫsn Noun POS should include DULAT gender marker for ḫsn (I): n. m. | 3 |
+| ERROR | POS ambiguous in DULAT | 2 |
 | ERROR | Xt stem marker present but DULAT lacks *t stem | 2 |
 | WARNING | arṯm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | aḥw Lexeme parse did not match DULAT; matched by surface form | 2 |
@@ -95,17 +103,27 @@
 | WARNING | bnt Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | brkthm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | brktkm Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | dnh Noun POS should include DULAT gender marker for dn (I): n. m. | 2 |
+| WARNING | gmrm Noun POS should include DULAT gender marker for gmr: n. m. | 2 |
+| WARNING | kb Adjective POS should include DULAT gender marker for kb (I): adj. m. | 2 |
+| WARNING | kb Noun POS should include DULAT gender marker for kb (II): n. m. | 2 |
 | WARNING | klnyy Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ksat Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ksi Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ksih Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | mqmm Noun POS should include DULAT gender marker for mqm: n. m. | 2 |
+| WARNING | mrzḥh Noun POS should include DULAT gender marker for mrzḥ: n. m. | 2 |
 | WARNING | mšspdt Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | mˤlt Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | mḥrṯth Noun POS should include DULAT gender marker for mḥrṯt: n. f. | 2 |
 | WARNING | mḫlpt Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | mṯpdm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | npk Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | pit Noun POS should include DULAT gender marker for pỉt: n. m. | 2 |
+| WARNING | pitm Noun POS should include DULAT gender marker for pỉt: n. m. | 2 |
 | WARNING | pnm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | pnth Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | prṯt Noun POS should include DULAT gender marker for prṯt: n. f. | 2 |
 | WARNING | qṣˤth Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | qṣˤtk Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | rgmt Lexeme parse did not match DULAT; matched by surface form | 2 |
@@ -123,21 +141,30 @@
 | WARNING | ykbdnh Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ylm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | yrtqṣ Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | yḥmrm Noun POS should include DULAT gender marker for yḥmr: n. m. | 2 |
 | WARNING | yṣa Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | yṯir Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | ġzrh Noun POS should include DULAT gender marker for ġzr: n. m. | 2 |
+| WARNING | šb Noun POS should include DULAT gender marker for šb: n. m. | 2 |
 | WARNING | šibt Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | šlḥmt Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | šmthm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | šntk Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | špḥh Noun POS should include DULAT gender marker for špḥ: n. m. | 2 |
 | WARNING | šˤrt Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ˤnm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ˤnnh Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | ˤṣrm Noun POS should include DULAT gender marker for ʕṣr (I): n. f. | 2 |
 | WARNING | ḥtkk Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | ḥṯm Noun POS should include DULAT gender marker for ḥṯ: n. m. | 2 |
 | ERROR | Column 4 count must match analysis variant count | 1 |
 | ERROR | Disallowed character in columns 2-3: ʕ | 1 |
 | WARNING | Column 6 count should match analysis variant count | 1 |
 | WARNING | Plurale tantum noun ending in '-m' should mark plural with '/m' | 1 |
+| WARNING | a Adjective POS should include DULAT gender marker for mrủ (I): adj. m. | 1 |
 | WARNING | a Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | a Noun POS should include DULAT gender marker for mrủ (I): n. m. | 1 |
+| WARNING | a Noun POS should include DULAT gender marker for ảhl: n. m. | 1 |
 | WARNING | alp Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | am Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | anš Lexeme parse did not match DULAT; matched by surface form | 1 |
@@ -151,16 +178,19 @@
 | WARNING | aḫd Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | aṯtm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | bdk Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | bir Noun POS should include DULAT gender marker for bỉr: n. f. | 1 |
 | WARNING | bny Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | btlt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | bwtm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | bštm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | bˤlh Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | bˤlk Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | bˤrk Adjective POS should include DULAT gender marker for bʕr: adj. m. | 1 |
 | WARNING | d Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | dmm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | dˤtm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | gršnn Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | gˤt Noun POS should include DULAT gender marker for gʕt: n. f. | 1 |
 | WARNING | hklh Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | hmlt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | hwth Lexeme parse did not match DULAT; matched by surface form | 1 |
@@ -171,7 +201,10 @@
 | WARNING | ištm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ktpm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | la Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | lbu Noun POS should include DULAT gender marker for lbủ: n. m. | 1 |
 | WARNING | llim Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | lḥk Noun POS should include DULAT gender marker for lḥ (I): n. f. | 1 |
+| WARNING | lḥk Noun POS should include DULAT gender marker for lḥ (II): n. m. | 1 |
 | WARNING | lṭšt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | mat Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | mlakk Lexeme parse did not match DULAT; matched by surface form | 1 |
@@ -179,10 +212,13 @@
 | WARNING | mlkk Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | mmˤm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | mnm Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | mnḫ Noun POS should include DULAT gender marker for mnḫ: n. m. | 1 |
 | WARNING | mri Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | mrzḥ Noun POS should include DULAT gender marker for mrzḥ: n. m. | 1 |
 | WARNING | mtt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | mḫṣt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | mṭm Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | mṭt Noun POS should include DULAT gender marker for mṭt: n. f. | 1 |
 | WARNING | mṯpṭk Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | nbk Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | nbšt Lexeme parse did not match DULAT; matched by surface form | 1 |
@@ -195,6 +231,7 @@
 | WARNING | nša Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | nšu Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | nḥt Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | ptr Noun POS should include DULAT gender marker for ptr: n. m. | 1 |
 | WARNING | pˤrt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | pṯtm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | q Lexeme parse did not match DULAT; matched by surface form | 1 |
@@ -238,6 +275,9 @@
 | WARNING | yštḥwyn Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | yˤmdn Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | yḥwy Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | ġll Noun POS should include DULAT gender marker for ġll (I): n. m. | 1 |
+| WARNING | šal Noun POS should include DULAT gender marker for šảl: n. m. | 1 |
+| WARNING | šbrd Noun POS should include DULAT gender marker for šbr: n. m. | 1 |
 | WARNING | šdmth Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | škllt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | šmalh Lexeme parse did not match DULAT; matched by surface form | 1 |
@@ -246,6 +286,7 @@
 | WARNING | ˤlnh Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ˤnh Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ˤnn Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | ˤp Noun POS should include DULAT gender marker for ʕp (I): n. m. | 1 |
 | WARNING | ḥblm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ḥpšt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ḥrbm Lexeme parse did not match DULAT; matched by surface form | 1 |
@@ -255,6 +296,7 @@
 | WARNING | ḫrmṯt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ṣ Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ṣlmm Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | ṣt Noun POS should include DULAT gender marker for ṣt: n. f. | 1 |
 | WARNING | ṯat Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ṯbth Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ṯbtk Lexeme parse did not match DULAT; matched by surface form | 1 |

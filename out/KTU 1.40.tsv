@@ -4,13 +4,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148051	npy	npy/	npy	n. m.	purification	
 # KTU 1.40 2						
 148052	wnpy	?	?	?	?	DULAT: NOT FOUND
-148053	ugrt	?	?	?	?	DULAT: NOT FOUND
+148053	ugrt	ugrt/	ủgrt	TN	ʾugarītu	
 # KTU 1.40 3						
 148054	y	y	y	prep. functor	oh!	
-148055	ulp	?	?	?	?	DULAT: NOT FOUND
+148055	ulp	ulp	ủlp	→		
 148056		?	?	?	?	
 # KTU 1.40 4						
-148057	ġbr	?	?	?	?	DULAT: NOT FOUND
+148057	ġbr	ġbr/	ġbr	TN	nom propre	
 148058	ul	ul/	ủl	n. m.	(military) force	
 148059	p	p(I);p(III)/;p(II)	p (I);p (III);p (II)	conj. functor;n. m.;adv.	and;mouth;here	
 # KTU 1.40 5						
@@ -50,7 +50,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148089	š	š/	š	n. m.	ram	
 148090	mšr	mšr(I)/;mšr(II)/	mšr (I);mšr (II)	n. m.;n.	justice;song	
 148091	bn	bn(I)/;bn(II);bn[	bn (I);bn (II);/b-n/	n. m.;prep.;vb	son;between;to understand	
-148092	ugrt	?	?	?	?	DULAT: NOT FOUND
+148092	ugrt	ugrt/	ủgrt	TN	ʾugarītu	
 148093	w	w	w	conj.	and	
 148094	npyx	?	?	?	?	DULAT: NOT FOUND
 148095	w	w	w	conj.	and	
@@ -58,7 +58,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.40 10						
 148097	w	w	w	conj.	and	
 148098	npy	npy/	npy	n. m.	purification	
-148099	ugrt	?	?	?	?	DULAT: NOT FOUND
+148099	ugrt	ugrt/	ủgrt	TN	ʾugarītu	
 # KTU 1.40 11						
 148100	u	u	ủ	conj.	or	
 148101	tḫṭu	!t!ḫṭʔ[	/ḫ-ṭ-ʔ/	vb	to make a mistake	
@@ -80,17 +80,17 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148116	alṯy	alṯy/	ảlṯy(y)	GN	ảlṯy(y)	
 148117	u	u	ủ	conj.	or	
 148118	lp	?	?	?	?	DULAT: NOT FOUND
-148119	ġbr	?	?	?	?	DULAT: NOT FOUND
+148119	ġbr	ġbr/	ġbr	TN	nom propre	
 # KTU 1.40 13						
 148120	u	u	ủ	conj.	or	
 148121	lp	?	?	?	?	DULAT: NOT FOUND
 148122	ḫbtkm	ḫb(I)/t=+km	ḫbt (I)	n. m.	oppressor	
 148123	u	u	ủ	conj.	or	
 148124	lp	?	?	?	?	DULAT: NOT FOUND
-148125	mdllkm	?	?	?	?	DULAT: NOT FOUND
+148125	mdllkm	mdll+km	mdll,-km	→,pers. pn./morph.	,your	
 148126	u	u	ủ	conj.	or	
 148127	lp	?	?	?	?	DULAT: NOT FOUND
-148128	qrzbl	?	?	?	?	DULAT: NOT FOUND
+148128	qrzbl	qrzbl/	qrzbl	TN	Fürstenquelle	
 # KTU 1.40 14						
 148129	u	u	ủ	conj.	or	
 148130	tḫṭu	!t!ḫṭʔ[	/ḫ-ṭ-ʔ/	vb	to make a mistake	
@@ -145,7 +145,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148175	npy	npy/	npy	n. m.	purification	
 148176	gr	gr(I)/;gr[	gr (I);/g-r(-y)/	n. m.;vb	protected;to attack	
 148177	ḥmyt	ḥm(I)/t=	ḥmt (I)	n. f.	wall	
-148178	ugrt	?	?	?	?	DULAT: NOT FOUND
+148178	ugrt	ugrt/	ủgrt	TN	ʾugarītu	
 148179	w	w	w	conj.	and	
 148180	npy	npy/	npy	n. m.	purification	
 # KTU 1.40 19						
@@ -172,17 +172,17 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148200	alṯy	alṯy/	ảlṯy(y)	GN	ảlṯy(y)	
 148201	u	u	ủ	conj.	or	
 148202	lp	?	?	?	?	DULAT: NOT FOUND
-148203	ġbr	?	?	?	?	DULAT: NOT FOUND
+148203	ġbr	ġbr/	ġbr	TN	nom propre	
 # KTU 1.40 21						
 148204	u	u	ủ	conj.	or	
 148205	lp	?	?	?	?	DULAT: NOT FOUND
 148206	ḫbtkn	ḫb(I)/t=+kn	ḫbt (I)	n. m.	oppressor	
 148207	u	u	ủ	conj.	or	
 148208	lp	?	?	?	?	DULAT: NOT FOUND
-148209	mdllkn	?	?	?	?	DULAT: NOT FOUND
+148209	mdllkn	mdll+kn	mdll,-kn	→,pers. pn./morph.	,your	
 148210	u	u	ủ	conj.	or	
 148211	lp	?	?	?	?	DULAT: NOT FOUND
-148212	qrzbl	?	?	?	?	DULAT: NOT FOUND
+148212	qrzbl	qrzbl/	qrzbl	TN	Fürstenquelle	
 # KTU 1.40 22						
 148213	u	u	ủ	conj.	or	
 148214	tḫṭin	!t!ḫṭʔ[	/ḫ-ṭ-ʔ/	vb	to make a mistake	
@@ -235,24 +235,24 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148257	mšr	mšr(I)/	mšr (I)	n. m.	justice	
 148258	mšr	mšr(I)/	mšr (I)	n. m.	justice	
 148259	bn	bn(I)/	bn (I)	n. m.	son	
-148260	ugrt	?	?	?	?	DULAT: NOT FOUND
+148260	ugrt	ugrt/	ủgrt	TN	ʾugarītu	
 148261	w	w	w	conj.	and	
 148262	npy	npy/	npy	n. m.	purification	
-148263	ugrt	?	?	?	?	DULAT: NOT FOUND
+148263	ugrt	ugrt/	ủgrt	TN	ʾugarītu	
 # KTU 1.40 27						
 148264	w	w	w	conj.	and	
 148265	npy	npy/	npy	n. m.	purification	
-148266	yman	?	?	?	?	DULAT: NOT FOUND
+148266	yman	yman/	ymản	TN	Ionia	
 148267	w	w	w	conj.	and	
 148268	npy	npy/	npy	n. m.	purification	
-148269	ˤrmt	?	?	?	?	DULAT: NOT FOUND
+148269	ˤrmt	ˤrmt/	ʕrmt	TN	ʕrmt	
 148270	w	w	w	conj.	and	
 148271	npy	npy/	npy	n. m.	purification	
 148272	x	?	?	?	?	
 # KTU 1.40 28						
 148273	w	w	w	conj.	and	
 148274	npy	npy/	npy	n. m.	purification	
-148275	nqmd	?	?	?	?	DULAT: NOT FOUND
+148275	nqmd	nqmd/	nqmd	PN	king	
 148276	u	u	ủ	conj.	or	
 148277	šn	šnw[	/š-n-w/	vb	to change: a) reflex.	
 148278	ypkm	yp/	yp	n. m.	dignity	
@@ -274,17 +274,17 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148293	alty	alt(I)/+y(I);alt(I)/+y(II);alt(II)/+y(I)	ảlt (I),-y (I);ảlt (I),-y (II);ảlt (II),-y (I)	n. f.,prep.;n. f.,postp. functor;n. f.,prep.	curse,my;curse,yes;support,my	
 148294	u	u	ủ	conj.	or	
 148295	lp	?	?	?	?	DULAT: NOT FOUND
-148296	ġbr	?	?	?	?	DULAT: NOT FOUND
+148296	ġbr	ġbr/	ġbr	TN	nom propre	
 148297	u	u	ủ	conj.	or	
 148298	lp	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.40 30						
 148299	ḫbtkm	ḫb(I)/t=+km	ḫbt (I)	n. m.	oppressor	
 148300	u	u	ủ	conj.	or	
 148301	lp	?	?	?	?	DULAT: NOT FOUND
-148302	mdllkm	?	?	?	?	DULAT: NOT FOUND
+148302	mdllkm	mdll+km	mdll,-km	→,pers. pn./morph.	,your	
 148303	u	u	ủ	conj.	or	
 148304	lp	?	?	?	?	DULAT: NOT FOUND
-148305	qrzbl	?	?	?	?	DULAT: NOT FOUND
+148305	qrzbl	qrzbl/	qrzbl	TN	Fürstenquelle	
 148306	u	u	ủ	conj.	or	
 148307	šn	šnw[	/š-n-w/	vb	to change: a) reflex.	
 148308	ypkm	yp/	yp	n. m.	dignity	
@@ -329,7 +329,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148343	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
 148344	mpḫrt	mpḫrt/	mpḫrt	n. f.	assembly	
 148345	bn	bn(I)/;bn(II);bn[	bn (I);bn (II);/b-n/	n. m.;prep.;vb	son;between;to understand	
-148346	ill	?	?	?	?	DULAT: NOT FOUND
+148346	ill	ill/	ỉll	PN	ỉll	
 148347	ṯkmn	ṯkm/+n(I);ṯkm/+n(II);ṯkm/+n(III)	ṯkm,-n (I);ṯkm,-n (II);ṯkm,-n (III)	n. m.,morph.;n. m.,pers. pn./morph./vb;n. m.,pers. pn./morph.	shoulder,Sun;shoulder,me;shoulder,our	
 148348	wšnm	?	?	?	?	DULAT: NOT FOUND
 148349	hn	hn	hn	deictic functor/adv.	behold!	
@@ -342,13 +342,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148355	mšr	mšr(I)/;mšr(II)/	mšr (I);mšr (II)	n. m.;n.	justice;song	
 148356	mšr	mšr(I)/;mšr(II)/	mšr (I);mšr (II)	n. m.;n.	justice;song	
 148357	bnt	bnt(II)/;bnt(I)/;bnt(III)/	bnt (II);bnt (I);bnt (III)	n. f.;n. f.;n. m.	produce;masonry;tamarisk	
-148358	ugrt	?	?	?	?	DULAT: NOT FOUND
+148358	ugrt	ugrt/	ủgrt	TN	ʾugarītu	
 148359	w	w	w	conj.	and	
 148360	npy	npy/	npy	n. m.	purification	
 148361	gr	gr(I)/;gr[	gr (I);/g-r(-y)/	n. m.;vb	protected;to attack	
 # KTU 1.40 36						
 148362	ḥmyt	ḥm(I)/t=	ḥmt (I)	n. f.	wall	
-148363	ugrt	?	?	?	?	DULAT: NOT FOUND
+148363	ugrt	ugrt/	ủgrt	TN	ʾugarītu	
 148364	wnpy	?	?	?	?	DULAT: NOT FOUND
 148365	axṯt	?	?	?	?	DULAT: NOT FOUND
 148366	u	u	ủ	conj.	or	
@@ -373,16 +373,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.40 38						
 148384	u	u	ủ	conj.	or	
 148385	lp	?	?	?	?	DULAT: NOT FOUND
-148386	ġbr	?	?	?	?	DULAT: NOT FOUND
+148386	ġbr	ġbr/	ġbr	TN	nom propre	
 148387	u	u	ủ	conj.	or	
 148388	lp	?	?	?	?	DULAT: NOT FOUND
 148389	ḫbtkn	ḫb(I)/t=+kn	ḫbt (I)	n. m.	oppressor	
 148390	ul	ul/	ủl	n. m.	(military) force	
 148391	p	p(I);p(III)/;p(II)	p (I);p (III);p (II)	conj. functor;n. m.;adv.	and;mouth;here	
-148392	mdllkn	?	?	?	?	DULAT: NOT FOUND
+148392	mdllkn	mdll+kn	mdll,-kn	→,pers. pn./morph.	,your	
 148393	u	u	ủ	conj.	or	
 148394	lp	?	?	?	?	DULAT: NOT FOUND
-148395	qrzbl	?	?	?	?	DULAT: NOT FOUND
+148395	qrzbl	qrzbl/	qrzbl	TN	Fürstenquelle	
 # KTU 1.40 39						
 148396	lšn	lšn/	lšn	n. f.	tongue	
 148397	ypkn	yp/	yp	n. m.	dignity	

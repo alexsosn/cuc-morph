@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-19T12:41:52.002354+00:00",
+  "generated_at_utc": "2026-02-21T21:59:00.202393+00:00",
   "files_checked": 139,
-  "total_issues": 6432,
-  "fallback_parsed": 456,
+  "total_issues": 6412,
+  "fallback_parsed": 544,
   "by_severity": {
-    "ERROR": 4425,
-    "WARNING": 627,
+    "ERROR": 4316,
+    "WARNING": 715,
     "INFO": 1197
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3273
+      "count": 3282
     },
     {
       "severity": "INFO",
@@ -26,33 +26,28 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 157
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "Non-G stem in DULAT requires stem marker",
       "count": 98
     },
     {
       "severity": "ERROR",
+      "problem_type": "Missing DULAT entry token(s) in column 4",
+      "count": 93
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "DULAT comment does not match candidates",
-      "count": 91
+      "count": 92
     },
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 91
+      "count": 85
     },
     {
       "severity": "ERROR",
       "problem_type": "Unknown DULAT token in column 4",
       "count": 77
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Noun/adjective lacks '/' ending",
-      "count": 72
     },
     {
       "severity": "ERROR",
@@ -62,7 +57,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Each reconstructed letter must be prefixed by '('",
-      "count": 63
+      "count": 62
     },
     {
       "severity": "ERROR",
@@ -73,6 +68,11 @@
       "severity": "WARNING",
       "problem_type": "Suffix form without '+'",
       "count": 40
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Noun/adjective lacks '/' ending",
+      "count": 36
     },
     {
       "severity": "WARNING",
@@ -102,7 +102,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Multiple DULAT candidates for lexeme",
-      "count": 21
+      "count": 14
     },
     {
       "severity": "ERROR",
@@ -135,9 +135,9 @@
       "count": 12
     },
     {
-      "severity": "ERROR",
-      "problem_type": "Verb lacks '[' ending",
-      "count": 9
+      "severity": "WARNING",
+      "problem_type": "špḥ Noun POS should include DULAT gender marker for špḥ: n. m.",
+      "count": 12
     },
     {
       "severity": "WARNING",
@@ -170,6 +170,11 @@
       "count": 8
     },
     {
+      "severity": "ERROR",
+      "problem_type": "Verb lacks '[' ending",
+      "count": 7
+    },
+    {
       "severity": "WARNING",
       "problem_type": "Deverbal form marked with '[' but only noun entry found in DULAT",
       "count": 7
@@ -200,11 +205,6 @@
       "count": 6
     },
     {
-      "severity": "ERROR",
-      "problem_type": "POS ambiguous in DULAT",
-      "count": 5
-    },
-    {
       "severity": "WARNING",
       "problem_type": "btm Lexeme parse did not match DULAT; matched by surface form",
       "count": 5
@@ -230,6 +230,11 @@
       "count": 5
     },
     {
+      "severity": "WARNING",
+      "problem_type": "šp Noun POS should include DULAT gender marker for šp: n. m.",
+      "count": 5
+    },
+    {
       "severity": "ERROR",
       "problem_type": "D stem marker present but DULAT lacks D/Dt",
       "count": 4
@@ -241,7 +246,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "dry Noun POS should include DULAT gender marker for dr: n. m.",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "l In offering-list sequences, parse 'l' as l(I) preposition",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "pat Lexeme parse did not match DULAT; matched by surface form",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "pḏh Noun POS should include DULAT gender marker for pḏ: n. m.",
       "count": 4
     },
     {
@@ -311,6 +331,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "lḥn Noun POS should include DULAT gender marker for lḥ (II): n. m.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mrkbthm Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
@@ -366,8 +391,23 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ḏrˤ Noun POS should include DULAT gender marker for ḏrʕ (I): n. f.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḫbtkn Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḫsn Noun POS should include DULAT gender marker for ḫsn (I): n. m.",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "POS ambiguous in DULAT",
+      "count": 2
     },
     {
       "severity": "ERROR",
@@ -406,6 +446,26 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "dnh Noun POS should include DULAT gender marker for dn (I): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "gmrm Noun POS should include DULAT gender marker for gmr: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "kb Adjective POS should include DULAT gender marker for kb (I): adj. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "kb Noun POS should include DULAT gender marker for kb (II): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "klnyy Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
@@ -426,12 +486,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "mqmm Noun POS should include DULAT gender marker for mqm: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mrzḥh Noun POS should include DULAT gender marker for mrzḥ: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mšspdt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
       "severity": "WARNING",
       "problem_type": "mˤlt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mḥrṯth Noun POS should include DULAT gender marker for mḥrṯt: n. f.",
       "count": 2
     },
     {
@@ -451,12 +526,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "pit Noun POS should include DULAT gender marker for pỉt: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "pitm Noun POS should include DULAT gender marker for pỉt: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "pnm Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
       "severity": "WARNING",
       "problem_type": "pnth Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "prṯt Noun POS should include DULAT gender marker for prṯt: n. f.",
       "count": 2
     },
     {
@@ -546,12 +636,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "yḥmrm Noun POS should include DULAT gender marker for yḥmr: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "yṣa Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
       "severity": "WARNING",
       "problem_type": "yṯir Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ġzrh Noun POS should include DULAT gender marker for ġzr: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šb Noun POS should include DULAT gender marker for šb: n. m.",
       "count": 2
     },
     {
@@ -576,6 +681,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "špḥh Noun POS should include DULAT gender marker for špḥ: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "šˤrt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
@@ -591,7 +701,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ˤṣrm Noun POS should include DULAT gender marker for ʕṣr (I): n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḥtkk Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥṯm Noun POS should include DULAT gender marker for ḥṯ: n. m.",
       "count": 2
     },
     {
@@ -616,7 +736,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "a Adjective POS should include DULAT gender marker for mrủ (I): adj. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "a Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "a Noun POS should include DULAT gender marker for mrủ (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "a Noun POS should include DULAT gender marker for ảhl: n. m.",
       "count": 1
     },
     {
@@ -686,6 +821,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "bir Noun POS should include DULAT gender marker for bỉr: n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "bny Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -716,6 +856,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "bˤrk Adjective POS should include DULAT gender marker for bʕr: adj. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "d Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -732,6 +877,11 @@
     {
       "severity": "WARNING",
       "problem_type": "gršnn Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "gˤt Noun POS should include DULAT gender marker for gʕt: n. f.",
       "count": 1
     },
     {
@@ -786,7 +936,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "lbu Noun POS should include DULAT gender marker for lbủ: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "llim Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lḥk Noun POS should include DULAT gender marker for lḥ (I): n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lḥk Noun POS should include DULAT gender marker for lḥ (II): n. m.",
       "count": 1
     },
     {
@@ -826,7 +991,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "mnḫ Noun POS should include DULAT gender marker for mnḫ: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mri Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mrzḥ Noun POS should include DULAT gender marker for mrzḥ: n. m.",
       "count": 1
     },
     {
@@ -842,6 +1017,11 @@
     {
       "severity": "WARNING",
       "problem_type": "mṭm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mṭt Noun POS should include DULAT gender marker for mṭt: n. f.",
       "count": 1
     },
     {
@@ -902,6 +1082,11 @@
     {
       "severity": "WARNING",
       "problem_type": "nḥt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ptr Noun POS should include DULAT gender marker for ptr: n. m.",
       "count": 1
     },
     {
@@ -1121,6 +1306,21 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ġll Noun POS should include DULAT gender marker for ġll (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šal Noun POS should include DULAT gender marker for šảl: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šbrd Noun POS should include DULAT gender marker for šbr: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "šdmth Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1157,6 +1357,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ˤnn Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤp Noun POS should include DULAT gender marker for ʕp (I): n. m.",
       "count": 1
     },
     {
@@ -1202,6 +1407,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ṣlmm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṣt Noun POS should include DULAT gender marker for ṣt: n. f.",
       "count": 1
     },
     {

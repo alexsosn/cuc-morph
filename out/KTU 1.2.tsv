@@ -21,7 +21,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.2 I:6						
 136043	b	b	b	prep.	in	
 136044	rišk	rišk(I)/	rỉš (I)	n. m.	head	
-136045	aymr	aymr				DULAT: NOT FOUND
+136045	aymr	aymr/	ảymr	DN	ảymr	
 # KTU 1.2 I:7						
 136046	ṯpṭ	ṯpṭ[;ṯpṭ(II)/;ṯpṭ(I)/	/ṯ-p-ṭ/;ṯpṭ (II);ṯpṭ (I)	vb;n. m.;n. m.	to judge;judge;case	
 136047	nhr	nhr/	nhr	n. m.	river	
@@ -122,7 +122,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136130	bn	bn(I)/;bn(II);bn[	bn (I);bn (II);/b-n/	n. m.;prep.;vb	son;between;to understand	
 136131	dgn	dgn(I)/	dgn (I)	n. m.	grain	
 136132	arṯm	!a!(yrṯm[	/y-r-ṯ/	vb	to inherit	
-136133	pḏh	pḏh				DULAT: NOT FOUND
+136133	pḏh	pḏ/+h(I);pḏ/+h(II)	pḏ,-h (I);pḏ,-h (II)	n.,pers. pn./morph.;n.,adv. functor	gold,his /her (hers) / its;gold,to	
 136134	tbˤ	tbˤ[	/t-b-ʕ/	vb	to go	
 136135	ġlmm	ġlm/+m(I);ġlm/+m(II)	ġlm,-m (I);ġlm,-m (II)	n. m.,morph.;n. m.,emph. or det. encl. morph.	boy,;boy,und das (ist) so!	
 136136	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
@@ -136,7 +136,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136143	ġr	ġr(I)/;ġr(III)/	ġr (I);ġr (III)	n. m.;n. m.	mountain;skin	
 136144	ll	ll(I)/	ll (I)	n. m.	night	
 136145	ˤm	ˤm(I)	ʕm (I)	prep.	to	
-136146	phr	phr				DULAT: NOT FOUND
+136146	phr	phr	phr	→		
 136147	mˤd	mˤd/	mʕd	n. m.	convention	
 136148	ap	ap(I);ap(II)/	ảp (I);ảp (II)	adv./conj.;n. m.	also;nose	
 136149	ilm	il(I)/m	ỉl (I)	n. m.	god	
@@ -249,7 +249,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136245	tštḥwy	!t!]š]]t]ḥwy(II)[	/ḥ-w-y/ (II)	vb	to prostrate oneself	
 136246	pḫr	pḫr(I)/;pḫr(II)/	pḫr (I);pḫr (II)	n. m.;n. m.	assembly;potter	
 136247	mˤd	mˤd/	mʕd	n. m.	convention	
-136248	mqmm	mqmm				DULAT: NOT FOUND
+136248	mqmm	mqm/+m(I);mqm/+m(II)	mqm,-m (I);mqm,-m (II)	n.,morph.;n.,emph. or det. encl. morph.	place,;place,und das (ist) so!	
 136249	aṯr	aṯr(I);!a!ṯr[	ảṯr (I);/ʔ-ṯ-r/	adv. or prep.;vb	then;to go	
 136250	amr	amr(I)/	ảmr (I)	n. m.	order	
 # KTU 1.2 I:32						
@@ -289,7 +289,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136281	bn	bn(I)/;bn(II);bn[	bn (I);bn (II);/b-n/	n. m.;prep.;vb	son;between;to understand	
 136282	dgn	dgn(I)/	dgn (I)	n. m.	grain	
 136283	arṯm	!a!(yrṯm[	/y-r-ṯ/	vb	to inherit	
-136284	pḏh	pḏh				DULAT: NOT FOUND
+136284	pḏh	pḏ/+h(I);pḏ/+h(II)	pḏ,-h (I);pḏ,-h (II)	n.,pers. pn./morph.;n.,adv. functor	gold,his /her (hers) / its;gold,to	
 # KTU 1.2 I:36						
 136285	w	w	w	conj.	and	
 136286	yˤn	!y!ˤn(I)[;!y!ˤn[;!y!ˤn[	/ʕ-n-y/ (I);/ʕ-n/;/ʕ-n-w/	vb;vb;vb	to answer;to see;to be / remain depressed	
@@ -393,7 +393,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136374	hwt	hwt(I)/;hw(t(I)/t	hwt (I);hwt (I)	n. f.;n. f.	word/matter;word/matter	
 136375	gmr	gmr/	gmr	n. m.	champion	
 136376	hd	hd/	hd(d)	DN	Haddu	
-136377	lwn	lwn				DULAT: NOT FOUND
+136377	lwn	lwn/	lwn	PN	lwn	
 136378	ymxxxxxxxx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.2 I:47						
 136379	xxxxxxxxx	?	?	?	?	
@@ -444,7 +444,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.2 II:16						
 136408	kṯ	kṯ(I)/	kṯ (I)	n. f.	flask	
 # KTU 1.2 II:17						
-136409	ml	ml				DULAT: NOT FOUND
+136409	ml	ml	ml	?	?	
 # KTU 1.2 II:18						
 136410	š	š/	š	n. m.	ram	
 # KTU 1.2 III:1						
@@ -503,7 +503,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.2 III:7						
 136458	kṯr	kṯr(III)/	kṯr (III)	DN/element of DN	kṯr (III)	
 136459	w	w	w	conj.	and	
-136460	ḫss	ḫss				DULAT: NOT FOUND
+136460	ḫss	ḫss/	ḫss	element of DN	klug	
 136461	tbˤ	tbˤ[	/t-b-ʕ/	vb	to go	
 136462	bn	bn(I)/;bn(II);bn[	bn (I);bn (II);/b-n/	n. m.;prep.;vb	son;between;to understand	
 136463	bht	bht(II)/	bt (II)	n. m.	house	
@@ -562,7 +562,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136511	ymt	ym(I)/t=;!y!mt[	ym (I);/m-t/	n. m.;vb	day;to die	
 136512	yˤmdn	!y!ˤmdn[	/ʕ-m-d/	vb	?	
 136513	pn	pn/;pn	pnm;pn	n. m. pl. tant.;functor	face;lest	
-136514	ˤṯtr	ˤṯtr				DULAT: NOT FOUND
+136514	ˤṯtr	ˤṯtr/	ʕṯtr	DN	Aštar	
 136515	d	d	d	det. or rel. functor	the one(s) of	
 136516	t	t(I);t(I);t(I)/	ʕl (I);k (I);ảḫt (I)	prep.;prep.;n. f.	upon;like;sister (related by blood)	
 # KTU 1.2 III:13						
@@ -617,7 +617,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136561	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
 136562	yhpk	!y!hpk[	/h-p-k/	vb	to overturn	
 # KTU 1.2 III:18						
-136563	ksa	ksa				DULAT: NOT FOUND
+136563	ksa	ksa/	ksả	DN	full moon	
 136564	mlkk	mlkk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 136565	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
 136566	yṯbr	!y!ṯbr[	/ṯ-b-r/	vb	to break	
@@ -625,7 +625,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136568	mṯpṭk	mṯpṭk/	mṯpṭ	n.	command	
 136569	w	w	w	conj.	and	
 136570	yˤn	!y!ˤn(I)[;!y!ˤn[;!y!ˤn[	/ʕ-n-y/ (I);/ʕ-n/;/ʕ-n-w/	vb;vb;vb	to answer;to see;to be / remain depressed	
-136571	ˤṯtr	ˤṯtr				DULAT: NOT FOUND
+136571	ˤṯtr	ˤṯtr/	ʕṯtr	DN	Aštar	
 136572	dm	dm(II)/;dm(I);dm[	dm (II);dm (I);/d-m/	n. m.;functor;vb	blood;since;to remain still	
 136573	kx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.2 III:19						
@@ -643,10 +643,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136585	ilm	il(I)/m	ỉl (I)	n. m.	god	
 136586	w	w	w	conj.	and	
 136587	ḥẓr	ḥẓr/	ḥẓr	n. m.	mansion	
-136588	kbn	kbn				DULAT: NOT FOUND
+136588	kbn	kbn/	kbn	PN	kbn	
 # KTU 1.2 III:20						
 136589	qdš	qdš(I)/;qdš(II)/	qdš (I);qdš (II)	adj. m.;n. m.	holy;sanctuary	
-136590	lbdm	lbdm				DULAT: NOT FOUND
+136590	lbdm	lbdm	lbdm	→		
 136591	ard	!a!(yrd[	/y-r-d/	vb	to go down	
 136592	b	b	b	prep.	in	
 136593	npšny	npš(I)/+ny;npšn/+y(I);npšn/+y(II)	npš (I),-ny;npšn,-y (I);npšn,-y (II)	n. f.,suff. pn. morph.;n. m.,prep.;n. m.,postp. functor	throat,our;place of / for ‘souls’,my;place of / for ‘souls’,yes	
@@ -705,7 +705,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136642	xyšlḥn	?	?	?	?	DULAT: NOT FOUND
 136643	w	w	w	conj.	and	
 136644	yˤn	!y!ˤn(I)[;!y!ˤn[;!y!ˤn[	/ʕ-n-y/ (I);/ʕ-n/;/ʕ-n-w/	vb;vb;vb	to answer;to see;to be / remain depressed	
-136645	ˤṯtr	ˤṯtr				DULAT: NOT FOUND
+136645	ˤṯtr	ˤṯtr/	ʕṯtr	DN	Aštar	
 # KTU 1.2 III:25						
 136646	x	?	?	?	?	
 136647	xx	?	?	?	?	
@@ -733,7 +733,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136666						
 136667	w	w	w	conj.	and	
 136668	bym	by(I)+m(I);by(II)+m(II)	b,-m (I);b,-m (II)	prep.,morph.;prep.,emph. or det. encl. morph.	in,;in,und das (ist) so!	
-136669	mnḫ	mnḫ				DULAT: NOT FOUND
+136669	mnḫ	mnḫ/	mnḫ	n.	calm	
 136670	labd	labd				DULAT: NOT FOUND
 136671	b	b	b	prep.	in	
 136672	ym	ym(I)/;ym(II)/	ym (I);ym (II)	n. m.;n. m.	day;sea	
@@ -748,7 +748,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136680	its	!i!ts(I)[	/n-s(-y)/ (I)	vb	to venture	
 136681	anšq	!a!nšq[	/n-š-q/	vb	to kiss	
 # KTU 1.2 IV:5						
-136682	pitm	pitm				DULAT: NOT FOUND
+136682	pitm	pit/+m(I);pit/+m(II)	pỉt,-m (I);pỉt,-m (II)	n.,morph.;n.,emph. or det. encl. morph.	temple,;temple,und das (ist) so!	
 136683	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
 136684	arṣ	arṣ/	ảrṣ	n. f.	earth	
 136685	ypl	!y!pl[	/n-p-l/	vb	to fall	
@@ -778,7 +778,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136707	ˤn	ˤn(I)/;ˤn[;ˤn(II)/	ʕn (I);/ʕ-n/;ʕn (II)	n. f.;vb;n. f.	eye;to see;furrow	
 136708	kṯr	kṯr(III)/	kṯr (III)	DN/element of DN	kṯr (III)	
 136709	w	w	w	conj.	and	
-136710	ḫss	ḫss				DULAT: NOT FOUND
+136710	ḫss	ḫss/	ḫss	element of DN	klug	
 136711	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
 136712	rgmt	rgmt[	/r-g-m/	vb	to say	
 # KTU 1.2 IV:8						
@@ -835,7 +835,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136758	bd	bd;bd(I)/	b;bd (I)	prep.;n. m.	in;song	
 136759	bˤl	bˤl(II)/;bˤl[	bʕl (II);/b-ʕ-l/	n. m./DN;vb	Baʿlu;to make	
 136760	km	km(III);km(I);km(IV)	k (III);k (I);k (IV)	Subordinating or completive functor;prep.;adv.	when;like;thus	
-136761	nš	nš				DULAT: NOT FOUND
+136761	nš	nš	nš	?		
 # KTU 1.2 IV:14						
 136762	r	r(I)/;r/;r[	rḥb (I);rks;/p-ẓ-r/	adj. m.;n. m.;vb	wide;belt;to free	
 136763	b	b	b	prep.	in	
@@ -887,8 +887,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.2 IV:19						
 136805	šmk	šm(I)/+k;šmk(I)/	šlm (I);šm (I)	n. m.;n. m.	peace;name	
 136806	at	at(I)/;at/;at(II)/	ảt (I);ṯảt;ảt (II)	pers. pn.;n. f.;n. f.	you;ewe;prodigious	
-136807	aymr	aymr				DULAT: NOT FOUND
-136808	aymr	aymr				DULAT: NOT FOUND
+136807	aymr	aymr/	ảymr	DN	ảymr	
+136808	aymr	aymr/	ảymr	DN	ảymr	
 136809	mr	mr(I)/;mr(IV)/;mr(II)/	mr (I);mr (IV);mr (II)	n. m.;adj. m.;adj. m.	myrrh;valiant;bitter	
 136810	ym	ym(I)/;ym(II)/	ym (I);ym (II)	n. m.;n. m.	day;sea	
 136811	mr	mr(I)/;mr(IV)/;mr(II)/	mr (I);mr (IV);mr (II)	n. m.;adj. m.;adj. m.	myrrh;valiant;bitter	
@@ -1021,7 +1021,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136922	tˤn	!t!ˤn(I)[;!t!ˤn[;!t!ˤn[	/ʕ-n-y/ (I);/ʕ-n/;/ʕ-n-w/	vb;vb;vb	to answer;to see;to be / remain depressed	
 # KTU 1.2 IV:36						
 136923	bˤlm	bˤl(II)/m	bʕl (II)	n. m.	lord	
-136924	hmt	hmt				DULAT: NOT FOUND
+136924	hmt	hmt/	hmt	pers. pn.		
 136925						
 # KTU 1.2 IV:37						
 136926	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	

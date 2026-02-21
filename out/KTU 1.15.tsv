@@ -50,7 +50,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142768	xxx	?	?	?	?	
 142769	kṯr	kṯr(III)/	kṯr (III)	DN/element of DN	kṯr (III)	
 142770	w	w	w	conj.	and	
-142771	ḫss	?	?	?	?	DULAT: NOT FOUND
+142771	ḫss	ḫss/	ḫss	element of DN	klug	
 # KTU 1.15 II:6						
 142772	xxxyn	?	?	?	?	DULAT: NOT FOUND
 142773	rḥmy	rḥm/+y(I);rḥ(III)/+y(I);rḥ(III)/+y(II)	rḥm,-y (I);rḥ (III),-y (I);rḥ (III),-y (II)	n. f.,prep.;n. m.,prep.;n. m.,postp. functor	womb,my;millstone,my;millstone,yes	
@@ -101,7 +101,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142809	krt	krt/	krt	PN	krt	
 142810	ṯˤ	ṯˤ(II)/;ṯˤ(I)/	ṯʕ (II);ṯʕ (I)	n. m.;n. m.	Hero;offering	
 142811	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
-142812	tmr	?	?	?	?	DULAT: NOT FOUND
+142812	tmr	tmr/	tmr	PN	tmr	
 142813	nˤmn	nˤmn(I)/	nʕmn (I)	adj. m.	handsome	
 # KTU 1.15 II:16						
 142814	ġlmil	?	?	?	?	DULAT: NOT FOUND
@@ -124,7 +124,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142828	krt	krt/	krt	PN	krt	
 # KTU 1.15 II:20						
 142829	ṯˤ	ṯˤ(II)/;ṯˤ(I)/	ṯʕ (II);ṯʕ (I)	n. m.;n. m.	Hero;offering	
-142830	ymrm	?	?	?	?	DULAT: NOT FOUND
+142830	ymrm	ymrm/	ymrm	PN	ymrm	
 142831	nˤmn	nˤmn(I)/	nʕmn (I)	adj. m.	handsome	
 142832	ġlm	ġlm/	ġlm	n. m.	boy	
 142833	il	il(I)/	ỉl (I)	n. m.	god	
@@ -186,7 +186,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 III:5						
 142877	w	w	w	conj.	and	
 142878	tqrb	!t!qrb[	/q-r-b/	vb	to approach	
-142879	wld	?	?	?	?	DULAT: NOT FOUND
+142879	wld	wld	wld	→		
 # KTU 1.15 III:6						
 142880	bn	bn(I)/;bn(II);bn[	bn (I);bn (II);/b-n/	n. m.;prep.;vb	son;between;to understand	
 142881	t	lqḥ[;ˤl(I);k(I)	/l-q-ḥ/;ʕl (I);k (I)	vb;prep.;prep.	to get hold of;upon;like	
@@ -249,13 +249,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 III:20						
 142925	w	w	w	conj.	and	
 142926	tqrb	!t!qrb[	/q-r-b/	vb	to approach	
-142927	wld	?	?	?	?	DULAT: NOT FOUND
+142927	wld	wld	wld	→		
 142928	bn	bn(I)/;bn(II);bn[	bn (I);bn (II);/b-n/	n. m.;prep.;vb	son;between;to understand	
 142929	lh	l(I)+h	l (I)	prep.	to	
 # KTU 1.15 III:21						
 142930	w	w	w	conj.	and	
 142931	tqrb	!t!qrb[	/q-r-b/	vb	to approach	
-142932	wld	?	?	?	?	DULAT: NOT FOUND
+142932	wld	wld	wld	→		
 142933	bnm	b;bn(I)/m	b;bn (I)	prep.;n. m.	in;son	
 142934	lh	l(I)+h	l (I)	prep.	to	
 # KTU 1.15 III:22						
@@ -332,10 +332,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142989	ẓbyy	ẓby/	ẓby	n. m.	gazelle	
 # KTU 1.15 IV:8						
 142990	ṯr	ṯr(I)/	ṯr (I)	n. m.	bull	
-142991	ḫbr	?	?	?	?	DULAT: NOT FOUND
+142991	ḫbr	ḫbr/	ḫbr	TN	Daughter-of-TN	
 142992	rbt	rb(I)/;rbt/;rbt(I)/	rb (I);rb(b)t;rbt (I)	adj. m.;num.;n. f.	great;ten thousand;Lady	
 # KTU 1.15 IV:9						
-142993	ḫbr	?	?	?	?	DULAT: NOT FOUND
+142993	ḫbr	ḫbr/	ḫbr	TN	Daughter-of-TN	
 142994	ṯrrt	ṯrrt/	ṯrrt	adj. f.	powerful	
 # KTU 1.15 IV:10						
 142995	w	w	w	conj.	and	
@@ -350,7 +350,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143002	xxtxxxx	?	?	?	?	DULAT: NOT FOUND
 143003	t	lqḥ[;ˤl(I);k(I)	/l-q-ḥ/;ʕl (I);k (I)	vb;prep.;prep.	to get hold of;upon;like	
 # KTU 1.15 IV:13						
-143004	lḥn	?	?	?	?	DULAT: NOT FOUND
+143004	lḥn	lḥ(II)/+n(I);lḥ(II)/+n(II);lḥ(II)/+n(III)	lḥ (II),-n (I);lḥ (II),-n (II);lḥ (II),-n (III)	n.,morph.;n.,pers. pn./morph./vb;n.,pers. pn./morph.	missive,Sun;missive,me;missive,our	
 143005	šqym	šqy/m;šq/	šqy;šq	n. m.;n. m.	cupbearer;thigh	
 143006	mdxx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.15 IV:14						
@@ -375,10 +375,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143021	ẓbyh	ẓby/+h	ẓby	n. m.	gazelle	
 # KTU 1.15 IV:19						
 143022	ṯr	ṯr(I)/	ṯr (I)	n. m.	bull	
-143023	ḫbr	?	?	?	?	DULAT: NOT FOUND
+143023	ḫbr	ḫbr/	ḫbr	TN	Daughter-of-TN	
 143024	rbt	rb(I)/;rbt/;rbt(I)/	rb (I);rb(b)t;rbt (I)	adj. m.;num.;n. f.	great;ten thousand;Lady	
 # KTU 1.15 IV:20						
-143025	ḫbr	?	?	?	?	DULAT: NOT FOUND
+143025	ḫbr	ḫbr/	ḫbr	TN	Daughter-of-TN	
 143026	ṯrrt	ṯrrt/	ṯrrt	adj. f.	powerful	
 # KTU 1.15 IV:21						
 143027	bt	bt(II)/;bt(I)/	bt (II);bt (I)	n. m.;n. f.	house;daughter	
@@ -527,10 +527,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143137	yšṣi	!y!(yṣʔ[	/y-ṣ-ʔ/	vb	to go out	
 # KTU 1.15 V:25						
 143138	xxxx	?	?	?	?	
-143139	ḫbr	?	?	?	?	DULAT: NOT FOUND
+143139	ḫbr	ḫbr/	ḫbr	TN	Daughter-of-TN	
 143140	rbt	rb(I)/;rbt/;rbt(I)/	rb (I);rb(b)t;rbt (I)	adj. m.;num.;n. f.	great;ten thousand;Lady	
 # KTU 1.15 V:26						
-143141	ḫbr	?	?	?	?	DULAT: NOT FOUND
+143141	ḫbr	ḫbr/	ḫbr	TN	Daughter-of-TN	
 143142	ṯrrt	ṯrrt/	ṯrrt	adj. f.	powerful	
 143143	il	il(I)/	ỉl (I)	n. m.	god	
 143144	d	d	d	det. or rel. functor	the one(s) of	
@@ -549,7 +549,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143153	qmt	?	?	?	?	DULAT: NOT FOUND
 143154	xxm	?	?	?	?	DULAT: NOT FOUND
 143155	l	l(I);l(II);l(III)	l (I);l (II);l (III)	prep.;adv.;functor	to;no;certainly	
-143156	bṭnm	?	?	?	?	DULAT: NOT FOUND
+143156	bṭnm	bṭn+m(I);bṭn+m(II)	bṭn,-m (I);bṭn,-m (II)	?,morph.;?,emph. or det. encl. morph.	?,;?,und das (ist) so!	
 # KTU 1.15 VI:2						
 143157	ˤdm	ˤd(I)	ʕd (I)		up to	
 143158	tlḥm	!t!lḥm(I)[	/l-ḥ-m/ (I)	vb	to eat	

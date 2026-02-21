@@ -1,7 +1,3 @@
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:52 135581 šb Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:52 135581 šb Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:56 135584 bb Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:56 135584 bb Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:80 135604 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:83 135607 lṯpn Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:83 135607 lṯpn No DULAT entry found for lexeme/surface
@@ -10,8 +6,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:91 135614
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:119 135637 bdk Analysis does not reconstruct to surface (reconstructs as: bdkk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:129 135643 ksu Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:129 135643 ksu Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:157 135668 ḫss Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:157 135668 ḫss Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:167 135677 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:171 135680 lṯpn Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:171 135680 lṯpn No DULAT entry found for lexeme/surface
@@ -28,8 +22,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:218 13571
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:218 135719 tunt Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:231 135731 ltbn Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:231 135731 ltbn No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:244 135742 ḫss Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:244 135742 ḫss Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:283 135776 dpid Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:283 135776 dpid No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:287 135780 ks DULAT comment does not match candidates
@@ -40,22 +32,16 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:310 13579
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:332 135815 gm DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:339 135821 lp Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:339 135821 lp No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:345 135826 mrzḥ Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:345 135826 mrzḥ Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:348 135828 ˤllmn Unknown DULAT token in column 4: ʕllmy
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:348 135828 ˤllmn DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:373 135849 ks DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:397 135869 lṯpn Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:397 135869 lṯpn No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:404 135875 yw Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:404 135875 yw Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:422 135889 lṯpn Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:422 135889 lṯpn No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:439 135902 bd DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:456 135916 šṣṣ Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:456 135916 šṣṣ No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:477 135932 šql Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:477 135932 šql Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:497 135947 yˤtqnymġy Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:497 135947 yˤtqnymġy No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:517 135962 lydˤt Missing DULAT entry token(s) in column 4
@@ -2542,17 +2528,12 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1370 146
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1370 146687 ṯnm Analysis does not reconstruct to surface (reconstructs as: ṯny)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:20 136042 ṯmšl Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:20 136042 ṯmšl No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:24 136045 aymr Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:24 136045 aymr Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:43 136060 šnm No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:52 136067 bˤlṣ Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:52 136067 bˤlṣ No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:80 136092 tpl DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:110 136119 tn No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:117 136126 tn No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:125 136133 pḏh Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:125 136133 pḏh No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:139 136146 phr Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:164 136169 tˤdṯpṭt Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:164 136169 tˤdṯpṭt No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:168 136172 tġly Missing DULAT entry token(s) in column 4
@@ -2563,27 +2544,16 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:175 13617
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:208 136208 raštkm No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:227 136225 rašthm No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:247 136243 tpl DULAT comment does not match candidates
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:252 136248 mqmm Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:252 136248 mqmm No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:277 136270 tn No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:285 136277 tn No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:292 136284 pḏh Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:292 136284 pḏh No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:312 136302 argmnk Unknown DULAT token in column 4: ả
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:396 136377 lwn Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:396 136377 lwn POS ambiguous in DULAT: PN, n.
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:396 136377 lwn Multiple DULAT candidates for lexeme: lwn [PN] — —; lwn(y) [n.] — follower, mate
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:396 136377 lwn Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:414 136389 slp Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:414 136389 slp No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:432 136401 lakt Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:432 136401 lakt No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:447 136409 ml Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:484 136440 ḏl Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:484 136440 ḏl No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:491 136447 šnm No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:506 136460 ḫss Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:506 136460 ḫss Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:520 136473 wḫss Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:520 136473 wḫss No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:522 136475 tbn DULAT comment does not match candidates
@@ -2594,23 +2564,13 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:552 13650
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:552 136502 btb No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:559 136508 bˤlb Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:559 136508 bˤlb No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:565 136514 ˤṯtr Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:565 136514 ˤṯtr Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:576 136523 ubl Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:576 136523 ubl No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:582 136528 nn DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:596 136541 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:611 136555 il POS token 'DN' not allowed for ỉl (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:620 136563 ksa Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:620 136563 ksa Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:625 136568 mṯpṭk POS token 'n.' not allowed for mṯpṭ; choose one of: pn
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:628 136571 ˤṯtr Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:628 136571 ˤṯtr Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:636 136578 il POS token 'DN' not allowed for ỉl (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:646 136588 kbn Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:646 136588 kbn Multiple DULAT candidates for lexeme: kbn [PN] — —; kb/pl(n) [PN] — —
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:646 136588 kbn Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:649 136590 lbdm Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:654 136595 kṯrmyṯb Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:654 136595 kṯrmyṯb No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:665 136605 il POS token 'DN' not allowed for ỉl (I); choose one of: n
@@ -2618,26 +2578,18 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:677 13661
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:677 136616 wim No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:693 136631 yṯṯbṯpṭ Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:693 136631 yṯṯbṯpṭ No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:708 136645 ˤṯtr Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:708 136645 ˤṯtr Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:727 136661 npšl Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:727 136661 npšl No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:731 136665 amrt Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:731 136665 amrt No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:735 136668 bym No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:736 136669 mnḫ Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:736 136669 mnḫ Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:737 136670 labd Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:737 136670 labd No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:751 136682 pitm Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:751 136682 pitm No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:754 136685 ypl DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:761 136691 bph Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:761 136691 bph No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:771 136701 yġr Non-G stem in DULAT requires stem marker
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:771 136701 yġr DULAT comment does not match candidates
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:781 136710 ḫss Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:781 136710 ḫss Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:801 136728 tṣmt Non-G stem in DULAT requires stem marker
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:811 136737 drdrkṯr Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:811 136737 drdrkṯr No DULAT entry found for lexeme/surface
@@ -2645,13 +2597,8 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:815 13674
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:816 136741 wḫssypˤr Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:816 136741 wḫssypˤr No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:835 136758 bd DULAT comment does not match candidates
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:838 136761 nš Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:854 136775 bd DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:883 136801 ynḥt Non-G stem in DULAT requires stem marker
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:890 136807 aymr Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:890 136807 aymr Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:891 136808 aymr Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:891 136808 aymr Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:905 136820 bd DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:909 136824 buṣbˤth Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:909 136824 buṣbˤth No DULAT entry found for lexeme/surface
@@ -2663,7 +2610,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:971 13687
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:976 136883 bṯ Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:976 136883 bṯ Verb lacks '[' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:994 136899 nn DULAT comment does not match candidates
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:1024 136924 hmt Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:1036 136933 mš Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:1036 136933 mš No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.20.tsv:4 146698 tdbḥn Analysis does not reconstruct to surface (reconstructs as: tdbḥ)
@@ -3128,8 +3074,9 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1074 1039
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1085 10401 xhxx POS tokens must map to existing DULAT tokens in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1087 10402 hxxxxxxxxx POS tokens must map to existing DULAT tokens in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1090 10404 ṯkxxxxxxxxxxxxxxxx Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1101 10413 ṣn Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1101 10413 ṣn No DULAT entry found for lexeme/surface
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1101 10413 ṣn Analysis does not reconstruct to surface (reconstructs as: mḫṣn)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1101 10413 ṣn Analysis does not reconstruct to surface (reconstructs as: mḫṣn)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1101 10413 ṣn Analysis does not reconstruct to surface (reconstructs as: mḫṣn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1116 10426 w  tˤn Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1116 10426 w  tˤn No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1122 10431 k POS tokens must map to existing DULAT tokens in column 4
@@ -3170,8 +3117,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1402 1065
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1418 10667 rbt Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1423 10671 kṯ<r> Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1423 10671 kṯ<r> No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1429 10676 wy Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1429 10676 wy No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1438 10683 kṯr POS tokens must map to existing DULAT tokens in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1444 10688 h POS tokens must map to existing DULAT tokens in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1445 10689 yn Noun/adjective lacks '/' ending
@@ -3630,6 +3575,9 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:455 14013
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:455 140131 lṭlb Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:455 140131 lṭlb No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:464 140137 yšu Each reconstructed letter must be prefixed by '('
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:482 140151 a Analysis does not reconstruct to surface (reconstructs as: mru)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:482 140151 a Analysis does not reconstruct to surface (reconstructs as: ahl)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:482 140151 a Analysis does not reconstruct to surface (reconstructs as: mt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:524 140183 tṯtnyn POS token '?' not allowed for /ṯ-n-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:544 140197 tˤddn Xt stem marker present but DULAT lacks *t stem
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:544 140197 tˤddn D stem marker present but DULAT lacks D/Dt
@@ -3673,22 +3621,10 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.58.tsv:7 149334
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:18 140464 tṯlṯ Non-G stem in DULAT requires stem marker
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:30 140474 tṯlṯ Non-G stem in DULAT requires stem marker
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:58 140497 tšt DULAT comment does not match candidates
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:70 140507 ˤms Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:70 140507 ˤms Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:118 140546 kgmn Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:151 140572 yḥmrm Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:159 140578 špḥh Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:160 140579 pšt Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:160 140579 pšt Each reconstructed letter must be prefixed by '('
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:165 140583 ġzrh Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:193 140606 šnm Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:193 140606 šnm Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:204 140615 tkbdnh Non-G stem in DULAT requires stem marker
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:220 140628 rt Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:220 140628 rt Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:251 140654 am Analysis does not reconstruct to surface (reconstructs as: amlk)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:252 140655 lkn Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:252 140655 lkn Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:255 140657 tˤn DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:261 140662 nmlk Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:261 140662 nmlk Multiple DULAT candidates for lexeme: /m-l-k/ [vb] — to reign, rule; /m-l-k/ [vb] — to reign, rule; /m-l-k/ [vb] — to reign, rule
@@ -3700,20 +3636,10 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:269 14066
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:286 140683 ktmsm Analysis does not reconstruct to surface (reconstructs as: tkmsm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:295 140690 nmlk Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:295 140690 nmlk Multiple DULAT candidates for lexeme: /m-l-k/ [vb] — to reign, rule; /m-l-k/ [vb] — to reign, rule; /m-l-k/ [vb] — to reign, rule
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:296 140691 ˤṯtr Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:296 140691 ˤṯtr Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:300 140694 ˤṯtr Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:300 140694 ˤṯtr Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:303 140696 apnk Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:304 140697 ˤṯtr Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:304 140697 ˤṯtr Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:307 140699 yˤl Non-G stem in DULAT requires stem marker
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:307 140699 yˤl DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:329 140717 yˤn DULAT comment does not match candidates
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:330 140718 ˤṯtr Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:330 140718 ˤṯtr Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:340 140726 ˤṯtr Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:340 140726 ˤṯtr Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:357 140740 tšabn Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:357 140740 tšabn Analysis does not reconstruct to surface (reconstructs as: tšbn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:359 140742 rḥbt Analysis does not reconstruct to surface (reconstructs as: rḥbtt)
@@ -3724,19 +3650,9 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:415 14078
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:439 140806 itlk Analysis does not reconstruct to surface (reconstructs as: ith)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:455 140820 ḫsrt Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:473 140834 ngš Each reconstructed letter must be prefixed by '('
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:512 140867 yrḫm Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:512 140867 yrḫm Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:545 140895 tdry Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:545 140895 tdry Multiple DULAT candidates for lexeme: /d-r-y/ [vb] — to winnow; /d-r-y/ [vb] — to winnow; /d-r-y/ [vb] — to winnow
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:545 140895 tdry Analysis does not reconstruct to surface (reconstructs as: ndry)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:545 140895 tdry Analysis does not reconstruct to surface (reconstructs as: ndry)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:547 140896 nn DULAT comment does not match candidates
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:563 140909 ˤṣrm Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:563 140909 ˤṣrm POS ambiguous in DULAT: PN, n.
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:563 140909 ˤṣrm Multiple DULAT candidates for lexeme: ʕṣr(I) [n.] — bird; ʕṣr(II) [PN] — —
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:566 140912 tklyy Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:566 140912 tklyy Multiple DULAT candidates for lexeme: /k-l-y/ [vb] — to finish, be finished, to empty, be emptied (out), to consume, be
- consumed; /k-l-y/ [vb] — to finish, be finished, to empty, be emptied (out), to consume, be
- consumed; /k-l-y/ [vb] — to finish, be finished, to empty, be emptied (out), to consume, be
- consumed
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:603 140943 bnwt Analysis does not reconstruct to surface (reconstructs as: bnt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:610 140948 tlk Analysis does not reconstruct to surface (reconstructs as: thlk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:630 140965 dpid Missing DULAT entry token(s) in column 4
@@ -3753,47 +3669,31 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:732 14104
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:747 141059 tšu Analysis does not reconstruct to surface (reconstructs as: tnšu)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:754 141065 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:771 141079 yštk DULAT comment does not match candidates
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:775 141082 mḥrṯth Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:787 141091 tˤn DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:805 141106 abqṯ Non-G stem in DULAT requires stem marker
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:810 141110 tˤn DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:819 141118 a Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:819 141118 a Analysis does not reconstruct to surface (reconstructs as: ayw)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:825 141123 yġrk Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:825 141123 yġrk Each reconstructed letter must be prefixed by '('
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:825 141123 yġrk Multiple DULAT candidates for lexeme: /n-ġ-r/ [vb] — to protect, guard; /n-ġ-r/ [vb] — to protect, guard; /n-ġ-r/ [vb] — to protect, guard
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:825 141123 yġrk Analysis does not reconstruct to surface (reconstructs as: nġrk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:827 141124 tġrk Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:830 141126 yštd DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:836 141130 r Each reconstructed letter must be prefixed by '('
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:852 141141 dkym Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:858 141146 ymṣḫ Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:858 141146 ymṣḫ Multiple DULAT candidates for lexeme: /m-ṣ-ḥ/ [vb] — to pull; /m-ṣ-ḥ/ [vb] — to pull; /m-ṣ-ḥ/ [vb] — to pull
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:869 141155 lnḫt Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:874 141159 lymm Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:876 141161 yrḫm Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:876 141161 yrḫm Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:878 141163 yrḫm Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:878 141163 yrḫm Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:896 141178 yšu Analysis does not reconstruct to surface (reconstructs as: ynšu)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:904 141184 pht No DULAT entry found for clitic part: t(II)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:907 141187 pht No DULAT entry found for clitic part: t(II)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:909 141188 dry Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:909 141188 dry Verb lacks '[' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:914 141192 pht No DULAT entry found for clitic part: t(II)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:920 141197 pht No DULAT entry found for clitic part: t(II)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:927 141203 pht No DULAT entry found for clitic part: t(II)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:928 141204 dry Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:928 141204 dry Verb lacks '[' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:933 141208 pht No DULAT entry found for clitic part: t(II)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:942 141216 pht No DULAT entry found for clitic part: t(II)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:958 141229 anšt Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:958 141229 anšt No DULAT entry found for clitic part: t(II)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:993 141254 ṭrdh Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:999 141258 kˤṣr Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:999 141258 kˤṣr No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1002 141260 dnh Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1002 141260 dnh POS ambiguous in DULAT: det. / rel. functor, →
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1002 141260 dnh Multiple DULAT candidates for lexeme: -d [→] — —; d [det. / rel. functor] — the one(s) of
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1022 141275 wˤn Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1022 141275 wˤn No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1029 141281 aḫym Analysis does not reconstruct to surface (reconstructs as: aḫm)
@@ -3802,9 +3702,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1045 1412
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1045 141294 yšl Multiple DULAT candidates for lexeme: /š-l(-l)/ [vb] — to plunder, rob; /š-l(-l)/ [vb] — to plunder, rob; /š-l(-l)/ [vb] — to plunder, rob
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1050 141298 aḫym Analysis does not reconstruct to surface (reconstructs as: aḫm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1051 141299 ytnt No DULAT entry found for clitic part: t(II)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1059 141305 yy Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1059 141305 yy Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1062 141308 gmrm Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1068 141313 yngḥn Non-G stem in DULAT requires stem marker
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1085 141327 ymṣḫn Unknown DULAT token in column 4: /m-ṣ-ḫ/
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1085 141327 ymṣḫn No DULAT entry found for lexeme/surface
@@ -3814,26 +3711,16 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1108 1413
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1110 141347 ṣ Analysis does not reconstruct to surface (reconstructs as: )
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1120 141355 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1123 141358 ysˤ Analysis does not reconstruct to surface (reconstructs as: ynsʕ)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1129 141363 ksa Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1129 141363 ksa Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1135 141368 mṯpṭk Analysis does not reconstruct to surface (reconstructs as: mṯpṭẓk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1137 141369 yru Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1137 141369 yru Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1137 141369 yru Multiple DULAT candidates for lexeme: /y-r-ʔ/ [vb] — to be afraid, frightened; /y-r-ʔ/ [vb] — to be afraid, frightened; /y-r-ʔ/ [vb] — to be afraid, frightened
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1152 141382 yšu Analysis does not reconstruct to surface (reconstructs as: ynšu)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1158 141387 yṯṯbn Analysis does not reconstruct to surface (reconstructs as: yṯbn)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1173 141398 drdr Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1185 141407 qbat No DULAT entry found for clitic part: t(II)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1192 141412 tštql Analysis does not reconstruct to surface (reconstructs as: ttšql)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1201 141419 trmmt Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1203 141421 tšt DULAT comment does not match candidates
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1231 141442 arš Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1231 141442 arš Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1240 141449 ytr DULAT comment does not match candidates
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1246 141454 ilmlk Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1246 141454 ilmlk Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1264 141468 yrgb Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1264 141468 yrgb Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.62.tsv:3 149349 h Analysis does not reconstruct to surface (reconstructs as: ʕl)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.62.tsv:3 149349 h Analysis does not reconstruct to surface (reconstructs as: aḫt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.62.tsv:3 149349 h Analysis does not reconstruct to surface (reconstructs as: hnd)
@@ -4221,6 +4108,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.86.tsv:31 15071
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.86.tsv:31 150711 śśw Analysis does not reconstruct to surface (reconstructs as: ss)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.86.tsv:37 150716 śśw Unknown DULAT token in column 4: s:śs
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.86.tsv:37 150716 śśw Analysis does not reconstruct to surface (reconstructs as: ss)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.86.tsv:109 150771 kśt DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.86.tsv:110 150772 šqym Analysis does not reconstruct to surface (reconstructs as: šq)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.86.tsv:113 150774 šqym Analysis does not reconstruct to surface (reconstructs as: šq)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.86.tsv:119 150778 šinm Analysis does not reconstruct to surface (reconstructs as: šin)
@@ -4430,6 +4318,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:24 1355
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:26 135562 yšu Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:34 135568 ymtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:50 135580 tˤtqn Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:52 135581 šb Noun POS should include DULAT gender marker for šb: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:68 135594 yštḥwyn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:73 135598 yšu Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:86 135609 qryy Lexeme parse did not match DULAT; matched by surface form
@@ -4448,6 +4337,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:307 135
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:314 135802 bhtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:315 135803 tbnn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:317 135805 trmmn Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:345 135826 mrzḥ Noun POS should include DULAT gender marker for mrzḥ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:353 135832 bˤlk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:358 135836 ylkn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:396 135868 yˤn Lexeme parse did not match DULAT; matched by surface form
@@ -4476,15 +4366,22 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:572 136
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:593 136019 t Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.100.tsv:263 151933 ḥryth Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.100.tsv:301 151966 ˤṯtrth Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.100.tsv:413 152062 šp Noun POS should include DULAT gender marker for šp: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.100.tsv:501 152137 bhtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.100.tsv:504 152140 bhtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.101.tsv:98 152260 limm Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:94 152387 špḥ Noun POS should include DULAT gender marker for špḥ: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:100 152392 ḏrˤ Noun POS should include DULAT gender marker for ḏrʕ (I): n. f.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:173 152450 špḥ Noun POS should include DULAT gender marker for špḥ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:247 152512 tbˤrn Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:261 152524 ḏrˤ Noun POS should include DULAT gender marker for ḏrʕ (I): n. f.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:343 152594 ḏrˤ Noun POS should include DULAT gender marker for ḏrʕ (I): n. f.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:351 152601 tbˤrn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.105.tsv:41 152727 bwtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.105.tsv:77 152756 bhtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.106.tsv:116 152891 šlḥmt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.106.tsv:132 152904 šlḥmt Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.107.tsv:16 152935 pit Noun POS should include DULAT gender marker for pỉt: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.107.tsv:130 153032 mḫlpt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv:58 153259 rmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv:70 153269 rmm Plural form missing split ending
@@ -4498,6 +4395,8 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.112.tsv:26 15
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.112.tsv:39 153615 pamt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.112.tsv:39 153615 pamt Feminine plural noun in DULAT should be tagged with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.114.tsv:17 153798 tlḥmn Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.114.tsv:99 153867 mrzḥh Noun POS should include DULAT gender marker for mrzḥ: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.114.tsv:99 153867 mrzḥh Noun POS should include DULAT gender marker for mrzḥ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.115.tsv:20 153959 tr Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.115.tsv:35 153971 aṯt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.115.tsv:55 153986 tr Lexeme parse did not match DULAT; matched by surface form
@@ -4508,12 +4407,16 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.122.tsv:5 154
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.124.tsv:57 154418 mlakk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.127.tsv:73 154526 aṯt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.130.tsv:58 154601 nbšt Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.132.tsv:24 154666 šbrd Noun POS should include DULAT gender marker for šbr: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.133.tsv:26 154741 rumm Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.136.tsv:40 154833 ṣt Noun POS should include DULAT gender marker for ṣt: n. f.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:45 141709 aṯt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:53 141715 aṯt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:54 141716 trḫ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:91 141744 mid Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:97 141749 špḥ Noun POS should include DULAT gender marker for špḥ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:133 141777 dmˤh Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:159 141797 šal Noun POS should include DULAT gender marker for šảl: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:217 141838 mrkbt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:344 141939 ḥṭt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:379 141967 rbt Feminine adjective/participle in DULAT should mark '-t' explicitly
@@ -4523,11 +4426,14 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:482 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:492 142057 ḥpšt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:496 142060 npk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:497 142061 šibt Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:546 142101 gˤt Noun POS should include DULAT gender marker for gʕt: n. f.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:580 142129 mrkbt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:593 142139 ng Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:607 142150 rbt Feminine adjective/participle in DULAT should mark '-t' explicitly
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:641 142178 mrkbt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:660 142193 nˤmt Feminine adjective/participle in DULAT should mark '-t' explicitly
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:661 142194 špḥ Noun POS should include DULAT gender marker for špḥ: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:702 142227 špḥ Noun POS should include DULAT gender marker for špḥ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:778 142288 nša Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:838 142336 mat Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:839 142337 rbt Feminine adjective/participle in DULAT should mark '-t' explicitly
@@ -4547,10 +4453,12 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:1221 1
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:1239 142641 ng Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:1266 142662 mrkbt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:1284 142676 nˤmt Feminine adjective/participle in DULAT should mark '-t' explicitly
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:1319 142703 špḥ Noun POS should include DULAT gender marker for špḥ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.140.tsv:5 154906 aṯt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.140.tsv:17 154914 aṯt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.140.tsv:25 154920 aṯt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.140.tsv:32 154925 aṯt Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.140.tsv:38 154929 špḥ Noun POS should include DULAT gender marker for špḥ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.140.tsv:43 154932 tḥ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.140.tsv:46 154934 aṯt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.146.tsv:7 154966 ḥdṯt Feminine adjective/participle in DULAT should mark '-t' explicitly
@@ -4566,11 +4474,17 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:273 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:276 142946 kmhm Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:332 142989 ẓbyy Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:336 142992 rbt Feminine adjective/participle in DULAT should mark '-t' explicitly
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:353 143004 lḥn Noun POS should include DULAT gender marker for lḥ (II): n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:353 143004 lḥn Noun POS should include DULAT gender marker for lḥ (II): n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:353 143004 lḥn Noun POS should include DULAT gender marker for lḥ (II): n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:379 143024 rbt Feminine adjective/participle in DULAT should mark '-t' explicitly
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:531 143140 rbt Feminine adjective/participle in DULAT should mark '-t' explicitly
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:29 143212 aṯt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:33 143215 tbkyk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:54 143232 špḥ Noun POS should include DULAT gender marker for špḥ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:101 143270 aṯt Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:111 143278 špḥ Noun POS should include DULAT gender marker for špḥ: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:120 143285 špḥ Noun POS should include DULAT gender marker for špḥ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:183 143336 smkt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:189 143341 rbt Feminine adjective/participle in DULAT should mark '-t' explicitly
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:196 143346 rbt Feminine adjective/participle in DULAT should mark '-t' explicitly
@@ -4581,8 +4495,10 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:346 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:359 143467 tbˤrn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:403 143502 nkyt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:408 143506 škllt Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:485 143567 špḥ Noun POS should include DULAT gender marker for špḥ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:489 143570 yḥ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:490 143571 tbkyk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:512 143588 špḥ Noun POS should include DULAT gender marker for špḥ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:560 143623 tr Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:611 143664 nšu Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:896 143882 šˤtqt Lexeme parse did not match DULAT; matched by surface form
@@ -4593,8 +4509,11 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.162.tsv:72 15
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.162.tsv:72 155299 pamt Feminine plural noun in DULAT should be tagged with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.162.tsv:79 155304 mrkbt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.166.tsv:69 155516 gṯrn Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.167.tsv:24 155544 ˤp Noun POS should include DULAT gender marker for ʕp (I): n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.168.tsv:64 155600 šp Noun POS should include DULAT gender marker for šp: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.169.tsv:34 155639 nqh Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.169.tsv:74 155674 dˤtm Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.169.tsv:118 155711 bˤrk Adjective POS should include DULAT gender marker for bʕr: adj. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.169.tsv:139 155728 kn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:146 144261 tbrknn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:167 144279 nṣb Lexeme parse did not match DULAT; matched by surface form
@@ -4604,6 +4523,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:257 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:262 144360 ḥbqh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:283 144377 nṣb Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:284 144378 skn Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:366 144448 pit Noun POS should include DULAT gender marker for pỉt: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:381 144460 aṯbn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:402 144478 aryy Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:404 144479 nṣb Lexeme parse did not match DULAT; matched by surface form
@@ -4637,10 +4557,16 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1041 1
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1044 145014 uḫryt Feminine adjective/participle in DULAT should mark '-t' explicitly
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1071 145037 rgmm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1125 145084 tr Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.172.tsv:14 155803 šb Noun POS should include DULAT gender marker for šb: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.173.tsv:63 155902 pamt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.173.tsv:63 155902 pamt Feminine plural noun in DULAT should be tagged with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.174.tsv:23 155923 aṯt Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.175.tsv:74 155986 mṭt Noun POS should include DULAT gender marker for mṭt: n. f.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.176.tsv:27 156012 lḥk Noun POS should include DULAT gender marker for lḥ (II): n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.176.tsv:27 156012 lḥk Noun POS should include DULAT gender marker for lḥ (I): n. f.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.176.tsv:49 156026 pat Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv:90 156140 prṯt Noun POS should include DULAT gender marker for prṯt: n. f.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv:110 156156 prṯt Noun POS should include DULAT gender marker for prṯt: n. f.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv:185 156216 aṯt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv:46 145177 dmm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv:83 145208 tbˤ Lexeme parse did not match DULAT; matched by surface form
@@ -4672,6 +4598,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:618 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:648 146071 šmt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:670 146090 nši Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:705 146120 šmt Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:724 146137 šp Noun POS should include DULAT gender marker for šp: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:748 146157 šmt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:771 146177 nši Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:805 146206 šmt Lexeme parse did not match DULAT; matched by surface form
@@ -4695,6 +4622,8 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:89 1361
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:105 136115 bˤlkm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:120 136129 ˤnnh Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:124 136132 arṯm Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:125 136133 pḏh Noun POS should include DULAT gender marker for pḏ: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:125 136133 pḏh Noun POS should include DULAT gender marker for pḏ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:160 136165 tphhm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:161 136166 tphn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:173 136177 brkthm Lexeme parse did not match DULAT; matched by surface form
@@ -4705,6 +4634,8 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:211 136
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:225 136223 tšu Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:230 136228 brkthm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:236 136233 tmġyn Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:252 136248 mqmm Noun POS should include DULAT gender marker for mqm: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:252 136248 mqmm Noun POS should include DULAT gender marker for mqm: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:259 136254 ištm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:260 136255 yitmr Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:262 136257 lṭšt Lexeme parse did not match DULAT; matched by surface form
@@ -4712,6 +4643,8 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:266 136
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:272 136266 bˤlkm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:288 136280 ˤnnh Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:291 136283 arṯm Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:292 136284 pḏh Noun POS should include DULAT gender marker for pḏ: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:292 136284 pḏh Noun POS should include DULAT gender marker for pḏ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:295 136286 yˤn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:302 136293 ymm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:309 136299 asrkm Lexeme parse did not match DULAT; matched by surface form
@@ -4758,10 +4691,13 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:684 136
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:707 136644 yˤn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:723 136658 mtt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:728 136662 ašṣi Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:736 136669 mnḫ Noun POS should include DULAT gender marker for mnḫ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:740 136673 irtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:745 136677 tlˤm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:747 136679 ḥrbm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:748 136680 its Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:751 136682 pitm Noun POS should include DULAT gender marker for pỉt: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:751 136682 pitm Noun POS should include DULAT gender marker for pỉt: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:764 136694 yṣa Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:766 136696 špth Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:767 136697 hwth Lexeme parse did not match DULAT; matched by surface form
@@ -4811,11 +4747,13 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.20.tsv:54 146
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.20.tsv:64 146744 mrkbthm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.20.tsv:83 146760 mṭˤt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.20.tsv:100 146775 mṭˤt Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.22.tsv:120 146942 ġll Noun POS should include DULAT gender marker for ġll (I): n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.22.tsv:147 146965 tlḥmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.22.tsv:278 147069 mrkbthm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.22.tsv:282 147072 mrkbthm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.22.tsv:303 147090 mṭˤt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:5 147099 nˤmm Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:10 147103 šp Noun POS should include DULAT gender marker for šp: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:65 147150 šdmth Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:125 147200 pamt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:125 147200 pamt Feminine plural noun in DULAT should be tagged with '/t='
@@ -4841,6 +4779,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:537 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:33 147652 snnt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:50 147666 yḥ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:144 147743 trḫ Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:162 147757 lbu Noun POS should include DULAT gender marker for lbủ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:219 147803 snnt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:265 147840 ṣġrt Feminine adjective/participle in DULAT should mark '-t' explicitly
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.27.tsv:25 147886 limm Lexeme parse did not match DULAT; matched by surface form
@@ -4966,6 +4905,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.40.tsv:413 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:28 148462 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:34 148467 bhtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:165 148580 mˤlt Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:183 148595 l In offering-list sequences, parse 'l' as l(I) preposition
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:188 148600 bhtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:250 148652 pamt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:250 148652 pamt Feminine plural noun in DULAT should be tagged with '/t='
@@ -4979,6 +4919,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.43.tsv:39 148
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.43.tsv:39 148809 pamt Feminine plural noun in DULAT should be tagged with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.43.tsv:71 148835 ˤnth Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.43.tsv:90 148851 ˤnth Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.46.tsv:105 149039 l In offering-list sequences, parse 'l' as l(I) preposition
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.48.tsv:12 149122 btm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.48.tsv:39 149141 aḥt Feminine adjective/participle in DULAT should mark '-t' explicitly
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.48.tsv:48 149148 aḥt Feminine adjective/participle in DULAT should mark '-t' explicitly
@@ -4986,6 +4927,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.48.tsv:54 149
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.48.tsv:59 149157 aḥt Feminine adjective/participle in DULAT should mark '-t' explicitly
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.48.tsv:70 149165 aḥt Feminine adjective/participle in DULAT should mark '-t' explicitly
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.49.tsv:35 149210 šˤrt Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.49.tsv:37 149211 ptr Noun POS should include DULAT gender marker for ptr: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:24 139786 ipdk TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:26 139788 ispi TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:27 139789 uṭm TODO/uncertain marker in comment: ???
@@ -5000,17 +4942,40 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:215 139
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:313 140027 un TODO/uncertain marker in comment: merge
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:313 140027 un Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:455 140131 lṭlb Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:482 140151 a Noun POS should include DULAT gender marker for mrủ (I): n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:482 140151 a Adjective POS should include DULAT gender marker for mrủ (I): adj. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:482 140151 a Noun POS should include DULAT gender marker for ảhl: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:568 140215 n Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:759 140370 un Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.50.tsv:44 149249 šˤrt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.54.tsv:38 149282 trḫ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.57.tsv:18 149322 bhtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:62 140501 gm Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:151 140572 yḥmrm Noun POS should include DULAT gender marker for yḥmr: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:151 140572 yḥmrm Noun POS should include DULAT gender marker for yḥmr: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:159 140578 špḥh Noun POS should include DULAT gender marker for špḥ: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:159 140578 špḥh Noun POS should include DULAT gender marker for špḥ: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:165 140583 ġzrh Noun POS should include DULAT gender marker for ġzr: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:165 140583 ġzrh Noun POS should include DULAT gender marker for ġzr: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:173 140590 pnm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:233 140639 gm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:359 140742 rḥbt Feminine plural noun in DULAT should use '/t='
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:563 140909 ˤṣrm Noun POS should include DULAT gender marker for ʕṣr (I): n. f.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:563 140909 ˤṣrm Noun POS should include DULAT gender marker for ʕṣr (I): n. f.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:689 141012 gm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:740 141054 pnm Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:775 141082 mḥrṯth Noun POS should include DULAT gender marker for mḥrṯt: n. f.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:775 141082 mḥrṯth Noun POS should include DULAT gender marker for mḥrṯt: n. f.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:909 141188 dry Noun POS should include DULAT gender marker for dr: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:909 141188 dry Noun POS should include DULAT gender marker for dr: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:928 141204 dry Noun POS should include DULAT gender marker for dr: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:928 141204 dry Noun POS should include DULAT gender marker for dr: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1002 141260 dnh Noun POS should include DULAT gender marker for dn (I): n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1002 141260 dnh Noun POS should include DULAT gender marker for dn (I): n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1062 141308 gmrm Noun POS should include DULAT gender marker for gmr: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1062 141308 gmrm Noun POS should include DULAT gender marker for gmr: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.63.tsv:15 149390 kb Adjective POS should include DULAT gender marker for kb (I): adj. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.63.tsv:15 149390 kb Noun POS should include DULAT gender marker for kb (II): n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:30 141493 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:88 141538 klyn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:128 141571 limm Lexeme parse did not match DULAT; matched by surface form
@@ -5020,6 +4985,9 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.71.tsv:114 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.72.tsv:163 149775 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.72.tsv:164 149776 dblt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.78.tsv:18 149897 skn Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.79.tsv:11 149905 ḫsn Noun POS should include DULAT gender marker for ḫsn (I): n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.79.tsv:17 149910 ḫsn Noun POS should include DULAT gender marker for ḫsn (I): n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.79.tsv:31 149922 ḫsn Noun POS should include DULAT gender marker for ḫsn (I): n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.80.tsv:13 149946 ṯut Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:46 150037 šntk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:63 150052 ḥw Lexeme parse did not match DULAT; matched by surface form
@@ -5038,7 +5006,10 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.85.tsv:214 15
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.86.tsv:106 150769 ḫrmṯt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:27 150816 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:34 150822 bhtm Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:161 150932 ḥṯm Noun POS should include DULAT gender marker for ḥṯ: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:161 150932 ḥṯm Noun POS should include DULAT gender marker for ḥṯ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:172 150941 mˤlt Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:191 150957 l In offering-list sequences, parse 'l' as l(I) preposition
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:198 150963 bhtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:234 150993 nbk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:265 151019 pamt Lexeme parse did not match DULAT; matched by surface form
@@ -5047,11 +5018,16 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:269 15
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:271 151024 rmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:312 151059 pamt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:312 151059 pamt Feminine plural noun in DULAT should be tagged with '/t='
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:380 151118 šp Noun POS should include DULAT gender marker for šp: n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.90.tsv:59 151206 l In offering-list sequences, parse 'l' as l(I) preposition
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.91.tsv:41 151246 ršpm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.91.tsv:55 151257 bhtm Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.91.tsv:109 151296 bir Noun POS should include DULAT gender marker for bỉr: n. f.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:56 151366 tr Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:99 151397 pṯtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:56 151521 btm Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:62 151526 kb Adjective POS should include DULAT gender marker for kb (I): adj. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:62 151526 kb Noun POS should include DULAT gender marker for kb (II): n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:77 151537 aṯt Lexeme parse did not match DULAT; matched by surface form
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  l Surface l parsed inconsistently: l(I) (ids: 135558,135574,135588,135619,135623,135653,135665,135670,135686,135727,135754,135758,135817,135819,135835,135882,135908,135911,135913,135920,135971,136001,136020,136022,136026); l(III) (ids: 135770)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:15 135554 ḫršnr Surface not found in UDB concordance
@@ -6051,6 +6027,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1940 13965
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2050 139737 rdm Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2056 139742 rmmt Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.40.tsv  ytši l dr bn il l mpḫrt bn Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 148072-148079,148159-148166,148239-148246 ; 148338-148345
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.40.tsv  ˤr Surface ˤr parsed inconsistently: ˤr(I)/ (ids: 148350,148439); ˤr(II)/ (ids: 148256)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.40.tsv:6 148052 wnpy Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.40.tsv:100 148134 bqṣrt Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.40.tsv:103 148137 bqṭt Surface not found in UDB concordance
@@ -6433,4 +6410,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:49 151516
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:75 151535 xẓk Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:88 151545 šdr Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.98.tsv:23 151701 gˤl Surface not found in UDB concordance
-Total issues: 6432
+Total issues: 6412

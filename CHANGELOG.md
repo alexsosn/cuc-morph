@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-02-21
+
+- Added lemma fallback indexing to `scripts/refine_results_mentions.py` so DULAT entries are considered even when `forms` has no matching rows for a token (for example `ủgrt` -> `ugrt`).
+- Added `--only-not-found` mode to `scripts/refine_results_mentions.py` for targeted repopulation of rows marked `DULAT: NOT FOUND`, preserving unresolved rows (and their existing human comments) when no new candidates are found.
+- Added regression coverage in `tests/test_refine_results_mentions.py` to ensure lemma-only DULAT entries still produce candidates.
+- Re-ran targeted repopulation on `out/KTU 1.*.tsv`; 583 previously `DULAT: NOT FOUND` rows were filled from DULAT entry metadata.
+
 ## 2026-02-19
 
 - Reversed the temporary `tnn`-only fallback scope and restored global KTU1-family homonym preference in bootstrap fallback (`scripts/bootstrap_tablet_labeling.py`): for lemma fallback rows, prefer homonyms attested in `CAT/KTU 1.*` when available.
