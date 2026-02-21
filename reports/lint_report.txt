@@ -3074,9 +3074,8 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1074 1039
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1085 10401 xhxx POS tokens must map to existing DULAT tokens in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1087 10402 hxxxxxxxxx POS tokens must map to existing DULAT tokens in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1090 10404 ṯkxxxxxxxxxxxxxxxx Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1101 10413 ṣn Analysis does not reconstruct to surface (reconstructs as: mḫṣn)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1101 10413 ṣn Analysis does not reconstruct to surface (reconstructs as: mḫṣn)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1101 10413 ṣn Analysis does not reconstruct to surface (reconstructs as: mḫṣn)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1101 10413 ṣn Missing DULAT entry token(s) in column 4
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1101 10413 ṣn No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1116 10426 w  tˤn Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1116 10426 w  tˤn No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1122 10431 k POS tokens must map to existing DULAT tokens in column 4
@@ -3117,6 +3116,8 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1402 1065
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1418 10667 rbt Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1423 10671 kṯ<r> Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1423 10671 kṯ<r> No DULAT entry found for lexeme/surface
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1429 10676 wy Missing DULAT entry token(s) in column 4
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1429 10676 wy No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1438 10683 kṯr POS tokens must map to existing DULAT tokens in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1444 10688 h POS tokens must map to existing DULAT tokens in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1445 10689 yn Noun/adjective lacks '/' ending
@@ -3575,9 +3576,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:455 14013
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:455 140131 lṭlb Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:455 140131 lṭlb No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:464 140137 yšu Each reconstructed letter must be prefixed by '('
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:482 140151 a Analysis does not reconstruct to surface (reconstructs as: mru)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:482 140151 a Analysis does not reconstruct to surface (reconstructs as: ahl)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:482 140151 a Analysis does not reconstruct to surface (reconstructs as: mt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:524 140183 tṯtnyn POS token '?' not allowed for /ṯ-n-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:544 140197 tˤddn Xt stem marker present but DULAT lacks *t stem
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:544 140197 tˤddn D stem marker present but DULAT lacks D/Dt
@@ -4942,9 +4940,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:215 139
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:313 140027 un TODO/uncertain marker in comment: merge
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:313 140027 un Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:455 140131 lṭlb Column 6 count should match analysis variant count
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:482 140151 a Noun POS should include DULAT gender marker for mrủ (I): n. m.
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:482 140151 a Adjective POS should include DULAT gender marker for mrủ (I): adj. m.
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:482 140151 a Noun POS should include DULAT gender marker for ảhl: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:568 140215 n Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:759 140370 un Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.50.tsv:44 149249 šˤrt Lexeme parse did not match DULAT; matched by surface form
@@ -6410,4 +6405,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:49 151516
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:75 151535 xẓk Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:88 151545 šdr Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.98.tsv:23 151701 gˤl Surface not found in UDB concordance
-Total issues: 6412
+Total issues: 6407

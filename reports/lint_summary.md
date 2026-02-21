@@ -1,28 +1,28 @@
 ## Morphology Lint Summary
 
 - Files checked: `139`
-- Total issues: `6412`
-- Fallback-parsed issue lines: `544`
+- Total issues: `6407`
+- Fallback-parsed issue lines: `541`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 4316 |
-| WARNING | 715 |
+| ERROR | 4314 |
+| WARNING | 712 |
 | INFO | 1197 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3282 |
+| ERROR | Analysis does not reconstruct to surface | 3276 |
 | INFO | Surface not found in UDB concordance | 1197 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 299 |
 | ERROR | Non-G stem in DULAT requires stem marker | 98 |
-| ERROR | Missing DULAT entry token(s) in column 4 | 93 |
+| ERROR | Missing DULAT entry token(s) in column 4 | 95 |
 | ERROR | DULAT comment does not match candidates | 92 |
-| ERROR | No DULAT entry found for lexeme/surface | 85 |
+| ERROR | No DULAT entry found for lexeme/surface | 87 |
 | ERROR | Unknown DULAT token in column 4 | 77 |
 | ERROR | POS token not allowed for declared DULAT entry | 66 |
 | ERROR | Each reconstructed letter must be prefixed by '(' | 62 |
@@ -161,10 +161,7 @@
 | ERROR | Disallowed character in columns 2-3: ʕ | 1 |
 | WARNING | Column 6 count should match analysis variant count | 1 |
 | WARNING | Plurale tantum noun ending in '-m' should mark plural with '/m' | 1 |
-| WARNING | a Adjective POS should include DULAT gender marker for mrủ (I): adj. m. | 1 |
 | WARNING | a Lexeme parse did not match DULAT; matched by surface form | 1 |
-| WARNING | a Noun POS should include DULAT gender marker for mrủ (I): n. m. | 1 |
-| WARNING | a Noun POS should include DULAT gender marker for ảhl: n. m. | 1 |
 | WARNING | alp Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | am Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | anš Lexeme parse did not match DULAT; matched by surface form | 1 |

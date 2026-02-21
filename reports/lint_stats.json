@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-21T21:59:00.202393+00:00",
+  "generated_at_utc": "2026-02-21T22:06:31.539474+00:00",
   "files_checked": 139,
-  "total_issues": 6412,
-  "fallback_parsed": 544,
+  "total_issues": 6407,
+  "fallback_parsed": 541,
   "by_severity": {
-    "ERROR": 4316,
-    "WARNING": 715,
+    "ERROR": 4314,
+    "WARNING": 712,
     "INFO": 1197
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3282
+      "count": 3276
     },
     {
       "severity": "INFO",
@@ -32,7 +32,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 93
+      "count": 95
     },
     {
       "severity": "ERROR",
@@ -42,7 +42,7 @@
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 85
+      "count": 87
     },
     {
       "severity": "ERROR",
@@ -736,22 +736,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "a Adjective POS should include DULAT gender marker for mrủ (I): adj. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "a Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "a Noun POS should include DULAT gender marker for mrủ (I): n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "a Noun POS should include DULAT gender marker for ảhl: n. m.",
       "count": 1
     },
     {
