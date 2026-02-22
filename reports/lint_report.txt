@@ -3719,6 +3719,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1185 1414
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1192 141412 tštql Analysis does not reconstruct to surface (reconstructs as: ttšql)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1203 141421 tšt DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1240 141449 ytr DULAT comment does not match candidates
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1265 141469 bˤl Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.62.tsv:3 149349 h Analysis does not reconstruct to surface (reconstructs as: ʕl)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.62.tsv:3 149349 h Analysis does not reconstruct to surface (reconstructs as: aḫt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.62.tsv:3 149349 h Analysis does not reconstruct to surface (reconstructs as: hnd)
@@ -6401,4 +6402,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:49 151516
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:75 151535 xẓk Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:88 151545 šdr Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.98.tsv:23 151701 gˤl Surface not found in UDB concordance
-Total issues: 6403
+Total issues: 6404
