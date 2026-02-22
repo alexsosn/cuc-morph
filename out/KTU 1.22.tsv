@@ -3,7 +3,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146843	šmrn	?	?	?	?	DULAT: NOT FOUND
 146844	xx	?	?	?	?	
 # KTU 1.22 I:2						
-146845	h	ˤl(I); aḫt(I)/; hnd/	ʕl (I); ảḫt (I); hnd	prep.; n. f.; dem. adj./pn.	upon; sister (related by blood); this	
+146845	h	+h, +h=; ~h	-h (I); -h(II)	suff. pn. morph.; adv. functor	his /her (hers) / its; to, towards	
 146846	hn	hn	hn	deictic functor/adv.	behold!	
 146847	bnk	bn(I)/+k	bn (I)	n. m.	son	
 146848	hn	hn	hn	deictic functor/adv.	behold!	
@@ -56,11 +56,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146888	yḥpn	yḥpn/	yḥpn	DN	rustled	
 146889	ḥyl	ḥyl/	ḥyl	PN	ḥyl	
 # KTU 1.22 I:10						
-146890	y	y	y	prep. functor	oh!	
+146890	y	+y, [y; ~y; y	-y (I); -y (II); y	prep. functor	my; indeed; oh!	
 146891	zbl	zbl(I)/; zbl(III)/	zbl (I); zbl (III)	n. m.; n. m.	prince; one carried	
 146892	mlk	mlk[; mlk(II)/	/m-l-k/; mlk (II)	vb; n. m.	to reign; kingdom (power and territory)	
 146893	ˤllmy	ˤllmy/	ʕllmy	adj. or n.	eternal	
-146894	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+146894	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 146895	tdd	ndd[	/n-d-d/	vb	to go	
 # KTU 1.22 I:11						
 146896	ˤnt	ˤn(I)/t=; ˤnt(I)/; ˤnt(II)	ʕn (I); ʕnt (I); ʕnt (II)	n. f.; DN; adv.	eye; ʿAnatu/Anat; now	
@@ -86,7 +86,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146913	imr	imr(I)/	ỉmr (I)	n. m.	lamb	
 146914	qmṣ	qmṣ(I)/; qmṣ(II)/	qmṣ (I); qmṣ (II)	n. m.; n. m.	heap; Unterschenkel	
 146915	llim	llu/	llủ	n. m.	suckling (lamb or kid)	
-146916	k	k(III); k(I); k(II)	k (III); k (I); k (II)	Subordinating or completive functor; prep.; emph. functor	when; like; yes	
+146916	k	+k; ~k; k(III); k(I); k(II)	-k (I); -k (II); k (III); k (I); k (II)	;;Subordinating or completive functor; prep.; emph. functor	when; like; yes	
 146917	ksp	ksp/	ksp	n. m.	silver	
 # KTU 1.22 I:15						
 146918	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
@@ -185,7 +185,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146995	rpim	rpu/	rpủ	n. m.	healer	
 146996	aṣḥ	!a!ṣḥ[	/ṣ-ḥ/	vb	to exclaim	
 # KTU 1.22 II:4						
-146997	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+146997	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 146998	iqrakm	!i!qrʔ[	/q-r-ʔ/	vb	to call	
 146999	ilnym	ilny/m	ỉlny	adj. m. or n. m.	divine one	
 147000	b	b	b	prep.	in	
@@ -213,7 +213,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147018	bty	bt(II)/+y	bt (II)	n. m.	house	
 # KTU 1.22 II:9						
 147019	aṣḥ	!a!ṣḥ[	/ṣ-ḥ/	vb	to exclaim	
-147020	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+147020	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 147021	iqrakm	!i!qrʔ[	/q-r-ʔ/	vb	to call	
 147022	ilnym	ilny/m	ỉlny	adj. m. or n. m.	divine one	
 147023	b	b	b	prep.	in	

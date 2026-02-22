@@ -2,7 +2,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.103 1						
 152308	ṯknt	ṯkn/t=	ṯknt	n. f.	appearance	
 152309	ṣin	ṣin(I)/	ṣỉn (I)	n. f.	ewe	
-152310	k	k(III); k(I); k(II)	k (III); k (I); k (II)	Subordinating or completive functor; prep.; emph. functor	when; like; yes	
+152310	k	+k; ~k; k(III); k(I); k(II)	-k (I); -k (II); k (III); k (I); k (II)	;;Subordinating or completive functor; prep.; emph. functor	when; like; yes	
 152311	tld	yld[	/y-l-d/	vb	to give birth (to)	
 152312	at	at(I)/	ảt (I)	pers. pn.	you	
 152313	abn	ab/+n; abn/; !a!bn[	ảb; ảbn; /b-n/	n. m.; n. f.; vb	father; stone; to understand	
@@ -40,7 +40,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152340	apm	ap(I)+m(I); ap(I)+m(II); ap(II)/+m(I)	ảp (I), -m (I); ảp (I), -m (II); ảp (II), -m (I)	adv./conj., morph.; adv./conj., emph. or det. encl. morph.; n. m., morph.	also, ; also, und das (ist) so!; nose,	
 152341	ḥwtntḫlq	?	?	?	?	DULAT: NOT FOUND
 152342	mt	mt(II)/; mt[; mt(I)/	mt (II); /m-t/; mt (I)	n. m.; vb; n. m.	death; to die; dead person	
-152343	n	l(I); ˤl(I); mġy[	l (I); ʕl (I); /m-ġ-y/	prep.; prep.; vb	to; upon; to come	
+152343	n	~n; [n, [n=; +n, +n=;	-n (I); -n (II); -n (III); -n (IV)	encl. morph.; suffixed pn. morph. used with vb; suff. pn. morph. 1.p.pl.; contracted suff. pn. morph. used with a vb	; me/to me; our/us; him/her/it	
 152344	rgm	rgm[; rgm/	/r-g-m/; rgm	vb; n. m.	to say; word	
 # KTU 1.103 7						
 152345	win	?	?	?	?	DULAT: NOT FOUND
@@ -64,7 +64,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152361	šmal	šmal/	šmảl	adj. m. or n. m.	left	
 152362	bh	b	b	prep.	in	
 152363	mlkn	mlk(I)	mlk (I)		king	
-152364	y	y	y	prep. functor	oh!	
+152364	y	+y, [y; ~y; y	-y (I); -y (II); y	prep. functor	my; indeed; oh!	
 # KTU 1.103 10						
 152365	w	w	w	conj.	and	
 152366	in	in/	ỉn	n. m.	lack of	
@@ -234,13 +234,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152501	w	w	w	conj.	and	
 152502	uḫr	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.103 40						
-152503	y	y	y	prep. functor	oh!	
+152503	y	+y, [y; ~y; y	-y (I); -y (II); y	prep. functor	my; indeed; oh!	
 152504	ykly	!y!kly[	/k-l-y/	vb	to finish	
 152505	ršp	ršp/	ršp	DN	Rašap	
 # KTU 1.103 41						
 152506	w	w	w	conj.	and	
 152507	aph	ap(I)+h(I); ap(I)+h(II); ap(II)/+h(I)	ảp (I), -h (I); ảp (I), -h (II); ảp (II), -h (I)	adv./conj., pers. pn./morph.; adv./conj., adv. functor; n. m., pers. pn./morph.	also, his /her (hers) / its; also, to; nose, his /her (hers) / its	
-152508	k	k(III); k(I); k(II)	k (III); k (I); k (II)	Subordinating or completive functor; prep.; emph. functor	when; like; yes	
+152508	k	+k; ~k; k(III); k(I); k(II)	-k (I); -k (II); k (III); k (I); k (II)	;;Subordinating or completive functor; prep.; emph. functor	when; like; yes	
 152509	ap	ap(I); ap(II)/	ảp (I); ảp (II)	adv./conj.; n. m.	also; nose	
 152510	ˤṣr	ˤṣr(I)/	ʕṣr (I)	n. f.	bird	
 152511	ilm	il(I)/m	ỉl (I)	n. m.	god	

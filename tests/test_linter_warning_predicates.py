@@ -3,6 +3,7 @@
 import unittest
 
 from linter.lint import (
+    analysis_has_homonym_marked_n_clitic,
     analysis_has_invalid_enclitic_plus,
     analysis_has_missing_plural_split,
     analysis_has_missing_suffix_plus,
@@ -53,6 +54,18 @@ class LinterWarningPredicateTest(unittest.TestCase):
     def test_enclitic_plus_is_invalid(self) -> None:
         self.assertTrue(analysis_has_invalid_enclitic_plus("bˤd~+n"))
         self.assertFalse(analysis_has_invalid_enclitic_plus("bˤd~n"))
+
+    def test_homonym_marked_enclitic_n_is_invalid(self) -> None:
+        self.assertTrue(analysis_has_homonym_marked_n_clitic("ˤl(I)+n(I)"))
+        self.assertTrue(analysis_has_homonym_marked_n_clitic("!t!ṣḥ[+n(II)"))
+        self.assertTrue(analysis_has_homonym_marked_n_clitic("x~n(III)"))
+        self.assertTrue(analysis_has_homonym_marked_n_clitic("[n(IV)"))
+
+    def test_plain_enclitic_n_not_flagged(self) -> None:
+        self.assertFalse(analysis_has_homonym_marked_n_clitic("ˤl(I)+n"))
+        self.assertFalse(analysis_has_homonym_marked_n_clitic("ˤl(I)+n="))
+        self.assertFalse(analysis_has_homonym_marked_n_clitic("x~n"))
+        self.assertFalse(analysis_has_homonym_marked_n_clitic("[n"))
 
     def test_lexeme_final_n_split_detected(self) -> None:
         self.assertTrue(variant_has_lexeme_terminal_single_suffix_split("mṯ/+n", "mṯn"))

@@ -2,6 +2,13 @@
 
 ## 2026-02-22
 
+- Added generic surface-level parsing override support:
+  - new step `GenericParsingOverrideFixer` in `pipeline/steps/generic_parsing_override.py`,
+  - new curated source file `data/generic_parsing_overrides.tsv`,
+  - pipeline wiring in `pipeline/tablet_parsing.py` (runs near the end of refinement, before final schema formatting),
+  - unit coverage for full override application, optional-column preservation, and unresolved-row overrides.
+- Enforced clitic-`n` annotation style in linter (`linter/lint.py`): column 3 now flags homonym-marked enclitic notation (for example `+n(I)`, `~n(II)`, `[n(III)`, `-n(IV)`) and requires host-style forms (`+n`, `+n=`, `~n`, `[n`, `[n=`).
+- Updated `data/generic_parsing_overrides.tsv` high-frequency `n`/`tn` entries to host-style clitic notation in column 3 (no homonym numerals).
 - Re-applied the latest curated `data/onomastic_gloss_overrides.tsv` updates across all generated tablet outputs (`out/KTU *.tsv`), refreshing onomastic glosses in 58 files (218 rows).
 - Synced DN/PN/TN/MN/GN gloss payloads in regenerated outputs to the updated override table without changing pipeline code.
 - Added canonical variant-divider spacing normalization in `pipeline/steps/schema_formatter.py` for structured columns (`col3`-`col6`): semicolons and commas now render with one following space (e.g. `a;b` -> `a; b`, `x,y` -> `x, y`).

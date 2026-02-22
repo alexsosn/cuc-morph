@@ -45,12 +45,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.24 9						
 147662	pt	?	?	?	?	DULAT: NOT FOUND
 147663	lbšrh	?	?	?	?	DULAT: NOT FOUND
-147664	dm	ˤbd(I)/; dm(II)/; dm(I)	ʕbd (I); dm (II); dm (I)	n. m.; n. m.; functor	servant; blood; since	
+147664	dm	dm(II)/; dm(I)	dm (II); dm (I)	n. m.; functor	blood; since	
 147665	abh	ab/+h	ảb	n. m.	father	
 147666	yḥ	ḥw(I)[	/ḥ-w/y-y/ (I)	vb	to live	
 # KTU 1.24 10						
 147667	wyn	?	?	?	?	DULAT: NOT FOUND
-147668	k	k(III); k(I); k(II)	k (III); k (I); k (II)	Subordinating or completive functor; prep.; emph. functor	when; like; yes	
+147668	k	+k; ~k; k(III); k(I); k(II)	-k (I); -k (II); k (III); k (I); k (II)	;;Subordinating or completive functor; prep.; emph. functor	when; like; yes	
 147669	mtrḫt	mtrḫt/	mtrḫt	n. f.	consort	
 147670	bhklh	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.24 11						
@@ -76,7 +76,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147687	xxx	?	?	?	?	
 147688	tb	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.24 15						
-147689	ˤ	ṣpn/; ˤšr(I)/; ˤrš/	ṣpn; ʕšr (I); ʕrš	TN/DN; n. num.; n. f.	Ṣapānu/Zaphon/the mountain dwelling of bʕl deified; ten; bed	
+147689	ˤ	?	?	?	?	
 147690	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
 147691	kṯrt	kṯrt/	kṯrt	DN	Swallows	
 147692	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
@@ -91,9 +91,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147699	ḫrḫb	ḫrḫb/	ḫrḫb	DN	ḫrḫb	
 147700	mlk	mlk[; mlk(II)/	/m-l-k/; mlk (II)	vb; n. m.	to reign; kingdom (power and territory)	
 147701	qẓ	qẓ/	qẓ	n. m.	summer	
-147702	tn	ˤl(I)+n(I); ˤl(I)+n(II); ˤl(I)+n(III)	ʕl (I), -n (I); ʕl (I), -n (II); ʕl (I), -n (III)	prep., morph.; prep., pers. pn./morph./vb; prep., pers. pn./morph.	upon, Sun; upon, me; upon, our	
+147702	tn	(ytn[; (ytn[/	/y-t-n/; /y-t-n/	vb; vb	give; give	
 147703	nkl	nkl/	nkl	DN	nkl	
-147704	y	y	y	prep. functor	oh!	
+147704	y	+y, [y; ~y; y	-y (I); -y (II); y	prep. functor	my; indeed; oh!	
 # KTU 1.24 18						
 147705	rḫ	?	?	?	?	DULAT: NOT FOUND
 147706	ytrḫ	!y!trḫ[	/t-r-ḫ/	vb	to marry	
@@ -151,7 +151,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.24 28						
 147749	yġtr	!y!ġtr[	/ġ-t-r/	vb	to implore	
 147750	ˤṯtr	ˤṯtr/	ʕṯtr	DN	ʿAṯtar	
-147751	t	lqḥ[; ˤl(I); k(I)	/l-q-ḥ/; ʕl (I); k (I)	vb; prep.; prep.	to get hold of; upon; like	
+147751	t	/t, /t=;[t, [t=, [t==, [t===	;	;	;	
 # KTU 1.24 29						
 147752	rḫ	?	?	?	?	DULAT: NOT FOUND
 147753	lk	l(I)+k	l (I)	prep.	to	
@@ -193,7 +193,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147782	mšrrm	mšrr/	mšrr	n. m.	pointer (of the balance)	
 147783	aḫtth	?	?	?	?	DULAT: NOT FOUND
 147784	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
-147785	a	mt[; mru(I)/; ahl/	/m-t/; mrủ (I); ảhl	vb; adj. m. or n. m.; n. m.	to die; fattened; tent	
+147785	a	?	?	?	?	
 # KTU 1.24 37						
 147786	bn	bn(I)/; bn(II); bn[	bn (I); bn (II); /b-n/	n. m.; prep.; vb	son; between; to understand	
 147787	mznm	mzn/	mzn	n. m.	weight	
@@ -205,7 +205,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147792	ar	a/	ả	n.	light	
 147793	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 147794	w	w	w	conj.	and	
-147795	y	y	y	prep. functor	oh!	
+147795	y	+y, [y; ~y; y	-y (I); -y (II); y	prep. functor	my; indeed; oh!	
 # KTU 1.24 39						
 147796	rḫ	?	?	?	?	DULAT: NOT FOUND
 147797	yark	!y!ʔr[	/ʔ-r/	vb	to shine	
@@ -214,11 +214,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147799	ilhtkṯrt	?	?	?	?	DULAT: NOT FOUND
 147800	bn	bn(I)/; bn(II); bn[	bn (I); bn (II); /b-n/	n. m.; prep.; vb	son; between; to understand	
 # KTU 1.24 41						
-147801	t	lqḥ[; ˤl(I); k(I)	/l-q-ḥ/; ʕl (I); k (I)	vb; prep.; prep.	to get hold of; upon; like	
+147801	t	/t, /t=;[t, [t=, [t==, [t===	;	;	;	
 147802	hll	hll/	hll	DN	New Moon	
 147803	snnt	snn/t=	snnt	n. f.	swallow	
 147804	bnt	bnt(II)/; bnt(I)/; bnt(III)/	bnt (II); bnt (I); bnt (III)	n. f.; n. f.; n. m.	produce; masonry; tamarisk	
-147805	h	ˤl(I); aḫt(I)/; hnd/	ʕl (I); ảḫt (I); hnd	prep.; n. f.; dem. adj./pn.	upon; sister (related by blood); this	
+147805	h	+h, +h=; ~h	-h (I); -h(II)	suff. pn. morph.; adv. functor	his /her (hers) / its; to, towards	
 # KTU 1.24 42						
 147806	ll	ll(I)/	ll (I)	n. m.	night	
 147807	bˤl	bˤl(II)/; bˤl[	bʕl (II); /b-ʕ-l/	n. m./DN; vb	Baʿlu/Baal; to make	
@@ -229,7 +229,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147811	ˤrgzm	ˤrgz(I)/m	ʕrgz (I)	n. m.	juniper berries (?)	
 147812	bzgb	?	?	?	?	DULAT: NOT FOUND
 147813	zt	z/t=	zt	n. m.	olive	
-147814	dm	ˤbd(I)/; dm(II)/; dm(I)	ʕbd (I); dm (II); dm (I)	n. m.; n. m.; functor	servant; blood; since	
+147814	dm	dm(II)/; dm(I)	dm (II); dm (I)	n. m.; functor	blood; since	
 # KTU 1.24 44						
 147815	llay	llu/+y(I); llu/+y(II)	llủ, -y (I); llủ, -y (II)	n. m., prep.; n. m., postp. functor	suckling (lamb or kid), my; suckling (lamb or kid), yes	
 147816	ˤm	ˤm(I)	ʕm (I)	prep.	to	
@@ -251,7 +251,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147829	hnthn	?	?	?	?	DULAT: NOT FOUND
 147830	ṯlḫh	ṯlḫh/	ṯlḫh	DN	dowry	
 147831	wmlgh	?	?	?	?	DULAT: NOT FOUND
-147832	y	y	y	prep. functor	oh!	
+147832	y	+y, [y; ~y; y	-y (I); -y (II); y	prep. functor	my; indeed; oh!	
 # KTU 1.24 48						
 147833	ṯtqt	ṯtqt/	ṯtqt	DN	ṯtqt	
 147834	ˤmh	ˤm(I)+h	ʕm (I)	prep.	to	

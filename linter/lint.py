@@ -152,6 +152,7 @@ ANALYSIS_SURFACE_LETTER_RE = re.compile(r"[A-Za-zˤʔḫṣṯẓġḏḥṭšʕ
 _CLITIC_SUFFIX_SEGMENTS = ("hm", "hn", "km", "kn", "ny", "nm", "nn", "h", "k", "n", "y")
 _DECLARED_SUFFIX_NY_RE = re.compile(r",\s*-[ny](?:\s|\(|$)", flags=re.IGNORECASE)
 _DECLARED_LEMMA_LETTER_RE = re.compile(r"[^A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]")
+_HOMONYM_MARKED_N_CLITIC_RE = re.compile(r"(?:\+n=?|~n=?|\[n=?|-n=?)\((?:I|II|III|IV)\)")
 _OFFERING_SURFACES = {
     normalize_surface("gdlt"),
     normalize_surface("alp"),
@@ -410,6 +411,12 @@ def analysis_has_invalid_enclitic_plus(analysis: str) -> bool:
     """True when analysis uses invalid '~+x' enclitic encoding."""
     variants = split_semicolon_field(analysis) or [analysis]
     return any("~+" in (v or "") for v in variants)
+
+
+def analysis_has_homonym_marked_n_clitic(analysis: str) -> bool:
+    """True when enclitic n is encoded with homonym numerals (invalid in col3)."""
+    variants = split_semicolon_field(analysis) or [analysis]
+    return any(_HOMONYM_MARKED_N_CLITIC_RE.search((v or "").strip()) for v in variants)
 
 
 def variant_has_lexeme_terminal_single_suffix_split(
@@ -1814,6 +1821,18 @@ def lint_file(
                         surface,
                         a_txt,
                         "Enclitic marker '~' must not be followed by '+' (use '~n'/'~y')",
+                    )
+                )
+            if analysis_has_homonym_marked_n_clitic(a_txt):
+                issues.append(
+                    Issue(
+                        "error",
+                        str(path),
+                        i,
+                        line_id,
+                        surface,
+                        a_txt,
+                        "Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
                     )
                 )
             if variant_has_lexeme_terminal_single_suffix_split(a_txt, d_field):

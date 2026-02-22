@@ -17,6 +17,7 @@ from pipeline.steps.base import RefinementStep
 from pipeline.steps.dulat_gate import DulatMorphGate
 from pipeline.steps.formula_bigram import FormulaBigramFixer
 from pipeline.steps.formula_trigram import FormulaTrigramFixer
+from pipeline.steps.generic_parsing_override import GenericParsingOverrideFixer
 from pipeline.steps.known_ambiguities import KnownAmbiguityExpander
 from pipeline.steps.ktu1_family_homonym_pruner import Ktu1FamilyHomonymPruner
 from pipeline.steps.noun_closure import NounPosClosureFixer
@@ -75,6 +76,7 @@ class TabletParsingPipeline:
             AttestationSortFixer(index=self.attestation_index),
             KnownAmbiguityExpander(),
             OnomasticGlossOverrideFixer(),
+            GenericParsingOverrideFixer(),
             # Keep schema pass last so any content-changing steps still end in
             # strict 7-column/quote-safe TSV for GitHub rendering.
             TsvSchemaFormatter(),

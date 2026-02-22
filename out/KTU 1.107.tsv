@@ -49,12 +49,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152963	šr	šr(II)/; šr(III)/; šr(IV)/	šr (II); šr (III); šr (IV)	n. m.; n. m.; n. m.	musician; Prince; navel	
 152964	šrġzz	šrġzz/	šrġzz	DN	the Devil is a munificent one	
 152965	ybky	!y!bky[	/b-k-y/	vb	to weep	
-152966	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+152966	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 152967	nˤr	nˤr(I)/; !n!ˤr[	nʕr (I); /ʕ-r/	n. m.; vb	boy; to become agitated	
 # KTU 1.107 9						
 152968	w	w	w	conj.	and	
 152969	ydmˤ	!y!dmˤ[	/d-m-ʕ/	vb	to shed tears	
-152970	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+152970	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 152971	ṣ	mḫṣ[	/m-ḫ-ṣ/	vb	to wound	
 152972	ġr	ġr(I)/; ġr(III)/	ġr (I); ġr (III)	n. m.; n. m.	mountain; skin	
 152973	špš	špš/	špš	n.	sun	
@@ -76,7 +76,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152987	bm	b	b	prep.	in	
 152988	nˤr	nˤr(I)/; !n!ˤr[	nʕr (I); /ʕ-r/	n. m.; vb	boy; to become agitated	
 152989	tdmˤ	!t!dmˤ[	/d-m-ʕ/	vb	to shed tears	
-152990	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+152990	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 # KTU 1.107 12						
 152991	ṣġr	ṣġr(I)/	ṣġr (I)	adj. m.	small	
 152992	bkm	b; bky[; bkm	b; /b-k-y/; bkm	prep.; vb; adv.	in; to weep; next	
@@ -116,7 +116,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153020	xxxxx	?	?	?	?	
 153021	ṯllt	ṯllt/	ṯllt	n. f.	?	
 153022	khnxxxxxxxxxx	?	?	?	?	DULAT: NOT FOUND
-153023	k	k(III); k(I); k(II)	k (III); k (I); k (II)	Subordinating or completive functor; prep.; emph. functor	when; like; yes	
+153023	k	+k; ~k; k(III); k(I); k(II)	-k (I); -k (II); k (III); k (I); k (II)	;;Subordinating or completive functor; prep.; emph. functor	when; like; yes	
 153024	pˤn	pˤn/	pʕn	n. f.	foot	
 # KTU 1.107 19						
 153025	xxxxxxy	?	?	?	?	DULAT: NOT FOUND
@@ -309,7 +309,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153185	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
 153186	tzd	!t!zd[	/z-d/	vb	to boil	
 153187	ˤrq	ˤrq/	ʕrq	n. m.	cart	
-153188	dm	ˤbd(I)/; dm(II)/; dm(I)	ʕbd (I); dm (II); dm (I)	n. m.; n. m.; functor	servant; blood; since	
+153188	dm	dm(II)/; dm(I)	dm (II); dm (I)	n. m.; functor	blood; since	
 # KTU 1.107 47						
 153189	xxxxx	?	?	?	?	
 153190	ˤrq	ˤrq/	ʕrq	n. m.	cart	

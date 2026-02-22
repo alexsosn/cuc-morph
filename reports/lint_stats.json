@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-22T13:52:22.021199+00:00",
+  "generated_at_utc": "2026-02-22T16:04:13.568514+00:00",
   "files_checked": 278,
-  "total_issues": 8179,
-  "fallback_parsed": 562,
+  "total_issues": 10527,
+  "fallback_parsed": 984,
   "by_severity": {
-    "ERROR": 5686,
-    "WARNING": 790,
+    "ERROR": 7627,
+    "WARNING": 1211,
     "INFO": 1519
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 4490
+      "count": 4406
     },
     {
       "severity": "INFO",
@@ -21,8 +21,33 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "POS token not allowed for declared DULAT entry",
+      "count": 899
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Column 5 count must match analysis variant count",
+      "count": 470
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "ʔ must be preceded by '(' in column 3",
       "count": 392
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "Column 6 count should match analysis variant count",
+      "count": 362
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "DULAT comment does not match candidates",
+      "count": 185
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Missing DULAT entry token(s) in column 4",
+      "count": 176
     },
     {
       "severity": "ERROR",
@@ -31,18 +56,13 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "DULAT comment does not match candidates",
-      "count": 97
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 94
+      "problem_type": "No DULAT entry found for clitic part",
+      "count": 121
     },
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 90
+      "count": 82
     },
     {
       "severity": "ERROR",
@@ -55,9 +75,9 @@
       "count": 78
     },
     {
-      "severity": "ERROR",
-      "problem_type": "POS token not allowed for declared DULAT entry",
-      "count": 69
+      "severity": "WARNING",
+      "problem_type": "y Lexeme parse did not match DULAT; matched by surface form",
+      "count": 72
     },
     {
       "severity": "ERROR",
@@ -67,11 +87,31 @@
     {
       "severity": "ERROR",
       "problem_type": "Each reconstructed letter must be prefixed by '('",
-      "count": 63
+      "count": 61
     },
     {
       "severity": "ERROR",
-      "problem_type": "Noun/adjective lacks '/' ending",
+      "problem_type": "POS ambiguous in DULAT",
+      "count": 45
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Multiple DULAT candidates for surface",
+      "count": 43
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Column 4 count must match analysis variant count",
+      "count": 38
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ḥrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 36
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ṯkmn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
       "count": 36
     },
     {
@@ -80,14 +120,14 @@
       "count": 36
     },
     {
-      "severity": "WARNING",
-      "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
+      "severity": "ERROR",
+      "problem_type": "Noun/adjective lacks '/' ending",
       "count": 32
     },
     {
-      "severity": "ERROR",
-      "problem_type": "No DULAT entry found for clitic part",
-      "count": 30
+      "severity": "WARNING",
+      "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
+      "count": 32
     },
     {
       "severity": "WARNING",
@@ -105,6 +145,11 @@
       "count": 22
     },
     {
+      "severity": "ERROR",
+      "problem_type": "dtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 18
+    },
+    {
       "severity": "WARNING",
       "problem_type": "Feminine plural noun in DULAT should be tagged with '/t='",
       "count": 16
@@ -116,8 +161,8 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "Multiple DULAT candidates for lexeme",
-      "count": 14
+      "problem_type": "tṣḥn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 15
     },
     {
       "severity": "ERROR",
@@ -128,6 +173,16 @@
       "severity": "WARNING",
       "problem_type": "nkt Lexeme parse did not match DULAT; matched by surface form",
       "count": 13
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "hyn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 12
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ibrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 12
     },
     {
       "severity": "WARNING",
@@ -150,19 +205,29 @@
       "count": 12
     },
     {
-      "severity": "WARNING",
-      "problem_type": "yˤn Lexeme parse did not match DULAT; matched by surface form",
+      "severity": "ERROR",
+      "problem_type": "Multiple DULAT candidates for lexeme",
+      "count": 10
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ddn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
       "count": 9
     },
     {
       "severity": "ERROR",
-      "problem_type": "POS tokens must map to existing DULAT tokens in column 4",
-      "count": 8
+      "problem_type": "tldn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 9
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "wn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 9
     },
     {
       "severity": "WARNING",
-      "problem_type": "km Lexeme parse did not match DULAT; matched by surface form",
-      "count": 8
+      "problem_type": "yˤn Lexeme parse did not match DULAT; matched by surface form",
+      "count": 9
     },
     {
       "severity": "WARNING",
@@ -180,11 +245,6 @@
       "count": 8
     },
     {
-      "severity": "ERROR",
-      "problem_type": "Verb lacks '[' ending",
-      "count": 7
-    },
-    {
       "severity": "WARNING",
       "problem_type": "Deverbal form marked with '[' but only noun entry found in DULAT",
       "count": 7
@@ -200,6 +260,51 @@
       "count": 7
     },
     {
+      "severity": "ERROR",
+      "problem_type": "mntn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "npškn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "rdn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "sdn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tˤrbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ytnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "śzn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "štnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ḥwtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
       "severity": "WARNING",
       "problem_type": "tbˤ Lexeme parse did not match DULAT; matched by surface form",
       "count": 6
@@ -210,6 +315,11 @@
       "count": 6
     },
     {
+      "severity": "ERROR",
+      "problem_type": "POS tokens must map to existing DULAT tokens in column 4",
+      "count": 5
+    },
+    {
       "severity": "WARNING",
       "problem_type": "btm Lexeme parse did not match DULAT; matched by surface form",
       "count": 5
@@ -217,11 +327,6 @@
     {
       "severity": "WARNING",
       "problem_type": "limm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 5
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "t Lexeme parse did not match DULAT; matched by surface form",
       "count": 5
     },
     {
@@ -250,6 +355,16 @@
       "count": 4
     },
     {
+      "severity": "ERROR",
+      "problem_type": "Verb lacks '[' ending",
+      "count": 4
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tšabn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 4
+    },
+    {
       "severity": "WARNING",
       "problem_type": "bht Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
@@ -257,6 +372,11 @@
     {
       "severity": "WARNING",
       "problem_type": "dry Noun POS should include DULAT gender marker for dr: n. m.",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "l Formula idk l ytn should use a single l(III) reading",
       "count": 4
     },
     {
@@ -296,7 +416,197 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "atnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "bltn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "byn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "bˤlyn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ggn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "iphn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "iḫn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "krn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "kṯn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "lbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "lbšn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "lytn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "lḥn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "mln Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "pṯtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "rišyn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "rn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "rḥbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "rḫnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "snrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tbˤn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tddn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tmrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tqdmnnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "trmn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ttlkn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tˤtqnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tṣun Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tṯbrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tṯṯkrnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ymlun Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ynḥtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yrdn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yšrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yṣan Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yṯnyn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "Š stem marker present but DULAT lacks Š/Št/Špass",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ḥdṯn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "Morphology placeholder '?' should use unresolved DULAT placeholder '?' in column 4",
       "count": 3
     },
     {
@@ -341,11 +651,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "n Lexeme parse did not match DULAT; matched by surface form",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ndd Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
@@ -367,11 +672,6 @@
     {
       "severity": "WARNING",
       "problem_type": "nṣb Lexeme parse did not match DULAT; matched by surface form",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "r Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
     {
@@ -406,12 +706,37 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "POS ambiguous in DULAT",
+      "problem_type": "Xt stem marker present but DULAT lacks *t stem",
       "count": 2
     },
     {
       "severity": "ERROR",
-      "problem_type": "Xt stem marker present but DULAT lacks *t stem",
+      "problem_type": "rdnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tmṭrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tšˤlynh Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "un Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yˤtqn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ˤmn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
       "count": 2
     },
     {
@@ -482,6 +807,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ksih Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "l Formula tbˤ w l yṯb ilm should use a single l(II) reading",
       "count": 2
     },
     {
@@ -711,27 +1041,152 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "Column 4 count must match analysis variant count",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "Disallowed character in columns 2-3: ʕ",
       "count": 1
     },
     {
-      "severity": "WARNING",
-      "problem_type": "Column 6 count should match analysis variant count",
+      "severity": "ERROR",
+      "problem_type": "anḫn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "aṯbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ilšnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "nn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "pkn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "taršn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tbkynh Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tbqˤnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tdrˤnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tkbdnh Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tmġyn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tqbrnh Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "txxrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tšrpnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tštnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tšṣqnh Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tṭḥnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ylḥn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ymṣḫn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yngḥn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ynṯkn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ystrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ytˤn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yṯṯbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ˤdbnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ˤln Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ˤrbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ḥnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
       "count": 1
     },
     {
       "severity": "WARNING",
       "problem_type": "Plurale tantum noun ending in '-m' should mark plural with '/m'",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "a Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1102,11 +1557,6 @@
     {
       "severity": "WARNING",
       "problem_type": "pṯtm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "q Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {

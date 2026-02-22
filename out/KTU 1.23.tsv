@@ -64,7 +64,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147149	yšql	?	?	?	?	DULAT: NOT FOUND
 147150	šdmth	šdm/t=	šdmt	n. f.	terrace	
 # KTU 1.23 11						
-147151	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+147151	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 147152	gpn	gpn(I)/; gpn(II)/	gpn (I); gpn (II)	n. m.; n. m.	(vine-)stock; harness	
 # KTU 1.23 12						
 147153	šbˤd	šbˤd	šbʕ(ỉ)d	adv.	seven times	
@@ -205,24 +205,24 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147267	tirkm	!t!ʔrk[	/ʔ-r-k/	vb	to be long	
 147268	yd	yd(I)/; bd(IV); yd(II)/	yd (I); bd (IV); yd (II)	n. f.; prep.; n. m.	hand; into the hands of; love	
 147269	il	il(I)/	ỉl (I)	n. m.	god	
-147270	k	k(III); k(I); k(II)	k (III); k (I); k (II)	Subordinating or completive functor; prep.; emph. functor	when; like; yes	
+147270	k	+k; ~k; k(III); k(I); k(II)	-k (I); -k (II); k (III); k (I); k (II)	;;Subordinating or completive functor; prep.; emph. functor	when; like; yes	
 147271	ym	ym(I)/; ym(II)/	ym (I); ym (II)	n. m.; n. m.	day; sea	
 # KTU 1.23 34						
 147272	w	w	w	conj.	and	
 147273	yd	yd(I)/; bd(IV); yd(II)/	yd (I); bd (IV); yd (II)	n. f.; prep.; n. m.	hand; into the hands of; love	
 147274	il	il(I)/	ỉl (I)	n. m.	god	
-147275	k	k(III); k(I); k(II)	k (III); k (I); k (II)	Subordinating or completive functor; prep.; emph. functor	when; like; yes	
+147275	k	+k; ~k; k(III); k(I); k(II)	-k (I); -k (II); k (III); k (I); k (II)	;;Subordinating or completive functor; prep.; emph. functor	when; like; yes	
 147276	mdb	mdb/	mdb	n. m.	tide	
 147277	ark	ʔrk[	/ʔ-r-k/	vb	to be long	
 147278	yd	yd(I)/; bd(IV); yd(II)/	yd (I); bd (IV); yd (II)	n. f.; prep.; n. m.	hand; into the hands of; love	
 147279	il	il(I)/	ỉl (I)	n. m.	god	
-147280	k	k(III); k(I); k(II)	k (III); k (I); k (II)	Subordinating or completive functor; prep.; emph. functor	when; like; yes	
+147280	k	+k; ~k; k(III); k(I); k(II)	-k (I); -k (II); k (III); k (I); k (II)	;;Subordinating or completive functor; prep.; emph. functor	when; like; yes	
 147281	ym	ym(I)/; ym(II)/	ym (I); ym (II)	n. m.; n. m.	day; sea	
 # KTU 1.23 35						
 147282	w	w	w	conj.	and	
 147283	yd	yd(I)/; bd(IV); yd(II)/	yd (I); bd (IV); yd (II)	n. f.; prep.; n. m.	hand; into the hands of; love	
 147284	il	il(I)/	ỉl (I)	n. m.	god	
-147285	k	k(III); k(I); k(II)	k (III); k (I); k (II)	Subordinating or completive functor; prep.; emph. functor	when; like; yes	
+147285	k	+k; ~k; k(III); k(I); k(II)	-k (I); -k (II); k (III); k (I); k (II)	;;Subordinating or completive functor; prep.; emph. functor	when; like; yes	
 147286	mdb	mdb/	mdb	n. m.	tide	
 147287	yqḥ	lqḥ[	/l-q-ḥ/	vb	to get hold of	
 147288	il	il(I)/	ỉl (I)	n. m.	god	
@@ -259,13 +259,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147315	pḥm	pḥm/	pḥm	n. m.	ember	
 147316	il	il(I)/	ỉl (I)	n. m.	god	
 147317	aṯtm	aṯt/	ảṯt	n. f.	woman	
-147318	k	k(III); k(I); k(II)	k (III); k (I); k (II)	Subordinating or completive functor; prep.; emph. functor	when; like; yes	
+147318	k	+k; ~k; k(III); k(I); k(II)	-k (I); -k (II); k (III); k (I); k (II)	;;Subordinating or completive functor; prep.; emph. functor	when; like; yes	
 147319	ypt	ypt(I)/	ypt (I)	n. f.	cow	
 147320	hm	hm(II)	hm (II)	conj./interr. functor	if	
 147321	aṯtm	aṯt/	ảṯt	n. f.	woman	
 147322	tṣḥn	!t!ṣḥ[+n(I); !t!ṣḥ[+n(II); !t!ṣḥ[+n(III)	/ṣ-ḥ/, -n (I); /ṣ-ḥ/, -n (II); /ṣ-ḥ/, -n (III)	vb, morph.; vb, pers. pn./morph./vb; vb, pers. pn./morph.	to exclaim, Sun; to exclaim, me; to exclaim, our	
 # KTU 1.23 40						
-147323	y	y	y	prep. functor	oh!	
+147323	y	+y, [y; ~y; y	-y (I); -y (II); y	prep. functor	my; indeed; oh!	
 147324	mt	mt(II)/; mt[; mt(I)/	mt (II); /m-t/; mt (I)	n. m.; vb; n. m.	death; to die; dead person	
 147325	mt	mt(II)/; mt[; mt(I)/	mt (II); /m-t/; mt (I)	n. m.; vb; n. m.	death; to die; dead person	
 147326	nḥtm	!n!nḥt[	/n-ḥ-t/	vb	to take down (for oneself) > to reach for	
@@ -295,7 +295,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.23 43						
 147348	aṯtm	aṯt/	ảṯt	n. f.	woman	
 147349	tṣḥn	!t!ṣḥ[+n(I); !t!ṣḥ[+n(II); !t!ṣḥ[+n(III)	/ṣ-ḥ/, -n (I); /ṣ-ḥ/, -n (II); /ṣ-ḥ/, -n (III)	vb, morph.; vb, pers. pn./morph./vb; vb, pers. pn./morph.	to exclaim, Sun; to exclaim, me; to exclaim, our	
-147350	y	y	y	prep. functor	oh!	
+147350	y	+y, [y; ~y; y	-y (I); -y (II); y	prep. functor	my; indeed; oh!	
 147351	ad	ad/	ảd	n. m.	father	
 147352	ad	ad/	ảd	n. m.	father	
 147353	nḥtm	!n!nḥt[	/n-ḥ-t/	vb	to take down (for oneself) > to reach for	
@@ -326,7 +326,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147375	hn	hn	hn	deictic functor/adv.	behold!	
 147376	aṯtm	aṯt/	ảṯt	n. f.	woman	
 147377	tṣḥn	!t!ṣḥ[+n(I); !t!ṣḥ[+n(II); !t!ṣḥ[+n(III)	/ṣ-ḥ/, -n (I); /ṣ-ḥ/, -n (II); /ṣ-ḥ/, -n (III)	vb, morph.; vb, pers. pn./morph./vb; vb, pers. pn./morph.	to exclaim, Sun; to exclaim, me; to exclaim, our	
-147378	y	y	y	prep. functor	oh!	
+147378	y	+y, [y; ~y; y	-y (I); -y (II); y	prep. functor	my; indeed; oh!	
 147379	mt	mt(II)/; mt[; mt(I)/	mt (II); /m-t/; mt (I)	n. m.; vb; n. m.	death; to die; dead person	
 147380	mt	mt(II)/; mt[; mt(I)/	mt (II); /m-t/; mt (I)	n. m.; vb; n. m.	death; to die; dead person	
 # KTU 1.23 47						
@@ -361,7 +361,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147406	špthm	špt/	špt	n. f.	lip	
 147407	mtqtm	mtq/	mtq	adj. m.	sweet	
 147408	mtqtm	mtq/	mtq	adj. m.	sweet	
-147409	k	k(III); k(I); k(II)	k (III); k (I); k (II)	Subordinating or completive functor; prep.; emph. functor	when; like; yes	
+147409	k	+k; ~k; k(III); k(I); k(II)	-k (I); -k (II); k (III); k (I); k (II)	;;Subordinating or completive functor; prep.; emph. functor	when; like; yes	
 147410	lrmnm	lrmn/m	lrmn	n. m.	pomegranate	
 # KTU 1.23 51						
 147411	bm	b	b	prep.	in	
@@ -409,7 +409,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147449	špthm	špt/	špt	n. f.	lip	
 147450	mtqtm	mtq/	mtq	adj. m.	sweet	
 147451	mtqtm	mtq/	mtq	adj. m.	sweet	
-147452	k	k(III); k(I); k(II)	k (III); k (I); k (II)	Subordinating or completive functor; prep.; emph. functor	when; like; yes	
+147452	k	+k; ~k; k(III); k(I); k(II)	-k (I); -k (II); k (III); k (I); k (II)	;;Subordinating or completive functor; prep.; emph. functor	when; like; yes	
 147453	lrmnm	lrmn/m	lrmn	n. m.	pomegranate	
 # KTU 1.23 56						
 147454	bm	b	b	prep.	in	
@@ -498,11 +498,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147529	w	w	w	conj.	and	
 147530	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
 147531	tšbˤn	!t!šbˤ(II)[	/š-b-ʕ/ (II)	vb	to be sated	
-147532	y	y	y	prep. functor	oh!	
+147532	y	+y, [y; ~y; y	-y (I); -y (II); y	prep. functor	my; indeed; oh!	
 147533	aṯṯ	?	?	?	?	DULAT: NOT FOUND
 147534	itrḫ	!i!trḫ[	/t-r-ḫ/	vb	to marry	
 # KTU 1.23 65						
-147535	y	y	y	prep. functor	oh!	
+147535	y	+y, [y; ~y; y	-y (I); -y (II); y	prep. functor	my; indeed; oh!	
 147536	bn	bn(I)/; bn(II); bn[	bn (I); bn (II); /b-n/	n. m.; prep.; vb	son; between; to understand	
 147537	ašld	!a!(y]š]yld[	/y-l-d/	vb	to give birth (to)	
 147538	šu	nšʔ[	/n-š-ʔ/	vb	to raise	
@@ -543,10 +543,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147569	ṣḥ	ṣḥ[	/ṣ-ḥ/	vb	to exclaim	
 147570	hm	hm(II)	hm (II)	conj./interr. functor	if	
 147571	ˤm	ˤm(I)	ʕm (I)	prep.	to	
-147572	n	l(I); ˤl(I); mġy[	l (I); ʕl (I); /m-ġ-y/	prep.; prep.; vb	to; upon; to come	
+147572	n	~n; [n, [n=; +n, +n=;	-n (I); -n (II); -n (III); -n (IV)	encl. morph.; suffixed pn. morph. used with vb; suff. pn. morph. 1.p.pl.; contracted suff. pn. morph. used with a vb	; me/to me; our/us; him/her/it	
 147573	ġr	ġr(I)/; ġr(III)/	ġr (I); ġr (III)	n. m.; n. m.	mountain; skin	
 147574	mdrˤ	mdrˤ/	mdrʕ	n. m.	sown land	
-147575	y	y	y	prep. functor	oh!	
+147575	y	+y, [y; ~y; y	-y (I); -y (II); y	prep. functor	my; indeed; oh!	
 147576	nġr	!n!ġr[	/n-ġ-r/	vb	to protect	
 # KTU 1.23 70						
 147577	nġr	!n!ġr[	/n-ġ-r/	vb	to protect	
@@ -566,7 +566,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147590	btk	bt(II)/+k	bt (II)	n. m.	house	
 147591	lḥm	lḥm(I)[; lḥm/; lḥ(I)/	/l-ḥ-m/ (I); lḥm; lḥ (I)	vb; n. m.; n. f.	to eat; grain; cheek	
 147592	w	w	w	conj.	and	
-147593	tn	ˤl(I)+n(I); ˤl(I)+n(II); ˤl(I)+n(III)	ʕl (I), -n (I); ʕl (I), -n (II); ʕl (I), -n (III)	prep., morph.; prep., pers. pn./morph./vb; prep., pers. pn./morph.	upon, Sun; upon, me; upon, our	
+147593	tn	(ytn[; (ytn[/	/y-t-n/; /y-t-n/	vb; vb	give; give	
 # KTU 1.23 72						
 147594	w	w	w	conj.	and	
 147595	nlḥm	!n!lḥm(I)[	/l-ḥ-m/ (I)	vb	to eat	

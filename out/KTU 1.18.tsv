@@ -21,7 +21,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145157	xxxxxxxx	?	?	?	?	
 # KTU 1.18 I:7						
 145158	xxxxxxtk	?	?	?	?	DULAT: NOT FOUND
-145159	y	y	y	prep. functor	oh!	
+145159	y	+y, [y; ~y; y	-y (I); -y (II); y	prep. functor	my; indeed; oh!	
 145160	ilm	il(I)/m	ỉl (I)	n. m.	god	
 145161	xxxxxxxx	?	?	?	?	
 # KTU 1.18 I:8						
@@ -85,7 +85,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145210	ḫnp	ḫnp/	ḫnp	n. m.	impiety	
 145211	lbk	lb/	lb	n. m.	heart	
 145212	aši	?	?	?	?	DULAT: NOT FOUND
-145213	a	mt[; mru(I)/; ahl/	/m-t/; mrủ (I); ảhl	vb; adj. m. or n. m.; n. m.	to die; fattened; tent	
+145213	a	?	?	?	?	
 # KTU 1.18 I:18						
 145214	ḫd	ṭbḫ/+d	ṭbḫ, -d	n. m., →	sacrificer,	
 145215	d	d	d	det. or rel. functor	the one(s) of	
@@ -105,7 +105,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145227	btlt	btlt/	btlt	n. f.	virgin	
 145228	ˤnt	ˤnt(I)/	ʕnt (I)	DN	ʿAnatu/Anat	
 145229	idk	idk	ỉdk	narrative adv. functor	then	
-145230	l	l(III)	l (III)	functor	certainly	
+145230	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
 145231	ttn	ytn[	/y-t-n/	vb	to give	
 145232	pnm	pn/m+nm	pnm	n. m.	face	
 # KTU 1.18 I:21						
@@ -130,7 +130,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145249	šmˤ	šmˤ[; šmˤ/	/š-m-ʕ/; šmʕ	vb; n. m.	to hear; auditor	
 145250	mˤ	mˤ(I); mˤ(II)	mʕ (I); mʕ (II)	postpositional emph. adv.; adv.	please!; as one	
 145251	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
-145252	a	mt[; mru(I)/; ahl/	/m-t/; mrủ (I); ảhl	vb; adj. m. or n. m.; n. m.	to die; fattened; tent	
+145252	a	?	?	?	?	
 # KTU 1.18 I:24						
 145253	qht	?	?	?	?	DULAT: NOT FOUND
 145254	ġzr	ġzr/	ġzr	n. m.	lad	
@@ -213,7 +213,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145316	btlt	btlt/	btlt	n. f.	virgin	
 145317	ˤnt	ˤnt(I)/	ʕnt (I)	DN	ʿAnatu/Anat	
 145318	idk	idk	ỉdk	narrative adv. functor	then	
-145319	l	l(III)	l (III)	functor	certainly	
+145319	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
 145320	ttn	ytn[	/y-t-n/	vb	to give	
 145321	pnm	pn/m+nm	pnm	n. m.	face	
 # KTU 1.18 IV:6						
@@ -298,17 +298,17 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.18 IV:17						
 145390	lk	l(I)+k	l (I)	prep.	to	
 145391	aštk	!a!št[	/š-t/	vb	to place	
-145392	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+145392	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 145393	nšr	nšr/	nšr	n. m.	bird of prey	
 145394	b	b	b	prep.	in	
 145395	ḥbšy	ḥbš(I)/+y(I); ḥbš(I)/+y(II)	ḥbš (I), -y (I); ḥbš (I), -y (II)	n. m., prep.; n. m., postp. functor	cinch, my; cinch, yes	
 # KTU 1.18 IV:18						
-145396	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+145396	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 145397	diy	diy(I)/; diy(II)/	dỉy (I); dỉy (II)	n. m.; n. m.	hawk; wing	
 145398	b	b	b	prep.	in	
 145399	tˤrty	tˤrt/+y	tʕrt	n. f.	sheath	
 145400	aqht	aqht/	ảqht	PN	Most Obedient	
-145401	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+145401	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 145402	yṯb	!y!(yṯb[	/y-ṯ-b/	vb	to sit down	
 # KTU 1.18 IV:19						
 145403	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
@@ -342,23 +342,23 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145427	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
 145428	udn	udn(I)/	ủdn (I)	n. m.	ear	
 145429	špk	špk[	/š-p-k/	vb	to spill	
-145430	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+145430	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 145431	šiy	šiy(I)/	šỉy (I)	adj. m.	assassin	
 # KTU 1.18 IV:24						
-145432	dm	ˤbd(I)/; dm(II)/; dm(I)	ʕbd (I); dm (II); dm (I)	n. m.; n. m.; functor	servant; blood; since	
-145433	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+145432	dm	dm(II)/; dm(I)	dm (II); dm (I)	n. m.; functor	blood; since	
+145433	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 145434	šḫṭ	šḫṭ/	šḫṭ	n. m.	butcher	
 145435	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
 145436	brkh	brk/+h	brk	n. f.	knee	
 145437	tṣi	yṣʔ[	/y-ṣ-ʔ/	vb	to go out	
-145438	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+145438	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 # KTU 1.18 IV:25						
 145439	rḥ	rḥ(I)/	rḥ (I)	n. f.	wind	
 145440	npšh	npš(I)/+h	npš (I)	n. f.	throat	
-145441	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+145441	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 145442	iṯl	iṯl/	ỉṯl	n. m.	saliva	
 145443	brlth	brlt/	brlt	n. f.	hunger	
-145444	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+145444	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 # KTU 1.18 IV:26						
 145445	qṭr	qṭr/	qṭr	n. m.	smoke	
 145446	b	b	b	prep.	in	
@@ -376,17 +376,17 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145457	št	št[; št(III)/; št(II)/	/š-t/; št (III); št (II)	vb; n. m.; n. f.	to place; tearing apart; raíz	
 # KTU 1.18 IV:28						
 145458	tštn	!t!št[	/š-t/	vb	to place	
-145459	k	k(III); k(I); k(II)	k (III); k (I); k (II)	Subordinating or completive functor; prep.; emph. functor	when; like; yes	
+145459	k	+k; ~k; k(III); k(I); k(II)	-k (I); -k (II); k (III); k (I); k (II)	;;Subordinating or completive functor; prep.; emph. functor	when; like; yes	
 145460	nšr	nšr/	nšr	n. m.	bird of prey	
 145461	b	b	b	prep.	in	
 145462	ḥbšh	ḥbš(I)/	ḥbš (I)	n. m.	cinch	
-145463	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+145463	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 145464	diy	diy(II)/; diy(I)/	dỉy (II); dỉy (I)	n. m.; n. m.	wing; hawk	
 # KTU 1.18 IV:29						
 145465	b	b	b	prep.	in	
 145466	tˤrth	tˤrt/+h	tʕrt	n. f.	sheath	
 145467	aqht	aqht/	ảqht	PN	Most Obedient	
-145468	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+145468	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 145469	yṯb	!y!(yṯb[	/y-ṯ-b/	vb	to sit down	
 145470	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
 145471	lḥm	lḥm(I)[; lḥm/; lḥ(I)/	/l-ḥ-m/ (I); lḥm; lḥ (I)	vb; n. m.; n. f.	to eat; grain; cheek	
@@ -419,24 +419,24 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145493	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
 145494	udn	udn(I)/	ủdn (I)	n. m.	ear	
 145495	špk	špk[	/š-p-k/	vb	to spill	
-145496	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+145496	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 # KTU 1.18 IV:35						
 145497	šiy	šiy(I)/	šỉy (I)	adj. m.	assassin	
 145498	dmh	dm(II)/+h	dm (II)	n. m.	blood	
-145499	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+145499	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 145500	šḫṭ	šḫṭ/	šḫṭ	n. m.	butcher	
 145501	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
 145502	brkh	brk/+h	brk	n. f.	knee	
 # KTU 1.18 IV:36						
 145503	yṣat	!y!(yṣʔ[	/y-ṣ-ʔ/	vb	to go out	
-145504	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+145504	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 145505	rḥ	rḥ(I)/	rḥ (I)	n. f.	wind	
 145506	npšh	npš(I)/+h	npš (I)	n. f.	throat	
-145507	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+145507	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 145508	iṯl	iṯl/	ỉṯl	n. m.	saliva	
 # KTU 1.18 IV:37						
 145509	brlth	brlt/	brlt	n. f.	hunger	
-145510	km	k(III); k(I); k(IV)	k (III); k (I); k (IV)	Subordinating or completive functor; prep.; adv.	when; like; thus	
+145510	km	k(III); k(I); k(IV); km; +km, +km=	k (III); k (I); k (IV); km; -km	functor; prep.; adv.; prep./conj./adv.;	when; like; thus;	
 145511	qṭr	qṭr/	qṭr	n. m.	smoke	
 145512	baph	?	?	?	?	DULAT: NOT FOUND
 145513	xxxxxx	?	?	?	?	
