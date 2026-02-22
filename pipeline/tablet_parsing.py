@@ -21,6 +21,7 @@ from pipeline.steps.known_ambiguities import KnownAmbiguityExpander
 from pipeline.steps.ktu1_family_homonym_pruner import Ktu1FamilyHomonymPruner
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
+from pipeline.steps.onomastic_gloss import OnomasticGlossOverrideFixer
 from pipeline.steps.plural_split import PluralSplitFixer
 from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
@@ -73,6 +74,7 @@ class TabletParsingPipeline:
             ),
             AttestationSortFixer(index=self.attestation_index),
             KnownAmbiguityExpander(),
+            OnomasticGlossOverrideFixer(),
             # Keep schema pass last so any content-changing steps still end in
             # strict 7-column/quote-safe TSV for GitHub rendering.
             TsvSchemaFormatter(),

@@ -23,6 +23,7 @@ from pipeline.steps.known_ambiguities import KnownAmbiguityExpander
 from pipeline.steps.ktu1_family_homonym_pruner import Ktu1FamilyHomonymPruner
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
+from pipeline.steps.onomastic_gloss import OnomasticGlossOverrideFixer
 from pipeline.steps.plural_split import PluralSplitFixer
 from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
@@ -1149,6 +1150,83 @@ class AttestationSortFixerTest(unittest.TestCase):
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "a2;a1")
         self.assertEqual(result.comment, "c2;c1")
+
+
+class OnomasticGlossOverrideFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = OnomasticGlossOverrideFixer(
+            overrides={
+                "ỉlmlk": "ʾIlimalku",
+                "kṯr (III)": "Kôṯaru",
+                "ḫss": "Ḫasisu",
+                "ỉl (I)": "ʾIlu",
+            }
+        )
+
+    def test_override_by_dulat_entry(self) -> None:
+        row = TabletRow(
+            line_id="1",
+            surface="ilmlk",
+            analysis="ilmlk/",
+            dulat="ỉlmlk",
+            pos="PN",
+            gloss="Ilimalku",
+            comment="",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.gloss, "ʾIlimalku")
+
+    def test_does_not_override_when_pos_is_not_onomastic(self) -> None:
+        row = TabletRow(
+            line_id="1b",
+            surface="il",
+            analysis="il(I)/",
+            dulat="ỉl (I)",
+            pos="n. m.",
+            gloss="god",
+            comment="",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.gloss, "god")
+
+    def test_override_applies_to_split_name_sequence(self) -> None:
+        row = TabletRow(
+            line_id="2",
+            surface="kṯr",
+            analysis="kṯr(III)/",
+            dulat="kṯr (III)",
+            pos="DN",
+            gloss="?",
+            comment="",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.gloss, "Kôṯaru")
+
+    def test_slot_level_override_preserves_non_name_clitic_slot(self) -> None:
+        row = TabletRow(
+            line_id="3",
+            surface="kṯrh",
+            analysis="kṯr(III)/+h(I)",
+            dulat="kṯr (III), -h (I)",
+            pos="DN, pers. pn.",
+            gloss="kṯr (III), his /her",
+            comment="",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.gloss, "Kôṯaru, his /her")
+
+    def test_normalizes_aleph_ayin_for_onomastic_pos_without_override(self) -> None:
+        row = TabletRow(
+            line_id="4",
+            surface="x",
+            analysis="x/",
+            dulat="x",
+            pos="TN",
+            gloss="ˀxʕyˁzʔ",
+            comment="",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.gloss, "ʾxʿyʿzʾ")
 
 
 class TsvSchemaFormatterTest(unittest.TestCase):

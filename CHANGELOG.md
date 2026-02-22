@@ -5,6 +5,10 @@
 - Added canonical variant-divider spacing normalization in `pipeline/steps/schema_formatter.py` for structured columns (`col3`-`col6`): semicolons and commas now render with one following space (e.g. `a;b` -> `a; b`, `x,y` -> `x, y`).
 - Added regression coverage in `tests/test_refinement_steps.py` for standard variant spacing and the edge case where the next variant begins with a clitic-leading comma.
 - Re-ran schema formatting over `out/KTU 1.*.tsv` so variant separators are consistently spaced in all parsed tablet outputs.
+- Added centralized onomastic gloss overrides file `data/onomastic_gloss_overrides.tsv` keyed by DULAT labels (with homonym markers where applicable).
+- Added `OnomasticGlossOverrideFixer` (`pipeline/steps/onomastic_gloss.py`) and wired it into `pipeline/tablet_parsing.py` so onomastic glosses are overridden from the source file and DN/PN/TN/MN/GN glosses are normalized to `ʾ/ʿ` (not `ʔ/ʕ/ˀ/ˁ`).
+- Added unit coverage for onomastic override behavior (direct override, slot-level override, non-onomastic guard, and transliteration normalization).
+- Applied the onomastic pass across `out/KTU 1.*.tsv`, including global fixes for `ỉlmlk -> ʾIlimalku` and `kṯr (III)`/`ḫss` -> `Kôṯaru`/`Ḫasisu`.
 
 ## 2026-02-21
 
