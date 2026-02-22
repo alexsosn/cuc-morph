@@ -19,9 +19,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138133	d	d	d	det. or rel. functor	the one(s) of	
 138134	yknnh	!y!k(n[:l+h	/k-n/, -h (I)	vb, pers. pn.	to be, his /her	“who established/begot him” (Wyatt 1.4 i 5); suffix -h = 3ms.
 138135	yṣḥ	!y!ṣḥ[	/ṣ-ḥ/	vb	to exclaim	
-138136	aṯ	aṯ(r(t(II)/	ảṯrt (II)	DN	Asherah	split spelling with next token; restore ʾAṯirat.
+138136	aṯ	aṯ(r(t(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	split spelling with next token; restore ʾAṯirat.
 # KTU 1.4 I:7						
-138137	rt	(a(ṯrt(II)/	ảṯrt (II)	DN	Asherah	continuation of split aṯ + rt.
+138137	rt	(a(ṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	continuation of split aṯ + rt.
 138138	w	w	w	conj.	and	
 138139	bnh	bn(I)/+h	bn (I), -h (I)	n. m., pers. pn.	son, his /her	
 138140	i	i(I)/	ỉ (I)	interj.	woe	
@@ -44,7 +44,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 I:11						
 138154	k	k(III)	k (III)	Subordinating or completive functor	when	
 138155	bn	bn(I)/	bn (I)	n. m.	son	
-138156	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138156	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 # KTU 1.4 I:12						
 138157	mṯb	mṯb/	mṯb	n. m.	residence	
 138158	il	il(I)/	ỉl (I)	n. m.	god	
@@ -54,7 +54,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138161	mṯb	mṯb/	mṯb	n. m.	residence	
 138162	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 # KTU 1.4 I:14						
-138163	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138163	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138164	ym	ym(II)/	ym (II)	n. m.	sea	
 138165	mṯb	mṯb/	mṯb	n. m.	residence	
 # KTU 1.4 I:15						
@@ -71,9 +71,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138174	rb	rb(I)/	rb (I)	adj. m.	great	
 # KTU 1.4 I:18						
 138175	mṯb	mṯb/	mṯb	n. m.	residence	
-138176	arṣy	arṣy/	ảrṣy	DN	Arsay	
+138176	arṣy	arṣy/	ảrṣy	DN	Arṣay/Arsay	
 138177	bt	bt(I)/	bt (I)	n. f.	daughter	
-138178	yˤbdr	yˤbdr/	yʕbdr	DN	wide world	
+138178	yˤbdr	yˤbdr/	yʕbdr	DN	Yaʿibdarru/"(Daughter) of the Wide World"/attribute of ảrṣy, daughter of the god bʕl (etym. unc.)	
 # KTU 1.4 I:19						
 138179	ap	ap(I)	ảp (I)	adv.	also	TCS i 20 “I must also say this to you”
 138180	mṯn	mṯn/	mṯn	n. m.	repetition	
@@ -85,14 +85,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 I:21						
 138185	mgn	mgn(I)/	mgn (I)	n. m.	gift	
 138186	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
-138187	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138187	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138188	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 I:22						
 138189	mġẓ	mġẓ/	mġẓ	n. m.	present	
 138190	qnyt	qn(y[/t	/q-n-y/, -m (II)	vb, emph. or det. encl. morph.	to acquire, und das	“progenitress / mother” of the gods (Wyatt p91 n87; TCS “Mother of the gods”).
 138191	ilm	il(I)/m	ỉl (I)	n. m.	god	
 # KTU 1.4 I:23						
-138192	hyn	hyn/	hyn	DN	Ea of the Artisans	
+138192	hyn	hyn/	hyn	DN	Hayyānu/alt. name of the god kṯr (Kothar)	
 138193	ˤly	ˤly(I)/	ʕly (I)	adj. m.	most high	
 138194	l	l(I)	l (I)	prep.	to	
 138195	mpḫm	mpḫ/m	mpḫ	n. m.	bellows of the forge	
@@ -255,7 +255,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 II:13						
 138320	hlk	hlk[; hlk(I)/; hlk(II)	/h-l-k/; hlk (I); hlk (II)	vb; n. m.; deictic adv. functor	to go; walk; behold!	
 138321	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
-138322	aṯtrt	aṯr(t(II)/t	ảṯrt (II)	DN	Asherah	
+138322	aṯtrt	aṯr(t(II)/t	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 # KTU 1.4 II:14						
 138323	k	k(III)	k (III)	Subordinating or completive functor	when	
 138324	tˤn	!t!ˤn(y(I)[	/ʕ-n-y/ (I)	vb	to answer	
@@ -314,7 +314,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138365	aryy	ary(I)/+y	ảry (I), -y (I)	n. m., prep.	fellow, my	
 138366	ẓl	ẓl(I)/	ẓl (I)	n. m.	shade	
 138367	ksp	ksp/	ksp	n. m.	silver	
-138368	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138368	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 # KTU 1.4 II:27						
 138369	k	k(III)	k (III)	Subordinating or completive functor	when	
 138370	tˤn	!t!ˤn(y(I)[	/ʕ-n-y/ (I)	vb	to answer	
@@ -326,7 +326,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138375	ḫrṣ	ḫrṣ/	ḫrṣ	n. m.	gold	
 138376	šmḫ	!!šmḫ[/	/š-m-ḫ/	vb	to be glad	
 138377	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
-138378	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138378	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 # KTU 1.4 II:29						
 138379	ym	ym(II)/	ym (II)	n. m.	sea	
 138380	gm	g/~m	g	n. m.	(loud) voice	
@@ -340,7 +340,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 II:31						
 138387	dgy	dgy/	dgy	n. m.	triton	
 138388	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
-138389	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138389	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138390	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 II:32						
 138391	qḥ	(lqḥ[	/l-q-ḥ/	vb	to get hold of  take  grasp	
@@ -378,7 +378,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138415	w	w	w	conj.	and	
 138416	at	at(I)	ảt (I)	pers. pn.	you	
 # KTU 1.4 II:41						
-138417	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138417	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 # KTU 1.4 II:42						
 138418	b	b	b	prep.	in	
 138419	im	im	ỉm	conj.	if	
@@ -509,7 +509,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 III:25						
 138514	tmgnn	!t!mg(n&n[:d	/m-g-n/	vb	to wine and dine	DULAT /m-g-n/ also allows 'offer/present/entreat'; UNP ii 25-33 context favors petition/offering over 'regale'
 138515	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
-138516	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138516	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138517	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 III:26						
 138518	tġẓyn	!t!ġẓ(y&n[	/ġ-ẓ-y/	vb	to win over	DULAT /ġ-ẓ-y/: win over / contract eyes; UNP context favors beseech/win-over sense
@@ -519,14 +519,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138521	w	w	w	conj.	and	
 138522	tˤn	!t!ˤn(y(I)[	/ʕ-n-y/ (I)	vb	to answer	
 138523	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
-138524	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138524	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138525	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 III:28						
 138526	ik	ik	ỉk	interr. functor	how?	
 138527	tmgnn	!t!mg(n&n[:d	/m-g-n/	vb	to wine and dine	
 138528	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 # KTU 1.4 III:29						
-138529	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138529	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138530	ym	ym(II)/	ym (II)	n. m.	sea	
 138531	tġẓyn	!t!ġẓ(y&n[	/ġ-ẓ-y/	vb	to win over	
 # KTU 1.4 III:30						
@@ -551,7 +551,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 III:34						
 138547	km	k(I)+m	k (I), -m (I)	prep., morph.	like,	
 138548	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
-138549	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138549	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138550	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 III:35						
 138551	nġẓ	nġ(ṣ&ẓ[	/n-ġ-ṣ/	vb	to contract	UNP context suggests petition formula; current form matches DULAT /n-ġ-ṣ/ 'contract/shake' but remains semantically uncertain
@@ -567,7 +567,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138559	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 # KTU 1.4 III:38						
 138560	xxxrbt	ˤrb[; rbt(I)/; urbt/	/ʕ-r-b/ (I); rbt (I); ủrbt	vb; n. f.; n. f.	to enter; Lady; window	Initial signs broken (xxx-); TCS/UNP/Wyatt: “Great Lady”. UDB concordance pattern —rbt -> rbt, ủrbt, ʕrbt.
-138561	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138561	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138562	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 III:39						
 138563	xxxbtlt	btlt/	btlt	n. f.	virgin	initial signs broken (xxx-); TCS/UNP/Wyatt: “Virgin ʿAnatu”
@@ -626,19 +626,19 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138599	tˤn	!t!ˤn(y(I)[	/ʕ-n-y/ (I)	vb	to answer	
 138600	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 # KTU 1.4 IV:2						
-138601	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138601	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138602	ym	ym(II)/	ym (II)	n. m.	sea	
 138603	šmˤ	!!šmˤ[; šmˤ/	/š-m-ʕ/; šmʕ	vb; n. m.	to hear; auditor	DULAT supports both noun šmʕ and verb /š-m-ʕ/.';'UNP iv 1-4 imperative 'Hear!'
 138604	l	l(I)	l (I)	prep.	to	
 138605	qdš	qdš(I)/	qdš (I)	adj. m.	holy	
 # KTU 1.4 IV:3						
 138606	w	w	w	conj.	and	
-138607	amrr	amrr/	ảmrr	DN	Blessed	
+138607	amrr	amrr/	ảmrr	DN	“Blessed”, one of the two messenger-boys of the goddess ảṯrt	
 138608	l	l(I)	l (I)	prep.	to	
 138609	dgy	dgy/	dgy	n. m.	triton	
 138610	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
 # KTU 1.4 IV:4						
-138611	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138611	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138612	ym	ym(II)/	ym (II)	n. m.	sea	
 138613	mdl	mdl[; mdl(I)/; mdl(II)/	/m-d-l/; mdl (I); mdl (II)	vb; n. m.; n. m.	to bridle; riding gear; lightning (?)	
 138614	ˤr	ˤr(I)/	ʕr (I)	n. f.	city	
@@ -661,7 +661,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138627	yšmˤ	!y!šmˤ[	/š-m-ʕ/	vb	to hear  listen	
 138628	qdš	qdš(I)/	qdš (I)	adj. m.	holy	
 138629	w	w	w	conj.	and	
-138630	amrr	amrr/	ảmrr	DN	Blessed	
+138630	amrr	amrr/	ảmrr	DN	“Blessed”, one of the two messenger-boys of the goddess ảṯrt	
 # KTU 1.4 IV:9						
 138631	mdl	mdl[; mdl(I)/; mdl(II)/	/m-d-l/; mdl (I); mdl (II)	vb; n. m.; n. m.	to bridle; riding gear; lightning (?)	
 138632	ˤr	ˤr(I)/	ʕr (I)	n. f.	city	
@@ -684,10 +684,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138645	yḥbq	!y!ḥbq[	/ḥ-b-q/	vb	to embrace	
 138646	qdš	qdš(I)/	qdš (I)	adj. m.	holy	
 138647	w	w	w	conj.	and	
-138648	amrr	amrr/	ảmrr	DN	Blessed	
+138648	amrr	amrr/	ảmrr	DN	“Blessed”, one of the two messenger-boys of the goddess ảṯrt	
 # KTU 1.4 IV:14						
 138649	yštn	!y!št(y&n[	/š-t-y/	vb	to drink	DULAT maps this form to /š-t-y/ 'drink', but UNP iv 13-17 context is transport/placing Athirat; flagged for lexical reassessment
-138650	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138650	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138651	l	l(I)	l (I)	prep.	to	
 138652	bmt	bmt/t	bmt	n. f.	back	
 138653	ˤr	ˤr(I)/	ʕr (I)	n. f.	city	
@@ -697,11 +697,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138656	bmt	bmt/t	bmt	n. f.	back	
 138657	pḥl	pḥl/	pḥl	n. m.	ass	
 # KTU 1.4 IV:16						
-138658	qdš	qdš(I)/; qdš(III)/	qdš (I); qdš (III)	adj. m.; DN	holy; Qudsh	In UNP iv 16-17 this is name/title 'Qudsh' (paired with Amrr), not adjective.
+138658	qdš	qdš(I)/; qdš(III)/	qdš (I); qdš (III)	adj. m.; DN	holy; “The Holy One”, epithet of the god ỉl/“The Holy One”, name of one of the messenger-boys of the goddess ảṯrt	In UNP iv 16-17 this is name/title 'Qudsh' (paired with Amrr), not adjective.
 138659	yuḫdm	!y!uḫd[+m	/ʔ-ḫ-d(/ḏ)/, -m (I)	vb, morph.	to collect  to take,	likely /ʔ-ḫ-d(/ḏ)/ + enclitic -m; optional root notation in DULAT
 138660	šbˤr	šbˤr	šbʕr	→		
 # KTU 1.4 IV:17						
-138661	amrr	amrr/	ảmrr	DN	Blessed	
+138661	amrr	amrr/	ảmrr	DN	“Blessed”, one of the two messenger-boys of the goddess ảṯrt	
 138662	k	k(I)	k (I)	prep.	like	
 138663	kbkb	kbkb/	kbkb	n. m.	heavenly body	
 138664	l	l(I)	l (I)	prep.	to	
@@ -715,7 +715,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138670	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 138671	tbˤ	tbˤ[	/t-b-ʕ/	vb	to go	
 138672	mrym	mrym/	mrym	n. m.	height	
-138673	ṣpn	ṣpn/	ṣpn	TN	Ṣapānu	
+138673	ṣpn	ṣpn/	ṣpn	TN	Ṣapānu/Zaphon/the mountain dwelling of bʕl deified	
 # KTU 1.4 IV:20						
 138674	idk	id+k	ỉd, -k (I)	conj., pers. pn.	when, your(s)	
 138675	l	l(II)	l (II)	adv.	no	
@@ -779,7 +779,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138722	ik	ik	ỉk	interr. functor	how?	
 138723	mġyt	mġy[t	/m-ġ-y/	vb	to come	
 138724	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
-138725	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138725	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138726	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 IV:32						
 138727	ik	ik	ỉk	interr. functor	how?	
@@ -830,7 +830,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138764	w	w	w	conj.	and	
 138765	tˤn	!t!ˤn(y(I)[	/ʕ-n-y/ (I)	vb	to answer	
 138766	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
-138767	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138767	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138768	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 IV:41						
 138769	tḥmk	tḥm/+k	tḥm, -k (I)	n. m., pers. pn.	message, your(s)	
@@ -875,7 +875,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138801	yknnh	!y!k(n[:l+h	/k-n/, -h (I)	vb, pers. pn.	to be, his /her	
 138802	yṣḥ	!y!ṣḥ[	/ṣ-ḥ/	vb	to exclaim	
 # KTU 1.4 IV:49						
-138803	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138803	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138804	w	w	w	conj.	and	
 138805	bnh	bn(I)/+h	bn (I), -h (I)	n. m., pers. pn.	son, his /her	
 138806	ilt	il(t(I)/t	ỉlt (I)	n. f.	goddess	
@@ -895,7 +895,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138818	ḥẓr	ḥẓr/	ḥẓr	n. m.	mansion	
 138819	k	k(III)	k (III)	Subordinating or completive functor	when	
 138820	bn	bn(I)/	bn (I)	n. m.	son	
-138821	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138821	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 # KTU 1.4 IV:52						
 138822	mṯb	mṯb/	mṯb	n. m.	residence	
 138823	il	il(I)/	ỉl (I)	n. m.	god	
@@ -904,7 +904,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 IV:53						
 138826	mṯb	mṯb/	mṯb	n. m.	residence	
 138827	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
-138828	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138828	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138829	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 IV:54						
 138830	mṯb	mṯb/	mṯb	n. m.	residence	
@@ -922,9 +922,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138840	rb	rb(I)/	rb (I)	adj. m.	great	
 # KTU 1.4 IV:57						
 138841	mṯb	mṯb/	mṯb	n. m.	residence	
-138842	arṣy	arṣy/	ảrṣy	DN	Arsay	
+138842	arṣy	arṣy/	ảrṣy	DN	Arṣay/Arsay	
 138843	bt	bt(I)/	bt (I)	n. f.	daughter	
-138844	yˤbdr	yˤbdr/	yʕbdr	DN	wide world	
+138844	yˤbdr	yˤbdr/	yʕbdr	DN	Yaʿibdarru/"(Daughter) of the Wide World"/attribute of ảrṣy, daughter of the god bʕl (etym. unc.)	
 # KTU 1.4 IV:58						
 138845	w	w	w	conj.	and	
 138846	yˤn	!y!ˤn(y(I)[	/ʕ-n-y/ (I)	vb	to answer	
@@ -937,7 +937,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138852	ˤbd	ˤbd/; ˤbd[	ʕbd; /ʕ-b-d/	n. m.; vb	servant; to work (a field)	DULAT allows noun ʕbd 'servant'.';'UNP iv 58-62 nominal clause 'am I a servant...'
 138853	an	an(I)	ản (I)	pers. pn.	I	
 138854	ˤnn	ˤnn/	ʕnn	n. m.	manservant	
-138855	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138855	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 # KTU 1.4 IV:60						
 138856	p	p(I)	p (I)	conj. functor	and	
 138857	ˤbd	ˤbd/; ˤbd[	ʕbd; /ʕ-b-d/	n. m.; vb	servant; to work (a field)	Same clause as 138852, nominal 'servant'.
@@ -947,7 +947,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 IV:61						
 138861	hm	hm(II)	hm (II)	conj.	if	
 138862	amt	amt(I)/; amt(II)/	ảmt (I); ảmt (II)	n. f.; n. f.	maidservant; elbow	UNP iv 58-62 favors 'servant-girl'
-138863	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138863	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138864	tlbn	!t!lbn[	/l-b-n/	vb	to make bricks	
 # KTU 1.4 IV:62						
 138865	lbnt	lbnt/t	lbnt	n. f.	brick	
@@ -962,12 +962,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138873	ḥẓr	ḥẓr/	ḥẓr	n. m.	mansion	
 138874	k	k(III)	k (III)	Subordinating or completive functor	when	
 138875	bn	bn(I)/	bn (I)	n. m.	son	
-138876	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138876	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 # KTU 1.4 V:2						
 138877	w	w	w	conj.	and	
 138878	tˤn	!t!ˤn(y(I)[	/ʕ-n-y/ (I)	vb	to answer	
 138879	rbt	rbt(I)/	rbt (I)	n. f.	Lady	
-138880	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+138880	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138881	ym	ym(II)/	ym (II)	n. m.	sea	
 # KTU 1.4 V:3						
 138882	rbt	rbt/; rbt(I)/; rbt(II)/	rb(b)t; rbt (I); rbt (II)	num.; n. f.; n. f.	ten thousand; Lady; seine	
@@ -1075,7 +1075,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138964	ˤm	ˤm(I)	ʕm (I)	prep.	to	
 138965	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 138966	mrym	mrym/	mrym	n. m.	height	
-138967	ṣpn	ṣpn/	ṣpn	TN	Ṣapānu	
+138967	ṣpn	ṣpn/	ṣpn	TN	Ṣapānu/Zaphon/the mountain dwelling of bʕl deified	
 # KTU 1.4 V:24						
 138968	b	b	b	prep.	in	
 138969	alp	alp(I)/; alp(II)/	ảlp (I); ảlp (II)	n. m.; num.	(head of) cattle; (one	
@@ -1235,7 +1235,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139092	b	b	b	prep.	in	
 139093	tk	tk/	tk	n. m.	centre	
 139094	ṣrrt	ṣrrt/t	ṣrrt	n. f.	height(s)	
-139095	ṣpn	ṣpn/	ṣpn	TN	Ṣapānu	
+139095	ṣpn	ṣpn/	ṣpn	TN	Ṣapānu/Zaphon/the mountain dwelling of bʕl deified	
 # KTU 1.4 V:56						
 139096	alp	alp(I)/; alp(II)/	ảlp (I); ảlp (II)	n. m.; num.	(head of) cattle; (one	
 139097	šd	šd(I)/	šd (I)	n. m.	open field	
@@ -1295,7 +1295,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139141	w	w	w	conj.	and	
 139142	ḫss	ḫss/	ḫss	element of DN	Ḫasisu/Khasis	
 # KTU 1.4 VI:2						
-139143	tṯb	!t!ṯb[; !t!(yṯb[; tṯb/	/ṯ-b/; /y-ṯ-b/; tṯb	vb; vb; DN	to return; to sit down; tṯb	
+139143	tṯb	!t!ṯb[; !t!(yṯb[	/ṯ-b/; /y-ṯ-b/	vb; vb	to return; to sit down	
 139144	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 139145	lhwty	l(I)+hwt(I)/+y	l (I), hwt (I), -y (I)	prep., n. f., prep.	to, word, my	
 # KTU 1.4 VI:3						
@@ -1365,7 +1365,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 VI:15						
 139198	w	w	w	conj.	and	
 139199	ḫss	ḫss/	ḫss	element of DN	Ḫasisu/Khasis	
-139200	tṯb	!t!ṯb[; !t!(yṯb[; tṯb/	/ṯ-b/; /y-ṯ-b/; tṯb	vb; vb; DN	to return; to sit down; tṯb	
+139200	tṯb	!t!ṯb[; !t!(yṯb[	/ṯ-b/; /y-ṯ-b/	vb; vb	to return; to sit down	
 139201	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 139202	l	l(I)	l (I)	prep.	to	
 139203	hwty	hwt(I)/	hwt (I)	n. f.	word	
@@ -1522,7 +1522,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 VI:46						
 139324	šbˤm	šbˤ(I)/m; šbˤ/m	šbʕ (I); šbʕm	n. num.; n. num.	seven; seventy	
 139325	bn	bn(I)/	bn (I)	n. m.	son	
-139326	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	Asherah	
+139326	aṯrt	aṯrt(II)/	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 # KTU 1.4 VI:47						
 139327	špq	]š]pq[	/p-q/	vb	to obtain	
 139328	ilm	il(I)/m	ỉl (I)	n. m.	god	
@@ -1551,7 +1551,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 VI:52						
 139347	špq	]š]pq[	/p-q/	vb	to obtain	
 139348	ilht	il(t(I)/&ht	ỉlt (I)	n. f.	goddess	
-139349	ksat	ksa/t	ksả	DN	full moon	
+139349	ksat	ksa/t	ksả	DN	second component of the double-barrelled divine name yrḫ w ksả, a lunar deity	
 # KTU 1.4 VI:53						
 139350	špq	]š]pq[	/p-q/	vb	to obtain	
 139351	ilm	il(I)/m	ỉl (I)	n. m.	god	
@@ -1628,7 +1628,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139404	yxxx	yxxx	y	prep. functor	oh!	heavily broken token; unresolved
 139405	ilm	il(I)/m	ỉl (I)	n. m.	god	
 139406	b	b	b	prep.	in	
-139407	ṣpn	ṣpn/	ṣpn	TN	Ṣapānu	
+139407	ṣpn	ṣpn/	ṣpn	TN	Ṣapānu/Zaphon/the mountain dwelling of bʕl deified	
 # KTU 1.4 VII:7						
 139408	ˤdr	ˤdr	ʕdr[	PN		uncertain reading
 139409	lˤr	l(I)+ˤr(I)/	l (I), ʕr (I)	prep., n. f.	to, city	
@@ -1791,7 +1791,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139534	lm	lm(II)	lm (II)	interr. pn.	why?	
 139535	tḫš	!t!ḫš[	/ḫ-š/	vb	to tremble	
 139536	nṯq	nṯq/	nṯq	n. m.	missiles	
-139537	dmrn	dmrn/	dmrn	DN	the Powerful One	
+139537	dmrn	dmrn/	dmrn	DN	the Powerful One/Valiant One/title of Baal	
 # KTU 1.4 VII:40						
 139538	ˤn	ˤn(I)/	ʕn (I)	n. f.	eye	
 139539	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
@@ -1872,9 +1872,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139601	yṣḥ	!y!ṣḥ[	/ṣ-ḥ/	vb	to exclaim	
 139602	ˤn	ˤn(I)/	ʕn (I)	n. f.	eye	
 # KTU 1.4 VII:54						
-139603	gpn	gpn(I)/; gpn(III)/	gpn (I); gpn (III)	n. m.; DN	(vine-)stock; Gapn	UNP vii 52-56 messenger name Gapn/Gupanu; DULAT has gpn(III) [DN] alongside common-noun entries.
+139603	gpn	gpn(I)/; gpn(III)/	gpn (I); gpn (III)	n. m.; DN	(vine-)stock; Gupan/one of Baal’s messenger-boys	UNP vii 52-56 messenger name Gapn/Gupanu; DULAT has gpn(III) [DN] alongside common-noun entries.
 139604	w	w	w	conj.	and	
-139605	ugr	ugr(I)/; ugr(II)/	ủgr (I); ủgr (II)	n. m.; DN	field; Ugar	UNP vii 52-56 messenger name Ugar; DULAT has ủgr(I) [n.], ủgr(II) [DN], ủgr(III) [PN].
+139605	ugr	ugr(I)/; ugr(II)/	ủgr (I); ủgr (II)	n. m.; DN	field; Ugar/one of the two messenger-boys of Baal	UNP vii 52-56 messenger name Ugar; DULAT has ủgr(I) [n.], ủgr(II) [DN], ủgr(III) [PN].
 139606	bnġlmt	b+n+ġlmt(I)/; b+n+ẓlmt/	b, -n (I), ġlmt (I); b, -n (I), ẓlmt	prep., morph., n. f.; prep., morph., n. f.	in, Sun, damsel; in, Sun, darkness	likely segmented
 # KTU 1.4 VII:55						
 139607	ˤmm	ˤmm[	/ʕ-m-m/	vb	to be covered	
@@ -2083,7 +2083,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 VIII:47						
 139759	gpn	gpn(I)/	gpn (I)	n. m.	(vine-)stock	
 139760	w	w	w	conj.	and	
-139761	ugr	ugr(I)/; ugr(II)/	ủgr (I); ủgr (II)	n. m.; DN	field; Ugar	
+139761	ugr	ugr(I)/; ugr(II)/	ủgr (I); ủgr (II)	n. m.; DN	field; Ugar/one of the two messenger-boys of Baal	
 # KTU 1.4 VIII:48						
 139762	t	?	?	?	?	broken singleton sign; unresolved
 # KTU 1.4 VIII:49						

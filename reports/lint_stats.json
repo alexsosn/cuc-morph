@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-22T12:41:43.951591+00:00",
+  "generated_at_utc": "2026-02-22T13:52:22.021199+00:00",
   "files_checked": 278,
-  "total_issues": 8176,
-  "fallback_parsed": 561,
+  "total_issues": 8179,
+  "fallback_parsed": 562,
   "by_severity": {
-    "ERROR": 5684,
-    "WARNING": 789,
+    "ERROR": 5686,
+    "WARNING": 790,
     "INFO": 1519
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 4488
+      "count": 4490
     },
     {
       "severity": "INFO",
@@ -32,12 +32,12 @@
     {
       "severity": "ERROR",
       "problem_type": "DULAT comment does not match candidates",
-      "count": 96
+      "count": 97
     },
     {
       "severity": "ERROR",
       "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 95
+      "count": 94
     },
     {
       "severity": "ERROR",
@@ -802,6 +802,11 @@
     {
       "severity": "WARNING",
       "problem_type": "aṯtm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bbt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {

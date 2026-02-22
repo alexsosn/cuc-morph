@@ -1,27 +1,27 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `8176`
-- Fallback-parsed issue lines: `561`
+- Total issues: `8179`
+- Fallback-parsed issue lines: `562`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 5684 |
-| WARNING | 789 |
+| ERROR | 5686 |
+| WARNING | 790 |
 | INFO | 1519 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 4488 |
+| ERROR | Analysis does not reconstruct to surface | 4490 |
 | INFO | Surface not found in UDB concordance | 1519 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 392 |
 | ERROR | Non-G stem in DULAT requires stem marker | 124 |
-| ERROR | DULAT comment does not match candidates | 96 |
-| ERROR | Missing DULAT entry token(s) in column 4 | 95 |
+| ERROR | DULAT comment does not match candidates | 97 |
+| ERROR | Missing DULAT entry token(s) in column 4 | 94 |
 | ERROR | No DULAT entry found for lexeme/surface | 90 |
 | ERROR | Unknown DULAT token in column 4 | 79 |
 | WARNING | Suffix form without '+' | 78 |
@@ -175,6 +175,7 @@
 | WARNING | ašṣi Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | aḫd Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | aṯtm Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | bbt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | bdk Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | bir Noun POS should include DULAT gender marker for bỉr: n. f. | 1 |
 | WARNING | bny Lexeme parse did not match DULAT; matched by surface form | 1 |

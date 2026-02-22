@@ -2,6 +2,8 @@
 
 ## 2026-02-22
 
+- Re-applied the latest curated `data/onomastic_gloss_overrides.tsv` updates across all generated tablet outputs (`out/KTU *.tsv`), refreshing onomastic glosses in 58 files (218 rows).
+- Synced DN/PN/TN/MN/GN gloss payloads in regenerated outputs to the updated override table without changing pipeline code.
 - Added canonical variant-divider spacing normalization in `pipeline/steps/schema_formatter.py` for structured columns (`col3`-`col6`): semicolons and commas now render with one following space (e.g. `a;b` -> `a; b`, `x,y` -> `x, y`).
 - Added regression coverage in `tests/test_refinement_steps.py` for standard variant spacing and the edge case where the next variant begins with a clitic-leading comma.
 - Re-ran schema formatting over `out/KTU 1.*.tsv` so variant separators are consistently spaced in all parsed tablet outputs.

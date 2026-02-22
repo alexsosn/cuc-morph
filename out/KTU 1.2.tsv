@@ -21,7 +21,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.2 I:6						
 136043	b	b	b	prep.	in	
 136044	rišk	rišk(I)/	rỉš (I)	n. m.	head	
-136045	aymr	aymr/	ảymr	DN	ảymr	
+136045	aymr	aymr/	ảymr	DN	name of a magic mace	
 # KTU 1.2 I:7						
 136046	ṯpṭ	ṯpṭ[; ṯpṭ(II)/; ṯpṭ(I)/	/ṯ-p-ṭ/; ṯpṭ (II); ṯpṭ (I)	vb; n. m.; n. m.	to judge; judge; case	
 136047	nhr	nhr/	nhr	n. m.	river	
@@ -60,7 +60,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136074	tbˤ	tbˤ[	/t-b-ʕ/	vb	to go	
 136075	ġlmm	ġlm/+m(I); ġlm/+m(II)	ġlm, -m (I); ġlm, -m (II)	n. m., morph.; n. m., emph. or det. encl. morph.	boy, ; boy, und das (ist) so!	
 136076	al	al(I); al(II)	ảl (I); ảl (II)	neg. functor; pos. functor	no; surely	
-136077	tṯb	!t!ṯb[; !t!(yṯb[; tṯb/	/ṯ-b/; /y-ṯ-b/; tṯb	vb; vb; DN	to return; to sit down; tṯb	
+136077	tṯb	!t!ṯb[; !t!(yṯb[	/ṯ-b/; /y-ṯ-b/	vb; vb	to return; to sit down	
 136078	idk	idk	ỉdk	narrative adv. functor	then	
 136079	pnm	pn(m/m	pnm	n. m. pl. tant.	face	
 # KTU 1.2 I:14						
@@ -617,7 +617,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136561	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
 136562	yhpk	!y!hpk[	/h-p-k/	vb	to overturn	
 # KTU 1.2 III:18						
-136563	ksa	ksa/	ksả	DN	full moon	
+136563	ksa	ksa/	ksả	DN	second component of the double-barrelled divine name yrḫ w ksả, a lunar deity	
 136564	mlkk	mlkk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 136565	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
 136566	yṯbr	!y!ṯbr[	/ṯ-b-r/	vb	to break	
@@ -651,8 +651,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 136592	b	b	b	prep.	in	
 136593	npšny	npš(I)/+ny; npšn/+y(I); npšn/+y(II)	npš (I), -ny; npšn, -y (I); npšn, -y (II)	n. f., suff. pn. morph.; n. m., prep.; n. m., postp. functor	throat, our; place of / for ‘souls’, my; place of / for ‘souls’, yes	
 136594	trḥṣn	!t!rḥṣn[	/r-ḥ-ṣ/	vb	to wash	
-136595	kṯrmyṯb	kṯrmyṯb				DULAT: NOT FOUND
-136596	bbt	bbt(II)/; bbt(I)/	bbt (II); bbt (I)	DN; TN	superintendent; bbt (I)	
+136595	kṯrmyṯb	kṯr(I)(y(ṯ(b/m	kṯr (I)	adj. m.	skilful	UDB: k̊ṯrm [--]b̊ bh̊[t]
+136596	bbt	b bd(II)/	bd (II)	n. m.	separation/isolation	UDB: k̊ṯrm [--]b̊ bh̊[t]
 # KTU 1.2 III:21						
 136597	zbl	zbl(I)/; zbl(III)/	zbl (I); zbl (III)	n. m.; n. m.	prince; one carried	
 136598	ym	ym(I)/; ym(II)/	ym (I); ym (II)	n. m.; n. m.	day; sea	
@@ -887,8 +887,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.2 IV:19						
 136805	šmk	šm(I)/+k; šmk(I)/	šlm (I); šm (I)	n. m.; n. m.	peace; name	
 136806	at	at(I)/; at/; at(II)/	ảt (I); ṯảt; ảt (II)	pers. pn.; n. f.; n. f.	you; ewe; prodigious	
-136807	aymr	aymr/	ảymr	DN	ảymr	
-136808	aymr	aymr/	ảymr	DN	ảymr	
+136807	aymr	aymr/	ảymr	DN	name of a magic mace	
+136808	aymr	aymr/	ảymr	DN	name of a magic mace	
 136809	mr	mr(I)/; mr(IV)/; mr(II)/	mr (I); mr (IV); mr (II)	n. m.; adj. m.; adj. m.	myrrh; valiant; bitter	
 136810	ym	ym(I)/; ym(II)/	ym (I); ym (II)	n. m.; n. m.	day; sea	
 136811	mr	mr(I)/; mr(IV)/; mr(II)/	mr (I); mr (IV); mr (II)	n. m.; adj. m.; adj. m.	myrrh; valiant; bitter	
