@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-02-21T22:06:31.539474+00:00",
+  "generated_at_utc": "2026-02-22T10:11:37.100106+00:00",
   "files_checked": 139,
-  "total_issues": 6407,
-  "fallback_parsed": 541,
+  "total_issues": 6403,
+  "fallback_parsed": 537,
   "by_severity": {
     "ERROR": 4314,
-    "WARNING": 712,
+    "WARNING": 708,
     "INFO": 1197
   },
   "by_problem_type": [
@@ -247,11 +247,6 @@
     {
       "severity": "WARNING",
       "problem_type": "dry Noun POS should include DULAT gender marker for dr: n. m.",
-      "count": 4
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "l In offering-list sequences, parse 'l' as l(I) preposition",
       "count": 4
     },
     {

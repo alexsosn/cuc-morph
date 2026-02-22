@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-02-22
+
+- Added canonical variant-divider spacing normalization in `pipeline/steps/schema_formatter.py` for structured columns (`col3`-`col6`): semicolons and commas now render with one following space (e.g. `a;b` -> `a; b`, `x,y` -> `x, y`).
+- Added regression coverage in `tests/test_refinement_steps.py` for standard variant spacing and the edge case where the next variant begins with a clitic-leading comma.
+- Re-ran schema formatting over `out/KTU 1.*.tsv` so variant separators are consistently spaced in all parsed tablet outputs.
+
 ## 2026-02-21
 
 - Added lemma fallback indexing to `scripts/refine_results_mentions.py` so DULAT entries are considered even when `forms` has no matching rows for a token (for example `ủgrt` -> `ugrt`).

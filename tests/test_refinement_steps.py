@@ -1224,6 +1224,39 @@ class TsvSchemaFormatterTest(unittest.TestCase):
             self.assertEqual(lines[0], self.header)
             self.assertEqual(lines[1], self.separator)
 
+    def test_normalizes_variant_divider_spacing_in_structured_columns(self) -> None:
+        content = textwrap.dedent(
+            """\
+            # KTU 1.5 I:4
+            104\tabc\ta;b\tx,y;z,w\tp,q;r,s\tg1,g2;g3,g4\tc1;c2
+            """
+        )
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            f = Path(tmp_dir) / "test.tsv"
+            f.write_text(content, encoding="utf-8")
+            result = self.fixer.refine_file(f)
+            self.assertEqual(result.rows_changed, 3)
+            lines = f.read_text(encoding="utf-8").splitlines()
+            self.assertEqual(
+                lines[2],
+                "104\tabc\ta; b\tx, y; z, w\tp, q; r, s\tg1, g2; g3, g4\tc1;c2",
+            )
+
+    def test_keeps_space_after_semicolon_when_next_variant_starts_with_comma(self) -> None:
+        content = textwrap.dedent(
+            """\
+            # KTU 1.5 I:4
+            105\tabc\ta;b\tx,y\t, p1;, p2\t, g1;, g2\t
+            """
+        )
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            f = Path(tmp_dir) / "test.tsv"
+            f.write_text(content, encoding="utf-8")
+            result = self.fixer.refine_file(f)
+            self.assertEqual(result.rows_changed, 3)
+            lines = f.read_text(encoding="utf-8").splitlines()
+            self.assertEqual(lines[2], "105\tabc\ta; b\tx, y\t, p1; , p2\t, g1; , g2\t")
+
 
 class RefineFileIntegrationTest(unittest.TestCase):
     def test_refine_file_preserves_structure(self) -> None:

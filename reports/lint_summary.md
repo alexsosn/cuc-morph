@@ -1,15 +1,15 @@
 ## Morphology Lint Summary
 
 - Files checked: `139`
-- Total issues: `6407`
-- Fallback-parsed issue lines: `541`
+- Total issues: `6403`
+- Fallback-parsed issue lines: `537`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
 | ERROR | 4314 |
-| WARNING | 712 |
+| WARNING | 708 |
 | INFO | 1197 |
 
 ### By Problem Type
@@ -64,7 +64,6 @@
 | ERROR | D stem marker present but DULAT lacks D/Dt | 4 |
 | WARNING | bht Lexeme parse did not match DULAT; matched by surface form | 4 |
 | WARNING | dry Noun POS should include DULAT gender marker for dr: n. m. | 4 |
-| WARNING | l In offering-list sequences, parse 'l' as l(I) preposition | 4 |
 | WARNING | pat Lexeme parse did not match DULAT; matched by surface form | 4 |
 | WARNING | pḏh Noun POS should include DULAT gender marker for pḏ: n. m. | 4 |
 | WARNING | qṣˤt Lexeme parse did not match DULAT; matched by surface form | 4 |

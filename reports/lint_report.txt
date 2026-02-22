@@ -4903,7 +4903,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.40.tsv:413 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:28 148462 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:34 148467 bhtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:165 148580 mˤlt Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:183 148595 l In offering-list sequences, parse 'l' as l(I) preposition
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:188 148600 bhtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:250 148652 pamt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:250 148652 pamt Feminine plural noun in DULAT should be tagged with '/t='
@@ -4917,7 +4916,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.43.tsv:39 148
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.43.tsv:39 148809 pamt Feminine plural noun in DULAT should be tagged with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.43.tsv:71 148835 ˤnth Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.43.tsv:90 148851 ˤnth Suffix form without '+'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.46.tsv:105 149039 l In offering-list sequences, parse 'l' as l(I) preposition
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.48.tsv:12 149122 btm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.48.tsv:39 149141 aḥt Feminine adjective/participle in DULAT should mark '-t' explicitly
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.48.tsv:48 149148 aḥt Feminine adjective/participle in DULAT should mark '-t' explicitly
@@ -5004,7 +5002,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:34 150
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:161 150932 ḥṯm Noun POS should include DULAT gender marker for ḥṯ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:161 150932 ḥṯm Noun POS should include DULAT gender marker for ḥṯ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:172 150941 mˤlt Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:191 150957 l In offering-list sequences, parse 'l' as l(I) preposition
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:198 150963 bhtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:234 150993 nbk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:265 151019 pamt Lexeme parse did not match DULAT; matched by surface form
@@ -5014,7 +5011,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:271 15
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:312 151059 pamt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:312 151059 pamt Feminine plural noun in DULAT should be tagged with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:380 151118 šp Noun POS should include DULAT gender marker for šp: n. m.
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.90.tsv:59 151206 l In offering-list sequences, parse 'l' as l(I) preposition
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.91.tsv:41 151246 ršpm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.91.tsv:55 151257 bhtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.91.tsv:109 151296 bir Noun POS should include DULAT gender marker for bỉr: n. f.
@@ -6405,4 +6401,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:49 151516
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:75 151535 xẓk Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv:88 151545 šdr Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.98.tsv:23 151701 gˤl Surface not found in UDB concordance
-Total issues: 6407
+Total issues: 6403
