@@ -6,7 +6,7 @@ import re
 from pathlib import Path
 from typing import Optional, Sequence
 
-from pipeline.steps.analysis_utils import normalize_surface
+from pipeline.steps.analysis_utils import normalize_surface, reconstruct_surface_from_analysis
 from pipeline.steps.base import RefinementStep, TabletRow
 from pipeline.steps.dulat_gate import DulatMorphGate
 from pipeline.steps.onomastic_overrides import OnomasticOverrideStore
@@ -112,7 +112,12 @@ class FeminineTSingularSplitFixer(RefinementStep):
                 return value
             stem = unsplit_match.group("stem")
             homonym = unsplit_match.group("hom") or declared_homonym
-            return _render_feminine_t_split(stem=stem, homonym=homonym, lexical_t=lemma_has_final_t)
+            rewritten = _render_feminine_t_split(
+                stem=stem,
+                homonym=homonym,
+                lexical_t=lemma_has_final_t,
+            )
+            return _with_surface_terminal_m(rewritten, surface=surface)
 
         split_match = _SPLIT_FEM_T_RE.match(value)
         if not split_match:
@@ -122,7 +127,12 @@ class FeminineTSingularSplitFixer(RefinementStep):
 
         stem = split_match.group("stem")
         homonym = split_match.group("hom") or declared_homonym
-        return _render_feminine_t_split(stem=stem, homonym=homonym, lexical_t=True)
+        rewritten = _render_feminine_t_split(
+            stem=stem,
+            homonym=homonym,
+            lexical_t=True,
+        )
+        return _with_surface_terminal_m(rewritten, surface=surface)
 
     def _is_plural_dulat_token(self, token: str, surface: str = "") -> bool:
         if self._gate is None:
@@ -199,3 +209,19 @@ def _declared_homonym(dulat_slot: str) -> str:
     if not homonym:
         return ""
     return f"({homonym})"
+
+
+def _with_surface_terminal_m(analysis: str, surface: str) -> str:
+    """Append inflectional terminal m when analysis is one letter short."""
+    value = (analysis or "").strip()
+    if not value:
+        return value
+    if not value.endswith("/t"):
+        return value
+    surface_norm = normalize_surface(surface).lower()
+    if not surface_norm.endswith("m"):
+        return value
+    reconstructed = normalize_surface(reconstruct_surface_from_analysis(value)).lower()
+    if reconstructed == surface_norm[:-1]:
+        return f"{value}m"
+    return value

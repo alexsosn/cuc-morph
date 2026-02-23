@@ -21,6 +21,7 @@
 - Documented the rule-specific refinement workflow in `docs/feminine_t_singular_split_pipeline.md`.
 - Re-ran only the new feminine singular split rule across `out/KTU *.tsv`: 1,350 rows updated in 184 files (including `9837`, `138163`, `160344`).
 - Follow-up pass refined existing `/t` feminine splits for lexeme-final `-t` nouns to `...(t/t` and injected missing homonyms from declared DULAT tokens where needed (for example `9584`, `9588`): 624 rows updated in 143 files.
+- Added terminal-`m` reconstructability completion for lexeme-final `-t` feminine splits where surface ends with `tm` (for example `thmtm` -> `thm(t/tm`), applied in a rule-only pass (72 rows).
 
 ## 2026-02-22
 

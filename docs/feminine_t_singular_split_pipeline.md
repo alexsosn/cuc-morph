@@ -33,6 +33,7 @@ This pipeline rule targets unsplit feminine singular noun-like analyses where co
 - If declared DULAT lemma is not lexeme-final `-t`:
   - keep feminine singular split as `.../t`.
 - If analysis omits a homonym but declared DULAT token has one, inject it into transformed feminine split output (for example `b/t` + `bt (I)` -> `b(t(I)/t`).
+- If surface has a terminal `m` and transformed analysis reconstructs to exactly `surface[:-1]`, append terminal `m` after `/t` (for example `thmtm`: `thm(t/t` -> `thm(t/tm`).
 
 5. Post-check policy
 - Keep aligned column structure unchanged (`col4`-`col6` untouched by this step).

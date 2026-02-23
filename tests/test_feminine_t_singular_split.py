@@ -97,6 +97,12 @@ class FeminineTSingularSplitFixerTest(unittest.TestCase):
         result = fixer.refine_row(row)
         self.assertEqual(result.analysis, "thm(t/t")
 
+    def test_rewrites_simple_t_split_and_appends_terminal_m(self) -> None:
+        fixer = FeminineTSingularSplitFixer()
+        row = TabletRow("7b", "thmtm", "thm/t", "thmt", "n. f.", "Primordial Ocean", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "thm(t/tm")
+
     def test_rewrites_homonym_t_split_when_lemma_is_t_final(self) -> None:
         fixer = FeminineTSingularSplitFixer()
         row = TabletRow("8", "bt", "b(I)/t", "bt (I)", "n. f.", "daughter", "")
@@ -108,6 +114,12 @@ class FeminineTSingularSplitFixerTest(unittest.TestCase):
         row = TabletRow("8b", "bt", "b/t", "bt (I)", "n. f.", "daughter", "")
         result = fixer.refine_row(row)
         self.assertEqual(result.analysis, "b(t(I)/t")
+
+    def test_injects_homonym_and_appends_terminal_m(self) -> None:
+        fixer = FeminineTSingularSplitFixer()
+        row = TabletRow("8c", "btm", "b/t", "bt (I)", "n. f.", "daughter", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "b(t(I)/tm")
 
     def test_keeps_simple_t_split_when_lemma_is_not_t_final(self) -> None:
         fixer = FeminineTSingularSplitFixer()
