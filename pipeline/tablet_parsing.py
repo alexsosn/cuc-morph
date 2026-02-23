@@ -15,12 +15,15 @@ from pipeline.steps.baal_labourer_ktu1 import BaalLabourerKtu1Fixer
 from pipeline.steps.baal_plural import BaalPluralGodListFixer
 from pipeline.steps.base import RefinementStep
 from pipeline.steps.dulat_gate import DulatMorphGate
+from pipeline.steps.feminine_t_singular_split import FeminineTSingularSplitFixer
 from pipeline.steps.formula_bigram import FormulaBigramFixer
 from pipeline.steps.formula_trigram import FormulaTrigramFixer
+from pipeline.steps.generic_parsing_override import GenericParsingOverrideFixer
 from pipeline.steps.known_ambiguities import KnownAmbiguityExpander
 from pipeline.steps.ktu1_family_homonym_pruner import Ktu1FamilyHomonymPruner
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
+from pipeline.steps.onomastic_gloss import OnomasticGlossOverrideFixer
 from pipeline.steps.plural_split import PluralSplitFixer
 from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
@@ -61,6 +64,7 @@ class TabletParsingPipeline:
             FormulaBigramFixer(),
             OfferingListLPrepFixer(),
             PluralSplitFixer(gate=self.morph_gate),
+            FeminineTSingularSplitFixer(gate=self.morph_gate),
             BaalLabourerKtu1Fixer(),
             BaalPluralGodListFixer(),
             Ktu1FamilyHomonymPruner(dulat_db=self.config.dulat_db),
@@ -73,6 +77,8 @@ class TabletParsingPipeline:
             ),
             AttestationSortFixer(index=self.attestation_index),
             KnownAmbiguityExpander(),
+            OnomasticGlossOverrideFixer(),
+            GenericParsingOverrideFixer(),
             # Keep schema pass last so any content-changing steps still end in
             # strict 7-column/quote-safe TSV for GitHub rendering.
             TsvSchemaFormatter(),

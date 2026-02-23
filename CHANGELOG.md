@@ -1,5 +1,54 @@
 # Changelog
 
+## 2026-02-23
+
+- Added shared onomastic override loader `pipeline/steps/onomastic_overrides.py` with support for the updated three-column TSV format (`dulat`, `POS`, `gloss`) while keeping backward compatibility for two-column files.
+- Updated `pipeline/steps/onomastic_gloss.py` to consume the shared loader so gloss overrides now read the actual `gloss` column (not `POS`) from `data/onomastic_gloss_overrides.tsv`.
+- Added `FeminineTSingularSplitFixer` (`pipeline/steps/feminine_t_singular_split.py`) and wired it into `pipeline/tablet_parsing.py` to normalize feminine singular unsplit analyses:
+  - `Xt/ -> X/t`
+  - `Xt(I)/ -> X(t(I)/t`
+  - with conservative gates for feminine evidence, onomastic gender, and plural-form exclusion.
+- Refined feminine singular split behavior for lexeme-final `-t` nouns so DULAT reconstruction remains faithful:
+  - `Xt/ -> X(t/t`
+  - `X/t -> X(t/t`
+  - `Xt(I)/ -> X(t(I)/t`
+  - `X(I)/t -> X(t(I)/t`
+  - while preserving `.../t` for non-`t`-final lemmas.
+- Added dedicated tests for the new feminine singular split step and for three-column onomastic override parsing (`tests/test_feminine_t_singular_split.py`, `tests/test_onomastic_gloss_overrides_format.py`).
+- Extended linter predicates with `analysis_has_missing_feminine_singular_split` and added a noun-level warning for missing feminine singular `/t` splits in `linter/lint.py` plus predicate tests.
+- Extended linter predicates with `analysis_has_lexeme_t_split_without_reconstructed_t` and added a warning for lexeme-final `-t` nouns that use `/t` without reconstructed `(t`.
+- Added conservative linter fallback for feminine `/t` analyses so declared DULAT feminine headwords ending in `-t` can be validated via surface candidates when lexeme-only lookup omits them.
+- Documented the rule-specific refinement workflow in `docs/feminine_t_singular_split_pipeline.md`.
+- Re-ran only the new feminine singular split rule across `out/KTU *.tsv`: 1,350 rows updated in 184 files (including `9837`, `138163`, `160344`).
+- Follow-up pass refined existing `/t` feminine splits for lexeme-final `-t` nouns to `...(t/t` and injected missing homonyms from declared DULAT tokens where needed (for example `9584`, `9588`): 624 rows updated in 143 files.
+- Added terminal-`m` reconstructability completion for lexeme-final `-t` feminine splits where surface ends with `tm` (for example `thmtm` -> `thm(t/tm`), applied in a rule-only pass (72 rows).
+
+## 2026-02-22
+
+- Added generic surface-level parsing override support:
+  - new step `GenericParsingOverrideFixer` in `pipeline/steps/generic_parsing_override.py`,
+  - new curated source file `data/generic_parsing_overrides.tsv`,
+  - pipeline wiring in `pipeline/tablet_parsing.py` (runs near the end of refinement, before final schema formatting),
+  - unit coverage for full override application, optional-column preservation, and unresolved-row overrides.
+- Enforced clitic-`n` annotation style in linter (`linter/lint.py`): column 3 now flags homonym-marked enclitic notation (for example `+n(I)`, `~n(II)`, `[n(III)`, `-n(IV)`) and requires host-style forms (`+n`, `+n=`, `~n`, `[n`, `[n=`).
+- Updated `data/generic_parsing_overrides.tsv` high-frequency `n`/`tn` entries to host-style clitic notation in column 3 (no homonym numerals).
+- Re-applied the latest curated `data/onomastic_gloss_overrides.tsv` updates across all generated tablet outputs (`out/KTU *.tsv`), refreshing onomastic glosses in 58 files (218 rows).
+- Synced DN/PN/TN/MN/GN gloss payloads in regenerated outputs to the updated override table without changing pipeline code.
+- Added canonical variant-divider spacing normalization in `pipeline/steps/schema_formatter.py` for structured columns (`col3`-`col6`): semicolons and commas now render with one following space (e.g. `a;b` -> `a; b`, `x,y` -> `x, y`).
+- Added regression coverage in `tests/test_refinement_steps.py` for standard variant spacing and the edge case where the next variant begins with a clitic-leading comma.
+- Re-ran schema formatting over `out/KTU 1.*.tsv` so variant separators are consistently spaced in all parsed tablet outputs.
+- Added centralized onomastic gloss overrides file `data/onomastic_gloss_overrides.tsv` keyed by DULAT labels (with homonym markers where applicable).
+- Added `OnomasticGlossOverrideFixer` (`pipeline/steps/onomastic_gloss.py`) and wired it into `pipeline/tablet_parsing.py` so onomastic glosses are overridden from the source file and DN/PN/TN/MN/GN glosses are normalized to `ʾ/ʿ` (not `ʔ/ʕ/ˀ/ˁ`).
+- Added unit coverage for onomastic override behavior (direct override, slot-level override, non-onomastic guard, and transliteration normalization).
+- Applied the onomastic pass across `out/KTU 1.*.tsv`, including global fixes for `ỉlmlk -> ʾIlimalku` and `kṯr (III)`/`ḫss` -> `Kôṯaru`/`Ḫasisu`.
+
+## 2026-02-21
+
+- Added lemma fallback indexing to `scripts/refine_results_mentions.py` so DULAT entries are considered even when `forms` has no matching rows for a token (for example `ủgrt` -> `ugrt`).
+- Added `--only-not-found` mode to `scripts/refine_results_mentions.py` for targeted repopulation of rows marked `DULAT: NOT FOUND`, preserving unresolved rows (and their existing human comments) when no new candidates are found.
+- Added regression coverage in `tests/test_refine_results_mentions.py` to ensure lemma-only DULAT entries still produce candidates.
+- Re-ran targeted repopulation on `out/KTU 1.*.tsv`; 583 previously `DULAT: NOT FOUND` rows were filled from DULAT entry metadata.
+
 ## 2026-02-19
 
 - Reversed the temporary `tnn`-only fallback scope and restored global KTU1-family homonym preference in bootstrap fallback (`scripts/bootstrap_tablet_labeling.py`): for lemma fallback rows, prefer homonyms attested in `CAT/KTU 1.*` when available.

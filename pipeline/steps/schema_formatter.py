@@ -30,6 +30,8 @@ HEADER_COLUMNS = [
 HEADER_ROW = "\t".join(HEADER_COLUMNS)
 HEADER_COLUMNS_LOWER = [value.lower() for value in HEADER_COLUMNS]
 _RFC_QUOTED_FIELD_RE = re.compile(r'^"(?:[^"]|"")*"$')
+_SEMICOLON_VARIANT_RE = re.compile(r"\s*;\s*(?=\S)")
+_COMMA_VARIANT_RE = re.compile(r",\s*(?=\S)")
 
 
 class TsvSchemaFormatter(RefinementStep):
@@ -100,8 +102,20 @@ class TsvSchemaFormatter(RefinementStep):
         else:
             fixed = parts
 
+        # Keep variant separators readable in structured columns:
+        # "a;b" -> "a; b", "x,y" -> "x, y".
+        for index in (2, 3, 4, 5):
+            fixed[index] = self._normalize_variant_divider_spacing(fixed[index])
+
         escaped = [self._escape_field(part) for part in fixed]
         return "\t".join(escaped)
+
+    def _normalize_variant_divider_spacing(self, value: str) -> str:
+        if not value:
+            return value
+        normalized = _SEMICOLON_VARIANT_RE.sub("; ", value)
+        normalized = _COMMA_VARIANT_RE.sub(", ", normalized)
+        return normalized.strip()
 
     def _escape_field(self, value: str) -> str:
         # Canonicalize legacy escaping.

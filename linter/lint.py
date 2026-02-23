@@ -152,6 +152,7 @@ ANALYSIS_SURFACE_LETTER_RE = re.compile(r"[A-Za-zˤʔḫṣṯẓġḏḥṭšʕ
 _CLITIC_SUFFIX_SEGMENTS = ("hm", "hn", "km", "kn", "ny", "nm", "nn", "h", "k", "n", "y")
 _DECLARED_SUFFIX_NY_RE = re.compile(r",\s*-[ny](?:\s|\(|$)", flags=re.IGNORECASE)
 _DECLARED_LEMMA_LETTER_RE = re.compile(r"[^A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]")
+_HOMONYM_MARKED_N_CLITIC_RE = re.compile(r"(?:\+n=?|~n=?|\[n=?|-n=?)\((?:I|II|III|IV)\)")
 _OFFERING_SURFACES = {
     normalize_surface("gdlt"),
     normalize_surface("alp"),
@@ -406,10 +407,56 @@ def analysis_has_missing_plural_split(analysis: str, surface: str) -> bool:
     return False
 
 
+def analysis_has_missing_feminine_singular_split(analysis: str, surface: str) -> bool:
+    """True if analysis/surface pair strongly indicates missing feminine '/t' split."""
+    s_norm = normalize_surface(surface)
+    if not s_norm.endswith("t"):
+        return False
+
+    variants = split_semicolon_field(analysis) or [analysis]
+    for var in variants:
+        v = (var or "").strip()
+        if not v or "[" in v:
+            continue
+        if "/" not in v:
+            continue
+        if v.endswith(("/t", "/t=")):
+            continue
+        if not re.match(r"^.+t(?:\([IVX]+\))?/$", v):
+            continue
+        recon = normalize_surface(reconstruct_surface_from_analysis(v))
+        if recon == s_norm:
+            return True
+    return False
+
+
+def analysis_has_lexeme_t_split_without_reconstructed_t(analysis: str) -> bool:
+    """True when a '/t' split variant lacks lexical '(t' reconstruction."""
+    variants = split_semicolon_field(analysis) or [analysis]
+    for var in variants:
+        v = (var or "").strip()
+        if not v or "[" in v:
+            continue
+        if re.search(r"/t=(?=\s*$|[+;,])", v):
+            continue
+        if re.search(r"/t(?=\s*$|[+;,])", v) is None:
+            continue
+        base = re.split(r"/t(?=\s*$|[+;,])", v, maxsplit=1)[0]
+        if "(t" not in base:
+            return True
+    return False
+
+
 def analysis_has_invalid_enclitic_plus(analysis: str) -> bool:
     """True when analysis uses invalid '~+x' enclitic encoding."""
     variants = split_semicolon_field(analysis) or [analysis]
     return any("~+" in (v or "") for v in variants)
+
+
+def analysis_has_homonym_marked_n_clitic(analysis: str) -> bool:
+    """True when enclitic n is encoded with homonym numerals (invalid in col3)."""
+    variants = split_semicolon_field(analysis) or [analysis]
+    return any(_HOMONYM_MARKED_N_CLITIC_RE.search((v or "").strip()) for v in variants)
 
 
 def variant_has_lexeme_terminal_single_suffix_split(
@@ -978,6 +1025,17 @@ def parse_declared_dulat_token(token: str) -> Tuple[str, str]:
     lemma = (m.group(1) or "").strip()
     hom = (m.group(2) or "").strip()
     return lemma, hom
+
+
+def declared_lemma_looks_t_final(lemma: str) -> bool:
+    """Conservative check whether a declared DULAT lemma is t-final."""
+    normalized = normalize_surface((lemma or "").strip())
+    if not normalized:
+        return False
+    raw_letters = _DECLARED_LEMMA_LETTER_RE.sub("", normalized).lower()
+    normalized_no_tail_group = re.sub(r"\([^)]*\)\s*$", "", normalized).strip()
+    trimmed_letters = _DECLARED_LEMMA_LETTER_RE.sub("", normalized_no_tail_group).lower()
+    return raw_letters.endswith("t") or trimmed_letters.endswith("t")
 
 
 def extract_homonyms_for_lemma(analysis_field: str, dulat_field: str, lemma: str) -> set:
@@ -1816,6 +1874,18 @@ def lint_file(
                         "Enclitic marker '~' must not be followed by '+' (use '~n'/'~y')",
                     )
                 )
+            if analysis_has_homonym_marked_n_clitic(a_txt):
+                issues.append(
+                    Issue(
+                        "error",
+                        str(path),
+                        i,
+                        line_id,
+                        surface,
+                        a_txt,
+                        "Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+                    )
+                )
             if variant_has_lexeme_terminal_single_suffix_split(a_txt, d_field):
                 issues.append(
                     Issue(
@@ -2189,6 +2259,27 @@ def lint_file(
                     lexeme_candidates=lexeme_candidates,
                     surface_candidates=surface_candidates,
                 )
+                if (
+                    d_candidates
+                    and declared_head
+                    and declared_head.endswith("t")
+                    and surface_clean.endswith("t")
+                    and "/t" in analysis
+                ):
+                    declared_homonym = declared_hom or ""
+                    has_declared_match = any(
+                        c.lemma == declared_head and c.homonym == declared_homonym
+                        for c in d_candidates
+                    )
+                    if not has_declared_match and surface_candidates:
+                        declared_surface_matches = [
+                            c
+                            for c in surface_candidates
+                            if c.lemma == declared_head and c.homonym == declared_homonym
+                        ]
+                        if declared_surface_matches:
+                            d_candidates = dedupe_entries(d_candidates + declared_surface_matches)
+                            lookup_mode = "surface-fallback"
                 if d_candidates:
                     if is_verb:
                         vb_only = [c for c in d_candidates if "vb" in c.pos.lower()]
@@ -2426,6 +2517,55 @@ def lint_file(
                                 )
 
                         # Gender-aware checks from DULAT metadata.
+                        # For feminine singular noun forms, '/t' is the expected split ending.
+                        if (
+                            noun_like
+                            and has_f_gender
+                            and surface.endswith("t")
+                            and not surface_form_has_pl
+                            and not has_t_split
+                            and analysis_has_missing_feminine_singular_split(
+                                analysis=analysis,
+                                surface=surface_clean,
+                            )
+                            and not analysis_has_missing_plural_split(
+                                analysis=analysis,
+                                surface=surface_clean,
+                            )
+                        ):
+                            issues.append(
+                                Issue(
+                                    "warning",
+                                    str(path),
+                                    i,
+                                    line_id,
+                                    surface,
+                                    analysis,
+                                    "Feminine singular noun in DULAT should use '/t'",
+                                )
+                            )
+
+                        if (
+                            noun_like
+                            and has_f_gender
+                            and surface.endswith("t")
+                            and not surface_form_has_pl
+                            and declared_lemma_looks_t_final(head_lemma)
+                            and has_t_split
+                            and analysis_has_lexeme_t_split_without_reconstructed_t(analysis)
+                        ):
+                            issues.append(
+                                Issue(
+                                    "warning",
+                                    str(path),
+                                    i,
+                                    line_id,
+                                    surface,
+                                    analysis,
+                                    "Feminine noun with lexeme-final '-t' should use '(t' before '/t'",
+                                )
+                            )
+
                         # For feminine plural noun forms, '/t=' is the expected split ending.
                         if (
                             noun_like

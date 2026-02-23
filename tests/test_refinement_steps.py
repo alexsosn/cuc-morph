@@ -19,10 +19,12 @@ from pipeline.steps.base import (
 )
 from pipeline.steps.formula_bigram import FormulaBigramFixer
 from pipeline.steps.formula_trigram import FormulaTrigramFixer
+from pipeline.steps.generic_parsing_override import GenericOverride, GenericParsingOverrideFixer
 from pipeline.steps.known_ambiguities import KnownAmbiguityExpander
 from pipeline.steps.ktu1_family_homonym_pruner import Ktu1FamilyHomonymPruner
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
+from pipeline.steps.onomastic_gloss import OnomasticGlossOverrideFixer
 from pipeline.steps.plural_split import PluralSplitFixer
 from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
@@ -1151,6 +1153,160 @@ class AttestationSortFixerTest(unittest.TestCase):
         self.assertEqual(result.comment, "c2;c1")
 
 
+class OnomasticGlossOverrideFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = OnomasticGlossOverrideFixer(
+            overrides={
+                "ỉlmlk": "ʾIlimalku",
+                "kṯr (III)": "Kôṯaru",
+                "ḫss": "Ḫasisu",
+                "ỉl (I)": "ʾIlu",
+            }
+        )
+
+    def test_override_by_dulat_entry(self) -> None:
+        row = TabletRow(
+            line_id="1",
+            surface="ilmlk",
+            analysis="ilmlk/",
+            dulat="ỉlmlk",
+            pos="PN",
+            gloss="Ilimalku",
+            comment="",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.gloss, "ʾIlimalku")
+
+    def test_does_not_override_when_pos_is_not_onomastic(self) -> None:
+        row = TabletRow(
+            line_id="1b",
+            surface="il",
+            analysis="il(I)/",
+            dulat="ỉl (I)",
+            pos="n. m.",
+            gloss="god",
+            comment="",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.gloss, "god")
+
+    def test_override_applies_to_split_name_sequence(self) -> None:
+        row = TabletRow(
+            line_id="2",
+            surface="kṯr",
+            analysis="kṯr(III)/",
+            dulat="kṯr (III)",
+            pos="DN",
+            gloss="?",
+            comment="",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.gloss, "Kôṯaru")
+
+    def test_slot_level_override_preserves_non_name_clitic_slot(self) -> None:
+        row = TabletRow(
+            line_id="3",
+            surface="kṯrh",
+            analysis="kṯr(III)/+h(I)",
+            dulat="kṯr (III), -h (I)",
+            pos="DN, pers. pn.",
+            gloss="kṯr (III), his /her",
+            comment="",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.gloss, "Kôṯaru, his /her")
+
+    def test_normalizes_aleph_ayin_for_onomastic_pos_without_override(self) -> None:
+        row = TabletRow(
+            line_id="4",
+            surface="x",
+            analysis="x/",
+            dulat="x",
+            pos="TN",
+            gloss="ˀxʕyˁzʔ",
+            comment="",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.gloss, "ʾxʿyʿzʾ")
+
+
+class GenericParsingOverrideFixerTest(unittest.TestCase):
+    def test_applies_full_override_by_surface(self) -> None:
+        fixer = GenericParsingOverrideFixer(
+            overrides={
+                "n": GenericOverride(
+                    analysis="l(I)",
+                    dulat="l (I)",
+                    pos="prep.",
+                    gloss="to",
+                    comment="manual generic override",
+                )
+            }
+        )
+        row = TabletRow(
+            line_id="1",
+            surface="n",
+            analysis="l(I); ˤl(I); mġy[",
+            dulat="l (I); ʕl (I); /m-ġ-y/",
+            pos="prep.; prep.; vb",
+            gloss="to; upon; to come",
+            comment="",
+        )
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "l(I)")
+        self.assertEqual(result.dulat, "l (I)")
+        self.assertEqual(result.pos, "prep.")
+        self.assertEqual(result.gloss, "to")
+        self.assertEqual(result.comment, "manual generic override")
+
+    def test_blank_optional_columns_preserve_existing_values(self) -> None:
+        fixer = GenericParsingOverrideFixer(overrides={"km": GenericOverride(analysis="k(III)")})
+        row = TabletRow(
+            line_id="2",
+            surface="km",
+            analysis="k(III); k(I); k(IV)",
+            dulat="k (III); k (I); k (IV)",
+            pos="Subordinating or completive functor; prep.; adv.",
+            gloss="when; like; thus",
+            comment="existing note",
+        )
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "k(III)")
+        self.assertEqual(result.dulat, row.dulat)
+        self.assertEqual(result.pos, row.pos)
+        self.assertEqual(result.gloss, row.gloss)
+        self.assertEqual(result.comment, row.comment)
+
+    def test_applies_override_to_unresolved_row_during_file_run(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tlp\t?\t?\t?\t?\tDULAT: NOT FOUND\n"
+                ),
+                encoding="utf-8",
+            )
+            fixer = GenericParsingOverrideFixer(
+                overrides={
+                    "lp": GenericOverride(
+                        analysis="l+p(I)",
+                        dulat="l (I), p (I)",
+                        pos="prep., conj. functor",
+                        gloss="to, and",
+                        comment="manual resolution",
+                    )
+                }
+            )
+            result = fixer.refine_file(path)
+            self.assertEqual(result.rows_changed, 1)
+            line = path.read_text(encoding="utf-8").splitlines()[1]
+            self.assertEqual(
+                line,
+                "1\tlp\tl+p(I)\tl (I), p (I)\tprep., conj. functor\tto, and\tmanual resolution",
+            )
+
+
 class TsvSchemaFormatterTest(unittest.TestCase):
     def setUp(self) -> None:
         self.fixer = TsvSchemaFormatter()
@@ -1223,6 +1379,39 @@ class TsvSchemaFormatterTest(unittest.TestCase):
             lines = f.read_text(encoding="utf-8").splitlines()
             self.assertEqual(lines[0], self.header)
             self.assertEqual(lines[1], self.separator)
+
+    def test_normalizes_variant_divider_spacing_in_structured_columns(self) -> None:
+        content = textwrap.dedent(
+            """\
+            # KTU 1.5 I:4
+            104\tabc\ta;b\tx,y;z,w\tp,q;r,s\tg1,g2;g3,g4\tc1;c2
+            """
+        )
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            f = Path(tmp_dir) / "test.tsv"
+            f.write_text(content, encoding="utf-8")
+            result = self.fixer.refine_file(f)
+            self.assertEqual(result.rows_changed, 3)
+            lines = f.read_text(encoding="utf-8").splitlines()
+            self.assertEqual(
+                lines[2],
+                "104\tabc\ta; b\tx, y; z, w\tp, q; r, s\tg1, g2; g3, g4\tc1;c2",
+            )
+
+    def test_keeps_space_after_semicolon_when_next_variant_starts_with_comma(self) -> None:
+        content = textwrap.dedent(
+            """\
+            # KTU 1.5 I:4
+            105\tabc\ta;b\tx,y\t, p1;, p2\t, g1;, g2\t
+            """
+        )
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            f = Path(tmp_dir) / "test.tsv"
+            f.write_text(content, encoding="utf-8")
+            result = self.fixer.refine_file(f)
+            self.assertEqual(result.rows_changed, 3)
+            lines = f.read_text(encoding="utf-8").splitlines()
+            self.assertEqual(lines[2], "105\tabc\ta; b\tx, y\t, p1; , p2\t, g1; , g2\t")
 
 
 class RefineFileIntegrationTest(unittest.TestCase):

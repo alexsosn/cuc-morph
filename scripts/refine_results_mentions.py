@@ -361,6 +361,23 @@ def load_entries(
             continue
         forms_morph.setdefault((k, int(entry_id)), set()).add((morph or "").strip())
 
+    explicit_form_keys = set(forms_map.keys())
+
+    # Conservative fallback: if an entry lemma exists in DULAT but no
+    # corresponding form row exists for that exact token, index the lemma
+    # itself so unresolved rows are still populated from lexical metadata.
+    fallback_by_key: Dict[str, List[Entry]] = {}
+    for entry in entries_by_id.values():
+        lemma_key = normalize_lookup(entry.lemma)
+        if not lemma_key or " " in lemma_key:
+            continue
+        if lemma_key in explicit_form_keys:
+            continue
+        fallback_by_key.setdefault(lemma_key, []).append(entry)
+
+    for lemma_key, candidates in fallback_by_key.items():
+        forms_map.setdefault(lemma_key, []).extend(candidates)
+
     conn.close()
     return entries_by_id, forms_map, lemma_map, suffix_map, forms_morph
 
@@ -667,6 +684,7 @@ def refine_file(
     entry_ref_count: Dict[int, int],
     entry_tablets: Dict[int, Set[str]],
     entry_family_count: Dict[int, Dict[str, int]],
+    only_not_found: bool = False,
 ) -> Tuple[int, int]:
     lines = path.read_text(encoding="utf-8").splitlines()
     out_lines: List[str] = []
@@ -684,6 +702,11 @@ def refine_file(
 
         if not raw.strip() or raw.lstrip().startswith("#"):
             out_lines.append(raw)
+            continue
+
+        if only_not_found and "DULAT: NOT FOUND" not in raw:
+            out_lines.append(raw)
+            rows += 1
             continue
 
         comment = ""
@@ -727,6 +750,10 @@ def refine_file(
         )
 
         if not variants:
+            if only_not_found:
+                out_lines.append(raw)
+                rows += 1
+                continue
             new_parts = [line_id, surface, surface, "", "", "", "DULAT: NOT FOUND"]
         else:
             analyses: List[str] = []
@@ -773,6 +800,11 @@ def main() -> None:
     ap.add_argument("--udb-db", default="sources/udb_cache.sqlite")
     ap.add_argument("--in-place", action="store_true", help="Rewrite files in place")
     ap.add_argument("--out-dir", default="results", help="Output dir if not --in-place")
+    ap.add_argument(
+        "--only-not-found",
+        action="store_true",
+        help="Refine only rows currently marked with DULAT: NOT FOUND",
+    )
     args = ap.parse_args()
 
     _entries_by_id, forms_map, _lemma_map, suffix_map, forms_morph = load_entries(
@@ -798,6 +830,7 @@ def main() -> None:
             entry_ref_count,
             entry_tablets,
             entry_family_count,
+            only_not_found=args.only_not_found,
         )
         print(f"{src} -> {dst} | rows={rows} changed={changed}")
 

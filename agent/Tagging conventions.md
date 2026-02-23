@@ -65,13 +65,13 @@ The post-clitic particles are prefixed with "~".
 
 Feminine nouns ending on -t.
 In feminine nouns of which the lexeme ends on -t, the t is a nominal ending, and therefore needs to appear after the /. However, it is also part of the lexeme, so before the / it appears as (t, like this:
-am(t/t (I) for the lexeme amt (I) “female slave”. This is similar to >WL(T/T אִוֶּלֶת “foolishness” in Proverbs 12:23 in the ETCBC dataset of the MT. 
+am(t/t (I) for the lexeme amt (I) "female slave". This is similar to >WL(T/T אִוֶּלֶת "foolishness" in Proverbs 12:23 in the ETCBC dataset of the MT. 
 The plural of feminine words ending on -t is am(t/t=. -t= is the feminine plural marker.
-A noun that appears without the feminine -t in singular, but has it in plural gg, gg/t= “roof”. 
+A noun that appears without the feminine -t in singular, but has it in plural gg, gg/t= "roof". 
 
 In pluralia tantum, keep this split ending explicit and mark POS as `pl. tant.`/`pl. tant.?`.
 
-Adjectives and participles, e.g. kbd (IV) “splendour”. The feminine singular form is kbd/t and the feminine plural is kbd/t=.
+Adjectives and participles, e.g. dl "poor". The feminine singular form is dl/t and the feminine plural is dl/t=.
 
 Ugaritic corpus is different from the Biblical Hebrew or Syriac corpora, as it has no traditional vocalization, the alphabetic script is basically consonantal. Needless to say, the lack of vowels creates an additional difficulty for the grammatical tagging and disambiguation. However, Ugaritic has three aleph letters that partly report about the vocalization of the forms.  If aleph letters do not show different variants of vocalization of nominal forms, they are not further parsed. Some cases, involving three aleph letters, require special attention:
 
@@ -125,7 +125,7 @@ We use the following conventions to parse and disambiguate pronominal suffixes:
 Singular
 1cs	+y
 	+n=
-	+ny=
+	+ny
 2ms	+k
 	+nk
 2fs	+k=

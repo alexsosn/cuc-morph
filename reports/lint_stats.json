@@ -1,88 +1,128 @@
 {
-  "generated_at_utc": "2026-02-19T12:41:52.002354+00:00",
-  "files_checked": 139,
-  "total_issues": 6432,
-  "fallback_parsed": 456,
+  "generated_at_utc": "2026-02-23T11:00:28.880972+00:00",
+  "files_checked": 278,
+  "total_issues": 10602,
+  "fallback_parsed": 1155,
   "by_severity": {
-    "ERROR": 4425,
-    "WARNING": 627,
-    "INFO": 1197
+    "ERROR": 7506,
+    "WARNING": 1396,
+    "INFO": 1519
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3273
+      "count": 4331
     },
     {
       "severity": "INFO",
       "problem_type": "Surface not found in UDB concordance",
-      "count": 1197
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ʔ must be preceded by '(' in column 3",
-      "count": 299
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 157
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Non-G stem in DULAT requires stem marker",
-      "count": 98
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "DULAT comment does not match candidates",
-      "count": 91
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 91
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Unknown DULAT token in column 4",
-      "count": 77
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Noun/adjective lacks '/' ending",
-      "count": 72
+      "count": 1519
     },
     {
       "severity": "ERROR",
       "problem_type": "POS token not allowed for declared DULAT entry",
-      "count": 66
+      "count": 889
     },
     {
       "severity": "ERROR",
-      "problem_type": "Each reconstructed letter must be prefixed by '('",
-      "count": 63
+      "problem_type": "Column 5 count must match analysis variant count",
+      "count": 462
     },
     {
       "severity": "ERROR",
-      "problem_type": "Suffixed pronominal form in DULAT should use '+' in analysis",
-      "count": 42
+      "problem_type": "ʔ must be preceded by '(' in column 3",
+      "count": 392
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "Column 6 count should match analysis variant count",
+      "count": 355
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Missing DULAT entry token(s) in column 4",
+      "count": 170
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "DULAT comment does not match candidates",
+      "count": 166
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Non-G stem in DULAT requires stem marker",
+      "count": 124
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "No DULAT entry found for clitic part",
+      "count": 119
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Unknown DULAT token in column 4",
+      "count": 82
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "No DULAT entry found for lexeme/surface",
+      "count": 80
     },
     {
       "severity": "WARNING",
       "problem_type": "Suffix form without '+'",
-      "count": 40
+      "count": 79
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "gdlt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 77
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "y Lexeme parse did not match DULAT; matched by surface form",
+      "count": 71
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Suffixed pronominal form in DULAT should use '+' in analysis",
+      "count": 67
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Each reconstructed letter must be prefixed by '('",
+      "count": 65
     },
     {
       "severity": "WARNING",
       "problem_type": "TODO/uncertain marker in comment",
+      "count": 53
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "POS ambiguous in DULAT",
+      "count": 45
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Multiple DULAT candidates for surface",
+      "count": 43
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Column 4 count must match analysis variant count",
+      "count": 41
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ḥrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
       "count": 36
     },
     {
-      "severity": "WARNING",
-      "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
-      "count": 32
+      "severity": "ERROR",
+      "problem_type": "ṯkmn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 36
     },
     {
       "severity": "WARNING",
@@ -90,9 +130,19 @@
       "count": 30
     },
     {
-      "severity": "ERROR",
-      "problem_type": "No DULAT entry found for clitic part",
+      "severity": "WARNING",
+      "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
       "count": 29
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "Plural form missing split ending",
+      "count": 27
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Noun/adjective lacks '/' ending",
+      "count": 26
     },
     {
       "severity": "WARNING",
@@ -101,8 +151,23 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "Multiple DULAT candidates for lexeme",
-      "count": 21
+      "problem_type": "dtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 18
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "Feminine plural noun in DULAT should be tagged with '/t='",
+      "count": 16
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mid Lexeme parse did not match DULAT; matched by surface form",
+      "count": 16
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tṣḥn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 15
     },
     {
       "severity": "ERROR",
@@ -115,13 +180,13 @@
       "count": 13
     },
     {
-      "severity": "WARNING",
-      "problem_type": "Feminine plural noun in DULAT should be tagged with '/t='",
+      "severity": "ERROR",
+      "problem_type": "hyn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
       "count": 12
     },
     {
-      "severity": "WARNING",
-      "problem_type": "Plural form missing split ending",
+      "severity": "ERROR",
+      "problem_type": "ibrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
       "count": 12
     },
     {
@@ -135,8 +200,38 @@
       "count": 12
     },
     {
+      "severity": "WARNING",
+      "problem_type": "skn Lexeme parse did not match DULAT; matched by surface form",
+      "count": 12
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "špḥ Noun POS should include DULAT gender marker for špḥ: n. m.",
+      "count": 12
+    },
+    {
       "severity": "ERROR",
-      "problem_type": "Verb lacks '[' ending",
+      "problem_type": "Multiple DULAT candidates for lexeme",
+      "count": 10
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ddn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 9
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tldn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 9
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "wn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 9
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)",
       "count": 9
     },
     {
@@ -145,18 +240,13 @@
       "count": 9
     },
     {
-      "severity": "ERROR",
-      "problem_type": "POS tokens must map to existing DULAT tokens in column 4",
-      "count": 8
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "km Lexeme parse did not match DULAT; matched by surface form",
-      "count": 8
-    },
-    {
       "severity": "WARNING",
       "problem_type": "mrkbt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 8
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "qšt Lexeme parse did not match DULAT; matched by surface form",
       "count": 8
     },
     {
@@ -171,12 +261,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "Deverbal form marked with '[' but only noun entry found in DULAT",
-      "count": 7
+      "problem_type": "ˤrpt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 8
     },
     {
       "severity": "WARNING",
-      "problem_type": "mid Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "ilht Lexeme parse did not match DULAT; matched by surface form",
       "count": 7
     },
     {
@@ -190,6 +280,51 @@
       "count": 7
     },
     {
+      "severity": "ERROR",
+      "problem_type": "mntn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "npškn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "rdn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "sdn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tˤrbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ytnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "śzn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "štnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ḥwtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 6
+    },
+    {
       "severity": "WARNING",
       "problem_type": "tbˤ Lexeme parse did not match DULAT; matched by surface form",
       "count": 6
@@ -200,8 +335,13 @@
       "count": 6
     },
     {
-      "severity": "ERROR",
-      "problem_type": "POS ambiguous in DULAT",
+      "severity": "WARNING",
+      "problem_type": "Deverbal form marked with '[' but only noun entry found in DULAT",
+      "count": 5
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bmt Lexeme parse did not match DULAT; matched by surface form",
       "count": 5
     },
     {
@@ -216,7 +356,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "t Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "rḥbt Lexeme parse did not match DULAT; matched by surface form",
       "count": 5
     },
     {
@@ -230,8 +370,23 @@
       "count": 5
     },
     {
+      "severity": "WARNING",
+      "problem_type": "yḥ Lexeme parse did not match DULAT; matched by surface form",
+      "count": 5
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šp Noun POS should include DULAT gender marker for šp: n. m.",
+      "count": 5
+    },
+    {
       "severity": "ERROR",
       "problem_type": "D stem marker present but DULAT lacks D/Dt",
+      "count": 4
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tšabn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
       "count": 4
     },
     {
@@ -241,17 +396,32 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "dry Noun POS should include DULAT gender marker for dr: n. m.",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "l Formula idk l ytn should use a single l(III) reading",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lbnt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "pat Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
     },
     {
       "severity": "WARNING",
-      "problem_type": "qṣˤt Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "pḏh Noun POS should include DULAT gender marker for pḏ: n. m.",
       "count": 4
     },
     {
       "severity": "WARNING",
-      "problem_type": "skn Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "qṣˤt Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
     },
     {
@@ -266,11 +436,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "yḥ Lexeme parse did not match DULAT; matched by surface form",
-      "count": 4
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ḥmyt Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
     },
@@ -281,7 +446,212 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "POS tokens must map to existing DULAT tokens in column 4",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Verb lacks '[' ending",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "atnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "bltn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "byn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "bˤlyn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ggn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "iphn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "iḫn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "krn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "kṯn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "lbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "lbšn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "lytn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "lḥn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "mln Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "pṯtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "rišyn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "rn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "rḥbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "rḫnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "snrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tbˤn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tddn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tmrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tqdmnnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "trmn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ttlkn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tˤtqnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tṣun Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tṯbrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tṯṯkrnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ymlun Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ynḥtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yrdn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yšrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yṣan Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yṯnyn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "Š stem marker present but DULAT lacks Š/Št/Špass",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ḥdṯn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "aḫt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bnwt Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
     {
@@ -311,17 +681,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "lḥn Noun POS should include DULAT gender marker for lḥ (II): n. m.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mrkbthm Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
     {
       "severity": "WARNING",
       "problem_type": "mṭˤt Lexeme parse did not match DULAT; matched by surface form",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "n Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
     {
@@ -336,6 +706,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "npk Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "nšq Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
@@ -346,7 +721,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "r Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "thmt Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
     {
@@ -361,7 +736,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "zt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "šˤtqt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤdmt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḏrˤ Noun POS should include DULAT gender marker for ḏrʕ (I): n. f.",
       "count": 3
     },
     {
@@ -370,13 +760,63 @@
       "count": 3
     },
     {
+      "severity": "WARNING",
+      "problem_type": "ḫsn Noun POS should include DULAT gender marker for ḫsn (I): n. m.",
+      "count": 3
+    },
+    {
       "severity": "ERROR",
       "problem_type": "Xt stem marker present but DULAT lacks *t stem",
       "count": 2
     },
     {
+      "severity": "ERROR",
+      "problem_type": "rdnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tmṭrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tšˤlynh Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "un Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yˤtqn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ˤmn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "Morphology placeholder '?' should use unresolved DULAT placeholder '?' in column 4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "alit Feminine singular noun in DULAT should use '/t'",
+      "count": 2
+    },
+    {
       "severity": "WARNING",
       "problem_type": "arṯm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "aylt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -406,7 +846,42 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "dnh Noun POS should include DULAT gender marker for dn (I): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "dġṯt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "gmrm Noun POS should include DULAT gender marker for gmr: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ibˤlt Feminine singular noun in DULAT should use '/t'",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "kb Adjective POS should include DULAT gender marker for kb (I): adj. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "kb Noun POS should include DULAT gender marker for kb (II): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "klnyy Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "knyt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -426,12 +901,47 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "kst Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "l Formula tbˤ w l yṯb ilm should use a single l(II) reading",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lbt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mddt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mqmm Noun POS should include DULAT gender marker for mqm: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mrzḥh Noun POS should include DULAT gender marker for mrzḥ: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mšspdt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
       "severity": "WARNING",
       "problem_type": "mˤlt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mḥrṯth Noun POS should include DULAT gender marker for mḥrṯt: n. f.",
       "count": 2
     },
     {
@@ -446,7 +956,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "npk Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "pit Noun POS should include DULAT gender marker for pỉt: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "pitm Noun POS should include DULAT gender marker for pỉt: n. m.",
       "count": 2
     },
     {
@@ -456,7 +971,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "pnt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "pnth Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "prˤt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "prṯt Feminine singular noun in DULAT should use '/t'",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "prṯt Noun POS should include DULAT gender marker for prṯt: n. f.",
       "count": 2
     },
     {
@@ -521,6 +1056,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "udmˤt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "un Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
@@ -546,12 +1086,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "yḥmrm Noun POS should include DULAT gender marker for yḥmr: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "yṣa Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
       "severity": "WARNING",
       "problem_type": "yṯir Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ġzrh Noun POS should include DULAT gender marker for ġzr: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šb Noun POS should include DULAT gender marker for šb: n. m.",
       "count": 2
     },
     {
@@ -576,6 +1131,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "špḥh Noun POS should include DULAT gender marker for špḥ: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "šˤrt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
@@ -591,13 +1151,23 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ˤṣrm Noun POS should include DULAT gender marker for ʕṣr (I): n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḥtkk Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
-      "severity": "ERROR",
-      "problem_type": "Column 4 count must match analysis variant count",
-      "count": 1
+      "severity": "WARNING",
+      "problem_type": "ḥṯm Noun POS should include DULAT gender marker for ḥṯ: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṣrrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
     },
     {
       "severity": "ERROR",
@@ -605,23 +1175,148 @@
       "count": 1
     },
     {
-      "severity": "WARNING",
-      "problem_type": "Column 6 count should match analysis variant count",
+      "severity": "ERROR",
+      "problem_type": "anḫn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "aṯbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ilšnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "nn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "pkn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "taršn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tbkynh Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tbqˤnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tdrˤnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tkbdnh Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tmġyn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tqbrnh Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "txxrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tšrpnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tštnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tšṣqnh Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "tṭḥnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ylḥn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ymṣḫn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yngḥn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ynṯkn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ystrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ytˤn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "yṯṯbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ˤdbnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ˤln Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ˤrbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ḥnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
       "count": 1
     },
     {
       "severity": "WARNING",
       "problem_type": "Plurale tantum noun ending in '-m' should mark plural with '/m'",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "a Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "alp Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -642,6 +1337,16 @@
     {
       "severity": "WARNING",
       "problem_type": "argmnk Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "argmnm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "argmny Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -676,12 +1381,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "aṯr Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.'",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "aṯtm Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
       "severity": "WARNING",
+      "problem_type": "bbt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "bdk Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bir Noun POS should include DULAT gender marker for bỉr: n. f.",
       "count": 1
     },
     {
@@ -716,7 +1436,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "d Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "bˤrk Adjective POS should include DULAT gender marker for bʕr: adj. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "dkrt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -732,6 +1457,16 @@
     {
       "severity": "WARNING",
       "problem_type": "gršnn Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "gˤt Feminine singular noun in DULAT should use '/t'",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "gˤt Noun POS should include DULAT gender marker for gʕt: n. f.",
       "count": 1
     },
     {
@@ -776,6 +1511,16 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "kdrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ksiy Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ktpm Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -786,7 +1531,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "lbu Noun POS should include DULAT gender marker for lbủ: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "llim Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lḥk Noun POS should include DULAT gender marker for lḥ (I): n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lḥk Noun POS should include DULAT gender marker for lḥ (II): n. m.",
       "count": 1
     },
     {
@@ -797,6 +1557,16 @@
     {
       "severity": "WARNING",
       "problem_type": "mat Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mhyt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "midm Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -826,12 +1596,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "mnḫ Noun POS should include DULAT gender marker for mnḫ: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mri Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
       "severity": "WARNING",
+      "problem_type": "mrzḥ Noun POS should include DULAT gender marker for mrzḥ: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mtt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mˤt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -842,6 +1627,16 @@
     {
       "severity": "WARNING",
       "problem_type": "mṭm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mṭt Feminine singular noun in DULAT should use '/t'",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mṭt Noun POS should include DULAT gender marker for mṭt: n. f.",
       "count": 1
     },
     {
@@ -906,6 +1701,26 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "pglt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "prt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ptr Noun POS should include DULAT gender marker for ptr: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "pšt Feminine singular noun in DULAT should use '/t'",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "pˤrt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -916,7 +1731,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "q Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "qdš Adjective POS should include DULAT gender marker for qdš (I): adj. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "qdš Noun POS should include DULAT gender marker for qdš (I): n. m.",
       "count": 1
     },
     {
@@ -946,7 +1766,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "rˤt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "smkt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "sprt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1002,6 +1832,11 @@
     {
       "severity": "WARNING",
       "problem_type": "trḥṣn Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "twḥln Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1121,6 +1956,26 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ġll Noun POS should include DULAT gender marker for ġll (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ġrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šal Noun POS should include DULAT gender marker for šảl: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šbrd Noun POS should include DULAT gender marker for šbr: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "šdmth Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1161,6 +2016,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ˤp Noun POS should include DULAT gender marker for ʕp (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḥblm Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1186,7 +2046,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ḥṭbt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḥṭt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḫprt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1206,6 +2076,16 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ṣt Feminine singular noun in DULAT should use '/t'",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṣt Noun POS should include DULAT gender marker for ṣt: n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ṯat Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1217,6 +2097,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ṯbtk Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṯknt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
