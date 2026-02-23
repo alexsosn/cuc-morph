@@ -1,14 +1,14 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `10534`
-- Fallback-parsed issue lines: `990`
+- Total issues: `10532`
+- Fallback-parsed issue lines: `988`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 7599 |
+| ERROR | 7597 |
 | WARNING | 1229 |
 | INFO | 1519 |
 
@@ -225,7 +225,6 @@
 | WARNING | ḥtkk Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ḥṯm Noun POS should include DULAT gender marker for ḥṯ: n. m. | 2 |
 | ERROR | Disallowed character in columns 2-3: ʕ | 1 |
-| ERROR | abn Expected exactly 7 columns in out/*.tsv row, got 8 | 1 |
 | ERROR | anḫn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
 | ERROR | aṯbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
 | ERROR | ilšnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
@@ -251,7 +250,6 @@
 | ERROR | ystrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
 | ERROR | ytˤn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
 | ERROR | yṯṯbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | ġr Expected exactly 7 columns in out/*.tsv row, got 6 | 1 |
 | ERROR | ˤdbnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
 | ERROR | ˤln Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
 | ERROR | ˤrbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |

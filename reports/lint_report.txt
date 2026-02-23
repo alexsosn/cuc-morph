@@ -4915,8 +4915,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.57.tsv:21 14932
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.57.tsv:25 149327 nn Analysis does not reconstruct to surface (reconstructs as: grš)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.57.tsv:25 149327 nn Analysis does not reconstruct to surface (reconstructs as: gr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.58.tsv:4 149332 m Analysis does not reconstruct to surface (reconstructs as: l)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:6 140453 ġr Expected exactly 7 columns in out/*.tsv row, got 6
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:8 140455 abn Expected exactly 7 columns in out/*.tsv row, got 8
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:10 140457 psltm Analysis does not reconstruct to surface (reconstructs as: pslm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:15 140461 lḥm POS token 'n. f. du.' not allowed for lḥ (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:18 140464 tṯlṯ Non-G stem in DULAT requires stem marker
@@ -10575,4 +10573,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:18 161199 
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:19 161200 ag Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:21 161201 rškm Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:51 161222 dˤmnk Surface not found in UDB concordance
-Total issues: 10534
+Total issues: 10532
