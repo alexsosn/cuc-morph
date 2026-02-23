@@ -1,34 +1,34 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `10529`
-- Fallback-parsed issue lines: `987`
+- Total issues: `10534`
+- Fallback-parsed issue lines: `990`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 7601 |
-| WARNING | 1228 |
+| ERROR | 7599 |
+| WARNING | 1229 |
 | INFO | 1519 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 4405 |
+| ERROR | Analysis does not reconstruct to surface | 4402 |
 | INFO | Surface not found in UDB concordance | 1519 |
 | ERROR | POS token not allowed for declared DULAT entry | 889 |
-| ERROR | Column 5 count must match analysis variant count | 464 |
+| ERROR | Column 5 count must match analysis variant count | 462 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 392 |
-| WARNING | Column 6 count should match analysis variant count | 357 |
+| WARNING | Column 6 count should match analysis variant count | 355 |
 | ERROR | DULAT comment does not match candidates | 184 |
 | ERROR | Missing DULAT entry token(s) in column 4 | 170 |
 | ERROR | Non-G stem in DULAT requires stem marker | 124 |
 | ERROR | No DULAT entry found for clitic part | 119 |
 | ERROR | Unknown DULAT token in column 4 | 82 |
 | ERROR | No DULAT entry found for lexeme/surface | 79 |
-| WARNING | Suffix form without '+' | 78 |
+| WARNING | Suffix form without '+' | 79 |
 | WARNING | y Lexeme parse did not match DULAT; matched by surface form | 71 |
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 67 |
 | ERROR | Each reconstructed letter must be prefixed by '(' | 65 |
@@ -39,9 +39,9 @@
 | ERROR | ḥrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 36 |
 | ERROR | ṯkmn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 36 |
 | WARNING | Feminine adjective/participle in DULAT should mark '-t' explicitly | 32 |
-| WARNING | Feminine plural noun in DULAT should use '/t=' | 29 |
+| WARNING | Feminine plural noun in DULAT should use '/t=' | 30 |
 | WARNING | Plural form missing split ending | 27 |
-| ERROR | Noun/adjective lacks '/' ending | 25 |
+| ERROR | Noun/adjective lacks '/' ending | 26 |
 | WARNING | aṯt Lexeme parse did not match DULAT; matched by surface form | 22 |
 | ERROR | dtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 18 |
 | WARNING | Feminine plural noun in DULAT should be tagged with '/t=' | 16 |
@@ -225,6 +225,7 @@
 | WARNING | ḥtkk Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ḥṯm Noun POS should include DULAT gender marker for ḥṯ: n. m. | 2 |
 | ERROR | Disallowed character in columns 2-3: ʕ | 1 |
+| ERROR | abn Expected exactly 7 columns in out/*.tsv row, got 8 | 1 |
 | ERROR | anḫn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
 | ERROR | aṯbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
 | ERROR | ilšnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
@@ -250,6 +251,7 @@
 | ERROR | ystrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
 | ERROR | ytˤn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
 | ERROR | yṯṯbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
+| ERROR | ġr Expected exactly 7 columns in out/*.tsv row, got 6 | 1 |
 | ERROR | ˤdbnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
 | ERROR | ˤln Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
 | ERROR | ˤrbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
@@ -267,6 +269,7 @@
 | WARNING | ašld Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ašṣi Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | aḫd Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | aṯr Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.' | 1 |
 | WARNING | aṯtm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | bbt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | bdk Lexeme parse did not match DULAT; matched by surface form | 1 |

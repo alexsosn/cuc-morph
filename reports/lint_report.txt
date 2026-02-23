@@ -4915,17 +4915,15 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.57.tsv:21 14932
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.57.tsv:25 149327 nn Analysis does not reconstruct to surface (reconstructs as: grš)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.57.tsv:25 149327 nn Analysis does not reconstruct to surface (reconstructs as: gr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.58.tsv:4 149332 m Analysis does not reconstruct to surface (reconstructs as: l)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:6 140453 ġr Expected exactly 7 columns in out/*.tsv row, got 6
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:8 140455 abn Expected exactly 7 columns in out/*.tsv row, got 8
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:10 140457 psltm Analysis does not reconstruct to surface (reconstructs as: pslm)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:15 140461 lḥm POS token 'n. f. du.' not allowed for lḥ (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:18 140464 tṯlṯ Non-G stem in DULAT requires stem marker
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:23 140468 km Column 5 count must match analysis variant count
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:23 140468 km POS token 'functor' not allowed for k (III); choose one of: subordinating or completive functor
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:23 140468 km Analysis does not reconstruct to surface (reconstructs as: k)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:23 140468 km Analysis does not reconstruct to surface (reconstructs as: k)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:23 140468 km Analysis does not reconstruct to surface (reconstructs as: k)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:23 140468 km Analysis does not reconstruct to surface (reconstructs as: kmkm)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:28 140472 k Column 5 count must match analysis variant count
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:28 140472 k POS token 'Subordinating or completive functor' not allowed for -k (I); choose one of: morph., pers. pn.
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:28 140472 k POS token 'emph. functor' not allowed for k (III); choose one of: subordinating or completive functor
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:22 140467 tḥrṯ POS token 'vb G' not allowed for /ḥ-r-ṯ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:30 140474 tṯlṯ Non-G stem in DULAT requires stem marker
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:38 140481 dgn POS token 'DN' not allowed for dgn (I); choose one of: n
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:42 140484 aṯr Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:58 140497 tšt DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:59 140498 k Column 5 count must match analysis variant count
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:59 140498 k POS token 'Subordinating or completive functor' not allowed for -k (I); choose one of: morph., pers. pn.
@@ -8567,8 +8565,9 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.50.tsv:44 149
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.50.tsv:45 149250 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.54.tsv:38 149282 trḫ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.57.tsv:18 149322 bhtm Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:23 140468 km Column 6 count should match analysis variant count
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:28 140472 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:21 140466 ḏrˤh Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:31 140475 bmt Feminine plural noun in DULAT should use '/t='
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:42 140484 aṯr Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:59 140498 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:62 140501 gm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:88 140522 k Column 6 count should match analysis variant count
@@ -9992,6 +9991,12 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.57.tsv:3 149312 
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.57.tsv:11 149317 kšu Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.57.tsv:12 149318 pš Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.57.tsv:28 149329 mgx Surface not found in UDB concordance
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  ġr Surface ġr parsed inconsistently: ġr(I)/ (ids: 140810); ġr(III)/ (ids: 140453)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  yˤr Surface yˤr parsed inconsistently: !y!(yˤr[ (ids: 141378); yˤr(I)/ (ids: 140459)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  lḥm Surface lḥm parsed inconsistently: lḥ(I)/m (ids: 140461); lḥm(I)[ (ids: 141418)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  km Surface km parsed inconsistently: k(III) (ids: 140772,140881); km (ids: 140468)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  k Surface k parsed inconsistently: +k (ids: 140498,140522,140539,140552,140559,140566,140573,140630,140634,140763,140767,140843,140871,140876,140918,140952,141003,141007,141307,141314,141321,141328); k(I) (ids: 140472)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  mt Surface mt parsed inconsistently: mt(I)/ (ids: 140477); mt(II)/ (ids: 140631,140778,140792,140799,140860,140889,141174,141264,141271,141278,141309,141316,141323,141330,141338,141344,141372,141379)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  tšu Surface tšu parsed inconsistently: !t!(n&š(š&u(ʔ[ (ids: 140516,140616); !t!nš(ʔ&u[ (ids: 140786,141059)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  rbt Surface rbt parsed inconsistently: rbt(I)/ (ids: 140643,140658,140686); rbt/ (ids: 140648)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  yṯb Surface yṯb parsed inconsistently: !y!(yṯb[ (ids: 140703,141150,141289); !y!ṯb[ (ids: 141226)
@@ -10570,4 +10575,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:18 161199 
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:19 161200 ag Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:21 161201 rškm Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:51 161222 dˤmnk Surface not found in UDB concordance
-Total issues: 10529
+Total issues: 10534

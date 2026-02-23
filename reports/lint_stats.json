@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-23T00:24:36.812331+00:00",
+  "generated_at_utc": "2026-02-23T07:31:18.997848+00:00",
   "files_checked": 278,
-  "total_issues": 10529,
-  "fallback_parsed": 987,
+  "total_issues": 10534,
+  "fallback_parsed": 990,
   "by_severity": {
-    "ERROR": 7601,
-    "WARNING": 1228,
+    "ERROR": 7599,
+    "WARNING": 1229,
     "INFO": 1519
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 4405
+      "count": 4402
     },
     {
       "severity": "INFO",
@@ -27,7 +27,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Column 5 count must match analysis variant count",
-      "count": 464
+      "count": 462
     },
     {
       "severity": "ERROR",
@@ -37,7 +37,7 @@
     {
       "severity": "WARNING",
       "problem_type": "Column 6 count should match analysis variant count",
-      "count": 357
+      "count": 355
     },
     {
       "severity": "ERROR",
@@ -72,7 +72,7 @@
     {
       "severity": "WARNING",
       "problem_type": "Suffix form without '+'",
-      "count": 78
+      "count": 79
     },
     {
       "severity": "WARNING",
@@ -127,7 +127,7 @@
     {
       "severity": "WARNING",
       "problem_type": "Feminine plural noun in DULAT should use '/t='",
-      "count": 29
+      "count": 30
     },
     {
       "severity": "WARNING",
@@ -137,7 +137,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Noun/adjective lacks '/' ending",
-      "count": 25
+      "count": 26
     },
     {
       "severity": "WARNING",
@@ -1056,6 +1056,11 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "abn Expected exactly 7 columns in out/*.tsv row, got 8",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "anḫn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
       "count": 1
     },
@@ -1181,6 +1186,11 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "ġr Expected exactly 7 columns in out/*.tsv row, got 6",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "ˤdbnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
       "count": 1
     },
@@ -1262,6 +1272,11 @@
     {
       "severity": "WARNING",
       "problem_type": "aḫd Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "aṯr Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.'",
       "count": 1
     },
     {
