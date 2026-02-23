@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-02-22T16:04:13.568514+00:00",
+  "generated_at_utc": "2026-02-23T00:15:37.386036+00:00",
   "files_checked": 278,
-  "total_issues": 10527,
-  "fallback_parsed": 984,
+  "total_issues": 10532,
+  "fallback_parsed": 987,
   "by_severity": {
-    "ERROR": 7627,
-    "WARNING": 1211,
+    "ERROR": 7606,
+    "WARNING": 1226,
     "INFO": 1519
   },
   "by_problem_type": [
@@ -22,12 +22,12 @@
     {
       "severity": "ERROR",
       "problem_type": "POS token not allowed for declared DULAT entry",
-      "count": 899
+      "count": 890
     },
     {
       "severity": "ERROR",
       "problem_type": "Column 5 count must match analysis variant count",
-      "count": 470
+      "count": 464
     },
     {
       "severity": "ERROR",
@@ -37,7 +37,7 @@
     {
       "severity": "WARNING",
       "problem_type": "Column 6 count should match analysis variant count",
-      "count": 362
+      "count": 357
     },
     {
       "severity": "ERROR",
@@ -47,7 +47,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 176
+      "count": 171
     },
     {
       "severity": "ERROR",
@@ -57,17 +57,17 @@
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for clitic part",
-      "count": 121
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 82
+      "count": 120
     },
     {
       "severity": "ERROR",
       "problem_type": "Unknown DULAT token in column 4",
-      "count": 79
+      "count": 82
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "No DULAT entry found for lexeme/surface",
+      "count": 80
     },
     {
       "severity": "WARNING",
@@ -77,7 +77,7 @@
     {
       "severity": "WARNING",
       "problem_type": "y Lexeme parse did not match DULAT; matched by surface form",
-      "count": 72
+      "count": 71
     },
     {
       "severity": "ERROR",
@@ -87,7 +87,12 @@
     {
       "severity": "ERROR",
       "problem_type": "Each reconstructed letter must be prefixed by '('",
-      "count": 61
+      "count": 64
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "TODO/uncertain marker in comment",
+      "count": 52
     },
     {
       "severity": "ERROR",
@@ -102,7 +107,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Column 4 count must match analysis variant count",
-      "count": 38
+      "count": 41
     },
     {
       "severity": "ERROR",
@@ -116,28 +121,23 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "TODO/uncertain marker in comment",
-      "count": 36
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Noun/adjective lacks '/' ending",
-      "count": 32
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
       "count": 32
     },
     {
       "severity": "WARNING",
       "problem_type": "Feminine plural noun in DULAT should use '/t='",
-      "count": 30
+      "count": 29
     },
     {
       "severity": "WARNING",
       "problem_type": "Plural form missing split ending",
       "count": 27
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Noun/adjective lacks '/' ending",
+      "count": 25
     },
     {
       "severity": "WARNING",
@@ -231,6 +231,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)",
+      "count": 8
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mrkbt Lexeme parse did not match DULAT; matched by surface form",
       "count": 8
     },
@@ -243,11 +248,6 @@
       "severity": "WARNING",
       "problem_type": "tr Lexeme parse did not match DULAT; matched by surface form",
       "count": 8
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "Deverbal form marked with '[' but only noun entry found in DULAT",
-      "count": 7
     },
     {
       "severity": "WARNING",
@@ -315,8 +315,8 @@
       "count": 6
     },
     {
-      "severity": "ERROR",
-      "problem_type": "POS tokens must map to existing DULAT tokens in column 4",
+      "severity": "WARNING",
+      "problem_type": "Deverbal form marked with '[' but only noun entry found in DULAT",
       "count": 5
     },
     {
@@ -352,11 +352,6 @@
     {
       "severity": "ERROR",
       "problem_type": "D stem marker present but DULAT lacks D/Dt",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Verb lacks '[' ending",
       "count": 4
     },
     {
@@ -413,6 +408,16 @@
       "severity": "WARNING",
       "problem_type": "ḫbtkm Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "POS tokens must map to existing DULAT tokens in column 4",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Verb lacks '[' ending",
+      "count": 3
     },
     {
       "severity": "ERROR",
@@ -606,11 +611,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "Morphology placeholder '?' should use unresolved DULAT placeholder '?' in column 4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "bˤdn Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
@@ -711,6 +711,11 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "l Expected exactly 7 columns in out/*.tsv row, got 6",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "rdnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
       "count": 2
     },
@@ -737,6 +742,11 @@
     {
       "severity": "ERROR",
       "problem_type": "ˤmn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "Morphology placeholder '?' should use unresolved DULAT placeholder '?' in column 4",
       "count": 2
     },
     {
@@ -1061,6 +1071,11 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "k Expected exactly 7 columns in out/*.tsv row, got 6",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "nn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
       "count": 1
     },
@@ -1191,11 +1206,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "alp Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "am Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1311,11 +1321,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "d Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "dmm Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1387,6 +1392,11 @@
     {
       "severity": "WARNING",
       "problem_type": "la Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lbt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1557,6 +1567,16 @@
     {
       "severity": "WARNING",
       "problem_type": "pṯtm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "qdš Adjective POS should include DULAT gender marker for qdš (I): adj. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "qdš Noun POS should include DULAT gender marker for qdš (I): n. m.",
       "count": 1
     },
     {

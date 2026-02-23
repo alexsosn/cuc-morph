@@ -3976,12 +3976,26 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.25.tsv:31 14786
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.27.tsv:25 147886 limm Analysis does not reconstruct to surface (reconstructs as: lim)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.27.tsv:28 147888 ṯt Analysis does not reconstruct to surface (reconstructs as: ṯn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:5 9504 bdxxxxx Noun/adjective lacks '/' ending
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:8 9506 rdmn Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:18 9514 qm Deverbal form matches both verb and noun entries in DULAT
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:24 9518 ybr Noun/adjective lacks '/' ending
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:24 9518 ybr Column 4 count must match analysis variant count
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:24 9518 ybr Column 5 count must match analysis variant count
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:24 9518 ybr Missing DULAT entry token(s) in column 4
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:24 9518 ybr Analysis does not reconstruct to surface (reconstructs as: ybrd)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:32 9525 mlḥt Unknown DULAT token in column 4: /m-l-ḥ/
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:35 9527 mri POS token 'adj. m.' not allowed for mrủ (I); choose one of: adj. or n
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:35 9527 mri POS token 'n. m.' not allowed for mrủ (I); choose one of: adj. or n
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:35 9527 mri POS token 'vb.' not allowed for /m-r-ʔ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:72 9556 yqḥ Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:80 9563 qm Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:88 9569 nˤm Noun/adjective lacks '/' ending
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:94 9574 ˤl Unknown DULAT token in column 4: ʕl (I) 1d
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:94 9574 ˤl DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:101 9579 ymtmr Each reconstructed letter must be prefixed by '('
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:140 9609 klat Column 4 count must match analysis variant count
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:140 9609 klat Column 5 count must match analysis variant count
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:140 9609 klat Missing DULAT entry token(s) in column 4
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:140 9609 klat Analysis does not reconstruct to surface (reconstructs as: kla)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:157 9623 tḫṣ Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:157 9623 tḫṣ No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:161 9627 bn Noun/adjective lacks '/' ending
@@ -4002,12 +4016,10 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:248 9699 
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:280 9725 k Column 5 count must match analysis variant count
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:280 9725 k POS token 'Subordinating or completive functor' not allowed for -k (I); choose one of: morph., pers. pn.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:280 9725 k POS token 'emph. functor' not allowed for k (III); choose one of: subordinating or completive functor
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:292 9735 ˤd Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:315 9755 bt Noun/adjective lacks '/' ending
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:315 9755 bt Analysis does not reconstruct to surface (reconstructs as: btt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:334 9770 ṯˤr Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:343 9778 tṯar DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:362 9794 tskh Each reconstructed letter must be prefixed by '('
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:379 9807 xxxrn Verb lacks '[' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:408 9831 km Column 5 count must match analysis variant count
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:408 9831 km POS token 'functor' not allowed for k (III); choose one of: subordinating or completive functor
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:408 9831 km Analysis does not reconstruct to surface (reconstructs as: k)
@@ -4018,41 +4030,45 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:412 9834 
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:454 9869 sk Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:502 9908 ˤmn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:516 9920 wl Missing DULAT entry token(s) in column 4
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:525 9927 ibġyh Analysis does not reconstruct to surface (reconstructs as: aibġyh)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:525 9927 ibġyh Analysis does not reconstruct to surface (reconstructs as: aibġyh)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:529 9931 il Noun/adjective lacks '/' ending
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:533 9934 qdš POS token 'adj. n.' not allowed for qdš (I); choose one of: adj.
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:544 9943 hlm Column 4 count must match analysis variant count
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:544 9943 hlm Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:551 9949 tṭṭ Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:552 9950 bˤdn POS tokens must map to existing DULAT tokens in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:559 9956 tġṣ Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:563 9959 anš Each reconstructed letter must be prefixed by '('
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:578 9972 mn Missing DULAT entry token(s) in column 4
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:567 9962 tšu Analysis does not reconstruct to surface (reconstructs as: tnšu)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:592 9984 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:597 9989 il POS token 'DN' not allowed for ỉl (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:603 9994 ištmdh Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:603 9994 ištmdh No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:621 10008 il POS token 'DN' not allowed for ỉl (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:625 10011 k Column 5 count must match analysis variant count
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:625 10011 k POS token 'Subordinating or completive functor' not allowed for -k (I); choose one of: morph., pers. pn.
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:625 10011 k POS token 'emph. functor' not allowed for k (III); choose one of: subordinating or completive functor
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:626 10012 lbt Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:632 10017 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:639 10023 ṭrd Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:645 10028 mšṣṣ Each reconstructed letter must be prefixed by '('
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:646 10029 k Column 5 count must match analysis variant count
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:646 10029 k POS token 'Subordinating or completive functor' not allowed for -k (I); choose one of: morph., pers. pn.
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:646 10029 k POS token 'emph. functor' not allowed for k (III); choose one of: subordinating or completive functor
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:650 10032 dnh Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:663 10043 ib Noun/adjective lacks '/' ending
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:674 10053 yˤnyn Analysis does not reconstruct to surface (reconstructs as: yʕnn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:702 10077 sk Each reconstructed letter must be prefixed by '('
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:713 10086 hšk Analysis does not reconstruct to surface (reconstructs as: ḥšk)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:713 10086 hšk Analysis does not reconstruct to surface (reconstructs as: ḥšk)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:714 10087 ˤṣk Unknown DULAT token in column 4: ʕ-ṣ-y/ṣ
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:742 10111 td Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:742 10111 td Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:757 10124 ˤmn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:802 10162 ask Each reconstructed letter must be prefixed by '('
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:809 10168 l Expected exactly 7 columns in out/*.tsv row, got 6
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:816 10174 bˤl Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:819 10176 ybˤr Non-G stem in DULAT requires stem marker
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:835 10189 ask Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:840 10193 awṣ Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:840 10193 awṣ Noun/adjective lacks '/' ending
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:842 10195 l Expected exactly 7 columns in out/*.tsv row, got 6
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:850 10202 lk Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:851 10203 lk Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:876 10224 ṯlṯ Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:909 10252 alp Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:928 10268 tskh Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:930 10270 nskh Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:947 10284 km Column 5 count must match analysis variant count
@@ -4061,9 +4077,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:947 10284
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:947 10284 km Analysis does not reconstruct to surface (reconstructs as: k)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:947 10284 km Analysis does not reconstruct to surface (reconstructs as: k)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:947 10284 km Analysis does not reconstruct to surface (reconstructs as: kmkm)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:952 10288 k Column 5 count must match analysis variant count
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:952 10288 k POS token 'Subordinating or completive functor' not allowed for -k (I); choose one of: morph., pers. pn.
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:952 10288 k POS token 'emph. functor' not allowed for k (III); choose one of: subordinating or completive functor
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:952 10288 k Expected exactly 7 columns in out/*.tsv row, got 6
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:957 10292 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:991 10321 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1001 10329 amṣḫ Missing DULAT entry token(s) in column 4
@@ -4072,7 +4086,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1002 1033
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1003 10331 k Column 5 count must match analysis variant count
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1003 10331 k POS token 'Subordinating or completive functor' not allowed for -k (I); choose one of: morph., pers. pn.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1003 10331 k POS token 'emph. functor' not allowed for k (III); choose one of: subordinating or completive functor
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1014 10340 xxxxkd Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1017 10343 bt Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1021 10346 k Column 5 count must match analysis variant count
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1021 10346 k POS token 'Subordinating or completive functor' not allowed for -k (I); choose one of: morph., pers. pn.
@@ -4083,24 +4096,12 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1025 1035
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1032 10356 tr Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1040 10363 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1049 10371 il POS token 'DN' not allowed for ỉl (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1054 10375 mlk Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1070 10389 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1074 10392 il POS token 'DN' not allowed for ỉl (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1085 10401 xhxx POS tokens must map to existing DULAT tokens in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1087 10402 hxxxxxxxxx POS tokens must map to existing DULAT tokens in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1090 10404 ṯkxxxxxxxxxxxxxxxx Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1101 10413 ṣn Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1101 10413 ṣn No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1116 10426 w  tˤn Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1116 10426 w  tˤn No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1122 10431 k Column 5 count must match analysis variant count
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1122 10431 k POS token 'Subordinating or completive functor' not allowed for -k (I); choose one of: morph., pers. pn.
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1122 10431 k POS token 'emph. functor' not allowed for k (III); choose one of: subordinating or completive functor
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1123 10432 y Column 5 count must match analysis variant count
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1123 10432 y POS token 'prep. functor' not allowed for -y (I); choose one of: prep.
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1123 10432 y Analysis does not reconstruct to surface (reconstructs as: yy)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1123 10432 y No DULAT entry found for clitic part: y, [y
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1123 10432 y DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1137 10444 aḫdhm Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1159 10462 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1171 10472 k Column 5 count must match analysis variant count
@@ -4118,25 +4119,8 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1209 1050
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1213 10507 klnyy Unknown DULAT token in column 4: kl (I)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1221 10514 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1223 10516 il POS token 'DN' not allowed for ỉl (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1224 10517 mlk Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1238 10529 in Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1243 10533 km Column 5 count must match analysis variant count
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1243 10533 km POS token 'functor' not allowed for k (III); choose one of: subordinating or completive functor
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1243 10533 km Analysis does not reconstruct to surface (reconstructs as: k)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1243 10533 km Analysis does not reconstruct to surface (reconstructs as: k)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1243 10533 km Analysis does not reconstruct to surface (reconstructs as: k)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1243 10533 km Analysis does not reconstruct to surface (reconstructs as: kmkm)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1246 10536 k Column 5 count must match analysis variant count
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1246 10536 k POS token 'Subordinating or completive functor' not allowed for -k (I); choose one of: morph., pers. pn.
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1246 10536 k POS token 'emph. functor' not allowed for k (III); choose one of: subordinating or completive functor
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1251 10540 il POS token 'DN' not allowed for ỉl (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1283 10563 ḥ Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1307 10581 km Column 5 count must match analysis variant count
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1307 10581 km POS token 'functor' not allowed for k (III); choose one of: subordinating or completive functor
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1307 10581 km Analysis does not reconstruct to surface (reconstructs as: k)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1307 10581 km Analysis does not reconstruct to surface (reconstructs as: k)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1307 10581 km Analysis does not reconstruct to surface (reconstructs as: k)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1307 10581 km Analysis does not reconstruct to surface (reconstructs as: kmkm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1312 10585 k Column 5 count must match analysis variant count
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1312 10585 k POS token 'Subordinating or completive functor' not allowed for -k (I); choose one of: morph., pers. pn.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1312 10585 k POS token 'emph. functor' not allowed for k (III); choose one of: subordinating or completive functor
@@ -4145,17 +4129,12 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1325 1059
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1337 10605 ibr Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1341 10608 ḥblm Noun/adjective lacks '/' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1342 10609 ˤrpt Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1349 10614 ḥxx Noun/adjective lacks '/' ending
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1350 10615 tb Missing DULAT entry token(s) in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1350 10615 tb No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1352 10617 isr Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1352 10617 isr No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1361 10624 ymtn Verb lacks '[' ending
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1369 10630 rbt Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1395 10650 idk POS tokens must map to existing DULAT tokens in column 4
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1402 10655 ḥqkpt Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1418 10667 rbt Each reconstructed letter must be prefixed by '('
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1423 10671 kṯ<r> Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1423 10671 kṯ<r> No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1429 10676 wy Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1429 10676 wy No DULAT entry found for lexeme/surface
@@ -8344,17 +8323,18 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:219 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:254 147832 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:265 147840 ṣġrt Feminine adjective/participle in DULAT should mark '-t' explicitly
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.27.tsv:25 147886 limm Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:25 9519 d Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:32 9525 mlḥt Deverbal form marked with '[' but only noun entry found in DULAT
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:35 9527 mri Deverbal form marked with '[' but only noun entry found in DULAT
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:24 9518 ybr Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:25 9519 d Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:25 9519 d TODO/uncertain marker in comment: merge
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:40 9531 yšqynh TODO/uncertain marker in comment: fix
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:42 9532 ytn TODO/uncertain marker in comment: fix
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:120 9594 xht Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:140 9609 klat Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:157 9623 tḫṣ TODO/uncertain marker in comment: repair
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:176 9639 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:177 9640 kdrt Feminine plural noun in DULAT should use '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:181 9643 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:184 9646 k Column 6 count should match analysis variant count
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:197 9656 kx Morphology placeholder '?' should use unresolved DULAT placeholder '?' in column 4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:198 9657 kpt Feminine plural noun in DULAT should use '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:212 9669 mṭm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:236 9689 tmtḫṣh TODO/uncertain marker in comment: fix
@@ -8364,25 +8344,30 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:240 969
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:258 9707 tmtḫṣn TODO/uncertain marker in comment: fix
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:280 9725 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:315 9755 bt TODO/uncertain marker in comment: merge
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:317 9756 lt Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:317 9756 lt TODO/uncertain marker in comment: merge
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:319 9758 uṣbˤth Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:329 9766 uṣbˤth Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:335 9771 ksat Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:337 9773 ksat Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:343 9778 tṯar Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:379 9807 xxxrn Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:408 9831 km Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:466 9879 ˤṣk Deverbal form marked with '[' but only noun entry found in DULAT
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:468 9880 ˤbṣk Deverbal form marked with '[' but only noun entry found in DULAT
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:501 9907 thmt Feminine plural noun in DULAT should use '/t='
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:533 9934 qdš Noun POS should include DULAT gender marker for qdš (I): n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:533 9934 qdš Adjective POS should include DULAT gender marker for qdš (I): adj. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:552 9950 bˤdn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:552 9950 bˤdn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:561 9957 pnt Feminine plural noun in DULAT should use '/t='
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:577 9971 m Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:577 9971 m TODO/uncertain marker in comment: merge
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:625 10011 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:603 9994 ištmdh Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:625 10011 k Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:625 10011 k TODO/uncertain marker in comment: merge
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:626 10012 lbt Feminine plural noun in DULAT should use '/t='
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:626 10012 lbt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:627 10013 ilm TODO/uncertain marker in comment: fix
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:646 10029 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:649 10031 u TODO/uncertain marker in comment: merge
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:662 10042 mnm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:714 10087 ˤṣk Deverbal form marked with '[' but only noun entry found in DULAT
@@ -8391,25 +8376,33 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:742 101
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:743 10112 ˤ TODO/uncertain marker in comment: merge
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:756 10123 thmt Feminine plural noun in DULAT should use '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:874 10222 ˤnt Feminine plural noun in DULAT should use '/t='
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:909 10252 alp Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:947 10284 km Column 6 count should match analysis variant count
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:952 10288 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:947 10284 km TODO/uncertain marker in comment: ???
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:963 10297 aṯrt TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:981 10312 klt Feminine plural noun in DULAT should use '/t='
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:987 10317 ˤnt TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1002 10330 nn TODO/uncertain marker in comment: merge
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1003 10331 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1003 10331 k TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1010 10337 dmm TODO/uncertain marker in comment: fix
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1021 10346 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1021 10346 k TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1025 10350 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1025 10350 k TODO/uncertain marker in comment: ???
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1027 10352 aṯrt TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1060 10380 ḏdm TODO/uncertain marker in comment: fix
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1108 10419 la Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1121 10430 bht TODO/uncertain marker in comment: merge, fix
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1122 10431 k Column 6 count should match analysis variant count
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1123 10432 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1157 10460 mmˤm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1157 10460 mmˤm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1165 10467 ṯmnt Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1166 10468 ap TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1171 10472 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1171 10472 k TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1173 10474 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1173 10474 k TODO/uncertain marker in comment: ???
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1181 10481 l TODO/uncertain marker in comment: ???
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1183 10483 ˤnt TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1187 10486 btlt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1208 10503 ˤlnh Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1209 10504 klnyy Lexeme parse did not match DULAT; matched by surface form
@@ -8417,14 +8410,15 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1209 10
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1213 10507 klnyy Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1213 10507 klnyy Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1227 10519 yknnh Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1243 10533 km Column 6 count should match analysis variant count
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1246 10536 k Column 6 count should match analysis variant count
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1307 10581 km Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1312 10585 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1312 10585 k TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1335 10604 prˤt Feminine plural noun in DULAT should use '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1341 10608 ḥblm Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1346 10612 m TODO/uncertain marker in comment: ???
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1356 10620 m Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1356 10620 m TODO/uncertain marker in comment: merge
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1361 10624 ymtn Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1370 10631 xkmn TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1381 10639 iht Feminine plural noun in DULAT should use '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1445 10689 yn TODO/uncertain marker in comment: merge
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.31.tsv:4 147911 y Lexeme parse did not match DULAT; matched by surface form
@@ -9692,6 +9686,9 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ttpp anhb
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ˤṣk ˤbṣk ˤmy pˤnk tlsmn ˤmy twtḥ išdk Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9879-9886 ; 10087-10094
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ˤbṣk ˤmy pˤnk tlsmn ˤmy twtḥ išdk dm Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9880-9887 ; 10088-10095
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ˤmy pˤnk tlsmn ˤmy twtḥ išdk dm rgm Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9881-9888 ; 10089-10096
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  pˤnk tlsmn ˤmy twtḥ išdk dm rgm iṯ Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9882-9889 ; 10090-10097
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  tlsmn ˤmy twtḥ išdk dm rgm iṯ ly Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9883-9890 ; 10091-10098
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ˤmy twtḥ išdk dm rgm iṯ ly w Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9884-9891 ; 10092-10099
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  šmm ˤm arṣ thmt ˤmn kbkbm abn brq Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9904-9911 ; 10120-10127
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ˤm arṣ thmt ˤmn kbkbm abn brq d Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9905-9912 ; 10121-10128
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  arṣ thmt ˤmn kbkbm abn brq d l Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9906-9913 ; 10122-10129
@@ -9702,7 +9699,8 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ank ibġy
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ibġyh b tk ġry il ṣpn b qdš Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9927-9934 ; 10135-10142
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  tk ġry il ṣpn b qdš b ġr Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9929-9936 ; 10137-10144
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ġry il ṣpn b qdš b ġr nḥlty Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9930-9937 ; 10138-10145
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ib ypˤ l bˤl ṣrt l rkb ˤrpt Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9973-9980,10055-10062 ; 10043-10050
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ib ypˤ l bˤl ṣrt l rkb ˤrpt Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 9973-9980 ; 10043-10050 ; 10055-10062
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  bt l bˤl km ilm w ḥẓr k Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 10281-10288 ; 10578-10585
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  bˤl km ilm w ḥẓr k bn aṯrt Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 10283-10290 ; 10580-10587
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ḥẓr k bn aṯrt mṯb il mẓll bnh Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 10287-10294 ; 10535-10542
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  k bn aṯrt mṯb il mẓll bnh mṯb Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 10288-10295 ; 10536-10543
@@ -9719,32 +9717,36 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ar mẓll
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  mẓll ṭly bt rb mṯb arṣy bt yˤbdr Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 10303-10310 ; 10551-10558
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ṭly bt rb mṯb arṣy bt yˤbdr mṯb Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 10304-10311 ; 10552-10559
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  il b šbˤt ḥdrm b ṯmnt ap sgrt Repeated 8-token surface sequence has inconsistent col3-col6 payload across parallels: 10392-10399 ; 10462-10469
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  al Surface al parsed inconsistently: al(I) (ids: 10436,10438,10443,9502); al(II) (ids: 10651)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  bˤl Surface bˤl parsed inconsistently: bˤl(II) (ids: 10174); bˤl(II)/ (ids: 10024,10046,10058,10065,10232,10242,10283,10345,10448,10499,10532,10580,10591,10695,9509,9512,9575,9580,9818,9856,9976)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  l Surface l parsed inconsistently: l(I) (ids: 10034,10037,10039,10045,10048,10054,10057,10060,10079,10083,10164,10168,10191,10195,10212,10216,10228,10249,10282,10333,10344,10359,10407,10481,10531,10579,10589,10643,10647,10669,10682,10687,9521,9551,9653,9679,9684,9687,9697,9701,9704,9772,9775,9779,9812,9815,9835,9847,9851,9871,9875,9975,9978,9981); l(II) (ids: 10110,10115,10129,10341,9547,9913,9917); l(III) (ids: 10511,9986,9991)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  klat Surface klat parsed inconsistently: kl(ʔ&a[t= (ids: 9609); kla(t/t (ids: 9537)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ydh Surface ydh parsed inconsistently: yd(I)/+h (ids: 9762); yd(I)/+h= (ids: 9754); yd/+h (ids: 9538)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  rb Surface rb parsed inconsistently: rb(II)/ (ids: 9589,9826); rb(b/ (ids: 10306); rb/ (ids: 10554,9540)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ydh Surface ydh parsed inconsistently: yd(I)/+h= (ids: 9754,9762); yd/+h (ids: 9538)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  rb Surface rb parsed inconsistently: rb(I)/ (ids: 9589); rb(II)/ (ids: 9826); rb(b/ (ids: 10306); rb/ (ids: 10554,9540)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  mt Surface mt parsed inconsistently: mt(II)/ (ids: 10425); mt(III)/ (ids: 9543)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  qdš Surface qdš parsed inconsistently: qdš(I)/ (ids: 10142,9546); qdš(II)/ (ids: 9934); qdš(III)/ (ids: 10648)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  qdš Surface qdš parsed inconsistently: qdš(I)/ (ids: 10142,9546,9934); qdš(III)/ (ids: 10648)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  tˤn Surface tˤn parsed inconsistently: !t!ˤn(y(I)[ (ids: 10147,10315); !t!ˤn(y[ (ids: 10485); !t!ˤn[ (ids: 9552,9709)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  aṯrt Surface aṯrt parsed inconsistently: aṯr(t(II)/t (ids: 10290,10352,10521,10538,10587,10645); aṯrt(II)/ (ids: 10297,10545,10571,9553)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  alp Surface alp parsed inconsistently: alp(I). (ids: 10252); alp(II)/ (ids: 10236,10275,10626,10665,9554,9801)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  aṯrt Surface aṯrt parsed inconsistently: aṯr(t(II)/t (ids: 10290,10297,10352,10521,10538,10545,10571,10587,10645); aṯrt(II)/ (ids: 9553)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  alp Surface alp parsed inconsistently: alp(I)/ (ids: 10252); alp(II)/ (ids: 10236,10275,10626,10665,9554,9801)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  rbt Surface rbt parsed inconsistently: rb(I)/t (ids: 10570); rb(bt/ (ids: 10630,10667); rb(t(I)/t (ids: 10296,10544); rb(t/t (ids: 9559); rb/t (ids: 10238)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  nˤm Surface nˤm parsed inconsistently: nˤm (ids: 9569); nˤm(II)/ (ids: 9939)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  nˤm Surface nˤm parsed inconsistently: nˤm(I) (ids: 9569); nˤm(II)/ (ids: 9939)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ql Surface ql parsed inconsistently: !!ql[ (ids: 9841); ql(I)/ (ids: 9573); ql[ (ids: 10674)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  yˤn Surface yˤn parsed inconsistently: !y!ˤn(y(I)[ (ids: 10391); !y!ˤn(y[ (ids: 10051); !y!ˤn[ (ids: 10243,9582)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  bt Surface bt parsed inconsistently: b(t(I)/t (ids: 10016,10305,10309,10471,10549,10553,10557,9821,9825,9829); b(t/t (ids: 10301); bt (ids: 9755); bt(II) (ids: 10343); bt(II)/ (ids: 10281,10530,10578,9739,9745); bt/ (ids: 9584,9588)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  bt Surface bt parsed inconsistently: b(t(I)/t (ids: 10016,10305,10309,10471,10549,10553,10557,9821,9825,9829); b(t/t (ids: 10301); bt(I)/ (ids: 9755); bt(II) (ids: 10343); bt(II)/ (ids: 10281,10530,10578,9739,9745); bt/ (ids: 9584,9588)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  klt Surface klt parsed inconsistently: kl(l[t:d (ids: 10015,9987); kl(t(I)/t (ids: 10312); kl(t/t= (ids: 9596)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  knyt Surface knyt parsed inconsistently: kny(t/t (ids: 10313); kny(t/t= (ids: 9597)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  bnt Surface bnt parsed inconsistently: bn(t(I)/t (ids: 10429,10434); bn(t/t= (ids: 9604)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  bht Surface bht parsed inconsistently: b&ht(II)/ (ids: 9611); bht/ (ids: 10430)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ˤnt Surface ˤnt parsed inconsistently: ˤn/t (ids: 10222); ˤnt(I)/ (ids: 10149,10317,10428,10483,10487,9612,9621,9678,9713,9723,9757,9837,9849,9944)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ˤnt Surface ˤnt parsed inconsistently: ˤn(t(I)/t (ids: 10317,10428,10483,10487); ˤn/t (ids: 10222); ˤnt(I)/ (ids: 10149,9612,9621,9678,9713,9723,9757,9837,9849,9944)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ġlmm Surface ġlmm parsed inconsistently: ġlm/m (ids: 10052,9615); ġlm/m= (ids: 9832)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  št Surface št parsed inconsistently: !!št[ (ids: 10073,9865); št(I)/ (ids: 9617); št[ (ids: 10251)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  tḫtṣb Surface tḫtṣb parsed inconsistently: !!tḫ]t]ṣb[/ (ids: 9692); !t!ḫ]t]ṣb[ (ids: 9626,9710,9740)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  bn Surface bn parsed inconsistently: bn (ids: 9627); bn(I)/ (ids: 10351,10384,10423,10537,10586,10597,10601); bn(II) (ids: 10622,9693,9741); bn/ (ids: 10289)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ym Surface ym parsed inconsistently: ym(I)/ (ids: 10600); ym(II)/ (ids: 10279,10298,10546,10572,10629,9633,9805,9985)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  k Surface k parsed inconsistently: &k (ids: 10011); +k (ids: 10331,10346,10350,10431,10472,10474,10585,9639,9643,9646,9725); k(I) (ids: 10029,10288,10536)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  mhr Surface mhr parsed inconsistently: mhr(I) (ids: 9650); mhr(I)/ (ids: 9698)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ḏmr Surface ḏmr parsed inconsistently: ḏmr(I)/ (ids: 9747); ḏmr/ (ids: 9664,9765)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  dm Surface dm parsed inconsistently: dm(II)/ (ids: 9663,9729,9746,9764); d~m (ids: 9887); d~m(I) (ids: 10095)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ḏmr Surface ḏmr parsed inconsistently: ḏmr(I)/ (ids: 9747,9765); ḏmr/ (ids: 9664)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  mhrm Surface mhrm parsed inconsistently: mhr(I)/m (ids: 9668,9769); mhr/m (ids: 9734)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  šbˤt Surface šbˤt parsed inconsistently: šbˤ(I)/t (ids: 10000,10394,10464); šbˤ(II)[t (ids: 9688)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ksat Surface ksat parsed inconsistently: ks(u&a(t/t= (ids: 9771,9773); ks(u&a/t= (ids: 9696)
@@ -9757,6 +9759,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  nskh Surf
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  šd Surface šd parsed inconsistently: šd(I)/ (ids: 10237,10276,9802); šd(II)/ (ids: 10666)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ẓuh Surface ẓuh parsed inconsistently: ẓ(u/u+h (ids: 10277); ẓu/+h= (ids: 9803)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  yd Surface yd parsed inconsistently: yd(I)/ (ids: 10422); yd(II)/ (ids: 9819)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  km Surface km parsed inconsistently: k(III) (ids: 10284,9831); km (ids: 10533,10581)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  hbr Surface hbr parsed inconsistently: !!hbr[ (ids: 9838); hbr[ (ids: 10672)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  rgm Surface rgm parsed inconsistently: !!rgm/ (ids: 10681); !!rgm[ (ids: 9846); rgm/ (ids: 10096,10104,10109,9888,9897,9916)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  btlt Surface btlt parsed inconsistently: btl(t(I)/t (ids: 10486); btl(t/t (ids: 10148,10316,10427,10482); btlt/ (ids: 9848)
@@ -9766,13 +9769,15 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ly Surfac
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  tdˤ Surface tdˤ parsed inconsistently: !t!(ydˤ(I)[ (ids: 10130,9914,9918); !t!(ydˤ(II)[ (ids: 9955)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  nšm Surface nšm parsed inconsistently: nš(m/m (ids: 9919); nš/m (ids: 10113)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  atm Surface atm parsed inconsistently: !!at(w[~m(II) (ids: 10132,9924); atm (ids: 10206)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ibġyh Surface ibġyh parsed inconsistently: !(ʔ&i!bġy[+h (ids: 10135); !i!bġy[+h (ids: 9927)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ibġyh Surface ibġyh parsed inconsistently: !(ʔ&ai!bġy[+h (ids: 9927); !(ʔ&i!bġy[+h (ids: 10135)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  il Surface il parsed inconsistently: il(I) (ids: 9931); il(I)/ (ids: 10008,10017,10139,10292,10321,10363,10371,10389,10392,10462,10489,10514,10516,10540,10656,9984,9989)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ilm Surface ilm parsed inconsistently: il(I)/m (ids: 10004,10205,10214,10285,10347,10385,10416,10424,10433,10534,10575,10582,9946); il(I)/~m (I) (ids: 10013)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  pnh Surface pnh parsed inconsistently: pn(m/+h= (ids: 9954); pn/(m+h= (ids: 10257)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  gpn Surface gpn parsed inconsistently: gpn(III) (ids: 10594); gpn(III)/ (ids: 9968)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ugr Surface ugr parsed inconsistently: ugr(II) (ids: 10596); ugr(II)/ (ids: 9970)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ib Surface ib parsed inconsistently: ib(I) (ids: 10043); ib(I)/ (ids: 10055,9973)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ypˤ Surface ypˤ parsed inconsistently: !y!(ypˤ[ (ids: 10044); ypˤ[ (ids: 10056,9974)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  ap Surface ap parsed inconsistently: ap(I) (ids: 10198,10468); ap(II)/ (ids: 10398)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  tḥt Surface tḥt parsed inconsistently: tḥt (ids: 10610); tḥt(I) (ids: 10221)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  idk Surface idk parsed inconsistently: id+k (ids: 10650); idk (ids: 10227,10358)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  abh Surface abh parsed inconsistently: ab/+h (ids: 10246,10515); ab/+h= (ids: 10390)
@@ -10568,4 +10573,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:18 161199 
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:19 161200 ag Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:21 161201 rškm Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:51 161222 dˤmnk Surface not found in UDB concordance
-Total issues: 10527
+Total issues: 10532
