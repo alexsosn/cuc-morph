@@ -1,38 +1,38 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `10532`
+- Total issues: `10529`
 - Fallback-parsed issue lines: `987`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 7606 |
-| WARNING | 1226 |
+| ERROR | 7601 |
+| WARNING | 1228 |
 | INFO | 1519 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 4406 |
+| ERROR | Analysis does not reconstruct to surface | 4405 |
 | INFO | Surface not found in UDB concordance | 1519 |
-| ERROR | POS token not allowed for declared DULAT entry | 890 |
+| ERROR | POS token not allowed for declared DULAT entry | 889 |
 | ERROR | Column 5 count must match analysis variant count | 464 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 392 |
 | WARNING | Column 6 count should match analysis variant count | 357 |
-| ERROR | DULAT comment does not match candidates | 185 |
-| ERROR | Missing DULAT entry token(s) in column 4 | 171 |
+| ERROR | DULAT comment does not match candidates | 184 |
+| ERROR | Missing DULAT entry token(s) in column 4 | 170 |
 | ERROR | Non-G stem in DULAT requires stem marker | 124 |
-| ERROR | No DULAT entry found for clitic part | 120 |
+| ERROR | No DULAT entry found for clitic part | 119 |
 | ERROR | Unknown DULAT token in column 4 | 82 |
-| ERROR | No DULAT entry found for lexeme/surface | 80 |
+| ERROR | No DULAT entry found for lexeme/surface | 79 |
 | WARNING | Suffix form without '+' | 78 |
 | WARNING | y Lexeme parse did not match DULAT; matched by surface form | 71 |
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 67 |
-| ERROR | Each reconstructed letter must be prefixed by '(' | 64 |
-| WARNING | TODO/uncertain marker in comment | 52 |
+| ERROR | Each reconstructed letter must be prefixed by '(' | 65 |
+| WARNING | TODO/uncertain marker in comment | 53 |
 | ERROR | POS ambiguous in DULAT | 45 |
 | ERROR | Multiple DULAT candidates for surface | 43 |
 | ERROR | Column 4 count must match analysis variant count | 41 |
@@ -59,8 +59,8 @@
 | ERROR | ddn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 9 |
 | ERROR | tldn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 9 |
 | ERROR | wn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 9 |
+| WARNING | Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3) | 9 |
 | WARNING | yˤn Lexeme parse did not match DULAT; matched by surface form | 9 |
-| WARNING | Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3) | 8 |
 | WARNING | mrkbt Lexeme parse did not match DULAT; matched by surface form | 8 |
 | WARNING | snnt Lexeme parse did not match DULAT; matched by surface form | 8 |
 | WARNING | tr Lexeme parse did not match DULAT; matched by surface form | 8 |

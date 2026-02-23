@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-23T00:15:37.386036+00:00",
+  "generated_at_utc": "2026-02-23T00:24:36.812331+00:00",
   "files_checked": 278,
-  "total_issues": 10532,
+  "total_issues": 10529,
   "fallback_parsed": 987,
   "by_severity": {
-    "ERROR": 7606,
-    "WARNING": 1226,
+    "ERROR": 7601,
+    "WARNING": 1228,
     "INFO": 1519
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 4406
+      "count": 4405
     },
     {
       "severity": "INFO",
@@ -22,7 +22,7 @@
     {
       "severity": "ERROR",
       "problem_type": "POS token not allowed for declared DULAT entry",
-      "count": 890
+      "count": 889
     },
     {
       "severity": "ERROR",
@@ -42,12 +42,12 @@
     {
       "severity": "ERROR",
       "problem_type": "DULAT comment does not match candidates",
-      "count": 185
+      "count": 184
     },
     {
       "severity": "ERROR",
       "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 171
+      "count": 170
     },
     {
       "severity": "ERROR",
@@ -57,7 +57,7 @@
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for clitic part",
-      "count": 120
+      "count": 119
     },
     {
       "severity": "ERROR",
@@ -67,7 +67,7 @@
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 80
+      "count": 79
     },
     {
       "severity": "WARNING",
@@ -87,12 +87,12 @@
     {
       "severity": "ERROR",
       "problem_type": "Each reconstructed letter must be prefixed by '('",
-      "count": 64
+      "count": 65
     },
     {
       "severity": "WARNING",
       "problem_type": "TODO/uncertain marker in comment",
-      "count": 52
+      "count": 53
     },
     {
       "severity": "ERROR",
@@ -226,13 +226,13 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "yˤn Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)",
       "count": 9
     },
     {
       "severity": "WARNING",
-      "problem_type": "Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)",
-      "count": 8
+      "problem_type": "yˤn Lexeme parse did not match DULAT; matched by surface form",
+      "count": 9
     },
     {
       "severity": "WARNING",
