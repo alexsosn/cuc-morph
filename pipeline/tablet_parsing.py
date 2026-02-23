@@ -15,6 +15,7 @@ from pipeline.steps.baal_labourer_ktu1 import BaalLabourerKtu1Fixer
 from pipeline.steps.baal_plural import BaalPluralGodListFixer
 from pipeline.steps.base import RefinementStep
 from pipeline.steps.dulat_gate import DulatMorphGate
+from pipeline.steps.feminine_t_singular_split import FeminineTSingularSplitFixer
 from pipeline.steps.formula_bigram import FormulaBigramFixer
 from pipeline.steps.formula_trigram import FormulaTrigramFixer
 from pipeline.steps.generic_parsing_override import GenericParsingOverrideFixer
@@ -63,6 +64,7 @@ class TabletParsingPipeline:
             FormulaBigramFixer(),
             OfferingListLPrepFixer(),
             PluralSplitFixer(gate=self.morph_gate),
+            FeminineTSingularSplitFixer(gate=self.morph_gate),
             BaalLabourerKtu1Fixer(),
             BaalPluralGodListFixer(),
             Ktu1FamilyHomonymPruner(dulat_db=self.config.dulat_db),

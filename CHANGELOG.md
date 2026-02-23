@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-02-23
+
+- Added shared onomastic override loader `pipeline/steps/onomastic_overrides.py` with support for the updated three-column TSV format (`dulat`, `POS`, `gloss`) while keeping backward compatibility for two-column files.
+- Updated `pipeline/steps/onomastic_gloss.py` to consume the shared loader so gloss overrides now read the actual `gloss` column (not `POS`) from `data/onomastic_gloss_overrides.tsv`.
+- Added `FeminineTSingularSplitFixer` (`pipeline/steps/feminine_t_singular_split.py`) and wired it into `pipeline/tablet_parsing.py` to normalize feminine singular unsplit analyses:
+  - `Xt/ -> X/t`
+  - `Xt(I)/ -> X(t(I)/t`
+  - with conservative gates for feminine evidence, onomastic gender, and plural-form exclusion.
+- Added dedicated tests for the new feminine singular split step and for three-column onomastic override parsing (`tests/test_feminine_t_singular_split.py`, `tests/test_onomastic_gloss_overrides_format.py`).
+- Extended linter predicates with `analysis_has_missing_feminine_singular_split` and added a noun-level warning for missing feminine singular `/t` splits in `linter/lint.py` plus predicate tests.
+- Added conservative linter fallback for feminine `/t` analyses so declared DULAT feminine headwords ending in `-t` can be validated via surface candidates when lexeme-only lookup omits them.
+- Documented the rule-specific refinement workflow in `docs/feminine_t_singular_split_pipeline.md`.
+- Re-ran only the new feminine singular split rule across `out/KTU *.tsv`: 1,350 rows updated in 184 files (including `9837`, `138163`, `160344`).
+
 ## 2026-02-22
 
 - Added generic surface-level parsing override support:

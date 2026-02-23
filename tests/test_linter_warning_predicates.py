@@ -5,6 +5,7 @@ import unittest
 from linter.lint import (
     analysis_has_homonym_marked_n_clitic,
     analysis_has_invalid_enclitic_plus,
+    analysis_has_missing_feminine_singular_split,
     analysis_has_missing_plural_split,
     analysis_has_missing_suffix_plus,
     choose_lookup_candidates,
@@ -18,6 +19,12 @@ from linter.lint import (
 
 
 class LinterWarningPredicateTest(unittest.TestCase):
+    def test_feminine_singular_missing_split_detected(self) -> None:
+        self.assertTrue(analysis_has_missing_feminine_singular_split("mlkt/", "mlkt"))
+
+    def test_feminine_singular_split_not_flagged_once_split(self) -> None:
+        self.assertFalse(analysis_has_missing_feminine_singular_split("mlk/t", "mlkt"))
+
     def test_plural_missing_split_detected_for_lemma_style(self) -> None:
         self.assertTrue(analysis_has_missing_plural_split("il(I)/", "ilm"))
 

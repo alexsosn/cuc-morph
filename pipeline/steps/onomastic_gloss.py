@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import Dict
 
 from pipeline.steps.base import RefinementStep, TabletRow
+from pipeline.steps.onomastic_overrides import OnomasticOverrideStore
 
 _ONOMASTIC_POS_TAGS = ("DN", "PN", "TN", "MN", "GN")
 _ONOMASTIC_CHAR_MAP = str.maketrans(
@@ -44,9 +45,9 @@ class OnomasticGlossOverrideFixer(RefinementStep):
     ) -> None:
         self._overrides_path = overrides_path or Path("data/onomastic_gloss_overrides.tsv")
         if overrides is not None:
-            self._overrides = {k.strip(): v.strip() for k, v in overrides.items() if k.strip()}
+            self._store = OnomasticOverrideStore.from_gloss_map(overrides)
         else:
-            self._overrides = self._load_overrides(self._overrides_path)
+            self._store = OnomasticOverrideStore.from_tsv(self._overrides_path)
 
     @property
     def name(self) -> str:
@@ -110,8 +111,9 @@ class OnomasticGlossOverrideFixer(RefinementStep):
         pos_variant = pos_variant.strip()
         gloss_variant = gloss_variant.strip()
         onomastic_variant = self._is_onomastic_pos(pos_variant)
-        if dulat_variant in self._overrides and onomastic_variant:
-            return self._overrides[dulat_variant]
+        override_gloss = self._store.get_gloss(dulat_variant)
+        if override_gloss and onomastic_variant:
+            return override_gloss
 
         dulat_slots = _split_comma(dulat_variant)
         pos_slots = _split_comma(pos_variant)
@@ -136,8 +138,9 @@ class OnomasticGlossOverrideFixer(RefinementStep):
             g_slot = gloss_slots[i].strip()
 
             onomastic_slot = self._is_onomastic_pos(p_slot)
-            if d_slot in self._overrides and onomastic_slot:
-                new_slot = self._overrides[d_slot]
+            override_slot = self._store.get_gloss(d_slot)
+            if override_slot and onomastic_slot:
+                new_slot = override_slot
             elif onomastic_slot:
                 new_slot = self._normalize_onomastic_chars(g_slot)
             else:
@@ -149,27 +152,6 @@ class OnomasticGlossOverrideFixer(RefinementStep):
         if not changed:
             return gloss_variant
         return _join_comma(gloss_slots)
-
-    def _load_overrides(self, path: Path) -> Dict[str, str]:
-        if not path.exists():
-            return {}
-        out: Dict[str, str] = {}
-        lines = path.read_text(encoding="utf-8").splitlines()
-        for index, raw in enumerate(lines):
-            line = raw.strip()
-            if not line or line.startswith("#"):
-                continue
-            if index == 0 and line.lower().startswith("dulat\t"):
-                continue
-            parts = line.split("\t")
-            if len(parts) < 2:
-                continue
-            key = parts[0].strip()
-            value = parts[1].strip()
-            if not key:
-                continue
-            out[key] = value
-        return out
 
     def _normalize_onomastic_chars(self, gloss: str) -> str:
         return (gloss or "").translate(_ONOMASTIC_CHAR_MAP)

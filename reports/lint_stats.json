@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-23T07:40:33.679817+00:00",
+  "generated_at_utc": "2026-02-23T10:13:04.333572+00:00",
   "files_checked": 278,
-  "total_issues": 10532,
-  "fallback_parsed": 988,
+  "total_issues": 11188,
+  "fallback_parsed": 1656,
   "by_severity": {
-    "ERROR": 7597,
-    "WARNING": 1229,
+    "ERROR": 7586,
+    "WARNING": 1897,
     "INFO": 1519
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 4402
+      "count": 4403
     },
     {
       "severity": "INFO",
@@ -42,7 +42,7 @@
     {
       "severity": "ERROR",
       "problem_type": "DULAT comment does not match candidates",
-      "count": 184
+      "count": 170
     },
     {
       "severity": "ERROR",
@@ -61,18 +61,23 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "Unknown DULAT token in column 4",
-      "count": 82
+      "problem_type": "No DULAT entry found for lexeme/surface",
+      "count": 84
     },
     {
       "severity": "ERROR",
-      "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 79
+      "problem_type": "Unknown DULAT token in column 4",
+      "count": 82
     },
     {
       "severity": "WARNING",
       "problem_type": "Suffix form without '+'",
       "count": 79
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "gdlt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 77
     },
     {
       "severity": "WARNING",
@@ -110,6 +115,11 @@
       "count": 41
     },
     {
+      "severity": "WARNING",
+      "problem_type": "ḥwt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 38
+    },
+    {
       "severity": "ERROR",
       "problem_type": "ḥrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
       "count": 36
@@ -121,13 +131,28 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
-      "count": 32
+      "problem_type": "btlt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 31
     },
     {
       "severity": "WARNING",
       "problem_type": "Feminine plural noun in DULAT should use '/t='",
       "count": 30
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
+      "count": 29
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mit Lexeme parse did not match DULAT; matched by surface form",
+      "count": 28
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mlkt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 28
     },
     {
       "severity": "WARNING",
@@ -151,7 +176,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "pġt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 18
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "Feminine plural noun in DULAT should be tagged with '/t='",
+      "count": 16
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bˤlt Lexeme parse did not match DULAT; matched by surface form",
       "count": 16
     },
     {
@@ -187,6 +222,16 @@
     {
       "severity": "WARNING",
       "problem_type": "bhtm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 12
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "gt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 12
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mṯt Lexeme parse did not match DULAT; matched by surface form",
       "count": 12
     },
     {
@@ -231,12 +276,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "urbt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 9
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "yˤn Lexeme parse did not match DULAT; matched by surface form",
       "count": 9
     },
     {
       "severity": "WARNING",
+      "problem_type": "ṯrrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 9
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mrkbt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 8
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "qšt Lexeme parse did not match DULAT; matched by surface form",
       "count": 8
     },
     {
@@ -251,7 +311,37 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "almnt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 7
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "aṯtm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 7
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ilht Lexeme parse did not match DULAT; matched by surface form",
+      "count": 7
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "išt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 7
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mlḥt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 7
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "nši Lexeme parse did not match DULAT; matched by surface form",
+      "count": 7
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ynt Lexeme parse did not match DULAT; matched by surface form",
       "count": 7
     },
     {
@@ -306,6 +396,31 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "drkt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mitm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mlakt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "nbt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "nit Lexeme parse did not match DULAT; matched by surface form",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "tbˤ Lexeme parse did not match DULAT; matched by surface form",
       "count": 6
     },
@@ -316,7 +431,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ḫrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "Deverbal form marked with '[' but only noun entry found in DULAT",
+      "count": 5
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "anšt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 5
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "brlt Lexeme parse did not match DULAT; matched by surface form",
       "count": 5
     },
     {
@@ -326,12 +456,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "g Lexeme parse did not match DULAT; matched by surface form",
+      "count": 5
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "limm Lexeme parse did not match DULAT; matched by surface form",
       "count": 5
     },
     {
       "severity": "WARNING",
+      "problem_type": "mpḫrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 5
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "trḫ Lexeme parse did not match DULAT; matched by surface form",
+      "count": 5
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "tˤdt Lexeme parse did not match DULAT; matched by surface form",
       "count": 5
     },
     {
@@ -347,6 +492,16 @@
     {
       "severity": "WARNING",
       "problem_type": "šp Noun POS should include DULAT gender marker for šp: n. m.",
+      "count": 5
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤrpt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 5
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṯbt Lexeme parse did not match DULAT; matched by surface form",
       "count": 5
     },
     {
@@ -366,12 +521,32 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "brlth Lexeme parse did not match DULAT; matched by surface form",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "dry Noun POS should include DULAT gender marker for dr: n. m.",
       "count": 4
     },
     {
       "severity": "WARNING",
+      "problem_type": "klat Lexeme parse did not match DULAT; matched by surface form",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "l Formula idk l ytn should use a single l(III) reading",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mštˤltm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "nḫt Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
     },
     {
@@ -391,6 +566,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "tmtt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ydm Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
     },
@@ -401,12 +581,37 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "šnpt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "špt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥkmt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḥmyt Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
     },
     {
       "severity": "WARNING",
+      "problem_type": "ḥmḥmt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḫbtkm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṯkmt Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
     },
     {
@@ -611,6 +816,16 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "aḫt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bhmt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "bˤdn Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
@@ -631,12 +846,32 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "dṯt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "gm Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
     {
       "severity": "WARNING",
+      "problem_type": "iršt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "knt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "lḥn Noun POS should include DULAT gender marker for lḥ (II): n. m.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mlḥmt Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
     {
@@ -676,7 +911,37 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "qbˤt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "rḥbt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "thmt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "tḥ Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "upqt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ybmt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ysmt Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
     {
@@ -686,12 +951,37 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "zt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šbt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "šˤtqt Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
     {
       "severity": "WARNING",
+      "problem_type": "ˤdmt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤḏbt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḏrˤ Noun POS should include DULAT gender marker for ḏrʕ (I): n. f.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥspt Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
     {
@@ -705,13 +995,18 @@
       "count": 3
     },
     {
-      "severity": "ERROR",
-      "problem_type": "Xt stem marker present but DULAT lacks *t stem",
-      "count": 2
+      "severity": "WARNING",
+      "problem_type": "ṣbrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṯˤt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
     },
     {
       "severity": "ERROR",
-      "problem_type": "l Expected exactly 7 columns in out/*.tsv row, got 6",
+      "problem_type": "Xt stem marker present but DULAT lacks *t stem",
       "count": 2
     },
     {
@@ -751,7 +1046,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ahbt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "alit Feminine singular noun in DULAT should use '/t'",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "arṯm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "aylt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -762,6 +1072,16 @@
     {
       "severity": "WARNING",
       "problem_type": "aḥwy Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bdqt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bmt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -781,12 +1101,37 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "bt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "dnh Noun POS should include DULAT gender marker for dn (I): n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
+      "problem_type": "dġṯt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "gmrm Noun POS should include DULAT gender marker for gmr: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ibˤlt Feminine singular noun in DULAT should use '/t'",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "imt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "išryt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -821,7 +1166,32 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "kst Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "l Formula tbˤ w l yṯb ilm should use a single l(II) reading",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lbt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lḫšt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mddt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mknpt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -832,6 +1202,21 @@
     {
       "severity": "WARNING",
       "problem_type": "mrzḥh Noun POS should include DULAT gender marker for mrzḥ: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mtnt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mtrḫt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mšmˤt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -856,7 +1241,47 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "mḫmšt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mṣqt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mṯpdm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "nat Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "nhmmt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "nhqt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "nskt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "nzdt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "palt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -881,7 +1306,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "prṯt Feminine singular noun in DULAT should use '/t'",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "prṯt Noun POS should include DULAT gender marker for prṯt: n. f.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "qryt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -892,6 +1327,11 @@
     {
       "severity": "WARNING",
       "problem_type": "qṣˤtk Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "rgbt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -931,6 +1371,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "tpšlt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "tqḥ Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
@@ -941,12 +1386,37 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "tyt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "tšu Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
       "severity": "WARNING",
+      "problem_type": "udmˤt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "umt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "un Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ušpġt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "uṯḫt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -971,6 +1441,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ysmsmt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "yḥmrm Noun POS should include DULAT gender marker for yḥmr: n. m.",
       "count": 2
     },
@@ -982,6 +1457,11 @@
     {
       "severity": "WARNING",
       "problem_type": "yṯir Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ġlt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -1011,6 +1491,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "šmḫt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "šntk Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
@@ -1021,7 +1506,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "štt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "šˤrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤdbt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -1041,12 +1536,42 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ḏrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥmdrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḥtkk Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
       "severity": "WARNING",
       "problem_type": "ḥṯm Noun POS should include DULAT gender marker for ḥṯ: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥṯrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḫmt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḫpṯt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṭbt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -1067,11 +1592,6 @@
     {
       "severity": "ERROR",
       "problem_type": "ilšnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "k Expected exactly 7 columns in out/*.tsv row, got 6",
       "count": 1
     },
     {
@@ -1251,6 +1771,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "aġzt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ašld Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1271,7 +1796,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "aṯtm Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "aṯryt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "aṯtn Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1291,12 +1821,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "bny Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "bnwt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "btlt Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "bny Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1326,7 +1856,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "dbḥt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "dlḥt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "dmm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "dmˤt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1336,12 +1881,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "gdrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "gršnn Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
       "severity": "WARNING",
+      "problem_type": "gˤt Feminine singular noun in DULAT should use '/t'",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "gˤt Noun POS should include DULAT gender marker for gʕt: n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "hdrt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1366,7 +1926,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "idt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "inšt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "iqnim Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "irt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1386,6 +1961,21 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "kbrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "kdrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "kknt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ksiy Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1401,7 +1991,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "lbt Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "lbnt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1412,6 +2002,11 @@
     {
       "severity": "WARNING",
       "problem_type": "llim Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lyt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1431,12 +2026,37 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "lẓtm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mat Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
       "severity": "WARNING",
+      "problem_type": "mdgt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mhyt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "midm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "miyt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mknt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1471,6 +2091,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "mrbˤt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mri Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1481,7 +2106,32 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "mskt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mtt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mšḥt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mˤt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mḥrṯt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mḥtrt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1491,12 +2141,42 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "mṣmt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mṣprt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mṭm Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
       "severity": "WARNING",
+      "problem_type": "mṭnt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mṭt Feminine singular noun in DULAT should use '/t'",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mṭt Noun POS should include DULAT gender marker for mṭt: n. f.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mṯdṯt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mṯlṯt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1536,6 +2216,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "npt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "nqh Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1561,7 +2246,37 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "nṣbt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "plṯt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "pnt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "prt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "prˤt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ptr Noun POS should include DULAT gender marker for ptr: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "pšt Feminine singular noun in DULAT should use '/t'",
       "count": 1
     },
     {
@@ -1572,6 +2287,11 @@
     {
       "severity": "WARNING",
       "problem_type": "pṯtm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "qbṣt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1591,7 +2311,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "qpt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "qrat Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "qryy Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "qṣrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "qẓrt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1606,12 +2346,47 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "rišyt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "rmm Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
       "severity": "WARNING",
+      "problem_type": "rˤt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "rṯt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "sknt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "smkt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "sprt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "tbrrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "tdmmt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1622,6 +2397,16 @@
     {
       "severity": "WARNING",
       "problem_type": "thmtm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "tinṯt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "tliyt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1676,6 +2461,21 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "tšyt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "tˤlgt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "tˤlt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "tˤn Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1702,6 +2502,21 @@
     {
       "severity": "WARNING",
       "problem_type": "tṯar Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "urbtm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "uzˤrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "xxxbtlt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1771,6 +2586,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ytmt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "yšmˤk Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1791,7 +2611,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "zġt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ġll Noun POS should include DULAT gender marker for ġll (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ġrplt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ġrt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1802,6 +2637,11 @@
     {
       "severity": "WARNING",
       "problem_type": "šbrd Noun POS should include DULAT gender marker for šbr: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šbšlt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1821,12 +2661,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "šnˤt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "špth Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
       "severity": "WARNING",
       "problem_type": "šu Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ššrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤglt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1847,6 +2702,16 @@
     {
       "severity": "WARNING",
       "problem_type": "ˤp Noun POS should include DULAT gender marker for ʕp (I): n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤḏrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤṭrṭrt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1876,12 +2741,37 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ḥwtm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥṭbt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḥṭt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
       "severity": "WARNING",
+      "problem_type": "ḥẓt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḫrmṯt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḫrpnt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḫṣth Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1892,6 +2782,16 @@
     {
       "severity": "WARNING",
       "problem_type": "ṣlmm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṣrrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṣt Feminine singular noun in DULAT should use '/t'",
       "count": 1
     },
     {
@@ -1916,12 +2816,47 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ṯigt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṯknt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṯkt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṯllt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ṯmnt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
       "severity": "WARNING",
+      "problem_type": "ṯrmt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṯrt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ṯut Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ẓlmt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     }
   ]
