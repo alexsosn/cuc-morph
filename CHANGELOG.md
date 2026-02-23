@@ -8,11 +8,19 @@
   - `Xt/ -> X/t`
   - `Xt(I)/ -> X(t(I)/t`
   - with conservative gates for feminine evidence, onomastic gender, and plural-form exclusion.
+- Refined feminine singular split behavior for lexeme-final `-t` nouns so DULAT reconstruction remains faithful:
+  - `Xt/ -> X(t/t`
+  - `X/t -> X(t/t`
+  - `Xt(I)/ -> X(t(I)/t`
+  - `X(I)/t -> X(t(I)/t`
+  - while preserving `.../t` for non-`t`-final lemmas.
 - Added dedicated tests for the new feminine singular split step and for three-column onomastic override parsing (`tests/test_feminine_t_singular_split.py`, `tests/test_onomastic_gloss_overrides_format.py`).
 - Extended linter predicates with `analysis_has_missing_feminine_singular_split` and added a noun-level warning for missing feminine singular `/t` splits in `linter/lint.py` plus predicate tests.
+- Extended linter predicates with `analysis_has_lexeme_t_split_without_reconstructed_t` and added a warning for lexeme-final `-t` nouns that use `/t` without reconstructed `(t`.
 - Added conservative linter fallback for feminine `/t` analyses so declared DULAT feminine headwords ending in `-t` can be validated via surface candidates when lexeme-only lookup omits them.
 - Documented the rule-specific refinement workflow in `docs/feminine_t_singular_split_pipeline.md`.
 - Re-ran only the new feminine singular split rule across `out/KTU *.tsv`: 1,350 rows updated in 184 files (including `9837`, `138163`, `160344`).
+- Follow-up pass refined existing `/t` feminine splits for lexeme-final `-t` nouns to `...(t/t` and injected missing homonyms from declared DULAT tokens where needed (for example `9584`, `9588`): 624 rows updated in 143 files.
 
 ## 2026-02-22
 

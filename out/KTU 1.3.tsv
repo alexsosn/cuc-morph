@@ -29,7 +29,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.3 I:7						
 9523	b	b	b	prep.	in	
 9524	ḥrb	ḥrb/	ḥrb	n. f.	knife	
-9525	mlḥt	mlḥ/t;mlḥ(t[/t	mlḥt; /m-l-ḥ/	n. f.; vb	salt; to salt	this is passive participle
+9525	mlḥt	mlḥ(t/t;mlḥ(t[/t	mlḥt; /m-l-ḥ/	n. f.; vb	salt; to salt	this is passive participle
 # KTU 1.3 I:8						
 9526	qṣ	qṣ/	qṣ	n. m.	end	
 9527	mri	mr(u(I)/&i; mr(u(I)[/&i	mrủ (I); /m-r-ʔ/	adj. m./n. m.; vb.	fattened/fatling; to fatten	likely passive participle
@@ -104,12 +104,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.3 I:23						
 9582	yˤn	!y!ˤn[	/ʕ-n/	vb	to see, look	
 9583	pdry	pdry/	pdry	DN	Pidray	
-9584	bt	b/t	bt (I)	n. f.	daughter	no reference to n assimilated to t?
+9584	bt	b(t(I)/t	bt (I)	n. f.	daughter	no reference to n assimilated to t?
 # KTU 1.3 I:24						
 9585	ar	ar/	ả/ỉr	n. m.	light	UNP: 'Daughter of Light'; TCS: 'Daughter of ʾAru' (name-like reading)
 9586	apn	apn(II)	ảpn (II)	adv. functor	and in addition, and also	
 9587	ṭly	ṭly/	ṭly	DN	Tallay	
-9588	bt	b/t	bt (I)	n. f.	daughter	
+9588	bt	b(t(I)/t	bt (I)	n. f.	daughter	
 # KTU 1.3 I:25						
 9589	rb	rb(I)/; rb(II)/; rb/	rb (I); rb (II); rb(b)	adj. m.; n. m.; n. m.	great/alrge; chief; drizzle	TCS: 'Rabbu' as a DN, UNP: 'Daughter of Showers'
 9590	pdr<y>	pdry/	pdry	DN	Pidray	
@@ -125,7 +125,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9598	w	w	w	conj.	and	
 9599	xxxxxx	?	?	?	?	
 # KTU 1.3 I:28						
-9600	xxxxxxxxxmkt	mkt/;smk/t	mkt; smkt	n. m.; n. f.	immolation, offering; height	UDB concordance pattern —mkt -> mkt, smkt, ymkt; ymkt has no exact DULAT form hit.
+9600	xxxxxxxxxmkt	mkt/;smk(t/t	mkt; smkt	n. m.; n. f.	immolation, offering; height	UDB concordance pattern —mkt -> mkt, smkt, ymkt; ymkt has no exact DULAT form hit.
 # KTU 1.3 II:1						
 9601	nxxxxxxxxxšxxx	nxxxxxxxxxšxxx	nš	?		
 # KTU 1.3 II:2						
@@ -425,7 +425,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9845	w	w	w	conj.	and	
 9846	rgm	!!rgm[	/r-g-m/	vb	to say, tell, announce, communicate, inform	
 9847	l	l(I)	l (I)	prep.	to	
-9848	btlt	btl/t	btlt	n. f.	virgin	
+9848	btlt	btl(t/t	btlt	n. f.	virgin	
 # KTU 1.3 III:12						
 9849	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 9850	ṯny	!!ṯny[	/ṯ-n-y/	vb	to repeat, reiterate	
@@ -964,7 +964,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10298	ym	ym(II)/	ym (II)	n. m.	sea	
 10299	mṯb	mṯb/	mṯb	n. m.	residence, mansion, dwelling place	
 10300	pdry	pdry/	pdry	DN	Pidray	
-10301	bt	b(t/t	bt (I)	n. f.	daughter	
+10301	bt	b(t(I)/t	bt (I)	n. f.	daughter	
 # KTU 1.3 IV:51						
 10302	ar	ar/	ả/ỉr	n. m.	light	
 10303	mẓll	mẓll/	mẓll	n. m.	shelter	
@@ -1194,7 +1194,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10492	ˤm	ˤm(I)	ʕm (I)	prep.	to, towards, up to	
 10493	ˤlm	ˤlm(I)/	ʕlm (I)	n. m.	eternity, perpetuity	
 # KTU 1.3 V:32						
-10494	ḥyt	ḥy(t/t	ḥyt (I)	n. f.	life	
+10494	ḥyt	ḥy(t(I)/t	ḥyt (I)	n. f.	life	
 10495	ḥẓt	ḥẓ(t/t	ḥẓt	adj. f.	happy, lucky	
 10496	tḥmk	tḥm/+k	tḥm, -k (I)	n. m., pers. pn.	message, your(s)	
 10497	mlkn	mlk(I)/+n				or ~n

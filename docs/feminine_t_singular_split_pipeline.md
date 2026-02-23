@@ -25,8 +25,14 @@ This pipeline rule targets unsplit feminine singular noun-like analyses where co
 - Skip variants containing verbal/clitic structure (`[`, `+`, `~`) in this conservative pass.
 
 4. Deterministic rewrite
-- Non-homonym variant: `Xt/ -> X/t`.
-- Homonym variant: `Xt(I)/ -> X(t(I)/t`.
+- If declared DULAT lemma is lexeme-final `-t`:
+  - `Xt/ -> X(t/t`
+  - `X/t -> X(t/t`
+  - `Xt(I)/ -> X(t(I)/t`
+  - `X(I)/t -> X(t(I)/t`
+- If declared DULAT lemma is not lexeme-final `-t`:
+  - keep feminine singular split as `.../t`.
+- If analysis omits a homonym but declared DULAT token has one, inject it into transformed feminine split output (for example `b/t` + `bt (I)` -> `b(t(I)/t`).
 
 5. Post-check policy
 - Keep aligned column structure unchanged (`col4`-`col6` untouched by this step).

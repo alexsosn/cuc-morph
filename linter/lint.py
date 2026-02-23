@@ -430,6 +430,23 @@ def analysis_has_missing_feminine_singular_split(analysis: str, surface: str) ->
     return False
 
 
+def analysis_has_lexeme_t_split_without_reconstructed_t(analysis: str) -> bool:
+    """True when a '/t' split variant lacks lexical '(t' reconstruction."""
+    variants = split_semicolon_field(analysis) or [analysis]
+    for var in variants:
+        v = (var or "").strip()
+        if not v or "[" in v:
+            continue
+        if re.search(r"/t=(?=\s*$|[+;,])", v):
+            continue
+        if re.search(r"/t(?=\s*$|[+;,])", v) is None:
+            continue
+        base = re.split(r"/t(?=\s*$|[+;,])", v, maxsplit=1)[0]
+        if "(t" not in base:
+            return True
+    return False
+
+
 def analysis_has_invalid_enclitic_plus(analysis: str) -> bool:
     """True when analysis uses invalid '~+x' enclitic encoding."""
     variants = split_semicolon_field(analysis) or [analysis]
@@ -1008,6 +1025,17 @@ def parse_declared_dulat_token(token: str) -> Tuple[str, str]:
     lemma = (m.group(1) or "").strip()
     hom = (m.group(2) or "").strip()
     return lemma, hom
+
+
+def declared_lemma_looks_t_final(lemma: str) -> bool:
+    """Conservative check whether a declared DULAT lemma is t-final."""
+    normalized = normalize_surface((lemma or "").strip())
+    if not normalized:
+        return False
+    raw_letters = _DECLARED_LEMMA_LETTER_RE.sub("", normalized).lower()
+    normalized_no_tail_group = re.sub(r"\([^)]*\)\s*$", "", normalized).strip()
+    trimmed_letters = _DECLARED_LEMMA_LETTER_RE.sub("", normalized_no_tail_group).lower()
+    return raw_letters.endswith("t") or trimmed_letters.endswith("t")
 
 
 def extract_homonyms_for_lemma(analysis_field: str, dulat_field: str, lemma: str) -> set:
@@ -2514,6 +2542,27 @@ def lint_file(
                                     surface,
                                     analysis,
                                     "Feminine singular noun in DULAT should use '/t'",
+                                )
+                            )
+
+                        if (
+                            noun_like
+                            and has_f_gender
+                            and surface.endswith("t")
+                            and not surface_form_has_pl
+                            and declared_lemma_looks_t_final(head_lemma)
+                            and has_t_split
+                            and analysis_has_lexeme_t_split_without_reconstructed_t(analysis)
+                        ):
+                            issues.append(
+                                Issue(
+                                    "warning",
+                                    str(path),
+                                    i,
+                                    line_id,
+                                    surface,
+                                    analysis,
+                                    "Feminine noun with lexeme-final '-t' should use '(t' before '/t'",
                                 )
                             )
 

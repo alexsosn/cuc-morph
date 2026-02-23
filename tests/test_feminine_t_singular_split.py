@@ -21,7 +21,7 @@ class FeminineTSingularSplitFixerTest(unittest.TestCase):
         fixer = FeminineTSingularSplitFixer()
         row = TabletRow("1", "mlkt", "mlkt/", "mlkt", "n. f.", "queen", "")
         result = fixer.refine_row(row)
-        self.assertEqual(result.analysis, "mlk/t")
+        self.assertEqual(result.analysis, "mlk(t/t")
 
     def test_splits_feminine_dn_with_homonym(self) -> None:
         fixer = FeminineTSingularSplitFixer(
@@ -90,6 +90,38 @@ class FeminineTSingularSplitFixerTest(unittest.TestCase):
             )
             result = fixer.refine_row(row)
             self.assertEqual(result.analysis, "aṯr(t(II)/t")
+
+    def test_rewrites_simple_t_split_when_lemma_is_t_final(self) -> None:
+        fixer = FeminineTSingularSplitFixer()
+        row = TabletRow("7", "thmt", "thm/t", "thmt", "n. f.", "Primordial Ocean", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "thm(t/t")
+
+    def test_rewrites_homonym_t_split_when_lemma_is_t_final(self) -> None:
+        fixer = FeminineTSingularSplitFixer()
+        row = TabletRow("8", "bt", "b(I)/t", "bt (I)", "n. f.", "daughter", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "b(t(I)/t")
+
+    def test_injects_homonym_from_dulat_when_missing_in_analysis(self) -> None:
+        fixer = FeminineTSingularSplitFixer()
+        row = TabletRow("8b", "bt", "b/t", "bt (I)", "n. f.", "daughter", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "b(t(I)/t")
+
+    def test_keeps_simple_t_split_when_lemma_is_not_t_final(self) -> None:
+        fixer = FeminineTSingularSplitFixer()
+        row = TabletRow("9", "kṯrt", "kṯr(I)/t", "kṯr (I)", "n. f.", "Kothar", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "kṯr(I)/t")
+
+    def test_split_variant_still_gets_lexical_t_when_plural_gate_matches(self) -> None:
+        fixer = FeminineTSingularSplitFixer(
+            gate=_PluralOnlyGate(plural_tokens={"bt (I)"}),
+        )
+        row = TabletRow("10", "bt", "b/t", "bt (I)", "n. f.", "daughter", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "b(t(I)/t")
 
 
 if __name__ == "__main__":

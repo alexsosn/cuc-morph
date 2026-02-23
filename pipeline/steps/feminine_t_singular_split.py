@@ -6,12 +6,16 @@ import re
 from pathlib import Path
 from typing import Optional, Sequence
 
+from pipeline.steps.analysis_utils import normalize_surface
 from pipeline.steps.base import RefinementStep, TabletRow
 from pipeline.steps.dulat_gate import DulatMorphGate
 from pipeline.steps.onomastic_overrides import OnomasticOverrideStore
 
 _ONOMASTIC_POS_TAGS: Sequence[str] = ("DN", "PN", "TN", "GN", "MN")
 _UNSPLIT_FEM_T_RE = re.compile(r"^(?P<stem>.+?)t(?P<hom>\([IVX]+\))?/$")
+_SPLIT_FEM_T_RE = re.compile(r"^(?P<stem>.+?)(?P<hom>\([IVX]+\))?/t$")
+_TOKEN_RE = re.compile(r"^(.*?)(?:\s*\(([IVX]+)\))?$")
+_LEMMA_LETTER_RE = re.compile(r"[^A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]")
 
 
 def _split_semicolon(value: str) -> list[str]:
@@ -93,22 +97,32 @@ class FeminineTSingularSplitFixer(RefinementStep):
             return value
         if "[" in value:
             return value
-        if value.endswith(("/m", "/m=", "/t", "/t=")):
+        if value.endswith(("/m", "/m=", "/t=")):
             return value
 
-        match = _UNSPLIT_FEM_T_RE.match(value)
-        if not match:
-            return value
         if not self._is_feminine_context(pos_slot=pos_slot, dulat_slot=dulat_slot):
             return value
-        if self._is_plural_dulat_token(dulat_slot, surface=surface):
+
+        lemma_has_final_t = _declared_lemma_has_final_t(dulat_slot)
+        declared_homonym = _declared_homonym(dulat_slot)
+
+        unsplit_match = _UNSPLIT_FEM_T_RE.match(value)
+        if unsplit_match:
+            if self._is_plural_dulat_token(dulat_slot, surface=surface):
+                return value
+            stem = unsplit_match.group("stem")
+            homonym = unsplit_match.group("hom") or declared_homonym
+            return _render_feminine_t_split(stem=stem, homonym=homonym, lexical_t=lemma_has_final_t)
+
+        split_match = _SPLIT_FEM_T_RE.match(value)
+        if not split_match:
+            return value
+        if not lemma_has_final_t:
             return value
 
-        stem = match.group("stem")
-        homonym = match.group("hom") or ""
-        if homonym:
-            return f"{stem}(t{homonym}/t"
-        return f"{stem}/t"
+        stem = split_match.group("stem")
+        homonym = split_match.group("hom") or declared_homonym
+        return _render_feminine_t_split(stem=stem, homonym=homonym, lexical_t=True)
 
     def _is_plural_dulat_token(self, token: str, surface: str = "") -> bool:
         if self._gate is None:
@@ -141,3 +155,47 @@ class FeminineTSingularSplitFixer(RefinementStep):
         if not normalized:
             return False
         return normalized in self._feminine_onomastic_tokens
+
+
+def _render_feminine_t_split(stem: str, homonym: str, lexical_t: bool) -> str:
+    if lexical_t:
+        if stem.endswith("(t"):
+            return f"{stem}{homonym}/t"
+        return f"{stem}(t{homonym}/t"
+    return f"{stem}{homonym}/t"
+
+
+def _declared_lemma_has_final_t(dulat_slot: str) -> bool:
+    token = (dulat_slot or "").strip()
+    if not token or token == "?":
+        return False
+    if "," in token:
+        token = token.split(",", 1)[0].strip()
+    if token.startswith("/"):
+        return False
+
+    match = _TOKEN_RE.match(token)
+    lemma = (match.group(1) if match else token).strip()
+    if not lemma:
+        return False
+    normalized = normalize_surface(lemma)
+    normalized_no_tail_group = re.sub(r"\([^)]*\)\s*$", "", normalized).strip()
+
+    raw_letters = _LEMMA_LETTER_RE.sub("", normalized).lower()
+    trimmed_letters = _LEMMA_LETTER_RE.sub("", normalized_no_tail_group).lower()
+    return raw_letters.endswith("t") or trimmed_letters.endswith("t")
+
+
+def _declared_homonym(dulat_slot: str) -> str:
+    token = (dulat_slot or "").strip()
+    if not token:
+        return ""
+    if "," in token:
+        token = token.split(",", 1)[0].strip()
+    match = _TOKEN_RE.match(token)
+    if not match:
+        return ""
+    homonym = (match.group(2) or "").strip()
+    if not homonym:
+        return ""
+    return f"({homonym})"

@@ -5,6 +5,7 @@ import unittest
 from linter.lint import (
     analysis_has_homonym_marked_n_clitic,
     analysis_has_invalid_enclitic_plus,
+    analysis_has_lexeme_t_split_without_reconstructed_t,
     analysis_has_missing_feminine_singular_split,
     analysis_has_missing_plural_split,
     analysis_has_missing_suffix_plus,
@@ -19,6 +20,12 @@ from linter.lint import (
 
 
 class LinterWarningPredicateTest(unittest.TestCase):
+    def test_lexeme_t_split_without_reconstructed_t_detected(self) -> None:
+        self.assertTrue(analysis_has_lexeme_t_split_without_reconstructed_t("thm/t"))
+
+    def test_lexeme_t_split_with_reconstructed_t_not_flagged(self) -> None:
+        self.assertFalse(analysis_has_lexeme_t_split_without_reconstructed_t("thm(t/t"))
+
     def test_feminine_singular_missing_split_detected(self) -> None:
         self.assertTrue(analysis_has_missing_feminine_singular_split("mlkt/", "mlkt"))
 
