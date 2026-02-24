@@ -35,7 +35,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147650	bnt	bn(t(I)/t	bnt (I)	n. f.	masonry	
 147650	bnt	bnt(III)/	bnt (III)	n. m.	tamarisk	
 147651	hll	hll/	hll	DN	New Moon	
-147652	snnt	snn(t/t=	snnt	n. f.	swallow	
+147652	snnt	snnt/	snnt	n. f.	swallow	
 # KTU 1.24 7						
 147653	hl	hl	hl	deictic adv. functor	behold	
 147654	ġlmt	ġlm(t(I)/t	ġlmt (I)	n. f.	damsel	
@@ -157,7 +157,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147725	nim	?	?	?	?	DULAT: NOT FOUND
 147726	atn	ytn[	/y-t-n/	vb	to give	
 147727	šdh	šd(I)/+h	šd (I)	n. m.	open field	
-147728	krmm	kr/m	krm	n. m.	vineyard	
+147728	krmm	krm/	krm	n. m.	vineyard	
 # KTU 1.24 23						
 147729	šd	šd(I)/	šd (I)	n. m.	open field	
 147729	šd	šd(II)/	šd (II)	n. m.	a strip	
@@ -183,14 +183,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.24 26						
 147741	m	l(I)	l (I)	prep.	to	
 147742	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
+147742	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 147742	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
-147743	trḫ	!t!rḫ[	/t-r-ḫ/	vb	to marry	
-147744	pdry	pdr(I)/+y	pdr (I)	n. m.	town	
+147743	trḫ	trḫ[	/t-r-ḫ/	vb	to marry	
+147744	pdry	pdry/	pdry	DN	Pidray	
 147745	bth	bt(II)/+h	bt (II)	n. m.	house	
 # KTU 1.24 27						
 147746	aqrbk	?	?	?	?	DULAT: NOT FOUND
 147747	abh	ab/+h	ảb	n. m.	father	
 147748	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
+147748	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 147748	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 # KTU 1.24 28						
 147749	yġtr	!y!ġtr[	/ġ-t-r/	vb	to implore	
@@ -214,7 +216,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147761	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 147762	nyr	nyr/	nyr	n. f.	luminary	
 147763	šmm	šm(m(I)/m	šmm (I)	n. m. pl. tant.	heavens	
-147764	wn	w+n	w	conj.	and	
+147764	wn	wn	wn	→		
 147765	ˤn	ˤn(I)/	ʕn (I)	n. f.	eye	
 147765	ˤn	ˤn[	/ʕ-n/	vb	to see	
 147765	ˤn	ˤn(II)/	ʕn (II)	n. f.	furrow	
@@ -222,7 +224,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147766	ˤmn	ˤm(I)+n	ʕm (I)	prep.	to	
 147767	nkl	nkl/	nkl	DN	nkl	
 147768	ḫtny	ḫtn[	/ḫ-t-n/	vb	to become a son-in-law	
-147768	ḫtny	ḫtn(I)/+ny	ḫtn (I)	n. m.	relationship by marriage	
+147768	ḫtny	ḫtn(I)/	ḫtn (I)	n. m.	relationship by marriage	
 147769	aḫr	aḫr	ảḫr	adv./prep./conj.	afterwards	
 # KTU 1.24 33						
 147770	nkl	nkl/	nkl	DN	nkl	
@@ -240,7 +242,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.24 35						
 147778	kp	kp/	kp	n. f.	palm (of the hand)	
 147779	mznm	mzn/	mzn	n. m.	weight	
-147780	iḫh	aḫ(I)/+h	ảḫ (I)	n. m.	brother (by blood)	
+147780	iḫh	aḫ(I)/	ảḫ (I)	n. m.	brother (by blood)	
 147781	yṯˤr	!y!ṯˤr[	/ṯ-ʕ-r/	vb	to prepare (the table)	
 # KTU 1.24 36						
 147782	mšrrm	mšrr/	mšrr	n. m.	pointer (of the balance)	
@@ -259,7 +261,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.24 38						
 147790	d	d	d	det. or rel. functor	the one(s) of	
 147791	ašr	!a!šr(I)[	/š-r/ (I)	vb	to sing	
-147792	ar	a/	ả	n.	light	
+147792	ar	a/	ả/ỉr	n. m.	light	
 147793	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 147794	w	w	w	conj.	and	
 147795	y	+y, [y	-y (I)	prep. functor	my	
@@ -278,7 +280,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147801	t	/t, /t=				
 147801	t	[t, [t=, [t==, [t===				
 147802	hll	hll/	hll	DN	New Moon	
-147803	snnt	snn(t/t=	snnt	n. f.	swallow	
+147803	snnt	snnt/	snnt	n. f.	swallow	
 147804	bnt	bn(t(II)/t	bnt (II)	n. f.	produce	
 147804	bnt	bn(t(I)/t	bnt (I)	n. f.	masonry	
 147804	bnt	bnt(III)/	bnt (III)	n. m.	tamarisk	
@@ -287,6 +289,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.24 42						
 147806	ll	ll(I)/	ll (I)	n. m.	night	
 147807	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
+147807	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 147807	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 147808	gml	gml(I)/	gml (I)	n. m.	first quarter (of the moon)	
 147808	gml	gml(II)/	gml (II)	n. m.	together	
@@ -295,7 +298,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147810	b	b	b	prep.	in	
 147811	ˤrgzm	ˤrgz(I)/m	ʕrgz (I)	n. m.	juniper berries (?)	
 147812	bzgb	?	?	?	?	DULAT: NOT FOUND
-147813	zt	z/t=	zt	n. m.	olive	
+147813	zt	zt/	zt	n. m.	olive	
 147814	dm	dm(II)/	dm (II)	n. m.	blood	
 147814	dm	dm(I)	dm (I)	functor	since	
 # KTU 1.24 44						
@@ -329,7 +332,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.24 48						
 147833	ṯtqt	ṯtqt/	ṯtqt	DN	ṯtqt	
 147834	ˤmh	ˤm(I)+h	ʕm (I)	prep.	to	
-147835	bqˤt	bqˤt(II)/	bqʕt (II)	TN	bqʿt (II)	
 147835	bqˤt	bqˤt(I)/	bqʕt (I)	DN	Midwife	
 # KTU 1.24 49						
 147836	tqˤt	tqˤt/	tqʕt	DN	applauder	

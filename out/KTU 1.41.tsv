@@ -33,14 +33,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148460	ˤšrt	ˤšr(t(II)/t	ʕšrt (II)	n. f.	group of ten	
 148461	riš	riš(I)/	rỉš (I)	n. m.	head	
 148462	argmn	!a!rgm[	/r-g-m/	vb	to say	
-148462	argmn	a/	ả	n.	payment of tribute to the Hittite court	
+148462	argmn	argmn/	ả/ỉrgmn	n. m.	payment of tribute to the Hittite court	
 # KTU 1.41 5						
 148463	w	w	w	conj.	and	
 148464	ṯn	ṯn(I)/	ṯn (I)	num.	two	
 148465	šm	š/	š	n. m.	ram	
 148465	šm	šm(I)/	šm (I)	n. m.	name	
 148466	lbˤlt	?	?	?	?	DULAT: NOT FOUND
-148467	bhtm	b(II)/t=	bt (II)	n. m.	house	
+148467	bhtm	bt(II)/	bt (II)	n. m.	house	
 148468	ˤṣrm	ˤṣr(I)/+m(I)	ʕṣr (I)	n. f.	bird	
 148468	ˤṣrm	ˤṣr(I)/+m(II)	ʕṣr (I)	n. f.	bird	
 148469	l	l(I)	l (I)	prep.	to	
@@ -54,7 +54,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148473	šdd	šd(II)/+d	šd (II)	n. m.	a strip	
 148473	šdd	šdy[+d	/š-d-y/	vb	to pour	
 148474	ilš	ilš(I)/	ỉlš (I)	DN	ỉlš (I)	
-148474	ilš	ilš(II)/	ỉlš (II)	PN	ỉlš (II)	
 148475	š	š/	š	n. m.	ram	
 148476	ilhm	il(I)/+hm	ỉl (I)	n. m.	god	
 148477	mlk	mlk[	/m-l-k/	vb	to reign	
@@ -98,12 +97,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148502	burbt	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.41 12						
 148503	ytk	ntk[	/n-t-k/	vb	to spill	
-148504	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+148504	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 148505	ilhm	il(I)/+hm	ỉl (I)	n. m.	god	
-148506	ṯkmn	ṯkm/+n	ṯkm	n. m.	shoulder	
+148506	ṯkmn	ṯkmn/	ṯkmn	DN/element of DN	Ṯukamuna/Thukamuna/first element of the double-barrelled DN ṯkmn w šnm, origin unknown	
 148507	w	w	w	conj.	and	
-148508	šnm	šnw[+m(I)	/š-n-w/	vb	to change: a) reflex.	
-148508	šnm	šnw[+m(II)	/š-n-w/	vb	to change: a) reflex.	
+148508	šnm	šnm/	šnm	DN	Šunama/Shunama/second member of the double-barrelled divine name ṯkmn w šnm, origin unknown	
 # KTU 1.41 13						
 148509	dqt	dqt(I)/	dqt (I)	adj. f. or n. f.	small	
 148510	ršp	ršp/	ršp	DN	Rašap	
@@ -120,15 +118,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148517	w	w	w	conj.	and	
 148518	š	š/	š	n. m.	ram	
 148519	ilhm	il(I)/+hm	ỉl (I)	n. m.	god	
-148520	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+148520	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 148521	ilhm	il(I)/+hm	ỉl (I)	n. m.	god	
 # KTU 1.41 15						
 148522	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
+148522	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 148522	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 148523	š	š/	š	n. m.	ram	
 148524	aṯtrt	?	?	?	?	DULAT: NOT FOUND
 148525	š	š/	š	n. m.	ram	
-148526	ṯkmn	ṯkm/+n	ṯkm	n. m.	shoulder	
+148526	ṯkmn	ṯkmn/	ṯkmn	DN/element of DN	Ṯukamuna/Thukamuna/first element of the double-barrelled DN ṯkmn w šnm, origin unknown	
 148527	wšnm	?	?	?	?	DULAT: NOT FOUND
 148528	š	š/	š	n. m.	ram	
 # KTU 1.41 16						
@@ -144,13 +143,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148536	pḫr	pḫr(I)/	pḫr (I)	n. m.	assembly	
 148536	pḫr	pḫr(II)/	pḫr (II)	n. m.	potter	
 148537	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
+148537	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 148537	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 # KTU 1.41 17						
-148538	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+148538	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 148539	šlm	šlm(I)/	šlm (I)	n. m.	peace	
 148539	šlm	šlm[	/š-l-m/	vb	to be well	
 148539	šlm	šlm(III)/	šlm (III)	adj. m.	pure	
-148540	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+148540	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 148541	w	w	w	conj.	and	
 148542	burm	?	?	?	?	DULAT: NOT FOUND
 148543	lb	lb/	lb	n. m.	heart	
@@ -163,7 +163,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148549	dṯt	dṯ(t/t	dṯt	n. f.	fodder or spring grass	
 148550	w	w	w	conj.	and	
 # KTU 1.41 19						
-148551	ksm	ks/	ks	n. m.	emmer-corn	
+148551	ksm	ks/	ks/śm(n)	n. m.	emmer-corn	
 148551	ksm	ksm/	ksm	n. m.	part	
 148552	ṯlṯm	ṯlṯm/	ṯlṯm	num.	thirty	
 148553	mlu	mlu/	mlủ	n. m.	fill	
@@ -202,10 +202,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.41 23						
 148576	kdm	kd(I)/m	kd (I)	n. f.	jar	
 148577	yn	yn/	yn	n. m.	wine	
+148578	prs	pr/	prś/s	n. m.	misura di capacità per aridi	
 148578	prs	prs(I)/	prs (I)	n. m.	pole	
-148578	prs	pr/	prś	n.	misura di capacità per aridi	
 148579	qmḥ	qmḥ/	qmḥ	n. m.	flour	
-148580	mˤlt	mˤl(t/t=	mʕlt	n. f.	step	
+148580	mˤlt	mˤlt/	mʕlt	n. f.	step	
 # KTU 1.41 24						
 148581	mdbḥt	mdbḥ/t=	mdbḥ	n. m.	altar	
 148582	bt	bt(II)/	bt (II)	n. m.	house	
@@ -229,17 +229,17 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148592	ll	ll(I)/	ll (I)	n. m.	night	
 148593	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 # KTU 1.41 26						
-148594	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+148594	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 148595	l	l(I)	l (I)	prep.	to	
 148595	l	l(II)	l (II)	adv.	no	
 148595	l	l(III)	l (III)	functor	certainly	
 148596	nkl	nkl/	nkl	DN	nkl	
-148597	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+148597	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 148598	l	l(I)	l (I)	prep.	to	
 148598	l	l(II)	l (II)	adv.	no	
 148598	l	l(III)	l (III)	functor	certainly	
 148599	bˤlt	bˤl(t/t	bʕlt	n. f.	lady	
-148600	bhtm	b(II)/t=	bt (II)	n. m.	house	
+148600	bhtm	bt(II)/	bt (II)	n. m.	house	
 # KTU 1.41 27						
 148601	ˤṣrm	ˤṣr(I)/+m(I)	ʕṣr (I)	n. f.	bird	
 148601	ˤṣrm	ˤṣr(I)/+m(II)	ʕṣr (I)	n. f.	bird	
@@ -248,12 +248,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148602	l	l(III)	l (III)	functor	certainly	
 148603	ins	?	?	?	?	DULAT: NOT FOUND
 148604	ilm	il(I)/m	ỉl (I)	n. m.	god	
-148605	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+148605	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 # KTU 1.41 28						
 148606	ilhm	il(I)/+hm	ỉl (I)	n. m.	god	
 148607	dqt	dqt(I)/	dqt (I)	adj. f. or n. f.	small	
 148608	špš	špš/	špš	n.	sun	
-148609	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+148609	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 148610	rš	rš[	/r-š(-š)/	vb	to be ruined	
 # KTU 1.41 29						
 148611	p	p(I)	p (I)	conj. functor	and	
@@ -268,16 +268,15 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.41 30						
 148617	ilh	il(t(I)/&h	ỉlt (I)	n. f.	goddess	
 148617	ilh	ilh/	ỉlh	DN	the ‘Divine One’	
-148618	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+148618	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 148619	ilhm	il(I)/+hm	ỉl (I)	n. m.	god	
-148620	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+148620	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 148621	il	il(I)/	ỉl (I)	n. m.	god	
 # KTU 1.41 31						
 148622	dqt	dqt(I)/	dqt (I)	adj. f. or n. f.	small	
-148623	ṯkmn	ṯkm/+n	ṯkm	n. m.	shoulder	
+148623	ṯkmn	ṯkmn/	ṯkmn	DN/element of DN	Ṯukamuna/Thukamuna/first element of the double-barrelled DN ṯkmn w šnm, origin unknown	
 148624	w	w	w	conj.	and	
-148625	šnm	šnw[+m(I)	/š-n-w/	vb	to change: a) reflex.	
-148625	šnm	šnw[+m(II)	/š-n-w/	vb	to change: a) reflex.	
+148625	šnm	šnm/	šnm	DN	Šunama/Shunama/second member of the double-barrelled divine name ṯkmn w šnm, origin unknown	
 148626	dqt	dqt(I)/	dqt (I)	adj. f. or n. f.	small	
 # KTU 1.41 32						
 148627	ilt	il(t(I)/t	ỉlt (I)	n. f.	goddess	
@@ -291,7 +290,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148633	šlmm	šlm(II)/~m	šlm (II)	n. m.	communion victim / sacrifice	
 148633	šlmm	šlm(II)/m	šlm (II)	n. m.	communion victim / sacrifice	
 148634	kmm	kmm	kmm	adv.	ditto	
-148635	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+148635	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 148636	l	l(I)	l (I)	prep.	to	
 148636	l	l(II)	l (II)	adv.	no	
 148636	l	l(III)	l (III)	functor	certainly	
@@ -303,7 +302,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148640	l	l(II)	l (II)	adv.	no	
 148640	l	l(III)	l (III)	functor	certainly	
 148641	ṣpn	ṣpn/	ṣpn	TN/DN	Ṣapānu/Zaphon/the mountain dwelling of bʕl deified	
-148642	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+148642	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 148643	lbˤl	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.41 35						
 148644	ugrt	ugrt/	ủgrt	TN	ʾugarītu	
@@ -312,7 +311,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148646	l	l(II)	l (II)	adv.	no	
 148646	l	l(III)	l (III)	functor	certainly	
 148647	ilib	ilib(I)/	ỉlỉb (I)	DN	father god	
-148648	ġrt	ġr(t(I)/t=	ġrt (I)	n. f.	rock	
+148648	ġrt	ġrt(I)/	ġrt (I)	n. f.	rock	
 # KTU 1.41 36						
 148649	wˤṣrm	?	?	?	?	DULAT: NOT FOUND
 148650	l	l(I)	l (I)	prep.	to	
@@ -323,7 +322,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.41 37						
 148653	wbt	?	?	?	?	DULAT: NOT FOUND
 148654	bˤlt	bˤl(t/t	bʕlt	n. f.	lady	
-148655	btm	bt(II)/t=	bt (II)	n. m.	house	
+148655	btm	bt(II)/m	bt (II)	n. m.	house	
 148655	btm	b(t(I)/tm	bt (I)	n. f.	daughter	
 148656	rmm	rm(I)/	rm (I)	adj. m.	high	
 148656	rmm	rm[	/r-m/	vb	to go up	
@@ -337,8 +336,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148662	bt	b(t(I)/t	bt (I)	n. f.	daughter	
 148663	il	il(I)/	ỉl (I)	n. m.	god	
 148664	ṯql	ṯql/	ṯql	n. m.	shekel	
-148665	ks	ks/	ks	n. m.	emmer-corn	
 148665	ks	ks(I)/	ks (I)	n. m.	cup	
+148665	ks	ks/	ks/śm(n)	n. m.	emmer-corn	
 # KTU 1.41 39						
 148666	p	p(I)	p (I)	conj. functor	and	
 148666	p	p(III)/	p (III)	n. m.	mouth	
@@ -370,12 +369,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148677	ṯṯb	]š]ṯb[	/ṯ-b/	vb	to return	
 148678	mdbḥ	mdbḥ/	mdbḥ	n. m.	altar	
 148679	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
+148679	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 148679	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
-148680	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+148680	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 148681	l	l(I)	l (I)	prep.	to	
 148681	l	l(II)	l (II)	adv.	no	
 148681	l	l(III)	l (III)	functor	certainly	
 148682	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
+148682	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 148682	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 # KTU 1.41 42						
 148683	dqt	dqt(I)/	dqt (I)	adj. f. or n. f.	small	
@@ -399,7 +400,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148695	š	š/	š	n. m.	ram	
 148696	dd	dd(II)/	dd (II)	n. m.	cauldronful	
 148697	šmn	šmn(I)/	šmn (I)	n. m.	oil	
-148698	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+148698	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 148699	w	w	w	conj.	and	
 148700	mlk	mlk[	/m-l-k/	vb	to reign	
 148700	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
@@ -417,7 +418,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148708	šmn	šmn(I)/	šmn (I)	n. m.	oil	
 # KTU 1.41 46						
 148709	ˤlyh	ˤly(II)/h	ʕly (II)	n. m.	place of sacrifice	
-148710	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+148710	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 148711	rgm	rgm[	/r-g-m/	vb	to say	
 148711	rgm	rgm/	rgm	n. m.	word	
 148712	yṯṯb	!y!]š]ṯb[	/ṯ-b/	vb	to return	
@@ -437,6 +438,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148721	ym	ym(I)/	ym (I)	n. m.	day	
 148721	ym	ym(II)/	ym (II)	n. m.	sea	
 148722	ˤrb	ˤrb(I)[	/ʕ-r-b/ (I)	vb	to enter	
+148722	ˤrb	ˤrb(II)[	/ʕ-r-b/ (II)	vb	to give a guarantee or pledge	
 148722	ˤrb	ˤrb(I)/	ʕrb (I)	n. m.	entry	
 148723	špš	špš/	špš	n.	sun	
 # KTU 1.41 48						

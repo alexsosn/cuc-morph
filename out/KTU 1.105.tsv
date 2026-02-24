@@ -49,14 +49,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152725	l	l(III)	l (III)	functor	certainly	
 152726	bˤlt	bˤl(t/t	bʕlt	n. f.	lady	
 # KTU 1.105 9						
-152727	bwtm	b(II)/t=	bt (II)	n. m.	house	
+152727	bwtm	bt(II)/	bt (II)	n. m.	house	
 152728	š	š/	š	n. m.	ram	
 152729	iṯtqb	iṯtqb/	ỉṯtqb	TN	ỉṯtqb	
 # KTU 1.105 10						
 152730	w	w	w	conj.	and	
 152731	š	š/	š	n. m.	ram	
-152732	nbkm	nb(I)/+m(I)	nb (I)	n.	fountain	
-152732	nbkm	nb(I)/+m(II)	nb (I)	n.	fountain	
+152732	nbkm	nbkm/	nbkm	TN	nbkm	
 152733	w	w	w	conj.	and	
 152734	š	š/	š	n. m.	ram	
 # KTU 1.105 11						
@@ -95,12 +94,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152754	l	l(II)	l (II)	adv.	no	
 152754	l	l(III)	l (III)	functor	certainly	
 152755	bˤlt	bˤl(t/t	bʕlt	n. f.	lady	
-152756	bhtm	b(II)/t=	bt (II)	n. m.	house	
+152756	bhtm	bt(II)/	bt (II)	n. m.	house	
 # KTU 1.105 17						
 152757	b	b	b	prep.	in	
 152758	arbˤt	arbˤ/	ảrbʕ	num.	four	
 152759	ˤšrt	ˤšr(t(II)/t	ʕšrt (II)	n. f.	group of ten	
 152760	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
+152760	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 152760	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 # KTU 1.105 18						
 152761	ˤrkm	ˤrk(II)/	ʕrk (II)	n. m.	loaves of bread	
@@ -147,6 +147,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152788	l	l(II)	l (II)	adv.	no	
 152788	l	l(III)	l (III)	functor	certainly	
 152789	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
+152789	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 152789	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 152790	ˤṣr	ˤṣr(I)/	ʕṣr (I)	n. f.	bird	
 152791	lṣpn	?	?	?	?	DULAT: NOT FOUND

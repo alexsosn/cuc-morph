@@ -28,6 +28,15 @@
 - Expanded pipeline scope defaults from `KTU 1.*.tsv` to `KTU *.tsv` (`pipeline/tablet_parsing.py`) and added `--source-glob` to `scripts/run_tablet_parsing_pipeline.py` for explicit family-scoped runs.
 - Added pipeline test coverage for default all-family target selection (`tests/test_tablet_parsing_pipeline.py`).
 - Applied the post-`c7ebe6f` instruction + refinement chain across all tablet families (`KTU *.tsv`) and regenerated lint reports; packed semicolon rows in `col3`-`col6` are now `0` corpus-wide and duplicate unwrapped payload rows are `0` corpus-wide.
+- Refined `ydk` ambiguity payload in `pipeline/steps/known_ambiguities.py` to stop linking suffix lexemes in `col4`-`col6` (`yd (I|II)` + nominal POS/gloss only; no `, -k` / `pers. pn.` tails).
+- Added `YdkContextDisambiguator` (`pipeline/steps/ydk_context_disambiguator.py`) and wired it in `pipeline/tablet_parsing.py` after row unwrapping + duplicate pruning:
+  - contextual rule `ydk` followed by `ṣġr` collapses to one reading: `yd(II)/+k= | yd (II) | n. m. | love`.
+- Moved `SuffixPayloadCollapseFixer` later in the pipeline (after generic overrides) so no downstream step can reintroduce clitic-linked DULAT/POS/gloss payloads.
+- Added regression tests:
+  - `tests/test_ydk_context_disambiguator.py`,
+  - updated `tests/test_refinement_steps.py` (`ydk` ambiguity payload expectations),
+  - updated `tests/test_tablet_parsing_pipeline.py` (ordering guard for `known-ambiguity-expander` -> `suffix-payload-collapse` and `unwrapped-duplicate-pruner` -> `ydk-context-disambiguator`).
+- Re-ran the full corpus pipeline over `out/KTU *.tsv` (278 tablets) with reports regenerated; user-flagged `out/KTU 1.22.tsv` row `146856` is now `yd(II)/+k= | yd (II) | n. m. | love`, and `ydk` suffix-payload linkage warnings were eliminated from lint reports.
 
 - Added `SuffixPayloadCollapseFixer` (`pipeline/steps/suffix_payload_collapse.py`) and wired it into `pipeline/tablet_parsing.py` after suffix normalization to collapse clitic-linked DULAT payloads to host-lexeme metadata.
 - Rule: when `col3` already encodes suffix/enclitic markers (`+`, `~`, or bracketed clitic tails), strip `col4` suffix payload segments (`, -x ...`) and trim aligned suffix-function/suffix-gloss tails in `col5`/`col6`.

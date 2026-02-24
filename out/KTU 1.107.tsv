@@ -12,8 +12,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152931	xxxxxx	?	?	?	?	
 152932	wxrṣ	?	?	?	?	DULAT: NOT FOUND
 152933	bdh	bd(IV)+h	bd (IV)	prep.	into the hands of	
-152934	ydrm	ndr[+m(I)	/n-d-r/	vb	to make a vow	
-152934	ydrm	ndr[+m(II)	/n-d-r/	vb	to make a vow	
+152934	ydrm	ydrm/	ydrm	PN	ydrm	
 152935	pit	pit/	pỉt	n. m.	temple	
 152936	adm	adm(I)/	ảdm (I)	n. m.	man	
 152936	adm	ʔdm[	/ʔ-d-m/	vb	to be	
@@ -35,7 +34,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152947	xxxxxq	?	?	?	?	DULAT: NOT FOUND
 152948	nṯk	nṯk(II)/	nṯk (II)	n. m.	bite	
 152948	nṯk	nṯk(I)/	nṯk (I)	n. m.	biter	
-152948	nṯk	!n!ṯk[	/n-ṯ-k/	vb	to bite	
+152948	nṯk	nṯk[	/n-ṯ-k/	vb	to bite	
 152949	l	l(I)	l (I)	prep.	to	
 152949	l	l(II)	l (II)	adv.	no	
 152949	l	l(III)	l (III)	functor	certainly	
@@ -60,7 +59,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152959	tˤbtnh	?	?	?	?	DULAT: NOT FOUND
 152960	abdy	abdy/	ảbdy	n. f.	ruin	
 # KTU 1.107 8						
-152961	npl	!n!pl[	/n-p-l/	vb	to fall	
+152961	npl	npl[	/n-p-l/	vb	to fall	
 152962	b	b	b	prep.	in	
 152963	šr	šr(II)/	šr (II)	n. m.	musician	
 152963	šr	šr(III)/	šr (III)	n. m.	Prince	
@@ -155,7 +154,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153016	ytk	ntk[	/n-t-k/	vb	to spill	
 153017	bltxxxxxxxxxxx	?	?	?	?	DULAT: NOT FOUND
 153018	amr	amr(I)/	ảmr (I)	n. m.	order	
-153019	hwt	hw(t(I)/t	hwt (I)	n. f.	word/matter	
+153019	hwt	hw(t(I)/t	hwt (I)	n. f.	word	
 # KTU 1.107 18						
 153020	xxxxx	?	?	?	?	
 153021	ṯllt	ṯll(t/t	ṯllt	n. f.	?	
@@ -179,7 +178,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153030	mdb	mdb/	mdb	n. m.	tide	
 # KTU 1.107 20						
 153031	xxxxxh	?	?	?	?	DULAT: NOT FOUND
-153032	mḫlpt	mḫlp(t/t=	mḫlpt	n. f.	plait	
+153032	mḫlpt	mḫlpt/	mḫlpt	n. f.	plait	
 153033	xxxxxxxxxx	?	?	?	?	
 153034	amr	amr(I)/	ảmr (I)	n. m.	order	
 # KTU 1.107 21						
@@ -245,7 +244,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153074	nxxx	?	?	?	?	DULAT: NOT FOUND
 153075	xxx	?	?	?	?	
 153076	xxxx	?	?	?	?	
-153077	ḥrn	ḥr(I)/+n	ḥr (I)	n. m.	intestine(s)	
+153077	ḥrn	ḥrn/	ḥrn	DN	Ḥôrānu	
 # KTU 1.107 32						
 153078	xxxxxsp	?	?	?	?	DULAT: NOT FOUND
 153079	ḫph	ḫp(I)/h	ḫp (I)	n. m.	shore	
@@ -321,6 +320,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153126	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f.	wall	
 # KTU 1.107 39						
 153127	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
+153127	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 153127	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 153128	w	w	w	conj.	and	
 153129	dgn	dgn(I)/	dgn (I)	n. m.	grain	
@@ -396,7 +396,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153175	p	p(II)	p (II)	adv.	here	
 153176	nṯk	nṯk(II)/	nṯk (II)	n. m.	bite	
 153176	nṯk	nṯk(I)/	nṯk (I)	n. m.	biter	
-153176	nṯk	!n!ṯk[	/n-ṯ-k/	vb	to bite	
+153176	nṯk	nṯk[	/n-ṯ-k/	vb	to bite	
 153177	abd	ʔbd[	/ʔ-b-d/	vb	be missing	
 153177	abd	abd(I)/	ảbd (I)	n. m.	ruin	
 153178	l	l(I)	l (I)	prep.	to	

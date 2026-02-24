@@ -615,8 +615,10 @@ class KnownAmbiguityExpanderTest(unittest.TestCase):
         )
         self.assertEqual(
             result.dulat,
-            "yd (I), -k (I);yd (I), -k (I);yd (II), -k (I);yd (II), -k (I);d-k(-k)/;d-k(-k)/",
+            "yd (I);yd (I);yd (II);yd (II);d-k(-k)/;d-k(-k)/",
         )
+        self.assertEqual(result.pos, "n. f.;n. f.;n. m.;n. m.;vb;vb")
+        self.assertEqual(result.gloss, "hand;hand;love;love;to be pounded;to be pounded")
 
     def test_expands_shlmm_to_enclitic_and_plural_variants(self) -> None:
         row = TabletRow(
@@ -651,10 +653,10 @@ class SurfaceOptionPropagationFixerTest(unittest.TestCase):
                     "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
                     "1\tydk\t"
                     "yd(I)/+k;yd(I)/+k=;yd(II)/+k;yd(II)/+k=;!y!dk[;!y=!dk[\t"
-                    "yd (I), -k (I);yd (I), -k (I);yd (II), -k (I);yd (II), -k (I);"
+                    "yd (I);yd (I);yd (II);yd (II);"
                     "d-k(-k)/;d-k(-k)/\t"
-                    "n. f.,pers. pn.;n. f.,pers. pn.;n. m.,pers. pn.;n. m.,pers. pn.;vb;vb\t"
-                    "hand, your(s);hand, your(s);love, your(s);love, your(s);"
+                    "n. f.;n. f.;n. m.;n. m.;vb;vb\t"
+                    "hand;hand;love;love;"
                     "to be pounded;to be pounded\t\n"
                 ),
                 encoding="utf-8",
@@ -818,10 +820,10 @@ class SurfaceOptionPropagationFixerTest(unittest.TestCase):
                     "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
                     "1\tydk\t"
                     "yd(I)/+k;yd(I)/+k=;yd(II)/+k;yd(II)/+k=;!y!dk[;!y=!dk[\t"
-                    "yd (I), -k (I);yd (I), -k (I);yd (II), -k (I);yd (II), -k (I);"
+                    "yd (I);yd (I);yd (II);yd (II);"
                     "d-k(-k)/;d-k(-k)/\t"
-                    "n. f.,pers. pn.;n. f.,pers. pn.;n. m.,pers. pn.;n. m.,pers. pn.;vb;vb\t"
-                    "hand, your(s);hand, your(s);love, your(s);love, your(s);"
+                    "n. f.;n. f.;n. m.;n. m.;vb;vb\t"
+                    "hand;hand;love;love;"
                     "to be pounded;to be pounded\t\n"
                 ),
                 encoding="utf-8",

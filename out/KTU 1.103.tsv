@@ -1,6 +1,6 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.103 1						
-152308	ṯknt	ṯkn(t/t=	ṯknt	n. f.	appearance	
+152308	ṯknt	ṯknt/	ṯknt	n. f.	appearance	
 152309	ṣin	ṣin(I)/	ṣỉn (I)	n. f.	ewe	
 152310	k	+k	-k (I)			
 152310	k	~k	-k (II)			
@@ -12,7 +12,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152313	abn	ab/+n	ảb	n. m.	father	
 152313	abn	abn/	ảbn	n. f.	stone	
 152313	abn	!a!bn[	/b-n/	vb	to understand	
-152314	madtn	madt(I)/+n	mảdt (I)	n. f.	great quantity	
+152314	madtn	mad(t(I)/t+n	mảdt (I)	n. f.	great quantity	
 152315	tqln	!t!ql[	/q-l/	vb	to fall (down)	
 152316	bḥwt	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.103 2						
@@ -20,8 +20,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152318	nḥš	nḥš/	nḥš	n. m.	serpent	
 152319	yaṯr	!y!ʔṯr[	/ʔ-ṯ-r/	vb	to go	
 152320	yld	!y!(yld[	/y-l-d/	vb	to give birth (to)	
-152320	yld	yld/	yld	n. m.	son	
-152321	bhmth	bhmt/+h	bhmt	n. f.	cattle	
+152321	bhmth	bhm(t/t+h	bhmt	n. f.	cattle	
 152322	tˤṭpn	!t!ˤṭp[	/ʕ-ṭ-p/	vb	to be weak	
 # KTU 1.103 3						
 152323	gm	g/	g	n. m.	(loud) voice	
@@ -178,6 +177,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152427	w	w	w	conj.	and	
 152428	qrn	qrn/	qrn	n. f.	horn	
 152429	šir	šir(I)/	šỉr (I)	n. m.	flesh	
+152429	šir	šir(II)/	šỉr (II)	n. m.	strip	
 152430	l	l(I)	l (I)	prep.	to	
 152430	l	l(II)	l (II)	adv.	no	
 152430	l	l(III)	l (III)	functor	certainly	
@@ -317,7 +317,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152524	ḏrˤ	ḏrˤ(I)/	ḏrʕ (I)	n. f.	arm	
 152525	mlk	mlk[	/m-l-k/	vb	to reign	
 152525	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
-152526	hwt	hw(t(I)/t	hwt (I)	n. f.	word/matter	
+152526	hwt	hw(t(I)/t	hwt (I)	n. f.	word	
 # KTU 1.103 44						
 152527	yḥsl	!y!ḥsl[	/ḥ-s-l/	vb	to wipe out	
 152528	xxxxḥ	?	?	?	?	DULAT: NOT FOUND

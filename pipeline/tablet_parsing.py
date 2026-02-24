@@ -39,6 +39,7 @@ from pipeline.steps.unwrapped_duplicate_pruner import UnwrappedDuplicatePruner
 from pipeline.steps.variant_row_unwrapper import VariantRowUnwrapper
 from pipeline.steps.weak_final_sc import WeakFinalSuffixConjugationFixer
 from pipeline.steps.weak_verb import WeakVerbFixer
+from pipeline.steps.ydk_context_disambiguator import YdkContextDisambiguator
 
 
 @dataclass(frozen=True)
@@ -80,7 +81,6 @@ class TabletParsingPipeline:
             Ktu1FamilyHomonymPruner(dulat_db=self.config.dulat_db),
             SuffixCliticFixer(gate=self.morph_gate),
             SuffixParadigmNormalizer(),
-            SuffixPayloadCollapseFixer(),
             WeakVerbFixer(),
             WeakFinalSuffixConjugationFixer(),
             PronounClosureFixer(),
@@ -95,8 +95,10 @@ class TabletParsingPipeline:
             NominalCaseEndingYHFixer(gate=self.morph_gate),
             SurfaceReconstructabilityFixer(),
             GenericParsingOverrideFixer(),
+            SuffixPayloadCollapseFixer(),
             VariantRowUnwrapper(),
             UnwrappedDuplicatePruner(),
+            YdkContextDisambiguator(),
             # Keep schema pass last so any content-changing steps still end in
             # strict 7-column/quote-safe TSV for GitHub rendering.
             TsvSchemaFormatter(),

@@ -99,6 +99,33 @@ class TabletParsingPipelineTest(unittest.TestCase):
             self.assertEqual(result["target_count"], 1)
             self.assertTrue(result["dry_run"])
 
+    def test_suffix_payload_collapse_runs_after_known_ambiguities(self):
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            src = root / "cuc_tablets_tsv"
+            out = root / "out"
+            src.mkdir(parents=True)
+            out.mkdir(parents=True)
+
+            config = PipelineConfig(
+                source_dir=src,
+                out_dir=out,
+                dulat_db=root / "dulat.sqlite",
+                udb_db=root / "udb.sqlite",
+                include_existing=False,
+            )
+            pipeline = TabletParsingPipeline(config=config)
+            names = [step.name for step in pipeline._refinement_steps]
+
+            self.assertLess(
+                names.index("known-ambiguity-expander"),
+                names.index("suffix-payload-collapse"),
+            )
+            self.assertLess(
+                names.index("unwrapped-duplicate-pruner"),
+                names.index("ydk-context-disambiguator"),
+            )
+
 
 if __name__ == "__main__":
     unittest.main()
