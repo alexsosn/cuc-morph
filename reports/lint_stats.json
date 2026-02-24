@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-02-24T23:30:00.630812+00:00",
+  "generated_at_utc": "2026-02-24T23:55:12.184154+00:00",
   "files_checked": 278,
-  "total_issues": 11700,
-  "fallback_parsed": 654,
+  "total_issues": 11724,
+  "fallback_parsed": 675,
   "by_severity": {
-    "ERROR": 6321,
-    "WARNING": 930,
+    "ERROR": 6342,
+    "WARNING": 951,
     "INFO": 1621
   },
   "by_problem_type": [
@@ -22,7 +22,7 @@
     {
       "severity": "ERROR",
       "problem_type": "POS token not allowed for declared DULAT entry",
-      "count": 506
+      "count": 527
     },
     {
       "severity": "ERROR",
@@ -127,6 +127,11 @@
     {
       "severity": "WARNING",
       "problem_type": "nṯk Lexeme parse did not match DULAT; matched by surface form",
+      "count": 14
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "pn DULAT plurale tantum noun should include 'pl. tant.' in POS",
       "count": 14
     },
     {
@@ -337,6 +342,11 @@
     {
       "severity": "WARNING",
       "problem_type": "nṣb Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "pnh DULAT plurale tantum noun should include 'pl. tant.' in POS",
       "count": 3
     },
     {
@@ -906,7 +916,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "pnk DULAT plurale tantum noun should include 'pl. tant.' in POS",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "pnm DULAT plurale tantum noun should include 'pl. tant.' in POS",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "pnt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "pnwh DULAT plurale tantum noun should include 'pl. tant.' in POS",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "pny DULAT plurale tantum noun should include 'pl. tant.' in POS",
       "count": 1
     },
     {

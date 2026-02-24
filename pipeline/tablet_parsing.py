@@ -27,6 +27,7 @@ from pipeline.steps.l_body_compound_prep import LBodyCompoundPrepDisambiguator
 from pipeline.steps.l_functor_vocative_context import LFunctorVocativeContextDisambiguator
 from pipeline.steps.l_kbd_compound_prep import LKbdCompoundPrepDisambiguator
 from pipeline.steps.l_negation_verb_context import LNegationVerbContextPruner
+from pipeline.steps.l_preposition_bigram_context import LPrepositionBigramContextDisambiguator
 from pipeline.steps.nominal_case_ending_yh import NominalCaseEndingYHFixer
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
@@ -107,6 +108,7 @@ class TabletParsingPipeline:
             LFunctorVocativeContextDisambiguator(),
             LKbdCompoundPrepDisambiguator(),
             LBodyCompoundPrepDisambiguator(),
+            LPrepositionBigramContextDisambiguator(),
             KFunctorBigramContextDisambiguator(),
             YdkContextDisambiguator(),
             # Keep schema pass last so any content-changing steps still end in

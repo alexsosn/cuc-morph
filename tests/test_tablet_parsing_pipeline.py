@@ -139,6 +139,10 @@ class TabletParsingPipelineTest(unittest.TestCase):
             )
             self.assertLess(
                 names.index("l-body-compound-prep"),
+                names.index("l-preposition-bigram-context"),
+            )
+            self.assertLess(
+                names.index("l-preposition-bigram-context"),
                 names.index("k-functor-bigram-context"),
             )
             self.assertLess(

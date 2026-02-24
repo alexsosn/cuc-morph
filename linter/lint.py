@@ -22,6 +22,14 @@ from pipeline.config.l_negation_exception_refs import (
     extract_separator_ref,
     is_forced_l_negation_ref,
 )
+from pipeline.config.l_preposition_bigram_rules import (
+    L_BAAL_ANALYSIS,
+    L_BAAL_DULAT,
+    L_BAAL_SURFACE,
+    L_FORCE_I_BIGRAM_SURFACES,
+    L_PN_FAMILY_FORCE_I_SURFACES,
+    L_PN_PREP_CANONICAL_PAYLOADS,
+)
 
 # -----------------------------
 # Utilities
@@ -1461,6 +1469,34 @@ def row_is_l_body_compound_variant(row: Dict[str, str], second_surface: str) -> 
     )
 
 
+def row_is_baal_ii_variant(row: Dict[str, str]) -> bool:
+    """True when row is the exact `bˤl(II)` lexical reading."""
+    return (
+        (row.get("surface", "") or "").strip() == L_BAAL_SURFACE
+        and (row.get("analysis_field", "") or "").strip() == L_BAAL_ANALYSIS
+        and (row.get("dulat_field", "") or "").strip() == L_BAAL_DULAT
+    )
+
+
+def row_is_l_pn_prep_variant(row: Dict[str, str], second_surface: str) -> bool:
+    """True when row matches canonical lexicalized `l pn*` prepositional payload."""
+    payload = L_PN_PREP_CANONICAL_PAYLOADS.get(second_surface)
+    if payload is None:
+        return False
+    return (
+        (row.get("surface", "") or "").strip() == second_surface
+        and (row.get("analysis_field", "") or "").strip() == payload.analysis
+        and (row.get("dulat_field", "") or "").strip() == payload.dulat
+        and (row.get("pos_field", "") or "").strip() == payload.pos
+        and (row.get("gloss_field", "") or "").strip() == payload.gloss
+    )
+
+
+def is_ktu4_tablet(path: Path) -> bool:
+    """True when file belongs to KTU 4.* family."""
+    return path.name.startswith("KTU 4.")
+
+
 L_NEGATION_VERB_CONTEXT_MSG = "l(II) ('no/not') should be used only before verbal forms"
 L_NEGATION_FORCED_EXCEPTION_MSG = "DULAT exception context requires a single l(II) reading"
 L_FUNCTOR_VOCATIVE_FORCED_MSG = "DULAT context requires a single l({homonym}) reading"
@@ -1471,6 +1507,12 @@ L_KBD_COMPOUND_PREP_MSG = (
 L_BODY_COMPOUND_PREP_MSG = (
     "Compound preposition `l {surface}` should use single readings: l(I) and "
     "{analysis} with POS `prep.` and gloss `{gloss}`"
+)
+L_FORCE_I_BIGRAM_MSG = "Bigram `l {surface}` should use a single l(I) reading"
+L_BAAL_NON_KTU4_MSG = "Outside KTU 4.*, `l bˤl` should use single readings: l(I) and bˤl(II)"
+L_PN_PREP_MSG = (
+    "Lexicalized preposition `l {surface}` should use single readings: l(I) and "
+    "{analysis} with POS `prep.` and gloss `in front`"
 )
 K_FUNCTOR_BIGRAM_MSG = "Formula bigram `k {surface}` should use a single k(III) reading"
 
@@ -3659,6 +3701,108 @@ def lint_file(
                 ),
             )
         )
+
+    # High-confidence `l + X` prepositional contexts:
+    # - force single `l(I)` for selected followers,
+    # - force `l(I) + bˤl(II)` outside KTU 4.*,
+    # - normalize lexicalized `l pn*` forms to prepositional payload.
+    for idx, group in enumerate(token_groups):
+        if (group.get("surface", "") or "").strip() != "l":
+            continue
+        next_group = token_groups[idx + 1] if idx + 1 < len(token_groups) else None
+        if next_group is None:
+            continue
+
+        next_surface = (next_group.get("surface", "") or "").strip()
+        group_rows = group.get("rows", [])
+        next_group_rows = next_group.get("rows", [])
+        if not isinstance(group_rows, list) or not group_rows:
+            continue
+        if not isinstance(next_group_rows, list) or not next_group_rows:
+            continue
+
+        l_ok = len(group_rows) == 1 and row_is_l_homonym_variant(group_rows[0], homonym="I")
+
+        if next_surface == L_BAAL_SURFACE and not is_ktu4_tablet(path):
+            has_baal_ii = any(row_is_baal_ii_variant(row) for row in next_group_rows)
+            if not has_baal_ii:
+                continue
+            baal_ok = len(next_group_rows) == 1 and row_is_baal_ii_variant(next_group_rows[0])
+            if l_ok and baal_ok:
+                continue
+
+            anchor = next(
+                (row for row in next_group_rows if row_is_baal_ii_variant(row)),
+                next_group_rows[0],
+            )
+            line_no = int((anchor.get("line_no", "0") or "0"))
+            line_id = anchor.get("line_id", "")
+            analysis_field = anchor.get("analysis_field", "")
+            issues.append(
+                Issue(
+                    "warning",
+                    str(path),
+                    line_no,
+                    line_id,
+                    next_surface,
+                    analysis_field,
+                    L_BAAL_NON_KTU4_MSG,
+                )
+            )
+            continue
+
+        pn_payload = L_PN_PREP_CANONICAL_PAYLOADS.get(next_surface)
+        if pn_payload is not None:
+            second_ok = len(next_group_rows) == 1 and row_is_l_pn_prep_variant(
+                next_group_rows[0], second_surface=next_surface
+            )
+            if l_ok and second_ok:
+                continue
+
+            anchor = next(
+                (row for row in next_group_rows if row_is_l_pn_prep_variant(row, next_surface)),
+                next_group_rows[0],
+            )
+            line_no = int((anchor.get("line_no", "0") or "0"))
+            line_id = anchor.get("line_id", "")
+            analysis_field = anchor.get("analysis_field", "")
+            issues.append(
+                Issue(
+                    "warning",
+                    str(path),
+                    line_no,
+                    line_id,
+                    next_surface,
+                    analysis_field,
+                    L_PN_PREP_MSG.format(surface=next_surface, analysis=pn_payload.analysis),
+                )
+            )
+            continue
+
+        if (
+            next_surface in L_FORCE_I_BIGRAM_SURFACES
+            or next_surface in L_PN_FAMILY_FORCE_I_SURFACES
+        ):
+            if l_ok:
+                continue
+            anchor = next(
+                (row for row in group_rows if row_is_l_homonym_variant(row, homonym="I")),
+                group_rows[0],
+            )
+            line_no = int((anchor.get("line_no", "0") or "0"))
+            line_id = anchor.get("line_id", "")
+            analysis_field = anchor.get("analysis_field", "")
+            issues.append(
+                Issue(
+                    "warning",
+                    str(path),
+                    line_no,
+                    line_id,
+                    "l",
+                    analysis_field,
+                    L_FORCE_I_BIGRAM_MSG.format(surface=next_surface),
+                )
+            )
 
     # Force `k(III)` in selected high-frequency bigrams with verbal second token.
     for idx, group in enumerate(token_groups):

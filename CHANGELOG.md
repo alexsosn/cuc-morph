@@ -80,6 +80,25 @@
 - Documented both strategies:
   - `docs/l_body_compound_prep_pipeline.md`,
   - `docs/k_functor_bigram_context_pipeline.md`.
+- Added `LPrepositionBigramContextDisambiguator`
+  (`pipeline/steps/l_preposition_bigram_context.py`) for high-confidence `l + X`
+  contexts:
+  - force single `l(I)` before `arṣ`, `špš`, `mlkt`, `ṣpn`, `il`, `kḥṯ`,
+    `ršp`, `inš`, `bˤlt`, `ˤṯtrt`, `ˤpr`,
+  - force `l(I) + bˤl(II)` outside `KTU 4.*`,
+  - normalize lexicalized `l pn*` prepositions (`pn`, `pnm`, `pnh`, `pnk`,
+    `pny`, `pnwh`) to canonical prepositional payloads with gloss `in front`.
+- Added shared config for this context layer:
+  - `pipeline/config/l_preposition_bigram_rules.py`.
+- Extended linter parity with warnings for:
+  - non-single `l(I)` in the targeted `l + X` bigrams,
+  - non-collapsed `l bˤl` outside `KTU 4.*`,
+  - non-canonical lexicalized `l pn*` prepositional payloads.
+- Added regression tests:
+  - `tests/test_l_preposition_bigram_context.py`,
+  - `tests/test_linter_l_preposition_bigram_context.py`,
+  - updated step-order guard in `tests/test_tablet_parsing_pipeline.py`.
+- Documented strategy in `docs/l_preposition_bigram_context_pipeline.md`.
 
 - Added `SuffixPayloadCollapseFixer` (`pipeline/steps/suffix_payload_collapse.py`) and wired it into `pipeline/tablet_parsing.py` after suffix normalization to collapse clitic-linked DULAT payloads to host-lexeme metadata.
 - Rule: when `col3` already encodes suffix/enclitic markers (`+`, `~`, or bracketed clitic tails), strip `col4` suffix payload segments (`, -x ...`) and trim aligned suffix-function/suffix-gloss tails in `col5`/`col6`.
