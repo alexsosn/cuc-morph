@@ -2,6 +2,17 @@
 
 ## 2026-02-24
 
+- Added `PronounClosureFixer` (`pipeline/steps/pronoun_closure.py`) and wired it into `pipeline/tablet_parsing.py` to remove noun-style trailing `/` from pronoun variants (for example `hw/` -> `hw`).
+- Added morphology-aware `NominalCaseEndingYHFixer` (`pipeline/steps/nominal_case_ending_yh.py`) and wired it into `pipeline/tablet_parsing.py` to normalize noun/adjective terminal case endings `...y/` / `...h/` to explicit `/y` / `/h` when DULAT surface-form evidence supports it (for example `umy/` -> `um/y`).
+- Extended `DulatMorphGate` with `surface_morphologies(token, surface)` for exact token+surface morphology lookup and used it as the gate for the new nominal case-ending step.
+- Added linter warning support in `linter/lint.py` for pronoun rows that still use noun-style `/` closure.
+- Added regression tests:
+  - `tests/test_nominal_case_ending_yh.py`,
+  - `tests/test_pronoun_closure.py`,
+  - `tests/test_linter_pronoun_closure.py`,
+  - extended `tests/test_dulat_gate_plurale_tantum.py` with `surface_morphologies` coverage.
+- Re-ran only the new targeted refinement steps over current `out/KTU 1.*.tsv` outputs (`pronoun-closure`: `94` rows; `nominal-case-ending-yh`: `159` rows), including requested fixes in `out/KTU 1.6.tsv` (`140849`: `hw`, `141287`/`141303`: `um/y`).
+
 - Added `IIIAlephCaseFixer` (`pipeline/steps/iii_aleph_case_fixer.py`) and wired it into `pipeline/tablet_parsing.py` to normalize III-aleph noun/adjective case-vowel encoding using `(u|i|a` + `/&u|&i|&a`.
 - Added linter warning support for missing III-aleph case encoding in `linter/lint.py`:
   - detects stem-matching final-vowel noun/adjective variants that omit `/&` encoding and do not reconstruct surface.

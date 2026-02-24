@@ -43,6 +43,7 @@ class DulatGatePluraleTantumTest(unittest.TestCase):
                     (4, "ḥlm", "II", "n."),
                     (5, "ʕgm", "", "n."),
                     (6, "ỉštnm", "", "n."),
+                    (7, "ủm", "", "n."),
                 ],
             )
             cur.executemany(
@@ -58,6 +59,8 @@ class DulatGatePluraleTantumTest(unittest.TestCase):
                     (4, "ḥlmm", "pl."),
                     (5, "ʕgmm", "pl."),
                     (6, "ỉštnm", "pl."),
+                    (7, "ủmy", "sg."),
+                    (7, "ủmy", "suff."),
                 ],
             )
             conn.commit()
@@ -74,6 +77,14 @@ class DulatGatePluraleTantumTest(unittest.TestCase):
         self.assertFalse(gate.is_plurale_tantum_noun_token("ḥlm (II)"))
         self.assertFalse(gate.is_plurale_tantum_noun_token("ʕgm"))
         self.assertFalse(gate.is_plurale_tantum_noun_token("ištnm"))
+
+    def test_returns_surface_morphologies_for_exact_form(self) -> None:
+        gate = self._build_gate()
+        self.assertEqual(gate.surface_morphologies("ủm", "umy"), {"sg.", "suff."})
+
+    def test_returns_empty_surface_morphologies_for_missing_form(self) -> None:
+        gate = self._build_gate()
+        self.assertEqual(gate.surface_morphologies("ủm", "umh"), set())
 
 
 if __name__ == "__main__":

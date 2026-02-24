@@ -22,11 +22,13 @@ from pipeline.steps.generic_parsing_override import GenericParsingOverrideFixer
 from pipeline.steps.iii_aleph_case_fixer import IIIAlephCaseFixer
 from pipeline.steps.known_ambiguities import KnownAmbiguityExpander
 from pipeline.steps.ktu1_family_homonym_pruner import Ktu1FamilyHomonymPruner
+from pipeline.steps.nominal_case_ending_yh import NominalCaseEndingYHFixer
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
 from pipeline.steps.onomastic_gloss import OnomasticGlossOverrideFixer
 from pipeline.steps.plural_split import PluralSplitFixer
 from pipeline.steps.plurale_tantum_m import PluraleTantumMFixer
+from pipeline.steps.pronoun_closure import PronounClosureFixer
 from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
 from pipeline.steps.surface_option_propagation import SurfaceOptionPropagationFixer
@@ -75,6 +77,7 @@ class TabletParsingPipeline:
             SuffixCliticFixer(gate=self.morph_gate),
             WeakVerbFixer(),
             WeakFinalSuffixConjugationFixer(),
+            PronounClosureFixer(),
             SurfaceOptionPropagationFixer(
                 corpus_dir=self.config.out_dir,
                 allowed_surfaces=SURFACE_OPTION_PROPAGATION_ALLOWLIST,
@@ -83,6 +86,7 @@ class TabletParsingPipeline:
             KnownAmbiguityExpander(),
             OnomasticGlossOverrideFixer(),
             IIIAlephCaseFixer(),
+            NominalCaseEndingYHFixer(gate=self.morph_gate),
             SurfaceReconstructabilityFixer(),
             GenericParsingOverrideFixer(),
             # Keep schema pass last so any content-changing steps still end in

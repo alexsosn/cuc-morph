@@ -67,6 +67,29 @@ class DulatMorphGate:
             return False
         return any(key in self._plurale_tantum_noun_keys for key in keys)
 
+    def surface_morphologies(self, token: str, surface: str) -> set[str]:
+        """Return morphology labels for exact token+surface matches."""
+        lemma, hom = self._parse_declared_token(token)
+        if not lemma or lemma == "?":
+            return set()
+        keys = self._keys_for_token(lemma=lemma, hom=hom)
+        if not keys:
+            return set()
+
+        canon_surface = self._normalize_form(surface)
+        if not canon_surface:
+            return set()
+
+        out: set[str] = set()
+        for key in keys:
+            for form_text, morphology in self._forms_by_token.get(key, []):
+                if form_text != canon_surface:
+                    continue
+                morph = (morphology or "").strip().lower()
+                if morph:
+                    out.add(morph)
+        return out
+
     def _feature_for_token(self, token: str, surface: str = "") -> TokenFeatures:
         lemma, hom = self._parse_declared_token(token)
         if not lemma or lemma == "?":

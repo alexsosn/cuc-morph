@@ -624,6 +624,21 @@ def analysis_has_invalid_enclitic_plus(analysis: str) -> bool:
     return any("~+" in (v or "") for v in variants)
 
 
+def analysis_has_nominal_slash_on_pronoun(analysis: str) -> bool:
+    """True when pronoun variants still use noun-style trailing '/' closure."""
+    variants = split_semicolon_field(analysis) or [analysis]
+    pattern = re.compile(r"(?:\([IVX]+\))?/(?=\s*$|[+;,])")
+    for var in variants:
+        value = (var or "").strip()
+        if not value or value == "?":
+            continue
+        if "+" in value or "~" in value or "[" in value:
+            continue
+        if pattern.search(value):
+            return True
+    return False
+
+
 def analysis_has_homonym_marked_n_clitic(analysis: str) -> bool:
     """True when enclitic n is encoded with homonym numerals (invalid in col3)."""
     variants = split_semicolon_field(analysis) or [analysis]
@@ -2706,6 +2721,18 @@ def lint_file(
                                     surface,
                                     analysis,
                                     "Verb lacks '[' ending",
+                                )
+                            )
+                        if is_pronoun and analysis_has_nominal_slash_on_pronoun(analysis):
+                            issues.append(
+                                Issue(
+                                    "warning",
+                                    str(path),
+                                    i,
+                                    line_id,
+                                    surface,
+                                    analysis,
+                                    "Pronouns should not use '/' closure in analysis",
                                 )
                             )
                         if not is_pronoun and (

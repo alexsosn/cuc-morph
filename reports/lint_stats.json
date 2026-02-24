@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-24T19:53:29.930747+00:00",
+  "generated_at_utc": "2026-02-24T20:06:54.614168+00:00",
   "files_checked": 278,
-  "total_issues": 10147,
-  "fallback_parsed": 905,
+  "total_issues": 10152,
+  "fallback_parsed": 1052,
   "by_severity": {
-    "ERROR": 7325,
-    "WARNING": 1123,
+    "ERROR": 7184,
+    "WARNING": 1270,
     "INFO": 1519
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 4164
+      "count": 4021
     },
     {
       "severity": "INFO",
@@ -95,6 +95,11 @@
       "count": 53
     },
     {
+      "severity": "WARNING",
+      "problem_type": "ank Pronouns should not use '/' closure in analysis",
+      "count": 50
+    },
+    {
       "severity": "ERROR",
       "problem_type": "POS ambiguous in DULAT",
       "count": 45
@@ -127,7 +132,17 @@
     {
       "severity": "ERROR",
       "problem_type": "Noun/adjective lacks '/' ending",
-      "count": 26
+      "count": 28
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mnm Pronouns should not use '/' closure in analysis",
+      "count": 28
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "at Pronouns should not use '/' closure in analysis",
+      "count": 25
     },
     {
       "severity": "WARNING",
@@ -137,6 +152,11 @@
     {
       "severity": "ERROR",
       "problem_type": "dtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 18
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "hw Pronouns should not use '/' closure in analysis",
       "count": 18
     },
     {
@@ -177,6 +197,11 @@
     {
       "severity": "WARNING",
       "problem_type": "bhtm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 12
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "hnd Pronouns should not use '/' closure in analysis",
       "count": 12
     },
     {
@@ -331,12 +356,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "an Pronouns should not use '/' closure in analysis",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "bht Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
     },
     {
       "severity": "WARNING",
       "problem_type": "dry Noun POS should include DULAT gender marker for dr: n. m.",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "hmt Pronouns should not use '/' closure in analysis",
       "count": 4
     },
     {
@@ -581,12 +616,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "drkth Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "gm Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
     {
       "severity": "WARNING",
-      "problem_type": "gm Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "hnkt Pronouns should not use '/' closure in analysis",
       "count": 3
     },
     {
@@ -706,6 +741,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ankm Pronouns should not use '/' closure in analysis",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "arṯm Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
@@ -741,6 +781,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "hy Pronouns should not use '/' closure in analysis",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ibˤlt Feminine singular noun in DULAT should use '/t'",
       "count": 2
     },
@@ -757,6 +802,11 @@
     {
       "severity": "WARNING",
       "problem_type": "klnyy Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "kn Pronouns should not use '/' closure in analysis",
       "count": 2
     },
     {
@@ -786,12 +836,37 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "mhk Pronouns should not use '/' closure in analysis",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mhkm Pronouns should not use '/' closure in analysis",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mnk Pronouns should not use '/' closure in analysis",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mnkm Pronouns should not use '/' closure in analysis",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mqmm Noun POS should include DULAT gender marker for mqm: n. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
       "problem_type": "mrzḥh Noun POS should include DULAT gender marker for mrzḥ: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "my Pronouns should not use '/' closure in analysis",
       "count": 2
     },
     {
@@ -817,11 +892,6 @@
     {
       "severity": "WARNING",
       "problem_type": "pnm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "pnth Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -957,11 +1027,6 @@
     {
       "severity": "WARNING",
       "problem_type": "ˤnm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ˤnnh Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -1136,6 +1201,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ankn Pronouns should not use '/' closure in analysis",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "anš Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1167,6 +1237,11 @@
     {
       "severity": "WARNING",
       "problem_type": "atm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "atm Pronouns should not use '/' closure in analysis",
       "count": 1
     },
     {
@@ -1231,11 +1306,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "bˤlh Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "bˤlk Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1271,12 +1341,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "hklh Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "hwth Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "hnk Pronouns should not use '/' closure in analysis",
       "count": 1
     },
     {
@@ -1357,11 +1422,6 @@
     {
       "severity": "WARNING",
       "problem_type": "mlakk Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mlkh Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1517,11 +1577,6 @@
     {
       "severity": "WARNING",
       "problem_type": "rgmm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "rišh Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1716,27 +1771,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "šmalh Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "špth Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "šu Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
       "severity": "WARNING",
       "problem_type": "ˤlnh Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ˤnh Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -1797,11 +1837,6 @@
     {
       "severity": "WARNING",
       "problem_type": "ṣt Noun POS should include DULAT gender marker for ṣt: n. f.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ṯbth Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
