@@ -68,6 +68,71 @@ class LNegationVerbContextPrunerTest(unittest.TestCase):
             self.assertEqual(result.rows_changed, 0)
             self.assertEqual(path.read_text(encoding="utf-8"), content)
 
+    def test_forces_single_l2_in_ktu_1_3_iv_5_exception(self) -> None:
+        content = (
+            "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+            "# KTU 1.3 IV:5\n"
+            "1\tl\tl(I)\tl (I)\tprep.\tto\t\n"
+            "1\tl\tl(II)\tl (II)\tadv.\tno\t\n"
+            "1\tl\tl(III)\tl (III)\tfunctor\tcertainly\t\n"
+            "2\tbˤl\tbˤl(II)/\tbʕl (II)\tDN\tBaʿlu/Baal\t\n"
+        )
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(content, encoding="utf-8")
+
+            result = self.step.refine_file(path)
+
+            self.assertEqual(result.rows_processed, 4)
+            self.assertEqual(result.rows_changed, 2)
+            lines = path.read_text(encoding="utf-8").splitlines()
+            self.assertIn("1\tl\tl(II)\tl (II)\tadv.\tno\t", lines)
+            self.assertNotIn("1\tl\tl(I)\tl (I)\tprep.\tto\t", lines)
+            self.assertNotIn("1\tl\tl(III)\tl (III)\tfunctor\tcertainly\t", lines)
+
+    def test_forces_l2_when_exception_group_lost_l2_variant(self) -> None:
+        content = (
+            "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+            "# KTU 1.3 IV:5\n"
+            "1\tl\tl(I)\tl (I)\tprep.\tto\t\n"
+            "1\tl\tl(III)\tl (III)\tfunctor\tcertainly\t\n"
+            "2\tbˤl\tbˤl(II)/\tbʕl (II)\tDN\tBaʿlu/Baal\t\n"
+        )
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 1.test.tsv"
+            path.write_text(content, encoding="utf-8")
+
+            result = self.step.refine_file(path)
+
+            self.assertEqual(result.rows_processed, 3)
+            self.assertEqual(result.rows_changed, 2)
+            lines = path.read_text(encoding="utf-8").splitlines()
+            self.assertIn("1\tl\tl(II)\tl (II)\tadv.\tno\t", lines)
+            self.assertNotIn("1\tl\tl(I)\tl (I)\tprep.\tto\t", lines)
+            self.assertNotIn("1\tl\tl(III)\tl (III)\tfunctor\tcertainly\t", lines)
+
+    def test_forces_single_l2_in_ktu_4_213_exception_range(self) -> None:
+        content = (
+            "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+            "# KTU 4.213:10\n"
+            "1\tl\tl(I)\tl (I)\tprep.\tto\t\n"
+            "1\tl\tl(II)\tl (II)\tadv.\tno\t\n"
+            "1\tl\tl(III)\tl (III)\tfunctor\tcertainly\t\n"
+            "2\tṭb\tṭb/\tṭb\tadj.\tgood\t\n"
+        )
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            path = Path(tmp_dir) / "KTU 4.test.tsv"
+            path.write_text(content, encoding="utf-8")
+
+            result = self.step.refine_file(path)
+
+            self.assertEqual(result.rows_processed, 4)
+            self.assertEqual(result.rows_changed, 2)
+            lines = path.read_text(encoding="utf-8").splitlines()
+            self.assertIn("1\tl\tl(II)\tl (II)\tadv.\tno\t", lines)
+            self.assertNotIn("1\tl\tl(I)\tl (I)\tprep.\tto\t", lines)
+            self.assertNotIn("1\tl\tl(III)\tl (III)\tfunctor\tcertainly\t", lines)
+
 
 if __name__ == "__main__":
     unittest.main()

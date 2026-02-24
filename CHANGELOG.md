@@ -41,6 +41,11 @@
   - `tests/test_linter_l_negation_context.py`,
   - updated `tests/test_tablet_parsing_pipeline.py` ordering guard.
 - Applied only this targeted step across `out/KTU *.tsv` (`835` rows pruned in `163` files), including `out/KTU 1.6.tsv` `140451` (removed `l(II)` before `bˤl`).
+- Follow-up exception refinement for DULAT-attested non-verbal `l(II)` contexts:
+  - added shared exception matcher `pipeline/config/l_negation_exception_refs.py` for `KTU/CAT 1.3 IV:5`, `KTU/CAT 4.348:1`, and `KTU/CAT 4.213:2-23`,
+  - updated `LNegationVerbContextPruner` to force a single `l(II)` reading in these refs (including restoration when historical passes already pruned `l(II)`),
+  - updated linter behavior to enforce this exception-specific single-`l(II)` rule while suppressing the generic non-verbal warning in those refs,
+  - added regression tests `tests/test_l_negation_exception_refs.py` and expanded parser/linter `l(II)` context tests.
 
 - Added `SuffixPayloadCollapseFixer` (`pipeline/steps/suffix_payload_collapse.py`) and wired it into `pipeline/tablet_parsing.py` after suffix normalization to collapse clitic-linked DULAT payloads to host-lexeme metadata.
 - Rule: when `col3` already encodes suffix/enclitic markers (`+`, `~`, or bracketed clitic tails), strip `col4` suffix payload segments (`, -x ...`) and trim aligned suffix-function/suffix-gloss tails in `col5`/`col6`.

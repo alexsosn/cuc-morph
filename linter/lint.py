@@ -9,6 +9,17 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
+# Allow `python linter/lint.py` execution where sys.path[0] is `linter/`.
+if __package__ in {None, ""}:
+    _repo_root = Path(__file__).resolve().parents[1]
+    if str(_repo_root) not in sys.path:
+        sys.path.insert(0, str(_repo_root))
+
+from pipeline.config.l_negation_exception_refs import (
+    extract_separator_ref,
+    is_forced_l_negation_ref,
+)
+
 # -----------------------------
 # Utilities
 # -----------------------------
@@ -1373,7 +1384,12 @@ def group_token_rows(token_rows: List[Dict[str, str]]) -> List[Dict[str, object]
         key = ((row.get("line_id", "") or "").strip(), (row.get("surface", "") or "").strip())
         if current_key is None or key != current_key:
             current_key = key
-            current = {"line_id": key[0], "surface": key[1], "rows": [row]}
+            current = {
+                "line_id": key[0],
+                "surface": key[1],
+                "section_ref": (row.get("section_ref", "") or "").strip(),
+                "rows": [row],
+            }
             groups.append(current)
             continue
         assert current is not None
@@ -1390,6 +1406,10 @@ def row_is_l_negation_variant(row: Dict[str, str]) -> bool:
         and (row.get("pos_field", "") or "").strip() == "adv."
         and (row.get("gloss_field", "") or "").strip() in {"no", "not"}
     )
+
+
+L_NEGATION_VERB_CONTEXT_MSG = "l(II) ('no/not') should be used only before verbal forms"
+L_NEGATION_FORCED_EXCEPTION_MSG = "DULAT exception context requires a single l(II) reading"
 
 
 # -----------------------------
@@ -1529,10 +1549,14 @@ def lint_file(
         if all(morphology_is_plural_or_dual(morph) for morph in non_suffix_morphs):
             entry_plurale_tantum_m[_entry_id] = True
 
+    current_separator_ref = ""
     for i, raw in enumerate(lines, 1):
         if not raw.strip():
             continue
         if is_cuc_separator_line(raw):
+            section_ref = extract_separator_ref(raw)
+            if section_ref:
+                current_separator_ref = section_ref
             continue
         comment = ""
         core = raw
@@ -2138,6 +2162,7 @@ def lint_file(
                 "line_no": str(i),
                 "line_id": line_id,
                 "surface": surface,
+                "section_ref": current_separator_ref,
                 "analysis_field": parts[2] if len(parts) >= 3 else analysis,
                 "dulat_field": parts[3] if len(parts) >= 4 else "",
                 "pos_field": parts[4] if len(parts) >= 5 else "",
@@ -3350,21 +3375,47 @@ def lint_file(
                 )
             )
 
-    # l(II) "no/not" should only appear when the following token is verbal.
-    for idx in range(len(token_groups) - 1):
-        group = token_groups[idx]
+    # l(II) "no/not" should only appear when the following token is verbal,
+    # except explicit DULAT exception refs that force single l(II).
+    for idx, group in enumerate(token_groups):
         if (group.get("surface", "") or "").strip() != "l":
             continue
         group_rows = group.get("rows", [])
         if not isinstance(group_rows, list) or not group_rows:
             continue
-        if not any(row_is_l_negation_variant(row) for row in group_rows):
+        has_l2_variant = any(row_is_l_negation_variant(row) for row in group_rows)
+        section_ref = (group.get("section_ref", "") or "").strip()
+        if is_forced_l_negation_ref(section_ref):
+            forced_ok = len(group_rows) == 1 and row_is_l_negation_variant(group_rows[0])
+            if forced_ok:
+                continue
+            anchor = next(
+                (row for row in group_rows if row_is_l_negation_variant(row)), group_rows[0]
+            )
+            line_no = int((anchor.get("line_no", "0") or "0"))
+            line_id = anchor.get("line_id", "")
+            analysis_field = anchor.get("analysis_field", "")
+            issues.append(
+                Issue(
+                    "warning",
+                    str(path),
+                    line_no,
+                    line_id,
+                    "l",
+                    analysis_field,
+                    L_NEGATION_FORCED_EXCEPTION_MSG,
+                )
+            )
+            continue
+
+        if not has_l2_variant:
             continue
         # Keep conservative behavior when l(II) is the only available reading.
         if all(row_is_l_negation_variant(row) for row in group_rows):
             continue
 
-        next_group_rows = token_groups[idx + 1].get("rows", [])
+        next_group = token_groups[idx + 1] if idx + 1 < len(token_groups) else None
+        next_group_rows = next_group.get("rows", []) if next_group else []
         if not isinstance(next_group_rows, list):
             continue
         next_has_verb = any(
@@ -3385,7 +3436,7 @@ def lint_file(
                 line_id,
                 "l",
                 analysis_field,
-                "l(II) ('no/not') should be used only before verbal forms",
+                L_NEGATION_VERB_CONTEXT_MSG,
             )
         )
 
