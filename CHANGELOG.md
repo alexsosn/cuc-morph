@@ -35,6 +35,8 @@
   - linter regression test ensuring no forced `pl. tant.` warning for `šlm (II)` with `sg., suff.` evidence in `tests/test_linter_plurale_tantum_m.py`.
 - Extended `PluraleTantumMFixer` with a non-target repair path to clean historical false positives for non-plurale `-m` lemmas: restores lexical `m` heads and strips `pl. tant.` from aligned POS slots when reconstruction confirms the repair.
 - Re-ran only `PluraleTantumMFixer` across `out/KTU *.tsv`: 40 rows in 19 files repaired for `šlm (II)` (including user-flagged `152787`).
+- Tightened plurale-tantum classification to exclude cstr-only plural evidence (`pl., cstr.` without any absolute plural/dual form), fixing `qm` false positives.
+- Added regression coverage for this case in parser/linter tests and re-ran only `PluraleTantumMFixer` across `out/KTU *.tsv` (2 rows updated), including user-flagged `136160` (`qm[; qm/`, POS `vb; n. m.`).
 
 ## 2026-02-23
 

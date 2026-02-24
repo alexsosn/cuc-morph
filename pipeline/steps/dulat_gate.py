@@ -23,6 +23,7 @@ _DUAL_WORD_RE = re.compile(r"\bdual", flags=re.IGNORECASE)
 _SINGULAR_RE = re.compile(r"\bsg\.", flags=re.IGNORECASE)
 _SINGULAR_WORD_RE = re.compile(r"\bsing", flags=re.IGNORECASE)
 _SUFFIX_RE = re.compile(r"\bsuff", flags=re.IGNORECASE)
+_CONSTRUCT_RE = re.compile(r"\bcstr\b", flags=re.IGNORECASE)
 _TOKEN_RE = re.compile(r"^(.*?)(?:\s*\(([IVX]+)\))?$")
 _NON_FORM_CHAR_RE = re.compile(r"[^A-Za-zʔʕˤʿḫḥṭṣṯẓġḏšảỉủ]")
 
@@ -190,6 +191,17 @@ class DulatMorphGate:
         if not non_suffix:
             return False
         if any(self._morphology_is_explicit_singular(morph) for morph in morphologies):
+            return False
+        if not any(
+            (
+                _PLURAL_RE.search(morph)
+                or _PLURAL_WORD_RE.search(morph)
+                or _DUAL_RE.search(morph)
+                or _DUAL_WORD_RE.search(morph)
+            )
+            and not _CONSTRUCT_RE.search(morph)
+            for morph in non_suffix
+        ):
             return False
         return all(
             (

@@ -15,6 +15,7 @@ This targeted rule normalizes noun analyses where DULAT evidence shows a lexeme-
 - Work variant-by-variant on noun slots (`n.`; excluding `n. num.`).
 - Keep only variants whose declared DULAT token is a gate-backed plurale-tantum noun with lexeme-final `-m`.
 - Do not classify tokens as plurale tantum when DULAT morphology has explicit singular evidence (for example `sg., suff.`), even if plural forms exist.
+- Do not classify tokens as plurale tantum when DULAT non-suffix evidence is only plural construct-state (`pl., cstr.`) without any absolute plural/dual form.
 
 2. Canonical `col3` rewrite for terminal `-m`
 - Normalize to explicit lexeme + nominal ending encoding:

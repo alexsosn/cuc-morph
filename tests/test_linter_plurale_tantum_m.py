@@ -139,6 +139,54 @@ class LinterPluraleTantumMRuleTest(unittest.TestCase):
                 messages,
             )
 
+    def test_does_not_require_pl_tant_for_cstr_only_plural_evidence(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            out_dir = root / "out"
+            out_dir.mkdir(parents=True, exist_ok=True)
+            path = out_dir / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tqm\tqm/\tqm\tn. m.\tadversary\t\n"
+                ),
+                encoding="utf-8",
+            )
+
+            entry_qm = DulatEntry(
+                entry_id=1,
+                lemma="qm",
+                homonym="",
+                pos="n.",
+                gloss="adversary",
+                morph="pl., cstr.",
+                form_text="qm",
+            )
+            dulat_forms = {normalize_surface("qm"): [entry_qm]}
+            entry_meta = {1: ("qm", "", "n.", "adversary")}
+            lemma_map = {normalize_surface("qm"): [entry_qm]}
+            entry_stems = {}
+            entry_gender = {1: "m."}
+            udb_words = {normalize_udb("qm")}
+
+            issues = lint_file(
+                path=path,
+                dulat_forms=dulat_forms,
+                entry_meta=entry_meta,
+                lemma_map=lemma_map,
+                entry_stems=entry_stems,
+                entry_gender=entry_gender,
+                udb_words=udb_words,
+                baseline=None,
+                input_format="auto",
+                db_checks=True,
+            )
+            messages = [item.message for item in issues]
+            self.assertNotIn(
+                "DULAT plurale tantum noun should include 'pl. tant.' in POS",
+                messages,
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

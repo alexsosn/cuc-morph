@@ -39,6 +39,7 @@ class DulatGatePluraleTantumTest(unittest.TestCase):
                 [
                     (1, "pnm", "", "n."),
                     (2, "šlm", "II", "n."),
+                    (3, "qm", "", "n."),
                 ],
             )
             cur.executemany(
@@ -50,6 +51,7 @@ class DulatGatePluraleTantumTest(unittest.TestCase):
                     (2, "šlmm", "pl."),
                     (2, "šlmm", "sg., suff."),
                     (2, "-m", "sg., suff."),
+                    (3, "qm", "pl., cstr."),
                 ],
             )
             conn.commit()
@@ -62,6 +64,7 @@ class DulatGatePluraleTantumTest(unittest.TestCase):
         gate = self._build_gate()
         self.assertTrue(gate.is_plurale_tantum_noun_token("pnm"))
         self.assertFalse(gate.is_plurale_tantum_noun_token("šlm (II)"))
+        self.assertFalse(gate.is_plurale_tantum_noun_token("qm"))
 
 
 if __name__ == "__main__":
