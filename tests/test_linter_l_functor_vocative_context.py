@@ -64,6 +64,18 @@ class LinterLFunctorVocativeContextTest(unittest.TestCase):
         )
         self.assertIn("DULAT context requires a single l(IV) reading", msgs)
 
+    def test_does_not_warn_on_column_mismatch_reference(self) -> None:
+        msgs = self._lint_messages(
+            (
+                "# KTU 1.4 I:23\n"
+                "1\tl\tl(I)\tl (I)\tprep.\tto\t\n"
+                "1\tl\tl(III)\tl (III)\tfunctor\tcertainly\t\n"
+                "2\tksỉ\tksỉ/\tksỉ\tn. m.\tthrone\t\n"
+            )
+        )
+        self.assertNotIn("DULAT context requires a single l(IV) reading", msgs)
+        self.assertNotIn("DULAT context requires a single l(III) reading", msgs)
+
     def test_overlap_reference_uses_next_token_context(self) -> None:
         msgs = self._lint_messages(
             (

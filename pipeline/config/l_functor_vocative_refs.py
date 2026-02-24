@@ -7,7 +7,7 @@ import re
 from pipeline.config.l_negation_exception_refs import normalize_ktu_ref
 
 _KTU_REF_KEY_RE = re.compile(
-    r"^(?:KTU|CAT)\s+(\d+\.\d+)(?:\s+[IVX]+)?(?:\s+|:)(\d+)$",
+    r"^(?:KTU|CAT)\s+(?P<tablet>\d+\.\d+)(?:\s+(?P<section>[IVX]+))?(?:\s*:\s*|\s+)(?P<line>\d+)$",
     flags=re.IGNORECASE,
 )
 
@@ -70,15 +70,18 @@ _L_IV_REFS = (
 
 
 def canonical_ktu_ref_key(ref: str | None) -> str | None:
-    """Normalize a KTU/CAT section label to `<tablet>:<line>` key."""
+    """Normalize a KTU/CAT section label to a section-aware canonical key."""
     label = normalize_ktu_ref(ref)
     if not label:
         return None
     match = _KTU_REF_KEY_RE.match(label)
     if not match:
         return None
-    tablet = match.group(1)
-    line_no = int(match.group(2))
+    tablet = match.group("tablet")
+    section = (match.group("section") or "").upper()
+    line_no = int(match.group("line"))
+    if section:
+        return f"{tablet} {section}:{line_no}"
     return f"{tablet}:{line_no}"
 
 

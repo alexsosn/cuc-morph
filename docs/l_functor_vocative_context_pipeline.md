@@ -23,10 +23,13 @@ Shared rule source:
 
 - `pipeline/config/l_functor_vocative_refs.py`
 
-It normalizes section labels to canonical keys (`<tablet>:<line>`) and supports:
+It normalizes section labels to canonical keys and supports:
 
 - `KTU 1.4 V:59` style
 - `KTU 1.24 15` style
+
+Keys are section-aware (`<tablet> <column>:<line>` when a Roman column is
+present), so `KTU 1.4 I:23` and `KTU 1.4 VII:23` are not conflated.
 
 ## Disambiguation Logic
 
@@ -51,4 +54,3 @@ tokens are not single-target:
 
 - `DULAT context requires a single l(III) reading`
 - `DULAT context requires a single l(IV) reading`
-

@@ -61,6 +61,10 @@
   - updated pipeline ordering guard in `tests/test_tablet_parsing_pipeline.py`.
 - Documented the strategy in `docs/l_functor_vocative_context_pipeline.md`.
 - Applied only `l-functor-vocative-context` over `out/KTU *.tsv`: 124 row updates across 15 files (first pass 112 + format-variant pass 12), including `KTU 1.24`, `KTU 2.61`, and `KTU 2.72` section-style variants.
+- Follow-up fix for over-forcing `l(III)/l(IV)`:
+  - made `l` context reference keys section-aware in `pipeline/config/l_functor_vocative_refs.py` so Roman-column refs are not conflated (for example `KTU 1.4 I:23` vs `KTU 1.4 VII:23`),
+  - added parser/linter regression tests for this collision class,
+  - reapplied the corrected `l-functor-vocative-context` pass after restoring the previously over-pruned output files, preserving `l(I)` where no section-exact forcing is attested.
 
 - Added `SuffixPayloadCollapseFixer` (`pipeline/steps/suffix_payload_collapse.py`) and wired it into `pipeline/tablet_parsing.py` after suffix normalization to collapse clitic-linked DULAT payloads to host-lexeme metadata.
 - Rule: when `col3` already encodes suffix/enclitic markers (`+`, `~`, or bracketed clitic tails), strip `col4` suffix payload segments (`, -x ...`) and trim aligned suffix-function/suffix-gloss tails in `col5`/`col6`.
