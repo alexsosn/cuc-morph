@@ -28,6 +28,13 @@
 - Expanded tests for `plurale_tantum_m` and linter predicates with `pnh`, `pn`, `pny`, `ḥyk`, and `+ny` normalization scenarios.
 - Updated `docs/plurale_tantum_m_pipeline.md` with the formalized host-drop `-m` strategy, suffix inference, and tail-normalization rules.
 - Re-ran only `PluraleTantumMFixer` across the full corpus (`out/KTU *.tsv`) from clean baseline: 36 rows updated in 25 files, including user-flagged `152464`/`152465` and related `143246`, `143400`, `143536`, `144092`, `150081`, `157515`, `160118`.
+- Fixed plurale-tantum misclassification for `šlm (II)` by tightening DULAT gate logic: explicit singular morphology (`sg./sing`, including `sg., suff.`) now blocks `pl. tant.` classification in both parser gate (`pipeline/steps/dulat_gate.py`) and linter entry classification (`linter/lint.py`).
+- Added regression coverage for this distinction:
+  - new gate-level sqlite fixture test `tests/test_dulat_gate_plurale_tantum.py`,
+  - parser repair test for `šl(m(II)/m~m; šlm(II)/m -> šlm(II)/~m; šlm(II)/m` in `tests/test_plurale_tantum_m.py`,
+  - linter regression test ensuring no forced `pl. tant.` warning for `šlm (II)` with `sg., suff.` evidence in `tests/test_linter_plurale_tantum_m.py`.
+- Extended `PluraleTantumMFixer` with a non-target repair path to clean historical false positives for non-plurale `-m` lemmas: restores lexical `m` heads and strips `pl. tant.` from aligned POS slots when reconstruction confirms the repair.
+- Re-ran only `PluraleTantumMFixer` across `out/KTU *.tsv`: 40 rows in 19 files repaired for `šlm (II)` (including user-flagged `152787`).
 
 ## 2026-02-23
 

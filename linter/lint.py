@@ -157,6 +157,8 @@ _PLURAL_MORPH_RE = re.compile(r"\bpl\.", flags=re.IGNORECASE)
 _PLURAL_WORD_MORPH_RE = re.compile(r"\bplur", flags=re.IGNORECASE)
 _DUAL_MORPH_RE = re.compile(r"\bdu\.", flags=re.IGNORECASE)
 _DUAL_WORD_MORPH_RE = re.compile(r"\bdual", flags=re.IGNORECASE)
+_SINGULAR_MORPH_RE = re.compile(r"\bsg\.", flags=re.IGNORECASE)
+_SINGULAR_WORD_MORPH_RE = re.compile(r"\bsing", flags=re.IGNORECASE)
 _OFFERING_SURFACES = {
     normalize_surface("gdlt"),
     normalize_surface("alp"),
@@ -213,6 +215,11 @@ def morphology_is_plural_or_dual(morph: str) -> bool:
         or _DUAL_MORPH_RE.search(text)
         or _DUAL_WORD_MORPH_RE.search(text)
     )
+
+
+def morphology_is_explicit_singular(morph: str) -> bool:
+    text = (morph or "").lower()
+    return bool(_SINGULAR_MORPH_RE.search(text) or _SINGULAR_WORD_MORPH_RE.search(text))
 
 
 def has_unprefixed_reconstructed_sequence(s: str, allow_weak_y_cluster: bool = False) -> bool:
@@ -1344,6 +1351,8 @@ def lint_file(
         morph_values = entry_morph_index.get(_entry_id, set())
         non_suffix_morphs = [morph for morph in morph_values if "suff" not in morph]
         if not non_suffix_morphs:
+            continue
+        if any(morphology_is_explicit_singular(morph) for morph in morph_values):
             continue
         if all(morphology_is_plural_or_dual(morph) for morph in non_suffix_morphs):
             entry_plurale_tantum_m[_entry_id] = True

@@ -14,6 +14,7 @@ _LEMMA_LETTER_RE = re.compile(r"[^A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉ�
 _UNSPLIT_FINAL_M_RE = re.compile(r"^(?P<stem>.+?)m(?P<hom>\([IVX]+\))?/$")
 _SPLIT_FINAL_M_RE = re.compile(r"^(?P<base>.+?)(?P<hom>\([IVX]+\))?/m$")
 _LEXICAL_M_NO_SPLIT_RE = re.compile(r"^(?P<base>.+?\(m)(?P<hom>\([IVX]+\))?/$")
+_FALSE_POSITIVE_SPLIT_M_RE = re.compile(r"^(?P<stem>.+?)\(m(?P<hom>\([IVX]+\))?/m$")
 _PL_TANT_RE = re.compile(
     r"(?:\bpl\.?\s*tant\b|\bplur(?:ale)?\.?\s*tant(?:um|u)?\b)\.?\??",
     flags=re.IGNORECASE,
@@ -78,8 +79,25 @@ def _inject_plurale_tantum_marker(pos_variant: str) -> str:
     return value[: match.end()] + " pl. tant." + value[match.end() :]
 
 
+def _remove_plurale_tantum_marker(pos_variant: str) -> str:
+    value = (pos_variant or "").strip()
+    if not value:
+        return value
+    stripped = _PL_TANT_RE.sub("", value)
+    if stripped == value:
+        return value
+    stripped = re.sub(r"\s+,", ",", stripped)
+    stripped = re.sub(r",\s*", ", ", stripped)
+    stripped = re.sub(r"\s{2,}", " ", stripped)
+    return stripped.strip()
+
+
 def _analysis_visible_letters(value: str) -> str:
     return normalize_surface(reconstruct_surface_from_analysis(value)).lower()
+
+
+def _slot_key(token: str) -> str:
+    return normalize_surface((token or "").strip()).lower()
 
 
 def _inject_surface_y_before_terminal_m(head: str, host_surface_norm: str) -> str:
@@ -126,12 +144,14 @@ class PluraleTantumMFixer(RefinementStep):
         changed = False
         out_analysis: list[str] = []
         out_pos: list[str] = []
+        slots_to_strip_pl_tant: set[str] = set()
 
         for idx, analysis_variant in enumerate(analysis_variants):
             pos_variant = pos_variants[idx] if idx < len(pos_variants) else ""
             dulat_variant = dulat_variants[idx] if idx < len(dulat_variants) else ""
             dulat_slot = _split_comma(dulat_variant)[0] if dulat_variant else ""
             pos_head = _split_comma(pos_variant)[0] if pos_variant else ""
+            slot_key = _slot_key(dulat_slot)
 
             new_analysis = analysis_variant
             new_pos = pos_variant
@@ -142,11 +162,31 @@ class PluraleTantumMFixer(RefinementStep):
                     surface=row.surface,
                 )
                 new_pos = _inject_plurale_tantum_marker(pos_variant)
+            else:
+                new_analysis, repaired = self._repair_non_plurale_tantum_variant(
+                    analysis_variant=analysis_variant,
+                    dulat_slot=dulat_slot,
+                    pos_head=pos_head,
+                    surface=row.surface,
+                )
+                if repaired and slot_key:
+                    slots_to_strip_pl_tant.add(slot_key)
 
             if new_analysis != analysis_variant or new_pos != pos_variant:
                 changed = True
             out_analysis.append(new_analysis)
             out_pos.append(new_pos)
+
+        if slots_to_strip_pl_tant:
+            for idx, pos_variant in enumerate(out_pos):
+                dulat_variant = dulat_variants[idx] if idx < len(dulat_variants) else ""
+                dulat_slot = _split_comma(dulat_variant)[0] if dulat_variant else ""
+                if _slot_key(dulat_slot) not in slots_to_strip_pl_tant:
+                    continue
+                stripped = _remove_plurale_tantum_marker(pos_variant)
+                if stripped != pos_variant:
+                    out_pos[idx] = stripped
+                    changed = True
 
         if not changed:
             return row
@@ -183,6 +223,39 @@ class PluraleTantumMFixer(RefinementStep):
         if "num" in first:
             return False
         return True
+
+    def _repair_non_plurale_tantum_variant(
+        self,
+        analysis_variant: str,
+        dulat_slot: str,
+        pos_head: str,
+        surface: str,
+    ) -> tuple[str, bool]:
+        value = (analysis_variant or "").strip()
+        if not value or value == "?" or "[" in value:
+            return value, False
+        if self._gate is None:
+            return value, False
+        if not self._is_target_noun_pos(pos_head):
+            return value, False
+        lemma_letters = _declared_lemma_letters(dulat_slot)
+        if not lemma_letters.endswith("m"):
+            return value, False
+        if self._gate.is_plurale_tantum_noun_token(dulat_slot):
+            return value, False
+
+        head, tail = _split_head_tail(value)
+        match = _FALSE_POSITIVE_SPLIT_M_RE.match(head)
+        if not match:
+            return value, False
+
+        stem = match.group("stem")
+        hom = match.group("hom") or ""
+        restored = f"{stem}m{hom}/" + tail
+        restored_surface = normalize_surface(reconstruct_surface_from_analysis(restored)).lower()
+        if restored_surface != normalize_surface(surface).lower():
+            return value, False
+        return restored, True
 
     def _rewrite_variant(self, analysis_variant: str, dulat_slot: str, surface: str) -> str:
         value = (analysis_variant or "").strip()

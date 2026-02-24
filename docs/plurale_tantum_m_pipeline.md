@@ -14,6 +14,7 @@ This targeted rule normalizes noun analyses where DULAT evidence shows a lexeme-
 1. Candidate detection
 - Work variant-by-variant on noun slots (`n.`; excluding `n. num.`).
 - Keep only variants whose declared DULAT token is a gate-backed plurale-tantum noun with lexeme-final `-m`.
+- Do not classify tokens as plurale tantum when DULAT morphology has explicit singular evidence (for example `sg., suff.`), even if plural forms exist.
 
 2. Canonical `col3` rewrite for terminal `-m`
 - Normalize to explicit lexeme + nominal ending encoding:
@@ -38,6 +39,11 @@ This targeted rule normalizes noun analyses where DULAT evidence shows a lexeme-
 
 5. POS normalization
 - Ensure targeted noun POS carries `pl. tant.` in `col5` for that variant.
+
+6. False-positive repair for non-plurale lemmas
+- If a non-target `-m` lemma (gate says not plurale tantum) still contains an old injected split pattern `...(m/m` plus enclitic/suffix tail, restore lexical `m` in the head:
+  - `šl(m(II)/m~m` -> `šlm(II)/~m`
+- Strip `pl. tant.` from aligned POS variants for the repaired DULAT slot.
 
 ## Post-check policy
 - Keep `col4`/`col6` untouched.

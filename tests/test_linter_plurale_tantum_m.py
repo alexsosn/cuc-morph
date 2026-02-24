@@ -79,6 +79,66 @@ class LinterPluraleTantumMRuleTest(unittest.TestCase):
             messages,
         )
 
+    def test_does_not_require_pl_tant_for_sg_suffix_lemma(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            out_dir = root / "out"
+            out_dir.mkdir(parents=True, exist_ok=True)
+            path = out_dir / "KTU 1.test.tsv"
+            path.write_text(
+                (
+                    "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
+                    "1\tšlmm\tšlm(II)/~m; šlm(II)/m\tšlm (II); šlm (II)\tn. m.; n. m.\t"
+                    "communion victim / sacrifice; communion victim / sacrifice\t\n"
+                ),
+                encoding="utf-8",
+            )
+
+            entry_pl = DulatEntry(
+                entry_id=1,
+                lemma="šlm",
+                homonym="II",
+                pos="n.",
+                gloss="communion victim / sacrifice",
+                morph="pl.",
+                form_text="šlmm",
+            )
+            entry_sg_suff = DulatEntry(
+                entry_id=1,
+                lemma="šlm",
+                homonym="II",
+                pos="n.",
+                gloss="communion victim / sacrifice",
+                morph="sg., suff.",
+                form_text="šlmm",
+            )
+            dulat_forms = {
+                normalize_surface("šlmm"): [entry_pl, entry_sg_suff],
+            }
+            entry_meta = {1: ("šlm", "II", "n.", "communion victim / sacrifice")}
+            lemma_map = {normalize_surface("šlm"): [entry_pl]}
+            entry_stems = {}
+            entry_gender = {1: "m."}
+            udb_words = {normalize_udb("šlmm")}
+
+            issues = lint_file(
+                path=path,
+                dulat_forms=dulat_forms,
+                entry_meta=entry_meta,
+                lemma_map=lemma_map,
+                entry_stems=entry_stems,
+                entry_gender=entry_gender,
+                udb_words=udb_words,
+                baseline=None,
+                input_format="auto",
+                db_checks=True,
+            )
+            messages = [item.message for item in issues]
+            self.assertNotIn(
+                "DULAT plurale tantum noun should include 'pl. tant.' in POS",
+                messages,
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

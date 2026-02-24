@@ -179,6 +179,26 @@ class PluraleTantumMFixerTest(unittest.TestCase):
         self.assertEqual(result.analysis, "šlm(II)/m")
         self.assertEqual(result.pos, "n. m.")
 
+    def test_repairs_false_positive_plurale_tantum_for_shlm(self) -> None:
+        fixer = PluraleTantumMFixer(
+            gate=_PluraleTantumGate(
+                plural_tokens={"šlm (II)"},
+                plurale_tantum_tokens=set(),
+            )
+        )
+        row = TabletRow(
+            "7b",
+            "šlmm",
+            "šl(m(II)/m~m; šlm(II)/m",
+            "šlm (II); šlm (II)",
+            "n. m. pl. tant.; n. m. pl. tant.",
+            "communion victim / sacrifice; communion victim / sacrifice",
+            "",
+        )
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "šlm(II)/~m; šlm(II)/m")
+        self.assertEqual(result.pos, "n. m.; n. m.")
+
     def test_does_not_add_pl_tant_for_non_m_lemma_even_if_gate_flags_it(self) -> None:
         fixer = PluraleTantumMFixer(
             gate=_PluraleTantumGate(

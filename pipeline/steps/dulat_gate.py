@@ -20,6 +20,8 @@ _PLURAL_RE = re.compile(r"\bpl\.", flags=re.IGNORECASE)
 _PLURAL_WORD_RE = re.compile(r"\bplur", flags=re.IGNORECASE)
 _DUAL_RE = re.compile(r"\bdu\.", flags=re.IGNORECASE)
 _DUAL_WORD_RE = re.compile(r"\bdual", flags=re.IGNORECASE)
+_SINGULAR_RE = re.compile(r"\bsg\.", flags=re.IGNORECASE)
+_SINGULAR_WORD_RE = re.compile(r"\bsing", flags=re.IGNORECASE)
 _SUFFIX_RE = re.compile(r"\bsuff", flags=re.IGNORECASE)
 _TOKEN_RE = re.compile(r"^(.*?)(?:\s*\(([IVX]+)\))?$")
 _NON_FORM_CHAR_RE = re.compile(r"[^A-Za-zʔʕˤʿḫḥṭṣṯẓġḏšảỉủ]")
@@ -187,6 +189,8 @@ class DulatMorphGate:
 
         if not non_suffix:
             return False
+        if any(self._morphology_is_explicit_singular(morph) for morph in morphologies):
+            return False
         return all(
             (
                 _PLURAL_RE.search(morph)
@@ -196,6 +200,12 @@ class DulatMorphGate:
             )
             for morph in non_suffix
         )
+
+    def _morphology_is_explicit_singular(self, morph: str) -> bool:
+        text = (morph or "").lower().strip()
+        if not text:
+            return False
+        return bool(_SINGULAR_RE.search(text) or _SINGULAR_WORD_RE.search(text))
 
     def _normalize(self, text: str) -> str:
         return (text or "").translate(LOOKUP_NORMALIZE).strip()
