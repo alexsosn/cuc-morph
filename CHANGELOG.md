@@ -32,6 +32,15 @@
   - restored `out/KTU *.tsv` and `reports/*` to pre-commit state to preserve researcher comments and approved edits,
   - retained the code-level `ydk` parser/linter fixes from `7afe8cf`,
   - re-applied only the targeted context result in `out/KTU 1.22.tsv` (`146856` collapsed to `yd(II)/+k= | yd (II) | n. m. | love`).
+- Added `LNegationVerbContextPruner` (`pipeline/steps/l_negation_verb_context.py`) and wired it into `pipeline/tablet_parsing.py` after unwrapping.
+  - Rule: keep `l(II)` (`adv.`, `no/not`) only when the following token-group is verbal; otherwise prune `l(II)` from ambiguous `l` groups.
+  - Guard: if `l(II)` is the only analysis row for a token, leave it unchanged.
+- Added linter context warning in `linter/lint.py` for non-verbal `l(II)` usage: `l(II) ('no/not') should be used only before verbal forms`.
+- Added tests:
+  - `tests/test_l_negation_verb_context.py`,
+  - `tests/test_linter_l_negation_context.py`,
+  - updated `tests/test_tablet_parsing_pipeline.py` ordering guard.
+- Applied only this targeted step across `out/KTU *.tsv` (`835` rows pruned in `163` files), including `out/KTU 1.6.tsv` `140451` (removed `l(II)` before `bˤl`).
 
 - Added `SuffixPayloadCollapseFixer` (`pipeline/steps/suffix_payload_collapse.py`) and wired it into `pipeline/tablet_parsing.py` after suffix normalization to collapse clitic-linked DULAT payloads to host-lexeme metadata.
 - Rule: when `col3` already encodes suffix/enclitic markers (`+`, `~`, or bracketed clitic tails), strip `col4` suffix payload segments (`, -x ...`) and trim aligned suffix-function/suffix-gloss tails in `col5`/`col6`.

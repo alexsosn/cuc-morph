@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-02-24T21:20:45.113467+00:00",
+  "generated_at_utc": "2026-02-24T21:56:35.960337+00:00",
   "files_checked": 278,
-  "total_issues": 11654,
-  "fallback_parsed": 658,
+  "total_issues": 11646,
+  "fallback_parsed": 654,
   "by_severity": {
-    "ERROR": 6267,
-    "WARNING": 935,
+    "ERROR": 6265,
+    "WARNING": 930,
     "INFO": 1621
   },
   "by_problem_type": [
@@ -42,12 +42,12 @@
     {
       "severity": "ERROR",
       "problem_type": "Non-G stem in DULAT requires stem marker",
-      "count": 282
+      "count": 280
     },
     {
       "severity": "WARNING",
       "problem_type": "ydk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 144
+      "count": 140
     },
     {
       "severity": "ERROR",
@@ -62,7 +62,7 @@
     {
       "severity": "WARNING",
       "problem_type": "TODO/uncertain marker in comment",
-      "count": 90
+      "count": 89
     },
     {
       "severity": "ERROR",

@@ -1364,6 +1364,34 @@ def collapse_token_rows(token_rows: List[Dict[str, str]]) -> List[Dict[str, str]
     return out
 
 
+def group_token_rows(token_rows: List[Dict[str, str]]) -> List[Dict[str, object]]:
+    """Group contiguous variant rows into one token-group per (line_id, surface)."""
+    groups: List[Dict[str, object]] = []
+    current: Dict[str, object] | None = None
+    current_key: Tuple[str, str] | None = None
+    for row in token_rows:
+        key = ((row.get("line_id", "") or "").strip(), (row.get("surface", "") or "").strip())
+        if current_key is None or key != current_key:
+            current_key = key
+            current = {"line_id": key[0], "surface": key[1], "rows": [row]}
+            groups.append(current)
+            continue
+        assert current is not None
+        current["rows"].append(row)
+    return groups
+
+
+def row_is_l_negation_variant(row: Dict[str, str]) -> bool:
+    """True when row is the exact `l(II)` negation reading."""
+    return (
+        (row.get("surface", "") or "").strip() == "l"
+        and (row.get("analysis_field", "") or "").strip() == "l(II)"
+        and (row.get("dulat_field", "") or "").strip() == "l (II)"
+        and (row.get("pos_field", "") or "").strip() == "adv."
+        and (row.get("gloss_field", "") or "").strip() in {"no", "not"}
+    )
+
+
 # -----------------------------
 # Linter
 # -----------------------------
@@ -3245,6 +3273,7 @@ def lint_file(
                 )
 
     token_stream = collapse_token_rows(token_rows)
+    token_groups = group_token_rows(token_rows)
 
     # Formula-sensitive homonym checks for l:
     #   tbˤ w l yṯb ilm  -> l(II) "not"
@@ -3320,6 +3349,45 @@ def lint_file(
                     "Formula idk l ytn should use a single l(III) reading",
                 )
             )
+
+    # l(II) "no/not" should only appear when the following token is verbal.
+    for idx in range(len(token_groups) - 1):
+        group = token_groups[idx]
+        if (group.get("surface", "") or "").strip() != "l":
+            continue
+        group_rows = group.get("rows", [])
+        if not isinstance(group_rows, list) or not group_rows:
+            continue
+        if not any(row_is_l_negation_variant(row) for row in group_rows):
+            continue
+        # Keep conservative behavior when l(II) is the only available reading.
+        if all(row_is_l_negation_variant(row) for row in group_rows):
+            continue
+
+        next_group_rows = token_groups[idx + 1].get("rows", [])
+        if not isinstance(next_group_rows, list):
+            continue
+        next_has_verb = any(
+            "vb" in ((row.get("pos_field", "") or "").strip()) for row in next_group_rows
+        )
+        if next_has_verb:
+            continue
+
+        l2_row = next((row for row in group_rows if row_is_l_negation_variant(row)), group_rows[0])
+        line_no = int((l2_row.get("line_no", "0") or "0"))
+        line_id = l2_row.get("line_id", "")
+        analysis_field = l2_row.get("analysis_field", "")
+        issues.append(
+            Issue(
+                "warning",
+                str(path),
+                line_no,
+                line_id,
+                "l",
+                analysis_field,
+                "l(II) ('no/not') should be used only before verbal forms",
+            )
+        )
 
     # Long repeated sequences are usually formulaic parallels.
     # Surface-identical windows should not drift in col3-col6 payload unless

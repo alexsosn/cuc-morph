@@ -1,15 +1,15 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `11654`
-- Fallback-parsed issue lines: `658`
+- Total issues: `11646`
+- Fallback-parsed issue lines: `654`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 6267 |
-| WARNING | 935 |
+| ERROR | 6265 |
+| WARNING | 930 |
 | INFO | 1621 |
 
 ### By Problem Type
@@ -22,11 +22,11 @@
 | ERROR | ʔ must be preceded by '(' in column 3 | 428 |
 | ERROR | DULAT comment does not match candidates | 346 |
 | ERROR | No DULAT entry found for clitic part | 324 |
-| ERROR | Non-G stem in DULAT requires stem marker | 282 |
-| WARNING | ydk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 144 |
+| ERROR | Non-G stem in DULAT requires stem marker | 280 |
+| WARNING | ydk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 140 |
 | ERROR | Multiple DULAT candidates for surface | 123 |
 | WARNING | Suffix form without '+' | 90 |
-| WARNING | TODO/uncertain marker in comment | 90 |
+| WARNING | TODO/uncertain marker in comment | 89 |
 | ERROR | Missing DULAT entry token(s) in column 4 | 87 |
 | ERROR | Unknown DULAT token in column 4 | 82 |
 | ERROR | POS ambiguous in DULAT | 80 |
