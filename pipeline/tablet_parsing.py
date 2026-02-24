@@ -35,6 +35,7 @@ from pipeline.steps.suffix_paradigm_normalizer import SuffixParadigmNormalizer
 from pipeline.steps.suffix_payload_collapse import SuffixPayloadCollapseFixer
 from pipeline.steps.surface_option_propagation import SurfaceOptionPropagationFixer
 from pipeline.steps.surface_reconstructability_fixer import SurfaceReconstructabilityFixer
+from pipeline.steps.unwrapped_duplicate_pruner import UnwrappedDuplicatePruner
 from pipeline.steps.variant_row_unwrapper import VariantRowUnwrapper
 from pipeline.steps.weak_final_sc import WeakFinalSuffixConjugationFixer
 from pipeline.steps.weak_verb import WeakVerbFixer
@@ -49,7 +50,7 @@ class PipelineConfig:
     dulat_db: Path
     udb_db: Path
     include_existing: bool = False
-    source_glob: str = "KTU 1.*.tsv"
+    source_glob: str = "KTU *.tsv"
     max_step_change_ratio: float = 0.25
     allow_large_step_changes: bool = False
 
@@ -95,6 +96,7 @@ class TabletParsingPipeline:
             SurfaceReconstructabilityFixer(),
             GenericParsingOverrideFixer(),
             VariantRowUnwrapper(),
+            UnwrappedDuplicatePruner(),
             # Keep schema pass last so any content-changing steps still end in
             # strict 7-column/quote-safe TSV for GitHub rendering.
             TsvSchemaFormatter(),

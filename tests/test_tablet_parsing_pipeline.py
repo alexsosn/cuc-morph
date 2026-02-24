@@ -6,6 +6,28 @@ from pipeline.tablet_parsing import PipelineConfig, TabletParsingPipeline
 
 
 class TabletParsingPipelineTest(unittest.TestCase):
+    def test_default_glob_includes_ktu2_family(self):
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            src = root / "cuc_tablets_tsv"
+            out = root / "out"
+            src.mkdir(parents=True)
+            out.mkdir(parents=True)
+
+            (src / "KTU 2.1.tsv").write_text("", encoding="utf-8")
+
+            config = PipelineConfig(
+                source_dir=src,
+                out_dir=out,
+                dulat_db=root / "dulat.sqlite",
+                udb_db=root / "udb.sqlite",
+                include_existing=False,
+            )
+            pipeline = TabletParsingPipeline(config=config)
+            targets = pipeline.select_targets()
+
+            self.assertEqual([p.name for p in targets], ["KTU 2.1.tsv"])
+
     def test_select_targets_missing_only(self):
         with tempfile.TemporaryDirectory() as tmp_dir:
             root = Path(tmp_dir)
@@ -50,13 +72,9 @@ class TabletParsingPipelineTest(unittest.TestCase):
                 include_existing=False,
             )
             pipeline = TabletParsingPipeline(config=config)
-            targets = pipeline.select_targets(
-                explicit_names=["KTU 1.171.tsv", "KTU 1.170.tsv"]
-            )
+            targets = pipeline.select_targets(explicit_names=["KTU 1.171.tsv", "KTU 1.170.tsv"])
 
-            self.assertEqual(
-                [p.name for p in targets], ["KTU 1.170.tsv", "KTU 1.171.tsv"]
-            )
+            self.assertEqual([p.name for p in targets], ["KTU 1.170.tsv", "KTU 1.171.tsv"])
 
     def test_run_dry_run_returns_summary(self):
         with tempfile.TemporaryDirectory() as tmp_dir:

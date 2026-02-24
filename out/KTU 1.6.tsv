@@ -1,6 +1,8 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 I:1						
 140451	l	l(I)	l (I)	prep.	to	
+140451	l	l(II)	l (II)	adv.	no	
+140451	l	l(III)	l (III)	functor	certainly	
 140452	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 # KTU 1.6 I:2						
 140453	ġr	ġr(III)/	ġr (III)	n. m.	skin	
@@ -20,12 +22,21 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140465	qn	qn/	qn	n. m.	cane	qn 1. ? do we lack 'like - k' before 'qn'?
 140466	ḏrˤh	ḏrˤ(I)/~h	ḏrʕ (I)	n. f.	arm	
 140467	tḥrṯ	!t!ḥrṯ[	/ḥ-r-ṯ/	vb G	to plough/till/farm the land	
-140468	km	km	km	prep.	like	km 1. k (I) prep. 'like, as' Forms: k; suff. km, kmt (encl. -m + encl. -t); cf. km, kmt.? How do we mark -m- in this case?)
+140468	km	k(III)	k (III)	functor	when	km 1. k (I) prep. 'like, as' Forms: k; suff. km, kmt (encl. -m + encl. -t); cf. km, kmt.? How do we mark -m- in this case?)
+140468	km	k(I)	k (I)	prep.	like	km 1. k (I) prep. 'like, as' Forms: k; suff. km, kmt (encl. -m + encl. -t); cf. km, kmt.? How do we mark -m- in this case?)
+140468	km	k(IV)	k (IV)	adv.	thus	km 1. k (I) prep. 'like, as' Forms: k; suff. km, kmt (encl. -m + encl. -t); cf. km, kmt.? How do we mark -m- in this case?)
+140468	km	km	km	prep./conj./adv.		km 1. k (I) prep. 'like, as' Forms: k; suff. km, kmt (encl. -m + encl. -t); cf. km, kmt.? How do we mark -m- in this case?)
+140468	km	+km, +km=	-km			km 1. k (I) prep. 'like, as' Forms: k; suff. km, kmt (encl. -m + encl. -t); cf. km, kmt.? How do we mark -m- in this case?)
 140469	gn	gn(I)/	gn (I)	n. m.	garden/orchard	
 # KTU 1.6 I:5						
-140470	ap	ap(I)	ảp (I)	adv./conj.	also/even/besides	
+140470	ap	ap(I)	ảp (I)	adv./conj.	also	
+140470	ap	ap(II)/	ảp (II)	n. m.	nose	
 140471	lb	lb/	lb	n. m.	heart	lb c. DULAT: ★c) chest, breast: ảp lb chest (part of the previous word? + what to do with alphabetical numbering in Del Olmo?)
+140472	k	+k	-k (I)			How do we mark comparative cojunction? like a noun?
+140472	k	~k	-k (II)			How do we mark comparative cojunction? like a noun?
+140472	k	k(III)	k (III)	Subordinating or completive functor	when	How do we mark comparative cojunction? like a noun?
 140472	k	k(I)	k (I)	prep.	like	How do we mark comparative cojunction? like a noun?
+140472	k	k(II)	k (II)	emph. functor	yes	How do we mark comparative cojunction? like a noun?
 140473	ˤmq	ˤmq(I)/	ʕmq (I)	n. m.	valley	
 140474	tṯlṯ	!t!ṯlṯ[	/ṯ-l-ṯ/	vb	to repeat for the third time/to plough	/ṯ-l-ṯ/ 2. denom. < ṯlṯ (I)
 140475	bmt	bm(t/t	bmt	n. f.	back/rump/loin	bmt 1
@@ -39,8 +50,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 I:7						
 140482	my	my(I)	my (I)	pn. interr.	who?	
 140483	hmlt	hml(t/t=	hmlt	n. f. pl. tant.?	multitude	(it is a fem ending)
-140484	aṯr	aṯr(II)	ảṯr (II)	n. m.	then  remain(s)/what is left	
-140484	aṯr	aṯr(I)	ảṯr (I)	adv./prep.	then/afterwards/behind/immediately after	
+140484	aṯr	aṯr(II)/	ảṯr (II)	n. m.	then  remain(s)/what is left	
+140484	aṯr	aṯr(I)	ảṯr (I)	adv. or prep.	then/afterwards/behind/immediately after	
 140485	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 140486	nrd	!n!(yrd[	/y-r-d/	vb	to go down, descend	?How do we mark weak y?
 # KTU 1.6 I:8						
@@ -189,8 +200,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140570	tṭbḫ	!t!ṭbḫ[	/ṭ-b-ḫ/	vb	to sacrifice, butcher, slaughter	
 140571	šbˤm	šbˤ(I)/m	šbʕ (I)	n. num.	seven	
 140571	šbˤm	šbˤ/m	šbʕm	n. num.	seventy	
-140572	yḥmrm	yḥmr/+m(I)	yḥmr	n.	roebuck	
-140572	yḥmrm	yḥmr/+m(II)	yḥmr	n.	roebuck	
+140572	yḥmrm	yḥmr/+m(I)	yḥmr	n. m.	roebuck	
+140572	yḥmrm	yḥmr/+m(II)	yḥmr	n. m.	roebuck	
 # KTU 1.6 I:29						
 140573	k	+k	-k (I)			UDB 6 I:29: 00- writes kgmn and as such appears in CPU. In fact Dietrich - Loretz - Sanmartín, UF 8 (1976) p. 432 understood it as a substantive whose meaning would be “three years o...
 140573	k	~k	-k (II)			UDB 6 I:29: 00- writes kgmn and as such appears in CPU. In fact Dietrich - Loretz - Sanmartín, UF 8 (1976) p. 432 understood it as a substantive whose meaning would be “three years o...
@@ -202,13 +213,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140576	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 # KTU 1.6 I:30						
 140577	b	b	b	prep.	in	UDB 6 I:30: Vide CTA I, p. 39. | UDB variants: R1-1=[--]-ḥh . tšt bm . ʿ [--]; 00-1=[ … ]-ḥh . tšt bm . ʿ [ … ]
-140578	špḥh	špḥ/+h	špḥ	n.	family	
-140579	pšt	(ḥpšt/				DULAT: NOT FOUND
+140578	špḥh	špḥ/+h	špḥ	n. m.	family	
+140579	pšt	?	?	?	?	DULAT: NOT FOUND
 140580	bm	bm	b	prep.	in	
 140581	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 # KTU 1.6 I:31						
 140582	kd	kd(I)/	kd (I)	n. f.	jar	UDB 6 I:31: 1) Word division suggested by the Generator of Segmentations of the BDFSN and reflected in CPU.: —.zrh. 2) 00- reads: [ … ]zrh . y bm . l ilm. R1, following CTA I, p. 39,...
-140583	ġzrh	ġzr/+h	ġzr	n.	lad	
+140583	ġzrh	ġzr/+h	ġzr	n. m.	lad	
 140584	ybm	ybm/	ybm	n. m.	brother-in-law	
 140585	l	l(I)	l (I)	prep.	to	
 140585	l	l(II)	l (II)	adv.	no	
@@ -331,7 +342,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140661	bl	bl(I)	bl (I)	adv. or emph. functor	no	
 140661	bl	bl(II)	bl (II)	prep.	without	
 140661	bl	bl(III)/	bl (III)	n. m.	blended beer	
-140662	nmlk	!n!mlk[				DULAT: NOT FOUND
+140662	nmlk	?	?	?	?	DULAT: NOT FOUND
 140663	ydˤ	!y!(ydˤ(I)[	/y-d-ʕ/ (I)	vb	to know, to recognise, distinguish, consider	
 140664	ylḥn	!y!lḥ[~n	/l-ḥ(-ḥ)/	vb	to moisten	
 # KTU 1.6 I:49						
@@ -339,7 +350,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140666	yˤn	!y!ˤn[	/ʕ-n-w/	vb	to be / remain depressed, humbled	
 140667	lṭpn	lṭpn/	lṭpn	adj. m.	Benevolent	
 140668	il	il(I)/	ỉl (I)	n. m.	god	
-140669	dpi	d+p(III)/+y				DULAT: NOT FOUND
+140669	dpi	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.6 I:50						
 140670	d	d	d	det. or rel. functor	the one(s) of	UDB 6 I:50: Typographical error in TU, CPU: yr q / z . Read: yr q / ẓ . | UDB variants: R1-1=d . dq . anm . l {yr q ///yr ẓ }; 00-1=d . dq . anm . l yr q / ẓ (?)
 140671	dq	dq(I)/	dq (I)	adj. m.	tiny, fine	
@@ -370,7 +381,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 I:54						
 140689	blt	bl(y[t:d	/b-l-y/	vb	to devour	
 140689	blt	blt[	/b-l-t/	vb	to open wide	
-140690	nmlk	!n!mlk[				DULAT: NOT FOUND
+140690	nmlk	?	?	?	?	DULAT: NOT FOUND
 140691	ˤṯtr	ˤṯtr/	ʕṯtr	DN	ʿAṯtar	
 140692	ˤrẓ	ˤrẓ/	ʕrẓ	adj. m.	the Terrible	
 # KTU 1.6 I:55						
@@ -378,7 +389,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140694	ˤṯtr	ˤṯtr/	ʕṯtr	DN	ʿAṯtar	
 140695	ˤrẓ	ˤrẓ/	ʕrẓ	adj. m.	the Terrible	
 # KTU 1.6 I:56						
-140696	apnk	apn(I)+k	ảpn (I)	n. f.	wheel	
+140696	apnk	apn(I)+k/	ảpn (I)	n. f.	wheel	
 140697	ˤṯtr	ˤṯtr/	ʕṯtr	DN	ʿAṯtar	
 140698	ˤrẓ	ˤrẓ/	ʕrẓ	adj. m.	the Terrible	
 # KTU 1.6 I:57						
@@ -482,7 +493,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140764	lb	lb/	lb	n. m.	heart	
 140765	arḫ	arḫ/	ảrḫ	n. f.	cow, heifer	
 # KTU 1.6 II:7						
-140766	lxˤglh	l(I)+ˤgl(I)/+h				DULAT: NOT FOUND
+140766	lxˤglh	?	?	?	?	DULAT: NOT FOUND
 140767	k	+k	-k (I)			
 140767	k	~k	-k (II)			
 140767	k	k(III)	k (III)	Subordinating or completive functor	when	
@@ -704,8 +715,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140907	l	l(III)	l (III)	functor	certainly	
 140908	tikl	!t!ikl[	/ʔ-k-l/	vb	to eat	
 # KTU 1.6 II:36						
-140909	ˤṣrm	ˤṣr(I)/+m(I)	ʕṣr (I)	n.	bird	
-140909	ˤṣrm	ˤṣr(I)/+m(II)	ʕṣr (I)	n.	bird	
+140909	ˤṣrm	ˤṣr(I)/+m(I)	ʕṣr (I)	n. f.	bird	
+140909	ˤṣrm	ˤṣr(I)/+m(II)	ʕṣr (I)	n. f.	bird	
 140910	mnth	mnt(I)/+h	mnt (I)	n. f.	portion, ration	
 140911	l	l(I)	l (I)	prep.	to	
 140911	l	l(II)	l (II)	adv.	no	
@@ -784,7 +795,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140962	ḥlm	ḥlm(I)/	ḥl (I)	n. m.	strength, vigour	
 140963	lṭpn	lṭpn/	lṭpn	adj. m.	Benevolent	
 140964	il	il(I)/	ỉl (I)	n. m.	god	
-140965	dpid	d+p(III)/+id				DULAT: NOT FOUND
+140965	dpid	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.6 III:11						
 140966	b	b	b	prep.	in	
 140967	ḏrt	ḏr(t/t	ḏrt	n. f.	vision	
@@ -906,7 +917,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141045	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 141046	arṣ	arṣ/	ảrṣ	n. f.	earth	
 # KTU 1.6 IV:6						
-141047	ttbˤ	!t!tbˤ[				DULAT: NOT FOUND
+141047	ttbˤ	?	?	?	?	DULAT: NOT FOUND
 141048	btlt	btl(t/t	btlt	n. f.	virgin	
 141049	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 141050	ix	?	?	?	?	DULAT: NOT FOUND
@@ -954,7 +965,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 IV:14						
 141080	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 141081	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
-141082	mḥrṯth	mḥrṯt/+h	mḥrṯt	n.	ploughed land / field	
+141082	mḥrṯth	mḥrṯt/+h	mḥrṯt	n. f.	ploughed land / field	
 # KTU 1.6 IV:15						
 141083	iy	iy	ỉy	interr. adv.	where?	
 141084	aliyn	aliyn/	ảlỉyn	adj. m.	The Very / Most Powerful	
@@ -1031,7 +1042,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 IV:28						
 141131	x	?	?	?	?	
 # KTU 1.6 IV:29						
-141132						
+141132		?	?	?	?	
 # KTU 1.6 V:1						
 141133	yiḫd	!y!iḫd[	/ʔ-ḫ-d(/ḏ)/	vb	to collect, to take	
 141134	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
@@ -1050,7 +1061,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141144	ṣmd	ṣmd[	/ṣ-m-d/	vb	to harness	
 # KTU 1.6 V:4						
 141145	ṣġrm	ṣġr(I)/m	ṣġr (I)	adj. m.	small, of tender years, young	UDB 6 V:4: 00- reads: ṣ ġ r m . Epigraphic error. CTA I, p. 41, reads: ṣ ḥr m t . See also CTA II, fig. 25 (autography). R1-reads according to CTA. | UDB variants: R1-1=ṣ ḥr m t . y...
-141146	ymṣḫ	!y!mṣ(ḥ&ḫ[				DULAT: NOT FOUND
+141146	ymṣḫ	?	?	?	?	DULAT: NOT FOUND
 141147	l	l(I)	l (I)	prep.	to	
 141147	l	l(II)	l (II)	adv.	no	
 141147	l	l(III)	l (III)	functor	certainly	
@@ -1067,14 +1078,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141153	ksi	ks(I)/&i	ks (I)	n. m.	cup	
 141154	mlkh	mlk(II)/+h	mlk (II)	n. m.	kingdom	
 # KTU 1.6 V:6						
-141155	lnḫt	l(I)+nḫt				DULAT: NOT FOUND; UDB 6 V:6: 00- reads: [ … ] . l kḥṯ . drk t h. CTA I, p. 41, restores: [lnḫt]; but, as it is pointed out in N. 11, the restoration is not safe. R1 reads: [ - ----] . l kḥṯ . drk t h...
+141155	lnḫt	?	?	?	?	DULAT: NOT FOUND; UDB 6 V:6: 00- reads: [ … ] . l kḥṯ . drk t h. CTA I, p. 41, restores: [lnḫt]; but, as it is pointed out in N. 11, the restoration is not safe. R1 reads: [ - ----] . l kḥṯ . drk t h...
 141156	l	l(I)	l (I)	prep.	to	
 141156	l	l(II)	l (II)	adv.	no	
 141156	l	l(III)	l (III)	functor	certainly	
 141157	kḥṯ	kḥṯ/	kḥṯ	n. m.	throne	
 141158	drkth	drkt/+h	drkt	n. f.	rule, power	
 # KTU 1.6 V:7						
-141159	lymm	l(I)+ym/m				DULAT: NOT FOUND
+141159	lymm	?	?	?	?	DULAT: NOT FOUND
 141160	l	l(I)	l (I)	prep.	to	
 141160	l	l(II)	l (II)	adv.	no	
 141160	l	l(III)	l (III)	functor	certainly	
@@ -1119,7 +1130,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141186	ˤlk	ˤl(I)+k	ʕl (I)	prep.	upon, on top of	
 141187	pht	ph(y[t(II)	/p-h-y/	vb	to see, espy	
 # KTU 1.6 V:13						
-141188	dry	dr/+y	dr	n.	circle	
+141188	dry	dr/+y	dr	n. m.	circle	
 141189	b	b	b	prep.	in	
 141190	ḥrb	ḥrb/	ḥrb	n. f.	knife	
 141191	ˤlk	ˤl(I)+k	ʕl (I)	prep.	upon, on top of	
@@ -1138,7 +1149,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141201	m	m(I)/	bn (I)	n. m.	son	UDB 6 V:16: R1 assumes the Broken String: brḥm.
 141202	ˤlk	ˤl(I)+k	ʕl (I)	prep.	upon, on top of	
 141203	pht	ph(y[t(II)	/p-h-y/	vb	to see, espy	
-141204	dry	dr/+y	dr	n.	circle	
+141204	dry	dr/+y	dr	n. m.	circle	
 141205	b	b	b	prep.	in	
 141206	kbrt	kbr(t/t	kbrt	n. f.	sieve	
 # KTU 1.6 V:17						
@@ -1151,7 +1162,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141212	b	b	b	prep.	in	
 141213	šdm	šd(I)/m	šd (I)	n. m.	open field	
 141214	ˤlk	ˤl(I)+k	ʕl (I)	prep.	upon, on top of	
-141215						
+141215		?	?	?	?	
 141216	pht	ph(y[t(II)	/p-h-y/	vb	to see, espy	
 # KTU 1.6 V:19						
 141217	drˤ	drˤ/	d/ḏrʕ	n. m.	seed, seed-grain, sowing	
@@ -1211,7 +1222,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 V:29						
 141251	š	š/	š	n. m.	ram	
 # KTU 1.6 V:30						
-141252						
+141252		?	?	?	?	
 # KTU 1.6 VI:1						
 141253	xxxxxxx	?	?	?	?	UDB 6 VI:1: R1 reads according to CTA I, p. 42. | UDB variants: R1-1=[------ yṭ] r dh; 00-1=[ … yṭ] r dh
 141254	ṭrdh	ṭrd[+h	/ṭ-r-d/	vb	to throw out	
@@ -1220,15 +1231,15 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141256	gršh	grš[+h	/g-r-š/	vb	to eject, drive out, evict, cast out	
 # KTU 1.6 VI:3						
 141257	xxxxx	?	?	?	?	UDB 6 VI:3: R1 reads according to CTA I, p. 42. | UDB variants: R1-1=[--------] r u; 00-1=[ … ] r u
-141258	kˤṣr	kˤṣr				DULAT: NOT FOUND
+141258	kˤṣr	?	?	?	?	DULAT: NOT FOUND
 141259	u	u	ủ	conj.	or	
 # KTU 1.6 VI:4						
 141260	dnh	d+nh	d	det. or rel. functor	the one(s) of	
-141260	dnh	dn(I)/+h	dn (I)	n.	judgment	
+141260	dnh	dn(I)/+h	dn (I)	n. m.	judgment	
 141261	ytn	!y!(ytn[	/y-t-n/	vb	to give/to grant	
 141262	aḫh	aḫ(I)/+h	ảḫ (I)	n. m.	brother	
 # KTU 1.6 VI:5						
-141263	xxxxxxxxx	xxxxxxxxx				
+141263	xxxxxxxxx	?	?	?	?	
 141264	mt	mt(II)/	mt (II)	n. m.	death	
 # KTU 1.6 VI:6						
 141265	xxxxxx	?	?	?	?	UDB 6 VI:6: Vide CTA I, p. 42. | UDB variants: R1-1=[-----]-- m r . limm; 00-1=[ … ]-- m r . limm
@@ -1244,7 +1255,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141273	šbˤt	šbˤ(I)/t	šbʕ (I)	n. num.	seven	
 141274	ġlmh	ġlm/+h	ġlm	n. m.	boy	
 # KTU 1.6 VI:9						
-141275	wˤn	wˤn				DULAT: NOT FOUND; UDB 6 VI:9: Vide CTA I, p. 42. | UDB variants: R1-1=[--]- . bn . ilm . mt; 00-1=[ … ]- . bn . ilm . mt
+141275	wˤn	?	?	?	?	DULAT: NOT FOUND; UDB 6 VI:9: Vide CTA I, p. 42. | UDB variants: R1-1=[--]- . bn . ilm . mt; 00-1=[ … ]- . bn . ilm . mt
 141276	bn	bn(I)/	bn (I)	n. m.	son	
 141277	ilm	il(I)/m	ỉl (I)	n. m.	god	
 141278	mt	mt(II)/	mt (II)	n. m.	death	
@@ -1269,7 +1280,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141292	ṣrrt	ṣrrt/	ṣrrt	n. f.	height(s)	
 # KTU 1.6 VI:13						
 141293	ṣpn	ṣpn/	ṣpn	TN	Ṣapānu/Zaphon/the mountain dwelling of bʕl deified	UDB 6 VI:13: 00- reads yšl and correctas as yšu. CTA I, p. 42 reads yšu!. The autography, CTA II fig. 26, reads yšl. Scribal error. R1- acepts the correction yš u . | UDB variants: R1...
-141294	yšl	!y!šl[				DULAT: NOT FOUND
+141294	yšl	?	?	?	?	DULAT: NOT FOUND
 141295	gh	g/+h	g	n. m.	(loud) voice	
 141296	w	w	w	conj.	and	
 141297	yṣḥ	!y!ṣḥ[	/ṣ-ḥ/	vb	to exclaim, shout	
@@ -1291,8 +1302,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141307	k	k(III)	k (III)	Subordinating or completive functor	when	
 141307	k	k(I)	k (I)	prep.	like	
 141307	k	k(II)	k (II)	emph. functor	yes	
-141308	gmrm	gmr/+m(I)	gmr	n.	champion	
-141308	gmrm	gmr/+m(II)	gmr	n.	champion	
+141308	gmrm	gmr/+m(I)	gmr	n. m.	champion	
+141308	gmrm	gmr/+m(II)	gmr	n. m.	champion	
 # KTU 1.6 VI:17						
 141309	mt	mt(II)/	mt (II)	n. m.	death	
 141310	ˤz	ˤz(I)/	ʕz (I)	n. m.	strength, force	
@@ -1355,7 +1366,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141343	ilm	il(I)/m	ỉl (I)	n. m.	god	
 141344	mt	mt(II)/	mt (II)	n. m.	death	
 141345	ik	ik	ỉk	interr. functor	how?	
-141346	tmtḫ	!t!]t]mḫ(ṣ[				DULAT: NOT FOUND
+141346	tmtḫ	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.6 VI:25						
 141347	ṣ	(m(ḫ(ṣ[	/m-ḫ-ṣ/	vb	to wound, beat, crush, kill	UDB 6 VI:25: R1 assumes the Broken Sring: tmtḫṣ.
 141348	ˤm	ˤm(I)	ʕm (I)	prep.	to	
@@ -1391,7 +1402,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141367	ḫṭ	ḫṭ/	ḫṭ	n.	sceptre, rod, wand, stake	
 141368	mṯpṭk	mṯpṭ/ẓ/+k	mṯpṭ/ẓ	n. m.	command, jurisdiction	
 # KTU 1.6 VI:30						
-141369	yru	!y!(yr(ʔ&u[				DULAT: NOT FOUND; UDB 6 VI:30: 00- and CTA I, p. 43 read t and correct as mt. R1- accepts the correction. | UDB variants: R1-1=yr u . bn ilm [m]t . ṯtʿ . y; 00-1=yr u . bn ilm t (mt) . ṯtʿ . y
+141369	yru	?	?	?	?	DULAT: NOT FOUND; UDB 6 VI:30: 00- and CTA I, p. 43 read t and correct as mt. R1- accepts the correction. | UDB variants: R1-1=yr u . bn ilm [m]t . ṯtʿ . y; 00-1=yr u . bn ilm t (mt) . ṯtʿ . y
 141370	bn	bn(I)/	bn (I)	n. m.	son	
 141371	il	il(I)/	ỉl (I)	n. m.	god	
 141372	mt	mt(II)/	mt (II)	n. m.	death	
@@ -1541,7 +1552,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.6 VI:58						
 141467	adn	adn(I)/	ảdn (I)	n. m.	lord/master	
 141468	yrgb	yrgb/	yrgb	TN	?	
-141468	yrgb	yrgb(b(ʕ(l/	yrgbbʕl	PN	royal ritual PN	
+141468	yrgb	yrgb(b(ˤ(l/	yrgbbʕl	PN	royal ritual PN	
 141469	bˤl	bˤl(II)/	bʕl (II)	n. m.	lord	
-141469	bˤl	(y(r(g(bbʕl/	yrgbbʕl	PN	royal ritual PN	
+141469	bˤl	(y(r(g(bbˤl/	yrgbbʕl	PN	royal ritual PN	
 141470	ṯrmn	ṯrmn(I)/	ṯrmn (I)	DN	term for the kings of Ugarit	

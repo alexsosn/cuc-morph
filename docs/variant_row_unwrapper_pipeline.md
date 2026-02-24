@@ -18,7 +18,9 @@ New style (multiple rows, same `id` + `surface`, one option each).
 ## Step
 
 - Step: `VariantRowUnwrapper` (`pipeline/steps/variant_row_unwrapper.py`)
-- Pipeline position: final content-changing step, immediately before the last `TsvSchemaFormatter`.
+- Follow-up safety step: `UnwrappedDuplicatePruner` (`pipeline/steps/unwrapped_duplicate_pruner.py`)
+- Pipeline position: both run at the end of content-changing refinements, immediately before the
+  last `TsvSchemaFormatter`.
 
 ## Rules
 

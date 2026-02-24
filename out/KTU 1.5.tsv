@@ -1,6 +1,10 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 I:1						
-139769	k	k(III)	k (III)	subordinating or completive functor	when	
+139769	k	+k	-k (I)			
+139769	k	~k	-k (II)			
+139769	k	k(III)	k (III)	Subordinating or completive functor	when	
+139769	k	k(I)	k (I)	prep.	like	
+139769	k	k(II)	k (II)	emph. functor	yes	
 139770	tmḫṣ	!t!mḫṣ[	/m-ḫ-ṣ/	vb	to wound	G, prefc., 2ms
 139771	ltn	ltn(I)/	ltn (I)	DN	Lôtan	abs, acc., ms
 139772	bṯn	bṯn/	bṯn	n. m.	serpent	
@@ -157,7 +161,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139876	qran	qr(ʔ&a&n[	/q-r-ʔ/	vb	to call	
 139877	hd	hd/	hd(d)	DN	Haddu/Hadad	
 139878	ˤm	ˤm(I)	ʕm (I)	prep.	to	
-139879	aryy	ary(I)/+y	ảry (I)	n. m.	fellow	UNP note 160: possible haplography with parallel aḫy; Wyatt p120 n23 also supports aryy via scribal-error explanation.
+139879	aryy	ary(I)y/	ảry (I)	n. m.	fellow	UNP note 160: possible haplography with parallel aḫy; Wyatt p120 n23 also supports aryy via scribal-error explanation.
 # KTU 1.5 I:24						
 139880	w	w	w	conj.	and	
 139881	lḥmm	lḥm(I)[+m	/l-ḥ-m/ (I)	vb	to eat	
@@ -405,7 +409,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 III:5						
 140049	tˤtd	?	?	?	?	
 140050	tkl	!t!kl(y[:d	/k-l-y/	vb	to finish  be finished  to empty  be emptied	
-140051						
+140051		?	?	?	?	
 # KTU 1.5 III:6						
 140052	tkn	!t!kn[	/k-n/	vb	to be	
 140053	l	l(I)	l (I)	prep.	to	
@@ -469,7 +473,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140081	nˤm	nˤm(I)/	nʕm (I)	adj. m.	handsome	
 140081	nˤm	nˤm(II)/	nʕm (II)	n. m.	grace	
 140082	ilm	il(I)/m	ỉl (I)	n. m.	god	
-140083						
+140083		?	?	?	?	
 # KTU 1.5 III:16						
 140084	šgr	šgr(I)/	šgr (I)	n. m.	offspring of cattle	
 140085	mud	mud/	mỉ/ủd	n. m.	abundance	
@@ -486,12 +490,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140092	b	b	b	prep.	in	
 140093	qrb	qrb[	/q-r-b/	vb	to approach	
 140093	qrb	qrb/	qrb	n. m.	inside	
-140094						
+140094		?	?	?	?	
 # KTU 1.5 III:20						
 140095	w	w	w	conj.	and	
 140096	lk	(hlk[	/h-l-k/	vb	to go  go away	
 140097	ilm	il(I)/m	ỉl (I)	n. m.	god	
-140098						
+140098		?	?	?	?	
 # KTU 1.5 III:21						
 140099	w	w	w	conj.	and	
 140100	rgm	rgm/	rgm	n. m.	word  expression  saying	
@@ -524,7 +528,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140117	ṯmm	ṯmm[	/ṯ-m-m/	vb	to be appalled	
 140118	w	w	w	conj.	and	
 140119	lk	(hlk[	/h-l-k/	vb	to go  go away	
-140120						
+140120		?	?	?	?	
 # KTU 1.5 III:28						
 140121	xxxṯ	?	?	?	?	
 140122	lk	(hlk[	/h-l-k/	vb	to go  go away	
@@ -548,7 +552,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140130	w	w	w	conj.	and	
 140131	lṭlb	l(I) ṭlb[	/ṭ-l-b/	vb	?	
 140131	lṭlb	l(II) ṭlb[	/ṭ-l-b/	vb	?	
-140132						
+140132		?	?	?	?	
 # KTU 1.5 IV:4						
 140133	mit	mi(t/t	mỉt	n. f.	a hundred	
 140134	rḥm	rḥ(III)/m	rḥ (III)	n. m.	millstone	
@@ -615,7 +619,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140179	ymlun	!y!ml(ʔ&u&n[	/m-l-ʔ/	vb	to be full	Del Olmo IV:17 “Copas de plata [llenaron]”, with final -n unresolved; Wyatt p124 supports cup-filling sequence.
 # KTU 1.5 IV:19						
 140180	krpn	krpn/	krpn	n. m.	cup	
-140181						
+140181		?	?	?	?	
 # KTU 1.5 IV:20						
 140182	w	w	w	conj.	and	
 140183	tṯtnyn	!t!ṯ]t]ny[~n	/ṯ-n-y/	?	?	Uncertain Gt prefc. per DULAT.

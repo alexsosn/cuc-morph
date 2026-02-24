@@ -74,7 +74,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143230	bnm	b	b	prep.	in	
 143230	bnm	bn(I)/m	bn (I)	n. m.	son	
 143231	il	il(I)/	ỉl (I)	n. m.	god	
-143232	špḥ	špḥ/	špḥ	n.	family	
+143232	špḥ	špḥ/	špḥ	n. m.	family	
 # KTU 1.16 I:11						
 143233	lṭpn	lṭpn/	lṭpn	adj. m.	Benevolent	
 143234	w	w	w	conj.	and	
@@ -151,7 +151,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143276	il	il(I)/	ỉl (I)	n. m.	god	
 # KTU 1.16 I:21						
 143277	krt	krt/	krt	PN	krt	
-143278	špḥ	špḥ/	špḥ	n.	family	
+143278	špḥ	špḥ/	špḥ	n. m.	family	
 143279	lṭpn	lṭpn/	lṭpn	adj. m.	Benevolent	
 # KTU 1.16 I:22						
 143280	w	w	w	conj.	and	
@@ -161,7 +161,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143283	ilm	il(I)/m	ỉl (I)	n. m.	god	
 143284	tmtn	!t!mt[	/m-t/	vb	to die	
 # KTU 1.16 I:23						
-143285	špḥ	špḥ/	špḥ	n.	family	
+143285	špḥ	špḥ/	špḥ	n. m.	family	
 143286	lṭpn	lṭpn/	lṭpn	adj. m.	Benevolent	
 143287	l	l(I)	l (I)	prep.	to	
 143287	l	l(II)	l (II)	adv.	no	
@@ -664,7 +664,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143564	u	u	ủ	conj.	or	
 143565	ilm	il(I)/m	ỉl (I)	n. m.	god	
 143566	tmtn	!t!mt[	/m-t/	vb	to die	
-143567	špḥ	špḥ/	špḥ	n.	family	
+143567	špḥ	špḥ/	špḥ	n. m.	family	
 # KTU 1.16 II:44						
 143568	lṯpn	?	?	?	?	DULAT: NOT FOUND
 143569	l	l(I)	l (I)	prep.	to	
@@ -699,7 +699,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143586	bnm	bn(I)/m	bn (I)	n. m.	son	
 143587	il	il(I)/	ỉl (I)	n. m.	god	
 # KTU 1.16 II:49						
-143588	špḥ	špḥ/	špḥ	n.	family	
+143588	špḥ	špḥ/	špḥ	n. m.	family	
 143589	lṭpn	lṭpn/	lṭpn	adj. m.	Benevolent	
 143590	w	w	w	conj.	and	
 143591	qdš	qdš(I)/	qdš (I)	adj. m.	holy	
@@ -1434,10 +1434,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144019	šqlt	?	?	?	?	DULAT: NOT FOUND
 144020	b	b	b	prep.	in	
 144021	ġlt	ġl(t/t	ġlt	n. f.	prostration	
-144022	ydk	yd(I)/+k	yd (I)	n. f.	hand	
-144022	ydk	yd(I)/+k=	yd (I)	n. f.	hand	
-144022	ydk	yd(II)/+k	yd (II)	n. m.	love	
-144022	ydk	yd(II)/+k=	yd (II)	n. m.	love	
+144022	ydk	yd(I)/+k	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
+144022	ydk	yd(I)/+k=	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
+144022	ydk	yd(II)/+k	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
+144022	ydk	yd(II)/+k=	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
 144022	ydk	!y!dk[	d-k(-k)/	vb	to be pounded	
 144022	ydk	!y=!dk[	d-k(-k)/	vb	to be pounded	
 # KTU 1.16 VI:33						
@@ -1536,10 +1536,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 VI:45						
 144074	b	b	b	prep.	in	
 144075	ġlt	ġl(t/t	ġlt	n. f.	prostration	
-144076	ydk	yd(I)/+k	yd (I)	n. f.	hand	
-144076	ydk	yd(I)/+k=	yd (I)	n. f.	hand	
-144076	ydk	yd(II)/+k	yd (II)	n. m.	love	
-144076	ydk	yd(II)/+k=	yd (II)	n. m.	love	
+144076	ydk	yd(I)/+k	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
+144076	ydk	yd(I)/+k=	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
+144076	ydk	yd(II)/+k	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
+144076	ydk	yd(II)/+k=	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
 144076	ydk	!y!dk[	d-k(-k)/	vb	to be pounded	
 144076	ydk	!y=!dk[	d-k(-k)/	vb	to be pounded	
 144077	l	l(I)	l (I)	prep.	to	

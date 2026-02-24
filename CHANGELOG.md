@@ -23,6 +23,11 @@
   - added non-empty-anchor projection for gloss slots when legacy packed rows encode alignment empties in POS but not gloss (for example `k` override rows with `;;POS...` + compact gloss list),
   - added regression test `test_preserves_empty_slot_alignment_for_k_variants` in `tests/test_variant_row_unwrapper.py`.
 - Re-applied only `VariantRowUnwrapper` from pre-unwrapped baseline (`6e8a89e`) across `out/KTU 1.*.tsv`; user-flagged rows (for example `135829` / `143662`) now map `k(III)` -> `when`, `k(I)` -> `like`, `k(II)` -> `yes` without shifted POS/gloss.
+- Added `UnwrappedDuplicatePruner` (`pipeline/steps/unwrapped_duplicate_pruner.py`) after variant unwrapping to remove duplicated option rows with identical `(id, surface, col3, col4, col5, col6)` payload.
+- Added regression coverage for duplicate pruning in `tests/test_unwrapped_duplicate_pruner.py`.
+- Expanded pipeline scope defaults from `KTU 1.*.tsv` to `KTU *.tsv` (`pipeline/tablet_parsing.py`) and added `--source-glob` to `scripts/run_tablet_parsing_pipeline.py` for explicit family-scoped runs.
+- Added pipeline test coverage for default all-family target selection (`tests/test_tablet_parsing_pipeline.py`).
+- Applied the post-`c7ebe6f` instruction + refinement chain across all tablet families (`KTU *.tsv`) and regenerated lint reports; packed semicolon rows in `col3`-`col6` are now `0` corpus-wide and duplicate unwrapped payload rows are `0` corpus-wide.
 
 - Added `SuffixPayloadCollapseFixer` (`pipeline/steps/suffix_payload_collapse.py`) and wired it into `pipeline/tablet_parsing.py` after suffix normalization to collapse clitic-linked DULAT payloads to host-lexeme metadata.
 - Rule: when `col3` already encodes suffix/enclitic markers (`+`, `~`, or bracketed clitic tails), strip `col4` suffix payload segments (`, -x ...`) and trim aligned suffix-function/suffix-gloss tails in `col5`/`col6`.

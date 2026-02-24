@@ -1,93 +1,73 @@
 {
-  "generated_at_utc": "2026-02-24T21:00:36.182657+00:00",
+  "generated_at_utc": "2026-02-24T21:09:51.506565+00:00",
   "files_checked": 278,
-  "total_issues": 13071,
-  "fallback_parsed": 2504,
+  "total_issues": 11645,
+  "fallback_parsed": 658,
   "by_severity": {
-    "ERROR": 8065,
-    "WARNING": 1352,
-    "INFO": 1591
+    "ERROR": 6264,
+    "WARNING": 937,
+    "INFO": 1621
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3945
+      "count": 3823
     },
     {
       "severity": "INFO",
       "problem_type": "Surface not found in UDB concordance",
-      "count": 1591
+      "count": 1621
     },
     {
       "severity": "ERROR",
       "problem_type": "POS token not allowed for declared DULAT entry",
-      "count": 516
+      "count": 444
     },
     {
       "severity": "ERROR",
       "problem_type": "ʔ must be preceded by '(' in column 3",
-      "count": 423
+      "count": 428
     },
     {
       "severity": "ERROR",
       "problem_type": "DULAT comment does not match candidates",
-      "count": 320
+      "count": 346
     },
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for clitic part",
-      "count": 279
+      "count": 324
     },
     {
       "severity": "ERROR",
       "problem_type": "Non-G stem in DULAT requires stem marker",
-      "count": 260
+      "count": 282
     },
     {
-      "severity": "ERROR",
-      "problem_type": "l Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 233
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 166
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mlk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 113
+      "severity": "WARNING",
+      "problem_type": "ydk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 144
     },
     {
       "severity": "ERROR",
       "problem_type": "Multiple DULAT candidates for surface",
-      "count": 104
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "bn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 100
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rgm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 99
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 90
+      "count": 123
     },
     {
       "severity": "WARNING",
       "problem_type": "TODO/uncertain marker in comment",
-      "count": 90
+      "count": 94
     },
     {
       "severity": "WARNING",
       "problem_type": "Suffix form without '+'",
-      "count": 84
+      "count": 90
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Missing DULAT entry token(s) in column 4",
+      "count": 86
     },
     {
       "severity": "ERROR",
@@ -96,18 +76,13 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "Column 5 count must match analysis variant count",
-      "count": 72
+      "problem_type": "POS ambiguous in DULAT",
+      "count": 80
     },
     {
       "severity": "WARNING",
       "problem_type": "y Lexeme parse did not match DULAT; matched by surface form",
-      "count": 71
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "POS ambiguous in DULAT",
-      "count": 70
+      "count": 72
     },
     {
       "severity": "ERROR",
@@ -117,107 +92,27 @@
     {
       "severity": "ERROR",
       "problem_type": "Each reconstructed letter must be prefixed by '('",
-      "count": 65
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šlm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 52
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "Column 6 count should match analysis variant count",
-      "count": 52
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ank Pronouns should not use '/' closure in analysis",
-      "count": 50
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "k Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 43
+      "count": 64
     },
     {
       "severity": "ERROR",
       "problem_type": "Deverbal form matches both verb and noun entries in DULAT",
-      "count": 42
+      "count": 47
     },
     {
       "severity": "WARNING",
       "problem_type": "Plural form missing split ending",
-      "count": 35
+      "count": 36
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "No DULAT entry found for lexeme/surface",
+      "count": 34
     },
     {
       "severity": "WARNING",
       "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
       "count": 29
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Noun/adjective lacks '/' ending",
-      "count": 28
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mnm Pronouns should not use '/' closure in analysis",
-      "count": 28
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "bt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 27
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "at Pronouns should not use '/' closure in analysis",
-      "count": 25
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 24
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rb Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 23
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "al Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 21
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "p Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 21
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lḥt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 18
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yd Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 18
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "hw Pronouns should not use '/' closure in analysis",
-      "count": 18
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ky Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 17
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤmny Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 16
     },
     {
       "severity": "WARNING",
@@ -230,44 +125,9 @@
       "count": 16
     },
     {
-      "severity": "ERROR",
-      "problem_type": "ˤd Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 15
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṯlṯ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 15
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ap Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 14
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lbh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 14
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "spr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 14
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "lbh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 14
-    },
-    {
       "severity": "WARNING",
       "problem_type": "nṯk Lexeme parse did not match DULAT; matched by surface form",
       "count": 14
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ym Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 13
     },
     {
       "severity": "WARNING",
@@ -275,33 +135,8 @@
       "count": 13
     },
     {
-      "severity": "ERROR",
-      "problem_type": "Column 4 count must match analysis variant count",
-      "count": 12
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "bˤl Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 12
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "kbd Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 12
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "n Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 12
-    },
-    {
       "severity": "WARNING",
       "problem_type": "bhtm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 12
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "hnd Pronouns should not use '/' closure in analysis",
       "count": 12
     },
     {
@@ -316,48 +151,8 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "špḥ Noun POS should include DULAT gender marker for špḥ: n. m.",
-      "count": 12
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ṯqlm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 12
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "pn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 11
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Multiple DULAT candidates for lexeme",
-      "count": 10
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "Feminine plural noun in DULAT should use '/t='",
       "count": 10
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "km Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 9
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ks Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 9
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤrb Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 9
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)",
-      "count": 9
     },
     {
       "severity": "WARNING",
@@ -365,28 +160,8 @@
       "count": 9
     },
     {
-      "severity": "WARNING",
-      "problem_type": "ˤmnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 9
-    },
-    {
       "severity": "ERROR",
       "problem_type": "POS tokens must map to existing DULAT tokens in column 4",
-      "count": 8
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "alp Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 8
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "y Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 8
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤmny Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
       "count": 8
     },
     {
@@ -405,31 +180,6 @@
       "count": 8
     },
     {
-      "severity": "ERROR",
-      "problem_type": "bny Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 7
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "hwt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 7
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lbh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 7
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 7
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "t Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 7
-    },
-    {
       "severity": "WARNING",
       "problem_type": "Deverbal form marked with '[' but only noun entry found in DULAT",
       "count": 7
@@ -440,48 +190,13 @@
       "count": 7
     },
     {
-      "severity": "ERROR",
-      "problem_type": "krmh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "śzn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šlmk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "štnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤmnh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṯqlm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
+      "severity": "WARNING",
+      "problem_type": "Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)",
       "count": 6
     },
     {
       "severity": "WARNING",
       "problem_type": "aṯr Lexeme parse did not match DULAT; matched by surface form",
-      "count": 6
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "krmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 6
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "pm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 6
     },
     {
@@ -495,58 +210,8 @@
       "count": 6
     },
     {
-      "severity": "WARNING",
-      "problem_type": "śzn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 6
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "šlmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 6
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "štnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "aḥd Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 5
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "h Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 5
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "hlk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 5
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nˤm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 5
-    },
-    {
       "severity": "ERROR",
       "problem_type": "Š stem marker present but DULAT lacks Š/Št/Špass",
-      "count": 5
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šd Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 5
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "št Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 5
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤšr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
       "count": 5
     },
     {
@@ -565,11 +230,6 @@
       "count": 5
     },
     {
-      "severity": "WARNING",
-      "problem_type": "šp Noun POS should include DULAT gender marker for šp: n. m.",
-      "count": 5
-    },
-    {
       "severity": "ERROR",
       "problem_type": "D stem marker present but DULAT lacks D/Dt",
       "count": 4
@@ -581,107 +241,12 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "amhth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "an Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "argmn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "dm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "kt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "l Formula idk l ytn expects l(III) ('truly/certainly')",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "pr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tšt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ydn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šlmy Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥdy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḫbṯ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḫmšm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḫsr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "amhth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 4
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "an Pronouns should not use '/' closure in analysis",
-      "count": 4
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "apśnym For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 4
     },
     {
       "severity": "WARNING",
       "problem_type": "bht Lexeme parse did not match DULAT; matched by surface form",
-      "count": 4
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "hmt Pronouns should not use '/' closure in analysis",
       "count": 4
     },
     {
@@ -706,11 +271,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ḥdy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 4
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ḥtkk Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
     },
@@ -718,206 +278,6 @@
       "severity": "WARNING",
       "problem_type": "ḫbtkm Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Disallowed character in columns 2-3: ʕ",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Verb lacks '[' ending",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "atnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "bk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "brt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "bˤlyn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "iphn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "iḫn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mly Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mrṣ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ny Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "prˤ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "qdšh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "qlty Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rgmh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rḫnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "snrn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ty Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tˤtqnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tṯbrn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ymm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ytnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yšrn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ġr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šil Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šlmh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤdn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤmnh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤmnk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤšrh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥy Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṯmnym Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "adnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "atnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
     },
     {
       "severity": "WARNING",
@@ -936,37 +296,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "bˤlyn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ddnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "gm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "hnkt Pronouns should not use '/' closure in analysis",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "iphn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "iḫn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "kmtm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 3
     },
     {
@@ -991,27 +321,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "nh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "nk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "npk Lexeme parse did not match DULAT; matched by surface form",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "nrm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 3
     },
     {
@@ -1026,72 +336,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "pkn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "qdšh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "qlty For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "rdnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "rgmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "rḫnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "snrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ty For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "tˤtqnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "tḥ Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
     {
       "severity": "WARNING",
-      "problem_type": "tṯbrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "yd Lexeme parse did not match DULAT; matched by surface form",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ytnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "yšrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 3
     },
     {
@@ -1111,11 +361,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "šlmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "šlyṭ Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
@@ -1126,47 +371,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "šthm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ˤdbm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ˤh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ˤlhm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ˤmnk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ˤrpt Lexeme parse did not match DULAT; matched by surface form",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ˤšrh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ḏrˤ Noun POS should include DULAT gender marker for ḏrʕ (I): n. f.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ḥdṯm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 3
     },
     {
@@ -1175,258 +380,13 @@
       "count": 3
     },
     {
-      "severity": "WARNING",
-      "problem_type": "ḫsn Noun POS should include DULAT gender marker for ḫsn (I): n. m.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ṯbd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 3
-    },
-    {
       "severity": "ERROR",
-      "problem_type": "adm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "adnh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "adnyh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "adr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "amhth Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "apśnym Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "aṯr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "bhth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "br Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "drt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "gbl Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "gty Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "iršth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "kn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "krmh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
+      "problem_type": "Noun/adjective lacks '/' ending",
       "count": 2
     },
     {
       "severity": "ERROR",
       "problem_type": "l Formula tbˤ w l yṯb ilm expects l(II) ('not')",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lakh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lbšk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mmk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "npṣh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nˤr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nḫlh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nḫtk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nṣk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "pm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rdnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rgmk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rušy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tmġy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "uly Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "uph Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "wy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yšt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "zth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "śzn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šbˤm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šlmk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "štnn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤky Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥdy Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥmr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥmṣ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥnn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḫbt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḫlq Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṣry Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "Morphology placeholder '?' should use unresolved DULAT placeholder '?' in column 4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "adnyh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 2
     },
     {
@@ -1436,22 +396,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "and For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ankm Pronouns should not use '/' closure in analysis",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "argmnk Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "aryy Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token",
+      "problem_type": "aryy Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -1476,11 +426,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "bhth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "brkthm Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
@@ -1491,62 +436,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "bym For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "dbd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "dry Noun POS should include DULAT gender marker for dr: n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "gmrm Noun POS should include DULAT gender marker for gmr: n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "gty For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "hy Pronouns should not use '/' closure in analysis",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ibˤlt Feminine singular noun in DULAT should use '/t'",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "iršth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "kb Adjective POS should include DULAT gender marker for kb (I): adj. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "kb Noun POS should include DULAT gender marker for kb (II): n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "klhmm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "kn Pronouns should not use '/' closure in analysis",
       "count": 2
     },
     {
@@ -1571,62 +461,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "lakh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "lbšk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mhk Pronouns should not use '/' closure in analysis",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mhkm Pronouns should not use '/' closure in analysis",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mnk Pronouns should not use '/' closure in analysis",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mnkm Pronouns should not use '/' closure in analysis",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mqmm Noun POS should include DULAT gender marker for mqm: n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mqpm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "my Pronouns should not use '/' closure in analysis",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "mṯpdm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "npṣh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 2
     },
     {
@@ -1636,52 +471,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "nḫlh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "nḫtk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "nṣk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "pit Noun POS should include DULAT gender marker for pỉt: n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "pitm Noun POS should include DULAT gender marker for pỉt: n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "pnm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "prṯt Feminine singular noun in DULAT should use '/t'",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "prṯt Noun POS should include DULAT gender marker for prṯt: n. f.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "pḏh Noun POS should include DULAT gender marker for pḏ: n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "rgmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 2
     },
     {
@@ -1701,17 +491,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "rtm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "rumm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "rušy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 2
     },
     {
@@ -1727,11 +507,6 @@
     {
       "severity": "WARNING",
       "problem_type": "tbnn Lexeme parse did not match DULAT; matched by surface form",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "tmġy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 2
     },
     {
@@ -1761,32 +536,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "tšm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "tšu Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
       "severity": "WARNING",
-      "problem_type": "uly For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "un Lexeme parse did not match DULAT; matched by surface form",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "uph For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "wy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 2
     },
     {
@@ -1806,17 +561,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ypḥm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "yrtqṣ Lexeme parse did not match DULAT; matched by surface form",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "yḥmrm Noun POS should include DULAT gender marker for yḥmr: n. m.",
       "count": 2
     },
     {
@@ -1831,21 +576,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "zth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ztmm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "šb Noun POS should include DULAT gender marker for šb: n. m.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "šmthm Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
@@ -1856,27 +586,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ˤmnkm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ˤnm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ˤrym For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ˤṣrm Noun POS should include DULAT gender marker for ʕṣr (I): n. f.",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ḥṯm Noun POS should include DULAT gender marker for ḥṯ: n. m.",
       "count": 2
     },
     {
@@ -1886,412 +596,12 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "adnh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "adnyh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "adrm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "agny Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "alpm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "amt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "and Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "atm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "atnn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "aḥš Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "bhth Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "bnšk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "bym Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "bˤlyn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ddnh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ddnh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "drˤ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "gd Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "gm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "gpn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "gr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "gty Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ib Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ihbt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ilh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "iphn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "iršth Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "iḫn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "kbl Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
+      "problem_type": "Verb lacks '[' ending",
       "count": 1
     },
     {
       "severity": "ERROR",
       "problem_type": "klat Passive stem marker present but DULAT lacks passive/N stem",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "klhmm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "klt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "kmt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "kmtm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "krd Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lakh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lbn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lbšk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lmd Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lḥ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mmk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mnḥ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mqpm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mrṯ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mḫ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mṯ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "npṣh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nrm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ny Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nḫlh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nḫt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nḫtk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nṣk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "pkn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "pkn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ptḥ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "qdš Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "qdšh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ql Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "qlty Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "qrb Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rdnn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rgmh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rgmk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rkb Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rtm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rušy Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rˤy Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rḥ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rḫnn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "snrn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "td Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tdbr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tl Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tmġy Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ttnk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ty Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tšm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
       "count": 1
     },
     {
@@ -2306,237 +616,7 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "tˤn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tˤtqnn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tḥt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tṯbrn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ubrˤy Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "udk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "uly Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "uph Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "wy Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ybˤr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ymt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ypḥm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ytnn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "ytˤdd L stem marker present but DULAT lacks L/Lt",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yšrn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yṣu Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "zth Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ztmm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ġrm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šbk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šdy Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šink Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šlmh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šmk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šmˤ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šnt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šthm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤdbm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤlhm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤmkk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤmq Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤnn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤnt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤrm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤrym Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤz Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤšrh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥdṯ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥdṯm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḫbṯm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḫr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṯbd Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṯnm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṯġr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
       "count": 1
     },
     {
@@ -2552,11 +632,6 @@
     {
       "severity": "WARNING",
       "problem_type": "am Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ankn Pronouns should not use '/' closure in analysis",
       "count": 1
     },
     {
@@ -2581,22 +656,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "arwd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "asrkm Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
       "severity": "WARNING",
       "problem_type": "at Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "atm Pronouns should not use '/' closure in analysis",
       "count": 1
     },
     {
@@ -2621,17 +686,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "aṯr Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.'",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "aṯtm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "bbd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 1
     },
     {
@@ -2646,17 +701,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "bir Noun POS should include DULAT gender marker for bỉr: n. f.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "bny Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "bnšk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 1
     },
     {
@@ -2681,17 +726,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "bˤrk Adjective POS should include DULAT gender marker for bʕr: adj. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "dkrt Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "dnh Noun POS should include DULAT gender marker for dn (I): n. m.",
       "count": 1
     },
     {
@@ -2702,21 +737,6 @@
     {
       "severity": "WARNING",
       "problem_type": "gršnn Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "gˤt Feminine singular noun in DULAT should use '/t'",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "gˤt Noun POS should include DULAT gender marker for gʕt: n. f.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "hnk Pronouns should not use '/' closure in analysis",
       "count": 1
     },
     {
@@ -2761,11 +781,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "l Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "la Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -2776,32 +791,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "lbu Noun POS should include DULAT gender marker for lbủ: n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "llim Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
       "severity": "WARNING",
       "problem_type": "lm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "lḥk Noun POS should include DULAT gender marker for lḥ (I): n. f.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "lḥk Noun POS should include DULAT gender marker for lḥ (II): n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "lḥn Noun POS should include DULAT gender marker for lḥ (II): n. m.",
       "count": 1
     },
     {
@@ -2836,32 +831,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "mnḫ Noun POS should include DULAT gender marker for mnḫ: n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "mri Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
       "severity": "WARNING",
-      "problem_type": "mrzḥ Noun POS should include DULAT gender marker for mrzḥ: n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mrzḥh Noun POS should include DULAT gender marker for mrzḥ: n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "mtt Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mḥrṯth Noun POS should include DULAT gender marker for mḥrṯt: n. f.",
       "count": 1
     },
     {
@@ -2872,16 +847,6 @@
     {
       "severity": "WARNING",
       "problem_type": "mṭm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mṭt Feminine singular noun in DULAT should use '/t'",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "mṭt Noun POS should include DULAT gender marker for mṭt: n. f.",
       "count": 1
     },
     {
@@ -2951,27 +916,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ptr Noun POS should include DULAT gender marker for ptr: n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "pšt Feminine singular noun in DULAT should use '/t'",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "pˤrt Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "qdš Adjective POS should include DULAT gender marker for qdš (I): adj. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "qdš Noun POS should include DULAT gender marker for qdš (I): n. m.",
       "count": 1
     },
     {
@@ -2986,17 +931,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "qthm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "problem_type": "rdnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token",
       "count": 1
     },
     {
       "severity": "WARNING",
       "problem_type": "rgmm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "rškm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 1
     },
     {
@@ -3051,11 +991,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ttnk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "twḥln Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -3076,11 +1011,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "tḥd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "tḥwy Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -3092,21 +1022,6 @@
     {
       "severity": "WARNING",
       "problem_type": "tṯar Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "udk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "uḏrnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "wkm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 1
     },
     {
@@ -3196,51 +1111,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ġll Noun POS should include DULAT gender marker for ġll (I): n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ġzrh Noun POS should include DULAT gender marker for ġzr: n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "šal Noun POS should include DULAT gender marker for šảl: n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "šbk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "šbrd Noun POS should include DULAT gender marker for šbr: n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "šink For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "špḥh Noun POS should include DULAT gender marker for špḥ: n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "štnnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "štthm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "šu Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -3251,27 +1121,7 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ˤmkk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ˤmkm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ˤnn Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ˤp Noun POS should include DULAT gender marker for ʕp (I): n. m.",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ḥblm Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
@@ -3312,16 +1162,6 @@
     {
       "severity": "WARNING",
       "problem_type": "ṣrrt Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ṣt Feminine singular noun in DULAT should use '/t'",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ṣt Noun POS should include DULAT gender marker for ṣt: n. f.",
       "count": 1
     },
     {
