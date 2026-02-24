@@ -41,6 +41,16 @@ This targeted rule repairs recurrent `col2` surface vs. `col3` analysis mismatch
 - `ymt` -> `ym(I)/t=`
 - `ymy` -> `ym(I)&y/`
 
+7. `ỉlt (I)` `h`-allograph repairs
+- `ilh` -> `il(t(I)/&h`
+- `ilht` -> `il(t(I)/&ht`
+
+8. Ambiguous sg/pl `-t` feminine forms
+- For curated sg/pl-ambiguous surfaces where `/t=` was over-forced in prior passes, demote to `/t`:
+  - `aṯt` (`ảṯt`) -> `aṯ(t/t`
+  - `ṯat` (`ṯảt`) -> `ṯa(t/t`
+- Rationale: `/t=` is reserved for explicitly plural encoding; these surface forms are ambiguous in DULAT (`sg.` + `pl.` on the same form).
+
 ## Linter Coupling
 - Feminine `/t=` warnings must require plural-only surface morphology.
 - If the same surface has explicit singular morphology in DULAT, do not force `/t=` (for example ambiguous `thmt` with both `sg.` and `pl.`).

@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import re
+
 from pipeline.steps.analysis_utils import normalize_surface
 from pipeline.steps.base import RefinementStep, TabletRow
 
@@ -101,6 +103,18 @@ class SurfaceReconstructabilityFixer(RefinementStep):
         if dulat == "thmt" and surface_norm == "thmtm":
             return "thm(t/tm"
 
+        if dulat == "ỉlt (I)":
+            if surface_norm == "ilh":
+                return "il(t(I)/&h"
+            if surface_norm == "ilht":
+                return "il(t(I)/&ht"
+
+        if dulat == "ảṯt" and surface_norm == "aṯt":
+            return _demote_t_equal_to_t(analysis_variant)
+
+        if dulat == "ṯảt" and surface_norm == "ṯat":
+            return _demote_t_equal_to_t(analysis_variant)
+
         if dulat == "bnt (II)":
             if surface_norm == "bnwt":
                 return "bn&w(t(II)/t="
@@ -126,3 +140,8 @@ class SurfaceReconstructabilityFixer(RefinementStep):
                 return "ym(I)&y/"
 
         return analysis_variant
+
+
+def _demote_t_equal_to_t(analysis_variant: str) -> str:
+    """Rewrite feminine /t= to /t in sg/pl-ambiguous forms."""
+    return re.sub(r"/t=(?=\s*$|[+;,])", "/t", analysis_variant)

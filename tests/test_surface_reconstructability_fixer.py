@@ -73,6 +73,34 @@ class SurfaceReconstructabilityFixerTest(unittest.TestCase):
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "ym(I)/m; ym(II)/")
 
+    def test_repairs_ilh_variant_of_ilt_with_surface_h(self) -> None:
+        row = TabletRow(
+            "8",
+            "ilh",
+            "il(t(I)/t=; ilh/",
+            "ỉlt (I); ỉlh",
+            "n. f.; DN",
+            "goddess; the ‘Divine One’",
+            "",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "il(t(I)/&h; ilh/")
+
+    def test_repairs_ilht_variant_of_ilt_with_surface_ht(self) -> None:
+        row = TabletRow("9", "ilht", "il(t(I)/t=", "ỉlt (I)", "n. f.", "goddess", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "il(t(I)/&ht")
+
+    def test_downgrades_athat_ambiguous_t_equal_to_t(self) -> None:
+        row = TabletRow("10", "aṯt", "aṯ(t/t=", "ảṯt", "n. f.", "woman", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "aṯ(t/t")
+
+    def test_downgrades_that_ambiguous_t_equal_to_t(self) -> None:
+        row = TabletRow("11", "ṯat", "ṯa(t/t=", "ṯảt", "n. f.", "ewe", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "ṯa(t/t")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -2,6 +2,12 @@
 
 ## 2026-02-24
 
+- Follow-up reconstructability pass for feminine `-t` and `ỉlt (I)` allographs:
+  - added `ỉlt (I)` surface-`h` rewrites in `SurfaceReconstructabilityFixer` (`ilh -> il(t(I)/&h`, `ilht -> il(t(I)/&ht`) so `col3` reconstructs `col2`,
+  - normalized sg/pl-ambiguous `ảṯt` and `ṯảt` surface forms from forced `/t=` to `/t` in targeted rows (`aṯ(t/t`, `ṯa(t/t`).
+- Extended regression coverage in `tests/test_surface_reconstructability_fixer.py` for `ilh`, `ilht`, `aṯt`, and `ṯat`.
+- Re-ran only `SurfaceReconstructabilityFixer` across `out/KTU *.tsv` (278 files scanned, 39 row updates), including user-flagged `153291`, `143704`, `153565`, and `153971`.
+
 - Added `SurfaceReconstructabilityFixer` (`pipeline/steps/surface_reconstructability_fixer.py`) and wired it into `pipeline/tablet_parsing.py` before generic overrides to repair known surface/analysis mismatch classes in a dedicated pass.
 - Implemented targeted reconstructability rewrites for user-flagged classes:
   - `thmt` singular ambiguity expansion (`thm(t/t; thm/t` with aligned DULAT/POS/gloss),
