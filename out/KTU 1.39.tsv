@@ -15,10 +15,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147928	il	il(I)/	ỉl (I)	n. m.	god	
 # KTU 1.39 3						
 147929	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
-147930	ilhm	il(I)/+hm	ỉl (I), -hm	n. m., pers. pn./morph.	god, their	
+147930	ilhm	il(I)/+hm	ỉl (I)	n. m.	god	
 147931	kṯkmn	?	?	?	?	DULAT: NOT FOUND
 147932	w	w	w	conj.	and	
-147933	šnm	šnw[+m(I); šnw[+m(II)	/š-n-w/, -m (I); /š-n-w/, -m (II)	vb, morph.; vb, emph. or det. encl. morph.	to change: a) reflex., ; to change: a) reflex., und das (ist) so!	
+147933	šnm	šnw[+m(I); šnw[+m(II)	/š-n-w/; /š-n-w/	vb; vb	to change: a) reflex.; to change: a) reflex.	
 147934	dqt	dqt(I)/	dqt (I)	adj. f. or n. f.	small	
 # KTU 1.39 4						
 147935	ršp	ršp/	ršp	DN	Rašap	
@@ -31,15 +31,15 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147941	ilh	il(t(I)/&h; ilh/	ỉlt (I); ỉlh	n. f.; DN	goddess; the ‘Divine One’	
 147942	alp	alp(I)/; alp(II)/	ảlp (I); ảlp (II)	n. m.; num.	(head of) cattle; (one	
 147943	wš	?	?	?	?	DULAT: NOT FOUND
-147944	ilhm	il(I)/+hm	ỉl (I), -hm	n. m., pers. pn./morph.	god, their	
+147944	ilhm	il(I)/+hm	ỉl (I)	n. m.	god	
 147945	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
-147946	ilhm	il(I)/+hm	ỉl (I), -hm	n. m., pers. pn./morph.	god, their	
+147946	ilhm	il(I)/+hm	ỉl (I)	n. m.	god	
 # KTU 1.39 6						
 147947	bˤl	bˤl(II)/; bˤl[	bʕl (II); /b-ʕ-l/	n. m./DN; vb	Baʿlu/Baal; to make	
 147948	š	š/	š	n. m.	ram	
 147949	aṯrt	aṯr(t(I)/t	ảṯrt (I)	n. f.	back part (of the head)	
 147950	š	š/	š	n. m.	ram	
-147951	ṯkmn	ṯkm/+n; ṯkm/+n; ṯkm/+n	ṯkm, -n (I); ṯkm, -n (II); ṯkm, -n (III)	n. m., morph.; n. m., pers. pn./morph./vb; n. m., pers. pn./morph.	shoulder, Sun; shoulder, me; shoulder, our	
+147951	ṯkmn	ṯkm/+n; ṯkm/+n; ṯkm/+n	ṯkm; ṯkm; ṯkm	n. m.; n. m.; n. m.	shoulder; shoulder; shoulder	
 147952	wšnm	?	?	?	?	DULAT: NOT FOUND
 147953	š	š/	š	n. m.	ram	
 # KTU 1.39 7						
@@ -60,14 +60,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147967	lb	lb/	lb	n. m.	heart	
 # KTU 1.39 9						
 147968	rmṣt	rmṣ/t=	rmṣ	n.	embers	
-147969	ilhm	il(I)/+hm	ỉl (I), -hm	n. m., pers. pn./morph.	god, their	
+147969	ilhm	il(I)/+hm	ỉl (I)	n. m.	god	
 147970	bˤlm	bˤl(II)/m	bʕl (II)	n. m.	lord	
 147971	dṯt	dṯ(t/t	dṯt	n. f.	fodder or spring grass	
 147972	w	w	w	conj.	and	
 147973	kšm	kš/m	kš	n. m.	date	
 147974	ḫmš	ḫmš(I)/	ḫmš (I)	n. num.	five	
 # KTU 1.39 10						
-147975	ˤšrh	ˤšr(I)/+h; ˤšr(I)/+h; ˤšr[+h	ʕšr (I), -h (I); ʕšr (I), -h (II); /ʕ-š-r/, -h (I)	n. num., pers. pn./morph.; n. num., adv. functor; vb, pers. pn./morph.	ten, his /her (hers) / its; ten, to; ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods, his /her (hers) / its	
+147975	ˤšrh	ˤšr(I)/+h; ˤšr(I)/+h; ˤšr[+h	ʕšr (I); ʕšr (I); /ʕ-š-r/	n. num.; n. num.; vb	ten; ten; ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods	
 147976	mlun	mlu/	mlủ	n. m.	fill	
 147977	šnpt	šnp(t/t	šnpt	n. f.	wave- offering	
 147978	ḫṣth	ḫṣ(t/t	ḫṣt	n. f.	half	
@@ -110,7 +110,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148010	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
 148011	ṯrmn	ṯrmn(I)/	ṯrmn (I)	DN	term for the kings of Ugarit	
 148012	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
-148013	pdry	pdr(I)/+y; pdr(I)/+y	pdr (I), -y (I); pdr (I), -y (II)	n. m., prep.; n. m., postp. functor	town, my; town, yes	
+148013	pdry	pdr(I)/+y; pdr(I)/+y	pdr (I); pdr (I)	n. m.; n. m.	town; town	
 148014	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
 148015	dqt	dqt(I)/	dqt (I)	adj. f. or n. f.	small	
 # KTU 1.39 16						
@@ -132,7 +132,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148029	dqtm	dq(t(I)/tm	dqt (I)	adj. f. or n. f.	small	
 # KTU 1.39 19						
 148030	yrḫ	yrḫ/	yrḫ	n. m.	moon	
-148031	kty	kt(I)/+y; kt(I)/+y; kt(II)/+y	kt (I), -y (I); kt (I), -y (II); kt (II), -y (I)	n. f., prep.; n. f., postp. functor; n. f., prep.	pitcher, my; pitcher, yes; stage, my	
+148031	kty	kt(I)/+y; kt(I)/+y; kt(II)/+y	kt (I); kt (I); kt (II)	n. f.; n. f.; n. f.	pitcher; pitcher; stage	
 148032	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
 148033	w	w	w	conj.	and	
 148034	lġlmt	?	?	?	?	DULAT: NOT FOUND
@@ -149,7 +149,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148043	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
 148044	bˤlt	bˤl(t/t	bʕlt	n. f.	lady	
 148045	bhtm	b(II)/t=	bt (II)	n. m.	house	
-148046	ˤṣrm	ˤṣr(I)/+m(I); ˤṣr(I)/+m(II)	ʕṣr (I), -m (I); ʕṣr (I), -m (II)	n. f., morph.; n. f., emph. or det. encl. morph.	bird, ; bird, und das (ist) so!	
+148046	ˤṣrm	ˤṣr(I)/+m(I); ˤṣr(I)/+m(II)	ʕṣr (I); ʕṣr (I)	n. f.; n. f.	bird; bird	
 # KTU 1.39 22						
 148047	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
 148048	inš	inš/	ỉnš	n. m.	people	

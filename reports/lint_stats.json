@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-02-24T20:15:10.794163+00:00",
+  "generated_at_utc": "2026-02-24T20:26:07.824300+00:00",
   "files_checked": 278,
-  "total_issues": 9969,
-  "fallback_parsed": 866,
+  "total_issues": 10250,
+  "fallback_parsed": 1141,
   "by_severity": {
-    "ERROR": 6998,
-    "WARNING": 1273,
+    "ERROR": 7003,
+    "WARNING": 1549,
     "INFO": 1519
   },
   "by_problem_type": [
@@ -37,7 +37,7 @@
     {
       "severity": "WARNING",
       "problem_type": "Column 6 count should match analysis variant count",
-      "count": 355
+      "count": 356
     },
     {
       "severity": "ERROR",
@@ -141,6 +141,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 24
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "hw Pronouns should not use '/' closure in analysis",
       "count": 18
     },
@@ -162,6 +167,11 @@
     {
       "severity": "ERROR",
       "problem_type": "lbh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
+      "count": 14
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lbh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 14
     },
     {
@@ -200,6 +210,11 @@
       "count": 12
     },
     {
+      "severity": "WARNING",
+      "problem_type": "ṯqlm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 12
+    },
+    {
       "severity": "ERROR",
       "problem_type": "Multiple DULAT candidates for lexeme",
       "count": 10
@@ -218,6 +233,16 @@
       "severity": "WARNING",
       "problem_type": "yˤn Lexeme parse did not match DULAT; matched by surface form",
       "count": 9
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤmnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 9
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "POS tokens must map to existing DULAT tokens in column 4",
+      "count": 8
     },
     {
       "severity": "WARNING",
@@ -261,7 +286,32 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "krmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "pm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "tbˤ Lexeme parse did not match DULAT; matched by surface form",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "śzn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šlmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "štnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 6
     },
     {
@@ -306,7 +356,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "amhth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "an Pronouns should not use '/' closure in analysis",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "apśnym For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 4
     },
     {
@@ -346,13 +406,13 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ḫbtkm Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "ḥdy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 4
     },
     {
-      "severity": "ERROR",
-      "problem_type": "POS tokens must map to existing DULAT tokens in column 4",
-      "count": 3
+      "severity": "WARNING",
+      "problem_type": "ḫbtkm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 4
     },
     {
       "severity": "ERROR",
@@ -471,6 +531,16 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "adnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "atnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "bmt Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
@@ -486,12 +556,37 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "bˤlyn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ddnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "gm Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
     {
       "severity": "WARNING",
       "problem_type": "hnkt Pronouns should not use '/' closure in analysis",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "iphn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "iḫn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "kmtm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 3
     },
     {
@@ -516,7 +611,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "nh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "nk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "npk Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "nrm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 3
     },
     {
@@ -531,7 +646,67 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "pkn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "qdšh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "qlty For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "rdnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "rgmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "rḫnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "snrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ty For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "tˤtqnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "tḥ Lexeme parse did not match DULAT; matched by surface form",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "tṯbrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ytnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "yšrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 3
     },
     {
@@ -546,12 +721,52 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "šlmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šthm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤdbm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤlhm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤmnk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ˤrpt Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
     },
     {
       "severity": "WARNING",
+      "problem_type": "ˤšrh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ḏrˤ Noun POS should include DULAT gender marker for ḏrʕ (I): n. f.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥdṯm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 3
     },
     {
@@ -562,6 +777,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ḫsn Noun POS should include DULAT gender marker for ḫsn (I): n. m.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṯbd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 3
     },
     {
@@ -676,12 +896,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "adnyh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "alit Feminine singular noun in DULAT should use '/t'",
       "count": 2
     },
     {
       "severity": "WARNING",
+      "problem_type": "and For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ankm Pronouns should not use '/' closure in analysis",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "aryy Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token",
       "count": 2
     },
     {
@@ -701,12 +936,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "bhth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "brkthm Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
       "severity": "WARNING",
       "problem_type": "brktkm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bym For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "dbd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 2
     },
     {
@@ -721,6 +971,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "gty For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "hy Pronouns should not use '/' closure in analysis",
       "count": 2
     },
@@ -731,12 +986,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "iršth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "kb Adjective POS should include DULAT gender marker for kb (I): adj. m.",
       "count": 2
     },
     {
       "severity": "WARNING",
       "problem_type": "kb Noun POS should include DULAT gender marker for kb (II): n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "klhmm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 2
     },
     {
@@ -776,12 +1041,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "lakh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "lbšk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "mhk Pronouns should not use '/' closure in analysis",
       "count": 2
     },
     {
       "severity": "WARNING",
       "problem_type": "mhkm Pronouns should not use '/' closure in analysis",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 2
     },
     {
@@ -797,6 +1077,11 @@
     {
       "severity": "WARNING",
       "problem_type": "mqmm Noun POS should include DULAT gender marker for mqm: n. m.",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mqpm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 2
     },
     {
@@ -817,6 +1102,26 @@
     {
       "severity": "WARNING",
       "problem_type": "mṯpdm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "npṣh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "nḫlh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "nḫtk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "nṣk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 2
     },
     {
@@ -846,6 +1151,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "rgmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "rgmt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
@@ -856,7 +1166,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "rtm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "rumm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "rušy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 2
     },
     {
@@ -872,6 +1192,11 @@
     {
       "severity": "WARNING",
       "problem_type": "tbnn Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "tmġy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 2
     },
     {
@@ -896,12 +1221,32 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "tšm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "tšu Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
       "severity": "WARNING",
+      "problem_type": "uly For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "un Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "uph For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "wy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 2
     },
     {
@@ -917,6 +1262,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ylm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ypḥm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 2
     },
     {
@@ -937,6 +1287,16 @@
     {
       "severity": "WARNING",
       "problem_type": "yṯir Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "zth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ztmm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 2
     },
     {
@@ -966,7 +1326,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ˤmnkm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ˤnm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤrym For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 2
     },
     {
@@ -1071,6 +1441,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "arwd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "asrkm Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1111,6 +1486,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "bbd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "bbt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1127,6 +1507,11 @@
     {
       "severity": "WARNING",
       "problem_type": "bny Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "bnšk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 1
     },
     {
@@ -1187,6 +1572,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ibġyh Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ilšnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token",
       "count": 1
     },
     {
@@ -1416,12 +1806,22 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "qthm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "rgmm Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {
       "severity": "WARNING",
       "problem_type": "rmm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "rškm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 1
     },
     {
@@ -1476,6 +1876,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ttnk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "twḥln Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1496,6 +1901,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "tḥd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "tḥwy Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1507,6 +1917,21 @@
     {
       "severity": "WARNING",
       "problem_type": "tṯar Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "udk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "uḏrnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "wkm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 1
     },
     {
@@ -1606,7 +2031,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "šbk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "šbrd Noun POS should include DULAT gender marker for šbr: n. m.",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šink For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "štnnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "štthm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 1
     },
     {
@@ -1617,6 +2062,16 @@
     {
       "severity": "WARNING",
       "problem_type": "ˤlnh Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤmkk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ˤmkm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
       "count": 1
     },
     {
@@ -1632,6 +2087,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ḥblm Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token",
       "count": 1
     },
     {

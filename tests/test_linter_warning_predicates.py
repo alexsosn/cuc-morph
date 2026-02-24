@@ -16,6 +16,7 @@ from linter.lint import (
     row_has_mixed_baal_dn_labourer_reading,
     variant_has_baad_plus_n,
     variant_has_lexeme_terminal_single_suffix_split,
+    variant_has_suffix_payload_linked_dulat,
     verb_root_lookup_keys,
 )
 
@@ -161,6 +162,12 @@ class LinterWarningPredicateTest(unittest.TestCase):
     def test_baad_enclitic_plus_detected(self) -> None:
         self.assertTrue(variant_has_baad_plus_n("bˤd+n", "bʕd"))
         self.assertFalse(variant_has_baad_plus_n("ˤl(I)+n", "ʕl (I)"))
+
+    def test_suffix_payload_linked_dulat_detected(self) -> None:
+        self.assertTrue(variant_has_suffix_payload_linked_dulat("g/+h", "g, -h (I)"))
+        self.assertTrue(variant_has_suffix_payload_linked_dulat("!y!ṣḥ[+n", "/ṣ-ḥ/, -n (II)"))
+        self.assertFalse(variant_has_suffix_payload_linked_dulat("g/", "g, -h (I)"))
+        self.assertFalse(variant_has_suffix_payload_linked_dulat("g/+h", "g"))
 
     def test_baal_mixed_dn_labourer_detected(self) -> None:
         self.assertTrue(

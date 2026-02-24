@@ -13,13 +13,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.1 II:3						
 135553	tk	tk/	tk	n. m.	centre	
 135554	ḫršnr	ḫršn&r/	ḫršn (I)	n. m.	(divine) mountain	UDB: [tk . ḫršn ----]r . [-] ḥmk . w št.
-135555	tḥmk	tḥm/+k	tḥm, -k (I)	n. m., pers. pn.	message, your(s)	DULAT tḥm forms: sg. tḥm, suff. tḥmk.
+135555	tḥmk	tḥm/+k	tḥm	n. m.	message	DULAT tḥm forms: sg. tḥm, suff. tḥmk.
 135556	w	w	w	conj.	and	
 135557	št	št[;š(t(II)/t;št(I)/	/š-t/; št (II); št (I)	vb; n. f.; n. m.	to place; raíz; base	
 # KTU 1.1 II:4						
 135558	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
 135559	ẓr	ẓr(I)/	ẓr (I)	n. m.	back	
-135560	rdyk	rdy/+k	rdy, -k (I)	?, pers. pn.	harass, your(s)	DULAT rdy (De Moor-Spronk: rdy 'harass' in this context).
+135560	rdyk	rdy/+k	rdy	?	harass	DULAT rdy (De Moor-Spronk: rdy 'harass' in this context).
 # KTU 1.1 II:5						
 135561	iqnim	iqni/m	ỉqnủ	n. m.	gem of lapis lazuli	
 # KTU 1.1 II:6						
@@ -50,7 +50,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 135580	tˤtqn	!t!ˤtqn[	/ʕ-t-q/	vb	to pass	
 # KTU 1.1 II:13						
 135581	šb	šb/	šb	n.	old man	
-135582	ilk	il(I)/+k	ỉl (I), -k (I)	n. m., pers. pn./morph.	god, your(s)	
+135582	ilk	il(I)/+k	ỉl (I)	n. m.	god	
 # KTU 1.1 II:14						
 135583	in	in/	ỉn	n. m.	lack of	
 135584	bb	bb/	bb	PN	bb	
@@ -69,7 +69,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 135595	w	w	w	conj.	and	
 135596	y	+y, [y; ~y; y	-y (I); -y (II); y	prep. functor	my; indeed; oh!	
 # KTU 1.1 II:17						
-135597	kbdnh	kbd(II)/+nh; kbdn(I)/+h; kbdn(I)/+h	kbd (II), -nh; kbd (I), -h (I); kbd (I), -h (II)	n. m., →; n., pers. pn./morph.; n., adv. functor	total (quantity or price), ; liver, his /her (hers) / its; liver, to	
+135597	kbdnh	kbd(II)/+nh; kbdn(I)/+h; kbdn(I)/+h	kbd (II); kbd (I); kbd (I)	n. m.; n.; n.	total (quantity or price); liver; liver	
 135598	yšu	!y!šu[	/n-š-ʔ/	vb	to raise	
 135599	gh	g/+h	g	n. m.	(loud) voice	
 135600	w	w	w	conj.	and	
@@ -119,7 +119,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 135637	bdk	bdk(IV)+k	bd (IV)	prep.	into the hands of	
 135638	spr	spr(II)/; spr[; spr(I)/	spr (II); /s-p-r/; spr (I)	n. m.; vb; n. m.	tablet / register; to count; scribe	
 # KTU 1.1 II:25						
-135639	ymnk	ymn(I)/+k	ymn (I), -k (I)	n. m., pers. pn./morph.	right (side), your(s)	
+135639	ymnk	ymn(I)/+k	ymn (I)	n. m.	right (side)	
 # KTU 1.1 II:26						
 135640	x	?	?	?	?	
 # KTU 1.1 II:27						
@@ -157,7 +157,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 135668	ḫss	ḫss/	ḫss	element of DN	Ḫasisu/Khasis	
 135669	ṯny	ṯny[	/ṯ-n-y/	vb	to repeat	
 135670	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
-135671	hyn	hy/+n; hy/+n; hy/+n	hy, -n (I); hy, -n (II); hy, -n (III)	pers. pn., morph.; pers. pn., pers. pn./morph./vb; pers. pn., pers. pn./morph.	she, Sun; she, me; she, our	
+135671	hyn	hy/+n; hy/+n; hy/+n	hy; hy; hy	pers. pn.; pers. pn.; pers. pn.	she; she; she	
 # KTU 1.1 III:5						
 135672	d	d	d	det. or rel. functor	the one(s) of	
 135673	ḥrš	ḥrš(I)/	ḥrš (I)	n. m.	craftsman	
@@ -242,8 +242,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 135740	kṯr	kṯr(III)/	kṯr (III)	DN/element of DN	Koṯaru/Kothar	
 135741	w	w	w	conj.	and	
 135742	ḫss	ḫss/	ḫss	element of DN	Ḫasisu/Khasis	
-135743	lk	l(I)+k	l (I), -k (I)	prep., pers. pn./morph.	to, your(s)	
-135744	lk	l(I)+k	l (I), -k (I)	prep., pers. pn./morph.	to, your(s)	
+135743	lk	l(I)+k	l (I)	prep.	to	
+135744	lk	l(I)+k	l (I)	prep.	to	
 135745	ˤnn	ˤnn(I)/; ˤnn/	ʕn (I); ʕnn	n. f.; n. m.	eye; manservant	
 135746	ilm	il(I)/m	ỉl (I)	n. m.	god	
 # KTU 1.1 III:18						
@@ -295,7 +295,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 135787	mlk	mlk[; mlk(II)/	/m-l-k/; mlk (II)	vb; n. m.	to reign; kingdom (power and territory)	
 # KTU 1.1 III:24						
 135788	ab	ab/	ảb	n. m.	father	
-135789	šnm	šn(I)[+m(I); šn(II)[+m(II)	/š-n-w/, -m (I); /š-n-w/, -m (II)	vb, morph.; vb, emph. or det. encl. morph.	to change: a) reflex., ; to change: a) reflex., und das (ist) so!	
+135789	šnm	šn(I)[+m(I); šn(II)[+m(II)	/š-n-w/; /š-n-w/	vb; vb	to change: a) reflex.; to change: a) reflex.	
 135790	lpˤn	lpˤn				DULAT: NOT FOUND
 135791	il	il(I)/	ỉl (I)	n. m.	god	
 135792	yhbr	!y!hbr[	/h-b-r/	vb	to bow	
@@ -315,7 +315,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 135803	tbnn	!t!bnn[	/b-n-y/	vb	to build	
 135804	ḥš	ḥš(I)[	/ḥ-š/ (I)	vb	to hurry	
 135805	trmmn	!t!rmmn[	/r-m/	vb	to go up	
-135806	hklm	hkl/+m(I); hkl/+m(II)	hkl, -m (I); hkl, -m (II)	n. m., morph.; n. m., emph. or det. encl. morph.	palace, ; palace, und das (ist) so!	
+135806	hklm	hkl/+m(I); hkl/+m(II)	hkl; hkl	n. m.; n. m.	palace; palace	
 # KTU 1.1 III:28						
 135807	b	b	b	prep.	in	
 135808	tk	tk/	tk	n. m.	centre	
@@ -480,7 +480,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 135934	w	w	w	conj.	and	
 135935	mri	mri(I)/	mrủ (I)	adj. m. or n. m.	fattened	
 135936	ilm	il(I)/m	ỉl (I)	n. m.	god	
-135937	ˤglm	ˤgl(I)/+m(I); ˤgl(I)/+m(II)	ʕgl (I), -m (I); ʕgl (I), -m (II)	n. m., morph.; n. m., emph. or det. encl. morph.	calf, ; calf, und das (ist) so!	
+135937	ˤglm	ˤgl(I)/+m(I); ˤgl(I)/+m(II)	ʕgl (I); ʕgl (I)	n. m.; n. m.	calf; calf	
 135938	dt	dt	d	det. or rel. functor	the one(s) of	
 135939	šnt	šn(t(I)/t;šn(w[t;šn(t(II)/t	šnt (I); /š-n-w/; šnt (II)	n. f.; vb; n. f.	year; to change: a) reflex.; sleep	
 # KTU 1.1 IV:32						
@@ -520,7 +520,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 135964	tasrn	!t!asrn[	/ʔ-s-r/	vb	to tie	
 # KTU 1.1 V:10						
 135965	ṯr	ṯr(I)/; ṯr(IV)/	ṯr (I); ṯr (IV)	n. m.; n. f.	bull; foul-smelling	
-135966	ilk	il(I)/+k	ỉl (I), -k (I)	n. m., pers. pn./morph.	god, your(s)	
+135966	ilk	il(I)/+k	ỉl (I)	n. m.	god	
 135967	trks	!t!rks[	/r-k-s/	vb	to gird	
 # KTU 1.1 V:11						
 135968	x	?	?	?	?	
@@ -553,7 +553,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 135989	hd	hd/	hd(d)	DN	Haddu/Hadad	
 135990	tngṯnh	!t!ngṯnh[	/n-g-ṯ/	vb	to make one’s way to	
 # KTU 1.1 V:18						
-135991	ḥmk	ḥm/+k	ḥm, -k (I)	n. m., pers. pn./morph.	heat, your(s)	
+135991	ḥmk	ḥm/+k	ḥm	n. m.	heat	
 135992	bṣpn	bṣpn				DULAT: NOT FOUND
 # KTU 1.1 V:19						
 135993	x	?	?	?	?	

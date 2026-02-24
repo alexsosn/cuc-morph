@@ -2,6 +2,16 @@
 
 ## 2026-02-24
 
+- Added `SuffixPayloadCollapseFixer` (`pipeline/steps/suffix_payload_collapse.py`) and wired it into `pipeline/tablet_parsing.py` after suffix normalization to collapse clitic-linked DULAT payloads to host-lexeme metadata.
+- Rule: when `col3` already encodes suffix/enclitic markers (`+`, `~`, or bracketed clitic tails), strip `col4` suffix payload segments (`, -x ...`) and trim aligned suffix-function/suffix-gloss tails in `col5`/`col6`.
+- Added linter support in `linter/lint.py` for this pattern (`variant_has_suffix_payload_linked_dulat`), warning when clitic-bearing analyses still link suffix payload lexemes in `col4`.
+- Added regression coverage:
+  - `tests/test_suffix_payload_collapse.py`,
+  - `tests/test_linter_suffix_payload.py`,
+  - expanded `tests/test_linter_warning_predicates.py`.
+- Documented the strategy in `docs/suffix_payload_collapse_pipeline.md`.
+- Re-ran only `SuffixPayloadCollapseFixer` across `out/KTU 1.*.tsv` outputs (`831` rows updated in `139` files), including `out/KTU 1.6.tsv` row `140617` (`g/+h | g | n. m. | (loud) voice`).
+
 - Added `SuffixParadigmNormalizer` (`pipeline/steps/suffix_paradigm_normalizer.py`) and wired it into `pipeline/tablet_parsing.py` directly after `SuffixCliticFixer` to enforce canonical suffix/enclitic marker encoding in col3.
 - Normalization rule: remove homonym numerals from pronominal suffix/enclitic segments while preserving marker and `=` (for example `+n(I)` -> `+n`, `+h(II)` -> `+h`, `+ny(III)=` -> `+ny=`, `~n(IV)` -> `~n`, `[n(II)=` -> `[n=`).
 - Extended linter suffix marker validation in `linter/lint.py`: homonym numerals on marker slots are now flagged across the full pronominal suffix set (not only `n`), with updated warning text.

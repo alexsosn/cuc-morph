@@ -152,6 +152,11 @@ ANALYSIS_SURFACE_LETTER_RE = re.compile(r"[A-Za-zˤʔḫṣṯẓġḏḥṭšʕ
 _CLITIC_SUFFIX_SEGMENTS = ("hm", "hn", "km", "kn", "ny", "nm", "nn", "h", "k", "n", "y")
 _DECLARED_SUFFIX_NY_RE = re.compile(r",\s*-[ny](?:\s|\(|$)", flags=re.IGNORECASE)
 _DECLARED_LEMMA_LETTER_RE = re.compile(r"[^A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]")
+_ANALYSIS_CLITIC_MARKER_RE = re.compile(r"(?:\+|~|\[)[A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]+=?")
+_DULAT_SUFFIX_LINK_RE = re.compile(
+    r",\s*-[A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]+=?\s*(?:\([IVX]+\))?=?",
+    flags=re.IGNORECASE,
+)
 _PRONOMINAL_SUFFIX_SEGMENTS = (
     "nkm",
     "ny",
@@ -701,6 +706,17 @@ def variant_has_baad_plus_n(analysis_variant: str, declared_token: str) -> bool:
     lemma_raw, _hom = parse_declared_dulat_token(d_tok)
     lemma_letters = _DECLARED_LEMMA_LETTER_RE.sub("", normalize_surface(lemma_raw)).lower()
     return lemma_letters == normalize_surface("bʕd")
+
+
+def variant_has_suffix_payload_linked_dulat(analysis_variant: str, dulat_variant: str) -> bool:
+    """Detect clitic-bearing analysis that still encodes suffix lexeme in DULAT."""
+    a_txt = (analysis_variant or "").strip()
+    d_txt = (dulat_variant or "").strip()
+    if not a_txt or not d_txt:
+        return False
+    if not _ANALYSIS_CLITIC_MARKER_RE.search(a_txt):
+        return False
+    return bool(_DULAT_SUFFIX_LINK_RE.search(d_txt))
 
 
 def _pos_looks_nominal(pos_text: str) -> bool:
@@ -2143,6 +2159,18 @@ def lint_file(
                         surface,
                         a_txt,
                         "For bʕd with enclitic n, use '~n' (not '+n')",
+                    )
+                )
+            if variant_has_suffix_payload_linked_dulat(a_txt, d_field):
+                issues.append(
+                    Issue(
+                        "warning",
+                        str(path),
+                        i,
+                        line_id,
+                        surface,
+                        a_txt,
+                        "For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4",
                     )
                 )
             is_weak_initial_y_verb = variant_is_weak_initial_y_verb(a_txt, d_field)

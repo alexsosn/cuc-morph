@@ -1,15 +1,15 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `9969`
-- Fallback-parsed issue lines: `866`
+- Total issues: `10250`
+- Fallback-parsed issue lines: `1141`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 6998 |
-| WARNING | 1273 |
+| ERROR | 7003 |
+| WARNING | 1549 |
 | INFO | 1519 |
 
 ### By Problem Type
@@ -21,7 +21,7 @@
 | ERROR | POS token not allowed for declared DULAT entry | 889 |
 | ERROR | Column 5 count must match analysis variant count | 462 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 392 |
-| WARNING | Column 6 count should match analysis variant count | 355 |
+| WARNING | Column 6 count should match analysis variant count | 356 |
 | ERROR | Missing DULAT entry token(s) in column 4 | 170 |
 | ERROR | DULAT comment does not match candidates | 162 |
 | ERROR | Non-G stem in DULAT requires stem marker | 124 |
@@ -42,11 +42,13 @@
 | WARNING | mnm Pronouns should not use '/' closure in analysis | 28 |
 | WARNING | at Pronouns should not use '/' closure in analysis | 25 |
 | WARNING | Plural form missing split ending | 24 |
+| WARNING | ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 24 |
 | WARNING | hw Pronouns should not use '/' closure in analysis | 18 |
 | ERROR | ˤmny Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 16 |
 | WARNING | Feminine plural noun in DULAT should be tagged with '/t=' | 16 |
 | WARNING | mid Lexeme parse did not match DULAT; matched by surface form | 16 |
 | ERROR | lbh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 14 |
+| WARNING | lbh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 14 |
 | ERROR | Deverbal form matches both verb and noun entries in DULAT | 13 |
 | WARNING | nkt Lexeme parse did not match DULAT; matched by surface form | 13 |
 | WARNING | bhtm Lexeme parse did not match DULAT; matched by surface form | 12 |
@@ -54,10 +56,13 @@
 | WARNING | pamt Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | skn Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | špḥ Noun POS should include DULAT gender marker for špḥ: n. m. | 12 |
+| WARNING | ṯqlm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 12 |
 | ERROR | Multiple DULAT candidates for lexeme | 10 |
 | WARNING | Feminine plural noun in DULAT should use '/t=' | 10 |
 | WARNING | Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3) | 9 |
 | WARNING | yˤn Lexeme parse did not match DULAT; matched by surface form | 9 |
+| WARNING | ˤmnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 9 |
+| ERROR | POS tokens must map to existing DULAT tokens in column 4 | 8 |
 | WARNING | qšt Lexeme parse did not match DULAT; matched by surface form | 8 |
 | WARNING | tr Lexeme parse did not match DULAT; matched by surface form | 8 |
 | WARNING | nši Lexeme parse did not match DULAT; matched by surface form | 7 |
@@ -66,7 +71,12 @@
 | ERROR | šlmk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
 | ERROR | štnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
 | ERROR | ˤmnh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| WARNING | krmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 6 |
+| WARNING | pm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 6 |
 | WARNING | tbˤ Lexeme parse did not match DULAT; matched by surface form | 6 |
+| WARNING | śzn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 6 |
+| WARNING | šlmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 6 |
+| WARNING | štnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 6 |
 | WARNING | Deverbal form marked with '[' but only noun entry found in DULAT | 5 |
 | WARNING | trḫ Lexeme parse did not match DULAT; matched by surface form | 5 |
 | WARNING | uṣbˤth Lexeme parse did not match DULAT; matched by surface form | 5 |
@@ -75,7 +85,9 @@
 | ERROR | D stem marker present but DULAT lacks D/Dt | 4 |
 | ERROR | amhth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 4 |
 | ERROR | ḥdy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 4 |
+| WARNING | amhth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 4 |
 | WARNING | an Pronouns should not use '/' closure in analysis | 4 |
+| WARNING | apśnym For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 4 |
 | WARNING | bht Lexeme parse did not match DULAT; matched by surface form | 4 |
 | WARNING | dry Noun POS should include DULAT gender marker for dr: n. m. | 4 |
 | WARNING | hmt Pronouns should not use '/' closure in analysis | 4 |
@@ -83,8 +95,8 @@
 | WARNING | pat Lexeme parse did not match DULAT; matched by surface form | 4 |
 | WARNING | pḏh Noun POS should include DULAT gender marker for pḏ: n. m. | 4 |
 | WARNING | ydm Lexeme parse did not match DULAT; matched by surface form | 4 |
+| WARNING | ḥdy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 4 |
 | WARNING | ḫbtkm Lexeme parse did not match DULAT; matched by surface form | 4 |
-| ERROR | POS tokens must map to existing DULAT tokens in column 4 | 3 |
 | ERROR | Verb lacks '[' ending | 3 |
 | ERROR | atnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
 | ERROR | bˤlyn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
@@ -108,25 +120,57 @@
 | ERROR | ˤh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
 | ERROR | ˤmnk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
 | ERROR | ˤšrh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| WARNING | adnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | atnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
 | WARNING | bmt Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | bˤdn Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | bˤlkm Lexeme parse did not match DULAT; matched by surface form | 3 |
+| WARNING | bˤlyn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | ddnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
 | WARNING | gm Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | hnkt Pronouns should not use '/' closure in analysis | 3 |
+| WARNING | iphn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | iḫn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | kmtm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
 | WARNING | lbnt Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | lḥn Noun POS should include DULAT gender marker for lḥ (II): n. m. | 3 |
 | WARNING | ndd Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | ng Lexeme parse did not match DULAT; matched by surface form | 3 |
+| WARNING | nh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | nk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
 | WARNING | npk Lexeme parse did not match DULAT; matched by surface form | 3 |
+| WARNING | nrm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | ny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
 | WARNING | nšq Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | nṣb Lexeme parse did not match DULAT; matched by surface form | 3 |
+| WARNING | pkn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | qdšh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | qlty For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | rdnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | rgmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | rḫnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | snrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | ty For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | tˤtqnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
 | WARNING | tḥ Lexeme parse did not match DULAT; matched by surface form | 3 |
+| WARNING | tṯbrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | ytnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | yšrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
 | WARNING | yšu Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | zt Lexeme parse did not match DULAT; matched by surface form | 3 |
+| WARNING | šlmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | šthm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | ˤdbm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | ˤh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | ˤlhm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
+| WARNING | ˤmnk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
 | WARNING | ˤrpt Lexeme parse did not match DULAT; matched by surface form | 3 |
+| WARNING | ˤšrh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
 | WARNING | ḏrˤ Noun POS should include DULAT gender marker for ḏrʕ (I): n. f. | 3 |
+| WARNING | ḥdṯm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
 | WARNING | ḫbtkn Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | ḫsn Noun POS should include DULAT gender marker for ḫsn (I): n. m. | 3 |
+| WARNING | ṯbd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 3 |
 | ERROR | Xt stem marker present but DULAT lacks *t stem | 2 |
 | ERROR | adnh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
 | ERROR | adnyh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
@@ -149,19 +193,28 @@
 | ERROR | wy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
 | ERROR | zth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
 | WARNING | Morphology placeholder '?' should use unresolved DULAT placeholder '?' in column 4 | 2 |
+| WARNING | adnyh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | alit Feminine singular noun in DULAT should use '/t' | 2 |
+| WARNING | and For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | ankm Pronouns should not use '/' closure in analysis | 2 |
+| WARNING | aryy Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token | 2 |
 | WARNING | arṯm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | aḥw Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | aḥwy Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | bhth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | brkthm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | brktkm Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | bym For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
+| WARNING | dbd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | dnh Noun POS should include DULAT gender marker for dn (I): n. m. | 2 |
 | WARNING | gmrm Noun POS should include DULAT gender marker for gmr: n. m. | 2 |
+| WARNING | gty For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | hy Pronouns should not use '/' closure in analysis | 2 |
 | WARNING | ibˤlt Feminine singular noun in DULAT should use '/t' | 2 |
+| WARNING | iršth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | kb Adjective POS should include DULAT gender marker for kb (I): adj. m. | 2 |
 | WARNING | kb Noun POS should include DULAT gender marker for kb (II): n. m. | 2 |
+| WARNING | klhmm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | klnyy Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | kn Pronouns should not use '/' closure in analysis | 2 |
 | WARNING | knyt Lexeme parse did not match DULAT; matched by surface form | 2 |
@@ -169,45 +222,66 @@
 | WARNING | ksi Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ksih Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | l Formula tbˤ w l yṯb ilm should use a single l(II) reading | 2 |
+| WARNING | lakh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
+| WARNING | lbšk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | mhk Pronouns should not use '/' closure in analysis | 2 |
 | WARNING | mhkm Pronouns should not use '/' closure in analysis | 2 |
+| WARNING | mmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | mnk Pronouns should not use '/' closure in analysis | 2 |
 | WARNING | mnkm Pronouns should not use '/' closure in analysis | 2 |
 | WARNING | mqmm Noun POS should include DULAT gender marker for mqm: n. m. | 2 |
+| WARNING | mqpm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | mrzḥh Noun POS should include DULAT gender marker for mrzḥ: n. m. | 2 |
 | WARNING | my Pronouns should not use '/' closure in analysis | 2 |
 | WARNING | mḥrṯth Noun POS should include DULAT gender marker for mḥrṯt: n. f. | 2 |
 | WARNING | mṯpdm Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | npṣh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
+| WARNING | nḫlh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
+| WARNING | nḫtk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
+| WARNING | nṣk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | pit Noun POS should include DULAT gender marker for pỉt: n. m. | 2 |
 | WARNING | pitm Noun POS should include DULAT gender marker for pỉt: n. m. | 2 |
 | WARNING | pnm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | prṯt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | prṯt Noun POS should include DULAT gender marker for prṯt: n. f. | 2 |
+| WARNING | rgmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | rgmt Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | rišk Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | rtm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | rumm Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | rušy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | rḥbt Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | tasrn Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | tbnn Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | tmġy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | tngṯnh Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | tnġṣn Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | tqḥ Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | trtqṣ Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | tšm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | tšu Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | uly For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | un Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | uph For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
+| WARNING | wy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | ybu Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ykbdnh Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ylm Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | ypḥm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | yrtqṣ Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | yḥmrm Noun POS should include DULAT gender marker for yḥmr: n. m. | 2 |
 | WARNING | yṣa Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | yṯir Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | zth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
+| WARNING | ztmm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | ġzrh Noun POS should include DULAT gender marker for ġzr: n. m. | 2 |
 | WARNING | šb Noun POS should include DULAT gender marker for šb: n. m. | 2 |
 | WARNING | šmthm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | šntk Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | špḥh Noun POS should include DULAT gender marker for špḥ: n. m. | 2 |
+| WARNING | ˤmnkm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | ˤnm Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | ˤrym For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 2 |
 | WARNING | ˤṣrm Noun POS should include DULAT gender marker for ʕṣr (I): n. f. | 2 |
 | WARNING | ḥtkk Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ḥṯm Noun POS should include DULAT gender marker for ḥṯ: n. m. | 2 |
@@ -228,6 +302,7 @@
 | WARNING | argmnk Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | argmnm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | argmny Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | arwd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 1 |
 | WARNING | asrkm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | atm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | atm Pronouns should not use '/' closure in analysis | 1 |
@@ -236,10 +311,12 @@
 | WARNING | aḫd Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | aṯr Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.' | 1 |
 | WARNING | aṯtm Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | bbd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 1 |
 | WARNING | bbt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | bdk Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | bir Noun POS should include DULAT gender marker for bỉr: n. f. | 1 |
 | WARNING | bny Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | bnšk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 1 |
 | WARNING | btlt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | bwtm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | bštm Lexeme parse did not match DULAT; matched by surface form | 1 |
@@ -252,6 +329,7 @@
 | WARNING | gˤt Noun POS should include DULAT gender marker for gʕt: n. f. | 1 |
 | WARNING | hnk Pronouns should not use '/' closure in analysis | 1 |
 | WARNING | ibġyh Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | ilšnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token | 1 |
 | WARNING | iqnim Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | irtm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | its Lexeme parse did not match DULAT; matched by surface form | 1 |
@@ -297,8 +375,10 @@
 | WARNING | qdš Noun POS should include DULAT gender marker for qdš (I): n. m. | 1 |
 | WARNING | qmm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | qryy Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | qthm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 1 |
 | WARNING | rgmm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | rmm Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | rškm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 1 |
 | WARNING | tgˤrm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tlˤm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tmtḫṣh Lexeme parse did not match DULAT; matched by surface form | 1 |
@@ -309,13 +389,18 @@
 | WARNING | trmm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | trmmn Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | trḥṣn Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | ttnk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 1 |
 | WARNING | twḥln Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tˤn Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tˤnyn Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tˤtqn Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | tḥd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 1 |
 | WARNING | tḥwy Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tḫtṣb Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tṯar Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | udk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 1 |
+| WARNING | uḏrnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 1 |
+| WARNING | wkm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 1 |
 | WARNING | yblmm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ydˤt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | yitmr Lexeme parse did not match DULAT; matched by surface form | 1 |
@@ -335,12 +420,19 @@
 | WARNING | yḥwy Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ġll Noun POS should include DULAT gender marker for ġll (I): n. m. | 1 |
 | WARNING | šal Noun POS should include DULAT gender marker for šảl: n. m. | 1 |
+| WARNING | šbk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 1 |
 | WARNING | šbrd Noun POS should include DULAT gender marker for šbr: n. m. | 1 |
+| WARNING | šink For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 1 |
+| WARNING | štnnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 1 |
+| WARNING | štthm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 1 |
 | WARNING | šu Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ˤlnh Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | ˤmkk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 1 |
+| WARNING | ˤmkm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 1 |
 | WARNING | ˤnn Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ˤp Noun POS should include DULAT gender marker for ʕp (I): n. m. | 1 |
 | WARNING | ḥblm Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | ḥnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token | 1 |
 | WARNING | ḥrbm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ḥrḥrtm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ḥw Lexeme parse did not match DULAT; matched by surface form | 1 |

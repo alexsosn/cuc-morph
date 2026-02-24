@@ -32,6 +32,7 @@ from pipeline.steps.pronoun_closure import PronounClosureFixer
 from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
 from pipeline.steps.suffix_paradigm_normalizer import SuffixParadigmNormalizer
+from pipeline.steps.suffix_payload_collapse import SuffixPayloadCollapseFixer
 from pipeline.steps.surface_option_propagation import SurfaceOptionPropagationFixer
 from pipeline.steps.surface_reconstructability_fixer import SurfaceReconstructabilityFixer
 from pipeline.steps.weak_final_sc import WeakFinalSuffixConjugationFixer
@@ -77,6 +78,7 @@ class TabletParsingPipeline:
             Ktu1FamilyHomonymPruner(dulat_db=self.config.dulat_db),
             SuffixCliticFixer(gate=self.morph_gate),
             SuffixParadigmNormalizer(),
+            SuffixPayloadCollapseFixer(),
             WeakVerbFixer(),
             WeakFinalSuffixConjugationFixer(),
             PronounClosureFixer(),

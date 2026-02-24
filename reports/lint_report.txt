@@ -3854,6 +3854,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1232 1390
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1237 139094 ṣrrt Analysis does not reconstruct to surface (reconstructs as: ṣrrtt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1269 139120 bhtm Analysis does not reconstruct to surface (reconstructs as: btm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1285 139133 bhtm Analysis does not reconstruct to surface (reconstructs as: btm)
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1300 139145 lhwty POS tokens must map to existing DULAT tokens in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1308 139151 smˤ Analysis does not reconstruct to surface (reconstructs as: šmʕ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1318 139160 bhtm Analysis does not reconstruct to surface (reconstructs as: btm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1334 139173 bhtm Analysis does not reconstruct to surface (reconstructs as: btm)
@@ -3957,6 +3958,8 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1867 1395
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1871 139600 k Column 5 count must match analysis variant count
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1871 139600 k POS token 'Subordinating or completive functor' not allowed for -k (I); choose one of: morph., pers. pn.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1871 139600 k POS token 'emph. functor' not allowed for k (III); choose one of: subordinating or completive functor
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1878 139606 bnġlmt POS tokens must map to existing DULAT tokens in column 4
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1878 139606 bnġlmt POS tokens must map to existing DULAT tokens in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1878 139606 bnġlmt Analysis does not reconstruct to surface (reconstructs as: bnẓlmt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1880 139607 ˤmm Non-G stem in DULAT requires stem marker
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1887 139613 prˤt Analysis does not reconstruct to surface (reconstructs as: prʕtt)
@@ -4246,7 +4249,9 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:201 13993
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:201 139932 k POS token 'Subordinating or completive functor' not allowed for -k (I); choose one of: morph., pers. pn.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:201 139932 k POS token 'emph. functor' not allowed for k (III); choose one of: subordinating or completive functor
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:215 139944 nn DULAT comment does not match candidates
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:248 139972 dšˤlmk POS tokens must map to existing DULAT tokens in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:275 139995 tša Each reconstructed letter must be prefixed by '('
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:297 140013 dˤlmk POS tokens must map to existing DULAT tokens in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:313 140027 un DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:323 140034 šmḥy POS token '?' not allowed for /m-ḥ(-w:y)/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:323 140034 šmḥy Š stem marker present but DULAT lacks Š/Št/Špass
@@ -7426,6 +7431,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:417 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:456 145914 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:493 145945 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:496 145948 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:500 145952 mprhm Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:521 145969 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:528 145975 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:539 145985 bˤdn Lexeme parse did not match DULAT; matched by surface form
@@ -7443,6 +7449,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1126 1
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1196 146538 tḥ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1287 146615 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1336 146657 y Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1339 146660 ilšnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1366 146683 km Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:5 136030 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:10 136034 ypˤt Lexeme parse did not match DULAT; matched by surface form
@@ -7733,6 +7740,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:274 138
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:283 138341 pnt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:283 138341 pnt Feminine plural noun in DULAT should use '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:311 138363 mkly Deverbal form marked with '[' but only noun entry found in DULAT
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:314 138365 aryy Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:319 138369 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:367 138408 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:376 138414 kx Morphology placeholder '?' should use unresolved DULAT placeholder '?' in column 4
@@ -7834,6 +7842,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:93 1398
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:97 139847 ˤn TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:105 139854 blt TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:111 139859 klat TODO/uncertain marker in comment: ???
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:135 139879 aryy Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:157 139897 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:199 139931 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:201 139932 k Column 6 count should match analysis variant count
@@ -7918,6 +7927,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1158 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.62.tsv:31 149368 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.63.tsv:15 149390 kb Adjective POS should include DULAT gender marker for kb (I): adj. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.63.tsv:15 149390 kb Noun POS should include DULAT gender marker for kb (II): n. m.
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.65.tsv:21 149416 ḥnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.69.tsv:24 149525 km Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:30 141493 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:76 141530 k Column 6 count should match analysis variant count
@@ -8012,13 +8022,23 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.97.tsv:8 1516
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.97.tsv:30 151647 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.97.tsv:49 151661 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.1.tsv:8 156291 tšlmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.10.tsv:40 156579 kmtm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.10.tsv:40 156579 kmtm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.10.tsv:40 156579 kmtm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.10.tsv:43 156581 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.10.tsv:51 156586 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.100.tsv:24 160358 tšlmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.100.tsv:27 160360 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.100.tsv:27 160360 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.100.tsv:27 160360 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.100.tsv:34 160365 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.100.tsv:53 160377 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.101.tsv:11 160407 skn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.102.tsv:7 160442 skn Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:26 160463 nḫtk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:26 160463 nḫtk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:35 160470 ḥdy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:35 160470 ḥdy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:49 160481 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:61 160489 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:64 160491 k Column 6 count should match analysis variant count
@@ -8028,6 +8048,9 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.104.tsv:20 16
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.104.tsv:30 160544 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.105.tsv:17 160576 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.107.tsv:10 160582 hnd Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.107.tsv:29 160595 šthm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.107.tsv:29 160595 šthm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.107.tsv:29 160595 šthm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.107.tsv:59 160614 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.107.tsv:66 160618 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.108.tsv:12 160628 ank Pronouns should not use '/' closure in analysis
@@ -8035,7 +8058,13 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.108.tsv:24 16
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.108.tsv:42 160651 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.108.tsv:53 160659 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.108.tsv:54 160660 hw Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.108.tsv:59 160664 štnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.108.tsv:59 160664 štnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.108.tsv:59 160664 štnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:27 156612 tšlmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:30 156614 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:30 156614 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:30 156614 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:33 156616 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:39 156620 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:47 156625 mnm Pronouns should not use '/' closure in analysis
@@ -8043,27 +8072,55 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.110.tsv:20 16
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.111.tsv:29 160711 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.111.tsv:32 160713 an Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.112.tsv:10 160719 an Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.112.tsv:21 160725 nk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.112.tsv:21 160725 nk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.112.tsv:21 160725 nk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.112.tsv:25 160727 ṯbd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.112.tsv:25 160727 ṯbd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.112.tsv:25 160727 ṯbd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.113.tsv:10 160737 ty For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.113.tsv:10 160737 ty For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.113.tsv:10 160737 ty For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.113.tsv:21 160743 hnd Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.12.tsv:32 156648 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:26 156670 tšlmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:29 156672 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:29 156672 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:29 156672 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:38 156678 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv:16 156707 tšlmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.15.tsv:12 156749 šink For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.15.tsv:23 156758 hw Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:19 156779 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:36 156792 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:45 156799 twḥln Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:49 156802 ank Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:51 156803 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:51 156803 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:51 156803 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:57 156807 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.17.tsv:25 156831 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.17.tsv:34 156838 skn Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.17.tsv:36 156840 rgmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.17.tsv:36 156840 rgmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.17.tsv:36 156840 rgmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.20.tsv:33 156893 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.21.tsv:18 156915 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.21.tsv:28 156922 skn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.21.tsv:34 156926 hnkt Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.21.tsv:57 156943 ˤmnkm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:4 156988 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:20 157001 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:29 157008 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:30 157009 tmġy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:30 157009 tmġy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:60 157030 ank Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:119 157074 pm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:119 157074 pm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:119 157074 pm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.24.tsv:26 157099 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.24.tsv:26 157099 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.24.tsv:26 157099 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.24.tsv:35 157105 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.26.tsv:24 157151 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.26.tsv:65 157179 at Pronouns should not use '/' closure in analysis
@@ -8073,12 +8130,21 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:35 1563
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:44 156336 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:48 156339 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:56 156345 hw Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:65 156352 wy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:65 156352 wy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:66 156353 rdnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:66 156353 rdnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:66 156353 rdnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:67 156354 an Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:71 156357 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:75 156360 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:80 156364 at Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:90 156372 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:95 156376 ˤmnk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:25 157205 tšlmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:28 157207 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:28 157207 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:28 157207 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:36 157213 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:77 157244 at Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:85 157250 mhkm Pronouns should not use '/' closure in analysis
@@ -8086,10 +8152,19 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:10 157
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:13 157262 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:51 157289 ksiy Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:59 157296 ank Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:87 157319 pkn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:87 157319 pkn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:87 157319 pkn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:90 157321 an Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:93 157323 ank Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:120 157340 nrm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:120 157340 nrm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:120 157340 nrm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:139 157354 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:153 157365 ank Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:154 157366 iphn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:154 157366 iphn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:154 157366 iphn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:159 157370 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:167 157377 hw Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:172 157382 ank Pronouns should not use '/' closure in analysis
@@ -8099,26 +8174,42 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:201 15
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:201 157407 kn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:224 157427 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:237 157438 my Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:245 157445 npṣh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:245 157445 npṣh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:251 157450 hw Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:261 157459 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:268 157465 hw Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:275 157471 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:290 157484 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:350 157535 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.32.tsv:12 157548 ny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.32.tsv:12 157548 ny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.32.tsv:12 157548 ny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.32.tsv:13 157549 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.32.tsv:32 157564 hmt Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.34.tsv:16 157585 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.34.tsv:20 157588 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.34.tsv:26 157593 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.34.tsv:26 157593 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.34.tsv:26 157593 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.34.tsv:34 157599 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.34.tsv:44 157607 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.34.tsv:45 157608 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.34.tsv:51 157612 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.34.tsv:76 157628 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.34.tsv:104 157647 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.35.tsv:15 157664 šlmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.35.tsv:15 157664 šlmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.35.tsv:15 157664 šlmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.36.tsv:38 157724 argmny Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.36.tsv:45 157730 at Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.36.tsv:55 157739 udk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.36.tsv:63 157746 ˤmnkm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.36.tsv:70 157752 at Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.36.tsv:83 157763 km Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.36.tsv:122 157797 tˤtqnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.36.tsv:122 157797 tˤtqnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.36.tsv:122 157797 tˤtqnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.37.tsv:5 157820 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.37.tsv:24 157833 argmnm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.37.tsv:33 157840 argmn Suffix form without '+'
@@ -8127,12 +8218,20 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.38.tsv:29 157
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.38.tsv:64 157894 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.38.tsv:81 157906 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.38.tsv:94 157916 mhk Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.38.tsv:97 157918 lbh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.38.tsv:97 157918 lbh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:13 157929 midm Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:22 157935 adnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:22 157935 adnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:22 157935 adnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:27 157939 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:30 157942 hw Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:45 157954 at Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:58 157965 at Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.4.tsv:16 156400 tšlmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.4.tsv:26 156408 šlmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.4.tsv:26 156408 šlmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.4.tsv:26 156408 šlmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.41.tsv:8 158065 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.41.tsv:40 158083 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.41.tsv:46 158088 ank Pronouns should not use '/' closure in analysis
@@ -8155,6 +8254,9 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:27 158
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:46 158294 hnkt Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:49 158296 anyt Feminine plural noun in DULAT should be tagged with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:49 158296 anyt Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:52 158298 yšrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:52 158298 yšrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:52 158298 yšrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.47.tsv:14 158329 anyt Feminine plural noun in DULAT should be tagged with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.47.tsv:14 158329 anyt Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.47.tsv:79 158378 k Column 6 count should match analysis variant count
@@ -8163,9 +8265,19 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.49.tsv:47 158
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:4 158450 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:17 158460 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:39 158475 ank Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:60 158490 lbšk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:60 158490 lbšk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:77 158503 ank Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.53.tsv:6 158527 nh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.53.tsv:6 158527 nh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.53.tsv:6 158527 nh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.54.tsv:13 158539 skn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.55.tsv:6 158550 ankm Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.56.tsv:8 158560 rtm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.56.tsv:8 158560 rtm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.56.tsv:12 158562 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.56.tsv:12 158562 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.56.tsv:12 158562 ˤmny For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.56.tsv:14 158564 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.56.tsv:19 158568 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.57.tsv:29 158586 k Column 6 count should match analysis variant count
@@ -8177,8 +8289,13 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.61.tsv:14 158
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.61.tsv:19 158634 hw Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.61.tsv:24 158638 hw Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.61.tsv:36 158646 krmm Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.62.tsv:23 158666 ddnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.62.tsv:23 158666 ddnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.62.tsv:23 158666 ddnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.62.tsv:37 158676 ṯbh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.63.tsv:18 158697 tšlmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.63.tsv:30 158705 uly For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.63.tsv:30 158705 uly For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.63.tsv:34 158708 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.63.tsv:43 158714 at Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:47 158747 mnm Pronouns should not use '/' closure in analysis
@@ -8186,20 +8303,34 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.65.tsv:12 158
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.68.tsv:32 158807 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.68.tsv:39 158811 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.68.tsv:46 158816 mnm Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.69.tsv:15 158830 ˤšrh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.69.tsv:15 158830 ˤšrh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.69.tsv:15 158830 ˤšrh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.7.tsv:27 156495 yḥ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.7.tsv:32 156499 kn Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.7.tsv:32 156499 kn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:24 158848 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:48 158866 kḥdnn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:51 158868 ank Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:68 158881 ṯqlm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:68 158881 ṯqlm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:79 158889 ˤmnk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:81 158890 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:87 158895 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:94 158900 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:110 158912 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.71.tsv:14 158924 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.71.tsv:29 158934 hnk Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.71.tsv:35 158938 ˤmnk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.71.tsv:36 158939 pm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.71.tsv:36 158939 pm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.71.tsv:36 158939 pm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.71.tsv:43 158944 at Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:24 158979 tšlmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:32 158985 ˤmkk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:69 159014 tṯbrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:69 159014 tṯbrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:69 159014 tṯbrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:99 159037 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:115 159049 hw Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:127 159059 hw Pronouns should not use '/' closure in analysis
@@ -8218,6 +8349,8 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.79.tsv:39 159
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.79.tsv:44 159318 nˤmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.79.tsv:45 159319 nˤmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.8.tsv:12 156512 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.8.tsv:15 156514 ˤrym For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.8.tsv:15 156514 ˤrym For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.8.tsv:17 156516 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.8.tsv:21 156519 at Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.8.tsv:28 156525 k Column 6 count should match analysis variant count
@@ -8225,32 +8358,64 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.80.tsv:26 159
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.82.tsv:31 159364 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.82.tsv:69 159389 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.83.tsv:3 159390 at Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.83.tsv:17 159401 ḥdy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.83.tsv:17 159401 ḥdy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.83.tsv:20 159403 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.84.tsv:43 159452 km Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:19 159492 km Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:29 159499 tšlmkm Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:39 159506 mnm Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:52 159515 tšm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:52 159515 tšm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:56 159518 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:73 159530 ank Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:98 159548 mmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:98 159548 mmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:114 159559 šbk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:115 159560 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:16 159585 tšlmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:28 159593 qlty For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:28 159593 qlty For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:28 159593 qlty For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:35 159598 mid Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:41 159602 šlmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:41 159602 šlmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:41 159602 šlmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:56 159612 rgmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:56 159612 rgmk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:59 159614 at Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:71 159623 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.87.tsv:42 159658 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.87.tsv:72 159682 mid Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.87.tsv:106 159708 ttnk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.87.tsv:109 159710 mnm Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.87.tsv:114 159714 bbd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.87.tsv:120 159719 atm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.87.tsv:125 159723 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.87.tsv:134 159731 ḥdṯm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.87.tsv:134 159731 ḥdṯm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.87.tsv:134 159731 ḥdṯm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.87.tsv:155 159748 lakh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.87.tsv:155 159748 lakh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:11 159768 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:15 159771 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:19 159774 hnd Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:22 159777 bym For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:22 159777 bym For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:25 159779 ank Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:34 159786 adnyh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:34 159786 adnyh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:47 159796 at Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:65 159810 iršth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:65 159810 iršth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:66 159811 tḥd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:88 159827 at Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:94 159832 mnk Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:104 159840 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:109 159844 ankm Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:120 159853 ˤdbm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:120 159853 ˤdbm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:120 159853 ˤdbm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:122 159854 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:149 159876 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:155 159881 k Column 6 count should match analysis variant count
@@ -8260,58 +8425,174 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:176 15
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:182 159903 at Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:188 159908 mhk Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.89.tsv:9 159915 skn Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.89.tsv:60 159953 dbd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.89.tsv:76 159965 ztmm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.89.tsv:76 159965 ztmm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.9.tsv:4 156535 km Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.9.tsv:13 156542 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.9.tsv:20 156547 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.9.tsv:21 156548 ṯby Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:14 159979 bnšk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:21 159984 ank Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:31 159992 hw Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:34 159994 gty For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:34 159994 gty For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:41 160000 hw Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:50 160006 and For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:50 160006 and For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:51 160007 at Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:58 160012 hw Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:61 160014 štnnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:78 160026 ˤmkm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:82 160029 at Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:88 160033 štnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:88 160033 štnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:88 160033 štnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.91.tsv:3 160034 klhmm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.91.tsv:3 160034 klhmm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.91.tsv:29 160054 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.93.tsv:6 160070 iḫn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.93.tsv:6 160070 iḫn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.93.tsv:6 160070 iḫn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.94.tsv:9 160081 rḫnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.94.tsv:9 160081 rḫnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.94.tsv:9 160081 rḫnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.94.tsv:11 160082 ˤh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.94.tsv:11 160082 ˤh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.94.tsv:11 160082 ˤh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:29 160112 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:57 160133 ank Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:58 160134 qdšh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:58 160134 qdšh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:58 160134 qdšh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:65 160139 uph For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:65 160139 uph For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:68 160141 ank Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.98.tsv:26 160162 ˤmnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.98.tsv:26 160162 ˤmnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.98.tsv:26 160162 ˤmnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.98.tsv:40 160173 hnkt Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.98.tsv:50 160181 atnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.98.tsv:50 160181 atnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.98.tsv:50 160181 atnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.98.tsv:54 160185 ˤmnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.98.tsv:54 160185 ˤmnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.98.tsv:54 160185 ˤmnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.98.tsv:109 160227 ˤmnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.98.tsv:109 160227 ˤmnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.98.tsv:109 160227 ˤmnh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.98.tsv:117 160233 ank Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.98.tsv:131 160244 štthm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.98.tsv:155 160263 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.98.tsv:163 160270 ank Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.99.tsv:91 160333 qthm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.1.tsv:66 160793 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.1.tsv:98 160819 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.1.tsv:175 160882 skn Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.10.tsv:5 161235 dbd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.10.tsv:17 161245 śzn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.10.tsv:17 161245 śzn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.10.tsv:17 161245 śzn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.10.tsv:53 161272 bˤlyn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.10.tsv:53 161272 bˤlyn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.10.tsv:53 161272 bˤlyn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.10.tsv:57 161275 ṯqlm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.10.tsv:57 161275 ṯqlm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.11.tsv:15 161314 skn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.12.tsv:9 161338 km Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.12.tsv:36 161358 hnd Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.12.tsv:43 161363 hnd Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.12.tsv:46 161365 mnkm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.12.tsv:52 161370 hnd Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.13.tsv:4 161377 rušy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.13.tsv:4 161377 rušy For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.13.tsv:53 161419 ṯqlm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.13.tsv:53 161419 ṯqlm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.13.tsv:68 161432 ṯqlm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.13.tsv:68 161432 ṯqlm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.16.tsv:19 161534 y Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.16.tsv:28 161541 arwd For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.16.tsv:37 161548 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.17.tsv:37 161591 k Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.19.tsv:22 161636 nṣk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.19.tsv:22 161636 nṣk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.2.tsv:5 160894 hnd Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.2.tsv:29 160911 ytnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.2.tsv:29 160911 ytnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.2.tsv:29 160911 ytnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.2.tsv:43 160921 mnk Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.2.tsv:45 160922 mnkm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.2.tsv:50 160926 hnd Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.2.tsv:66 160938 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.20.tsv:3 161648 rišym Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.22.tsv:15 161737 snrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.22.tsv:15 161737 snrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.22.tsv:15 161737 snrn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.25.tsv:20 161820 hmt Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.26.tsv:6 161834 ˤlhm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.26.tsv:6 161834 ˤlhm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.26.tsv:6 161834 ˤlhm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.3.tsv:15 160955 ḫbṯh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.3.tsv:20 160959 mnm Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.3.tsv:45 160976 gnˤym Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.30.tsv:15 161979 ṯqlm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.30.tsv:15 161979 ṯqlm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.31.tsv:14 162040 śzn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.31.tsv:14 162040 śzn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.31.tsv:14 162040 śzn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:5 162056 hnd Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:44 162086 amhth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:44 162086 amhth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:59 162097 bhth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:59 162097 bhth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:68 162103 km Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:70 162104 lbh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:70 162104 lbh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:81 162113 km Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:83 162114 lbh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:83 162114 lbh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:88 162118 lbh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:88 162118 lbh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:97 162125 km Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:98 162126 lbh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:98 162126 lbh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:105 162131 lbh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:105 162131 lbh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:112 162137 amhth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:112 162137 amhth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:115 162139 km Column 6 count should match analysis variant count
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:116 162140 lbh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:116 162140 lbh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.33.tsv:14 162151 nḫlh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.33.tsv:14 162151 nḫlh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.33.tsv:22 162156 npk Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.33.tsv:57 162181 krmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.33.tsv:57 162181 krmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.33.tsv:57 162181 krmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.33.tsv:63 162185 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.33.tsv:71 162191 mhkm Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.35.tsv:25 162221 ypḥm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.35.tsv:25 162221 ypḥm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.4.tsv:5 160979 hnd Pronouns should not use '/' closure in analysis
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.4.tsv:54 161014 birtym Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.5.tsv:5 161029 hnd Pronouns should not use '/' closure in analysis
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.5.tsv:29 161046 zth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.5.tsv:29 161046 zth For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.5.tsv:32 161048 krmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.5.tsv:32 161048 krmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.5.tsv:32 161048 krmh For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.5.tsv:59 161068 y Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.6.tsv:12 161095 mqpm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.6.tsv:12 161095 mqpm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.8.tsv:11 161153 apśnym For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.8.tsv:11 161153 apśnym For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.8.tsv:21 161160 apśnym For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.8.tsv:21 161160 apśnym For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:18 161199 wkm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:21 161201 rškm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:53 161223 ṯqlm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:53 161223 ṯqlm For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:60 161228 uḏrnn For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:15 135554 ḫršnr Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:72 135597 kbdnh Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:83 135607 lṯpn Surface not found in UDB concordance
@@ -10010,4 +10291,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:18 161199 
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:19 161200 ag Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:21 161201 rškm Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:51 161222 dˤmnk Surface not found in UDB concordance
-Total issues: 9969
+Total issues: 10250
