@@ -164,6 +164,8 @@ class DulatMorphGate:
         entry_index: Dict[int, Tuple[str, str]],
         entry_pos_index: Dict[int, str],
     ) -> bool:
+        if not (key[0] or "").endswith("m"):
+            return False
         pos_values = {
             (entry_pos_index.get(entry_id) or "").lower()
             for entry_id, entry_key in entry_index.items()

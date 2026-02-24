@@ -4831,7 +4831,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.57.tsv:25 14932
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.57.tsv:25 149327 nn Analysis does not reconstruct to surface (reconstructs as: gr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.58.tsv:4 149332 m Analysis does not reconstruct to surface (reconstructs as: l)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:10 140457 psltm Analysis does not reconstruct to surface (reconstructs as: pslm)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:15 140461 lḥm POS token 'n. f. pl. tant. du.' not allowed for lḥ (I); choose one of: n
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:15 140461 lḥm POS token 'n. f. du.' not allowed for lḥ (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:18 140464 tṯlṯ Non-G stem in DULAT requires stem marker
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:22 140467 tḥrṯ POS token 'vb G' not allowed for /ḥ-r-ṯ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:30 140474 tṯlṯ Non-G stem in DULAT requires stem marker
@@ -7541,7 +7541,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:247 135
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:250 135747 atm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:251 135748 bštm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:267 135762 mṯpdm Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:267 135762 mṯpdm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:276 135770 l Formula idk l ytn should use a single l(III) reading
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:293 135785 ybu Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:307 135797 ykbdnh Lexeme parse did not match DULAT; matched by surface form
@@ -7592,12 +7591,10 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.101.tsv:9 152
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.101.tsv:11 152188 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.101.tsv:28 152203 rˤt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.101.tsv:98 152260 limm Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.102.tsv:32 152291 ḫnqtm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:3 152308 ṯknt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:5 152310 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:67 152364 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:94 152387 špḥ Noun POS should include DULAT gender marker for špḥ: n. m.
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:98 152390 uškm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:100 152392 ḏrˤ Noun POS should include DULAT gender marker for ḏrʕ (I): n. f.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:173 152450 špḥ Noun POS should include DULAT gender marker for špḥ: n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:237 152503 y Lexeme parse did not match DULAT; matched by surface form
@@ -7609,7 +7606,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:351 1
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.104.tsv:33 152649 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.105.tsv:41 152727 bwtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.105.tsv:77 152756 bhtm Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.105.tsv:84 152761 ˤrkm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.106.tsv:14 152811 gdlt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.106.tsv:18 152814 gdlt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.106.tsv:21 152816 gdlt Lexeme parse did not match DULAT; matched by surface form
@@ -7626,8 +7622,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.107.tsv:57 15
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.107.tsv:79 152990 km Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.107.tsv:119 153023 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.107.tsv:130 153032 mḫlpt Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv:35 153239 mṣltm Plurale tantum noun ending in '-m' should mark plural with '/m'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv:44 153247 ẓbm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv:58 153259 rmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv:70 153269 rmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv:124 153311 k Column 6 count should match analysis variant count
@@ -7694,7 +7688,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.132.tsv:73 15
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.133.tsv:25 154740 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.133.tsv:26 154741 rumm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.133.tsv:31 154745 aylt Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.133.tsv:55 154763 ẓbm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.136.tsv:40 154833 ṣt Noun POS should include DULAT gender marker for ṣt: n. f.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.136.tsv:40 154833 ṣt Feminine singular noun in DULAT should use '/t'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.138.tsv:8 154858 gdlt Lexeme parse did not match DULAT; matched by surface form
@@ -7795,6 +7788,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:273 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:276 142946 kmhm Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:312 142974 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:324 142983 rḥbt Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:332 142989 ẓbyy Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:336 142992 rbt Feminine adjective/participle in DULAT should mark '-t' explicitly
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:353 143004 lḥn Noun POS should include DULAT gender marker for lḥ (II): n. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:353 143004 lḥn Noun POS should include DULAT gender marker for lḥ (II): n. m.
@@ -7880,7 +7874,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.162.tsv:69 15
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.162.tsv:72 155299 pamt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.162.tsv:72 155299 pamt Feminine plural noun in DULAT should be tagged with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.162.tsv:79 155304 mrkbt Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.164.tsv:10 155399 šinm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.166.tsv:9 155477 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.166.tsv:69 155516 gṯrn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.167.tsv:24 155544 ˤp Noun POS should include DULAT gender marker for ʕp (I): n. m.
@@ -7892,7 +7885,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.169.tsv:22 15
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.169.tsv:26 155632 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.169.tsv:29 155635 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.169.tsv:34 155639 nqh Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.169.tsv:71 155671 ḥbrm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.169.tsv:74 155674 dˤtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.169.tsv:118 155711 bˤrk Adjective POS should include DULAT gender marker for bʕr: adj. m.
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.169.tsv:139 155728 kn Suffix form without '+'
@@ -7930,7 +7922,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:539 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:545 144597 tbˤ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:552 144603 snnt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:554 144604 mddt Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:581 144625 rhm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:589 144631 qšt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:594 144635 qṣˤt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:630 144665 nši Lexeme parse did not match DULAT; matched by surface form
@@ -8133,7 +8124,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:384 136
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:387 136369 bˤlkm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:432 136401 lakt TODO/uncertain marker in comment: fix
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:463 136421 mṯpdm Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:463 136421 mṯpdm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:472 136429 l Formula idk l ytn should use a single l(III) reading
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:481 136438 thmtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:487 136443 ybu Lexeme parse did not match DULAT; matched by surface form
@@ -8250,14 +8240,10 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:125 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:129 147203 šmt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:137 147209 nˤmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:161 147229 nˤmt Feminine adjective/participle in DULAT should mark '-t' explicitly
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:185 147249 mštˤltm Plurale tantum noun ending in '-m' should mark plural with '/m'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:186 147250 mštˤltm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:208 147270 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:214 147275 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:219 147280 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:225 147285 k Column 6 count should match analysis variant count
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:229 147289 mštˤltm Plurale tantum noun ending in '-m' should mark plural with '/m'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:231 147290 mštˤltm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:242 147300 nḥt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:262 147318 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv:268 147323 y Lexeme parse did not match DULAT; matched by surface form
@@ -8299,42 +8285,26 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.25.tsv:8 1478
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.27.tsv:8 147874 lbt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.27.tsv:25 147886 limm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.28.tsv:6 147903 gdlt Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:7 9505 p TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:24 9518 ybr Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:25 9519 d Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:25 9519 d TODO/uncertain marker in comment: merge
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:40 9531 yšqynh TODO/uncertain marker in comment: fix
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:42 9532 ytn TODO/uncertain marker in comment: fix
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:66 9551 l TODO/uncertain marker in comment: ???
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:85 9567 mṣltm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:120 9594 xht Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:140 9609 klat Column 6 count should match analysis variant count
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:140 9609 klat TODO/uncertain marker in comment: ???
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:157 9623 tḫṣ TODO/uncertain marker in comment: ???, repair
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:157 9623 tḫṣ TODO/uncertain marker in comment: repair
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:176 9639 k Column 6 count should match analysis variant count
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:176 9639 k TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:177 9640 kdrt Feminine plural noun in DULAT should use '/t='
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:177 9640 kdrt Plurale tantum noun ending in '-t' should mark plural with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:181 9643 k Column 6 count should match analysis variant count
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:181 9643 k TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:184 9646 k Column 6 count should match analysis variant count
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:184 9646 k TODO/uncertain marker in comment: ???
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:193 9653 l TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:198 9657 kpt Feminine plural noun in DULAT should use '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:212 9669 mṭm Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:224 9679 l TODO/uncertain marker in comment: ???
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:230 9684 l TODO/uncertain marker in comment: ???
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:234 9687 l TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:236 9689 tmtḫṣh TODO/uncertain marker in comment: fix
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:236 9689 tmtḫṣh Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:240 9692 tḫtṣb TODO/uncertain marker in comment: fix
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:240 9692 tḫtṣb Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:246 9697 l TODO/uncertain marker in comment: ???
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:251 9701 l TODO/uncertain marker in comment: ???
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:254 9704 l TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:258 9707 tmtḫṣn TODO/uncertain marker in comment: fix
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:280 9725 k Column 6 count should match analysis variant count
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:280 9725 k TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:315 9755 bt TODO/uncertain marker in comment: merge
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:317 9756 lt Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:317 9756 lt TODO/uncertain marker in comment: merge
@@ -8343,11 +8313,8 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:329 976
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:335 9771 ksat Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:337 9773 ksat Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:343 9778 tṯar Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:358 9790 rkb TODO/uncertain marker in comment: ???
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:359 9791 ˤrpt TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:379 9807 xxxrn Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:408 9831 km Column 6 count should match analysis variant count
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:408 9831 km TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:466 9879 ˤṣk Deverbal form marked with '[' but only noun entry found in DULAT
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:468 9880 ˤbṣk Deverbal form marked with '[' but only noun entry found in DULAT
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:501 9907 thmt Feminine plural noun in DULAT should use '/t='
@@ -8356,7 +8323,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:533 993
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:552 9950 bˤdn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:552 9950 bˤdn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:561 9957 pnt Feminine plural noun in DULAT should use '/t='
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:561 9957 pnt Plurale tantum noun ending in '-t' should mark plural with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:577 9971 m Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:577 9971 m TODO/uncertain marker in comment: merge
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:603 9994 ištmdh Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)
@@ -8371,13 +8337,12 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:715 100
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:742 10111 td TODO/uncertain marker in comment: merge
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:743 10112 ˤ TODO/uncertain marker in comment: merge
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:756 10123 thmt Feminine plural noun in DULAT should use '/t='
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:862 10212 l TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:874 10222 ˤnt Feminine plural noun in DULAT should use '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:947 10284 km Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:947 10284 km TODO/uncertain marker in comment: ???
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:963 10297 aṯrt TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:981 10312 klt Feminine plural noun in DULAT should use '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:987 10317 ˤnt TODO/uncertain marker in comment: ???
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1001 10329 amṣḫ TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1002 10330 nn TODO/uncertain marker in comment: merge
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1003 10331 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1003 10331 k TODO/uncertain marker in comment: ???
@@ -8388,11 +8353,8 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1025 10
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1025 10350 k TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1027 10352 aṯrt TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1060 10380 ḏdm TODO/uncertain marker in comment: fix
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1094 10407 l TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1108 10419 la Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1116 10426 w  tˤn TODO/uncertain marker in comment: ???
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1121 10430 bht TODO/uncertain marker in comment: merge, ???, fix
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1136 10443 al TODO/uncertain marker in comment: ???
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1121 10430 bht TODO/uncertain marker in comment: merge, fix
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1157 10460 mmˤm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1157 10460 mmˤm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1165 10467 ṯmnt Lexeme parse did not match DULAT; matched by surface form
@@ -8405,18 +8367,14 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1181 10
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1183 10483 ˤnt TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1187 10486 btlt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1208 10503 ˤlnh Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1209 10504 klnyy TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1209 10504 klnyy Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1209 10504 klnyy Suffix form without '+'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1213 10507 klnyy TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1213 10507 klnyy Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1213 10507 klnyy Suffix form without '+'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1217 10511 l TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1227 10519 yknnh Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1312 10585 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1312 10585 k TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1335 10604 prˤt Feminine plural noun in DULAT should use '/t='
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1335 10604 prˤt Plurale tantum noun ending in '-t' should mark plural with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1341 10608 ḥblm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1346 10612 m TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1356 10620 m Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)
@@ -8424,7 +8382,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1356 10
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1361 10624 ymtn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1370 10631 xkmn TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1381 10639 iht Feminine plural noun in DULAT should use '/t='
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1381 10639 iht Plurale tantum noun ending in '-t' should mark plural with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1435 10681 rgm TODO/uncertain marker in comment: ???
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1444 10688 h Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1445 10689 yn TODO/uncertain marker in comment: merge
@@ -8441,7 +8398,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:110 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:112 148012 gdlt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:114 148014 gdlt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:129 148026 gdlt Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:131 148028 ḫnqtm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:136 148032 gdlt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:142 148037 pamt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:142 148037 pamt Feminine plural noun in DULAT should be tagged with '/t='
@@ -8461,7 +8417,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:274 138
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:274 138334 bˤdn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:283 138341 pnt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:283 138341 pnt Feminine plural noun in DULAT should use '/t='
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:283 138341 pnt Plurale tantum noun ending in '-t' should mark plural with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:311 138363 mkly Deverbal form marked with '[' but only noun entry found in DULAT
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:319 138369 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:367 138408 y Lexeme parse did not match DULAT; matched by surface form
@@ -8497,11 +8452,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1108 13
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1176 139046 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1237 139094 ṣrrt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1237 139094 ṣrrt Feminine plural noun in DULAT should use '/t='
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1405 139229 nblat Plurale tantum noun ending in '-t' should mark plural with '/t='
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1418 139240 nblat Plurale tantum noun ending in '-t' should mark plural with '/t='
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1431 139250 nblat Plurale tantum noun ending in '-t' should mark plural with '/t='
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1442 139259 nblat Plurale tantum noun ending in '-t' should mark plural with '/t='
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1457 139271 nblat Plurale tantum noun ending in '-t' should mark plural with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1467 139279 nsb TODO/uncertain marker in comment: fix
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1469 139281 lbnt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1469 139281 lbnt Feminine plural noun in DULAT should use '/t='
@@ -8512,7 +8462,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1558 13
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1558 139352 rḥbt Feminine plural noun in DULAT should use '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1563 139356 dkrt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1563 139356 dkrt Feminine plural noun in DULAT should use '/t='
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1563 139356 dkrt Plurale tantum noun ending in '-t' should mark plural with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1627 139403 km Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1695 139458 ˤrpt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1695 139458 ˤrpt Feminine plural noun in DULAT should use '/t='
@@ -8525,7 +8474,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1801 13
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1871 139600 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1887 139613 prˤt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1887 139613 prˤt Feminine plural noun in DULAT should use '/t='
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1887 139613 prˤt Plurale tantum noun ending in '-t' should mark plural with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1938 139652 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1976 139680 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1981 139684 k Column 6 count should match analysis variant count
@@ -8737,7 +8685,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:30 150
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:44 150035 k Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:46 150037 šntk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:63 150052 ḥw Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:78 150065 alm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:105 150089 km Column 6 count should match analysis variant count
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:111 150094 ygršk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:155 150131 aḥw Lexeme parse did not match DULAT; matched by surface form
@@ -8771,7 +8718,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.85.tsv:212 15
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.85.tsv:214 150677 dblt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.86.tsv:22 150704 prt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.86.tsv:106 150769 ḫrmṯt Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.86.tsv:119 150778 šinm Plurale tantum noun ending in '-m' should mark plural with '/m'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:27 150816 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:34 150822 bhtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:59 150843 k Column 6 count should match analysis variant count
@@ -10689,4 +10635,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:18 161199 
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:19 161200 ag Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:21 161201 rškm Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:51 161222 dˤmnk Surface not found in UDB concordance
-Total issues: 10648
+Total issues: 10594

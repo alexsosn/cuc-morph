@@ -119,6 +119,18 @@ class PluraleTantumMFixerTest(unittest.TestCase):
         self.assertEqual(result.analysis, "šlm(II)/m")
         self.assertEqual(result.pos, "n. m.")
 
+    def test_does_not_add_pl_tant_for_non_m_lemma_even_if_gate_flags_it(self) -> None:
+        fixer = PluraleTantumMFixer(
+            gate=_PluraleTantumGate(
+                plural_tokens={"pʕn"},
+                plurale_tantum_tokens={"pʕn"},
+            )
+        )
+        row = TabletRow("8", "pˤnk", "pˤn/+k", "pʕn", "n. f.", "foot", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "pˤn/+k")
+        self.assertEqual(result.pos, "n. f.")
+
 
 if __name__ == "__main__":
     unittest.main()

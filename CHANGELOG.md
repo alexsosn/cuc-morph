@@ -17,6 +17,8 @@
 - Fixed a linter variable-clobber bug in `linter/lint.py` (`parts = analysis.split('+')`) that could corrupt downstream POS-column checks inside DB validation.
 - Documented the rule workflow in `docs/plurale_tantum_m_pipeline.md`.
 - Applied only the new `plurale-tantum-m` step across `out/KTU 1.*.tsv`: 475 rows updated in 78 files, including user-flagged IDs (`9544`, `139911`, `141623`, `146476`) and related `šmmh`/`pnm`/`nšm`/`šʕrm` classes.
+- Follow-up fix: narrowed the `plurale-tantum-m` scope to DULAT lemmas that are explicitly lexeme-final `-m` (gate + step), preventing false `pl. tant.` POS promotion on non-`-m` lemmas (for example `pʕn`, `šp`).
+- Reapplied only the corrected `plurale-tantum-m` step after restoring `out/KTU 1.*.tsv` to pre-pass state: 123 rows in 53 files updated, preserving intended `-m` targets and reverting over-broad POS changes.
 
 ## 2026-02-23
 

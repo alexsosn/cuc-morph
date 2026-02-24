@@ -167,6 +167,8 @@ class PluraleTantumMFixer(RefinementStep):
     def _is_target_variant(self, pos_head: str, dulat_slot: str) -> bool:
         if not self._is_target_noun_pos(pos_head):
             return False
+        if not _declared_lemma_letters(dulat_slot).endswith("m"):
+            return False
         if self._gate is None or not hasattr(self._gate, "is_plurale_tantum_noun_token"):
             return False
         if not dulat_slot or dulat_slot == "?":

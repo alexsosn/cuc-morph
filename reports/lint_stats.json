@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-02-24T16:11:18.623949+00:00",
+  "generated_at_utc": "2026-02-24T16:16:38.053170+00:00",
   "files_checked": 278,
-  "total_issues": 10648,
+  "total_issues": 10594,
   "fallback_parsed": 1173,
   "by_severity": {
     "ERROR": 7481,
-    "WARNING": 1468,
+    "WARNING": 1414,
     "INFO": 1519
   },
   "by_problem_type": [
@@ -72,12 +72,7 @@
     {
       "severity": "WARNING",
       "problem_type": "Suffix form without '+'",
-      "count": 78
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "TODO/uncertain marker in comment",
-      "count": 77
+      "count": 79
     },
     {
       "severity": "WARNING",
@@ -98,6 +93,11 @@
       "severity": "ERROR",
       "problem_type": "Each reconstructed letter must be prefixed by '('",
       "count": 65
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "TODO/uncertain marker in comment",
+      "count": 53
     },
     {
       "severity": "ERROR",
@@ -150,11 +150,6 @@
       "count": 22
     },
     {
-      "severity": "WARNING",
-      "problem_type": "Plurale tantum noun ending in '-m' should mark plural with '/m'",
-      "count": 20
-    },
-    {
       "severity": "ERROR",
       "problem_type": "dtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
       "count": 18
@@ -192,11 +187,6 @@
     {
       "severity": "ERROR",
       "problem_type": "ibrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
-      "count": 12
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "Plurale tantum noun ending in '-t' should mark plural with '/t='",
       "count": 12
     },
     {
@@ -1332,6 +1322,11 @@
     {
       "severity": "ERROR",
       "problem_type": "ḥnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "Plurale tantum noun ending in '-m' should mark plural with '/m'",
       "count": 1
     },
     {

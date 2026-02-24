@@ -53,7 +53,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142771	ḫss	ḫss/	ḫss	element of DN	Ḫasisu/Khasis	
 # KTU 1.15 II:6						
 142772	xxxyn	?	?	?	?	DULAT: NOT FOUND
-142773	rḥmy	rḥm/+y(I); rḥ(III)/+y(I); rḥ(III)/+y(II)	rḥm, -y (I); rḥ (III), -y (I); rḥ (III), -y (II)	n. f., prep.; n. m. pl. tant., prep.; n. m. pl. tant., postp. functor	womb, my; millstone, my; millstone, yes	
+142773	rḥmy	rḥm/+y(I); rḥ(III)/+y(I); rḥ(III)/+y(II)	rḥm, -y (I); rḥ (III), -y (I); rḥ (III), -y (II)	n. f., prep.; n. m., prep.; n. m., postp. functor	womb, my; millstone, my; millstone, yes	
 142774	ršp	ršp/	ršp	DN	Rašap	
 142775	zbl	zbl(I)/; zbl(III)/	zbl (I); zbl (III)	n. m.; n. m.	prince; one carried	
 # KTU 1.15 II:7						
@@ -240,7 +240,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142917	tity	!t!ʔtw[	/ʔ-t-w/	vb	to come	
 142918	ilm	il(I)/m	ỉl (I)	n. m.	god	
 142919	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
-142920	ahlhm	ahl/+hm	ảhl	n. m. pl. tant.	tent	
+142920	ahlhm	ahl/+hm	ảhl	n. m.	tent	
 # KTU 1.15 III:19						
 142921	dr	dr/	dr	n. m.	circle	
 142922	il	il(I)/	ỉl (I)	n. m.	god	
@@ -329,7 +329,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142987	ṯry	ṯr(I)/	ṯr (I)	n. m.	bull	
 # KTU 1.15 IV:7						
 142988	ṯmnym	ṯmnym/	ṯmnym	num.	eighty	
-142989	ẓbyy	ẓby/	ẓby	n. m. pl. tant.	gazelle	
+142989	ẓbyy	ẓby/	ẓby	n. m.	gazelle	
 # KTU 1.15 IV:8						
 142990	ṯr	ṯr(I)/	ṯr (I)	n. m.	bull	
 142991	ḫbr	ḫbr/	ḫbr	TN	Daughter-of-TN	
@@ -350,8 +350,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143002	xxtxxxx	?	?	?	?	DULAT: NOT FOUND
 143003	t	/t, /t=;[t, [t=, [t==, [t===	;	;	;	
 # KTU 1.15 IV:13						
-143004	lḥn	lḥ(II)/+n(I); lḥ(II)/+n(II); lḥ(II)/+n(III)	lḥ (II), -n (I); lḥ (II), -n (II); lḥ (II), -n (III)	n. pl. tant., morph.; n. pl. tant., pers. pn./morph./vb; n. pl. tant., pers. pn./morph.	missive, Sun; missive, me; missive, our	
-143005	šqym	šqy/m; šq/	šqy; šq	n. m. pl. tant.; n. m.	cupbearer; thigh	
+143004	lḥn	lḥ(II)/+n(I); lḥ(II)/+n(II); lḥ(II)/+n(III)	lḥ (II), -n (I); lḥ (II), -n (II); lḥ (II), -n (III)	n., morph.; n., pers. pn./morph./vb; n., pers. pn./morph.	missive, Sun; missive, me; missive, our	
+143005	šqym	šqy/m; šq/	šqy; šq	n. m.; n. m.	cupbearer; thigh	
 143006	mdxx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.15 IV:14						
 143007	tšmˤ	!t!šmˤ[	/š-m-ʕ/	vb	to hear	
@@ -372,7 +372,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 IV:18						
 143019	ˤlh	ˤl(I)+h	ʕl (I)	prep.	upon	
 143020	tšˤrb	!t!]š]ˤrb(I)[	/ʕ-r-b/ (I)	vb	to enter	
-143021	ẓbyh	ẓby/+h	ẓby	n. m. pl. tant.	gazelle	
+143021	ẓbyh	ẓby/+h	ẓby	n. m.	gazelle	
 # KTU 1.15 IV:19						
 143022	ṯr	ṯr(I)/	ṯr (I)	n. m.	bull	
 143023	ḫbr	ḫbr/	ḫbr	TN	Daughter-of-TN	
@@ -409,7 +409,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143047	ḥry	ḥr(I)/+y(I); ḥr(I)/+y(II)	ḥr (I), -y (I); ḥr (I), -y (II)	n. m., prep.; n. m., postp. functor	intestine(s), my; intestine(s), yes	
 # KTU 1.15 IV:27						
 143048	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
-143049	lḥm	lḥm(I)[; lḥm/; lḥ(I)/	/l-ḥ-m/ (I); lḥm; lḥ (I)	vb; n. m.; n. f. pl. tant.	to eat; grain; cheek	
+143049	lḥm	lḥm(I)[; lḥm/; lḥ(I)/	/l-ḥ-m/ (I); lḥm; lḥ (I)	vb; n. m.; n. f.	to eat; grain; cheek	
 143050	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
 143051	šty	šty[	/š-t-y/	vb	to drink	
 143052	ṣḥtkm	ṣḥ[	/ṣ-ḥ/	vb	to exclaim	
@@ -437,7 +437,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 V:4						
 143068	ˤlh	ˤl(I)+h	ʕl (I)	prep.	upon	
 143069	tšˤrb	!t!]š]ˤrb(I)[	/ʕ-r-b/ (I)	vb	to enter	
-143070	ẓbyh	ẓby/+h	ẓby	n. m. pl. tant.	gazelle	
+143070	ẓbyh	ẓby/+h	ẓby	n. m.	gazelle	
 # KTU 1.15 V:5						
 143071	aḫr	aḫr	ảḫr	adv./prep./conj.	afterwards	
 143072	xxxxt	?	?	?	?	DULAT: NOT FOUND
@@ -462,7 +462,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143087	ḥry	ḥr(I)/+y(I); ḥr(I)/+y(II)	ḥr (I), -y (I); ḥr (I), -y (II)	n. m., prep.; n. m., postp. functor	intestine(s), my; intestine(s), yes	
 # KTU 1.15 V:10						
 143088	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
-143089	lḥm	lḥm(I)[; lḥm/; lḥ(I)/	/l-ḥ-m/ (I); lḥm; lḥ (I)	vb; n. m.; n. f. pl. tant.	to eat; grain; cheek	
+143089	lḥm	lḥm(I)[; lḥm/; lḥ(I)/	/l-ḥ-m/ (I); lḥm; lḥ (I)	vb; n. m.; n. f.	to eat; grain; cheek	
 143090	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
 143091	šty	šty[	/š-t-y/	vb	to drink	
 143092	ṣḥtkm	ṣḥ[	/ṣ-ḥ/	vb	to exclaim	
@@ -488,7 +488,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 V:16						
 143107	xqmṣ	?	?	?	?	DULAT: NOT FOUND
 143108	mtm	mt(II)/; mt[; m(I)/t=	mt (II); /m-t/; mt (I)	n. m.; vb; n. m.	death; to die; dead person	
-143109	uṣbˤt	uṣbˤ/t=	ủṣbʕ	n. f. pl. tant.	finger	
+143109	uṣbˤt	uṣbˤ/t=	ủṣbʕ	n. f.	finger	
 # KTU 1.15 V:17						
 143110	krt	krt/	krt	PN	krt	
 143111	šrk	šrk[	/š-r-k/	vb	to team up with	
@@ -561,7 +561,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143163	ḥry	ḥr(I)/+y(I); ḥr(I)/+y(II)	ḥr (I), -y (I); ḥr (I), -y (II)	n. m., prep.; n. m., postp. functor	intestine(s), my; intestine(s), yes	
 # KTU 1.15 VI:4						
 143164	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
-143165	lḥm	lḥm(I)[; lḥm/; lḥ(I)/	/l-ḥ-m/ (I); lḥm; lḥ (I)	vb; n. m.; n. f. pl. tant.	to eat; grain; cheek	
+143165	lḥm	lḥm(I)[; lḥm/; lḥ(I)/	/l-ḥ-m/ (I); lḥm; lḥ (I)	vb; n. m.; n. f.	to eat; grain; cheek	
 143166	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
 143167	šty	šty[	/š-t-y/	vb	to drink	
 143168	ṣḥtkm	ṣḥ[	/ṣ-ḥ/	vb	to exclaim	

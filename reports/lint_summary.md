@@ -1,7 +1,7 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `10648`
+- Total issues: `10594`
 - Fallback-parsed issue lines: `1173`
 
 ### By Severity
@@ -9,7 +9,7 @@
 | Severity | Count |
 |---|---:|
 | ERROR | 7481 |
-| WARNING | 1468 |
+| WARNING | 1414 |
 | INFO | 1519 |
 
 ### By Problem Type
@@ -28,12 +28,12 @@
 | ERROR | No DULAT entry found for clitic part | 109 |
 | ERROR | Unknown DULAT token in column 4 | 82 |
 | ERROR | No DULAT entry found for lexeme/surface | 80 |
-| WARNING | Suffix form without '+' | 78 |
-| WARNING | TODO/uncertain marker in comment | 77 |
+| WARNING | Suffix form without '+' | 79 |
 | WARNING | gdlt Lexeme parse did not match DULAT; matched by surface form | 77 |
 | WARNING | y Lexeme parse did not match DULAT; matched by surface form | 71 |
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 67 |
 | ERROR | Each reconstructed letter must be prefixed by '(' | 65 |
+| WARNING | TODO/uncertain marker in comment | 53 |
 | ERROR | POS ambiguous in DULAT | 45 |
 | ERROR | Multiple DULAT candidates for surface | 43 |
 | ERROR | Column 4 count must match analysis variant count | 41 |
@@ -44,7 +44,6 @@
 | WARNING | Plural form missing split ending | 27 |
 | ERROR | Noun/adjective lacks '/' ending | 26 |
 | WARNING | aṯt Lexeme parse did not match DULAT; matched by surface form | 22 |
-| WARNING | Plurale tantum noun ending in '-m' should mark plural with '/m' | 20 |
 | ERROR | dtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 18 |
 | WARNING | Feminine plural noun in DULAT should be tagged with '/t=' | 16 |
 | WARNING | mid Lexeme parse did not match DULAT; matched by surface form | 16 |
@@ -53,7 +52,6 @@
 | WARNING | nkt Lexeme parse did not match DULAT; matched by surface form | 13 |
 | ERROR | hyn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 12 |
 | ERROR | ibrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 12 |
-| WARNING | Plurale tantum noun ending in '-t' should mark plural with '/t=' | 12 |
 | WARNING | bhtm Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | pamt Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | skn Lexeme parse did not match DULAT; matched by surface form | 12 |
@@ -281,6 +279,7 @@
 | ERROR | ˤln Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
 | ERROR | ˤrbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
 | ERROR | ḥnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
+| WARNING | Plurale tantum noun ending in '-m' should mark plural with '/m' | 1 |
 | WARNING | am Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | anš Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | argmk Lexeme parse did not match DULAT; matched by surface form | 1 |
