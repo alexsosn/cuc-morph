@@ -10,11 +10,19 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.89 4						
 151156	x	?	?	?	?	
 151157	gd	ṯigt/+d	ṯỉgt	n. f.	neighing	
-151158	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
+151158	l	l(I)	l (I)	prep.	to	
+151158	l	l(II)	l (II)	adv.	no	
+151158	l	l(III)	l (III)	functor	certainly	
 151159	r	?	?	?	?	
 # KTU 1.89 5						
-151160	šdkm	šd(I)/+km; šd(I)/+m(I); šd(I)/+m(II)	šd (I); šd (I); šd (I)	n. m.; n. m.; n. m.	open field; open field; open field	
-151161	k	+k; ~k; k(III); k(I); k(II)	-k (I); -k (II); k (III); k (I); k (II)	;;Subordinating or completive functor; prep.; emph. functor	when; like; yes	
+151160	šdkm	šd(I)/+km	šd (I)	n. m.	open field	
+151160	šdkm	šd(I)/+m(I)	šd (I)	n. m.	open field	
+151160	šdkm	šd(I)/+m(II)	šd (I)	n. m.	open field	
+151161	k	+k	-k (I)	Subordinating or completive functor	when	
+151161	k	~k	-k (II)	prep.	like	
+151161	k	k(III)	k (III)	emph. functor	yes	
+151161	k	k(I)	k (I)			
+151161	k	k(II)	k (II)			
 # KTU 1.89 6						
 151162	w	w	w	conj.	and	
 151163	š	š/	š	n. m.	ram	

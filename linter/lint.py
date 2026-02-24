@@ -1104,6 +1104,19 @@ def split_csv_field(value: str) -> List[str]:
     return [x for x in out if x != ""]
 
 
+def has_semicolon_packed_variants(parts: List[str]) -> bool:
+    """
+    Packed variant payloads are legacy format for out/*.tsv:
+    col3-col6 store multiple options delimited by ';' in one row.
+    """
+    if len(parts) < 6:
+        return False
+    for idx in (2, 3, 4, 5):
+        if len(split_semicolon_field(parts[idx])) > 1:
+            return True
+    return False
+
+
 def is_unresolved_placeholder(value: str) -> bool:
     tok = (value or "").strip()
     return bool(tok) and re.fullmatch(r"\?+", tok) is not None
@@ -1335,6 +1348,22 @@ def pos_token_is_ambiguous(pos_tok: str) -> bool:
     return ("|" in t) or (";" in t)
 
 
+def collapse_token_rows(token_rows: List[Dict[str, str]]) -> List[Dict[str, str]]:
+    """
+    Reduce variant-expanded token rows to one row per (line_id, surface) token.
+    Keeps first occurrence order.
+    """
+    out: List[Dict[str, str]] = []
+    seen: set[Tuple[str, str]] = set()
+    for row in token_rows:
+        key = ((row.get("line_id", "") or "").strip(), (row.get("surface", "") or "").strip())
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(row)
+    return out
+
+
 # -----------------------------
 # Linter
 # -----------------------------
@@ -1423,6 +1452,7 @@ def lint_file(
     lemma_stem_lines: Dict[Tuple[str, str], set] = {}
     seen_pairs: List[Tuple[str, Tuple[str, str]]] = []
     token_rows: List[Dict[str, str]] = []
+    seen_unwrapped_row_payloads: Dict[Tuple[str, str, str, str, str, str], int] = {}
     entry_index: Dict[Tuple[str, str], set] = {}
     entry_gender_index: Dict[Tuple[str, str], set] = {}
     entry_morph_index: Dict[int, set] = {}
@@ -1514,6 +1544,43 @@ def lint_file(
             continue
 
         line_id, surface, analysis = parts[0], parts[1], parts[2]
+        if is_out_tsv_file and len(parts) >= 6 and has_semicolon_packed_variants(parts):
+            issues.append(
+                Issue(
+                    "error",
+                    str(path),
+                    i,
+                    line_id,
+                    surface,
+                    analysis,
+                    "Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
+                )
+            )
+        if is_out_tsv_file and len(parts) >= 6:
+            payload_key = (
+                line_id.strip(),
+                surface.strip(),
+                (parts[2] or "").strip(),
+                (parts[3] or "").strip(),
+                (parts[4] or "").strip(),
+                (parts[5] or "").strip(),
+            )
+            first_seen_line = seen_unwrapped_row_payloads.get(payload_key)
+            if first_seen_line is not None:
+                issues.append(
+                    Issue(
+                        "error",
+                        str(path),
+                        i,
+                        line_id,
+                        surface,
+                        analysis,
+                        "Duplicate unwrapped row payload (same id, surface, and col3-col6); "
+                        f"first seen on line {first_seen_line}",
+                    )
+                )
+            else:
+                seen_unwrapped_row_payloads[payload_key] = i
         in_cuc_dir = "cuc_tablets_tsv" in str(path)
         is_raw_cuc_row = False
         if input_format == "cuc_tablets_tsv":
@@ -3177,14 +3244,16 @@ def lint_file(
                     )
                 )
 
+    token_stream = collapse_token_rows(token_rows)
+
     # Formula-sensitive homonym checks for l:
     #   tbˤ w l yṯb ilm  -> l(II) "not"
     #   idk l ytn       -> l(III) "truly/certainly"
-    for idx in range(len(token_rows) - 4):
-        seq = [token_rows[idx + k]["surface"] for k in range(5)]
+    for idx in range(len(token_stream) - 4):
+        seq = [token_stream[idx + k]["surface"] for k in range(5)]
         if seq != ["tbˤ", "w", "l", "yṯb", "ilm"]:
             continue
-        l_row = token_rows[idx + 2]
+        l_row = token_stream[idx + 2]
         homs = extract_homonyms_for_lemma(
             l_row.get("analysis_field", ""), l_row.get("dulat_field", ""), "l"
         )
@@ -3216,11 +3285,11 @@ def lint_file(
                 )
             )
 
-    for idx in range(len(token_rows) - 2):
-        seq = [token_rows[idx + k]["surface"] for k in range(3)]
+    for idx in range(len(token_stream) - 2):
+        seq = [token_stream[idx + k]["surface"] for k in range(3)]
         if seq != ["idk", "l", "ytn"]:
             continue
-        l_row = token_rows[idx + 1]
+        l_row = token_stream[idx + 1]
         homs = extract_homonyms_for_lemma(
             l_row.get("analysis_field", ""), l_row.get("dulat_field", ""), "l"
         )
@@ -3257,8 +3326,8 @@ def lint_file(
     # there is explicit reason to keep them different.
     parallel_window = 8
     parallel_occurrences: Dict[Tuple[str, ...], List[int]] = {}
-    for start in range(len(token_rows) - parallel_window + 1):
-        window = token_rows[start : start + parallel_window]
+    for start in range(len(token_stream) - parallel_window + 1):
+        window = token_stream[start : start + parallel_window]
         surfaces = tuple((row.get("surface", "") or "").strip() for row in window)
         if not all(surfaces):
             continue
@@ -3281,7 +3350,7 @@ def lint_file(
             continue
         payload_to_spans: Dict[Tuple[Tuple[str, str, str, str], ...], List[Tuple[str, str]]] = {}
         for start in starts:
-            window = token_rows[start : start + parallel_window]
+            window = token_stream[start : start + parallel_window]
             payload = tuple(
                 (
                     (row.get("analysis_field", "") or "").strip(),

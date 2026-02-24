@@ -2,6 +2,23 @@
 
 ## 2026-02-24
 
+- Added `VariantRowUnwrapper` (`pipeline/steps/variant_row_unwrapper.py`) and wired it into `pipeline/tablet_parsing.py` as the final content step before schema formatting.
+- New output policy for `out/*.tsv`: one parsing option per row (no semicolon-packed variant payloads in col3-col6), with repeated `id`+`surface` across option rows.
+- `VariantRowUnwrapper` formalized behavior:
+  - split col3-col6 semicolon variants into aligned one-option rows,
+  - preserve `col1` (`id`), `col2` (`surface`), and `col7` (`comments`) per emitted row,
+  - reuse singleton col4/col5/col6 payload across emitted rows when needed,
+  - drop duplicate emitted options with identical `(id, surface, col3, col4, col5, col6)`.
+- Added linter enforcement in `linter/lint.py`:
+  - error on packed semicolon variants in `out/*.tsv`,
+  - error on duplicate unwrapped payload rows (`id`+`surface`+`col3`-`col6`),
+  - context-sequence lint checks now collapse variant-expanded rows to one token stream entry per `(id, surface)`.
+- Added regression tests:
+  - `tests/test_variant_row_unwrapper.py`,
+  - `tests/test_linter_unwrapped_rows.py`.
+- Documented strategy in `docs/variant_row_unwrapper_pipeline.md`.
+- Applied only `VariantRowUnwrapper` over `out/KTU 1.*.tsv` (`4,778` source rows rewritten in `133` files); packed variant rows in col3-col6 are now `0`.
+
 - Added `SuffixPayloadCollapseFixer` (`pipeline/steps/suffix_payload_collapse.py`) and wired it into `pipeline/tablet_parsing.py` after suffix normalization to collapse clitic-linked DULAT payloads to host-lexeme metadata.
 - Rule: when `col3` already encodes suffix/enclitic markers (`+`, `~`, or bracketed clitic tails), strip `col4` suffix payload segments (`, -x ...`) and trim aligned suffix-function/suffix-gloss tails in `col5`/`col6`.
 - Added linter support in `linter/lint.py` for this pattern (`variant_has_suffix_payload_linked_dulat`), warning when clitic-bearing analyses still link suffix payload lexemes in `col4`.
