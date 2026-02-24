@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-02-24T21:09:51.506565+00:00",
+  "generated_at_utc": "2026-02-24T21:20:45.113467+00:00",
   "files_checked": 278,
-  "total_issues": 11645,
+  "total_issues": 11654,
   "fallback_parsed": 658,
   "by_severity": {
-    "ERROR": 6264,
-    "WARNING": 937,
+    "ERROR": 6267,
+    "WARNING": 935,
     "INFO": 1621
   },
   "by_problem_type": [
@@ -56,18 +56,18 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "TODO/uncertain marker in comment",
-      "count": 94
+      "problem_type": "Suffix form without '+'",
+      "count": 90
     },
     {
       "severity": "WARNING",
-      "problem_type": "Suffix form without '+'",
+      "problem_type": "TODO/uncertain marker in comment",
       "count": 90
     },
     {
       "severity": "ERROR",
       "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 86
+      "count": 87
     },
     {
       "severity": "ERROR",
@@ -107,7 +107,7 @@
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 34
+      "count": 35
     },
     {
       "severity": "WARNING",
@@ -166,6 +166,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)",
+      "count": 8
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "lḥm Lexeme parse did not match DULAT; matched by surface form",
       "count": 8
     },
@@ -188,11 +193,6 @@
       "severity": "WARNING",
       "problem_type": "nši Lexeme parse did not match DULAT; matched by surface form",
       "count": 7
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)",
-      "count": 6
     },
     {
       "severity": "WARNING",
@@ -278,6 +278,11 @@
       "severity": "WARNING",
       "problem_type": "ḫbtkm Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Noun/adjective lacks '/' ending",
+      "count": 3
     },
     {
       "severity": "WARNING",
@@ -378,11 +383,6 @@
       "severity": "WARNING",
       "problem_type": "ḫbtkn Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Noun/adjective lacks '/' ending",
-      "count": 2
     },
     {
       "severity": "ERROR",

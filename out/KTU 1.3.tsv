@@ -1,9 +1,8 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.3 I:1						
 9502	al	al(I)	ảl (I)	neg. functor	no	
-9502	al	al(II)	ảl (II)	pos. functor	surely	
 9503	tġl	!t!ġl(y[	/ġ-l-y/	vb	to lose the proper aspect, vitality	looks like a verb III-y
-9504	bdxxxxx	bdxxxxx/	bd (I)	n. m.	song, dirge	
+9504	bdxxxxx	bdxxxxx	bd (I)	n. m.	song, dirge	
 # KTU 1.3 I:2						
 9505	p	p(I)	p (I)	conj. functor	and	
 9505	p	p(III)/	p (III)	n. m.	mouth	
@@ -16,7 +15,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9509	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	TCS/UNP: “Mighty Baʿlu” (name usage) before zbl bʕl arṣ
 9510	sid	s(ʔ&id[/	/s-ʔ-d/	vb	to support/comfort	the form is an active participle in nominal use
 9511	zbl	zbl/	zbl (I)	n. m.	prince	
-9512	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	TCS/UNP title formula zbl bʕl arṣ = “Prince, lord of the earth”
+9512	bˤl	bˤl(II)/	bʕl (II)	n. m.	lord/owner	TCS/UNP title formula zbl bʕl arṣ = “Prince, lord of the earth”
 # KTU 1.3 I:4						
 9513	arṣ	arṣ/	ảrṣ	n. f.	earth/ground/underworld	
 9514	qm	qm[/	/q-m/	vb	to stand up	most probably active participle
@@ -30,8 +29,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9519	d	&d	?	?	?	Merge with previous word.
 9520	ṯd	ṯd/	ṯd	n. m.	breast, bosom, chest, teat, udder	
 9521	l	l(I)	l (I)	prep.	to	
-9521	l	l(II)	l (II)	adv.	no	
-9521	l	l(III)	l (III)	functor	certainly	
 9522	pnwh	pn&w(m/+h	pnm	n. m. pl. tant.	face, countenance	
 # KTU 1.3 I:7						
 9523	b	b	b	prep.	in	
@@ -67,11 +64,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9545	ks	ks(I)/	ks (I)	n. m.	cup, goblet	
 9546	qdš	qdš(I)/	qdš (I)	adj. m.	holy	
 # KTU 1.3 I:14						
-9547	l	l(I)	l (I)	prep.	to	l (III) for precative
 9547	l	l(II)	l (II)	adv.	no	l (III) for precative
 9547	l	l(III)	l (III)	functor	certainly	l (III) for precative
 9548	tpphnh	!t!p&ph(y[n+h	/p-h-y/	vb	to see, espy	are there 2 p's? probably 3fem plur
-9549	aṯt	aṯ(t/t	ảṯt	n. f.	woman	looks like plur
+9549	aṯt	aṯ(t/t=	ảṯt	n. f.	woman	looks like plur
 9550	krpn	krpn/	krpn	n. m.	cup, goblet	
 # KTU 1.3 I:15						
 9551	l	l(I)	l (I)	prep.	to	or (III) for precative
@@ -171,7 +167,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9621	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 9622	tm	!t!m	m(h)	pers. pn.	what?	
 # KTU 1.3 II:6						
-9623	tḫṣ	?	?	?	?	is one word with previous: tmtḫṣ Verb Gt 3fs. Repair!; DULAT: NOT FOUND
+9623	tḫṣ	]t]ḫṣ[				is one word with previous: tmtḫṣ Verb Gt 3fs. Repair!; DULAT: NOT FOUND
 9624	b	b	b	prep.	in	
 9625	ˤmq	ˤmq(I)/	ʕmq (I)	n. m.	valley	
 9626	tḫtṣb	!t!ḫ]t]ṣb[	/ḫ-ṣ-b/	vb	to fight	
@@ -330,7 +326,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9727	tġll	!t!ġll[:d	/ġ-l-l/	vb	to insert, plunge	
 9728	b	b	b	prep.	in	
 9729	dm	dm(II)/	dm (II)	n. m.	blood	
-9729	dm	dm(I)	dm (I)	functor	since	
 # KTU 1.3 II:28						
 9730	ḏxxmr	ḏ&x&xmr(I)/	ḏmr (I)	n. m.	guardian, warrior	
 9731	ḥlqm	ḥlq/m	ḥlq	n. m.	part, limb	
@@ -352,7 +347,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9744	b	b	b	prep.	in	
 9745	bt	bt(II)/	bt (II)	n. m.	house, building	
 9746	dm	dm(II)/	dm (II)	n. m.	blood	
-9746	dm	dm(I)	dm (I)	functor	since	
 9747	ḏmr	ḏmr(I)/	ḏmr (I)	n. m.	guardian, warrior	
 9748	yṣq	!y!(yṣq[:pass	/y-ṣ-q/	vb	to pour	
 9749	šmn	šmn(I)/	šmn (I)	n. m.	oil	
@@ -375,7 +369,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9762	ydh	yd(I)/+h=	yd (I)	n. f.	hand	
 9763	b	b	b	prep.	in	
 9764	dm	dm(II)/	dm (II)	n. m.	blood	
-9764	dm	dm(I)	dm (I)	functor	since	
 9765	ḏmr	ḏmr(I)/	ḏmr (I)	n. m.	guardian, warrior	
 # KTU 1.3 II:35						
 9766	uṣbˤth	uṣbˤ(t/t=+h=	ủṣbʕ	n. f.	finger	
@@ -386,20 +379,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9770	ṯˤr	!!ṯˤr[/	/ṯ-ʕ-r/	vb	to prepare	
 9771	ksat	ks(u&a(t/t=	ks/śủ	n. f.	seat, throne, chair	
 9772	l	l(I)	l (I)	prep.	to	
-9772	l	l(II)	l (II)	adv.	no	
-9772	l	l(III)	l (III)	functor	certainly	
 9773	ksat	ks(u&a(t/t=	ks/śủ	n. f.	seat, throne, chair	
 9774	ṯlḥnt	ṯlḥn/t=	ṯlḥn	n. m.	table	
 9775	l	l(I)	l (I)	prep.	to	
-9775	l	l(II)	l (II)	adv.	no	
-9775	l	l(III)	l (III)	functor	certainly	
 # KTU 1.3 II:37						
 9776	ṯlḥ<t>	ṯlḥ(n&t/	ṯlḥn	n. m.	table	instead of <t>
 9777	hdmm	hdm/m	hdm	n. m.	footstool	
 9778	tṯar	!t!ṯar[	ṯảr	n. m.	surety, protection	
 9779	l	l(I)	l (I)	prep.	to	
-9779	l	l(II)	l (II)	adv.	no	
-9779	l	l(III)	l (III)	functor	certainly	
 9780	hdmm	hdm/m	hdm	n. m.	footstool	
 # KTU 1.3 II:38						
 9781	tḥspn	!t!ḥsp[~n	/ḥ-s-p/	vb	to draw, collect water	G
@@ -443,13 +430,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.3 III:5						
 9811	rimt	rim(t/t	rỉmt	n. f.	zither	
 9812	l	l(I)	l (I)	prep.	to	
-9812	l	l(II)	l (II)	adv.	no	
-9812	l	l(III)	l (III)	functor	certainly	
 9813	irth	ir(t/t+h=	ỉrt	n. f.	breast	
 9814	tšr	!t!šr(I)[	/š-r/ (I)	vb	to sing	
 9815	l	l(I)	l (I)	prep.	to	
-9815	l	l(II)	l (II)	adv.	no	
-9815	l	l(III)	l (III)	functor	certainly	
 9816	dd	dd(I)/	dd (I)	adj. m. or n. m.	love	
 # KTU 1.3 III:6						
 9817	aliyn	aliyn/	ảlỉyn	adj. m.	The Very / Most Powerful	
@@ -479,8 +462,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9833	w	w	w	conj.	and	
 9834	ˤrbn	!!ˤrb[~n	/ʕ-r-b/ (I)	vb	to enter	lengthened imperative
 9835	l	l(I)	l (I)	prep.	to	
-9835	l	l(II)	l (II)	adv.	no	
-9835	l	l(III)	l (III)	functor	certainly	
 9836	pˤn	pˤn/	pʕn	n. f.	foot	
 9837	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 9838	hbr	!!hbr[	/h-b-r/	vb	to bow	
@@ -495,15 +476,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9845	w	w	w	conj.	and	
 9846	rgm	!!rgm[	/r-g-m/	vb	to say, tell, announce, communicate, inform	
 9847	l	l(I)	l (I)	prep.	to	
-9847	l	l(II)	l (II)	adv.	no	
-9847	l	l(III)	l (III)	functor	certainly	
 9848	btlt	btl(t/t	btlt	n. f.	virgin	
 # KTU 1.3 III:12						
 9849	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 9850	ṯny	!!ṯny[	/ṯ-n-y/	vb	to repeat, reiterate	
 9851	l	l(I)	l (I)	prep.	to	
-9851	l	l(II)	l (II)	adv.	no	
-9851	l	l(III)	l (III)	functor	certainly	
 9852	ymmt	ymm(t/t	ymmt	→	dove	
 # KTU 1.3 III:13						
 9853	limm	lim(I)/m	lỉm (I)	n. m.	people, clan	
@@ -528,15 +505,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9869	sk	!!(nsk[	/n-s-k/	vb	to pour	
 9870	šlm	šlm(I)/	šlm (I)	n. m.	peace	
 9871	l	l(I)	l (I)	prep.	to	
-9871	l	l(II)	l (II)	adv.	no	
-9871	l	l(III)	l (III)	functor	certainly	
 9872	kbd	kbd(I)/	kbd (I)	n.	liver	
 # KTU 1.3 III:17						
 9873	arṣ	arṣ/	ảrṣ	n. f.	earth, ground	
 9874	arbdd	arbdd/	ảrbdd	n. m.	rest, tranquillity	
 9875	l	l(I)	l (I)	prep.	to	
-9875	l	l(II)	l (II)	adv.	no	
-9875	l	l(III)	l (III)	functor	certainly	
 9876	kbd	kbd(I)/	kbd (I)	n.	liver	
 # KTU 1.3 III:18						
 9877	šdm	šd(I)/m	šd (I)	n. m.	open field	
@@ -551,8 +524,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.3 III:20						
 9885	twtḥ	!t!w]t]ḥ(y[	/w-ḥ-y/	vb	to hasten	lex: wḥy Gt, waw seems to be doubled
 9886	išdk	išd/+k	ỉšd	n. m.	leg	
-9887	dm	dm(II)/	dm (II)	n. m.	blood	
-9887	dm	dm(I)	dm (I)	functor	since	
+9887	dm	d~m	dm (I)	functor	since	
 9888	rgm	rgm/	rgm	n. m.	word, expression, saying	
 # KTU 1.3 III:21						
 9889	iṯ	iṯ(I)/	ỉṯ (I)	n. m.	presence, existence	
@@ -586,16 +558,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9910	abn	!a!bn[	/b-n/	vb	to understand	this is a noun although Gabrini: 'I undestand of lightening' !a!bn[
 9911	brq	brq(I)/	brq (I)	n. m.	ray, lightning	
 9912	d	d	d	det. or rel. functor	the one(s) of	
-9913	l	l(I)	l (I)	prep.	to	
 9913	l	l(II)	l (II)	adv.	no	
-9913	l	l(III)	l (III)	functor	certainly	
 9914	tdˤ	!t!(ydˤ(I)[	/y-d-ʕ/ (I)	vb	to know, to recognise, distinguish, consider	
 9915	šmm	šm(m(I)/m	šmm (I)	n. m. pl. tant.	heavens, sky	
 # KTU 1.3 III:27						
 9916	rgm	rgm/	rgm	n. m.	word, expression, saying	
-9917	l	l(I)	l (I)	prep.	to	
 9917	l	l(II)	l (II)	adv.	no	
-9917	l	l(III)	l (III)	functor	certainly	
 9918	tdˤ	!t!(ydˤ(I)[	/y-d-ʕ/ (I)	vb	to know, to recognise, distinguish, consider	
 9919	nšm	nš(m/m	nšm	n. m. pl. tant.	people, men	
 9920	wl	?	?	?	?	DULAT: NOT FOUND
@@ -665,41 +633,31 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9971	m	m	?	?	?	MERGE WITH NEXT WORD?? or the previous one
 9972	mn	mn(I)	mn (I)	interr. pn./indef. pn.	what?/the one who	
 9973	ib	ib(I)/	ỉb (I)	n. m.	enemy	
-9974	ypˤ	!y!(ypˤ[	/y-p-ʕ/	vb	to go up, rise	
+9974	ypˤ	ypˤ[	/y-p-ʕ/	vb	to go up, rise	
 9975	l	l(I)	l (I)	prep.	to	
-9975	l	l(II)	l (II)	adv.	no	
-9975	l	l(III)	l (III)	functor	certainly	
 9976	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	line 37 smith p 204
 # KTU 1.3 III:38						
 9977	ṣrt	ṣr(t/t	ṣrt	n. f.	enmity	
 9978	l	l(I)	l (I)	prep.	to	
-9978	l	l(II)	l (II)	adv.	no	
-9978	l	l(III)	l (III)	functor	certainly	
 9979	rkb	rkb(I)/	rkb (I)	n. m.	charioteer	
 9979	rkb	rkb[/	/r-k-b/	vb	to mount (especially a chariot)	
 9980	ˤrpt	ˤrp(t/t=	ʕrpt	n. f.	cloud(s)	
 9981	l	l(I)	l (I)	prep.	to	
-9981	l	l(II)	l (II)	adv.	no	
-9981	l	l(III)	l (III)	functor	certainly	
 9982	mḫšt	mḫš[t	/m-ḫ-š/	vb	to crush	
 # KTU 1.3 III:39						
 9983	mdd	mdd(I)/	mdd (I)	n. m.	beloved, friend	
 9984	il	il(I)/	ỉl (I)	DN	ʾIlu/Ilu/El	
 9985	ym	ym(II)/	ym (II)	n. m.	sea	
-9986	l	l(I)	l (I)	prep.	to	
-9986	l	l(II)	l (II)	adv.	no	
 9986	l	l(III)	l (III)	functor	certainly	
 9987	klt	kl(l[t:d	/k-l-l/	vb	to complete, finish	
 9988	nhr	nhr/	nhr	n. m.	river	
 9989	il	il(I)/	ỉl (I)	DN	ʾIlu/Ilu/El	
 # KTU 1.3 III:40						
 9990	rbm	rb(I)/~m(II)	rb (I)	adj. m.	great, large	adverbial m
-9991	l	l(I)	l (I)	prep.	to	
-9991	l	l(II)	l (II)	adv.	no	
 9991	l	l(III)	l (III)	functor	certainly	
 9992	ištbm	!(ʔ&i!š]t]bm[	/š-b-m/	vb	to muzzle	
 9993	tnn	tnn(I)/	tnn (I)	DN	“dragon” ym’s primordial ally or double	
-9994	ištmdh	?	?	?	?	Hutton: ṣ-m-d with assimilation; DULAT: NOT FOUND
+9994	ištmdh	!(ʔ&i!š]t]md[+h	?	?	?	Hutton: ṣ-m-d with assimilation; DULAT: NOT FOUND
 # KTU 1.3 III:41						
 9995	mḫšt	mḫš[t	/m-ḫ-š/	vb	to crush	
 9996	bṯn	bṯn/	bṯn	n. m.	serpent, snake, dragon	
@@ -721,11 +679,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10009	ˤtk	ˤtk(I)/	ʕtk (I)	DN	a monster (“the Savage One”?)	
 # KTU 1.3 III:45						
 10010	mḫšt	mḫš[t	/m-ḫ-š/	vb	to crush	
-10011	k	+k	-k (I)			MERGE WITH NEXT WORD: 'DOG'
-10011	k	~k	-k (II)			MERGE WITH NEXT WORD: 'DOG'
-10011	k	k(III)	k (III)	Subordinating or completive functor	when	MERGE WITH NEXT WORD: 'DOG'
-10011	k	k(I)	k (I)	prep.	like	MERGE WITH NEXT WORD: 'DOG'
-10011	k	k(II)	k (II)	emph. functor	yes	MERGE WITH NEXT WORD: 'DOG'
+10011	k	&k	?	?	?	MERGE WITH NEXT WORD: 'DOG'
 10012	lbt	(klb(I)(t/t	klb (I)	n. m.	dog	
 10013	ilm	il(I)/~m (I)	ỉl (I)	n. m.	god	SUFFIX?
 10014	išt	iš(t/t	ỉšt	n. f.	fire	
@@ -746,29 +700,19 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10026	mrym	mrym/	mrym	n. m.	height	
 10027	ṣpn	ṣpn/	ṣpn	TN	Ṣapānu/Zaphon/the mountain dwelling of bʕl deified	
 10028	mšṣṣ	!m!]š](nṣṣ/[	/n-ṣ-ṣ/	vb	to take flight, fly	participle of Š
-10029	k	+k	-k (I)			
-10029	k	~k	-k (II)			
-10029	k	k(III)	k (III)	Subordinating or completive functor	when	
-10029	k	k(I)	k (I)	prep.	like	
-10029	k	k(II)	k (II)	emph. functor	yes	
+10029	k	k(I)	k (I)	prep.	like/as	
 10030	ˤṣr	ˤṣr(I)/	ʕṣr (I)	n. f.	bird	
 # KTU 1.3 IV:2						
 10031	u	&u	ủ	conj.	or	MERGE WITH NEXT parsing udn/+h
 10032	dnh	(udn(II)/+h	ủdn (I)	n. m.	ear	
 10033	gršh	grš[/+h	/g-r-š/	vb	to eject, drive out, evict, cast out	G participle; or :d SC
 10034	l	l(I)	l (I)	prep.	to	
-10034	l	l(II)	l (II)	adv.	no	
-10034	l	l(III)	l (III)	functor	certainly	
 10035	ksi	ks(u&/i	ks/śủ	n. f.	seat, throne, chair	case ending
 10036	mlkh	mlk(II)/+h	mlk (II)	n. m.	kingdom	
 # KTU 1.3 IV:3						
 10037	l	l(I)	l (I)	prep.	to	
-10037	l	l(II)	l (II)	adv.	no	
-10037	l	l(III)	l (III)	functor	certainly	
 10038	nḫt	nḫ(t/t	nḫt	n. f.	divan	
 10039	l	l(I)	l (I)	prep.	to	
-10039	l	l(II)	l (II)	adv.	no	
-10039	l	l(III)	l (III)	functor	certainly	
 10040	kḥṯ	kḥṯ/	kḥṯ	n. m.	throne	
 10041	drkth	drk(t/t/+h	drkt	n. f.	rule, power	
 # KTU 1.3 IV:4						
@@ -776,13 +720,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10043	ib	ib(I)/	ỉb (I)	n. m.	enemy	
 10044	ypˤ	!y!(ypˤ[	/y-p-ʕ/	vb	to go up, rise	most probably PC for future / interrogative
 10045	l	l(I)	l (I)	prep.	to	
-10045	l	l(II)	l (II)	adv.	no	
-10045	l	l(III)	l (III)	functor	certainly	
 10046	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 10047	ṣrt	ṣr(t/t	ṣrt	n. f.	enmity	
 10048	l	l(I)	l (I)	prep.	to	
-10048	l	l(II)	l (II)	adv.	no	
-10048	l	l(III)	l (III)	functor	certainly	
 10049	rkb	rkb(I)/	rkb (I)	n. m.	charioteer	act. ptc. < /r-k-b/
 10049	rkb	rkb[/	/r-k-b/	vb	to mount (especially a chariot)	act. ptc. < /r-k-b/
 10050	ˤrpt	ˤrp(t/t=	ʕrpt	n. f.	cloud(s)	
@@ -791,19 +731,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10052	ġlmm	ġlm/m	ġlm	n. m.	boy, youth	
 10053	yˤnyn	!y!ˤn(y[n	/ʕ-n-y/ (I)	vb	to answer, reply, say	
 10054	l	l(I)	l (I)	prep.	to	
-10054	l	l(II)	l (II)	adv.	no	
-10054	l	l(III)	l (III)	functor	certainly	
 10055	ib	ib(I)/	ỉb (I)	n. m.	enemy	
+10056	ypˤ	ypˤ[	/y-p-ʕ/	vb	to go up/rise	
 10056	ypˤ	!y!(ypˤ[	/y-p-ʕ/	vb	to go up/rise	
 # KTU 1.3 IV:6						
 10057	l	l(I)	l (I)	prep.	to	
-10057	l	l(II)	l (II)	adv.	no	
-10057	l	l(III)	l (III)	functor	certainly	
 10058	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 10059	ṣrt	ṣr(t/t	ṣrt	n. f.	enmity	
 10060	l	l(I)	l (I)	prep.	to	
-10060	l	l(II)	l (II)	adv.	no	
-10060	l	l(III)	l (III)	functor	certainly	
 10061	rkb	rkb(I)/	rkb (I)	n. m.	charioteer	
 10061	rkb	rkb[/	/r-k-b/	vb	to mount (especially a chariot)	
 10062	ˤrpt	ˤrp(t/t=	ʕrpt	n. f.	cloud(s)	
@@ -828,14 +763,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10078	šlm	šlm(I)/	šlm (I)	n. m.	peace	
 # KTU 1.3 IV:10						
 10079	l	l(I)	l (I)	prep.	to	
-10079	l	l(II)	l (II)	adv.	no	
-10079	l	l(III)	l (III)	functor	certainly	
 10080	kbd	kbd(I)/	kbd (I)	n.	liver	
 10081	arṣ	arṣ/	ảrṣ	n. f.	earth, ground	
 10082	arbdd	arbdd/	ảrbdd	n. m.	rest, tranquillity	
 10083	l	l(I)	l (I)	prep.	to	
-10083	l	l(II)	l (II)	adv.	no	
-10083	l	l(III)	l (III)	functor	certainly	
 10084	kbd	kbd(I)/	kbd (I)	n.	liver	
 10085	šdm	šd(I)/m	šd (I)	n. m.	open field	
 # KTU 1.3 IV:11						
@@ -852,8 +783,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10093	twtḥ	!t!w]t]ḥ(y[	/w-ḥ-y/	vb	to hasten	
 10094	išdk	išd/+k	ỉšd	n. m.	leg	
 # KTU 1.3 IV:13						
-10095	dm	dm(II)/	dm (II)	n. m.	blood	
-10095	dm	dm(I)	dm (I)	functor	since	
+10095	dm	d~m(I)	dm (I)	functor	since	
 10096	rgm	rgm/	rgm	n. m.	word, expression, saying	
 10097	iṯ	iṯ(I)/	ỉṯ (I)	n. m.	presence, existence	I think this is a verb it(y[
 10098	ly	l(I)+y	l (I)	prep.	to, towards, up to	
