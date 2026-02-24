@@ -70,6 +70,16 @@
   - context rule collapses `l` + `kbd` pairs (when `kbd(I)` is available) to single rows: `l(I)` and `kbd(I)/` with `POS=prep.` and `gloss=within`,
   - added linter parity warning for non-canonical `l kbd` payloads and regression tests for parser/linter behavior,
   - documented strategy in `docs/l_kbd_compound_prep_pipeline.md`.
+- Added two additional high-frequency `l`/`k` bigram context refinements:
+  - `LBodyCompoundPrepDisambiguator` (`pipeline/steps/l_body_compound_prep.py`) for `l + pˤn` and `l + ẓr` compound prepositions, collapsing to canonical single-row payloads with prepositional POS/gloss;
+  - `KFunctorBigramContextDisambiguator` (`pipeline/steps/k_functor_bigram_context.py`) forcing `k(III)` in selected verb-leading bigrams (`yraš`, `tld`, `yṣḥ`, `yiḫd`, `ygˤr`) when the second token is verbal.
+- Added shared config files for these context sets:
+  - `pipeline/config/l_body_compound_prep_rules.py`,
+  - `pipeline/config/k_functor_bigram_surfaces.py`.
+- Added linter parity warnings for both new context layers and corresponding regression tests.
+- Documented both strategies:
+  - `docs/l_body_compound_prep_pipeline.md`,
+  - `docs/k_functor_bigram_context_pipeline.md`.
 
 - Added `SuffixPayloadCollapseFixer` (`pipeline/steps/suffix_payload_collapse.py`) and wired it into `pipeline/tablet_parsing.py` after suffix normalization to collapse clitic-linked DULAT payloads to host-lexeme metadata.
 - Rule: when `col3` already encodes suffix/enclitic markers (`+`, `~`, or bracketed clitic tails), strip `col4` suffix payload segments (`, -x ...`) and trim aligned suffix-function/suffix-gloss tails in `col5`/`col6`.

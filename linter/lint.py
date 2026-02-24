@@ -15,6 +15,8 @@ if __package__ in {None, ""}:
     if str(_repo_root) not in sys.path:
         sys.path.insert(0, str(_repo_root))
 
+from pipeline.config.k_functor_bigram_surfaces import K_FUNCTOR_VERB_BIGRAM_SURFACES
+from pipeline.config.l_body_compound_prep_rules import L_BODY_COMPOUND_PREP_RULES
 from pipeline.config.l_functor_vocative_refs import expected_l_homonym_for_ref
 from pipeline.config.l_negation_exception_refs import (
     extract_separator_ref,
@@ -1418,6 +1420,15 @@ def row_is_l_homonym_variant(row: Dict[str, str], homonym: str) -> bool:
     )
 
 
+def row_is_k_homonym_variant(row: Dict[str, str], homonym: str) -> bool:
+    """True when row is the exact `k(<homonym>)` reading."""
+    return (
+        (row.get("surface", "") or "").strip() == "k"
+        and (row.get("analysis_field", "") or "").strip() == f"k({homonym})"
+        and (row.get("dulat_field", "") or "").strip() == f"k ({homonym})"
+    )
+
+
 def row_is_kbd_i_variant(row: Dict[str, str]) -> bool:
     """True when row is the exact `kbd(I)` lexical reading."""
     return (
@@ -1436,6 +1447,20 @@ def row_is_kbd_compound_prep_variant(row: Dict[str, str]) -> bool:
     )
 
 
+def row_is_l_body_compound_variant(row: Dict[str, str], second_surface: str) -> bool:
+    """True when row matches canonical compound-preposition payload for `l + <surface>`."""
+    rule = L_BODY_COMPOUND_PREP_RULES.get(second_surface)
+    if rule is None:
+        return False
+    return (
+        (row.get("surface", "") or "").strip() == second_surface
+        and (row.get("analysis_field", "") or "").strip() == rule.second_analysis
+        and (row.get("dulat_field", "") or "").strip() == rule.second_dulat
+        and (row.get("pos_field", "") or "").strip() == rule.second_pos
+        and (row.get("gloss_field", "") or "").strip() == rule.second_gloss
+    )
+
+
 L_NEGATION_VERB_CONTEXT_MSG = "l(II) ('no/not') should be used only before verbal forms"
 L_NEGATION_FORCED_EXCEPTION_MSG = "DULAT exception context requires a single l(II) reading"
 L_FUNCTOR_VOCATIVE_FORCED_MSG = "DULAT context requires a single l({homonym}) reading"
@@ -1443,6 +1468,11 @@ L_KBD_COMPOUND_PREP_MSG = (
     "Compound preposition `l kbd` should use single readings: l(I) and "
     "kbd(I) with POS `prep.` and gloss `within`"
 )
+L_BODY_COMPOUND_PREP_MSG = (
+    "Compound preposition `l {surface}` should use single readings: l(I) and "
+    "{analysis} with POS `prep.` and gloss `{gloss}`"
+)
+K_FUNCTOR_BIGRAM_MSG = "Formula bigram `k {surface}` should use a single k(III) reading"
 
 
 # -----------------------------
@@ -3560,6 +3590,118 @@ def lint_file(
                 "kbd",
                 analysis_field,
                 L_KBD_COMPOUND_PREP_MSG,
+            )
+        )
+
+    # Compound preposition usage: `l(I) + <body-part>` where `<body-part>`
+    # carries prepositional function.
+    for idx, group in enumerate(token_groups):
+        if (group.get("surface", "") or "").strip() != "l":
+            continue
+        next_group = token_groups[idx + 1] if idx + 1 < len(token_groups) else None
+        if next_group is None:
+            continue
+        next_surface = (next_group.get("surface", "") or "").strip()
+        body_rule = L_BODY_COMPOUND_PREP_RULES.get(next_surface)
+        if body_rule is None:
+            continue
+
+        group_rows = group.get("rows", [])
+        next_group_rows = next_group.get("rows", [])
+        if not isinstance(group_rows, list) or not group_rows:
+            continue
+        if not isinstance(next_group_rows, list) or not next_group_rows:
+            continue
+
+        has_second_target = any(
+            row_is_l_body_compound_variant(row, second_surface=next_surface)
+            or (
+                (row.get("surface", "") or "").strip() == next_surface
+                and (row.get("analysis_field", "") or "").strip() == body_rule.second_analysis
+                and (row.get("dulat_field", "") or "").strip() == body_rule.second_dulat
+            )
+            for row in next_group_rows
+        )
+        if not has_second_target:
+            continue
+
+        l_ok = len(group_rows) == 1 and row_is_l_homonym_variant(group_rows[0], homonym="I")
+        second_ok = len(next_group_rows) == 1 and row_is_l_body_compound_variant(
+            next_group_rows[0], second_surface=next_surface
+        )
+        if l_ok and second_ok:
+            continue
+
+        anchor = next(
+            (
+                row
+                for row in next_group_rows
+                if (row.get("analysis_field", "") or "").strip() == body_rule.second_analysis
+                and (row.get("dulat_field", "") or "").strip() == body_rule.second_dulat
+            ),
+            next_group_rows[0],
+        )
+        line_no = int((anchor.get("line_no", "0") or "0"))
+        line_id = anchor.get("line_id", "")
+        analysis_field = anchor.get("analysis_field", "")
+        issues.append(
+            Issue(
+                "warning",
+                str(path),
+                line_no,
+                line_id,
+                next_surface,
+                analysis_field,
+                L_BODY_COMPOUND_PREP_MSG.format(
+                    surface=next_surface,
+                    analysis=body_rule.second_analysis,
+                    gloss=body_rule.second_gloss,
+                ),
+            )
+        )
+
+    # Force `k(III)` in selected high-frequency bigrams with verbal second token.
+    for idx, group in enumerate(token_groups):
+        if (group.get("surface", "") or "").strip() != "k":
+            continue
+        next_group = token_groups[idx + 1] if idx + 1 < len(token_groups) else None
+        if next_group is None:
+            continue
+        next_surface = (next_group.get("surface", "") or "").strip()
+        if next_surface not in K_FUNCTOR_VERB_BIGRAM_SURFACES:
+            continue
+
+        group_rows = group.get("rows", [])
+        next_group_rows = next_group.get("rows", [])
+        if not isinstance(group_rows, list) or not group_rows:
+            continue
+        if not isinstance(next_group_rows, list) or not next_group_rows:
+            continue
+        next_has_verb = any(
+            "vb" in ((row.get("pos_field", "") or "").strip()) for row in next_group_rows
+        )
+        if not next_has_verb:
+            continue
+
+        if len(group_rows) == 1 and row_is_k_homonym_variant(group_rows[0], homonym="III"):
+            continue
+
+        anchor = next(
+            (row for row in group_rows if row_is_k_homonym_variant(row, homonym="III")),
+            group_rows[0],
+        )
+        line_no = int((anchor.get("line_no", "0") or "0"))
+        line_id = anchor.get("line_id", "")
+        analysis_field = anchor.get("analysis_field", "")
+        issues.append(
+            Issue(
+                "warning",
+                str(path),
+                line_no,
+                line_id,
+                "k",
+                analysis_field,
+                K_FUNCTOR_BIGRAM_MSG.format(surface=next_surface),
             )
         )
 

@@ -20,8 +20,10 @@ from pipeline.steps.formula_bigram import FormulaBigramFixer
 from pipeline.steps.formula_trigram import FormulaTrigramFixer
 from pipeline.steps.generic_parsing_override import GenericParsingOverrideFixer
 from pipeline.steps.iii_aleph_case_fixer import IIIAlephCaseFixer
+from pipeline.steps.k_functor_bigram_context import KFunctorBigramContextDisambiguator
 from pipeline.steps.known_ambiguities import KnownAmbiguityExpander
 from pipeline.steps.ktu1_family_homonym_pruner import Ktu1FamilyHomonymPruner
+from pipeline.steps.l_body_compound_prep import LBodyCompoundPrepDisambiguator
 from pipeline.steps.l_functor_vocative_context import LFunctorVocativeContextDisambiguator
 from pipeline.steps.l_kbd_compound_prep import LKbdCompoundPrepDisambiguator
 from pipeline.steps.l_negation_verb_context import LNegationVerbContextPruner
@@ -104,6 +106,8 @@ class TabletParsingPipeline:
             LNegationVerbContextPruner(),
             LFunctorVocativeContextDisambiguator(),
             LKbdCompoundPrepDisambiguator(),
+            LBodyCompoundPrepDisambiguator(),
+            KFunctorBigramContextDisambiguator(),
             YdkContextDisambiguator(),
             # Keep schema pass last so any content-changing steps still end in
             # strict 7-column/quote-safe TSV for GitHub rendering.
