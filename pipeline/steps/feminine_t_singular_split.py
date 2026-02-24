@@ -13,9 +13,17 @@ from pipeline.steps.onomastic_overrides import OnomasticOverrideStore
 
 _ONOMASTIC_POS_TAGS: Sequence[str] = ("DN", "PN", "TN", "GN", "MN")
 _UNSPLIT_FEM_T_RE = re.compile(r"^(?P<stem>.+?)t(?P<hom>\([IVX]+\))?/$")
-_SPLIT_FEM_T_RE = re.compile(r"^(?P<stem>.+?)(?P<hom>\([IVX]+\))?/t$")
+_SPLIT_FEM_T_RE = re.compile(r"^(?P<stem>.+?)(?P<hom>\([IVX]+\))?/t(?P<plural_eq>=?)$")
 _TOKEN_RE = re.compile(r"^(.*?)(?:\s*\(([IVX]+)\))?$")
 _LEMMA_LETTER_RE = re.compile(r"[^A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]")
+_PL_TANT_RE = re.compile(
+    r"(?:\bpl\.?\s*tant\b|\bplur(?:ale)?\.?\s*tant(?:um|u)?\b)\.?\??",
+    flags=re.IGNORECASE,
+)
+_FORCED_FEMININE_PLURAL_T_EQUAL_KEYS: set[tuple[str, str]] = {
+    ("hmlt", ""),
+    ("ṯnt", "II"),
+}
 
 
 def _split_semicolon(value: str) -> list[str]:
@@ -27,7 +35,7 @@ def _split_comma(value: str) -> list[str]:
 
 
 class FeminineTSingularSplitFixer(RefinementStep):
-    """Apply feminine singular /t split to noun-like analyses."""
+    """Normalize feminine /t split for noun-like analyses (/t and /t=)."""
 
     def __init__(
         self,
@@ -97,7 +105,7 @@ class FeminineTSingularSplitFixer(RefinementStep):
             return value
         if "[" in value:
             return value
-        if value.endswith(("/m", "/m=", "/t=")):
+        if value.endswith(("/m", "/m=")):
             return value
 
         if not self._is_feminine_context(pos_slot=pos_slot, dulat_slot=dulat_slot):
@@ -105,10 +113,13 @@ class FeminineTSingularSplitFixer(RefinementStep):
 
         lemma_has_final_t = _declared_lemma_has_final_t(dulat_slot)
         declared_homonym = _declared_homonym(dulat_slot)
+        is_pos_pl_tant = _has_plurale_tantum_marker(pos_slot) or _is_forced_plural_t_token(
+            dulat_slot
+        )
 
         unsplit_match = _UNSPLIT_FEM_T_RE.match(value)
         if unsplit_match:
-            if self._is_plural_dulat_token(dulat_slot, surface=surface):
+            if self._is_plural_dulat_token(dulat_slot, surface=surface) and not is_pos_pl_tant:
                 return value
             stem = unsplit_match.group("stem")
             homonym = unsplit_match.group("hom") or declared_homonym
@@ -116,6 +127,7 @@ class FeminineTSingularSplitFixer(RefinementStep):
                 stem=stem,
                 homonym=homonym,
                 lexical_t=lemma_has_final_t,
+                plural=is_pos_pl_tant,
             )
             return _with_surface_terminal_m(rewritten, surface=surface)
 
@@ -127,10 +139,12 @@ class FeminineTSingularSplitFixer(RefinementStep):
 
         stem = split_match.group("stem")
         homonym = split_match.group("hom") or declared_homonym
+        split_is_t_equal = bool(split_match.group("plural_eq"))
         rewritten = _render_feminine_t_split(
             stem=stem,
             homonym=homonym,
             lexical_t=True,
+            plural=split_is_t_equal or is_pos_pl_tant,
         )
         return _with_surface_terminal_m(rewritten, surface=surface)
 
@@ -148,8 +162,6 @@ class FeminineTSingularSplitFixer(RefinementStep):
             return False
 
         upper = pos_text.upper()
-        if "PL. TANT" in upper:
-            return False
         if "N. F." in upper or "ADJ. F." in upper:
             return True
 
@@ -167,12 +179,35 @@ class FeminineTSingularSplitFixer(RefinementStep):
         return normalized in self._feminine_onomastic_tokens
 
 
-def _render_feminine_t_split(stem: str, homonym: str, lexical_t: bool) -> str:
+def _has_plurale_tantum_marker(value: str) -> bool:
+    return _PL_TANT_RE.search(value or "") is not None
+
+
+def _is_forced_plural_t_token(dulat_slot: str) -> bool:
+    token = (dulat_slot or "").strip()
+    if not token or token == "?" or token.startswith("/"):
+        return False
+    if "," in token:
+        token = token.split(",", 1)[0].strip()
+    match = _TOKEN_RE.match(token)
+    lemma = (match.group(1) if match else token).strip()
+    hom = (match.group(2) if match else "") or ""
+    key = (normalize_surface(lemma), hom)
+    return key in _FORCED_FEMININE_PLURAL_T_EQUAL_KEYS
+
+
+def _render_feminine_t_split(
+    stem: str,
+    homonym: str,
+    lexical_t: bool,
+    plural: bool = False,
+) -> str:
+    ending = "/t=" if plural else "/t"
     if lexical_t:
         if stem.endswith("(t"):
-            return f"{stem}{homonym}/t"
-        return f"{stem}(t{homonym}/t"
-    return f"{stem}{homonym}/t"
+            return f"{stem}{homonym}{ending}"
+        return f"{stem}(t{homonym}{ending}"
+    return f"{stem}{homonym}{ending}"
 
 
 def _declared_lemma_has_final_t(dulat_slot: str) -> bool:

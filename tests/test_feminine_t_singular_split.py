@@ -135,6 +135,54 @@ class FeminineTSingularSplitFixerTest(unittest.TestCase):
         result = fixer.refine_row(row)
         self.assertEqual(result.analysis, "b(t(I)/t")
 
+    def test_rewrites_t_equal_split_when_lemma_is_t_final(self) -> None:
+        fixer = FeminineTSingularSplitFixer()
+        row = TabletRow("11", "hmlt", "hml/t=", "hmlt", "n. f.", "multitude", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "hml(t/t=")
+
+    def test_promotes_t_split_to_t_equal_for_plurale_tantum_feminine_noun(self) -> None:
+        fixer = FeminineTSingularSplitFixer()
+        row = TabletRow(
+            "12",
+            "hmlt",
+            "hml(t/t",
+            "hmlt",
+            "n. f. pl. tant.?",
+            "multitude",
+            "",
+        )
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "hml(t/t=")
+
+    def test_rewrites_unsplit_lexical_t_forced_plural_token_to_t_equal(self) -> None:
+        fixer = FeminineTSingularSplitFixer()
+        row = TabletRow(
+            "13",
+            "ṯnt",
+            "ṯnt(II)/",
+            "ṯnt (II)",
+            "n. f.",
+            "urine",
+            "",
+        )
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "ṯn(t(II)/t=")
+
+    def test_rewrites_split_lexical_t_forced_plural_token_to_t_equal(self) -> None:
+        fixer = FeminineTSingularSplitFixer()
+        row = TabletRow(
+            "14",
+            "ṯnt",
+            "ṯn(t(II)/t",
+            "ṯnt (II)",
+            "n. f.",
+            "urine",
+            "",
+        )
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "ṯn(t(II)/t=")
+
 
 if __name__ == "__main__":
     unittest.main()

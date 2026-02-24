@@ -6,6 +6,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Sequence, Tuple
 
+from pipeline.config.plurale_tantum_m_overrides import PLURALE_TANTUM_M_EXCLUDED_KEYS
+
 LOOKUP_NORMALIZE = str.maketrans(
     {
         "ʿ": "ʕ",
@@ -168,6 +170,8 @@ class DulatMorphGate:
         entry_pos_index: Dict[int, str],
     ) -> bool:
         if not (key[0] or "").endswith("m"):
+            return False
+        if key in PLURALE_TANTUM_M_EXCLUDED_KEYS:
             return False
         pos_values = {
             (entry_pos_index.get(entry_id) or "").lower()

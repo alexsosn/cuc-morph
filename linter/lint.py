@@ -160,6 +160,11 @@ _DUAL_WORD_MORPH_RE = re.compile(r"\bdual", flags=re.IGNORECASE)
 _SINGULAR_MORPH_RE = re.compile(r"\bsg\.", flags=re.IGNORECASE)
 _SINGULAR_WORD_MORPH_RE = re.compile(r"\bsing", flags=re.IGNORECASE)
 _CONSTRUCT_MORPH_RE = re.compile(r"\bcstr\b", flags=re.IGNORECASE)
+PLURALE_TANTUM_M_EXCLUDED_KEYS = {
+    ("ḥlm", "II"),
+    ("ʕgm", ""),
+    ("ištnm", ""),
+}
 _OFFERING_SURFACES = {
     normalize_surface("gdlt"),
     normalize_surface("alp"),
@@ -1349,8 +1354,11 @@ def lint_file(
         lemma_letters = _DECLARED_LEMMA_LETTER_RE.sub(
             "", normalize_surface((lemma or "").strip())
         ).lower()
+        key = (normalize_surface((lemma or "").strip()), (_hom or "").strip())
         pos_low = (pos_raw or "").strip().lower()
         if not lemma_letters.endswith("m"):
+            continue
+        if key in PLURALE_TANTUM_M_EXCLUDED_KEYS:
             continue
         if not pos_low.startswith("n.") or "num" in pos_low:
             continue

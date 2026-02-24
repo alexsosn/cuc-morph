@@ -187,6 +187,85 @@ class LinterPluraleTantumMRuleTest(unittest.TestCase):
                 messages,
             )
 
+    def test_does_not_require_pl_tant_for_curated_plural_m_exclusions(self) -> None:
+        cases = [
+            (
+                "ḥlmm",
+                "ḥlm(II)/m",
+                "ḥlm (II)",
+                1,
+                ("ḥlm", "II"),
+                "pl.",
+            ),
+            (
+                "ʕgmm",
+                "ʕgm/m",
+                "ʕgm",
+                2,
+                ("ʕgm", ""),
+                "pl.",
+            ),
+            (
+                "ỉštnm",
+                "ištnm/",
+                "ỉštnm",
+                3,
+                ("ỉštnm", ""),
+                "pl.",
+            ),
+        ]
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            out_dir = root / "out"
+            out_dir.mkdir(parents=True, exist_ok=True)
+            path = out_dir / "KTU 1.test.tsv"
+
+            data_lines = ["id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments"]
+            entry_meta = {}
+            entry_gender = {}
+            dulat_forms = {}
+            lemma_map = {}
+            udb_words = set()
+
+            for surface, analysis, dulat, entry_id, (lemma, hom), morph in cases:
+                data_lines.append(f"{entry_id}\t{surface}\t{analysis}\t{dulat}\tn. m.\tlemma\t")
+                entry = DulatEntry(
+                    entry_id=entry_id,
+                    lemma=lemma,
+                    homonym=hom,
+                    pos="n.",
+                    gloss="lemma",
+                    morph=morph,
+                    form_text=surface,
+                )
+                dulat_forms.setdefault(normalize_surface(surface), []).append(entry)
+                lemma_map.setdefault(normalize_surface(lemma), []).append(entry)
+                entry_meta[entry_id] = (lemma, hom, "n.", "lemma")
+                entry_gender[entry_id] = "m."
+                udb_words.add(normalize_udb(surface))
+
+            path.write_text("\n".join(data_lines) + "\n", encoding="utf-8")
+
+            issues = lint_file(
+                path=path,
+                dulat_forms=dulat_forms,
+                entry_meta=entry_meta,
+                lemma_map=lemma_map,
+                entry_stems={},
+                entry_gender=entry_gender,
+                udb_words=udb_words,
+                baseline=None,
+                input_format="auto",
+                db_checks=True,
+            )
+
+            messages = [item.message for item in issues]
+            self.assertNotIn(
+                "DULAT plurale tantum noun should include 'pl. tant.' in POS",
+                messages,
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

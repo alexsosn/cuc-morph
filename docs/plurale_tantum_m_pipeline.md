@@ -16,6 +16,7 @@ This targeted rule normalizes noun analyses where DULAT evidence shows a lexeme-
 - Keep only variants whose declared DULAT token is a gate-backed plurale-tantum noun with lexeme-final `-m`.
 - Do not classify tokens as plurale tantum when DULAT morphology has explicit singular evidence (for example `sg., suff.`), even if plural forms exist.
 - Do not classify tokens as plurale tantum when DULAT non-suffix evidence is only plural construct-state (`pl., cstr.`) without any absolute plural/dual form.
+- Apply curated exclusions for known non-plurale lemmas with plural `-m` forms (`ḥlm (II)`, `ʕgm`, `ỉštnm`) even when only plural morphology is attested.
 
 2. Canonical `col3` rewrite for terminal `-m`
 - Normalize to explicit lexeme + nominal ending encoding:
@@ -44,7 +45,10 @@ This targeted rule normalizes noun analyses where DULAT evidence shows a lexeme-
 6. False-positive repair for non-plurale lemmas
 - If a non-target `-m` lemma (gate says not plurale tantum) still contains an old injected split pattern `...(m/m` plus enclitic/suffix tail, restore lexical `m` in the head:
   - `šl(m(II)/m~m` -> `šlm(II)/~m`
+- If a non-target `-m` lemma has truncated split form `.../m` before homonym, restore missing lexical `m`:
+  - `ḥl(II)/m` -> `ḥlm(II)/m`
 - Strip `pl. tant.` from aligned POS variants for the repaired DULAT slot.
+- Also strip stale `pl. tant.` markers for non-target `-m` slots even when analysis is already reconstructable.
 
 ## Post-check policy
 - Keep `col4`/`col6` untouched.

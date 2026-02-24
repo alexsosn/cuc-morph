@@ -2,6 +2,22 @@
 
 ## 2026-02-24
 
+- Added curated DULAT exclusions for automatic lexeme-final `-m` plurale-tantum classification (`pipeline/config/plurale_tantum_m_overrides.py`): `ḥlm (II)`, `ʕgm`, `ỉštnm`.
+- Applied the same exclusion logic in both parser gate (`pipeline/steps/dulat_gate.py`) and linter (`linter/lint.py`) so `pl. tant.` expectations stay consistent.
+- Extended non-plurale `-m` repair in `PluraleTantumMFixer` to restore truncated split forms (`ḥl(II)/m` -> `ḥlm(II)/m`) and strip stale `pl. tant.` POS markers even when analysis is already reconstructable.
+- Extended feminine `-t` normalization (`pipeline/steps/feminine_t_singular_split.py`) to:
+  - repair lexical `-t` in `/t=` variants (`hml/t=` -> `hml(t/t=`),
+  - promote lexical `/t` to `/t=` in feminine plural contexts,
+  - force `/t=` for curated tokens (`hmlt`, `ṯnt (II)`).
+- Added regression coverage for these changes in:
+  - `tests/test_dulat_gate_plurale_tantum.py`,
+  - `tests/test_linter_plurale_tantum_m.py`,
+  - `tests/test_plurale_tantum_m.py`,
+  - `tests/test_feminine_t_singular_split.py`.
+- Updated strategy docs:
+  - `docs/plurale_tantum_m_pipeline.md`,
+  - `docs/feminine_t_singular_split_pipeline.md`.
+- Re-ran only targeted rules across `out/KTU *.tsv` (`PluralSplitFixer`, `PluraleTantumMFixer`, `FeminineTSingularSplitFixer`): 292 row updates in 69 files, including user-flagged `150689` (`ḥlm (II)` no longer `pl. tant.`) and `155988` (`ṯn(t(II)/t=`).
 - Added `PluraleTantumMFixer` (`pipeline/steps/plurale_tantum_m.py`) as a dedicated targeted pass for lexeme-final `-m` plurale-tantum nouns, and wired it into `pipeline/tablet_parsing.py` after `PluralSplitFixer`.
 - Extended `DulatMorphGate` (`pipeline/steps/dulat_gate.py`) with `is_plurale_tantum_noun_token(...)` using DULAT form morphology (`pl./du.` non-suffix inventory) to conservatively gate this rule.
 - Normalized `col3` and `col5` for targeted rows:

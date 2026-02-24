@@ -219,6 +219,46 @@ class PluraleTantumMFixerTest(unittest.TestCase):
         self.assertEqual(result.analysis, "qm[; qm/")
         self.assertEqual(result.pos, "vb; n. m.")
 
+    def test_repairs_false_positive_plurale_tantum_for_hlm(self) -> None:
+        fixer = PluraleTantumMFixer(
+            gate=_PluraleTantumGate(
+                plural_tokens={"ḥlm (II)"},
+                plurale_tantum_tokens=set(),
+            )
+        )
+        row = TabletRow(
+            "7d",
+            "ḥlmm",
+            "ḥl(II)/m",
+            "ḥlm (II)",
+            "n. m. pl. tant.",
+            "growing animal",
+            "",
+        )
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "ḥlm(II)/m")
+        self.assertEqual(result.pos, "n. m.")
+
+    def test_strips_false_positive_plurale_tantum_marker_without_analysis_repair(self) -> None:
+        fixer = PluraleTantumMFixer(
+            gate=_PluraleTantumGate(
+                plural_tokens={"ḥlm (II)"},
+                plurale_tantum_tokens=set(),
+            )
+        )
+        row = TabletRow(
+            "7e",
+            "ḥlmm",
+            "ḥlm(II)/m",
+            "ḥlm (II)",
+            "n. m. pl. tant.",
+            "growing animal",
+            "",
+        )
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "ḥlm(II)/m")
+        self.assertEqual(result.pos, "n. m.")
+
     def test_does_not_add_pl_tant_for_non_m_lemma_even_if_gate_flags_it(self) -> None:
         fixer = PluraleTantumMFixer(
             gate=_PluraleTantumGate(
