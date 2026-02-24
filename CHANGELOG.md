@@ -2,6 +2,16 @@
 
 ## 2026-02-24
 
+- Added `IIIAlephCaseFixer` (`pipeline/steps/iii_aleph_case_fixer.py`) and wired it into `pipeline/tablet_parsing.py` to normalize III-aleph noun/adjective case-vowel encoding using `(u|i|a` + `/&u|&i|&a`.
+- Added linter warning support for missing III-aleph case encoding in `linter/lint.py`:
+  - detects stem-matching final-vowel noun/adjective variants that omit `/&` encoding and do not reconstruct surface.
+- Added regression tests:
+  - `tests/test_iii_aleph_case_fixer.py`,
+  - `tests/test_linter_iii_aleph_case.py`.
+- Documented strategy in `docs/iii_aleph_case_pipeline.md`.
+- Re-ran only `IIIAlephCaseFixer` across `out/KTU *.tsv` (278 files scanned, 52 row updates), including `rpủ -> rpi`, `ỉqnủ -> iqni`, `nnủ (I) -> nni`, `ṣbủ (II) -> ṣba`, and `llủ -> lla/lli`.
+- Corpus linter snapshot after this pass: reconstructability issues reduced from `4219` to `4164` (delta `-55`); III-aleph style warnings: `0`.
+
 - Follow-up reconstructability pass for feminine `-t` and `ỉlt (I)` allographs:
   - added `ỉlt (I)` surface-`h` rewrites in `SurfaceReconstructabilityFixer` (`ilh -> il(t(I)/&h`, `ilht -> il(t(I)/&ht`) so `col3` reconstructs `col2`,
   - normalized sg/pl-ambiguous `ảṯt` and `ṯảt` surface forms from forced `/t=` to `/t` in targeted rows (`aṯ(t/t`, `ṯa(t/t`).

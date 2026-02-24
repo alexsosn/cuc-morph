@@ -571,6 +571,53 @@ def analysis_has_lexeme_t_split_without_reconstructed_t(analysis: str) -> bool:
     return False
 
 
+def analysis_has_missing_iii_aleph_case_encoding(
+    analysis: str,
+    surface: str,
+    declared_lemma: str,
+) -> bool:
+    """True when III-aleph nominal form should use `(V/.../&X` encoding."""
+    lemma_norm = normalize_surface((declared_lemma or "").strip()).lower()
+    surface_norm = normalize_surface((surface or "").strip()).lower()
+    if len(lemma_norm) < 2 or len(surface_norm) < 2:
+        return False
+
+    lex_vowel = lemma_norm[-1]
+    surface_vowel = surface_norm[-1]
+    if lex_vowel not in {"u", "i", "a"} or surface_vowel not in {"u", "i", "a"}:
+        return False
+    if lemma_norm[:-1] != surface_norm[:-1]:
+        return False
+
+    variants = split_semicolon_field(analysis) or [analysis]
+    base_re = re.compile(r"^(?P<lemma>[A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]+)(?P<hom>\([IVX]+\))?/$")
+    for var in variants:
+        value = (var or "").strip()
+        if not value or value == "?":
+            continue
+        if any(ch in value for ch in ("+", "~", "[")):
+            continue
+        if "/&" in value:
+            continue
+
+        reconstructed = normalize_surface(reconstruct_surface_from_analysis(value)).lower()
+        if reconstructed == surface_norm:
+            continue
+
+        match = base_re.match(value)
+        if not match:
+            continue
+        variant_lemma_norm = normalize_surface((match.group("lemma") or "").strip()).lower()
+        if len(variant_lemma_norm) < 2:
+            continue
+        if variant_lemma_norm[-1] not in {"u", "i", "a"}:
+            continue
+        if variant_lemma_norm[:-1] != surface_norm[:-1]:
+            continue
+        return True
+    return False
+
+
 def analysis_has_invalid_enclitic_plus(analysis: str) -> bool:
     """True when analysis uses invalid '~+x' enclitic encoding."""
     variants = split_semicolon_field(analysis) or [analysis]
@@ -2713,6 +2760,22 @@ def lint_file(
                                     surface,
                                     analysis,
                                     "Lexeme-final '-m' noun should encode dropped host -m as '(m/' and keep '/m' only when surface host ends with m",
+                                )
+                            )
+                        if noun_like and analysis_has_missing_iii_aleph_case_encoding(
+                            analysis=analysis,
+                            surface=surface_clean,
+                            declared_lemma=head_lemma,
+                        ):
+                            issues.append(
+                                Issue(
+                                    "warning",
+                                    str(path),
+                                    i,
+                                    line_id,
+                                    surface,
+                                    analysis,
+                                    "III-aleph noun/adjective should encode lexeme-final case vowel as '(u|i|a' and inflection as '/&u|&i|&a'",
                                 )
                             )
 
