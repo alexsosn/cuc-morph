@@ -19,6 +19,15 @@
 - Applied only the new `plurale-tantum-m` step across `out/KTU 1.*.tsv`: 475 rows updated in 78 files, including user-flagged IDs (`9544`, `139911`, `141623`, `146476`) and related `šmmh`/`pnm`/`nšm`/`šʕrm` classes.
 - Follow-up fix: narrowed the `plurale-tantum-m` scope to DULAT lemmas that are explicitly lexeme-final `-m` (gate + step), preventing false `pl. tant.` POS promotion on non-`-m` lemmas (for example `pʕn`, `šp`).
 - Reapplied only the corrected `plurale-tantum-m` step after restoring `out/KTU 1.*.tsv` to pre-pass state: 123 rows in 53 files updated, preserving intended `-m` targets and reverting over-broad POS changes.
+- Extended `PluraleTantumMFixer` for host-drop terminal `-m` cases:
+  - normalize `.../m` and `...m/` to `...(m/` when the host surface drops `m` (for example `pn/m; pn` -> `pn(m/; pn`, `pnm/+h` -> `pn(m/+h`),
+  - infer missing suffix tails (`+h`, `+k`, `+y`, etc.) only when reconstruction becomes exact (for example `pnm/` -> `pn(m/+h`, `ḥym/` -> `ḥy(m/+k`),
+  - normalize overlong `+n...` tails when dropping `n` is required by reconstruction (for example `+ny` -> `+y`).
+- Hardened `PluraleTantumMFixer` rewrite safety: apply canonical rewrite only when it reconstructs to `col2`, or preserve already-reconstructable original.
+- Extended linter predicate `analysis_has_missing_lexeme_m_before_plural_split(...)` to catch host-drop `-m` mismatches (for example `pnm/+h`, `pn/m`) and updated warning text accordingly.
+- Expanded tests for `plurale_tantum_m` and linter predicates with `pnh`, `pn`, `pny`, `ḥyk`, and `+ny` normalization scenarios.
+- Updated `docs/plurale_tantum_m_pipeline.md` with the formalized host-drop `-m` strategy, suffix inference, and tail-normalization rules.
+- Re-ran only `PluraleTantumMFixer` across the full corpus (`out/KTU *.tsv`) from clean baseline: 36 rows updated in 25 files, including user-flagged `152464`/`152465` and related `143246`, `143400`, `143536`, `144092`, `150081`, `157515`, `160118`.
 
 ## 2026-02-23
 

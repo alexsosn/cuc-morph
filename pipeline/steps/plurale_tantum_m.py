@@ -18,6 +18,7 @@ _PL_TANT_RE = re.compile(
     r"(?:\bpl\.?\s*tant\b|\bplur(?:ale)?\.?\s*tant(?:um|u)?\b)\.?\??",
     flags=re.IGNORECASE,
 )
+_SUFFIX_SEGMENTS = ("hm", "hn", "km", "kn", "ny", "nm", "nn", "h", "k", "n", "y")
 
 
 def _split_semicolon(value: str) -> list[str]:
@@ -206,21 +207,92 @@ class PluraleTantumMFixer(RefinementStep):
             tail = ""
 
         host_surface_norm = _host_surface(surface=surface, tail=tail).lower()
-        if not host_surface_norm.endswith("m"):
-            return head + tail
-
-        normalized_head = self._normalize_head(
+        normalized_head = self._normalize_head_for_host(
             head=head,
             host_surface_norm=host_surface_norm,
             lemma_letters=lemma_letters,
         )
-        normalized_head = _inject_surface_y_before_terminal_m(
-            head=normalized_head,
-            host_surface_norm=host_surface_norm,
-        )
-        return normalized_head + tail
+        candidate = normalized_head + tail
+        candidate_surface = normalize_surface(reconstruct_surface_from_analysis(candidate)).lower()
+        original_surface = normalize_surface(reconstruct_surface_from_analysis(value)).lower()
+        if tail:
+            normalized_tail = self._normalize_tail_for_surface(
+                normalized_head=normalized_head,
+                tail=tail,
+                surface_norm=surface_norm.lower(),
+            )
+            if normalized_tail is not None:
+                return normalized_head + normalized_tail
+        if not tail:
+            inferred_suffix = self._infer_missing_suffix(
+                normalized_head=normalized_head,
+                candidate_surface=candidate_surface,
+                surface_norm=surface_norm.lower(),
+            )
+            if inferred_suffix is not None:
+                return inferred_suffix
+        if candidate_surface == surface_norm.lower():
+            return candidate
+        if original_surface == surface_norm.lower():
+            return value
+        return value
 
-    def _normalize_head(self, head: str, host_surface_norm: str, lemma_letters: str) -> str:
+    def _normalize_tail_for_surface(
+        self,
+        normalized_head: str,
+        tail: str,
+        surface_norm: str,
+    ) -> Optional[str]:
+        if not tail.startswith("+n") or len(tail) <= 2:
+            return None
+        alt_tail = "+" + tail[2:]
+        candidate = normalized_head + alt_tail
+        reconstructed = normalize_surface(reconstruct_surface_from_analysis(candidate)).lower()
+        if reconstructed == surface_norm:
+            return alt_tail
+        return None
+
+    def _infer_missing_suffix(
+        self,
+        normalized_head: str,
+        candidate_surface: str,
+        surface_norm: str,
+    ) -> Optional[str]:
+        for seg in _SUFFIX_SEGMENTS:
+            if len(surface_norm) <= len(seg):
+                continue
+            if not surface_norm.endswith(seg):
+                continue
+            if candidate_surface + seg != surface_norm:
+                continue
+            candidate = f"{normalized_head}+{seg}"
+            reconstructed = normalize_surface(reconstruct_surface_from_analysis(candidate)).lower()
+            if reconstructed == surface_norm:
+                return candidate
+        return None
+
+    def _normalize_head_for_host(
+        self, head: str, host_surface_norm: str, lemma_letters: str
+    ) -> str:
+        if host_surface_norm.endswith("m"):
+            normalized_head = self._normalize_head_when_host_has_terminal_m(
+                head=head,
+                host_surface_norm=host_surface_norm,
+                lemma_letters=lemma_letters,
+            )
+            return _inject_surface_y_before_terminal_m(
+                head=normalized_head,
+                host_surface_norm=host_surface_norm,
+            )
+        return self._normalize_head_when_host_drops_terminal_m(
+            head=head,
+            host_surface_norm=host_surface_norm,
+            lemma_letters=lemma_letters,
+        )
+
+    def _normalize_head_when_host_has_terminal_m(
+        self, head: str, host_surface_norm: str, lemma_letters: str
+    ) -> str:
         lexical_unsplit = _LEXICAL_M_NO_SPLIT_RE.match(head)
         if lexical_unsplit:
             base = lexical_unsplit.group("base")
@@ -261,3 +333,40 @@ class PluraleTantumMFixer(RefinementStep):
 
         stem = base[:-1] if overshoot_case and base.endswith("m") else base
         return f"{stem}(m{hom}/m"
+
+    def _normalize_head_when_host_drops_terminal_m(
+        self, head: str, host_surface_norm: str, lemma_letters: str
+    ) -> str:
+        lexical_unsplit = _LEXICAL_M_NO_SPLIT_RE.match(head)
+        if lexical_unsplit:
+            return head
+
+        unsplit = _UNSPLIT_FINAL_M_RE.match(head)
+        if unsplit:
+            stem = unsplit.group("stem")
+            hom = unsplit.group("hom") or ""
+            return f"{stem}(m{hom}/"
+
+        split = _SPLIT_FINAL_M_RE.match(head)
+        if not split:
+            return head
+
+        base = split.group("base")
+        hom = split.group("hom") or ""
+        if "(m" in base:
+            return f"{base}{hom}/"
+
+        base_surface = _analysis_visible_letters(base)
+        head_surface = _analysis_visible_letters(head)
+        base_len_matches_lemma = len(base_surface) == max(0, len(lemma_letters) - 1)
+        missing_case = base_len_matches_lemma
+        overshoot_case = (
+            head_surface == host_surface_norm + "m"
+            and base_surface.endswith("m")
+            and len(base_surface) >= len(host_surface_norm)
+        )
+        if not (missing_case or overshoot_case):
+            return head
+
+        stem = base[:-1] if overshoot_case and base.endswith("m") else base
+        return f"{stem}(m{hom}/"

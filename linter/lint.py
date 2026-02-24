@@ -446,31 +446,45 @@ def analysis_has_missing_lexeme_m_before_plural_split(
             tail = ""
 
         host_surface = _host_surface_after_tail(surface_norm, tail)
-        if not host_surface.endswith("m"):
-            continue
-
-        if re.match(r"^.+m(?:\([IVX]+\))?/$", head):
-            return True
-
+        unsplit = re.match(r"^.+m(?:\([IVX]+\))?/$", head)
         split = re.match(r"^(.+?)(\([IVX]+\))?/m$", head)
-        if not split:
+
+        if host_surface.endswith("m"):
+            if unsplit:
+                return True
+            if not split:
+                continue
+            if "(m" in split.group(1):
+                continue
+
+            base = split.group(1)
+            base_surface = normalize_surface(reconstruct_surface_from_analysis(base)).lower()
+            head_surface = head_reconstructed
+            missing_case = head_surface == host_surface and len(base_surface) == max(
+                0, len(lemma_letters) - 1
+            )
+            overshoot_case = head_surface == host_surface + "m" and base_surface.endswith("m")
+            allograph_case = (
+                bool(head_surface)
+                and len(base_surface) == max(0, len(lemma_letters) - 1)
+                and head_surface[:-1] + "y" + head_surface[-1] == host_surface
+            )
+            if missing_case or overshoot_case or allograph_case:
+                return True
             continue
-        if "(m" in split.group(1):
+
+        if unsplit and "(m" not in head and head_reconstructed == host_surface + "m":
+            return True
+        if not split:
             continue
 
         base = split.group(1)
         base_surface = normalize_surface(reconstruct_surface_from_analysis(base)).lower()
-        head_surface = head_reconstructed
-        missing_case = head_surface == host_surface and len(base_surface) == max(
+        if "(m" in base:
+            return True
+        if head_reconstructed == host_surface + "m" and len(base_surface) == max(
             0, len(lemma_letters) - 1
-        )
-        overshoot_case = head_surface == host_surface + "m" and base_surface.endswith("m")
-        allograph_case = (
-            bool(head_surface)
-            and len(base_surface) == max(0, len(lemma_letters) - 1)
-            and head_surface[:-1] + "y" + head_surface[-1] == host_surface
-        )
-        if missing_case or overshoot_case or allograph_case:
+        ):
             return True
 
     return False
@@ -2667,7 +2681,7 @@ def lint_file(
                                     line_id,
                                     surface,
                                     analysis,
-                                    "Lexeme-final '-m' noun should use '(m' before '/m'",
+                                    "Lexeme-final '-m' noun should encode dropped host -m as '(m/' and keep '/m' only when surface host ends with m",
                                 )
                             )
 

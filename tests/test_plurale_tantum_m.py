@@ -96,8 +96,68 @@ class PluraleTantumMFixerTest(unittest.TestCase):
             "",
         )
         result = fixer.refine_row(row)
-        self.assertEqual(result.analysis, "pn/m; pn")
+        self.assertEqual(result.analysis, "pn(m/; pn")
         self.assertEqual(result.pos, "n. m. pl. tant.; functor")
+
+    def test_rewrites_suffix_variant_when_host_surface_drops_terminal_m(self) -> None:
+        fixer = PluraleTantumMFixer(
+            gate=_PluraleTantumGate(
+                plural_tokens={"pnm"},
+                plurale_tantum_tokens={"pnm"},
+            )
+        )
+        row = TabletRow("6b", "pnh", "pnm/+h", "pnm", "n. m.", "face", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "pn(m/+h")
+        self.assertEqual(result.pos, "n. m. pl. tant.")
+
+    def test_infers_suffix_h_for_pnh_when_missing(self) -> None:
+        fixer = PluraleTantumMFixer(
+            gate=_PluraleTantumGate(
+                plural_tokens={"pnm"},
+                plurale_tantum_tokens={"pnm"},
+            )
+        )
+        row = TabletRow("6c", "pnh", "pnm/", "pnm", "n. m.", "face", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "pn(m/+h")
+        self.assertEqual(result.pos, "n. m. pl. tant.")
+
+    def test_infers_suffix_y_for_pny_when_missing(self) -> None:
+        fixer = PluraleTantumMFixer(
+            gate=_PluraleTantumGate(
+                plural_tokens={"pnm"},
+                plurale_tantum_tokens={"pnm"},
+            )
+        )
+        row = TabletRow("6d", "pny", "pnm/", "pnm", "n. m.", "face", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "pn(m/+y")
+        self.assertEqual(result.pos, "n. m. pl. tant.")
+
+    def test_normalizes_plus_ny_tail_when_single_y_matches_surface(self) -> None:
+        fixer = PluraleTantumMFixer(
+            gate=_PluraleTantumGate(
+                plural_tokens={"pnm"},
+                plurale_tantum_tokens={"pnm"},
+            )
+        )
+        row = TabletRow("6e", "pny", "pnm/+ny", "pnm", "n. m.", "face", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "pn(m/+y")
+        self.assertEqual(result.pos, "n. m. pl. tant.")
+
+    def test_infers_suffix_k_from_split_m_row(self) -> None:
+        fixer = PluraleTantumMFixer(
+            gate=_PluraleTantumGate(
+                plural_tokens={"ḥym"},
+                plurale_tantum_tokens={"ḥym"},
+            )
+        )
+        row = TabletRow("6f", "ḥyk", "ḥy/m", "ḥym", "n. m.", "life", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "ḥy(m/+k")
+        self.assertEqual(result.pos, "n. m. pl. tant.")
 
     def test_keeps_non_target_lemma_unchanged(self) -> None:
         fixer = PluraleTantumMFixer(

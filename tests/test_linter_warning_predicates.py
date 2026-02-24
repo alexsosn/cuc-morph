@@ -54,6 +54,20 @@ class LinterWarningPredicateTest(unittest.TestCase):
                 declared_lemma="šmm",
             )
         )
+        self.assertTrue(
+            analysis_has_missing_lexeme_m_before_plural_split(
+                analysis="pnm/+h",
+                surface="pnh",
+                declared_lemma="pnm",
+            )
+        )
+        self.assertTrue(
+            analysis_has_missing_lexeme_m_before_plural_split(
+                analysis="pn/m",
+                surface="pn",
+                declared_lemma="pnm",
+            )
+        )
 
     def test_lexeme_m_before_plural_split_not_flagged_when_present(self) -> None:
         self.assertFalse(
@@ -68,6 +82,20 @@ class LinterWarningPredicateTest(unittest.TestCase):
                 analysis="šlm(II)/m",
                 surface="šlmm",
                 declared_lemma="šlm",
+            )
+        )
+        self.assertFalse(
+            analysis_has_missing_lexeme_m_before_plural_split(
+                analysis="pn(m/+h",
+                surface="pnh",
+                declared_lemma="pnm",
+            )
+        )
+        self.assertFalse(
+            analysis_has_missing_lexeme_m_before_plural_split(
+                analysis="pn(m/",
+                surface="pn",
+                declared_lemma="pnm",
             )
         )
 

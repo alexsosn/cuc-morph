@@ -1,29 +1,29 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `10594`
-- Fallback-parsed issue lines: `1173`
+- Total issues: `10539`
+- Fallback-parsed issue lines: `1155`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 7481 |
-| WARNING | 1414 |
+| ERROR | 7444 |
+| WARNING | 1396 |
 | INFO | 1519 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 4318 |
+| ERROR | Analysis does not reconstruct to surface | 4283 |
 | INFO | Surface not found in UDB concordance | 1519 |
 | ERROR | POS token not allowed for declared DULAT entry | 889 |
 | ERROR | Column 5 count must match analysis variant count | 462 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 392 |
 | WARNING | Column 6 count should match analysis variant count | 355 |
 | ERROR | Missing DULAT entry token(s) in column 4 | 170 |
-| ERROR | DULAT comment does not match candidates | 164 |
+| ERROR | DULAT comment does not match candidates | 162 |
 | ERROR | Non-G stem in DULAT requires stem marker | 124 |
 | ERROR | No DULAT entry found for clitic part | 109 |
 | ERROR | Unknown DULAT token in column 4 | 82 |
@@ -56,7 +56,6 @@
 | WARNING | pamt Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | skn Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | špḥ Noun POS should include DULAT gender marker for špḥ: n. m. | 12 |
-| WARNING | pn DULAT plurale tantum noun should include 'pl. tant.' in POS | 11 |
 | ERROR | Multiple DULAT candidates for lexeme | 10 |
 | ERROR | ddn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 9 |
 | ERROR | tldn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 9 |
@@ -166,7 +165,6 @@
 | WARNING | šˤtqt Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | ˤdmt Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | ḏrˤ Noun POS should include DULAT gender marker for ḏrʕ (I): n. f. | 3 |
-| WARNING | ḥy DULAT plurale tantum noun should include 'pl. tant.' in POS | 3 |
 | WARNING | ḫbtkn Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | ḫsn Noun POS should include DULAT gender marker for ḫsn (I): n. m. | 3 |
 | ERROR | Xt stem marker present but DULAT lacks *t stem | 2 |
@@ -357,8 +355,6 @@
 | WARNING | nšu Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | nḥt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | pglt Lexeme parse did not match DULAT; matched by surface form | 1 |
-| WARNING | pnh DULAT plurale tantum noun should include 'pl. tant.' in POS | 1 |
-| WARNING | pny DULAT plurale tantum noun should include 'pl. tant.' in POS | 1 |
 | WARNING | prt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ptr Noun POS should include DULAT gender marker for ptr: n. m. | 1 |
 | WARNING | pšt Feminine singular noun in DULAT should use '/t' | 1 |
@@ -418,8 +414,6 @@
 | WARNING | šmalh Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | špth Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | šu Lexeme parse did not match DULAT; matched by surface form | 1 |
-| WARNING | šˤrm DULAT plurale tantum noun should include 'pl. tant.' in POS | 1 |
-| WARNING | šˤrm Lexeme-final '-m' noun should use '(m' before '/m' | 1 |
 | WARNING | ˤlnh Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ˤnh Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ˤnn Lexeme parse did not match DULAT; matched by surface form | 1 |

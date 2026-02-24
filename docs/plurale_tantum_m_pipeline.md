@@ -23,6 +23,9 @@ This targeted rule normalizes noun analyses where DULAT evidence shows a lexeme-
   - `šˤr/m` -> `šˤr(m/m`
 - Preserve already-correct `...(m/m` variants.
 - If an unsplit lexical `(m/` host is detected, enforce `/m` (`...(m/` -> `...(m/m`).
+- If the host surface (after removing suffix/enclitic tail) drops terminal `m`, normalize head to `...(m/` (without `/m`):
+  - `pn/m` -> `pn(m/`
+  - `pnm/+h` -> `pn(m/+h`
 
 3. Surface allograph completion
 - When surface has an inserted `y` before final `m` and reconstruction is otherwise exact, inject `&y` before `(m`:
@@ -30,6 +33,8 @@ This targeted rule normalizes noun analyses where DULAT evidence shows a lexeme-
 
 4. Suffix-tail safety
 - If a `+...` tail is spurious because the host head already reconstructs to the full surface, drop the tail before normalization (for example `pn/m+nm` -> `pn/m` -> `pn(m/m`).
+- If the normalized head reconstructs to a suffixless base, infer a missing pronominal suffix tail only when reconstruction is exact (`+h`, `+k`, `+y`, etc.; for example `pnm/` -> `pn(m/+h`, `ḥym/` -> `ḥy(m/+k`).
+- If tail starts with `+n...` and dropping that leading `n` is the only reconstruction-preserving completion, normalize tail (`+ny` -> `+y`).
 
 5. POS normalization
 - Ensure targeted noun POS carries `pl. tant.` in `col5` for that variant.

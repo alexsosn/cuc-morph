@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-24T16:16:38.053170+00:00",
+  "generated_at_utc": "2026-02-24T16:57:14.379280+00:00",
   "files_checked": 278,
-  "total_issues": 10594,
-  "fallback_parsed": 1173,
+  "total_issues": 10539,
+  "fallback_parsed": 1155,
   "by_severity": {
-    "ERROR": 7481,
-    "WARNING": 1414,
+    "ERROR": 7444,
+    "WARNING": 1396,
     "INFO": 1519
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 4318
+      "count": 4283
     },
     {
       "severity": "INFO",
@@ -47,7 +47,7 @@
     {
       "severity": "ERROR",
       "problem_type": "DULAT comment does not match candidates",
-      "count": 164
+      "count": 162
     },
     {
       "severity": "ERROR",
@@ -208,11 +208,6 @@
       "severity": "WARNING",
       "problem_type": "špḥ Noun POS should include DULAT gender marker for špḥ: n. m.",
       "count": 12
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "pn DULAT plurale tantum noun should include 'pl. tant.' in POS",
-      "count": 11
     },
     {
       "severity": "ERROR",
@@ -757,11 +752,6 @@
     {
       "severity": "WARNING",
       "problem_type": "ḏrˤ Noun POS should include DULAT gender marker for ḏrʕ (I): n. f.",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ḥy DULAT plurale tantum noun should include 'pl. tant.' in POS",
       "count": 3
     },
     {
@@ -1716,16 +1706,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "pnh DULAT plurale tantum noun should include 'pl. tant.' in POS",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "pny DULAT plurale tantum noun should include 'pl. tant.' in POS",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "prt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -2017,16 +1997,6 @@
     {
       "severity": "WARNING",
       "problem_type": "šu Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "šˤrm DULAT plurale tantum noun should include 'pl. tant.' in POS",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "šˤrm Lexeme-final '-m' noun should use '(m' before '/m'",
       "count": 1
     },
     {
