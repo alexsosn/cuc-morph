@@ -1,0 +1,49 @@
+# Plurale Tantum `-m` Pipeline
+
+## Scope
+This targeted rule normalizes noun analyses where DULAT evidence shows a lexeme-final `-m` and plurale-tantum behavior (plural/dual-only non-suffix forms), but output rows are inconsistent in `col3`/`col5`.
+
+## Inputs
+- `col2` surface form
+- `col3` analysis variants
+- `col4` DULAT variants
+- `col5` POS variants
+- DULAT morphology gate (`pipeline/steps/dulat_gate.py`)
+
+## Step Strategy
+1. Candidate detection
+- Work variant-by-variant on noun slots (`n.`; excluding `n. num.`).
+- Keep only variants whose declared DULAT token is a gate-backed plurale-tantum noun with lexeme-final `-m`.
+
+2. Canonical `col3` rewrite for terminal `-m`
+- Normalize to explicit lexeme + nominal ending encoding:
+  - `šm(I)/m` -> `šm(m(I)/m`
+  - `šmm(I)/` -> `šm(m(I)/m`
+  - `nš/m` -> `nš(m/m`
+  - `šˤr/m` -> `šˤr(m/m`
+- Preserve already-correct `...(m/m` variants.
+- If an unsplit lexical `(m/` host is detected, enforce `/m` (`...(m/` -> `...(m/m`).
+
+3. Surface allograph completion
+- When surface has an inserted `y` before final `m` and reconstruction is otherwise exact, inject `&y` before `(m`:
+  - `šm(I)/m` + `šmym` -> `šm&y(m(I)/m`.
+
+4. Suffix-tail safety
+- If a `+...` tail is spurious because the host head already reconstructs to the full surface, drop the tail before normalization (for example `pn/m+nm` -> `pn/m` -> `pn(m/m`).
+
+5. POS normalization
+- Ensure targeted noun POS carries `pl. tant.` in `col5` for that variant.
+
+## Post-check policy
+- Keep `col4`/`col6` untouched.
+- Preserve variant alignment by rewriting per variant only.
+- Rely on linter reconstructability and DULAT checks for final validation.
+
+## Iteration Checklist
+1. Add failing unit tests for `šmm`, `šmym`, `šmmh`, `pnm`, `nšm`, `šʕrm`.
+2. Implement targeted step as a separate refinement stage.
+3. Add linter predicate/rules for missing lexical `(m` and POS `pl. tant.`.
+4. Run Ruff format/check.
+5. Run unit tests.
+6. Run only this rule across `out/KTU 1.*.tsv`.
+7. Verify user-flagged IDs and update changelog.

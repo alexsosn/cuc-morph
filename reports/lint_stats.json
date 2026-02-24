@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-23T11:49:55.797570+00:00",
+  "generated_at_utc": "2026-02-24T16:11:18.623949+00:00",
   "files_checked": 278,
-  "total_issues": 10602,
-  "fallback_parsed": 1155,
+  "total_issues": 10648,
+  "fallback_parsed": 1173,
   "by_severity": {
-    "ERROR": 7506,
-    "WARNING": 1396,
+    "ERROR": 7481,
+    "WARNING": 1468,
     "INFO": 1519
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 4331
+      "count": 4318
     },
     {
       "severity": "INFO",
@@ -47,7 +47,7 @@
     {
       "severity": "ERROR",
       "problem_type": "DULAT comment does not match candidates",
-      "count": 166
+      "count": 164
     },
     {
       "severity": "ERROR",
@@ -57,7 +57,7 @@
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for clitic part",
-      "count": 119
+      "count": 109
     },
     {
       "severity": "ERROR",
@@ -72,7 +72,12 @@
     {
       "severity": "WARNING",
       "problem_type": "Suffix form without '+'",
-      "count": 79
+      "count": 78
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "TODO/uncertain marker in comment",
+      "count": 77
     },
     {
       "severity": "WARNING",
@@ -93,11 +98,6 @@
       "severity": "ERROR",
       "problem_type": "Each reconstructed letter must be prefixed by '('",
       "count": 65
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "TODO/uncertain marker in comment",
-      "count": 53
     },
     {
       "severity": "ERROR",
@@ -150,6 +150,11 @@
       "count": 22
     },
     {
+      "severity": "WARNING",
+      "problem_type": "Plurale tantum noun ending in '-m' should mark plural with '/m'",
+      "count": 20
+    },
+    {
       "severity": "ERROR",
       "problem_type": "dtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
       "count": 18
@@ -191,6 +196,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "Plurale tantum noun ending in '-t' should mark plural with '/t='",
+      "count": 12
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "bhtm Lexeme parse did not match DULAT; matched by surface form",
       "count": 12
     },
@@ -208,6 +218,11 @@
       "severity": "WARNING",
       "problem_type": "špḥ Noun POS should include DULAT gender marker for špḥ: n. m.",
       "count": 12
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "pn DULAT plurale tantum noun should include 'pl. tant.' in POS",
+      "count": 11
     },
     {
       "severity": "ERROR",
@@ -752,6 +767,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ḏrˤ Noun POS should include DULAT gender marker for ḏrʕ (I): n. f.",
+      "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ḥy DULAT plurale tantum noun should include 'pl. tant.' in POS",
       "count": 3
     },
     {
@@ -1316,11 +1336,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "Plurale tantum noun ending in '-m' should mark plural with '/m'",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "am Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1706,6 +1721,16 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "pnh DULAT plurale tantum noun should include 'pl. tant.' in POS",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "pny DULAT plurale tantum noun should include 'pl. tant.' in POS",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "prt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1997,6 +2022,16 @@
     {
       "severity": "WARNING",
       "problem_type": "šu Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šˤrm DULAT plurale tantum noun should include 'pl. tant.' in POS",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šˤrm Lexeme-final '-m' noun should use '(m' before '/m'",
       "count": 1
     },
     {

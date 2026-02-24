@@ -7,6 +7,7 @@ from linter.lint import (
     analysis_has_invalid_enclitic_plus,
     analysis_has_lexeme_t_split_without_reconstructed_t,
     analysis_has_missing_feminine_singular_split,
+    analysis_has_missing_lexeme_m_before_plural_split,
     analysis_has_missing_plural_split,
     analysis_has_missing_suffix_plus,
     choose_lookup_candidates,
@@ -37,6 +38,38 @@ class LinterWarningPredicateTest(unittest.TestCase):
 
     def test_plural_not_flagged_for_singular_t_lemma(self) -> None:
         self.assertFalse(analysis_has_missing_plural_split("dqt(I)/", "dqt"))
+
+    def test_missing_lexeme_m_before_plural_split_detected(self) -> None:
+        self.assertTrue(
+            analysis_has_missing_lexeme_m_before_plural_split(
+                analysis="šm(I)/m",
+                surface="šmm",
+                declared_lemma="šmm",
+            )
+        )
+        self.assertTrue(
+            analysis_has_missing_lexeme_m_before_plural_split(
+                analysis="šmm(I)/m",
+                surface="šmm",
+                declared_lemma="šmm",
+            )
+        )
+
+    def test_lexeme_m_before_plural_split_not_flagged_when_present(self) -> None:
+        self.assertFalse(
+            analysis_has_missing_lexeme_m_before_plural_split(
+                analysis="šm(m(I)/m",
+                surface="šmm",
+                declared_lemma="šmm",
+            )
+        )
+        self.assertFalse(
+            analysis_has_missing_lexeme_m_before_plural_split(
+                analysis="šlm(II)/m",
+                surface="šlmm",
+                declared_lemma="šlm",
+            )
+        )
 
     def test_suffix_missing_plus_detected_for_reconstructed_base(self) -> None:
         self.assertTrue(analysis_has_missing_suffix_plus("l(I)", "ln"))

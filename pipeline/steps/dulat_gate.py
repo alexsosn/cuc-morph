@@ -18,6 +18,8 @@ LOOKUP_NORMALIZE = str.maketrans(
 
 _PLURAL_RE = re.compile(r"\bpl\.", flags=re.IGNORECASE)
 _PLURAL_WORD_RE = re.compile(r"\bplur", flags=re.IGNORECASE)
+_DUAL_RE = re.compile(r"\bdu\.", flags=re.IGNORECASE)
+_DUAL_WORD_RE = re.compile(r"\bdual", flags=re.IGNORECASE)
 _SUFFIX_RE = re.compile(r"\bsuff", flags=re.IGNORECASE)
 _TOKEN_RE = re.compile(r"^(.*?)(?:\s*\(([IVX]+)\))?$")
 _NON_FORM_CHAR_RE = re.compile(r"[^A-Za-zʔʕˤʿḫḥṭṣṯẓġḏšảỉủ]")
@@ -37,14 +39,28 @@ class DulatMorphGate:
     def __init__(self, db_path: Path) -> None:
         self._features: Dict[Tuple[str, str], TokenFeatures] = {}
         self._forms_by_token: Dict[Tuple[str, str], List[Tuple[str, str]]] = {}
+        self._plurale_tantum_noun_keys: set[Tuple[str, str]] = set()
         if db_path.exists():
-            self._features, self._forms_by_token = self._load_features(db_path)
+            (
+                self._features,
+                self._forms_by_token,
+                self._plurale_tantum_noun_keys,
+            ) = self._load_features(db_path)
 
     def is_plural_token(self, token: str, surface: str = "") -> bool:
         return self._feature_for_token(token, surface).has_plural
 
     def has_suffix_token(self, token: str, surface: str = "") -> bool:
         return self._feature_for_token(token, surface).has_pronominal_suffix
+
+    def is_plurale_tantum_noun_token(self, token: str) -> bool:
+        lemma, hom = self._parse_declared_token(token)
+        if not lemma or lemma == "?":
+            return False
+        keys = self._keys_for_token(lemma=lemma, hom=hom)
+        if not keys:
+            return False
+        return any(key in self._plurale_tantum_noun_keys for key in keys)
 
     def _feature_for_token(self, token: str, surface: str = "") -> TokenFeatures:
         lemma, hom = self._parse_declared_token(token)
@@ -78,11 +94,13 @@ class DulatMorphGate:
     ) -> Tuple[
         Dict[Tuple[str, str], TokenFeatures],
         Dict[Tuple[str, str], List[Tuple[str, str]]],
+        set[Tuple[str, str]],
     ]:
         conn = sqlite3.connect(str(db_path))
         cur = conn.cursor()
 
         entry_index: Dict[int, Tuple[str, str]] = {}
+        entry_pos_index: Dict[int, str] = {}
         for entry_id, lemma, homonym in cur.execute("SELECT entry_id, lemma, homonym FROM entries"):
             lemma_raw = (lemma or "").strip()
             hom = (homonym or "").strip()
@@ -92,6 +110,8 @@ class DulatMorphGate:
                     lemma_raw = match.group(1).strip()
                     hom = match.group(2)
             entry_index[int(entry_id)] = (self._normalize(lemma_raw), hom)
+        for entry_id, pos in cur.execute("SELECT entry_id, pos FROM entries"):
+            entry_pos_index[int(entry_id)] = (pos or "").strip()
 
         by_key: Dict[Tuple[str, str], List[str]] = {}
         forms_by_key: Dict[Tuple[str, str], List[Tuple[str, str]]] = {}
@@ -108,10 +128,18 @@ class DulatMorphGate:
         conn.close()
 
         features: Dict[Tuple[str, str], TokenFeatures] = {}
+        plurale_tantum_noun_keys: set[Tuple[str, str]] = set()
         for key, morphologies in by_key.items():
             flags = self._flags_from_morphologies(morphologies)
             features[key] = flags
-        return features, forms_by_key
+            if self._is_plurale_tantum_noun_key(
+                key=key,
+                morphologies=morphologies,
+                entry_index=entry_index,
+                entry_pos_index=entry_pos_index,
+            ):
+                plurale_tantum_noun_keys.add(key)
+        return features, forms_by_key, plurale_tantum_noun_keys
 
     def _flags_from_morphologies(self, morphologies: Sequence[str]) -> TokenFeatures:
         has_plural = False
@@ -128,6 +156,44 @@ class DulatMorphGate:
                 break
 
         return TokenFeatures(has_plural=has_plural, has_pronominal_suffix=has_suffix)
+
+    def _is_plurale_tantum_noun_key(
+        self,
+        key: Tuple[str, str],
+        morphologies: Sequence[str],
+        entry_index: Dict[int, Tuple[str, str]],
+        entry_pos_index: Dict[int, str],
+    ) -> bool:
+        pos_values = {
+            (entry_pos_index.get(entry_id) or "").lower()
+            for entry_id, entry_key in entry_index.items()
+            if entry_key == key
+        }
+        if not pos_values:
+            return False
+        if not all(pos.startswith("n.") and "num" not in pos for pos in pos_values):
+            return False
+
+        non_suffix = []
+        for morph in morphologies:
+            text = (morph or "").lower().strip()
+            if not text:
+                continue
+            if _SUFFIX_RE.search(text):
+                continue
+            non_suffix.append(text)
+
+        if not non_suffix:
+            return False
+        return all(
+            (
+                _PLURAL_RE.search(morph)
+                or _PLURAL_WORD_RE.search(morph)
+                or _DUAL_RE.search(morph)
+                or _DUAL_WORD_RE.search(morph)
+            )
+            for morph in non_suffix
+        )
 
     def _normalize(self, text: str) -> str:
         return (text or "").translate(LOOKUP_NORMALIZE).strip()

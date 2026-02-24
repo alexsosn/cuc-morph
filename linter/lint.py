@@ -153,6 +153,10 @@ _CLITIC_SUFFIX_SEGMENTS = ("hm", "hn", "km", "kn", "ny", "nm", "nn", "h", "k", "
 _DECLARED_SUFFIX_NY_RE = re.compile(r",\s*-[ny](?:\s|\(|$)", flags=re.IGNORECASE)
 _DECLARED_LEMMA_LETTER_RE = re.compile(r"[^A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]")
 _HOMONYM_MARKED_N_CLITIC_RE = re.compile(r"(?:\+n=?|~n=?|\[n=?|-n=?)\((?:I|II|III|IV)\)")
+_PLURAL_MORPH_RE = re.compile(r"\bpl\.", flags=re.IGNORECASE)
+_PLURAL_WORD_MORPH_RE = re.compile(r"\bplur", flags=re.IGNORECASE)
+_DUAL_MORPH_RE = re.compile(r"\bdu\.", flags=re.IGNORECASE)
+_DUAL_WORD_MORPH_RE = re.compile(r"\bdual", flags=re.IGNORECASE)
 _OFFERING_SURFACES = {
     normalize_surface("gdlt"),
     normalize_surface("alp"),
@@ -199,6 +203,16 @@ def has_plurale_tantum_note(text: str) -> bool:
     if "pl" not in t.lower() and "plur" not in t.lower():
         return False
     return PL_TANT_RE.search(t) is not None
+
+
+def morphology_is_plural_or_dual(morph: str) -> bool:
+    text = (morph or "").lower()
+    return bool(
+        _PLURAL_MORPH_RE.search(text)
+        or _PLURAL_WORD_MORPH_RE.search(text)
+        or _DUAL_MORPH_RE.search(text)
+        or _DUAL_WORD_MORPH_RE.search(text)
+    )
 
 
 def has_unprefixed_reconstructed_sequence(s: str, allow_weak_y_cluster: bool = False) -> bool:
@@ -405,6 +419,84 @@ def analysis_has_missing_plural_split(analysis: str, surface: str) -> bool:
         if recon == target:
             return True
     return False
+
+
+def analysis_has_missing_lexeme_m_before_plural_split(
+    analysis: str, surface: str, declared_lemma: str
+) -> bool:
+    """True when '/m' split omits required lexical '(m' reconstruction."""
+    lemma_letters = _DECLARED_LEMMA_LETTER_RE.sub(
+        "", normalize_surface((declared_lemma or "").strip())
+    ).lower()
+    if not lemma_letters.endswith("m"):
+        return False
+
+    surface_norm = normalize_surface(surface).lower()
+    variants = split_semicolon_field(analysis) or [analysis]
+    for var in variants:
+        v = (var or "").strip()
+        if not v or "[" in v:
+            continue
+        head, tail = _split_analysis_head_tail(v)
+        if not head:
+            continue
+
+        head_reconstructed = normalize_surface(reconstruct_surface_from_analysis(head)).lower()
+        if tail and head_reconstructed == surface_norm:
+            tail = ""
+
+        host_surface = _host_surface_after_tail(surface_norm, tail)
+        if not host_surface.endswith("m"):
+            continue
+
+        if re.match(r"^.+m(?:\([IVX]+\))?/$", head):
+            return True
+
+        split = re.match(r"^(.+?)(\([IVX]+\))?/m$", head)
+        if not split:
+            continue
+        if "(m" in split.group(1):
+            continue
+
+        base = split.group(1)
+        base_surface = normalize_surface(reconstruct_surface_from_analysis(base)).lower()
+        head_surface = head_reconstructed
+        missing_case = head_surface == host_surface and len(base_surface) == max(
+            0, len(lemma_letters) - 1
+        )
+        overshoot_case = head_surface == host_surface + "m" and base_surface.endswith("m")
+        allograph_case = (
+            bool(head_surface)
+            and len(base_surface) == max(0, len(lemma_letters) - 1)
+            and head_surface[:-1] + "y" + head_surface[-1] == host_surface
+        )
+        if missing_case or overshoot_case or allograph_case:
+            return True
+
+    return False
+
+
+def _split_analysis_head_tail(analysis_variant: str) -> Tuple[str, str]:
+    value = (analysis_variant or "").strip()
+    if not value:
+        return "", ""
+    cut = len(value)
+    for marker in ("+", "~"):
+        idx = value.find(marker)
+        if idx != -1:
+            cut = min(cut, idx)
+    if cut >= len(value):
+        return value, ""
+    return value[:cut], value[cut:]
+
+
+def _host_surface_after_tail(surface_norm: str, tail: str) -> str:
+    if not tail:
+        return surface_norm
+    tail_letters = normalize_surface(reconstruct_surface_from_analysis(tail)).lower()
+    if tail_letters and surface_norm.endswith(tail_letters):
+        return surface_norm[: -len(tail_letters)]
+    return surface_norm
 
 
 def analysis_has_missing_feminine_singular_split(analysis: str, surface: str) -> bool:
@@ -1206,6 +1298,12 @@ def lint_file(
     token_rows: List[Dict[str, str]] = []
     entry_index: Dict[Tuple[str, str], set] = {}
     entry_gender_index: Dict[Tuple[str, str], set] = {}
+    entry_morph_index: Dict[int, set] = {}
+    for entries in dulat_forms.values():
+        for item in entries:
+            morph = (item.morph or "").strip().lower()
+            if morph:
+                entry_morph_index.setdefault(item.entry_id, set()).add(morph)
     for _entry_id, (lemma, hom, pos, _gloss) in entry_meta.items():
         if not lemma:
             continue
@@ -1219,6 +1317,22 @@ def lint_file(
             continue
         key = (normalize_surface(lemma), hom or "")
         entry_gender_index.setdefault(key, set()).add(g)
+    entry_plurale_tantum_m: Dict[int, bool] = {}
+    for _entry_id, (lemma, _hom, pos_raw, _gloss) in entry_meta.items():
+        lemma_letters = _DECLARED_LEMMA_LETTER_RE.sub(
+            "", normalize_surface((lemma or "").strip())
+        ).lower()
+        pos_low = (pos_raw or "").strip().lower()
+        if not lemma_letters.endswith("m"):
+            continue
+        if not pos_low.startswith("n.") or "num" in pos_low:
+            continue
+        morph_values = entry_morph_index.get(_entry_id, set())
+        non_suffix_morphs = [morph for morph in morph_values if "suff" not in morph]
+        if not non_suffix_morphs:
+            continue
+        if all(morphology_is_plural_or_dual(morph) for morph in non_suffix_morphs):
+            entry_plurale_tantum_m[_entry_id] = True
 
     for i, raw in enumerate(lines, 1):
         if not raw.strip():
@@ -2048,9 +2162,9 @@ def lint_file(
             analysis_for_lexeme = analysis
             clitic_parts: List[str] = []
             if "+" in analysis:
-                parts = analysis.split("+")
-                base_part = parts[0].strip()
-                clitic_parts.extend([p for p in parts[1:] if p.strip()])
+                split_parts = analysis.split("+")
+                base_part = split_parts[0].strip()
+                clitic_parts.extend([p for p in split_parts[1:] if p.strip()])
                 analysis_for_lexeme = base_part
 
             if "[" in analysis:
@@ -2486,6 +2600,9 @@ def lint_file(
                         is_plurale_tantum_marked = has_plurale_tantum_note(
                             annotation_text
                         ) or has_plurale_tantum_note(pos_field_text)
+                        has_plurale_tantum_m_entry = any(
+                            entry_plurale_tantum_m.get(eid, False) for eid in matched_entry_ids
+                        )
 
                         if "vb" in pos and "[" not in analysis:
                             issues.append(
@@ -2515,6 +2632,44 @@ def lint_file(
                                         "Noun/adjective lacks '/' ending",
                                     )
                                 )
+                        if (
+                            noun_like
+                            and has_plurale_tantum_m_entry
+                            and not is_plurale_tantum_marked
+                            and "pl. tant" not in pos_field_text.lower()
+                            and "plurale tant" not in pos_field_text.lower()
+                        ):
+                            issues.append(
+                                Issue(
+                                    "warning",
+                                    str(path),
+                                    i,
+                                    line_id,
+                                    surface,
+                                    analysis,
+                                    "DULAT plurale tantum noun should include 'pl. tant.' in POS",
+                                )
+                            )
+                        if (
+                            noun_like
+                            and has_plurale_tantum_m_entry
+                            and analysis_has_missing_lexeme_m_before_plural_split(
+                                analysis=analysis,
+                                surface=surface_clean,
+                                declared_lemma=head_lemma,
+                            )
+                        ):
+                            issues.append(
+                                Issue(
+                                    "warning",
+                                    str(path),
+                                    i,
+                                    line_id,
+                                    surface,
+                                    analysis,
+                                    "Lexeme-final '-m' noun should use '(m' before '/m'",
+                                )
+                            )
 
                         # Gender-aware checks from DULAT metadata.
                         # For feminine singular noun forms, '/t' is the expected split ending.

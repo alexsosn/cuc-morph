@@ -1,7 +1,26 @@
 # Changelog
 
+## 2026-02-24
+
+- Added `PluraleTantumMFixer` (`pipeline/steps/plurale_tantum_m.py`) as a dedicated targeted pass for lexeme-final `-m` plurale-tantum nouns, and wired it into `pipeline/tablet_parsing.py` after `PluralSplitFixer`.
+- Extended `DulatMorphGate` (`pipeline/steps/dulat_gate.py`) with `is_plurale_tantum_noun_token(...)` using DULAT form morphology (`pl./du.` non-suffix inventory) to conservatively gate this rule.
+- Normalized `col3` and `col5` for targeted rows:
+  - enforced lexical + ending split style `...(m/m` (for example `šm(I)/m` -> `šm(m(I)/m`, `nš/m` -> `nš(m/m`, `šˤr/m` -> `šˤr(m/m`),
+  - repaired unsplit forms (for example `šmm(I)/` -> `šm(m(I)/m`),
+  - added `&y` allograph insertion when required (`šmym` -> `šm&y(m(I)/m`),
+  - normalized spurious `+nm` tails in this class (for example `pn/m+nm` -> `pn(m/m`),
+  - added `pl. tant.` in POS for targeted noun variants.
+- Added dedicated parser tests (`tests/test_plurale_tantum_m.py`) for `šmm`, `šmym`, `šmmh`, `pnm`, `nšm`, `šʕrm`, multi-variant POS alignment, and non-target lemma safety.
+- Added linter predicate `analysis_has_missing_lexeme_m_before_plural_split(...)` plus predicate tests (`tests/test_linter_warning_predicates.py`).
+- Added linter rule for DULAT-backed lexeme-final `-m` nouns requiring `(m` before `/m` when reconstruction evidence indicates missing lexical `m`.
+- Added linter rule for DULAT-backed plurale-tantum `-m` nouns requiring `pl. tant.` in POS, and regression coverage (`tests/test_linter_plurale_tantum_m.py`).
+- Fixed a linter variable-clobber bug in `linter/lint.py` (`parts = analysis.split('+')`) that could corrupt downstream POS-column checks inside DB validation.
+- Documented the rule workflow in `docs/plurale_tantum_m_pipeline.md`.
+- Applied only the new `plurale-tantum-m` step across `out/KTU 1.*.tsv`: 475 rows updated in 78 files, including user-flagged IDs (`9544`, `139911`, `141623`, `146476`) and related `šmmh`/`pnm`/`nšm`/`šʕrm` classes.
+
 ## 2026-02-23
 
+- Clarified and simplified `README.md` pipeline-stage documentation for linguist-facing readability while matching the actual executed flow (upstream CUC-to-TSV input, bootstrap + context-aware candidate scoring, instruction refiner pass, ordered heuristic step chain, final report regeneration).
 - Added shared onomastic override loader `pipeline/steps/onomastic_overrides.py` with support for the updated three-column TSV format (`dulat`, `POS`, `gloss`) while keeping backward compatibility for two-column files.
 - Updated `pipeline/steps/onomastic_gloss.py` to consume the shared loader so gloss overrides now read the actual `gloss` column (not `POS`) from `data/onomastic_gloss_overrides.tsv`.
 - Added `FeminineTSingularSplitFixer` (`pipeline/steps/feminine_t_singular_split.py`) and wired it into `pipeline/tablet_parsing.py` to normalize feminine singular unsplit analyses:

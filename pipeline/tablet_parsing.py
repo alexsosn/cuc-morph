@@ -25,6 +25,7 @@ from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
 from pipeline.steps.onomastic_gloss import OnomasticGlossOverrideFixer
 from pipeline.steps.plural_split import PluralSplitFixer
+from pipeline.steps.plurale_tantum_m import PluraleTantumMFixer
 from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
 from pipeline.steps.surface_option_propagation import SurfaceOptionPropagationFixer
@@ -64,6 +65,7 @@ class TabletParsingPipeline:
             FormulaBigramFixer(),
             OfferingListLPrepFixer(),
             PluralSplitFixer(gate=self.morph_gate),
+            PluraleTantumMFixer(gate=self.morph_gate),
             FeminineTSingularSplitFixer(gate=self.morph_gate),
             BaalLabourerKtu1Fixer(),
             BaalPluralGodListFixer(),
