@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-24T18:02:42.567168+00:00",
+  "generated_at_utc": "2026-02-24T19:05:38.937844+00:00",
   "files_checked": 278,
-  "total_issues": 10284,
-  "fallback_parsed": 912,
+  "total_issues": 10216,
+  "fallback_parsed": 905,
   "by_severity": {
-    "ERROR": 7432,
-    "WARNING": 1153,
+    "ERROR": 7394,
+    "WARNING": 1123,
     "INFO": 1519
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 4270
+      "count": 4233
     },
     {
       "severity": "INFO",
@@ -22,7 +22,7 @@
     {
       "severity": "ERROR",
       "problem_type": "POS token not allowed for declared DULAT entry",
-      "count": 890
+      "count": 889
     },
     {
       "severity": "ERROR",
@@ -121,23 +121,18 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "Feminine plural noun in DULAT should use '/t='",
-      "count": 30
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
       "count": 29
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "Plural form missing split ending",
-      "count": 27
     },
     {
       "severity": "ERROR",
       "problem_type": "Noun/adjective lacks '/' ending",
       "count": 26
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "Plural form missing split ending",
+      "count": 24
     },
     {
       "severity": "ERROR",
@@ -202,6 +197,11 @@
     {
       "severity": "ERROR",
       "problem_type": "Multiple DULAT candidates for lexeme",
+      "count": 10
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "Feminine plural noun in DULAT should use '/t='",
       "count": 10
     },
     {
@@ -357,11 +357,6 @@
     {
       "severity": "WARNING",
       "problem_type": "ydm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 4
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ymm Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
     },
     {
@@ -722,11 +717,6 @@
     {
       "severity": "WARNING",
       "problem_type": "aḥwy Lexeme parse did not match DULAT; matched by surface form",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "bnwt Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -1542,11 +1532,6 @@
     {
       "severity": "WARNING",
       "problem_type": "tgˤrm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "thmtm Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {

@@ -2632,6 +2632,9 @@ def lint_file(
                         has_m_split = re.search(r"/m=?(?=\s*$|[+;,])", analysis_trim) is not None
                         surface_form_has_fem = any("f." in m for m in surface_form_morphs)
                         surface_form_has_pl = any("pl." in m for m in surface_form_morphs)
+                        surface_form_has_sg = any(
+                            morphology_is_explicit_singular(m) for m in surface_form_morphs
+                        )
                         noun_like = not is_pronoun and (
                             is_proper_noun
                             or any(tag in pos for tag in ("n.", "dn", "gn", "tn", "mn"))
@@ -2769,6 +2772,7 @@ def lint_file(
                             and has_f_gender
                             and surface.endswith("t")
                             and surface_form_has_pl
+                            and not surface_form_has_sg
                             and has_t_split
                             and not has_t_plural_split
                         ):
@@ -2789,6 +2793,7 @@ def lint_file(
                             and (not head_lemma.endswith("t"))
                             and surface.endswith("t")
                             and surface_form_has_pl
+                            and not surface_form_has_sg
                             and not has_t_split
                         ):
                             issues.append(

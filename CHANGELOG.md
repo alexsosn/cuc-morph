@@ -2,6 +2,20 @@
 
 ## 2026-02-24
 
+- Added `SurfaceReconstructabilityFixer` (`pipeline/steps/surface_reconstructability_fixer.py`) and wired it into `pipeline/tablet_parsing.py` before generic overrides to repair known surface/analysis mismatch classes in a dedicated pass.
+- Implemented targeted reconstructability rewrites for user-flagged classes:
+  - `thmt` singular ambiguity expansion (`thm(t/t; thm/t` with aligned DULAT/POS/gloss),
+  - `thmtm` dual reconstruction (`thm(t/tm`),
+  - `mtm` aligned variant repairs (`mt(II)/~m`, `mt[~m`, `mt(I)/m`, `mt(III)/m`),
+  - `bnwt`/`bnwth` allographs (`bn&w(t(II)/t=`, `bn&w(t(II)/t=+h`),
+  - `ymm`/`ymt`/`ymy` nominal allographs (`ym(I)/m`, `ym(I)/t=`, `ym(I)&y/`).
+- Updated linter feminine `/t=` enforcement in `linter/lint.py` to skip plural-ending warnings when the same DULAT surface is explicitly singular+plural ambiguous (for example `thmt` with both `sg.` and `pl.` evidence).
+- Added regression tests:
+  - `tests/test_surface_reconstructability_fixer.py`,
+  - `tests/test_linter_feminine_plural_t_ambiguous.py`.
+- Documented the strategy in `docs/surface_reconstructability_pipeline.md`.
+- Re-ran only `SurfaceReconstructabilityFixer` across `out/KTU *.tsv` (278 files scanned, 10 incremental row updates), including user-flagged `135723`, `138684`, `154087`, `152088`, `152470`.
+
 - Added curated DULAT exclusions for automatic lexeme-final `-m` plurale-tantum classification (`pipeline/config/plurale_tantum_m_overrides.py`): `ḥlm (II)`, `ʕgm`, `ỉštnm`.
 - Applied the same exclusion logic in both parser gate (`pipeline/steps/dulat_gate.py`) and linter (`linter/lint.py`) so `pl. tant.` expectations stay consistent.
 - Extended non-plurale `-m` repair in `PluraleTantumMFixer` to restore truncated split forms (`ḥl(II)/m` -> `ḥlm(II)/m`) and strip stale `pl. tant.` POS markers even when analysis is already reconstructable.

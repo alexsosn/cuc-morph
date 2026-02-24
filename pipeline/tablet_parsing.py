@@ -29,6 +29,7 @@ from pipeline.steps.plurale_tantum_m import PluraleTantumMFixer
 from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
 from pipeline.steps.surface_option_propagation import SurfaceOptionPropagationFixer
+from pipeline.steps.surface_reconstructability_fixer import SurfaceReconstructabilityFixer
 from pipeline.steps.weak_final_sc import WeakFinalSuffixConjugationFixer
 from pipeline.steps.weak_verb import WeakVerbFixer
 
@@ -80,6 +81,7 @@ class TabletParsingPipeline:
             AttestationSortFixer(index=self.attestation_index),
             KnownAmbiguityExpander(),
             OnomasticGlossOverrideFixer(),
+            SurfaceReconstructabilityFixer(),
             GenericParsingOverrideFixer(),
             # Keep schema pass last so any content-changing steps still end in
             # strict 7-column/quote-safe TSV for GitHub rendering.

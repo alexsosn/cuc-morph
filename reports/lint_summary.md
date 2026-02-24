@@ -1,24 +1,24 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `10284`
-- Fallback-parsed issue lines: `912`
+- Total issues: `10216`
+- Fallback-parsed issue lines: `905`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 7432 |
-| WARNING | 1153 |
+| ERROR | 7394 |
+| WARNING | 1123 |
 | INFO | 1519 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 4270 |
+| ERROR | Analysis does not reconstruct to surface | 4233 |
 | INFO | Surface not found in UDB concordance | 1519 |
-| ERROR | POS token not allowed for declared DULAT entry | 890 |
+| ERROR | POS token not allowed for declared DULAT entry | 889 |
 | ERROR | Column 5 count must match analysis variant count | 462 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 392 |
 | WARNING | Column 6 count should match analysis variant count | 355 |
@@ -38,10 +38,9 @@
 | ERROR | Column 4 count must match analysis variant count | 41 |
 | ERROR | ḥrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 36 |
 | ERROR | ṯkmn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 36 |
-| WARNING | Feminine plural noun in DULAT should use '/t=' | 30 |
 | WARNING | Feminine adjective/participle in DULAT should mark '-t' explicitly | 29 |
-| WARNING | Plural form missing split ending | 27 |
 | ERROR | Noun/adjective lacks '/' ending | 26 |
+| WARNING | Plural form missing split ending | 24 |
 | ERROR | dtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 18 |
 | WARNING | Feminine plural noun in DULAT should be tagged with '/t=' | 16 |
 | WARNING | mid Lexeme parse did not match DULAT; matched by surface form | 16 |
@@ -55,6 +54,7 @@
 | WARNING | skn Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | špḥ Noun POS should include DULAT gender marker for špḥ: n. m. | 12 |
 | ERROR | Multiple DULAT candidates for lexeme | 10 |
+| WARNING | Feminine plural noun in DULAT should use '/t=' | 10 |
 | ERROR | ddn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 9 |
 | ERROR | tldn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 9 |
 | ERROR | wn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 9 |
@@ -86,7 +86,6 @@
 | WARNING | pat Lexeme parse did not match DULAT; matched by surface form | 4 |
 | WARNING | pḏh Noun POS should include DULAT gender marker for pḏ: n. m. | 4 |
 | WARNING | ydm Lexeme parse did not match DULAT; matched by surface form | 4 |
-| WARNING | ymm Lexeme parse did not match DULAT; matched by surface form | 4 |
 | WARNING | ḫbtkm Lexeme parse did not match DULAT; matched by surface form | 4 |
 | ERROR | POS tokens must map to existing DULAT tokens in column 4 | 3 |
 | ERROR | Verb lacks '[' ending | 3 |
@@ -159,7 +158,6 @@
 | WARNING | arṯm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | aḥw Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | aḥwy Lexeme parse did not match DULAT; matched by surface form | 2 |
-| WARNING | bnwt Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | brkthm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | brktkm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | dnh Noun POS should include DULAT gender marker for dn (I): n. m. | 2 |
@@ -323,7 +321,6 @@
 | WARNING | rišh Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | rmm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tgˤrm Lexeme parse did not match DULAT; matched by surface form | 1 |
-| WARNING | thmtm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tlˤm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tmtḫṣh Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tmġyn Lexeme parse did not match DULAT; matched by surface form | 1 |
