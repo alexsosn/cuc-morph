@@ -131,6 +131,10 @@ class TabletParsingPipelineTest(unittest.TestCase):
             )
             self.assertLess(
                 names.index("l-functor-vocative-context"),
+                names.index("l-kbd-compound-prep"),
+            )
+            self.assertLess(
+                names.index("l-kbd-compound-prep"),
                 names.index("ydk-context-disambiguator"),
             )
 

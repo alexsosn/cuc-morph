@@ -65,6 +65,11 @@
   - made `l` context reference keys section-aware in `pipeline/config/l_functor_vocative_refs.py` so Roman-column refs are not conflated (for example `KTU 1.4 I:23` vs `KTU 1.4 VII:23`),
   - added parser/linter regression tests for this collision class,
   - reapplied the corrected `l-functor-vocative-context` pass after restoring the previously over-pruned output files, preserving `l(I)` where no section-exact forcing is attested.
+- Added `l + kbd(I)` compound-preposition normalization:
+  - new parser step `LKbdCompoundPrepDisambiguator` (`pipeline/steps/l_kbd_compound_prep.py`) wired after `l-functor-vocative-context`,
+  - context rule collapses `l` + `kbd` pairs (when `kbd(I)` is available) to single rows: `l(I)` and `kbd(I)/` with `POS=prep.` and `gloss=within`,
+  - added linter parity warning for non-canonical `l kbd` payloads and regression tests for parser/linter behavior,
+  - documented strategy in `docs/l_kbd_compound_prep_pipeline.md`.
 
 - Added `SuffixPayloadCollapseFixer` (`pipeline/steps/suffix_payload_collapse.py`) and wired it into `pipeline/tablet_parsing.py` after suffix normalization to collapse clitic-linked DULAT payloads to host-lexeme metadata.
 - Rule: when `col3` already encodes suffix/enclitic markers (`+`, `~`, or bracketed clitic tails), strip `col4` suffix payload segments (`, -x ...`) and trim aligned suffix-function/suffix-gloss tails in `col5`/`col6`.

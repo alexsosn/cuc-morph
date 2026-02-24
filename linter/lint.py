@@ -1418,9 +1418,31 @@ def row_is_l_homonym_variant(row: Dict[str, str], homonym: str) -> bool:
     )
 
 
+def row_is_kbd_i_variant(row: Dict[str, str]) -> bool:
+    """True when row is the exact `kbd(I)` lexical reading."""
+    return (
+        (row.get("surface", "") or "").strip() == "kbd"
+        and (row.get("analysis_field", "") or "").strip() == "kbd(I)/"
+        and (row.get("dulat_field", "") or "").strip() == "kbd (I)"
+    )
+
+
+def row_is_kbd_compound_prep_variant(row: Dict[str, str]) -> bool:
+    """True when row matches compound-preposition `l kbd` payload."""
+    return (
+        row_is_kbd_i_variant(row)
+        and (row.get("pos_field", "") or "").strip() == "prep."
+        and (row.get("gloss_field", "") or "").strip() == "within"
+    )
+
+
 L_NEGATION_VERB_CONTEXT_MSG = "l(II) ('no/not') should be used only before verbal forms"
 L_NEGATION_FORCED_EXCEPTION_MSG = "DULAT exception context requires a single l(II) reading"
 L_FUNCTOR_VOCATIVE_FORCED_MSG = "DULAT context requires a single l({homonym}) reading"
+L_KBD_COMPOUND_PREP_MSG = (
+    "Compound preposition `l kbd` should use single readings: l(I) and "
+    "kbd(I) with POS `prep.` and gloss `within`"
+)
 
 
 # -----------------------------
@@ -3496,6 +3518,48 @@ def lint_file(
                 "l",
                 analysis_field,
                 L_FUNCTOR_VOCATIVE_FORCED_MSG.format(homonym=expected_homonym),
+            )
+        )
+
+    # Compound preposition usage: `l(I) + kbd(I)` where `kbd` carries
+    # prepositional function ("within").
+    for idx, group in enumerate(token_groups):
+        if (group.get("surface", "") or "").strip() != "l":
+            continue
+        next_group = token_groups[idx + 1] if idx + 1 < len(token_groups) else None
+        if next_group is None or (next_group.get("surface", "") or "").strip() != "kbd":
+            continue
+
+        group_rows = group.get("rows", [])
+        next_group_rows = next_group.get("rows", [])
+        if not isinstance(group_rows, list) or not group_rows:
+            continue
+        if not isinstance(next_group_rows, list) or not next_group_rows:
+            continue
+        if not any(row_is_kbd_i_variant(row) for row in next_group_rows):
+            continue
+
+        l_ok = len(group_rows) == 1 and row_is_l_homonym_variant(group_rows[0], homonym="I")
+        kbd_ok = len(next_group_rows) == 1 and row_is_kbd_compound_prep_variant(next_group_rows[0])
+        if l_ok and kbd_ok:
+            continue
+
+        anchor = next(
+            (row for row in next_group_rows if row_is_kbd_i_variant(row)),
+            next_group_rows[0],
+        )
+        line_no = int((anchor.get("line_no", "0") or "0"))
+        line_id = anchor.get("line_id", "")
+        analysis_field = anchor.get("analysis_field", "")
+        issues.append(
+            Issue(
+                "warning",
+                str(path),
+                line_no,
+                line_id,
+                "kbd",
+                analysis_field,
+                L_KBD_COMPOUND_PREP_MSG,
             )
         )
 

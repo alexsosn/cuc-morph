@@ -1,14 +1,14 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `11647`
+- Total issues: `11653`
 - Fallback-parsed issue lines: `654`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 6265 |
+| ERROR | 6273 |
 | WARNING | 930 |
 | INFO | 1621 |
 
@@ -18,11 +18,11 @@
 |---|---|---:|
 | ERROR | Analysis does not reconstruct to surface | 3823 |
 | INFO | Surface not found in UDB concordance | 1621 |
-| ERROR | POS token not allowed for declared DULAT entry | 444 |
+| ERROR | POS token not allowed for declared DULAT entry | 458 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 428 |
 | ERROR | DULAT comment does not match candidates | 346 |
 | ERROR | No DULAT entry found for clitic part | 324 |
-| ERROR | Non-G stem in DULAT requires stem marker | 280 |
+| ERROR | Non-G stem in DULAT requires stem marker | 274 |
 | WARNING | ydk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 140 |
 | ERROR | Multiple DULAT candidates for surface | 123 |
 | WARNING | Suffix form without '+' | 90 |
