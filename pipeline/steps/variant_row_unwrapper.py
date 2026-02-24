@@ -15,8 +15,34 @@ from pipeline.steps.base import (
 
 
 def _split_semicolon(value: str) -> list[str]:
-    parts = [part.strip() for part in (value or "").split(";")]
-    return [part for part in parts if part]
+    return [part.strip() for part in (value or "").split(";")]
+
+
+def _trim_trailing_empty_slots(values: list[str]) -> list[str]:
+    out = list(values)
+    while len(out) > 1 and not (out[-1] or "").strip():
+        out.pop()
+    return out
+
+
+def _align_to_non_empty_anchor(values: list[str], anchor: list[str]) -> list[str]:
+    """
+    Project compact values onto non-empty anchor slots.
+
+    Example:
+      values=['when','like','yes']
+      anchor=['','', 'Subordinating...', 'prep.', 'emph.']
+      -> ['', '', 'when', 'like', 'yes']
+    """
+    if len(values) <= 1 or len(anchor) <= len(values):
+        return values
+    non_empty_indexes = [idx for idx, item in enumerate(anchor) if (item or "").strip()]
+    if len(non_empty_indexes) != len(values):
+        return values
+    out = [""] * len(anchor)
+    for value_index, target_index in enumerate(non_empty_indexes):
+        out[target_index] = values[value_index]
+    return out
 
 
 def _variant_value(values: list[str], index: int) -> str:
@@ -67,10 +93,24 @@ class VariantRowUnwrapper(RefinementStep):
         return StepResult(file=path.name, rows_processed=rows_processed, rows_changed=rows_changed)
 
     def _explode_row(self, row: TabletRow) -> list[TabletRow]:
-        analysis_variants = _split_semicolon(row.analysis) or [row.analysis.strip()]
-        dulat_variants = _split_semicolon(row.dulat) or [row.dulat.strip()]
-        pos_variants = _split_semicolon(row.pos) or [row.pos.strip()]
-        gloss_variants = _split_semicolon(row.gloss) or [row.gloss.strip()]
+        analysis_variants = _trim_trailing_empty_slots(_split_semicolon(row.analysis))
+        dulat_variants = _trim_trailing_empty_slots(_split_semicolon(row.dulat))
+        pos_variants = _trim_trailing_empty_slots(_split_semicolon(row.pos))
+        gloss_variants = _trim_trailing_empty_slots(_split_semicolon(row.gloss))
+
+        if not analysis_variants:
+            analysis_variants = [row.analysis.strip()]
+        if not dulat_variants:
+            dulat_variants = [row.dulat.strip()]
+        if not pos_variants:
+            pos_variants = [row.pos.strip()]
+        if not gloss_variants:
+            gloss_variants = [row.gloss.strip()]
+
+        # Some legacy packed rows encode empty alignment slots in POS but not gloss.
+        # In that case, map gloss values onto the non-empty POS slots to preserve
+        # analysis/DULAT alignment (e.g., k variants in generic overrides).
+        gloss_variants = _align_to_non_empty_anchor(gloss_variants, pos_variants)
 
         variant_count = max(
             len(analysis_variants), len(dulat_variants), len(pos_variants), len(gloss_variants), 1

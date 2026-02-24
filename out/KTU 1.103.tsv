@@ -2,11 +2,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.103 1						
 152308	ṯknt	ṯkn(t/t=	ṯknt	n. f.	appearance	
 152309	ṣin	ṣin(I)/	ṣỉn (I)	n. f.	ewe	
-152310	k	+k	-k (I)	Subordinating or completive functor	when	
-152310	k	~k	-k (II)	prep.	like	
-152310	k	k(III)	k (III)	emph. functor	yes	
-152310	k	k(I)	k (I)			
-152310	k	k(II)	k (II)			
+152310	k	+k	-k (I)			
+152310	k	~k	-k (II)			
+152310	k	k(III)	k (III)	Subordinating or completive functor	when	
+152310	k	k(I)	k (I)	prep.	like	
+152310	k	k(II)	k (II)	emph. functor	yes	
 152311	tld	yld[	/y-l-d/	vb	to give birth (to)	
 152312	at	at(I)	ảt (I)	pers. pn.	you	
 152313	abn	ab/+n	ảb	n. m.	father	
@@ -53,10 +53,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152342	mt	mt(II)/	mt (II)	n. m.	death	
 152342	mt	mt[	/m-t/	vb	to die	
 152342	mt	mt(I)/	mt (I)	n. m.	dead person	
-152343	n	~n	-n (I)	encl. morph.	me/to me	
-152343	n	[n, [n=	-n (II)	suffixed pn. morph. used with vb	our/us	
-152343	n	+n, +n=	-n (III)	suff. pn. morph. 1.p.pl.	him/her/it	
-152343	n		-n (IV)	contracted suff. pn. morph. used with a vb		
+152343	n	~n	-n (I)	encl. morph.		
+152343	n	[n, [n=	-n (II)	suffixed pn. morph. used with vb	me/to me	
+152343	n	+n, +n=	-n (III)	suff. pn. morph. 1.p.pl.	our/us	
+152343	n		-n (IV)	contracted suff. pn. morph. used with a vb	him/her/it	
 152344	rgm	rgm[	/r-g-m/	vb	to say	
 152344	rgm	rgm/	rgm	n. m.	word	
 # KTU 1.103 7						
@@ -286,11 +286,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152506	w	w	w	conj.	and	
 152507	aph	ap(I)+h	ảp (I)	adv./conj.	also	
 152507	aph	ap(II)/+h	ảp (II)	n. m.	nose	
-152508	k	+k	-k (I)	Subordinating or completive functor	when	
-152508	k	~k	-k (II)	prep.	like	
-152508	k	k(III)	k (III)	emph. functor	yes	
-152508	k	k(I)	k (I)			
-152508	k	k(II)	k (II)			
+152508	k	+k	-k (I)			
+152508	k	~k	-k (II)			
+152508	k	k(III)	k (III)	Subordinating or completive functor	when	
+152508	k	k(I)	k (I)	prep.	like	
+152508	k	k(II)	k (II)	emph. functor	yes	
 152509	ap	ap(I)	ảp (I)	adv./conj.	also	
 152509	ap	ap(II)/	ảp (II)	n. m.	nose	
 152510	ˤṣr	ˤṣr(I)/	ʕṣr (I)	n. f.	bird	

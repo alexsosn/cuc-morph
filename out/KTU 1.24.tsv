@@ -59,11 +59,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147666	yḥ	ḥw(I)[	/ḥ-w/y-y/ (I)	vb	to live	
 # KTU 1.24 10						
 147667	wyn	?	?	?	?	DULAT: NOT FOUND
-147668	k	+k	-k (I)	Subordinating or completive functor	when	
-147668	k	~k	-k (II)	prep.	like	
-147668	k	k(III)	k (III)	emph. functor	yes	
-147668	k	k(I)	k (I)			
-147668	k	k(II)	k (II)			
+147668	k	+k	-k (I)			
+147668	k	~k	-k (II)			
+147668	k	k(III)	k (III)	Subordinating or completive functor	when	
+147668	k	k(I)	k (I)	prep.	like	
+147668	k	k(II)	k (II)	emph. functor	yes	
 147669	mtrḫt	mtrḫ(t/t	mtrḫt	n. f.	consort	
 147670	bhklh	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.24 11						
@@ -195,8 +195,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.24 28						
 147749	yġtr	!y!ġtr[	/ġ-t-r/	vb	to implore	
 147750	ˤṯtr	ˤṯtr/	ʕṯtr	DN	ʿAṯtar	
-147751	t	/t, /t=	;	;	;	
-147751	t	[t, [t=, [t==, [t===	;	;	;	
+147751	t	/t, /t=				
+147751	t	[t, [t=, [t==, [t===				
 # KTU 1.24 29						
 147752	rḫ	?	?	?	?	DULAT: NOT FOUND
 147753	lk	l(I)+k	l (I)	prep.	to	
@@ -275,8 +275,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147800	bn	bn(II)	bn (II)	prep.	between	
 147800	bn	bn[	/b-n/	vb	to understand	
 # KTU 1.24 41						
-147801	t	/t, /t=	;	;	;	
-147801	t	[t, [t=, [t==, [t===	;	;	;	
+147801	t	/t, /t=				
+147801	t	[t, [t=, [t==, [t===				
 147802	hll	hll/	hll	DN	New Moon	
 147803	snnt	snn(t/t=	snnt	n. f.	swallow	
 147804	bnt	bn(t(II)/t	bnt (II)	n. f.	produce	

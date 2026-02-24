@@ -57,11 +57,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150032	pk	p(III)/+k	p (III)	n. m.	mouth	
 150033	b	b	b	prep.	in	
 150034	ḫlb	ḫlb(I)/	ḫlb (I)	n. m.	massif	
-150035	k	+k	-k (I)	Subordinating or completive functor	when	
-150035	k	~k	-k (II)	prep.	like	
-150035	k	k(III)	k (III)	emph. functor	yes	
-150035	k	k(I)	k (I)			
-150035	k	k(II)	k (II)			
+150035	k	+k	-k (I)			
+150035	k	~k	-k (II)			
+150035	k	k(III)	k (III)	Subordinating or completive functor	when	
+150035	k	k(I)	k (I)	prep.	like	
+150035	k	k(II)	k (II)	emph. functor	yes	
 150036	tgwln	!t!gl[	/g-l/	vb	to rejoice	
 150037	šntk	šnt(t(I)/t=	šnt (I)	n. f.	year	
 150037	šntk	šn/+k	šn	n. m.	tooth	
@@ -306,10 +306,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.82 29						
 150185	xxxxxxxxxxxx	?	?	?	?	
 150186	aṯtn	aṯ(t/t	ảṯt	n. f.	woman	
-150187	n	~n	-n (I)	encl. morph.	me/to me	
-150187	n	[n, [n=	-n (II)	suffixed pn. morph. used with vb	our/us	
-150187	n	+n, +n=	-n (III)	suff. pn. morph. 1.p.pl.	him/her/it	
-150187	n		-n (IV)	contracted suff. pn. morph. used with a vb		
+150187	n	~n	-n (I)	encl. morph.		
+150187	n	[n, [n=	-n (II)	suffixed pn. morph. used with vb	me/to me	
+150187	n	+n, +n=	-n (III)	suff. pn. morph. 1.p.pl.	our/us	
+150187	n		-n (IV)	contracted suff. pn. morph. used with a vb	him/her/it	
 # KTU 1.82 30						
 150188	xxxxxxxxxxxḥrġ	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.82 31						
@@ -335,10 +335,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150202	w	w	w	conj.	and	
 150203	tḥ	ḥw(I)[	/ḥ-w/y-y/ (I)	vb	to live	
 150204	ṭbt	ṭb(t/t	ṭbt	n. f.	well-being	
-150205	n	~n	-n (I)	encl. morph.	me/to me	
-150205	n	[n, [n=	-n (II)	suffixed pn. morph. used with vb	our/us	
-150205	n	+n, +n=	-n (III)	suff. pn. morph. 1.p.pl.	him/her/it	
-150205	n		-n (IV)	contracted suff. pn. morph. used with a vb		
+150205	n	~n	-n (I)	encl. morph.		
+150205	n	[n, [n=	-n (II)	suffixed pn. morph. used with vb	me/to me	
+150205	n	+n, +n=	-n (III)	suff. pn. morph. 1.p.pl.	our/us	
+150205	n		-n (IV)	contracted suff. pn. morph. used with a vb	him/her/it	
 # KTU 1.82 35						
 150206	xxxxxxbṯnm	?	?	?	?	DULAT: NOT FOUND
 150207	wtṯb	?	?	?	?	DULAT: NOT FOUND
@@ -421,21 +421,21 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.82 43						
 150261	xw	?	?	?	?	DULAT: NOT FOUND
 150262	ˤṣm	ˤṣ/m	ʕṣ	n. m.	tree	
-150263	k	+k	-k (I)	Subordinating or completive functor	when	
-150263	k	~k	-k (II)	prep.	like	
-150263	k	k(III)	k (III)	emph. functor	yes	
-150263	k	k(I)	k (I)			
-150263	k	k(II)	k (II)			
+150263	k	+k	-k (I)			
+150263	k	~k	-k (II)			
+150263	k	k(III)	k (III)	Subordinating or completive functor	when	
+150263	k	k(I)	k (I)	prep.	like	
+150263	k	k(II)	k (II)	emph. functor	yes	
 150264	ˤṣm	ˤṣ/m	ʕṣ	n. m.	tree	
 150265	l	l(I)	l (I)	prep.	to	
 150265	l	l(II)	l (II)	adv.	no	
 150265	l	l(III)	l (III)	functor	certainly	
 150266	ttn	ytn[	/y-t-n/	vb	to give	
-150267	k	+k	-k (I)	Subordinating or completive functor	when	
-150267	k	~k	-k (II)	prep.	like	
-150267	k	k(III)	k (III)	emph. functor	yes	
-150267	k	k(I)	k (I)			
-150267	k	k(II)	k (II)			
+150267	k	+k	-k (I)			
+150267	k	~k	-k (II)			
+150267	k	k(III)	k (III)	Subordinating or completive functor	when	
+150267	k	k(I)	k (I)	prep.	like	
+150267	k	k(II)	k (II)	emph. functor	yes	
 150268	abnm	abn/m	ảbn	n. f.	stone	
 150269	l	l(I)	l (I)	prep.	to	
 150269	l	l(II)	l (II)	adv.	no	

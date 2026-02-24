@@ -184,11 +184,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 I:27						
 139895	xxxxxqa	?	?	?	?	UDB: [---]-m̊å or [ … ]--å; no UDB concordance match.
 139896	xxxk	?	?	?	?	UDB: [--]k; could be /+k, /+k=, /+(nk (not in DULAT), /~k, or a lexeme ending in -k.
-139897	k	+k	-k (I)	Subordinating or completive functor	when	
-139897	k	~k	-k (II)	prep.	like	
-139897	k	k(III)	k (III)	emph. functor	yes	
-139897	k	k(I)	k (I)			
-139897	k	k(II)	k (II)			
+139897	k	+k	-k (I)			
+139897	k	~k	-k (II)			
+139897	k	k(III)	k (III)	Subordinating or completive functor	when	
+139897	k	k(I)	k (I)	prep.	like	
+139897	k	k(II)	k (II)	emph. functor	yes	
 139898	tmḫṣ	!t!mḫṣ[	/m-ḫ-ṣ/	vb	to wound	G, prefc., 2ms
 # KTU 1.5 I:28						
 139899	ltn	ltn(I)/	ltn (I)	DN	Lôtan	abs, acc., ms
@@ -234,17 +234,17 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139928	b	b	b	prep.	in	
 139929	ph	p(III)/+h	p (III)	n. m.	mouth	
 139930	yrd	!y!(yrd[	/y-r-d/	vb	to go down	
-139931	k	+k	-k (I)	Subordinating or completive functor	when	
-139931	k	~k	-k (II)	prep.	like	
-139931	k	k(III)	k (III)	emph. functor	yes	
-139931	k	k(I)	k (I)			
-139931	k	k(II)	k (II)			
+139931	k	+k	-k (I)			
+139931	k	~k	-k (II)			
+139931	k	k(III)	k (III)	Subordinating or completive functor	when	
+139931	k	k(I)	k (I)	prep.	like	
+139931	k	k(II)	k (II)	emph. functor	yes	
 # KTU 1.5 II:5						
-139932	k	+k	-k (I)	Subordinating or completive functor	when	
-139932	k	~k	-k (II)	prep.	like	
-139932	k	k(III)	k (III)	emph. functor	yes	
-139932	k	k(I)	k (I)			
-139932	k	k(II)	k (II)			
+139932	k	+k	-k (I)			
+139932	k	~k	-k (II)			
+139932	k	k(III)	k (III)	Subordinating or completive functor	when	
+139932	k	k(I)	k (I)	prep.	like	
+139932	k	k(II)	k (II)	emph. functor	yes	
 139933	ḥrr	ḥrr[	/ḥ-r-r/	vb	to dry up	Del Olmo II:5: “cuando (se) agoste el olivo”
 139934	zt	zt/	zt	n. m.	olive	
 139935	ybl	ybl(I)/	ybl (I)	n. m.	produce	Del Olmo II:5: “el producto de la tierra” (alt. note: possible verbal reading)
@@ -412,29 +412,29 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140053	l	l(II)	l (II)	adv.	no	
 140053	l	l(III)	l (III)	functor	certainly	
 140054	bn	bn(I)/	bn (I)	n. m.	son	
-140055	k	+k	-k (I)	Subordinating or completive functor	when	
-140055	k	~k	-k (II)	prep.	like	
-140055	k	k(III)	k (III)	emph. functor	yes	
-140055	k	k(I)	k (I)			
-140055	k	k(II)	k (II)			
+140055	k	+k	-k (I)			
+140055	k	~k	-k (II)			
+140055	k	k(III)	k (III)	Subordinating or completive functor	when	
+140055	k	k(I)	k (I)	prep.	like	
+140055	k	k(II)	k (II)	emph. functor	yes	
 # KTU 1.5 III:7						
 140056	dt	d/t	d	det. or rel. functor	the one(s) of	
 140057	l	l(I)	l (I)	prep.	to	
 140057	l	l(II)	l (II)	adv.	no	
 140057	l	l(III)	l (III)	functor	certainly	
 140058	bn	bn(I)/	bn (I)	n. m.	son	
-140059	k	+k	-k (I)	Subordinating or completive functor	when	
-140059	k	~k	-k (II)	prep.	like	
-140059	k	k(III)	k (III)	emph. functor	yes	
-140059	k	k(I)	k (I)			
-140059	k	k(II)	k (II)			
+140059	k	+k	-k (I)			
+140059	k	~k	-k (II)			
+140059	k	k(III)	k (III)	Subordinating or completive functor	when	
+140059	k	k(I)	k (I)	prep.	like	
+140059	k	k(II)	k (II)	emph. functor	yes	
 # KTU 1.5 III:8						
 140060	dk	d+k	d	det. or rel. functor	the one(s) of	split functors, likely d + k in this broken context
-140061	k	+k	-k (I)	Subordinating or completive functor	when	
-140061	k	~k	-k (II)	prep.	like	
-140061	k	k(III)	k (III)	emph. functor	yes	
-140061	k	k(I)	k (I)			
-140061	k	k(II)	k (II)			
+140061	k	+k	-k (I)			
+140061	k	~k	-k (II)			
+140061	k	k(III)	k (III)	Subordinating or completive functor	when	
+140061	k	k(I)	k (I)	prep.	like	
+140061	k	k(II)	k (II)	emph. functor	yes	
 140062	kbkbm	kbkb/m	kbkb	n. m.	heavenly body	
 # KTU 1.5 III:9						
 140063	dm	dm(II)/	dm (II)	n. m.	blood	
@@ -667,10 +667,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140212	xxx	?	?	?	?	
 140213	bnk	bn(I)/+k	bn (I)	n. m.	son	
 140214	ašt	!(ʔ&a!št[	/š-t/	vb	to place	OR with next token: aštn (UDB R1; Del Olmo V:5 ast.n)
-140215	n	~n	-n (I)	encl. morph.	me/to me	
-140215	n	[n, [n=	-n (II)	suffixed pn. morph. used with vb	our/us	
-140215	n	+n, +n=	-n (III)	suff. pn. morph. 1.p.pl.	him/her/it	
-140215	n		-n (IV)	contracted suff. pn. morph. used with a vb		
+140215	n	~n	-n (I)	encl. morph.		
+140215	n	[n, [n=	-n (II)	suffixed pn. morph. used with vb	me/to me	
+140215	n	+n, +n=	-n (III)	suff. pn. morph. 1.p.pl.	our/us	
+140215	n		-n (IV)	contracted suff. pn. morph. used with a vb	him/her/it	
 140216	b	b	b	prep.	in	
 140217	ḫrt	ḫr(t/t	ḫrt	n. f.	cave	
 # KTU 1.5 V:6						
@@ -743,11 +743,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140266	tdˤ	!t!(ydˤ(II)[	/y-d-ʕ/ (II)	vb	to sweat	Wyatt p125 n46 reads vocative force in “you will know, god, that you are mortal”.
 140267	ilm	il(I)/m	ỉl (I)	n. m.	god	
 # KTU 1.5 V:17						
-140268	k	+k	-k (I)	Subordinating or completive functor	when	
-140268	k	~k	-k (II)	prep.	like	
-140268	k	k(III)	k (III)	emph. functor	yes	
-140268	k	k(I)	k (I)			
-140268	k	k(II)	k (II)			
+140268	k	+k	-k (I)			
+140268	k	~k	-k (II)			
+140268	k	k(III)	k (III)	Subordinating or completive functor	when	
+140268	k	k(I)	k (I)	prep.	like	
+140268	k	k(II)	k (II)	emph. functor	yes	
 140269	mtt	m(t&t[t	/m-t/	vb	to die	
 140270	yšmˤ	!y!šmˤ[	/š-m-ʕ/	vb	to hear  listen	
 140271	aliyn	aliyn/	ảlỉyn	adj. m.	The Very / Most Powerful	
@@ -938,20 +938,20 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140393	ḏrˤh	ḏrˤ(I)/+h	ḏrʕ (I)	n. f.	arm	
 140394	yḥrṯ	!y!ḥrṯ[	/ḥ-r-ṯ/	vb	to plough	
 # KTU 1.5 VI:21						
-140395	k	+k	-k (I)	Subordinating or completive functor	when	
-140395	k	~k	-k (II)	prep.	like	
-140395	k	k(III)	k (III)	emph. functor	yes	
-140395	k	k(I)	k (I)			
-140395	k	k(II)	k (II)			
+140395	k	+k	-k (I)			
+140395	k	~k	-k (II)			
+140395	k	k(III)	k (III)	Subordinating or completive functor	when	
+140395	k	k(I)	k (I)	prep.	like	
+140395	k	k(II)	k (II)	emph. functor	yes	
 140396	gn	gn(I)/	gn (I)	n. m.	garden	
 140397	ap	ap(I)	ảp (I)	adv./conj.	also	
 140397	ap	ap(II)/	ảp (II)	n. m.	nose	
 140398	lb	lb/	lb	n. m.	heart	
-140399	k	+k	-k (I)	Subordinating or completive functor	when	
-140399	k	~k	-k (II)	prep.	like	
-140399	k	k(III)	k (III)	emph. functor	yes	
-140399	k	k(I)	k (I)			
-140399	k	k(II)	k (II)			
+140399	k	+k	-k (I)			
+140399	k	~k	-k (II)			
+140399	k	k(III)	k (III)	Subordinating or completive functor	when	
+140399	k	k(I)	k (I)	prep.	like	
+140399	k	k(II)	k (II)	emph. functor	yes	
 140400	ˤmq	ˤmq(I)/	ʕmq (I)	n. m.	valley	
 140400	ˤmq	ˤmq(II)/	ʕmq (II)	adj. m.	tough	
 140401	yṯlṯ	!y!ṯlṯ[:d	/ṯ-l-ṯ/	vb	to repeat for the third time	

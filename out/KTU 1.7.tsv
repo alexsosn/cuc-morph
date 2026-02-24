@@ -89,11 +89,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.7 14						
 141529	xrlx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.7 15						
-141530	k	+k	-k (I)	Subordinating or completive functor	when	
-141530	k	~k	-k (II)	prep.	like	
-141530	k	k(III)	k (III)	emph. functor	yes	
-141530	k	k(I)	k (I)			
-141530	k	k(II)	k (II)			
+141530	k	+k	-k (I)			
+141530	k	~k	-k (II)			
+141530	k	k(III)	k (III)	Subordinating or completive functor	when	
+141530	k	k(I)	k (I)	prep.	like	
+141530	k	k(II)	k (II)	emph. functor	yes	
 141531	lli	ll(u/&i	llủ	n. m.	suckling (lamb or kid)	
 141532	x	?	?	?	?	
 # KTU 1.7 16						
@@ -173,8 +173,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141580	mlḥmt	mlḥm(t/t	mlḥmt	n. f.	war	
 141581	š	š/	š	n. m.	ram	
 # KTU 1.7 28						
-141582	t	/t, /t=	;	;	;	
-141582	t	[t, [t=, [t==, [t===	;	;	;	
+141582	t	/t, /t=				
+141582	t	[t, [t=, [t==, [t===				
 141583	bˤprmddym	?	?	?	?	DULAT: NOT FOUND
 141584	sk	sk(I)/	sk (I)	n. m.	coverlet	
 141585	šlm	šlm(I)/	šlm (I)	n. m.	peace	
@@ -288,8 +288,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.7 40						
 141657	ilm	il(I)/m	ỉl (I)	n. m.	god	
 141658	w	w	w	conj.	and	
-141659	t	/t, /t=	;	;	;	
-141659	t	[t, [t=, [t==, [t===	;	;	;	
+141659	t	/t, /t=				
+141659	t	[t, [t=, [t==, [t===				
 # KTU 1.7 41						
 141660	mx	?	?	?	?	DULAT: NOT FOUND
 141661	mt	mt(II)/	mt (II)	n. m.	death	
@@ -302,14 +302,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.7 43						
 141664	tyt	ty(t/t	tyt	n. f.	ranunculus	
 # KTU 1.7 44						
-141665	t	/t, /t=	;	;	;	
-141665	t	[t, [t=, [t==, [t===	;	;	;	
+141665	t	/t, /t=				
+141665	t	[t, [t=, [t==, [t===				
 # KTU 1.7 45						
-141666	k	+k	-k (I)	Subordinating or completive functor	when	
-141666	k	~k	-k (II)	prep.	like	
-141666	k	k(III)	k (III)	emph. functor	yes	
-141666	k	k(I)	k (I)			
-141666	k	k(II)	k (II)			
+141666	k	+k	-k (I)			
+141666	k	~k	-k (II)			
+141666	k	k(III)	k (III)	Subordinating or completive functor	when	
+141666	k	k(I)	k (I)	prep.	like	
+141666	k	k(II)	k (II)	emph. functor	yes	
 # KTU 1.7 46						
 141667	x	?	?	?	?	
 # KTU 1.7 47						

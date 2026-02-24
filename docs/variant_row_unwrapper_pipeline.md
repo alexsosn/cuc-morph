@@ -30,6 +30,13 @@ New style (multiple rows, same `id` + `surface`, one option each).
 3. If one column has a single value while others have multiple, reuse that single value for each emitted row.
 4. Drop duplicate emitted rows that have identical `(id, surface, col3, col4, col5, col6)`.
 
+## Alignment Detail
+
+- Preserve explicit empty slots inside packed semicolon fields (for example `;;...`).
+- Trim only trailing empty slots.
+- If gloss slots are compact but POS slots encode alignment empties, gloss values are projected
+  onto the non-empty POS slots to keep option alignment stable.
+
 ## Linter checks
 
 - Packed variant rows are rejected in `out/*.tsv`.

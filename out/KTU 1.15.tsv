@@ -31,11 +31,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142750	l	l(III)	l (III)	functor	certainly	
 142751	umhthm	u/m+hm	ủm	n. f.	mother	
 # KTU 1.15 I:7						
-142752	k	+k	-k (I)	Subordinating or completive functor	when	
-142752	k	~k	-k (II)	prep.	like	
-142752	k	k(III)	k (III)	emph. functor	yes	
-142752	k	k(I)	k (I)			
-142752	k	k(II)	k (II)			
+142752	k	+k	-k (I)			
+142752	k	~k	-k (II)			
+142752	k	k(III)	k (III)	Subordinating or completive functor	when	
+142752	k	k(I)	k (I)	prep.	like	
+142752	k	k(II)	k (II)	emph. functor	yes	
 142753	tnḥn	!t!nḥ[	/n-ḥ/	vb	to moan	
 142754	udmm	udm/	ủdm	TN	ủdm	
 # KTU 1.15 I:8						
@@ -83,8 +83,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142782	ˤšr	ˤšr[	/ʕ-š-r/	vb	ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods	
 142782	ˤšr	ˤšr(I)/	ʕšr(t) (I)	n. m.	banquet	
 # KTU 1.15 II:9						
-142783	t	/t, /t=	;	;	;	
-142783	t	[t, [t=, [t==, [t===	;	;	;	
+142783	t	/t, /t=				
+142783	t	[t, [t=, [t==, [t===				
 142784	b	b	b	prep.	in	
 142785	bth	bt(II)/+h	bt (II)	n. m.	house	
 142786	yšt	!y!št[	/š-t/	vb	to place	
@@ -234,8 +234,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142880	bn	bn(I)/	bn (I)	n. m.	son	
 142880	bn	bn(II)	bn (II)	prep.	between	
 142880	bn	bn[	/b-n/	vb	to understand	
-142881	t	/t, /t=	;	;	;	
-142881	t	[t, [t=, [t==, [t===	;	;	;	
+142881	t	/t, /t=				
+142881	t	[t, [t=, [t==, [t===				
 142882	lk	l(I)+k	l (I)	prep.	to	
 # KTU 1.15 III:7						
 142883	tld	yld[	/y-l-d/	vb	to give birth (to)	
@@ -383,11 +383,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142972	l	l(II)	l (II)	adv.	no	
 142972	l	l(III)	l (III)	functor	certainly	
 142973	aṯth	aṯt/+h	ảṯt	n. f.	woman	
-142974	k	+k	-k (I)	Subordinating or completive functor	when	
-142974	k	~k	-k (II)	prep.	like	
-142974	k	k(III)	k (III)	emph. functor	yes	
-142974	k	k(I)	k (I)			
-142974	k	k(II)	k (II)			
+142974	k	+k	-k (I)			
+142974	k	~k	-k (II)			
+142974	k	k(III)	k (III)	Subordinating or completive functor	when	
+142974	k	k(I)	k (I)	prep.	like	
+142974	k	k(II)	k (II)	emph. functor	yes	
 142975	yṣḥ	!y!ṣḥ[	/ṣ-ḥ/	vb	to exclaim	
 # KTU 1.15 IV:3						
 142976	šmˤ	šmˤ[	/š-m-ʕ/	vb	to hear	
@@ -432,8 +432,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 IV:12						
 143001	idbx	?	?	?	?	DULAT: NOT FOUND
 143002	xxtxxxx	?	?	?	?	DULAT: NOT FOUND
-143003	t	/t, /t=	;	;	;	
-143003	t	[t, [t=, [t==, [t===	;	;	;	
+143003	t	/t, /t=				
+143003	t	[t, [t=, [t==, [t===				
 # KTU 1.15 IV:13						
 143004	lḥn	lḥ(II)/+n	lḥ (II)	n.	missive	
 143005	šqym	šqy/m	šqy	n. m.	cupbearer	
