@@ -2,10 +2,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.82 1						
 149997	xmḫṣ	?	?	?	?	DULAT: NOT FOUND
 149998	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-149998	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 149998	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 149999	xxy	?	?	?	?	DULAT: NOT FOUND
-150000	tnn	tnn(I)/	tnn (I)	DN	“dragon” ym’s primordial ally or double	
+150000	tnn	tnn(I)/	tnn (I)	DN	“dragon” ym’s primordial ally or double	DULAT lemma fallback (no forms row)
 150001	w	w	w	conj.	and	
 150002	ygl	gly[	/g-l-y/	vb	to present oneself	
 150003	w	w	w	conj.	and	
@@ -19,7 +18,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150008	arṣ	arṣ/	ảrṣ	n. f.	earth	
 150009	idy	idy	ỉdy	adv.	already	
 150010	alt	al(t(I)/t	ảlt (I)	n. f.	curse	
-150010	alt	alt(II)/	ảlt (II)	n. f.	support	
+150010	alt	al(t(II)/t=	ảlt (II)	n. f.	support	
 150011	l	l(I)	l (I)	prep.	to	
 150011	l	l(II)	l (II)	adv.	no	
 150011	l	l(III)	l (III)	functor	certainly	
@@ -27,13 +26,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150012	aḥš	!a!ḥš(II)[	/ḥ-š/ (II)	vb	to feel	
 150013	idy	idy	ỉdy	adv.	already	
 150014	alt	al(t(I)/t	ảlt (I)	n. f.	curse	
-150014	alt	alt(II)/	ảlt (II)	n. f.	support	
+150014	alt	al(t(II)/t=	ảlt (II)	n. f.	support	
 150015	in	in/	ỉn	n. m.	lack of	
 150016	ly	l(I)+y	l (I)	prep.	to	
 # KTU 1.82 3						
 150017	xbt	?	?	?	?	DULAT: NOT FOUND
 150018	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-150018	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 150018	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 150019	ḥẓ	ḥẓ/	ḥẓ	n. m.	arrow	
 150020	ršp	ršp/	ršp	DN	Rašap	
@@ -46,7 +44,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150022	km	km	km	prep./conj./adv.		
 150022	km	+km, +km=	-km			
 150023	yr	yr/	yr	n. m.	early rain	
-150024	klyth	klyt/+h	klyt	n. f.	kidneys	
+150024	klyth	kly/t=+h	klyt	n. f.	kidneys	
 150025	w	w	w	conj.	and	
 150026	lbh	lb/+h	lb	n. m.	heart	
 # KTU 1.82 4						
@@ -65,8 +63,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150035	k	k(I)	k (I)	prep.	like	
 150035	k	k(II)	k (II)	emph. functor	yes	
 150036	tgwln	!t!gl[	/g-l/	vb	to rejoice	
-150037	šntk	šnt(I)/	šnt (I)	n. f.	year	
-150037	šntk	šn/	šn	n. m.	tooth	
+150037	šntk	šnt(t(I)/t=	šnt (I)	n. f.	year	
+150037	šntk	šn/+k	šn	n. m.	tooth	
 # KTU 1.82 5						
 150038	xxw	?	?	?	?	DULAT: NOT FOUND
 150039	šptk	šp(t/t	špt	n. f.	lip	
@@ -136,7 +134,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150081	pny	pn(m/+y	pnm	n. m. pl. tant.	face	
 150082	yrk	yrk/	yrk	n. m.	body back part	
 150083	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-150083	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 150083	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 150084	xxx	?	?	?	?	
 # KTU 1.82 11						
@@ -170,10 +167,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150101	uḫd	ʔḫd[	/ʔ-ḫ-d(/ḏ)/	vb	to collect	
 150102	bˤlm	bˤl(II)/m	bʕl (II)	n. m.	lord	
 150103	ˤxxxl	?	?	?	?	DULAT: NOT FOUND
-150104	ydk	yd(I)/+k	yd (I)	n. f.	hand	
-150104	ydk	yd(I)/+k=	yd (I)	n. f.	hand	
-150104	ydk	yd(II)/+k	yd (II)	n. m.	love	
-150104	ydk	yd(II)/+k=	yd (II)	n. m.	love	
+150104	ydk	yd(I)/+k	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
+150104	ydk	yd(I)/+k=	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
+150104	ydk	yd(II)/+k	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
+150104	ydk	yd(II)/+k=	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
 150104	ydk	!y!dk[	d-k(-k)/	vb	to be pounded	
 150104	ydk	!y=!dk[	d-k(-k)/	vb	to be pounded	
 150105	amṣ	amṣ/	ảmṣ	adj. m.	strength	
@@ -201,7 +198,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150119	mbk	mbk/	mbk	n. m.	source	
 150120	kpt	kp/t=	kp	n. f.	palm (of the hand)	
 150120	kpt	ḥkpt/	ḥkpt	TN	ḥkpt	
-150121	wn	wn	wn	→		
+150121	wn	w+n	w	conj.	and	
 150122	b	b	b	prep.	in	
 150123	gx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.82 18						
@@ -298,7 +295,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150179	l	l(I)	l (I)	prep.	to	
 150179	l	l(II)	l (II)	adv.	no	
 150179	l	l(III)	l (III)	functor	certainly	
-150180	ḥrn	ḥrn/	ḥrn	DN	Ḥôrānu	
+150180	ḥrn	ḥr(I)/+n	ḥr (I)	n. m.	intestine(s)	
 150181	ḥrnm	ḥrn/+m(I)	ḥrn	DN	Ḥôrānu	
 150181	ḥrnm	ḥrn/+m(II)	ḥrn	DN	Ḥôrānu	
 # KTU 1.82 28						
@@ -350,7 +347,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150210	trtḥ	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.82 36						
 150211	xxxxxmṯbh	?	?	?	?	DULAT: NOT FOUND
-150212	aḫt	aḫt(I)/	ảḫt (I)	n. f.	sister (related by blood)	
+150212	aḫt	aḫ(t(I)/t=	ảḫt (I)	n. f.	sister (related by blood)	
 150213	ppšr	ppšr/	ppšr	PN	ppšr	
 150214	w	w	w	conj.	and	
 150215	ppšrt	ppšrt/	ppšrt	PN	ppšrt	
@@ -374,7 +371,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150229	pnh	pn(m/+h	pnm	n. m. pl. tant.	face	
 150230	yrk	yrk/	yrk	n. m.	body back part	
 150231	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-150231	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 150231	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 # KTU 1.82 39						
 150232	xxxxxṯbtk	?	?	?	?	DULAT: NOT FOUND
@@ -412,7 +408,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150249	bnt	bnt(III)/	bnt (III)	n. m.	tamarisk	
 150250	mˤmˤ	mˤmˤ/	mʕmʕ	n. m.	convulsion	
 150251	ˤbd	ˤbd(I)/	ʕbd (I)	n. m.	servant	
-150252	ḥrn	ḥrn/	ḥrn	DN	Ḥôrānu	
+150252	ḥrn	ḥr(I)/+n	ḥr (I)	n. m.	intestine(s)	
 150253	tqxk	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.82 42						
 150254	xx	?	?	?	?	

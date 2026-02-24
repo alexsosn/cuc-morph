@@ -54,13 +54,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.22 I:8						
 146878	ṯm	ṯm	ṯm	adv.	there	
 146879	ṯmq	ṯmq(I)/	ṯmq (I)	DN	ṯmq (I)	
+146879	ṯmq	ṯmq(II)/	ṯmq (II)	PN	ṯmq (II)	
 146880	rpu	rpu/	rpủ	n. m.	healer	
 146881	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-146881	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 146881	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 146882	mhr	mhr(I)/	mhr (I)	n. m.	warrior (trained	
 146883	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-146883	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 146883	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 # KTU 1.22 I:9						
 146884	w	w	w	conj.	and	
@@ -113,6 +112,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146910	ˤglm	ˤgl(I)/+m(II)	ʕgl (I)	n. m.	calf	
 146911	dt	d	d	det. or rel. functor	the one(s) of	
 146912	šnt	šn(t(I)/t	šnt (I)	n. f.	year	
+146912	šnt	šn(w[t	/š-n-w/	vb	to change: a) reflex.	
+146912	šnt	šn(t(II)/t	šnt (II)	n. f.	sleep	
 # KTU 1.22 I:14						
 146913	imr	imr(I)/	ỉmr (I)	n. m.	lamb	
 146914	qmṣ	qmṣ(I)/	qmṣ (I)	n. m.	heap	
@@ -129,7 +130,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146918	l	l(II)	l (II)	adv.	no	
 146918	l	l(III)	l (III)	functor	certainly	
 146919	ˤbrm	ˤbr(I)/m	ʕbr (I)	n. m.	passer-by	
-146920	zt	zt/	zt	n. m.	olive	
+146920	zt	z/t=	zt	n. m.	olive	
 146921	ḫrṣ	ḫrṣ/	ḫrṣ	n. m.	gold	
 146922	l	l(I)	l (I)	prep.	to	
 146922	l	l(II)	l (II)	adv.	no	
@@ -152,7 +153,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146933	ym	ym(II)/	ym (II)	n. m.	sea	
 146934	yṣq	!y!(yṣq[	/y-ṣ-q/	vb	to pour (out)	
 146935	yn	yn/	yn	n. m.	wine	
-146936	ṯmk	ṯmk/	ṯmk	TN	Bitterkraut	
+146936	ṯmk	ṯm+k	ṯm	adv.	there	
 # KTU 1.22 I:18						
 146937	mrṯ	mrṯ(I)/	mrṯ (I)	n. m.	must	
 146938	yn	yn/	yn	n. m.	wine	
@@ -167,7 +168,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146945	ˤnq	ˤnq/	ʕnq	n. m.	necklace	
 146946	smd	smd/	smd	n. m.	bead	
 # KTU 1.22 I:20						
-146947	lbnn	lbnn(I)/	lbnn (I)	TN	Lebanon	
+146947	lbnn	lb/+nn	lb	n. m.	heart	
 146948	ṭṣ	ṭl/	ṭl	n. m.	dew	
 146949	mrṯ	mrṯ(I)/	mrṯ (I)	n. m.	must	
 146950	yḥrṯ	!y!ḥrṯ[	/ḥ-r-ṯ/	vb	to plough	
@@ -211,7 +212,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146973	ṣq	ṣq/	ṣq	adj. m.	distressed	
 146974	b	b	b	prep.	in	
 146975	irt	ir(t/t	ỉrt	n. f.	breast	
-146976	lbnn	lbnn(I)/	lbnn (I)	TN	Lebanon	
+146976	lbnn	lb/+nn	lb	n. m.	heart	
 146977	mk	mk(II)	mk (II)	deictic functor	behold!	
 146977	mk	mk(I)/	mk (I)	n. m.	large puddle	
 146978	b	b	b	prep.	in	
@@ -336,6 +337,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147049	yuḫd	!y!ʔḫd[	/ʔ-ḫ-d(/ḏ)/	vb	to collect	
 # KTU 1.22 II:18						
 147050	nḫt	nḫ(t/t	nḫt	n. f.	divan	
+147050	nḫt	!n!ḫt[	/n-ḫ/	vb	to rest	
 147051	kḥṯ	kḥṯ/	kḥṯ	n. m.	throne	
 147052	drkt	drk(t/t	drkt	n. f.	rule	
 # KTU 1.22 II:19						
@@ -364,13 +366,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.22 II:22						
 147068	asr	asr/	ảsr	n. m.	prisoner	
 147068	asr	ʔsr[	/ʔ-s-r/	vb	to tie	
-147069	mrkbthm	mrkbt/	mrkbt	n. f.	(light war-)chariot	
+147069	mrkbthm	mrkb(t/t=	mrkbt	n. f.	(light war-)chariot	
 # KTU 1.22 II:23						
 147070	tˤln	!t!ˤly[	/ʕ-l-y/	vb	to go up	
 147071	l	l(I)	l (I)	prep.	to	
 147071	l	l(II)	l (II)	adv.	no	
 147071	l	l(III)	l (III)	functor	certainly	
-147072	mrkbthm	mrkbt/	mrkbt	n. f.	(light war-)chariot	
+147072	mrkbthm	mrkb(t/t=	mrkbt	n. f.	(light war-)chariot	
 147073	tity	!t!ʔtw[	/ʔ-t-w/	vb	to come	
 147074	l	l(I)	l (I)	prep.	to	
 147074	l	l(II)	l (II)	adv.	no	
@@ -402,7 +404,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147089	l	l(I)	l (I)	prep.	to	
 147089	l	l(II)	l (II)	adv.	no	
 147089	l	l(III)	l (III)	functor	certainly	
-147090	mṭˤt	mṭˤt/	mṭʕt	n. f.	plantation	
+147090	mṭˤt	mṭˤ(t/t=	mṭʕt	n. f.	plantation	
 # KTU 1.22 IV:1						
 147091	l	l(I)	l (I)	prep.	to	
 147091	l	l(II)	l (II)	adv.	no	

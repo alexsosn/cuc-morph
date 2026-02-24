@@ -38,7 +38,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157939	k	k(I)	k (I)	prep.	like	
 157939	k	k(II)	k (II)	emph. functor	yes	
 157940	ˤbdm	ˤbd(I)/m	ʕbd (I)	n. m.	servant	
-157941	sglth	sgl(t/t+h	sglt	n. f.	treasure	
+157941	sglth	sglt/+h	sglt	n. f.	treasure	
 157942	hw	hw	hw	pers. pn.	he	
 # KTU 2.39 8						
 157943	w	w	w	conj.	and	
@@ -74,7 +74,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157962	bˤlk	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
 # KTU 2.39 12						
 157963	ˤbdm	ˤbd(I)/m	ʕbd (I)	n. m.	servant	
-157964	sglth	sgl(t/t+h	sglt	n. f.	treasure	
+157964	sglth	sglt/+h	sglt	n. f.	treasure	
 157965	at	at(I)	ảt (I)	pers. pn.	you	
 # KTU 2.39 13						
 157966	ht	ht	ht	adv.	here	
@@ -93,6 +93,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157975	bˤlk	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
 # KTU 2.39 16						
 157976	šnt	šn(t(I)/t	šnt (I)	n. f.	year	
+157976	šnt	šn(w[t	/š-n-w/	vb	to change: a) reflex.	
+157976	šnt	šn(t(II)/t	šnt (II)	n. f.	sleep	
 157977	šntm	šn(t(I)/tm	šnt (I)	n. f.	year	
 157978	lm	l(I)	l (I)	prep.	to	
 157979	l	l(I)	l (I)	prep.	to	
@@ -119,7 +121,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157990	akl	akl(II)/	ảkl (II)	n. m.	grain	
 # KTU 2.39 20						
 157991	b	b	b	prep.	in	
-157992	ḥwtk	ḥw(t/t+k	ḥwt	n. f.	country	
+157992	ḥwtk	ḥwt/+k	ḥwt	n. f.	country	
 157993	inn	in/	ỉn	n. m.	lack of	
 # KTU 2.39 21						
 157994	špšn	špš/	špš	n.	sun	
@@ -154,7 +156,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158012	xk	?	?	?	?	DULAT: NOT FOUND
 # KTU 2.39 32						
 158013	w	w	w	conj.	and	
-158014	spr	spr(II)/	spr (II)	n. m.	tablet / register	
+158014	spr	spr(II)/	spr (II)	n. m.	tablet/register	
 158014	spr	spr[	/s-p-r/	vb	to count	
 158014	spr	spr(I)/	spr (I)	n. m.	scribe	
 158015	inx	?	?	?	?	DULAT: NOT FOUND

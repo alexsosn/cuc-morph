@@ -3,12 +3,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156068	b	b	b	prep.	in	
 156069	bt	bt(II)/	bt (II)	n. m.	house	
 156069	bt	b(t(I)/t	bt (I)	n. f.	daughter	
-156070	ytn	!y!(ytn[	/y-t-n/	vb	to give	
+156070	ytn	!y!(ytn[	/y-t-n/	vb	to give/to grant	
 # KTU 1.179 2						
 156071	x	?	?	?	?	
 156072	tḥt	tḥt(I)	tḥt (I)	prep.	under	
+156072	tḥt	tḥt(II)	tḥt (II)	adv.	underneath	
 156073	il	il(I)/	ỉl (I)	n. m.	god	
-156074	ṯmk	ṯmk/	ṯmk	TN	Bitterkraut	
+156074	ṯmk	ṯm+k	ṯm	adv.	there	
 # KTU 1.179 3						
 156075		?	?	?	?	
 156076	w	w	w	conj.	and	
@@ -32,10 +33,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156089	b	b	b	prep.	in	
 156090	adx	?	?	?	?	DULAT: NOT FOUND
 156091	pˤnk	pˤn/+k	pʕn	n. f.	foot	
-156092	ydk	yd(I)/+k	yd (I)	n. f.	hand	
-156092	ydk	yd(I)/+k=	yd (I)	n. f.	hand	
-156092	ydk	yd(II)/+k	yd (II)	n. m.	love	
-156092	ydk	yd(II)/+k=	yd (II)	n. m.	love	
+156092	ydk	yd(I)/+k	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
+156092	ydk	yd(I)/+k=	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
+156092	ydk	yd(II)/+k	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
+156092	ydk	yd(II)/+k=	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
 156092	ydk	!y!dk[	d-k(-k)/	vb	to be pounded	
 156092	ydk	!y=!dk[	d-k(-k)/	vb	to be pounded	
 156093	l	l(I)	l (I)	prep.	to	
@@ -63,10 +64,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.179 10						
 156107	kbkb	kbkb/	kbkb	n. m.	heavenly body	
 156108	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-156108	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 156108	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 156109	w	w	w	conj.	and	
-156110	pdry	pdry/	pdry	DN	Pidray	
+156110	pdry	pdr(I)/+y	pdr (I)	n. m.	town	
 156111	kbkb	kbkb/	kbkb	n. m.	heavenly body	
 # KTU 1.179 11						
 156112	kṯr	kṯr(III)/	kṯr (III)	DN/element of DN	Koṯaru/Kothar	
@@ -116,12 +116,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156139	lqḥ	lqḥ[	/l-q-ḥ/	vb	to get hold of	
 156140	prṯt	prṯ(t/t	prṯt	n. f.	secret	
 156141	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-156141	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 156141	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 # KTU 1.179 17						
 156142	x	?	?	?	?	
 156143	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-156143	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 156143	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 156144	qdšm	qdš(I)/m	qdš (I)	adj. m.	holy	
 156145	b	b	b	prep.	in	
@@ -130,7 +128,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156147	nḫl	nḫl(I)/	nḫl (I)	n. m.	torrent	
 156148	ˤṯtrt	ˤṯtrt(II)/	ʕṯtrt (II)	TN	ʿṯtrt (II)	
 156149	b	b	b	prep.	in	
-156150	rḥbn	rḥbn/	rḥbn	TN	) ra-(aḫ -) ba/bá-ni/na	
+156150	rḥbn	rḥb(I)/+n	rḥb (I)	adj. m.	wide	
 # KTU 1.179 19						
 156151	xarr	?	?	?	?	DULAT: NOT FOUND
 156152	b	b	b	prep.	in	
@@ -139,17 +137,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156154	tl	tl(I)/	tl (I)	n. m.	hill	
 156154	tl	tl(II)/	tl (II)	n. m.	weapon	
 156155	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-156155	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 156155	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 # KTU 1.179 20						
 156156	prṯt	prṯ(t/t	prṯt	n. f.	secret	
 156157	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-156157	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 156157	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 # KTU 1.179 21						
 156158	ṯt	ṯn(I)/	ṯn (I)	num.	two	
 156159	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-156159	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 156159	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 # KTU 1.179 22						
 156160	xt	?	?	?	?	DULAT: NOT FOUND
@@ -203,7 +198,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156187	pslt	psl(t(II)/t	pslt (II)	n. f.	sculpture	
 # KTU 1.179 32						
 156188	w	w	w	conj.	and	
-156189	hwt	hw(t(I)/t	hwt (I)	n. f.	word	
+156189	hwt	hw(t(I)/t	hwt (I)	n. f.	word/matter	
 156190	b	b	b	prep.	in	
 156191	špth	šp(t/t	špt	n. f.	lip	
 156192	rḥqt	rḥq[	/r-ḥ-q/	vb	to go away	
@@ -218,11 +213,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156195	abn	!a!bn[	/b-n/	vb	to understand	
 # KTU 1.179 33						
 156196	ˤrb	ˤrb(I)[	/ʕ-r-b/ (I)	vb	to enter	
-156196	ˤrb	ˤrb(II)[	/ʕ-r-b/ (II)	vb	to give a guarantee or pledge	
 156196	ˤrb	ˤrb(I)/	ʕrb (I)	n. m.	entry	
-156197	ḥrn	ḥrn/	ḥrn	DN	Ḥôrānu	
+156197	ḥrn	ḥr(I)/+n	ḥr (I)	n. m.	intestine(s)	
 156198	bth	bt(II)/+h	bt (II)	n. m.	house	
-156199	ytn	!y!(ytn[	/y-t-n/	vb	to give	
+156199	ytn	!y!(ytn[	/y-t-n/	vb	to give/to grant	
 156200	gh	g/+h	g	n. m.	(loud) voice	
 156201	w	w	w	conj.	and	
 156202	yṣḥ	!y!ṣḥ[	/ṣ-ḥ/	vb	to exclaim	
@@ -233,16 +227,17 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156205	xxxx	?	?	?	?	
 156206	ḥdr	ḥdr/	ḥdr	n. m.	room	
 156207	tˤny	!t!ˤny(I)[	/ʕ-n-y/ (I)	vb	to answer	
+156207	tˤny	!t!ˤn(w&y[	/ʕ-n-w/	vb	to be / remain depressed	
 156208	ank	ank	ảnk	pers. pn.	I	
 156209	mlkt	mlk(t/t	mlkt	n. f.	queen	
 156210	mntn	mnt(I)/+n	mnt (I)	n. f.	portion	
 156211	mrbdh	mrbd(I)/+h	mrbd (I)	n. f.	bedspread	
-156212	ytn	!y!(ytn[	/y-t-n/	vb	to give	
+156212	ytn	!y!(ytn[	/y-t-n/	vb	to give/to grant	
 # KTU 1.179 35						
 156213	xxxnh	?	?	?	?	DULAT: NOT FOUND
 156214	w	w	w	conj.	and	
 156215	ḫlm	ḫl/m	ḫl	n. m.	pain	
-156216	aṯt	aṯt/	ảṯt	n. f.	woman	
+156216	aṯt	aṯ(t/t	ảṯt	n. f.	woman	
 156217	iṯt	iṯt	ỉṯt	?	?	
 156218	k	+k	-k (I)			
 156218	k	~k	-k (II)			
@@ -309,11 +304,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156258	w	w	w	conj.	and	
 156259	mspr	spr[	/s-p-r/	vb	to count	
 156259	mspr	mspr/	mspr	n. m.	recitation	
-156260	hwt	hw(t(I)/t	hwt (I)	n. f.	word	
+156260	hwt	hw(t(I)/t	hwt (I)	n. f.	word/matter	
 # KTU 1.179 42						
 156261	xxrbh	?	?	?	?	DULAT: NOT FOUND
 156262	w	w	w	conj.	and	
-156263	ind	ind	ỉnd	→		
+156263	ind	in/+d	ỉn	n. m.	lack of	
 156264	ylmdnn	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.179 43						
 156265	b	b	b	prep.	in	

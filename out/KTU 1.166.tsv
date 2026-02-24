@@ -25,14 +25,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.166 9						
 155483	dgn	dgn(I)/	dgn (I)	n. m.	grain	
 155484	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-155484	bˤl	bˤl(I)/	bʕl (I)	n. m.	labourer	
 155484	bˤl	bˤl[	/b-ʕ-l/	vb	to make	
 # KTU 1.166 10						
 155485	hm	hm(II)	hm (II)	conj./interr. functor	if	
 155486	tddn	ndd[+n	/n-d-d/	vb	to go	
 # KTU 1.166 11						
-155487	ˤẓrnm	ˤẓrn+m(I)	ʕẓrn	morph.	(?)	
-155487	ˤẓrnm	ˤẓrn+m(II)	ʕẓrn	emph. or det. encl. morph.	(?)	
+155487	ˤẓrnm	ˤẓrn+m(I)	ʕẓrn		(?)	
+155487	ˤẓrnm	ˤẓrn+m(II)	ʕẓrn		(?)	
 155488	m	l(I)	l (I)	prep.	to	
 # KTU 1.166 12						
 155489	l	l(I)	l (I)	prep.	to	
@@ -76,7 +75,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155509	rḥ	rḥ(II)/	rḥ (II)	n. m.	aroma	
 155510	arr	arr/	ảrr	TN	district	
 # KTU 1.166 23						
-155511	ydnm	ydnm/	ydnm	PN	ydnm	
+155511	ydnm	!y!dn[+m(I)	/d-n/	vb	to judge	
+155511	ydnm	!y!dn[+m(II)	/d-n/	vb	to judge	
+155511	ydnm	!y!(ydn[+m(I)	/y-d-n/	vb	?	
 155512	ap	ap(I)	ảp (I)	adv./conj.	also	
 155512	ap	ap(II)/	ảp (II)	n. m.	nose	
 # KTU 1.166 24						
@@ -93,6 +94,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155517	ylk	hlk[	/h-l-k/	vb	to go	
 # KTU 1.166 26						
 155518	tḥt	tḥt(I)	tḥt (I)	prep.	under	
+155518	tḥt	tḥt(II)	tḥt (II)	adv.	underneath	
 155519	pˤnh	pˤn/+h	pʕn	n. f.	foot	
 # KTU 1.166 27						
 155520	w	w	w	conj.	and	
