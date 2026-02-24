@@ -50,11 +50,13 @@ Use the reusable pipeline to process new tablets from `cuc_tablets_tsv` into `ou
 
 Pipeline stages are:
 
-1. Bootstrap from DULAT form matches
-2. Mention-aware refinement (`scripts/refine_results_mentions.py` logic)
-3. Instruction-driven cleanup for high-confidence cases (normalize disallowed col2/col3 characters, enforce unresolved `?` rows where DULAT is missing, and enrich `n.`/`adj.` POS slots with DULAT gender where uniquely known)
-4. Step chain with DULAT-gated fixes (`noun-pos-closure`, `plural-split`, `suffix-clitic`, `weak-verb`) and per-step safety threshold checks
-5. Report regeneration under `reports/`
+1. Start from prepared source files in `cuc_tablets_tsv/*.tsv` (token IDs + `# ... KTU ...` line references). The CUC-to-TSV conversion happens upstream.
+2. Build first-pass analyses from DULAT (`scripts/bootstrap_tablet_labeling.py`): for each surface form, fill columns 3-6 from DULAT form matches; keep unresolved rows explicit as `DULAT: NOT FOUND`.
+3. Re-rank and refine candidates with context (`scripts/refine_results_mentions.py`): combine direct form matches with conservative suffix splitting, then score using local context, reverse references (`dulat_reverse_refs`, `ktu_to_dulat`), and attestation/tablet-family signals.
+4. Keep the best aligned options per token: up to 3 analysis/DULAT/POS/gloss options per row (or 1 when evidence is clearly stronger), while preserving meaningful human comments.
+5. Run conservative normalization (`pipeline/instruction_refiner.py`): clean character/POS formatting, convert unresolved rows to `?` in cols 3-6, and add noun/adjective gender where DULAT gives a unique value.
+6. Apply ordered linguistic heuristics with safeguards (`pipeline/tablet_parsing.py`): formula disambiguation, plural/suffix/feminine and weak-verb normalization, KTU1-specific pruning, controlled ambiguity expansion, onomastic/generic overrides, and schema formatting (first and last).
+7. Regenerate lint reports in `reports/`.
 
 ## GitHub Actions
 

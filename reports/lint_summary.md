@@ -1,15 +1,15 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `10152`
-- Fallback-parsed issue lines: `1052`
+- Total issues: `10416`
+- Fallback-parsed issue lines: `1313`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 7184 |
-| WARNING | 1270 |
+| ERROR | 7445 |
+| WARNING | 1273 |
 | INFO | 1519 |
 
 ### By Problem Type
@@ -27,8 +27,8 @@
 | ERROR | Non-G stem in DULAT requires stem marker | 124 |
 | ERROR | No DULAT entry found for clitic part | 109 |
 | ERROR | Unknown DULAT token in column 4 | 82 |
+| WARNING | Suffix form without '+' | 82 |
 | ERROR | No DULAT entry found for lexeme/surface | 80 |
-| WARNING | Suffix form without '+' | 79 |
 | WARNING | y Lexeme parse did not match DULAT; matched by surface form | 71 |
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 67 |
 | ERROR | Each reconstructed letter must be prefixed by '(' | 65 |
@@ -37,22 +37,25 @@
 | ERROR | POS ambiguous in DULAT | 45 |
 | ERROR | Multiple DULAT candidates for surface | 43 |
 | ERROR | Column 4 count must match analysis variant count | 41 |
-| ERROR | ḥrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 36 |
-| ERROR | ṯkmn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 36 |
+| ERROR | ḥrn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 30 |
 | WARNING | Feminine adjective/participle in DULAT should mark '-t' explicitly | 29 |
 | ERROR | Noun/adjective lacks '/' ending | 28 |
 | WARNING | mnm Pronouns should not use '/' closure in analysis | 28 |
 | WARNING | at Pronouns should not use '/' closure in analysis | 25 |
+| ERROR | pdry Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 24 |
 | WARNING | Plural form missing split ending | 24 |
-| ERROR | dtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 18 |
+| ERROR | lbh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 22 |
+| ERROR | ˤšrh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 21 |
+| ERROR | ḥry Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 20 |
+| ERROR | dtn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 18 |
 | WARNING | hw Pronouns should not use '/' closure in analysis | 18 |
+| ERROR | ˤmny Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 16 |
 | WARNING | Feminine plural noun in DULAT should be tagged with '/t=' | 16 |
 | WARNING | mid Lexeme parse did not match DULAT; matched by surface form | 16 |
-| ERROR | tṣḥn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 15 |
 | ERROR | Deverbal form matches both verb and noun entries in DULAT | 13 |
 | WARNING | nkt Lexeme parse did not match DULAT; matched by surface form | 13 |
-| ERROR | hyn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 12 |
-| ERROR | ibrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 12 |
+| ERROR | hyn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 12 |
+| ERROR | ibrn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 12 |
 | WARNING | bhtm Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | hnd Pronouns should not use '/' closure in analysis | 12 |
 | WARNING | pamt Lexeme parse did not match DULAT; matched by surface form | 12 |
@@ -60,23 +63,32 @@
 | WARNING | špḥ Noun POS should include DULAT gender marker for špḥ: n. m. | 12 |
 | ERROR | Multiple DULAT candidates for lexeme | 10 |
 | WARNING | Feminine plural noun in DULAT should use '/t=' | 10 |
-| ERROR | ddn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 9 |
-| ERROR | tldn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 9 |
-| ERROR | wn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 9 |
+| ERROR | aph Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 9 |
+| ERROR | ddn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 9 |
 | WARNING | Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3) | 9 |
 | WARNING | yˤn Lexeme parse did not match DULAT; matched by surface form | 9 |
 | WARNING | qšt Lexeme parse did not match DULAT; matched by surface form | 8 |
 | WARNING | tr Lexeme parse did not match DULAT; matched by surface form | 8 |
 | WARNING | nši Lexeme parse did not match DULAT; matched by surface form | 7 |
-| ERROR | mntn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 6 |
-| ERROR | npškn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 6 |
-| ERROR | rdn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 6 |
-| ERROR | sdn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 6 |
-| ERROR | tˤrbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 6 |
-| ERROR | ytnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 6 |
-| ERROR | śzn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 6 |
-| ERROR | štnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 6 |
-| ERROR | ḥwtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 6 |
+| ERROR | arṣy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | dnty Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | krmh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | mntn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | nh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | nk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | npṣh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | qdšh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | rdn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | sdn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | th Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | tṣḥn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | ytnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | śzn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | šlmk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | štnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | ˤmnh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | ḥmrh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
+| ERROR | ḥwtn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 6 |
 | WARNING | tbˤ Lexeme parse did not match DULAT; matched by surface form | 6 |
 | WARNING | Deverbal form marked with '[' but only noun entry found in DULAT | 5 |
 | WARNING | trḫ Lexeme parse did not match DULAT; matched by surface form | 5 |
@@ -84,7 +96,16 @@
 | WARNING | yḥ Lexeme parse did not match DULAT; matched by surface form | 5 |
 | WARNING | šp Noun POS should include DULAT gender marker for šp: n. m. | 5 |
 | ERROR | D stem marker present but DULAT lacks D/Dt | 4 |
-| ERROR | tšabn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 4 |
+| ERROR | amhth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 4 |
+| ERROR | btkh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 4 |
+| ERROR | dk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 4 |
+| ERROR | lṣbh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 4 |
+| ERROR | nny Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 4 |
+| ERROR | tmġy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 4 |
+| ERROR | wy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 4 |
+| ERROR | ˤqh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 4 |
+| ERROR | ḥdy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 4 |
+| ERROR | ḥwy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 4 |
 | WARNING | an Pronouns should not use '/' closure in analysis | 4 |
 | WARNING | bht Lexeme parse did not match DULAT; matched by surface form | 4 |
 | WARNING | dry Noun POS should include DULAT gender marker for dr: n. m. | 4 |
@@ -96,44 +117,62 @@
 | WARNING | ḫbtkm Lexeme parse did not match DULAT; matched by surface form | 4 |
 | ERROR | POS tokens must map to existing DULAT tokens in column 4 | 3 |
 | ERROR | Verb lacks '[' ending | 3 |
-| ERROR | atnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | bltn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | byn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | bˤlyn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | ggn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | iphn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | iḫn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | krn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | kṯn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | lbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | lbšn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | lytn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | lḥn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | mln Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | pṯtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | rišyn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | rn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | rḥbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | rḫnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | snrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | tbˤn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | tddn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | tmrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | tqdmnnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | trmn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | ttlkn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | tˤtqnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | tṣun Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | tṯbrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | tṯṯkrnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | ymlun Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | ynḥtn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | yrdn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | yšrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | yṣan Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
-| ERROR | yṯnyn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
+| ERROR | ak Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | aklth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | amth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | atk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | atnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | bbty Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | byn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | bˤlyn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | dbḥh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | dqth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | gpny Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | iphn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | iḫn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | krn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | ksh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | kty Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | lbn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | lmdh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | lḥn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | ny Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | qlty Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | rgmh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | rn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | ry Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | rḥbn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | rḥmy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | rḫnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | snrn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | tddn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | tmrn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | tqdmnnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | trmn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | ty Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | tˤtqnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | tṯbrn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | tṯṯkrnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | ymlun Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | ynḥtn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | yrdn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | yry Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | yšrn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | yṣan Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | yṯnyn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
 | ERROR | Š stem marker present but DULAT lacks Š/Št/Špass | 3 |
-| ERROR | ḥdṯn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 3 |
+| ERROR | šdy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | šk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | šlmh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | ˤh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | ˤmnk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | ḥdṯh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | ḥdṯn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | ḥṭbh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | ḫlh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | ṣbuh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | ṯkmn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
+| ERROR | ṯnth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 3 |
 | WARNING | bmt Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | bˤdn Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | bˤlkm Lexeme parse did not match DULAT; matched by surface form | 3 |
@@ -154,12 +193,50 @@
 | WARNING | ḫbtkn Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | ḫsn Noun POS should include DULAT gender marker for ḫsn (I): n. m. | 3 |
 | ERROR | Xt stem marker present but DULAT lacks *t stem | 2 |
-| ERROR | rdnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 2 |
-| ERROR | tmṭrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 2 |
-| ERROR | tšˤlynh Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 2 |
-| ERROR | un Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 2 |
-| ERROR | yˤtqn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 2 |
-| ERROR | ˤmn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 2 |
+| ERROR | adnh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | adnyh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | bhth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | byy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | bšrk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | grph Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | gty Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | iršth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | kbdnh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | knth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | krpnh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | lakh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | lbky Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | lbšk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | lrgth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | lḥk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | mmk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | mrbdh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | mrzḥh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | mˤmsh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | mˤmsy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | mḫrh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | mḫṣk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | nḫlh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | nḫtk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | nṣk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | rdnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | rgmk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | rušy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | rṯy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | tispk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | tmntk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | tšqynh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | uly Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | uph Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | yqbh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | yqry Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | yrḫh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | yšqynh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | zth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | ġdmh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | ḥbšy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | ḥmḥmth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
+| ERROR | ṭly Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 2 |
 | WARNING | Morphology placeholder '?' should use unresolved DULAT placeholder '?' in column 4 | 2 |
 | WARNING | alit Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | ankm Pronouns should not use '/' closure in analysis | 2 |
@@ -224,34 +301,32 @@
 | WARNING | ḥtkk Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ḥṯm Noun POS should include DULAT gender marker for ḥṯ: n. m. | 2 |
 | ERROR | Disallowed character in columns 2-3: ʕ | 1 |
-| ERROR | anḫn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | aṯbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | ilšnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | nn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | pkn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | taršn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | tbkynh Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | tbqˤnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | tdrˤnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | tkbdnh Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | tmġyn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | tqbrnh Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | txxrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | tšrpnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | tštnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | tšṣqnh Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | tṭḥnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | ylḥn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | ymṣḫn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | yngḥn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | ynṯkn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | ystrn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | ytˤn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | yṯṯbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | ˤdbnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | ˤln Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | ˤrbn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
-| ERROR | ḥnn Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n= | 1 |
+| ERROR | bnšk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | brltk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | bˤrk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | ddnh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | gk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | ilšnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | kbdhk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | lnk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | mˤmsk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | mḫṣtk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | npṣk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | pkn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | qṭrk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | ttnk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | udk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | uṣbˤtk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | ydˤtk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | ymġk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | ġlmk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | šbk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | šink Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | ˤmkk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | ḥytk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | ḥẓk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | ḥẓrk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
+| ERROR | ṯmk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms | 1 |
 | WARNING | Plurale tantum noun ending in '-m' should mark plural with '/m' | 1 |
 | WARNING | am Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ankn Pronouns should not use '/' closure in analysis | 1 |
