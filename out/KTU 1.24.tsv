@@ -66,7 +66,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147679	xxxn	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.24 13						
 147680	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
-147681	adnh	adn(I)/+h(I); adn(I)/+h(II); ad/+nh	ảdn (I), -h (I); ảdn (I), -h (II); ảd, -nh	n. m., pers. pn./morph.; n. m., adv. functor; n. m., →	lord, his /her (hers) / its; lord, to; father,	
+147681	adnh	adn(I)/+h; adn(I)/+h; ad/+nh	ảdn (I), -h (I); ảdn (I), -h (II); ảd, -nh	n. m., pers. pn./morph.; n. m., adv. functor; n. m., →	lord, his /her (hers) / its; lord, to; father,	
 147682	xxl	?	?	?	?	DULAT: NOT FOUND
 147683	rxxxxxx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.24 14						
@@ -99,9 +99,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147706	ytrḫ	!y!trḫ[	/t-r-ḫ/	vb	to marry	
 147707	ib	ib(I)/; ib(II)/	ỉb (I); ỉb (II)	n. m.; n. m./DN	enemy; fruit	
 147708	tˤrbm	!t!ˤrb(I)[	/ʕ-r-b/ (I)	vb	to enter	
-147709	bbh	bb/+h(I); bb/+h(II)	bb, -h (I); bb, -h (II)	PN, pers. pn./morph.; PN, adv. functor	bb, his /her (hers) / its; bb, to	
+147709	bbh	bb/+h; bb/+h	bb, -h (I); bb, -h (II)	PN, pers. pn./morph.; PN, adv. functor	bb, his /her (hers) / its; bb, to	
 # KTU 1.24 19						
-147710	th	ˤl(I)+h(I); ˤl(I)+h(II); aḫt(I)/+h(I)	ʕl (I), -h (I); ʕl (I), -h (II); ảḫt (I), -h (I)	prep., pers. pn./morph.; prep., adv. functor; n. f., pers. pn./morph.	upon, his /her (hers) / its; upon, to; sister (related by blood), his /her (hers) / its	
+147710	th	ˤl(I)+h; ˤl(I)+h; aḫt(I)/+h	ʕl (I), -h (I); ʕl (I), -h (II); ảḫt (I), -h (I)	prep., pers. pn./morph.; prep., adv. functor; n. f., pers. pn./morph.	upon, his /her (hers) / its; upon, to; sister (related by blood), his /her (hers) / its	
 147711	w	w	w	conj.	and	
 147712	atn	ytn[	/y-t-n/	vb	to give	
 147713	mhrh	mhr(I)/h; mhr(II)/+h; mhr(III)/+h	mhr (I); mhr (II); mhr (III)	n. m.; n. m.; n. m.	warrior (trained; warrior strength; dowry	
@@ -142,7 +142,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147741	m	l(I)	l (I)	prep.	to	
 147742	bˤl	bˤl(II)/; bˤl[	bʕl (II); /b-ʕ-l/	n. m./DN; vb	Baʿlu/Baal; to make	
 147743	trḫ	!t!rḫ[	/t-r-ḫ/	vb	to marry	
-147744	pdry	pdr(I)/+y(I); pdr(I)/+y(II)	pdr (I), -y (I); pdr (I), -y (II)	n. m., prep.; n. m., postp. functor	town, my; town, yes	
+147744	pdry	pdr(I)/+y; pdr(I)/+y	pdr (I), -y (I); pdr (I), -y (II)	n. m., prep.; n. m., postp. functor	town, my; town, yes	
 147745	bth	bt(II)/+h	bt (II)	n. m.	house	
 # KTU 1.24 27						
 147746	aqrbk	?	?	?	?	DULAT: NOT FOUND
@@ -167,7 +167,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147761	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 147762	nyr	nyr/	nyr	n. f.	luminary	
 147763	šmm	šm(m(I)/m	šmm (I)	n. m. pl. tant.	heavens	
-147764	wn	w+n(I); w+n(II); w+n(III)	w, -n (I); w, -n (II); w, -n (III)	conj., morph.; conj., pers. pn./morph./vb; conj., pers. pn./morph.	and, Sun; and, me; and, our	
+147764	wn	w+n; w+n; w+n	w, -n (I); w, -n (II); w, -n (III)	conj., morph.; conj., pers. pn./morph./vb; conj., pers. pn./morph.	and, Sun; and, me; and, our	
 147765	ˤn	ˤn(I)/; ˤn[; ˤn(II)/	ʕn (I); /ʕ-n/; ʕn (II)	n. f.; vb; n. f.	eye; to see; furrow	
 # KTU 1.24 32						
 147766	ˤmn	ˤm(I)+n	ʕm (I)	prep.	to	
@@ -178,7 +178,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147770	nkl	nkl/	nkl	DN	nkl	
 147771	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 147772	ytrḫ	!y!trḫ[	/t-r-ḫ/	vb	to marry	
-147773	adnh	adn(I)/+h(I); adn(I)/+h(II); ad/+nh	ảdn (I), -h (I); ảdn (I), -h (II); ảd, -nh	n. m., pers. pn./morph.; n. m., adv. functor; n. m., →	lord, his /her (hers) / its; lord, to; father,	
+147773	adnh	adn(I)/+h; adn(I)/+h; ad/+nh	ảdn (I), -h (I); ảdn (I), -h (II); ảd, -nh	n. m., pers. pn./morph.; n. m., adv. functor; n. m., →	lord, his /her (hers) / its; lord, to; father,	
 # KTU 1.24 34						
 147774	yšt	!y!št[; šty[	/š-t/; /š-t-y/	vb; vb	to place; to drink	
 147775	mṣb	mṣb(II)/; mṣb(I)/	mṣb (II); mṣb (I)	n. m.; n. m.	place in which something is put; beam	
@@ -231,7 +231,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147813	zt	z/t=	zt	n. m.	olive	
 147814	dm	dm(II)/; dm(I)	dm (II); dm (I)	n. m.; functor	blood; since	
 # KTU 1.24 44						
-147815	llay	llu/+y(I); llu/+y(II)	llủ, -y (I); llủ, -y (II)	n. m., prep.; n. m., postp. functor	suckling (lamb or kid), my; suckling (lamb or kid), yes	
+147815	llay	llu/+y; llu/+y	llủ, -y (I); llủ, -y (II)	n. m., prep.; n. m., postp. functor	suckling (lamb or kid), my; suckling (lamb or kid), yes	
 147816	ˤm	ˤm(I)	ʕm (I)	prep.	to	
 147817	lẓpn	lẓpn	lẓpn	→		
 147818	i	i(I)	ỉ (I)	interj.	woe	
@@ -243,7 +243,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147823	py	p(III)/+y	p (III)	n. m.	mouth	
 147824	sp	sp/	sp	n. m.	bowl	
 # KTU 1.24 46						
-147825	rhn	ġtr[+hn(I); pẓr[+hn(I); rks/+hn(I)	/ġ-t-r/, -hn (I); /p-ẓ-r/, -hn (I); rks, -hn (I)	vb, suff. pers. pn.; vb, suff. pers. pn.; n. m., suff. pers. pn.	to implore, their; to free, their; belt, their	
+147825	rhn	ġtr[+hn; pẓr[+hn; rks/+hn	/ġ-t-r/, -hn (I); /p-ẓ-r/, -hn (I); rks, -hn (I)	vb, suff. pers. pn.; vb, suff. pers. pn.; n. m., suff. pers. pn.	to implore, their; to free, their; belt, their	
 147826	b	b	b	prep.	in	
 147827	špty	šp(t/t	špt	n. f.	lip	
 147828	mn	mn(IV)	mn (IV)	?	?	

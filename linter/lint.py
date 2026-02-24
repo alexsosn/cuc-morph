@@ -152,7 +152,24 @@ ANALYSIS_SURFACE_LETTER_RE = re.compile(r"[A-Za-zˤʔḫṣṯẓġḏḥṭšʕ
 _CLITIC_SUFFIX_SEGMENTS = ("hm", "hn", "km", "kn", "ny", "nm", "nn", "h", "k", "n", "y")
 _DECLARED_SUFFIX_NY_RE = re.compile(r",\s*-[ny](?:\s|\(|$)", flags=re.IGNORECASE)
 _DECLARED_LEMMA_LETTER_RE = re.compile(r"[^A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]")
-_HOMONYM_MARKED_N_CLITIC_RE = re.compile(r"(?:\+n=?|~n=?|\[n=?|-n=?)\((?:I|II|III|IV)\)")
+_PRONOMINAL_SUFFIX_SEGMENTS = (
+    "nkm",
+    "ny",
+    "nk",
+    "nh",
+    "nn",
+    "km",
+    "kn",
+    "hm",
+    "hn",
+    "y",
+    "n",
+    "k",
+    "h",
+)
+_HOMONYM_MARKED_SUFFIX_RE = re.compile(
+    r"(?:\+|~|\[)(?:" + "|".join(_PRONOMINAL_SUFFIX_SEGMENTS) + r")=?\((?:I|II|III|IV)\)=?"
+)
 _PLURAL_MORPH_RE = re.compile(r"\bpl\.", flags=re.IGNORECASE)
 _PLURAL_WORD_MORPH_RE = re.compile(r"\bplur", flags=re.IGNORECASE)
 _DUAL_MORPH_RE = re.compile(r"\bdu\.", flags=re.IGNORECASE)
@@ -640,9 +657,9 @@ def analysis_has_nominal_slash_on_pronoun(analysis: str) -> bool:
 
 
 def analysis_has_homonym_marked_n_clitic(analysis: str) -> bool:
-    """True when enclitic n is encoded with homonym numerals (invalid in col3)."""
+    """True when suffix/enclitic markers carry homonym numerals in col3."""
     variants = split_semicolon_field(analysis) or [analysis]
-    return any(_HOMONYM_MARKED_N_CLITIC_RE.search((v or "").strip()) for v in variants)
+    return any(_HOMONYM_MARKED_SUFFIX_RE.search((v or "").strip()) for v in variants)
 
 
 def variant_has_lexeme_terminal_single_suffix_split(
@@ -2101,7 +2118,7 @@ def lint_file(
                         line_id,
                         surface,
                         a_txt,
-                        "Do not use homonym numerals for enclitic n in col3; use +n/+n=/~n/[n/[n=",
+                        "Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
                     )
                 )
             if variant_has_lexeme_terminal_single_suffix_split(a_txt, d_field):

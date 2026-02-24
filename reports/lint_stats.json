@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-02-24T20:13:18.513157+00:00",
+  "generated_at_utc": "2026-02-24T20:15:10.794163+00:00",
   "files_checked": 278,
-  "total_issues": 10416,
-  "fallback_parsed": 1313,
+  "total_issues": 9969,
+  "fallback_parsed": 866,
   "by_severity": {
-    "ERROR": 7445,
+    "ERROR": 6998,
     "WARNING": 1273,
     "INFO": 1519
   },
@@ -115,11 +115,6 @@
       "count": 41
     },
     {
-      "severity": "ERROR",
-      "problem_type": "ḥrn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 30
-    },
-    {
       "severity": "WARNING",
       "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
       "count": 29
@@ -140,34 +135,9 @@
       "count": 25
     },
     {
-      "severity": "ERROR",
-      "problem_type": "pdry Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 24
-    },
-    {
       "severity": "WARNING",
       "problem_type": "Plural form missing split ending",
       "count": 24
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lbh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 22
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤšrh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 21
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥry Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 20
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "dtn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 18
     },
     {
       "severity": "WARNING",
@@ -191,6 +161,11 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "lbh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
+      "count": 14
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "Deverbal form matches both verb and noun entries in DULAT",
       "count": 13
     },
@@ -198,16 +173,6 @@
       "severity": "WARNING",
       "problem_type": "nkt Lexeme parse did not match DULAT; matched by surface form",
       "count": 13
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "hyn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 12
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ibrn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 12
     },
     {
       "severity": "WARNING",
@@ -245,16 +210,6 @@
       "count": 10
     },
     {
-      "severity": "ERROR",
-      "problem_type": "aph Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 9
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ddn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 9
-    },
-    {
       "severity": "WARNING",
       "problem_type": "Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)",
       "count": 9
@@ -281,67 +236,7 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "arṣy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "dnty Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "krmh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mntn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "npṣh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "qdšh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rdn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "sdn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "th Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tṣḥn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ytnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 6
     },
     {
@@ -362,16 +257,6 @@
     {
       "severity": "ERROR",
       "problem_type": "ˤmnh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥmrh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥwtn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 6
     },
     {
@@ -416,47 +301,7 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "btkh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "dk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lṣbh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nny Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tmġy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "wy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤqh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "ḥdy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥwy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 4
     },
     {
@@ -516,57 +361,12 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "ak Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "aklth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "amth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "atk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "atnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 3
     },
     {
       "severity": "ERROR",
-      "problem_type": "bbty Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "byn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "bˤlyn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "dbḥh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "dqth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "gpny Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 3
     },
     {
@@ -581,37 +381,22 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "krn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
+      "problem_type": "nh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 3
     },
     {
       "severity": "ERROR",
-      "problem_type": "ksh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "kty Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lbn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lmdh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lḥn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
+      "problem_type": "nk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 3
     },
     {
       "severity": "ERROR",
       "problem_type": "ny Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "qdšh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 3
     },
     {
@@ -626,52 +411,12 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "rn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ry Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rḥbn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rḥmy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "rḫnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 3
     },
     {
       "severity": "ERROR",
       "problem_type": "snrn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tddn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tmrn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tqdmnnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "trmn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 3
     },
     {
@@ -691,27 +436,7 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "tṯṯkrnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ymlun Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ynḥtn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yrdn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yry Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
+      "problem_type": "ytnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 3
     },
     {
@@ -721,27 +446,7 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "yṣan Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yṯnyn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "Š stem marker present but DULAT lacks Š/Št/Špass",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šdy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 3
     },
     {
@@ -761,37 +466,7 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "ḥdṯh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥdṯn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥṭbh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḫlh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṣbuh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṯkmn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṯnth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
+      "problem_type": "ˤšrh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 3
     },
     {
@@ -911,21 +586,6 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "byy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "bšrk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "grph Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "gty Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 2
     },
@@ -936,27 +596,7 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "kbdnh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "knth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "krpnh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "lakh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lbky Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 2
     },
     {
@@ -966,47 +606,12 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "lrgth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lḥk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "mmk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 2
     },
     {
       "severity": "ERROR",
-      "problem_type": "mrbdh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mrzḥh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mˤmsh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mˤmsy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mḫrh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mḫṣk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
+      "problem_type": "npṣh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 2
     },
     {
@@ -1041,22 +646,7 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "rṯy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tispk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tmntk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tšqynh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
+      "problem_type": "tmġy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 2
     },
     {
@@ -1071,47 +661,12 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "yqbh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yqry Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yrḫh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yšqynh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
+      "problem_type": "wy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 2
     },
     {
       "severity": "ERROR",
       "problem_type": "zth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ġdmh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥbšy Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥmḥmth Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṭly Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 2
     },
     {
@@ -1441,62 +996,12 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "brltk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "bˤrk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "ddnh Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 1
     },
     {
       "severity": "ERROR",
-      "problem_type": "gk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ilšnn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "kbdhk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lnk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mˤmsk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mḫṣtk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "npṣk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "pkn Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "qṭrk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 1
     },
     {
@@ -1507,26 +1012,6 @@
     {
       "severity": "ERROR",
       "problem_type": "udk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "uṣbˤtk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ydˤtk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ymġk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ġlmk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 1
     },
     {
@@ -1542,26 +1027,6 @@
     {
       "severity": "ERROR",
       "problem_type": "ˤmkk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥytk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥẓk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥẓrk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṯmk Do not use homonym numerals on suffix/enclitic markers in col3; use canonical +x/~x/[x forms",
       "count": 1
     },
     {

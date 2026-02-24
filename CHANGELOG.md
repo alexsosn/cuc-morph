@@ -2,6 +2,15 @@
 
 ## 2026-02-24
 
+- Added `SuffixParadigmNormalizer` (`pipeline/steps/suffix_paradigm_normalizer.py`) and wired it into `pipeline/tablet_parsing.py` directly after `SuffixCliticFixer` to enforce canonical suffix/enclitic marker encoding in col3.
+- Normalization rule: remove homonym numerals from pronominal suffix/enclitic segments while preserving marker and `=` (for example `+n(I)` -> `+n`, `+h(II)` -> `+h`, `+ny(III)=` -> `+ny=`, `~n(IV)` -> `~n`, `[n(II)=` -> `[n=`).
+- Extended linter suffix marker validation in `linter/lint.py`: homonym numerals on marker slots are now flagged across the full pronominal suffix set (not only `n`), with updated warning text.
+- Added regression coverage:
+  - `tests/test_suffix_paradigm_normalizer.py`,
+  - expanded `tests/test_linter_warning_predicates.py` for generalized marker checks.
+- Documented the strategy in `docs/suffix_paradigm_pipeline.md`.
+- Re-ran only `SuffixParadigmNormalizer` over current `out/KTU 1.*.tsv` outputs (`395` rows updated in `139` files), including user-facing `KTU 1.16` fixes (`143222`, `143578`, `143835`, `144119`, `144123`).
+
 - Added `PronounClosureFixer` (`pipeline/steps/pronoun_closure.py`) and wired it into `pipeline/tablet_parsing.py` to remove noun-style trailing `/` from pronoun variants (for example `hw/` -> `hw`).
 - Added morphology-aware `NominalCaseEndingYHFixer` (`pipeline/steps/nominal_case_ending_yh.py`) and wired it into `pipeline/tablet_parsing.py` to normalize noun/adjective terminal case endings `...y/` / `...h/` to explicit `/y` / `/h` when DULAT surface-form evidence supports it (for example `umy/` -> `um/y`).
 - Extended `DulatMorphGate` with `surface_morphologies(token, surface)` for exact token+surface morphology lookup and used it as the gate for the new nominal case-ending step.

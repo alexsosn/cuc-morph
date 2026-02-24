@@ -31,7 +31,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150023	yr	yr/	yr	n. m.	early rain	
 150024	klyth	kly/t=+h	klyt	n. f.	kidneys	
 150025	w	w	w	conj.	and	
-150026	lbh	lb/+h(I); lb/+h(II)	lb, -h (I); lb, -h (II)	n. m., pers. pn./morph.; n. m., adv. functor	heart, his /her (hers) / its; heart, to	
+150026	lbh	lb/+h; lb/+h	lb, -h (I); lb, -h (II)	n. m., pers. pn./morph.; n. m., adv. functor	heart, his /her (hers) / its; heart, to	
 # KTU 1.82 4						
 150027	xxx	?	?	?	?	
 150028	pk	p(III)/+k	p (III)	n. m.	mouth	
@@ -53,7 +53,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150043	tġrm	!t!ġrm[	/ġ-r-m/	vb	to commit	
 150044	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
 150045	mt	mt(II)/; mt[; mt(I)/	mt (II); /m-t/; mt (I)	n. m.; vb; n. m.	death; to die; dead person	
-150046	brtk	br[+k(I); brt/+k(I)	/b-r(-r)/, -k (I); brt, -k (I)	vb, pers. pn./morph.; n. f., pers. pn./morph.	to be or remain pure, your(s); forecast, your(s)	
+150046	brtk	br[+k; brt/+k	/b-r(-r)/, -k (I); brt, -k (I)	vb, pers. pn./morph.; n. f., pers. pn./morph.	to be or remain pure, your(s); forecast, your(s)	
 # KTU 1.82 6						
 150047	xxḫp	?	?	?	?	DULAT: NOT FOUND
 150048	an	an(I); an(II)	ản (I); ản (II)	pers. pn.; adv.	I; wherever	
@@ -140,7 +140,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150118	xxxntxx	?	?	?	?	DULAT: NOT FOUND
 150119	mbk	mbk/	mbk	n. m.	source	
 150120	kpt	kp/t=; ḥkpt/	kp; ḥkpt	n. f.; TN	palm (of the hand); ḥkpt	
-150121	wn	w+n(I); w+n(II); w+n(III)	w, -n (I); w, -n (II); w, -n (III)	conj., morph.; conj., pers. pn./morph./vb; conj., pers. pn./morph.	and, Sun; and, me; and, our	
+150121	wn	w+n; w+n; w+n	w, -n (I); w, -n (II); w, -n (III)	conj., morph.; conj., pers. pn./morph./vb; conj., pers. pn./morph.	and, Sun; and, me; and, our	
 150122	b	b	b	prep.	in	
 150123	gx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.82 18						
@@ -149,7 +149,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150126	ṣˤṣ	ṣˤṣ/	ṣʕṣ	n. m.	terror	
 150127	bnt	bn(t(II)/t;bn(t(I)/t;bnt(III)/	bnt (II); bnt (I); bnt (III)	n. f.; n. f.; n. m.	produce; masonry; tamarisk	
 150128	ḫrp	ḫrp	ḫrp		mania	
-150129	ak	ahl/+k(I); lʔy(I)[+k(I); aġzr/+k(I)	ảhl, -k (I); /l-ʔ-y/w/ (I), -k (I); ảġzr, -k (I)	n. m., pers. pn./morph.; vb, pers. pn./morph.; n. m., pers. pn./morph.	tent, your(s); to conquer, your(s); ?, your(s)	
+150129	ak	ahl/+k; lʔy(I)[+k; aġzr/+k	ảhl, -k (I); /l-ʔ-y/w/ (I), -k (I); ảġzr, -k (I)	n. m., pers. pn./morph.; vb, pers. pn./morph.; n. m., pers. pn./morph.	tent, your(s); to conquer, your(s); ?, your(s)	
 # KTU 1.82 19						
 150130	xxxxxxxx	?	?	?	?	
 150131	aḥw	!a!ḥw(I)[	/ḥ-w/y-y/ (I)	vb	to live	
@@ -168,7 +168,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150142	ptḥy	ptḥ/y	ptḥ	n. m.	entrance	
 150143	agxxxdt	?	?	?	?	DULAT: NOT FOUND
 150144	xxm	?	?	?	?	DULAT: NOT FOUND
-150145	mln	ml+n(I); ml+n(II); ml+n(III)	ml, -n (I); ml, -n (II); ml, -n (III)	?, morph.; ?, pers. pn./morph./vb; ?, pers. pn./morph.	?, Sun; ?, me; ?, our	
+150145	mln	ml+n; ml+n; ml+n	ml, -n (I); ml, -n (II); ml, -n (III)	?, morph.; ?, pers. pn./morph./vb; ?, pers. pn./morph.	?, Sun; ?, me; ?, our	
 # KTU 1.82 22						
 150146	xxxṯk	?	?	?	?	DULAT: NOT FOUND
 150147	ytmt	ytm(t/t	ytmt	n. f.	orphan girl	
@@ -209,7 +209,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150177	xxmdb	?	?	?	?	DULAT: NOT FOUND
 150178	mdbm	mdb/m	mdb	n. m.	tide	
 150179	l	l(I); l(II); l(III)	l (I); l (II); l (III)	prep.; adv.; functor	to; no; certainly	
-150180	ḥrn	ḥr(I)/+n(I); ḥr(I)/+n(II); ḥr(I)/+n(III)	ḥr (I), -n (I); ḥr (I), -n (II); ḥr (I), -n (III)	n. m., morph.; n. m., pers. pn./morph./vb; n. m., pers. pn./morph.	intestine(s), Sun; intestine(s), me; intestine(s), our	
+150180	ḥrn	ḥr(I)/+n; ḥr(I)/+n; ḥr(I)/+n	ḥr (I), -n (I); ḥr (I), -n (II); ḥr (I), -n (III)	n. m., morph.; n. m., pers. pn./morph./vb; n. m., pers. pn./morph.	intestine(s), Sun; intestine(s), me; intestine(s), our	
 150181	ḥrnm	ḥrn/+m(I); ḥrn/+m(II)	ḥrn, -m (I); ḥrn, -m (II)	DN, morph.; DN, emph. or det. encl. morph.	Ḥôrānu, ; Ḥôrānu, und das (ist) so!	
 # KTU 1.82 28						
 150182	xxxxxxxxlhm	?	?	?	?	DULAT: NOT FOUND
@@ -233,7 +233,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.82 33						
 150196	xxxxxxxllm	?	?	?	?	DULAT: NOT FOUND
 150197	abl	ybl[	/y-b-l/	vb	to carry	
-150198	mṣrpk	mṣrp+k(I)	mṣrp, -k (I)	→, pers. pn./morph.	, your(s)	
+150198	mṣrpk	mṣrp+k	mṣrp, -k (I)	→, pers. pn./morph.	, your(s)	
 150199		?	?	?	?	
 # KTU 1.82 34						
 150200	xxxxxxy	?	?	?	?	DULAT: NOT FOUND
@@ -295,7 +295,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150249	bnt	bn(t(II)/t;bn(t(I)/t;bnt(III)/	bnt (II); bnt (I); bnt (III)	n. f.; n. f.; n. m.	produce; masonry; tamarisk	
 150250	mˤmˤ	mˤmˤ/	mʕmʕ	n. m.	convulsion	
 150251	ˤbd	ˤbd(I)/	ʕbd (I)	n. m.	servant	
-150252	ḥrn	ḥr(I)/+n(I); ḥr(I)/+n(II); ḥr(I)/+n(III)	ḥr (I), -n (I); ḥr (I), -n (II); ḥr (I), -n (III)	n. m., morph.; n. m., pers. pn./morph./vb; n. m., pers. pn./morph.	intestine(s), Sun; intestine(s), me; intestine(s), our	
+150252	ḥrn	ḥr(I)/+n; ḥr(I)/+n; ḥr(I)/+n	ḥr (I), -n (I); ḥr (I), -n (II); ḥr (I), -n (III)	n. m., morph.; n. m., pers. pn./morph./vb; n. m., pers. pn./morph.	intestine(s), Sun; intestine(s), me; intestine(s), our	
 150253	tqxk	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.82 42						
 150254	xx	?	?	?	?	
