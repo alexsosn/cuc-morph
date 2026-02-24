@@ -127,6 +127,10 @@ class TabletParsingPipelineTest(unittest.TestCase):
             )
             self.assertLess(
                 names.index("l-negation-verb-context"),
+                names.index("l-functor-vocative-context"),
+            )
+            self.assertLess(
+                names.index("l-functor-vocative-context"),
                 names.index("ydk-context-disambiguator"),
             )
 

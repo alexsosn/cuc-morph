@@ -15,6 +15,7 @@ if __package__ in {None, ""}:
     if str(_repo_root) not in sys.path:
         sys.path.insert(0, str(_repo_root))
 
+from pipeline.config.l_functor_vocative_refs import expected_l_homonym_for_ref
 from pipeline.config.l_negation_exception_refs import (
     extract_separator_ref,
     is_forced_l_negation_ref,
@@ -1408,8 +1409,18 @@ def row_is_l_negation_variant(row: Dict[str, str]) -> bool:
     )
 
 
+def row_is_l_homonym_variant(row: Dict[str, str], homonym: str) -> bool:
+    """True when row is the exact `l(<homonym>)` reading."""
+    return (
+        (row.get("surface", "") or "").strip() == "l"
+        and (row.get("analysis_field", "") or "").strip() == f"l({homonym})"
+        and (row.get("dulat_field", "") or "").strip() == f"l ({homonym})"
+    )
+
+
 L_NEGATION_VERB_CONTEXT_MSG = "l(II) ('no/not') should be used only before verbal forms"
 L_NEGATION_FORCED_EXCEPTION_MSG = "DULAT exception context requires a single l(II) reading"
+L_FUNCTOR_VOCATIVE_FORCED_MSG = "DULAT context requires a single l({homonym}) reading"
 
 
 # -----------------------------
@@ -3437,6 +3448,54 @@ def lint_file(
                 "l",
                 analysis_field,
                 L_NEGATION_VERB_CONTEXT_MSG,
+            )
+        )
+
+    # Force `l(III)`/`l(IV)` in DULAT-backed context references.
+    for idx, group in enumerate(token_groups):
+        if (group.get("surface", "") or "").strip() != "l":
+            continue
+        group_rows = group.get("rows", [])
+        if not isinstance(group_rows, list) or not group_rows:
+            continue
+
+        next_group = token_groups[idx + 1] if idx + 1 < len(token_groups) else None
+        next_group_rows = next_group.get("rows", []) if next_group else []
+        if not isinstance(next_group_rows, list):
+            continue
+        next_has_verb = any(
+            "vb" in ((row.get("pos_field", "") or "").strip()) for row in next_group_rows
+        )
+
+        section_ref = (group.get("section_ref", "") or "").strip()
+        expected_homonym = expected_l_homonym_for_ref(
+            section_ref=section_ref,
+            next_has_verb=next_has_verb,
+        )
+        if expected_homonym is None:
+            continue
+
+        if len(group_rows) == 1 and row_is_l_homonym_variant(
+            group_rows[0], homonym=expected_homonym
+        ):
+            continue
+
+        anchor = next(
+            (row for row in group_rows if row_is_l_homonym_variant(row, homonym=expected_homonym)),
+            group_rows[0],
+        )
+        line_no = int((anchor.get("line_no", "0") or "0"))
+        line_id = anchor.get("line_id", "")
+        analysis_field = anchor.get("analysis_field", "")
+        issues.append(
+            Issue(
+                "warning",
+                str(path),
+                line_no,
+                line_id,
+                "l",
+                analysis_field,
+                L_FUNCTOR_VOCATIVE_FORCED_MSG.format(homonym=expected_homonym),
             )
         )
 

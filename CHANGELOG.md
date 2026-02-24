@@ -46,6 +46,21 @@
   - updated `LNegationVerbContextPruner` to force a single `l(II)` reading in these refs (including restoration when historical passes already pruned `l(II)`),
   - updated linter behavior to enforce this exception-specific single-`l(II)` rule while suppressing the generic non-verbal warning in those refs,
   - added regression tests `tests/test_l_negation_exception_refs.py` and expanded parser/linter `l(II)` context tests.
+- Added `l(III)` / `l(IV)` contextual disambiguation layer from DULAT reference sets:
+  - new shared reference matcher `pipeline/config/l_functor_vocative_refs.py` (supports both `KTU x.y Z:n` and `KTU x.y n` separator styles),
+  - new parser step `LFunctorVocativeContextDisambiguator` (`pipeline/steps/l_functor_vocative_context.py`) wired after `l-negation-verb-context`,
+  - context policy:
+    - `l(III)` refs force single `l(III)`,
+    - `l(IV)` refs force single `l(IV)` only before non-verbal next tokens,
+    - overlap refs (e.g. `KTU 1.17 I:23`) resolve by next-token verbality (`vb` -> `III`, non-`vb` -> `IV`).
+- Extended linter parity in `linter/lint.py` to enforce the same `l(III)`/`l(IV)` context constraints with dedicated warnings.
+- Added regression tests:
+  - `tests/test_l_functor_vocative_refs.py`,
+  - `tests/test_l_functor_vocative_context.py`,
+  - `tests/test_linter_l_functor_vocative_context.py`,
+  - updated pipeline ordering guard in `tests/test_tablet_parsing_pipeline.py`.
+- Documented the strategy in `docs/l_functor_vocative_context_pipeline.md`.
+- Applied only `l-functor-vocative-context` over `out/KTU *.tsv`: 124 row updates across 15 files (first pass 112 + format-variant pass 12), including `KTU 1.24`, `KTU 2.61`, and `KTU 2.72` section-style variants.
 
 - Added `SuffixPayloadCollapseFixer` (`pipeline/steps/suffix_payload_collapse.py`) and wired it into `pipeline/tablet_parsing.py` after suffix normalization to collapse clitic-linked DULAT payloads to host-lexeme metadata.
 - Rule: when `col3` already encodes suffix/enclitic markers (`+`, `~`, or bracketed clitic tails), strip `col4` suffix payload segments (`, -x ...`) and trim aligned suffix-function/suffix-gloss tails in `col5`/`col6`.
