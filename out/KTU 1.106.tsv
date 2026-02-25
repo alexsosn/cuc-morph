@@ -12,16 +12,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.106 3						
 152810	ydbil	ydbil/	ydbỉl	PN	to be generous	
 152811	gdlt	gdl(t(I)/t	gdlt (I)	n. f. sg.	head of cattle	
-152811	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. pl.	head of cattle	
+152811	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. sg.	head of cattle	
 152812	ya	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.106 4						
 152813	ršil	?	?	?	?	DULAT: NOT FOUND
 152814	gdlt	gdl(t(I)/t	gdlt (I)	n. f. sg.	head of cattle	
-152814	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. pl.	head of cattle	
+152814	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. sg.	head of cattle	
 # KTU 1.106 5						
 152815	ˤmtr	ˤmtr/	ʕmtr	PN	ʿmtr	
 152816	gdlt	gdl(t(I)/t	gdlt (I)	n. f. sg.	head of cattle	
-152816	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. pl.	head of cattle	
+152816	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. sg.	head of cattle	
 152817	npš	npš(I)/	npš (I)	n. f. sg.	throat	
 # KTU 1.106 6						
 152818	w	w	w	conj.	and	
@@ -44,7 +44,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.106 10						
 152829	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 152829	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
-152830	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
+152830	bt	bt(II)/	bt (II)	n. m. sg.	house	
 152830	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 152831	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 152831	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
@@ -57,7 +57,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152835	y	~y	-y (II)	prep. functor	indeed	
 152835	y	y	y	prep. functor	oh!	
 # KTU 1.106 12						
-152836	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
+152836	bt	bt(II)/	bt (II)	n. m. sg.	house	
 152836	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 152837	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 152837	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
@@ -100,7 +100,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152860	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 # KTU 1.106 18						
 152861	gdlt	gdl(t(I)/t	gdlt (I)	n. f. sg.	head of cattle	
-152861	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. pl.	head of cattle	
+152861	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. sg.	head of cattle	
 152862	b	b	b	prep.	in	
 152863	ṯmn	ṯmn(I)/	ṯmn(y) (I)	num.	eight	
 152864	gn	gn(I)/	gn (I)	n. m. sg.	garden	
@@ -110,15 +110,15 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152867	arbˤ	arbˤ/	ảrbʕ	num.	four	
 # KTU 1.106 20						
 152868	ˤšrh	ˤšr(I)/+h	ʕšr (I)	n. num.	ten	
-152868	ˤšrh	ˤšr[+h	/ʕ-š-r/	vb	ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods	
+152868	ˤšrh	ˤšr[+h	/ʕ-š-r/	vb	to invite	
 152868	ˤšrh	ˤšr(I)/+h	ʕšr(t) (I)	n. m.	banquet	
 152869	dqt	dq(t(I)/t	dqt (I)	adj. f. or n. f. sg.	small	
-152869	dqt	dq(t(I)/t=	dqt (I)	adj. f. or n. f. pl.	small	
+152869	dqt	dq(t(I)/t=	dqt (I)	adj. f. or n. f. sg.	small	
 # KTU 1.106 21						
 152870	w	w	w	conj.	and	
 152871	šbˤ	šbˤ(I)/	šbʕ (I)	n. sg. num.	seven	
 152872	gdlt	gdl(t(I)/t	gdlt (I)	n. f. sg.	head of cattle	
-152872	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. pl.	head of cattle	
+152872	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. sg.	head of cattle	
 152873	w	w	w	conj.	and	
 152874	k	+k	-k (I)			
 152874	k	~k	-k (II)			
@@ -152,7 +152,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.106 25						
 152890	tuṣl	ʔṣl[l:pass	/ʔ-ṣ-l/	vb G prefc. / vb Gpass prefc.	to (be) put aside	
 152891	šlḥmt	šlḥm(t/t	šlḥmt	n. f. sg.	provisions	
-152891	šlḥmt	šlḥm(t/t=	šlḥmt	n. f. pl.	provisions	
+152891	šlḥmt	šlḥm(t/t=	šlḥmt	n. f. sg.	provisions	
 152892	b	b	b	prep.	in	
 152893	ḫmš	ḫmš(I)/	ḫmš (I)	n. sg. num.	five	
 # KTU 1.106 26						
@@ -172,7 +172,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152902	ˤlm	ˤl(I)	ʕl (I)	prep.	upon	
 152903	tṣu	yṣʔ[	/y-ṣ-ʔ/	vb G prefc.	to go out	
 152904	šlḥmt	šlḥm(t/t	šlḥmt	n. f. sg.	provisions	
-152904	šlḥmt	šlḥm(t/t=	šlḥmt	n. f. pl.	provisions	
+152904	šlḥmt	šlḥm(t/t=	šlḥmt	n. f. sg.	provisions	
 # KTU 1.106 29						
 152905	tšˤ	tšˤ/	tšʕ	n. sg. num.	nine	
 152906	ṣin	ṣin(I)/	ṣỉn (I)	n. f. sg.	ewe	
@@ -182,14 +182,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.106 30						
 152909	w	w	w	conj.	and	
 152910	uz	uz/	ủz	n. f. sg. / n. f. pl.	goose	
-152911	išm	išm	ỉšm		catégorie grammaticale et sens inconnus	
-152911	išm	iš+m(I)	ỉš		Getier/Taube	
+152911	išm	išm	ỉšm	morph.	catégorie grammaticale et sens inconnus	
+152911	išm	iš+m(I)	ỉš	morph.	Getier/Taube	
 152912	ar	a/	ả/ỉr	n. m. sg.	light	
 # KTU 1.106 31						
 152913	dqtm	dqt(I)/m	dqt (I)	adj. f. or n. f. du.	small	
 152914	w	w	w	conj.	and	
 152915	gdlt	gdl(t(I)/t	gdlt (I)	n. f. sg.	head of cattle	
-152915	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. pl.	head of cattle	
+152915	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. sg.	head of cattle	
 152916	xxx	?	?	?	?	
 # KTU 1.106 32						
 152917	l	l(I)	l (I)	prep.	to	

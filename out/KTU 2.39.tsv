@@ -37,7 +37,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157939	k	k(I)	k (I)	prep.	like	
 157939	k	k(II)	k (II)	emph. functor	yes	
 157940	ˤbdm	ˤbd(I)/m	ʕbd (I)	n. m. pl.	servant	
-157941	sglth	sglt/+h	sglt	n. f. sg.	treasure	
+157941	sglth	sgl(t/t+h	sglt	n. f. sg.	treasure	
 157942	hw	hw	hw	pers. pn.	he	
 # KTU 2.39 8						
 157943	w	w	w	conj.	and	
@@ -73,7 +73,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157962	bˤlk	bˤl(II)/	bʕl (II)	n. m. sg./DN	Baʿlu/Baal	
 # KTU 2.39 12						
 157963	ˤbdm	ˤbd(I)/m	ʕbd (I)	n. m. pl.	servant	
-157964	sglth	sglt/+h	sglt	n. f. sg.	treasure	
+157964	sglth	sgl(t/t+h	sglt	n. f. sg.	treasure	
 157965	at	at(I)	ảt (I)	pers. pn.	you	
 # KTU 2.39 13						
 157966	ht	ht	ht	adv.	here	
@@ -118,7 +118,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157990	akl	akl(II)/	ảkl (II)	n. m. sg.	grain	
 # KTU 2.39 20						
 157991	b	b	b	prep.	in	
-157992	ḥwtk	ḥwt/+k	ḥwt	n. f.	country	
+157992	ḥwtk	ḥw(t/t+k	ḥwt	n. f. sg.	country	
 157993	inn	in/	ỉn	n. m. sg.	lack of	
 # KTU 2.39 21						
 157994	špšn	špš/	špš	n. sg.	sun	
@@ -153,9 +153,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158012	xk	?	?	?	?	DULAT: NOT FOUND
 # KTU 2.39 32						
 158013	w	w	w	conj.	and	
-158014	spr	spr(II)/	spr (II)	n. m. sg.	tablet/register	
-158014	spr	spr[:d	/s-p-r/	vb G suffc. / vb D suffc.	to count	
-158014	spr	spr[/:d	/s-p-r/	vb G inf. / vb D inf.	to count	
+158014	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
+158014	spr	spr[	/s-p-r/	vb G suffc. / vb D suffc.	to count	
+158014	spr	spr[/	/s-p-r/	vb G inf. / vb D inf.	to count	
 158014	spr	spr(I)/	spr (I)	n. m. sg.	scribe	
 158015	inx	?	?	?	?	DULAT: NOT FOUND
 158016	ly	l(I)+y	l (I)	prep.	to	
@@ -167,9 +167,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158019	adm	adm(II)/	ảdm (II)	adj. m. sg.	obtained	
 # KTU 2.39 34						
 158020	aṯr	aṯr(I)	ảṯr (I)	adv. or prep.	then	
-158020	aṯr	(ʔ&aṯr[:d	/ʔ-ṯ-r/	vb G suffc. / vb D suffc.	to go	
-158020	aṯr	(ʔ&aṯr[/:d	/ʔ-ṯ-r/	vb G inf.	to go	
-158020	aṯr	(ʔ&aṯr[:d	/ʔ-ṯ-r/	vb G suffc.	to go	
+158020	aṯr	(ʔ&aṯr[	/ʔ-ṯ-r/	vb G suffc. / vb D suffc.	to go	
+158020	aṯr	(ʔ&aṯr[/	/ʔ-ṯ-r/	vb G inf.	to go	
 158020	aṯr	aṯr(III)	ảṯr (III)	interr. adv.	where	
 158021	iṯ	iṯ(I)/	ỉṯ (I)	n. m. sg.	presence	
 158022	bqṯ	bqṯ[:d	/b-q-ṯ/	vb D impv.	to search for	

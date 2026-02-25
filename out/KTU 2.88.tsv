@@ -22,9 +22,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159771	k	k(I)	k (I)	prep.	like	
 159771	k	k(II)	k (II)	emph. functor	yes	
 159772	ytnt	!y!(ytn[t	/y-t-n/	vb G suffc.	to give	
-159773	spr	spr(II)/	spr (II)	n. m. sg.	tablet/register	
-159773	spr	spr[:d	/s-p-r/	vb G suffc. / vb D suffc.	to count	
-159773	spr	spr[/:d	/s-p-r/	vb G inf. / vb D inf.	to count	
+159773	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
+159773	spr	spr[	/s-p-r/	vb G suffc. / vb D suffc.	to count	
+159773	spr	spr[/	/s-p-r/	vb G inf. / vb D inf.	to count	
 159773	spr	spr(I)/	spr (I)	n. m. sg.	scribe	
 # KTU 2.88 5						
 159774	hnd	hnd	hnd	dem. adj./pn.	this	
@@ -102,7 +102,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159822	w	w	w	conj.	and	
 159823	šqt	?	?	?	?	DULAT: NOT FOUND
 # KTU 2.88 20						
-159824	mrḥṣm	rḥṣ[/ṣm:d	/r-ḥ-ṣ/	vb D act. ptcpl. pl.	to wash	
+159824	mrḥṣm	rḥṣ[/ṣm	/r-ḥ-ṣ/	vb D act. ptcpl. pl.	to wash	
 159825	bh	b	b	prep.	in	
 # KTU 2.88 21						
 159826	w	w	w	conj.	and	
@@ -224,11 +224,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.88 37						
 159891	w	w	w	conj.	and	
 159892	at	at(I)	ảt (I)	pers. pn.	you	
-159893	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
+159893	bt	bt(II)/	bt (II)	n. m. sg.	house	
 159893	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 159893	bt	bt(III)/	bt (III)	n. m. pl.	length	
-159894	uḫd	(ʔ&uḫd[:pass	/ʔ-ḫ-d(/ḏ)/	vb G impv.	to collect	
-159894	uḫd	(ʔ&uḫd[/:pass	/ʔ-ḫ-d(/ḏ)/	vb Gpass ptcpl.	to collect	
+159894	uḫd	(ʔ&uḫd[	/ʔ-ḫ-d(/ḏ)/	vb G impv.	to collect	
+159894	uḫd	(ʔ&uḫd[/	/ʔ-ḫ-d(/ḏ)/	vb Gpass ptcpl.	to collect	
 159895	ly	l(I)+y	l (I)	prep.	to	
 # KTU 2.88 38						
 159896	w	w	w	conj.	and	

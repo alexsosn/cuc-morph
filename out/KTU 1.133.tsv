@@ -5,10 +5,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154726	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. cstr.	son	
 # KTU 1.133 2						
 154727	ilm	il(I)/m	ỉl (I)	n. m. pl.	god	
-154728	mt	m(t(II)/t	mt (II)	n. m. sg.	death	
+154728	mt	mt(II)/	mt (II)	n. m. sg.	death	
 154728	mt	mt[	/m-t/	vb G suffc.	to die	
 154728	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
-154728	mt	m(t(I)/t	mt (I)	n. m. sg.	dead person	
+154728	mt	mt(I)/	mt (I)	n. m. sg.	dead person	
 154729	npšm	npš(I)/	npš (I)	n. f.	throat	
 # KTU 1.133 3						
 154730	npš	npš(I)/	npš (I)	n. f. sg.	throat	
@@ -42,12 +42,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154744	kḏd	kḏd	kḏd	→	?	
 154744	kḏd	ḏd(I)/	ḏd (I)	n. m.	breast	Based on DULAT reconstruction.
 154745	aylt	ayl(t(I)/t	ảylt (I)	n. f. sg.	hind	
-154745	aylt	ayl(t(I)/t=	ảylt (I)	n. f. pl.	hind	
+154745	aylt	ayl(t(I)/t=	ảylt (I)	n. f. sg.	hind	
 # KTU 1.133 9						
-154746	mt	m(t(II)/t	mt (II)	n. m. sg.	death	
+154746	mt	mt(II)/	mt (II)	n. m. sg.	death	
 154746	mt	mt[	/m-t/	vb G suffc.	to die	
 154746	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
-154746	mt	m(t(I)/t	mt (I)	n. m. sg.	dead person	
+154746	mt	mt(I)/	mt (I)	n. m. sg.	dead person	
 154747	hm	hm(II)	hm (II)	conj./interr. functor	if	
 154747	hm	hm(I)	hm (I)	pers. pn.	they	
 154748	ks	ks(I)/	ks (I)	n. m. sg.	cup	
@@ -81,10 +81,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154765	xxbn	?	?	?	?	DULAT: NOT FOUND
 154766	ilm	il(I)/m	ỉl (I)	n. m. pl.	god	
 # KTU 1.133 16						
-154767	mt	m(t(II)/t	mt (II)	n. m. sg.	death	
+154767	mt	mt(II)/	mt (II)	n. m. sg.	death	
 154767	mt	mt[	/m-t/	vb G suffc.	to die	
 154767	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
-154767	mt	m(t(I)/t	mt (I)	n. m. sg.	dead person	
+154767	mt	mt(I)/	mt (I)	n. m. sg.	dead person	
 154768	šmḥ	šmḫ[	/š-m-ḫ/	vb G suffc.	to be glad	
 154769	p	p(I)	p (I)	conj. functor	and	
 154769	p	p(III)/	p (III)	n. m.	mouth	
@@ -106,4 +106,3 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.133 19						
 154779	rgbt	rgb(t/t	rgbt	n. f. sg.	respect	
 154780	zbl	zbl(I)/	zbl (I)	n. m. sg. / n. m. pl. cstr.	prince	
-154780	zbl	zbl(III)/	zbl (III)	n. m. sg.	one carried	

@@ -2,6 +2,14 @@
 
 ## 2026-02-25
 
+- Fixed include-existing pipeline behavior to keep DULAT-backed lexical refinement
+  reproducible on preserved outputs:
+  - `pipeline/tablet_parsing.py` now runs `refine_targets(...)` for all selected
+    targets when `--include-existing` is used (not only freshly bootstrapped files).
+  - this restores expected regeneration of stale glosses from DULAT metadata
+    (for example `/ʕ-š-r/` verb rows no longer keep legacy attestational quotes).
+  - added regression coverage in `tests/test_tablet_parsing_pipeline.py`.
+
 - Added construct-state propagation for ambiguous nominal number POS:
   - `pipeline/steps/nominal_form_morph_pos.py` now carries DULAT
     construct labels into plural ambiguity rendering (for example

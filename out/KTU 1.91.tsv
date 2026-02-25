@@ -27,7 +27,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.91 7						
 151232	pdry	pdry/	pdry	DN	Pidray	
 151232	pdry	pdr(I)/+y	pdr (I)	n. m.	town	
-151233	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
+151233	bt	bt(II)/	bt (II)	n. m. sg.	house	
 151233	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 151234	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 151234	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
@@ -48,7 +48,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151241	šd	šd(I)/	šd (I)	n. m. sg.	open field	
 151241	šd	šd(II)/	šd (II)	n. m. sg.	a strip	
 151241	šd	šdy[	/š-d-y/	vb G impv.	to pour	
-151242	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
+151242	bt	bt(II)/	bt (II)	n. m. sg.	house	
 151242	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 151243	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 151243	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
@@ -60,7 +60,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151244	k	k(II)	k (II)	emph. functor	yes	
 151245	tˤrbn	!t!ˤrb(I)[+n	/ʕ-r-b/ (I)	vb	to enter	
 151246	ršpm	ršp/	ršp	DN	Rašap	
-151247	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
+151247	bt	bt(II)/	bt (II)	n. m. sg.	house	
 151247	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 151248	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 151248	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
@@ -106,7 +106,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.91 21						
 151271	lbnm	lbn(I)/m	lbn (I)	adj. m. pl.	white	
 151272	ˤšr	ˤšr(I)/	ʕšr (I)	n. sg. num.	ten	
-151272	ˤšr	ˤšr[:d:pass	/ʕ-š-r/	vb D suffc. / vb Dpass suffc.	ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods	
+151272	ˤšr	ˤšr[:d:pass	/ʕ-š-r/	vb D suffc. / vb Dpass suffc.	to invite	
 151272	ˤšr	ˤšr(I)/	ʕšr(t) (I)	n. m. sg.	banquet	
 151273	yn	yn/	yn	n. m. sg.	wine	
 # KTU 1.91 22						
@@ -119,7 +119,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.91 23						
 151278	bṣr	bṣr(II)[	/b-ṣ-r/ (II)	vb G impv.	to sever	
 151279	ˤšr	ˤšr(I)/	ʕšr (I)	n. sg. num.	ten	
-151279	ˤšr	ˤšr[:d:pass	/ʕ-š-r/	vb D suffc. / vb Dpass suffc.	ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods	
+151279	ˤšr	ˤšr[:d:pass	/ʕ-š-r/	vb D suffc. / vb Dpass suffc.	to invite	
 151279	ˤšr	ˤšr(I)/	ʕšr(t) (I)	n. m. sg.	banquet	
 151280	yn	yn/	yn	n. m. sg.	wine	
 # KTU 1.91 24						
@@ -149,7 +149,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.91 29						
 151296	bir	bir/	bỉr	TN/n. f.	biʾiru	
 151297	ˤšr	ˤšr(I)/	ʕšr (I)	n. sg. num.	ten	
-151297	ˤšr	ˤšr[:d:pass	/ʕ-š-r/	vb D suffc. / vb Dpass suffc.	ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods	
+151297	ˤšr	ˤšr[:d:pass	/ʕ-š-r/	vb D suffc. / vb Dpass suffc.	to invite	
 151297	ˤšr	ˤšr(I)/	ʕšr(t) (I)	n. m. sg.	banquet	
 151298	mṣb	mṣb(II)/	mṣb (II)	n. m. sg.	place in which something is put	
 151299	xxxxxtm	?	?	?	?	DULAT: NOT FOUND
@@ -195,5 +195,5 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151322	w	w	w	conj.	and	
 151323	ḥspṯn	?	?	?	?	DULAT: NOT FOUND
 151324	kbd	kbd(II)/	kbd (II)	n. m. sg.	total (quantity or price)	
-151324	kbd	kbd(I)/	kbd (I)	n. f. sg.	liver	
+151324	kbd	kbd(I)/	kbd (I)	n. sg. f.	liver	
 151324	kbd	kbd[:d	/k-b-d/	vb D impv.	to honour	

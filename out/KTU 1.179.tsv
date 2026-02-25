@@ -1,7 +1,7 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.179 1						
 156068	b	b	b	prep.	in	
-156069	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
+156069	bt	bt(II)/	bt (II)	n. m. sg.	house	
 156069	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 156070	ytn	!y!(ytn[	/y-t-n/	vb G prefc. / vb G suffc.	to give	
 # KTU 1.179 2						
@@ -13,7 +13,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.179 3						
 156075		?	?	?	?	
 156076	w	w	w	conj.	and	
-156077	špty	špt/y	špt	n. f. sg.	lip	
+156077	špty	šp(t/t	špt	n. f. sg.	lip	
 156078	w	w	w	conj.	and	
 156079	ḥbr	ḥbr(I)/	ḥbr (I)	n. m. pl.	companion	
 156080	b	b	b	prep.	in	
@@ -59,13 +59,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156103	dm	dm(II)/	dm (II)	n. m.	blood	
 156103	dm	dm(I)	dm (I)	functor	since	
 156104	kbkb	kbkb/	kbkb	n. m. sg.	heavenly body	
-156105	šmm	šm(m(I)/m	šmm (I)	n. m. pl. tant. tant. pl. / n. m. tant. du.	heavens	
+156105	šmm	šm(m(I)/m	šmm (I)	n. m. tant. pl. / n. m. tant. du.	heavens	
 156106	wthm	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.179 10						
 156107	kbkb	kbkb/	kbkb	n. m. sg.	heavenly body	
-156108	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
-156108	bˤl	bˤl(I)/	bʕl (I)	n. m. sg. / n. m. pl.	labourer	
-156108	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
+156108	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 156109	w	w	w	conj.	and	
 156110	pdry	pdry/	pdry	DN	Pidray	
 156110	pdry	pdr(I)/+y	pdr (I)	n. m.	town	
@@ -118,13 +116,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156139	lqḥ	lqḥ[	/l-q-ḥ/	vb G suffc.	to get hold of	
 156139	lqḥ	lqḥ[/	/l-q-ḥ/	vb G inf.	to get hold of	
 156140	prṯt	prṯ(t/t	prṯt	n. f. sg.	secret	
-156141	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+156141	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 156141	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 # KTU 1.179 17						
 156142	x	?	?	?	?	
-156143	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
-156143	bˤl	bˤl(I)/	bʕl (I)	n. m. sg. / n. m. pl.	labourer	
-156143	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
+156143	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 156144	qdšm	qdš(I)/m	qdš (I)	adj. m. pl.	holy	
 156145	b	b	b	prep.	in	
 156146	nhr	nhr/	nhr	n. m. sg.	river	
@@ -141,15 +137,15 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156153	ym	ym(II)/	ym (II)	n. m. sg.	sea	
 156154	tl	tl(I)/	tl (I)	n. m. sg.	hill	
 156154	tl	tl(II)/	tl (II)	n. m. sg.	weapon	
-156155	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+156155	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 156155	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 # KTU 1.179 20						
 156156	prṯt	prṯ(t/t	prṯt	n. f. sg.	secret	
-156157	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+156157	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 156157	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 # KTU 1.179 21						
 156158	ṯt	ṯn(I)/	ṯn (I)	nuf.	two	
-156159	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+156159	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 156159	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 # KTU 1.179 22						
 156160	xt	?	?	?	?	DULAT: NOT FOUND
@@ -180,7 +176,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156175	xh	?	?	?	?	DULAT: NOT FOUND
 156176	w	w	w	conj.	and	
 156177	ysb	!y!sb(b[	/s:ś-b-b/	vb G suffc.	to turn round	
-156178	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
+156178	bt	bt(II)/	bt (II)	n. m. sg.	house	
 156178	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 156179	mḫrh	mḫr(II)/+h	mḫr (II)	n. m.	tax collector	
 # KTU 1.179 31						
@@ -204,7 +200,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156188	w	w	w	conj.	and	
 156189	hwt	hw(t(I)/t	hwt (I)	n. f. sg.	word	
 156190	b	b	b	prep.	in	
-156191	špth	špt/h	špt	n. f. sg.	lip	
+156191	špth	šp(t/t	špt	n. f. sg.	lip	
 156192	rḥqt	rḥq[t:d	/r-ḥ-q/	vb D suffc.	to go away	
 156193	abn	ab/+n	ảb	n. m.	father	
 156193	abn	abn/	ảbn	n. f. sg. / n. f. pl. cstr.	stone	
@@ -217,7 +213,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156195	abn	!(ʔ&a!bn[	/b-n/	vb G impv.	to understand	
 # KTU 1.179 33						
 156196	ˤrb	ˤrb(I)[	/ʕ-r-b/ (I)	vb G suffc.	to enter	
-156196	ˤrb	ˤrb(II)[	/ʕ-r-b/ (II)	vb G suffc.	to give a guarantee or pledge	
 156196	ˤrb	ˤrb(I)/	ʕrb (I)	n. m. sg.	entry	
 156197	ḥrn	ḥrn/	ḥrn	DN	Ḥôrānu	
 156197	ḥrn	ḥr(I)/+n	ḥr (I)	n. m.	intestine(s)	
@@ -244,7 +239,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156214	w	w	w	conj.	and	
 156215	ḫlm	ḫl/m	ḫl	n. m. pl.	pain	
 156216	aṯt	aṯ(t/t	ảṯt	n. f. sg.	woman	
-156216	aṯt	aṯ(t/t	ảṯt	n. f. pl.	woman	
+156216	aṯt	aṯ(t/t=	ảṯt	n. f. sg.	woman	
 156217	iṯt	iṯt	ỉṯt	?	?	
 156218	k	+k	-k (I)			
 156218	k	~k	-k (II)			
@@ -294,9 +289,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156248	mlkt	mlk(t/t	mlkt	n. f. sg.	queen	
 156249	mntn	mnt(I)/+n	mnt (I)	n. f.	portion	
 # KTU 1.179 40						
-156250	spr	spr(II)/	spr (II)	n. m. sg.	tablet/register	
-156250	spr	spr[:d	/s-p-r/	vb G suffc. / vb D suffc.	to count	
-156250	spr	spr[/:d	/s-p-r/	vb G inf. / vb D inf.	to count	
+156250	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
+156250	spr	spr[	/s-p-r/	vb G suffc. / vb D suffc.	to count	
+156250	spr	spr[/	/s-p-r/	vb G inf. / vb D inf.	to count	
 156250	spr	spr(I)/	spr (I)	n. m. sg.	scribe	
 156251	ilmlk	ilmlk/	ỉlmlk	PN	ʾIlimalku/Ilimilku/Elimelek	
 156252	šbny	šbny/	šbny	GN	Shubanite	
@@ -320,7 +315,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156264	ylmdnn	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.179 43						
 156265	b	b	b	prep.	in	
-156266	spr	spr(II)/	spr (II)	n. m. sg.	tablet/register	
-156266	spr	spr[:d	/s-p-r/	vb G suffc. / vb D suffc.	to count	
-156266	spr	spr[/:d	/s-p-r/	vb G inf. / vb D inf.	to count	
+156266	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
+156266	spr	spr[	/s-p-r/	vb G suffc. / vb D suffc.	to count	
+156266	spr	spr[/	/s-p-r/	vb G inf. / vb D inf.	to count	
 156266	spr	spr(I)/	spr (I)	n. m. sg.	scribe	

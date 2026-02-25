@@ -31,7 +31,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147649	l	l(IV)	l (IV)	interj.	oh!	
 147650	bnt	bn(t(II)/t	bnt (II)	n. f. sg.	produce	
 147650	bnt	bn(t(I)/t	bnt (I)	n. f. sg.	masonry	
-147650	bnt	bn(t(III)/t	bnt (III)	n. m. sg.	tamarisk	
+147650	bnt	bnt(III)/	bnt (III)	n. m. sg.	tamarisk	
 147651	hll	hll/	hll	DN	New Moon	
 147652	snnt	snnt/	snnt	n. f. pl.	swallow	
 # KTU 1.24 7						
@@ -102,7 +102,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147694	ylak	lʔk[k	/l-ʔ-k/	vb G prefc.	to send (a message)	
 147695	yrḫ	yrḫ/	yrḫ	n. m. sg.	moon	
 147696	nyr	nyr/	nyr	n. f. sg.	luminary	
-147697	šmm	šm(m(I)/m	šmm (I)	n. m. pl. tant. tant. pl. / n. m. tant. du.	heavens	
+147697	šmm	šm(m(I)/m	šmm (I)	n. m. tant. pl. / n. m. tant. du.	heavens	
 147698	ˤm	ˤm(I)	ʕm (I)	prep.	to	
 # KTU 1.24 17						
 147699	ḫrḫb	ḫrḫb/	ḫrḫb	DN	ḫrḫb	
@@ -174,19 +174,17 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147740	lḫtn	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.24 26						
 147741	m	l(I)	l (I)	prep.	to	
-147742	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+147742	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 147742	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
-147743	trḫ	trḫ[:d	/t-r-ḫ/	vb G suffc. / vb G impv. / vb D suffc. / vb D impv.	to marry	
-147743	trḫ	trḫ[/:d	/t-r-ḫ/	vb G act. ptcpl. / vb D act. ptcpl.	to marry	
+147743	trḫ	trḫ[	/t-r-ḫ/	vb G suffc. / vb G impv. / vb D suffc. / vb D impv.	to marry	
+147743	trḫ	trḫ[/	/t-r-ḫ/	vb G act. ptcpl. / vb D act. ptcpl.	to marry	
 147744	pdry	pdry/	pdry	DN	Pidray	
 147744	pdry	pdr(I)/+y	pdr (I)	n. m.	town	
 147745	bth	bt(II)/+h	bt (II)	n. m.	house	
 # KTU 1.24 27						
 147746	aqrbk	?	?	?	?	DULAT: NOT FOUND
 147747	abh	ab/+h	ảb	n. m.	father	
-147748	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
-147748	bˤl	bˤl(I)/	bʕl (I)	n. m. sg. / n. m. pl.	labourer	
-147748	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
+147748	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 # KTU 1.24 28						
 147749	yġtr	!y!ġtr[	/ġ-t-r/	vb G prefc.	to implore	
 147750	ˤṯtr	ˤṯtr/	ʕṯtr	DN	ʿAṯtar	
@@ -208,7 +206,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.24 31						
 147761	yrḫ	yrḫ/	yrḫ	n. m. sg.	moon	
 147762	nyr	nyr/	nyr	n. f. sg.	luminary	
-147763	šmm	šm(m(I)/m	šmm (I)	n. m. pl. tant. tant. pl. / n. m. tant. du.	heavens	
+147763	šmm	šm(m(I)/m	šmm (I)	n. m. tant. pl. / n. m. tant. du.	heavens	
 147764	wn	w	w	conj.	and	
 147764	wn	w+n	w	conj.	and	
 147765	ˤn	ˤn(I)/	ʕn (I)	n. f. sg. / n. f. du.	eye	
@@ -217,8 +215,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.24 32						
 147766	ˤmn	ˤm(I)+n	ʕm (I)	prep.	to	
 147767	nkl	!n!](n]kl(y[	/k-l-y/	vb N suffc.	to finish	
-147768	ḫtny	ḫtn[y:d	/ḫ-t-n/	vb D suffc.	to become a son-in-law	
-147768	ḫtny	ḫtn[/y:d	/ḫ-t-n/	vb D inf.	to become a son-in-law	
+147768	ḫtny	ḫtn[y	/ḫ-t-n/	vb D suffc.	to become a son-in-law	
+147768	ḫtny	ḫtn[/y	/ḫ-t-n/	vb D inf.	to become a son-in-law	
 147768	ḫtny	ḫtn(I)/+y	ḫtn (I)	n. m. sg.	relationship by marriage	
 147769	aḫr	aḫr	ảḫr	adv./prep./conj.	afterwards	
 # KTU 1.24 33						
@@ -276,14 +274,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147803	snnt	snnt/	snnt	n. f. pl.	swallow	
 147804	bnt	bn(t(II)/t	bnt (II)	n. f. sg.	produce	
 147804	bnt	bn(t(I)/t	bnt (I)	n. f. sg.	masonry	
-147804	bnt	bn(t(III)/t	bnt (III)	n. m. sg.	tamarisk	
+147804	bnt	bnt(III)/	bnt (III)	n. m. sg.	tamarisk	
 147805	h	+h, +h=	-h (I)	suff. pn. morph.	his /her (hers) / its	
 147805	h	~h	-h(II)	adv. functor	to, towards	
 # KTU 1.24 42						
 147806	ll	ll(I)/	ll (I)	n. m. sg.	night	
-147807	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
-147807	bˤl	bˤl(I)/	bʕl (I)	n. m. sg. / n. m. pl.	labourer	
-147807	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
+147807	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 147808	gml	gml(I)/	gml (I)	n. m. sg.	first quarter (of the moon)	
 147808	gml	gml(II)/	gml (II)	n. m. sg.	together	
 147809	yrdt	!y!(yrd[/t	/y-r-d/	vb G act. ptcpl. pl.	to go down	
@@ -313,7 +309,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147825	rhn	pẓr[+hn	/p-ẓ-r/	vb	to free	
 147825	rhn	rks/+hn	rks	n. m.	belt	
 147826	b	b	b	prep.	in	
-147827	špty	špt/y	špt	n. f. sg.	lip	
+147827	špty	šp(t/t	špt	n. f. sg.	lip	
 147828	mn	mn(IV)	mn (IV)	?	?	
 # KTU 1.24 47						
 147829	hnthn	?	?	?	?	DULAT: NOT FOUND

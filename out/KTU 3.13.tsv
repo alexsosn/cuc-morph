@@ -35,7 +35,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 3.13 5						
 161397	šbˤ	šbˤ(I)/	šbʕ (I)	n. sg. num.	seven	
 161398	ˤšr	ˤšr(I)/	ʕšr (I)	n. sg. num.	ten	
-161398	ˤšr	ˤšr[:d:pass	/ʕ-š-r/	vb D suffc. / vb Dpass suffc.	ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods	
+161398	ˤšr	ˤšr[:d:pass	/ʕ-š-r/	vb D suffc. / vb Dpass suffc.	to invite	
 161398	ˤšr	ˤšr(I)/	ʕšr(t) (I)	n. m. sg.	banquet	
 161399	šmn	šmn(I)/	šmn (I)	n. m. sg.	oil	
 161400	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
@@ -91,7 +91,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161436	kdrn	kdrn/	kdrn	PN	kdrn	
 # KTU 3.13 12						
 161437	ˤšr	ˤšr(I)/	ʕšr (I)	n. sg. num.	ten	
-161437	ˤšr	ˤšr[:d:pass	/ʕ-š-r/	vb D suffc. / vb Dpass suffc.	ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods	
+161437	ˤšr	ˤšr[:d:pass	/ʕ-š-r/	vb D suffc. / vb Dpass suffc.	to invite	
 161437	ˤšr	ˤšr(I)/	ʕšr(t) (I)	n. m. sg.	banquet	
 161438	ksp	ksp/	ksp	n. m. sg.	silver	
 161439	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
@@ -117,7 +117,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 3.13 16						
 161450	w	w	w	conj.	and	
 161451	npṣ	npṣ/	npṣ	n. m. sg. / n. m. pl. cstr.	personal belongings	
-161452	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
+161452	bt	bt(II)/	bt (II)	n. m. sg.	house	
 161452	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 161452	bt	bt(III)/	bt (III)	n. m. pl.	length	
 161453	ṯn	ṯn(I)/	ṯn (I)	num.	two	
@@ -137,7 +137,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 3.13 18						
 161460	w	w	w	conj.	and	
 161461	mmskn	mmskn/	mmskn	n. m.	earthenware bowl	
-161461	mmskn	mmsknn/	mmskn	n. m.	earthenware bowl	
+161461	mmskn	mmskn/+n	mmskn	n. m.	earthenware bowl	
 # KTU 3.13 19						
 161462	w	w	w	conj.	and	
 161463	ṯt	ṯn(I)/	ṯn (I)	nuf.	two	
@@ -160,7 +160,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161477	yn	yn/	yn	n. m. sg.	wine	
 161478	šbˤ	šbˤ(I)/	šbʕ (I)	n. sg. num.	seven	
 161479	kbd	kbd(II)/	kbd (II)	n. m. sg.	total (quantity or price)	
-161479	kbd	kbd(I)/	kbd (I)	n. f. sg.	liver	
+161479	kbd	kbd(I)/	kbd (I)	n. sg. f.	liver	
 161479	kbd	kbd[:d	/k-b-d/	vb D impv.	to honour	
 161480	d	d	d	det. or rel. functor	the one(s) of	
 161481	ṯbṭ	ṯbṭ/	ṯbṭ	PN	ṯbṭ	

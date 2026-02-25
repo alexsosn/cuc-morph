@@ -2,7 +2,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.109 1						
 153351	b	b	b	prep.	in	
 153352	arbˤt	arbˤ/	ảrbʕ	num.	four	
-153353	ˤšrt	ˤšr(t(I)/t	ʕšr(t) (I)	n. m. sg.	banquet	
+153353	ˤšrt	ˤšr(I)/	ʕšr(t) (I)	n. m. sg.	banquet	
 153353	ˤšrt	ˤšr(t(II)/t	ʕšrt (II)	n. f. sg.	group of ten	
 # KTU 1.109 2						
 153354	yrtḥṣ	!y!r]t]ḥṣ[	/r-ḥ-ṣ/	vb Gt prefc.	to wash	
@@ -14,16 +14,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153357	b	b	b	prep.	in	
 153358	ym	ym(I)/	ym (I)	n. m. sg.	day	
 153358	ym	ym(II)/	ym (II)	n. m. sg.	sea	
-153359	mlat	ml(ʔ&a[t	/m-l-ʔ/	vb G suffc.	to be full	
 153359	mlat	mla(t/t	mlảt	n. f. sg.	fullness	
-153359	mlat	mla(t/t=	mlảt	n. f. pl.	fullness	
+153359	mlat	mla(t/t=	/m-l-ʔ/	vb G suffc.	to be full	
+153359	mlat	ml(ʔ&a[t				
 # KTU 1.109 4						
 153360	tqln	!t!ql[n	/q-l/	vb G prefc.	to fall (down)	
 153361	alpm	alp(I)/m	ảlp (I)	n. m. pl. / n. m. du.	(head of) cattle	
 153361	alpm	alp(II)/	ảlp (II)	num. pl. / num. du.	(one, a) thousand	
 # KTU 1.109 5						
 153362	yrḫ	yrḫ/	yrḫ	n. m. sg.	moon	
-153363	ˤšrt	ˤšr(t(I)/t	ʕšr(t) (I)	n. m. sg.	banquet	
+153363	ˤšrt	ˤšr(I)/	ʕšr(t) (I)	n. m. sg.	banquet	
 153363	ˤšrt	ˤšr(t(II)/t	ʕšrt (II)	n. f. sg.	group of ten	
 153364	l	l(I)	l (I)	prep.	to	
 153365	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
@@ -41,7 +41,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.109 8						
 153375	w	w	w	conj.	and	
 153376	kbd	kbd(II)/	kbd (II)	n. m. sg.	total (quantity or price)	
-153376	kbd	kbd(I)/	kbd (I)	n. f. sg.	liver	
+153376	kbd	kbd(I)/	kbd (I)	n. sg. f.	liver	
 153376	kbd	kbd[:d	/k-b-d/	vb D impv.	to honour	
 153377	w	w	w	conj.	and	
 153378	š	š/	š	n. m. sg.	ram	
@@ -52,7 +52,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153380	šlm	šlm[:d	/š-l-m/	vb G suffc. / vb D suffc.	to be well	
 153380	šlm	šlm(III)/	šlm (III)	adj. m. sg.	pure	
 153381	kbd	kbd(II)/	kbd (II)	n. m. sg.	total (quantity or price)	
-153381	kbd	kbd(I)/	kbd (I)	n. f. sg.	liver	
+153381	kbd	kbd(I)/	kbd (I)	n. sg. f.	liver	
 153381	kbd	kbd[:d	/k-b-d/	vb D impv.	to honour	
 # KTU 1.109 9						
 153382	alp	alp(I)/	ảlp (I)	n. m. sg. / n. m. pl.	(head of) cattle	
@@ -64,7 +64,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153387	ṣpn	ṣpn/	ṣpn	TN/DN	Ṣapānu/Zaphon/the mountain dwelling of bʕl deified	
 # KTU 1.109 10						
 153388	dqt	dq(t(I)/t	dqt (I)	adj. f. or n. f. sg.	small	
-153388	dqt	dq(t(I)/t=	dqt (I)	adj. f. or n. f. pl.	small	
+153388	dqt	dq(t(I)/t=	dqt (I)	adj. f. or n. f. sg.	small	
 153389	lṣpn	?	?	?	?	DULAT: NOT FOUND
 153390	šrp	šrp/	šrp	n. m. sg.	burnt sacrifice	
 153391	w	w	w	conj.	and	
@@ -75,7 +75,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153394	w	w	w	conj.	and	
 153395	bbt	bbt(II)/	bbt (II)	DN	superintendent	
 153395	bbt	bbt(I)/	bbt (I)	TN	bbt (I)	
-153396	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+153396	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 153396	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 153397	ugrt	ugrt/	ủgrt	TN	Ugarit	
 # KTU 1.109 12						
@@ -85,10 +85,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153401	ilib	ilib(I)/	ỉlỉb (I)	DN	father god	
 # KTU 1.109 13						
 153402	gdlt	gdl(t(I)/t	gdlt (I)	n. f. sg.	head of cattle	
-153402	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. pl.	head of cattle	
+153402	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. sg.	head of cattle	
 153403	il	il(I)/	ỉl (I)	n. m.	god	
 153404	š	š/	š	n. m. sg.	ram	
-153405	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+153405	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 153405	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 153406	š	š/	š	n. m. sg.	ram	
 153407	ˤnt	ˤn(I)/t=	ʕn (I)	n. f. pl.	eye	
@@ -111,14 +111,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153417	ilib	ilib(I)/	ỉlỉb (I)	DN	father god	
 153418	š	š/	š	n. m. sg.	ram	
 # KTU 1.109 16						
-153419	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
-153419	bˤl	bˤl(I)/	bʕl (I)	n. m. sg. / n. m. pl.	labourer	
-153419	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
+153419	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 153420	ugrt	ugrt/	ủgrt	TN	Ugarit	
 153421	š	š/	š	n. m. sg.	ram	
-153422	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
-153422	bˤl	bˤl(I)/	bʕl (I)	n. m. sg. / n. m. pl.	labourer	
-153422	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
+153422	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 153423	ḫlb	ḫlb(I)/	ḫlb (I)	n. m. sg.	massif	
 153424	š	š/	š	n. m. sg.	ram	
 # KTU 1.109 17						
@@ -144,7 +140,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153438	ilib	ilib(I)/	ỉlỉb (I)	DN	father god	
 153439	š	š/	š	n. m. sg.	ram	
 # KTU 1.109 20						
-153440	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+153440	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 153440	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 153441	alp	alp(I)/	ảlp (I)	n. m. sg. / n. m. pl.	(head of) cattle	
 153441	alp	alp(II)/	ảlp (II)	num.	(one, a) thousand	
@@ -156,7 +152,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153446	tˤḏr	tˤḏr/	tʕḏr	n. m. sg.	help	
 153447	š	š/	š	n. m. sg.	ram	
 # KTU 1.109 22						
-153448	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+153448	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 153448	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 153449	š	š/	š	n. m. sg.	ram	
 153450	ˤnt	ˤn(I)/t=	ʕn (I)	n. f. pl.	eye	
@@ -224,7 +220,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153488	ˤlm	ˤl(I)	ʕl (I)	prep.	upon	
 153489	ˤlm	ˤl(I)	ʕl (I)	prep.	upon	
 153490	gdlt	gdl(t(I)/t	gdlt (I)	n. f. sg.	head of cattle	
-153490	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. pl.	head of cattle	
+153490	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. sg.	head of cattle	
 153491	l	l(I)	l (I)	prep.	to	
 153492	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 # KTU 1.109 33						
@@ -232,19 +228,19 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153494	ḫlb	ḫlb(I)/	ḫlb (I)	n. m. sg.	massif	
 153495	txxḥd	?	?	?	?	DULAT: NOT FOUND
 153496	dqt	dq(t(I)/t	dqt (I)	adj. f. or n. f. sg.	small	
-153496	dqt	dq(t(I)/t=	dqt (I)	adj. f. or n. f. pl.	small	
+153496	dqt	dq(t(I)/t=	dqt (I)	adj. f. or n. f. sg.	small	
 # KTU 1.109 34						
 153497	l	l(I)	l (I)	prep.	to	
 153498	ṣpn	ṣpn/	ṣpn	TN/DN	Ṣapānu/Zaphon/the mountain dwelling of bʕl deified	
 153499	š	š/	š	n. m. sg.	ram	
 153500	l	l(I)	l (I)	prep.	to	
-153501	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+153501	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 153502	ugrt	ugrt/	ủgrt	TN	Ugarit	
 153503	š	š/	š	n. m. sg.	ram	
 # KTU 1.109 35						
 153504	ilib	ilib(I)/	ỉlỉb (I)	DN	father god	
 153505	gdlt	gdl(t(I)/t	gdlt (I)	n. f. sg.	head of cattle	
-153505	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. pl.	head of cattle	
+153505	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. sg.	head of cattle	
 153506	lbˤl	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.109 36						
 153507	ugrt	ugrt/	ủgrt	TN	Ugarit	

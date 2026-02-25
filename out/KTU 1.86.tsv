@@ -1,8 +1,8 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.86 1						
-150688	spr	spr(II)/	spr (II)	n. m. sg.	tablet/register	
-150688	spr	spr[:d	/s-p-r/	vb G suffc. / vb D suffc.	to count	
-150688	spr	spr[/:d	/s-p-r/	vb G inf. / vb D inf.	to count	
+150688	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
+150688	spr	spr[	/s-p-r/	vb G suffc. / vb D suffc.	to count	
+150688	spr	spr[/	/s-p-r/	vb G inf. / vb D inf.	to count	
 150688	spr	spr(I)/	spr (I)	n. m. sg.	scribe	
 150689	ḥlmm	ḥlm(II)/	ḥlm (II)	n. m. pl.	growing animal	
 150690	alp	alp(I)/	ảlp (I)	n. m. sg. / n. m. pl.	(head of) cattle	
@@ -21,7 +21,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150698	alp	alp(II)/	ảlp (II)	num.	(one, a) thousand	
 150699	pr	pr(II)/	pr (II)	n. m. sg.	young bull	
 150699	pr	pr(I)/	pr (I)	n. m. sg.	fruit	
-150700	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+150700	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 150700	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 150701	xx	?	?	?	?	
 150702	rb	rb(II)/	rb (II)	n. m. sg.	chief	
@@ -30,7 +30,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.86 4						
 150703	w	w	w	conj.	and	
 150704	prt	pr(t(I)/t	prt (I)	n. f. sg.	heifer	
-150704	prt	pr(t(I)/t=	prt (I)	n. f. pl.	heifer	
+150704	prt	pr(t(I)/t=	prt (I)	n. f. sg.	heifer	
 150705	tkt	nkt[	/n-k-t/	vb G prefc.	to immolate	
 150706	xxxxxlxx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.86 5						
@@ -74,10 +74,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150731	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 150732	xd	?	?	?	?	DULAT: NOT FOUND
 150733	w	w	w	conj.	and	
-150734	mt	m(t(II)/t	mt (II)	n. m. sg.	death	
+150734	mt	mt(II)/	mt (II)	n. m. sg.	death	
 150734	mt	mt[	/m-t/	vb G suffc.	to die	
 150734	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
-150734	mt	m(t(I)/t	mt (I)	n. m. sg.	dead person	
+150734	mt	mt(I)/	mt (I)	n. m. sg.	dead person	
 # KTU 1.86 12						
 150735	l	l(I)	l (I)	prep.	to	
 150735	l	l(III)	l (III)	functor	certainly	
@@ -118,7 +118,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150754	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. cstr.	son	
 150754	bn	bn(II)	bn (II)	prep.	between	
 150754	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
-150755	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+150755	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 150755	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 # KTU 1.86 18						
 150756	xxn	?	?	?	?	DULAT: NOT FOUND
@@ -145,7 +145,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.86 23						
 150768	mˤbd	mˤbd/	mʕbd	n. m. sg.	labour	
 150769	ḫrmṯt	ḫrmṯ(t/t	ḫrmṯt	n. f. sg.	sickle	
-150769	ḫrmṯt	ḫrmṯ(t/t=	ḫrmṯt	n. f. pl.	sickle	
+150769	ḫrmṯt	ḫrmṯ(t/t=	ḫrmṯt	n. f. sg.	sickle	
 # KTU 1.86 24						
 150770	w	w	w	conj.	and	
 150771	kśt	ks(t/t	kst	n. f. sg.	Gewand	Based on DULAT reconstruction.
@@ -170,7 +170,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150781	ḥlm	ḥlm(I)/	ḥlm (I)	n. m. sg.	dream	
 150782	aṯyxxxxxnpx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.86 29						
-150783	pn	pn(m/	pnm	n. m. pl. tant.	face	
+150783	pn	pn(m/	pnm	n. m. pl. tant. pl.	face	
 150784	nˤmxyxxx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.86 30						
 150785	bnšm	bnš/m	bnš	n. m. pl.	man	
@@ -178,7 +178,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150787	xxxxp	?	?	?	?	DULAT: NOT FOUND
 150788	ṯt	ṯn(I)/	ṯn (I)	nuf.	two	
 # KTU 1.86 31						
-150789	šˤrm	šˤr(m/m	šʕrm	n. m. pl. tant.	barley	
+150789	šˤrm	šˤr(m/m	šʕrm	n. m. pl. tant. pl.	barley	
 150790	bxḥxxxxṯar	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.86 32						
 150791	w	w	w	conj.	and	

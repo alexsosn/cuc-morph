@@ -299,11 +299,22 @@ class TabletParsingPipeline:
 
         if bootstrap_targets:
             summary.update(self.bootstrap_targets(bootstrap_targets))
-            summary.update(self.refine_targets(bootstrap_targets))
         else:
             summary.update(
                 {
                     "bootstrap_written": 0,
+                }
+            )
+
+        # When include_existing is enabled, preserved outputs must still pass through
+        # DULAT-backed refinement so stale rows (e.g., legacy gloss payloads) are
+        # regenerated from authoritative lexical data.
+        refine_targets = targets if self.config.include_existing else bootstrap_targets
+        if refine_targets:
+            summary.update(self.refine_targets(refine_targets))
+        else:
+            summary.update(
+                {
                     "refine_rows": 0,
                     "refine_changed": 0,
                 }

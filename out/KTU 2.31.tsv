@@ -17,7 +17,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157262	k	k(II)	k (II)	emph. functor	yes	
 # KTU 2.31 5						
 157263	xxxrt	?	?	?	?	DULAT: NOT FOUND
-157264	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
+157264	bt	bt(II)/	bt (II)	n. m. sg.	house	
 157264	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 157264	bt	bt(III)/	bt (III)	n. m. pl.	length	
 157265	t	/t, /t=				
@@ -59,16 +59,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157289	ksiy	ksi/+y	ks/śủ	n. f.	seat	
 157290	w	w	w	conj.	and	
 157291	prˤ	prˤ(I)/	prʕ (I)	n. m. sg.	first fruit	
-157291	prˤ	prˤ[:d	/p-r-ʕ/	vb G suffc. / vb D suffc.	to wash	
-157291	prˤ	prˤ[/:d	/p-r-ʕ/	vb G inf. / vb D inf.	to wash	
+157291	prˤ	prˤ[	/p-r-ʕ/	vb G suffc. / vb D suffc.	to wash	
+157291	prˤ	prˤ[/	/p-r-ʕ/	vb G inf. / vb D inf.	to wash	
 157291	prˤ	prˤ(II)/	prʕ (II)	adj. m. sg.	first	
 # KTU 2.31 16						
 157292	xxx	?	?	?	?	
 157293	xxx	?	?	?	?	
 157294	xxx	?	?	?	?	
 157295	prˤ	prˤ(I)/	prʕ (I)	n. m. sg.	first fruit	
-157295	prˤ	prˤ[:d	/p-r-ʕ/	vb G suffc. / vb D suffc.	to wash	
-157295	prˤ	prˤ[/:d	/p-r-ʕ/	vb G inf. / vb D inf.	to wash	
+157295	prˤ	prˤ[	/p-r-ʕ/	vb G suffc. / vb D suffc.	to wash	
+157295	prˤ	prˤ[/	/p-r-ʕ/	vb G inf. / vb D inf.	to wash	
 157295	prˤ	prˤ(II)/	prʕ (II)	adj. m. sg.	first	
 157296	ank	ank	ảnk	pers. pn.	I	
 157297	š	š/	š	n. m. sg.	ram	
@@ -130,7 +130,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.31 31						
 157336	q	?	?	?	?	
 157337	mrkbt	mrkb(t/t	mrkbt	n. f. sg.	(light war-)chariot	
-157337	mrkbt	mrkb(t/t=	mrkbt	n. f. pl.	(light war-)chariot	
+157337	mrkbt	mrkb(t/t=	mrkbt	n. f. sg.	(light war-)chariot	
 # KTU 2.31 32						
 157338		?	?	?	?	
 # KTU 2.31 33						
@@ -164,8 +164,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157356	dy	d	d	det. or rel. functor	the one(s) of	
 157357	w	w	w	conj.	and	
 157358	prˤ	prˤ(I)/	prʕ (I)	n. m. sg.	first fruit	
-157358	prˤ	prˤ[:d	/p-r-ʕ/	vb G suffc. / vb D suffc.	to wash	
-157358	prˤ	prˤ[/:d	/p-r-ʕ/	vb G inf. / vb D inf.	to wash	
+157358	prˤ	prˤ[	/p-r-ʕ/	vb G suffc. / vb D suffc.	to wash	
+157358	prˤ	prˤ[/	/p-r-ʕ/	vb G inf. / vb D inf.	to wash	
 157358	prˤ	prˤ(II)/	prʕ (II)	adj. m. sg.	first	
 157359	bxxx	?	?	?	?	DULAT: NOT FOUND
 # KTU 2.31 40						
@@ -341,7 +341,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157489	xxxn	?	?	?	?	DULAT: NOT FOUND
 157490	btk	bt(II)/+k	bt (II)	n. m.	house	
 157491	xxxx	?	?	?	?	
-157492	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+157492	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 157492	bˤl	bˤl(I)/	bʕl (I)	n. m. sg. / n. m. pl.	labourer	
 157492	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 # KTU 2.31 61						
@@ -392,7 +392,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157528	w	w	w	conj.	and	
 157529	ydn	!y!dn[	/d-n/	vb G prefc.	to judge	
 157529	ydn	!y!(ydn[	/y-d-n/	vb G prefc.	?	
-157530	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+157530	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 157530	bˤl	bˤl(I)/	bʕl (I)	n. m. sg. / n. m. pl.	labourer	
 157530	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 157531	xxxn	?	?	?	?	DULAT: NOT FOUND

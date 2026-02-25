@@ -6,7 +6,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154564	x	?	?	?	?	
 # KTU 1.130 3						
 154565	l	l(I)	l (I)	prep.	to	
-154566	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+154566	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 154567	š	š/	š	n. m. sg.	ram	
 # KTU 1.130 4						
 154568	l	l(I)	l (I)	prep.	to	
@@ -36,12 +36,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154580	ilibš	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.130 10						
 154581	l	l(I)	l (I)	prep.	to	
-154582	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+154582	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 154583	ugrt	ugrt/	ủgrt	TN	Ugarit	
 154584	š	š/	š	n. m. sg.	ram	
 # KTU 1.130 11						
 154585	l	l(I)	l (I)	prep.	to	
-154586	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+154586	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 154587	ḫlbš	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.130 12						
 154588	l	l(I)	l (I)	prep.	to	
@@ -69,7 +69,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154600	ˤlm	ˤl(I)	ʕl (I)	prep.	upon	
 # KTU 1.130 17						
 154601	nbšt	nbš(t/t	nbšt	n. f. sg.	living being(s)	
-154601	nbšt	nbš(t/t=	nbšt	n. f. pl.	living being(s)	
+154601	nbšt	nbš(t/t=	nbšt	n. f. sg.	living being(s)	
 154602	yrḫ	yrḫ/	yrḫ	n. m. sg.	moon	
 154603	lbˤl	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.130 18						
@@ -112,7 +112,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154630	šlmm	šlm(II)/~m	šlm (II)	n. m. sg. / n. m. pl.	communion victim / sacrifice	
 154630	šlmm	šlm(II)/m	šlm (II)	n. m. sg. / n. m. pl.	communion victim / sacrifice	
 154631	l	l(I)	l (I)	prep.	to	
-154632	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+154632	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 154633	ugrt	ugrt/	ủgrt	TN	Ugarit	
 # KTU 1.130 25						
 154634	alp	alp(I)/	ảlp (I)	n. m. sg. / n. m. pl.	(head of) cattle	
@@ -122,7 +122,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154637	l	l(I)	l (I)	prep.	to	
 154638	ṣpn	ṣpn/	ṣpn	TN/DN	Ṣapānu/Zaphon/the mountain dwelling of bʕl deified	
 # KTU 1.130 26						
-154639	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
+154639	bt	bt(II)/	bt (II)	n. m. sg.	house	
 154639	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 154640	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 154641	ugrt	ugrt/	ủgrt	TN	Ugarit	
@@ -131,7 +131,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154643	npš	npš(I)/	npš (I)	n. f. sg.	throat	
 154644	ilib	ilib(I)/	ỉlỉb (I)	DN	father god	
 154645	gdlt	gdl(t(I)/t	gdlt (I)	n. f. sg.	head of cattle	
-154645	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. pl.	head of cattle	
+154645	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. sg.	head of cattle	
 # KTU 1.130 28						
 154646	t	/t, /t=				
 154646	t	[t, [t=, [t==, [t===				

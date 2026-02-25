@@ -154,6 +154,11 @@ class TabletParsingPipelineTest(unittest.TestCase):
             with (
                 patch.object(
                     pipeline,
+                    "refine_targets",
+                    return_value={"refine_rows": 0, "refine_changed": 0},
+                ),
+                patch.object(
+                    pipeline,
                     "instruction_refine_targets",
                     return_value={
                         "instruction_refine_files": 1,
@@ -178,6 +183,62 @@ class TabletParsingPipelineTest(unittest.TestCase):
             self.assertEqual(result["instruction_refine_files"], 1)
             self.assertEqual(result["instruction_refine_rows"], 1)
             self.assertEqual(result["instruction_refine_changed"], 1)
+
+    def test_run_include_existing_runs_refine_targets_for_preserved_outputs(self):
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            src = root / "cuc_tablets_tsv"
+            out = root / "out"
+            src.mkdir(parents=True)
+            out.mkdir(parents=True)
+
+            (src / "KTU 1.1.tsv").write_text("", encoding="utf-8")
+            (out / "KTU 1.1.tsv").write_text(
+                "1\tyˤšr\t!y!ˤšr[:d\t/ʕ-š-r/\tvb D prefc.\tlegacy gloss\t\n",
+                encoding="utf-8",
+            )
+
+            config = PipelineConfig(
+                source_dir=src,
+                out_dir=out,
+                dulat_db=root / "missing.sqlite",
+                udb_db=root / "missing.sqlite",
+                include_existing=True,
+            )
+            pipeline = TabletParsingPipeline(config=config)
+            with (
+                patch.object(
+                    pipeline,
+                    "refine_targets",
+                    return_value={"refine_rows": 1, "refine_changed": 1},
+                ) as mock_refine,
+                patch.object(
+                    pipeline,
+                    "instruction_refine_targets",
+                    return_value={
+                        "instruction_refine_files": 1,
+                        "instruction_refine_rows": 1,
+                        "instruction_refine_changed": 0,
+                    },
+                ),
+                patch.object(
+                    pipeline,
+                    "apply_refinement_steps",
+                    return_value={"refinement_steps_total_changed": 0},
+                ),
+                patch.object(
+                    pipeline,
+                    "regenerate_reports",
+                    return_value=0,
+                ),
+            ):
+                result = pipeline.run(dry_run=False)
+
+            mock_refine.assert_called_once()
+            called_targets = mock_refine.call_args.args[0]
+            self.assertEqual([path.name for path in called_targets], ["KTU 1.1.tsv"])
+            self.assertEqual(result["refine_rows"], 1)
+            self.assertEqual(result["refine_changed"], 1)
 
     def test_suffix_payload_collapse_runs_after_known_ambiguities(self):
         with tempfile.TemporaryDirectory() as tmp_dir:

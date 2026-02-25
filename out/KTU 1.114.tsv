@@ -91,10 +91,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153843	ṯġr	ṯġr(II)/	ṯġr (II)	n. m. sg.	gatekeeper	
 153843	ṯġr	ṯġr(I)/	ṯġr (I)	n. m. sg.	gate	
 # KTU 1.114 12						
-153844	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
+153844	bt	bt(II)/	bt (II)	n. m. sg.	house	
 153844	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 153845	il	il(I)/	ỉl (I)	n. m.	god	
-153846	pn	pn(m/	pnm	n. m. pl. tant.	face	
+153846	pn	pn(m/	pnm	n. m. pl. tant. pl.	face	
 153846	pn	pn	pn	functor	lest	
 153847	lm	l(I)	l (I)	prep.	to	
 153848	rlb	?	?	?	?	DULAT: NOT FOUND
@@ -140,8 +140,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153875	il	il(I)/	ỉl (I)	n. m.	god	
 153876	hlk	hlk[	/h-l-k/	vb G suffc.	to go	
 153876	hlk	hlk[/	/h-l-k/	vb G act. ptcpl. m.	to go	
-153876	hlk	hlk(I)/	hlk (I)	n. m. sg.	walk	
-153876	hlk	hlk(II)	hlk (II)	deictic adv. functor	behold!	
 153877	l	l(I)	l (I)	prep.	to	
 153877	l	l(III)	l (III)	functor	certainly	
 153878	bth	bt(II)/+h	bt (II)	n. m.	house	
@@ -164,9 +162,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153888	ngšnn	ngš[nn	/n-g-š/	vb G suffc.	to approach	
 153889	ḥby	ḥby(I)/	ḥby (I)	DN	Apis	
 # KTU 1.114 20						
-153890	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
-153890	bˤl	bˤl(I)/	bʕl (I)	n. m. sg. / n. m. pl.	labourer	
-153890	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
+153890	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 153891	qrnm	qrn/m	qrn	n. f. du.	horn	
 153892	w	w	w	conj.	and	
 153893	ḏnb	ḏnb/	ḏnb(t)	n. m. sg.	tail	
@@ -186,10 +182,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153901	km	k(IV)	k (IV)	adv.	thus	
 153901	km	km	km	prep./conj./adv.		
 153901	km	+km, +km=	-km			
-153902	mt	m(t(II)/t	mt (II)	n. m. sg.	death	
+153902	mt	mt(II)/	mt (II)	n. m. sg.	death	
 153902	mt	mt[	/m-t/	vb G suffc.	to die	
 153902	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
-153902	mt	m(t(I)/t	mt (I)	n. m. sg.	dead person	
+153902	mt	mt(I)/	mt (I)	n. m. sg.	dead person	
 # KTU 1.114 22						
 153903	il	il(I)/	ỉl (I)	n. m.	god	
 153904	k	+k	-k (I)			
@@ -210,7 +206,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.114 24						
 153912	qdš	qdš(I)/	qdš (I)	adj. m. sg.	holy	
 153912	qdš	qdš(II)/	qdš (II)	n. m. sg.	sanctuary	
-153913	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+153913	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 153913	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 # KTU 1.114 25						
 153914	xxxxxn	?	?	?	?	DULAT: NOT FOUND

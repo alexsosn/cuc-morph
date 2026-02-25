@@ -14,7 +14,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152933	bdh	bd(IV)+h	bd (IV)	prep.	into the hands of	
 152934	ydrm	ndr[+m(I)	/n-d-r/	vb	to make a vow	
 152934	ydrm	ydrm/	ydrm	PN	ydrm	
-152935	pit	pi(t/t	pỉt	n. m. sg.	temple	
+152935	pit	pit/	pỉt	n. m.	temple	
 152936	adm	adm(I)/	ảdm (I)	n. m. sg.	man	
 152936	adm	(ʔ&adm[	/ʔ-d-m/	vb G suffc.	to be	
 # KTU 1.107 4						
@@ -90,7 +90,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152972	ġr	ġr(III)/	ġr (III)	n. m. sg.	skin	
 152973	špš	špš/	špš	n. sg.	sun	
 152974	b	b	b	prep.	in	
-152975	šmm	šm(m(I)/m	šmm (I)	n. m. pl. tant. tant. pl. / n. m. tant. du.	heavens	
+152975	šmm	šm(m(I)/m	šmm (I)	n. m. tant. pl. / n. m. tant. du.	heavens	
 152976	tqru	!t!qr(ʔ[&u	/q-r-ʔ/	vb G prefc.	to call	
 # KTU 1.107 10						
 152977	xxxxx	?	?	?	?	
@@ -132,8 +132,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152999	xxxxxxxx	?	?	?	?	
 153000	hlk	hlk[	/h-l-k/	vb G suffc.	to go	
 153000	hlk	hlk[/	/h-l-k/	vb G act. ptcpl. m.	to go	
-153000	hlk	hlk(I)/	hlk (I)	n. m. sg.	walk	
-153000	hlk	hlk(II)	hlk (II)	deictic adv. functor	behold!	
 # KTU 1.107 14						
 153001	xxb	?	?	?	?	DULAT: NOT FOUND
 153002	kmm	kmm	kmm	adv.	ditto	
@@ -145,7 +143,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.107 15						
 153007	špš	špš/	špš	n. sg.	sun	
 153008	b	b	b	prep.	in	
-153009	šmm	šm(m(I)/m	šmm (I)	n. m. pl. tant. tant. pl. / n. m. tant. du.	heavens	
+153009	šmm	šm(m(I)/m	šmm (I)	n. m. tant. pl. / n. m. tant. du.	heavens	
 153010	tqru	!t!qr(ʔ[&u	/q-r-ʔ/	vb G prefc.	to call	
 153011	xxxxxxxxxxxxrt	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.107 16						
@@ -171,8 +169,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.107 19						
 153025	xxxxxxy	?	?	?	?	DULAT: NOT FOUND
 153026	yd	yd(I)/	yd (I)	n. f. sg.	hand	
-153027	nšy	nšy	nšy			
-153027	nšy	nš+y	nš	?		
+153027	nšy	nšy	nšy	?, prep.		
+153027	nšy	nš+y	nš	?, prep.		
 153028	xxxxxxxxxxxš	?	?	?	?	DULAT: NOT FOUND
 153029	l	l(I)	l (I)	prep.	to	
 153029	l	l(III)	l (III)	functor	certainly	
@@ -311,7 +309,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153126	ḥmt	ḥm(t(III)/t	ḥmt (III)	n. f. sg.	venom	
 153126	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f. sg.	wall	
 # KTU 1.107 39						
-153127	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+153127	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 153127	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 153128	w	w	w	conj.	and	
 153129	dgn	dgn(I)/	dgn (I)	n. m. sg.	grain	

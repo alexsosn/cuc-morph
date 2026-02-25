@@ -1,8 +1,8 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.71 1						
-149555	spr	spr(II)/	spr (II)	n. m. sg.	tablet/register	
-149555	spr	spr[:d	/s-p-r/	vb G suffc. / vb D suffc.	to count	
-149555	spr	spr[/:d	/s-p-r/	vb G inf. / vb D inf.	to count	
+149555	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
+149555	spr	spr[	/s-p-r/	vb G suffc. / vb D suffc.	to count	
+149555	spr	spr[/	/s-p-r/	vb G inf. / vb D inf.	to count	
 149555	spr	spr(I)/	spr (I)	n. m. sg.	scribe	
 149556	nˤm	nˤm(I)/	nʕm (I)	adj. m. sg.	handsome	
 149556	nˤm	nˤm(II)/	nʕm (II)	n. m. sg.	grace	
@@ -69,7 +69,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149585	mss	mss/	mss	n. m. sg.	sap	
 149586	št	št[:pass	/š-t/	vb G suffc. / vb G impv. / vb Gpass suffc.	to place	
 149586	št	š(t(II)/t	št (II)	n. f. sg.	raíz	
-149586	št	š(t(I)/t	št (I)	n. m. sg.	base	
+149586	št	št(I)/	št (I)	n. m. sg.	base	
 149587	qlql	qlql/	qlql	n. m. sg.	cardamome	
 # KTU 1.71 10						
 149588	w	w	w	conj.	and	
@@ -83,7 +83,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149595	aklśśw	?	?	?	?	DULAT: NOT FOUND
 149596	št	št[:pass	/š-t/	vb G suffc. / vb G impv. / vb Gpass suffc.	to place	
 149596	št	š(t(II)/t	št (II)	n. f. sg.	raíz	
-149596	št	š(t(I)/t	št (I)	n. m. sg.	base	
+149596	št	št(I)/	št (I)	n. m. sg.	base	
 149597	mkšr	mkšr/	mkšr	n. m. sg.	semolina	
 149598	grn	grn(I)/	grn (I)	n. m. sg.	threshing-floor	
 149598	grn	grn(II)/	grn (II)	adj. m. sg.	current	
@@ -91,7 +91,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149599	w	w	w	conj.	and	
 149600	št	št[:pass	/š-t/	vb G suffc. / vb G impv. / vb Gpass suffc.	to place	
 149600	št	š(t(II)/t	št (II)	n. f. sg.	raíz	
-149600	št	š(t(I)/t	št (I)	n. m. sg.	base	
+149600	št	št(I)/	št (I)	n. m. sg.	base	
 149601	aškrr	aškrr/	ảškrr	n. m. sg.	wax	
 149602	wpr	?	?	?	?	DULAT: NOT FOUND
 149603	ḥḏrt	?	?	?	?	DULAT: NOT FOUND
@@ -109,7 +109,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149608	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl. cstr.	horse	
 149609	št	št[:pass	/š-t/	vb G suffc. / vb G impv. / vb Gpass suffc.	to place	
 149609	št	š(t(II)/t	št (II)	n. f. sg.	raíz	
-149609	št	š(t(I)/t	št (I)	n. m. sg.	base	
+149609	št	št(I)/	št (I)	n. m. sg.	base	
 149610	xxx	?	?	?	?	
 # KTU 1.71 15						
 149611	xxxxxxxxxxxxx	?	?	?	?	
@@ -131,7 +131,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149619	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl. cstr.	horse	
 149620	št	št[:pass	/š-t/	vb G suffc. / vb G impv. / vb Gpass suffc.	to place	
 149620	št	š(t(II)/t	št (II)	n. f. sg.	raíz	
-149620	št	š(t(I)/t	št (I)	n. m. sg.	base	
+149620	št	št(I)/	št (I)	n. m. sg.	base	
 149621	bln	bln/	bln	n. m. sg.	mixed fodder	
 149622	qṭ	qṭ(I)/	qṭ (I)	n. m. sg.	flax	
 149623	ydk	yd(I)/+k	yd (I)	n. f.	hand	
@@ -167,7 +167,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149639	mid	mi/	mỉ/ủd	n. m. sg.	abundance	
 # KTU 1.71 27						
 149640	dblt	dbl(t/t	dblt	n. f. sg.	dried fig	
-149640	dblt	dbl(t/t=	dblt	n. f. pl.	dried fig	
+149640	dblt	dbl(t/t=	dblt	n. f. sg.	dried fig	
 149641	yṯnt	yṯn/t=	yṯn	adj. m. pl.	old	
 149642	wṣmqm	?	?	?	?	DULAT: NOT FOUND
 149643	yṯnm	yṯn/m	yṯn	adj. m. pl.	old	

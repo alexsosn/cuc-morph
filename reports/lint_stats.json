@@ -1,33 +1,33 @@
 {
-  "generated_at_utc": "2026-02-25T16:02:13.982929+00:00",
+  "generated_at_utc": "2026-02-25T16:09:20.659766+00:00",
   "files_checked": 278,
-  "total_issues": 11795,
-  "fallback_parsed": 248,
+  "total_issues": 12028,
+  "fallback_parsed": 340,
   "by_severity": {
-    "ERROR": 6491,
-    "WARNING": 477,
-    "INFO": 1631
+    "ERROR": 6664,
+    "WARNING": 541,
+    "INFO": 1632
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3052
+      "count": 3118
     },
     {
       "severity": "INFO",
       "problem_type": "Surface not found in UDB concordance",
-      "count": 1631
+      "count": 1632
     },
     {
       "severity": "ERROR",
       "problem_type": "Deverbal form matches both verb and noun entries in DULAT",
-      "count": 1145
+      "count": 1131
     },
     {
       "severity": "ERROR",
       "problem_type": "POS token not allowed for declared DULAT entry",
-      "count": 1078
+      "count": 1110
     },
     {
       "severity": "ERROR",
@@ -37,7 +37,7 @@
     {
       "severity": "ERROR",
       "problem_type": "DULAT comment does not match candidates",
-      "count": 223
+      "count": 231
     },
     {
       "severity": "ERROR",
@@ -45,24 +45,24 @@
       "count": 180
     },
     {
+      "severity": "WARNING",
+      "problem_type": "Suffix form without '+'",
+      "count": 132
+    },
+    {
       "severity": "ERROR",
       "problem_type": "Multiple DULAT candidates for surface",
       "count": 123
     },
     {
-      "severity": "WARNING",
-      "problem_type": "Suffix form without '+'",
-      "count": 121
+      "severity": "ERROR",
+      "problem_type": "Missing DULAT entry token(s) in column 4",
+      "count": 96
     },
     {
       "severity": "WARNING",
       "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
       "count": 90
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 86
     },
     {
       "severity": "ERROR",
@@ -86,17 +86,27 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "Non-G stem in DULAT requires stem marker",
+      "count": 53
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "Each reconstructed letter must be prefixed by '('",
       "count": 52
     },
     {
-      "severity": "ERROR",
-      "problem_type": "Non-G stem in DULAT requires stem marker",
-      "count": 33
+      "severity": "WARNING",
+      "problem_type": "šmm DULAT plurale tantum noun should include 'pl. tant.' in POS",
+      "count": 41
     },
     {
       "severity": "ERROR",
       "problem_type": "rbt Adjective POS gender mismatch for rb (I): expected adj. m., got adj. f.",
+      "count": 29
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "spr Verb stem marker(s) required by POS but missing in analysis: :d",
       "count": 29
     },
     {
@@ -106,13 +116,8 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "bˤl In KTU 1.*, remove bʕl(I) 'labourer' and keep bʕl (II) /b-ʕ-l/ readings",
+      "problem_type": "POS tokens must map to existing DULAT tokens in column 4",
       "count": 14
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 13
     },
     {
       "severity": "WARNING",
@@ -128,6 +133,11 @@
       "severity": "WARNING",
       "problem_type": "skn Lexeme parse did not match DULAT; matched by surface form",
       "count": 12
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "No DULAT entry found for lexeme/surface",
+      "count": 10
     },
     {
       "severity": "WARNING",
@@ -152,6 +162,11 @@
     {
       "severity": "ERROR",
       "problem_type": "nˤmt Adjective POS gender mismatch for nʕm (I): expected adj. m., got adj. f.",
+      "count": 5
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "trḫ Verb stem marker(s) required by POS but missing in analysis: :d",
       "count": 5
     },
     {
@@ -186,12 +201,22 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "hbṭ Verb stem marker(s) required by POS but missing in analysis: :d",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "prˤ Verb stem marker(s) required by POS but missing in analysis: :d",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "tmt Adjective POS gender mismatch for tm: expected adj. m., got adj. f.",
       "count": 3
     },
     {
       "severity": "WARNING",
-      "problem_type": "bˤdn Lexeme parse did not match DULAT; matched by surface form",
+      "problem_type": "bˤdn For bʕd with enclitic n, use '~n' (not '+n')",
       "count": 3
     },
     {
@@ -213,6 +238,26 @@
       "severity": "WARNING",
       "problem_type": "śśwm Lexeme parse did not match DULAT; matched by surface form",
       "count": 3
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "šmmh Lexeme-final '-m' noun should encode dropped host -m as '(m/' and keep '/m' only when surface host ends with m",
+      "count": 3
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "aṯr Verb stem marker(s) required by POS but missing in analysis: :d",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "brkm Verb stem marker(s) required by POS but missing in analysis: :d",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "mkly Verb stem marker(s) required by POS but missing in analysis: :d",
+      "count": 2
     },
     {
       "severity": "ERROR",
@@ -260,13 +305,58 @@
       "count": 2
     },
     {
+      "severity": "WARNING",
+      "problem_type": "šmym DULAT plurale tantum noun should include 'pl. tant.' in POS",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Multiple DULAT candidates for lexeme",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "brkn Verb stem marker(s) required by POS but missing in analysis: :d",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "klyn Verb stem marker(s) required by POS but missing in analysis: :d",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "klyy Verb stem marker(s) required by POS but missing in analysis: :d",
+      "count": 1
+    },
+    {
       "severity": "ERROR",
       "problem_type": "l Formula tbˤ w l yṯb ilm expects l(II) ('not')",
       "count": 1
     },
     {
       "severity": "ERROR",
+      "problem_type": "mˤqbk Verb stem marker(s) required by POS but missing in analysis: :d",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "uḫryt Adjective POS gender mismatch for ủḫry: expected adj. m., got adj. f.",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "wpṯm Verb stem marker(s) required by POS but missing in analysis: :d",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ḫtny Verb stem marker(s) required by POS but missing in analysis: :d",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ṣmt Verb stem marker(s) required by POS but missing in analysis: :d",
       "count": 1
     },
     {
@@ -291,7 +381,27 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "gdlt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ilšnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "klt Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "ksiy Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "mhy Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token",
       "count": 1
     },
     {
@@ -306,7 +416,17 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "mmskn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "nbk Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "rdnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token",
       "count": 1
     },
     {
@@ -342,6 +462,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ḥw Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ṯtyy Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token",
       "count": 1
     }
   ]
