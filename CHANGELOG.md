@@ -2,6 +2,22 @@
 
 ## 2026-02-25
 
+- Fixed global POS enrichment coverage and made it reproducible for
+  `--include-existing` runs:
+  - `pipeline/tablet_parsing.py` now runs `instruction_refine_targets(...)` for
+    all selected targets (not only freshly bootstrapped files), preventing
+    gender enrichment regressions on preserved outputs.
+  - added regression in `tests/test_tablet_parsing_pipeline.py`:
+    `test_run_include_existing_applies_instruction_refinement`.
+- Extended `InstructionRefiner` with DULAT form-based number enrichment:
+  - POS slots now receive `sg./pl./du.` when an exact surface form maps to a
+    single unambiguous number in `forms.morphology`.
+  - gender enrichment is still conservative and now shares token-key resolution
+    with number enrichment for consistency.
+  - added regressions in `tests/test_instruction_refiner.py`:
+    `test_enriches_pos_number_from_surface_form_morphology`,
+    `test_keeps_pos_number_when_form_number_is_ambiguous`.
+
 - Fixed suffix-split nominal heads to preserve visible non-lexeme tail letters
   before clitic suffixes in parser rendering:
   - `scripts/refine_results_mentions.py` now rewrites split heads like

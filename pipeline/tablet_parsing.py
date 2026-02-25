@@ -288,18 +288,15 @@ class TabletParsingPipeline:
         if bootstrap_targets:
             summary.update(self.bootstrap_targets(bootstrap_targets))
             summary.update(self.refine_targets(bootstrap_targets))
-            summary.update(self.instruction_refine_targets(bootstrap_targets))
         else:
             summary.update(
                 {
                     "bootstrap_written": 0,
                     "refine_rows": 0,
                     "refine_changed": 0,
-                    "instruction_refine_files": 0,
-                    "instruction_refine_rows": 0,
-                    "instruction_refine_changed": 0,
                 }
             )
+        summary.update(self.instruction_refine_targets(targets))
         summary.update(self.apply_refinement_steps(targets))
         summary["report_exit_code"] = self.regenerate_reports()
 

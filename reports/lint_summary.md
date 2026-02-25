@@ -1,25 +1,25 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `33884`
-- Fallback-parsed issue lines: `16480`
+- Total issues: `32597`
+- Fallback-parsed issue lines: `15195`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 12426 |
-| WARNING | 15929 |
+| ERROR | 12407 |
+| WARNING | 14665 |
 | INFO | 2467 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3244 |
+| ERROR | Analysis does not reconstruct to surface | 3222 |
 | ERROR | Missing DULAT entry token(s) in column 4 | 3221 |
 | INFO | Surface not found in UDB concordance | 2467 |
-| ERROR | No DULAT entry found for lexeme/surface | 2084 |
+| ERROR | No DULAT entry found for lexeme/surface | 2087 |
 | WARNING | surface form Non-numeric line id | 836 |
 | ERROR | surface form Duplicate unwrapped row payload (same id, surface, and col3-col6); first seen on line 2 | 558 |
 | ERROR | POS ambiguous in DULAT | 500 |
@@ -33,12 +33,11 @@
 | WARNING | bn Noun POS should include DULAT gender marker for bn (I): n. m. | 216 |
 | WARNING | bˤl Noun POS should include DULAT gender marker for bʕl (II): n. m. | 214 |
 | WARNING | ilm Noun POS should include DULAT gender marker for ỉl (I): n. m. | 210 |
+| ERROR | Deverbal form matches both verb and noun entries in DULAT | 209 |
 | WARNING | š Noun POS should include DULAT gender marker for š: n. m. | 187 |
-| ERROR | Deverbal form matches both verb and noun entries in DULAT | 184 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 183 |
 | WARNING | ym Noun POS should include DULAT gender marker for ym (I): n. m. | 171 |
 | WARNING | ym Noun POS should include DULAT gender marker for ym (II): n. m. | 171 |
-| WARNING | bt Feminine singular noun in DULAT should use '/t' | 162 |
 | WARNING | bt Noun POS should include DULAT gender marker for bt (I): n. f. | 162 |
 | WARNING | bt Noun POS should include DULAT gender marker for bt (II): n. m. | 162 |
 | WARNING | rgm Noun POS should include DULAT gender marker for rgm: n. m. | 152 |
@@ -55,25 +54,21 @@
 | WARNING | gdlt Noun POS should include DULAT gender marker for gdlt (I): n. f. | 78 |
 | WARNING | ˤnt Noun POS should include DULAT gender marker for ʕn (I): n. f. | 77 |
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 75 |
-| WARNING | Plural form missing split ending | 75 |
 | WARNING | y Lexeme parse did not match DULAT; matched by surface form | 72 |
+| WARNING | Plural form missing split ending | 71 |
 | WARNING | tḥm Noun POS should include DULAT gender marker for tḥm: n. m. | 69 |
 | WARNING | yd Noun POS should include DULAT gender marker for yd (I): n. f. | 67 |
-| WARNING | ḥmt Feminine singular noun in DULAT should use '/t' | 66 |
 | WARNING | ṯlṯ Adjective POS should include DULAT gender marker for ṯlṯ (II): adj. m. | 65 |
 | WARNING | ṯlṯ Noun POS should include DULAT gender marker for ṯlṯ (V): n. m. | 65 |
 | WARNING | aliyn Adjective POS should include DULAT gender marker for ảlỉyn: adj. m. | 63 |
 | WARNING | in Noun POS should include DULAT gender marker for ỉn: n. m. | 62 |
-| WARNING | aṯrt Feminine singular noun in DULAT should use '/t' | 61 |
 | WARNING | aṯrt Noun POS should include DULAT gender marker for ảṯrt (I): n. f. | 61 |
 | WARNING | yn Noun POS should include DULAT gender marker for yn: n. m. | 60 |
 | WARNING | yrḫ Noun POS should include DULAT gender marker for yrḫ: n. m. | 53 |
 | ERROR | Each reconstructed letter must be prefixed by '(' | 52 |
 | WARNING | ġzr Noun POS should include DULAT gender marker for ġzr: n. m. | 50 |
-| WARNING | bnt Feminine singular noun in DULAT should use '/t' | 48 |
 | WARNING | npš Noun POS should include DULAT gender marker for npš (I): n. f. | 48 |
 | WARNING | ḫrṣ Noun POS should include DULAT gender marker for ḫrṣ: n. m. | 48 |
-| WARNING | št Feminine singular noun in DULAT should use '/t' | 46 |
 | WARNING | št Noun POS should include DULAT gender marker for št (II): n. f. | 46 |
 | WARNING | dbḥ Noun POS should include DULAT gender marker for dbḥ: n. m. | 45 |
 | WARNING | št Noun POS should include DULAT gender marker for št (I): n. m. | 45 |
@@ -82,7 +77,6 @@
 | WARNING | nḥš Noun POS should include DULAT gender marker for nḥš: n. m. | 44 |
 | WARNING | qdš Adjective POS should include DULAT gender marker for qdš (I): adj. m. | 43 |
 | WARNING | qdš Noun POS should include DULAT gender marker for qdš (II): n. m. | 43 |
-| WARNING | hwt Feminine singular noun in DULAT should use '/t' | 42 |
 | WARNING | hwt Noun POS should include DULAT gender marker for hwt (I): n. f. | 42 |
 | WARNING | šmm Noun POS should include DULAT gender marker for šmm (I): n. m. | 41 |
 | WARNING | ġr Noun POS should include DULAT gender marker for ġr (I): n. m. | 40 |
@@ -90,19 +84,16 @@
 | WARNING | šd Noun POS should include DULAT gender marker for šd (I): n. m. | 38 |
 | WARNING | šd Noun POS should include DULAT gender marker for šd (II): n. m. | 38 |
 | WARNING | ˤbdk Noun POS should include DULAT gender marker for ʕbd (I): n. m. | 38 |
-| WARNING | ḥwt Feminine singular noun in DULAT should use '/t' | 38 |
 | WARNING | ḥwt Noun POS should include DULAT gender marker for ḥwt: n. f. | 38 |
 | WARNING | qrb Noun POS should include DULAT gender marker for qrb: n. m. | 37 |
 | WARNING | rb Adjective POS should include DULAT gender marker for rb (I): adj. m. | 37 |
 | WARNING | rb Noun POS should include DULAT gender marker for rb (II): n. m. | 37 |
 | WARNING | rb Noun POS should include DULAT gender marker for rb(b): n. m. | 37 |
 | WARNING | šmn Noun POS should include DULAT gender marker for šmn (I): n. m. | 36 |
-| WARNING | btlt Feminine singular noun in DULAT should use '/t' | 35 |
 | WARNING | btlt Noun POS should include DULAT gender marker for btlt: n. f. | 35 |
 | WARNING | bˤl Noun POS should include DULAT gender marker for bʕl (I): n. m. | 35 |
 | WARNING | dqt Adjective POS should include DULAT gender marker for dqt (I): adj. f. | 35 |
 | WARNING | dqt Noun POS should include DULAT gender marker for dqt (I): n. f. | 35 |
-| WARNING | rbt Feminine singular noun in DULAT should use '/t' | 35 |
 | WARNING | rbt Noun POS should include DULAT gender marker for rbt (I): n. f. | 34 |
 | ERROR | Non-G stem in DULAT requires stem marker | 33 |
 | ERROR | rbt Adjective POS gender mismatch for rb (I): expected adj. m., got adj. f. | 33 |
@@ -121,7 +112,6 @@
 | WARNING | ˤn Noun POS should include DULAT gender marker for ʕn (II): n. f. | 31 |
 | WARNING | iṯ Noun POS should include DULAT gender marker for ỉṯ (I): n. m. | 30 |
 | WARNING | ˤrb Noun POS should include DULAT gender marker for ʕrb (I): n. m. | 30 |
-| WARNING | ˤšrt Feminine singular noun in DULAT should use '/t' | 30 |
 | WARNING | ˤšrt Noun POS should include DULAT gender marker for ʕšrt (II): n. f. | 30 |
 | WARNING | ks Noun POS should include DULAT gender marker for ks (I): n. m. | 29 |
 | WARNING | ks Noun POS should include DULAT gender marker for ks/śm(n): n. m. | 29 |
@@ -132,19 +122,15 @@
 | WARNING | ṯˤ Noun POS should include DULAT gender marker for ṯʕ (II): n. m. | 29 |
 | WARNING | lḥm Noun POS should include DULAT gender marker for lḥ (I): n. f. | 28 |
 | WARNING | lḥm Noun POS should include DULAT gender marker for lḥm: n. m. | 28 |
-| WARNING | mit Feminine singular noun in DULAT should use '/t' | 28 |
 | WARNING | mit Noun POS should include DULAT gender marker for mỉt: n. f. | 28 |
-| WARNING | mlkt Feminine singular noun in DULAT should use '/t' | 28 |
 | WARNING | mlkt Noun POS should include DULAT gender marker for mlkt: n. f. | 28 |
 | WARNING | ṯr Noun POS should include DULAT gender marker for ṯr (I): n. m. | 28 |
 | WARNING | aṯt Noun POS should include DULAT gender marker for ảṯt: n. f. | 27 |
 | WARNING | bnh Noun POS should include DULAT gender marker for bn (I): n. m. | 27 |
 | WARNING | bt Noun POS should include DULAT gender marker for bt (III): n. m. | 27 |
 | WARNING | ydh Noun POS should include DULAT gender marker for yd (I): n. f. | 27 |
-| WARNING | nrt Feminine singular noun in DULAT should use '/t' | 26 |
 | WARNING | pdry Noun POS should include DULAT gender marker for pdr (I): n. m. | 26 |
 | WARNING | šm Noun POS should include DULAT gender marker for š: n. m. | 26 |
-| ERROR | bˤl For /b-ʕ-l/ verbal readings, use canonical analysis with `[/` (e.g., bˤl[/) | 25 |
 | WARNING | aph Noun POS should include DULAT gender marker for ảp (II): n. m. | 25 |
 | WARNING | bhtm Noun POS should include DULAT gender marker for bt (II): n. m. | 25 |
 | WARNING | bth Noun POS should include DULAT gender marker for bt (II): n. m. | 25 |
@@ -158,7 +144,6 @@
 | WARNING | zbl Noun POS should include DULAT gender marker for zbl (I): n. m. | 24 |
 | WARNING | zbl Noun POS should include DULAT gender marker for zbl (III): n. m. | 24 |
 | WARNING | šmˤ Noun POS should include DULAT gender marker for šmʕ: n. m. | 24 |
-| WARNING | šnt Feminine singular noun in DULAT should use '/t' | 24 |
 | WARNING | ˤbd Noun POS should include DULAT gender marker for ʕbd (I): n. m. | 24 |
 | WARNING | ṯpṭ Noun POS should include DULAT gender marker for ṯpṭ (I): n. m. | 24 |
 | WARNING | ṯpṭ Noun POS should include DULAT gender marker for ṯpṭ (II): n. m. | 24 |
@@ -168,11 +153,8 @@
 | WARNING | ˤṣrm Noun POS should include DULAT gender marker for ʕṣr (I): n. f. | 23 |
 | WARNING | ṯˤ Noun POS should include DULAT gender marker for ṯʕ (I): n. m. | 23 |
 | WARNING | adty Noun POS should include DULAT gender marker for ảdt: n. f. | 22 |
-| WARNING | amt Feminine singular noun in DULAT should use '/t' | 22 |
 | WARNING | hlk Noun POS should include DULAT gender marker for hlk (I): n. m. | 22 |
-| WARNING | ilt Feminine singular noun in DULAT should use '/t' | 22 |
 | WARNING | ilt Noun POS should include DULAT gender marker for ỉlt (I): n. f. | 22 |
-| WARNING | qrt Feminine singular noun in DULAT should use '/t' | 22 |
 | WARNING | qrt Noun POS should include DULAT gender marker for qrt (I): n. f. | 22 |
 | WARNING | ydy Noun POS should include DULAT gender marker for yd (I): n. f. | 22 |
 | WARNING | ˤmk Noun POS should include DULAT gender marker for ʕm (II): n. m. | 22 |
@@ -200,14 +182,12 @@
 | WARNING | ˤšr Noun POS should include DULAT gender marker for ʕšr(t) (I): n. m. | 19 |
 | WARNING | ilhm Noun POS should include DULAT gender marker for ỉl (I): n. m. | 18 |
 | WARNING | ilhm Noun POS should include DULAT gender marker for ỉlt (I): n. f. | 18 |
-| WARNING | kt Feminine singular noun in DULAT should use '/t' | 18 |
 | WARNING | pr Noun POS should include DULAT gender marker for pr (I): n. m. | 18 |
 | WARNING | pr Noun POS should include DULAT gender marker for pr (II): n. m. | 18 |
 | WARNING | riš Noun POS should include DULAT gender marker for rỉš (I): n. m. | 18 |
 | WARNING | ˤšrt Noun POS should include DULAT gender marker for ʕšr(t) (I): n. m. | 18 |
 | WARNING | amr Noun POS should include DULAT gender marker for ảmr (I): n. m. | 17 |
 | WARNING | bty Noun POS should include DULAT gender marker for bt (II): n. m. | 17 |
-| WARNING | mnt Feminine singular noun in DULAT should use '/t' | 17 |
 | WARNING | mnt Noun POS should include DULAT gender marker for mnt (I): n. f. | 17 |
 | WARNING | rkb Noun POS should include DULAT gender marker for rkb (I): n. m. | 17 |
 | WARNING | rkb Noun POS should include DULAT gender marker for rkb (II): n. m. | 17 |
@@ -216,18 +196,15 @@
 | WARNING | ˤqšr Adjective POS should include DULAT gender marker for ảqšr: adj. m. | 17 |
 | WARNING | ˤr Noun POS should include DULAT gender marker for ʕr (I): n. f. | 17 |
 | WARNING | ˤr Noun POS should include DULAT gender marker for ʕr (II): n. m. | 17 |
-| WARNING | Feminine plural noun in DULAT should be tagged with '/t=' | 16 |
 | WARNING | alpm Noun POS should include DULAT gender marker for ảlp (I): n. m. | 16 |
 | WARNING | ar Noun POS should include DULAT gender marker for ả/ỉr: n. m. | 16 |
 | WARNING | aḫy Noun POS should include DULAT gender marker for ảḫ (I): n. m. | 16 |
 | WARNING | bny Noun POS should include DULAT gender marker for bn (I): n. m. | 16 |
 | WARNING | bny Noun POS should include DULAT gender marker for bny: n. m. | 16 |
 | WARNING | brr Adjective POS should include DULAT gender marker for brr: adj. m. | 16 |
-| WARNING | bˤlt Feminine singular noun in DULAT should use '/t' | 16 |
 | WARNING | bˤlt Noun POS should include DULAT gender marker for bʕlt: n. f. | 16 |
 | WARNING | gm Noun POS should include DULAT gender marker for g: n. m. | 16 |
 | WARNING | ib Noun POS should include DULAT gender marker for ỉb (I): n. m. | 16 |
-| WARNING | išt Feminine singular noun in DULAT should use '/t' | 16 |
 | WARNING | išt Noun POS should include DULAT gender marker for ỉšt: n. f. | 16 |
 | WARNING | lṭpn Adjective POS should include DULAT gender marker for lṭpn: adj. m. | 16 |
 | WARNING | ˤnh Noun POS should include DULAT gender marker for ʕn (I): n. f. | 16 |
@@ -253,7 +230,6 @@
 | WARNING | nṯk Noun POS should include DULAT gender marker for nṯk (II): n. m. | 14 |
 | WARNING | pḥm Noun POS should include DULAT gender marker for pḥm: n. m. | 14 |
 | WARNING | ydm Noun POS should include DULAT gender marker for yd (I): n. f. | 14 |
-| WARNING | ġlmt Feminine singular noun in DULAT should use '/t' | 14 |
 | WARNING | špḥ Noun POS should include DULAT gender marker for špḥ: n. m. | 14 |
 | WARNING | šr Noun POS should include DULAT gender marker for šr (II): n. m. | 14 |
 | WARNING | šr Noun POS should include DULAT gender marker for šr (III): n. m. | 14 |
@@ -274,19 +250,15 @@
 | WARNING | nšrm Noun POS should include DULAT gender marker for nšr: n. m. | 13 |
 | WARNING | pid Noun POS should include DULAT gender marker for pỉd: n. m. | 13 |
 | WARNING | ġlm Noun POS should include DULAT gender marker for ġlm: n. m. | 13 |
-| WARNING | šmt Feminine singular noun in DULAT should use '/t' | 13 |
 | WARNING | ḥmr Noun POS should include DULAT gender marker for ḥmr (I): n. m. | 13 |
 | WARNING | ṯˤy Noun POS should include DULAT gender marker for ṯʕy (I): n. m. | 13 |
 | ERROR | xt Multiple DULAT candidates for surface-fallback: ảḫt(I) [n.] — sister (related by blood); ʕl(I) [prep.] — upon, on top of; /ʕ-s-y:s/ [vb] — ?; ḥṭbt [n.] — (female) wood-cutter; k(I) [prep.] — like, as; /l-q-ḥ/ [vb] — to get hold of, take, grasp; to receive, accept, take (away); | 12 |
-| WARNING | bṯt Feminine singular noun in DULAT should use '/t' | 12 |
-| WARNING | gt Feminine singular noun in DULAT should use '/t' | 12 |
+| WARNING | Feminine plural noun in DULAT should be tagged with '/t=' | 12 |
 | WARNING | gt Noun POS should include DULAT gender marker for gt: n. f. | 12 |
 | WARNING | hklm Noun POS should include DULAT gender marker for hkl: n. m. | 12 |
 | WARNING | ilht Noun POS should include DULAT gender marker for ỉlt (I): n. f. | 12 |
-| WARNING | klt Feminine singular noun in DULAT should use '/t' | 12 |
 | WARNING | klt Noun POS should include DULAT gender marker for klt (I): n. f. | 12 |
 | WARNING | klt Noun POS should include DULAT gender marker for klt (II): n. f. | 12 |
-| WARNING | mṯt Feminine singular noun in DULAT should use '/t' | 12 |
 | WARNING | mṯt Noun POS should include DULAT gender marker for mṯt: n. f. | 12 |
 | WARNING | pamt Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | pamt Noun POS should include DULAT gender marker for pảm(t): n. f. | 12 |
@@ -361,7 +333,6 @@
 | WARNING | nhrm Noun POS should include DULAT gender marker for nhr: n. m. | 9 |
 | WARNING | nˤmn Adjective POS should include DULAT gender marker for nʕmn (I): adj. m. | 9 |
 | WARNING | rišh Noun POS should include DULAT gender marker for rỉš (I): n. m. | 9 |
-| WARNING | urbt Feminine singular noun in DULAT should use '/t' | 9 |
 | WARNING | urbt Noun POS should include DULAT gender marker for ủrbt: n. f. | 9 |
 | WARNING | zbln Noun POS should include DULAT gender marker for zbln: n. m. | 9 |
 | WARNING | ġlmm Noun POS should include DULAT gender marker for ġlm: n. m. | 9 |
@@ -375,7 +346,6 @@
 | ERROR | Unknown DULAT token in column 4 | 8 |
 | WARNING | abk Noun POS should include DULAT gender marker for ảb: n. m. | 8 |
 | WARNING | aby Noun POS should include DULAT gender marker for ảb: n. m. | 8 |
-| WARNING | anšt Feminine singular noun in DULAT should use '/t' | 8 |
 | WARNING | anšt Noun POS should include DULAT gender marker for ảnšt: n. f. | 8 |
 | WARNING | aḫtk Noun POS should include DULAT gender marker for ảḫt (I): n. f. | 8 |
 | WARNING | bmt Noun POS should include DULAT gender marker for bmt: n. f. | 8 |
@@ -419,7 +389,6 @@
 | WARNING | ṯġr Noun POS should include DULAT gender marker for ṯġr (I): n. m. | 8 |
 | WARNING | ṯġr Noun POS should include DULAT gender marker for ṯġr (II): n. m. | 8 |
 | WARNING | adn Noun POS should include DULAT gender marker for ảdn (I): n. m. | 7 |
-| WARNING | almnt Feminine singular noun in DULAT should use '/t' | 7 |
 | WARNING | almnt Noun POS should include DULAT gender marker for ảlmnt: n. f. | 7 |
 | WARNING | argmn Noun POS should include DULAT gender marker for ả/ỉrgmn: n. m. | 7 |
 | WARNING | aṯtm Noun POS should include DULAT gender marker for ảṯt: n. f. | 7 |
@@ -433,9 +402,7 @@
 | WARNING | lšn Noun POS should include DULAT gender marker for lšn: n. f. | 7 |
 | WARNING | mdd Noun POS should include DULAT gender marker for mdd (I): n. m. | 7 |
 | WARNING | mlak Noun POS should include DULAT gender marker for mlảk: n. m. | 7 |
-| WARNING | mlḥmt Feminine singular noun in DULAT should use '/t' | 7 |
 | WARNING | mlḥmt Noun POS should include DULAT gender marker for mlḥmt: n. f. | 7 |
-| WARNING | mlḥt Feminine singular noun in DULAT should use '/t' | 7 |
 | WARNING | mlḥt Noun POS should include DULAT gender marker for mlḥt: n. f. | 7 |
 | WARNING | mlḫš Noun POS should include DULAT gender marker for mlḫš: n. m. | 7 |
 | WARNING | mn Noun POS should include DULAT gender marker for mn (III): n. m. | 7 |
@@ -444,7 +411,6 @@
 | WARNING | npšh Noun POS should include DULAT gender marker for npš (I): n. f. | 7 |
 | WARNING | nr Noun POS should include DULAT gender marker for nr: n. m. | 7 |
 | WARNING | nšm Noun POS should include DULAT gender marker for nšm: n. m. | 7 |
-| WARNING | nḫt Feminine singular noun in DULAT should use '/t' | 7 |
 | WARNING | nḫt Noun POS should include DULAT gender marker for nḫt: n. f. | 7 |
 | WARNING | pˤnm Noun POS should include DULAT gender marker for pʕn: n. f. | 7 |
 | WARNING | pḥl Noun POS should include DULAT gender marker for pḥl: n. m. | 7 |
@@ -454,7 +420,6 @@
 | WARNING | tḫtṣb Noun POS should include DULAT gender marker for tḫtṣb: n. m. | 7 |
 | WARNING | udn Noun POS should include DULAT gender marker for ủdn (I): n. m. | 7 |
 | WARNING | ul Noun POS should include DULAT gender marker for ủl: n. m. | 7 |
-| WARNING | ynt Feminine singular noun in DULAT should use '/t' | 7 |
 | WARNING | ynt Noun POS should include DULAT gender marker for ynt: n. f. | 7 |
 | WARNING | ypkm Noun POS should include DULAT gender marker for yp: n. m. | 7 |
 | WARNING | yṣu Noun POS should include DULAT gender marker for yṣủ (I): n. m. | 7 |
@@ -479,7 +444,6 @@
 | WARNING | ṯqlm Noun POS should include DULAT gender marker for ṯql: n. m. | 7 |
 | ERROR | nˤmt Adjective POS gender mismatch for nʕm (I): expected adj. m., got adj. f. | 6 |
 | WARNING | ad Noun POS should include DULAT gender marker for ảd: n. m. | 6 |
-| WARNING | aklt Feminine singular noun in DULAT should use '/t' | 6 |
 | WARNING | aliy Adjective POS should include DULAT gender marker for ảlỉy: adj. m. | 6 |
 | WARNING | apq Noun POS should include DULAT gender marker for ảpq: n. m. | 6 |
 | WARNING | arbdd Noun POS should include DULAT gender marker for ảrbdd: n. m. | 6 |
@@ -492,7 +456,6 @@
 | WARNING | bṯt Noun POS should include DULAT gender marker for bṯt (II): n. f. | 6 |
 | WARNING | dbḥm Noun POS should include DULAT gender marker for dbḥ: n. m. | 6 |
 | WARNING | dbḥn Noun POS should include DULAT gender marker for dbḥ: n. m. | 6 |
-| WARNING | drkt Feminine singular noun in DULAT should use '/t' | 6 |
 | WARNING | drkt Noun POS should include DULAT gender marker for drkt: n. f. | 6 |
 | WARNING | drkth Noun POS should include DULAT gender marker for drkt: n. f. | 6 |
 | WARNING | gd Noun POS should include DULAT gender marker for gd (I): n. m. | 6 |
@@ -507,20 +470,16 @@
 | WARNING | mbk Noun POS should include DULAT gender marker for mbk: n. m. | 6 |
 | WARNING | mitm Noun POS should include DULAT gender marker for mỉt: n. f. | 6 |
 | WARNING | mkšr Noun POS should include DULAT gender marker for mkšr: n. m. | 6 |
-| WARNING | mlakt Feminine singular noun in DULAT should use '/t' | 6 |
 | WARNING | mlakt Noun POS should include DULAT gender marker for mlảkt: n. f. | 6 |
 | WARNING | mqmh Noun POS should include DULAT gender marker for mqm: n. m. | 6 |
 | WARNING | mri Adjective POS should include DULAT gender marker for mrủ (I): adj. m. | 6 |
 | WARNING | mri Noun POS should include DULAT gender marker for mrủ (I): n. m. | 6 |
 | WARNING | mṣb Noun POS should include DULAT gender marker for mṣb (I): n. m. | 6 |
 | WARNING | mṣrm Noun POS should include DULAT gender marker for mṣr: n. m. | 6 |
-| WARNING | nbt Feminine singular noun in DULAT should use '/t' | 6 |
 | WARNING | nbt Noun POS should include DULAT gender marker for nbt: n. f. | 6 |
-| WARNING | nit Feminine singular noun in DULAT should use '/t' | 6 |
 | WARNING | nit Noun POS should include DULAT gender marker for nỉt: n. f. | 6 |
 | WARNING | npškn Noun POS should include DULAT gender marker for npš (I): n. f. | 6 |
 | WARNING | nˤmt Adjective POS should include DULAT gender marker for nʕmt (I): adj. f. | 6 |
-| WARNING | nˤmt Feminine singular noun in DULAT should use '/t' | 6 |
 | WARNING | nˤmt Noun POS should include DULAT gender marker for nʕmt (II): n. f. | 6 |
 | WARNING | nˤr Noun POS should include DULAT gender marker for nʕr (I): n. m. | 6 |
 | WARNING | pdr Noun POS should include DULAT gender marker for pdr (I): n. m. | 6 |
@@ -542,19 +501,16 @@
 | WARNING | šrš Noun POS should include DULAT gender marker for šrš (I): n. m. | 6 |
 | WARNING | šḥr Noun POS should include DULAT gender marker for šḥr: n. m. | 6 |
 | WARNING | ˤbṣk Noun POS should include DULAT gender marker for ʕbṣ (I): n. m. | 6 |
-| WARNING | ˤdt Feminine singular noun in DULAT should use '/t' | 6 |
 | WARNING | ˤnn Noun POS should include DULAT gender marker for ʕn (I): n. f. | 6 |
 | WARNING | ˤnn Noun POS should include DULAT gender marker for ʕnn: n. m. | 6 |
 | WARNING | ˤprm Noun POS should include DULAT gender marker for ʕpr (I): n. m. | 6 |
 | WARNING | ˤṣk Noun POS should include DULAT gender marker for ʕṣ: n. m. | 6 |
 | WARNING | ḥln Noun POS should include DULAT gender marker for ḥln: n. m. | 6 |
 | WARNING | ḫpṯ Noun POS should include DULAT gender marker for ḫpṯ: n. m. | 6 |
-| WARNING | ḫrt Feminine singular noun in DULAT should use '/t' | 6 |
 | WARNING | ḫrt Noun POS should include DULAT gender marker for ḫrt: n. f. | 6 |
 | WARNING | ṯlḥn Noun POS should include DULAT gender marker for ṯlḥn: n. m. | 6 |
 | ERROR | xr Multiple DULAT candidates for surface-fallback: /ġ-t-r/ [vb] — to implore, intercede, ask; /p-ẓ-r/ [vb] — to free, loosen; rḥb(I) [adj.] — wide; rks [n.] — belt | 5 |
 | WARNING | adnkm Noun POS should include DULAT gender marker for ảdn (I): n. m. | 5 |
-| WARNING | alt Feminine singular noun in DULAT should use '/t' | 5 |
 | WARNING | alt Noun POS should include DULAT gender marker for ảlt (I): n. f. | 5 |
 | WARNING | alt Noun POS should include DULAT gender marker for ảlt (II): n. f. | 5 |
 | WARNING | anš Noun POS should include DULAT gender marker for ảnš: n. m. | 5 |
@@ -562,7 +518,6 @@
 | WARNING | aḫt Noun POS should include DULAT gender marker for ảḫt (I): n. f. | 5 |
 | WARNING | bnt Noun POS should include DULAT gender marker for bt (I): n. f. | 5 |
 | WARNING | bnwt Noun POS should include DULAT gender marker for bnt (II): n. f. | 5 |
-| WARNING | brlt Feminine singular noun in DULAT should use '/t' | 5 |
 | WARNING | brlt Noun POS should include DULAT gender marker for brlt: n. f. | 5 |
 | WARNING | brḥ Adjective POS should include DULAT gender marker for brḥ: adj. m. | 5 |
 | WARNING | btm Noun POS should include DULAT gender marker for bt (I): n. f. | 5 |
@@ -601,7 +556,6 @@
 | WARNING | mgdl Noun POS should include DULAT gender marker for mgdl: n. m. | 5 |
 | WARNING | mhrm Noun POS should include DULAT gender marker for mhr (I): n. m. | 5 |
 | WARNING | mlakm Noun POS should include DULAT gender marker for mlảk: n. m. | 5 |
-| WARNING | mpḫrt Feminine singular noun in DULAT should use '/t' | 5 |
 | WARNING | mpḫrt Noun POS should include DULAT gender marker for mpḫrt: n. f. | 5 |
 | WARNING | mˤd Noun POS should include DULAT gender marker for mʕd: n. m. | 5 |
 | WARNING | mṯn Noun POS should include DULAT gender marker for mṯn: n. m. | 5 |
@@ -621,11 +575,9 @@
 | WARNING | tmṯl Noun POS should include DULAT gender marker for tmṯl: n. m. | 5 |
 | WARNING | trbṣ Noun POS should include DULAT gender marker for trbṣ: n. m. | 5 |
 | WARNING | trṯ Noun POS should include DULAT gender marker for trṯ: n. m. | 5 |
-| WARNING | tˤdt Feminine singular noun in DULAT should use '/t' | 5 |
 | WARNING | tˤdt Noun POS should include DULAT gender marker for tʕdt: n. f. | 5 |
 | WARNING | ugr Noun POS should include DULAT gender marker for ủgr (I): n. m. | 5 |
 | WARNING | xr Lexeme parse did not match DULAT; matched by surface form | 5 |
-| WARNING | ybmt Feminine singular noun in DULAT should use '/t' | 5 |
 | WARNING | ybmt Noun POS should include DULAT gender marker for ybmt: n. f. | 5 |
 | WARNING | ymnh Noun POS should include DULAT gender marker for ymn (I): n. m. | 5 |
 | WARNING | ypkn Noun POS should include DULAT gender marker for yp: n. m. | 5 |
@@ -633,7 +585,6 @@
 | WARNING | yḥ Lexeme parse did not match DULAT; matched by surface form | 5 |
 | WARNING | zt Noun POS should include DULAT gender marker for zt: n. m. | 5 |
 | WARNING | ġb Noun POS should include DULAT gender marker for ġb (I): n. m. | 5 |
-| WARNING | šbt Feminine singular noun in DULAT should use '/t' | 5 |
 | WARNING | šbt Noun POS should include DULAT gender marker for šbt: n. f. | 5 |
 | WARNING | šir Noun POS should include DULAT gender marker for šỉr (I): n. m. | 5 |
 | WARNING | šir Noun POS should include DULAT gender marker for šỉr (II): n. m. | 5 |
@@ -650,7 +601,6 @@
 | WARNING | ṣd Noun POS should include DULAT gender marker for ṣd (I): n. m. | 5 |
 | WARNING | ṣmdm Noun POS should include DULAT gender marker for ṣmd: n. m. | 5 |
 | WARNING | ṭb Adjective POS should include DULAT gender marker for ṭb: adj. m. | 5 |
-| WARNING | ṯbt Feminine singular noun in DULAT should use '/t' | 5 |
 | WARNING | ṯbt Noun POS should include DULAT gender marker for ṯbt: n. f. | 5 |
 | WARNING | ṯbth Noun POS should include DULAT gender marker for ṯbt: n. f. | 5 |
 | WARNING | ṯd Noun POS should include DULAT gender marker for ṯd: n. m. | 5 |
@@ -661,9 +611,9 @@
 | ERROR | l Formula idk l ytn expects l(III) ('truly/certainly') | 4 |
 | ERROR | mtqtm Adjective POS gender mismatch for mtq: expected adj. m., got adj. f. | 4 |
 | ERROR | tx Multiple DULAT candidates for surface-fallback: ảḫt(I) [n.] — sister (related by blood); ʕl(I) [prep.] — upon, on top of; /ʕ-s-y:s/ [vb] — ?; ḥṭbt [n.] — (female) wood-cutter; k(I) [prep.] — like, as; /l-q-ḥ/ [vb] — to get hold of, take, grasp; to receive, accept, take (away); | 4 |
+| WARNING | Feminine plural noun in DULAT should use '/t=' | 4 |
 | WARNING | abnm Noun POS should include DULAT gender marker for ảbn: n. f. | 4 |
 | WARNING | adny Noun POS should include DULAT gender marker for ảdn (I): n. m. | 4 |
-| WARNING | ahbt Feminine singular noun in DULAT should use '/t' | 4 |
 | WARNING | ahbt Noun POS should include DULAT gender marker for ảhbt: n. f. | 4 |
 | WARNING | anyt Noun POS should include DULAT gender marker for ảny(t): n. f. | 4 |
 | WARNING | arḫ Noun POS should include DULAT gender marker for ảrḫ: n. f. | 4 |
@@ -687,7 +637,6 @@
 | WARNING | ibn Noun POS should include DULAT gender marker for ỉb (I): n. m. | 4 |
 | WARNING | ibrn Noun POS should include DULAT gender marker for ỉbr (I): n. m. | 4 |
 | WARNING | ibrn Noun POS should include DULAT gender marker for ỉbr (II): n. m. | 4 |
-| WARNING | imt Feminine singular noun in DULAT should use '/t' | 4 |
 | WARNING | imt Noun POS should include DULAT gender marker for ỉmt: n. f. | 4 |
 | WARNING | inr Noun POS should include DULAT gender marker for ỉnr: n. m. | 4 |
 | WARNING | iqnim Noun POS should include DULAT gender marker for ỉqnủ: n. m. | 4 |
@@ -705,7 +654,6 @@
 | WARNING | kš Noun POS should include DULAT gender marker for kš: n. m. | 4 |
 | WARNING | lbnt Noun POS should include DULAT gender marker for lbnt: n. f. | 4 |
 | WARNING | lby Noun POS should include DULAT gender marker for lb: n. m. | 4 |
-| WARNING | lḫšt Feminine singular noun in DULAT should use '/t' | 4 |
 | WARNING | lḫšt Noun POS should include DULAT gender marker for lḫšt: n. f. | 4 |
 | WARNING | mdb Noun POS should include DULAT gender marker for mdb: n. m. | 4 |
 | WARNING | mlaktk Noun POS should include DULAT gender marker for mlảkt: n. f. | 4 |
@@ -753,7 +701,6 @@
 | WARNING | tl Noun POS should include DULAT gender marker for tl (I): n. m. | 4 |
 | WARNING | tl Noun POS should include DULAT gender marker for tl (II): n. m. | 4 |
 | WARNING | tlm Noun POS should include DULAT gender marker for tlm: n. m. | 4 |
-| WARNING | tmtt Feminine singular noun in DULAT should use '/t' | 4 |
 | WARNING | tmtt Noun POS should include DULAT gender marker for tmtt: n. f. | 4 |
 | WARNING | trm Noun POS should include DULAT gender marker for tr (I): n. m. | 4 |
 | WARNING | trm Noun POS should include DULAT gender marker for trmt: n. f. | 4 |
@@ -770,9 +717,7 @@
 | WARNING | šlmy Noun POS should include DULAT gender marker for šlm (I): n. m. | 4 |
 | WARNING | šmk Noun POS should include DULAT gender marker for šlm (I): n. m. | 4 |
 | WARNING | šmk Noun POS should include DULAT gender marker for šm (I): n. m. | 4 |
-| WARNING | šnpt Feminine singular noun in DULAT should use '/t' | 4 |
 | WARNING | šnpt Noun POS should include DULAT gender marker for šnpt: n. f. | 4 |
-| WARNING | špt Feminine singular noun in DULAT should use '/t' | 4 |
 | WARNING | špt Noun POS should include DULAT gender marker for špt: n. f. | 4 |
 | WARNING | špthm Noun POS should include DULAT gender marker for špt: n. f. | 4 |
 | WARNING | šqym Noun POS should include DULAT gender marker for šq: n. m. | 4 |
@@ -781,11 +726,9 @@
 | WARNING | ˤrbm Noun POS should include DULAT gender marker for ʕrb (II): n. m. | 4 |
 | WARNING | ˤrgz Noun POS should include DULAT gender marker for ʕrgz (I): n. m. | 4 |
 | WARNING | ḥgb Noun POS should include DULAT gender marker for ḥgb: n. m. | 4 |
-| WARNING | ḥkmt Feminine singular noun in DULAT should use '/t' | 4 |
 | WARNING | ḥkmt Noun POS should include DULAT gender marker for ḥkmt: n. f. | 4 |
 | WARNING | ḥmrh Noun POS should include DULAT gender marker for ḥmr (I): n. m. | 4 |
 | WARNING | ḥmyt Noun POS should include DULAT gender marker for ḥmt (I): n. f. | 4 |
-| WARNING | ḥmḥmt Feminine singular noun in DULAT should use '/t' | 4 |
 | WARNING | ḥmḥmt Noun POS should include DULAT gender marker for ḥmḥmt: n. f. | 4 |
 | WARNING | ḥmṣ Noun POS should include DULAT gender marker for ḥmṣ: n. m. | 4 |
 | WARNING | ḥtkk Noun POS should include DULAT gender marker for ḥtk (I): n. m. | 4 |
@@ -797,11 +740,9 @@
 | WARNING | ḫrn Noun POS should include DULAT gender marker for ḫr (I): n. m. | 4 |
 | WARNING | ḫrn Noun POS should include DULAT gender marker for ḫrn: n. m. | 4 |
 | WARNING | ḫsr Noun POS should include DULAT gender marker for ḫsr: n. m. | 4 |
-| WARNING | ṣbrt Feminine singular noun in DULAT should use '/t' | 4 |
 | WARNING | ṣbrt Noun POS should include DULAT gender marker for ṣbrt: n. f. | 4 |
 | WARNING | ṣml Noun POS should include DULAT gender marker for ṣml (I): n. m. | 4 |
 | WARNING | ṯdny Noun POS should include DULAT gender marker for ṯd: n. m. | 4 |
-| WARNING | ṯkmt Feminine singular noun in DULAT should use '/t' | 4 |
 | WARNING | ṯkmt Noun POS should include DULAT gender marker for ṯkmt: n. f. | 4 |
 | WARNING | ẓrh Noun POS should include DULAT gender marker for ẓr (I): n. m. | 4 |
 | ERROR | tmt Adjective POS gender mismatch for tm: expected adj. m., got adj. f. | 3 |
@@ -832,14 +773,12 @@
 | WARNING | ay Adjective POS should include DULAT gender marker for ảy: adj. m. | 3 |
 | WARNING | aškrr Noun POS should include DULAT gender marker for ảškrr: n. m. | 3 |
 | WARNING | aḫ Noun POS should include DULAT gender marker for ảḫ (I): n. m. | 3 |
-| WARNING | bhmt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | bhmt Noun POS should include DULAT gender marker for bhmt: n. f. | 3 |
 | WARNING | bql Noun POS should include DULAT gender marker for bql: n. m. | 3 |
 | WARNING | brkm Noun POS should include DULAT gender marker for brk: n. f. | 3 |
 | WARNING | brqm Noun POS should include DULAT gender marker for brq (I): n. m. | 3 |
-| WARNING | brt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | brt Noun POS should include DULAT gender marker for brt: n. f. | 3 |
-| WARNING | bˤdn For bʕd with enclitic n, use '~n' (not '+n') | 3 |
+| WARNING | bˤdn Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | bˤdn Replace '/' with 'or' in POS label: 'adv./prep.' -> 'adv. or prep.' | 3 |
 | WARNING | dbbm Noun POS should include DULAT gender marker for dbb (I): n. m. | 3 |
 | WARNING | dbbm Noun POS should include DULAT gender marker for dbb (II): n. m. | 3 |
@@ -847,13 +786,10 @@
 | WARNING | ddn Noun POS should include DULAT gender marker for dd (II): n. m. | 3 |
 | WARNING | dgy Noun POS should include DULAT gender marker for dgy: n. m. | 3 |
 | WARNING | dmm Noun POS should include DULAT gender marker for dm (II): n. m. | 3 |
-| WARNING | dnt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | dnt Noun POS should include DULAT gender marker for dnt (II): n. f. | 3 |
 | WARNING | dnty Noun POS should include DULAT gender marker for dnt (II): n. f. | 3 |
 | WARNING | dqnk Noun POS should include DULAT gender marker for dqn (I): n. m. | 3 |
-| WARNING | dˤt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | dˤt Noun POS should include DULAT gender marker for dʕt (II): n. f. | 3 |
-| WARNING | dṯt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | dṯt Noun POS should include DULAT gender marker for dṯt: n. f. | 3 |
 | WARNING | gbˤ Noun POS should include DULAT gender marker for gbʕ: n. m. | 3 |
 | WARNING | gbˤm Noun POS should include DULAT gender marker for gbʕ: n. m. | 3 |
@@ -868,7 +804,6 @@
 | WARNING | ibr Noun POS should include DULAT gender marker for ỉbr (II): n. m. | 3 |
 | WARNING | ild Noun POS should include DULAT gender marker for ỉl (I): n. m. | 3 |
 | WARNING | ily Noun POS should include DULAT gender marker for ỉl (I): n. m. | 3 |
-| WARNING | iršt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | iršt Noun POS should include DULAT gender marker for ỉršt: n. f. | 3 |
 | WARNING | kb Adjective POS should include DULAT gender marker for kb (I): adj. m. | 3 |
 | WARNING | kb Noun POS should include DULAT gender marker for kb (II): n. m. | 3 |
@@ -877,7 +812,6 @@
 | WARNING | klm Noun POS should include DULAT gender marker for kl: n. m. | 3 |
 | WARNING | kltd Noun POS should include DULAT gender marker for klt (I): n. f. | 3 |
 | WARNING | kltd Noun POS should include DULAT gender marker for klt (II): n. f. | 3 |
-| WARNING | knt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | knt Noun POS should include DULAT gender marker for knt: n. f. | 3 |
 | WARNING | kpr Noun POS should include DULAT gender marker for kpr (II): n. m. | 3 |
 | WARNING | krm Noun POS should include DULAT gender marker for krm: n. m. | 3 |
@@ -898,7 +832,6 @@
 | WARNING | mlu Noun POS should include DULAT gender marker for mlủ: n. m. | 3 |
 | WARNING | mmˤ Noun POS should include DULAT gender marker for mmʕ: n. m. | 3 |
 | WARNING | mrkbthm Noun POS should include DULAT gender marker for mrkbt: n. f. | 3 |
-| WARNING | mrrt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | mrrt Noun POS should include DULAT gender marker for mrrt (I): n. f. | 3 |
 | WARNING | mrzḥ Noun POS should include DULAT gender marker for mrzḥ: n. m. | 3 |
 | WARNING | mrġṯm Noun POS should include DULAT gender marker for mrġṯ: n. m. | 3 |
@@ -918,7 +851,6 @@
 | WARNING | mṯ Noun POS should include DULAT gender marker for mṯ (I): n. m. | 3 |
 | WARNING | mṯ Noun POS should include DULAT gender marker for mṯn: n. m. | 3 |
 | WARNING | mṯpdm Noun POS should include DULAT gender marker for mṯpd: n. m. | 3 |
-| WARNING | ngrt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | ngrt Noun POS should include DULAT gender marker for ngrt: n. f. | 3 |
 | WARNING | np Noun POS should include DULAT gender marker for np: n. m. | 3 |
 | WARNING | npk Lexeme parse did not match DULAT; matched by surface form | 3 |
@@ -941,7 +873,6 @@
 | WARNING | prˤm Noun POS should include DULAT gender marker for prʕ (I): n. m. | 3 |
 | WARNING | pˤn Noun POS should include DULAT gender marker for pʕn: n. f. | 3 |
 | WARNING | pˤny Noun POS should include DULAT gender marker for pʕn: n. f. | 3 |
-| WARNING | qbˤt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | qbˤt Noun POS should include DULAT gender marker for qbʕt: n. f. | 3 |
 | WARNING | qdqdh Noun POS should include DULAT gender marker for qdqd: n. m. | 3 |
 | WARNING | qlql Noun POS should include DULAT gender marker for qlql: n. m. | 3 |
@@ -958,7 +889,6 @@
 | WARNING | rgmm Noun POS should include DULAT gender marker for rgm: n. m. | 3 |
 | WARNING | rišt Noun POS should include DULAT gender marker for rỉš (I): n. m. | 3 |
 | WARNING | s Noun POS should include DULAT gender marker for rks: n. m. | 3 |
-| WARNING | sgrt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | sgrt Noun POS should include DULAT gender marker for sgrt: n. f. | 3 |
 | WARNING | spm Noun POS should include DULAT gender marker for sp: n. m. | 3 |
 | WARNING | sx Lexeme parse did not match DULAT; matched by surface form | 3 |
@@ -970,7 +900,6 @@
 | WARNING | tzġ Noun POS should include DULAT gender marker for tzġ: n. m. | 3 |
 | WARNING | tḥ Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | udmˤt Noun POS should include DULAT gender marker for dmʕt: n. f. | 3 |
-| WARNING | upqt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | upqt Noun POS should include DULAT gender marker for ủpqt: n. f. | 3 |
 | WARNING | ur Noun POS should include DULAT gender marker for ủr: n. m. | 3 |
 | WARNING | ušn Noun POS should include DULAT gender marker for ủšn: n. m. | 3 |
@@ -982,10 +911,8 @@
 | WARNING | xxxxxxxt Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | yknnh Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | yld Noun POS should include DULAT gender marker for yld: n. m. | 3 |
-| WARNING | ypt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | ypt Noun POS should include DULAT gender marker for ypt (I): n. f. | 3 |
 | WARNING | yrk Noun POS should include DULAT gender marker for yrk: n. m. | 3 |
-| WARNING | ysmt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | ysmt Noun POS should include DULAT gender marker for ysmt: n. f. | 3 |
 | WARNING | ytm Noun POS should include DULAT gender marker for ytm: n. m. | 3 |
 | WARNING | yˤlm Noun POS should include DULAT gender marker for yʕl (I): n. m. | 3 |
@@ -993,7 +920,6 @@
 | WARNING | yṯnm Adjective POS should include DULAT gender marker for yṯn: adj. m. | 3 |
 | WARNING | yṯnt Adjective POS should include DULAT gender marker for yṯn: adj. m. | 3 |
 | WARNING | zblkm Noun POS should include DULAT gender marker for zbl (II): n. m. | 3 |
-| WARNING | znt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | znt Noun POS should include DULAT gender marker for znt: n. f. | 3 |
 | WARNING | ġlmh Noun POS should include DULAT gender marker for ġlm: n. m. | 3 |
 | WARNING | ġr Noun POS should include DULAT gender marker for ġr (V): n. m. | 3 |
@@ -1002,10 +928,8 @@
 | WARNING | śśwm Noun POS should include DULAT gender marker for s:śs/św: n. m. | 3 |
 | WARNING | šil Noun POS should include DULAT gender marker for šỉl (I): n. m. | 3 |
 | WARNING | šlyṭ Noun POS should include DULAT gender marker for šlyṭ: n. m. | 3 |
-| WARNING | šmmh Lexeme-final '-m' noun should encode dropped host -m as '(m/' and keep '/m' only when surface host ends with m | 3 |
 | WARNING | šmmh Noun POS should include DULAT gender marker for šmm (I): n. m. | 3 |
 | WARNING | šmmn Noun POS should include DULAT gender marker for šmm (I): n. m. | 3 |
-| WARNING | šmḫt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | šmḫt Noun POS should include DULAT gender marker for šmḫt: n. f. | 3 |
 | WARNING | šrh Noun POS should include DULAT gender marker for šr (IV): n. m. | 3 |
 | WARNING | šˤrm Noun POS should include DULAT gender marker for šʕrm: n. m. | 3 |
@@ -1018,7 +942,6 @@
 | WARNING | ˤglm Noun POS should include DULAT gender marker for ʕgl (I): n. m. | 3 |
 | WARNING | ˤnk Noun POS should include DULAT gender marker for ʕn (I): n. f. | 3 |
 | WARNING | ˤqltn Adjective POS should include DULAT gender marker for ʕqltn: adj. m. | 3 |
-| WARNING | ˤḏbt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | ˤḏbt Noun POS should include DULAT gender marker for ʕḏbt: n. f. | 3 |
 | WARNING | ḏdm Noun POS should include DULAT gender marker for ḏd (II): n. m. | 3 |
 | WARNING | ḏmry Noun POS should include DULAT gender marker for ḏmr (I): n. m. | 3 |
@@ -1031,7 +954,6 @@
 | WARNING | ḥmrm Noun POS should include DULAT gender marker for ḥmr (I): n. m. | 3 |
 | WARNING | ḥnn Noun POS should include DULAT gender marker for ḥnn (I): n. m. | 3 |
 | WARNING | ḥrṣ Noun POS should include DULAT gender marker for ḥrṣ (II): n. m. | 3 |
-| WARNING | ḥspt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | ḥspt Noun POS should include DULAT gender marker for ḥspt: n. f. | 3 |
 | WARNING | ḥtkh Noun POS should include DULAT gender marker for ḥtk (II): n. m. | 3 |
 | WARNING | ḥtkh Noun POS should include DULAT gender marker for ḥtk (III): n. m. | 3 |
@@ -1052,7 +974,6 @@
 | WARNING | ṣbi Noun POS should include DULAT gender marker for ṣbủ (II): n. m. | 3 |
 | WARNING | ṣq Adjective POS should include DULAT gender marker for ṣq: adj. m. | 3 |
 | WARNING | ṣrry Adjective POS should include DULAT gender marker for ṣrry: adj. m. | 3 |
-| WARNING | ṣrt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | ṣrt Noun POS should include DULAT gender marker for ṣrt: n. f. | 3 |
 | WARNING | ṣth Noun POS should include DULAT gender marker for ṣt: n. f. | 3 |
 | WARNING | ṭhrm Adjective POS should include DULAT gender marker for ṭhr: adj. m. | 3 |
@@ -1063,7 +984,6 @@
 | WARNING | ṯkl Noun POS should include DULAT gender marker for ṯkl: n. m. | 3 |
 | WARNING | ṯqd Noun POS should include DULAT gender marker for ṯqd: n. m. | 3 |
 | WARNING | ṯˤm Noun POS should include DULAT gender marker for ṯʕ (II): n. m. | 3 |
-| WARNING | ṯˤt Feminine singular noun in DULAT should use '/t' | 3 |
 | WARNING | ṯˤt Noun POS should include DULAT gender marker for ṯʕt: n. f. | 3 |
 | WARNING | ẓuh Noun POS should include DULAT gender marker for ẓủ: n. m. | 3 |
 | ERROR | l Formula tbˤ w l yṯb ilm expects l(II) ('not') | 2 |
@@ -1100,7 +1020,6 @@
 | WARNING | aḫym Noun POS should include DULAT gender marker for ảḫ (I): n. m. | 2 |
 | WARNING | aṯtk Noun POS should include DULAT gender marker for ảṯt: n. f. | 2 |
 | WARNING | aṯty Noun POS should include DULAT gender marker for ảṯt: n. f. | 2 |
-| WARNING | bdqt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | bdqt Noun POS should include DULAT gender marker for bdqt: n. f. | 2 |
 | WARNING | bhtk Noun POS should include DULAT gender marker for bt (II): n. m. | 2 |
 | WARNING | bhṯ Noun POS should include DULAT gender marker for bhṯ: n. m. | 2 |
@@ -1123,7 +1042,6 @@
 | WARNING | diym Noun POS should include DULAT gender marker for dỉy (I): n. m. | 2 |
 | WARNING | dkr Noun POS should include DULAT gender marker for dkr: n. m. | 2 |
 | WARNING | dlt Adjective POS should include DULAT gender marker for dlt (II): adj. f. | 2 |
-| WARNING | dlt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | dlt Noun POS should include DULAT gender marker for dlt (III): n. f. | 2 |
 | WARNING | dnh Noun POS should include DULAT gender marker for dn (I): n. m. | 2 |
 | WARNING | dqn Noun POS should include DULAT gender marker for dqn (I): n. m. | 2 |
@@ -1132,7 +1050,6 @@
 | WARNING | dqtd Noun POS should include DULAT gender marker for dqt (II): n. f. | 2 |
 | WARNING | drk Noun POS should include DULAT gender marker for dr: n. m. | 2 |
 | WARNING | drktk Noun POS should include DULAT gender marker for drkt: n. f. | 2 |
-| WARNING | drt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | drt Noun POS should include DULAT gender marker for drt (I): n. f. | 2 |
 | WARNING | dry Noun POS should include DULAT gender marker for dr: n. m. | 2 |
 | WARNING | dw Noun POS should include DULAT gender marker for dw: n. m. | 2 |
@@ -1146,7 +1063,6 @@
 | WARNING | gp Noun POS should include DULAT gender marker for gp (I): n. m. | 2 |
 | WARNING | gpt Noun POS should include DULAT gender marker for gp (I): n. m. | 2 |
 | WARNING | gy Noun POS should include DULAT gender marker for g: n. m. | 2 |
-| WARNING | gˤt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | gˤt Noun POS should include DULAT gender marker for gʕt: n. f. | 2 |
 | WARNING | hdmm Noun POS should include DULAT gender marker for hdm: n. m. | 2 |
 | WARNING | hwty Noun POS should include DULAT gender marker for hwt (I): n. f. | 2 |
@@ -1162,7 +1078,6 @@
 | WARNING | irby Noun POS should include DULAT gender marker for ỉrby: n. m. | 2 |
 | WARNING | irtk Noun POS should include DULAT gender marker for ỉrt: n. f. | 2 |
 | WARNING | irty Noun POS should include DULAT gender marker for ỉrt: n. f. | 2 |
-| WARNING | išryt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | išryt Noun POS should include DULAT gender marker for ỉšryt: n. f. | 2 |
 | WARNING | iḫh Noun POS should include DULAT gender marker for ảḫ (I): n. m. | 2 |
 | WARNING | iṣr Noun POS should include DULAT gender marker for ỉṣr: n. m. | 2 |
@@ -1200,7 +1115,6 @@
 | WARNING | mhyt Noun POS should include DULAT gender marker for mhyt: n. f. | 2 |
 | WARNING | mizrth Noun POS should include DULAT gender marker for mỉzrt: n. f. | 2 |
 | WARNING | mizrtm Noun POS should include DULAT gender marker for mỉzrt: n. f. | 2 |
-| WARNING | mknpt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | mknpt Noun POS should include DULAT gender marker for mknpt: n. f. | 2 |
 | WARNING | mkr Noun POS should include DULAT gender marker for mkr: n. m. | 2 |
 | WARNING | mlat Noun POS should include DULAT gender marker for mlảt: n. f. | 2 |
@@ -1222,38 +1136,30 @@
 | WARNING | msrr Noun POS should include DULAT gender marker for msrr: n. m. | 2 |
 | WARNING | mtk Noun POS should include DULAT gender marker for mt (II): n. m. | 2 |
 | WARNING | mtm Noun POS should include DULAT gender marker for mt (III): n. m. | 2 |
-| WARNING | mtnt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | mtnt Noun POS should include DULAT gender marker for mtnt: n. f. | 2 |
 | WARNING | mtny Noun POS should include DULAT gender marker for mtn (II): n. m. | 2 |
-| WARNING | mtrḫt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | mtrḫt Noun POS should include DULAT gender marker for mtrḫt: n. f. | 2 |
 | WARNING | mġd Noun POS should include DULAT gender marker for mġd: n. m. | 2 |
-| WARNING | mšmˤt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | mšmˤt Noun POS should include DULAT gender marker for mšmʕt: n. f. | 2 |
 | WARNING | mšspdt Noun POS should include DULAT gender marker for mšspdt: n. f. | 2 |
 | WARNING | mˤlt Noun POS should include DULAT gender marker for mʕlt: n. f. | 2 |
 | WARNING | mˤrb Noun POS should include DULAT gender marker for mʕrb (I): n. m. | 2 |
 | WARNING | mˤrb Noun POS should include DULAT gender marker for mʕrb (II): n. m. | 2 |
 | WARNING | mḫlpt Noun POS should include DULAT gender marker for mḫlpt: n. f. | 2 |
-| WARNING | mḫmšt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | mḫmšt Noun POS should include DULAT gender marker for mḫmšt: n. f. | 2 |
 | WARNING | mḫsrn Noun POS should include DULAT gender marker for mḫsrn: n. m. | 2 |
 | WARNING | mṣdh Noun POS should include DULAT gender marker for mṣd (I): n. m. | 2 |
 | WARNING | mṣdh Noun POS should include DULAT gender marker for mṣd (II): n. m. | 2 |
 | WARNING | mṣltm Noun POS should include DULAT gender marker for mṣlt (I): n. f. | 2 |
-| WARNING | mṣqt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | mṣqt Noun POS should include DULAT gender marker for mṣqt: n. f. | 2 |
 | WARNING | mṯbt Noun POS should include DULAT gender marker for mṯb: n. m. | 2 |
 | WARNING | mṯbth Noun POS should include DULAT gender marker for mṯb: n. m. | 2 |
 | WARNING | mṯty Noun POS should include DULAT gender marker for mṯt: n. f. | 2 |
-| WARNING | nat Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | nat Noun POS should include DULAT gender marker for nảt: n. f. | 2 |
 | WARNING | nbtm Noun POS should include DULAT gender marker for nbt: n. f. | 2 |
 | WARNING | ndr Noun POS should include DULAT gender marker for ndr: n. m. | 2 |
 | WARNING | nh Noun POS should include DULAT gender marker for ʕn (I): n. f. | 2 |
-| WARNING | nhmmt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | nhmmt Noun POS should include DULAT gender marker for nhmmt: n. f. | 2 |
-| WARNING | nhqt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | nhqt Noun POS should include DULAT gender marker for nhqt: n. f. | 2 |
 | WARNING | nk Noun POS should include DULAT gender marker for bld: n. m. | 2 |
 | WARNING | nk Noun POS should include DULAT gender marker for ʕn (I): n. f. | 2 |
@@ -1262,15 +1168,12 @@
 | WARNING | npšy Noun POS should include DULAT gender marker for npš (I): n. f. | 2 |
 | WARNING | nqbnm Noun POS should include DULAT gender marker for nqbn: n. m. | 2 |
 | WARNING | nrm Noun POS should include DULAT gender marker for nr: n. m. | 2 |
-| WARNING | nskt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | nskt Noun POS should include DULAT gender marker for nskt: n. f. | 2 |
-| WARNING | nzdt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | nzdt Noun POS should include DULAT gender marker for nzdt: n. f. | 2 |
 | WARNING | nzl Noun POS should include DULAT gender marker for nzl: n. m. | 2 |
 | WARNING | nˤr Noun POS should include DULAT gender marker for nʕr (II): n. m. | 2 |
 | WARNING | nḥlty Noun POS should include DULAT gender marker for nḥlt: n. f. | 2 |
 | WARNING | nḥšm Noun POS should include DULAT gender marker for nḥš: n. m. | 2 |
-| WARNING | palt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | palt Noun POS should include DULAT gender marker for pảlt: n. f. | 2 |
 | WARNING | pdm Noun POS should include DULAT gender marker for pd (I): n. m. | 2 |
 | WARNING | pgm Noun POS should include DULAT gender marker for pgm: n. m. | 2 |
@@ -1281,9 +1184,7 @@
 | WARNING | pnth Noun POS should include DULAT gender marker for pnt: n. f. | 2 |
 | WARNING | prt Noun POS should include DULAT gender marker for prt (I): n. f. | 2 |
 | WARNING | prṭl Noun POS should include DULAT gender marker for prṭl: n. m. | 2 |
-| WARNING | prṯt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | prṯt Noun POS should include DULAT gender marker for prṯt: n. f. | 2 |
-| WARNING | pslt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | pslt Noun POS should include DULAT gender marker for pslt (II): n. f. | 2 |
 | WARNING | psltm Noun POS should include DULAT gender marker for pslt (I): n. f. | 2 |
 | WARNING | ptr Noun POS should include DULAT gender marker for ptr: n. m. | 2 |
@@ -1298,7 +1199,6 @@
 | WARNING | qrbm Noun POS should include DULAT gender marker for qrb: n. m. | 2 |
 | WARNING | qrnm Noun POS should include DULAT gender marker for qrn: n. f. | 2 |
 | WARNING | qrtm Noun POS should include DULAT gender marker for qrt (I): n. f. | 2 |
-| WARNING | qryt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | qryt Noun POS should include DULAT gender marker for qryt: n. f. | 2 |
 | WARNING | qrytm Noun POS should include DULAT gender marker for qryt: n. f. | 2 |
 | WARNING | qšh Noun POS should include DULAT gender marker for qš (I): n. m. | 2 |
@@ -1309,7 +1209,6 @@
 | WARNING | qṣˤth Noun POS should include DULAT gender marker for qṣʕt: n. f. | 2 |
 | WARNING | qṣˤtk Noun POS should include DULAT gender marker for qṣʕt: n. f. | 2 |
 | WARNING | qṭrh Noun POS should include DULAT gender marker for qṭr: n. m. | 2 |
-| WARNING | rgbt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | rgbt Noun POS should include DULAT gender marker for rgbt: n. f. | 2 |
 | WARNING | rgmy Noun POS should include DULAT gender marker for rgm: n. m. | 2 |
 | WARNING | rqḥ Noun POS should include DULAT gender marker for rqḥ (I): n. m. | 2 |
@@ -1330,33 +1229,27 @@
 | WARNING | sḫlm Noun POS should include DULAT gender marker for sḫl: n. m. | 2 |
 | WARNING | thw Noun POS should include DULAT gender marker for thw: n. m. | 2 |
 | WARNING | tknn Lexeme parse did not match DULAT; matched by surface form | 2 |
-| WARNING | tliyt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | tliyt Noun POS should include DULAT gender marker for tlỉyt: n. f. | 2 |
 | WARNING | tm Noun POS should include DULAT gender marker for mtnt: n. f. | 2 |
 | WARNING | tmnh Adjective POS should include DULAT gender marker for tm: adj. m. | 2 |
 | WARNING | tmnh Noun POS should include DULAT gender marker for mtnt: n. f. | 2 |
 | WARNING | tmnh Noun POS should include DULAT gender marker for tmn (I): n. m. | 2 |
-| WARNING | tpšlt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | tpšlt Noun POS should include DULAT gender marker for tpšlt: n. f. | 2 |
 | WARNING | trmm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | trmmn Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | tsm Noun POS should include DULAT gender marker for tsm: n. m. | 2 |
 | WARNING | tsmh Noun POS should include DULAT gender marker for tsm: n. m. | 2 |
 | WARNING | txxx Lexeme parse did not match DULAT; matched by surface form | 2 |
-| WARNING | tyt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | tyt Noun POS should include DULAT gender marker for tyt: n. f. | 2 |
 | WARNING | tzġm Noun POS should include DULAT gender marker for tzġ: n. m. | 2 |
-| WARNING | tšyt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | tšyt Noun POS should include DULAT gender marker for tšyt: n. f. | 2 |
 | WARNING | tˤrth Noun POS should include DULAT gender marker for tʕrt: n. f. | 2 |
 | WARNING | udmˤth Noun POS should include DULAT gender marker for dmʕt: n. f. | 2 |
 | WARNING | udr Noun POS should include DULAT gender marker for ủdr: n. m. | 2 |
 | WARNING | uln Noun POS should include DULAT gender marker for ủl: n. m. | 2 |
-| WARNING | umt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | umt Noun POS should include DULAT gender marker for umt: n. f. | 2 |
 | WARNING | urm Noun POS should include DULAT gender marker for ủr: n. m. | 2 |
 | WARNING | uzrm Adjective POS should include DULAT gender marker for ủzr: adj. m. | 2 |
-| WARNING | ušpġt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | ušpġt Noun POS should include DULAT gender marker for ủšpġt: n. f. | 2 |
 | WARNING | uṭm Noun POS should include DULAT gender marker for ủṭ: n. m. | 2 |
 | WARNING | uṯryn Noun POS should include DULAT gender marker for ủṯryn: n. m. | 2 |
@@ -1371,7 +1264,6 @@
 | WARNING | ymny Noun POS should include DULAT gender marker for ymn (I): n. m. | 2 |
 | WARNING | ymy Noun POS should include DULAT gender marker for ym (I): n. m. | 2 |
 | WARNING | ysmsm Adjective POS should include DULAT gender marker for ysmsm: adj. m. | 2 |
-| WARNING | ysmsmt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | ysmsmt Noun POS should include DULAT gender marker for ysmsmt: n. f. | 2 |
 | WARNING | yġlm Noun POS should include DULAT gender marker for yġl: n. m. | 2 |
 | WARNING | zblhm Noun POS should include DULAT gender marker for zbl (II): n. m. | 2 |
@@ -1380,7 +1272,6 @@
 | WARNING | zn Noun POS should include DULAT gender marker for zn: n. m. | 2 |
 | WARNING | ġlmk Noun POS should include DULAT gender marker for ġlm: n. m. | 2 |
 | WARNING | ġlp Noun POS should include DULAT gender marker for ġlp: n. m. | 2 |
-| WARNING | ġlt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | ġlt Noun POS should include DULAT gender marker for ġlt: n. f. | 2 |
 | WARNING | ġnbm Noun POS should include DULAT gender marker for ġnb: n. m. | 2 |
 | WARNING | ġrh Noun POS should include DULAT gender marker for ġr (I): n. m. | 2 |
@@ -1420,7 +1311,6 @@
 | WARNING | šq Noun POS should include DULAT gender marker for šq: n. m. | 2 |
 | WARNING | šrm Noun POS should include DULAT gender marker for šr (II): n. m. | 2 |
 | WARNING | štnn Noun POS should include DULAT gender marker for št (II): n. f. | 2 |
-| WARNING | ššrt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | ššrt Noun POS should include DULAT gender marker for ššrt: n. f. | 2 |
 | WARNING | šˤr Noun POS should include DULAT gender marker for šʕr: n. m. | 2 |
 | WARNING | šˤrt Noun POS should include DULAT gender marker for šʕrt (I): n. f. | 2 |
@@ -1448,7 +1338,6 @@
 | WARNING | ˤṯrb Noun POS should include DULAT gender marker for ʕṯrb: n. m. | 2 |
 | WARNING | ḏmrk Noun POS should include DULAT gender marker for ḏmr (II): n. m. | 2 |
 | WARNING | ḏrqm Noun POS should include DULAT gender marker for ḏrq: n. m. | 2 |
-| WARNING | ḏrt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | ḏrt Noun POS should include DULAT gender marker for ḏrt: n. f. | 2 |
 | WARNING | ḏrty Noun POS should include DULAT gender marker for ḏrt: n. f. | 2 |
 | WARNING | ḏrˤh Noun POS should include DULAT gender marker for ḏrʕ (I): n. f. | 2 |
@@ -1458,7 +1347,6 @@
 | WARNING | ḥdr Noun POS should include DULAT gender marker for ḥdr: n. m. | 2 |
 | WARNING | ḥdṯm Noun POS should include DULAT gender marker for ḥdṯ (II): n. m. | 2 |
 | WARNING | ḥlb Noun POS should include DULAT gender marker for ḥlb: n. m. | 2 |
-| WARNING | ḥmdrt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | ḥmdrt Noun POS should include DULAT gender marker for ḥmdrt: n. f. | 2 |
 | WARNING | ḥmytkm Noun POS should include DULAT gender marker for ḥmt (I): n. f. | 2 |
 | WARNING | ḥmṯ Noun POS should include DULAT gender marker for ḥmṯ: n. m. | 2 |
@@ -1469,7 +1357,6 @@
 | WARNING | ḥwtn Noun POS should include DULAT gender marker for ḥwt: n. f. | 2 |
 | WARNING | ḥwy Noun POS should include DULAT gender marker for ḥwy: n. m. | 2 |
 | WARNING | ḥym Noun POS should include DULAT gender marker for ḥym: n. m. | 2 |
-| WARNING | ḥyt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | ḥyt Noun POS should include DULAT gender marker for ḥyt (I): n. f. | 2 |
 | WARNING | ḥšn Noun POS should include DULAT gender marker for ḥšn: n. m. | 2 |
 | WARNING | ḥṯrt Adjective POS should include DULAT gender marker for ḥṯrt: adj. f. | 2 |
@@ -1479,11 +1366,9 @@
 | WARNING | ḫlmẓ Noun POS should include DULAT gender marker for ḫlmẓ: n. m. | 2 |
 | WARNING | ḫlpn Noun POS should include DULAT gender marker for ḫlpn (I): n. m. | 2 |
 | WARNING | ḫmnd Noun POS should include DULAT gender marker for ḫmn (I): n. m. | 2 |
-| WARNING | ḫmt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | ḫmt Noun POS should include DULAT gender marker for ḫmt: n. f. | 2 |
 | WARNING | ḫnqtm Noun POS should include DULAT gender marker for ḫnqt: n. f. | 2 |
 | WARNING | ḫp Noun POS should include DULAT gender marker for ḫp (I): n. m. | 2 |
-| WARNING | ḫpṯt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | ḫpṯt Noun POS should include DULAT gender marker for ḫpṯt: n. f. | 2 |
 | WARNING | ḫrdh Noun POS should include DULAT gender marker for ḫrd: n. m. | 2 |
 | WARNING | ḫrdk Noun POS should include DULAT gender marker for ḫrd: n. m. | 2 |
@@ -1501,7 +1386,6 @@
 | WARNING | ṣrdth Noun POS should include DULAT gender marker for ṣrdt: n. f. | 2 |
 | WARNING | ṣġr Adjective POS should include DULAT gender marker for ṣġr (I): adj. m. | 2 |
 | WARNING | ṣˤṣ Noun POS should include DULAT gender marker for ṣʕṣ: n. m. | 2 |
-| WARNING | ṭbt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | ṭbt Noun POS should include DULAT gender marker for ṭbt: n. f. | 2 |
 | WARNING | ṭry Adjective POS should include DULAT gender marker for ṭry (I): adj. m. | 2 |
 | WARNING | ṯbrn Noun POS should include DULAT gender marker for ṯbrn (I): n. m. | 2 |
@@ -1521,7 +1405,6 @@
 | WARNING | ẓbm Noun POS should include DULAT gender marker for ẓby: n. m. | 2 |
 | WARNING | ẓbyh Noun POS should include DULAT gender marker for ẓby: n. m. | 2 |
 | WARNING | ẓlm Noun POS should include DULAT gender marker for ẓl (I): n. m. | 2 |
-| WARNING | ẓlmt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | ẓlmt Noun POS should include DULAT gender marker for ẓlmt: n. f. | 2 |
 | WARNING | ẓr Noun POS should include DULAT gender marker for ẓr (I): n. m. | 2 |
 | ERROR | alkxxx Multiple DULAT candidates for surface-fallback: /h-l-k/ [vb] — to go, go away; to run, flow; to roam; /h-l-k/ [vb] — to go, go away; to run, flow; to roam | 1 |
@@ -1621,7 +1504,6 @@
 | WARNING | admn Noun POS should include DULAT gender marker for ảdm (I): n. m. | 1 |
 | WARNING | adnd Noun POS should include DULAT gender marker for ảdn (I): n. m. | 1 |
 | WARNING | adnyh Noun POS should include DULAT gender marker for ảdn (I): n. m. | 1 |
-| WARNING | adt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | adt Noun POS should include DULAT gender marker for ảdt: n. f. | 1 |
 | WARNING | agrtn Noun POS should include DULAT gender marker for ảgrt: n. f. | 1 |
 | WARNING | ahlh Noun POS should include DULAT gender marker for ảhl: n. m. | 1 |
@@ -1667,7 +1549,6 @@
 | WARNING | arṣh Noun POS should include DULAT gender marker for ảrṣ: n. f. | 1 |
 | WARNING | arṣm Noun POS should include DULAT gender marker for ảrṣ: n. f. | 1 |
 | WARNING | asrkm Noun POS should include DULAT gender marker for ảsr: n. m. | 1 |
-| WARNING | at Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | at Noun POS should include DULAT gender marker for ṯảt: n. f. | 1 |
 | WARNING | at Noun POS should include DULAT gender marker for ảt (II): n. f. | 1 |
 | WARNING | atk Noun POS should include DULAT gender marker for ṯảt: n. f. | 1 |
@@ -1676,14 +1557,12 @@
 | WARNING | aylm Noun POS should include DULAT gender marker for ảyl (I): n. m. | 1 |
 | WARNING | azmr Noun POS should include DULAT gender marker for ảzmr: n. m. | 1 |
 | WARNING | aġzr Noun POS should include DULAT gender marker for ảġzr: n. m. | 1 |
-| WARNING | aġzt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | aġzt Noun POS should include DULAT gender marker for ảġzt: n. f. | 1 |
 | WARNING | aḫkxxxxxxxxxx Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | aṯbx Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | aṯrmxxx Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | aṯrmxxxx Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | aṯry Noun POS should include DULAT gender marker for ảṯr (II): n. m. | 1 |
-| WARNING | aṯryt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | aṯryt Noun POS should include DULAT gender marker for ảṯryt: n. f. | 1 |
 | WARNING | aṯtn Noun POS should include DULAT gender marker for ảṯt: n. f. | 1 |
 | WARNING | bahlm Noun POS should include DULAT gender marker for ảhl: n. m. | 1 |
@@ -1730,7 +1609,6 @@
 | WARNING | dbrm Noun POS should include DULAT gender marker for dbr (I): n. m. | 1 |
 | WARNING | dbḥh Noun POS should include DULAT gender marker for dbḥ: n. m. | 1 |
 | WARNING | dbḥk Noun POS should include DULAT gender marker for dbḥ: n. m. | 1 |
-| WARNING | dbḥt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | dbḥt Noun POS should include DULAT gender marker for dbḥt: n. f. | 1 |
 | WARNING | ddh Adjective POS should include DULAT gender marker for dd (I): adj. m. | 1 |
 | WARNING | ddh Noun POS should include DULAT gender marker for dd (I): n. m. | 1 |
@@ -1749,9 +1627,7 @@
 | WARNING | dlḥt Adjective POS should include DULAT gender marker for dlḥt: adj. f. | 1 |
 | WARNING | dmh Noun POS should include DULAT gender marker for dm (II): n. m. | 1 |
 | WARNING | dmhx Lexeme parse did not match DULAT; matched by surface form | 1 |
-| WARNING | dmt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | dmt Noun POS should include DULAT gender marker for dmt (I): n. f. | 1 |
-| WARNING | dmˤt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | dmˤt Noun POS should include DULAT gender marker for dmʕt: n. f. | 1 |
 | WARNING | dnhm Noun POS should include DULAT gender marker for dn (II): n. m. | 1 |
 | WARNING | dnn Noun POS should include DULAT gender marker for dn (III): n. m. | 1 |
@@ -1799,16 +1675,13 @@
 | WARNING | gty Noun POS should include DULAT gender marker for gt: n. f. | 1 |
 | WARNING | gzr Noun POS should include DULAT gender marker for gzr: n. m. | 1 |
 | WARNING | gšm Noun POS should include DULAT gender marker for gšm: n. m. | 1 |
-| WARNING | hdrt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | hdrt Noun POS should include DULAT gender marker for hdrt: n. f. | 1 |
 | WARNING | hg Noun POS should include DULAT gender marker for hg: n. m. | 1 |
 | WARNING | hklyxxxxxx Lexeme parse did not match DULAT; matched by surface form | 1 |
-| WARNING | hrt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | hrt Noun POS should include DULAT gender marker for hrt (I): n. f. | 1 |
 | WARNING | iblblhm Noun POS should include DULAT gender marker for (ỉ)blbl: n. m. | 1 |
 | WARNING | ibsn Noun POS should include DULAT gender marker for ỉbsn: n. m. | 1 |
 | WARNING | idn Noun POS should include DULAT gender marker for ỉdn: n. m. | 1 |
-| WARNING | idt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | idt Noun POS should include DULAT gender marker for ỉdt: n. f. | 1 |
 | WARNING | ih Noun POS should include DULAT gender marker for ảḫ (I): n. m. | 1 |
 | WARNING | ihbt Noun POS should include DULAT gender marker for ảhbt: n. f. | 1 |
@@ -1819,19 +1692,16 @@
 | WARNING | ilnm Noun POS should include DULAT gender marker for ỉln (I): n. m. | 1 |
 | WARNING | ilyn Noun POS should include DULAT gender marker for ỉl (I): n. m. | 1 |
 | WARNING | ilyy Noun POS should include DULAT gender marker for ỉl (I): n. m. | 1 |
-| WARNING | ilšnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token | 1 |
 | WARNING | inm Noun POS should include DULAT gender marker for ỉn: n. m. | 1 |
 | WARNING | inmm Noun POS should include DULAT gender marker for ỉn: n. m. | 1 |
 | WARNING | innm Noun POS should include DULAT gender marker for ỉn: n. m. | 1 |
 | WARNING | inny Noun POS should include DULAT gender marker for ỉn: n. m. | 1 |
-| WARNING | inšt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | inšt Noun POS should include DULAT gender marker for ỉnšt: n. f. | 1 |
 | WARNING | ipdm Noun POS should include DULAT gender marker for ỉpd: n. m. | 1 |
 | WARNING | iqnum Noun POS should include DULAT gender marker for ỉqnủ: n. m. | 1 |
 | WARNING | irbym Noun POS should include DULAT gender marker for ỉrby: n. m. | 1 |
 | WARNING | irn Noun POS should include DULAT gender marker for ỉrn (I): n. m. | 1 |
 | WARNING | irpm Noun POS should include DULAT gender marker for ỉrp: n. m. | 1 |
-| WARNING | irt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | irt Noun POS should include DULAT gender marker for ỉrt: n. f. | 1 |
 | WARNING | irtm Noun POS should include DULAT gender marker for ỉrt: n. f. | 1 |
 | WARNING | iršn Noun POS should include DULAT gender marker for ỉrš: n. m. | 1 |
@@ -1861,7 +1731,6 @@
 | WARNING | kdrn Noun POS should include DULAT gender marker for kdr: n. m. | 1 |
 | WARNING | kdwṯ Noun POS should include DULAT gender marker for kdwṯ: n. m. | 1 |
 | WARNING | kgmn Noun POS should include DULAT gender marker for gmn (I): n. m. | 1 |
-| WARNING | kknt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | kknt Noun POS should include DULAT gender marker for kknt: n. f. | 1 |
 | WARNING | klhmm Noun POS should include DULAT gender marker for kl: n. m. | 1 |
 | WARNING | klhn Noun POS should include DULAT gender marker for kl: n. m. | 1 |
@@ -1916,7 +1785,6 @@
 | WARNING | lmdm Replace '/' with 'or' in POS label: 'adj./n.' -> 'adj. or n.' | 1 |
 | WARNING | lsmm Adjective POS should include DULAT gender marker for lsm: adj. m. | 1 |
 | WARNING | lxk Lexeme parse did not match DULAT; matched by surface form | 1 |
-| WARNING | lyt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | lyt Noun POS should include DULAT gender marker for lyt: n. f. | 1 |
 | WARNING | lytn Noun POS should include DULAT gender marker for lyt: n. f. | 1 |
 | WARNING | lšnh Noun POS should include DULAT gender marker for lšn: n. f. | 1 |
@@ -1941,28 +1809,23 @@
 | WARNING | mdbḥ Noun POS should include DULAT gender marker for mdbḥ: n. m. | 1 |
 | WARNING | mddth Noun POS should include DULAT gender marker for mddt (I): n. f. | 1 |
 | WARNING | mdgl Noun POS should include DULAT gender marker for mgdl: n. m. | 1 |
-| WARNING | mdgt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | mdgt Noun POS should include DULAT gender marker for mdgt: n. f. | 1 |
 | WARNING | mdh Noun POS should include DULAT gender marker for md (I): n. f. | 1 |
 | WARNING | mdk Noun POS should include DULAT gender marker for md (I): n. f. | 1 |
 | WARNING | mdlh Noun POS should include DULAT gender marker for mdl (II): n. m. | 1 |
 | WARNING | mdlk Noun POS should include DULAT gender marker for mdl (II): n. m. | 1 |
-| WARNING | mdnt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | mdnt Noun POS should include DULAT gender marker for mdnt: n. f. | 1 |
 | WARNING | mdrˤh Noun POS should include DULAT gender marker for mdrʕ: n. m. | 1 |
 | WARNING | mgnk Noun POS should include DULAT gender marker for mgn (I): n. m. | 1 |
 | WARNING | mhrk Noun POS should include DULAT gender marker for mhr (I): n. m. | 1 |
 | WARNING | mhrk Noun POS should include DULAT gender marker for mhr (III): n. m. | 1 |
 | WARNING | mhry Noun POS should include DULAT gender marker for mhr (III): n. m. | 1 |
-| WARNING | mhy Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token | 1 |
 | WARNING | mhy Noun POS should include DULAT gender marker for mh/y: n. m. | 1 |
 | WARNING | midm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | midm Noun POS should include DULAT gender marker for mỉ/ủd: n. m. | 1 |
 | WARNING | midy Noun POS should include DULAT gender marker for mỉ/ủd: n. m. | 1 |
 | WARNING | minš Noun POS should include DULAT gender marker for mỉnš: n. m. | 1 |
-| WARNING | miyt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | miyt Noun POS should include DULAT gender marker for mỉyt: n. f. | 1 |
-| WARNING | mknt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | mknt Noun POS should include DULAT gender marker for mknt: n. f. | 1 |
 | WARNING | mkrn Noun POS should include DULAT gender marker for mkr: n. m. | 1 |
 | WARNING | mkry Noun POS should include DULAT gender marker for mkr: n. m. | 1 |
@@ -1981,7 +1844,6 @@
 | WARNING | mmh Noun POS should include DULAT gender marker for mh/y: n. m. | 1 |
 | WARNING | mmk Noun POS should include DULAT gender marker for mh/y: n. m. | 1 |
 | WARNING | mmk Noun POS should include DULAT gender marker for mm (I): n. m. | 1 |
-| WARNING | mmskn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token | 1 |
 | WARNING | mndġ Noun POS should include DULAT gender marker for mndġ: n. m. | 1 |
 | WARNING | mnth Noun POS should include DULAT gender marker for mnt (I): n. f. | 1 |
 | WARNING | mntk Noun POS should include DULAT gender marker for mnt (I): n. f. | 1 |
@@ -2000,7 +1862,6 @@
 | WARNING | mra Adjective POS should include DULAT gender marker for mrủ (I): adj. m. | 1 |
 | WARNING | mra Noun POS should include DULAT gender marker for mrủ (I): n. m. | 1 |
 | WARNING | mrbdh Noun POS should include DULAT gender marker for mrbd (I): n. f. | 1 |
-| WARNING | mrbˤt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | mrbˤt Noun POS should include DULAT gender marker for mrbʕt: n. f. | 1 |
 | WARNING | mrdt Noun POS should include DULAT gender marker for mrdt: n. f. | 1 |
 | WARNING | mrik Adjective POS should include DULAT gender marker for mrủ (I): adj. m. | 1 |
@@ -2013,13 +1874,11 @@
 | WARNING | mryn Noun POS should include DULAT gender marker for mryn (I): n. m. | 1 |
 | WARNING | mrzḥh Noun POS should include DULAT gender marker for mrzḥ: n. m. | 1 |
 | WARNING | mrḥqm Noun POS should include DULAT gender marker for mrḥq: n. m. | 1 |
-| WARNING | mrḥqt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | mrḥqt Noun POS should include DULAT gender marker for mrḥqt: n. f. | 1 |
 | WARNING | mrṯ Noun POS should include DULAT gender marker for mrṯ (II): n. m. | 1 |
 | WARNING | mrṯd Noun POS should include DULAT gender marker for mrṯ (I): n. m. | 1 |
 | WARNING | mrṯd Noun POS should include DULAT gender marker for mrṯ (II): n. m. | 1 |
 | WARNING | mskh Noun POS should include DULAT gender marker for msk: n. m. | 1 |
-| WARNING | mskt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | mskt Noun POS should include DULAT gender marker for mskt: n. f. | 1 |
 | WARNING | mswn Noun POS should include DULAT gender marker for mswn: n. m. | 1 |
 | WARNING | mth Noun POS should include DULAT gender marker for mt (II): n. m. | 1 |
@@ -2033,7 +1892,6 @@
 | WARNING | mšmṭr Noun POS should include DULAT gender marker for mšmṭr: n. m. | 1 |
 | WARNING | mšpy Noun POS should include DULAT gender marker for mšpy: n. m. | 1 |
 | WARNING | mšrrm Noun POS should include DULAT gender marker for mšrr: n. m. | 1 |
-| WARNING | mšḥt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | mšḥt Noun POS should include DULAT gender marker for mšḥt: n. f. | 1 |
 | WARNING | mšḫṭ Noun POS should include DULAT gender marker for mšḫṭ: n. m. | 1 |
 | WARNING | mšṣṣ Noun POS should include DULAT gender marker for mšṣṣ: n. m. | 1 |
@@ -2045,10 +1903,8 @@
 | WARNING | mḏr Noun POS should include DULAT gender marker for mḏr: n. m. | 1 |
 | WARNING | mḥ Noun POS should include DULAT gender marker for mḥ: n. m. | 1 |
 | WARNING | mḥllm Noun POS should include DULAT gender marker for mḥll: n. m. | 1 |
-| WARNING | mḥrṯt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | mḥrṯt Noun POS should include DULAT gender marker for mḥrṯt: n. f. | 1 |
 | WARNING | mḥrṯth Noun POS should include DULAT gender marker for mḥrṯt: n. f. | 1 |
-| WARNING | mḥtrt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | mḥtrt Noun POS should include DULAT gender marker for mḥtrt: n. f. | 1 |
 | WARNING | mḥyx Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | mḫnm Noun POS should include DULAT gender marker for mḫn: n. m. | 1 |
@@ -2059,26 +1915,20 @@
 | WARNING | mṣd Noun POS should include DULAT gender marker for mṣd (I): n. m. | 1 |
 | WARNING | mṣdk Noun POS should include DULAT gender marker for mṣd (I): n. m. | 1 |
 | WARNING | mṣdy Noun POS should include DULAT gender marker for mṣd (I): n. m. | 1 |
-| WARNING | mṣmt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | mṣmt Noun POS should include DULAT gender marker for mṣmt: n. f. | 1 |
-| WARNING | mṣprt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | mṣprt Noun POS should include DULAT gender marker for mṣprt: n. f. | 1 |
 | WARNING | mṣr Noun POS should include DULAT gender marker for mṣr: n. m. | 1 |
 | WARNING | mṣṣ Noun POS should include DULAT gender marker for mṣṣ: n. m. | 1 |
 | WARNING | mṭm Noun POS should include DULAT gender marker for mṭ: n. m. | 1 |
-| WARNING | mṭnt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | mṭnt Noun POS should include DULAT gender marker for mṭnt: n. f. | 1 |
 | WARNING | mṭrh Noun POS should include DULAT gender marker for mṭr: n. m. | 1 |
 | WARNING | mṭrtk Noun POS should include DULAT gender marker for mṭrt: n. f. | 1 |
-| WARNING | mṭt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | mṭt Noun POS should include DULAT gender marker for mṭt: n. f. | 1 |
 | WARNING | mṭth Noun POS should include DULAT gender marker for mṭt: n. f. | 1 |
 | WARNING | mṭḫr Noun POS should include DULAT gender marker for mṭḫr: n. m. | 1 |
 | WARNING | mṯbtkm Noun POS should include DULAT gender marker for mṯb: n. m. | 1 |
 | WARNING | mṯbxxxtxxxx Lexeme parse did not match DULAT; matched by surface form | 1 |
-| WARNING | mṯdṯt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | mṯdṯt Noun POS should include DULAT gender marker for mṯdṯt: n. f. | 1 |
-| WARNING | mṯlṯt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | mṯlṯt Noun POS should include DULAT gender marker for mṯlṯt: n. f. | 1 |
 | WARNING | mṯnnx Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | mẓma Noun POS should include DULAT gender marker for mẓmủ: n. m. | 1 |
@@ -2097,7 +1947,6 @@
 | WARNING | nmrth Noun POS should include DULAT gender marker for nmrt: n. f. | 1 |
 | WARNING | nmrtk Noun POS should include DULAT gender marker for nmrt: n. f. | 1 |
 | WARNING | nprm Noun POS should include DULAT gender marker for npr (I): n. m. | 1 |
-| WARNING | npt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | npt Noun POS should include DULAT gender marker for nbt: n. f. | 1 |
 | WARNING | npt Noun POS should include DULAT gender marker for npt: n. f. | 1 |
 | WARNING | npšhm Noun POS should include DULAT gender marker for npš (I): n. f. | 1 |
@@ -2119,7 +1968,6 @@
 | WARNING | nḫlh Noun POS should include DULAT gender marker for nḫl (I): n. m. | 1 |
 | WARNING | nḫtk Noun POS should include DULAT gender marker for nḫt: n. f. | 1 |
 | WARNING | nṣ Noun POS should include DULAT gender marker for nṣ (I): n. m. | 1 |
-| WARNING | nṣbt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | nṣbt Noun POS should include DULAT gender marker for nṣbt: n. f. | 1 |
 | WARNING | nṣk Noun POS should include DULAT gender marker for nsk: n. m. | 1 |
 | WARNING | nṣk Noun POS should include DULAT gender marker for nṣ (I): n. m. | 1 |
@@ -2131,7 +1979,6 @@
 | WARNING | pitm Noun POS should include DULAT gender marker for pỉt: n. m. | 1 |
 | WARNING | plk Noun POS should include DULAT gender marker for plk: n. m. | 1 |
 | WARNING | plkh Noun POS should include DULAT gender marker for plk: n. m. | 1 |
-| WARNING | plṯt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | plṯt Noun POS should include DULAT gender marker for plṯt: n. f. | 1 |
 | WARNING | pnk Noun POS should include DULAT gender marker for pnm: n. m. | 1 |
 | WARNING | pnnh Noun POS should include DULAT gender marker for pnm: n. m. | 1 |
@@ -2143,7 +1990,6 @@
 | WARNING | ptḥy Noun POS should include DULAT gender marker for ptḥ: n. m. | 1 |
 | WARNING | pšˤ Noun POS should include DULAT gender marker for pšʕ: n. m. | 1 |
 | WARNING | pˤnt Noun POS should include DULAT gender marker for pʕn: n. f. | 1 |
-| WARNING | pḥlt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | pḥlt Noun POS should include DULAT gender marker for pḥlt: n. f. | 1 |
 | WARNING | pḫyrh Noun POS should include DULAT gender marker for pḫyr: n. m. | 1 |
 | WARNING | pṭr Noun POS should include DULAT gender marker for pṭr: n. m. | 1 |
@@ -2151,7 +1997,6 @@
 | WARNING | pṯtn Noun POS should include DULAT gender marker for pṯt (I): n. m. | 1 |
 | WARNING | qblbl Noun POS should include DULAT gender marker for qblbl: n. m. | 1 |
 | WARNING | qbˤthm Noun POS should include DULAT gender marker for qbʕt: n. f. | 1 |
-| WARNING | qbṣt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | qbṣt Noun POS should include DULAT gender marker for qbṣt: n. f. | 1 |
 | WARNING | qd Noun POS should include DULAT gender marker for qn: n. m. | 1 |
 | WARNING | qdm Noun POS should include DULAT gender marker for qdm (I): n. m. | 1 |
@@ -2167,9 +2012,7 @@
 | WARNING | qnm Noun POS should include DULAT gender marker for qn: n. m. | 1 |
 | WARNING | qnuym Noun POS should include DULAT gender marker for qnủy: n. m. | 1 |
 | WARNING | qny Noun POS should include DULAT gender marker for qn: n. m. | 1 |
-| WARNING | qpt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | qpt Noun POS should include DULAT gender marker for qpt: n. f. | 1 |
-| WARNING | qrat Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | qrat Noun POS should include DULAT gender marker for qrảt: n. f. | 1 |
 | WARNING | qrht Noun POS should include DULAT gender marker for qrt (I): n. f. | 1 |
 | WARNING | qrnt Noun POS should include DULAT gender marker for qrn: n. f. | 1 |
@@ -2183,17 +2026,14 @@
 | WARNING | qym Noun POS should include DULAT gender marker for šq: n. m. | 1 |
 | WARNING | qštm Noun POS should include DULAT gender marker for qšt: n. m. | 1 |
 | WARNING | qṣm Noun POS should include DULAT gender marker for qṣ: n. m. | 1 |
-| WARNING | qṣrt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | qṣrt Noun POS should include DULAT gender marker for qṣrt: n. f. | 1 |
 | WARNING | qṣḥm Noun POS should include DULAT gender marker for qṣḥ: n. m. | 1 |
 | WARNING | qṭn Noun POS should include DULAT gender marker for qṭn (I): n. m. | 1 |
 | WARNING | qṭrk Noun POS should include DULAT gender marker for qṭr: n. m. | 1 |
-| WARNING | qẓrt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | qẓrt Noun POS should include DULAT gender marker for qẓrt: n. f. | 1 |
 | WARNING | rašthm Noun POS should include DULAT gender marker for rỉš (I): n. m. | 1 |
 | WARNING | raštkm Noun POS should include DULAT gender marker for rỉš (I): n. m. | 1 |
 | WARNING | rbt Noun POS should include DULAT gender marker for rbt (II): n. f. | 1 |
-| WARNING | rdnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token | 1 |
 | WARNING | rdx Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | rgmh Noun POS should include DULAT gender marker for rgm: n. m. | 1 |
 | WARNING | rgmk Noun POS should include DULAT gender marker for rgm: n. m. | 1 |
@@ -2201,7 +2041,6 @@
 | WARNING | rhn Noun POS should include DULAT gender marker for rks: n. m. | 1 |
 | WARNING | rib Noun POS should include DULAT gender marker for rỉb: n. m. | 1 |
 | WARNING | ridn Noun POS should include DULAT gender marker for rỉdn (I): n. m. | 1 |
-| WARNING | rimt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | rimt Noun POS should include DULAT gender marker for rỉmt: n. f. | 1 |
 | WARNING | rišhm Noun POS should include DULAT gender marker for rỉš (I): n. m. | 1 |
 | WARNING | rišthm Noun POS should include DULAT gender marker for rỉš (I): n. m. | 1 |
@@ -2229,7 +2068,6 @@
 | WARNING | rḥth Noun POS should include DULAT gender marker for rḥt: n. f. | 1 |
 | WARNING | rḫnn Noun POS should include DULAT gender marker for rḫnt: n. f. | 1 |
 | WARNING | rṯn Noun POS should include DULAT gender marker for rṯn: n. m. | 1 |
-| WARNING | rṯt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | rṯt Noun POS should include DULAT gender marker for rṯt: n. f. | 1 |
 | WARNING | rṯy Noun POS should include DULAT gender marker for rṯ: n. m. | 1 |
 | WARNING | sd Noun POS should include DULAT gender marker for sd: n. m. | 1 |
@@ -2238,7 +2076,6 @@
 | WARNING | sid Noun POS should include DULAT gender marker for sỉd: n. m. | 1 |
 | WARNING | sin Noun POS should include DULAT gender marker for sỉn: n. m. | 1 |
 | WARNING | skh Noun POS should include DULAT gender marker for sk (II): n. m. | 1 |
-| WARNING | sknt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | sknt Noun POS should include DULAT gender marker for sknt: n. f. | 1 |
 | WARNING | skt Noun POS should include DULAT gender marker for sk (II): n. m. | 1 |
 | WARNING | slm Noun POS should include DULAT gender marker for slm: n. m. | 1 |
@@ -2253,18 +2090,15 @@
 | WARNING | ssnm Noun POS should include DULAT gender marker for ssn (I): n. m. | 1 |
 | WARNING | sxx Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tar Noun POS should include DULAT gender marker for tảr: n. m. | 1 |
-| WARNING | tbrrt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | tbrrt Noun POS should include DULAT gender marker for tbrrt: n. f. | 1 |
 | WARNING | tbxnn Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tbṯḫ Noun POS should include DULAT gender marker for tbṯḫ: n. m. | 1 |
 | WARNING | tdmm Noun POS should include DULAT gender marker for tdmm: n. m. | 1 |
-| WARNING | tdmmt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | tdmmt Noun POS should include DULAT gender marker for tdmmt: n. f. | 1 |
 | WARNING | tdxxxx Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tgh Noun POS should include DULAT gender marker for tgh: n. m. | 1 |
 | WARNING | tgml Noun POS should include DULAT gender marker for tgml: n. m. | 1 |
 | WARNING | tgmr Noun POS should include DULAT gender marker for tgmr: n. m. | 1 |
-| WARNING | tinṯt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | tinṯt Noun POS should include DULAT gender marker for tỉnṯt: n. f. | 1 |
 | WARNING | tišr Noun POS should include DULAT gender marker for tỉšr: n. m. | 1 |
 | WARNING | tlm Noun POS should include DULAT gender marker for tl (I): n. m. | 1 |
@@ -2275,7 +2109,6 @@
 | WARNING | tmtm Adjective POS should include DULAT gender marker for tm: adj. m. | 1 |
 | WARNING | tmtḫṣh Noun POS should include DULAT gender marker for tmtḫṣ: n. m. | 1 |
 | WARNING | tnmy Noun POS should include DULAT gender marker for tnmy: n. m. | 1 |
-| WARNING | tnqt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | tnqt Noun POS should include DULAT gender marker for tnqt (II): n. f. | 1 |
 | WARNING | tnqth Noun POS should include DULAT gender marker for tnqt (II): n. f. | 1 |
 | WARNING | tpk Noun POS should include DULAT gender marker for tp (I): n. m. | 1 |
@@ -2295,9 +2128,7 @@
 | WARNING | ty Noun POS should include DULAT gender marker for ảḫt (I): n. f. | 1 |
 | WARNING | tšqyxxxxxx Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tšx Lexeme parse did not match DULAT; matched by surface form | 1 |
-| WARNING | tˤlgt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | tˤlgt Noun POS should include DULAT gender marker for tʕlgt: n. f. | 1 |
-| WARNING | tˤlt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | tˤlt Noun POS should include DULAT gender marker for tʕlt: n. f. | 1 |
 | WARNING | tˤrty Noun POS should include DULAT gender marker for tʕrt: n. f. | 1 |
 | WARNING | tḥmd Noun POS should include DULAT gender marker for tḥm: n. m. | 1 |
@@ -2399,7 +2230,6 @@
 | WARNING | yblmm Noun POS should include DULAT gender marker for ybl (III): n. m. | 1 |
 | WARNING | ybm Noun POS should include DULAT gender marker for ybm: n. m. | 1 |
 | WARNING | ybmh Noun POS should include DULAT gender marker for ybm: n. m. | 1 |
-| WARNING | ybnt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | ybnt Noun POS should include DULAT gender marker for ybnt: n. f. | 1 |
 | WARNING | ydt Noun POS should include DULAT gender marker for yd (I): n. f. | 1 |
 | WARNING | ygb Noun POS should include DULAT gender marker for ygb: n. m. | 1 |
@@ -2421,7 +2251,6 @@
 | WARNING | ysmm Noun POS should include DULAT gender marker for ysm (II): n. m. | 1 |
 | WARNING | ysmsm Noun POS should include DULAT gender marker for ysmsmt: n. f. | 1 |
 | WARNING | ytm Noun POS should include DULAT gender marker for yt: n. m. | 1 |
-| WARNING | ytmt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | ytmt Noun POS should include DULAT gender marker for ytmt: n. f. | 1 |
 | WARNING | ywsrnxn Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | yy Noun POS should include DULAT gender marker for ảṯt: n. f. | 1 |
@@ -2437,7 +2266,6 @@
 | WARNING | zntn Noun POS should include DULAT gender marker for znt: n. f. | 1 |
 | WARNING | zth Noun POS should include DULAT gender marker for zt: n. m. | 1 |
 | WARNING | ztmm Noun POS should include DULAT gender marker for zt: n. m. | 1 |
-| WARNING | zġt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | zġt Noun POS should include DULAT gender marker for zġt: n. f. | 1 |
 | WARNING | ġbny Noun POS should include DULAT gender marker for ġbn: n. m. | 1 |
 | WARNING | ġdyn Noun POS should include DULAT gender marker for ġdyn (I): n. m. | 1 |
@@ -2448,7 +2276,6 @@
 | WARNING | ġlph Noun POS should include DULAT gender marker for ġlp: n. m. | 1 |
 | WARNING | ġltm Noun POS should include DULAT gender marker for ġlt: n. f. | 1 |
 | WARNING | ġrmn Noun POS should include DULAT gender marker for ġrm: n. m. | 1 |
-| WARNING | ġrplt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | ġrplt Noun POS should include DULAT gender marker for ġrplt: n. f. | 1 |
 | WARNING | ġzrh Noun POS should include DULAT gender marker for ġzr: n. m. | 1 |
 | WARNING | ġṣb Noun POS should include DULAT gender marker for ġṣb: n. m. | 1 |
@@ -2460,7 +2287,6 @@
 | WARNING | šbrd Noun POS should include DULAT gender marker for šbr: n. m. | 1 |
 | WARNING | šbrh Noun POS should include DULAT gender marker for šbr: n. m. | 1 |
 | WARNING | šbth Noun POS should include DULAT gender marker for šbt: n. f. | 1 |
-| WARNING | šbšlt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | šbšlt Noun POS should include DULAT gender marker for šbšlt: n. f. | 1 |
 | WARNING | šdd Noun POS should include DULAT gender marker for šd (I): n. m. | 1 |
 | WARNING | šdd Noun POS should include DULAT gender marker for šd (II): n. m. | 1 |
@@ -2484,7 +2310,6 @@
 | WARNING | šmˤh Noun POS should include DULAT gender marker for šmʕ: n. m. | 1 |
 | WARNING | šnt Noun POS should include DULAT gender marker for šnt (II): n. f. | 1 |
 | WARNING | šnu Noun POS should include DULAT gender marker for šnủ: n. m. | 1 |
-| WARNING | šnˤt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | šnˤt Noun POS should include DULAT gender marker for šnʕt: n. f. | 1 |
 | WARNING | špr Noun POS should include DULAT gender marker for špr: n. m. | 1 |
 | WARNING | špḥh Noun POS should include DULAT gender marker for špḥ: n. m. | 1 |
@@ -2506,7 +2331,6 @@
 | WARNING | ˤdd Noun POS should include DULAT gender marker for ʕdd (I): n. m. | 1 |
 | WARNING | ˤdnhm Noun POS should include DULAT gender marker for ʕdn (II): n. m. | 1 |
 | WARNING | ˤdtm Noun POS should include DULAT gender marker for ʕdt (I): n. f. | 1 |
-| WARNING | ˤglt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | ˤglt Noun POS should include DULAT gender marker for ʕglt: n. f. | 1 |
 | WARNING | ˤh Noun POS should include DULAT gender marker for ʕrš: n. f. | 1 |
 | WARNING | ˤlmk Noun POS should include DULAT gender marker for ʕlm (I): n. m. | 1 |
@@ -2534,10 +2358,8 @@
 | WARNING | ˤzk Noun POS should include DULAT gender marker for ʕz (I): n. m. | 1 |
 | WARNING | ˤzm Noun POS should include DULAT gender marker for ʕz (II): n. m. | 1 |
 | WARNING | ˤzn Noun POS should include DULAT gender marker for ʕz (II): n. m. | 1 |
-| WARNING | ˤḏrt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | ˤḏrt Noun POS should include DULAT gender marker for ʕḏrt: n. f. | 1 |
 | WARNING | ˤṭ Noun POS should include DULAT gender marker for ʕṭ: n. m. | 1 |
-| WARNING | ˤṭrṭrt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | ˤṭrṭrt Noun POS should include DULAT gender marker for ʕṭrṭrt: n. f. | 1 |
 | WARNING | ˤẓmny Noun POS should include DULAT gender marker for ʕẓm (III): n. m. | 1 |
 | WARNING | ḏdk Noun POS should include DULAT gender marker for ḏd (II): n. m. | 1 |
@@ -2555,7 +2377,6 @@
 | WARNING | ḥkmk Adjective POS should include DULAT gender marker for ḥkm: adj. m. | 1 |
 | WARNING | ḥlm Noun POS should include DULAT gender marker for ḥl (I): n. m. | 1 |
 | WARNING | ḥlmm Noun POS should include DULAT gender marker for ḥlm (II): n. m. | 1 |
-| WARNING | ḥlt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | ḥlt Noun POS should include DULAT gender marker for ḥlt (II): n. f. | 1 |
 | WARNING | ḥlš Noun POS should include DULAT gender marker for ḥlš: n. m. | 1 |
 | WARNING | ḥmk Noun POS should include DULAT gender marker for ḥm: n. m. | 1 |
@@ -2611,7 +2432,6 @@
 | WARNING | ḫpṯh Noun POS should include DULAT gender marker for ḫpṯ: n. m. | 1 |
 | WARNING | ḫrdn Noun POS should include DULAT gender marker for ḫrd: n. m. | 1 |
 | WARNING | ḫrih Noun POS should include DULAT gender marker for ḫrủ: n. m. | 1 |
-| WARNING | ḫrpnt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | ḫrpnt Noun POS should include DULAT gender marker for ḫrpnt: n. f. | 1 |
 | WARNING | ḫršḫ Noun POS should include DULAT gender marker for ḫršḫ: n. m. | 1 |
 | WARNING | ḫrṣm Noun POS should include DULAT gender marker for ḫrṣ: n. m. | 1 |
@@ -2645,7 +2465,6 @@
 | WARNING | ṣrp Noun POS should include DULAT gender marker for ṣrp: n. m. | 1 |
 | WARNING | ṣrr Noun POS should include DULAT gender marker for ṣrr: n. m. | 1 |
 | WARNING | ṣrtkx Lexeme parse did not match DULAT; matched by surface form | 1 |
-| WARNING | ṣt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | ṣt Noun POS should include DULAT gender marker for ṣt: n. f. | 1 |
 | WARNING | ṣġrm Adjective POS should include DULAT gender marker for ṣġr (I): adj. m. | 1 |
 | WARNING | ṣġrt Adjective POS should include DULAT gender marker for ṣġrt (I): adj. f. | 1 |
@@ -2660,19 +2479,15 @@
 | WARNING | ṭṣ Noun POS should include DULAT gender marker for ṭl: n. m. | 1 |
 | WARNING | ṯbd Noun POS should include DULAT gender marker for ṯb: n. m. | 1 |
 | WARNING | ṯdm Noun POS should include DULAT gender marker for ṯd: n. m. | 1 |
-| WARNING | ṯigt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | ṯigt Noun POS should include DULAT gender marker for ṯỉgt: n. f. | 1 |
 | WARNING | ṯirk Noun POS should include DULAT gender marker for ṯảr: n. m. | 1 |
 | WARNING | ṯknt Noun POS should include DULAT gender marker for ṯknt: n. f. | 1 |
-| WARNING | ṯkt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | ṯkt Noun POS should include DULAT gender marker for ṯkt: n. f. | 1 |
 | WARNING | ṯlb Noun POS should include DULAT gender marker for ṯlb: n. m. | 1 |
-| WARNING | ṯllt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | ṯllt Noun POS should include DULAT gender marker for ṯllt: n. f. | 1 |
 | WARNING | ṯlḥnm Noun POS should include DULAT gender marker for ṯlḥn: n. m. | 1 |
 | WARNING | ṯlḥny Noun POS should include DULAT gender marker for ṯlḥn: n. m. | 1 |
 | WARNING | ṯmrg Noun POS should include DULAT gender marker for ṯmr: n. m. | 1 |
-| WARNING | ṯnt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | ṯnt Noun POS should include DULAT gender marker for ṯnt (II): n. f. | 1 |
 | WARNING | ṯnth Noun POS should include DULAT gender marker for ṯnt (I): n. f. | 1 |
 | WARNING | ṯpš Noun POS should include DULAT gender marker for ṯpš: n. f. | 1 |
@@ -2682,14 +2497,11 @@
 | WARNING | ṯqbm Noun POS should include DULAT gender marker for ṯqb: n. m. | 1 |
 | WARNING | ṯrkn Noun POS should include DULAT gender marker for ṯr (I): n. m. | 1 |
 | WARNING | ṯrkn Noun POS should include DULAT gender marker for ṯr (III): n. m. | 1 |
-| WARNING | ṯrmt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | ṯrmt Noun POS should include DULAT gender marker for ṯrmt: n. f. | 1 |
 | WARNING | ṯrry Adjective POS should include DULAT gender marker for ṯrry (I): adj. m. | 1 |
-| WARNING | ṯrt Feminine singular noun in DULAT should use '/t' | 1 |
 | WARNING | ṯrt Noun POS should include DULAT gender marker for ṯrt: n. f. | 1 |
 | WARNING | ṯry Noun POS should include DULAT gender marker for ṯr (I): n. m. | 1 |
 | WARNING | ṯryn Noun POS should include DULAT gender marker for ṯryn (I): n. m. | 1 |
-| WARNING | ṯtyy Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token | 1 |
 | WARNING | ṯut Noun POS should include DULAT gender marker for ṯảt: n. f. | 1 |
 | WARNING | ṯˤh Noun POS should include DULAT gender marker for ṯʕ (II): n. m. | 1 |
 | WARNING | ṯṣr Noun POS should include DULAT gender marker for ṯṣr: n. m. | 1 |

@@ -1,6 +1,7 @@
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from pipeline.tablet_parsing import PipelineConfig, TabletParsingPipeline
 
@@ -127,6 +128,56 @@ class TabletParsingPipelineTest(unittest.TestCase):
             self.assertEqual([p.name for p in targets], ["KTU 1.1.tsv", "KTU 1.2.tsv"])
             self.assertEqual([p.name for p in bootstrap_targets], ["KTU 1.2.tsv"])
             self.assertEqual([p.name for p in preserved_targets], ["KTU 1.1.tsv"])
+
+    def test_run_include_existing_applies_instruction_refinement(self):
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            src = root / "cuc_tablets_tsv"
+            out = root / "out"
+            src.mkdir(parents=True)
+            out.mkdir(parents=True)
+
+            (src / "KTU 1.1.tsv").write_text("", encoding="utf-8")
+            (out / "KTU 1.1.tsv").write_text(
+                "1\thwt\thwt(I)/\thwt (I)\tn.\tword\n",
+                encoding="utf-8",
+            )
+
+            config = PipelineConfig(
+                source_dir=src,
+                out_dir=out,
+                dulat_db=root / "missing.sqlite",
+                udb_db=root / "missing.sqlite",
+                include_existing=True,
+            )
+            pipeline = TabletParsingPipeline(config=config)
+            with (
+                patch.object(
+                    pipeline,
+                    "instruction_refine_targets",
+                    return_value={
+                        "instruction_refine_files": 1,
+                        "instruction_refine_rows": 1,
+                        "instruction_refine_changed": 1,
+                    },
+                ) as mock_instruction_refine,
+                patch.object(
+                    pipeline,
+                    "apply_refinement_steps",
+                    return_value={"refinement_steps_total_changed": 0},
+                ),
+                patch.object(
+                    pipeline,
+                    "regenerate_reports",
+                    return_value=0,
+                ),
+            ):
+                result = pipeline.run(dry_run=False)
+
+            mock_instruction_refine.assert_called_once()
+            self.assertEqual(result["instruction_refine_files"], 1)
+            self.assertEqual(result["instruction_refine_rows"], 1)
+            self.assertEqual(result["instruction_refine_changed"], 1)
 
     def test_suffix_payload_collapse_runs_after_known_ambiguities(self):
         with tempfile.TemporaryDirectory() as tmp_dir:
