@@ -72,6 +72,11 @@ _PREFORMATIVE_LETTERS = {"y", "t", "a", "n", "i", "u"}
 _REDIRECT_TARGET_RE = re.compile(r"<i>([^<]+)</i>", re.IGNORECASE)
 _REDIRECT_SLASH_TARGET_RE = re.compile(r"/[A-Za-zʔʕʿˤḫḥṭṣṯẓġḏšảỉủ-]+/")
 _L_STEM_MORPH_RE = re.compile(r"\b(L|Lt|tL)\b")
+_SENSE_CITATION_RE = re.compile(
+    r"\b(?:KTU|CAT)?\s*\d+\.\d+(?:\s+[IVX]+)?\s*:\s*\d+(?:\s*[–-]\s*\d+)?\b",
+    re.IGNORECASE,
+)
+_SENSE_CROSSREF_RE = re.compile(r"\bcf\.\b", re.IGNORECASE)
 _BASE_NOMINAL_ANALYSIS_RE = re.compile(
     r"^(?P<lemma>[A-Za-zʔʕʿˤḫḥṭṣṯẓġḏšảỉủ]+)(?P<hom>\([IVX]+\))?/$"
 )
@@ -139,6 +144,18 @@ def compact_gloss(s: str) -> str:
     if len(g) > 110:
         g = g[:110].rsplit(" ", 1)[0].strip(" ,;")
     return g
+
+
+def is_usable_sense_definition(definition: str) -> bool:
+    """Return False for sense rows that are attestational examples/cross-refs."""
+    text = strip_html(definition or "")
+    if not text:
+        return False
+    if _SENSE_CROSSREF_RE.search(text):
+        return False
+    if _SENSE_CITATION_RE.search(text):
+        return False
+    return True
 
 
 def _split_first_top_level(text: str, sep: str = ",") -> Tuple[str, str]:
@@ -742,8 +759,13 @@ def load_entries(
         "ORDER BY entry_id, id"
     )
     for entry_id, definition in cur.fetchall():
-        if entry_id not in sense_map:
-            sense_map[entry_id] = compact_gloss(definition)
+        if entry_id in sense_map:
+            continue
+        if not is_usable_sense_definition(definition or ""):
+            continue
+        compact = compact_gloss(definition)
+        if compact:
+            sense_map[entry_id] = compact
 
     trans_map: Dict[int, str] = {}
     cur.execute(

@@ -12,6 +12,7 @@ from scripts.refine_results_mentions import (
     build_variants,
     compact_gloss,
     entry_label,
+    is_usable_sense_definition,
     load_entries,
     parse_separator_ref,
     refine_file,
@@ -59,6 +60,15 @@ class RefineResultsMentionsTest(unittest.TestCase):
 
     def test_compact_gloss_still_splits_top_level_comma(self) -> None:
         self.assertEqual(compact_gloss("thousand, herd"), "thousand")
+
+    def test_flags_attestation_style_sense_as_non_usable(self) -> None:
+        self.assertFalse(
+            is_usable_sense_definition(
+                "ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods, "
+                "1.43:2. Cf. ʕšr(t) (I)."
+            )
+        )
+        self.assertTrue(is_usable_sense_definition("banquet, feast"))
 
     def test_analysis_prefers_surface_for_short_prefix_slash_lemma(self) -> None:
         entry = Entry(
@@ -289,6 +299,43 @@ class RefineResultsMentionsTest(unittest.TestCase):
             )
             self.assertTrue(variants)
             self.assertEqual(variants[0].entries[0].entry_id, 170)
+
+    def test_load_entries_prefers_translation_when_first_sense_is_attestation_example(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            self._init_dulat_schema(db_path)
+            conn = sqlite3.connect(str(db_path))
+            cur = conn.cursor()
+            cur.execute(
+                _INSERT_ENTRY_SQL,
+                (1057, "/ʕ-š-r/", "", "vb", "", "", ""),
+            )
+            cur.execute(
+                "INSERT INTO senses(id, entry_id, definition) VALUES (?, ?, ?)",
+                (
+                    61,
+                    1057,
+                    "ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods, "
+                    "1.43:2. Cf. ʕšr(t) (I).",
+                ),
+            )
+            cur.executemany(
+                "INSERT INTO translations(entry_id, text) VALUES (?, ?)",
+                [
+                    (1057, "to invite"),
+                    (1057, "to give a banquet"),
+                ],
+            )
+            cur.execute(
+                "INSERT INTO forms(text, entry_id, morphology) VALUES (?, ?, ?)",
+                ("yʕšr", 1057, "D, prefc."),
+            )
+            conn.commit()
+            conn.close()
+
+            entries_by_id, forms_map, _lemma_map, _suffix_map, _forms_morph = load_entries(db_path)
+            self.assertIn("yʕšr", forms_map)
+            self.assertEqual(entries_by_id[1057].gloss, "to invite")
 
     def test_fallback_direct_hit_does_not_suppress_suffix_split_variants(self) -> None:
         with tempfile.TemporaryDirectory() as tmp_dir:

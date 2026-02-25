@@ -790,3 +790,5 @@
 - Added fallback support for restoration-encoded split forms (`<i>mt</i>&lt;<i>n</i>&gt;<i>tm</i>` -> `mtntm`) and removed non-morphological `cf.` from abbreviation handling.
 - Added regression coverage for both alias and forms-block fallback paths across parser/refiner/linter loaders, plus direct extractor tests.
 - Re-ran the full tablet parsing pipeline (bootstrap + refine + refinement steps) for all tablets using explicit-file mode; regenerated `out/*.tsv` and lint reports with the new form recovery behavior.
+- Refined gloss selection in `scripts/refine_results_mentions.py` to ignore attestation-style/cross-reference `senses.definition` rows (for example rows containing citations like `1.43:2` or `cf.`) and fall back to `translations` for compact gloss output.
+- Added regression tests in `tests/test_refine_results_mentions.py` for attestation-sense filtering and translation fallback behavior.
