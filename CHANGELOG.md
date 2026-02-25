@@ -2,6 +2,12 @@
 
 ## 2026-02-25
 
+- Fixed global reverse-mention disambiguation drift for tablets using compact section separators:
+  - updated `scripts/refine_results_mentions.py::parse_separator_ref` to support both `KTU x.y COL:line` and `KTU x.y line` separator formats,
+  - restored DULAT reverse-mention scoring for no-column tablets (for example `# ... KTU 1.101 5` -> `CAT 1.101:5`),
+  - added regression tests in `tests/test_refine_results_mentions.py` for separator parsing and mention-driven DN selection.
+- Re-ran the full parser pipeline across all tablets (`278` files) with explicit all-target bootstrap+refine+instruction+step passes and regenerated lint reports, so `out/` reflects only reproducible rule-based transformations.
+
 - Replaced deletion-style variant pruning with linguistics-based reconstructability fixes driven by DULAT form evidence and Tagging conventions:
   - `FeminineTSingularSplitFixer` now handles feminine surface forms of masculine lemmas (for example `pḥl/` + `pḥlt` -> `pḥl/t`),
   - added reconstructable aleph substitution in `AlephPrefixFixer` (`ʔbd[` -> `(ʔ&abd[`),

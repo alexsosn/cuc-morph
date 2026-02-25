@@ -11,6 +11,8 @@ from scripts.refine_results_mentions import (
     build_variants,
     entry_label,
     load_entries,
+    parse_separator_ref,
+    refine_file,
 )
 
 
@@ -90,6 +92,56 @@ class RefineResultsMentionsTest(unittest.TestCase):
             )
             self.assertTrue(variants)
             self.assertEqual(variants[0].entries[0].entry_id, 170)
+
+    def test_parse_separator_ref_supports_no_column_format(self) -> None:
+        self.assertEqual(
+            parse_separator_ref("#---------------------------- KTU 1.101 5"),
+            "CAT 1.101:5",
+        )
+        self.assertEqual(
+            parse_separator_ref("#---------------------------- KTU 1.3 I:23"),
+            "CAT 1.3 I:23",
+        )
+
+    def test_refine_file_uses_reverse_mentions_with_no_column_separator(self) -> None:
+        dn_entry = Entry(
+            entry_id=1,
+            lemma="ṭly",
+            hom="",
+            pos="DN",
+            gloss="Tallay",
+            wiki_tr="",
+        )
+        noun_entry = Entry(
+            entry_id=2,
+            lemma="ṭl",
+            hom="",
+            pos="n. m.",
+            gloss="dew",
+            wiki_tr="",
+        )
+        forms_map = {"ṭly": [noun_entry, dn_entry]}
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            out_path = Path(tmp_dir) / "KTU 1.101.tsv"
+            out_path.write_text(
+                ("#---------------------------- KTU 1.101 5\n1\tṭly\t?\t?\t?\t?\t\n"),
+                encoding="utf-8",
+            )
+            rows, changed = refine_file(
+                path=out_path,
+                out_path=out_path,
+                forms_map=forms_map,
+                suffix_map={},
+                forms_morph={},
+                reverse_mentions={"CAT 1.101:5": {1}},
+                entry_ref_count={},
+                entry_tablets={},
+                entry_family_count={},
+            )
+            self.assertEqual(rows, 1)
+            self.assertEqual(changed, 1)
+            lines = out_path.read_text(encoding="utf-8").splitlines()
+            self.assertIn("\tṭly/\tṭly\tDN\tTallay\t", lines[1])
 
 
 if __name__ == "__main__":

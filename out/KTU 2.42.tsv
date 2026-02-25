@@ -18,7 +18,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158112	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. m. du.	servant	
 # KTU 2.42 4						
 158113	l	l(I)	l (I)	prep.	to	
-158114	pˤn	pˤn/	pʕn	n. f. du.	at the feet of	
+158114	pˤn	pˤn/	pʕn	n. f.	at the feet of	
 158115	bˤly	bˤl(II)/y	bʕl (II)	n. m./DN	Baʿlu/Baal	
 158116	mrḥqtm	mrḥq(t/tm	mrḥqt	n. f.	distance	
 # KTU 2.42 5						
@@ -57,12 +57,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158139	mlk	mlk[	/m-l-k/	vb G	to reign	
 158139	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 158140	ˤlm	ˤl(I)	ʕl (I)	prep.	upon	
+158140	ˤlm	ˤl(II)	ʕl (II)	adv.	above	
+158140	ˤlm	ˤlm(I)/	ʕlm (I)	n. m.	eternity	
 # KTU 2.42 10						
 158141	mlkn	mlk(I)	mlk (I)		king	
 158142	bˤly	bˤl(II)/y	bʕl (II)	n. m./DN	Baʿlu/Baal	
 158143	ḥwt	ḥw(t/t	ḥwt	n. f.	country	
 # KTU 2.42 11						
-158144	yšiḫr	!y!]š]ʔḫr[	/ʔ-ḫ-r/	vb Š	generic mng to go behind > D to retain (?)	
+158144	yšiḫr	!y!]š](ʔ&iḫr[	/ʔ-ḫ-r/	vb Š	generic mng to go behind > D to retain (?)	
 158145	w	w	w	conj.	and	
 158146	ˤm	ˤm(I)	ʕm (I)	prep.	to	
 158147	bˤly	bˤl(II)/y	bʕl (II)	n. m./DN	Baʿlu/Baal	
@@ -83,7 +85,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158155	ˤšrm	ˤšrm/	ʕšrm	n. num.	twenty	
 # KTU 2.42 16						
 158156	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
-158156	yšt	šty[	/š-t-y/	vb G	to drink	
 158157	u	u	ủ	conj.	or	
 # KTU 2.42 17						
 158158	qrt	qr(t(I)/t	qrt (I)	n. f.	city	
@@ -108,13 +109,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158171	ˤd	ˤd(III)/	ʕd (III)	n. m.	throne	
 158171	ˤd	ˤd(II)/	ʕd (II)	n. m.	time	
 # KTU 2.42 21						
-158172	ilak	!i!lʔk[	/l-ʔ-k/	vb G	to send (a message)	
+158172	ilak	!i!l(ʔ&ak[	/l-ʔ-k/	vb G	to send (a message)	
 158173	ˤm	ˤm(I)	ʕm (I)	prep.	to	
 158174	mlk	mlk[	/m-l-k/	vb G	to reign	
 158174	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 # KTU 2.42 22						
 158175	ht	ht	ht	adv.	here	
-158176	lik	lʔk[	/l-ʔ-k/	vb G	to send (a message)	
+158176	lik	l(ʔ&ik[	/l-ʔ-k/	vb G	to send (a message)	
 158177	mlk	mlk[	/m-l-k/	vb G	to reign	
 158177	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 # KTU 2.42 23						
@@ -128,7 +129,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.42 24						
 158184	hmt	hmt	hmt	pers. pn.		
 158185	w	w	w	conj.	and	
-158186	anyt	any/	ảny(t)	n. f.	ship	
+158186	anyt	any(t/t	ảny(t)	n. f.	ship	
 158187	hm	hm(II)	hm (II)	conj./interr. functor	if	
 158188	tzn	?	?	?	?	DULAT: NOT FOUND
 # KTU 2.42 25						
@@ -141,7 +142,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.42 26						
 158194	mlkn	mlk(I)	mlk (I)		king	
 158195	ybqṯ	!y!bqṯ[	/b-q-ṯ/	vb D	to search for	
-158196	anyt	any/	ảny(t)	n. f.	ship	
+158196	anyt	any(t/t	ảny(t)	n. f.	ship	
 158197	w	w	w	conj.	and	
 158198	at	at(I)	ảt (I)	pers. pn.	you	
 # KTU 2.42 27						
@@ -150,6 +151,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158201	w	w	w	conj.	and	
 158202	mlk	mlk[	/m-l-k/	vb G	to reign	
 158202	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
-158203	lak	lʔk[	/l-ʔ-k/	vb G	to send (a message)	
+158203	lak	l(ʔ&ak[	/l-ʔ-k/	vb G	to send (a message)	
 158204	ˤm	ˤm(I)	ʕm (I)	prep.	to	
 158205		?	?	?	?	

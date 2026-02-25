@@ -53,11 +53,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156024	ḥsm	ḥsm	ḥsm	?	?	
 156025	ḥ	lqḥ[	/l-q-ḥ/	vb G/N	to get hold of	
 # KTU 1.176 16						
-156026	pat	pi/t=	pỉt	n. m.	temple	
+156026	pat	pit/	pỉt	n. m.	temple	
 156027	ilm	il(I)/m	ỉl (I)	n. m.	god	
 # KTU 1.176 17						
 156028	tm	tm/	tm	adj. m.	complete	
-156029	ḥwy	ḥw(I)[+y	/ḥ-w/y-y/ (I)	vb	to live	
+156029	ḥwy	ḥwy/	ḥwy	n. m.	storehouse	
 156030	w	w	w	conj.	and	
 # KTU 1.176 18						
 156031	b	b	b	prep.	in	
@@ -68,7 +68,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156035	ṣr	ṣr/	ṣr	TN	Tyre	
 # KTU 1.176 20						
 156036	ilm	il(I)/m	ỉl (I)	n. m.	god	
-156037	ḥrn	ḥr(I)/+n	ḥr (I)	n. m.	intestine(s)	
+156037	ḥrn	ḥrn/	ḥrn	DN	Ḥôrānu	
 # KTU 1.176 21						
 156038	ylḥm	!y!lḥm(I)[	/l-ḥ-m/ (I)	vb G	to eat	
 156039	ˤm	ˤm(I)	ʕm (I)	prep.	to	
@@ -76,10 +76,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156040	ik	ik	ỉk	interr. functor	how?	
 156041	lilm	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.176 23						
-156042	ydk	yd(I)/+k	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
-156042	ydk	yd(I)/+k=	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
-156042	ydk	yd(II)/+k	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
-156042	ydk	yd(II)/+k=	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
+156042	ydk	yd(I)/+k	yd (I)	n. f.	hand	
+156042	ydk	yd(I)/+k=	yd (I)	n. f.	hand	
+156042	ydk	yd(II)/+k	yd (II)	n. m.	love	
+156042	ydk	yd(II)/+k=	yd (II)	n. m.	love	
 156042	ydk	!y!dk[	d-k(-k)/	vb Gpass	to be pounded	
 156042	ydk	!y=!dk[	d-k(-k)/	vb Gpass	to be pounded	
 156043	l	l(I)	l (I)	prep.	to	
@@ -90,7 +90,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156046	ra	qrʔ[	/q-r-ʔ/	vb G	to call	
 156047	hn	hn	hn	deictic functor/adv.	behold!	
 # KTU 1.176 25						
-156048	lak	lʔk[	/l-ʔ-k/	vb G	to send (a message)	
+156048	lak	l(ʔ&ak[	/l-ʔ-k/	vb G	to send (a message)	
 156049	l	l(I)	l (I)	prep.	to	
 156049	l	l(III)	l (III)	functor	certainly	
 156050	t	/t, /t=				

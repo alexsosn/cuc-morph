@@ -20,7 +20,11 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Sequence, Set, Tuple
 
-SEPARATOR_RE = re.compile(r"^#-+\s*KTU\s+(\d+\.\d+)\s+([IVX]+):(\d+)\s*$", re.IGNORECASE)
+SEPARATOR_RE = re.compile(
+    r"^\s*#\s*(?:-+\s*)?(?:KTU|CAT)\s+(\d+\.\d+)"
+    r"(?:\s+([IVX]+):(\d+)|:(\d+)|\s+(\d+))\s*$",
+    re.IGNORECASE,
+)
 
 LOOKUP_NORMALIZE = str.maketrans(
     {
@@ -128,8 +132,15 @@ def parse_separator_ref(line: str) -> Optional[str]:
     m = SEPARATOR_RE.match(line.strip())
     if not m:
         return None
-    tablet, col, ln = m.group(1), m.group(2).upper(), m.group(3)
-    return f"CAT {tablet} {col}:{ln}"
+    tablet = m.group(1)
+    if m.group(2) and m.group(3):
+        col = m.group(2).upper()
+        ln = m.group(3)
+        return f"CAT {tablet} {col}:{ln}"
+    ln = m.group(4) or m.group(5)
+    if ln:
+        return f"CAT {tablet}:{ln}"
+    return None
 
 
 def tablet_id_from_ref(ref: str) -> str:

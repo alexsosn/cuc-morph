@@ -32,8 +32,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153805	trṯ	trṯ/	trṯ	n. m.	new wine	
 153806	ˤd	ˤd(III)/	ʕd (III)	n. m.	throne	
 153806	ˤd	ˤd(II)/	ʕd (II)	n. m.	time	
-153807	škr	škr(I)[	/š-k-r/ (I)	vb G	to hire out	
 153807	škr	škr(II)[	/š-k-r/ (II)	vb G	to become intoxicated	
+153807	škr	škr(I)[	/š-k-r/ (I)	vb G	to hire out	
 153808	yˤdb	!y!ˤdb[	/ʕ-d-b/	vb G	to leave > to put in	
 153809	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 # KTU 1.114 5						
@@ -46,7 +46,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153812	klb	klb(I)/	klb (I)	n. m.	dog	
 153813	yqṯqṯ	!y!qṯ[	/q-ṯ/	vb R	to drag	
 153814	tḥt	tḥt(I)	tḥt (I)	prep.	under	
-153814	tḥt	tḥt(II)	tḥt (II)	adv.	underneath	
 # KTU 1.114 6						
 153815	ṯlḥnt	ṯlḥn/t=	ṯlḥn	n. m.	table	
 153816	il	il(I)/	ỉl (I)	n. m.	god	
@@ -56,7 +55,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153819	yˤdb	!y!ˤdb[	/ʕ-d-b/	vb G	to leave > to put in	
 153820	lḥm	lḥm(I)[	/l-ḥ-m/ (I)	vb G	to eat	
 153820	lḥm	lḥm/	lḥm	n. m.	grain	
-153820	lḥm	lḥ(I)/	lḥ (I)	n. f. du.	cheek	
+153820	lḥm	lḥ(I)/m	lḥ (I)	n. f. du.	cheek	
 153821	lh	l(I)+h	l (I)	prep.	to	
 153822	w	w	w	conj.	and	
 153823	dl	dl/	dl	adj. m.	poor	
@@ -68,7 +67,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153826	lmn	šlm[	/š-l-m/	vb D	to be well	
 153827	ḫṭm	ḫṭ/	ḫṭ	n.	sceptre	
 153828	tḥt	tḥt(I)	tḥt (I)	prep.	under	
-153828	tḥt	tḥt(II)	tḥt (II)	adv.	underneath	
 153829	ṯlḥn	ṯlḥn/	ṯlḥn	n. m.	table	
 # KTU 1.114 9						
 153830	ˤṯtrt	ˤṯtrt(II)/	ʕṯtrt (II)	TN	ʿṯtrt (II)	
@@ -137,8 +135,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.114 17						
 153875	il	il(I)/	ỉl (I)	n. m.	god	
 153876	hlk	hlk[	/h-l-k/	vb G	to go	
-153876	hlk	hlk(I)/	hlk (I)	n. m.	walk	
-153876	hlk	hlk(II)	hlk (II)	deictic adv. functor	behold!	
 153877	l	l(I)	l (I)	prep.	to	
 153877	l	l(III)	l (III)	functor	certainly	
 153878	bth	bt(II)/+h	bt (II)	n. m.	house	
@@ -150,25 +146,22 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153882	yˤmsn	!y!ˤms[	/ʕ-m-s/	vb G	to load	
 153883	nn	grš[	/g-r-š/	vb G	to eject	
 153883	nn	gr[	/g-r(-y)/	vb G	to attack	
-153884	ṯkmn	ṯkm/+n	ṯkm	n. m.	shoulder	
+153884	ṯkmn	ṯkmn/	ṯkmn	DN/element of DN	Ṯukamuna/Thukamuna/first element of the double-barrelled DN ṯkmn w šnm, origin unknown	
 # KTU 1.114 19						
 153885	w	w	w	conj.	and	
-153886	šnm	šnw[+m(I)	/š-n-w/	vb	to change: a) reflex.	
-153886	šnm	šnw[+m(II)	/š-n-w/	vb	to change: a) reflex.	
+153886	šnm	šnm/	šnm	DN	Šunama/Shunama/second member of the double-barrelled divine name ṯkmn w šnm, origin unknown	
 153887	w	w	w	conj.	and	
 153888	ngšnn	!n!ngš[	/n-g-š/	vb G	to approach	
 153889	ḥby	ḥby(I)/	ḥby (I)	DN	Apis	
-153889	ḥby	ḥby(II)/	ḥby (II)	PN	ḥby (II)	
 # KTU 1.114 20						
 153890	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-153890	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
-153891	qrnm	qrn/	qrn	n. f. du.	horn	
+153891	qrnm	qrn/m	qrn	n. f. du.	horn	
 153892	w	w	w	conj.	and	
 153893	ḏnb	ḏnb/	ḏnb(t)	n. m.	tail	
 153894	ylšn	!y!lš[	/l-š/	vb G	to soil	
 # KTU 1.114 21						
 153895	b	b	b	prep.	in	
-153896	ḫrih	ḫru/+h	ḫrủ	n. m.	faeces	
+153896	ḫrih	ḫru/	ḫrủ	n. m.	faeces	
 153897	w	w	w	conj.	and	
 153898	ṯnth	ṯny[+h	/ṯ-n-y/	vb	to repeat	
 153898	ṯnth	ṯn(II)/+h	ṯn (II)	num./adj.	second	
@@ -226,14 +219,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153925	km	k(IV)	k (IV)	adv.	thus	
 153925	km	km	km	prep./conj./adv.		
 153925	km	+km, +km=	-km			
-153926	trpa	!t!rpʔ[	/r-p-ʔ/	vb G	to heal	
+153926	trpa	!t!rp(ʔ&a[	/r-p-ʔ/	vb G	to heal	
 153927	hn	hn	hn	deictic functor/adv.	behold!	
 153928	nˤr	nˤr(I)/	nʕr (I)	n. m.	boy	
 153928	nˤr	!n!ˤr[	/ʕ-r/	vb G/N	to become agitated	
 # KTU 1.114 29						
 153929	d	d	d	det. or rel. functor	the one(s) of	
 153930	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
-153930	yšt	šty[	/š-t-y/	vb G	to drink	
 153931	l	l(I)	l (I)	prep.	to	
 153931	l	l(III)	l (III)	functor	certainly	
 153932	lṣbh	lṣb/+h	lṣb	n. m.	brow	
@@ -253,5 +245,5 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153942	aḥdh	aḥd/+h	ảḥd	adj. num./adv. num.	one	
 153943	dm	dm(II)/	dm (II)	n. m.	blood	
 153943	dm	dm(I)	dm (I)	functor	since	
-153944	zt	z/t=	zt	n. m.	olive	
+153944	zt	zt/	zt	n. m.	olive	
 153945	ḫrpnt	ḫrpn(t/t	ḫrpnt	n. f.	autumn	
