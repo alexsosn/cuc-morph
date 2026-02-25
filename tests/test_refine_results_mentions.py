@@ -67,6 +67,20 @@ class RefineResultsMentionsTest(unittest.TestCase):
         )
         self.assertEqual(analysis_for_entry("tlsmn", entry), "!t!lsm[n")
 
+    def test_analysis_keeps_preformative_for_contracted_prefixed_verb(self) -> None:
+        entry = Entry(
+            entry_id=4000,
+            lemma="/w-ḥ-y/",
+            hom="",
+            pos="vb",
+            gloss="",
+            wiki_tr="",
+        )
+        self.assertEqual(
+            analysis_for_entry("twtḥ", entry, morph_values=["Gt, prefc."]),
+            "!t!w]t]ḥy[",
+        )
+
     def test_load_entries_falls_back_to_lemma_when_forms_missing(self) -> None:
         with tempfile.TemporaryDirectory() as tmp_dir:
             db_path = Path(tmp_dir) / "dulat.sqlite"

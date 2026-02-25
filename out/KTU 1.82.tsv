@@ -6,7 +6,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149999	xxy	?	?	?	?	DULAT: NOT FOUND
 150000	tnn	tnn(I)/	tnn (I)	DN	“dragon” ym’s primordial ally or double	
 150001	w	w	w	conj.	and	
-150002	ygl	gly[	/g-l-y/	vb G/N	to present oneself	
+150002	ygl	!y!gly[	/g-l-y/	vb G/N	to present oneself	
 150003	w	w	w	conj.	and	
 150004	ynsk	!y!nsk[	/n-s-k/	vb D	to pour (out)	
 150005	ˤdx	?	?	?	?	DULAT: NOT FOUND
@@ -60,7 +60,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150035	k	k(III)	k (III)	Subordinating or completive functor	when	
 150035	k	k(I)	k (I)	prep.	like	
 150035	k	k(II)	k (II)	emph. functor	yes	
-150036	tgwln	!t!gl[ln	/g-l/	vb D	to rejoice	
+150036	tgwln	gl[wln	/g-l/	vb D	to rejoice	
 150037	šntk	šnt(I)/	šnt (I)	n. f.	year	
 150037	šntk	šn/	šn	n. m.	tooth	
 # KTU 1.82 5						
@@ -69,7 +69,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150040	l	l(I)	l (I)	prep.	to	
 150040	l	l(II)	l (II)	adv.	no	
 150040	l	l(III)	l (III)	functor	certainly	
-150041	tššy	!t!]š]nšy[	/n-š-y/	vb Š	to be forgotten	
+150041	tššy	]š]nšy[y	/n-š-y/	vb Š	to be forgotten	
 150042	hm	hm(II)	hm (II)	conj./interr. functor	if	
 150043	tġrm	!t!ġrm[	/ġ-r-m/	vb D	to commit	
 150044	l	l(I)	l (I)	prep.	to	
@@ -111,7 +111,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.82 9						
 150069	xxšir	?	?	?	?	DULAT: NOT FOUND
 150070	bkrm	bkr/m	bkr	n. m. du.	first-born	
-150071	nṭṭt	!n!nṭṭ[	/n-ṭ-ṭ/	vb G	to shake	
+150071	nṭṭt	nṭṭ[t	/n-ṭ-ṭ/	vb G	to shake	
 150072	um	um/	ủm	n. f.	mother	
 150073	ˤlt	ˤl(I)	ʕl (I)	prep.	upon	
 150073	ˤlt	ˤly[t	/ʕ-l-y/	vb G	to go up	
@@ -137,7 +137,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150086	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 150086	ˤnt	ˤnt(II)	ʕnt (II)	adv.	now	
 150087	šzrm	šzrm	šzrm	→		
-150088	tštšḥ	!t!]š]]t]šḥy[ḥ	/š-ḥ-y/	vb Št	?	
+150088	tštšḥ	]š]]t]šḥy[šḥ	/š-ḥ-y/	vb Št	?	
 150089	km	k(III)	k (III)	functor	when	
 150089	km	k(I)	k (I)	prep.	like	
 150089	km	k(IV)	k (IV)	adv.	thus	
@@ -322,7 +322,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150200	xxxxxxy	?	?	?	?	DULAT: NOT FOUND
 150201	mṭnt	mṭn(t/t	mṭnt	n. f.	clay	
 150202	w	w	w	conj.	and	
-150203	tḥ	ḥw(I)[	/ḥ-w/y-y/ (I)	vb G	to live	
+150203	tḥ	!t!ḥw(I)[	/ḥ-w/y-y/ (I)	vb G	to live	
 150204	ṭbt	ṭb(t/t	ṭbt	n. f.	well-being	
 150205	n	~n	-n (I)	encl. morph.		
 150205	n	[n, [n=	-n (II)	suffixed pn. morph. used with vb	me/to me	
@@ -427,4 +427,4 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150269	l	l(I)	l (I)	prep.	to	
 150269	l	l(II)	l (II)	adv.	no	
 150269	l	l(III)	l (III)	functor	certainly	
-150270	tiggn	!t!(ʔ&igg[n	/ʔ-g-g/	vb G	generic mng to moan	
+150270	tiggn	ʔgg[gn	/ʔ-g-g/	vb G	generic mng to moan	

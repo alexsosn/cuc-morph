@@ -242,6 +242,28 @@ def stem_marker_from_morph(morph_values: Sequence[str]) -> str:
     return ""
 
 
+def prefixed_verb_tail(surface_plain: str, stem_plain: str) -> Optional[str]:
+    """Return surface tail for prefixed verbs, preserving weak-form contractions.
+
+    Returns:
+        - tail string after the stem for regular prefixed forms
+        - empty string for contracted forms where the surface truncates stem-final letters
+        - None when the surface does not look like a prefixed realization of the stem
+    """
+    if not surface_plain or not stem_plain:
+        return None
+    if surface_plain[0] not in {"y", "t", "a", "n", "i", "u"}:
+        return None
+    body = surface_plain[1:]
+    if not body:
+        return None
+    if body.startswith(stem_plain):
+        return body[len(stem_plain) :]
+    if stem_plain.startswith(body):
+        return ""
+    return None
+
+
 def analysis_for_entry(surface: str, e: Entry, morph_values: Optional[Sequence[str]] = None) -> str:
     s = normalize_analysis(surface)
     hom = f"({e.hom})" if e.hom else ""
@@ -255,11 +277,9 @@ def analysis_for_entry(surface: str, e: Entry, morph_values: Optional[Sequence[s
             stem_marker = ""
         stem_plain = extract_letters(stem)
         surface_plain = extract_letters(s)
-        if s and s[0] in {"y", "t", "a", "n", "i", "u"} and len(s) >= len(stem) + 1:
-            tail = ""
-            if len(surface_plain) > len(stem_plain) + 1:
-                tail = surface_plain[len(stem_plain) + 1 :]
-            return f"!{s[0]}!{stem_marker}{stem}{hom}[{tail}"
+        prefix_tail = prefixed_verb_tail(surface_plain=surface_plain, stem_plain=stem_plain)
+        if prefix_tail is not None:
+            return f"!{surface_plain[0]}!{stem_marker}{stem}{hom}[{prefix_tail}"
         tail = ""
         if len(surface_plain) > len(stem_plain):
             tail = surface_plain[len(stem_plain) :]

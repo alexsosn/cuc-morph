@@ -17,6 +17,11 @@
   - `tests/test_linter_dulat_form_morph_overrides.py`,
   - `tests/test_refinement_steps.py` (`VerbPosStemFixerTest` alias coverage).
 - Re-ran the full parser pipeline across all tablets (`278` files) with explicit all-target bootstrap+refine+instruction+step passes and regenerated lint reports, so `out/` reflects only reproducible rule-based transformations.
+- Fixed global prefixed-verb preformative detection for contracted weak forms:
+  - `scripts/refine_results_mentions.py::analysis_for_entry` now recognizes prefixed forms by stem/body structural matching instead of raw markerized length checks,
+  - preserves `!preformative!` for contracted prefixed realizations (for example `twtḥ` -> `!t!w]t]ḥy[`).
+- Added regression test coverage for the contracted prefixed case in `tests/test_refine_results_mentions.py`.
+- Re-ran full all-tablet bootstrap+refine+instruction+step pipeline after the fix (`278` targets), regenerating `out/*.tsv` and lint reports from rules only.
 
 - Replaced deletion-style variant pruning with linguistics-based reconstructability fixes driven by DULAT form evidence and Tagging conventions:
   - `FeminineTSingularSplitFixer` now handles feminine surface forms of masculine lemmas (for example `pḥl/` + `pḥlt` -> `pḥl/t`),

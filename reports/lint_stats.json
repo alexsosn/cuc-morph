@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-25T09:20:23.357190+00:00",
+  "generated_at_utc": "2026-02-25T09:29:47.155273+00:00",
   "files_checked": 278,
-  "total_issues": 10386,
-  "fallback_parsed": 244,
+  "total_issues": 10615,
+  "fallback_parsed": 235,
   "by_severity": {
-    "ERROR": 5637,
-    "WARNING": 395,
+    "ERROR": 5831,
+    "WARNING": 430,
     "INFO": 1617
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3524
+      "count": 3573
     },
     {
       "severity": "INFO",
@@ -27,7 +27,12 @@
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for clitic part",
-      "count": 326
+      "count": 337
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ʔ must be preceded by '(' in column 3",
+      "count": 313
     },
     {
       "severity": "ERROR",
@@ -45,19 +50,14 @@
       "count": 184
     },
     {
-      "severity": "ERROR",
-      "problem_type": "ʔ must be preceded by '(' in column 3",
-      "count": 179
+      "severity": "WARNING",
+      "problem_type": "Suffix form without '+'",
+      "count": 163
     },
     {
       "severity": "ERROR",
       "problem_type": "Multiple DULAT candidates for surface",
       "count": 123
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "Suffix form without '+'",
-      "count": 119
     },
     {
       "severity": "ERROR",
@@ -122,11 +122,6 @@
     {
       "severity": "ERROR",
       "problem_type": "Unknown DULAT token in column 4",
-      "count": 7
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "yṯṯb Lexeme parse did not match DULAT; matched by surface form",
       "count": 7
     },
     {
@@ -251,11 +246,6 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "ašld Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ilšnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token",
       "count": 1
     },
@@ -297,11 +287,6 @@
     {
       "severity": "WARNING",
       "problem_type": "yḥwy Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "yṯṯbn Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {

@@ -1,31 +1,31 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `10386`
-- Fallback-parsed issue lines: `244`
+- Total issues: `10615`
+- Fallback-parsed issue lines: `235`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 5637 |
-| WARNING | 395 |
+| ERROR | 5831 |
+| WARNING | 430 |
 | INFO | 1617 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3524 |
+| ERROR | Analysis does not reconstruct to surface | 3573 |
 | INFO | Surface not found in UDB concordance | 1617 |
 | ERROR | POS token not allowed for declared DULAT entry | 439 |
-| ERROR | No DULAT entry found for clitic part | 326 |
+| ERROR | No DULAT entry found for clitic part | 337 |
+| ERROR | ʔ must be preceded by '(' in column 3 | 313 |
 | ERROR | Non-G stem in DULAT requires stem marker | 298 |
 | ERROR | DULAT comment does not match candidates | 257 |
 | ERROR | Deverbal form matches both verb and noun entries in DULAT | 184 |
-| ERROR | ʔ must be preceded by '(' in column 3 | 179 |
+| WARNING | Suffix form without '+' | 163 |
 | ERROR | Multiple DULAT candidates for surface | 123 |
-| WARNING | Suffix form without '+' | 119 |
 | ERROR | Missing DULAT entry token(s) in column 4 | 86 |
 | ERROR | POS ambiguous in DULAT | 80 |
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 73 |
@@ -39,7 +39,6 @@
 | WARNING | ḥwt Lexeme parse did not match DULAT; matched by surface form | 9 |
 | WARNING | ḥtkk Lexeme parse did not match DULAT; matched by surface form | 8 |
 | ERROR | Unknown DULAT token in column 4 | 7 |
-| WARNING | yṯṯb Lexeme parse did not match DULAT; matched by surface form | 7 |
 | ERROR | No DULAT entry found for lexeme/surface | 6 |
 | ERROR | nˤmt Adjective POS gender mismatch for nʕm (I): expected adj. m., got adj. f. | 6 |
 | WARNING | yḥ Lexeme parse did not match DULAT; matched by surface form | 5 |
@@ -64,7 +63,6 @@
 | ERROR | ṣġrthn Adjective POS gender mismatch for ṣġr (I): expected adj. m., got adj. f. | 1 |
 | WARNING | argmnm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | argmny Lexeme parse did not match DULAT; matched by surface form | 1 |
-| WARNING | ašld Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ilšnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token | 1 |
 | WARNING | ksiy Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | midm Lexeme parse did not match DULAT; matched by surface form | 1 |
@@ -74,5 +72,4 @@
 | WARNING | twḥln Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tḥwy Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | yḥwy Lexeme parse did not match DULAT; matched by surface form | 1 |
-| WARNING | yṯṯbn Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ḥw Lexeme parse did not match DULAT; matched by surface form | 1 |
