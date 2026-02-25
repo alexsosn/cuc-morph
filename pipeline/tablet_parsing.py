@@ -51,6 +51,7 @@ from pipeline.steps.surface_reconstructability_fixer import SurfaceReconstructab
 from pipeline.steps.toponym_directional_h import ToponymDirectionalHFixer
 from pipeline.steps.unwrapped_duplicate_pruner import UnwrappedDuplicatePruner
 from pipeline.steps.variant_row_unwrapper import VariantRowUnwrapper
+from pipeline.steps.verb_form_encoding_split import VerbFormEncodingSplitFixer
 from pipeline.steps.verb_form_morph_pos import VerbFormMorphPosFixer
 from pipeline.steps.verb_l_stem_gemination import VerbLStemGeminationFixer
 from pipeline.steps.verb_n_stem_assimilation import VerbNStemAssimilationFixer
@@ -131,6 +132,7 @@ class TabletParsingPipeline:
             PrefixedIIIAlephVerbFixer(),
             VerbPosStemFixer(dulat_db=self.config.dulat_db),
             VerbFormMorphPosFixer(dulat_db=self.config.dulat_db),
+            VerbFormEncodingSplitFixer(),
             VerbLStemGeminationFixer(),
             VerbStemSuffixMarkerFixer(),
             VerbNStemAssimilationFixer(),

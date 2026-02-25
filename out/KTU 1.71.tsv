@@ -1,11 +1,11 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.71 1						
 149555	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
-149555	spr	spr[:d	/s-p-r/	vb G suffc. / vb G inf. / vb D suffc. / vb D inf.	to count	
+149555	spr	spr[:d; spr[/:d	/s-p-r/; /s-p-r/	vb G suffc. / vb D suffc.; vb G inf. / vb D inf.	to count; to count	
 149555	spr	spr(I)/	spr (I)	n. m. sg.	scribe	
 149556	nˤm	nˤm(I)/	nʕm (I)	adj. m. sg.	handsome	
 149556	nˤm	nˤm(II)/	nʕm (II)	n. m. sg.	grace	
-149557	śśwm	śśwm/	s:śs/św	n. m. pl. / n. m. du.	horse	
+149557	śśwm	śśwm/	s:śs/św	n. m. pl. / n. m. pl. / n. m. pl. / n. m. du.	horse	
 # KTU 1.71 2						
 149558	xxxxxxxwxxxxxxx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.71 3						
@@ -21,7 +21,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149563	k	k(I)	k (I)	prep.	like	
 149563	k	k(II)	k (II)	emph. functor	yes	
 149564	ḫr	ḫr(I)/	ḫr (I)	n. m. sg.	cave	
-149565	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl.	horse	
+149565	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl. sg. / n. f. sg. / n. f. pl. pl.	horse	
 149566	mġmġ	mġmġ/	mġmġ	n. m. sg.		
 149567	wbṣqlˤrgz	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.71 6						
@@ -105,7 +105,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149606	baph	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.71 14						
 149607	xxxxxxxx	?	?	?	?	
-149608	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl.	horse	
+149608	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl. sg. / n. f. sg. / n. f. pl. pl.	horse	
 149609	št	št[:pass	/š-t/	vb G suffc. / vb G impv. / vb Gpass suffc.	to place	
 149609	št	š(t(II)/t	št (II)	n. f. sg.	raíz	
 149609	št	š(t(I)/t	št (I)	n. m. sg.	base	
@@ -127,7 +127,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.71 17						
 149617	k	k(III)	k (III)	Subordinating or completive functor	when	
 149618	yraš	rʔš[š	/r-ʔ-š/	vb G prefc.	to toss the head	
-149619	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl.	horse	
+149619	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl. sg. / n. f. sg. / n. f. pl. pl.	horse	
 149620	št	št[:pass	/š-t/	vb G suffc. / vb G impv. / vb Gpass suffc.	to place	
 149620	št	š(t(II)/t	št (II)	n. f. sg.	raíz	
 149620	št	š(t(I)/t	št (I)	n. m. sg.	base	

@@ -4,11 +4,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158964	mlkt	mlk(t/t	mlkt	n. f. sg.	queen	
 158965	umy	um/y	ủm	n. f. sg.	mother	
 # KTU 2.72 2						
-158966	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv. / vb G inf. / vb G pass. ptcpl.	to say	
+158966	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
 158966	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.72 3						
 158967	tḥm	tḥm/	tḥm	n. m. sg.	message	
-158968	mlk	mlk[	/m-l-k/	vb G act. ptcpl.	to reign	
+158968	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 158968	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 158969	bnk	bn(I)/+k	bn (I)	n. m.	son	
 # KTU 2.72 4						
@@ -39,9 +39,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158987	šlm	šlm(I)/	šlm (I)	n. m. sg.	peace	
 158987	šlm	šlm[:d	/š-l-m/	vb G suffc. / vb D suffc.	to be well	
 158987	šlm	šlm(III)/	šlm (III)	adj. m. sg.	pure	
-158988	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv. / vb G inf. / vb G pass. ptcpl.	to say	
+158988	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
 158988	rgm	rgm/	rgm	n. m. sg.	word	
-158989	ṯṯb	]š]ṯb[b	/ṯ-b/	vb Š impv. / vb Š inf.	to return	
+158989	ṯṯb	]š]ṯb[b; ]š]ṯb[/b	/ṯ-b/; /ṯ-b/	vb Š impv.; vb Š inf.	to return; to return	
 158990	ly	l(I)+y	l (I)	prep.	to	
 # KTU 2.72 10						
 158991	lm	l(I)	l (I)	prep.	to	
@@ -53,25 +53,25 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158995	p	p(III)/	p (III)	n. m.	mouth	
 158995	p	p(II)	p (II)	adv.	here	
 158996	mšmˤt	mšmˤ(t/t	mšmʕt	n. f. sg.	(body)guard	
-158997	mlk	mlk[	/m-l-k/	vb G act. ptcpl.	to reign	
+158997	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 158997	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 # KTU 2.72 12						
 158998	inn	in/	ỉn	n. m. sg.	lack of	
 158999	im	im	ỉm	conj.	if	
-159000	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
+159000	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	son	
 159000	bn	bn(II)	bn (II)	prep.	between	
 159000	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 159001	qlt	ql[t	/q-l/	vb G suffc.	to fall (down)	
 # KTU 2.72 13						
 159002	im	im	ỉm	conj.	if	
-159003	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
+159003	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	son	
 159003	bn	bn(II)	bn (II)	prep.	between	
 159003	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 159004	alyy	alyy/	ảlyy	PN	ảlyy	
 159005	im	im	ỉm	conj.	if	
 # KTU 2.72 14						
 159006	mšmˤt	mšmˤ(t/t	mšmʕt	n. f. sg.	(body)guard	
-159007	mlk	mlk[	/m-l-k/	vb G act. ptcpl.	to reign	
+159007	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 159007	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 # KTU 2.72 15						
 159008	w	w	w	conj.	and	
@@ -90,7 +90,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159018	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
 159018	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 159018	bt	bt(III)/	bt (III)	n. m. pl.	length	
-159019	mlk	mlk[	/m-l-k/	vb G act. ptcpl.	to reign	
+159019	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 159019	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 159020	amr	amr(I)/	ảmr (I)	n. m. sg.	order	
 # KTU 2.72 18						
@@ -128,18 +128,18 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159039	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
 159039	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 159039	bt	bt(III)/	bt (III)	n. m. pl.	length	
-159040	mlk	mlk[	/m-l-k/	vb G act. ptcpl.	to reign	
+159040	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 159040	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 159041	amr	amr(I)/	ảmr (I)	n. m. sg.	order	
 # KTU 2.72 25						
 159042	ybnn	!y!bn(y[+n	/b-n-y/	vb	to build	
 159042	ybnn	ybnn/	ybnn	PN	ybnn	
-159043	hlk	hlk[	/h-l-k/	vb G suffc. / vb G act. ptcpl. m.	to go	
+159043	hlk	hlk[; hlk[/	/h-l-k/; /h-l-k/	vb G suffc.; vb G act. ptcpl. m.	to go; to go	
 159043	hlk	hlk(I)/	hlk (I)	n. m. sg.	walk	
 159043	hlk	hlk(II)	hlk (II)	deictic adv. functor	behold!	
 # KTU 2.72 26						
 159044	ˤm	ˤm(I)	ʕm (I)	prep.	to	
-159045	mlk	mlk[	/m-l-k/	vb G act. ptcpl.	to reign	
+159045	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 159045	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 159046	amr	amr(I)/	ảmr (I)	n. m. sg.	order	
 # KTU 2.72 27						
@@ -154,16 +154,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159053	mrdt	mrd(t/t=	mrdt	n. f. pl.	Teppich	
 159054	mlkl	?	?	?	?	DULAT: NOT FOUND
 # KTU 2.72 29						
-159055	mlk	mlk[	/m-l-k/	vb G act. ptcpl.	to reign	
+159055	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 159055	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 159056	amr	amr(I)/	ảmr (I)	n. m. sg.	order	
 159057	w	w	w	conj.	and	
-159058	lqḥ	lqḥ[	/l-q-ḥ/	vb G suffc. / vb G inf.	to get hold of	
+159058	lqḥ	lqḥ[; lqḥ[/	/l-q-ḥ/; /l-q-ḥ/	vb G suffc.; vb G inf.	to get hold of; to get hold of	
 159059	hw	hw	hw	pers. pn.	he	
 # KTU 2.72 30						
 159060	šmn	šmn(I)/	šmn (I)	n. m. sg.	oil	
 159061	b	b	b	prep.	in	
-159062	qrnh	qrn/h	qrn	n. f. sg. / n. f. du.	horn	
+159062	qrnh	qrn/h	qrn	n. f. sg. / n. f. sg. / n. f. sg. / n. f. du.	horn	
 # KTU 2.72 31						
 159063	w	w	w	conj.	and	
 159064	yṣq	!y!(yṣq[	/y-ṣ-q/	vb G suffc.	to pour (out)	
@@ -175,7 +175,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159068	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
 159068	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 159068	bt	bt(III)/	bt (III)	n. m. pl.	length	
-159069	mlk	mlk[	/m-l-k/	vb G act. ptcpl.	to reign	
+159069	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 159069	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 159070	amr	amr(I)/	ảmr (I)	n. m. sg.	order	
 # KTU 2.72 33						
@@ -210,7 +210,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159086	u	u	ủ	conj.	or	
 # KTU 2.72 43						
 159087	my	my(I)	my (I)	pn. interr.	who?	
-159088	ydˤt	!y!(ydˤ(I)[t	/y-d-ʕ/ (I)	vb G suffc. / vb G pass. ptcpl.	to know	
+159088	ydˤt	!y!(ydˤ(I)[t; !y!(ydˤ(I)[/t	/y-d-ʕ/ (I); /y-d-ʕ/ (I)	vb G suffc.; vb G pass. ptcpl.	to know; to know	
 159089	kly	kly[	/k-l-y/	vb G suffc.	to finish	
 159090	b	b	b	prep.	in	
 159091	kpr	kpr(II)/	kpr (II)	n. m. sg.	henna (powder or dye)	

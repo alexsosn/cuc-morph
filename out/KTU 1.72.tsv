@@ -1,11 +1,11 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.72 1						
 149651	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
-149651	spr	spr[:d	/s-p-r/	vb G suffc. / vb G inf. / vb D suffc. / vb D inf.	to count	
+149651	spr	spr[:d; spr[/:d	/s-p-r/; /s-p-r/	vb G suffc. / vb D suffc.; vb G inf. / vb D inf.	to count; to count	
 149651	spr	spr(I)/	spr (I)	n. m. sg.	scribe	
 149652	nˤm	nˤm(I)/	nʕm (I)	adj. m. sg.	handsome	
 149652	nˤm	nˤm(II)/	nʕm (II)	n. m. sg.	grace	
-149653	śśwm	śśwm/	s:śs/św	n. m. pl. / n. m. du.	horse	
+149653	śśwm	śśwm/	s:śs/św	n. m. pl. / n. m. pl. / n. m. pl. / n. m. du.	horse	
 # KTU 1.72 2						
 149654	k	+k	-k (I)			
 149654	k	~k	-k (II)			
@@ -25,7 +25,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149658	k	k(I)	k (I)	prep.	like	
 149658	k	k(II)	k (II)	emph. functor	yes	
 149659	ḫr	ḫr(I)/	ḫr (I)	n. m. sg.	cave	
-149660	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl.	horse	
+149660	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl. sg. / n. f. sg. / n. f. pl. pl.	horse	
 149661	mġmġ	mġmġ/	mġmġ	n. m. sg.		
 # KTU 1.72 7						
 149662	w	w	w	conj.	and	
@@ -51,7 +51,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149671	k	k(I)	k (I)	prep.	like	
 149671	k	k(II)	k (II)	emph. functor	yes	
 149672	ḫr	ḫr(I)/	ḫr (I)	n. m. sg.	cave	
-149673	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl.	horse	
+149673	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl. sg. / n. f. sg. / n. f. pl. pl.	horse	
 149674	ḫndrṯ	ḫndrṯ/	ḫndrṯ	n. m. sg.	apricot tree	
 # KTU 1.72 10						
 149675	w	w	w	conj.	and	
@@ -86,7 +86,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149688	l	l(II)	l (II)	adv.	no	
 149688	l	l(III)	l (III)	functor	certainly	
 149689	yṯtn	!y!ṯ]t]n[	/ṯ-n/	vb Gt prefc.	to urinate	
-149690	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl.	horse	
+149690	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl. sg. / n. f. sg. / n. f. pl. pl.	horse	
 # KTU 1.72 13						
 149691	mss	mss/	mss	n. m. sg.	sap	
 149692	št	št[:pass	/š-t/	vb G suffc. / vb G impv. / vb Gpass suffc.	to place	
@@ -116,7 +116,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149703	k	k(III)	k (III)	Subordinating or completive functor	when	
 149704	yiḫd	ʔḫd[d:pass	/ʔ-ḫ-d(/ḏ)/	vb G prefc. / vb Gpass prefc.	to collect	
 149705	akl	akl(II)/	ảkl (II)	n. m. sg.	grain	
-149706	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl.	horse	
+149706	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl. sg. / n. f. sg. / n. f. pl. pl.	horse	
 # KTU 1.72 17						
 149707	št	št[:pass	/š-t/	vb G suffc. / vb G impv. / vb Gpass suffc.	to place	
 149707	št	š(t(II)/t	št (II)	n. f. sg.	raíz	
@@ -152,7 +152,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149722	k	k(III)	k (III)	Subordinating or completive functor	when	
 149723	yiḫd	ʔḫd[d:pass	/ʔ-ḫ-d(/ḏ)/	vb G prefc. / vb Gpass prefc.	to collect	
 149724	arl	?	?	?	?	DULAT: NOT FOUND
-149725	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl.	horse	
+149725	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl. sg. / n. f. sg. / n. f. pl. pl.	horse	
 # KTU 1.72 22						
 149726	št	št[:pass	/š-t/	vb G suffc. / vb G impv. / vb Gpass suffc.	to place	
 149726	št	š(t(II)/t	št (II)	n. f. sg.	raíz	
@@ -188,7 +188,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.72 25						
 149741	k	k(III)	k (III)	Subordinating or completive functor	when	
 149742	yraš	rʔš[š	/r-ʔ-š/	vb G prefc.	to toss the head	
-149743	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl.	horse	
+149743	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl. sg. / n. f. sg. / n. f. pl. pl.	horse	
 149744	št	št[:pass	/š-t/	vb G suffc. / vb G impv. / vb Gpass suffc.	to place	
 149744	št	š(t(II)/t	št (II)	n. f. sg.	raíz	
 149744	št	š(t(I)/t	št (I)	n. m. sg.	base	
@@ -202,12 +202,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.72 27						
 149750	k	k(III)	k (III)	Subordinating or completive functor	when	
 149751	ygˤr	!y!gˤr[	/g-ʕ-r/	vb G prefc.	to reproach	
-149752	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl.	horse	
+149752	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl. sg. / n. f. sg. / n. f. pl. pl.	horse	
 # KTU 1.72 28						
 149753	dprn	dprn/	dprn	n. m. sg.	juniper	
 # KTU 1.72 29						
 149754	drˤ	d/	d/ḏrʕ	n. m. sg.	seed	
-149754	drˤ	drˤ[	/d-r-ʕ/	vb G inf.	to sow	
+149754	drˤ	drˤ[/	/d-r-ʕ/	vb G inf.	to sow	
 149755		?	?	?	?	
 # KTU 1.72 30						
 149756	tmṯl	tmṯl/	tmṯl	n. m. sg.	equal amount	
@@ -242,7 +242,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.72 36						
 149770	k	k(III)	k (III)	Subordinating or completive functor	when	
 149771	yraš	rʔš[š	/r-ʔ-š/	vb G prefc.	to toss the head	
-149772	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl.	horse	
+149772	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl. sg. / n. f. sg. / n. f. pl. pl.	horse	
 149773	w	w	w	conj.	and	
 149774	ykhp	!y!khp[	/k-h-p/	vb G prefc.	to droop	
 # KTU 1.72 37						

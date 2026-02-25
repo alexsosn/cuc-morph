@@ -6,7 +6,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159764	l	l(I)	l (I)	prep.	to	
 159764	l	l(III)	l (III)	functor	certainly	
 159765	urtn	?	?	?	?	DULAT: NOT FOUND
-159766	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv. / vb G inf. / vb G pass. ptcpl.	to say	
+159766	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
 159766	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.88 3						
 159767	hlny	hlny	hlny	deictic adv. functor	behold	
@@ -22,7 +22,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159771	k	k(II)	k (II)	emph. functor	yes	
 159772	ytnt	!y!(ytn[t	/y-t-n/	vb G suffc.	to give	
 159773	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
-159773	spr	spr[:d	/s-p-r/	vb G suffc. / vb G inf. / vb D suffc. / vb D inf.	to count	
+159773	spr	spr[:d; spr[/:d	/s-p-r/; /s-p-r/	vb G suffc. / vb D suffc.; vb G inf. / vb D inf.	to count; to count	
 159773	spr	spr(I)/	spr (I)	n. m. sg.	scribe	
 # KTU 2.88 5						
 159774	hnd	hnd	hnd	dem. adj./pn.	this	
@@ -38,7 +38,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159782	btt	?	?	?	?	DULAT: NOT FOUND
 159783	w	w	w	conj.	and	
 159784	ˤlm	ˤl(I)	ʕl (I)	prep.	upon	
-159785	sˤt	sˤ[t	/s-ʕ/	vb G pass. ptcpl. pl.	to sweep	
+159785	sˤt	sˤ[/t	/s-ʕ/	vb G pass. ptcpl. pl.	to sweep	
 # KTU 2.88 8						
 159786	adnyh	adn(I)&y/+h	ảdn (I)	n. m.	lord	
 159786	adnyh	adny/	ảdny	TN	ảdny	
@@ -67,13 +67,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.88 13						
 159801	w	w	w	conj.	and	
 159802	kly	kly[	/k-l-y/	vb G suffc.	to finish	
-159803	ˤbd	ˤbd(I)/	ʕbd (I)	n. m. sg. / n. m. pl.	servant	
+159803	ˤbd	ˤbd(I)/	ʕbd (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	servant	
 159804	ly	l(I)+y	l (I)	prep.	to	
 # KTU 2.88 14						
 159805	p	p(I)	p (I)	conj. functor	and	
 159805	p	p(III)/	p (III)	n. m.	mouth	
 159805	p	p(II)	p (II)	adv.	here	
-159806	mġy	mġy[	/m-ġ-y/	vb G suffc. / vb G inf.	to come	
+159806	mġy	mġy[; mġy[/	/m-ġ-y/; /m-ġ-y/	vb G suffc.; vb G inf.	to come; to come	
 159807	ṯh	ṯh/	ṯh	n. m. sg.	neighbour	
 159808	w	w	w	conj.	and	
 159809	arš	arš/	ảrš	DN	a monster (“many-headed”, “whale”)	
@@ -99,7 +99,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159822	w	w	w	conj.	and	
 159823	šqt	?	?	?	?	DULAT: NOT FOUND
 # KTU 2.88 20						
-159824	mrḥṣm	rḥṣ[ṣm:d	/r-ḥ-ṣ/	vb D act. ptcpl. pl.	to wash	
+159824	mrḥṣm	rḥṣ[/ṣm:d	/r-ḥ-ṣ/	vb D act. ptcpl. pl.	to wash	
 159825	bh	b	b	prep.	in	
 # KTU 2.88 21						
 159826	w	w	w	conj.	and	
@@ -113,7 +113,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159832	mnk	mnk	mnk	indef. pn.	whoever	
 159833	ˤd	ˤd(III)/	ʕd (III)	n. m. sg.	throne	
 159833	ˤd	ˤd(II)/	ʕd (II)	n. m. sg.	time	
-159834	mġyy	mġy[y	/m-ġ-y/	vb G inf.	to come	
+159834	mġyy	mġy[/y	/m-ġ-y/	vb G inf.	to come	
 # KTU 2.88 23						
 159835	w	w	w	conj.	and	
 159836	ugrt	ugrt/	ủgrt	TN	Ugarit	
@@ -136,13 +136,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159845	ilak	lʔk[k	/l-ʔ-k/	vb G prefc.	to send (a message)	
 # KTU 2.88 26						
 159846	w	w	w	conj.	and	
-159847	spm	sp/m	sp	n. m. pl. / n. m. du.	bowl	
+159847	spm	sp/m	sp	n. m. pl. / n. m. pl. / n. m. pl. / n. m. du.	bowl	
 159848	lh	l(I)+h	l (I)	prep.	to	
 159849	w	w	w	conj.	and	
 159850	išprm	išpr	ỉšpr		date cake	
 # KTU 2.88 27						
 159851	w	w	w	conj.	and	
-159852	spm	sp/m	sp	n. m. pl. / n. m. du.	bowl	
+159852	spm	sp/m	sp	n. m. pl. / n. m. pl. / n. m. pl. / n. m. du.	bowl	
 159853	ˤdbm	ˤdb[+m(I)	/ʕ-d-b/	vb	to leave > to put in	
 159853	ˤdbm	ˤdb/+m(I)	ʕdb	adj. m.	available	
 # KTU 2.88 28						
@@ -156,7 +156,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159855	l	l(III)	l (III)	functor	certainly	
 159856	ˤrbt	ˤrb(I)[t	/ʕ-r-b/ (I)	vb G suffc.	to enter	
 159857	bk	b	b	prep.	in	
-159857	bk	bky[	/b-k-y/	vb G inf.	to weep	
+159857	bk	bky[/	/b-k-y/	vb G inf.	to weep	
 159857	bk	bk/	bk	n. m. sg.	beaker	
 159858	l	l(I)	l (I)	prep.	to	
 159858	l	l(II)	l (II)	adv.	no	
@@ -164,7 +164,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159859	ˤrbt	ˤrb(I)[t	/ʕ-r-b/ (I)	vb G suffc.	to enter	
 # KTU 2.88 29						
 159860	ˤmy	ˤm(I)+y	ʕm (I)	prep.	to	
-159861	mlk	mlk[	/m-l-k/	vb G act. ptcpl.	to reign	
+159861	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 159861	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 159862	tlak	lʔk[k	/l-ʔ-k/	vb G prefc.	to send (a message)	
 # KTU 2.88 30						
@@ -182,7 +182,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159870	l	l(III)	l (III)	functor	certainly	
 159871	urtn	?	?	?	?	DULAT: NOT FOUND
 159872	iḫy	aḫ(I)/	ảḫ (I)	n. m. sg.	brother (by blood)	
-159873	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv. / vb G inf. / vb G pass. ptcpl.	to say	
+159873	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
 159873	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.88 33						
 159874	yšlm	!y!šlm[	/š-l-m/	vb G prefc.	to be well	
@@ -198,13 +198,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159879	ky	k(III)	k (III)	Subordinating or completive functor	when	
 159879	ky	k(II)	k (II)	emph. functor	yes	
 159879	ky	k(IV)	k (IV)	adv.	thus	
-159880	ḥš	ḥš(I)[	/ḥ-š/ (I)	vb G impv. / vb G inf.	to hurry	
+159880	ḥš	ḥš(I)[; ḥš(I)[/	/ḥ-š/ (I); /ḥ-š/ (I)	vb G impv.; vb G inf.	to hurry; to hurry	
 159881	k	+k	-k (I)			
 159881	k	~k	-k (II)			
 159881	k	k(III)	k (III)	Subordinating or completive functor	when	
 159881	k	k(I)	k (I)	prep.	like	
 159881	k	k(II)	k (II)	emph. functor	yes	
-159882	lak	l(ʔ&ak[	/l-ʔ-k/	vb G impv. / vb G inf.	to send (a message)	
+159882	lak	l(ʔ&ak[; l(ʔ&ak[/	/l-ʔ-k/; /l-ʔ-k/	vb G impv.; vb G inf.	to send (a message); to send (a message)	
 # KTU 2.88 35						
 159883	w	w	w	conj.	and	
 159884	ht	ht	ht	adv.	here	
@@ -221,7 +221,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159893	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
 159893	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 159893	bt	bt(III)/	bt (III)	n. m. pl.	length	
-159894	uḫd	(ʔ&uḫd[:pass	/ʔ-ḫ-d(/ḏ)/	vb G impv. / vb Gpass ptcpl.	to collect	
+159894	uḫd	(ʔ&uḫd[:pass; (ʔ&uḫd[/:pass	/ʔ-ḫ-d(/ḏ)/; /ʔ-ḫ-d(/ḏ)/	vb G impv.; vb Gpass ptcpl.	to collect; to collect	
 159895	ly	l(I)+y	l (I)	prep.	to	
 # KTU 2.88 38						
 159896	w	w	w	conj.	and	

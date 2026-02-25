@@ -243,6 +243,14 @@ class TabletParsingPipelineTest(unittest.TestCase):
             )
             self.assertLess(
                 names.index("verb-pos-stem"),
+                names.index("verb-form-morph-pos"),
+            )
+            self.assertLess(
+                names.index("verb-form-morph-pos"),
+                names.index("verb-form-encoding-split"),
+            )
+            self.assertLess(
+                names.index("verb-form-encoding-split"),
                 names.index("verb-l-stem-gemination"),
             )
             self.assertLess(

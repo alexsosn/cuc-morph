@@ -2,6 +2,17 @@
 
 ## 2026-02-25
 
+- Added verb form encoding split refinement to enforce analysis/POS compatibility:
+  - new step `pipeline/steps/verb_form_encoding_split.py`
+    (`VerbFormEncodingSplitFixer`) splits mixed finite/non-finite verb POS
+    options by encoding (`[` vs `[/`) and normalizes single-class mismatches.
+  - wired in pipeline after `verb-form-morph-pos`.
+  - added tests:
+    - `tests/test_verb_form_encoding_split.py`
+    - `tests/test_tablet_parsing_pipeline.py` (step ordering update).
+  - documented strategy in `docs/verb_form_encoding_split_pipeline.md`.
+  - re-ran full `--include-existing` pipeline to apply globally.
+
 - Added full DULAT form-level POS enrichment for ambiguous exact-surface
   matches across the corpus:
   - new step `pipeline/steps/verb_form_morph_pos.py`

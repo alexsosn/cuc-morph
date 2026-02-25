@@ -1,14 +1,14 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.34 1						
 157575	tḥm	tḥm/	tḥm	n. m. sg.	message	
-157576	mlk	mlk[	/m-l-k/	vb G act. ptcpl.	to reign	
+157576	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 157576	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 # KTU 2.34 2						
 157577	l	l(I)	l (I)	prep.	to	
 157577	l	l(III)	l (III)	functor	certainly	
 157578	ṯryl	ṯryl/	ṯryl	PN	ṯryl	
 157579	umy	um/y	ủm	n. f. sg.	mother	
-157580	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv. / vb G inf. / vb G pass. ptcpl.	to say	
+157580	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
 157580	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.34 3						
 157581	yšlm	!y!šlm[	/š-l-m/	vb G prefc.	to be well	
@@ -49,9 +49,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157600	šlm	šlm(III)/	šlm (III)	adj. m. sg.	pure	
 # KTU 2.34 9						
 157601	w	w	w	conj.	and	
-157602	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv. / vb G inf. / vb G pass. ptcpl.	to say	
+157602	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
 157602	rgm	rgm/	rgm	n. m. sg.	word	
-157603	ṯṯb	]š]ṯb[b	/ṯ-b/	vb Š impv. / vb Š inf.	to return	
+157603	ṯṯb	]š]ṯb[b; ]š]ṯb[/b	/ṯ-b/; /ṯ-b/	vb Š impv.; vb Š inf.	to return; to return	
 157604	ly	l(I)+y	l (I)	prep.	to	
 # KTU 2.34 10						
 157605	w	w	w	conj.	and	
@@ -64,7 +64,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157608	ank	ank	ảnk	pers. pn.	I	
 # KTU 2.34 11						
 157609	aḥš	!(ʔ&a!ḥš(I)[	/ḥ-š/ (I)	vb G prefc.	to hurry	
-157610	mġy	mġy[	/m-ġ-y/	vb G suffc. / vb G inf.	to come	
+157610	mġy	mġy[; mġy[/	/m-ġ-y/; /m-ġ-y/	vb G suffc.; vb G inf.	to come; to come	
 157611	mndˤ	mndˤ	mndʕ	adv.	perhaps	
 # KTU 2.34 12						
 157612	k	+k	-k (I)			
@@ -141,4 +141,4 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.34 33						
 157654	ašṣu	?	?	?	?	DULAT: NOT FOUND
 157655	b	b	b	prep.	in	
-157656	ṣdtk	yld[k	/y-l-d/	vb G inf.	to give birth (to)	
+157656	ṣdtk	yld[/k	/y-l-d/	vb G inf.	to give birth (to)	

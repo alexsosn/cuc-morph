@@ -7,7 +7,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161335	ṣṭqšlm	ṣdqšlm/	ṣdqšlm	PN	ṣdqšlm	
 # KTU 3.12 2						
 161336	b	b	b	prep.	in	
-161337	unṯ	unṯ/	ủnṯ	n. m. sg. / n. m. pl.	obligation	
+161337	unṯ	unṯ/	ủnṯ	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	obligation	
 161338	km	k(III)	k (III)	functor	when	
 161338	km	k(I)	k (I)	prep.	like	
 161338	km	k(IV)	k (IV)	adv.	thus	
@@ -27,7 +27,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161344	ṣṭqšlm	ṣdqšlm/	ṣdqšlm	PN	ṣdqšlm	
 # KTU 3.12 5						
 161345	b	b	b	prep.	in	
-161346	unṯ	unṯ/	ủnṯ	n. m. sg. / n. m. pl.	obligation	
+161346	unṯ	unṯ/	ủnṯ	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	obligation	
 161347	ˤd	ˤd(III)/	ʕd (III)	n. m. sg.	throne	
 161347	ˤd	ˤd(II)/	ʕd (II)	n. m. sg.	time	
 161348	ˤlm	ˤl(I)	ʕl (I)	prep.	upon	
@@ -37,18 +37,18 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161349	mišmn	mišmn/	m(ả/ỉ)šmn	n. m. sg.	seal	
 161350	nqmd	nqmd/	nqmd	PN	Niqmaddu II	
 # KTU 3.12 7						
-161351	mlk	mlk[	/m-l-k/	vb G act. ptcpl.	to reign	
+161351	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 161351	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 161352	ugrt	ugrt/	ủgrt	TN	Ugarit	
 # KTU 3.12 8						
 161353	nqmd	nqmd/	nqmd	PN	Niqmaddu II	
-161354	mlk	mlk[	/m-l-k/	vb G act. ptcpl.	to reign	
+161354	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 161354	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 161355	ugrt	ugrt/	ủgrt	TN	Ugarit	
 # KTU 3.12 9						
 161356	ktb	ktb[	/k-t-b/	vb G suffc.	to write	
 161357	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
-161357	spr	spr[:d	/s-p-r/	vb G suffc. / vb G inf. / vb D suffc. / vb D inf.	to count	
+161357	spr	spr[:d; spr[/:d	/s-p-r/; /s-p-r/	vb G suffc. / vb D suffc.; vb G inf. / vb D inf.	to count; to count	
 161357	spr	spr(I)/	spr (I)	n. m. sg.	scribe	
 161358	hnd	hnd	hnd	dem. adj./pn.	this	
 # KTU 3.12 10						
@@ -67,9 +67,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161367	yqḥ	lqḥ[:pass	/l-q-ḥ/	vb G prefc. / vb Gpass	to get hold of	
 # KTU 3.12 13						
 161368	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
-161368	spr	spr[:d	/s-p-r/	vb G suffc. / vb G inf. / vb D suffc. / vb D inf.	to count	
+161368	spr	spr[:d; spr[/:d	/s-p-r/; /s-p-r/	vb G suffc. / vb D suffc.; vb G inf. / vb D inf.	to count; to count	
 161368	spr	spr(I)/	spr (I)	n. m. sg.	scribe	
-161369	mlk	mlk[	/m-l-k/	vb G act. ptcpl.	to reign	
+161369	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 161369	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 161370	hnd	hnd	hnd	dem. adj./pn.	this	
 # KTU 3.12 14						

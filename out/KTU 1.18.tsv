@@ -103,9 +103,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145221	b	b	b	prep.	in	
 # KTU 1.18 I:19						
 145222	irtk	irt/+k	ỉrt	n. f.	breast	
-145223	dṯ	dṯ[	/d-ṯ/	vb G inf.	to smash	
+145223	dṯ	dṯ[/	/d-ṯ/	vb G inf.	to smash	
 145224	ydṯ	!y!dṯ[	/d-ṯ/	vb G prefc.	to smash	
-145225	mˤqbk	ˤqb[bk:d	/ʕ-q-b/	vb D suffc. / vb D ptcpl.	to accept or perform a property transfer	
+145225	mˤqbk	ˤqb[bk:d; ˤqb[/bk:d	/ʕ-q-b/; /ʕ-q-b/	vb D suffc.; vb D ptcpl.	to accept or perform a property transfer; to accept or perform a property transfer	
 145225	mˤqbk	mˤqb(I)/+k	mʕqb (I)	n. m. sg.	rival	
 145226	xxx	?	?	?	?	
 # KTU 1.18 I:20						
@@ -122,7 +122,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145234	aqht	aqht/	ảqht	PN	Most Obedient	
 145235	ġzr	ġzr/	ġzr	n. m. sg.	lad	
 145236	b	b	b	prep.	in	
-145237	alp	alp(I)/	ảlp (I)	n. m. sg. / n. m. pl.	(head of) cattle	
+145237	alp	alp(I)/	ảlp (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	(head of) cattle	
 145237	alp	alp(II)/	ảlp (II)	num.	(one, a) thousand	
 145238	šd	šd(I)/	šd (I)	n. m. sg.	open field	
 145238	šd	šd(II)/	šd (II)	n. m. sg.	a strip	
@@ -134,7 +134,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145240	kmn	kmn(II)/	kmn (II)	n. m. sg.	cumin	
 145240	kmn	kmn(I)/	kmn (I)	n. m. sg.	acre	
 145241	w	w	w	conj.	and	
-145242	ṣḥq	ṣḥq[	/ṣ-ḥ-q/	vb G suffc. / vb G inf.	to laugh	
+145242	ṣḥq	ṣḥq[; ṣḥq[/	/ṣ-ḥ-q/; /ṣ-ḥ-q/	vb G suffc.; vb G inf.	to laugh; to laugh	
 145243	btlt	btl(t/t	btlt	n. f. sg.	virgin	
 145244	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 # KTU 1.18 I:23						
@@ -143,7 +143,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145246	gh	g/+h	g	n. m. sg.	(loud) voice	
 145247	w	w	w	conj.	and	
 145248	tṣḥ	!t!ṣḥ[	/ṣ-ḥ/	vb G prefc.	to exclaim	
-145249	šmˤ	šmˤ[	/š-m-ʕ/	vb G impv. / vb G inf.	to hear	
+145249	šmˤ	šmˤ[; šmˤ[/	/š-m-ʕ/; /š-m-ʕ/	vb G impv.; vb G inf.	to hear; to hear	
 145249	šmˤ	šmˤ/	šmʕ	n. m. sg.	auditor	
 145250	mˤ	mˤ(I)	mʕ (I)	postpositional emph. adv.	please!	
 145250	mˤ	mˤ(II)	mʕ (II)	adv.	as one	
@@ -185,7 +185,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.18 I:29						
 145279	xxxxxxr	?	?	?	?	DULAT: NOT FOUND
 145280	almdk	!(ʔ&a!lmd[k:d	/l-m-d/	vb D prefc. / vb D suffc.	to teach	
-145281	ṣd	ṣd[	/ṣ-d/	vb G inf.	to hunt	
+145281	ṣd	ṣd[/	/ṣ-d/	vb G inf.	to hunt	
 145281	ṣd	ṣd(I)/	ṣd (I)	n. m. sg.	hunt	
 145282	xxx	?	?	?	?	
 # KTU 1.18 I:30						
@@ -199,7 +199,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145287	ablm	ablm/	ảblm	TN	meadows	
 # KTU 1.18 I:31						
 145288	qrt	qr(t(I)/t	qrt (I)	n. f. sg.	city	
-145289	zbl	zbl(I)/	zbl (I)	n. m. sg. / n. m. pl.	prince	
+145289	zbl	zbl(I)/	zbl (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	prince	
 145289	zbl	zbl(III)/	zbl (III)	n. m. sg.	one carried	
 145290	yrḫ	yrḫ/	yrḫ	n. m. sg.	moon	
 145291	d	d	d	det. or rel. functor	the one(s) of	
@@ -258,7 +258,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.18 IV:7						
 145328	w	w	w	conj.	and	
 145329	tṣḥ	!t!ṣḥ[	/ṣ-ḥ/	vb G prefc.	to exclaim	
-145330	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc. / vb G act. ptcpl.	to sit down	
+145330	yṯb	!y!(yṯb[; !y!(yṯb[/	/y-ṯ-b/; /y-ṯ-b/	vb G prefc. / vb G suffc.; vb G act. ptcpl.	to sit down; to sit down	
 145331	yṭp	?	?	?	?	DULAT: NOT FOUND
 145332	xxxxxxxxxxx	?	?	?	?	
 # KTU 1.18 IV:8						
@@ -268,7 +268,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145335	ablm	ybl[+m(I)	/y-b-l/	vb	to carry	
 145335	ablm	ablm/	ảblm	TN	meadows	
 145336	qrt	qr(t(I)/t	qrt (I)	n. f. sg.	city	
-145337	zbl	zbl(I)/	zbl (I)	n. m. sg. / n. m. pl.	prince	
+145337	zbl	zbl(I)/	zbl (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	prince	
 145337	zbl	zbl(III)/	zbl (III)	n. m. sg.	one carried	
 145338	yrḫ	yrḫ/	yrḫ	n. m. sg.	moon	
 # KTU 1.18 IV:9						
@@ -277,11 +277,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145341	yḥdṯ	!y!ḥdṯ[	/ḥ-d-ṯ/	vb G prefc.	to be	
 145342	yrḫ	yrḫ/	yrḫ	n. m. sg.	moon	
 145343	b	b	b	prep.	in	
-145344	qrn	qrn/	qrn	n. f. sg. / n. f. du.	horn	
+145344	qrn	qrn/	qrn	n. f. sg. / n. f. sg. / n. f. sg. / n. f. du.	horn	
 145345	šmalh	šmal/h	šmảl	adj. m. or n. m. sg.	left	
 # KTU 1.18 IV:10						
 145346	b	b	b	prep.	in	
-145347	qrn	qrn/	qrn	n. f. sg. / n. f. du.	horn	
+145347	qrn	qrn/	qrn	n. f. sg. / n. f. sg. / n. f. sg. / n. f. du.	horn	
 145348	ymnh	ymn(I)/h	ymn (I)	n. m. sg.	right (side)	
 145349	b	b	b	prep.	in	
 145350	anšt	anš(t/t	ảnšt	n. f. sg.	illness	
@@ -298,7 +298,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145357	št	š(t(II)/t	št (II)	n. f. sg.	raíz	
 145357	št	š(t(I)/t	št (I)	n. m. sg.	base	
 # KTU 1.18 IV:12						
-145358	šmˤ	šmˤ[	/š-m-ʕ/	vb G impv. / vb G inf.	to hear	
+145358	šmˤ	šmˤ[; šmˤ[/	/š-m-ʕ/; /š-m-ʕ/	vb G impv.; vb G inf.	to hear; to hear	
 145358	šmˤ	šmˤ/	šmʕ	n. m. sg.	auditor	
 145359	l	l(I)	l (I)	prep.	to	
 145359	l	l(III)	l (III)	functor	certainly	
@@ -309,7 +309,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145364	qšth	qšt/h	qšt	n. m. sg.	bow	
 # KTU 1.18 IV:13						
 145365	tmḫṣh	!t!mḫṣ[h	/m-ḫ-ṣ/	vb G prefc.	to wound	
-145366	qṣˤth	qṣˤt/h	qṣʕt	n. f. sg. / n. f. pl.	arrow(s)	
+145366	qṣˤth	qṣˤt/h	qṣʕt	n. f. sg. / n. f. pl. sg. / n. f. sg. / n. f. pl. pl.	arrow(s)	
 145367	hwt	hw(t(I)/t	hwt (I)	n. f. sg.	word	
 145368	l	l(I)	l (I)	prep.	to	
 145368	l	l(II)	l (II)	adv.	no	
@@ -362,16 +362,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145401	km	k(IV)	k (IV)	adv.	thus	
 145401	km	km	km	prep./conj./adv.		
 145401	km	+km, +km=	-km			
-145402	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc. / vb G act. ptcpl.	to sit down	
+145402	yṯb	!y!(yṯb[; !y!(yṯb[/	/y-ṯ-b/; /y-ṯ-b/	vb G prefc. / vb G suffc.; vb G act. ptcpl.	to sit down; to sit down	
 # KTU 1.18 IV:19						
 145403	l	l(I)	l (I)	prep.	to	
 145403	l	l(II)	l (II)	adv.	no	
 145403	l	l(III)	l (III)	functor	certainly	
-145404	lḥm	lḥm(I)[	/l-ḥ-m/ (I)	vb G suffc. / vb G impv. / vb G inf.	to eat	
+145404	lḥm	lḥm(I)[; lḥm(I)[/	/l-ḥ-m/ (I); /l-ḥ-m/ (I)	vb G suffc. / vb G impv.; vb G inf.	to eat; to eat	
 145404	lḥm	lḥm/	lḥm	n. m. sg.	grain	
 145404	lḥm	lḥ(I)/m	lḥ (I)	n. f. du.	cheek	
 145405	bw	?	?	?	?	DULAT: NOT FOUND
-145406	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
+145406	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	son	
 145406	bn	bn(II)	bn (II)	prep.	between	
 145406	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 145407	dnil	dnil/	dnỉl	PN	Raphaite	
@@ -393,7 +393,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145420	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
 # KTU 1.18 IV:22						
 145421	aqht	aqht/	ảqht	PN	Most Obedient	
-145422	ˤdbk	ˤdb[k	/ʕ-d-b/	vb G suffc. / vb G inf.	to leave > to put in	
+145422	ˤdbk	ˤdb[k; ˤdb[/k	/ʕ-d-b/; /ʕ-d-b/	vb G suffc.; vb G inf.	to leave > to put in; to leave > to put in	
 145423	hlmn	hlm[n	/h-l-m/	vb G prefc. / vb G suffc.	to hit	
 145424	ṯnm	ṯn(I)/	ṯn (I)	num.	two	
 145425	qdqd	qdqd/	qdqd	n. m. sg.	skull	
@@ -464,11 +464,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145466	tˤrth	tˤrt/+h	tʕrt	n. f. sg.	sheath	
 145467	aqht	aqht/	ảqht	PN	Most Obedient	
 145468	km	km	km	prep./conj./adv.		
-145469	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc. / vb G act. ptcpl.	to sit down	
+145469	yṯb	!y!(yṯb[; !y!(yṯb[/	/y-ṯ-b/; /y-ṯ-b/	vb G prefc. / vb G suffc.; vb G act. ptcpl.	to sit down; to sit down	
 145470	l	l(I)	l (I)	prep.	to	
-145471	lḥm	lḥm(I)[	/l-ḥ-m/ (I)	vb G suffc. / vb G impv. / vb G inf.	to eat	
+145471	lḥm	lḥm(I)[; lḥm(I)[/	/l-ḥ-m/ (I); /l-ḥ-m/ (I)	vb G suffc. / vb G impv.; vb G inf.	to eat; to eat	
 # KTU 1.18 IV:30						
-145472	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
+145472	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	son	
 145472	bn	bn(II)	bn (II)	prep.	between	
 145472	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 145473	dnil	dnil/	dnỉl	PN	Raphaite	
@@ -476,7 +476,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145474	l	l(II)	l (II)	adv.	no	
 145474	l	l(III)	l (III)	functor	certainly	
 145475	ṯrm	ṯr(I)/m	ṯr (I)	n. m. pl.	bull	
-145475	ṯrm	ṯrm[	/ṯ-r-m/	vb G inf.	to break	
+145475	ṯrm	ṯrm[/	/ṯ-r-m/	vb G inf.	to break	
 145476	ˤlh	ˤl(I)+h	ʕl (I)	prep.	upon	
 145477	nšrm	nšr/m	nšr	n. m. pl.	bird of prey	
 # KTU 1.18 IV:31						
@@ -484,7 +484,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145479	ybṣr	!y!bṣr(I)[	/b-ṣ-r/ (I)	vb G prefc.	to watch	
 145480	ḥbl	ḥbl(I)/	ḥbl (I)	n. m. sg.	cord	
 145481	diym	diy(I)/m	dỉy (I)	n. m. pl.	hawk	
-145482	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
+145482	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	son	
 145482	bn	bn(II)	bn (II)	prep.	between	
 145482	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 # KTU 1.18 IV:32						
@@ -558,7 +558,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145519	aqht	aqht/	ảqht	PN	Most Obedient	
 145520	w	w	w	conj.	and	
 145521	tbk	!t!bk(y[	/b-k-y/	vb G prefc.	to weep	
-145522	yld	yld/	yld	n. m. sg. / n. m. pl.	son	
+145522	yld	yld/	yld	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	son	
 145523	dnil	dnil/	dnỉl	PN	Raphaite	
 145524	xxx	?	?	?	?	
 # KTU 1.18 IV:40						

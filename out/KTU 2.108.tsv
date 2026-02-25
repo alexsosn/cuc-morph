@@ -14,12 +14,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160628	ank	ank	ảnk	pers. pn.	I	
 160629	inny	in/	ỉn	n. m. sg.	lack of	
 # KTU 2.108 4						
-160630	ydˤt	!y!(ydˤ(I)[t	/y-d-ʕ/ (I)	vb G suffc. / vb G pass. ptcpl.	to know	
+160630	ydˤt	!y!(ydˤ(I)[t; !y!(ydˤ(I)[/t	/y-d-ʕ/ (I); /y-d-ʕ/ (I)	vb G suffc.; vb G pass. ptcpl.	to know; to know	
 160631	kl	kl/	kl	n. m. sg.	totality (of)	
 160632	bnšm	bnš/m	bnš	n. m. pl.	man	
 # KTU 2.108 5						
 160633	dt	d	d	det. or rel. functor	the one(s) of	
-160634	ḫbṯ	ḫbṯ[:pass	/ḫ-b-ṯ/	vb G suffc. / vb Gpass ptcpl. m. sg.	to flee	
+160634	ḫbṯ	ḫbṯ[:pass; ḫbṯ[/:pass	/ḫ-b-ṯ/; /ḫ-b-ṯ/	vb G suffc.; vb Gpass ptcpl. m. sg.	to flee; to flee	
 160634	ḫbṯ	ḫbṯ/	ḫbṯ	adj. m. sg.	emancipated	
 160635	ṯmn	ṯmn(I)/	ṯmn(y) (I)	num.	eight	
 # KTU 2.108 6						
@@ -29,13 +29,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160639	bnšm	bnš/m	bnš	n. m. pl.	man	
 # KTU 2.108 7						
 160640	dt	d	d	det. or rel. functor	the one(s) of	
-160641	ḫbṯ	ḫbṯ[:pass	/ḫ-b-ṯ/	vb G suffc. / vb Gpass ptcpl. m. sg.	to flee	
+160641	ḫbṯ	ḫbṯ[:pass; ḫbṯ[/:pass	/ḫ-b-ṯ/; /ḫ-b-ṯ/	vb G suffc.; vb Gpass ptcpl. m. sg.	to flee; to flee	
 160641	ḫbṯ	ḫbṯ/	ḫbṯ	adj. m. sg.	emancipated	
 160642	ṯmn	ṯmn(I)/	ṯmn(y) (I)	num.	eight	
 # KTU 2.108 8						
 160643	by	b	b	prep.	in	
 160644	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
-160644	spr	spr[:d	/s-p-r/	vb G suffc. / vb G inf. / vb D suffc. / vb D inf.	to count	
+160644	spr	spr[:d; spr[/:d	/s-p-r/; /s-p-r/	vb G suffc. / vb D suffc.; vb G inf. / vb D inf.	to count; to count	
 160644	spr	spr(I)/	spr (I)	n. m. sg.	scribe	
 160645	št	št[:pass	/š-t/	vb G suffc. / vb G impv. / vb Gpass suffc.	to place	
 160645	št	š(t(II)/t	št (II)	n. f. sg.	raíz	
@@ -49,7 +49,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160650	w	w	w	conj.	and	
 160651	ank	ank	ảnk	pers. pn.	I	
 # KTU 2.108 11						
-160652	ydˤt	!y!(ydˤ(I)[t	/y-d-ʕ/ (I)	vb G suffc. / vb G pass. ptcpl.	to know	
+160652	ydˤt	!y!(ydˤ(I)[t; !y!(ydˤ(I)[/t	/y-d-ʕ/ (I); /y-d-ʕ/ (I)	vb G suffc.; vb G pass. ptcpl.	to know; to know	
 160653	d	d	d	det. or rel. functor	the one(s) of	
 160654	ašxn	?	?	?	?	DULAT: NOT FOUND
 # KTU 2.108 12						
@@ -66,7 +66,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.108 14						
 160662	b	b	b	prep.	in	
 160663	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
-160663	spr	spr[:d	/s-p-r/	vb G suffc. / vb G inf. / vb D suffc. / vb D inf.	to count	
+160663	spr	spr[:d; spr[/:d	/s-p-r/; /s-p-r/	vb G suffc. / vb D suffc.; vb G inf. / vb D inf.	to count; to count	
 160663	spr	spr(I)/	spr (I)	n. m. sg.	scribe	
 160664	štnn	št[n+n	/š-t/	vb	to place	
 160664	štnn	št[+nn	/š-t/	vb	to place, ?	
