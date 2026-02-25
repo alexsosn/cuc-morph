@@ -43,7 +43,6 @@ _STEM_SET = set(STEM_ORDER)
 _STEM_RE = re.compile(r"\b(Gt|Dt|Lt|Nt|tD|tL|Št|Gpass|Dpass|Špass|G|D|L|N|R|Š)\b")
 _ENTRY_HOM_RE = re.compile(r"^(.*)\s+\(([IVX]+)\)$")
 _TOKEN_RE = re.compile(r"^(.*?)(?:\s*\(([IVX]+)\))?$")
-_NON_FORM_CHAR_RE = re.compile(r"[^A-Za-zʔʕˤʿḫḥṭṣṯẓġḏšảỉủ]")
 _VERBAL_NOUN_POS_RE = re.compile(r"\bvb\.\s*n\.", flags=re.IGNORECASE)
 _VB_POS_STEM_RE = re.compile(
     r"\bvb\.?\s+(?:Gt|Dt|Lt|Nt|tD|tL|Št|Gpass|Dpass|Špass|G|D|L|N|R|Š)"
@@ -63,7 +62,7 @@ def _normalize_lookup(text: str) -> str:
 
 def _normalize_form(text: str) -> str:
     normalized = _normalize_lookup(text).lower()
-    return _NON_FORM_CHAR_RE.sub("", normalized)
+    return "".join(ch for ch in normalized if ch.isalpha())
 
 
 def _parse_lemma_homonym(lemma: str, homonym: str) -> Tuple[str, str]:

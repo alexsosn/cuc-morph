@@ -50,6 +50,16 @@ class DulatEntryFormsFallbackTest(unittest.TestCase):
         self.assertNotIn("mt", forms)
         self.assertNotIn("tm", forms)
 
+    def test_preserves_non_ascii_letters_without_collapsing_forms(self) -> None:
+        text = "<b>¶ Forms:</b> sg. <i>śśw</i>; f. <i>śśwt</i>; pl. <i>sswm</i>, <i>śśwm</i>."
+        forms = extract_forms_from_entry_text(text)
+        self.assertIn("śśw", forms)
+        self.assertIn("śśwt", forms)
+        self.assertIn("sswm", forms)
+        self.assertIn("śśwm", forms)
+        self.assertNotIn("wm", forms)
+        self.assertNotIn("wt", forms)
+
 
 if __name__ == "__main__":
     unittest.main()

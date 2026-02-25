@@ -19,7 +19,6 @@ _ITALIC_RESTORATION_JOIN_RE = re.compile(
     r"<i>\s*([^<]+?)\s*</i>\s*&lt;\s*<i>\s*([^<]+?)\s*</i>\s*&gt;\s*<i>\s*([^<]+?)\s*</i>",
     flags=re.IGNORECASE,
 )
-_NON_FORM_CHAR_RE = re.compile(r"[^A-Za-zʔʕʿˤḫḥṭṣṯẓġḏšảỉủ-]+")
 _PREV_TOKEN_RE = re.compile(r"([A-Za-z0-9À-ÖØ-öø-ÿŠṮṯḫḥḏẓʿʕʔ/\\-]+\.?)\s*$")
 _ABBR_INDEX = frozenset(
     {
@@ -81,6 +80,11 @@ _ABBR_INDEX = frozenset(
 
 def _normalize_lookup(text: str) -> str:
     return (text or "").strip().translate(LOOKUP_NORMALIZE)
+
+
+def _clean_form_token(token: str) -> str:
+    """Keep Unicode letter inventory intact when normalizing fallback forms."""
+    return "".join(ch for ch in (token or "") if ch.isalpha() or ch == "-")
 
 
 def _merge_word_break_italic_tokens(html_text: str) -> str:
@@ -200,7 +204,7 @@ def extract_forms_from_entry_text(entry_text: str) -> tuple[str, ...]:
         token = token.strip(".,;:!?")
         if not token or " " in token:
             continue
-        cleaned = _NON_FORM_CHAR_RE.sub("", token)
+        cleaned = _clean_form_token(token)
         if not cleaned or len(cleaned) < 2:
             continue
         key = _normalize_lookup(cleaned)

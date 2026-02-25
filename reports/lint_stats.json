@@ -1,23 +1,23 @@
 {
-  "generated_at_utc": "2026-02-25T12:00:20.610858+00:00",
+  "generated_at_utc": "2026-02-25T12:27:17.627995+00:00",
   "files_checked": 278,
-  "total_issues": 10486,
-  "fallback_parsed": 251,
+  "total_issues": 10406,
+  "fallback_parsed": 237,
   "by_severity": {
-    "ERROR": 5590,
-    "WARNING": 443,
-    "INFO": 1623
+    "ERROR": 5526,
+    "WARNING": 432,
+    "INFO": 1624
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3335
+      "count": 3291
     },
     {
       "severity": "INFO",
       "problem_type": "Surface not found in UDB concordance",
-      "count": 1623
+      "count": 1624
     },
     {
       "severity": "ERROR",
@@ -37,7 +37,7 @@
     {
       "severity": "ERROR",
       "problem_type": "DULAT comment does not match candidates",
-      "count": 276
+      "count": 257
     },
     {
       "severity": "ERROR",
@@ -52,7 +52,7 @@
     {
       "severity": "WARNING",
       "problem_type": "Suffix form without '+'",
-      "count": 161
+      "count": 163
     },
     {
       "severity": "ERROR",
@@ -123,11 +123,6 @@
       "severity": "WARNING",
       "problem_type": "ḥwt Lexeme parse did not match DULAT; matched by surface form",
       "count": 9
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ġrm Lexeme parse did not match DULAT; matched by surface form",
-      "count": 8
     },
     {
       "severity": "WARNING",
@@ -226,27 +221,12 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "kn Lexeme parse did not match DULAT; matched by surface form",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
       "problem_type": "ksih Lexeme parse did not match DULAT; matched by surface form",
-      "count": 2
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ġrh Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
       "severity": "ERROR",
       "problem_type": "uḫryt Adjective POS gender mismatch for ủḫry: expected adj. m., got adj. f.",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "wt Noun POS gender mismatch for s:śs/św: expected n. m., got n. f.",
       "count": 1
     },
     {
@@ -322,11 +302,6 @@
     {
       "severity": "WARNING",
       "problem_type": "yḥwy Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ˤpsh Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {

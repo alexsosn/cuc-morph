@@ -2,6 +2,20 @@
 
 ## 2026-02-25
 
+- Fixed fallback `¶ Forms:` token cleaning to preserve non-ASCII transliteration letters (notably `ś`) instead of stripping them into false short keys:
+  - `pipeline/config/dulat_entry_forms_fallback.py` now normalizes fallback form tokens via Unicode-letter filtering (`isalpha`) and keeps `-` where present.
+  - Prevents spurious fallback keys like `wm`/`wt` derived from valid forms such as `śśwm`/`śśwt`.
+- Aligned DULAT exact-surface matching paths to the same Unicode-letter normalization policy:
+  - `pipeline/steps/dulat_gate.py`,
+  - `pipeline/steps/verb_pos_stem.py`.
+- Added regression coverage:
+  - `tests/test_dulat_entry_forms_fallback.py`,
+  - `tests/test_bootstrap_tablet_labeling.py`,
+  - `tests/test_dulat_gate_plurale_tantum.py`.
+- Re-ran full reproducible bootstrap+refine+instruction+steps pipeline across all tablets (`KTU *.tsv`, `278` targets), regenerating `out/*.tsv` and `reports/*`.
+- Verified removal of the incorrect horse mapping for `wm`:
+  - `152680` (`KTU 1.104.tsv`), `149498` (`KTU 1.67.tsv`), `139306` (`KTU 1.4.tsv`) no longer resolve to `s:śs/św`.
+
 - Added provenance comments for redirect-derived reconstructions:
   - new step `pipeline/steps/redirect_reconstruction_comment.py` marks non-`→` rows in redirect ambiguity groups with `Based on DULAT reconstruction.`,
   - wired into pipeline after variant unwrapping so comments are applied per row (not to the whole packed group),

@@ -259,6 +259,29 @@ class BootstrapTabletLabelingTest(unittest.TestCase):
             self.assertNotIn("hm", forms_map)
             self.assertNotIn("nn", forms_map)
 
+    def test_load_dulat_forms_does_not_collapse_non_ascii_form_letters(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            conn = sqlite3.connect(db_path)
+            _init_bootstrap_schema(conn)
+            cur = conn.cursor()
+            entry_text = (
+                "<b>¶ Forms:</b> sg. <i>śśw</i>; f. <i>śśwt</i>; pl. <i>sswm</i>, <i>śśwm</i>."
+            )
+            cur.execute(
+                "INSERT INTO entries(entry_id, lemma, homonym, pos, text) "
+                "VALUES (1, 's:śs/św', '', 'n. m.', ?)",
+                (entry_text,),
+            )
+            cur.execute("INSERT INTO forms(entry_id, text) VALUES (1, 'sswm')")
+            cur.execute("INSERT INTO translations(entry_id, text) VALUES (1, 'horse')")
+            conn.commit()
+            conn.close()
+
+            forms_map = load_dulat_forms(db_path)
+            self.assertIn("sswm", forms_map)
+            self.assertNotIn("wm", forms_map)
+
 
 if __name__ == "__main__":
     unittest.main()

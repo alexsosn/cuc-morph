@@ -29,7 +29,6 @@ _SINGULAR_WORD_RE = re.compile(r"\bsing", flags=re.IGNORECASE)
 _SUFFIX_RE = re.compile(r"\bsuff", flags=re.IGNORECASE)
 _CONSTRUCT_RE = re.compile(r"\bcstr\b", flags=re.IGNORECASE)
 _TOKEN_RE = re.compile(r"^(.*?)(?:\s*\(([IVX]+)\))?$")
-_NON_FORM_CHAR_RE = re.compile(r"[^A-Za-zʔʕˤʿḫḥṭṣṯẓġḏšảỉủ]")
 
 
 @dataclass(frozen=True)
@@ -317,7 +316,7 @@ class DulatMorphGate:
 
     def _normalize_form(self, text: str) -> str:
         normalized = self._normalize(text).lower()
-        return _NON_FORM_CHAR_RE.sub("", normalized)
+        return "".join(ch for ch in normalized if ch.isalpha())
 
     def _parse_declared_token(self, token: str) -> Tuple[str, str]:
         tok = (token or "").strip()
