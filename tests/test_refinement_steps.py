@@ -32,6 +32,7 @@ from pipeline.steps.prefixed_iii_aleph_verb import PrefixedIIIAlephVerbFixer
 from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
 from pipeline.steps.surface_option_propagation import SurfaceOptionPropagationFixer
+from pipeline.steps.verb_l_stem_gemination import VerbLStemGeminationFixer
 from pipeline.steps.verb_n_stem_assimilation import VerbNStemAssimilationFixer
 from pipeline.steps.verb_pos_stem import VerbPosStemFixer
 from pipeline.steps.verb_stem_suffix_marker import VerbStemSuffixMarkerFixer
@@ -607,6 +608,11 @@ class WeakVerbFixerTest(unittest.TestCase):
         row = TabletRow("1", "ttn", "!t!tn[", "/y-t-n/", "vb", "to give", "")
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "!t!(ytn[")
+
+    def test_keeps_assimilated_n_before_hidden_y_in_n_stem(self) -> None:
+        row = TabletRow("1", "yld", "!y!](n]yld[", "/y-l-d/", "vb N", "to give birth", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!y!](n](yld[")
 
     def test_non_weak_initial_verb_unchanged(self) -> None:
         row = TabletRow("1", "tqru", "tqrʔ[", "/q-r-ʔ/", "vb", "to call", "")
@@ -1222,6 +1228,63 @@ class VerbPosStemFixerTest(unittest.TestCase):
             self.assertEqual(result.pos, "vb G")
 
 
+class VerbLStemGeminationFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = VerbLStemGeminationFixer()
+
+    def test_promotes_geminated_l_stem_radical_before_closure(self) -> None:
+        row = TabletRow(
+            "1",
+            "tqṭṭ",
+            "!t!qṭ[ṭ:l",
+            "/q-ṭ(-ṭ)/",
+            "vb L",
+            "to commit transgression",
+            "",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!t!qṭṭ[:l")
+
+    def test_keeps_non_geminate_inflection_tail_after_promotion(self) -> None:
+        row = TabletRow(
+            "1",
+            "tqṭṭn",
+            "!t!qṭ[ṭn:l",
+            "/q-ṭ(-ṭ)/",
+            "vb L",
+            "to commit transgression",
+            "",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!t!qṭṭ[n:l")
+
+    def test_skips_non_l_stem_rows(self) -> None:
+        row = TabletRow(
+            "1",
+            "tqṭṭ",
+            "!t!qṭ[ṭ:d",
+            "/q-ṭ(-ṭ)/",
+            "vb D",
+            "to commit transgression",
+            "",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!t!qṭ[ṭ:d")
+
+    def test_skips_when_stem_already_geminated(self) -> None:
+        row = TabletRow(
+            "1",
+            "tqṭṭ",
+            "!t!qṭṭ[:l",
+            "/q-ṭ(-ṭ)/",
+            "vb L",
+            "to commit transgression",
+            "",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!t!qṭṭ[:l")
+
+
 class VerbStemSuffixMarkerFixerTest(unittest.TestCase):
     def setUp(self) -> None:
         self.fixer = VerbStemSuffixMarkerFixer()
@@ -1270,6 +1333,32 @@ class VerbNStemAssimilationFixerTest(unittest.TestCase):
         row = TabletRow("1", "nṯbr", "nṯbr[", "/ṯ-b-r/", "vb N", "to break", "")
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "nṯbr[")
+
+    def test_collapses_repeated_assimilated_n_insertions(self) -> None:
+        row = TabletRow(
+            "1",
+            "yld",
+            "!y!](n](y](n](y](n](yld[",
+            "/y-l-d/",
+            "vb N",
+            "to give birth",
+            "",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!y!](n](yld[")
+
+    def test_normalizes_semicolon_variants_independently(self) -> None:
+        row = TabletRow(
+            "1",
+            "yld",
+            "!y!yld[; yld[/",
+            "/y-l-d/; /y-l-d/",
+            "vb N; vb N",
+            "to give birth; to give birth",
+            "",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!y!](n]yld[; yld[/")
 
 
 class PrefixedIIIAlephVerbFixerTest(unittest.TestCase):

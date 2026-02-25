@@ -188,6 +188,10 @@ class TabletParsingPipelineTest(unittest.TestCase):
             )
             self.assertLess(
                 names.index("verb-pos-stem"),
+                names.index("verb-l-stem-gemination"),
+            )
+            self.assertLess(
+                names.index("verb-l-stem-gemination"),
                 names.index("verb-stem-suffix-marker"),
             )
             self.assertLess(

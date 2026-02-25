@@ -71,6 +71,7 @@ LETTER_RE = re.compile(r"[A-Za-zʔʕʿˤḫḥṭṣṯẓġḏšảỉủ]")
 _PREFORMATIVE_LETTERS = {"y", "t", "a", "n", "i", "u"}
 _REDIRECT_TARGET_RE = re.compile(r"<i>([^<]+)</i>", re.IGNORECASE)
 _REDIRECT_SLASH_TARGET_RE = re.compile(r"/[A-Za-zʔʕʿˤḫḥṭṣṯẓġḏšảỉủ-]+/")
+_L_STEM_MORPH_RE = re.compile(r"\b(L|Lt|tL)\b")
 
 
 @dataclass(frozen=True)
@@ -396,6 +397,48 @@ def has_prefix_morphology(morph_values: Sequence[str]) -> bool:
     return "prefc." in merged
 
 
+def has_l_stem_morphology(morph_values: Sequence[str]) -> bool:
+    merged = " | ".join(morph_values or [])
+    return bool(_L_STEM_MORPH_RE.search(merged))
+
+
+def maybe_expand_l_stem_terminal_gemination(
+    stem: str,
+    surface_plain: str,
+    stem_marker: str,
+    morph_values: Sequence[str],
+) -> str:
+    """Expand L-stem terminal gemination when surface shows doubled radical.
+
+    DULAT roots like /q-ṭ(-ṭ)/ are normalized to `qṭ` by lemma parsing, while
+    L-stem forms surface as `qṭṭ`. Keep the doubled radical in the stem body
+    (before `[`) instead of leaving it in the tail.
+    """
+    if not has_l_stem_morphology(morph_values):
+        return stem
+    stem_plain = extract_letters(stem)
+    if len(stem_plain) < 2:
+        return stem
+    last_radical = stem_plain[-1]
+    if stem_plain.endswith(last_radical * 2):
+        return stem
+
+    marker_plain = extract_letters(stem_marker)
+    surface_body = (
+        surface_plain[1:]
+        if surface_plain and surface_plain[0] in _PREFORMATIVE_LETTERS
+        else surface_plain
+    )
+    if not surface_body:
+        return stem
+
+    if marker_plain and surface_body.startswith(f"{marker_plain}{stem_plain}{last_radical}"):
+        return stem + last_radical
+    if surface_body.startswith(f"{stem_plain}{last_radical}"):
+        return stem + last_radical
+    return stem
+
+
 def build_prefixed_iii_aleph_analysis(
     surface_plain: str,
     stem: str,
@@ -503,6 +546,12 @@ def analysis_for_entry(
             # Xt stems place the t infix after the first root radical.
             stem = stem[0] + "]t]" + stem[1:]
             stem_marker = ""
+        stem = maybe_expand_l_stem_terminal_gemination(
+            stem=stem,
+            surface_plain=extract_letters(s),
+            stem_marker=stem_marker,
+            morph_values=morph_values or [],
+        )
         stem_plain = extract_letters(stem)
         stem_marker_plain = extract_letters(stem_marker)
         surface_plain = extract_letters(s)

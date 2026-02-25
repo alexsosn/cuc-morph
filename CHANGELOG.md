@@ -2,6 +2,21 @@
 
 ## 2026-02-25
 
+- Fixed weak-initial N-stem interaction between `weak-verb` and `verb-n-stem-assimilation`:
+  - `WeakVerbFixer` now preserves leading `](n]` and inserts `(y` after it (instead of in front of it).
+  - `VerbNStemAssimilationFixer` now normalizes semicolon variants independently and collapses legacy repeated `](n](y` insertions to a single canonical marker.
+  - resolves runaway forms like `!y!](n](y](n](y...` to `!y!](n](y...`.
+
+- Fixed global L-stem geminate placement in verbal analyses:
+  - added `VerbLStemGeminationFixer` (`pipeline/steps/verb_l_stem_gemination.py`) to move stem-internal doubled radicals from tail position to stem position (for example `!t!qṭ[ṭ:l` -> `!t!qṭṭ[:l`).
+  - wired step into pipeline between `verb-pos-stem` and `verb-stem-suffix-marker`.
+- Improved parser generation parity for L stems in `scripts/refine_results_mentions.py`:
+  - `analysis_for_entry` now expands terminal gemination for L-stem forms when the surface explicitly shows the doubled radical.
+- Added regression coverage in:
+  - `tests/test_refine_results_mentions.py`,
+  - `tests/test_refinement_steps.py`,
+  - `tests/test_tablet_parsing_pipeline.py`.
+
 - Fixed legacy prefixed III-aleph verb rows that were encoded without preformative and aleph-contraction markers (e.g. `ḫṭʔ[u`):
   - added `PrefixedIIIAlephVerbFixer` (`pipeline/steps/prefixed_iii_aleph_verb.py`) to normalize to reconstructable form (`!t!ḫṭ(ʔ[&u`) from row-local evidence (`surface`, `POS`, `DULAT` root).
   - wired step into pipeline before verb stem enrichment/assimilation steps.

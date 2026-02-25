@@ -1,15 +1,15 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `9988`
-- Fallback-parsed issue lines: `247`
+- Total issues: `9991`
+- Fallback-parsed issue lines: `250`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
 | ERROR | 5138 |
-| WARNING | 396 |
+| WARNING | 399 |
 | INFO | 1624 |
 
 ### By Problem Type
@@ -42,18 +42,18 @@
 | WARNING | ḥtkk Lexeme parse did not match DULAT; matched by surface form | 8 |
 | ERROR | No DULAT entry found for lexeme/surface | 6 |
 | ERROR | nˤmt Adjective POS gender mismatch for nʕm (I): expected adj. m., got adj. f. | 6 |
-| WARNING | ypˤ Lexeme parse did not match DULAT; matched by surface form | 6 |
+| WARNING | rmm Lexeme parse did not match DULAT; matched by surface form | 6 |
 | WARNING | yḥ Lexeme parse did not match DULAT; matched by surface form | 5 |
 | ERROR | D stem marker present but DULAT lacks D/Dt/tD | 4 |
 | ERROR | l Formula idk l ytn expects l(III) ('truly/certainly') | 4 |
 | ERROR | mtqtm Adjective POS gender mismatch for mtq: expected adj. m., got adj. f. | 4 |
 | WARNING | Feminine plural noun in DULAT should use '/t=' | 4 |
 | WARNING | mud Lexeme parse did not match DULAT; matched by surface form | 4 |
-| WARNING | yld Lexeme parse did not match DULAT; matched by surface form | 4 |
 | ERROR | tmt Adjective POS gender mismatch for tm: expected adj. m., got adj. f. | 3 |
 | WARNING | bˤdn Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | npk Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | tḥ Lexeme parse did not match DULAT; matched by surface form | 3 |
+| WARNING | yknnh Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | śśwm Lexeme parse did not match DULAT; matched by surface form | 3 |
 | ERROR | l Formula tbˤ w l yṯb ilm expects l(II) ('not') | 2 |
 | WARNING | alit Feminine singular noun in DULAT should use '/t' | 2 |
@@ -61,7 +61,9 @@
 | WARNING | aḥwy Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ibˤlt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | ksih Lexeme parse did not match DULAT; matched by surface form | 2 |
-| WARNING | ynpˤ Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | tknn Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | trmm Lexeme parse did not match DULAT; matched by surface form | 2 |
+| WARNING | trmmn Lexeme parse did not match DULAT; matched by surface form | 2 |
 | ERROR | uḫryt Adjective POS gender mismatch for ủḫry: expected adj. m., got adj. f. | 1 |
 | ERROR | Š stem marker present but DULAT lacks Š/Št/Špass | 1 |
 | ERROR | ṣġrt Adjective POS gender mismatch for ṣġr (I): expected adj. m., got adj. f. | 1 |
@@ -77,7 +79,7 @@
 | WARNING | spsg Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | twḥln Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tḥwy Lexeme parse did not match DULAT; matched by surface form | 1 |
-| WARNING | ypˤt Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | tṯbb Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | yḥwy Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ˤpsm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ḥw Lexeme parse did not match DULAT; matched by surface form | 1 |

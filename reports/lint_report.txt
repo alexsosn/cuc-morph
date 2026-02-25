@@ -5263,13 +5263,13 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:76 1355
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:94 135608 ḥtkk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:95 135608 ḥtkk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:247 135711 argmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:388 135805 trmmn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:588 135929 alpm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.100.tsv:628 152115 ysynh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.100.tsv:635 152120 yblnh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.100.tsv:697 152157 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.101.tsv:117 152260 limm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv   Lemma /ḫ-l-q/ has multiple stem markers: :d (ids: 152404; lines: 136); :pass (ids: 152331,152357,152404,152474,152626; lines: 136,241,35,447,75)
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:20 152320 yld Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:74 152356 ḥwt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:83 152364 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:123 152393 ḥwt Lexeme parse did not match DULAT; matched by surface form
@@ -5282,7 +5282,9 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:416 1
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.105.tsv:26 152713 alpm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.106.tsv:54 152835 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv:70 153259 rmm Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv:71 153259 rmm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv:86 153269 rmm Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv:87 153269 rmm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv:195 153337 ḥtkk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv:196 153337 ḥtkk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.109.tsv:22 153361 alpm Plural form missing split ending
@@ -5301,7 +5303,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.119.tsv:90 15
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.119.tsv:212 154283 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.119.tsv:224 154289 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.119.tsv:230 154292 y Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.124.tsv:19 154384 yld Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.124.tsv:78 154418 mlakk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.129.tsv:20 154558 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.133.tsv:33 154741 rumm Plural form missing split ending
@@ -5337,6 +5338,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.162.tsv:89 15
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.162.tsv:89 155299 pamt Feminine plural noun in DULAT should be tagged with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.166.tsv:89 155516 gṯrn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.168.tsv:72 155598 alit Feminine singular noun in DULAT should use '/t'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.169.tsv:187 155722 tṯbb Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.169.tsv:196 155728 kn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv   Lemma /ʕ-š-r/ has multiple stem markers: :d (ids: 144622,144983; lines: 1305,748); :pass (ids: 144622; lines: 748)
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv   Lemma /s-p-r/ has multiple stem markers: :d (ids: 145138; lines: 1538); ]š] (ids: 144970; lines: 1280)
@@ -5348,7 +5350,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:368 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:391 144394 niṣh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:413 144410 niṣk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:487 144460 aṯbn Suffix form without '+'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:503 144470 yld Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:522 144478 aryy Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:525 144480 skn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:542 144492 niṣy Suffix form without '+'
@@ -5375,20 +5376,15 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv:52 145
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv:319 145369 tḥwy Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv:407 145422 ˤdbk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv:469 145453 aḥwy Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv:603 145522 yld Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv   Lemma /b-r-k/ has multiple stem markers: :d (ids: 146517; lines: 1539); :pass (ids: 146519; lines: 1541)
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:135 145612 aḥw Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:154 145624 yḥ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:248 145677 krmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:459 145803 y Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:485 145822 ynpˤ Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:489 145826 ypˤ Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:517 145846 ypˤ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:732 145985 bˤdn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:832 146051 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1170 146285 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1232 146321 y Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1255 146336 ypˤ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1299 146365 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1569 146538 tḥ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1680 146615 y Lexeme parse did not match DULAT; matched by surface form
@@ -5396,11 +5392,12 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1744 1
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1752 146660 ilšnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1766 146671 alpm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv   Lemma /ʕ-n-w/ has multiple stem markers: :d (ids: 136199; lines: 256); :pass (ids: 136286,136570,136644,136913,136914; lines: 1368,1372,377,829,935)
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:14 136034 ypˤt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:206 136165 tphhm Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:384 136292 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:402 136302 argmnk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:663 136465 rmm Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:664 136465 rmm Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:703 136492 trmm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:753 136521 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:1086 136752 ksih Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:1200 136814 ksih Lexeme parse did not match DULAT; matched by surface form
@@ -5442,9 +5439,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:449 137
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:566 137284 limm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:618 137323 argmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:706 137380 bˤdn Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:738 137404 ypˤ Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:852 137474 ypˤ Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:873 137486 ypˤ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1014 137580 limm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1080 137627 rgmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1082 137628 argmn Suffix form without '+'
@@ -5457,12 +5451,14 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1476 13
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1492 137880 dmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1565 137927 klnyy Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1569 137930 klnyy Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1585 137942 yknnh Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.31.tsv:4 147911 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:106 147995 ṯrmnm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:164 148037 pamt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:164 148037 pamt Feminine plural noun in DULAT should be tagged with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv   Lemma /ṯ-b/ has multiple stem markers: :l (ids: 139143,139200; lines: 1640,1735); :r (ids: 139143,139200; lines: 1640,1735); ]š] (ids: 139064; lines: 1508)
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:5 138123 y Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:25 138134 yknnh Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:104 138181 rgmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:106 138182 argmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:142 138207 alpm Plural form missing split ending
@@ -5474,6 +5470,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:337 138
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:384 138365 aryy Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:455 138408 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:945 138706 yphnh Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1087 138801 yknnh Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1268 138906 qlh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1310 138933 tblk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1312 138935 mid Lexeme parse did not match DULAT; matched by surface form
@@ -5484,6 +5481,9 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1454 13
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1456 139030 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1463 139035 yblnn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1538 139084 rmm Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1539 139084 rmm Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1548 139090 trmmn Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1749 139208 trmm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1889 139301 alpm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1942 139337 alpm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2196 139496 qlh Suffix form without '+'
@@ -5496,6 +5496,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:36 148
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:304 148652 pamt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:304 148652 pamt Feminine plural noun in DULAT should be tagged with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:310 148656 rmm Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:311 148656 rmm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:369 148693 pamt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:369 148693 pamt Feminine plural noun in DULAT should be tagged with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:458 148753 pamt Lexeme parse did not match DULAT; matched by surface form
@@ -5513,7 +5514,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:514 140
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:517 140087 mud Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:548 140104 mud Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:551 140106 mud Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:621 140147 ynpˤ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:794 140262 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:853 140297 šlbšn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:887 140321 y Lexeme parse did not match DULAT; matched by surface form
@@ -5564,6 +5564,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:297 15
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:331 151019 pamt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:331 151019 pamt Feminine plural noun in DULAT should be tagged with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:339 151024 rmm Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:340 151024 rmm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:391 151059 pamt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:391 151059 pamt Feminine plural noun in DULAT should be tagged with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv:448 151095 y Lexeme parse did not match DULAT; matched by surface form
@@ -5655,6 +5656,8 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.11.tsv:18 161
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.16.tsv:20 161534 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.20.tsv:3 161648 rišym Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.3.tsv:21 160955 ḫbṯh Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.3.tsv:30 160962 tknn Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.3.tsv:37 160966 tknn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.3.tsv:57 160976 gnˤym Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.33.tsv:30 162156 npk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.33.tsv:50 162169 ˤpsm Lexeme parse did not match DULAT; matched by surface form
@@ -5822,7 +5825,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.102.tsv:43 15229
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv  k Surface k parsed inconsistently: +k (ids: 152508); k(I) (ids: 152508); k(II) (ids: 152508); k(III) (ids: 152310,152508); ~k (ids: 152508)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv  at Surface at parsed inconsistently: a(t(II)/t (ids: 152312); at(I) (ids: 152312); ṯat/ (ids: 152312)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv  abn Surface abn parsed inconsistently: !a!bn[ (ids: 152313); ab/+n (ids: 152313); abn/ (ids: 152313)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv  yld Surface yld parsed inconsistently: !y!](n](y](n](y](n](y](n](yld[ (ids: 152320); yld/ (ids: 152320)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv  yld Surface yld parsed inconsistently: !y!](n](yld[ (ids: 152320); yld/ (ids: 152320)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv  gm Surface gm parsed inconsistently: g/ (ids: 152323); gm(II) (ids: 152323)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv  apm Surface apm parsed inconsistently: ap(I)+m(I) (ids: 152340,152454); ap(I)+m(II) (ids: 152454); ap(II)/+m(I) (ids: 152340,152454); ap(II)/+m(II) (ids: 152340)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv  mt Surface mt parsed inconsistently: mt(I)/ (ids: 152342); mt(II)/ (ids: 152342); mt[ (ids: 152342)
@@ -5996,7 +5999,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv  tp Surf
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv  rqdm Surface rqdm parsed inconsistently: rqd/+m(I) (ids: 153241); rqd/+m(II) (ids: 153241)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv  tšt Surface tšt parsed inconsistently: !t!št(y[ (ids: 153249); !t!št[ (ids: 153249)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv  ˤnt Surface ˤnt parsed inconsistently: ˤn(I)/t= (ids: 153250,153263); ˤn(t(I)/t (ids: 153250,153263); ˤnt(II) (ids: 153250,153263)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv  rmm Surface rmm parsed inconsistently: rm(I)/ (ids: 153259,153269); rm[m:l (ids: 153259,153269)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv  rmm Surface rmm parsed inconsistently: rm(I)/ (ids: 153259,153269); rmm[:l (ids: 153259,153269)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv  di Surface di parsed inconsistently: dʔy[ (ids: 153264); ndʔ[ (ids: 153264)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv  aklt Surface aklt parsed inconsistently: (ʔ&akl[t (ids: 153270); akl(t(I)/t (ids: 153270); akl(t(II)/t (ids: 153270)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv  ṣd Surface ṣd parsed inconsistently: ṣd(I)/ (ids: 153287); ṣd[ (ids: 153287)
@@ -6318,7 +6321,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.122.tsv:20 15436
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.122.tsv:24 154368 lṯkmn Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.122.tsv:25 154369 wšnm Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.124.tsv  k Surface k parsed inconsistently: +k (ids: 154374); k(I) (ids: 154374); k(II) (ids: 154374); k(III) (ids: 154374); ~k (ids: 154374)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.124.tsv  yld Surface yld parsed inconsistently: !y!](n](y](n](y](n](y](n](yld[ (ids: 154384); yld/ (ids: 154384)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.124.tsv  yld Surface yld parsed inconsistently: !y!](n](yld[ (ids: 154384); yld/ (ids: 154384)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.124.tsv  nn Surface nn parsed inconsistently: gr[ (ids: 154387,154425); grš[ (ids: 154387,154425)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.124.tsv  mr Surface mr parsed inconsistently: mr(I)/ (ids: 154391,154399,154436); mr(II)/ (ids: 154391,154399,154436); mr(IV)/ (ids: 154391,154399,154436)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.124.tsv  št Surface št parsed inconsistently: š(t(II)/t (ids: 154402,154409); št(I)/ (ids: 154402,154409); št[:pass (ids: 154394,154402,154409)
@@ -7263,7 +7266,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv  aph Surf
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv  k Surface k parsed inconsistently: +k (ids: 145459); k(I) (ids: 145459); k(II) (ids: 145459); k(III) (ids: 145459); ~k (ids: 145459)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv  ṣmt Surface ṣmt parsed inconsistently: ṣmt/ (ids: 145516); ṣmt[:d (ids: 145516)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv  mhrh Surface mhrh parsed inconsistently: mhr(I)/h (ids: 145517); mhr(II)/+h (ids: 145517); mhr(III)/+h (ids: 145517)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv  yld Surface yld parsed inconsistently: !y!](n](y](n](y](n](y](n](yld[ (ids: 145522); yld/ (ids: 145522)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv  yld Surface yld parsed inconsistently: !y!](n](yld[ (ids: 145522); yld/ (ids: 145522)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv  abn Surface abn parsed inconsistently: !a!bn(y[ (ids: 145525); ab/+n (ids: 145525); abn/ (ids: 145525)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv  mḫṣk Surface mḫṣk parsed inconsistently: mḫṣ(II)/+k (ids: 145540); mḫṣ[+k (ids: 145540)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.18.tsv:10 145148 aṯbr Surface not found in UDB concordance
@@ -7510,7 +7513,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv  rḥq Sur
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv  ṯn Surface ṯn parsed inconsistently: ṯn(I)/ (ids: 136420); ṯn(II)/ (ids: 136420); ṯn(III)/ (ids: 136420)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv  ṯlṯ Surface ṯlṯ parsed inconsistently: ṯlṯ(I)/ (ids: 136425); ṯlṯ(II)/ (ids: 136425); ṯlṯ(V)/ (ids: 136425)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv  qrb Surface qrb parsed inconsistently: qrb/ (ids: 136436); qrb[ (ids: 136436)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv  rmm Surface rmm parsed inconsistently: rm(I)/ (ids: 136465); rm[m:l (ids: 136465)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv  rmm Surface rmm parsed inconsistently: rm(I)/ (ids: 136465); rmm[:l (ids: 136465)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv  tbn Surface tbn parsed inconsistently: !t!bn(y[ (ids: 136475); !t!bn[ (ids: 136475)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv  alp Surface alp parsed inconsistently: alp(I)/ (ids: 136494); alp(II)/ (ids: 136494)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv  šd Surface šd parsed inconsistently: šd(I)/ (ids: 136495,136505); šd(II)/ (ids: 136495,136505); šdy[ (ids: 136495,136505)
@@ -8006,7 +8009,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  šd Surfa
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  ġlmm Surface ġlmm parsed inconsistently: ġlm/+m(I) (ids: 139048); ġlm/+m(II) (ids: 139048)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  yṯṯb Surface yṯṯb parsed inconsistently: ]š]yṯb[b (ids: 139064); ]š]ṯb[ṯb (ids: 139064)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  ˤd Surface ˤd parsed inconsistently: ˤd(II)/ (ids: 139069,139357); ˤd(III)/ (ids: 139069,139357)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  rmm Surface rmm parsed inconsistently: rm(I)/ (ids: 139084); rm[m:l (ids: 139084)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  rmm Surface rmm parsed inconsistently: rm(I)/ (ids: 139084); rmm[:l (ids: 139084)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  hklm Surface hklm parsed inconsistently: hkl/+m(I) (ids: 139085,139124,139137,139164,139177,139231,139242,139252,139262,139273,139491); hkl/+m(II) (ids: 139085,139124,139137,139164,139177,139231,139242,139252,139262,139273,139491)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  tšt Surface tšt parsed inconsistently: !t!št(y[ (ids: 139170); !t!št[ (ids: 139130,139170,139225)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  tṯb Surface tṯb parsed inconsistently: !t!ṯb[:l:r (ids: 139143,139200); tṯb/ (ids: 139143,139200); yṯb[ (ids: 139143,139200)
@@ -8143,7 +8146,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv  ˤšr Su
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv  ġlmt Surface ġlmt parsed inconsistently: ġlm(t(I)/t (ids: 148589); ġlm(t(II)/t (ids: 148589)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv  p Surface p parsed inconsistently: p(I) (ids: 148611,148666); p(II) (ids: 148611,148666); p(III)/ (ids: 148611,148666)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv  btm Surface btm parsed inconsistently: bt(I)/m (ids: 148655); bt(II)/m (ids: 148655)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv  rmm Surface rmm parsed inconsistently: rm(I)/ (ids: 148656); rm[m:l (ids: 148656)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv  rmm Surface rmm parsed inconsistently: rm(I)/ (ids: 148656); rmm[:l (ids: 148656)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv  ks Surface ks parsed inconsistently: ks(I)/ (ids: 148665); ks/ (ids: 148665)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv  kbd Surface kbd parsed inconsistently: kbd(I)/ (ids: 148667); kbd(II)/ (ids: 148667); kbd[:d (ids: 148667)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv  dbḥ Surface dbḥ parsed inconsistently: dbḥ/ (ids: 148669); dbḥ[ (ids: 148669)
@@ -8866,7 +8869,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv  ˤšr Su
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv  ġlmt Surface ġlmt parsed inconsistently: ġlm(t(I)/t (ids: 150950); ġlm(t(II)/t (ids: 150950)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv  n Surface n parsed inconsistently:  (ids: 150985); +n, +n= (ids: 150985); [n, [n= (ids: 150985); ~n (ids: 150985)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv  btm Surface btm parsed inconsistently: bt(I)/m (ids: 151023); bt(II)/m (ids: 151023)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv  rmm Surface rmm parsed inconsistently: rm(I)/ (ids: 151024); rm[m:l (ids: 151024)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv  rmm Surface rmm parsed inconsistently: rm(I)/ (ids: 151024); rmm[:l (ids: 151024)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv  ˤly Surface ˤly parsed inconsistently: ˤly(I)/ (ids: 151026); ˤly(II)/ (ids: 151026); ˤly[ (ids: 151026)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv  kbd Surface kbd parsed inconsistently: kbd(I)/ (ids: 151034); kbd(II)/ (ids: 151034); kbd[:d (ids: 151034)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.87.tsv  rm Surface rm parsed inconsistently: rm(I)/ (ids: 151058); rm(II)/ (ids: 151058); rm[ (ids: 151058)
@@ -10109,4 +10112,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:18 161199 
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:19 161200 ag Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:21 161201 rškm Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:61 161222 dˤmnk Surface not found in UDB concordance
-Total issues: 9988
+Total issues: 9991

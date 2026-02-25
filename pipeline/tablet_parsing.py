@@ -50,6 +50,7 @@ from pipeline.steps.surface_reconstructability_fixer import SurfaceReconstructab
 from pipeline.steps.toponym_directional_h import ToponymDirectionalHFixer
 from pipeline.steps.unwrapped_duplicate_pruner import UnwrappedDuplicatePruner
 from pipeline.steps.variant_row_unwrapper import VariantRowUnwrapper
+from pipeline.steps.verb_l_stem_gemination import VerbLStemGeminationFixer
 from pipeline.steps.verb_n_stem_assimilation import VerbNStemAssimilationFixer
 from pipeline.steps.verb_pos_stem import VerbPosStemFixer
 from pipeline.steps.verb_stem_suffix_marker import VerbStemSuffixMarkerFixer
@@ -126,6 +127,7 @@ class TabletParsingPipeline:
             YdkContextDisambiguator(),
             PrefixedIIIAlephVerbFixer(),
             VerbPosStemFixer(dulat_db=self.config.dulat_db),
+            VerbLStemGeminationFixer(),
             VerbStemSuffixMarkerFixer(),
             VerbNStemAssimilationFixer(),
             # Keep schema pass last so any content-changing steps still end in

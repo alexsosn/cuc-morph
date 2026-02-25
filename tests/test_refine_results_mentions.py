@@ -178,6 +178,24 @@ class RefineResultsMentionsTest(unittest.TestCase):
             "!t!ḫṭ(ʔ[&u",
         )
 
+    def test_analysis_keeps_l_stem_geminate_before_verbal_closure(self) -> None:
+        entry = Entry(
+            entry_id=5002,
+            lemma="/q-ṭ(-ṭ)/",
+            hom="",
+            pos="vb",
+            gloss="",
+            wiki_tr="",
+        )
+        self.assertEqual(
+            analysis_for_entry("tqṭṭ", entry, morph_values=["L, prefc."]),
+            "!t!qṭṭ[",
+        )
+        self.assertEqual(
+            analysis_for_entry("tqṭṭn", entry, morph_values=["L, prefc."]),
+            "!t!qṭṭ[n",
+        )
+
     def test_load_entries_falls_back_to_lemma_when_forms_missing(self) -> None:
         with tempfile.TemporaryDirectory() as tmp_dir:
             db_path = Path(tmp_dir) / "dulat.sqlite"
