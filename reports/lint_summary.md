@@ -1,49 +1,49 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `10247`
-- Fallback-parsed issue lines: `273`
+- Total issues: `9709`
+- Fallback-parsed issue lines: `246`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 5156 |
-| WARNING | 398 |
-| INFO | 1631 |
+| ERROR | 4804 |
+| WARNING | 379 |
+| INFO | 1628 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3199 |
-| INFO | Surface not found in UDB concordance | 1631 |
-| ERROR | POS token not allowed for declared DULAT entry | 439 |
-| ERROR | No DULAT entry found for clitic part | 316 |
-| ERROR | DULAT comment does not match candidates | 258 |
-| ERROR | Deverbal form matches both verb and noun entries in DULAT | 209 |
-| ERROR | ʔ must be preceded by '(' in column 3 | 183 |
+| ERROR | Analysis does not reconstruct to surface | 2997 |
+| INFO | Surface not found in UDB concordance | 1628 |
+| ERROR | POS token not allowed for declared DULAT entry | 394 |
+| ERROR | No DULAT entry found for clitic part | 280 |
+| ERROR | DULAT comment does not match candidates | 223 |
+| ERROR | Deverbal form matches both verb and noun entries in DULAT | 199 |
+| ERROR | ʔ must be preceded by '(' in column 3 | 180 |
 | ERROR | Multiple DULAT candidates for surface | 123 |
-| WARNING | Suffix form without '+' | 117 |
+| WARNING | Suffix form without '+' | 113 |
 | ERROR | Missing DULAT entry token(s) in column 4 | 86 |
 | ERROR | POS ambiguous in DULAT | 80 |
-| ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 73 |
-| WARNING | y Lexeme parse did not match DULAT; matched by surface form | 72 |
-| WARNING | Plural form missing split ending | 71 |
+| ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 70 |
+| WARNING | Plural form missing split ending | 66 |
+| WARNING | y Lexeme parse did not match DULAT; matched by surface form | 63 |
 | ERROR | Each reconstructed letter must be prefixed by '(' | 52 |
 | ERROR | Non-G stem in DULAT requires stem marker | 33 |
-| ERROR | rbt Adjective POS gender mismatch for rb (I): expected adj. m., got adj. f. | 33 |
-| ERROR | bˤl In KTU 1.*, remove bʕl(I) 'labourer' and keep bʕl (II) /b-ʕ-l/ readings | 24 |
+| ERROR | rbt Adjective POS gender mismatch for rb (I): expected adj. m., got adj. f. | 29 |
 | WARNING | mid Lexeme parse did not match DULAT; matched by surface form | 21 |
+| ERROR | bˤl In KTU 1.*, remove bʕl(I) 'labourer' and keep bʕl (II) /b-ʕ-l/ readings | 14 |
 | ERROR | No DULAT entry found for lexeme/surface | 13 |
 | WARNING | Feminine plural noun in DULAT should be tagged with '/t=' | 12 |
 | WARNING | pamt Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | skn Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | ḥwt Lexeme parse did not match DULAT; matched by surface form | 9 |
 | ERROR | Unknown DULAT token in column 4 | 8 |
-| WARNING | ḥtkk Lexeme parse did not match DULAT; matched by surface form | 8 |
-| ERROR | nˤmt Adjective POS gender mismatch for nʕm (I): expected adj. m., got adj. f. | 6 |
+| WARNING | ḥtkk Lexeme parse did not match DULAT; matched by surface form | 7 |
 | WARNING | rmm Lexeme parse did not match DULAT; matched by surface form | 6 |
+| ERROR | nˤmt Adjective POS gender mismatch for nʕm (I): expected adj. m., got adj. f. | 5 |
 | WARNING | yḥ Lexeme parse did not match DULAT; matched by surface form | 5 |
 | ERROR | D stem marker present but DULAT lacks D/Dt/tD | 4 |
 | ERROR | l Formula idk l ytn expects l(III) ('truly/certainly') | 4 |
@@ -56,7 +56,6 @@
 | WARNING | tḥ Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | yknnh Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | śśwm Lexeme parse did not match DULAT; matched by surface form | 3 |
-| ERROR | l Formula tbˤ w l yṯb ilm expects l(II) ('not') | 2 |
 | WARNING | alit Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | aḥw Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | aḥwy Lexeme parse did not match DULAT; matched by surface form | 2 |
@@ -65,10 +64,9 @@
 | WARNING | tknn Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | trmm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | trmmn Lexeme parse did not match DULAT; matched by surface form | 2 |
+| ERROR | l Formula tbˤ w l yṯb ilm expects l(II) ('not') | 1 |
 | ERROR | uḫryt Adjective POS gender mismatch for ủḫry: expected adj. m., got adj. f. | 1 |
-| ERROR | Š stem marker present but DULAT lacks Š/Št/Špass | 1 |
 | ERROR | ṣġrt Adjective POS gender mismatch for ṣġr (I): expected adj. m., got adj. f. | 1 |
-| ERROR | ṣġrthn Adjective POS gender mismatch for ṣġr (I): expected adj. m., got adj. f. | 1 |
 | WARNING | anna III-aleph noun/adjective should encode lexeme-final case vowel as '(u\|i\|a' and inflection as '/&u\|&i\|&a' | 1 |
 | WARNING | argmnm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | argmny Lexeme parse did not match DULAT; matched by surface form | 1 |

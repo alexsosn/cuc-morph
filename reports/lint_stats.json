@@ -1,48 +1,48 @@
 {
-  "generated_at_utc": "2026-02-25T14:23:31.442878+00:00",
+  "generated_at_utc": "2026-02-25T14:32:18.422931+00:00",
   "files_checked": 278,
-  "total_issues": 10247,
-  "fallback_parsed": 273,
+  "total_issues": 9709,
+  "fallback_parsed": 246,
   "by_severity": {
-    "ERROR": 5156,
-    "WARNING": 398,
-    "INFO": 1631
+    "ERROR": 4804,
+    "WARNING": 379,
+    "INFO": 1628
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3199
+      "count": 2997
     },
     {
       "severity": "INFO",
       "problem_type": "Surface not found in UDB concordance",
-      "count": 1631
+      "count": 1628
     },
     {
       "severity": "ERROR",
       "problem_type": "POS token not allowed for declared DULAT entry",
-      "count": 439
+      "count": 394
     },
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for clitic part",
-      "count": 316
+      "count": 280
     },
     {
       "severity": "ERROR",
       "problem_type": "DULAT comment does not match candidates",
-      "count": 258
+      "count": 223
     },
     {
       "severity": "ERROR",
       "problem_type": "Deverbal form matches both verb and noun entries in DULAT",
-      "count": 209
+      "count": 199
     },
     {
       "severity": "ERROR",
       "problem_type": "ʔ must be preceded by '(' in column 3",
-      "count": 183
+      "count": 180
     },
     {
       "severity": "ERROR",
@@ -52,7 +52,7 @@
     {
       "severity": "WARNING",
       "problem_type": "Suffix form without '+'",
-      "count": 117
+      "count": 113
     },
     {
       "severity": "ERROR",
@@ -67,17 +67,17 @@
     {
       "severity": "ERROR",
       "problem_type": "Suffixed pronominal form in DULAT should use '+' in analysis",
-      "count": 73
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "y Lexeme parse did not match DULAT; matched by surface form",
-      "count": 72
+      "count": 70
     },
     {
       "severity": "WARNING",
       "problem_type": "Plural form missing split ending",
-      "count": 71
+      "count": 66
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "y Lexeme parse did not match DULAT; matched by surface form",
+      "count": 63
     },
     {
       "severity": "ERROR",
@@ -92,17 +92,17 @@
     {
       "severity": "ERROR",
       "problem_type": "rbt Adjective POS gender mismatch for rb (I): expected adj. m., got adj. f.",
-      "count": 33
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "bˤl In KTU 1.*, remove bʕl(I) 'labourer' and keep bʕl (II) /b-ʕ-l/ readings",
-      "count": 24
+      "count": 29
     },
     {
       "severity": "WARNING",
       "problem_type": "mid Lexeme parse did not match DULAT; matched by surface form",
       "count": 21
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "bˤl In KTU 1.*, remove bʕl(I) 'labourer' and keep bʕl (II) /b-ʕ-l/ readings",
+      "count": 14
     },
     {
       "severity": "ERROR",
@@ -137,17 +137,17 @@
     {
       "severity": "WARNING",
       "problem_type": "ḥtkk Lexeme parse did not match DULAT; matched by surface form",
-      "count": 8
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nˤmt Adjective POS gender mismatch for nʕm (I): expected adj. m., got adj. f.",
-      "count": 6
+      "count": 7
     },
     {
       "severity": "WARNING",
       "problem_type": "rmm Lexeme parse did not match DULAT; matched by surface form",
       "count": 6
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "nˤmt Adjective POS gender mismatch for nʕm (I): expected adj. m., got adj. f.",
+      "count": 5
     },
     {
       "severity": "WARNING",
@@ -210,11 +210,6 @@
       "count": 3
     },
     {
-      "severity": "ERROR",
-      "problem_type": "l Formula tbˤ w l yṯb ilm expects l(II) ('not')",
-      "count": 2
-    },
-    {
       "severity": "WARNING",
       "problem_type": "alit Feminine singular noun in DULAT should use '/t'",
       "count": 2
@@ -256,22 +251,17 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "l Formula tbˤ w l yṯb ilm expects l(II) ('not')",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "uḫryt Adjective POS gender mismatch for ủḫry: expected adj. m., got adj. f.",
       "count": 1
     },
     {
       "severity": "ERROR",
-      "problem_type": "Š stem marker present but DULAT lacks Š/Št/Špass",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "ṣġrt Adjective POS gender mismatch for ṣġr (I): expected adj. m., got adj. f.",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṣġrthn Adjective POS gender mismatch for ṣġr (I): expected adj. m., got adj. f.",
       "count": 1
     },
     {

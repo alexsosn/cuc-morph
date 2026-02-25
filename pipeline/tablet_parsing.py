@@ -11,6 +11,7 @@ from pipeline.config.surface_option_allowlist import SURFACE_OPTION_PROPAGATION_
 from pipeline.dulat_attestation_index import DulatAttestationIndex
 from pipeline.instruction_refiner import InstructionRefiner
 from pipeline.steps.aleph_prefix import AlephPrefixFixer
+from pipeline.steps.attestation_reference_disambiguator import AttestationReferenceDisambiguator
 from pipeline.steps.attestation_sort import AttestationSortFixer
 from pipeline.steps.baal_labourer_ktu1 import BaalLabourerKtu1Fixer
 from pipeline.steps.baal_plural import BaalPluralGodListFixer
@@ -118,6 +119,7 @@ class TabletParsingPipeline:
             VariantRowUnwrapper(),
             RedirectReconstructionCommentFixer(),
             UnwrappedDuplicatePruner(),
+            AttestationReferenceDisambiguator(index=self.attestation_index),
             LNegationVerbContextPruner(),
             LFunctorVocativeContextDisambiguator(),
             LKbdCompoundPrepDisambiguator(),

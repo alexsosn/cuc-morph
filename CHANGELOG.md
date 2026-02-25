@@ -2,6 +2,24 @@
 
 ## 2026-02-25
 
+- Added DULAT reference-based ambiguity collapse for unwrapped token groups:
+  - new index capability in `pipeline/dulat_attestation_index.py`:
+    `has_reference_for_variant_token(...)` with normalized `KTU`/`CAT`
+    citation matching.
+  - new refinement step
+    `pipeline/steps/attestation_reference_disambiguator.py`:
+    for each `(line_id, surface)` group within a `# KTU ...` section, if
+    exactly one option is attested at that section reference, keep it and
+    remove the rest.
+  - wired into pipeline after `unwrapped-duplicate-pruner`.
+  - added tests:
+    - `tests/test_dulat_attestation_index.py`
+    - `tests/test_attestation_reference_disambiguator.py`
+    - `tests/test_tablet_parsing_pipeline.py` (step ordering)
+  - documented strategy in
+    `docs/attestation_reference_disambiguator_pipeline.md`.
+  - re-ran full `--include-existing` pipeline to apply globally.
+
 - Extended feminine `-t` singular splitting for generic nominal POS rows:
   - `pipeline/steps/feminine_t_singular_split.py` now also applies
     DULAT-backed lexical-`t` splitting when POS is generic `n.`/`adj.` (no
