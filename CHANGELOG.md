@@ -31,6 +31,18 @@
   - `tests/test_nominal_form_morph_pos.py`,
   - `tests/test_dulat_gate_plurale_tantum.py`,
   - `tests/test_linter_form_gender_match.py`.
+- Added source-level DULAT form-morph overrides for known table-parsing errors in `ỉl (I)` construct forms:
+  - new `pipeline/config/dulat_form_morph_overrides.py`,
+  - remaps `du., cstr.` to `sg., cstr.` for `ỉl` and to `pl., cstr.` for `ỉly`/`-y`.
+- Wired DULAT form-morph overrides into both parser and linter loaders:
+  - `pipeline/steps/dulat_gate.py`,
+  - `linter/lint.py`.
+- Refined `NominalFormMorphPosFixer` to remove stale `du.` when exact-surface DULAT morphology is explicitly non-dual (for example `pl., cstr.`).
+- Added regression coverage:
+  - `tests/test_linter_dulat_form_morph_overrides.py`,
+  - updates in `tests/test_dulat_gate_plurale_tantum.py`,
+  - updates in `tests/test_nominal_form_morph_pos.py`.
+- Re-ran only `nominal-form-morph-pos` over all `out/KTU *.tsv` files; 3 row updates (`KTU 2.16.tsv`, `KTU 3.10.tsv`, `KTU 3.20.tsv`).
 
 - Reverted noun-side POS coercion in `l + noun` compound-preposition passes so suffix-friendly noun payloads are retained:
   - `L_PN_PREP_CANONICAL_PAYLOADS` now keeps `pn*` payloads as `n. m. pl. tant.` (not `prep.`),

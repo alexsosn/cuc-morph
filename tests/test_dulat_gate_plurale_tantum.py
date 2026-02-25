@@ -45,6 +45,7 @@ class DulatGatePluraleTantumTest(unittest.TestCase):
                     (5, "ʕgm", "", "n.", "m."),
                     (6, "ỉštnm", "", "n.", "m."),
                     (7, "ủm", "", "n.", "f."),
+                    (8, "ỉl", "I", "n.", "m."),
                 ],
             )
             cur.executemany(
@@ -63,6 +64,9 @@ class DulatGatePluraleTantumTest(unittest.TestCase):
                     (7, "ủmy", "sg."),
                     (7, "ủmy", "suff."),
                     (7, "ủmm", "du."),
+                    (8, "ỉl", "sg."),
+                    (8, "ỉl", "du., cstr."),
+                    (8, "ỉly", "du., cstr."),
                 ],
             )
             conn.commit()
@@ -96,6 +100,11 @@ class DulatGatePluraleTantumTest(unittest.TestCase):
         gate = self._build_gate()
         self.assertEqual(gate.token_genders("ủm"), {"f."})
         self.assertEqual(gate.token_genders("pnm"), {"m."})
+
+    def test_applies_il_construct_form_morphology_overrides(self) -> None:
+        gate = self._build_gate()
+        self.assertEqual(gate.surface_morphologies("ỉl (I)", "il"), {"sg.", "sg., cstr."})
+        self.assertEqual(gate.surface_morphologies("ỉl (I)", "ily"), {"pl., cstr."})
 
 
 if __name__ == "__main__":

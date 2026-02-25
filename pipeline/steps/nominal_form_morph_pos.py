@@ -136,7 +136,13 @@ class NominalFormMorphPosFixer(RefinementStep):
         has_singular = _has_singular_marker(morphologies)
         has_plural = _has_plural_marker(morphologies)
         dual_unambiguous = has_dual and not has_singular and not has_plural
-        if not has_fem and not has_dual and not token_genders:
+        if (
+            not has_fem
+            and not has_dual
+            and not has_singular
+            and not has_plural
+            and not token_genders
+        ):
             return value
 
         rewritten_head = head

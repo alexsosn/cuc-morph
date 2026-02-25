@@ -47,6 +47,13 @@ class NominalFormMorphPosFixerTest(unittest.TestCase):
         result = fixer.refine_row(row)
         self.assertEqual(result.pos, "n. m.")
 
+    def test_removes_existing_dual_when_surface_is_plural_construct(self) -> None:
+        gate = _MorphGate({("ỉl (I)", "ily"): {"pl., cstr."}})
+        fixer = NominalFormMorphPosFixer(gate=gate)
+        row = TabletRow("2d", "ily", "il(I)/y", "ỉl (I)", "n. m. du.", "god", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.pos, "n. m.")
+
     def test_non_nominal_pos_unchanged(self) -> None:
         gate = _MorphGate({("hl", "hlm"): {"sg."}})
         fixer = NominalFormMorphPosFixer(gate=gate)

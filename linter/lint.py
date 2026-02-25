@@ -15,6 +15,7 @@ if __package__ in {None, ""}:
     if str(_repo_root) not in sys.path:
         sys.path.insert(0, str(_repo_root))
 
+from pipeline.config.dulat_form_morph_overrides import override_dulat_form_morphology
 from pipeline.config.k_functor_bigram_surfaces import K_FUNCTOR_VERB_BIGRAM_SURFACES
 from pipeline.config.l_body_compound_prep_rules import L_BODY_COMPOUND_PREP_RULES
 from pipeline.config.l_functor_vocative_refs import expected_l_homonym_for_ref
@@ -1013,10 +1014,16 @@ def load_dulat(dulat_db: Path):
 
     cur.execute("SELECT forms.text, forms.morphology, forms.entry_id FROM forms")
     forms_map: Dict[str, List[DulatEntry]] = {}
-    for form_text, morph, entry_id in cur.fetchall():
+    for form_text, morph_raw, entry_id in cur.fetchall():
         if entry_id not in entry_meta or not form_text:
             continue
         lemma, hom, pos, gloss = entry_meta[entry_id]
+        morph = override_dulat_form_morphology(
+            lemma=lemma,
+            homonym=hom,
+            form_text=form_text,
+            morphology=morph_raw or "",
+        )
         if morph:
             entry_stems.setdefault(entry_id, set()).update(extract_stems(morph))
         key = normalize_surface(form_text)
