@@ -2,6 +2,13 @@
 
 ## 2026-02-25
 
+- Fixed redirect-derived Š-initial verb reconstruction when DULAT target is a bare root:
+  - `scripts/refine_results_mentions.py::analysis_for_entry` now handles redirect-restored verbs where surface is `š + root` but target lemma is bare (for example `/b-ʕ-r/`),
+  - emits `]š]...[` instead of fallback `...[last-radical]` tails (for example `šbˤr` no longer becomes `bˤr(I)[r`; now `]š]bˤr(I)[`).
+- Added regression test in `tests/test_refine_results_mentions.py`:
+  - `test_redirect_entry_restores_initial_sh_for_bare_verb_lemma`.
+- Re-ran targeted regeneration for all tablets containing `→` entries (38 files) so this redirect-derived verb fix is applied corpus-wide.
+
 - Extended redirect (`→`) restoration to support root targets in `cf.` clauses:
   - `scripts/refine_results_mentions.py::extract_redirect_targets` now recognizes plain `cf. /root/` references (not only `<i>...</i>` targets),
   - redirect expansion now prefers slash-root entries when the target itself is slash-root notation (for example `/y-l-d/`),

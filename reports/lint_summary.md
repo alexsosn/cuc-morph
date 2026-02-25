@@ -1,14 +1,14 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `10320`
+- Total issues: `10317`
 - Fallback-parsed issue lines: `236`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 5497 |
+| ERROR | 5494 |
 | WARNING | 431 |
 | INFO | 1624 |
 
@@ -16,11 +16,11 @@
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3257 |
+| ERROR | Analysis does not reconstruct to surface | 3255 |
 | INFO | Surface not found in UDB concordance | 1624 |
 | ERROR | POS token not allowed for declared DULAT entry | 439 |
 | ERROR | No DULAT entry found for clitic part | 327 |
-| ERROR | Non-G stem in DULAT requires stem marker | 300 |
+| ERROR | Non-G stem in DULAT requires stem marker | 298 |
 | ERROR | DULAT comment does not match candidates | 257 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 247 |
 | ERROR | Deverbal form matches both verb and noun entries in DULAT | 184 |
@@ -60,6 +60,7 @@
 | WARNING | ibˤlt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | ksih Lexeme parse did not match DULAT; matched by surface form | 2 |
 | ERROR | uḫryt Adjective POS gender mismatch for ủḫry: expected adj. m., got adj. f. | 1 |
+| ERROR | Š stem marker present but DULAT lacks Š/Št/Špass | 1 |
 | ERROR | ṣġrt Adjective POS gender mismatch for ṣġr (I): expected adj. m., got adj. f. | 1 |
 | ERROR | ṣġrthn Adjective POS gender mismatch for ṣġr (I): expected adj. m., got adj. f. | 1 |
 | WARNING | anna III-aleph noun/adjective should encode lexeme-final case vowel as '(u\|i\|a' and inflection as '/&u\|&i\|&a' | 1 |

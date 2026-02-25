@@ -443,6 +443,19 @@ def analysis_for_entry(
             return f"!{surface_plain[0]}!{stem_marker}{stem_out}{hom}[{prefix_tail}"
         if (
             allow_prefix_restoration
+            and not stem_marker
+            and stem_plain
+            and surface_plain
+            and surface_plain.startswith("š")
+            and len(surface_plain) == len(stem_plain) + 1
+            and surface_plain[1:] == stem_plain
+        ):
+            # Redirect-derived forms can surface with initial š while the
+            # referenced lexeme is bare (e.g. /b-ʕ-r/ -> šbʕr). Encode as Š-prefix
+            # restoration instead of a spurious trailing suffix fragment.
+            return f"]š]{stem}{hom}["
+        if (
+            allow_prefix_restoration
             and stem_plain
             and surface_plain
             and len(stem_plain) == len(surface_plain)

@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-02-25T10:48:15.743910+00:00",
+  "generated_at_utc": "2026-02-25T11:07:38.613165+00:00",
   "files_checked": 278,
-  "total_issues": 10320,
+  "total_issues": 10317,
   "fallback_parsed": 236,
   "by_severity": {
-    "ERROR": 5497,
+    "ERROR": 5494,
     "WARNING": 431,
     "INFO": 1624
   },
@@ -12,7 +12,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3257
+      "count": 3255
     },
     {
       "severity": "INFO",
@@ -32,7 +32,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Non-G stem in DULAT requires stem marker",
-      "count": 300
+      "count": 298
     },
     {
       "severity": "ERROR",
@@ -227,6 +227,11 @@
     {
       "severity": "ERROR",
       "problem_type": "uḫryt Adjective POS gender mismatch for ủḫry: expected adj. m., got adj. f.",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Š stem marker present but DULAT lacks Š/Št/Špass",
       "count": 1
     },
     {
