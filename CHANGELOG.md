@@ -2,6 +2,15 @@
 
 ## 2026-02-25
 
+- Extended feminine `-t` singular splitting for generic nominal POS rows:
+  - `pipeline/steps/feminine_t_singular_split.py` now also applies
+    DULAT-backed lexical-`t` splitting when POS is generic `n.`/`adj.` (no
+    explicit gender), surface ends in `t`, and the declared lemma is `t`-final.
+  - keeps explicit masculine rows unchanged.
+  - added regressions in `tests/test_feminine_t_singular_split.py`:
+    `test_splits_t_final_noun_for_generic_noun_pos`,
+    `test_keeps_t_final_noun_with_explicit_masculine_pos`.
+
 - Removed repeated header-like pseudo-data rows from preserved outputs:
   - `pipeline/steps/schema_formatter.py` now drops junk rows whose first two
     columns are `id` / `surface form` (for example

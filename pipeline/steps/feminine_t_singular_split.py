@@ -117,14 +117,21 @@ class FeminineTSingularSplitFixer(RefinementStep):
         if value.endswith(("/m", "/m=")):
             return value
 
+        lemma_has_final_t = _declared_lemma_has_final_t(dulat_slot)
+        surface_has_terminal_t = normalize_surface(surface).endswith("t")
+
         if not self._is_feminine_context(
             pos_slot=pos_slot,
             dulat_slot=dulat_slot,
             surface=surface,
         ):
-            return value
+            if not (
+                lemma_has_final_t
+                and surface_has_terminal_t
+                and _is_generic_nominal_without_gender(pos_slot)
+            ):
+                return value
 
-        lemma_has_final_t = _declared_lemma_has_final_t(dulat_slot)
         declared_homonym = _declared_homonym(dulat_slot)
         is_pos_pl_tant = _has_plurale_tantum_marker(pos_slot) or _is_forced_plural_t_token(
             dulat_slot
@@ -229,6 +236,18 @@ class FeminineTSingularSplitFixer(RefinementStep):
 
 def _has_plurale_tantum_marker(value: str) -> bool:
     return _PL_TANT_RE.search(value or "") is not None
+
+
+def _is_generic_nominal_without_gender(pos_slot: str) -> bool:
+    """Return True for noun/adjective POS tags without explicit gender."""
+    upper = (pos_slot or "").strip().upper()
+    if not (upper.startswith("N.") or upper.startswith("ADJ.")):
+        return False
+    if " M." in upper or upper.startswith("M."):
+        return False
+    if " F." in upper or upper.startswith("F."):
+        return False
+    return True
 
 
 def _is_forced_plural_t_token(dulat_slot: str) -> bool:

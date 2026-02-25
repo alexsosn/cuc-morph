@@ -195,6 +195,18 @@ class FeminineTSingularSplitFixerTest(unittest.TestCase):
         result = fixer.refine_row(row)
         self.assertEqual(result.analysis, "pḥl/t")
 
+    def test_splits_t_final_noun_for_generic_noun_pos(self) -> None:
+        fixer = FeminineTSingularSplitFixer()
+        row = TabletRow("16", "hwt", "hwt(I)/", "hwt (I)", "n.", "word", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "hw(t(I)/t")
+
+    def test_keeps_t_final_noun_with_explicit_masculine_pos(self) -> None:
+        fixer = FeminineTSingularSplitFixer()
+        row = TabletRow("17", "hwt", "hwt(I)/", "hwt (I)", "n. m.", "word", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "hwt(I)/")
+
 
 if __name__ == "__main__":
     unittest.main()
