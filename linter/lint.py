@@ -1246,6 +1246,21 @@ def split_pos_options(value: str) -> List[str]:
         return []
     if is_known_slash_pos_label(tok):
         return [normalize_pos_label(tok)]
+    # Verb stem alternatives often use slash without repeating `vb`
+    # (e.g., `vb G/D`, `vb G/Š`). Expand them into full verb tokens so
+    # validation can treat each option as a verb POS.
+    if tok.lower().startswith("vb ") and "/" in tok:
+        parts = [p.strip() for p in tok.split("/") if p.strip()]
+        expanded: List[str] = []
+        for idx, part in enumerate(parts):
+            if idx == 0:
+                expanded.append(normalize_pos_label(part))
+                continue
+            if part.lower().startswith("vb"):
+                expanded.append(normalize_pos_label(part))
+            else:
+                expanded.append(normalize_pos_label(f"vb {part}"))
+        return expanded
     parts = [p.strip() for p in re.split(r"(?<!\s)/(?!\s)", tok)]
     return [normalize_pos_label(p) for p in parts if p]
 
@@ -1266,6 +1281,11 @@ def normalize_pos_option_for_validation(value: str) -> str:
     tok = NOUN_GENDER_POS_RE.sub("n ", tok)
     tok = NOUN_BASE_POS_RE.sub("n ", tok)
     tok = ADJ_GENDER_POS_RE.sub("adj.", tok)
+    # DULAT POS inventory encodes verbs as `vb`; stem labels are tracked
+    # separately (see verb stem lint), so collapse `vb <stem>` for this
+    # validation layer.
+    if re.match(r"^vb(?:\s+.+)?$", tok, flags=re.IGNORECASE):
+        tok = "vb"
     tok = re.sub(r"\s+([,;])", r"\1", tok)
     tok = re.sub(r"\s+", " ", tok).strip()
     return tok.lower()

@@ -9,6 +9,7 @@ from linter.lint import DulatEntry, lint_file, normalize_surface, normalize_udb
 
 class LinterVerbPosStemTest(unittest.TestCase):
     WARNING = "Verb POS should include stem label(s):"
+    POS_ERROR = "POS token '"
 
     def _lint_messages(self, pos_value: str) -> list[str]:
         with tempfile.TemporaryDirectory() as tmp_dir:
@@ -62,6 +63,14 @@ class LinterVerbPosStemTest(unittest.TestCase):
     def test_no_warning_when_verb_pos_has_stem(self) -> None:
         messages = self._lint_messages("vb G")
         self.assertFalse(any(message.startswith(self.WARNING) for message in messages))
+
+    def test_vb_stem_pos_is_accepted_by_dulat_pos_validation(self) -> None:
+        messages = self._lint_messages("vb G")
+        self.assertFalse(any(message.startswith(self.POS_ERROR) for message in messages))
+
+    def test_vb_stem_alternation_is_accepted_by_dulat_pos_validation(self) -> None:
+        messages = self._lint_messages("vb G/D")
+        self.assertFalse(any(message.startswith(self.POS_ERROR) for message in messages))
 
 
 if __name__ == "__main__":
