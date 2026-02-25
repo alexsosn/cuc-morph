@@ -923,7 +923,14 @@ STEM_DISPLAY_ORDER = (
     "Špass",
     "Nt",
 )
-PREFIXED_VERB_ANALYSIS_RE = re.compile(r"^![ytan](?:=+)?!", flags=re.IGNORECASE)
+PREFIXED_VERB_ANALYSIS_RE = re.compile(
+    r"^(?:![ytan](?:=+)?!|!\(ʔ&[aiu]!)",
+    flags=re.IGNORECASE,
+)
+PREFIXED_VERB_ANALYSIS_INLINE_RE = re.compile(
+    r"(?:![ytan](?:=|==|===)?!|!\(ʔ&[aiu]!)",
+    flags=re.IGNORECASE,
+)
 
 
 def extract_stems(morph: str) -> set:
@@ -1565,7 +1572,7 @@ def variant_is_weak_initial_y_prefix_form(analysis_variant: str, d_field: str) -
     a_txt = (analysis_variant or "").strip()
     if not variant_is_weak_initial_y_verb(a_txt, d_field):
         return False
-    return bool(re.search(r"![ytan]!", a_txt))
+    return bool(PREFIXED_VERB_ANALYSIS_INLINE_RE.search(a_txt))
 
 
 def variant_root_radicals(d_field: str) -> Optional[Tuple[str, str, str]]:
@@ -2697,7 +2704,7 @@ def lint_file(
                     )
                 )
             root_radicals = variant_root_radicals(d_field)
-            has_prefix_preformative = bool(re.search(r"![ytan](?:=|==|===)?!", a_txt))
+            has_prefix_preformative = bool(PREFIXED_VERB_ANALYSIS_INLINE_RE.search(a_txt))
             if (
                 root_radicals
                 and root_radicals[2] in {"y", "w"}

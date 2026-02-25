@@ -136,6 +136,34 @@ class LinterVerbPosStemTest(unittest.TestCase):
             any(message.startswith(self.MISSING_N_ASSIMILATION) for message in messages)
         )
 
+    def test_errors_when_aleph_prefixed_n_stem_lacks_assimilated_n_marker(self) -> None:
+        messages = self._lint_messages(
+            "vb N",
+            surface="aṯbr",
+            analysis="!(ʔ&a!ṯbr[",
+            dulat_token="/ṯ-b-r/",
+            gloss="to break",
+            entry_morph="N, prefc.",
+            entry_stems_value={"N"},
+        )
+        self.assertTrue(
+            any(message.startswith(self.MISSING_N_ASSIMILATION) for message in messages)
+        )
+
+    def test_no_error_when_aleph_prefixed_n_stem_has_assimilated_n_marker(self) -> None:
+        messages = self._lint_messages(
+            "vb N",
+            surface="aṯbr",
+            analysis="!(ʔ&a!](n]ṯbr[",
+            dulat_token="/ṯ-b-r/",
+            gloss="to break",
+            entry_morph="N, prefc.",
+            entry_stems_value={"N"},
+        )
+        self.assertFalse(
+            any(message.startswith(self.MISSING_N_ASSIMILATION) for message in messages)
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

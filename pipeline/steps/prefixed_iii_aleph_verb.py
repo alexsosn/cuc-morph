@@ -21,6 +21,14 @@ _ANALYSIS_III_ALEPH_MISSING_PREFIX_RE = re.compile(
 )
 
 
+def _format_preformative_marker(letter: str) -> str:
+    """Render canonical prefix-conjugation marker for one preformative letter."""
+    preformative = (letter or "").strip()
+    if preformative in {"a", "i", "u"}:
+        return f"!(ʔ&{preformative}!"
+    return f"!{preformative}!"
+
+
 def _extract_letters(text: str) -> str:
     return "".join(ch for ch in (text or "") if _ANALYSIS_LETTER_RE.match(ch))
 
@@ -72,7 +80,8 @@ def _rewrite_prefixed_iii_aleph_variant(
         return analysis
 
     stem_with_reconstructed_aleph = stem[:-1] + "(ʔ"
-    return f"!{preformative}!{stem_with_reconstructed_aleph}{hom}[&{inflection}"
+    marker = _format_preformative_marker(preformative)
+    return f"{marker}{stem_with_reconstructed_aleph}{hom}[&{inflection}"
 
 
 class PrefixedIIIAlephVerbFixer(RefinementStep):

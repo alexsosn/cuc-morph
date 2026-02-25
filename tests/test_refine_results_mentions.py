@@ -96,6 +96,41 @@ class RefineResultsMentionsTest(unittest.TestCase):
             "!t!w]t]ḥ(y[",
         )
 
+    def test_analysis_normalizes_aleph_prefix_preformative_marker(self) -> None:
+        sh_entry = Entry(
+            entry_id=4004,
+            lemma="/h-l-k/",
+            hom="",
+            pos="vb",
+            gloss="",
+            wiki_tr="",
+        )
+        self.assertEqual(
+            analysis_for_entry("ašhlk", sh_entry, morph_values=["Š, prefc."]),
+            "!(ʔ&a!]š]hlk[",
+        )
+
+        iii_aleph_entry = Entry(
+            entry_id=4005,
+            lemma="/q-r-ʔ/",
+            hom="",
+            pos="vb",
+            gloss="",
+            wiki_tr="",
+        )
+        self.assertEqual(
+            analysis_for_entry("iqra", iii_aleph_entry, morph_values=["G, prefc."]),
+            "!(ʔ&i!qr(ʔ[&a",
+        )
+        self.assertEqual(
+            analysis_for_entry(
+                "uba",
+                Entry(4006, "/b-ʔ/", "", "vb", "", ""),
+                morph_values=["G, prefc."],
+            ),
+            "!(ʔ&u!b(ʔ[&a",
+        )
+
     def test_analysis_keeps_preformative_for_st_marker_prefixed_verb(self) -> None:
         entry = Entry(
             entry_id=4001,

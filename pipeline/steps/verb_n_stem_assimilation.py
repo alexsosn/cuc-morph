@@ -14,7 +14,10 @@ from pipeline.steps.base import RefinementStep, TabletRow
 _VB_POS_HEAD_RE = re.compile(r"^\s*vb\.?\b", flags=re.IGNORECASE)
 _VERBAL_NOUN_POS_RE = re.compile(r"\bvb\.\s*n\.", flags=re.IGNORECASE)
 _POS_STEM_RE = re.compile(r"\b(Gpass|Dpass|Lpass|Špass|Gt|Dt|Lt|Nt|tD|tL|Št|G|D|L|N|R|Š)\b")
-_PREFORMATIVE_RE = re.compile(r"^![ytan](?:=+)?!", flags=re.IGNORECASE)
+_PREFORMATIVE_RE = re.compile(
+    r"^(?:![ytan](?:=+)?!|!\(ʔ&[aiu]!)",
+    flags=re.IGNORECASE,
+)
 _REPEATED_N_WEAK_Y_RE = re.compile(r"^(?:\]\(n\]\(y){2,}")
 _REPEATED_N_MARKER_RE = re.compile(r"^(?:\]\(n\]){2,}")
 

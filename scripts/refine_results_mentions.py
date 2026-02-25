@@ -74,6 +74,14 @@ _REDIRECT_SLASH_TARGET_RE = re.compile(r"/[A-Za-zʔʕʿˤḫḥṭṣṯẓġḏ
 _L_STEM_MORPH_RE = re.compile(r"\b(L|Lt|tL)\b")
 
 
+def format_preformative_marker(letter: str) -> str:
+    """Render canonical prefix-conjugation marker for one preformative letter."""
+    preformative = (letter or "").strip()
+    if preformative in {"a", "i", "u"}:
+        return f"!(ʔ&{preformative}!"
+    return f"!{preformative}!"
+
+
 @dataclass(frozen=True)
 class Entry:
     entry_id: int
@@ -489,7 +497,8 @@ def build_prefixed_iii_aleph_analysis(
         if aleph_idx >= 0 and (aleph_idx == 0 or normalized_stem[aleph_idx - 1] != "("):
             normalized_stem = normalized_stem[:aleph_idx] + "(ʔ" + normalized_stem[aleph_idx + 1 :]
 
-    return f"!{surface_plain[0]}!{stem_marker}{normalized_stem}{hom}[&{inflection}"
+    marker = format_preformative_marker(surface_plain[0])
+    return f"{marker}{stem_marker}{normalized_stem}{hom}[&{inflection}"
 
 
 def build_prefixed_n_weak_iii_aleph_analysis(
@@ -527,7 +536,8 @@ def build_prefixed_n_weak_iii_aleph_analysis(
         if aleph_idx >= 0 and (aleph_idx == 0 or normalized_stem[aleph_idx - 1] != "("):
             normalized_stem = normalized_stem[:aleph_idx] + "(ʔ" + normalized_stem[aleph_idx + 1 :]
 
-    return f"!{surface_plain[0]}!{stem_marker}{normalized_stem}{hom}[&{inflection}"
+    marker = format_preformative_marker(surface_plain[0])
+    return f"{marker}{stem_marker}{normalized_stem}{hom}[&{inflection}"
 
 
 def analysis_for_entry(
@@ -584,7 +594,8 @@ def analysis_for_entry(
             stem_out = stem
             if hidden_stem_letters > 0:
                 stem_out = mark_hidden_terminal_stem_letters(stem_out, hidden_stem_letters)
-            return f"!{surface_plain[0]}!{stem_marker}{stem_out}{hom}[{prefix_tail}"
+            marker = format_preformative_marker(surface_plain[0])
+            return f"{marker}{stem_marker}{stem_out}{hom}[{prefix_tail}"
         if (
             allow_prefix_restoration
             and not stem_marker

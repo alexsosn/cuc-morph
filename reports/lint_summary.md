@@ -1,32 +1,33 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `31152`
-- Fallback-parsed issue lines: `15368`
+- Total issues: `32542`
+- Fallback-parsed issue lines: `15924`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 10806 |
-| WARNING | 15373 |
-| INFO | 1911 |
+| ERROR | 11640 |
+| WARNING | 15651 |
+| INFO | 2189 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
 | ERROR | Analysis does not reconstruct to surface | 3293 |
-| ERROR | Missing DULAT entry token(s) in column 4 | 2665 |
-| INFO | Surface not found in UDB concordance | 1911 |
-| ERROR | No DULAT entry found for lexeme/surface | 1527 |
+| ERROR | Missing DULAT entry token(s) in column 4 | 2943 |
+| INFO | Surface not found in UDB concordance | 2189 |
+| ERROR | No DULAT entry found for lexeme/surface | 1805 |
+| WARNING | surface form Non-numeric line id | 558 |
 | ERROR | POS ambiguous in DULAT | 500 |
 | ERROR | POS token not allowed for declared DULAT entry | 439 |
 | ERROR | Noun/adjective lacks '/' ending | 421 |
 | ERROR | Multiple DULAT candidates for lexeme | 397 |
 | ERROR | No DULAT entry found for clitic part | 316 |
 | WARNING | il Noun POS should include DULAT gender marker for ỉl (I): n. m. | 287 |
-| WARNING | surface form Non-numeric line id | 280 |
+| ERROR | surface form Duplicate unwrapped row payload (same id, surface, and col3-col6); first seen on line 2 | 280 |
 | ERROR | DULAT comment does not match candidates | 258 |
 | WARNING | mlk Noun POS should include DULAT gender marker for mlk (II): n. m. | 246 |
 | WARNING | bn Noun POS should include DULAT gender marker for bn (I): n. m. | 216 |
@@ -1067,7 +1068,6 @@
 | WARNING | ẓuh Noun POS should include DULAT gender marker for ẓủ: n. m. | 3 |
 | ERROR | l Formula tbˤ w l yṯb ilm expects l(II) ('not') | 2 |
 | ERROR | rxxx Multiple DULAT candidates for surface-fallback: /ġ-t-r/ [vb] — to implore, intercede, ask; /p-ẓ-r/ [vb] — to free, loosen; rḥb(I) [adj.] — wide; rks [n.] — belt | 2 |
-| ERROR | surface form Duplicate unwrapped row payload (same id, surface, and col3-col6); first seen on line 2 | 2 |
 | ERROR | txxx Multiple DULAT candidates for surface-fallback: ảḫt(I) [n.] — sister (related by blood); ʕl(I) [prep.] — upon, on top of; /ʕ-s-y:s/ [vb] — ?; ḥṭbt [n.] — (female) wood-cutter; k(I) [prep.] — like, as; /l-q-ḥ/ [vb] — to get hold of, take, grasp; to receive, accept, take (away); | 2 |
 | ERROR | xxrx Multiple DULAT candidates for surface-fallback: /ġ-t-r/ [vb] — to implore, intercede, ask; /p-ẓ-r/ [vb] — to free, loosen; rḥb(I) [adj.] — wide; rks [n.] — belt | 2 |
 | ERROR | xxxxr Multiple DULAT candidates for surface-fallback: /ġ-t-r/ [vb] — to implore, intercede, ask; /p-ẓ-r/ [vb] — to free, loosen; rḥb(I) [adj.] — wide; rks [n.] — belt | 2 |

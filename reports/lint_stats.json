@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-02-25T13:51:32.570763+00:00",
+  "generated_at_utc": "2026-02-25T14:02:57.731397+00:00",
   "files_checked": 278,
-  "total_issues": 31152,
-  "fallback_parsed": 15368,
+  "total_issues": 32542,
+  "fallback_parsed": 15924,
   "by_severity": {
-    "ERROR": 10806,
-    "WARNING": 15373,
-    "INFO": 1911
+    "ERROR": 11640,
+    "WARNING": 15651,
+    "INFO": 2189
   },
   "by_problem_type": [
     {
@@ -17,17 +17,22 @@
     {
       "severity": "ERROR",
       "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 2665
+      "count": 2943
     },
     {
       "severity": "INFO",
       "problem_type": "Surface not found in UDB concordance",
-      "count": 1911
+      "count": 2189
     },
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 1527
+      "count": 1805
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "surface form Non-numeric line id",
+      "count": 558
     },
     {
       "severity": "ERROR",
@@ -60,8 +65,8 @@
       "count": 287
     },
     {
-      "severity": "WARNING",
-      "problem_type": "surface form Non-numeric line id",
+      "severity": "ERROR",
+      "problem_type": "surface form Duplicate unwrapped row payload (same id, surface, and col3-col6); first seen on line 2",
       "count": 280
     },
     {
@@ -5262,11 +5267,6 @@
     {
       "severity": "ERROR",
       "problem_type": "rxxx Multiple DULAT candidates for surface-fallback: /ġ-t-r/ [vb] — to implore, intercede, ask; /p-ẓ-r/ [vb] — to free, loosen; rḥb(I) [adj.] — wide; rks [n.] — belt",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "surface form Duplicate unwrapped row payload (same id, surface, and col3-col6); first seen on line 2",
       "count": 2
     },
     {

@@ -615,6 +615,11 @@ class WeakVerbFixerTest(unittest.TestCase):
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "!t!(ytn[")
 
+    def test_aleph_preformative_variant_gets_hidden_initial_y(self) -> None:
+        row = TabletRow("1", "atn", "!(ʔ&a!tn[", "/y-t-n/", "vb", "to give", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!(ʔ&a!(ytn[")
+
     def test_keeps_assimilated_n_before_hidden_y_in_n_stem(self) -> None:
         row = TabletRow("1", "yld", "!y!](n]yld[", "/y-l-d/", "vb N", "to give birth", "")
         result = self.fixer.refine_row(row)
@@ -974,6 +979,11 @@ class WeakFinalSuffixConjugationFixerTest(unittest.TestCase):
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "!t!kly[")
 
+    def test_aleph_prefixed_form_unchanged(self) -> None:
+        row = TabletRow("1", "aklyt", "!(ʔ&a!kly[", "/k-l-y/", "vb", "to finish", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!(ʔ&a!kly[")
+
     def test_middle_radical_t_unchanged(self) -> None:
         row = TabletRow("1", "ytt", "ytn[", "/y-t-n/", "vb", "to give", "")
         result = self.fixer.refine_row(row)
@@ -1330,6 +1340,11 @@ class VerbNStemAssimilationFixerTest(unittest.TestCase):
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "!t!](n]ṯbr[")
 
+    def test_inserts_assimilated_n_for_aleph_prefixed_n_stem(self) -> None:
+        row = TabletRow("1", "aṯbr", "!(ʔ&a!ṯbr[", "/ṯ-b-r/", "vb N", "to break", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!(ʔ&a!](n]ṯbr[")
+
     def test_keeps_row_when_marker_already_present(self) -> None:
         row = TabletRow("1", "tṯbr", "!t!](n]ṯbr[", "/ṯ-b-r/", "vb N", "to break", "")
         result = self.fixer.refine_row(row)
@@ -1375,6 +1390,11 @@ class PrefixedIIIAlephVerbFixerTest(unittest.TestCase):
         row = TabletRow("1", "tḫṭu", "ḫṭʔ[u", "/ḫ-ṭ-ʔ/", "vb G", "to make a mistake", "")
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "!t!ḫṭ(ʔ[&u")
+
+    def test_rewrites_prefixed_iii_aleph_aleph_preformative(self) -> None:
+        row = TabletRow("1", "iqra", "qrʔ[a", "/q-r-ʔ/", "vb G", "to call", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!(ʔ&i!qr(ʔ[&a")
 
     def test_rewrites_prefixed_iii_aleph_n_form(self) -> None:
         row = TabletRow("2", "nḫtu", "ḫtʔ[u", "/ḫ-t-ʔ/", "vb N", "to be ground up", "")

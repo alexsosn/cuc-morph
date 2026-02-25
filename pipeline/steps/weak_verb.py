@@ -10,11 +10,21 @@ import re
 from pipeline.steps.base import RefinementStep, TabletRow
 
 # Preformative consonants for prefix conjugation
-_PREFORMATIVES = {"t", "y", "a", "n", "i"}
+_PREFORMATIVES = {"t", "y", "a", "n", "i", "u"}
 
 _WEAK_INITIAL_Y_RE = re.compile(r"^\s*/y-")
-_PREFORMATIVE_MARKER_RE = re.compile(r"^!([ytani])(?:=|==|===)?!")
+_PREFORMATIVE_MARKER_RE = re.compile(
+    r"^(?:!(?P<plain>[ytaniu])(?:=|==|===)?!|!\(ʔ&(?P<aleph>[aiu])!)"
+)
 _ASSIMILATED_N_MARKER = "](n]"
+
+
+def _format_preformative_marker(letter: str) -> str:
+    """Render canonical prefix-conjugation marker for one preformative letter."""
+    preformative = (letter or "").strip()
+    if preformative in {"a", "i", "u"}:
+        return f"!(ʔ&{preformative}!"
+    return f"!{preformative}!"
 
 
 class WeakVerbFixer(RefinementStep):
@@ -116,4 +126,4 @@ class WeakVerbFixer(RefinementStep):
         prefix = surface[0]
         if not var.startswith(prefix):
             return var
-        return f"!{prefix}!(y{var[1:]}"
+        return f"{_format_preformative_marker(prefix)}(y{var[1:]}"

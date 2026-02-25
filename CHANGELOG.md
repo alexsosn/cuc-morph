@@ -2,6 +2,19 @@
 
 ## 2026-02-25
 
+- Normalized aleph-prefix preformative encoding in verbal analyses:
+  - canonicalized `!a!`, `!i!`, `!u!` to `!(ʔ&a!`, `!(ʔ&i!`, `!(ʔ&u!` in parser generation (`scripts/refine_results_mentions.py`) and legacy III-aleph fixer (`pipeline/steps/prefixed_iii_aleph_verb.py`).
+  - updated prefix-marker detection in refinement/lint paths to accept canonical aleph-prefix markers:
+    - `pipeline/steps/weak_verb.py`,
+    - `pipeline/steps/weak_final_sc.py`,
+    - `pipeline/steps/verb_n_stem_assimilation.py`,
+    - `linter/lint.py`.
+  - added regression coverage in:
+    - `tests/test_refine_results_mentions.py`,
+    - `tests/test_refinement_steps.py`,
+    - `tests/test_linter_verb_pos_stem.py`.
+  - re-ran parser regeneration (`scripts.refine_results_mentions`) and full refinement-step pipeline across all tablets, then regenerated reports.
+
 - Fixed fallback-direct ambiguity suppression in `scripts/refine_results_mentions.py`:
   - suffix split variants are now generated when direct hits come only from
     lemma fallback (no exact DULAT form hit), instead of being suppressed.
