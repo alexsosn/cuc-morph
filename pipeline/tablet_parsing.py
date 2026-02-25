@@ -10,11 +10,13 @@ from lint_reports.generator import LintReportGenerator
 from pipeline.config.surface_option_allowlist import SURFACE_OPTION_PROPAGATION_ALLOWLIST
 from pipeline.dulat_attestation_index import DulatAttestationIndex
 from pipeline.instruction_refiner import InstructionRefiner
+from pipeline.steps.aleph_prefix import AlephPrefixFixer
 from pipeline.steps.attestation_sort import AttestationSortFixer
 from pipeline.steps.baal_labourer_ktu1 import BaalLabourerKtu1Fixer
 from pipeline.steps.baal_plural import BaalPluralGodListFixer
 from pipeline.steps.baal_verbal_slash import BaalVerbalSlashFixer
 from pipeline.steps.base import RefinementStep
+from pipeline.steps.deictic_functor_enclitic_m import DeicticFunctorEncliticMFixer
 from pipeline.steps.dulat_gate import DulatMorphGate
 from pipeline.steps.feminine_t_singular_split import FeminineTSingularSplitFixer
 from pipeline.steps.formula_bigram import FormulaBigramFixer
@@ -30,6 +32,7 @@ from pipeline.steps.l_kbd_compound_prep import LKbdCompoundPrepDisambiguator
 from pipeline.steps.l_negation_verb_context import LNegationVerbContextPruner
 from pipeline.steps.l_preposition_bigram_context import LPrepositionBigramContextDisambiguator
 from pipeline.steps.nominal_case_ending_yh import NominalCaseEndingYHFixer
+from pipeline.steps.nominal_form_morph_pos import NominalFormMorphPosFixer
 from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
 from pipeline.steps.onomastic_gloss import OnomasticGlossOverrideFixer
@@ -42,6 +45,7 @@ from pipeline.steps.suffix_paradigm_normalizer import SuffixParadigmNormalizer
 from pipeline.steps.suffix_payload_collapse import SuffixPayloadCollapseFixer
 from pipeline.steps.surface_option_propagation import SurfaceOptionPropagationFixer
 from pipeline.steps.surface_reconstructability_fixer import SurfaceReconstructabilityFixer
+from pipeline.steps.toponym_directional_h import ToponymDirectionalHFixer
 from pipeline.steps.unwrapped_duplicate_pruner import UnwrappedDuplicatePruner
 from pipeline.steps.variant_row_unwrapper import VariantRowUnwrapper
 from pipeline.steps.verb_pos_stem import VerbPosStemFixer
@@ -73,9 +77,6 @@ class TabletParsingPipeline:
         self.morph_gate = DulatMorphGate(self.config.dulat_db)
         self.attestation_index = DulatAttestationIndex.from_sqlite(self.config.dulat_db)
         self._refinement_steps: List[RefinementStep] = [
-            # AlephPrefixFixer disabled: changes (ʔ in analysis break DULAT
-            # lexeme extraction, causing net increase in lint issues.
-            # Will re-enable after linter lexeme extraction is updated.
             TsvSchemaFormatter(),
             NounPosClosureFixer(),
             FormulaTrigramFixer(),
@@ -89,9 +90,12 @@ class TabletParsingPipeline:
             BaalPluralGodListFixer(),
             Ktu1FamilyHomonymPruner(dulat_db=self.config.dulat_db),
             SuffixCliticFixer(gate=self.morph_gate),
+            ToponymDirectionalHFixer(gate=self.morph_gate),
+            DeicticFunctorEncliticMFixer(gate=self.morph_gate),
             SuffixParadigmNormalizer(),
             WeakVerbFixer(),
             WeakFinalSuffixConjugationFixer(),
+            AlephPrefixFixer(),
             PronounClosureFixer(),
             SurfaceOptionPropagationFixer(
                 corpus_dir=self.config.out_dir,
@@ -102,6 +106,7 @@ class TabletParsingPipeline:
             OnomasticGlossOverrideFixer(),
             IIIAlephCaseFixer(),
             NominalCaseEndingYHFixer(gate=self.morph_gate),
+            NominalFormMorphPosFixer(gate=self.morph_gate),
             SurfaceReconstructabilityFixer(),
             GenericParsingOverrideFixer(),
             SuffixPayloadCollapseFixer(),

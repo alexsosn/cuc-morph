@@ -16,14 +16,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151226	dbḥ	dbḥ[	/d-b-ḥ/	vb G	to sacrifice	
 151227	ṣpn	ṣpn/	ṣpn	TN/DN	Ṣapānu/Zaphon/the mountain dwelling of bʕl deified	
 # KTU 1.91 4						
-151228	tzġm	tzġ/m	tzġ	n. m.	kind of sacrificial meat	
+151228	tzġm	tzġ/m	tzġ	n. f.	kind of sacrificial meat	
 # KTU 1.91 5						
 151229	ilib	ilib(I)/	ỉlỉb (I)	DN	father god	
 # KTU 1.91 6						
-151230	il	il(I)/	ỉl (I)	n. m.	god	
-151231	bldn	bld/+n	bld	n. m.	land	
+151230	il	il(I)/	ỉl (I)	n. m. du.	god	
+151231	bldn	bld/+n	bld	n. f.	land	
 # KTU 1.91 7						
-151232	pdry	pdr(I)/+y	pdr (I)	n. m.	town	
+151232	pdry	pdry/	pdry	DN	Pidray	
 151233	bt	bt(II)/	bt (II)	n. m.	house	
 151233	bt	b(t(I)/t	bt (I)	n. f.	daughter	
 151234	mlk	mlk[	/m-l-k/	vb G	to reign	
@@ -79,7 +79,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151254	k	k(II)	k (II)	emph. functor	yes	
 151255	tdd	ndd[	/n-d-d/	vb G	to go	
 151256	bˤlt	bˤl(t/t	bʕlt	n. f.	lady	
-151257	bhtm	b(II)/t=	bt (II)	n. m.	house	
+151257	bhtm	bt(II)/	bt (II)	n. m.	house	
 # KTU 1.91 15						
 151258	b	b	b	prep.	in	
 151259	ġb	ġb(I)/	ġb (I)	n. m.	(sacrificial) pit	
@@ -91,7 +91,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151262	xxxxxkm	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.91 17						
 151263	xxxxxxh	?	?	?	?	DULAT: NOT FOUND
-151264	iln	il(I)/+n	ỉl (I)	n. m.	god	
+151264	iln	il(I)/+n	ỉl (I)	n. f.	god	
 # KTU 1.91 18						
 151265	xxxxx	?	?	?	?	
 151266	ṣmdt	?	?	?	?	DULAT: NOT FOUND
@@ -131,9 +131,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151285	ṯlṯ	ṯlṯ(II)/	ṯlṯ (II)	adj. m. ord. num.	third	
 151286	yn	yn/	yn	n. m.	wine	
 # KTU 1.91 26						
-151287	šmny	šmn(I)/+y	šmn (I)	n. m.	oil	
-151287	šmny	š/+ny	š	n. m.	ram	
-151288	kdm	kd(I)/m	kd (I)	n. f.	jar	
+151287	šmny	šmny/	šmny	PN	šmny	
+151288	kdm	kd(I)/m	kd (I)	n. f. du.	jar	
 151289	yn	yn/	yn	n. m.	wine	
 # KTU 1.91 27						
 151290	šmgy	šmgy/	šmgy	TN	šmgy	
@@ -154,7 +153,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151300	ḥsp	ḥsp/	ḥsp	adj. m.	decanted	
 # KTU 1.91 30						
 151301	ḫpty	ḫpty	ḫpty	→		
-151302	kdm	kd(I)/m	kd (I)	n. f.	jar	
+151302	kdm	kd(I)/m	kd (I)	n. f. du.	jar	
 151303	mṣb	mṣb(II)/	mṣb (II)	n. m.	place in which something is put	
 151303	mṣb	mṣb(I)/	mṣb (I)	n. m.	beam	
 # KTU 1.91 31						
@@ -168,7 +167,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151309	mṣb	mṣb(II)/	mṣb (II)	n. m.	place in which something is put	
 151309	mṣb	mṣb(I)/	mṣb (I)	n. m.	beam	
 # KTU 1.91 33						
-151310	rqd	rq(II)/+d	rq (II)	adj. m.	fine	
+151310	rqd	rqd/	rqd	TN	rqd	
 151311	ṯlṯ	ṯlṯ(I)/	ṯlṯ (I)	n. num.	three	
 151311	ṯlṯ	ṯlṯ(V)/	ṯlṯ (V)	n. m.	copper	
 151311	ṯlṯ	ṯlṯ(II)/	ṯlṯ (II)	adj. m. ord. num.	third	
@@ -191,5 +190,5 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151322	w	w	w	conj.	and	
 151323	ḥspṯn	?	?	?	?	DULAT: NOT FOUND
 151324	kbd	kbd(II)/	kbd (II)	n. m.	total (quantity or price)	
-151324	kbd	kbd(I)/	kbd (I)	n.	liver	
+151324	kbd	kbd(I)/	kbd (I)	n. f.	liver	
 151324	kbd	kbd[	/k-b-d/	vb D	to honour	

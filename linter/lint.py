@@ -437,6 +437,34 @@ def choose_lookup_candidates(
     return surface_candidates, "surface"
 
 
+def surface_form_has_feminine_morph(
+    dulat_forms: Dict[str, List["DulatEntry"]],
+    surface: str,
+    lemma_tok: str,
+    hom_tok: str,
+) -> bool:
+    """True when exact DULAT surface candidates for token carry `f.` morphology."""
+    surface_key = normalize_surface(surface or "")
+    if not surface_key:
+        return False
+    token_lemma = normalize_surface((lemma_tok or "").strip())
+    if not token_lemma:
+        return False
+    token_hom = (hom_tok or "").strip()
+
+    for candidate in dulat_forms.get(surface_key, []):
+        cand_lemma = normalize_surface((candidate.lemma or "").strip())
+        cand_hom = (candidate.homonym or "").strip()
+        if cand_lemma != token_lemma:
+            continue
+        if token_hom and cand_hom != token_hom:
+            continue
+        morph = (candidate.morph or "").lower()
+        if "f." in morph:
+            return True
+    return False
+
+
 def analysis_has_missing_suffix_plus(analysis: str, surface: str) -> bool:
     """True if analysis/surface pair strongly indicates missing '+' suffix split."""
     if "+" in (analysis or ""):
@@ -451,6 +479,8 @@ def analysis_has_missing_suffix_plus(analysis: str, surface: str) -> bool:
     for var in variants:
         v = (var or "").strip()
         if not v:
+            continue
+        if "~" in v:
             continue
         core = v.rstrip("/")
         if core.endswith(seg):
@@ -1268,6 +1298,7 @@ def split_pos_options(value: str) -> List[str]:
 NOUN_GENDER_POS_RE = re.compile(r"n\.\s*(m|f)\.?(?=\s|$|[,;/])", re.IGNORECASE)
 NOUN_BASE_POS_RE = re.compile(r"\bn\.\s*", re.IGNORECASE)
 ADJ_GENDER_POS_RE = re.compile(r"adj\.\s*(m|f)\.?(?=\s|$|[,;/])", re.IGNORECASE)
+POS_NUMBER_RE = re.compile(r"\b(?:sg|du|pl)\.?(?=\s|$|[,;/])", re.IGNORECASE)
 
 
 def normalize_pos_option_for_validation(value: str) -> str:
@@ -1281,6 +1312,7 @@ def normalize_pos_option_for_validation(value: str) -> str:
     tok = NOUN_GENDER_POS_RE.sub("n ", tok)
     tok = NOUN_BASE_POS_RE.sub("n ", tok)
     tok = ADJ_GENDER_POS_RE.sub("adj.", tok)
+    tok = POS_NUMBER_RE.sub("", tok)
     # DULAT POS inventory encodes verbs as `vb`; stem labels are tracked
     # separately (see verb stem lint), so collapse `vb <stem>` for this
     # validation layer.
@@ -2228,17 +2260,28 @@ def lint_file(
                                         )
                                     )
                                 elif noun_gender != expected_gender:
-                                    issues.append(
-                                        Issue(
-                                            "error",
-                                            str(path),
-                                            i,
-                                            line_id,
-                                            surface,
-                                            a_var,
-                                            f"Noun POS gender mismatch for {dtok}: expected n. {expected_gender}, got n. {noun_gender}",
+                                    feminine_surface_override = (
+                                        expected_gender == "m."
+                                        and noun_gender == "f."
+                                        and surface_form_has_feminine_morph(
+                                            dulat_forms=dulat_forms,
+                                            surface=strip_missing(surface).strip(),
+                                            lemma_tok=lemma_tok,
+                                            hom_tok=hom_tok,
                                         )
                                     )
+                                    if not feminine_surface_override:
+                                        issues.append(
+                                            Issue(
+                                                "error",
+                                                str(path),
+                                                i,
+                                                line_id,
+                                                surface,
+                                                a_var,
+                                                f"Noun POS gender mismatch for {dtok}: expected n. {expected_gender}, got n. {noun_gender}",
+                                            )
+                                        )
                             if adj_like_token and len(gender_matches) == 1:
                                 expected_gender = next(iter(gender_matches))
                                 if adj_gender is None:

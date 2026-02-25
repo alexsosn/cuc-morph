@@ -14,6 +14,7 @@ from pipeline.steps.onomastic_overrides import OnomasticOverrideStore
 _ONOMASTIC_POS_TAGS: Sequence[str] = ("DN", "PN", "TN", "GN", "MN")
 _UNSPLIT_FEM_T_RE = re.compile(r"^(?P<stem>.+?)t(?P<hom>\([IVX]+\))?/$")
 _SPLIT_FEM_T_RE = re.compile(r"^(?P<stem>.+?)(?P<hom>\([IVX]+\))?/t(?P<plural_eq>=?)$")
+_BASE_NOMINAL_RE = re.compile(r"^(?P<stem>[A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]+)(?P<hom>\([IVX]+\))?/$")
 _TOKEN_RE = re.compile(r"^(.*?)(?:\s*\(([IVX]+)\))?$")
 _LEMMA_LETTER_RE = re.compile(r"[^A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]")
 _PL_TANT_RE = re.compile(
@@ -108,7 +109,11 @@ class FeminineTSingularSplitFixer(RefinementStep):
         if value.endswith(("/m", "/m=")):
             return value
 
-        if not self._is_feminine_context(pos_slot=pos_slot, dulat_slot=dulat_slot):
+        if not self._is_feminine_context(
+            pos_slot=pos_slot,
+            dulat_slot=dulat_slot,
+            surface=surface,
+        ):
             return value
 
         lemma_has_final_t = _declared_lemma_has_final_t(dulat_slot)
@@ -116,6 +121,23 @@ class FeminineTSingularSplitFixer(RefinementStep):
         is_pos_pl_tant = _has_plurale_tantum_marker(pos_slot) or _is_forced_plural_t_token(
             dulat_slot
         )
+
+        base_match = _BASE_NOMINAL_RE.match(value)
+        if (
+            base_match
+            and value.endswith("/")
+            and normalize_surface(surface).endswith("t")
+            and not normalize_surface(base_match.group("stem")).lower().endswith("t")
+        ):
+            stem = base_match.group("stem")
+            homonym = base_match.group("hom") or declared_homonym
+            rewritten = _render_feminine_t_split(
+                stem=stem,
+                homonym=homonym,
+                lexical_t=lemma_has_final_t,
+                plural=is_pos_pl_tant,
+            )
+            return _with_surface_terminal_m(rewritten, surface=surface)
 
         unsplit_match = _UNSPLIT_FEM_T_RE.match(value)
         if unsplit_match:
@@ -156,10 +178,10 @@ class FeminineTSingularSplitFixer(RefinementStep):
             return False
         return self._gate.is_plural_token(token, surface=surface)
 
-    def _is_feminine_context(self, pos_slot: str, dulat_slot: str) -> bool:
+    def _is_feminine_context(self, pos_slot: str, dulat_slot: str, surface: str) -> bool:
         pos_text = (pos_slot or "").strip()
         if not pos_text:
-            return False
+            return self._surface_has_feminine_morphology(dulat_slot=dulat_slot, surface=surface)
 
         upper = pos_text.upper()
         if "N. F." in upper or "ADJ. F." in upper:
@@ -170,6 +192,13 @@ class FeminineTSingularSplitFixer(RefinementStep):
                 return True
             return self._is_feminine_onomastic_token(dulat_slot)
 
+        # DULAT form morphology can mark feminine forms for masculine lemmas
+        # (e.g., pḥl -> pḥlt). Allow split in that case.
+        if (
+            upper.startswith("N.") or upper.startswith("ADJ.")
+        ) and self._surface_has_feminine_morphology(dulat_slot=dulat_slot, surface=surface):
+            return True
+
         return False
 
     def _is_feminine_onomastic_token(self, token: str) -> bool:
@@ -177,6 +206,17 @@ class FeminineTSingularSplitFixer(RefinementStep):
         if not normalized:
             return False
         return normalized in self._feminine_onomastic_tokens
+
+    def _surface_has_feminine_morphology(self, dulat_slot: str, surface: str) -> bool:
+        if self._gate is None:
+            return False
+        token = (dulat_slot or "").strip()
+        if not token or token == "?":
+            return False
+        morphologies = self._gate.surface_morphologies(token, surface=surface)
+        if not morphologies:
+            return False
+        return any("f." in (morph or "").lower() for morph in morphologies)
 
 
 def _has_plurale_tantum_marker(value: str) -> bool:

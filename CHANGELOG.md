@@ -2,6 +2,27 @@
 
 ## 2026-02-25
 
+- Replaced deletion-style variant pruning with linguistics-based reconstructability fixes driven by DULAT form evidence and Tagging conventions:
+  - `FeminineTSingularSplitFixer` now handles feminine surface forms of masculine lemmas (for example `pḥl/` + `pḥlt` -> `pḥl/t`),
+  - added reconstructable aleph substitution in `AlephPrefixFixer` (`ʔbd[` -> `(ʔ&abd[`),
+  - `DulatMorphGate` now treats dual form morphology as split-eligible for nominal `-m` endings.
+- Added new targeted parser steps:
+  - `ToponymDirectionalHFixer` (`pipeline/steps/toponym_directional_h.py`) for TN `-h` directional/enclitic encoding (`.../` -> `.../~h`),
+  - `DeicticFunctorEncliticMFixer` (`pipeline/steps/deictic_functor_enclitic_m.py`) for deictic functor extended `-m` forms (`hl` -> `hl~m` when attested),
+  - `NominalFormMorphPosFixer` (`pipeline/steps/nominal_form_morph_pos.py`) to enrich nominal POS with form-level feminine/dual markers.
+- Extended linter parity (`linter/lint.py`):
+  - no `Suffix form without '+'` warning for `~`-encoded enclitics,
+  - allow feminine noun POS when exact DULAT surface morphology is feminine,
+  - normalize nominal number markers (`sg./du./pl.`) during POS-vs-DULAT validation.
+- Added regression coverage:
+  - `tests/test_nominal_form_morph_pos.py`,
+  - `tests/test_toponym_directional_h.py`,
+  - `tests/test_deictic_functor_enclitic_m.py`,
+  - `tests/test_linter_form_gender_match.py`,
+  - `tests/test_linter_pos_normalization.py`,
+  - plus updates to `tests/test_feminine_t_singular_split.py`, `tests/test_refinement_steps.py`, `tests/test_dulat_gate_plurale_tantum.py`, and `tests/test_linter_warning_predicates.py`.
+- Re-ran full parser + refinement pipeline over all `out/KTU *.tsv` files (278 tablets) with `--allow-large-step-changes`, regenerating `reports/*`.
+
 - Reverted noun-side POS coercion in `l + noun` compound-preposition passes so suffix-friendly noun payloads are retained:
   - `L_PN_PREP_CANONICAL_PAYLOADS` now keeps `pn*` payloads as `n. m. pl. tant.` (not `prep.`),
   - `L_BODY_COMPOUND_PREP_RULES` now keeps `pˤn` as `n. f.` and `ẓr` as `n. m.` (not `prep.`),

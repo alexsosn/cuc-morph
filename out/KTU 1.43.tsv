@@ -25,9 +25,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148789	gb	gb(I)/	gb (I)	n. m.	pit	
 148790	bt	bt(II)/	bt (II)	n. m.	house	
 148790	bt	b(t(I)/t	bt (I)	n. f.	daughter	
-148791	ilm	il(I)/m	ỉl (I)	n. m.	god	
+148791	ilm	il(I)/m	ỉl (I)	n. f.	god	
 # KTU 1.43 3						
-148792	kbkbm	kbkb/m	kbkb	n. m.	heavenly body	
+148792	kbkbm	kbkb/m	kbkb	n. m. du.	heavenly body	
 148793	xtrmt	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.43 4						
 148794	lbš	lbš/	lbš	n. m.	clothing	
@@ -37,7 +37,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148797	ušpġt	ušpġ(t/t	ủšpġt	n. f.	ein Gewand	
 # KTU 1.43 5						
 148798	ḫrṣ	ḫrṣ/	ḫrṣ	n. m.	gold	
-148799	ṯlṯt	ṯlṯ(I)/	ṯlṯ (I)	n. num.	three	
+148799	ṯlṯt	ṯlṯ(I)/t	ṯlṯ (I)	n. nuf.	three	
 148800	mzn	mzn/	mzn	n. m.	weight	
 # KTU 1.43 6						
 148801	drk	dr/	dr	n. m.	circle	
@@ -48,14 +48,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148805	tlṯ	tlṯ	tlṯ	?		
 # KTU 1.43 7						
 148806	ṣin	ṣin(I)/	ṣỉn (I)	n. f.	ewe	
-148807	šlmm	šlm(II)/~m	šlm (II)	n. m.	communion victim / sacrifice	
-148807	šlmm	šlm(II)/m	šlm (II)	n. m.	communion victim / sacrifice	
+148807	šlmm	šlm(II)/~m	šlm (II)	n. f.	communion victim / sacrifice	
+148807	šlmm	šlm(II)/m	šlm (II)	n. f.	communion victim / sacrifice	
 148808	šbˤ	šbˤ(I)/	šbʕ (I)	n. num.	seven	
 148809	pamt	pa/m	pảm(t)	n. f.	time	
 # KTU 1.43 8						
 148810	l	l(I)	l (I)	prep.	to	
 148810	l	l(III)	l (III)	functor	certainly	
-148811	ilm	il(I)/m	ỉl (I)	n. m.	god	
+148811	ilm	il(I)/m	ỉl (I)	n. f.	god	
 148812	šbˤ	šbˤ(I)/	šbʕ (I)	n. num.	seven	
 148813	l	l(I)	l (I)	prep.	to	
 148813	l	l(III)	l (III)	functor	certainly	
@@ -144,7 +144,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148867	l	l(III)	l (III)	functor	certainly	
 148868	gṯrm	gṯr/+m(I)	gṯr	DN	Gaṯaru/Gašru/eponym of the dead and deified kings	
 148868	gṯrm	gṯr/+m(II)	gṯr	DN	Gaṯaru/Gašru/eponym of the dead and deified kings	
-148869	dkrm	dkr/	dkr	n. m.	male animal	
+148869	dkrm	dkr/m	dkr	n. m. du.	male animal	
 # KTU 1.43 20						
 148870	ap	ap(I)	ảp (I)	adv./conj.	also	
 148870	ap	ap(II)/	ảp (II)	n. m.	nose	
@@ -173,20 +173,20 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148883	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 148884	ylk	hlk[	/h-l-k/	vb G	to go	
 148885	lqḥ	lqḥ[	/l-q-ḥ/	vb G	to get hold of	
-148886	ilm	il(I)/m	ỉl (I)	n. m.	god	
+148886	ilm	il(I)/m	ỉl (I)	n. f.	god	
 # KTU 1.43 24						
 148887	aṯr	aṯr(I)	ảṯr (I)	adv. or prep.	then	
-148887	aṯr	ʔṯr[	/ʔ-ṯ-r/	vb G/D	to go	
-148888	ilm	il(I)/m	ỉl (I)	n. m.	god	
+148887	aṯr	(ʔ&aṯr[	/ʔ-ṯ-r/	vb G/D	to go	
+148888	ilm	il(I)/m	ỉl (I)	n. f.	god	
 148889	ylk	hlk[	/h-l-k/	vb G	to go	
-148890	pˤnm	pˤn/+nm	pʕn	n. f.	foot	
+148890	pˤnm	pˤn/m	pʕn	n. f. du.	foot	
 # KTU 1.43 25						
 148891	mlk	mlk[	/m-l-k/	vb G	to reign	
 148891	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
-148892	pˤnm	pˤn/+nm	pʕn	n. f.	foot	
+148892	pˤnm	pˤn/m	pʕn	n. f. du.	foot	
 148893	ylk	hlk[	/h-l-k/	vb G	to go	
 # KTU 1.43 26						
 148894	šbˤpamt	?	?	?	?	DULAT: NOT FOUND
 148895	l	l(I)	l (I)	prep.	to	
 148895	l	l(III)	l (III)	functor	certainly	
-148896	klhm	kl/+hm	kl	n. m.	totality (of)	
+148896	klhm	kl/+hm	kl	n. f.	totality (of)	

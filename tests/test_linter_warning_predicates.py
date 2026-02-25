@@ -110,6 +110,9 @@ class LinterWarningPredicateTest(unittest.TestCase):
     def test_suffix_not_flagged_without_suffix_shape(self) -> None:
         self.assertFalse(analysis_has_missing_suffix_plus("ˤl(I)", "ˤl"))
 
+    def test_suffix_not_flagged_for_enclitic_tilde_encoding(self) -> None:
+        self.assertFalse(analysis_has_missing_suffix_plus("mṣd(III)/~h", "mṣdh"))
+
     def test_verb_root_lookup_keys_include_non_slash_variant(self) -> None:
         keys = verb_root_lookup_keys("dk")
         self.assertIn("/d-k/", keys)

@@ -9,11 +9,15 @@ from pipeline.steps.feminine_t_singular_split import FeminineTSingularSplitFixer
 
 
 class _PluralOnlyGate:
-    def __init__(self, plural_tokens=None) -> None:
+    def __init__(self, plural_tokens=None, morphologies=None) -> None:
         self._plural = set(plural_tokens or [])
+        self._morphologies = dict(morphologies or {})
 
     def is_plural_token(self, token: str, surface: str = "") -> bool:
         return token in self._plural
+
+    def surface_morphologies(self, token: str, surface: str) -> set[str]:
+        return set(self._morphologies.get((token, surface), set()))
 
 
 class FeminineTSingularSplitFixerTest(unittest.TestCase):
@@ -182,6 +186,14 @@ class FeminineTSingularSplitFixerTest(unittest.TestCase):
         )
         result = fixer.refine_row(row)
         self.assertEqual(result.analysis, "ṯn(t(II)/t=")
+
+    def test_adds_feminine_t_split_from_dulat_surface_morphology(self) -> None:
+        fixer = FeminineTSingularSplitFixer(
+            gate=_PluralOnlyGate(morphologies={("pḥl", "pḥlt"): {"f."}}),
+        )
+        row = TabletRow("15", "pḥlt", "pḥl/", "pḥl", "n. m.", "ass", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "pḥl/t")
 
 
 if __name__ == "__main__":

@@ -25,6 +25,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154161	šxxy	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.119 4						
 154162	ˤrb	ˤrb(I)[	/ʕ-r-b/ (I)	vb G	to enter	
+154162	ˤrb	ˤrb(II)[	/ʕ-r-b/ (II)	vb G	to give a guarantee or pledge	
 154162	ˤrb	ˤrb(I)/	ʕrb (I)	n. m.	entry	
 154163	špš	špš/	špš	n.	sun	
 154164	w	w	w	conj.	and	
@@ -42,26 +43,26 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154172	brr	br/	br(r)	n. m.	tin	
 154172	brr	brr/	brr	adj. m.	pure	
 # KTU 1.119 6						
-154173	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+154173	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 154174	qdš	qdš(I)/	qdš (I)	adj. m.	holy	
 154174	qdš	qdš(II)/	qdš (II)	n. m.	sanctuary	
-154175	il	il(I)/	ỉl (I)	n. m.	god	
-154176	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+154175	il	il(I)/	ỉl (I)	n. m. du.	god	
+154176	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 154177	l	l(I)	l (I)	prep.	to	
 154177	l	l(III)	l (III)	functor	certainly	
 154178	bˤlm	bˤl(II)/m	bʕl (II)	n. m.	lord	
 # KTU 1.119 7						
-154179	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+154179	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 154180	l	l(I)	l (I)	prep.	to	
 154180	l	l(III)	l (III)	functor	certainly	
 154181	ġlm	ġlm/	ġlm	n. m.	boy	
-154182	dqtm	dq(t(I)/tm	dqt (I)	adj. f. or n. f.	small	
+154182	dqtm	dqt(I)/m	dqt (I)	adj. f. or n. f. du.	small	
 154183	w	w	w	conj.	and	
-154184	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+154184	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 # KTU 1.119 8						
 154185	l	l(I)	l (I)	prep.	to	
 154185	l	l(III)	l (III)	functor	certainly	
-154186	ġlmtm	ġlm(t(I)/tm	ġlmt (I)	n. f.	damsel	
+154186	ġlmtm	ġlmt(I)/m	ġlmt (I)	n. f. du.	damsel	
 154187	bt	bt(II)/	bt (II)	n. m.	house	
 154187	bt	b(t(I)/t	bt (I)	n. f.	daughter	
 154188	ṯˤy	ṯˤy(I)/	ṯʕy (I)	n. m.	minister	
@@ -100,8 +101,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154210	ugrt	ugrt/	ủgrt	TN	ʾugarītu	
 # KTU 1.119 13						
 154211	u	u	ủ	conj.	or	
-154212	urm	ur/+m(I)	ủr	n. m.	warmth	
-154212	urm	ur/+m(II)	ủr	n. m.	warmth	
+154212	urm	urm/	ủrm	PN	ủrm	
 154213	u	u	ủ	conj.	or	
 154214	šnpt	šnp(t/t	šnpt	n. f.	wave- offering	
 154215	l	l(I)	l (I)	prep.	to	
@@ -113,7 +113,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154217	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 154218	bt	bt(II)/	bt (II)	n. m.	house	
 154218	bt	b(t(I)/t	bt (I)	n. f.	daughter	
-154219	il	il(I)/	ỉl (I)	n. m.	god	
+154219	il	il(I)/	ỉl (I)	n. m. du.	god	
 154220	npš	npš(I)/	npš (I)	n. f.	throat	
 154221	l	l(I)	l (I)	prep.	to	
 154221	l	l(III)	l (III)	functor	certainly	
@@ -154,7 +154,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154246	mm	mm(I)/	mm (I)	n. m.	winter	
 154247	w	w	w	conj.	and	
 154248	kbd	kbd(II)/	kbd (II)	n. m.	total (quantity or price)	
-154248	kbd	kbd(I)/	kbd (I)	n.	liver	
+154248	kbd	kbd(I)/	kbd (I)	n. f.	liver	
 154248	kbd	kbd[	/k-b-d/	vb D	to honour	
 154249	w	w	w	conj.	and	
 154250	ššrt	ššr(t/t	ššrt	n. f.	chain	
@@ -171,6 +171,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.119 23						
 154259	mḥllm	mḥll/m	mḥll	n. m.	desacraliser	
 154260	ˤrb	ˤrb(I)[	/ʕ-r-b/ (I)	vb G	to enter	
+154260	ˤrb	ˤrb(II)[	/ʕ-r-b/ (II)	vb G	to give a guarantee or pledge	
 154260	ˤrb	ˤrb(I)/	ʕrb (I)	n. m.	entry	
 154261	špš	špš/	špš	n.	sun	
 154262	x	?	?	?	?	
@@ -188,7 +189,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.119 25						
 154269	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
 154269	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
-154270	mtk	mt(II)/+k	mt (II)	n. m.	death	
+154270	mtk	m(t(II)/t+k	mt (II)	n. f.	death	
 154271	mlkm	mlk(I)	mlk (I)		king	
 154272	rišyt	rišy(t/t	rỉšyt	n. f.	beginning	
 # KTU 1.119 26						
@@ -206,7 +207,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154277	qrd	qrd(I)/	qrd (I)	n. m.	hero	
 # KTU 1.119 27						
 154278	ḥmytkm	ḥmt(I)/+km	ḥmt (I)	n. f.	wall	
-154279	ˤnkm	ˤn(I)/	ʕn (I)	n. f.	eye	
+154279	ˤnkm	ˤn(I)/	ʕn (I)	n. f. du.	eye	
 154280	l	l(I)	l (I)	prep.	to	
 154281	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
 154282	tšun	!t!nšʔ[	/n-š-ʔ/	vb G	to raise	
@@ -240,7 +241,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154296	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
 154296	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
 # KTU 1.119 31						
-154297	nmlu	!n!mlʔ[	/m-l-ʔ/	vb D	to be full	
+154297	nmlu	!n!ml(ʔ&u[	/m-l-ʔ/	vb D	to be full	
 154298	dkr	dkr/	dkr	n. m.	male animal	
 154299	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
 154299	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
@@ -249,7 +250,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154301	ḥtp	ḥtp/	ḥtp	n. m.	Speisen	
 154302	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
 154302	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
-154303	nmlu	!n!mlʔ[	/m-l-ʔ/	vb D	to be full	
+154303	nmlu	!n!ml(ʔ&u[	/m-l-ʔ/	vb D	to be full	
 154304	ˤšrt	ˤšr(t(II)/t	ʕšrt (II)	n. f.	group of ten	
 154305	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
 154305	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
@@ -277,7 +278,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154317	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
 154318	l	l(I)	l (I)	prep.	to	
 154318	l	l(III)	l (III)	functor	certainly	
-154319	ṣltkm	ṣlt/+km	ṣlt	n. f.	prayer	
+154319	ṣltkm	ṣl(t/t+km	ṣlt	n. f.	prayer	
 # KTU 1.119 35						
 154320	ydy	yd(I)/+y	yd (I)	n. f.	hand	
 154320	ydy	!y!(ydy(I)[	/y-d-y/ (I)	vb G	to throw	

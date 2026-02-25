@@ -5,7 +5,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161378	ṯmnym	ṯmn(I)/	ṯmn(y) (I)	num.	eight	
 161378	ṯmnym	ṯmnym/	ṯmnym	num.	eighty	
 161379	ksp	ksp/	ksp	n. m.	silver	
-161380	ḫmšt	ḫmš(I)/	ḫmš (I)	n. num.	five	
+161380	ḫmšt	ḫmš(I)/t	ḫmš (I)	n. nuf.	five	
 # KTU 3.13 2						
 161381	w	w	w	conj.	and	
 161382	arbˤ	arbˤ/	ảrbʕ	num.	four	
@@ -40,7 +40,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161400	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
 161401	ṯryn	ṯryn(I)/	ṯryn (I)	n. m.	(suit of) armour	
 # KTU 3.13 6						
-161402	ḫmšt	ḫmš(I)/	ḫmš (I)	n. num.	five	
+161402	ḫmšt	ḫmš(I)/t	ḫmš (I)	n. nuf.	five	
 161403	l	l(I)	l (I)	prep.	to	
 161403	l	l(III)	l (III)	functor	certainly	
 161404	ˤšrm	ˤšrm/	ʕšrm	n. num.	twenty	
@@ -52,7 +52,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161408	llit	llit/	llỉt	PN	llỉt	
 # KTU 3.13 7						
 161409	w	w	w	conj.	and	
-161410	ḫmšt	ḫmš(I)/	ḫmš (I)	n. num.	five	
+161410	ḫmšt	ḫmš(I)/t	ḫmš (I)	n. nuf.	five	
 161411	ksp	ksp/	ksp	n. m.	silver	
 161412	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
 161413	yrbˤm	yrbˤm/	yrbʕm	PN	yrbʿm	
@@ -136,26 +136,26 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 3.13 19						
 161462	w	w	w	conj.	and	
 161463	ṯt	ṯn(I)/	ṯn (I)	num.	two	
-161464	mqrtm	mqr(t/tm	mqrt	n. f.	Goblet	
+161464	mqrtm	mqrt/m	mqrt	n. f. du.	Goblet	
 # KTU 3.13 20						
 161465	w	w	w	conj.	and	
 161466	ṯn	ṯn(I)/	ṯn (I)	num.	two	
-161467	irpm	irp/	ỉrp	n. m.	Zeder(n-holz)	
+161467	irpm	irp/m	ỉrp	n. m. du.	Zeder(n-holz)	
 161468	w	w	w	conj.	and	
 161469	ṯn	ṯn(I)/	ṯn (I)	num.	two	
-161470	trqm	trq/	trq	n. m.	(Metall-)Kessel	
+161470	trqm	trq/m	trq	n. m. du.	(Metall-)Kessel	
 # KTU 3.13 21						
 161471	w	w	w	conj.	and	
 161472	qpt	qp(t/t	qpt	n. f.	box	
 161473	w	w	w	conj.	and	
-161474	mqḥm	mqḥ/	mqḥ	n. m.	tong(s)	
+161474	mqḥm	mqḥ/m	mqḥ	n. m. du.	tong(s)	
 # KTU 3.13 22						
 161475	w	w	w	conj.	and	
 161476	ṯlṯm	ṯlṯm/	ṯlṯm	num.	thirty	
 161477	yn	yn/	yn	n. m.	wine	
 161478	šbˤ	šbˤ(I)/	šbʕ (I)	n. num.	seven	
 161479	kbd	kbd(II)/	kbd (II)	n. m.	total (quantity or price)	
-161479	kbd	kbd(I)/	kbd (I)	n.	liver	
+161479	kbd	kbd(I)/	kbd (I)	n. f.	liver	
 161479	kbd	kbd[	/k-b-d/	vb D	to honour	
 161480	d	d	d	det. or rel. functor	the one(s) of	
 161481	ṯbṭ	ṯbṭ/	ṯbṭ	PN	ṯbṭ	
@@ -165,4 +165,4 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161483	ḫmšm	ḫmšm/	ḫmšm	n. num.	fifty	
 161484	yn	yn/	yn	n. m.	wine	
 161485	d	d	d	det. or rel. functor	the one(s) of	
-161486	iḫh	aḫ(I)/	ảḫ (I)	n. m.	brother (by blood)	
+161486	iḫh	aḫ(I)/	ảḫ (I)	n. f.	brother (by blood)	

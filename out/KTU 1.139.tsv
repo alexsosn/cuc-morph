@@ -4,18 +4,18 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.139 2						
 154867	ilib	ilib(I)/	ỉlỉb (I)	DN	father god	
 # KTU 1.139 3						
-154868	šlmm	šlm(II)/~m	šlm (II)	n. m.	communion victim / sacrifice	
-154868	šlmm	šlm(II)/m	šlm (II)	n. m.	communion victim / sacrifice	
+154868	šlmm	šlm(II)/~m	šlm (II)	n. f.	communion victim / sacrifice	
+154868	šlmm	šlm(II)/m	šlm (II)	n. f.	communion victim / sacrifice	
 # KTU 1.139 4						
 154869	x	?	?	?	?	
 154870	wṯn	?	?	?	?	DULAT: NOT FOUND
-154871	šm	š/	š	n. m.	ram	
+154871	šm	š/m	š	n. m. du.	ram	
 154871	šm	šm(I)/	šm (I)	n. m.	name	
 # KTU 1.139 5						
 154872	w	w	w	conj.	and	
 154873	š	š/	š	n. m.	ram	
 # KTU 1.139 6						
-154874	il	il(I)/	ỉl (I)	n. m.	god	
+154874	il	il(I)/	ỉl (I)	n. m. du.	god	
 154875	tˤḏr	tˤḏr/	tʕḏr	n. m.	help	
 154876	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 154877	š	š/	š	n. m.	ram	
@@ -25,7 +25,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154879	ugrt	ugrt/	ủgrt	TN	ʾugarītu	
 154880	š	š/	š	n. m.	ram	
 # KTU 1.139 9						
-154881	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
+154881	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 # KTU 1.139 10						
 154882	ġlmt	ġlm(t(I)/t	ġlmt (I)	n. f.	damsel	
 154882	ġlmt	ġlm(t(II)/t	ġlmt (II)	n. f.	concealment	
@@ -39,8 +39,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154886	n	+n, +n=	-n (III)	suff. pn. morph. 1.p.pl.	our/us	
 154886	n		-n (IV)	contracted suff. pn. morph. used with a vb	him/her/it	
 154887	w	w	w	conj.	and	
+154888	prs	pr/	prś/s	n. m.	misura di capacità per aridi	
 154888	prs	prs(I)/	prs (I)	n. m.	pole	
-154888	prs	pr/	prś	n.	misura di capacità per aridi	
 # KTU 1.139 13						
 154889	k	+k	-k (I)			
 154889	k	~k	-k (II)			
@@ -50,7 +50,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154890	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
 154890	yšt	šty[	/š-t-y/	vb G	to drink	
 # KTU 1.139 14						
-154891	pdry	pdr(I)/+y	pdr (I)	n. m.	town	
+154891	pdry	pdry/	pdry	DN	Pidray	
 154892	bt	bt(II)/	bt (II)	n. m.	house	
 154892	bt	b(t(I)/t	bt (I)	n. f.	daughter	
 154893	mlk	mlk[	/m-l-k/	vb G	to reign	
@@ -58,13 +58,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.139 15						
 154894	dbḥ	dbḥ/	dbḥ	n. m.	sacrifice	
 154894	dbḥ	dbḥ[	/d-b-ḥ/	vb G	to sacrifice	
-154895	pdry	pdr(I)/+y	pdr (I)	n. m.	town	
+154895	pdry	pdry/	pdry	DN	Pidray	
 # KTU 1.139 16						
 154896	alpw	?	?	?	?	DULAT: NOT FOUND
 154897	š	š/	š	n. m.	ram	
 # KTU 1.139 17						
 154898	b	b	b	prep.	in	
-154899	ilm	il(I)/m	ỉl (I)	n. m.	god	
+154899	ilm	il(I)/m	ỉl (I)	n. f.	god	
 # KTU 1.139 18						
 154900	xm	?	?	?	?	DULAT: NOT FOUND
 154901	ksp	ksp/	ksp	n. m.	silver	

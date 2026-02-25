@@ -90,6 +90,25 @@ class DulatMorphGate:
                     out.add(morph)
         return out
 
+    def has_surface_form(self, token: str, surface: str) -> bool:
+        """Return True when token has an exact surface form in DULAT forms."""
+        lemma, hom = self._parse_declared_token(token)
+        if not lemma or lemma == "?":
+            return False
+        keys = self._keys_for_token(lemma=lemma, hom=hom)
+        if not keys:
+            return False
+
+        canon_surface = self._normalize_form(surface)
+        if not canon_surface:
+            return False
+
+        for key in keys:
+            for form_text, _morphology in self._forms_by_token.get(key, []):
+                if form_text == canon_surface:
+                    return True
+        return False
+
     def _feature_for_token(self, token: str, surface: str = "") -> TokenFeatures:
         lemma, hom = self._parse_declared_token(token)
         if not lemma or lemma == "?":
@@ -176,7 +195,12 @@ class DulatMorphGate:
             text = (morph or "").lower()
             if not text:
                 continue
-            if _PLURAL_RE.search(text) or _PLURAL_WORD_RE.search(text):
+            if (
+                _PLURAL_RE.search(text)
+                or _PLURAL_WORD_RE.search(text)
+                or _DUAL_RE.search(text)
+                or _DUAL_WORD_RE.search(text)
+            ):
                 has_plural = True
             if _SUFFIX_RE.search(text):
                 has_suffix = True

@@ -4,7 +4,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149998	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
 149998	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
 149999	xxy	?	?	?	?	DULAT: NOT FOUND
-150000	tnn	tnn(I)/	tnn (I)	DN	“dragon” ym’s primordial ally or double	DULAT lemma fallback (no forms row)
+150000	tnn	tnn(I)/	tnn (I)	DN	“dragon” ym’s primordial ally or double	
 150001	w	w	w	conj.	and	
 150002	ygl	gly[	/g-l-y/	vb G/N	to present oneself	
 150003	w	w	w	conj.	and	
@@ -16,7 +16,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150008	arṣ	arṣ/	ảrṣ	n. f.	earth	
 150009	idy	idy	ỉdy	adv.	already	
 150010	alt	al(t(I)/t	ảlt (I)	n. f.	curse	
-150010	alt	al(t(II)/t=	ảlt (II)	n. f.	support	
+150010	alt	alt(II)/	ảlt (II)	n. f.	support	
 150011	l	l(I)	l (I)	prep.	to	
 150011	l	l(II)	l (II)	adv.	no	
 150011	l	l(III)	l (III)	functor	certainly	
@@ -24,7 +24,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150012	aḥš	!a!ḥš(II)[	/ḥ-š/ (II)	vb G	to feel	
 150013	idy	idy	ỉdy	adv.	already	
 150014	alt	al(t(I)/t	ảlt (I)	n. f.	curse	
-150014	alt	al(t(II)/t=	ảlt (II)	n. f.	support	
+150014	alt	alt(II)/	ảlt (II)	n. f.	support	
 150015	in	in/	ỉn	n. m.	lack of	
 150016	ly	l(I)+y	l (I)	prep.	to	
 # KTU 1.82 3						
@@ -42,17 +42,17 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150022	km	km	km	prep./conj./adv.		
 150022	km	+km, +km=	-km			
 150023	yr	yr/	yr	n. m.	early rain	
-150024	klyth	kly/t=+h	klyt	n. f.	kidneys	
+150024	klyth	klyt/+h	klyt	n. f. du.	kidneys	
 150025	w	w	w	conj.	and	
 150026	lbh	lb/+h	lb	n. m.	heart	
 # KTU 1.82 4						
 150027	xxx	?	?	?	?	
-150028	pk	p(III)/+k	p (III)	n. m.	mouth	
+150028	pk	p(III)/+k	p (III)	n. f.	mouth	
 150029	b	b	b	prep.	in	
 150030	ġr	ġr(I)/	ġr (I)	n. m.	mountain	
 150030	ġr	ġr(III)/	ġr (III)	n. m.	skin	
 150031	ṯn	ṯn(I)/	ṯn (I)	num.	two	
-150032	pk	p(III)/+k	p (III)	n. m.	mouth	
+150032	pk	p(III)/+k	p (III)	n. f.	mouth	
 150033	b	b	b	prep.	in	
 150034	ḫlb	ḫlb(I)/	ḫlb (I)	n. m.	massif	
 150035	k	+k	-k (I)			
@@ -61,8 +61,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150035	k	k(I)	k (I)	prep.	like	
 150035	k	k(II)	k (II)	emph. functor	yes	
 150036	tgwln	!t!gl[	/g-l/	vb D	to rejoice	
-150037	šntk	šnt(t(I)/t=	šnt (I)	n. f.	year	
-150037	šntk	šn/+k	šn	n. m.	tooth	
+150037	šntk	šnt(I)/	šnt (I)	n. f.	year	
+150037	šntk	šn/	šn	n. f.	tooth	
 # KTU 1.82 5						
 150038	xxw	?	?	?	?	DULAT: NOT FOUND
 150039	šptk	šp(t/t	špt	n. f.	lip	
@@ -90,11 +90,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150051	špš	špš/	špš	n.	sun	
 150052	ḥw	ḥw(I)[	/ḥ-w/y-y/ (I)	vb D	to live	
 150053	bṯnm	bṯn/m	bṯn	n. m.	serpent	
-150054	uḫd	ʔḫd[	/ʔ-ḫ-d(/ḏ)/	vb G/Gpass	to collect	
+150054	uḫd	(ʔ&uḫd[	/ʔ-ḫ-d(/ḏ)/	vb G/Gpass	to collect	
 150055	bˤlm	bˤl(II)/m	bʕl (II)	n. m.	lord	
 # KTU 1.82 7						
 150056	x	?	?	?	?	
-150057	aṭm	ʔṭm[	/ʔ-ṭ-m/	vb	to stop up	
+150057	aṭm	(ʔ&aṭm[	/ʔ-ṭ-m/	vb	to stop up	
 150058	prṭl	prṭl/	prṭl	n. m.	eine Pflanze	
 150059	l	l(I)	l (I)	prep.	to	
 150059	l	l(III)	l (III)	functor	certainly	
@@ -104,19 +104,19 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.82 8						
 150063	wydbr	?	?	?	?	DULAT: NOT FOUND
 150064	ṯrmt	ṯrm(t/t	ṯrmt	n. f.	meat	
-150065	alm	al(III)/	ảl (III)	n. m.	ram (of superior quality)	
+150065	alm	al(III)/m	ảl (III)	n. m. du.	ram (of superior quality)	
 150066	qḥny	lqḥ[	/l-q-ḥ/	vb G	to get hold of	
 150067	šy	š/	š	n. m.	ram	
 150068	qḥny	lqḥ[	/l-q-ḥ/	vb G	to get hold of	
 # KTU 1.82 9						
 150069	xxšir	?	?	?	?	DULAT: NOT FOUND
-150070	bkrm	bkr/	bkr	n. m.	first-born	
+150070	bkrm	bkr/m	bkr	n. m. du.	first-born	
 150071	nṭṭt	!n!nṭṭ[	/n-ṭ-ṭ/	vb G	to shake	
 150072	um	um/	ủm	n. f.	mother	
 150073	ˤlt	ˤl(I)	ʕl (I)	prep.	upon	
 150073	ˤlt	ˤly[t	/ʕ-l-y/	vb G	to go up	
 150074	b	b	b	prep.	in	
-150075	aby	ab/+y	ảb	n. m.	father	
+150075	aby	ab/+y	ảb	n. f.	father	
 # KTU 1.82 10						
 150076	xk	?	?	?	?	DULAT: NOT FOUND
 150077	ˤlt	ˤl(I)	ʕl (I)	prep.	upon	
@@ -147,7 +147,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.82 12						
 150091	xxxxxxxxxxx	?	?	?	?	
 150092	ˤpr	ˤpr(I)/	ʕpr (I)	n. m.	dust	
-150093	btk	bt(II)/+k	bt (II)	n. m.	house	
+150093	btk	b(t(II)/t+k	bt (II)	n. f.	house	
 150094	ygršk	!y!grš[	/g-r-š/	vb G	to eject	
 # KTU 1.82 13						
 150095	yazr	?	?	?	?	DULAT: NOT FOUND
@@ -159,13 +159,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150099	bnt	bnt(III)/	bnt (III)	n. m.	tamarisk	
 150100	ḥ	lqḥ[	/l-q-ḥ/	vb G/N	to get hold of	
 # KTU 1.82 14						
-150101	uḫd	ʔḫd[	/ʔ-ḫ-d(/ḏ)/	vb G/Gpass	to collect	
+150101	uḫd	(ʔ&uḫd[	/ʔ-ḫ-d(/ḏ)/	vb G/Gpass	to collect	
 150102	bˤlm	bˤl(II)/m	bʕl (II)	n. m.	lord	
 150103	ˤxxxl	?	?	?	?	DULAT: NOT FOUND
-150104	ydk	yd(I)/+k	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
-150104	ydk	yd(I)/+k=	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
-150104	ydk	yd(II)/+k	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
-150104	ydk	yd(II)/+k=	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
+150104	ydk	yd(I)/+k	yd (I)	n. f.	hand	
+150104	ydk	yd(I)/+k=	yd (I)	n. f.	hand	
+150104	ydk	yd(II)/+k	yd (II)	n. m.	love	
+150104	ydk	yd(II)/+k=	yd (II)	n. m.	love	
 150104	ydk	!y!dk[	d-k(-k)/	vb Gpass	to be pounded	
 150104	ydk	!y=!dk[	d-k(-k)/	vb Gpass	to be pounded	
 150105	amṣ	amṣ/	ảmṣ	adj. m.	strength	
@@ -184,8 +184,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150114	bn	bn(I)/	bn (I)	n. m.	son	
 150114	bn	bn(II)	bn (II)	prep.	between	
 150114	bn	bn[	/b-n/	vb G	to understand	
-150115	ˤnk	ˤn(I)/	ʕn (I)	n. f.	eye	
-150116	ṣmdm	ṣmd/m	ṣmd	n. m.	pair	
+150115	ˤnk	ˤn(I)/	ʕn (I)	n. f. du.	eye	
+150116	ṣmdm	ṣmd/m	ṣmd	n. m. du.	pair	
 150116	ṣmdm	ṣmd[	/ṣ-m-d/	vb G	to harness	
 150117	špk	špk[	/š-p-k/	vb G	to spill	
 # KTU 1.82 17						
@@ -193,7 +193,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150119	mbk	mbk/	mbk	n. m.	source	
 150120	kpt	kp/t=	kp	n. f.	palm (of the hand)	
 150120	kpt	ḥkpt/	ḥkpt	TN	ḥkpt	
-150121	wn	w+n	w	conj.	and	
+150121	wn	wn	wn	→		
 150122	b	b	b	prep.	in	
 150123	gx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.82 18						
@@ -210,7 +210,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.82 19						
 150130	xxxxxxxx	?	?	?	?	
 150131	aḥw	!a!ḥw(I)[	/ḥ-w/y-y/ (I)	vb D	to live	
-150132	aṭm	ʔṭm[	/ʔ-ṭ-m/	vb	to stop up	
+150132	aṭm	(ʔ&aṭm[	/ʔ-ṭ-m/	vb	to stop up	
 150133	prṭl	prṭl/	prṭl	n. m.	eine Pflanze	
 150134		?	?	?	?	
 # KTU 1.82 20						
@@ -287,7 +287,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150178	mdbm	mdb/m	mdb	n. m.	tide	
 150179	l	l(I)	l (I)	prep.	to	
 150179	l	l(III)	l (III)	functor	certainly	
-150180	ḥrn	ḥr(I)/+n	ḥr (I)	n. m.	intestine(s)	
+150180	ḥrn	ḥrn/	ḥrn	DN	Ḥôrānu	
 150181	ḥrnm	ḥrn/+m(I)	ḥrn	DN	Ḥôrānu	
 150181	ḥrnm	ḥrn/+m(II)	ḥrn	DN	Ḥôrānu	
 # KTU 1.82 28						
@@ -297,7 +297,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150184	hm	hm(II)	hm (II)	conj./interr. functor	if	
 # KTU 1.82 29						
 150185	xxxxxxxxxxxx	?	?	?	?	
-150186	aṯtn	aṯ(t/t	ảṯt	n. f.	woman	
+150186	aṯtn	aṯt/	ảṯt	n. f. du.	woman	
 150187	n	~n	-n (I)	encl. morph.		
 150187	n	[n, [n=	-n (II)	suffixed pn. morph. used with vb	me/to me	
 150187	n	+n, +n=	-n (III)	suff. pn. morph. 1.p.pl.	our/us	
@@ -339,19 +339,19 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150210	trtḥ	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.82 36						
 150211	xxxxxmṯbh	?	?	?	?	DULAT: NOT FOUND
-150212	aḫt	aḫ(t(I)/t=	ảḫt (I)	n. f.	sister (related by blood)	
+150212	aḫt	aḫt(I)/	ảḫt (I)	n. f.	sister (related by blood)	
 150213	ppšr	ppšr/	ppšr	PN	ppšr	
 150214	w	w	w	conj.	and	
 150215	ppšrt	ppšrt/	ppšrt	PN	ppšrt	
 150216		?	?	?	?	
 # KTU 1.82 37						
 150217	xxxxxlk	?	?	?	?	DULAT: NOT FOUND
-150218	drḫm	drḫ/m	drḫ	n. m.	chamois	
+150218	drḫm	drḫ/m	drḫ	n. m. du.	chamois	
 150219	w	w	w	conj.	and	
 150220	aṯb	yṯb[	/y-ṯ-b/	vb G	to sit down	
 150221	l	l(I)	l (I)	prep.	to	
 150221	l	l(III)	l (III)	functor	certainly	
-150222	ntbtk	ntbt/+k	ntbt	n. m.	path	
+150222	ntbtk	ntb(t/t+k	ntbt	n. f.	path	
 150223	ˤṣm	ˤṣ/m	ʕṣ	n. m.	tree	
 150224	lt	lt	lt	?	?	
 # KTU 1.82 38						
@@ -359,7 +359,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150226	brḥ	brḥ/	brḥ	adj. m.	fleeing	
 150227	arṣ	arṣ/	ảrṣ	n. f.	earth	
 150228	lk	l(I)+k	l (I)	prep.	to	
-150229	pnh	pn(m/+h	pnm	n. m. pl. tant.	face	
+150229	pnh	pn(m/+h	pnm	n. f. pl. tant.	face	
 150230	yrk	yrk/	yrk	n. m.	body back part	
 150231	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
 150231	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
@@ -369,7 +369,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150233	ap	ap(II)/	ảp (II)	n. m.	nose	
 150234	l	l(I)	l (I)	prep.	to	
 150234	l	l(III)	l (III)	functor	certainly	
-150235	pḫrk	pḫr(I)/+k	pḫr (I)	n. m.	assembly	
+150235	pḫrk	pḫr(I)/+k	pḫr (I)	n. f.	assembly	
 150236	ˤnt	ˤn(I)/t=	ʕn (I)	n. f.	eye	
 150236	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 150236	ˤnt	ˤnt(II)	ʕnt (II)	adv.	now	
@@ -380,12 +380,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150239	tqm	!t!qm[	/q-m/	vb G	to stand up	
 # KTU 1.82 40						
 150240	xxxx	?	?	?	?	
-150241	pḫrk	pḫr(I)/+k	pḫr (I)	n. m.	assembly	
+150241	pḫrk	pḫr(I)/+k	pḫr (I)	n. f.	assembly	
 150242	ygršk	!y!grš[	/g-r-š/	vb G	to eject	
 150243	qr	qr(I)/	qr (I)	n. m.	source	
 150243	qr	qr(II)/	qr (II)	n. m.	noise	
 150243	qr	qr(III)/	qr (III)	n. m.	wall	
-150244	btk	bt(II)/+k	bt (II)	n. m.	house	
+150244	btk	b(t(II)/t+k	bt (II)	n. f.	house	
 150245	ygršk	!y!grš[	/g-r-š/	vb G	to eject	
 # KTU 1.82 41						
 150246	xxx	?	?	?	?	
@@ -398,16 +398,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150249	bnt	bnt(III)/	bnt (III)	n. m.	tamarisk	
 150250	mˤmˤ	mˤmˤ/	mʕmʕ	n. m.	convulsion	
 150251	ˤbd	ˤbd(I)/	ʕbd (I)	n. m.	servant	
-150252	ḥrn	ḥr(I)/+n	ḥr (I)	n. m.	intestine(s)	
+150252	ḥrn	ḥrn/	ḥrn	DN	Ḥôrānu	
 150253	tqxk	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.82 42						
 150254	xx	?	?	?	?	
 150255	aġwyn	!a!ġwy[	/ġ-w-y/	vb D	to cry vigorously	
-150256	ˤnk	ˤn(I)/	ʕn (I)	n. f.	eye	
+150256	ˤnk	ˤn(I)/	ʕn (I)	n. f. du.	eye	
 150257	ẓẓ	ẓẓ/	ẓẓ	element/DN	ẓẓ	
 150258	w	w	w	conj.	and	
 150259	kmġ	kmġ/	kmġ	DN	kmġ	
-150260	ilm	il(I)/m	ỉl (I)	n. m.	god	
+150260	ilm	il(I)/m	ỉl (I)	n. f.	god	
 # KTU 1.82 43						
 150261	xw	?	?	?	?	DULAT: NOT FOUND
 150262	ˤṣm	ˤṣ/m	ʕṣ	n. m.	tree	

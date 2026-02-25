@@ -402,20 +402,25 @@ class AlephPrefixFixerTest(unittest.TestCase):
     def setUp(self) -> None:
         self.fixer = AlephPrefixFixer()
 
-    def test_bare_aleph_gets_prefix(self) -> None:
+    def test_bare_aleph_gets_reconstructable_substitution(self) -> None:
         row = TabletRow("1", "ảb", "ʔb/", "ʔb", "n. m.", "father", "")
         result = self.fixer.refine_row(row)
-        self.assertEqual(result.analysis, "(ʔb/")
+        self.assertEqual(result.analysis, "(ʔ&ab/")
 
     def test_already_prefixed_unchanged(self) -> None:
-        row = TabletRow("1", "ảb", "(ʔb/", "ʔb", "n. m.", "father", "")
+        row = TabletRow("1", "ảb", "(ʔ&ab/", "ʔb", "n. m.", "father", "")
         result = self.fixer.refine_row(row)
-        self.assertEqual(result.analysis, "(ʔb/")
+        self.assertEqual(result.analysis, "(ʔ&ab/")
 
     def test_root_notation_skipped(self) -> None:
         row = TabletRow("1", "abd", "/ʔ-b-d/", "/ʔ-b-d/", "vb", "be missing", "")
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "/ʔ-b-d/")
+
+    def test_verb_surface_aleph_substitution_is_reconstructable(self) -> None:
+        row = TabletRow("2", "abd", "ʔbd[", "/ʔ-b-d/", "vb G", "be missing", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "(ʔ&abd[")
 
 
 class NounPosClosureFixerTest(unittest.TestCase):
@@ -481,6 +486,12 @@ class PluralSplitFixerTest(unittest.TestCase):
         row = TabletRow("1", "kṯrt", "kṯr(I)/", "kṯr (I)", "n. f.", "Kothar", "")
         result = fixer.refine_row(row)
         self.assertEqual(result.analysis, "kṯr(I)/t=")
+
+    def test_lemma_style_dual_surface_m_gets_split(self) -> None:
+        fixer = PluralSplitFixer(gate=StaticGate(plural_tokens={"š"}))
+        row = TabletRow("1", "šm", "š/", "š", "n. m.", "ram", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "š/m")
 
     def test_singular_t_form_not_forced_to_plural(self) -> None:
         fixer = PluralSplitFixer(gate=StaticGate(plural_tokens={"dqt (I)"}))
