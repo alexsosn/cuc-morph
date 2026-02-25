@@ -61,6 +61,13 @@ class NominalFormMorphPosFixerTest(unittest.TestCase):
         result = fixer.refine_row(row)
         self.assertEqual(result.pos, "n. m. pl. / n. m. du.")
 
+    def test_adds_construct_marker_for_construct_plural_ambiguity(self) -> None:
+        gate = _MorphGate({("zbl (I)", "zbl"): {"sg.", "pl., cst."}})
+        fixer = NominalFormMorphPosFixer(gate=gate)
+        row = TabletRow("2e2", "zbl", "zbl(I)/", "zbl (I)", "n. m.", "prince", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.pos, "n. m. sg. / n. m. pl. cstr.")
+
     def test_dedupes_preexisting_ambiguous_number_options(self) -> None:
         gate = _MorphGate({("ỉšd", "išdk"): {"pl.", "du., suff."}})
         fixer = NominalFormMorphPosFixer(gate=gate)

@@ -2,6 +2,19 @@
 
 ## 2026-02-25
 
+- Added construct-state propagation for ambiguous nominal number POS:
+  - `pipeline/steps/nominal_form_morph_pos.py` now carries DULAT
+    construct labels into plural ambiguity rendering (for example
+    `n. m. sg. / n. m. pl. cstr.` for `sg.` + `pl., cst./cstr.` forms).
+  - construct morphology matching now accepts both `cst.` and `cstr.`
+    spellings in:
+    - `pipeline/steps/dulat_gate.py`
+    - `linter/lint.py`
+  - added/updated regressions:
+    - `tests/test_nominal_form_morph_pos.py`
+    - `tests/test_linter_plurale_tantum_m.py`
+  - re-ran full `--include-existing` pipeline to apply globally.
+
 - Fixed two regressions introduced by verb-form encoding split rollout:
   - `nominal-form-morph-pos` ambiguity rendering is now idempotent for
     slash-packed POS heads (dedupes repeated number alternatives and avoids

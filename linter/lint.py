@@ -206,7 +206,7 @@ _DUAL_MORPH_RE = re.compile(r"\bdu\.", flags=re.IGNORECASE)
 _DUAL_WORD_MORPH_RE = re.compile(r"\bdual", flags=re.IGNORECASE)
 _SINGULAR_MORPH_RE = re.compile(r"\bsg\.", flags=re.IGNORECASE)
 _SINGULAR_WORD_MORPH_RE = re.compile(r"\bsing", flags=re.IGNORECASE)
-_CONSTRUCT_MORPH_RE = re.compile(r"\bcstr\b", flags=re.IGNORECASE)
+_CONSTRUCT_MORPH_RE = re.compile(r"\bcst(?:r)?\.?\b", flags=re.IGNORECASE)
 PLURALE_TANTUM_M_EXCLUDED_KEYS = {
     ("ḥlm", "II"),
     ("ʕgm", ""),

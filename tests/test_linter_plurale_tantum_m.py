@@ -139,7 +139,7 @@ class LinterPluraleTantumMRuleTest(unittest.TestCase):
                 messages,
             )
 
-    def test_does_not_require_pl_tant_for_cstr_only_plural_evidence(self) -> None:
+    def test_does_not_require_pl_tant_for_cst_only_plural_evidence(self) -> None:
         with tempfile.TemporaryDirectory() as tmp_dir:
             root = Path(tmp_dir)
             out_dir = root / "out"
@@ -159,7 +159,7 @@ class LinterPluraleTantumMRuleTest(unittest.TestCase):
                 homonym="",
                 pos="n.",
                 gloss="adversary",
-                morph="pl., cstr.",
+                morph="pl., cst.",
                 form_text="qm",
             )
             dulat_forms = {normalize_surface("qm"): [entry_qm]}

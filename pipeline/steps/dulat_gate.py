@@ -27,7 +27,7 @@ _DUAL_WORD_RE = re.compile(r"\bdual", flags=re.IGNORECASE)
 _SINGULAR_RE = re.compile(r"\bsg\.", flags=re.IGNORECASE)
 _SINGULAR_WORD_RE = re.compile(r"\bsing", flags=re.IGNORECASE)
 _SUFFIX_RE = re.compile(r"\bsuff", flags=re.IGNORECASE)
-_CONSTRUCT_RE = re.compile(r"\bcstr\b", flags=re.IGNORECASE)
+_CONSTRUCT_RE = re.compile(r"\bcst(?:r)?\.?\b", flags=re.IGNORECASE)
 _TOKEN_RE = re.compile(r"^(.*?)(?:\s*\(([IVX]+)\))?$")
 
 

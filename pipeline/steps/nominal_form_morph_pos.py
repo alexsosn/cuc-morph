@@ -13,6 +13,7 @@ _FEM_RE = re.compile(r"f\.", flags=re.IGNORECASE)
 _DUAL_POS_RE = re.compile(r"du\.", flags=re.IGNORECASE)
 _PLURAL_POS_RE = re.compile(r"(?:pl\.|plur(?:al)?)", flags=re.IGNORECASE)
 _SINGULAR_POS_RE = re.compile(r"(?:sg\.|sing(?:ular)?)", flags=re.IGNORECASE)
+_CONSTRUCT_POS_RE = re.compile(r"\bcst(?:r)?\.?", flags=re.IGNORECASE)
 _NUMBER_TOKEN_RE = re.compile(
     r"(?<!\w)(?:sg\.|sing(?:ular)?|pl\.|plur(?:al)?|du\.)(?=$|[\s,;/])",
     flags=re.IGNORECASE,
@@ -61,6 +62,14 @@ def _has_plural_marker(morphologies: set[str]) -> bool:
     return False
 
 
+def _has_construct_marker(morphologies: set[str]) -> bool:
+    for morph in morphologies:
+        parts = _split_comma((morph or "").lower())
+        if any(part in {"cstr.", "cstr", "cst.", "cst"} for part in parts):
+            return True
+    return False
+
+
 def _number_options_from_morphologies(morphologies: set[str]) -> list[str]:
     out: set[str] = set()
     for morph in morphologies:
@@ -75,6 +84,24 @@ def _number_options_from_morphologies(morphologies: set[str]) -> list[str]:
             out.add("du.")
     order = ["sg.", "pl.", "du."]
     return [marker for marker in order if marker in out]
+
+
+def _construct_by_number_from_morphologies(morphologies: set[str]) -> dict[str, bool]:
+    out: dict[str, bool] = {}
+    for morph in morphologies:
+        text = (morph or "").lower()
+        if not text:
+            continue
+        is_construct = _has_construct_marker({text})
+        if not is_construct:
+            continue
+        if _has_singular_marker({text}):
+            out["sg."] = True
+        if _has_plural_marker({text}):
+            out["pl."] = True
+        if _has_dual_marker({text}):
+            out["du."] = True
+    return out
 
 
 def _pos_gender(head: str) -> str:
@@ -173,6 +200,7 @@ class NominalFormMorphPosFixer(RefinementStep):
         has_singular = _has_singular_marker(morphologies)
         has_plural = _has_plural_marker(morphologies)
         number_options = _number_options_from_morphologies(morphologies)
+        construct_by_number = _construct_by_number_from_morphologies(morphologies)
         dual_unambiguous = has_dual and not has_singular and not has_plural
         if (
             not has_fem
@@ -210,7 +238,12 @@ class NominalFormMorphPosFixer(RefinementStep):
         else:
             out = ", ".join([rewritten_head, *parts[1:]])
 
-        out = _with_ambiguous_number_options(out, analysis_variant, number_options)
+        out = _with_ambiguous_number_options(
+            out,
+            analysis_variant,
+            number_options,
+            construct_by_number=construct_by_number,
+        )
         return _with_number_from_feminine_split(out, analysis_variant)
 
 
@@ -258,6 +291,7 @@ def _with_ambiguous_number_options(
     pos_value: str,
     analysis_variant: str,
     number_options: list[str],
+    construct_by_number: Optional[dict[str, bool]] = None,
 ) -> str:
     """Render POS number alternatives when DULAT form number is ambiguous."""
     value = (pos_value or "").strip()
@@ -289,7 +323,14 @@ def _with_ambiguous_number_options(
         return f"{deduped_head}, {rest.strip()}"
 
     base = base_options[0]
-    rendered = _dedupe([f"{base} {marker}".strip() for marker in number_options])
+    construct_by_number = dict(construct_by_number or {})
+    rendered: list[str] = []
+    for marker in number_options:
+        option = f"{base} {marker}".strip()
+        if marker == "pl." and construct_by_number.get(marker):
+            option = _append_construct_marker(option)
+        rendered.append(option)
+    rendered = _dedupe(rendered)
     new_head = " / ".join(rendered)
     if not sep:
         return new_head
@@ -301,8 +342,22 @@ def _strip_number_marker(text: str) -> str:
     if not value:
         return value
     value = _NUMBER_TOKEN_RE.sub("", value)
+    value = _CONSTRUCT_POS_RE.sub("", value)
     value = re.sub(r"\s{2,}", " ", value).strip()
     return value
+
+
+def _normalize_construct_pos(value: str) -> str:
+    return _CONSTRUCT_POS_RE.sub("cstr.", value or "")
+
+
+def _append_construct_marker(value: str) -> str:
+    text = _normalize_construct_pos((value or "").strip())
+    if not text:
+        return text
+    if _CONSTRUCT_POS_RE.search(text):
+        return text
+    return f"{text} cstr."
 
 
 def _dedupe(values: list[str]) -> list[str]:

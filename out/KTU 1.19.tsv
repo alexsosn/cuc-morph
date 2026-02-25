@@ -49,7 +49,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145569	uṣbˤhth	?	?	?	?	DULAT: NOT FOUND
 145570	ḥrṣ	ḥrṣ[	/ḥ-r-ṣ/	vb G suffc.	to cut	
 145570	ḥrṣ	ḥrṣ[/	/ḥ-r-ṣ/	vb G inf.	to cut	
-145571	abn	abn/	ảbn	n. f. sg. / n. f. pl.	stone	
+145571	abn	abn/	ảbn	n. f. sg. / n. f. pl. cstr.	stone	
 # KTU 1.19 I:9						
 145572	ph	p(III)/+h	p (III)	n. m.	mouth	
 145573	tiḫd	ʔḫd[d	/ʔ-ḫ-d(/ḏ)/	vb G prefc.	to collect	
@@ -295,7 +295,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145725	rkb	rkb[	/r-k-b/	vb G suffc. / vb G impv.	to mount (especially a chariot)	
 145725	rkb	rkb[/	/r-k-b/	vb G ptcpl.	to mount (especially a chariot)	
 145725	rkb	rkb(I)/	rkb (I)	n. m. sg.	Charioteer	
-145725	rkb	rkb(II)/	rkb (II)	n. m. sg. / n. m. pl.	?	
+145725	rkb	rkb(II)/	rkb (II)	n. m. sg. / n. m. pl. cstr.	?	
 # KTU 1.19 I:44						
 145726	ˤrpt	ˤrp(t/t	ʕrpt	n. f. sg.	cloud(s)	
 145726	ˤrpt	ˤrp(t/t=	ʕrpt	n. f. pl.	cloud(s)	
@@ -560,7 +560,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145900	udn	udn(I)/	ủdn (I)	n. m. sg.	ear	
 # KTU 1.19 II:31						
 145901	lasr	?	?	?	?	DULAT: NOT FOUND
-145902	pdm	pd(I)/m	pd (I)	n. m. pl. / n. m. du.	lock (of hair)	
+145902	pdm	pd(I)/m	pd (I)	n. m. pl. cstr. / n. m. du.	lock (of hair)	
 145903	rišh	riš(I)/h	rỉš (I)	n. m. sg.	head	
 # KTU 1.19 II:32						
 145904	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
@@ -1136,7 +1136,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146292	aqht	aqht/	ảqht	PN	Most Obedient	
 146293	ġzr	ġzr/	ġzr	n. m. sg.	lad	
 146294	amd	amd	ảmd	adv.	always	
-146295	gr	gr(I)/	gr (I)	n. m. sg. / n. m. pl.	protected	
+146295	gr	gr(I)/	gr (I)	n. m. sg. / n. m. pl. cstr.	protected	
 146296	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
 146297	il	il(I)/	ỉl (I)	n. m.	god	
 # KTU 1.19 III:48						
@@ -1148,8 +1148,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146302	h	~h	-h(II)	adv. functor	to, towards	
 146303	ˤnt	ˤnt(II)	ʕnt (II)	adv.	now	
 146304	p	p(I)	p (I)	conj. functor	and	
-146305	dr	dr/	dr	n. m. sg. / n. m. pl.	circle	
-146306	dr	dr/	dr	n. m. sg. / n. m. pl.	circle	
+146305	dr	dr/	dr	n. m. sg. / n. m. pl. cstr.	circle	
+146306	dr	dr/	dr	n. m. sg. / n. m. pl. cstr.	circle	
 # KTU 1.19 III:49						
 146307	ˤdb	ˤdb[	/ʕ-d-b/	vb G suffc. / vb G impv.	to leave > to put in	
 146307	ˤdb	ˤdb[/	/ʕ-d-b/	vb G inf. / vb G act. ptcpl. pl. / vb G pass. ptcpl. sg.	to leave > to put in	
@@ -1214,8 +1214,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146346	p	p(I)	p (I)	conj. functor	and	
 146346	p	p(III)/	p (III)	n. m.	mouth	
 146346	p	p(II)	p (II)	adv.	here	
-146347	dr	dr/	dr	n. m. sg. / n. m. pl.	circle	
-146348	dr	dr/	dr	n. m. sg. / n. m. pl.	circle	
+146347	dr	dr/	dr	n. m. sg. / n. m. pl. cstr.	circle	
+146348	dr	dr/	dr	n. m. sg. / n. m. pl. cstr.	circle	
 146349	ˤdb	ˤdb[	/ʕ-d-b/	vb G suffc. / vb G impv.	to leave > to put in	
 146349	ˤdb	ˤdb[/	/ʕ-d-b/	vb G inf. / vb G act. ptcpl. pl. / vb G pass. ptcpl. sg.	to leave > to put in	
 146350	uḫry	uḫry/	ủḫry	adj. m. sg.	last	
@@ -1267,8 +1267,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146382	p	p(I)	p (I)	conj. functor	and	
 146382	p	p(III)/	p (III)	n. m.	mouth	
 146382	p	p(II)	p (II)	adv.	here	
-146383	dr	dr/	dr	n. m. sg. / n. m. pl.	circle	
-146384	dr	dr/	dr	n. m. sg. / n. m. pl.	circle	
+146383	dr	dr/	dr	n. m. sg. / n. m. pl. cstr.	circle	
+146384	dr	dr/	dr	n. m. sg. / n. m. pl. cstr.	circle	
 # KTU 1.19 IV:7						
 146385	ˤdb	ˤdb[	/ʕ-d-b/	vb G suffc. / vb G impv.	to leave > to put in	
 146385	ˤdb	ˤdb[/	/ʕ-d-b/	vb G inf. / vb G act. ptcpl. pl. / vb G pass. ptcpl. sg.	to leave > to put in	
@@ -1410,14 +1410,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146470	yqry	!y!qr(ʔ[+y	/q-r-ʔ/	vb	to call	
 146470	yqry	!y!qr(y[+y	/q-r-y/	vb	to meet	
 # KTU 1.19 IV:23						
-146471	dbḥ	dbḥ/	dbḥ	n. m. sg. / n. m. pl.	sacrifice	
+146471	dbḥ	dbḥ/	dbḥ	n. m. sg. / n. m. pl. cstr.	sacrifice	
 146472	ilm	il(I)/m	ỉl (I)	n. m. pl.	god	
 146473	yšˤly	?	?	?	?	DULAT: NOT FOUND
 146474	dġṯhm	dġṯ/+hm	dġṯ	n. m.	offering of perfumes	
 146474	dġṯhm	dġṯ&h/+m(I)	dġṯ	n. m.	offering of perfumes	
 # KTU 1.19 IV:24						
 146475	b	b	b	prep.	in	
-146476	šmym	šm&y(m(I)/m	šmm (I)	n. m. tant. pl. / n. m. tant. du.	heavens	
+146476	šmym	šm&y(m(I)/m	šmm (I)	n. m. pl. tant. tant. pl. / n. m. tant. du.	heavens	
 146477	dġṯ	dġṯ/	dġṯ	n. m. sg.	offering of perfumes	
 146478	hrnmy	hrnmy/	hrnmy	GN	native of the TN *hrnm	
 146479	b	b	b	prep.	in	
@@ -1460,7 +1460,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.19 IV:29						
 146503	qrym	qry[m:d	/q-r-y/	vb D suffc.	to meet	
 146504	ab	ab/	ảb	n. m. sg.	father	
-146505	dbḥ	dbḥ/	dbḥ	n. m. sg. / n. m. pl.	sacrifice	
+146505	dbḥ	dbḥ/	dbḥ	n. m. sg. / n. m. pl. cstr.	sacrifice	
 146505	dbḥ	dbḥ[	/d-b-ḥ/	vb G suffc. / vb G impv.	to sacrifice	
 146505	dbḥ	dbḥ[/	/d-b-ḥ/	vb G act. ptcpl.	to sacrifice	
 146506	l	l(I)	l (I)	prep.	to	
@@ -1469,7 +1469,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146508	šˤly	?	?	?	?	DULAT: NOT FOUND
 146509	dġṯh	dġṯ/+h	dġṯ	n. m.	offering of perfumes	
 146510	b	b	b	prep.	in	
-146511	šmym	šm&y(m(I)/m	šmm (I)	n. m. tant. pl. / n. m. tant. du.	heavens	
+146511	šmym	šm&y(m(I)/m	šmm (I)	n. m. pl. tant. tant. pl. / n. m. tant. du.	heavens	
 # KTU 1.19 IV:31						
 146512	dġṯ	dġṯ/	dġṯ	n. m. sg.	offering of perfumes	
 146513	hrnmy	hrnmy/	hrnmy	GN	native of the TN *hrnm	
@@ -1569,7 +1569,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146578	tḥt	tḥt(I)	tḥt (I)	prep.	under	
 # KTU 1.19 IV:44						
 146579	tlbš	!t!lbš[	/l-b-š/	vb G prefc.	to dress	
-146580	npṣ	npṣ/	npṣ	n. m. sg. / n. m. pl.	personal belongings	
+146580	npṣ	npṣ/	npṣ	n. m. sg. / n. m. pl. cstr.	personal belongings	
 146581	ġzr	ġzr/	ġzr	n. m. sg.	lad	
 146582	tšt	!t!št[	/š-t/	vb G prefc.	to place	
 146582	tšt	!t!št(y[	/š-t-y/	vb G prefc.	to drink	
@@ -1584,7 +1584,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146589	w	w	w	conj.	and	
 146590	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
 146591	tlbš	!t!lbš[	/l-b-š/	vb G prefc.	to dress	
-146592	npṣ	npṣ/	npṣ	n. m. sg. / n. m. pl.	personal belongings	
+146592	npṣ	npṣ/	npṣ	n. m. sg. / n. m. pl. cstr.	personal belongings	
 146593	aṯt	aṯ(t/t	ảṯt	n. f. sg.	woman	
 146593	aṯt	aṯ(t/t	ảṯt	n. f. pl.	woman	
 146594	lm	l(I)	l (I)	prep.	to	

@@ -1,15 +1,15 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `11308`
-- Fallback-parsed issue lines: `291`
+- Total issues: `11795`
+- Fallback-parsed issue lines: `248`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 5961 |
-| WARNING | 520 |
+| ERROR | 6491 |
+| WARNING | 477 |
 | INFO | 1631 |
 
 ### By Problem Type
@@ -19,7 +19,7 @@
 | ERROR | Analysis does not reconstruct to surface | 3052 |
 | INFO | Surface not found in UDB concordance | 1631 |
 | ERROR | Deverbal form matches both verb and noun entries in DULAT | 1145 |
-| ERROR | POS token not allowed for declared DULAT entry | 548 |
+| ERROR | POS token not allowed for declared DULAT entry | 1078 |
 | ERROR | No DULAT entry found for clitic part | 280 |
 | ERROR | DULAT comment does not match candidates | 223 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 180 |
@@ -32,7 +32,6 @@
 | WARNING | Plural form missing split ending | 66 |
 | WARNING | y Lexeme parse did not match DULAT; matched by surface form | 63 |
 | ERROR | Each reconstructed letter must be prefixed by '(' | 52 |
-| WARNING | šmm DULAT plurale tantum noun should include 'pl. tant.' in POS | 41 |
 | ERROR | Non-G stem in DULAT requires stem marker | 33 |
 | ERROR | rbt Adjective POS gender mismatch for rb (I): expected adj. m., got adj. f. | 29 |
 | WARNING | mid Lexeme parse did not match DULAT; matched by surface form | 21 |
@@ -67,7 +66,6 @@
 | WARNING | tknn Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | trmm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | trmmn Lexeme parse did not match DULAT; matched by surface form | 2 |
-| WARNING | šmym DULAT plurale tantum noun should include 'pl. tant.' in POS | 2 |
 | ERROR | l Formula tbˤ w l yṯb ilm expects l(II) ('not') | 1 |
 | ERROR | uḫryt Adjective POS gender mismatch for ủḫry: expected adj. m., got adj. f. | 1 |
 | ERROR | ṣġrt Adjective POS gender mismatch for ṣġr (I): expected adj. m., got adj. f. | 1 |

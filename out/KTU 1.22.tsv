@@ -10,8 +10,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146848	hn	hn	hn	deictic functor/adv.	behold!	
 146849	x	?	?	?	?	
 # KTU 1.22 I:3						
-146850	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
-146851	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
+146850	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. cstr.	son	
+146851	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. cstr.	son	
 146852	aṯrk	aṯr(I)+k	ảṯr (I)	adv. or prep.	then	
 146853	hn	hn	hn	deictic functor/adv.	behold!	
 146854	ġzr	ġzr/	ġzr	n. m. sg.	lad	
@@ -64,7 +64,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146890	y	+y, [y	-y (I)	prep. functor	my	
 146890	y	~y	-y (II)	prep. functor	indeed	
 146890	y	y	y	prep. functor	oh!	
-146891	zbl	zbl(I)/	zbl (I)	n. m. sg. / n. m. pl.	prince	
+146891	zbl	zbl(I)/	zbl (I)	n. m. sg. / n. m. pl. cstr.	prince	
 146892	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 146892	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 146893	ˤllmy	ˤllmy/	ʕllmy	adj. or n.	eternal	
@@ -77,7 +77,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146897	ṣd	ṣd[/	/ṣ-d/	vb G inf.	to hunt	
 146898	tštr	tr[tr	/t-r/	vb Gt prefc.	to scour	
 146899	ˤpt	ˤp(I)/t	ʕp (I)	n. f. sg.	bird	
-146900	šmm	šm(m(I)/m	šmm (I)	n. m. tant. pl. / n. m. tant. du.	heavens	
+146900	šmm	šm(m(I)/m	šmm (I)	n. m. pl. tant. tant. pl. / n. m. tant. du.	heavens	
 # KTU 1.22 I:12						
 146901	ṭbḫ	ṭbḫ[	/ṭ-b-ḫ/	vb G suffc. / vb G impv.	to sacrifice	
 146902	alpm	alp(I)/m	ảlp (I)	n. m. pl. / n. m. du.	(head of) cattle	
@@ -88,7 +88,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146906	ṯrm	ṯrm[/	/ṯ-r-m/	vb G inf.	to break	
 # KTU 1.22 I:13						
 146907	w	w	w	conj.	and	
-146908	mri	mr(u(I)/&i	mrủ (I)	adj. m. or n. m. sg. / adj. m. or n. m. pl.	fattened	
+146908	mri	mr(u(I)/&i	mrủ (I)	adj. m. or n. m. sg. / adj. m. or n. m. pl. cstr.	fattened	
 146909	ilm	il(I)/m	ỉl (I)	n. m. pl.	god	
 146910	ˤglm	ˤgl(I)/+m(I)	ʕgl (I)	n. m.	calf	
 146911	dt	d	d	det. or rel. functor	the one(s) of	
@@ -135,7 +135,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146943	yn	yn/	yn	n. m. sg.	wine	
 146944	išryt	išry(t/t	ỉšryt	n. f. sg.	happiness	
 146945	ˤnq	ˤnq/	ʕnq	n. m. sg.	necklace	
-146946	smd	smd/	smd	n. m. sg. / n. m. pl.	bead	
+146946	smd	smd/	smd	n. m. sg. / n. m. pl. cstr.	bead	
 # KTU 1.22 I:20						
 146947	lbnn	lb/+nn	lb	n. m.	heart, ?	
 146947	lbnn	lbnn(I)/	lbnn (I)	TN	Lebanon	
