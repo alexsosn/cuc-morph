@@ -207,6 +207,18 @@ class FeminineTSingularSplitFixerTest(unittest.TestCase):
         result = fixer.refine_row(row)
         self.assertEqual(result.analysis, "hwt(I)/")
 
+    def test_emits_singular_and_plural_t_variants_for_sg_pl_ambiguous_surface(self) -> None:
+        fixer = FeminineTSingularSplitFixer(
+            gate=_PluralOnlyGate(
+                morphologies={
+                    ("ṣrrt", "ṣrrt"): {"sg.", "pl."},
+                }
+            ),
+        )
+        row = TabletRow("18", "ṣrrt", "ṣrrt/", "ṣrrt", "n. f.", "height(s)", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "ṣrr(t/t;ṣrr(t/t=")
+
 
 if __name__ == "__main__":
     unittest.main()

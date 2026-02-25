@@ -21,6 +21,10 @@ _PL_TANT_RE = re.compile(
     r"(?:\bpl\.?\s*tant\b|\bplur(?:ale)?\.?\s*tant(?:um|u)?\b)\.?\??",
     flags=re.IGNORECASE,
 )
+_SINGULAR_FORM_RE = re.compile(r"\bsg\.", flags=re.IGNORECASE)
+_SINGULAR_FORM_WORD_RE = re.compile(r"\bsing", flags=re.IGNORECASE)
+_PLURAL_FORM_RE = re.compile(r"\bpl\.", flags=re.IGNORECASE)
+_PLURAL_FORM_WORD_RE = re.compile(r"\bplur", flags=re.IGNORECASE)
 _FORCED_FEMININE_PLURAL_T_EQUAL_KEYS: set[tuple[str, str]] = {
     ("hmlt", ""),
     ("ṯnt", "II"),
@@ -136,6 +140,13 @@ class FeminineTSingularSplitFixer(RefinementStep):
         is_pos_pl_tant = _has_plurale_tantum_marker(pos_slot) or _is_forced_plural_t_token(
             dulat_slot
         )
+        has_sg_pl_ambiguous_surface = (
+            not is_pos_pl_tant
+            and self._surface_has_singular_and_plural_morphology(
+                dulat_slot=dulat_slot,
+                surface=surface,
+            )
+        )
 
         base_match = _BASE_NOMINAL_RE.match(value)
         if (
@@ -156,6 +167,27 @@ class FeminineTSingularSplitFixer(RefinementStep):
 
         unsplit_match = _UNSPLIT_FEM_T_RE.match(value)
         if unsplit_match:
+            if has_sg_pl_ambiguous_surface:
+                stem = unsplit_match.group("stem")
+                homonym = unsplit_match.group("hom") or declared_homonym
+                singular = _render_feminine_t_split(
+                    stem=stem,
+                    homonym=homonym,
+                    lexical_t=lemma_has_final_t,
+                    plural=False,
+                )
+                plural = _render_feminine_t_split(
+                    stem=stem,
+                    homonym=homonym,
+                    lexical_t=lemma_has_final_t,
+                    plural=True,
+                )
+                return _join_unique_variants(
+                    [
+                        _with_surface_terminal_m(singular, surface=surface),
+                        _with_surface_terminal_m(plural, surface=surface),
+                    ]
+                )
             if self._is_plural_dulat_token(dulat_slot, surface=surface) and not is_pos_pl_tant:
                 return value
             stem = unsplit_match.group("stem")
@@ -223,15 +255,54 @@ class FeminineTSingularSplitFixer(RefinementStep):
         return normalized in self._feminine_onomastic_tokens
 
     def _surface_has_feminine_morphology(self, dulat_slot: str, surface: str) -> bool:
-        if self._gate is None:
-            return False
-        token = (dulat_slot or "").strip()
-        if not token or token == "?":
-            return False
-        morphologies = self._gate.surface_morphologies(token, surface=surface)
+        morphologies = self._surface_morphologies(dulat_slot=dulat_slot, surface=surface)
         if not morphologies:
             return False
         return _has_feminine_morph_marker(morphologies)
+
+    def _surface_has_singular_and_plural_morphology(self, dulat_slot: str, surface: str) -> bool:
+        morphologies = self._surface_morphologies(dulat_slot=dulat_slot, surface=surface)
+        if not morphologies:
+            return False
+        has_singular = any(_has_singular_form_marker(morph) for morph in morphologies)
+        has_plural = any(_has_plural_form_marker(morph) for morph in morphologies)
+        return has_singular and has_plural
+
+    def _surface_morphologies(self, dulat_slot: str, surface: str) -> set[str]:
+        if self._gate is None:
+            return set()
+        token = (dulat_slot or "").strip()
+        if not token or token == "?":
+            return set()
+        return self._gate.surface_morphologies(token, surface=surface)
+
+
+def _has_singular_form_marker(morph: str) -> bool:
+    text = (morph or "").lower()
+    if not text:
+        return False
+    return bool(_SINGULAR_FORM_RE.search(text) or _SINGULAR_FORM_WORD_RE.search(text))
+
+
+def _has_plural_form_marker(morph: str) -> bool:
+    text = (morph or "").lower()
+    if not text:
+        return False
+    return bool(_PLURAL_FORM_RE.search(text) or _PLURAL_FORM_WORD_RE.search(text))
+
+
+def _join_unique_variants(variants: Sequence[str]) -> str:
+    unique: list[str] = []
+    for variant in variants:
+        value = (variant or "").strip()
+        if not value:
+            continue
+        if value in unique:
+            continue
+        unique.append(value)
+    if not unique:
+        return ""
+    return ";".join(unique)
 
 
 def _has_plurale_tantum_marker(value: str) -> bool:

@@ -792,3 +792,6 @@
 - Re-ran the full tablet parsing pipeline (bootstrap + refine + refinement steps) for all tablets using explicit-file mode; regenerated `out/*.tsv` and lint reports with the new form recovery behavior.
 - Refined gloss selection in `scripts/refine_results_mentions.py` to ignore attestation-style/cross-reference `senses.definition` rows (for example rows containing citations like `1.43:2` or `cf.`) and fall back to `translations` for compact gloss output.
 - Added regression tests in `tests/test_refine_results_mentions.py` for attestation-sense filtering and translation fallback behavior.
+- Refined `FeminineTSingularSplitFixer` to emit both singular and plural feminine `-t` parses for sg/pl-ambiguous DULAT surface forms (for example `ṣrrt/` -> `ṣrr(t/t;ṣrr(t/t=`), while keeping explicit `pl. tant.` rows plural-only.
+- Added regression coverage in `tests/test_feminine_t_singular_split.py` for sg/pl-ambiguous feminine `-t` reconstruction.
+- Re-applied the feminine `-t` split step across `out/KTU *.tsv` (66 files touched, 275 rows updated) to propagate this fix corpus-wide.
