@@ -42,7 +42,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:438 13583
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:445 135836 ylkn Analysis does not reconstruct to surface (reconstructs as: hlkn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:483 135861 tusp ʔ must be preceded by '(' in column 3
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:483 135861 tusp Analysis does not reconstruct to surface (reconstructs as: ʔspp)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:501 135874 bny Analysis does not reconstruct to surface (reconstructs as: bn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:533 135896 šmk Analysis does not reconstruct to surface (reconstructs as: šlm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:534 135896 šmk Analysis does not reconstruct to surface (reconstructs as: šm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:541 135901 dt Analysis does not reconstruct to surface (reconstructs as: d)
@@ -65,13 +64,11 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:639 13595
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:639 135959 km DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:652 135964 tasrn ʔ must be preceded by '(' in column 3
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:652 135964 tasrn Analysis does not reconstruct to surface (reconstructs as: ʔsrrn)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:667 135974 mtny Analysis does not reconstruct to surface (reconstructs as: mtn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:674 135979 tġr Analysis does not reconstruct to surface (reconstructs as: nġr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:682 135984 ymm Analysis does not reconstruct to surface (reconstructs as: ym)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:712 136003 tasrn ʔ must be preceded by '(' in column 3
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:712 136003 tasrn Analysis does not reconstruct to surface (reconstructs as: ʔsrrn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:714 136005 il POS token 'DN' not allowed for ỉl (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:728 136012 mtny Analysis does not reconstruct to surface (reconstructs as: mtn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:730 136014 zd Analysis does not reconstruct to surface (reconstructs as: ṯd)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:738 136019 t Missing DULAT entry token(s) in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:738 136019 t Analysis does not reconstruct to surface (reconstructs as: tt)
@@ -167,7 +164,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.100.tsv:705 152
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.100.tsv:707 152160 km Analysis does not reconstruct to surface (reconstructs as: kmkm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.100.tsv:707 152160 km No DULAT entry found for clitic part: km, 
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.100.tsv:707 152160 km DULAT comment does not match candidates
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.100.tsv:715 152165 itnny Analysis does not reconstruct to surface (reconstructs as: itnn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.100.tsv:717 152166 ytt Analysis does not reconstruct to surface (reconstructs as: ytn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.100.tsv:719 152168 mhrk Analysis does not reconstruct to surface (reconstructs as: mhr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.100.tsv:734 152177 mrh Analysis does not reconstruct to surface (reconstructs as: mr)
@@ -1168,7 +1164,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:984 1437
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:985 143764 y POS token 'prep. functor' not allowed for -y (II); choose one of: postp. functor
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:993 143769 ṯnnth Analysis does not reconstruct to surface (reconstructs as: ṯn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:996 143771 ṯlṯth Analysis does not reconstruct to surface (reconstructs as: ṯlṯ)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1093 143835 bny Analysis does not reconstruct to surface (reconstructs as: bn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1098 143837 mṯbtkm Analysis does not reconstruct to surface (reconstructs as: mṯb)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1108 143844 aškn Analysis does not reconstruct to surface (reconstructs as: knkn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1108 143844 aškn D stem marker present but DULAT lacks D/Dt/tD
@@ -1367,7 +1362,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:185 1442
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:187 144253 uzrm Analysis does not reconstruct to surface (reconstructs as: uzr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:191 144256 uzrm Analysis does not reconstruct to surface (reconstructs as: uzr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:203 144264 il POS token 'DN' not allowed for ỉl (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:210 144268 bny Analysis does not reconstruct to surface (reconstructs as: bn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:229 144281 ilibh Analysis does not reconstruct to surface (reconstructs as: ilib)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:238 144288 mšṣu ʔ must be preceded by '(' in column 3
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:238 144288 mšṣu Analysis does not reconstruct to surface (reconstructs as: yṣʔu)
@@ -1487,7 +1481,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1361 145
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1367 145022 ysk Analysis does not reconstruct to surface (reconstructs as: nsk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1394 145037 rgmm Analysis does not reconstruct to surface (reconstructs as: rgm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1433 145063 aṯb Analysis does not reconstruct to surface (reconstructs as: yṯb)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1449 145076 pˤny Analysis does not reconstruct to surface (reconstructs as: pʕn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1451 145077 atk ʔ must be preceded by '(' in column 3
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1451 145077 atk Analysis does not reconstruct to surface (reconstructs as: ʔtwk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1452 145077 atk Analysis does not reconstruct to surface (reconstructs as: ṯatk)
@@ -1793,7 +1786,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:332 1457
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:368 145748 gm Analysis does not reconstruct to surface (reconstructs as: g)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:408 145771 dt Analysis does not reconstruct to surface (reconstructs as: d)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:411 145773 dt Analysis does not reconstruct to surface (reconstructs as: d)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:413 145775 nqbny Analysis does not reconstruct to surface (reconstructs as: nqbn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:427 145786 bkm Analysis does not reconstruct to surface (reconstructs as: b)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:428 145786 bkm Analysis does not reconstruct to surface (reconstructs as: bky)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:434 145789 bkm Analysis does not reconstruct to surface (reconstructs as: b)
@@ -1871,7 +1863,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:899 1460
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:900 146099 gh Analysis does not reconstruct to surface (reconstructs as: ytn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:908 146104 bˤl Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:911 146106 bˤl Deverbal form matches both verb and noun entries in DULAT
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:920 146113 pˤny Analysis does not reconstruct to surface (reconstructs as: pʕn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:957 146138 th Analysis does not reconstruct to surface (reconstructs as: ʕlh)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:958 146138 th Analysis does not reconstruct to surface (reconstructs as: aḫth)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:959 146139 hwth Analysis does not reconstruct to surface (reconstructs as: hwt)
@@ -1889,7 +1880,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1023 146
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1024 146186 gh Analysis does not reconstruct to surface (reconstructs as: ytn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1032 146191 bˤl Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1035 146193 bˤl Deverbal form matches both verb and noun entries in DULAT
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1043 146199 pˤny Analysis does not reconstruct to surface (reconstructs as: pʕn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1080 146223 špth Analysis does not reconstruct to surface (reconstructs as: špt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1081 146224 hwth Analysis does not reconstruct to surface (reconstructs as: hwt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1087 146228 bˤl Deverbal form matches both verb and noun entries in DULAT
@@ -1902,7 +1892,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1130 146
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1131 146261 gh Analysis does not reconstruct to surface (reconstructs as: ytn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1139 146266 bˤl Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1142 146268 bˤl Deverbal form matches both verb and noun entries in DULAT
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1153 146276 bny Analysis does not reconstruct to surface (reconstructs as: bn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1158 146278 nn Analysis does not reconstruct to surface (reconstructs as: grš)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1159 146278 nn Analysis does not reconstruct to surface (reconstructs as: gr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1161 146280 šnth Analysis does not reconstruct to surface (reconstructs as: šn)
@@ -1974,6 +1963,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1744 146
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1744 146657 y No DULAT entry found for clitic part: y, [y
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1744 146657 y DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1745 146657 y POS token 'prep. functor' not allowed for -y (II); choose one of: postp. functor
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1752 146660 ilšnn No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1766 146671 alpm Analysis does not reconstruct to surface (reconstructs as: alp)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1784 146683 km POS token 'functor' not allowed for k (III); choose one of: subordinating or completive functor
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1784 146683 km Analysis does not reconstruct to surface (reconstructs as: k)
@@ -2515,7 +2505,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:187 1477
 to collect, hold; to choose, opt for something; /p-r-ʕ/ [vb] — to wash; /p-r-ʕ/ [vb] — to wash; /p-r-ʕ/ [vb] — to wash; /p-r-ʕ/ [vb] — to wash; /ṯ-m-n/ [vb] — to do, give eight; /y-b-m/ [vb] — to proclaim oneself a nubile widow
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:194 147756 bh Analysis does not reconstruct to surface (reconstructs as: b)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:205 147764 wn Analysis does not reconstruct to surface (reconstructs as: w)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:213 147768 ḫtny Analysis does not reconstruct to surface (reconstructs as: ḫtn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:230 147780 iḫh Analysis does not reconstruct to surface (reconstructs as: aḫ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:233 147782 mšrrm Analysis does not reconstruct to surface (reconstructs as: mšrr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:247 147792 ar Analysis does not reconstruct to surface (reconstructs as: a)
@@ -2795,7 +2784,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:237 13827
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:240 138272 rbbt Analysis does not reconstruct to surface (reconstructs as: rbt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:290 138306 pḥmm Analysis does not reconstruct to surface (reconstructs as: pḥm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:294 138309 il POS token 'DN' not allowed for ỉl (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:299 138313 bny Analysis does not reconstruct to surface (reconstructs as: bn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:308 138319 tphn Analysis does not reconstruct to surface (reconstructs as: phyn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:314 138321 bˤl Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:332 138330 limm Analysis does not reconstruct to surface (reconstructs as: lim)
@@ -2807,7 +2795,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:345 13834
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:351 138344 dt Analysis does not reconstruct to surface (reconstructs as: d)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:354 138346 tšu Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:355 138347 gh Analysis does not reconstruct to surface (reconstructs as: ytn)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:376 138361 bny Analysis does not reconstruct to surface (reconstructs as: bn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:381 138363 mkly Analysis does not reconstruct to surface (reconstructs as: klyy)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:384 138365 aryy Analysis does not reconstruct to surface (reconstructs as: ary)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:410 138380 gm Analysis does not reconstruct to surface (reconstructs as: g)
@@ -2840,7 +2827,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:615 13850
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:617 138506 amht Analysis does not reconstruct to surface (reconstructs as: amt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:661 138536 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:666 138540 ġẓtm Analysis does not reconstruct to surface (reconstructs as: ġẓym)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:668 138541 bny Analysis does not reconstruct to surface (reconstructs as: bn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:678 138547 km POS token 'functor' not allowed for k (III); choose one of: subordinating or completive functor
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:678 138547 km Analysis does not reconstruct to surface (reconstructs as: k)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:679 138547 km Analysis does not reconstruct to surface (reconstructs as: k)
@@ -3519,10 +3505,8 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:763 14090
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:768 140908 tikl ʔ must be preceded by '(' in column 3
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:768 140908 tikl Analysis does not reconstruct to surface (reconstructs as: ʔkll)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:772 140910 mnth Analysis does not reconstruct to surface (reconstructs as: mnt)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:821 140942 bny Analysis does not reconstruct to surface (reconstructs as: bn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:831 140948 tlk Analysis does not reconstruct to surface (reconstructs as: hlk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:835 140951 idˤ Analysis does not reconstruct to surface (reconstructs as: ydʕ)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:860 140968 bny Analysis does not reconstruct to surface (reconstructs as: bn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:870 140974 tlk Analysis does not reconstruct to surface (reconstructs as: hlk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:891 140990 yšu Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:892 140991 gh Analysis does not reconstruct to surface (reconstructs as: ytn)
@@ -4333,12 +4317,9 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:40 15667
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:52 156682 ṯṯb Analysis does not reconstruct to surface (reconstructs as: šṯbb)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:55 156684 bm Analysis does not reconstruct to surface (reconstructs as: b)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:75 156697 bn Analysis does not reconstruct to surface (reconstructs as: b)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv:10 156702 bny Analysis does not reconstruct to surface (reconstructs as: bn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv:18 156706 tġrk Analysis does not reconstruct to surface (reconstructs as: nġrk)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv:41 156720 bny Analysis does not reconstruct to surface (reconstructs as: bn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv:44 156721 yšal ʔ must be preceded by '(' in column 3
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv:44 156721 yšal Analysis does not reconstruct to surface (reconstructs as: šʔll)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv:66 156733 bny Analysis does not reconstruct to surface (reconstructs as: bn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv:69 156734 yšal ʔ must be preceded by '(' in column 3
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv:69 156734 yšal Analysis does not reconstruct to surface (reconstructs as: šʔll)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv:76 156738 ṯṯb Analysis does not reconstruct to surface (reconstructs as: šṯbb)
@@ -4541,7 +4522,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.38.tsv:85 15790
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.38.tsv:94 157905 ṯṯb Analysis does not reconstruct to surface (reconstructs as: šṯbb)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.38.tsv:100 157910 ṯt Analysis does not reconstruct to surface (reconstructs as: ṯn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.38.tsv:102 157911 by Analysis does not reconstruct to surface (reconstructs as: b)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:50 157950 adny Analysis does not reconstruct to surface (reconstructs as: adn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:68 157962 bˤlk Analysis does not reconstruct to surface (reconstructs as: bʕl)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:77 157969 bˤlk Analysis does not reconstruct to surface (reconstructs as: bʕl)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:87 157975 bˤlk Analysis does not reconstruct to surface (reconstructs as: bʕl)
@@ -4602,14 +4582,10 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.44.tsv:38 15823
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.44.tsv:71 158254 bˤl Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:20 158271 tġrk Analysis does not reconstruct to surface (reconstructs as: nġrk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:29 158276 ṯmny Analysis does not reconstruct to surface (reconstructs as: ṯm)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:31 158278 bny Analysis does not reconstruct to surface (reconstructs as: bn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:41 158282 ṯṯb Analysis does not reconstruct to surface (reconstructs as: šṯbb)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:43 158283 ky Analysis does not reconstruct to surface (reconstructs as: k)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:44 158283 ky Analysis does not reconstruct to surface (reconstructs as: k)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:45 158283 ky Analysis does not reconstruct to surface (reconstructs as: k)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:47 158285 bny Analysis does not reconstruct to surface (reconstructs as: bn)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:57 158291 ġbny Analysis does not reconstruct to surface (reconstructs as: ġbn)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:60 158293 bny Analysis does not reconstruct to surface (reconstructs as: bn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:63 158294 hnkt Analysis does not reconstruct to surface (reconstructs as: hnk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:87 158308 bd Analysis does not reconstruct to surface (reconstructs as: b)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:98 158315 tn Deverbal form matches both verb and noun entries in DULAT
@@ -4715,8 +4691,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.63.tsv:24 15869
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.63.tsv:24 158698 lm Suffixed pronominal form in DULAT should use '+' in analysis
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.63.tsv:52 158712 lm Analysis does not reconstruct to surface (reconstructs as: l)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.63.tsv:52 158712 lm Suffixed pronominal form in DULAT should use '+' in analysis
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:7 158721 adny Analysis does not reconstruct to surface (reconstructs as: adn)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:19 158728 adny Analysis does not reconstruct to surface (reconstructs as: adn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:59 158750 ṯṯb Analysis does not reconstruct to surface (reconstructs as: šṯbb)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.65.tsv:21 158762 ṯṯb Analysis does not reconstruct to surface (reconstructs as: šṯbb)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.68.tsv:31 158806 tġrk Analysis does not reconstruct to surface (reconstructs as: nġrk)
@@ -4864,7 +4838,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.84.tsv:93 15947
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.84.tsv:93 159479 h Analysis does not reconstruct to surface (reconstructs as: hh)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.84.tsv:93 159479 h No DULAT entry found for clitic part: h, 
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.84.tsv:93 159479 h DULAT comment does not match candidates
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:7 159482 adny Analysis does not reconstruct to surface (reconstructs as: adn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:25 159492 km POS token 'functor' not allowed for k (III); choose one of: subordinating or completive functor
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:25 159492 km Analysis does not reconstruct to surface (reconstructs as: k)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:26 159492 km Analysis does not reconstruct to surface (reconstructs as: k)
@@ -5040,7 +5013,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.10.tsv:27 16125
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.10.tsv:42 161258 ḫmšt POS token 'n. nuf.' not allowed for ḫmš (I); choose one of: n num.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.10.tsv:50 161264 ḫmšt POS token 'n. nuf.' not allowed for ḫmš (I); choose one of: n num.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.10.tsv:60 161272 bˤlyn Analysis does not reconstruct to surface (reconstructs as: bʕln)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.11.tsv:30 161319 bny Analysis does not reconstruct to surface (reconstructs as: bn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.11.tsv:39 161323 ymlu ʔ must be preceded by '(' in column 3
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.11.tsv:39 161323 ymlu Analysis does not reconstruct to surface (reconstructs as: mlʔu)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.12.tsv:6 161334 yiḫd ʔ must be preceded by '(' in column 3
@@ -5389,7 +5361,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1299 1
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1569 146538 tḥ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1680 146615 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1744 146657 y Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1752 146660 ilšnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1766 146671 alpm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv   Lemma /ʕ-n-w/ has multiple stem markers: :d (ids: 136199; lines: 256); :pass (ids: 136286,136570,136644,136913,136914; lines: 1368,1372,377,829,935)
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:206 136165 tphhm Suffix form without '+'
@@ -5705,7 +5676,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  qr Surfac
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  bṯt Surface bṯt parsed inconsistently: bṯ(t(I)/t (ids: 135827); bṯ(t(II)/t (ids: 135827)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  k Surface k parsed inconsistently: +k (ids: 135829,135857,135859,135963); k(I) (ids: 135829,135857,135859,135963); k(II) (ids: 135829,135857,135859,135963); k(III) (ids: 135829,135857,135859,135963); ~k (ids: 135829,135857,135859,135963)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  bt Surface bt parsed inconsistently: b(t(I)/t (ids: 135831,135899); bt(II)/ (ids: 135831,135899)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  bny Surface bny parsed inconsistently: bn(I)/ (ids: 135874); bny/ (ids: 135874); bny[ (ids: 135874)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  bny Surface bny parsed inconsistently: bn(I)/+y (ids: 135874); bny/ (ids: 135874); bny[ (ids: 135874)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  ym Surface ym parsed inconsistently: ym(I)/ (ids: 135880,135945,135983); ym(II)/ (ids: 135880,135945,135983)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  šmk Surface šmk parsed inconsistently: šlm(I)/ (ids: 135896); šm(I)/ (ids: 135896)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  nḫt Surface nḫt parsed inconsistently: nḫ(t/t (ids: 135912); nḫ[t (ids: 135912)
@@ -5719,7 +5690,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  qmṣ Sur
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  ymm Surface ymm parsed inconsistently: ym(I)/m (ids: 135946,135984); ym(II)/ (ids: 135946,135984)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  ˤn Surface ˤn parsed inconsistently: ˤn(I)/ (ids: 135957); ˤn(II)/ (ids: 135957); ˤn[ (ids: 135957)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  km Surface km parsed inconsistently: +km, +km= (ids: 135959); k(I) (ids: 135959); k(III) (ids: 135959); k(IV) (ids: 135959); km (ids: 135959)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  mtny Surface mtny parsed inconsistently: mtn(II)/ (ids: 135974,136012); mtny/ (ids: 135974,136012)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  mtny Surface mtny parsed inconsistently: mtn(II)/+y (ids: 135974,136012); mtny/ (ids: 135974,136012)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  ˤrb Surface ˤrb parsed inconsistently: ˤrb(I)/ (ids: 136010); ˤrb(I)[ (ids: 136010)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  zd Surface zd parsed inconsistently: zd/ (ids: 136014); ṯd/ (ids: 136014)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv  t Surface t parsed inconsistently: /t, /t= (ids: 136019); [t, [t=, [t==, [t=== (ids: 136019)
@@ -6789,7 +6760,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  ngrt Sur
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  gm Surface gm parsed inconsistently: g/ (ids: 143752); gm(II) (ids: 143752)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  ydy Surface ydy parsed inconsistently: !y!(ydy(I)[ (ids: 143780,143793,143807,143821); !y!(ydy(II)[ (ids: 143780,143793,143807,143821); yd(I)/+y (ids: 143780,143793,143807,143821)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  yšbˤ Surface yšbˤ parsed inconsistently: !y!šbˤ(I)[:d (ids: 143816); !y!šbˤ(II)[:d (ids: 143816)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  bny Surface bny parsed inconsistently: bn(I)/ (ids: 143835); bny/ (ids: 143835); bny[ (ids: 143835)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  bny Surface bny parsed inconsistently: bn(I)/+y (ids: 143835); bny/ (ids: 143835); bny[ (ids: 143835)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  aškn Surface aškn parsed inconsistently: !a!škn[:d (ids: 143844,143845); kn[kn:d (ids: 143844,143845)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  ks Surface ks parsed inconsistently: ks(I)/ (ids: 143871); ks/ (ids: 143871)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  p Surface p parsed inconsistently: p(I) (ids: 143881); p(II) (ids: 143881); p(III)/ (ids: 143881)
@@ -7001,7 +6972,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv  bˤl Sur
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv  km Surface km parsed inconsistently: +km, +km= (ids: 144238,144242,144251,144473,144477,144879); k(I) (ids: 144238,144242,144251,144473,144477,144879); k(III) (ids: 144238,144242,144251,144473,144477,144879); k(IV) (ids: 144238,144242,144251,144473,144477,144879); km (ids: 144238,144242,144251,144473,144477,144879)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv  bl Surface bl parsed inconsistently: bl(I) (ids: 144244,144966); bl(II) (ids: 144244,144966); bl(III)/ (ids: 144244,144966)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv  l Surface l parsed inconsistently: l(I) (ids: 144267,144286,144290,144350,144365,144384,144388,144400,144404,144454,144486,144531,144551,144698,144709,144714,144737,144742,144757,144776,144780,144845,144884,144888,144896,144941,144947,144950,145009,145025,145041,145057,145087,145106); l(II) (ids: 144267,144365,145087); l(III) (ids: 144260,144267,144350,144365,144454,144531,144551,144698,144709,144714,144737,144742,144757,144776,144780,144845,144896,144941,144947,144950,145009,145041,145057,145065,145087); l(IV) (ids: 144262,144959)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv  bny Surface bny parsed inconsistently: bn(I)/ (ids: 144268); bny/ (ids: 144268); bny[ (ids: 144268)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv  bny Surface bny parsed inconsistently: bn(I)/+y (ids: 144268); bny/ (ids: 144268); bny[ (ids: 144268)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv  bt Surface bt parsed inconsistently: b(t(I)/t (ids: 144274,144310,144313,144372,144417,144421,144508,144513); bt(II)/ (ids: 144274,144310,144313,144372,144417,144421,144508,144513)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv  qrb Surface qrb parsed inconsistently: qrb/ (ids: 144277,144375,145094); qrb[ (ids: 144277,144375,145094)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv  mšṣu Surface mšṣu parsed inconsistently: mšṣu/ (ids: 144288,144386,144402); yṣʔ[u (ids: 144288,144386,144402)
@@ -7371,7 +7342,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  ˤẓm S
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  th Surface th parsed inconsistently: aḫt(I)/+h (ids: 146138); ˤl(I)+h (ids: 146138)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  nn Surface nn parsed inconsistently: gr[ (ids: 146254,146278); grš[ (ids: 146254,146278)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  knrt Surface knrt parsed inconsistently: knk(t/t (ids: 146258); knrt (ids: 146258)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  bny Surface bny parsed inconsistently: bn(I)/ (ids: 146276); bny/ (ids: 146276); bny[ (ids: 146276)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  bny Surface bny parsed inconsistently: bn(I)/+y (ids: 146276); bny/ (ids: 146276); bny[ (ids: 146276)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  qr Surface qr parsed inconsistently: qr(I)/ (ids: 146281,146287); qr(II)/ (ids: 146281,146287); qr(III)/ (ids: 146281,146287)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  mlk Surface mlk parsed inconsistently: mlk(II)/ (ids: 146283); mlk[ (ids: 146283)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  mḫṣ Surface mḫṣ parsed inconsistently: mḫṣ(II)/ (ids: 146291,146329,146371,146524,146554); mḫṣ[ (ids: 146291,146329,146371,146524,146554)
@@ -7400,7 +7371,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  nrt Surf
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  mˤrb Surface mˤrb parsed inconsistently: mˤrb(I)/ (ids: 146604); mˤrb(II)/ (ids: 146604); mˤrb/ (ids: 146604)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  ks Surface ks parsed inconsistently: ks(I)/ (ids: 146634,146645); ks/ (ids: 146634,146645)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  tšqynh Surface tšqynh parsed inconsistently: !t!šqy[+nh (ids: 146643); !t!šqy[n+h (ids: 146643)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  ilšnn Surface ilšnn parsed inconsistently: ilš(I)/+nn (ids: 146660); ilšn/+n (ids: 146660)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  alpm Surface alpm parsed inconsistently: alp(I)/m (ids: 146671); alp(II)/ (ids: 146671)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  km Surface km parsed inconsistently: +km, +km= (ids: 146683); k(I) (ids: 146683); k(III) (ids: 146683); k(IV) (ids: 146683); km (ids: 146683)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:3 145542 laqht Surface not found in UDB concordance
@@ -7726,7 +7696,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv  yˤn Sur
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv  bˤl Surface bˤl parsed inconsistently: bˤl(II)/ (ids: 147742,147748,147807); bˤl[/ (ids: 147742)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv  t Surface t parsed inconsistently: /t, /t= (ids: 147751,147801); [t, [t=, [t==, [t=== (ids: 147751,147801)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv  ˤn Surface ˤn parsed inconsistently: ˤn(I)/ (ids: 147765); ˤn(II)/ (ids: 147765); ˤn[ (ids: 147765)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv  ḫtny Surface ḫtny parsed inconsistently: ḫtn(I)/ (ids: 147768); ḫtn[y:d (ids: 147768)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv  ḫtny Surface ḫtny parsed inconsistently: ḫtn(I)/+y (ids: 147768); ḫtn[y:d (ids: 147768)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv  mṣb Surface mṣb parsed inconsistently: mṣb(I)/ (ids: 147775); mṣb(II)/ (ids: 147775)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv  bn Surface bn parsed inconsistently: bn(I)/ (ids: 147786,147800); bn(II) (ids: 147786,147800); bn[ (ids: 147786,147800)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv  gml Surface gml parsed inconsistently: gml(I)/ (ids: 147808); gml(II)/ (ids: 147808)
@@ -7955,7 +7925,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  dbbm Surf
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  abn Surface abn parsed inconsistently: !a!bn[ (ids: 138278,138597); ab/+n (ids: 138278,138597); abn/ (ids: 138278,138597)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  ṯn Surface ṯn parsed inconsistently: ṯn(I)/ (ids: 138295,138480,139146,139235); ṯn(II)/ (ids: 139146,139235); ṯn(III)/ (ids: 139146,139235)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  nhrm Surface nhrm parsed inconsistently: nhr/+m(I) (ids: 138298,138681); nhr/+m(II) (ids: 138298,138681)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  bny Surface bny parsed inconsistently: bn(I)/ (ids: 138313,138361,138541); bny/ (ids: 138313,138361,138541); bny[ (ids: 138313,138361,138541)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  bny Surface bny parsed inconsistently: bn(I)/+y (ids: 138313,138361,138541); bny/ (ids: 138313,138361,138541); bny[ (ids: 138313,138361,138541)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  hlk Surface hlk parsed inconsistently: hlk(I)/ (ids: 138320); hlk(II) (ids: 138320); hlk[ (ids: 138320,138325)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  tˤn Surface tˤn parsed inconsistently: !t!ˤn(w[ (ids: 138324,138370,138522,138599,138765,138878); !t!ˤn(y(I)[ (ids: 138324,138370,138522,138599,138765,138878); !t!ˤn[:d (ids: 138324,138370,138522,138599,138765,138878)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv  ˤnt Surface ˤnt parsed inconsistently: ˤn(I)/t= (ids: 138564); ˤn(t(I)/t (ids: 138327,138357,138412,138513,138545,138564,138668,138954,138975); ˤnt(II) (ids: 138564)
@@ -8444,7 +8414,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  nn Surfac
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  ˤṣrm Surface ˤṣrm parsed inconsistently: ˤṣr(I)/+m(I) (ids: 140909); ˤṣr(I)/+m(II) (ids: 140909)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  hm Surface hm parsed inconsistently: hm(I) (ids: 140924,140929); hm(II) (ids: 140924,140929)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  ḥy Surface ḥy parsed inconsistently: ḥy(I)/ (ids: 140925,140953,141004); ḥy(m/ (ids: 140925,140953,141004)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  bny Surface bny parsed inconsistently: bn(I)/ (ids: 140942,140968); bny/ (ids: 140942,140968); bny[ (ids: 140942,140968)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  bny Surface bny parsed inconsistently: bn(I)/+y (ids: 140942,140968); bny/ (ids: 140942,140968); bny[ (ids: 140942,140968)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  rgm Surface rgm parsed inconsistently: rgm/ (ids: 141022); rgm[ (ids: 141022)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  y Surface y parsed inconsistently: +y, [y (ids: 141030,141073,141116,141374); y (ids: 141030,141073,141116,141374); ~y (ids: 141030,141073,141116,141374)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  ḥtkk Surface ḥtkk parsed inconsistently: ḥt(I)/+k (ids: 141069); ḥt(III)/+k (ids: 141069)
@@ -9151,7 +9121,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:31 156671
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:56 156685 tyndr Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:67 156692 qḥlqt Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv  l Surface l parsed inconsistently: l(I) (ids: 156700,156725,156739,156741); l(II) (ids: 156725); l(III) (ids: 156700,156725,156739,156741)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv  bny Surface bny parsed inconsistently: bn(I)/ (ids: 156702,156720,156733); bny/ (ids: 156702,156720,156733); bny[ (ids: 156702,156720,156733)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv  bny Surface bny parsed inconsistently: bn(I)/+y (ids: 156702,156720,156733); bny/ (ids: 156702,156720,156733); bny[ (ids: 156702,156720,156733)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv  rgm Surface rgm parsed inconsistently: rgm/ (ids: 156704,156737); rgm[ (ids: 156704,156737)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv  spr Surface spr parsed inconsistently: spr(I)/ (ids: 156710); spr(II)/ (ids: 156710); spr[:d (ids: 156710)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv  p Surface p parsed inconsistently: p(I) (ids: 156723); p(II) (ids: 156723); p(III)/ (ids: 156723)
@@ -9406,7 +9376,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv  l Surfac
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv  mlk Surface mlk parsed inconsistently: mlk(II)/ (ids: 158265); mlk[ (ids: 158265)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv  rgm Surface rgm parsed inconsistently: rgm/ (ids: 158267,158281); rgm[ (ids: 158267,158281)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv  šlm Surface šlm parsed inconsistently: šlm(I)/ (ids: 158275,158280); šlm(III)/ (ids: 158275,158280); šlm[:d (ids: 158275,158280)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv  bny Surface bny parsed inconsistently: bn(I)/ (ids: 158278,158285,158293); bny/ (ids: 158278,158285,158293); bny[ (ids: 158278,158285,158293)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv  bny Surface bny parsed inconsistently: bn(I)/+y (ids: 158278,158285,158293); bny/ (ids: 158278,158285,158293); bny[ (ids: 158278,158285,158293)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv  ky Surface ky parsed inconsistently: k(II) (ids: 158283); k(III) (ids: 158283); k(IV) (ids: 158283)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv  ym Surface ym parsed inconsistently: ym(I)/ (ids: 158297,158306); ym(II)/ (ids: 158297,158306)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv  tn Surface tn parsed inconsistently: (ytn[ (ids: 158315); (ytn[/ (ids: 158315)
@@ -9907,7 +9877,7 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.11.tsv  bn Surfa
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.11.tsv  mlk Surface mlk parsed inconsistently: mlk(II)/ (ids: 161311,161316,161318,161322); mlk[ (ids: 161311,161316,161318,161322)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.11.tsv  bt Surface bt parsed inconsistently: b(t(I)/t (ids: 161315); bt(II)/ (ids: 161315); bt(III)/ (ids: 161315)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.11.tsv  ṯġr Surface ṯġr parsed inconsistently: ṯġr(I)/ (ids: 161317); ṯġr(II)/ (ids: 161317)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.11.tsv  bny Surface bny parsed inconsistently: bn(I)/ (ids: 161319); bny/ (ids: 161319); bny[ (ids: 161319)
+INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.11.tsv  bny Surface bny parsed inconsistently: bn(I)/+y (ids: 161319); bny/ (ids: 161319); bny[ (ids: 161319)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.12.tsv  l Surface l parsed inconsistently: l(I) (ids: 161333,161366); l(II) (ids: 161333,161366); l(III) (ids: 161333,161366)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.12.tsv  km Surface km parsed inconsistently: +km, +km= (ids: 161338); k(I) (ids: 161338); k(III) (ids: 161338); k(IV) (ids: 161338); km (ids: 161338)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.12.tsv  brt Surface brt parsed inconsistently: br(t/t (ids: 161341); br[t (ids: 161341)
@@ -10112,4 +10082,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:18 161199 
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:19 161200 ag Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:21 161201 rškm Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:61 161222 dˤmnk Surface not found in UDB concordance
-Total issues: 9991
+Total issues: 9961

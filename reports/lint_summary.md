@@ -1,22 +1,22 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `9991`
-- Fallback-parsed issue lines: `250`
+- Total issues: `9961`
+- Fallback-parsed issue lines: `249`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 5138 |
-| WARNING | 399 |
+| ERROR | 5110 |
+| WARNING | 398 |
 | INFO | 1624 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3229 |
+| ERROR | Analysis does not reconstruct to surface | 3200 |
 | INFO | Surface not found in UDB concordance | 1624 |
 | ERROR | POS token not allowed for declared DULAT entry | 439 |
 | ERROR | No DULAT entry found for clitic part | 316 |
@@ -40,7 +40,7 @@
 | ERROR | Unknown DULAT token in column 4 | 9 |
 | WARNING | ḥwt Lexeme parse did not match DULAT; matched by surface form | 9 |
 | WARNING | ḥtkk Lexeme parse did not match DULAT; matched by surface form | 8 |
-| ERROR | No DULAT entry found for lexeme/surface | 6 |
+| ERROR | No DULAT entry found for lexeme/surface | 7 |
 | ERROR | nˤmt Adjective POS gender mismatch for nʕm (I): expected adj. m., got adj. f. | 6 |
 | WARNING | rmm Lexeme parse did not match DULAT; matched by surface form | 6 |
 | WARNING | yḥ Lexeme parse did not match DULAT; matched by surface form | 5 |
@@ -71,7 +71,6 @@
 | WARNING | anna III-aleph noun/adjective should encode lexeme-final case vowel as '(u\|i\|a' and inflection as '/&u\|&i\|&a' | 1 |
 | WARNING | argmnm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | argmny Lexeme parse did not match DULAT; matched by surface form | 1 |
-| WARNING | ilšnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token | 1 |
 | WARNING | ksiy Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | midm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | mlakk Lexeme parse did not match DULAT; matched by surface form | 1 |

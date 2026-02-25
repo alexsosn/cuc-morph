@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-25T13:35:09.487665+00:00",
+  "generated_at_utc": "2026-02-25T13:40:12.910223+00:00",
   "files_checked": 278,
-  "total_issues": 9991,
-  "fallback_parsed": 250,
+  "total_issues": 9961,
+  "fallback_parsed": 249,
   "by_severity": {
-    "ERROR": 5138,
-    "WARNING": 399,
+    "ERROR": 5110,
+    "WARNING": 398,
     "INFO": 1624
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3229
+      "count": 3200
     },
     {
       "severity": "INFO",
@@ -132,7 +132,7 @@
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 6
+      "count": 7
     },
     {
       "severity": "ERROR",
@@ -282,11 +282,6 @@
     {
       "severity": "WARNING",
       "problem_type": "argmny Lexeme parse did not match DULAT; matched by surface form",
-      "count": 1
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ilšnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token",
       "count": 1
     },
     {

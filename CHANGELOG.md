@@ -2,6 +2,14 @@
 
 ## 2026-02-25
 
+- Fixed suffix segmentation for `...ny` surfaces where the final `n` belongs to
+  the lexeme (e.g. `bn (I)` + suffix `y`):
+  - `SuffixCliticFixer` now tries all matching suffix candidates and applies the
+    first reconstructable one, instead of stopping at greedy longest match.
+  - This corrects rows like `bny` from `bn(I)/` to `bn(I)/+y` (not `+ny`).
+- Added regression in `tests/test_refinement_steps.py`:
+  - `test_prefers_y_suffix_over_ny_when_lemma_ends_with_n`.
+
 - Fixed weak-initial N-stem interaction between `weak-verb` and `verb-n-stem-assimilation`:
   - `WeakVerbFixer` now preserves leading `](n]` and inserts `(y` after it (instead of in front of it).
   - `VerbNStemAssimilationFixer` now normalizes semicolon variants independently and collapses legacy repeated `](n](y` insertions to a single canonical marker.

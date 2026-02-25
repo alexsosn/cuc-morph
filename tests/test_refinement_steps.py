@@ -584,6 +584,12 @@ class SuffixCliticFixerTest(unittest.TestCase):
         result = fixer.refine_row(row)
         self.assertEqual(result.analysis, "lšn/")
 
+    def test_prefers_y_suffix_over_ny_when_lemma_ends_with_n(self) -> None:
+        fixer = SuffixCliticFixer(gate=StaticGate(suffix_tokens={"bn (I)"}))
+        row = TabletRow("1", "bny", "bn(I)/", "bn (I)", "n. m.", "son", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "bn(I)/+y")
+
 
 class WeakVerbFixerTest(unittest.TestCase):
     def setUp(self) -> None:
