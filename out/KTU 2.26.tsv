@@ -1,15 +1,16 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
+id	surface form	surface form				DULAT: NOT FOUND
 # KTU 2.26 1						
-157136	tḥm	tḥm/	tḥm	n. m.	message	
+157136	tḥm	tḥm/	tḥm	n.	message	
 157137	rgm	rgm[	/r-g-m/	vb G	to say	
-157137	rgm	rgm/	rgm	n. m.	word	
+157137	rgm	rgm/	rgm	n.	word	
 # KTU 2.26 2						
 157138	mlk	mlk[	/m-l-k/	vb G	to reign	
-157138	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
+157138	mlk	mlk(II)/	mlk (II)	n.	kingdom (power and territory)	
 # KTU 2.26 3						
 157139	l	l(I)	l (I)	prep.	to	
 157139	l	l(III)	l (III)	functor	certainly	
-157140	ḥyil	?	?	?	?	DULAT: NOT FOUND
+157140	ḥyil	ḥyil				DULAT: NOT FOUND
 # KTU 2.26 4						
 157141	lm	l(I)	l (I)	prep.	to	
 157142	tlik	lʔk[k:d	/l-ʔ-k/	vb D	to send (a message)	
@@ -19,12 +20,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157145	aškn	!a!škn[:d	/š-k-n/	vb D	to be placed	
 157145	aškn	kn[kn:d	/k-n/	vb D	to be (stable)	
 # KTU 2.26 6						
-157146	ˤṣm	ˤṣ/m	ʕṣ	n. m.	tree	
+157146	ˤṣm	ˤṣ/m	ʕṣ	n.	tree	
 157147	l	l(I)	l (I)	prep.	to	
 157147	l	l(III)	l (III)	functor	certainly	
-157148	bt	bt(II)/	bt (II)	n. m.	house	
-157148	bt	b(t(I)/t	bt (I)	n. f.	daughter	
-157148	bt	bt(III)/	bt (III)	n. m.	length	
+157148	bt	bt(II)/	bt (II)	n.	house	
+157148	bt	bt(I)/	bt (I)	n.	daughter	
+157148	bt	bt(III)/	bt (III)	n.	length	
 157149	dml	dml/	dml	DN	dml	
 # KTU 2.26 7						
 157150	p	p(I)	p (I)	conj. functor	and	
@@ -33,19 +34,19 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157151	ank	ank	ảnk	pers. pn.	I	
 157152	atn	ytn[	/y-t-n/	vb G	to give	
 # KTU 2.26 8						
-157153	ˤṣm	ˤṣ/m	ʕṣ	n. m.	tree	
+157153	ˤṣm	ˤṣ/m	ʕṣ	n.	tree	
 157154	lk	l(I)+k	l (I)	prep.	to	
 # KTU 2.26 9						
 157155	arbˤ	arbˤ/	ảrbʕ	num.	four	
-157156	ˤṣm	ˤṣ/m	ʕṣ	n. m.	tree	
+157156	ˤṣm	ˤṣ/m	ʕṣ	n.	tree	
 # KTU 2.26 10						
 157157	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
-157158	ar	a/	ả/ỉr	n. m.	light	
+157158	ar	a/	ả/ỉr	n.	light	
 # KTU 2.26 11						
 157159	w	w	w	conj.	and	
 157160	ṯlṯ	ṯlṯ(I)/	ṯlṯ (I)	n. num.	three	
-157160	ṯlṯ	ṯlṯ(V)/	ṯlṯ (V)	n. m.	copper	
-157160	ṯlṯ	ṯlṯ(II)/	ṯlṯ (II)	adj. m. ord. num.	third	
+157160	ṯlṯ	ṯlṯ(V)/	ṯlṯ (V)	n.	copper	
+157160	ṯlṯ	ṯlṯ(II)/	ṯlṯ (II)	adj. ord. num.	third	
 # KTU 2.26 12						
 157161	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
 157162	ubrˤy	ubrˤ/	ủbrʕ(y)	TN	ủbrʿ(y)	
@@ -56,7 +57,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157165	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
 # KTU 2.26 14						
 157166	mlk	mlk[	/m-l-k/	vb G	to reign	
-157166	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
+157166	mlk	mlk(II)/	mlk (II)	n.	kingdom (power and territory)	
 # KTU 2.26 15						
 157167	w	w	w	conj.	and	
 157168	aḥd	aḥd/	ảḥd	adj. num./adv. num.	one	
@@ -69,18 +70,20 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157171	w	w	w	conj.	and	
 157172	l	l(I)	l (I)	prep.	to	
 157172	l	l(III)	l (III)	functor	certainly	
-157173	ˤṣm	ˤṣ/m	ʕṣ	n. m.	tree	
+157173	ˤṣm	ˤṣ/m	ʕṣ	n.	tree	
 # KTU 2.26 18						
 157174	tspr	!t!spr[	/s-p-r/	vb	to count	
 # KTU 2.26 19						
+157175	nrn	nr/+n	nr	n.	sheen	
+157175	nrn	nr[+n	/n-r/	vb	to shine	
 157175	nrn	nrn/	nrn	PN	nrn	
 157176	al	al(I)	ảl (I)	neg. functor	no	
 157176	al	al(II)	ảl (II)	pos. functor	surely	
 157177	tud	ʔd[d	/ʔ-d/	vb G	general commercial mng to overcharge	
 # KTU 2.26 20						
-157178	ad	ad/	ảd	n. m.	father	
+157178	ad	ad/	ảd	n.	father	
 157179	at	at(I)	ảt (I)	pers. pn.	you	
 157180	lhm	l(I)+hm	l (I)	prep.	to	
 # KTU 2.26 21						
 157181	ṯṯm	ṯṯm/	ṯṯm	n. num.	sixty	
-157182	ksp	ksp/	ksp	n. m.	silver	
+157182	ksp	ksp/	ksp	n.	silver	

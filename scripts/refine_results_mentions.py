@@ -996,6 +996,26 @@ def dedupe_entries(entries: Iterable[Entry]) -> List[Entry]:
     return out
 
 
+def dedupe_suffix_entries(entries: Iterable[Entry]) -> List[Entry]:
+    """Deduplicate suffix entries by surface segment (ignore homonym numerals).
+
+    For split-variant ranking we only need one representative per suffix segment
+    (e.g. `-y (I)` vs `-y (II)`); downstream normalization already strips
+    homonym numerals from suffix markers.
+    """
+    seen: set[str] = set()
+    out: list[Entry] = []
+    for e in entries:
+        key = normalize_lookup((e.lemma or "").lstrip("-"))
+        if not key:
+            key = normalize_lookup(e.lemma or "")
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(e)
+    return out
+
+
 def build_variants(
     surface: str,
     current_ref: str,
@@ -1013,6 +1033,7 @@ def build_variants(
     direct_all = dedupe_entries(forms_map.get(s_norm, []))
     direct_pref = [e for e in direct_all if (e.pos or "").strip() and (e.pos or "").strip() != "→"]
     direct = direct_pref if direct_pref else direct_all
+    direct_has_exact_form = any((s_norm, e.entry_id) in forms_morph for e in direct)
     direct_ids = {e.entry_id for e in direct}
 
     variants: List[Variant] = [Variant((e,), surface) for e in direct]
@@ -1042,8 +1063,10 @@ def build_variants(
             for target_entry in filtered_targets[:2]:
                 variants.append(Variant((target_entry,), surface, from_redirect=True))
 
-    # Conservative suffix splitting, only when direct form mapping failed.
-    if not direct:
+    # Conservative suffix splitting:
+    # - when direct form mapping failed, or
+    # - when direct candidates come only from lemma fallback (no exact form hit).
+    if (not direct) or (direct and not direct_has_exact_form):
         suffixes = sorted(suffix_map.keys(), key=len, reverse=True)
         for suf in suffixes:
             if not s_norm.endswith(suf) or len(s_norm) <= len(suf):
@@ -1061,6 +1084,7 @@ def build_variants(
                 e for e in suffix_all if (e.pos or "").strip() and (e.pos or "").strip() != "→"
             ]
             suffix_entries = suffix_pref if suffix_pref else suffix_all
+            suffix_entries = dedupe_suffix_entries(suffix_entries)
             if not suffix_entries:
                 continue
             # derive base surface by raw trimming (best effort)
@@ -1125,7 +1149,13 @@ def build_variants(
     has_redirect_pair = any(v.from_redirect for v in variants) and any(
         len(v.entries) == 1 and (v.entries[0].pos or "").strip() == "→" for v in variants
     )
-    if not has_redirect_pair and len(variants) > 1 and (variants[0].score - variants[1].score) >= 6:
+    has_split_variant = any(len(v.entries) > 1 for v in variants)
+    if (
+        not has_redirect_pair
+        and not has_split_variant
+        and len(variants) > 1
+        and (variants[0].score - variants[1].score) >= 6
+    ):
         return [variants[0]]
     top = variants[:max_variants]
     if has_redirect_pair and not any(

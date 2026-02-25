@@ -1,30 +1,33 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
+id	surface form	surface form				DULAT: NOT FOUND
 # KTU 2.98 1						
-160145	xxx	?	?	?	?	
-160146	xxxy	?	?	?	?	DULAT: NOT FOUND
+160145	xxx	xxx				
+160146	xxxy	xxxy				DULAT: NOT FOUND
 160147	rgm	rgm[	/r-g-m/	vb G	to say	
-160147	rgm	rgm/	rgm	n. m.	word	
+160147	rgm	rgm/	rgm	n.	word	
 # KTU 2.98 2						
-160148	xxx	?	?	?	?	
-160149	xxx	?	?	?	?	
+160148	xxx	xxx				
+160149	xxx	xxx				
 160150	ṯnidy	ṯnid	ṯnỉd	adv.	twice	
 # KTU 2.98 3						
-160151	xxxxxt	?	?	?	?	DULAT: NOT FOUND
+160151	xxxxxt	xxxxxt				DULAT: NOT FOUND
 160152	hlk	hlk[	/h-l-k/	vb G	to go	
+160152	hlk	hlk(I)/	hlk (I)	n.	walk	
+160152	hlk	hlk(II)	hlk (II)	deictic adv. functor	behold!	
 # KTU 2.98 4						
-160153	xxxx	?	?	?	?	
+160153	xxxx	xxxx				
 160154	l	l(I)	l (I)	prep.	to	
 160154	l	l(III)	l (III)	functor	certainly	
 160155	anzḫ	anzḫ/	ảnzḫ	TN	ảnzḫ	
 # KTU 2.98 5						
-160156	xxxnkm	?	?	?	?	DULAT: NOT FOUND
-160157	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. m. du.	servant	
+160156	xxxnkm	xxxnkm				DULAT: NOT FOUND
+160157	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. du.	servant	
 # KTU 2.98 6						
 160158	atn	ytn[	/y-t-n/	vb G	to give	
-160159	ḥmrm	ḥmr(I)/m	ḥmr (I)	n. m.	donkey	
+160159	ḥmrm	ḥmr(I)/m	ḥmr (I)	n.	donkey	
 # KTU 2.98 7						
 160160	atn	ytn[	/y-t-n/	vb G	to give	
-160161	ḫrd	ḫrd/	ḫrd	n. m.	(royal) guard	
+160161	ḫrd	ḫrd/	ḫrd	n.	(royal) guard	
 160162	ˤmnh	ˤm(I)+h	ʕm (I)	prep.	to	
 160162	ˤmnh	ˤm(I)+nh	ʕm (I)	prep.	to, ?	
 # KTU 2.98 8						
@@ -32,16 +35,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160163	p	p(III)/	p (III)	n. m.	mouth	
 160163	p	p(II)	p (II)	adv.	here	
 160164	rgm	rgm[	/r-g-m/	vb G	to say	
-160164	rgm	rgm/	rgm	n. m.	word	
+160164	rgm	rgm/	rgm	n.	word	
 160165	špš	špš/	špš	n.	sun	
 160166	mlk	mlk[	/m-l-k/	vb G	to reign	
-160166	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
-160167	rb	rb(II)/	rb (II)	n. m.	chief	
-160167	rb	rb(I)/	rb (I)	adj. m.	great	
-160167	rb	rb/	rb(b)	n. m.	drizzle	
+160166	mlk	mlk(II)/	mlk (II)	n.	kingdom (power and territory)	
+160167	rb	rb(II)/	rb (II)	n.	chief	
+160167	rb	rb(I)/	rb (I)	adj.	great	
+160167	rb	rb/	rb(b)	n.	drizzle	
 # KTU 2.98 9						
-160168	bˤly	bˤl(II)/y	bʕl (II)	n. m./DN	Baʿlu/Baal	
-160169	aṯṯb	?	?	?	?	DULAT: NOT FOUND
+160168	bˤly	bˤl(II)/y	bʕl (II)	n./DN	Baʿlu/Baal	
+160169	aṯṯb	aṯṯb				DULAT: NOT FOUND
 160170	w	w	w	conj.	and	
 160171	ml	ml	ml	?	?	
 # KTU 2.98 10						
@@ -50,20 +53,21 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160173	hnkt	hnk	hnk(t)	dem./pers. pn.	that	
 160174	l	l(I)	l (I)	prep.	to	
 160174	l	l(III)	l (III)	functor	certainly	
-160175	knt	kn(t/t	knt	n. f.	continuity	
+160175	knt	knt/	knt	n.	continuity	
 # KTU 2.98 11						
-160176	mlḥmt	mlḥm(t/t	mlḥmt	n. f.	war	
+160176	mlḥmt	mlḥmt/	mlḥmt	n.	war	
 160177	b	b	b	prep.	in	
-160178	ḥwt	ḥw(t/t	ḥwt	n. f.	country	
-160179	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. m. du.	servant	
+160178	ḥwt	ḥwt/	ḥwt	n.	country	
+160179	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. du.	servant	
 # KTU 2.98 12						
 160180	w	w	w	conj.	and	
 160181	atnn	ytn[+n	/y-t-n/	vb	to give	
 160181	atnn	at(I)/+nn	ảt (I)	pers. pn.	you, ?	
-160182	ḫrd	ḫrd/	ḫrd	n. m.	(royal) guard	
+160181	atnn	ʔtw[+nn	/ʔ-t-w/	vb	to come, ?	
+160182	ḫrd	ḫrd/	ḫrd	n.	(royal) guard	
 160183	dm	dm(II)/	dm (II)	n. m.	blood	
 160183	dm	dm(I)	dm (I)	functor	since	
-160184	iṯ	iṯ(I)/	ỉṯ (I)	n. m.	presence	
+160184	iṯ	iṯ(I)/	ỉṯ (I)	n.	presence	
 160185	ˤmnh	ˤm(I)+h	ʕm (I)	prep.	to	
 160185	ˤmnh	ˤm(I)+nh	ʕm (I)	prep.	to, ?	
 # KTU 2.98 13						
@@ -71,12 +75,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160187	ˤmm	ˤmm[:pass	/ʕ-m-m/	vb Gpass	to be covered	
 160188	špš	špš/	špš	n.	sun	
 160189	mlk	mlk[	/m-l-k/	vb G	to reign	
-160189	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
-160190	rb	rb(II)/	rb (II)	n. m.	chief	
-160190	rb	rb(I)/	rb (I)	adj. m.	great	
-160190	rb	rb/	rb(b)	n. m.	drizzle	
+160189	mlk	mlk(II)/	mlk (II)	n.	kingdom (power and territory)	
+160190	rb	rb(II)/	rb (II)	n.	chief	
+160190	rb	rb(I)/	rb (I)	adj.	great	
+160190	rb	rb/	rb(b)	n.	drizzle	
 # KTU 2.98 14						
-160191	bˤly	bˤl(II)/y	bʕl (II)	n. m./DN	Baʿlu/Baal	
+160191	bˤly	bˤl(II)/y	bʕl (II)	n./DN	Baʿlu/Baal	
 160192	ṯnid	ṯnid	ṯnỉd	adv.	twice	
 160193	ṯlṯid	ṯlṯid	ṯlṯỉd	adv.	three times	
 160194	likt	l(ʔ&ik[t	/l-ʔ-k/	vb G	to send (a message)	
@@ -91,30 +95,32 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160198	l	l(I)	l (I)	prep.	to	
 160198	l	l(II)	l (II)	adv.	no	
 160198	l	l(III)	l (III)	functor	certainly	
-160199	ḫr	ḫr(I)/	ḫr (I)	n. m.	cave	
+160199	ḫr	ḫr(I)/	ḫr (I)	n.	cave	
 160199	ḫr	ḫrʔ[	/ḫ-r-ʔ/	vb G	to defecate	
 160199	ḫr	ḫr[	/ḫ-r(-r)/	vb G	to have spasms (of diarrhoea)	
 # KTU 2.98 16						
 160200	nġr	nġr[	/n-ġ-r/	vb G	to protect	
-160201	ar	a/	ả/ỉr	n. m.	light	
+160201	ar	a/	ả/ỉr	n.	light	
 160202	w	w	w	conj.	and	
-160203	x	?	?	?	?	
+160203	x	x				
 # KTU 2.98 17						
-160204		?	?	?	?	
-160205		?	?	?	?	
+160204						
+160205						
 # KTU 2.98 18						
 160206	likt	l(ʔ&ik[t	/l-ʔ-k/	vb G	to send (a message)	
 160207	atḏn	atḏn/	ảtḏn	PN	ảtḏn	
 # KTU 2.98 19						
 160208	ˤm	ˤm(I)	ʕm (I)	prep.	to	
-160209	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. m. du.	servant	
+160209	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. du.	servant	
 160210	ht	ht	ht	adv.	here	
 # KTU 2.98 20						
-160211	ḫrd	ḫrd/	ḫrd	n. m.	(royal) guard	
+160211	ḫrd	ḫrd/	ḫrd	n.	(royal) guard	
 160212	w	w	w	conj.	and	
-160213	ḥmrm	ḥmr(I)/m	ḥmr (I)	n. m.	donkey	
+160213	ḥmrm	ḥmr(I)/m	ḥmr (I)	n.	donkey	
 # KTU 2.98 21						
 160214	hlk	hlk[	/h-l-k/	vb G	to go	
+160214	hlk	hlk(I)/	hlk (I)	n.	walk	
+160214	hlk	hlk(II)	hlk (II)	deictic adv. functor	behold!	
 160215	l	l(I)	l (I)	prep.	to	
 160215	l	l(III)	l (III)	functor	certainly	
 160216	anzḫ	anzḫ/	ảnzḫ	TN	ảnzḫ	
@@ -122,72 +128,73 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160217	w	w	w	conj.	and	
 160218	špšm	špš/	špš	n.	sun	
 160219	mlk	mlk[	/m-l-k/	vb G	to reign	
-160219	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
-160220	rb	rb(II)/	rb (II)	n. m.	chief	
-160220	rb	rb(I)/	rb (I)	adj. m.	great	
-160220	rb	rb/	rb(b)	n. m.	drizzle	
+160219	mlk	mlk(II)/	mlk (II)	n.	kingdom (power and territory)	
+160220	rb	rb(II)/	rb (II)	n.	chief	
+160220	rb	rb(I)/	rb (I)	adj.	great	
+160220	rb	rb/	rb(b)	n.	drizzle	
 # KTU 2.98 23						
-160221	bˤly	bˤl(II)/y	bʕl (II)	n. m./DN	Baʿlu/Baal	
+160221	bˤly	bˤl(II)/y	bʕl (II)	n./DN	Baʿlu/Baal	
 160222	ydˤ	!y!(ydˤ(I)[	/y-d-ʕ/ (I)	vb G	to know	
 160223	ky	k(III)	k (III)	Subordinating or completive functor	when	
 160223	ky	k(II)	k (II)	emph. functor	yes	
 160223	ky	k(IV)	k (IV)	adv.	thus	
 # KTU 2.98 24						
-160224	šisp	?	?	?	?	DULAT: NOT FOUND
+160224	šisp	šisp				DULAT: NOT FOUND
 160225	artṯb	artṯb/	ảrtṯb	PN	ảrtṯb	
 # KTU 2.98 25						
-160226	ˤprm	ˤpr(I)/m	ʕpr (I)	n. m.	dust	
+160226	ˤprm	ˤpr(I)/m	ʕpr (I)	n.	dust	
 160227	ˤmnh	ˤm(I)+h	ʕm (I)	prep.	to	
 160227	ˤmnh	ˤm(I)+nh	ʕm (I)	prep.	to, ?	
 # KTU 2.98 26						
 160228	w	w	w	conj.	and	
 160229	yšdd	!y!šdd(II)[	/š-d-d/ (II)	vb G	to devastate	
-160230	ḥwt	ḥw(t/t	ḥwt	n. f.	country	
+160230	ḥwt	ḥwt/	ḥwt	n.	country	
 # KTU 2.98 27						
-160231	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. m. du.	servant	
+160231	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. du.	servant	
 160232	ht	ht	ht	adv.	here	
 160233	ank	ank	ảnk	pers. pn.	I	
 # KTU 2.98 28						
-160234	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. m. du.	servant	
-160235	klm	kl/	kl	n. m.	totality (of)	
-160236	bnšm	bnš/m	bnš	n. m.	man	
+160234	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. du.	servant	
+160235	klm	kl/	kl	n.	totality (of)	
+160236	bnšm	bnš/m	bnš	n.	man	
 # KTU 2.98 29						
 160237	ap	ap(I)	ảp (I)	adv./conj.	also	
 160237	ap	ap(II)/	ảp (II)	n. m.	nose	
-160238	ḫpṯ	ḫpṯ/	ḫpṯ	n. m.	fugitive	
+160238	ḫpṯ	ḫpṯ/	ḫpṯ	n.	fugitive	
 160239	b	b	b	prep.	in	
-160240	ḥwt	ḥw(t/t	ḥwt	n. f.	country	
-160241	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. m. du.	servant	
+160240	ḥwt	ḥwt/	ḥwt	n.	country	
+160241	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. du.	servant	
 # KTU 2.98 30						
 160242	l	l(I)	l (I)	prep.	to	
 160242	l	l(III)	l (III)	functor	certainly	
-160243	xxk	?	?	?	?	DULAT: NOT FOUND
+160243	xxk	xxk				DULAT: NOT FOUND
 160244	štthm	št[t+hm	/š-t/	vb	to place	
+160244	štthm	štt/+hm	štt	adj.	spun	
 # KTU 2.98 31						
-160245	xxxx	?	?	?	?	
+160245	xxxx	xxxx				
 160246	w	w	w	conj.	and	
-160247	lḥt	lḥ(II)/t=	lḥ (II)	n. m.	missive	
+160247	lḥt	lḥ(II)/t=	lḥ (II)	n.	missive	
 # KTU 2.98 32						
-160248	xxxx	?	?	?	?	
-160249	ḫrd	ḫrd/	ḫrd	n. m.	(royal) guard	
+160248	xxxx	xxxx				
+160249	ḫrd	ḫrd/	ḫrd	n.	(royal) guard	
 160250	l	l(I)	l (I)	prep.	to	
 160250	l	l(III)	l (III)	functor	certainly	
 160251	atḏn	atḏn/	ảtḏn	PN	ảtḏn	
 # KTU 2.98 33						
-160252	x	?	?	?	?	
+160252	x	x				
 160253	w	w	w	conj.	and	
 160254	špš	špš/	špš	n.	sun	
 # KTU 2.98 34						
 160255	mlk	mlk[	/m-l-k/	vb G	to reign	
-160255	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
-160256	rb	rb(II)/	rb (II)	n. m.	chief	
-160256	rb	rb(I)/	rb (I)	adj. m.	great	
-160256	rb	rb/	rb(b)	n. m.	drizzle	
-160257	bˤly	bˤl(II)/y	bʕl (II)	n. m./DN	Baʿlu/Baal	
+160255	mlk	mlk(II)/	mlk (II)	n.	kingdom (power and territory)	
+160256	rb	rb(II)/	rb (II)	n.	chief	
+160256	rb	rb(I)/	rb (I)	adj.	great	
+160256	rb	rb/	rb(b)	n.	drizzle	
+160257	bˤly	bˤl(II)/y	bʕl (II)	n./DN	Baʿlu/Baal	
 160258	ydˤ	!y!(ydˤ(I)[	/y-d-ʕ/ (I)	vb G	to know	
 # KTU 2.98 35						
-160259	x	?	?	?	?	
-160260	ẓr	ẓr(I)/	ẓr (I)	n. m.	back	
+160259	x	x				
+160260	ẓr	ẓr(I)/	ẓr (I)	n.	back	
 160261	w	w	w	conj.	and	
 160262	tḥtm	tḥt(II)	tḥt (II)	adv.	underneath	
 160263	k	+k	-k (I)			
@@ -195,17 +202,17 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160263	k	k(III)	k (III)	Subordinating or completive functor	when	
 160263	k	k(I)	k (I)	prep.	like	
 160263	k	k(II)	k (II)	emph. functor	yes	
-160264	iṯ	iṯ(I)/	ỉṯ (I)	n. m.	presence	
+160264	iṯ	iṯ(I)/	ỉṯ (I)	n.	presence	
 # KTU 2.98 36						
-160265	xx	?	?	?	?	
+160265	xx	xx				
 160266	l	l(I)	l (I)	prep.	to	
 160266	l	l(III)	l (III)	functor	certainly	
-160267	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. m. du.	servant	
+160267	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. du.	servant	
 160268	w	w	w	conj.	and	
 160269	arš	arš/	ảrš	DN	a monster (“many-headed”, “whale”)	
 160270	ank	ank	ảnk	pers. pn.	I	
 # KTU 2.98 37						
-160271	xxx	?	?	?	?	
-160272	amr	amr(I)/	ảmr (I)	n. m.	order	
+160271	xxx	xxx				
+160272	amr	amr(I)/	ảmr (I)	n.	order	
 160273	nġr	nġr[	/n-ġ-r/	vb G	to protect	
-160274	ḥwt	ḥw(t/t	ḥwt	n. f.	country	
+160274	ḥwt	ḥwt/	ḥwt	n.	country	

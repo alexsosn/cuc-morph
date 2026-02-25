@@ -230,6 +230,60 @@ class RefineResultsMentionsTest(unittest.TestCase):
             self.assertTrue(variants)
             self.assertEqual(variants[0].entries[0].entry_id, 170)
 
+    def test_fallback_direct_hit_does_not_suppress_suffix_split_variants(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            self._init_dulat_schema(db_path)
+            conn = sqlite3.connect(str(db_path))
+            cur = conn.cursor()
+            cur.executemany(
+                _INSERT_ENTRY_SQL,
+                [
+                    (10, "yry", "", "PN", "", "", ""),
+                    (11, "/y-r-y/", "", "vb", "", "", ""),
+                    (12, "yr", "", "n. m.", "", "", ""),
+                    (13, "-y", "I", "prep.", "", "", ""),
+                ],
+            )
+            cur.executemany(
+                "INSERT INTO forms(text, entry_id, morphology) VALUES (?, ?, ?)",
+                [
+                    ("yr", 11, "G, prefc."),
+                    ("yr", 12, "sg."),
+                ],
+            )
+            cur.executemany(
+                "INSERT INTO translations(entry_id, text) VALUES (?, ?)",
+                [
+                    (10, "yry"),
+                    (11, "to fire"),
+                    (12, "early rain"),
+                    (13, "my"),
+                ],
+            )
+            conn.commit()
+            conn.close()
+
+            _entries, forms_map, lemma_map, suffix_map, forms_morph = load_entries(db_path)
+            variants = build_variants(
+                surface="yry",
+                current_ref="CAT 1.101:4",
+                forms_map=forms_map,
+                lemma_map=lemma_map,
+                suffix_map=suffix_map,
+                forms_morph=forms_morph,
+                mention_ids=set(),
+                entry_ref_count={},
+                entry_tablets={},
+                entry_family_count={},
+                max_variants=5,
+            )
+
+            rendered = [render_variant("yry", variant, forms_morph) for variant in variants]
+            self.assertIn(("yry/", "yry", "PN", "yry"), rendered)
+            self.assertTrue(any("+y(I)" in row[0] for row in rendered))
+            self.assertTrue(any(row[0].startswith("yr/+y") for row in rendered))
+
     def test_parse_separator_ref_supports_no_column_format(self) -> None:
         self.assertEqual(
             parse_separator_ref("#---------------------------- KTU 1.101 5"),

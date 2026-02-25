@@ -2,6 +2,19 @@
 
 ## 2026-02-25
 
+- Fixed fallback-direct ambiguity suppression in `scripts/refine_results_mentions.py`:
+  - suffix split variants are now generated when direct hits come only from
+    lemma fallback (no exact DULAT form hit), instead of being suppressed.
+  - split variants now deduplicate suffix homonym entries by suffix segment
+    (for example `-y (I)/(II)`), preventing top-N crowding that hid lexical
+    alternatives.
+  - strong-score single-variant collapse is now disabled when split variants
+    are present.
+- Added regression in `tests/test_refine_results_mentions.py`:
+  - `test_fallback_direct_hit_does_not_suppress_suffix_split_variants`.
+- Re-ran refinement + full step pipeline across all tablets so affected
+  fallback-direct cases (including `152206 yry`) are reproducibly restored.
+
 - Fixed suffix segmentation for `...ny` surfaces where the final `n` belongs to
   the lexeme (e.g. `bn (I)` + suffix `y`):
   - `SuffixCliticFixer` now tries all matching suffix candidates and applies the

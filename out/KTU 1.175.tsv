@@ -1,12 +1,13 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
+id	surface form	surface form				DULAT: NOT FOUND
 # KTU 1.175 1						
-155930	np	np/	np	n. m.	peak	
-155931	mru	mru(III)/	mrủ (III)	n. m.	chief groom	
+155930	np	np/	np	n.	peak	
+155931	mru	mru(III)/	mrủ (III)	n.	chief groom	
 # KTU 1.175 2						
-155932	mrrt	mrr(t(I)/t	mrrt (I)	n. f.	bile	
-155933	alp	alp(I)/	ảlp (I)	n. m.	(head of) cattle	
+155932	mrrt	mrrt(I)/	mrrt (I)	n.	bile	
+155933	alp	alp(I)/	ảlp (I)	n.	(head of) cattle	
 155933	alp	alp(II)/	ảlp (II)	num.	(one, a) thousand	
-155934	ti	?	?	?	?	DULAT: NOT FOUND
+155934	ti	ti				DULAT: NOT FOUND
 # KTU 1.175 3						
 155935	b	b	b	prep.	in	
 155936	d	d	d	det. or rel. functor	the one(s) of	
@@ -17,19 +18,20 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.175 4						
 155941	ṯrn	ṯrn(I)	ṯrn (I)			
 155942	dk	d+k	d	det. or rel. functor	the one(s) of	
+155942	dk	dll[+k	/d-l-l/	vb	to oppress	
 # KTU 1.175 5						
-155943		?	?	?	?	
+155943						
 155944	w	w	w	conj.	and	
 155945	št	št[:pass	/š-t/	vb G/Gpass	to place	
-155945	št	š(t(II)/t	št (II)	n. f.	raíz	
-155945	št	št(I)/	št (I)	n. m.	base	
-155946	lšn	lšn/	lšn	n. f.	tongue	
+155945	št	št(II)/	št (II)	n.	raíz	
+155945	št	št(I)/	št (I)	n.	base	
+155946	lšn	lšn/	lšn	n.	tongue	
 # KTU 1.175 6						
 155947	w	w	w	conj.	and	
-155948	ḥmṣ	ḥmṣ/	ḥmṣ	n. m.	vinegar	
+155948	ḥmṣ	ḥmṣ/	ḥmṣ	n.	vinegar	
 155948	ḥmṣ	ḥmṣ[	/ḥ-m-ṣ/	vb	to be(come) sour	
 155949	w	w	w	conj.	and	
-155950	mlḥt	mlḥ(t/t	mlḥt	n. f.	salt	
+155950	mlḥt	mlḥt/	mlḥt	n.	salt	
 # KTU 1.175 7						
 155951	yḥrkn	!y!ḥrk[n	/ḥ-r-k/	vb G	to burn	
 155952	w	w	w	conj.	and	
@@ -38,6 +40,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155954	t	/t, /t=				
 155954	t	[t, [t=, [t==, [t===				
 155955	w	w	w	conj.	and	
+155956	byn	b+n	b	prep.	in	
 155956	byn	byn/	byn	PN	byn	
 155957	tṯibṯn	]š]ʔbṯ[bṯn	/ʔ-b-ṯ/	vb Š	?	
 155958	k	+k	-k (I)			
@@ -48,53 +51,54 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155959	yšt	!y!št[:pass	/š-t/	vb G/Gpass	to place	
 155959	yšt	!y!št(y[	/š-t-y/	vb G	to drink	
 # KTU 1.175 9						
-155960		?	?	?	?	
+155960						
 155961	w	w	w	conj.	and	
 155962	šty	šty[	/š-t-y/	vb G	to drink	
-155963		?	?	?	?	
+155963						
 # KTU 1.175 10						
 155964	rt	rt/	rt	PN	rt	
 # KTU 1.175 11						
 155965	l	l(I)	l (I)	prep.	to	
 155965	l	l(III)	l (III)	functor	certainly	
-155966	ḫrt	ḫr(t/t	ḫrt	n. f.	cave	
+155966	ḫrt	ḫrt/	ḫrt	n.	cave	
 155967	w	w	w	conj.	and	
-155968	riš	riš(I)/	rỉš (I)	n. m.	head	
-155969	bṯn	bṯn/	bṯn	n. m.	serpent	
+155968	riš	riš(I)/	rỉš (I)	n.	head	
+155969	bṯn	bṯn/	bṯn	n.	serpent	
 # KTU 1.175 12						
 155970	dk	d+k	d	det. or rel. functor	the one(s) of	
+155970	dk	dll[+k	/d-l-l/	vb	to oppress	
 155971	yḥdh	yḥdh	yḥdh	adv.	together	
 155972	w	w	w	conj.	and	
-155973	šgbˤll	?	?	?	?	DULAT: NOT FOUND
+155973	šgbˤll	šgbˤll				DULAT: NOT FOUND
 # KTU 1.175 13						
-155974		?	?	?	?	
-155975	alp	alp(I)/	ảlp (I)	n. m.	(head of) cattle	
+155974						
+155975	alp	alp(I)/	ảlp (I)	n.	(head of) cattle	
 155975	alp	alp(II)/	ảlp (II)	num.	(one, a) thousand	
 155976	w	w	w	conj.	and	
 155977	yšt	!y!št[:pass	/š-t/	vb G/Gpass	to place	
 155978	b	b	b	prep.	in	
-155979	gbh	gb(II)/+h	gb (II)	n. m.	spine	
+155979	gbh	gb(II)/+h	gb (II)	n.	spine	
 # KTU 1.175 14						
-155980		?	?	?	?	
+155980						
 155981	w	w	w	conj.	and	
 155982	ˤlm	ˤl(I)	ʕl (I)	prep.	upon	
 155983	ylk	hlk[	/h-l-k/	vb G	to go	
-155984	ġzr	ġzr/	ġzr	n. m.	lad	
+155984	ġzr	ġzr/	ġzr	n.	lad	
 # KTU 1.175 15						
 155985	ṣ	mḫṣ[	/m-ḫ-ṣ/	vb G	to wound	
 # KTU 1.175 16						
-155986	mṭt	mṭ(t/t	mṭt	n. f.	bed	
+155986	mṭt	mṭt/	mṭt	n.	bed	
 155987	w	w	w	conj.	and	
-155988	ṯnt	ṯnt(I)/	ṯnt (I)	n. f.	a kind of leather or leather object	
-155989	nˤr	nˤr(I)/	nʕr (I)	n. m.	boy	
+155988	ṯnt	ṯnt(I)/	ṯnt (I)	n.	a kind of leather or leather object	
+155989	nˤr	nˤr(I)/	nʕr (I)	n.	boy	
 155989	nˤr	!n!](n]ˤr[	/ʕ-r/	vb G/N	to become agitated	
 # KTU 1.175 17						
 155990	št	št[:pass	/š-t/	vb G/Gpass	to place	
-155990	št	š(t(II)/t	št (II)	n. f.	raíz	
-155990	št	št(I)/	št (I)	n. m.	base	
+155990	št	št(II)/	št (II)	n.	raíz	
+155990	št	št(I)/	št (I)	n.	base	
 155991	b	b	b	prep.	in	
-155992	gbh	gb(II)/+h	gb (II)	n. m.	spine	
+155992	gbh	gb(II)/+h	gb (II)	n.	spine	
 155993	b	b	b	prep.	in	
 155994	ṯlṯ	ṯlṯ(I)/	ṯlṯ (I)	n. num.	three	
-155994	ṯlṯ	ṯlṯ(V)/	ṯlṯ (V)	n. m.	copper	
-155994	ṯlṯ	ṯlṯ(II)/	ṯlṯ (II)	adj. m. ord. num.	third	
+155994	ṯlṯ	ṯlṯ(V)/	ṯlṯ (V)	n.	copper	
+155994	ṯlṯ	ṯlṯ(II)/	ṯlṯ (II)	adj. ord. num.	third	
