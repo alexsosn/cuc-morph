@@ -12,7 +12,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147102	bn	bn[	/b-n/	vb G	to understand	
 147103	šp	šp/	šp	n. m.	dune	
 # KTU 1.23 3						
-147104	ytnm	ytn(I)/m	ytn (I)	n. m.	temple slaves	
+147104	ytnm	!y!(ytn[m	/y-t-n/	vb	to give	
 147105	qrt	qr(t(I)/t	qrt (I)	n. f.	city	
 147106	l	l(I)	l (I)	prep.	to	
 147106	l	l(II)	l (II)	adv.	no	
@@ -83,7 +83,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147147	ṣmdm	ṣmd[m	/ṣ-m-d/	vb G	to harness	
 147148	gpn	gpn(I)/	gpn (I)	n. m.	(vine-)stock	
 147148	gpn	gpn(II)/	gpn (II)	n. m.	harness	
-147149	yšql	?	?	?	?	DULAT: NOT FOUND
+147149	yšql	ql[ql	/q-l/	vb	to fall (down)	
 147150	šdmth	šdmt/h	šdmt	n. f.	terrace	
 # KTU 1.23 11						
 147151	km	k(III)	k (III)	functor	when	
@@ -345,6 +345,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147319	ypt	yp(t(I)/t	ypt (I)	n. f.	cow	
 147319	ypt	!y!pt[	/p-t(-y)/	vb G	to seduce	
 147320	hm	hm(II)	hm (II)	conj./interr. functor	if	
+147320	hm	hm(I)	hm (I)	pers. pn.	they	
 147321	aṯtm	aṯt/m	ảṯt	n. f. du.	woman	
 147322	tṣḥn	!t!ṣḥ[+n	/ṣ-ḥ/	vb	to exclaim	
 # KTU 1.23 40						
@@ -389,6 +390,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147345	ˤlmh	ˤlm(I)/+h	ʕlm (I)	n. m.	eternity	
 147346	w	w	w	conj.	and	
 147347	hm	hm(II)	hm (II)	conj./interr. functor	if	
+147347	hm	hm(I)	hm (I)	pers. pn.	they	
 # KTU 1.23 43						
 147348	aṯtm	aṯt/m	ảṯt	n. f. du.	woman	
 147349	tṣḥn	!t!ṣḥ[+n	/ṣ-ḥ/	vb	to exclaim	
@@ -479,6 +481,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147401	ˤlmh	ˤlm(I)/+h	ʕlm (I)	n. m.	eternity	
 147402	yhbr	!y!hbr[	/h-b-r/	vb G	to bow	
 147403	špthm	šp(t/t	špt	n. f.	lip	
+147404	yšq	!y!šq(y[	/š-q-y/	vb G	to offer (something to) drink	
 147404	yšq	nšq[	/n-š-q/	vb G	to kiss	
 # KTU 1.23 50						
 147405	hn	hn	hn	deictic functor/adv.	behold!	
@@ -540,6 +543,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.23 55						
 147445	yhbr	!y!hbr[	/h-b-r/	vb G	to bow	
 147446	špthm	šp(t/t	špt	n. f.	lip	
+147447	yšq	!y!šq(y[	/š-q-y/	vb G	to offer (something to) drink	
 147447	yšq	nšq[	/n-š-q/	vb G	to kiss	
 147448	hn	hn	hn	deictic functor/adv.	behold!	
 147449	špthm	šp(t/t	špt	n. f.	lip	
@@ -707,12 +711,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147563	w	w	w	conj.	and	
 147564	ngš	ngš[	/n-g-š/	vb G	to approach	
 147565	hm	hm(II)	hm (II)	conj./interr. functor	if	
+147565	hm	hm(I)	hm (I)	pers. pn.	they	
 147566	nġr	nġr[	/n-ġ-r/	vb G	to protect	
 # KTU 1.23 69						
 147567	mdrˤ	mdrˤ/	mdrʕ	n. m.	sown land	
 147568	w	w	w	conj.	and	
 147569	ṣḥ	ṣḥ[	/ṣ-ḥ/	vb G	to exclaim	
 147570	hm	hm(II)	hm (II)	conj./interr. functor	if	
+147570	hm	hm(I)	hm (I)	pers. pn.	they	
 147571	ˤm	ˤm(I)	ʕm (I)	prep.	to	
 147572	n	~n	-n (I)	encl. morph.		
 147572	n	[n, [n=	-n (II)	suffixed pn. morph. used with vb	me/to me	
@@ -738,7 +744,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147585	ˤrb	ˤrb(I)[	/ʕ-r-b/ (I)	vb G	to enter	
 147585	ˤrb	ˤrb(I)/	ʕrb (I)	n. m.	entry	
 147586	hm	hm(II)	hm (II)	conj./interr. functor	if	
+147586	hm	hm(I)	hm (I)	pers. pn.	they	
 147587	hm	hm(II)	hm (II)	conj./interr. functor	if	
+147587	hm	hm(I)	hm (I)	pers. pn.	they	
 147588	iṯ	iṯ(I)/	ỉṯ (I)	n. m.	presence	
 147589	b	b	b	prep.	in	
 147590	btk	bt(II)/+k	bt (II)	n. m.	house	
@@ -752,11 +760,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147594	w	w	w	conj.	and	
 147595	nlḥm	!n!lḥm(I)[	/l-ḥ-m/ (I)	vb G	to eat	
 147596	hm	hm(II)	hm (II)	conj./interr. functor	if	
+147596	hm	hm(I)	hm (I)	pers. pn.	they	
 147597	iṯ	iṯ(I)/	ỉṯ (I)	n. m.	presence	
 147598	b	b	b	prep.	in	
 147599	btk	bt(II)/+k	bt (II)	n. m.	house	
 147600	yn	yn/	yn	n. m.	wine	
-147601	wtn	?	?	?	?	DULAT: NOT FOUND
+147601	wtn	ss/+n	s:śs/św	n. m.	horse	
 147602	w	w	w	conj.	and	
 147603	nšt	!n!št(y[	/š-t-y/	vb G	to drink	
 147603	nšt	nšy[t	/n-š-y/	vb N	to be forgotten	
@@ -766,6 +775,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147605	ˤn	ˤn[	/ʕ-n/	vb G	to see	
 147605	ˤn	ˤn(II)/	ʕn (II)	n. f.	furrow	
 147606	hm	hm(II)	hm (II)	conj./interr. functor	if	
+147606	hm	hm(I)	hm (I)	pers. pn.	they	
 147607	nġr	nġr[	/n-ġ-r/	vb G	to protect	
 147608	mdrˤ	mdrˤ/	mdrʕ	n. m.	sown land	
 147609	iṯ	iṯ(I)/	ỉṯ (I)	n. m.	presence	

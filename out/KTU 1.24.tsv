@@ -1,7 +1,7 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.24 1						
 147627	ašr	!a!šr(I)[	/š-r/ (I)	vb G	to sing	
-147628	nkl	nkl/	nkl	DN	nkl	
+147628	nkl	!n!kl(y[	/k-l-y/	vb N	to finish	
 147629	wib	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.24 2						
 147630	ḫrḫb	ḫrḫb/	ḫrḫb	DN	ḫrḫb	
@@ -109,7 +109,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147701	qẓ	qẓ/	qẓ	n. m.	summer	
 147702	tn	(ytn[	/y-t-n/	vb	give	
 147702	tn	(ytn[/	/y-t-n/	vb	give	
-147703	nkl	nkl/	nkl	DN	nkl	
+147703	nkl	!n!kl(y[	/k-l-y/	vb N	to finish	
 147704	y	+y, [y	-y (I)	prep. functor	my	
 147704	y	~y	-y (II)	prep. functor	indeed	
 147704	y	y	y	prep. functor	oh!	
@@ -193,7 +193,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.24 30						
 147756	bh	b	b	prep.	in	
 147757	lbu	lbu/	lbủ	n. m.	lion	
-147758	yˤrr	?	?	?	?	DULAT: NOT FOUND
+147758	yˤrr	!y!ˤr[r	/ʕ-r/	vb	to become agitated	
 147759	w	w	w	conj.	and	
 147760	yˤn	!y!ˤn(y(I)[	/ʕ-n-y/ (I)	vb G	to answer	
 147760	yˤn	!y!ˤn[	/ʕ-n/	vb G/D	to see	
@@ -202,19 +202,18 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147761	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 147762	nyr	nyr/	nyr	n. f.	luminary	
 147763	šmm	šm(m(I)/m	šmm (I)	n. m. pl. tant.	heavens	
-147764	wn	w	w	conj.	and	Based on DULAT reconstruction.
-147764	wn	wn	wn	→	?	
+147764	wn	w	w	conj.	and	
 147765	ˤn	ˤn(I)/	ʕn (I)	n. f.	eye	
 147765	ˤn	ˤn[	/ʕ-n/	vb G	to see	
 147765	ˤn	ˤn(II)/	ʕn (II)	n. f.	furrow	
 # KTU 1.24 32						
 147766	ˤmn	ˤm(I)+n	ʕm (I)	prep.	to	
-147767	nkl	nkl/	nkl	DN	nkl	
+147767	nkl	!n!kl(y[	/k-l-y/	vb N	to finish	
 147768	ḫtny	ḫtn[y	/ḫ-t-n/	vb D	to become a son-in-law	
 147768	ḫtny	ḫtn(I)/	ḫtn (I)	n. m.	relationship by marriage	
 147769	aḫr	aḫr	ảḫr	adv./prep./conj.	afterwards	
 # KTU 1.24 33						
-147770	nkl	nkl/	nkl	DN	nkl	
+147770	nkl	!n!kl(y[	/k-l-y/	vb N	to finish	
 147771	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 147772	ytrḫ	!y!trḫ[	/t-r-ḫ/	vb G/D	to marry	
 147773	adnh	adn(I)/+h	ảdn (I)	n. m.	lord	
@@ -240,7 +239,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147786	bn	bn(II)	bn (II)	prep.	between	
 147786	bn	bn[	/b-n/	vb G	to understand	
 147787	mznm	mzn/m	mzn	n. m. du.	weight	
-147788	nkl	nkl/	nkl	DN	nkl	
+147788	nkl	!n!kl(y[	/k-l-y/	vb N	to finish	
 147789	wib	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.24 38						
 147790	d	d	d	det. or rel. functor	the one(s) of	
@@ -298,9 +297,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147823	py	p(III)/+y	p (III)	n. m.	mouth	
 147824	sp	sp/	sp	n. m.	bowl	
 # KTU 1.24 46						
-147825	rhn	ġtr[+hn	/ġ-t-r/	vb	to implore	
-147825	rhn	pẓr[+hn	/p-ẓ-r/	vb	to free	
-147825	rhn	rks/+hn	rks	n. m.	belt	
+147825	rhn	rḥ(I)/+n	rḥ (I)	n. f.	wind	
 147826	b	b	b	prep.	in	
 147827	špty	šp(t/t	špt	n. f.	lip	
 147828	mn	mn(IV)	mn (IV)	?	?	

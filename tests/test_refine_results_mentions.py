@@ -247,6 +247,82 @@ class RefineResultsMentionsTest(unittest.TestCase):
             self.assertEqual([entry.entry_id for entry in forms_map["tlsmn"]], [2520])
             self.assertIn(("tlsmn", 2520), forms_morph)
 
+    def test_refine_file_resolves_weak_final_prefixed_alias(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            self._init_dulat_schema(db_path)
+            conn = sqlite3.connect(str(db_path))
+            cur = conn.cursor()
+            cur.execute(_INSERT_ENTRY_SQL, (5001, "/ġ-l-y/", "", "vb", "", "", ""))
+            cur.execute(
+                "INSERT INTO translations(entry_id, text) VALUES (?, ?)",
+                (5001, "to lose vitality"),
+            )
+            cur.execute(
+                "INSERT INTO forms(text, entry_id, morphology) VALUES (?, ?, ?)",
+                ("tġly", 5001, "D, prefc."),
+            )
+            conn.commit()
+            conn.close()
+
+            _entries, forms_map, lemma_map, suffix_map, forms_morph = load_entries(db_path)
+            out_path = Path(tmp_dir) / "KTU 1.3.tsv"
+            out_path.write_text(
+                "#---------------------------- KTU 1.3 I:1\n"
+                "136938\ttġl\t?\t?\t?\t?\tDULAT: NOT FOUND\n",
+                encoding="utf-8",
+            )
+
+            rows, changed = refine_file(
+                path=out_path,
+                out_path=out_path,
+                forms_map=forms_map,
+                lemma_map=lemma_map,
+                suffix_map=suffix_map,
+                forms_morph=forms_morph,
+                reverse_mentions={},
+                entry_ref_count={},
+                entry_tablets={},
+                entry_family_count={},
+            )
+            self.assertEqual(rows, 1)
+            self.assertEqual(changed, 1)
+            line = out_path.read_text(encoding="utf-8").splitlines()[1]
+            self.assertIn("\t!t!ġl(y[\t/ġ-l-y/\tvb\tto lose vitality\t", line)
+
+    def test_load_entries_uses_forms_block_fallback_from_entry_text(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            self._init_dulat_schema(db_path)
+            conn = sqlite3.connect(str(db_path))
+            cur = conn.cursor()
+            entry_text = (
+                "<b>¶ Forms:</b> G suffc. <i>ġly</i>; prefc. <i>yġly</i>; inf. <i>ġly</i>. "
+                "D suffc. <i>ġltm</i>; prefc. <i>tġly</i>, <i>tġl</i> (?). <br><b>G</b>."
+            )
+            cur.execute(
+                _INSERT_ENTRY_SQL,
+                (5100, "/ġ-l-y/", "", "vb", "", "", entry_text),
+            )
+            cur.executemany(
+                "INSERT INTO forms(text, entry_id, morphology) VALUES (?, ?, ?)",
+                [
+                    ("ġly", 5100, "G, suffc."),
+                    ("yġly", 5100, "G, prefc."),
+                    ("ġly", 5100, "G, inf."),
+                ],
+            )
+            cur.execute(
+                "INSERT INTO translations(entry_id, text) VALUES (?, ?)",
+                (5100, "to lose vitality"),
+            )
+            conn.commit()
+            conn.close()
+
+            _entries, forms_map, _lemma_map, _suffix_map, _forms_morph = load_entries(db_path)
+            self.assertIn("tġl", forms_map)
+            self.assertEqual([entry.entry_id for entry in forms_map["tġl"]], [5100])
+
     def test_load_entries_applies_form_morph_override(self) -> None:
         with tempfile.TemporaryDirectory() as tmp_dir:
             db_path = Path(tmp_dir) / "dulat.sqlite"

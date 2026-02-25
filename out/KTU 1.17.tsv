@@ -257,8 +257,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144302	ydh	yd(I)/+h	yd (I)	n. f.	hand	
 144303	b	b	b	prep.	in	
 144304	škrn	škrn/	škrn	n. m.	intoxication	
-144305	mˤmsh	mˤms+h	mʕms	pers. pn./morph.		
-144305	mˤmsh	mˤms+h	mʕms	adv. functor		
+144305	mˤmsh	ˤms[s+h	/ʕ-m-s/	vb	to load	
 # KTU 1.17 I:31						
 144306	kšbˤ	?	?	?	?	DULAT: NOT FOUND
 144307	yn	yn/	yn	n. m.	wine	
@@ -438,7 +437,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144425	b	b	b	prep.	in	
 144426	škrn	škrn/	škrn	n. m.	intoxication	
 # KTU 1.17 II:6						
-144427	mˤmsk	mˤms+k	mʕms	pers. pn./morph.		
+144427	mˤmsk	ˤms[s+k	/ʕ-m-s/	vb	to load	
 144428	k	+k	-k (I)			
 144428	k	~k	-k (II)			
 144428	k	k(III)	k (III)	Subordinating or completive functor	when	
@@ -482,6 +481,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144456	yṯpd	!y!ṯpd[	/ṯ-p-d/	vb G	to place	
 144457	yšu	!y!(nš(ʔ[&u	/n-š-ʔ/	vb G	to raise	
 # KTU 1.17 II:12						
+144458	gh	ytn[	/y-t-n/	vb	to give	
 144458	gh	g/+h	g	n. m.	(loud) voice	
 144459	wyṣḥ	?	?	?	?	DULAT: NOT FOUND
 144460	aṯbn	yṯb[n	/y-ṯ-b/	vb G	to sit down	
@@ -553,8 +553,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144500	š	š/	š	n. m.	ram	
 # KTU 1.17 II:20						
 144501	krn	kr[+n	/k-r/	vb	to be hot	
-144502	mˤmsy	mˤms+y	mʕms	prep.		
-144502	mˤmsy	mˤms+y	mʕms	postp. functor		
+144502	mˤmsy	ˤms[s+y	/ʕ-m-s/	vb	to load	
 144503	k	+k	-k (I)			
 144503	k	~k	-k (II)			
 144503	k	k(III)	k (III)	Subordinating or completive functor	when	
@@ -851,7 +850,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144683	qšt	qšt/	qšt	n. m.	bow	
 144684	ybln	!y!(ybl[n	/y-b-l/	vb G	to carry	
 144685	hl	hl	hl	deictic adv. functor	behold	
-144686	yš	?	?	?	?	DULAT: NOT FOUND
+144686	yš	!y!š(l(m[	/š-l-m/	vb D	to be well	
 # KTU 1.17 V:13						
 144687	rbˤ	rbˤ/	rbʕ	num.	fourth	
 144688	qṣˤt	qṣˤt/	qṣʕt	n. f.	arrow(s)	
@@ -950,7 +949,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144752	hss	?	?	?	?	DULAT: NOT FOUND
 144753	bd	b	b	prep.	in	
 144754	dnil	dnil/	dnỉl	PN	Raphaite	
-144755	ytnn	!y!(ytn[+n	/y-t-n/	vb	to give	
+144755	ytnn	!y!(ytn[n	/y-t-n/	vb	to give	
 # KTU 1.17 V:27						
 144756	qšt	qšt/	qšt	n. m.	bow	
 144757	l	l(I)	l (I)	prep.	to	
@@ -1152,6 +1151,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144879	km	+km, +km=	-km			
 144880	bṯn	bṯn/	bṯn	n. m.	serpent	
 144881	yqr	!y!qr(ʔ[	/q-r-ʔ/	vb G	to call	
+144881	yqr	!y!qr(y[	/q-r-y/	vb D	to meet	
 # KTU 1.17 VI:15						
 144882	krpnh	krpn/+h	krpn	n. m.	cup	
 144883	tdy	ydy(I)[	/y-d-y/ (I)	vb G	to throw	
@@ -1164,6 +1164,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144888	l	l(I)	l (I)	prep.	to	
 144889	ˤpr	ˤpr(I)/	ʕpr (I)	n. m.	dust	
 144890	tšu	!t!(nš(ʔ[&u	/n-š-ʔ/	vb G	to raise	
+144891	gh	ytn[	/y-t-n/	vb	to give	
 144891	gh	g/+h	g	n. m.	(loud) voice	
 144892	w	w	w	conj.	and	
 144893	tṣḥ	!t!ṣḥ[	/ṣ-ḥ/	vb G	to exclaim	
@@ -1252,7 +1253,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144953	w	w	w	conj.	and	
 144954	tˤn	!t!ˤn(y(I)[	/ʕ-n-y/ (I)	vb G	to answer	
 144954	tˤn	!t!ˤn[	/ʕ-n/	vb G/D	to see	
-144954	tˤn	!t!ˤn(w[	/ʕ-n-w/	vb G	to be / remain depressed	
+144954	tˤn	nsˤ(II)[	/n-s:ś-ʕ/ (II)	vb G	to pay	
 144955	btlt	btl(t/t	btlt	n. f.	virgin	
 # KTU 1.17 VI:26						
 144956	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
@@ -1407,6 +1408,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.17 VI:41						
 145046	b	b	b	prep.	in	
 145047	hm	hm(II)	hm (II)	conj./interr. functor	if	
+145047	hm	hm(I)	hm (I)	pers. pn.	they	
 145048	gmm	gmm/	gmm	PN	gmm	
 145049	tṣḥq	!t!ṣḥq[	/ṣ-ḥ-q/	vb G	to laugh	
 145050	ˤnt	ˤn(I)/t=	ʕn (I)	n. f.	eye	
@@ -1429,6 +1431,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.17 VI:43						
 145063	aṯb	yṯb[	/y-ṯ-b/	vb G	to sit down	
 145064	hm	hm(II)	hm (II)	conj./interr. functor	if	
+145064	hm	hm(I)	hm (I)	pers. pn.	they	
 145065	l	l(III)	l (III)	functor	certainly	
 145066	aqryk	!a!qry[k	/q-r-y/	vb G	to meet	
 145067	b	b	b	prep.	in	
@@ -1512,11 +1515,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145124	w	w	w	conj.	and	
 145125	tˤn	!t!ˤn(y(I)[	/ʕ-n-y/ (I)	vb G	to answer	
 145125	tˤn	!t!ˤn[	/ʕ-n/	vb G/D	to see	
-145125	tˤn	!t!ˤn(w[	/ʕ-n-w/	vb G	to be / remain depressed	
+145125	tˤn	nsˤ(II)[	/n-s:ś-ʕ/ (II)	vb G	to pay	
 # KTU 1.17 VI:53						
 145126	btlt	btl(t/t	btlt	n. f.	virgin	
 145127	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 145128	tšu	!t!(nš(ʔ[&u	/n-š-ʔ/	vb G	to raise	
+145129	gh	ytn[	/y-t-n/	vb	to give	
 145129	gh	g/+h	g	n. m.	(loud) voice	
 145130	w	w	w	conj.	and	
 145131	tṣḥ	!t!ṣḥ[	/ṣ-ḥ/	vb G	to exclaim	

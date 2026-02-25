@@ -15,6 +15,7 @@ if __package__ in {None, ""}:
     if str(_repo_root) not in sys.path:
         sys.path.insert(0, str(_repo_root))
 
+from pipeline.config.dulat_entry_forms_fallback import extract_forms_from_entry_text
 from pipeline.config.dulat_form_morph_overrides import override_dulat_form_morphology
 from pipeline.config.dulat_form_text_overrides import expand_dulat_form_texts
 from pipeline.config.k_functor_bigram_surfaces import K_FUNCTOR_VERB_BIGRAM_SURFACES
@@ -976,11 +977,22 @@ def load_dulat(dulat_db: Path):
         if entry_id not in translations and text_val:
             translations[entry_id] = text_val
 
-    cur.execute("SELECT entry_id, lemma, homonym, pos, data FROM entries")
+    cur.execute("PRAGMA table_info(entries)")
+    entry_columns = {row[1] for row in cur.fetchall()}
+    has_text = "text" in entry_columns
+
+    if has_text:
+        cur.execute("SELECT entry_id, lemma, homonym, pos, data, text FROM entries")
+    else:
+        cur.execute("SELECT entry_id, lemma, homonym, pos, data FROM entries")
     entry_meta: Dict[int, Tuple[str, str, str, str]] = {}
     entry_stems: Dict[int, set] = {}
     entry_gender: Dict[int, str] = {}
-    for entry_id, lemma, homonym, pos, data_json in cur.fetchall():
+    entry_text_by_id: Dict[int, str] = {}
+    for row in cur.fetchall():
+        entry_id, lemma, homonym, pos, data_json = row[:5]
+        if has_text and len(row) >= 6 and row[5]:
+            entry_text_by_id[int(entry_id)] = row[5]
         lemma = (lemma or "").strip()
         homonym = (homonym or "").strip()
         if lemma and not homonym:
@@ -1015,6 +1027,7 @@ def load_dulat(dulat_db: Path):
 
     cur.execute("SELECT forms.text, forms.morphology, forms.entry_id FROM forms")
     forms_map: Dict[str, List[DulatEntry]] = {}
+    seen_form_entry: set[Tuple[str, int, str]] = set()
     for form_text, morph_raw, entry_id in cur.fetchall():
         if entry_id not in entry_meta or not form_text:
             continue
@@ -1033,6 +1046,10 @@ def load_dulat(dulat_db: Path):
             form_text=form_text,
         ):
             key = normalize_surface(form_variant)
+            marker = (key, int(entry_id), morph or "")
+            if marker in seen_form_entry:
+                continue
+            seen_form_entry.add(marker)
             entry = DulatEntry(
                 entry_id=entry_id,
                 lemma=lemma,
@@ -1043,6 +1060,32 @@ def load_dulat(dulat_db: Path):
                 form_text=form_variant,
             )
             forms_map.setdefault(key, []).append(entry)
+
+    for entry_id, entry_text in entry_text_by_id.items():
+        if entry_id not in entry_meta:
+            continue
+        lemma, hom, pos, gloss = entry_meta[entry_id]
+        for fallback_form in extract_forms_from_entry_text(entry_text):
+            for form_variant in expand_dulat_form_texts(
+                lemma=lemma,
+                homonym=hom,
+                form_text=fallback_form,
+            ):
+                key = normalize_surface(form_variant)
+                marker = (key, int(entry_id), "")
+                if marker in seen_form_entry:
+                    continue
+                seen_form_entry.add(marker)
+                entry = DulatEntry(
+                    entry_id=entry_id,
+                    lemma=lemma,
+                    homonym=hom,
+                    pos=pos,
+                    gloss=gloss,
+                    morph="",
+                    form_text=form_variant,
+                )
+                forms_map.setdefault(key, []).append(entry)
 
     # Optional disambiguated lemma transliterations (if present in DB)
     lemma_translit: Dict[int, set] = {}

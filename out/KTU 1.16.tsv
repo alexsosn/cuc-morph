@@ -35,7 +35,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143206	u	u	ủ	conj.	or	
 143207	ḫštk	ḫš(t/t+k	ḫšt	n. f.	sepulchre	
 143208	l	l(III)	l (III)	functor	certainly	
-143209	ntn	ntn/	ntn	n. m.	emission (of voice)	
+143209	ntn	ytn[	/y-t-n/	vb	to give	
 # KTU 1.16 I:5						
 143210	ˤtq	ˤtq/	ʕtq	adj. m.	perennial	
 143211	bd	b	b	prep.	in	
@@ -85,6 +85,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143240	w	w	w	conj.	and	
 143241	yšnn	!y!šnn[	/š-n-n/	vb G/D	to grind teeth	
 143242	ytn	!y!(ytn[	/y-t-n/	vb G	to give	
+143243	gh	ytn[	/y-t-n/	vb	to give	
 143243	gh	g/+h	g	n. m.	(loud) voice	
 # KTU 1.16 I:14						
 143244	bky	bky[	/b-k-y/	vb G	to weep	
@@ -131,8 +132,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143264	u	u	ủ	conj.	or	
 143265	ḫštk	ḫš(t/t+k	ḫšt	n. f.	sepulchre	
 143266	l	l(I)	l (I)	prep.	to	
+143266	l	l(II)	l (II)	adv.	no	
 143266	l	l(III)	l (III)	functor	certainly	
-143267	ntn	ntn/	ntn	n. m.	emission (of voice)	
+143267	ntn	ytn[	/y-t-n/	vb	to give	
 # KTU 1.16 I:19						
 143268	ˤtḫq	?	?	?	?	DULAT: NOT FOUND
 143269	bd	b	b	prep.	in	
@@ -282,8 +284,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143357	ˤšrt	ˤšr(I)/	ʕšr(t) (I)	n. m.	banquet	
 143357	ˤšrt	ˤšr(t(II)/t	ʕšrt (II)	n. f.	group of ten	
 143358	qḥ	lqḥ[	/l-q-ḥ/	vb G	to get hold of	
+143359	tpk	bky[	/b-k-y/	vb G	to weep	
 143359	tpk	tp(I)/	tp (I)	n. m.	drum	
-143360	byd	b+d	b	prep.	in	
+143359	tpk	!t!pk(y[	/p-k-y/	vb G	to weep	
+143360	byd	b+d	b	prep.	in, ?	
 # KTU 1.16 I:42						
 143361	brltk	brlt/+k	brlt	n. f.	hunger	
 143362	bm	b	b	prep.	in	
@@ -588,6 +592,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143531	tšnn	!t!šnn[	/š-n-n/	vb G/D	to grind teeth	
 143532	ttn	ytn[	/y-t-n/	vb G	to give	
 # KTU 1.16 II:36						
+143533	gh	ytn[	/y-t-n/	vb	to give	
 143533	gh	g/+h	g	n. m.	(loud) voice	
 143534	bky	bky[	/b-k-y/	vb G	to weep	
 143535	b	b	b	prep.	in	
@@ -749,6 +754,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143627	sb	sbb[	/s:ś-b-b/	vb G	to turn round	
 143628	l	l(I)	l (I)	prep.	to	
 143628	l	l(III)	l (III)	functor	certainly	
+143629	qṣm	qṣ/	qṣ	n. m.	end	
 143629	qṣm	qṣm/	qṣm	n. m.	grasshopper(s)	
 143630	arṣ	arṣ/	ảrṣ	n. f.	earth	
 # KTU 1.16 III:4						
@@ -1099,8 +1105,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143842	iḥtrš	!i!ḥ]t]rš[	/ḥ-r-š/	vb Gt	to make spells or incantations	
 143843	w	w	w	conj.	and	
 143844	aškn	!a!škn[	/š-k-n/	vb D	to be placed	
+143844	aškn	kn[kn	/k-n/	vb D	to be (stable)	
 # KTU 1.16 V:27						
 143845	aškn	!a!škn[	/š-k-n/	vb D	to be placed	
+143845	aškn	kn[kn	/k-n/	vb D	to be (stable)	
 143846	ydt	yd(I)/t=	yd (I)	n. f.	hand	
 143847	mrṣ	mrṣ[	/m-r-ṣ/	vb G	to fall ill	
 143847	mrṣ	mrṣ/	mrṣ	n. m.	illness	
@@ -1279,6 +1287,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143948	ṯˤ	ṯˤ(II)/	ṯʕ (II)	n. m.	Hero	
 143948	ṯˤ	ṯˤ(I)/	ṯʕ (I)	n. m.	offering	
 143949	yšu	!y!(nš(ʔ[&u	/n-š-ʔ/	vb G	to raise	
+143950	gh	ytn[	/y-t-n/	vb	to give	
 143950	gh	g/+h	g	n. m.	(loud) voice	
 # KTU 1.16 VI:16						
 143951	w	w	w	conj.	and	
@@ -1386,7 +1395,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144017	wġrm	?	?	?	?	DULAT: NOT FOUND
 144018	tṯwy	!t!ṯwy[	/ṯ-w-y/	vb D	to resist	
 # KTU 1.16 VI:32						
-144019	šqlt	?	?	?	?	DULAT: NOT FOUND
+144019	šqlt	ql[lt	/q-l/	vb	to fall (down)	
 144020	b	b	b	prep.	in	
 144021	ġlt	ġl(t/t	ġlt	n. f.	prostration	
 144022	ydk	yd(I)/+k	yd (I)	n. f.	hand	
@@ -1450,6 +1459,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144051	abh	ab/+h	ảb	n. m.	father	
 144052	yˤrb	!y!ˤrb(I)[	/ʕ-r-b/ (I)	vb G	to enter	
 144053	yšu	!y!(nš(ʔ[&u	/n-š-ʔ/	vb G	to raise	
+144054	gh	ytn[	/y-t-n/	vb	to give	
 144054	gh	g/+h	g	n. m.	(loud) voice	
 # KTU 1.16 VI:41						
 144055	w	w	w	conj.	and	
@@ -1480,8 +1490,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 VI:44						
 144070	w	w	w	conj.	and	
 144071	ġrm	ġr(I)/m	ġr (I)	n. m.	mountain	
+144071	ġrm	s/	s/śġr	adj. m.	manservant	
+144071	ġrm	ġrm/	ġrm	n. m.	heap	
 144072	tṯwy	!t!ṯwy[	/ṯ-w-y/	vb D	to resist	
-144073	šqlt	?	?	?	?	DULAT: NOT FOUND
+144073	šqlt	ql[lt	/q-l/	vb	to fall (down)	
 # KTU 1.16 VI:45						
 144074	b	b	b	prep.	in	
 144075	ġlt	ġl(t/t	ġlt	n. f.	prostration	

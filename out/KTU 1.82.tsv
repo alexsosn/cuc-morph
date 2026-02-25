@@ -71,6 +71,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150040	l	l(III)	l (III)	functor	certainly	
 150041	tššy	]š]nšy[y	/n-š-y/	vb Š	to be forgotten	
 150042	hm	hm(II)	hm (II)	conj./interr. functor	if	
+150042	hm	hm(I)	hm (I)	pers. pn.	they	
 150043	tġrm	!t!ġrm[	/ġ-r-m/	vb D	to commit	
 150044	l	l(I)	l (I)	prep.	to	
 150044	l	l(II)	l (II)	adv.	no	
@@ -191,8 +192,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150118	xxxntxx	?	?	?	?	DULAT: NOT FOUND
 150119	mbk	mbk/	mbk	n. m.	source	
 150120	kpt	kp/t=	kp	n. f.	palm (of the hand)	
-150121	wn	w	w	conj.	and	Based on DULAT reconstruction.
-150121	wn	wn	wn	→	?	
+150121	wn	w	w	conj.	and	
 150122	b	b	b	prep.	in	
 150123	gx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.82 18						
@@ -294,6 +294,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150183	ql	ql[	/q-l/	vb G	to fall (down)	
 150183	ql	ql(I)/	ql (I)	n. m.	voice	
 150184	hm	hm(II)	hm (II)	conj./interr. functor	if	
+150184	hm	hm(I)	hm (I)	pers. pn.	they	
 # KTU 1.82 29						
 150185	xxxxxxxxxxxx	?	?	?	?	
 150186	aṯtn	aṯt/	ảṯt	n. f. du.	woman	
@@ -405,7 +406,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150256	ˤnk	ˤn(I)/	ʕn (I)	n. f. du.	eye	
 150257	ẓẓ	ẓẓ/	ẓẓ	element/DN	ẓẓ	
 150258	w	w	w	conj.	and	
-150259	kmġ	kmġ/	kmġ	DN	kmġ	
+150259	kmġ	kmṯ/	kmṯ	DN/element of DN	kmṯ	
 150260	ilm	il(I)/m	ỉl (I)	n. m.	god	
 # KTU 1.82 43						
 150261	xw	?	?	?	?	DULAT: NOT FOUND

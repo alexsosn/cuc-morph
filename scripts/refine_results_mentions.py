@@ -20,6 +20,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Sequence, Set, Tuple
 
+from pipeline.config.dulat_entry_forms_fallback import extract_forms_from_entry_text
 from pipeline.config.dulat_form_morph_overrides import override_dulat_form_morphology
 from pipeline.config.dulat_form_text_overrides import expand_dulat_form_texts
 
@@ -573,6 +574,7 @@ def load_entries(
     entries_by_id: Dict[int, Entry] = {}
     lemma_map: Dict[str, List[Entry]] = {}
     suffix_map: Dict[str, List[Entry]] = {}
+    entry_text_by_id: Dict[int, str] = {}
     for entry_id, lemma, hom, pos, wiki_tr, summary, text in cur.fetchall():
         lm, hm = parse_optional_hom(lemma or "", hom or "")
         redirect_targets = ()
@@ -587,6 +589,8 @@ def load_entries(
             wiki_tr=wiki_tr or "",
             redirect_targets=redirect_targets,
         )
+        if text:
+            entry_text_by_id[e.entry_id] = text
         entries_by_id[e.entry_id] = e
         key = normalize_lookup(lm)
         if key:
@@ -598,6 +602,7 @@ def load_entries(
 
     forms_map: Dict[str, List[Entry]] = {}
     forms_morph: Dict[Tuple[str, int], Set[str]] = {}
+    seen_form_entry: Set[Tuple[str, int]] = set()
     cur.execute("SELECT text, entry_id FROM forms WHERE text IS NOT NULL AND trim(text) != ''")
     for txt, entry_id in cur.fetchall():
         e = entries_by_id.get(int(entry_id))
@@ -610,6 +615,10 @@ def load_entries(
         ):
             k = normalize_lookup(form_variant)
             if k:
+                marker = (k, e.entry_id)
+                if marker in seen_form_entry:
+                    continue
+                seen_form_entry.add(marker)
                 forms_map.setdefault(k, []).append(e)
     cur.execute(
         "SELECT text, entry_id, morphology FROM forms WHERE text IS NOT NULL AND trim(text) != ''"
@@ -633,6 +642,25 @@ def load_entries(
             if not k:
                 continue
             forms_morph.setdefault((k, int(entry_id)), set()).add(morph_value)
+
+    for entry_id, entry_text in entry_text_by_id.items():
+        e = entries_by_id.get(entry_id)
+        if e is None:
+            continue
+        for fallback_form in extract_forms_from_entry_text(entry_text):
+            for form_variant in expand_dulat_form_texts(
+                lemma=e.lemma,
+                homonym=e.hom,
+                form_text=fallback_form,
+            ):
+                k = normalize_lookup(form_variant)
+                if not k:
+                    continue
+                marker = (k, e.entry_id)
+                if marker in seen_form_entry:
+                    continue
+                seen_form_entry.add(marker)
+                forms_map.setdefault(k, []).append(e)
 
     explicit_form_keys = set(forms_map.keys())
 

@@ -123,6 +123,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141753	pḫyrh	pḫyr/+h	pḫyr	n. m.	whole	
 141754	yrṯ	!y!(yrṯ[	/y-r-ṯ/	vb G	to inherit	
 141754	yrṯ	yrṯ(I)/	yrṯ (I)	n. m.	heir	
+141754	yrṯ	!y!rṯ(y[	/r-ṯ-y/	vb G	to possess	
 # KTU 1.14 I:26						
 141755	yˤrb	!y!ˤrb(I)[	/ʕ-r-b/ (I)	vb G	to enter	
 141756	b	b	b	prep.	in	
@@ -166,8 +167,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141777	dmˤh	dmˤ[h	/d-m-ʕ/	vb G	to shed tears	
 141778	nhmmt	nhmm(t/t	nhmmt	n. f.	drowsiness	
 # KTU 1.14 I:33						
+141779	šnt	ytn[	/y-t-n/	vb G	to give	
 141779	šnt	šn(t(I)/t	šnt (I)	n. f.	year	
-141779	šnt	šnw[t	/š-n-w/	vb G	to change: a) reflex.	
 141779	šnt	šn(t(II)/t	šnt (II)	n. f.	sleep	
 141780	tluan	lʔy(I)[an	/l-ʔ-y/w/ (I)	vb G	to conquer	
 # KTU 1.14 I:34						
@@ -216,6 +217,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.14 I:42						
 141810	yarš	ʔrš[š	/ʔ-r-š/	vb G/D	to request	
 141811	hm	hm(II)	hm (II)	conj./interr. functor	if	
+141811	hm	hm(I)	hm (I)	pers. pn.	they	
 141812	drkt	drk(t/t	drkt	n. f.	rule	
 # KTU 1.14 I:43						
 141813	k	+k	-k (I)			
@@ -606,7 +608,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142034	b	b	b	prep.	in	
 142035	šbˤ	šbˤ(I)/	šbʕ (I)	n. num.	seven	
 142036	yw	yw/	yw	DN	alternative (ancient?) name of the god ym	
-142037	tmġy	!t!mġ(y[+y	/m-ġ-y/	vb	to come	
+142037	tmġy	!t!mġy[	/m-ġ-y/	vb G	to come	
 142038	l	l(I)	l (I)	prep.	to	
 142038	l	l(III)	l (III)	functor	certainly	
 142039	udm	udm/	ủdm	TN	ủdm	
@@ -713,8 +715,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142097	ql	ql[	/q-l/	vb G	to fall (down)	
 142097	ql	ql(I)/	ql (I)	n. m.	voice	
 142098	nhqt	nhq(t/t	nhqt	n. f.	braying	
-142099	ḥmrh	ḥmr(I)/+h	ḥmr (I)	n. m.	donkey	
-142099	ḥmrh	ḥmr(II)/+h	ḥmr (II)	adj.	red	
+142099	ḥmrh	ḥmr(I)/h	ḥmr (I)	n. m.	donkey	
 # KTU 1.14 III:18						
 142100	l	l(I)	l (I)	prep.	to	
 142100	l	l(III)	l (III)	functor	certainly	
@@ -952,8 +953,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.14 III:53						
 142246	yrḥṣ	!y!rḥṣ[	/r-ḥ-ṣ/	vb G	to wash	
 142247	ydh	yd(I)/+h	yd (I)	n. f.	hand	
-142248	amth	!a!mt[+h	/m-t/	vb	to die	
-142248	amth	amt(II)/+h	ảmt (II)	n. f.	elbow	
+142248	amth	am(t(II)/t	ảmt (II)	n. f.	elbow	
 # KTU 1.14 III:54						
 142249	uṣbˤth	uṣbˤ/	ủṣbʕ	n. f.	finger	
 142250	ˤd	ˤd(III)/	ʕd (III)	n. m.	throne	
@@ -1238,6 +1238,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142410	ṣdynm	ṣdyn/	ṣdyn	TN	Sidon	
 # KTU 1.14 IV:40						
 142411	hm	hm(II)	hm (II)	conj./interr. functor	if	
+142411	hm	hm(I)	hm (I)	pers. pn.	they	
 142412	ḥry	ḥry/	ḥry	PN	ḥry	
 142413	bty	bt(II)/+y	bt (II)	n. m.	house	
 # KTU 1.14 IV:41						
@@ -1362,8 +1363,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142485	ql	ql(I)/	ql (I)	n. m.	voice	
 142486	nhqt	nhq(t/t	nhqt	n. f.	braying	
 # KTU 1.14 V:10						
-142487	ḥmrh	ḥmr(I)/+h	ḥmr (I)	n. m.	donkey	
-142487	ḥmrh	ḥmr(II)/+h	ḥmr (II)	adj.	red	
+142487	ḥmrh	ḥmr(I)/h	ḥmr (I)	n. m.	donkey	
 142488	lgˤt	?	?	?	?	DULAT: NOT FOUND
 142489	alp	alp(I)/	ảlp (I)	n. m.	(head of) cattle	
 142489	alp	alp(II)/	ảlp (II)	num.	(one	

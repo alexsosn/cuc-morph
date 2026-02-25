@@ -104,6 +104,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 I:15						
 139837	thw	thw/	thw	n. m.	steppe	
 139838	hm	hm(II)	hm (II)	conj./interr. functor	if	
+139838	hm	hm(I)	hm (I)	pers. pn.	they	
 139839	brlt	brl(t/t	brlt	n. f.	hunger	
 139840	anḫr	anḫr/	ảnḫr	n. m.	dolphin	
 # KTU 1.5 I:16						
@@ -111,6 +112,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139842	ym	ym(I)/	ym (I)	n. m.	day	
 139842	ym	ym(II)/	ym (II)	n. m.	sea	
 139843	hm	hm(II)	hm (II)	conj./interr. functor	if	
+139843	hm	hm(I)	hm (I)	pers. pn.	they	
 139844	brky	brkt/	brkt	n.	pool	
 139845	tkšd	!t!kšd[	/k-š-d/	vb G	to search for	
 # KTU 1.5 I:17						
@@ -124,6 +126,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139849	aylt	aylt(I)/	ảylt (I)	n. f.	hind	
 # KTU 1.5 I:18						
 139850	hm	hm(II)	hm (II)	conj./interr. functor	if	
+139850	hm	hm(I)	hm (I)	pers. pn.	they	
 139851	imt	im(t/t	ỉmt	n. f.	truth	
 139852	imt	im(t/t	ỉmt	n. f.	truth	
 139853	npš	npš(I)/	npš (I)	n. f.	throat	
@@ -143,12 +146,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139860	ydy	yd(I)/+y	yd (I)	n. f.	hand	
 139861	ilḥm	!i!lḥm(I)[	/l-ḥ-m/ (I)	vb G	to eat	
 139862	hm	hm(II)	hm (II)	conj./interr. functor	if	
+139862	hm	hm(I)	hm (I)	pers. pn.	they	
 139863	šbˤ	šbˤ(I)/	šbʕ (I)	n. num.	seven	
 # KTU 1.5 I:21						
 139864	ydty	yd(I)/	yd (I)	n. f.	hand	
 139865	b	b	b	prep.	in	
 139866	ṣˤ	ṣˤ(I)/	ṣʕ (I)	n. m.	plate / wide bowl / platter	
 139867	hm	hm(II)	hm (II)	conj./interr. functor	if	
+139867	hm	hm(I)	hm (I)	pers. pn.	they	
 139868	ks	ks(I)/	ks (I)	n. m.	cup	
 139868	ks	ks/	ks/śm(n)	n. m.	emmer-corn	
 139869	ymsk	!y!msk[	/m-s-k/	vb G	to mix	
@@ -258,6 +263,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139935	ybl	!y!(ybl[	/y-b-l/	vb G	to carry	
 139936	arṣ	arṣ/	ảrṣ	n. f.	earth	
 139937	w	w	w	conj.	and	
+139938	pr	pr/	prś/s	n. m.	misura di capacità per aridi	
 139938	pr	pr(II)/	pr (II)	n. m.	young bull	
 139938	pr	pr(I)/	pr (I)	n. m.	fruit	
 # KTU 1.5 II:6						
@@ -381,6 +387,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140017	mt	mt(I)/	mt (I)	n. m.	dead person	
 # KTU 1.5 II:21						
 140018	ytn	!y!(ytn[	/y-t-n/	vb G	to give	
+140019	gh	ytn[	/y-t-n/	vb	to give	
 140019	gh	g/+h	g	n. m.	(loud) voice	
 140020	w	w	w	conj.	and	
 140021	aṣḥ	!a!ṣḥ[	/ṣ-ḥ/	vb G	to exclaim	
@@ -391,6 +398,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140024	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
 140025	xxxxxx	?	?	?	?	
 140026	yqr	!y!qr(ʔ[	/q-r-ʔ/	vb G	to call	
+140026	yqr	!y!qr(y[	/q-r-y/	vb D	to meet	
 140027	un	qrʔ[	/q-r-ʔ/	vb G	to call	
 140027	un	un/	ủn	n. m.	grief	
 140028	hd	hd/	hd(d)	DN	Haddu/Hadad	
@@ -596,6 +604,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140136	arṣ	arṣ/	ảrṣ	n. f.	earth	
 # KTU 1.5 IV:6						
 140137	yšu	!y!(nš(ʔ[&u	/n-š-ʔ/	vb G	to raise	
+140138	gh	ytn[	/y-t-n/	vb	to give	
 140138	gh	g/+h	g	n. m.	(loud) voice	
 140139	w	w	w	conj.	and	
 140140	yṣḥ	!y!ṣḥ[	/ṣ-ḥ/	vb G	to exclaim	
@@ -668,7 +677,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140181		?	?	?	?	
 # KTU 1.5 IV:20						
 140182	w	w	w	conj.	and	
-140183	tṯtnyn	?	?	?	?	DULAT: NOT FOUND
+140183	tṯtnyn	ṯny[ny+n	/ṯ-n-y/	vb	to repeat	
 # KTU 1.5 IV:21						
 140184	tˤl	!t!ˤl(y[	/ʕ-l-y/	vb G	to go up	
 140185	trṯ	trṯ/	trṯ	n. m.	new wine	
@@ -702,6 +711,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140202	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 140203	xxxxxx	?	?	?	?	
 140204	ipd	ipd/	ỉpd	n. m.	tunic	
+140205	prk	pr/+k	prś/s	n. m.	misura di capacità per aridi	
 140205	prk	pr(II)/+k	pr (II)	n. m.	young bull	
 140205	prk	pr(I)/+k	pr (I)	n. m.	fruit	
 # KTU 1.5 V:3						
@@ -874,7 +884,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140317	ghm	g/+hm	g	n. m.	(loud) voice	
 140318	w	w	w	conj.	and	
 140319	tṣḥ	!t!ṣḥ[	/ṣ-ḥ/	vb G	to exclaim	
-140320	sbn	sbb[+n	/s:ś-b-b/	vb G	to turn round	
+140320	sbn	sbb[	/s:ś-b-b/	vb G	to turn round	
 # KTU 1.5 VI:4						
 140321	y	+y, [y	-y (I)	prep. functor	my	
 140321	y	~y	-y (II)	prep. functor	indeed	
@@ -1012,6 +1022,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 VI:22						
 140402	bmt	bmt/	bmt	n. f.	back	
 140403	yšu	!y!(nš(ʔ[&u	/n-š-ʔ/	vb G	to raise	
+140404	gh	ytn[	/y-t-n/	vb	to give	
 140404	gh	g/+h	g	n. m.	(loud) voice	
 140405	w	w	w	conj.	and	
 140406	yṣḥ	!y!ṣḥ[	/ṣ-ḥ/	vb G	to exclaim	
