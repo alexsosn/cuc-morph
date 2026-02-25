@@ -149,6 +149,15 @@ class TabletParsingPipelineTest(unittest.TestCase):
                 names.index("k-functor-bigram-context"),
                 names.index("ydk-context-disambiguator"),
             )
+            self.assertLess(
+                names.index("ydk-context-disambiguator"),
+                names.index("verb-pos-stem"),
+            )
+            final_schema_index = len(names) - 1 - names[::-1].index("tsv-schema")
+            self.assertLess(
+                names.index("verb-pos-stem"),
+                final_schema_index,
+            )
 
 
 if __name__ == "__main__":

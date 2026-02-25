@@ -1,8 +1,8 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.164 1						
 155393	id	id	ỉd	conj.	when	
-155394	ydbḥ	!y!dbḥ[	/d-b-ḥ/	vb	to sacrifice	
-155395	mlk	mlk[	/m-l-k/	vb	to reign	
+155394	ydbḥ	!y!dbḥ[	/d-b-ḥ/	vb G	to sacrifice	
+155395	mlk	mlk[	/m-l-k/	vb G	to reign	
 155395	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 155396	bḫmn	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.164 2						
@@ -12,12 +12,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155400	l	l(I)	l (I)	prep.	to	
 155400	l	l(II)	l (II)	adv.	no	
 155400	l	l(III)	l (III)	functor	certainly	
-155401	yšt	!y!št[	/š-t/	vb	to place	
-155401	yšt	šty[	/š-t-y/	vb	to drink	
+155401	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
+155401	yšt	šty[	/š-t-y/	vb G	to drink	
 # KTU 1.164 3						
 155402	id	id	ỉd	conj.	when	
-155403	ydbḥ	!y!dbḥ[	/d-b-ḥ/	vb	to sacrifice	
-155404	mlk	mlk[	/m-l-k/	vb	to reign	
+155403	ydbḥ	!y!dbḥ[	/d-b-ḥ/	vb G	to sacrifice	
+155404	mlk	mlk[	/m-l-k/	vb G	to reign	
 155404	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 155405	l	l(I)	l (I)	prep.	to	
 155405	l	l(III)	l (III)	functor	certainly	
@@ -71,8 +71,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155438	qr	qr(II)/	qr (II)	n. m.	noise	
 155438	qr	qr(III)/	qr (III)	n. m.	wall	
 # KTU 1.164 11						
-155439	yph	phy[	/p-h-y/	vb	to see	
-155440	mlk	mlk[	/m-l-k/	vb	to reign	
+155439	yph	phy[	/p-h-y/	vb G	to see	
+155440	mlk	mlk[	/m-l-k/	vb G	to reign	
 155440	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 # KTU 1.164 12						
 155441	xxt	?	?	?	?	DULAT: NOT FOUND
@@ -105,8 +105,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155459	w	w	w	conj.	and	
 155460	al	al(I)	ảl (I)	neg. functor	no	
 155460	al	al(II)	ảl (II)	pos. functor	surely	
-155461	tṣu	yṣʔ[	/y-ṣ-ʔ/	vb	to go out	
-155462	yṣu	!y!(yṣʔ[	/y-ṣ-ʔ/	vb	to go out	
+155461	tṣu	yṣʔ[	/y-ṣ-ʔ/	vb G	to go out	
+155462	yṣu	!y!(yṣʔ[	/y-ṣ-ʔ/	vb G	to go out	
 155462	yṣu	yṣu(I)/	yṣủ (I)	n. m.	exit	
 # KTU 1.164 20						
 155463	w	w	w	conj.	and	

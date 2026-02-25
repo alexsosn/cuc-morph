@@ -1,16 +1,16 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.85 1						
 150496	spr	spr(II)/	spr (II)	n. m.	tablet / register	
-150496	spr	spr[	/s-p-r/	vb	to count	
+150496	spr	spr[	/s-p-r/	vb G/D	to count	
 150496	spr	spr(I)/	spr (I)	n. m.	scribe	
 150497	nˤm	nˤm(I)/	nʕm (I)	adj. m.	handsome	
 150497	nˤm	nˤm(II)/	nʕm (II)	n. m.	grace	
 150498	śśwm	ss/	s:śs	n.	horse	
 # KTU 1.85 2						
 150499	k	k(III)	k (III)	Subordinating or completive functor	when	
-150500	ygˤr	!y!gˤr[	/g-ʕ-r/	vb	to reproach	
+150500	ygˤr	!y!gˤr[	/g-ʕ-r/	vb G	to reproach	
 150501	śśw	ss/	s:śs	n.	horse	
-150502	št	št[	/š-t/	vb	to place	
+150502	št	št[	/š-t/	vb G/Gpass	to place	
 150502	št	š(t(II)/t	št (II)	n. f.	raíz	
 150502	št	št(I)/	št (I)	n. m.	base	
 150503	ˤqrbn	ˤqrbn/	ʕqrbn	n. m.	Skorpionspflanze	
@@ -19,10 +19,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150504	ydk	yd(I)/+k=	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
 150504	ydk	yd(II)/+k	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
 150504	ydk	yd(II)/+k=	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
-150504	ydk	!y!dk[	d-k(-k)/	vb	to be pounded	
-150504	ydk	!y=!dk[	d-k(-k)/	vb	to be pounded	
+150504	ydk	!y!dk[	d-k(-k)/	vb Gpass	to be pounded	
+150504	ydk	!y=!dk[	d-k(-k)/	vb Gpass	to be pounded	
 150505	w	w	w	conj.	and	
-150506	ymsś	!y!mss[	/m-s-s(/ś)/	vb	to be liquefied	
+150506	ymsś	!y!mss[	/m-s-s(/ś)/	vb G	to be liquefied	
 150507	hm	hm(II)	hm (II)	conj./interr. functor	if	
 150508	b	b	b	prep.	in	
 150509	mskt	msk(t/t	mskt	n. f.	mixture	
@@ -32,7 +32,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150512	b	b	b	prep.	in	
 150513	mndġ	mndġ/	mndġ	n. m.		
 150514	w	w	w	conj.	and	
-150515	yṣq	!y!(yṣq[	/y-ṣ-q/	vb	to pour (out)	
+150515	yṣq	!y!(yṣq[	/y-ṣ-q/	vb G	to pour (out)	
 150516	b	b	b	prep.	in	
 150517	aph	ap(I)+h	ảp (I)	adv./conj.	also	
 150517	aph	ap(II)/+h	ảp (II)	n. m.	nose	
@@ -43,7 +43,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150518	k	k(I)	k (I)	prep.	like	
 150518	k	k(II)	k (II)	emph. functor	yes	
 150519	ḫr	ḫr(I)/	ḫr (I)	n. m.	cave	
-150519	ḫr	ḫr[	/ḫ-r(-r)/	vb	to have spasms (of diarrhoea)	
+150519	ḫr	ḫr[	/ḫ-r(-r)/	vb G	to have spasms (of diarrhoea)	
 150520	śśw	ss/	s:śs	n.	horse	
 150521	mġmġ	mġmġ/	mġmġ	n. m.		
 150522	w	w	w	conj.	and	
@@ -54,11 +54,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150525	ydk	yd(I)/+k=	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
 150525	ydk	yd(II)/+k	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
 150525	ydk	yd(II)/+k=	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
-150525	ydk	!y!dk[	d-k(-k)/	vb	to be pounded	
-150525	ydk	!y=!dk[	d-k(-k)/	vb	to be pounded	
+150525	ydk	!y!dk[	d-k(-k)/	vb Gpass	to be pounded	
+150525	ydk	!y=!dk[	d-k(-k)/	vb Gpass	to be pounded	
 150526	aḥdh	aḥd/+h	ảḥd	adj. num./adv. num.	one	
 150527	w	w	w	conj.	and	
-150528	yṣq	!y!(yṣq[	/y-ṣ-q/	vb	to pour (out)	
+150528	yṣq	!y!(yṣq[	/y-ṣ-q/	vb G	to pour (out)	
 150529	b	b	b	prep.	in	
 150530	aph	ap(I)+h	ảp (I)	adv./conj.	also	
 150530	aph	ap(II)/+h	ảp (II)	n. m.	nose	
@@ -70,7 +70,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150532	k	k(I)	k (I)	prep.	like	
 150532	k	k(II)	k (II)	emph. functor	yes	
 150533	ḫr	ḫr(I)/	ḫr (I)	n. m.	cave	
-150533	ḫr	ḫr[	/ḫ-r(-r)/	vb	to have spasms (of diarrhoea)	
+150533	ḫr	ḫr[	/ḫ-r(-r)/	vb G	to have spasms (of diarrhoea)	
 150534	śśw	ss/	s:śs	n.	horse	
 150535	ḫndrṯ	ḫndrṯ/	ḫndrṯ	n. m.	apricot tree	
 150536	w	w	w	conj.	and	
@@ -83,11 +83,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150539	ydk	yd(I)/+k=	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
 150539	ydk	yd(II)/+k	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
 150539	ydk	yd(II)/+k=	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
-150539	ydk	!y!dk[	d-k(-k)/	vb	to be pounded	
-150539	ydk	!y=!dk[	d-k(-k)/	vb	to be pounded	
+150539	ydk	!y!dk[	d-k(-k)/	vb Gpass	to be pounded	
+150539	ydk	!y=!dk[	d-k(-k)/	vb Gpass	to be pounded	
 150540	aḥdh	aḥd/+h	ảḥd	adj. num./adv. num.	one	
 150541	w	w	w	conj.	and	
-150542	yṣq	!y!(yṣq[	/y-ṣ-q/	vb	to pour (out)	
+150542	yṣq	!y!(yṣq[	/y-ṣ-q/	vb G	to pour (out)	
 150543	b	b	b	prep.	in	
 150544	aph	ap(I)+h	ảp (I)	adv./conj.	also	
 150544	aph	ap(II)/+h	ảp (II)	n. m.	nose	
@@ -101,21 +101,21 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150547	l	l(I)	l (I)	prep.	to	
 150547	l	l(II)	l (II)	adv.	no	
 150547	l	l(III)	l (III)	functor	certainly	
-150548	yḫru	!y!ḫrʔ[	/ḫ-r-ʔ/	vb	to defecate	
+150548	yḫru	!y!ḫrʔ[	/ḫ-r-ʔ/	vb G	to defecate	
 150549	w	w	w	conj.	and	
 150550	l	l(I)	l (I)	prep.	to	
 150550	l	l(II)	l (II)	adv.	no	
 150550	l	l(III)	l (III)	functor	certainly	
-150551	yṯtn	ṯ]t]n[	/ṯ-n/	vb	to urinate	
+150551	yṯtn	ṯ]t]n[	/ṯ-n/	vb Gt	to urinate	
 150552	śśw	ss/	s:śs	n.	horse	
 # KTU 1.85 10						
 150553	mss	mss/	mss	n. m.	sap	
-150554	št	št[	/š-t/	vb	to place	
+150554	št	št[	/š-t/	vb G/Gpass	to place	
 150554	št	š(t(II)/t	št (II)	n. f.	raíz	
 150554	št	št(I)/	št (I)	n. m.	base	
 150555	qlql	qlql/	qlql	n. m.	cardamome	
 150556	w	w	w	conj.	and	
-150557	št	št[	/š-t/	vb	to place	
+150557	št	št[	/š-t/	vb G/Gpass	to place	
 150557	št	š(t(II)/t	št (II)	n. f.	raíz	
 150557	št	št(I)/	št (I)	n. m.	base	
 150558	ˤrgz	ˤrgz(I)/	ʕrgz (I)	n. m.	juniper berries (?)	
@@ -124,11 +124,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150559	ydk	yd(I)/+k=	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
 150559	ydk	yd(II)/+k	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
 150559	ydk	yd(II)/+k=	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
-150559	ydk	!y!dk[	d-k(-k)/	vb	to be pounded	
-150559	ydk	!y=!dk[	d-k(-k)/	vb	to be pounded	
+150559	ydk	!y!dk[	d-k(-k)/	vb Gpass	to be pounded	
+150559	ydk	!y=!dk[	d-k(-k)/	vb Gpass	to be pounded	
 150560	aḥdh	aḥd/+h	ảḥd	adj. num./adv. num.	one	
 150561	w	w	w	conj.	and	
-150562	yṣq	!y!(yṣq[	/y-ṣ-q/	vb	to pour (out)	
+150562	yṣq	!y!(yṣq[	/y-ṣ-q/	vb G	to pour (out)	
 150563	b	b	b	prep.	in	
 150564	aph	ap(I)+h	ảp (I)	adv./conj.	also	
 150564	aph	ap(II)/+h	ảp (II)	n. m.	nose	
@@ -139,10 +139,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150566	k	k(III)	k (III)	Subordinating or completive functor	when	
 150566	k	k(I)	k (I)	prep.	like	
 150566	k	k(II)	k (II)	emph. functor	yes	
-150567	aḫd	ʔḫd[	/ʔ-ḫ-d(/ḏ)/	vb	to collect	
+150567	aḫd	ʔḫd[	/ʔ-ḫ-d(/ḏ)/	vb G	to collect	
 150568	akl	akl(II)/	ảkl (II)	n. m.	grain	
 150569	śśw	ss/	s:śs	n.	horse	
-150570	št	št[	/š-t/	vb	to place	
+150570	št	št[	/š-t/	vb G/Gpass	to place	
 150570	št	š(t(II)/t	št (II)	n. f.	raíz	
 150570	št	št(I)/	št (I)	n. m.	base	
 150571	mkšr	mkšr/	mkšr	n. m.	semolina	
@@ -150,7 +150,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150572	grn	grn(I)/	grn (I)	n. m.	threshing-floor	
 150572	grn	grn(II)/	grn (II)	adj. m.	current	
 150573	w	w	w	conj.	and	
-150574	št	št[	/š-t/	vb	to place	
+150574	št	št[	/š-t/	vb G/Gpass	to place	
 150574	št	š(t(II)/t	št (II)	n. f.	raíz	
 150574	št	št(I)/	št (I)	n. m.	base	
 150575	aškrr	aškrr/	ảškrr	n. m.	wax	
@@ -163,10 +163,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150579	ydk	yd(I)/+k=	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
 150579	ydk	yd(II)/+k	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
 150579	ydk	yd(II)/+k=	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
-150579	ydk	!y!dk[	d-k(-k)/	vb	to be pounded	
-150579	ydk	!y=!dk[	d-k(-k)/	vb	to be pounded	
+150579	ydk	!y!dk[	d-k(-k)/	vb Gpass	to be pounded	
+150579	ydk	!y=!dk[	d-k(-k)/	vb Gpass	to be pounded	
 150580	w	w	w	conj.	and	
-150581	yṣq	!y!(yṣq[	/y-ṣ-q/	vb	to pour (out)	
+150581	yṣq	!y!(yṣq[	/y-ṣ-q/	vb G	to pour (out)	
 150582	b	b	b	prep.	in	
 150583	aph	ap(I)+h	ảp (I)	adv./conj.	also	
 150583	aph	ap(II)/+h	ảp (II)	n. m.	nose	
@@ -177,23 +177,23 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150585	k	k(III)	k (III)	Subordinating or completive functor	when	
 150585	k	k(I)	k (I)	prep.	like	
 150585	k	k(II)	k (II)	emph. functor	yes	
-150586	aḫd	ʔḫd[	/ʔ-ḫ-d(/ḏ)/	vb	to collect	
+150586	aḫd	ʔḫd[	/ʔ-ḫ-d(/ḏ)/	vb G	to collect	
 150587	akl	akl(II)/	ảkl (II)	n. m.	grain	
 150588	śśw	ss/	s:śs	n.	horse	
-150589	št	št[	/š-t/	vb	to place	
+150589	št	št[	/š-t/	vb G/Gpass	to place	
 150589	št	š(t(II)/t	št (II)	n. f.	raíz	
 150589	št	št(I)/	št (I)	n. m.	base	
 150590	nni	nn(u(I)/&i	nnủ (I)	n. m.	Ammi	
 # KTU 1.85 16						
 150591	w	w	w	conj.	and	
-150592	št	št[	/š-t/	vb	to place	
+150592	št	št[	/š-t/	vb G/Gpass	to place	
 150592	št	š(t(II)/t	št (II)	n. f.	raíz	
 150592	št	št(I)/	št (I)	n. m.	base	
 150593	mkšr	mkšr/	mkšr	n. m.	semolina	
 150594	grn	grn(I)/	grn (I)	n. m.	threshing-floor	
 150594	grn	grn(II)/	grn (II)	adj. m.	current	
 150595	w	w	w	conj.	and	
-150596	št	št[	/š-t/	vb	to place	
+150596	št	št[	/š-t/	vb G/Gpass	to place	
 150596	št	š(t(II)/t	št (II)	n. f.	raíz	
 150596	št	št(I)/	št (I)	n. m.	base	
 # KTU 1.85 17						
@@ -204,19 +204,19 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150599	ydk	yd(I)/+k=	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
 150599	ydk	yd(II)/+k	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
 150599	ydk	yd(II)/+k=	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
-150599	ydk	!y!dk[	d-k(-k)/	vb	to be pounded	
-150599	ydk	!y=!dk[	d-k(-k)/	vb	to be pounded	
+150599	ydk	!y!dk[	d-k(-k)/	vb Gpass	to be pounded	
+150599	ydk	!y=!dk[	d-k(-k)/	vb Gpass	to be pounded	
 150600	w	w	w	conj.	and	
-150601	yṣq	!y!(yṣq[	/y-ṣ-q/	vb	to pour (out)	
+150601	yṣq	!y!(yṣq[	/y-ṣ-q/	vb G	to pour (out)	
 150602	b	b	b	prep.	in	
 150603	aph	ap(I)+h	ảp (I)	adv./conj.	also	
 150603	aph	ap(II)/+h	ảp (II)	n. m.	nose	
 # KTU 1.85 18						
 150604	w	w	w	conj.	and	
 150605	k	k(III)	k (III)	Subordinating or completive functor	when	
-150606	yraš	!y!rʔš[	/r-ʔ-š/	vb	to toss the head	
+150606	yraš	!y!rʔš[	/r-ʔ-š/	vb G	to toss the head	
 150607	śśw	ss/	s:śs	n.	horse	
-150608	št	št[	/š-t/	vb	to place	
+150608	št	št[	/š-t/	vb G/Gpass	to place	
 150608	št	š(t(II)/t	št (II)	n. f.	raíz	
 150608	št	št(I)/	št (I)	n. m.	base	
 150609	bln	bln/	bln	n. m.	mixed fodder	
@@ -226,10 +226,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150611	ydk	yd(I)/+k=	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
 150611	ydk	yd(II)/+k	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
 150611	ydk	yd(II)/+k=	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
-150611	ydk	!y!dk[	d-k(-k)/	vb	to be pounded	
-150611	ydk	!y=!dk[	d-k(-k)/	vb	to be pounded	
+150611	ydk	!y!dk[	d-k(-k)/	vb Gpass	to be pounded	
+150611	ydk	!y=!dk[	d-k(-k)/	vb Gpass	to be pounded	
 150612	w	w	w	conj.	and	
-150613	yṣq	!y!(yṣq[	/y-ṣ-q/	vb	to pour (out)	
+150613	yṣq	!y!(yṣq[	/y-ṣ-q/	vb G	to pour (out)	
 150614	b	b	b	prep.	in	
 150615	aph	ap(I)+h	ảp (I)	adv./conj.	also	
 150615	aph	ap(II)/+h	ảp (II)	n. m.	nose	
@@ -254,18 +254,18 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150626	ydk	yd(I)/+k=	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
 150626	ydk	yd(II)/+k	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
 150626	ydk	yd(II)/+k=	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
-150626	ydk	!y!dk[	d-k(-k)/	vb	to be pounded	
-150626	ydk	!y=!dk[	d-k(-k)/	vb	to be pounded	
+150626	ydk	!y!dk[	d-k(-k)/	vb Gpass	to be pounded	
+150626	ydk	!y=!dk[	d-k(-k)/	vb Gpass	to be pounded	
 150627	aḥdh	aḥd/+h	ảḥd	adj. num./adv. num.	one	
 150628	w	w	w	conj.	and	
-150629	yṣq	!y!(yṣq[	/y-ṣ-q/	vb	to pour (out)	
+150629	yṣq	!y!(yṣq[	/y-ṣ-q/	vb G	to pour (out)	
 150630	b	b	b	prep.	in	
 150631	aph	ap(I)+h	ảp (I)	adv./conj.	also	
 150631	aph	ap(II)/+h	ảp (II)	n. m.	nose	
 # KTU 1.85 23						
 150632	w	w	w	conj.	and	
 150633	k	k(III)	k (III)	Subordinating or completive functor	when	
-150634	ygˤr	!y!gˤr[	/g-ʕ-r/	vb	to reproach	
+150634	ygˤr	!y!gˤr[	/g-ʕ-r/	vb G	to reproach	
 150635	śśw	ss/	s:śs	n.	horse	
 150636	xxxxx	?	?	?	?	
 # KTU 1.85 24						
@@ -273,7 +273,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150637	pr	pr(I)/	pr (I)	n. m.	fruit	
 150638	ˤṯrb	ˤṯrb/	ʕṯrb	n. m.	arbrisseau semblable au grenadier	
 150639	drˤ	d/	d	n.	seed	
-150639	drˤ	drˤ[	/d-r-ʕ/	vb	to sow	
+150639	drˤ	drˤ[	/d-r-ʕ/	vb G	to sow	
 150640	w	w	w	conj.	and	
 150641	ṯqd	ṯqd/	ṯqd	n. m.	almond	
 150642	mr	mr(I)/	mr (I)	n. m.	myrrh	
@@ -289,7 +289,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150649	xxxx	?	?	?	?	
 # KTU 1.85 26						
 150650	w	w	w	conj.	and	
-150651	št	št[	/š-t/	vb	to place	
+150651	št	št[	/š-t/	vb G/Gpass	to place	
 150651	št	š(t(II)/t	št (II)	n. f.	raíz	
 150651	št	št(I)/	št (I)	n. m.	base	
 150652	nni	nn(u(I)/&i	nnủ (I)	n. m.	Ammi	
@@ -315,20 +315,20 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150666	ydk	yd(I)/+k=	yd (I), -k (I)	n. f., pers. pn.	hand, your(s)	
 150666	ydk	yd(II)/+k	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
 150666	ydk	yd(II)/+k=	yd (II), -k (I)	n. m., pers. pn.	love, your(s)	
-150666	ydk	!y!dk[	d-k(-k)/	vb	to be pounded	
-150666	ydk	!y=!dk[	d-k(-k)/	vb	to be pounded	
+150666	ydk	!y!dk[	d-k(-k)/	vb Gpass	to be pounded	
+150666	ydk	!y=!dk[	d-k(-k)/	vb Gpass	to be pounded	
 150667	aḥdh	aḥd/+h	ảḥd	adj. num./adv. num.	one	
 # KTU 1.85 29						
 150668	w	w	w	conj.	and	
-150669	yṣq	!y!(yṣq[	/y-ṣ-q/	vb	to pour (out)	
+150669	yṣq	!y!(yṣq[	/y-ṣ-q/	vb G	to pour (out)	
 150670	b	b	b	prep.	in	
 150671	aph	ap(I)+h	ảp (I)	adv./conj.	also	
 150671	aph	ap(II)/+h	ảp (II)	n. m.	nose	
 # KTU 1.85 30						
 150672	k	k(III)	k (III)	Subordinating or completive functor	when	
-150673	yraš	!y!rʔš[	/r-ʔ-š/	vb	to toss the head	
+150673	yraš	!y!rʔš[	/r-ʔ-š/	vb G	to toss the head	
 150674	w	w	w	conj.	and	
-150675	ykhp	!y!khp[	/k-h-p/	vb	to droop	
+150675	ykhp	!y!khp[	/k-h-p/	vb G	to droop	
 150676	mid	mi/	mỉ	n.	abundance	
 # KTU 1.85 31						
 150677	dblt	dbl(t/t=	dblt	n. f.	dried fig	
@@ -339,7 +339,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150681	w	w	w	conj.	and	
 150682	qmḥ	qmḥ/	qmḥ	n. m.	flour	
 150683	bql	bql/	bql	n. m.	malt	
-150684	yṣq	!y!(yṣq[	/y-ṣ-q/	vb	to pour (out)	
+150684	yṣq	!y!(yṣq[	/y-ṣ-q/	vb G	to pour (out)	
 150685	aḥdh	aḥd/+h	ảḥd	adj. num./adv. num.	one	
 150686	b	b	b	prep.	in	
 150687	aph	ap(I)+h	ảp (I)	adv./conj.	also	

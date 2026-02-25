@@ -18,8 +18,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.87 3						
 150807	bṯlṯt	?	?	?	?	DULAT: NOT FOUND
 150808	ˤšrt	ˤšr(t(II)/t	ʕšrt (II)	n. f.	group of ten	
-150809	yrtḥṣ	r]t]ḥṣ[	/r-ḥ-ṣ/	vb	to wash	
-150810	mlk	mlk[	/m-l-k/	vb	to reign	
+150809	yrtḥṣ	r]t]ḥṣ[	/r-ḥ-ṣ/	vb Gt	to wash	
+150810	mlk	mlk[	/m-l-k/	vb G	to reign	
 150810	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 # KTU 1.87 4						
 150811	brr	br/	br(r)	n. m.	tin	
@@ -52,12 +52,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150830	ilš	ilš(II)/	ỉlš (II)	PN	ỉlš (II)	
 150831	šilhm	šʔl[+hm	/š-ʔ-l/	vb	to ask	
 150831	šilhm	šil(I)/+hm	šỉl (I)	n. m.	interrogator	
-150832	mlk	mlk[	/m-l-k/	vb	to reign	
+150832	mlk	mlk[	/m-l-k/	vb G	to reign	
 150832	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
-150833	yṯb	!y!(yṯb[	/y-ṯ-b/	vb	to sit down	
+150833	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G	to sit down	
 150834	br	br/	br(r)	n. m.	tin	
 150834	br	br(I)/	br (I)	n. m.	Art Seeschiff	
-150834	br	br[	/b-r(-r)/	vb	to be or remain pure	
+150834	br	br[	/b-r(-r)/	vb G	to be or remain pure	
 # KTU 1.87 8						
 150835	r	?	?	?	?	
 150836	w	w	w	conj.	and	
@@ -67,7 +67,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150839	ym	ym(I)/	ym (I)	n. m.	day	
 150839	ym	ym(II)/	ym (II)	n. m.	sea	
 150840	ˤlm	ˤl(I)	ʕl (I)	prep.	upon	
-150841	yˤrb	!y!ˤrb(I)[	/ʕ-r-b/ (I)	vb	to enter	
+150841	yˤrb	!y!ˤrb(I)[	/ʕ-r-b/ (I)	vb G	to enter	
 # KTU 1.87 10						
 150842	t	/t, /t=				
 150842	t	[t, [t=, [t==, [t===				
@@ -101,7 +101,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150860	b	b	b	prep.	in	
 # KTU 1.87 13						
 150861	urbt	urb(t/t	ủrbt	n. f.	window	
-150862	ytk	ntk[	/n-t-k/	vb	to spill	
+150862	ytk	ntk[	/n-t-k/	vb G	to spill	
 150863	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
 150864	ilhm	il(I)/+hm	ỉl (I)	n. m.	god	
 # KTU 1.87 14						
@@ -129,7 +129,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150880	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
 150881	ilhm	il(I)/+hm	ỉl (I)	n. m.	god	
 150882	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-150882	bˤl	bˤl[/	/b-ʕ-l/	vb	to make	
+150882	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
 150883	š	š/	š	n. m.	ram	
 150884	aṯrt	aṯr(t(I)/t	ảṯrt (I)	n. f.	back part (of the head)	
 150885	š	š/	š	n. m.	ram	
@@ -152,10 +152,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150897	pḫr	pḫr(I)/	pḫr (I)	n. m.	assembly	
 150897	pḫr	pḫr(II)/	pḫr (II)	n. m.	potter	
 150898	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-150898	bˤl	bˤl[/	/b-ʕ-l/	vb	to make	
+150898	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
 150899	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
 150900	šlm	šlm(I)/	šlm (I)	n. m.	peace	
-150900	šlm	šlm[	/š-l-m/	vb	to be well	
+150900	šlm	šlm[	/š-l-m/	vb G/D	to be well	
 150900	šlm	šlm(III)/	šlm (III)	adj. m.	pure	
 150901	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
 # KTU 1.87 19						
@@ -179,14 +179,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150915	mˤrb	mˤrb(II)/	mʕrb (II)	n. m.	sunset	
 150915	mˤrb	mˤrb(I)/	mʕrb (I)	n. m.	tribute-offering	
 150916	d	d	d	det. or rel. functor	the one(s) of	
-150917	yqḥ	lqḥ[	/l-q-ḥ/	vb	to get hold of	
+150917	yqḥ	lqḥ[	/l-q-ḥ/	vb G/Gpass	to get hold of	
 150918	bt	bt(II)/	bt (II)	n. m.	house	
 150918	bt	b(t(I)/t	bt (I)	n. f.	daughter	
-150919	mlk	mlk[	/m-l-k/	vb	to reign	
+150919	mlk	mlk[	/m-l-k/	vb G	to reign	
 150919	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 # KTU 1.87 22						
 150920	dbḥ	dbḥ/	dbḥ	n. m.	sacrifice	
-150920	dbḥ	dbḥ[	/d-b-ḥ/	vb	to sacrifice	
+150920	dbḥ	dbḥ[	/d-b-ḥ/	vb G	to sacrifice	
 150921	šmn	šmn(I)/	šmn (I)	n. m.	oil	
 150922	mr	mr(I)/	mr (I)	n. m.	myrrh	
 150922	mr	mr(IV)/	mr (IV)	adj. m.	valiant	
@@ -208,7 +208,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150934	bġr	bġr/	bġr	n. m.	shout	
 150935	arbˤ	arbˤ/	ảrbʕ	num.	four	
 150936	ˤšr	ˤšr(I)/	ʕšr (I)	n. num.	ten	
-150936	ˤšr	ˤšr[	/ʕ-š-r/	vb	ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods	
+150936	ˤšr	ˤšr[	/ʕ-š-r/	vb D/Dpass	ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods	
 150936	ˤšr	ˤšr(I)/	ʕšr(t) (I)	n. m.	banquet	
 150937	kdm	kd(I)/m	kd (I)	n. f.	jar	
 150938	yn	yn/	yn	n. m.	wine	
@@ -337,9 +337,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151023	btm	b(t(I)/tm	bt (I)	n. f.	daughter	
 # KTU 1.87 41						
 151024	rmm	rm(I)/	rm (I)	adj. m.	high	
-151024	rmm	rm[	/r-m/	vb	to go up	
+151024	rmm	rm[	/r-m/	vb L	to go up	
 151025	w	w	w	conj.	and	
-151026	ˤly	ˤly[	/ʕ-l-y/	vb	to go up	
+151026	ˤly	ˤly[	/ʕ-l-y/	vb G	to go up	
 151027	mdbḥt	mdbḥ/t=	mdbḥ	n. m.	altar	
 151028	b	b	b	prep.	in	
 151029	ḫmš	ḫmš(I)/	ḫmš (I)	n. num.	five	
@@ -351,11 +351,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151033	ksp	ksp/	ksp	n. m.	silver	
 151034	kbd	kbd(II)/	kbd (II)	n. m.	total (quantity or price)	
 151034	kbd	kbd(I)/	kbd (I)	n.	liver	
-151034	kbd	kbd[	/k-b-d/	vb	to honour	
+151034	kbd	kbd[	/k-b-d/	vb D	to honour	
 # KTU 1.87 43						
 151035	w	w	w	conj.	and	
 151036	dbḥ	dbḥ/	dbḥ	n. m.	sacrifice	
-151036	dbḥ	dbḥ[	/d-b-ḥ/	vb	to sacrifice	
+151036	dbḥ	dbḥ[	/d-b-ḥ/	vb G	to sacrifice	
 151037	kl	kl/	kl	n. m.	totality (of)	
 151038	aṯrt	aṯr(t(I)/t	ảṯrt (I)	n. f.	back part (of the head)	
 # KTU 1.87 44						
@@ -363,12 +363,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151040	l	l(I)	l (I)	prep.	to	
 151041	inš	inš/	ỉnš	n. m.	people	
 151042	ilm	il(I)/m	ỉl (I)	n. m.	god	
-151043	ṯṯb	]š]ṯb[	/ṯ-b/	vb	to return	
+151043	ṯṯb	]š]ṯb[	/ṯ-b/	vb Š	to return	
 151044	md	md(II)/	md (II)	n. m.	skilled	
 # KTU 1.87 45						
 151045	bḥ	?	?	?	?	DULAT: NOT FOUND
 151046	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-151046	bˤl	bˤl[/	/b-ʕ-l/	vb	to make	
+151046	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
 151047	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
 151048	l	l(I)	l (I)	prep.	to	
 151049	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
@@ -384,7 +384,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151057	ˤš	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.87 47						
 151058	rm	rm(I)/	rm (I)	adj. m.	high	
-151058	rm	rm[	/r-m/	vb	to go up	
+151058	rm	rm[	/r-m/	vb G	to go up	
 151058	rm	rm(II)/	rm (II)	n. m.	erection	
 151059	pamt	pa/m	pảm(t)	n. f.	time	
 151060	l	l(I)	l (I)	prep.	to	
@@ -395,15 +395,15 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151063	šmn	šmn(I)/	šmn (I)	n. m.	oil	
 151064	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
 151065	w	w	w	conj.	and	
-151066	mlk	mlk[	/m-l-k/	vb	to reign	
+151066	mlk	mlk[	/m-l-k/	vb G	to reign	
 151066	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 # KTU 1.87 49						
 151067	brr	br/	br(r)	n. m.	tin	
 151067	brr	brr/	brr	adj. m.	pure	
-151068	rgm	rgm[	/r-g-m/	vb	to say	
+151068	rgm	rgm[	/r-g-m/	vb G	to say	
 151068	rgm	rgm/	rgm	n. m.	word	
-151069	yṯṯb	!y!]š]ṯb[	/ṯ-b/	vb	to return	
-151069	yṯṯb	!y!(y]š]yṯb[	/y-ṯ-b/	vb	to sit down	
+151069	yṯṯb	!y!]š]ṯb[	/ṯ-b/	vb Š	to return	
+151069	yṯṯb	!y!(y]š]yṯb[	/y-ṯ-b/	vb Š	to sit down	
 151070	b	b	b	prep.	in	
 151071	ṯdṯ	ṯdṯ/	ṯdṯ	adj./ord. num.	sixth	
 151072	ṯn	ṯn(I)/	ṯn (I)	num.	two	
@@ -413,11 +413,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151074	šmn	šmn(I)/	šmn (I)	n. m.	oil	
 151075	ˤlyh	ˤly(II)/h	ʕly (II)	n. m.	place of sacrifice	
 151076	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
-151077	rgm	rgm[	/r-g-m/	vb	to say	
+151077	rgm	rgm[	/r-g-m/	vb G	to say	
 151077	rgm	rgm/	rgm	n. m.	word	
-151078	yṯṯb	!y!]š]ṯb[	/ṯ-b/	vb	to return	
-151078	yṯṯb	!y!(y]š]yṯb[	/y-ṯ-b/	vb	to sit down	
-151079	mlk	mlk[	/m-l-k/	vb	to reign	
+151078	yṯṯb	!y!]š]ṯb[	/ṯ-b/	vb Š	to return	
+151078	yṯṯb	!y!(y]š]yṯb[	/y-ṯ-b/	vb Š	to sit down	
+151079	mlk	mlk[	/m-l-k/	vb G	to reign	
 151079	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 # KTU 1.87 51						
 151080	brr	br/	br(r)	n. m.	tin	
@@ -432,13 +432,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151086	ḥl	ḥl(II)/	ḥl (II)	adj.	desacralised	
 # KTU 1.87 52						
 151087	yt	yt/	yt	n. m.	?	
-151088	ˤrb	ˤrb(I)[	/ʕ-r-b/ (I)	vb	to enter	
+151088	ˤrb	ˤrb(I)[	/ʕ-r-b/ (I)	vb G	to enter	
 151088	ˤrb	ˤrb(I)/	ʕrb (I)	n. m.	entry	
 151089	špš	špš/	špš	n.	sun	
 151090	w	w	w	conj.	and	
 151091	ḥl	ḥl(I)/	ḥl (I)	n. m.	strength	
 151091	ḥl	ḥl(II)/	ḥl (II)	adj.	desacralised	
-151092	mlk	mlk[	/m-l-k/	vb	to reign	
+151092	mlk	mlk[	/m-l-k/	vb G	to reign	
 151092	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 151093	w	w	w	conj.	and	
 151094	b	b	b	prep.	in	
@@ -458,13 +458,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.87 54						
 151103	b	b	b	prep.	in	
 151104	yrḫ	yrḫ/	yrḫ	n. m.	moon	
-151105	šmˤt	šmˤ[	/š-m-ʕ/	vb	to hear	
+151105	šmˤt	šmˤ[	/š-m-ʕ/	vb G	to hear	
 151106	arbˤt	arbˤ/	ảrbʕ	num.	four	
 151107	ˤš	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.87 55						
 151108	rt	rt/	rt	PN	rt	
-151109	yrtḥṣ	r]t]ḥṣ[	/r-ḥ-ṣ/	vb	to wash	
-151110	mlk	mlk[	/m-l-k/	vb	to reign	
+151109	yrtḥṣ	r]t]ḥṣ[	/r-ḥ-ṣ/	vb Gt	to wash	
+151110	mlk	mlk[	/m-l-k/	vb G	to reign	
 151110	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 151111	brr	br/	br(r)	n. m.	tin	
 151111	brr	brr/	brr	adj. m.	pure	
@@ -475,7 +475,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151115	l	l(I)	l (I)	prep.	to	
 151115	l	l(III)	l (III)	functor	certainly	
 151116	xx	?	?	?	?	
-151117	ˤrb	ˤrb(I)[	/ʕ-r-b/ (I)	vb	to enter	
+151117	ˤrb	ˤrb(I)[	/ʕ-r-b/ (I)	vb G	to enter	
 151117	ˤrb	ˤrb(I)/	ʕrb (I)	n. m.	entry	
 151118	šp	šp/	šp	n. m.	dune	
 # KTU 1.87 57						
@@ -483,28 +483,28 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151120	w	w	w	conj.	and	
 151121	ḥl	ḥl(I)/	ḥl (I)	n. m.	strength	
 151121	ḥl	ḥl(II)/	ḥl (II)	adj.	desacralised	
-151122	mlk	mlk[	/m-l-k/	vb	to reign	
+151122	mlk	mlk[	/m-l-k/	vb G	to reign	
 151122	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 # KTU 1.87 58						
 151123	bn	bn(I)/	bn (I)	n. m.	son	
 151123	bn	bn(II)	bn (II)	prep.	between	
-151123	bn	bn[	/b-n/	vb	to understand	
+151123	bn	bn[	/b-n/	vb G	to understand	
 151124	aupšw	?	?	?	?	DULAT: NOT FOUND
 151125	bs	bs/	bs	PN	bs	
 151126	bn	bn(I)/	bn (I)	n. m.	son	
 151126	bn	bn(II)	bn (II)	prep.	between	
-151126	bn	bn[	/b-n/	vb	to understand	
+151126	bn	bn[	/b-n/	vb G	to understand	
 151127	hzpḫ	hzpḫ	hzpḫ	→		
 151128	ṯlṯṯ	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.87 59						
 151129	kṯr	kṯr(III)/	kṯr (III)	DN/element of DN	Koṯaru/Kothar	
-151130	mlk	mlk[	/m-l-k/	vb	to reign	
+151130	mlk	mlk[	/m-l-k/	vb G	to reign	
 151130	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 151131	bnytrt	?	?	?	?	DULAT: NOT FOUND
 151132	ḫmšt	ḫmš(I)/	ḫmš (I)	n. num.	five	
 151133	bn	bn(I)/	bn (I)	n. m.	son	
 151133	bn	bn(II)	bn (II)	prep.	between	
-151133	bn	bn[	/b-n/	vb	to understand	
+151133	bn	bn[	/b-n/	vb G	to understand	
 151134	gdaḫ	gdaḫ/	gdaḫ	PN	gdaḫ	
 151135	tšˤ	tšˤ/	tšʕ	n. num.	nine	
 # KTU 1.87 60						

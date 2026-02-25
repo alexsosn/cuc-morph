@@ -7,7 +7,7 @@ import sqlite3
 import sys
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, Iterable, List, Optional, Tuple
 
 # Allow `python linter/lint.py` execution where sys.path[0] is `linter/`.
 if __package__ in {None, ""}:
@@ -864,7 +864,31 @@ def dedupe_entries(entries: List["DulatEntry"]) -> List["DulatEntry"]:
     return out
 
 
-STEM_RE = re.compile(r"\b(Gt|Dt|Lt|Nt|Št|Gpass|Dpass|Špass|G|D|L|N|Š)\b")
+STEM_RE = re.compile(r"\b(Gt|Dt|Lt|Nt|tD|tL|Št|Gpass|Dpass|Špass|G|D|L|N|R|Š)\b")
+VERB_POS_STEM_RE = re.compile(
+    r"\bvb\.?\s+(?:Gt|Dt|Lt|Nt|tD|tL|Št|Gpass|Dpass|Špass|G|D|L|N|R|Š)"
+    r"(?:/(?:Gt|Dt|Lt|Nt|tD|tL|Št|Gpass|Dpass|Špass|G|D|L|N|R|Š))*\b",
+    flags=re.IGNORECASE,
+)
+VERBAL_NOUN_POS_RE = re.compile(r"\bvb\.\s*n\.", flags=re.IGNORECASE)
+STEM_DISPLAY_ORDER = (
+    "G",
+    "Gt",
+    "N",
+    "D",
+    "tD",
+    "Dt",
+    "L",
+    "tL",
+    "Lt",
+    "R",
+    "Š",
+    "Št",
+    "Gpass",
+    "Dpass",
+    "Špass",
+    "Nt",
+)
 
 
 def extract_stems(morph: str) -> set:
@@ -872,6 +896,15 @@ def extract_stems(morph: str) -> set:
     for m in STEM_RE.findall(morph or ""):
         stems.add(m)
     return stems
+
+
+def sort_stems_for_display(stems: Iterable[str]) -> List[str]:
+    ranking = {stem: idx for idx, stem in enumerate(STEM_DISPLAY_ORDER)}
+    return sorted(set(stems), key=lambda stem: (ranking.get(stem, 999), stem))
+
+
+def pos_has_verb_stem_label(pos_field: str) -> bool:
+    return VERB_POS_STEM_RE.search(pos_field or "") is not None
 
 
 @dataclass
@@ -2983,11 +3016,15 @@ def lint_file(
                         is_pronoun = "pn." in pos
                         is_proper_noun = "PN" in pos_raw
                         matched_entry_ids = {m.entry_id for m in matched}
-                        surface_form_morphs = {
-                            (f.morph or "").lower()
+                        surface_form_morphs_raw = {
+                            (f.morph or "").strip()
                             for f in dulat_forms.get(normalize_surface(surface_clean), [])
                             if f.entry_id in matched_entry_ids and (f.morph or "").strip()
                         }
+                        surface_form_morphs = {morph.lower() for morph in surface_form_morphs_raw}
+                        expected_verb_stems = set()
+                        for morph in surface_form_morphs_raw:
+                            expected_verb_stems.update(extract_stems(morph))
                         gender_values = {
                             (entry_gender.get(eid) or "").lower()
                             for eid in matched_entry_ids
@@ -3013,6 +3050,28 @@ def lint_file(
                         adjectival = "adj" in pos
                         deverbal_like = "[/" in analysis
                         pos_field_text = parts[4] if len(parts) >= 5 else ""
+                        pos_field_lower = (pos_field_text or "").lower()
+                        if (
+                            "vb" in pos
+                            and "vb" in pos_field_lower
+                            and not VERBAL_NOUN_POS_RE.search(pos_field_lower)
+                            and expected_verb_stems
+                            and not pos_has_verb_stem_label(pos_field_text)
+                        ):
+                            expected_stems_text = "/".join(
+                                sort_stems_for_display(expected_verb_stems)
+                            )
+                            issues.append(
+                                Issue(
+                                    "warning",
+                                    str(path),
+                                    i,
+                                    line_id,
+                                    surface,
+                                    analysis,
+                                    f"Verb POS should include stem label(s): {expected_stems_text}",
+                                )
+                            )
                         is_plurale_tantum_marked = has_plurale_tantum_note(
                             annotation_text
                         ) or has_plurale_tantum_note(pos_field_text)

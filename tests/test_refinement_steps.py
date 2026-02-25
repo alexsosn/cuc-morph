@@ -1,5 +1,6 @@
 """Unit tests for pipeline refinement steps (unittest-discover compatible)."""
 
+import sqlite3
 import tempfile
 import textwrap
 import unittest
@@ -30,6 +31,7 @@ from pipeline.steps.plural_split import PluralSplitFixer
 from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
 from pipeline.steps.surface_option_propagation import SurfaceOptionPropagationFixer
+from pipeline.steps.verb_pos_stem import VerbPosStemFixer
 from pipeline.steps.weak_final_sc import WeakFinalSuffixConjugationFixer
 from pipeline.steps.weak_verb import WeakVerbFixer
 
@@ -1097,6 +1099,100 @@ class BaalVerbalSlashFixerTest(unittest.TestCase):
         )
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "rkb[")
+
+
+class VerbPosStemFixerTest(unittest.TestCase):
+    def _build_test_db(self, path: Path) -> None:
+        conn = sqlite3.connect(str(path))
+        cur = conn.cursor()
+        cur.execute(
+            "CREATE TABLE entries ("
+            "entry_id INTEGER PRIMARY KEY, "
+            "lemma TEXT, homonym TEXT, pos TEXT)"
+        )
+        cur.execute("CREATE TABLE forms (entry_id INTEGER, text TEXT, morphology TEXT)")
+        cur.executemany(
+            "INSERT INTO entries(entry_id, lemma, homonym, pos) VALUES (?, ?, ?, ?)",
+            [
+                (1, "/y-t-n/", "", "vb"),
+                (2, "/r-g-m/", "", "vb"),
+                (3, "ytn", "I", "n."),
+            ],
+        )
+        cur.executemany(
+            "INSERT INTO forms(entry_id, text, morphology) VALUES (?, ?, ?)",
+            [
+                (1, "ytn", "G, prefc."),
+                (1, "ytn", "Š, prefc."),
+                (2, "rgm", "G, suffc."),
+                (3, "ytn", "pl."),
+            ],
+        )
+        conn.commit()
+        conn.close()
+
+    def test_appends_stem_to_verb_pos(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            self._build_test_db(db_path)
+            fixer = VerbPosStemFixer(dulat_db=db_path)
+
+            row = TabletRow("1", "rgm", "rgm[", "/r-g-m/", "vb", "to say", "")
+            result = fixer.refine_row(row)
+
+            self.assertEqual(result.pos, "vb G")
+
+    def test_appends_multiple_stems_in_stable_order(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            self._build_test_db(db_path)
+            fixer = VerbPosStemFixer(dulat_db=db_path)
+
+            row = TabletRow("1", "ytn", "!y!ytn[", "/y-t-n/", "vb", "to give", "")
+            result = fixer.refine_row(row)
+
+            self.assertEqual(result.pos, "vb G/Š")
+
+    def test_non_verb_pos_is_unchanged(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            self._build_test_db(db_path)
+            fixer = VerbPosStemFixer(dulat_db=db_path)
+
+            row = TabletRow("1", "ytn", "ytn/", "ytn (I)", "n.", "gift", "")
+            result = fixer.refine_row(row)
+
+            self.assertEqual(result.pos, "n.")
+
+    def test_pos_with_existing_stem_is_unchanged(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            self._build_test_db(db_path)
+            fixer = VerbPosStemFixer(dulat_db=db_path)
+
+            row = TabletRow("1", "rgm", "rgm[", "/r-g-m/", "vb G", "to say", "")
+            result = fixer.refine_row(row)
+
+            self.assertEqual(result.pos, "vb G")
+
+    def test_non_head_vb_phrase_is_unchanged(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            self._build_test_db(db_path)
+            fixer = VerbPosStemFixer(dulat_db=db_path)
+
+            row = TabletRow(
+                "1",
+                "n",
+                "+n",
+                "-n (II)",
+                "suffixed pn. morph. used with vb",
+                "me",
+                "",
+            )
+            result = fixer.refine_row(row)
+
+            self.assertEqual(result.pos, "suffixed pn. morph. used with vb")
 
 
 class OfferingListLPrepFixerTest(unittest.TestCase):

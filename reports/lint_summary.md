@@ -1,28 +1,28 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `11852`
-- Fallback-parsed issue lines: `675`
+- Total issues: `17514`
+- Fallback-parsed issue lines: `677`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 6470 |
-| WARNING | 951 |
+| ERROR | 12130 |
+| WARNING | 953 |
 | INFO | 1621 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
+| ERROR | POS token not allowed for declared DULAT entry | 6183 |
 | ERROR | Analysis does not reconstruct to surface | 3823 |
 | INFO | Surface not found in UDB concordance | 1621 |
-| ERROR | POS token not allowed for declared DULAT entry | 527 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 428 |
 | ERROR | DULAT comment does not match candidates | 346 |
 | ERROR | No DULAT entry found for clitic part | 324 |
-| ERROR | Non-G stem in DULAT requires stem marker | 274 |
+| ERROR | Non-G stem in DULAT requires stem marker | 278 |
 | ERROR | Deverbal form matches both verb and noun entries in DULAT | 175 |
 | WARNING | ydk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 140 |
 | ERROR | Multiple DULAT candidates for surface | 123 |
@@ -174,6 +174,7 @@
 | WARNING | ktpm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | la Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | lbt Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | lkx Verb POS should include stem label(s): G | 1 |
 | WARNING | llim Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | lm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | lṭšt Lexeme parse did not match DULAT; matched by surface form | 1 |
@@ -225,6 +226,7 @@
 | WARNING | tḥwy Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tḫtṣb Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | tṯar Lexeme parse did not match DULAT; matched by surface form | 1 |
+| WARNING | xxxtlḥm Verb POS should include stem label(s): G | 1 |
 | WARNING | yblmm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ydˤt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | yitmr Lexeme parse did not match DULAT; matched by surface form | 1 |

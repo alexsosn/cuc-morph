@@ -6,11 +6,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156988	k	k(III)	k (III)	Subordinating or completive functor	when	
 156988	k	k(I)	k (I)	prep.	like	
 156988	k	k(II)	k (II)	emph. functor	yes	
-156989	rgm	rgm[	/r-g-m/	vb	to say	
+156989	rgm	rgm[	/r-g-m/	vb G	to say	
 156989	rgm	rgm/	rgm	n. m.	word	
 156990	špš	špš/	špš	n.	sun	
 # KTU 2.23 2						
-156991	mlk	mlk[	/m-l-k/	vb	to reign	
+156991	mlk	mlk[	/m-l-k/	vb G	to reign	
 156991	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 156992	rb	rb(II)/	rb (II)	n. m.	chief	
 156992	rb	rb(I)/	rb (I)	adj. m.	great	
@@ -22,7 +22,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156996	mlakt	mlak(t/t	mlảkt	n. f.	message	
 156997	ˤbdh	ˤbd(I)/+h	ʕbd (I)	n. m.	servant	
 # KTU 2.23 4						
-156998	ylak	!y!lʔk[	/l-ʔ-k/	vb	to send (a message)	
+156998	ylak	!y!lʔk[	/l-ʔ-k/	vb G	to send (a message)	
 156999	l	l(I)	l (I)	prep.	to	
 156999	l	l(III)	l (III)	functor	certainly	
 157000	bˤlk	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
@@ -31,7 +31,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157001	k	k(III)	k (III)	Subordinating or completive functor	when	
 157001	k	k(I)	k (I)	prep.	like	
 157001	k	k(II)	k (II)	emph. functor	yes	
-157002	yḫpn	!y!ḫpn[	/ḫ-p-n/	vb	to cover	
+157002	yḫpn	!y!ḫpn[	/ḫ-p-n/	vb G/D	to cover	
 # KTU 2.23 5						
 157003	mlakty	mlakt/+y	mlảkt	n. f.	message	
 157004	ˤmh	ˤm(I)+h	ʕm (I)	prep.	to	
@@ -48,7 +48,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.23 7						
 157010	mlakt	mlak(t/t	mlảkt	n. f.	message	
 157011	špš	špš/	špš	n.	sun	
-157012	mlk	mlk[	/m-l-k/	vb	to reign	
+157012	mlk	mlk[	/m-l-k/	vb G	to reign	
 157012	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 157013	rb	rb(II)/	rb (II)	n. m.	chief	
 157013	rb	rb(I)/	rb (I)	adj. m.	great	
@@ -57,10 +57,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157014	bˤly	bˤl(II)/y	bʕl (II)	n. m./DN	Baʿlu/Baal	
 157015	ˤmxxxxxx	?	?	?	?	DULAT: NOT FOUND
 # KTU 2.23 9						
-157016	ydˤt	!y!(ydˤ(I)[	/y-d-ʕ/ (I)	vb	to know	
+157016	ydˤt	!y!(ydˤ(I)[	/y-d-ʕ/ (I)	vb G	to know	
 157017	šxx	?	?	?	?	DULAT: NOT FOUND
 157018	špš	špš/	špš	n.	sun	
-157019	mlk	mlk[	/m-l-k/	vb	to reign	
+157019	mlk	mlk[	/m-l-k/	vb G	to reign	
 157019	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 # KTU 2.23 10						
 157020	rb	rb(II)/	rb (II)	n. m.	chief	
@@ -74,7 +74,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.23 13						
 157024	b	b	b	prep.	in	
 157025	xšpš	?	?	?	?	DULAT: NOT FOUND
-157026	mlk	mlk[	/m-l-k/	vb	to reign	
+157026	mlk	mlk[	/m-l-k/	vb G	to reign	
 157026	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 # KTU 2.23 14						
 157027	rb	rb(II)/	rb (II)	n. m.	chief	
@@ -92,7 +92,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157034	l	l(I)	l (I)	prep.	to	
 157035	špš	špš/	špš	n.	sun	
 # KTU 2.23 17						
-157036	mlk	mlk[	/m-l-k/	vb	to reign	
+157036	mlk	mlk[	/m-l-k/	vb G	to reign	
 157036	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 157037	rb	rb(II)/	rb (II)	n. m.	chief	
 157037	rb	rb(I)/	rb (I)	adj. m.	great	
@@ -131,11 +131,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157059	il	il(I)/	ỉl (I)	n. m.	god	
 157060	mṣrm	mṣrm/	mṣrm	TN	Egypt	
 157061	dt	d	d	det. or rel. functor	the one(s) of	
-157062	tġrn	!t!nġr[	/n-ġ-r/	vb	to protect	
+157062	tġrn	!t!nġr[	/n-ġ-r/	vb G	to protect	
 # KTU 2.23 23						
 157063	npš	npš(I)/	npš (I)	n. f.	throat	
 157064	špš	špš/	špš	n.	sun	
-157065	mlk	mlk[	/m-l-k/	vb	to reign	
+157065	mlk	mlk[	/m-l-k/	vb G	to reign	
 157065	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 # KTU 2.23 24						
 157066	rb	rb(II)/	rb (II)	n. m.	chief	
@@ -164,7 +164,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157076	ap	ap(II)/	ảp (II)	n. m.	nose	
 157077	xnpšn	?	?	?	?	DULAT: NOT FOUND
 # KTU 2.23 33						
-157078	mlk	mlk[	/m-l-k/	vb	to reign	
+157078	mlk	mlk[	/m-l-k/	vb G	to reign	
 157078	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 # KTU 2.23 34						
 157079	yšlmxm	?	?	?	?	DULAT: NOT FOUND

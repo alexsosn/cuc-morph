@@ -13,12 +13,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154988	rxwm	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.147 7						
 154989	x	?	?	?	?	
-154990	bšl	bšl[	/b-š-l/	vb	to cook	
-154991	ybšl	!y!bšl[	/b-š-l/	vb	to cook	
+154990	bšl	bšl[	/b-š-l/	vb D	to cook	
+154991	ybšl	!y!bšl[	/b-š-l/	vb D	to cook	
 # KTU 1.147 8						
 154992	kt	k(t(I)/t	kt (I)	n. f.	pitcher	
 154992	kt	k(t(II)/t	kt (II)	n. f.	stage	
-154993	št	št[	/š-t/	vb	to place	
+154993	št	št[	/š-t/	vb G/Gpass	to place	
 154993	št	š(t(II)/t	št (II)	n. f.	raíz	
 154993	št	št(I)/	št (I)	n. m.	base	
 # KTU 1.147 9						
@@ -41,7 +41,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155000	l	l(II)	l (II)	adv.	no	
 155000	l	l(III)	l (III)	functor	certainly	
 155001	qṣ	qṣ/	qṣ	n. m.	end	
-155001	qṣ	qṣ[	/q-ṣ(-ṣ)/	vb	to carve	
+155001	qṣ	qṣ[	/q-ṣ(-ṣ)/	vb G	to carve	
 155002	ilm	il(I)/m	ỉl (I)	n. m.	god	
 # KTU 1.147 13						
 155003	lm	l(I)	l (I)	prep.	to	
@@ -49,7 +49,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.147 14						
 155005	xm	?	?	?	?	DULAT: NOT FOUND
 155006	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-155006	bˤl	bˤl[/	/b-ʕ-l/	vb	to make	
+155006	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
 # KTU 1.147 15						
 155007	xps	?	?	?	?	DULAT: NOT FOUND
 155008	pˤ	pˤ	pʕ	?	?	

@@ -25,7 +25,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148963	il	il(I)/	ỉl (I)	n. m.	god	
 148964	š	š/	š	n. m.	ram	
 148965	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-148965	bˤl	bˤl[/	/b-ʕ-l/	vb	to make	
+148965	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
 148966	š	š/	š	n. m.	ram	
 148967	dgn	dgn(I)/	dgn (I)	n. m.	grain	
 148968	š	š/	š	n. m.	ram	
@@ -52,7 +52,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148981	il	il(I)/	ỉl (I)	n. m.	god	
 148982	š	š/	š	n. m.	ram	
 148983	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-148983	bˤl	bˤl[/	/b-ʕ-l/	vb	to make	
+148983	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
 148984	š	š/	š	n. m.	ram	
 148985	aṯrt	aṯr(t(I)/t	ảṯrt (I)	n. f.	back part (of the head)	
 148986	š	š/	š	n. m.	ram	
@@ -60,7 +60,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148987	ym	ym(II)/	ym (II)	n. m.	sea	
 148988	š	š/	š	n. m.	ram	
 148989	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-148989	bˤl	bˤl[/	/b-ʕ-l/	vb	to make	
+148989	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
 148990	knp	knp/	knp	n. f.	wing	
 148991	g	ṯig(t/t	ṯỉgt	n. f.	neighing	
 # KTU 1.46 7						
@@ -89,18 +89,18 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149008	l	l(III)	l (III)	functor	certainly	
 149009	bbtm	bbt(II)/	bbt (II)	DN	superintendent	
 149010	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
-149011	ˤrb	ˤrb(I)[	/ʕ-r-b/ (I)	vb	to enter	
+149011	ˤrb	ˤrb(I)[	/ʕ-r-b/ (I)	vb G	to enter	
 149011	ˤrb	ˤrb(I)/	ʕrb (I)	n. m.	entry	
 149012	špš	špš/	špš	n.	sun	
 149013	wḥl	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.46 10						
-149014	mlk	mlk[	/m-l-k/	vb	to reign	
+149014	mlk	mlk[	/m-l-k/	vb G	to reign	
 149014	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 149015	b	b	b	prep.	in	
 149016	arbˤt	arbˤ/	ảrbʕ	num.	four	
 149017	ˤšrt	ˤšr(t(II)/t	ʕšrt (II)	n. f.	group of ten	
-149018	yrtḥṣ	r]t]ḥṣ[	/r-ḥ-ṣ/	vb	to wash	
-149019	mlk	mlk[	/m-l-k/	vb	to reign	
+149018	yrtḥṣ	r]t]ḥṣ[	/r-ḥ-ṣ/	vb Gt	to wash	
+149019	mlk	mlk[	/m-l-k/	vb G	to reign	
 149019	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 149020	brr	br/	br(r)	n. m.	tin	
 149020	brr	brr/	brr	adj. m.	pure	
@@ -108,9 +108,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149021	b	b	b	prep.	in	
 149022	ym	ym(I)/	ym (I)	n. m.	day	
 149022	ym	ym(II)/	ym (II)	n. m.	sea	
-149023	mlat	mlʔ[	/m-l-ʔ/	vb	to be full	
+149023	mlat	mlʔ[	/m-l-ʔ/	vb G	to be full	
 149023	mlat	mla(t/t=	mlảt	n. f.	fullness	
-149024	yqln	!y!ql[	/q-l/	vb	to fall (down)	
+149024	yqln	!y!ql[	/q-l/	vb G	to fall (down)	
 149025	ṯn	ṯn(I)/	ṯn (I)	num.	two	
 149026	alpm	alp(I)/m	ảlp (I)	n. m.	(head of) cattle	
 149026	alpm	alp(II)/	ảlp (II)	num.	(one	
@@ -133,7 +133,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149040	rmš	rmš/	rmš	DN	rmš	
 149041	kbd	kbd(II)/	kbd (II)	n. m.	total (quantity or price)	
 149041	kbd	kbd(I)/	kbd (I)	n.	liver	
-149041	kbd	kbd[	/k-b-d/	vb	to honour	
+149041	kbd	kbd[	/k-b-d/	vb D	to honour	
 149042	w	w	w	conj.	and	
 149043	š	š/	š	n. m.	ram	
 # KTU 1.46 14						
@@ -141,11 +141,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149044	l	l(II)	l (II)	adv.	no	
 149044	l	l(III)	l (III)	functor	certainly	
 149045	šlm	šlm(I)/	šlm (I)	n. m.	peace	
-149045	šlm	šlm[	/š-l-m/	vb	to be well	
+149045	šlm	šlm[	/š-l-m/	vb G/D	to be well	
 149045	šlm	šlm(III)/	šlm (III)	adj. m.	pure	
 149046	kbd	kbd(II)/	kbd (II)	n. m.	total (quantity or price)	
 149046	kbd	kbd(I)/	kbd (I)	n.	liver	
-149046	kbd	kbd[	/k-b-d/	vb	to honour	
+149046	kbd	kbd[	/k-b-d/	vb D	to honour	
 149047	alp	alp(I)/	ảlp (I)	n. m.	(head of) cattle	
 149047	alp	alp(II)/	ảlp (II)	num.	(one	
 149048	wš	?	?	?	?	DULAT: NOT FOUND
@@ -165,7 +165,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149059	bbt	bbt(II)/	bbt (II)	DN	superintendent	
 149059	bbt	bbt(I)/	bbt (I)	TN	bbt (I)	
 149060	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-149060	bˤl	bˤl[/	/b-ʕ-l/	vb	to make	
+149060	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
 149061	ugrt	ugrt/	ủgrt	TN	ʾugarītu	
 149062	kbdm	kbd(I)/	kbd (I)	n.	liver	
 149063	w	w	w	conj.	and	
@@ -176,7 +176,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 149067	il	il(I)/	ỉl (I)	n. m.	god	
 149068	š	š/	š	n. m.	ram	
 149069	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-149069	bˤl	bˤl[/	/b-ʕ-l/	vb	to make	
+149069	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
 149070	š	š/	š	n. m.	ram	
 149071	ˤnt	ˤn(I)/t=	ʕn (I)	n. f.	eye	
 149071	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	

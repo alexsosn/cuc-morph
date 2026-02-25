@@ -44,6 +44,7 @@ from pipeline.steps.surface_option_propagation import SurfaceOptionPropagationFi
 from pipeline.steps.surface_reconstructability_fixer import SurfaceReconstructabilityFixer
 from pipeline.steps.unwrapped_duplicate_pruner import UnwrappedDuplicatePruner
 from pipeline.steps.variant_row_unwrapper import VariantRowUnwrapper
+from pipeline.steps.verb_pos_stem import VerbPosStemFixer
 from pipeline.steps.weak_final_sc import WeakFinalSuffixConjugationFixer
 from pipeline.steps.weak_verb import WeakVerbFixer
 from pipeline.steps.ydk_context_disambiguator import YdkContextDisambiguator
@@ -113,6 +114,7 @@ class TabletParsingPipeline:
             LPrepositionBigramContextDisambiguator(),
             KFunctorBigramContextDisambiguator(),
             YdkContextDisambiguator(),
+            VerbPosStemFixer(dulat_db=self.config.dulat_db),
             # Keep schema pass last so any content-changing steps still end in
             # strict 7-column/quote-safe TSV for GitHub rendering.
             TsvSchemaFormatter(),

@@ -13,6 +13,14 @@
   - linter predicate tests in `tests/test_linter_warning_predicates.py`,
   - lint integration tests in `tests/test_linter_baal_verbal_slash.py`.
 - Documented the strategy in `docs/baal_verbal_slash_pipeline.md`.
+- Added `VerbPosStemFixer` (`pipeline/steps/verb_pos_stem.py`) and wired it into `pipeline/tablet_parsing.py` after `YdkContextDisambiguator` and before final `TsvSchemaFormatter`.
+- New rule: enrich verbal POS in column 5 from exact DULAT form morphology stems (for example `vb` -> `vb G`, `vb` -> `vb Gt`, `vb` -> `vb G/Š`), while leaving non-verb and `vb. n.` rows unchanged.
+- Added linter parity warning in `linter/lint.py`: when exact-surface verb stems are attested in DULAT but POS lacks a stem label (`Verb POS should include stem label(s): ...`).
+- Added regression coverage:
+  - parser step tests in `tests/test_refinement_steps.py` (`VerbPosStemFixerTest`),
+  - linter regression tests in `tests/test_linter_verb_pos_stem.py`,
+  - pipeline ordering guard update in `tests/test_tablet_parsing_pipeline.py`.
+- Documented strategy in `docs/verb_pos_stem_pipeline.md`.
 
 ## 2026-02-24
 

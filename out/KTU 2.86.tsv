@@ -5,7 +5,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159577	ḫḏmrt	?	?	?	?	DULAT: NOT FOUND
 # KTU 2.86 2						
 159578	bˤly	bˤl(II)/y	bʕl (II)	n. m./DN	Baʿlu/Baal	
-159579	rgm	rgm[	/r-g-m/	vb	to say	
+159579	rgm	rgm[	/r-g-m/	vb G	to say	
 159579	rgm	rgm/	rgm	n. m.	word	
 # KTU 2.86 3						
 159580	tḥm	tḥm/	tḥm	n. m.	message	
@@ -14,8 +14,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159582	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. m.	servant	
 159583	ilm	il(I)/m	ỉl (I)	n. m.	god	
 # KTU 2.86 5						
-159584	tġrk	!t!nġr[	/n-ġ-r/	vb	to protect	
-159585	tšlmk	!t!šlm[	/š-l-m/	vb	to be well	
+159584	tġrk	!t!nġr[	/n-ġ-r/	vb G	to protect	
+159585	tšlmk	!t!šlm[	/š-l-m/	vb D	to be well	
 # KTU 2.86 6						
 159586	l	l(I)	l (I)	prep.	to	
 159587	pˤn	pˤn/	pʕn	prep.	at the feet of	
@@ -37,7 +37,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.86 11						
 159598	mid	mi/	mỉ/ủd	n. m.	abundance	
 159599	šlm	šlm(I)/	šlm (I)	n. m.	peace	
-159599	šlm	šlm[	/š-l-m/	vb	to be well	
+159599	šlm	šlm[	/š-l-m/	vb G/D	to be well	
 159599	šlm	šlm(III)/	šlm (III)	adj. m.	pure	
 # KTU 2.86 12						
 159600	w	w	w	conj.	and	
@@ -48,23 +48,23 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.86 14						
 159603	w	w	w	conj.	and	
 159604	šlm	šlm(I)/	šlm (I)	n. m.	peace	
-159604	šlm	šlm[	/š-l-m/	vb	to be well	
+159604	šlm	šlm[	/š-l-m/	vb G/D	to be well	
 159604	šlm	šlm(III)/	šlm (III)	adj. m.	pure	
 # KTU 2.86 15						
-159605	nkly	!n!kly[	/k-l-y/	vb	to finish	
+159605	nkly	!n!kly[	/k-l-y/	vb N	to finish	
 # KTU 2.86 16						
 159606	w	w	w	conj.	and	
 159607	šlm	šlm(I)/	šlm (I)	n. m.	peace	
-159607	šlm	šlm[	/š-l-m/	vb	to be well	
+159607	šlm	šlm[	/š-l-m/	vb G/D	to be well	
 159607	šlm	šlm(III)/	šlm (III)	adj. m.	pure	
 # KTU 2.86 17						
 159608	bth	bt(II)/+h	bt (II)	n. m.	house	
 159609	w	w	w	conj.	and	
 159610	šlm	šlm(I)/	šlm (I)	n. m.	peace	
-159610	šlm	šlm[	/š-l-m/	vb	to be well	
+159610	šlm	šlm[	/š-l-m/	vb G/D	to be well	
 159610	šlm	šlm(III)/	šlm (III)	adj. m.	pure	
 # KTU 2.86 18						
-159611	šmˤ	šmˤ[	/š-m-ʕ/	vb	to hear	
+159611	šmˤ	šmˤ[	/š-m-ʕ/	vb G	to hear	
 159611	šmˤ	šmˤ/	šmʕ	n. m.	auditor	
 159612	rgmk	rgm[+k	/r-g-m/	vb	to say	
 159612	rgmk	rgm/+k	rgm	n. m.	word	
@@ -90,8 +90,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159623	y	~y	-y (II)	prep. functor	indeed	
 159623	y	y	y	prep. functor	oh!	
 # KTU 2.86 23						
-159624	ybˤr	!y!bˤr(I)[	/b-ʕ-r/ (I)	vb	to illuminate	
-159624	ybˤr	!y!bˤr(II)[	/b-ʕ-r/ (II)	vb	to abandon	
+159624	ybˤr	!y!bˤr(I)[	/b-ʕ-r/ (I)	vb D	to illuminate	
+159624	ybˤr	!y!bˤr(II)[	/b-ʕ-r/ (II)	vb D	to abandon	
 # KTU 2.86 24						
 159625	b	b	b	prep.	in	
 159626	ydh	yd(I)/+h	yd (I)	n. f.	hand	

@@ -1,14 +1,19 @@
 {
-  "generated_at_utc": "2026-02-25T00:16:45.920725+00:00",
+  "generated_at_utc": "2026-02-25T00:27:55.574295+00:00",
   "files_checked": 278,
-  "total_issues": 11852,
-  "fallback_parsed": 675,
+  "total_issues": 17514,
+  "fallback_parsed": 677,
   "by_severity": {
-    "ERROR": 6470,
-    "WARNING": 951,
+    "ERROR": 12130,
+    "WARNING": 953,
     "INFO": 1621
   },
   "by_problem_type": [
+    {
+      "severity": "ERROR",
+      "problem_type": "POS token not allowed for declared DULAT entry",
+      "count": 6183
+    },
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
@@ -18,11 +23,6 @@
       "severity": "INFO",
       "problem_type": "Surface not found in UDB concordance",
       "count": 1621
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "POS token not allowed for declared DULAT entry",
-      "count": 527
     },
     {
       "severity": "ERROR",
@@ -42,7 +42,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Non-G stem in DULAT requires stem marker",
-      "count": 274
+      "count": 278
     },
     {
       "severity": "ERROR",
@@ -801,6 +801,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "lkx Verb POS should include stem label(s): G",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "llim Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
@@ -1052,6 +1057,11 @@
     {
       "severity": "WARNING",
       "problem_type": "tṯar Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "xxxtlḥm Verb POS should include stem label(s): G",
       "count": 1
     },
     {

@@ -1,32 +1,32 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.127 1						
 154481	dbḥ	dbḥ/	dbḥ	n. m.	sacrifice	
-154481	dbḥ	dbḥ[	/d-b-ḥ/	vb	to sacrifice	
+154481	dbḥ	dbḥ[	/d-b-ḥ/	vb G	to sacrifice	
 154482	klyrḫ	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.127 2						
 154483	ndr	ndr/	ndr	n. m.	vow	
 # KTU 1.127 3						
 154484	dbḥ	dbḥ/	dbḥ	n. m.	sacrifice	
-154484	dbḥ	dbḥ[	/d-b-ḥ/	vb	to sacrifice	
+154484	dbḥ	dbḥ[	/d-b-ḥ/	vb G	to sacrifice	
 # KTU 1.127 4						
 154485	dt	d	d	det. or rel. functor	the one(s) of	
 154486	nat	na(t/t	nảt	n. f.	lament	
 # KTU 1.127 5						
 154487	w	w	w	conj.	and	
-154488	ytnt	!y!(ytn[	/y-t-n/	vb	to give	
+154488	ytnt	!y!(ytn[	/y-t-n/	vb G	to give	
 # KTU 1.127 6						
 154489	ṯrmn	ṯrmn(I)/	ṯrmn (I)	DN	term for the kings of Ugarit	
 154490	w	w	w	conj.	and	
 # KTU 1.127 7						
 154491	dbḥ	dbḥ/	dbḥ	n. m.	sacrifice	
-154491	dbḥ	dbḥ[	/d-b-ḥ/	vb	to sacrifice	
+154491	dbḥ	dbḥ[	/d-b-ḥ/	vb G	to sacrifice	
 154492	kl	kl/	kl	n. m.	totality (of)	
 # KTU 1.127 8						
 154493	kl	kl/	kl	n. m.	totality (of)	
-154494	ykly	!y!kly[	/k-l-y/	vb	to finish	
+154494	ykly	!y!kly[	/k-l-y/	vb G/D	to finish	
 # KTU 1.127 9						
 154495	dbḥ	dbḥ/	dbḥ	n. m.	sacrifice	
-154495	dbḥ	dbḥ[	/d-b-ḥ/	vb	to sacrifice	
+154495	dbḥ	dbḥ[	/d-b-ḥ/	vb G	to sacrifice	
 154496	k	+k	-k (I)			
 154496	k	~k	-k (II)			
 154496	k	k(III)	k (III)	Subordinating or completive functor	when	
@@ -45,7 +45,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154503	kdbḥ	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.127 13						
 154504	dbḥ	dbḥ/	dbḥ	n. m.	sacrifice	
-154504	dbḥ	dbḥ[	/d-b-ḥ/	vb	to sacrifice	
+154504	dbḥ	dbḥ[	/d-b-ḥ/	vb G	to sacrifice	
 # KTU 1.127 14						
 154505	ndr	ndr/	ndr	n. m.	vow	
 154506	bt	bt(II)/	bt (II)	n. m.	house	
@@ -83,8 +83,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.127 26						
 154525	x	?	?	?	?	
 154526	aṯt	aṯ(t/t	ảṯt	n. f.	woman	
-154527	yqḥ	lqḥ[	/l-q-ḥ/	vb	to get hold of	
-154528	ˤz	ˤz[	/ʕ-z(-z)/	vb	to be strong	
+154527	yqḥ	lqḥ[	/l-q-ḥ/	vb G/Gpass	to get hold of	
+154528	ˤz	ˤz[	/ʕ-z(-z)/	vb G	to be strong	
 154528	ˤz	ˤz(II)/	ʕz (II)	n. m.	caprine animal	
 154528	ˤz	ˤz(III)/	ʕz (III)	adj. m. or n. m.	strong	
 # KTU 1.127 27						
@@ -96,25 +96,25 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.127 30						
 154532	hm	hm(II)	hm (II)	conj./interr. functor	if	
 154533	qrt	qr(t(I)/t	qrt (I)	n. f.	city	
-154534	tuḫd	!t!ʔḫd[	/ʔ-ḫ-d(/ḏ)/	vb	to collect	
+154534	tuḫd	!t!ʔḫd[	/ʔ-ḫ-d(/ḏ)/	vb G	to collect	
 154535	hm	hm(II)	hm (II)	conj./interr. functor	if	
 154536	mt	mt(II)/	mt (II)	n. m.	death	
-154536	mt	mt[	/m-t/	vb	to die	
+154536	mt	mt[	/m-t/	vb G	to die	
 154536	mt	mt(I)/	mt (I)	n. m.	dead person	
-154537	yˤl	ˤly[	/ʕ-l-y/	vb	to go up	
+154537	yˤl	ˤly[	/ʕ-l-y/	vb G	to go up	
 154538	bnš	bnš/	bnš	n. m.	man	
 # KTU 1.127 31						
 154539	bt	bt(II)/	bt (II)	n. m.	house	
 154539	bt	b(t(I)/t	bt (I)	n. f.	daughter	
 154540	bn	bn(I)/	bn (I)	n. m.	son	
 154540	bn	bn(II)	bn (II)	prep.	between	
-154540	bn	bn[	/b-n/	vb	to understand	
+154540	bn	bn[	/b-n/	vb G	to understand	
 154541	bnš	bnš/	bnš	n. m.	man	
-154542	yqḥ	lqḥ[	/l-q-ḥ/	vb	to get hold of	
-154543	ˤz	ˤz[	/ʕ-z(-z)/	vb	to be strong	
+154542	yqḥ	lqḥ[	/l-q-ḥ/	vb G/Gpass	to get hold of	
+154543	ˤz	ˤz[	/ʕ-z(-z)/	vb G	to be strong	
 154543	ˤz	ˤz(II)/	ʕz (II)	n. m.	caprine animal	
 154543	ˤz	ˤz(III)/	ʕz (III)	adj. m. or n. m.	strong	
 # KTU 1.127 32						
 154544	w	w	w	conj.	and	
-154545	yḥdy	!y!ḥdy[	/ḥ-d-y/	vb	to see	
+154545	yḥdy	!y!ḥdy[	/ḥ-d-y/	vb G	to see	
 154546	mrḥqm	mrḥq/	mrḥq	n. m.	distance	
