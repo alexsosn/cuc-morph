@@ -132,7 +132,10 @@ class FeminineTSingularSplitFixer(RefinementStep):
             if not (
                 lemma_has_final_t
                 and surface_has_terminal_t
-                and _is_generic_nominal_without_gender(pos_slot)
+                and (
+                    _is_generic_nominal_without_gender(pos_slot)
+                    or _is_generic_numeral_without_gender(pos_slot)
+                )
             ):
                 return value
 
@@ -142,6 +145,7 @@ class FeminineTSingularSplitFixer(RefinementStep):
         )
         has_sg_pl_ambiguous_surface = (
             not is_pos_pl_tant
+            and not _is_numeral_pos(pos_slot)
             and self._surface_has_singular_and_plural_morphology(
                 dulat_slot=dulat_slot,
                 surface=surface,
@@ -188,7 +192,11 @@ class FeminineTSingularSplitFixer(RefinementStep):
                         _with_surface_terminal_m(plural, surface=surface),
                     ]
                 )
-            if self._is_plural_dulat_token(dulat_slot, surface=surface) and not is_pos_pl_tant:
+            if (
+                self._is_plural_dulat_token(dulat_slot, surface=surface)
+                and not is_pos_pl_tant
+                and not _is_numeral_pos(pos_slot)
+            ):
                 return value
             stem = unsplit_match.group("stem")
             homonym = unsplit_match.group("hom") or declared_homonym
@@ -319,6 +327,22 @@ def _is_generic_nominal_without_gender(pos_slot: str) -> bool:
     if " F." in upper or upper.startswith("F."):
         return False
     return True
+
+
+def _is_generic_numeral_without_gender(pos_slot: str) -> bool:
+    """Return True for numeral POS tags without explicit gender."""
+    upper = (pos_slot or "").strip().upper()
+    if not _is_numeral_pos(upper):
+        return False
+    if " M." in upper or upper.startswith("M."):
+        return False
+    if " F." in upper or upper.startswith("F."):
+        return False
+    return True
+
+
+def _is_numeral_pos(pos_slot: str) -> bool:
+    return (pos_slot or "").strip().upper().startswith("NUM.")
 
 
 def _is_forced_plural_t_token(dulat_slot: str) -> bool:

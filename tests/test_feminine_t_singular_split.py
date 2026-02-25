@@ -219,6 +219,19 @@ class FeminineTSingularSplitFixerTest(unittest.TestCase):
         result = fixer.refine_row(row)
         self.assertEqual(result.analysis, "ṣrr(t/t;ṣrr(t/t=")
 
+    def test_splits_t_final_numeral_without_adding_plural_pair(self) -> None:
+        fixer = FeminineTSingularSplitFixer(
+            gate=_PluralOnlyGate(
+                plural_tokens={"rb(b)t"},
+                morphologies={
+                    ("rb(b)t", "rbt"): {"sg.", "pl."},
+                },
+            ),
+        )
+        row = TabletRow("19", "rbt", "rbt/", "rb(b)t", "num.", "ten thousand", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "rb(t/t")
+
 
 if __name__ == "__main__":
     unittest.main()
