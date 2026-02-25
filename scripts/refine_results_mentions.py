@@ -244,25 +244,39 @@ def stem_marker_from_morph(morph_values: Sequence[str]) -> str:
     return ""
 
 
-def prefixed_verb_tail(surface_plain: str, stem_plain: str) -> Optional[str]:
-    """Return surface tail for prefixed verbs, preserving weak-form contractions.
+def prefixed_verb_match(
+    surface_plain: str,
+    stem_plain: str,
+    stem_marker_plain: str = "",
+) -> Optional[Tuple[str, int]]:
+    """Return (tail, hidden_stem_letters) for prefixed-verb matching.
 
-    Returns:
-        - tail string after the stem for regular prefixed forms
-        - empty string for contracted forms where the surface truncates stem-final letters
-        - None when the surface does not look like a prefixed realization of the stem
+    The matcher checks both plain stem (`qtl`) and stem-marker + stem (`šqtl`,
+    `štqtl`) realizations against the post-preformative surface body.
     """
     if not surface_plain or not stem_plain:
         return None
-    if surface_plain[0] not in {"y", "t", "a", "n", "i", "u"}:
+    if surface_plain[0] not in _PREFORMATIVE_LETTERS:
         return None
     body = surface_plain[1:]
     if not body:
         return None
-    if body.startswith(stem_plain):
-        return body[len(stem_plain) :]
-    if stem_plain.startswith(body):
-        return ""
+
+    candidates: List[Tuple[str, int]] = []
+    if stem_marker_plain:
+        candidates.append((stem_marker_plain + stem_plain, len(stem_marker_plain)))
+    candidates.append((stem_plain, 0))
+
+    for candidate, marker_len in candidates:
+        if body.startswith(candidate):
+            return body[len(candidate) :], 0
+
+    for candidate, marker_len in candidates:
+        if candidate.startswith(body):
+            visible_stem_letters = max(0, len(body) - marker_len)
+            hidden_stem_letters = max(0, len(stem_plain) - visible_stem_letters)
+            return "", hidden_stem_letters
+
     return None
 
 
@@ -348,6 +362,7 @@ def analysis_for_entry(surface: str, e: Entry, morph_values: Optional[Sequence[s
             stem = stem[0] + "]t]" + stem[1:]
             stem_marker = ""
         stem_plain = extract_letters(stem)
+        stem_marker_plain = extract_letters(stem_marker)
         surface_plain = extract_letters(s)
         if is_n_weak_iii_aleph_root(e.lemma) and has_prefix_morphology(morph_values or []):
             contracted_analysis = build_prefixed_n_weak_iii_aleph_analysis(
@@ -358,13 +373,16 @@ def analysis_for_entry(surface: str, e: Entry, morph_values: Optional[Sequence[s
             )
             if contracted_analysis is not None:
                 return contracted_analysis
-        prefix_tail = prefixed_verb_tail(surface_plain=surface_plain, stem_plain=stem_plain)
-        if prefix_tail is not None:
+        prefix_match = prefixed_verb_match(
+            surface_plain=surface_plain,
+            stem_plain=stem_plain,
+            stem_marker_plain=stem_marker_plain,
+        )
+        if prefix_match is not None:
+            prefix_tail, hidden_stem_letters = prefix_match
             stem_out = stem
-            if prefix_tail == "":
-                surface_body_len = len(surface_plain[1:]) if len(surface_plain) > 1 else 0
-                hidden_count = max(0, len(stem_plain) - surface_body_len)
-                stem_out = mark_hidden_terminal_stem_letters(stem_out, hidden_count)
+            if hidden_stem_letters > 0:
+                stem_out = mark_hidden_terminal_stem_letters(stem_out, hidden_stem_letters)
             return f"!{surface_plain[0]}!{stem_marker}{stem_out}{hom}[{prefix_tail}"
         tail = ""
         if len(surface_plain) > len(stem_plain):

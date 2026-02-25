@@ -81,6 +81,38 @@ class RefineResultsMentionsTest(unittest.TestCase):
             "!t!w]t]ḥ(y[",
         )
 
+    def test_analysis_keeps_preformative_for_st_marker_prefixed_verb(self) -> None:
+        entry = Entry(
+            entry_id=4001,
+            lemma="/ḥ-w-y/",
+            hom="II",
+            pos="vb",
+            gloss="",
+            wiki_tr="",
+        )
+        self.assertEqual(
+            analysis_for_entry("tštḥwy", entry, morph_values=["Št, prefc."]),
+            "!t!]š]]t]ḥwy(II)[",
+        )
+        self.assertEqual(
+            analysis_for_entry("yštḥwyn", entry, morph_values=["Št, prefc."]),
+            "!y!]š]]t]ḥwy(II)[n",
+        )
+
+    def test_analysis_keeps_preformative_for_sh_marker_prefixed_verb(self) -> None:
+        entry = Entry(
+            entry_id=4002,
+            lemma="/l-ḥ-m/",
+            hom="I",
+            pos="vb",
+            gloss="",
+            wiki_tr="",
+        )
+        self.assertEqual(
+            analysis_for_entry("yšlḥm", entry, morph_values=["Š, prefc."]),
+            "!y!]š]lḥm(I)[",
+        )
+
     def test_analysis_encodes_contracted_n_weak_iii_aleph_prefixed_forms(self) -> None:
         entry = Entry(
             entry_id=5000,

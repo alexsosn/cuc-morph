@@ -2,6 +2,16 @@
 
 ## 2026-02-25
 
+- Fixed prefix-conjugation detection for Š/Št-stem analyses with explicit stem markers:
+  - `scripts/refine_results_mentions.py::analysis_for_entry` now matches preformative bodies against both plain stems and marker+stem realizations (`š+root`, `št+root`),
+  - restores missing `!preformative!` for forms like `yštḥwyn`, `tštḥwy`, `yšlḥm`,
+  - prevents invalid long residual tails (for example `[ḥwyn`) by producing valid short endings (`[n` or empty).
+- Added regression tests in `tests/test_refine_results_mentions.py` for:
+  - `yštḥwyn` -> `!y!]š]]t]ḥwy(II)[n`,
+  - `tštḥwy` -> `!t!]š]]t]ḥwy(II)[`,
+  - `yšlḥm` -> `!y!]š]lḥm(I)[`.
+- Re-ran targeted regeneration for all tablets containing this error class (33 files, including `KTU 1.1.tsv`, `KTU 1.2.tsv`, `KTU 1.3.tsv`, `KTU 1.4.tsv`, `KTU 1.6.tsv`, `KTU 1.100.tsv`, and relevant `KTU 2.*`/`KTU 3.*` files).
+
 - Fixed contracted prefixed weak-form reconstruction for hidden terminal radicals:
   - `scripts/refine_results_mentions.py::analysis_for_entry` now marks hidden stem-final letters in contracted prefix forms as reconstructed (`(`),
   - example correction: `twtḥ` `/w-ḥ-y/` Gt prefc. now emits `!t!w]t]ḥ(y[` (not `!t!w]t]ḥy[`).

@@ -1,14 +1,14 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `10485`
+- Total issues: `10283`
 - Fallback-parsed issue lines: `235`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 5701 |
+| ERROR | 5499 |
 | WARNING | 430 |
 | INFO | 1617 |
 
@@ -16,13 +16,13 @@
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3455 |
+| ERROR | Analysis does not reconstruct to surface | 3264 |
 | INFO | Surface not found in UDB concordance | 1617 |
 | ERROR | POS token not allowed for declared DULAT entry | 439 |
-| ERROR | No DULAT entry found for clitic part | 337 |
+| ERROR | No DULAT entry found for clitic part | 327 |
 | ERROR | Non-G stem in DULAT requires stem marker | 298 |
 | ERROR | DULAT comment does not match candidates | 257 |
-| ERROR | ʔ must be preceded by '(' in column 3 | 250 |
+| ERROR | ʔ must be preceded by '(' in column 3 | 249 |
 | ERROR | Deverbal form matches both verb and noun entries in DULAT | 184 |
 | WARNING | Suffix form without '+' | 163 |
 | ERROR | Multiple DULAT candidates for surface | 123 |
