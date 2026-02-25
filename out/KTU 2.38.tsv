@@ -22,20 +22,20 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157861	ilm	il(I)/m	ỉl (I)	n. m.	god	
 # KTU 2.38 5						
 157862	tġrk	nġr[k	/n-ġ-r/	vb G	to protect	
-157863	tšlmk	!t!šlm[k	/š-l-m/	vb D	to be well	
+157863	tšlmk	!t!šlm[k:d	/š-l-m/	vb D	to be well	
 # KTU 2.38 6						
 157864	hnny	hnny	hnny	adv.	here	
 157865	ˤmn	ˤm(I)+n	ʕm (I)	prep.	to	
 # KTU 2.38 7						
 157866	šlm	šlm(I)/	šlm (I)	n. m.	peace	
-157866	šlm	šlm[	/š-l-m/	vb G/D	to be well	
+157866	šlm	šlm[:d	/š-l-m/	vb G/D	to be well	
 157866	šlm	šlm(III)/	šlm (III)	adj. m.	pure	
 157867	ṯmny	ṯm	ṯm	adv.	there	
 # KTU 2.38 8						
 157868	ˤmk	ˤm(II)/+k	ʕm (II)	n. m.	lineage	
 157869	mnm	mnm	mnm	indef. pn.	any(thing)	
 157870	šlm	šlm(I)/	šlm (I)	n. m.	peace	
-157870	šlm	šlm[	/š-l-m/	vb G/D	to be well	
+157870	šlm	šlm[:d	/š-l-m/	vb G/D	to be well	
 157870	šlm	šlm(III)/	šlm (III)	adj. m.	pure	
 # KTU 2.38 9						
 157871	rgm	rgm[	/r-g-m/	vb G	to say	
@@ -111,4 +111,4 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157918	lbh	lb/+h	lb	n. m.	heart	
 157919	al	al(I)	ảl (I)	neg. functor	no	
 157919	al	al(II)	ảl (II)	pos. functor	surely	
-157920	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
+157920	yšt	!y!št[:pass	/š-t/	vb G/Gpass	to place	

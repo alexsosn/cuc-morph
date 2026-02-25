@@ -33,7 +33,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160465	ky	k(III)	k (III)	Subordinating or completive functor	when	
 160465	ky	k(II)	k (II)	emph. functor	yes	
 160465	ky	k(IV)	k (IV)	adv.	thus	
-160466	ḫbt	ḫbt[	/ḫ-b-t/	vb Gpass	to be oppressed	
+160466	ḫbt	ḫbt[:pass	/ḫ-b-t/	vb Gpass	to be oppressed	
 160466	ḫbt	ḫbt(II)/	ḫbt (II)	DN	Bien-amada	
 160467	w	w	w	conj.	and	
 160468	lušal	?	?	?	?	DULAT: NOT FOUND
@@ -70,7 +70,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160487	ilm	il(I)/m	ỉl (I)	n. m.	god	
 160488	tġr	nġr[	/n-ġ-r/	vb G	to protect	
 # KTU 2.103 19						
-160489	tšlmk	!t!šlm[k	/š-l-m/	vb D	to be well	
+160489	tšlmk	!t!šlm[k:d	/š-l-m/	vb D	to be well	
 160490	lḥt	lḥ(II)/t=	lḥ (II)	n. m.	missive	
 160490	lḥt	lḥ(I)/t=	lḥ (I)	n. f.	cheek	
 # KTU 2.103 20						
@@ -94,7 +94,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160499	mxš	?	?	?	?	DULAT: NOT FOUND
 # KTU 2.103 24						
 160500	tˤn	!t!ˤn(y(I)[	/ʕ-n-y/ (I)	vb G	to answer	
-160500	tˤn	!t!ˤn[	/ʕ-n/	vb G/D	to see	
+160500	tˤn	!t!ˤn[:d	/ʕ-n/	vb G/D	to see	
 160500	tˤn	!t!ˤn(w[	/ʕ-n-w/	vb G	to be / remain depressed	
 # KTU 2.103 25						
 160501	ktt	ktt(I)/	ktt (I)	adj. m.	ground	
@@ -128,6 +128,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.103 33						
 160520	ˤkd	ˤkd/	ʕkd	TN	ungestüm	
 160521	w	w	w	conj.	and	
-160522	yqḥ	lqḥ[	/l-q-ḥ/	vb G/Gpass	to get hold of	
+160522	yqḥ	lqḥ[:pass	/l-q-ḥ/	vb G/Gpass	to get hold of	
 160523	t	/t, /t=				
 160523	t	[t, [t=, [t==, [t===				

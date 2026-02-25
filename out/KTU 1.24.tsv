@@ -115,7 +115,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147704	y	y	y	prep. functor	oh!	
 # KTU 1.24 18						
 147705	rḫ	?	?	?	?	DULAT: NOT FOUND
-147706	ytrḫ	!y!trḫ[	/t-r-ḫ/	vb G/D	to marry	
+147706	ytrḫ	!y!trḫ[:d	/t-r-ḫ/	vb G/D	to marry	
 147707	ib	ib(I)/	ỉb (I)	n. m.	enemy	
 147707	ib	ib(II)/	ỉb (II)	n. m./DN	fruit	
 147708	tˤrbm	!t!ˤrb(I)[m	/ʕ-r-b/ (I)	vb G	to enter	
@@ -158,8 +158,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147732	w	w	w	conj.	and	
 # KTU 1.24 24						
 147733	yˤn	!y!ˤn(y(I)[	/ʕ-n-y/ (I)	vb G	to answer	
-147733	yˤn	!y!ˤn[	/ʕ-n/	vb G/D	to see	
-147733	yˤn	!y!ˤn(w[	/ʕ-n-w/	vb G/Dpass	to be / remain depressed	
+147733	yˤn	!y!ˤn[:d	/ʕ-n/	vb G/D	to see	
+147733	yˤn	!y!ˤn(w[:pass	/ʕ-n-w/	vb G/Dpass	to be / remain depressed	
 147734	ḫrḫb	ḫrḫb/	ḫrḫb	DN	ḫrḫb	
 147735	mlk	mlk[	/m-l-k/	vb G	to reign	
 147735	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
@@ -173,7 +173,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147741	m	l(I)	l (I)	prep.	to	
 147742	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
 147742	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
-147743	trḫ	trḫ[	/t-r-ḫ/	vb G/D	to marry	
+147743	trḫ	trḫ[:d	/t-r-ḫ/	vb G/D	to marry	
 147744	pdry	pdry/	pdry	DN	Pidray	
 147745	bth	bt(II)/+h	bt (II)	n. m.	house	
 # KTU 1.24 27						
@@ -196,8 +196,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147758	yˤrr	!y!ˤr[r	/ʕ-r/	vb	to become agitated	
 147759	w	w	w	conj.	and	
 147760	yˤn	!y!ˤn(y(I)[	/ʕ-n-y/ (I)	vb G	to answer	
-147760	yˤn	!y!ˤn[	/ʕ-n/	vb G/D	to see	
-147760	yˤn	!y!ˤn(w[	/ʕ-n-w/	vb G/Dpass	to be / remain depressed	
+147760	yˤn	!y!ˤn[:d	/ʕ-n/	vb G/D	to see	
+147760	yˤn	!y!ˤn(w[:pass	/ʕ-n-w/	vb G/Dpass	to be / remain depressed	
 # KTU 1.24 31						
 147761	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 147762	nyr	nyr/	nyr	n. f.	luminary	
@@ -209,17 +209,17 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.24 32						
 147766	ˤmn	ˤm(I)+n	ʕm (I)	prep.	to	
 147767	nkl	!n!kl(y[	/k-l-y/	vb N	to finish	
-147768	ḫtny	ḫtn[y	/ḫ-t-n/	vb D	to become a son-in-law	
+147768	ḫtny	ḫtn[y:d	/ḫ-t-n/	vb D	to become a son-in-law	
 147768	ḫtny	ḫtn(I)/	ḫtn (I)	n. m.	relationship by marriage	
 147769	aḫr	aḫr	ảḫr	adv./prep./conj.	afterwards	
 # KTU 1.24 33						
 147770	nkl	!n!kl(y[	/k-l-y/	vb N	to finish	
 147771	yrḫ	yrḫ/	yrḫ	n. m.	moon	
-147772	ytrḫ	!y!trḫ[	/t-r-ḫ/	vb G/D	to marry	
+147772	ytrḫ	!y!trḫ[:d	/t-r-ḫ/	vb G/D	to marry	
 147773	adnh	adn(I)/+h	ảdn (I)	n. m.	lord	
 147773	adnh	ad/+nh	ảd	n. m.	father, ?	
 # KTU 1.24 34						
-147774	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
+147774	yšt	!y!št[:pass	/š-t/	vb G/Gpass	to place	
 147775	mṣb	mṣb(II)/	mṣb (II)	n. m.	place in which something is put	
 147775	mṣb	mṣb(I)/	mṣb (I)	n. m.	beam	
 147776	mznm	mzn/m	mzn	n. m. du.	weight	

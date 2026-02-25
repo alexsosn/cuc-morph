@@ -77,14 +77,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142780	krt	krt/	krt	PN	krt	
 142781	tˤ	?	?	?	?	DULAT: NOT FOUND
 142782	ˤšr	ˤšr(I)/	ʕšr (I)	n. num.	ten	
-142782	ˤšr	ˤšr[	/ʕ-š-r/	vb D/Dpass	ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods	
+142782	ˤšr	ˤšr[:d:pass	/ʕ-š-r/	vb D/Dpass	ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods	
 142782	ˤšr	ˤšr(I)/	ʕšr(t) (I)	n. m.	banquet	
 # KTU 1.15 II:9						
 142783	t	/t, /t=				
 142783	t	[t, [t=, [t==, [t===				
 142784	b	b	b	prep.	in	
 142785	bth	bt(II)/+h	bt (II)	n. m.	house	
-142786	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
+142786	yšt	!y!št[:pass	/š-t/	vb G/Gpass	to place	
 142787	ˤrb	ˤrb(I)[	/ʕ-r-b/ (I)	vb G	to enter	
 142787	ˤrb	ˤrb(I)/	ʕrb (I)	n. m.	entry	
 # KTU 1.15 II:10						
@@ -116,8 +116,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142807	l	l(I)	l (I)	prep.	to	
 142807	l	l(II)	l (II)	adv.	no	
 142807	l	l(III)	l (III)	functor	certainly	
-142808	tbrk	!t!brk(II)[	/b-r-k/ (II)	vb D	to be blessed	
-142808	tbrk	!t!brk(I)[	/b-r-k/ (I)	vb tD	to kneel (down)	
+142808	tbrk	!t!brk(II)[:d	/b-r-k/ (II)	vb D	to be blessed	
+142808	tbrk	!t!brk(I)[:d	/b-r-k/ (I)	vb tD	to kneel (down)	
 # KTU 1.15 II:15						
 142809	krt	krt/	krt	PN	krt	
 142810	ṯˤ	ṯˤ(II)/	ṯʕ (II)	n. m.	Hero	
@@ -130,7 +130,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142814	ġlmil	?	?	?	?	DULAT: NOT FOUND
 142815	ks	ks(I)/	ks (I)	n. m.	cup	
 142815	ks	ks/	ks/śm(n)	n. m.	emmer-corn	
-142816	yiḫd	ʔḫd[d	/ʔ-ḫ-d(/ḏ)/	vb G/Gpass	to collect	
+142816	yiḫd	ʔḫd[d:pass	/ʔ-ḫ-d(/ḏ)/	vb G/Gpass	to collect	
 # KTU 1.15 II:17						
 142817	il	il(I)/	ỉl (I)	n. m.	god	
 142818	byd	b+d	b	prep.	in, ?	
@@ -141,12 +141,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142821	y	y	y	prep. functor	oh!	
 # KTU 1.15 II:18						
 142822	ymn	ymn(I)/	ymn (I)	n. m.	right (side)	
-142823	brkm	brk(II)[m	/b-r-k/ (II)	vb D	to be blessed	
+142823	brkm	brk(II)[m:d	/b-r-k/ (II)	vb D	to be blessed	
 142823	brkm	brk/m	brk	n. f. du.	knee	
-142824	ybrk	!y!brk(II)[	/b-r-k/ (II)	vb D	to be blessed	
+142824	ybrk	!y!brk(II)[:d	/b-r-k/ (II)	vb D	to be blessed	
 # KTU 1.15 II:19						
 142825	ˤbdh	ˤbd(I)/+h	ʕbd (I)	n. m.	servant	
-142826	ybrk	!y!brk(II)[	/b-r-k/ (II)	vb D	to be blessed	
+142826	ybrk	!y!brk(II)[:d	/b-r-k/ (II)	vb D	to be blessed	
 142827	il	il(I)/	ỉl (I)	n. m.	god	
 142828	krt	krt/	krt	PN	krt	
 # KTU 1.15 II:20						
@@ -274,8 +274,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142912	ṣġrthn	ṣġr(t(I)/t+hn	ṣġrt (I)	adj. f.	youngest	
 142913	abkrn	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.15 III:17						
-142914	tbrk	!t!brk(II)[	/b-r-k/ (II)	vb D	to be blessed	
-142914	tbrk	!t!brk(I)[	/b-r-k/ (I)	vb tD	to kneel (down)	
+142914	tbrk	!t!brk(II)[:d	/b-r-k/ (II)	vb D	to be blessed	
+142914	tbrk	!t!brk(I)[:d	/b-r-k/ (I)	vb tD	to kneel (down)	
 142915	ilm	il(I)/m	ỉl (I)	n. m.	god	
 142916	tity	ʔtw[y	/ʔ-t-w/	vb G	to come	
 # KTU 1.15 III:18						
@@ -318,7 +318,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142939	bn	bn[	/b-n/	vb G	to understand	
 142940	krt	krt/	krt	PN	krt	
 142941	kmhm	km	km		like	
-142942	tdr	ndr[	/n-d-r/	vb Gpass	to make a vow	
+142942	tdr	ndr[:pass	/n-d-r/	vb Gpass	to make a vow	
 # KTU 1.15 III:24						
 142943	ap	ap(I)	ảp (I)	adv./conj.	also	
 142943	ap	ap(II)/	ảp (II)	n. m.	nose	
@@ -467,7 +467,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143035	mr	mr(I)/	mr (I)	n. m.	myrrh	
 143035	mr	mr(IV)/	mr (IV)	adj. m.	valiant	
 143035	mr	mr(II)/	mr (II)	adj. m.	bitter	
-143036	tqdm	!t!qdm[	/q-d-m/	vb G/D	to proceed	
+143036	tqdm	!t!qdm[:d	/q-d-m/	vb G/D	to proceed	
 # KTU 1.15 IV:24						
 143037	yd	yd(I)/	yd (I)	n. f.	hand	
 143038	b	b	b	prep.	in	
@@ -477,7 +477,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143041	ḥrb	ḥrb/	ḥrb	n. f.	knife	
 143042	b	b	b	prep.	in	
 143043	bšr	bšr/	bšr	n. m.	flesh	
-143043	bšr	bšr[	/b-š-r/	vb Dpass	to impart (good) news	
+143043	bšr	bšr[:pass	/b-š-r/	vb Dpass	to impart (good) news	
 143044	tštn	!t!št[n	/š-t/	vb G	to place	
 # KTU 1.15 IV:26						
 143045	wtˤn	?	?	?	?	DULAT: NOT FOUND
@@ -542,7 +542,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 V:9						
 143084	w	w	w	conj.	and	
 143085	tˤn	!t!ˤn(y(I)[	/ʕ-n-y/ (I)	vb G	to answer	
-143085	tˤn	!t!ˤn[	/ʕ-n/	vb G/D	to see	
+143085	tˤn	!t!ˤn[:d	/ʕ-n/	vb G/D	to see	
 143085	tˤn	!t!ˤn(w[	/ʕ-n-w/	vb G	to be / remain depressed	
 143086	mṯt	mṯ(t/t	mṯt	n. f.	damsel	
 143087	ḥry	ḥry/	ḥry	PN	ḥry	
@@ -668,7 +668,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 VI:3						
 143160	w	w	w	conj.	and	
 143161	tˤn	!t!ˤn(y(I)[	/ʕ-n-y/ (I)	vb G	to answer	
-143161	tˤn	!t!ˤn[	/ʕ-n/	vb G/D	to see	
+143161	tˤn	!t!ˤn[:d	/ʕ-n/	vb G/D	to see	
 143161	tˤn	!t!ˤn(w[	/ʕ-n-w/	vb G	to be / remain depressed	
 143162	mṯt	mṯ(t/t	mṯt	n. f.	damsel	
 143163	ḥry	ḥry/	ḥry	PN	ḥry	

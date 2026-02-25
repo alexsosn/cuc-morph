@@ -11,6 +11,8 @@ from linter.lint import (
     analysis_has_missing_plural_split,
     analysis_has_missing_suffix_plus,
     choose_lookup_candidates,
+    missing_required_verb_stem_markers,
+    required_verb_stem_markers_from_pos,
     row_has_ambiguous_l_in_offering_sequence,
     row_has_baal_labourer_in_ktu1,
     row_has_baal_verbal_missing_slash,
@@ -112,6 +114,20 @@ class LinterWarningPredicateTest(unittest.TestCase):
 
     def test_suffix_not_flagged_for_enclitic_tilde_encoding(self) -> None:
         self.assertFalse(analysis_has_missing_suffix_plus("mṣd(III)/~h", "mṣdh"))
+
+    def test_required_verb_markers_from_pos(self) -> None:
+        self.assertEqual(required_verb_stem_markers_from_pos("vb D"), {":d"})
+        self.assertEqual(required_verb_stem_markers_from_pos("vb Lt"), {":l"})
+        self.assertEqual(required_verb_stem_markers_from_pos("vb R"), {":r"})
+        self.assertEqual(required_verb_stem_markers_from_pos("vb Gpass"), {":pass"})
+        self.assertEqual(required_verb_stem_markers_from_pos("vb D/L"), {":d", ":l"})
+        self.assertEqual(required_verb_stem_markers_from_pos("vb. n. D"), set())
+
+    def test_missing_required_verb_markers_detected(self) -> None:
+        self.assertEqual(missing_required_verb_stem_markers("kbd[", "vb D"), [":d"])
+        self.assertEqual(missing_required_verb_stem_markers("!y!knn[+h", "vb L"), [":l"])
+        self.assertEqual(missing_required_verb_stem_markers("qtl[:pass", "vb Gpass"), [])
+        self.assertEqual(missing_required_verb_stem_markers("ktl/", "vb D"), [])
 
     def test_verb_root_lookup_keys_include_non_slash_variant(self) -> None:
         keys = verb_root_lookup_keys("dk")

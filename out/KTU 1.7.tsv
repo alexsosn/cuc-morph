@@ -3,7 +3,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141471	xxx	?	?	?	?	
 # KTU 1.7 2						
 141472	ḥbšh	ḥbš(I)/h	ḥbš (I)	n. m.	cinch	
-141473	ˤtkt	ˤtk[t	/ʕ-t-k/	vb D	to tie	
+141473	ˤtkt	ˤtk[t:d	/ʕ-t-k/	vb D	to tie	
 141474	rišt	riš(I)/t=	rỉš (I)	n. m.	head	
 # KTU 1.7 3						
 141475	l	l(I)	l (I)	prep.	to	
@@ -42,17 +42,17 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141499	ˤnt	ˤn(I)/t=	ʕn (I)	n. f.	eye	
 141499	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 141499	ˤnt	ˤnt(II)	ʕnt (II)	adv.	now	
-141500	tġdd	!t!ġdd[	/ġ-d-d/	vb D	to swell	
+141500	tġdd	!t!ġdd[:d	/ġ-d-d/	vb D	to swell	
 141501	kbdh	kbd(I)/+h	kbd (I)	n.	liver	
 141502	bṣḥq	?	?	?	?	DULAT: NOT FOUND
-141503	ymlu	mlʔ[u	/m-l-ʔ/	vb G/D	to be full	
+141503	ymlu	mlʔ[u:d	/m-l-ʔ/	vb G/D	to be full	
 141504	lbh	lb/+h	lb	n. m.	heart	
 # KTU 1.7 8						
 141505	b	b	b	prep.	in	
 141506	šmḫt	šmḫ(t/t	šmḫt	n. f.	joy	
 141507	kbd	kbd(II)/	kbd (II)	n. m.	total (quantity or price)	
 141507	kbd	kbd(I)/	kbd (I)	n. f.	liver	
-141507	kbd	kbd[	/k-b-d/	vb D	to honour	
+141507	kbd	kbd[:d	/k-b-d/	vb D	to honour	
 141508	ˤnt	ˤn(I)/t=	ʕn (I)	n. f.	eye	
 141508	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 141508	ˤnt	ˤnt(II)	ʕnt (II)	adv.	now	
@@ -65,7 +65,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141514	kirbym	?	?	?	?	DULAT: NOT FOUND
 141515	kp	kp/	kp	n. f.	palm (of the hand)	
 141516	kbrk	kbr/+k	kbr	PN	kbr	
-141517	tġll	!t!ġll[	/ġ-l-l/	vb D	to insert	
+141517	tġll	!t!ġll[:d	/ġ-l-l/	vb D	to insert	
 141518	b	b	b	prep.	in	
 141519	dm	dm(II)/	dm (II)	n. m.	blood	
 141519	dm	dm(I)	dm (I)	functor	since	
@@ -104,7 +104,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141536	ˤd	ˤd(II)/	ʕd (II)	n. m.	time	
 141537	tšbˤ	!t!šbˤ(II)[	/š-b-ʕ/ (II)	vb G	to be sated	
 # KTU 1.7 19						
-141538	klyn	kly[n	/k-l-y/	vb D	to finish	
+141538	klyn	kly[n:d	/k-l-y/	vb D	to finish	
 # KTU 1.7 20						
 141539	špk	špk[	/š-p-k/	vb G	to spill	
 141540	ux	?	?	?	?	DULAT: NOT FOUND
@@ -171,7 +171,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141583	bˤprmddym	?	?	?	?	DULAT: NOT FOUND
 141584	sk	sk(I)/	sk (I)	n. m.	coverlet	
 141585	šlm	šlm(I)/	šlm (I)	n. m.	peace	
-141585	šlm	šlm[	/š-l-m/	vb G/D	to be well	
+141585	šlm	šlm[:d	/š-l-m/	vb G/D	to be well	
 141585	šlm	šlm(III)/	šlm (III)	adj. m.	pure	
 141586	lkbd	?	?	?	?	DULAT: NOT FOUND
 141587	ars	?	?	?	?	DULAT: NOT FOUND
@@ -212,6 +212,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141616	arṣ	arṣ/	ảrṣ	n. f.	earth	
 141617	thmt	thm(t/t	thmt	n. f.	Primordial Ocean	
 141617	thmt	thm/t	thm	n. m.	ocean/deep	
+141617	thmt	thm/t	thm	n. f.	ocean/deep	
 # KTU 1.7 33						
 141618	ˤm	ˤm(I)	ʕm (I)	prep.	to	
 141619	kbkbmabn	?	?	?	?	DULAT: NOT FOUND
@@ -228,7 +229,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141627	ibġy	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.7 35						
 141628	hl	hl	hl	deictic adv. functor	behold	
-141629	yˤmdn	!y!ˤmd[n	/ʕ-m-d/	vb G/D	?	
+141629	yˤmdn	!y!ˤmd[n:d	/ʕ-m-d/	vb G/D	?	
 141630	i	i(I)	ỉ (I)	interj.	woe	
 # KTU 1.7 36						
 141631	kpr	kpr(II)/	kpr (II)	n. m.	henna (powder or dye)	

@@ -44,7 +44,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155632	k	k(I)	k (I)	prep.	like	
 155632	k	k(II)	k (II)	emph. functor	yes	
 155633	yˤlm	yˤl(I)/m	yʕl (I)	n. m.	mountain goat	
-155633	yˤlm	!y!ˤlm[	/ʕ-l-m/	vb N/Gpass	to be known	
+155633	yˤlm	!y!ˤlm[:pass	/ʕ-l-m/	vb N/Gpass	to be known	
 155634	ẓrh	ẓr(I)/h	ẓr (I)	n. m.	back	
 155635	k	+k	-k (I)			
 155635	k	~k	-k (II)			
@@ -120,7 +120,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155681	lšnk	lšn/+k	lšn	n. f.	tongue	
 155682	al	al(I)	ảl (I)	neg. functor	no	
 155682	al	al(II)	ảl (II)	pos. functor	surely	
-155683	tapq	ʔpq[q	/ʔ-p-q/	vb D	to move away	
+155683	tapq	ʔpq[q:d	/ʔ-p-q/	vb D	to move away	
 155684	apq	apq/	ảpq	n. m.	spring	
 155685	lbš	lbš/	lbš	n. m.	clothing	
 155685	lbš	lbš[	/l-b-š/	vb G	to dress	
@@ -171,7 +171,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155712	l	l(I)	l (I)	prep.	to	
 155712	l	l(III)	l (III)	functor	certainly	
 155713	ṯtm	ṯn(I)/	ṯn (I)	num.	two	
-155714	itbnnk	bn[bnnk	/b-n/	vb tL	to understand	
+155714	itbnnk	bn[bnnk:l	/b-n/	vb tL	to understand	
 # KTU 1.169 18						
 155715	xxxxx	?	?	?	?	
 155716	bt	bt(II)/	bt (II)	n. m.	house	
@@ -184,7 +184,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155720	xxxxxxxx	?	?	?	?	
 155721	al	al(I)	ảl (I)	neg. functor	no	
 155721	al	al(II)	ảl (II)	pos. functor	surely	
-155722	tṯbb	!t!ṯb[b	/ṯ-b/	vb L/R	to return	
+155722	tṯbb	!t!ṯb[b:l:r	/ṯ-b/	vb L/R	to return	
 155723	riš	riš(I)/	rỉš (I)	n. m.	head	
 # KTU 1.169 20						
 155724	xxxxxxxxx	?	?	?	?	

@@ -23,7 +23,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158977	ilm	il(I)/m	ỉl (I)	n. m.	god	
 # KTU 2.72 6						
 158978	tġrk	nġr[k	/n-ġ-r/	vb G	to protect	
-158979	tšlmk	!t!šlm[k	/š-l-m/	vb D	to be well	
+158979	tšlmk	!t!šlm[k:d	/š-l-m/	vb D	to be well	
 # KTU 2.72 7						
 158980	hnny	hnny	hnny	adv.	here	
 158981	ˤmn	ˤm(I)+n	ʕm (I)	prep.	to	
@@ -35,7 +35,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158986	mxnm	?	?	?	?	DULAT: NOT FOUND
 # KTU 2.72 9						
 158987	šlm	šlm(I)/	šlm (I)	n. m.	peace	
-158987	šlm	šlm[	/š-l-m/	vb G/D	to be well	
+158987	šlm	šlm[:d	/š-l-m/	vb G/D	to be well	
 158987	šlm	šlm(III)/	šlm (III)	adj. m.	pure	
 158988	rgm	rgm[	/r-g-m/	vb G	to say	
 158988	rgm	rgm/	rgm	n. m.	word	
@@ -43,7 +43,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158990	ly	l(I)+y	l (I)	prep.	to	
 # KTU 2.72 10						
 158991	lm	l(I)	l (I)	prep.	to	
-158992	tlikn	lʔk[kn	/l-ʔ-k/	vb D	to send (a message)	
+158992	tlikn	lʔk[kn:d	/l-ʔ-k/	vb D	to send (a message)	
 158993	ḫpṯ	ḫpṯ/	ḫpṯ	n. m.	fugitive	
 158994	hndn	hndn/	hndn	dem./adj.	this	
 # KTU 2.72 11						
@@ -95,8 +95,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159021	ky	k(III)	k (III)	Subordinating or completive functor	when	
 159021	ky	k(II)	k (II)	emph. functor	yes	
 159021	ky	k(IV)	k (IV)	adv.	thus	
-159022	tdbr	!t!dbr(II)[	/d-b-r/ (II)	vb D	to say	
-159022	tdbr	!t!dbr(I)[	/d-b-r/ (I)	vb G/D	drive away	
+159022	tdbr	!t!dbr(II)[:d	/d-b-r/ (II)	vb D	to say	
+159022	tdbr	!t!dbr(I)[:d	/d-b-r/ (I)	vb G/D	drive away	
 159023	umy	um/y	ủm	n. f.	mother	
 # KTU 2.72 19						
 159024	l	l(I)	l (I)	prep.	to	

@@ -35,8 +35,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156092	ydk	yd(I)/+k=	yd (I)	n. f.	hand	
 156092	ydk	yd(II)/+k	yd (II)	n. m.	love	
 156092	ydk	yd(II)/+k=	yd (II)	n. m.	love	
-156092	ydk	!y!dk[	d-k(-k)/	vb Gpass	to be pounded	
-156092	ydk	!y=!dk[	d-k(-k)/	vb Gpass	to be pounded	
+156092	ydk	!y!dk[:pass	d-k(-k)/	vb Gpass	to be pounded	
+156092	ydk	!y=!dk[:pass	d-k(-k)/	vb Gpass	to be pounded	
 156093	l	l(I)	l (I)	prep.	to	
 156093	l	l(III)	l (III)	functor	certainly	
 156094	thm	thm/	thm	n. m.	ocean	
@@ -195,7 +195,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156189	hwt	hw(t(I)/t	hwt (I)	n. f.	word	
 156190	b	b	b	prep.	in	
 156191	špth	šp(t/t	špt	n. f.	lip	
-156192	rḥqt	rḥq[t	/r-ḥ-q/	vb D	to go away	
+156192	rḥqt	rḥq[t:d	/r-ḥ-q/	vb D	to go away	
 156193	abn	ab/+n	ảb	n. m.	father	
 156193	abn	abn/	ảbn	n. f.	stone	
 156193	abn	!a!bn[	/b-n/	vb G	to understand	
@@ -282,12 +282,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156249	mntn	mnt(I)/+n	mnt (I)	n. f.	portion	
 # KTU 1.179 40						
 156250	spr	spr(II)/	spr (II)	n. m.	tablet / register	
-156250	spr	spr[	/s-p-r/	vb G/D	to count	
+156250	spr	spr[:d	/s-p-r/	vb G/D	to count	
 156250	spr	spr(I)/	spr (I)	n. m.	scribe	
 156251	ilmlk	ilmlk/	ỉlmlk	PN	ʾIlimalku/Ilimilku/Elimelek	
 156252	šbny	šbny/	šbny	GN	Shubanite	
 156253	lmd	lmd/	lmd	adj. m. or n. m.	trained	
-156253	lmd	lmd[	/l-m-d/	vb D	to teach	
+156253	lmd	lmd[:d	/l-m-d/	vb D	to teach	
 156254	atn	ytn[	/y-t-n/	vb G	to give	
 156255	prln	prln/	prln	n. m.	diviner	
 # KTU 1.179 41						
@@ -306,5 +306,5 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.179 43						
 156265	b	b	b	prep.	in	
 156266	spr	spr(II)/	spr (II)	n. m.	tablet / register	
-156266	spr	spr[	/s-p-r/	vb G/D	to count	
+156266	spr	spr[:d	/s-p-r/	vb G/D	to count	
 156266	spr	spr(I)/	spr (I)	n. m.	scribe	

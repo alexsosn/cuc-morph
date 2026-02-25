@@ -8,7 +8,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150001	w	w	w	conj.	and	
 150002	ygl	!y!gl(y[	/g-l-y/	vb G/N	to present oneself	
 150003	w	w	w	conj.	and	
-150004	ynsk	!y!nsk[	/n-s-k/	vb D	to pour (out)	
+150004	ynsk	!y!nsk[:d	/n-s-k/	vb D	to pour (out)	
 150005	ˤdx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.82 2						
 150006	xxy	?	?	?	?	DULAT: NOT FOUND
@@ -60,7 +60,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150035	k	k(III)	k (III)	Subordinating or completive functor	when	
 150035	k	k(I)	k (I)	prep.	like	
 150035	k	k(II)	k (II)	emph. functor	yes	
-150036	tgwln	gl[wln	/g-l/	vb D	to rejoice	
+150036	tgwln	gl[wln:d	/g-l/	vb D	to rejoice	
 150037	šntk	šnt(I)/	šnt (I)	n. f.	year	
 150037	šntk	šn/	šn	n. m.	tooth	
 # KTU 1.82 5						
@@ -72,7 +72,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150041	tššy	]š]nšy[y	/n-š-y/	vb Š	to be forgotten	
 150042	hm	hm(II)	hm (II)	conj./interr. functor	if	
 150042	hm	hm(I)	hm (I)	pers. pn.	they	
-150043	tġrm	!t!ġrm[	/ġ-r-m/	vb D	to commit	
+150043	tġrm	!t!ġrm[:d	/ġ-r-m/	vb D	to commit	
 150044	l	l(I)	l (I)	prep.	to	
 150044	l	l(II)	l (II)	adv.	no	
 150044	l	l(III)	l (III)	functor	certainly	
@@ -89,9 +89,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150050	ql	ql[	/q-l/	vb G	to fall (down)	
 150050	ql	ql(I)/	ql (I)	n. m.	voice	
 150051	špš	špš/	špš	n.	sun	
-150052	ḥw	ḥw(I)[	/ḥ-w/y-y/ (I)	vb D	to live	
+150052	ḥw	ḥw(I)[:d	/ḥ-w/y-y/ (I)	vb D	to live	
 150053	bṯnm	bṯn/m	bṯn	n. m.	serpent	
-150054	uḫd	(ʔ&uḫd[	/ʔ-ḫ-d(/ḏ)/	vb G/Gpass	to collect	
+150054	uḫd	(ʔ&uḫd[:pass	/ʔ-ḫ-d(/ḏ)/	vb G/Gpass	to collect	
 150055	bˤlm	bˤl(II)/m	bʕl (II)	n. m.	lord	
 # KTU 1.82 7						
 150056	x	?	?	?	?	
@@ -161,15 +161,15 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150099	bnt	bn(t(I)/t	bnt (I)	n. f.	masonry	
 150100	ḥ	lqḥ[	/l-q-ḥ/	vb G/N	to get hold of	
 # KTU 1.82 14						
-150101	uḫd	(ʔ&uḫd[	/ʔ-ḫ-d(/ḏ)/	vb G/Gpass	to collect	
+150101	uḫd	(ʔ&uḫd[:pass	/ʔ-ḫ-d(/ḏ)/	vb G/Gpass	to collect	
 150102	bˤlm	bˤl(II)/m	bʕl (II)	n. m.	lord	
 150103	ˤxxxl	?	?	?	?	DULAT: NOT FOUND
 150104	ydk	yd(I)/+k	yd (I)	n. f.	hand	
 150104	ydk	yd(I)/+k=	yd (I)	n. f.	hand	
 150104	ydk	yd(II)/+k	yd (II)	n. m.	love	
 150104	ydk	yd(II)/+k=	yd (II)	n. m.	love	
-150104	ydk	!y!dk[	d-k(-k)/	vb Gpass	to be pounded	
-150104	ydk	!y=!dk[	d-k(-k)/	vb Gpass	to be pounded	
+150104	ydk	!y!dk[:pass	d-k(-k)/	vb Gpass	to be pounded	
+150104	ydk	!y=!dk[:pass	d-k(-k)/	vb Gpass	to be pounded	
 150105	amṣ	amṣ/	ảmṣ	adj. m.	strength	
 150106	yd	yd(I)/	yd (I)	n. f.	hand	
 # KTU 1.82 15						
@@ -208,7 +208,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150129	ak	aġzr/+k	ảġzr	n. m.	?	
 # KTU 1.82 19						
 150130	xxxxxxxx	?	?	?	?	
-150131	aḥw	!a!ḥw(I)[	/ḥ-w/y-y/ (I)	vb D	to live	
+150131	aḥw	!a!ḥw(I)[:d	/ḥ-w/y-y/ (I)	vb D	to live	
 150132	aṭm	(ʔ&aṭm[	/ʔ-ṭ-m/	vb	to stop up	
 150133	prṭl	prṭl/	prṭl	n. m.	eine Pflanze	
 150134		?	?	?	?	
@@ -402,7 +402,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150253	tqxk	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.82 42						
 150254	xx	?	?	?	?	
-150255	aġwyn	!a!ġwy[n	/ġ-w-y/	vb D	to cry vigorously	
+150255	aġwyn	!a!ġwy[n:d	/ġ-w-y/	vb D	to cry vigorously	
 150256	ˤnk	ˤn(I)/	ʕn (I)	n. f. du.	eye	
 150257	ẓẓ	ẓẓ/	ẓẓ	element/DN	ẓẓ	
 150258	w	w	w	conj.	and	

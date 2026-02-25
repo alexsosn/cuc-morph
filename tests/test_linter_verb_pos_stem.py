@@ -10,8 +10,19 @@ from linter.lint import DulatEntry, lint_file, normalize_surface, normalize_udb
 class LinterVerbPosStemTest(unittest.TestCase):
     WARNING = "Verb POS should include stem label(s):"
     POS_ERROR = "POS token '"
+    MISSING_STEM_MARKER = "Verb stem marker(s) required by POS but missing in analysis:"
 
-    def _lint_messages(self, pos_value: str) -> list[str]:
+    def _lint_messages(
+        self,
+        pos_value: str,
+        *,
+        surface: str = "ytn",
+        analysis: str = "!y!ytn[",
+        dulat_token: str = "/y-t-n/",
+        gloss: str = "to give",
+        entry_morph: str = "G, prefc.",
+        entry_stems_value: set[str] | None = None,
+    ) -> list[str]:
         with tempfile.TemporaryDirectory() as tmp_dir:
             root = Path(tmp_dir)
             out_dir = root / "out"
@@ -20,27 +31,27 @@ class LinterVerbPosStemTest(unittest.TestCase):
             path.write_text(
                 (
                     "id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments\n"
-                    f"1\tytn\t!y!ytn[\t/y-t-n/\t{pos_value}\tto give\t\n"
+                    f"1\t{surface}\t{analysis}\t{dulat_token}\t{pos_value}\t{gloss}\t\n"
                 ),
                 encoding="utf-8",
             )
 
             ytn_entry = DulatEntry(
                 entry_id=1,
-                lemma="/y-t-n/",
+                lemma=dulat_token,
                 homonym="",
                 pos="vb",
-                gloss="to give",
-                morph="G, prefc.",
-                form_text="ytn",
+                gloss=gloss,
+                morph=entry_morph,
+                form_text=surface,
             )
 
-            dulat_forms = {normalize_surface("ytn"): [ytn_entry]}
-            entry_meta = {1: ("/y-t-n/", "", "vb", "to give")}
-            lemma_map = {normalize_surface("/y-t-n/"): [ytn_entry]}
-            entry_stems = {1: {"G"}}
+            dulat_forms = {normalize_surface(surface): [ytn_entry]}
+            entry_meta = {1: (dulat_token, "", "vb", gloss)}
+            lemma_map = {normalize_surface(dulat_token): [ytn_entry]}
+            entry_stems = {1: entry_stems_value or {"G"}}
             entry_gender = {}
-            udb_words = {normalize_udb("ytn")}
+            udb_words = {normalize_udb(surface)}
 
             issues = lint_file(
                 path=path,
@@ -71,6 +82,30 @@ class LinterVerbPosStemTest(unittest.TestCase):
     def test_vb_stem_alternation_is_accepted_by_dulat_pos_validation(self) -> None:
         messages = self._lint_messages("vb G/D")
         self.assertFalse(any(message.startswith(self.POS_ERROR) for message in messages))
+
+    def test_errors_when_pos_requires_d_marker(self) -> None:
+        messages = self._lint_messages(
+            "vb D",
+            surface="kbd",
+            analysis="kbd[",
+            dulat_token="/k-b-d/",
+            gloss="to honour",
+            entry_morph="D, prefc.",
+            entry_stems_value={"D"},
+        )
+        self.assertTrue(any(message.startswith(self.MISSING_STEM_MARKER) for message in messages))
+
+    def test_no_error_when_required_d_marker_is_present(self) -> None:
+        messages = self._lint_messages(
+            "vb D",
+            surface="kbd",
+            analysis="kbd[:d",
+            dulat_token="/k-b-d/",
+            gloss="to honour",
+            entry_morph="D, prefc.",
+            entry_stems_value={"D"},
+        )
+        self.assertFalse(any(message.startswith(self.MISSING_STEM_MARKER) for message in messages))
 
 
 if __name__ == "__main__":

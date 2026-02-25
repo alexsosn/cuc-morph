@@ -1,7 +1,7 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.108 1						
 153210	hln	hln	hln	deictic adv. functor	look!	
-153211	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
+153211	yšt	!y!št[:pass	/š-t/	vb G/Gpass	to place	
 153212	rpu	rpu/	rpủ	n. m.	healer	
 153213	mlk	mlk[	/m-l-k/	vb G	to reign	
 153213	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
@@ -9,12 +9,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153214	ˤlm	ˤl(II)	ʕl (II)	adv.	above	
 153214	ˤlm	ˤlm(I)/	ʕlm (I)	n. m.	eternity	
 153215	w	w	w	conj.	and	
-153216	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
+153216	yšt	!y!št[:pass	/š-t/	vb G/Gpass	to place	
 # KTU 1.108 2						
 153217	ilgṯr	?	?	?	?	DULAT: NOT FOUND
 153218	w	w	w	conj.	and	
 153219	yqr	!y!qr(ʔ[	/q-r-ʔ/	vb G	to call	
-153219	yqr	!y!qr(y[	/q-r-y/	vb D	to meet	
+153219	yqr	!y!qr(y[:d	/q-r-y/	vb D	to meet	
 153220	il	il(I)/	ỉl (I)	n. m.	god	
 153221	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G	to sit down	
 153222	b	b	b	prep.	in	
@@ -28,7 +28,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153228	d	d	d	det. or rel. functor	the one(s) of	
 153229	yšr	!y!šr(I)[	/š-r/ (I)	vb G	to sing	
 153230	w	w	w	conj.	and	
-153231	yḏmr	!y!ḏmr(II)[	/ḏ-m-r/ (II)	vb G/D	to sing	
+153231	yḏmr	!y!ḏmr(II)[:d	/ḏ-m-r/ (II)	vb G/D	to sing	
 # KTU 1.108 4						
 153232	b	b	b	prep.	in	
 153233	knr	knr/	knr	n. m.	harp	
@@ -37,7 +37,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153236	b	b	b	prep.	in	
 153237	tp	tp(I)/	tp (I)	n. m.	drum	
 153237	tp	tp(II)/	tp (II)	n. m.	aspect	
-153237	tp	npy[	/n-p-y/	vb N/Gpass	to be driven away	
+153237	tp	npy[:pass	/n-p-y/	vb N/Gpass	to be driven away	
 153238	w	w	w	conj.	and	
 153239	mṣltm	mṣlt(I)/m	mṣlt (I)	n. f. du.	cymbal	
 153240	bm	b	b	prep.	in	
@@ -68,7 +68,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153257	bˤlt	bˤl(t/t	bʕlt	n. f.	lady	
 153258	šmm	šm(m(I)/m	šmm (I)	n. m. pl. tant.	heavens	
 153259	rmm	rm(I)/	rm (I)	adj. m.	high	
-153259	rmm	rm[m	/r-m/	vb L	to go up	
+153259	rmm	rm[m:l	/r-m/	vb L	to go up	
 # KTU 1.108 8						
 153260	bˤlt	bˤl(t/t	bʕlt	n. f.	lady	
 153261	kpṯ	kpṯ/	kpṯ	n. m.	floor	
@@ -84,7 +84,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153267	b	b	b	prep.	in	
 153268	šmm	šm(m(I)/m	šmm (I)	n. m. pl. tant.	heavens	
 153269	rmm	rm(I)/	rm (I)	adj. m.	high	
-153269	rmm	rm[m	/r-m/	vb L	to go up	
+153269	rmm	rm[m:l	/r-m/	vb L	to go up	
 153270	aklt	(ʔ&akl[t	/ʔ-k-l/	vb G	to eat	
 153270	aklt	akl(t(II)/t	ảklt (II)	n. f.	waste land	
 153270	aklt	akl(t(I)/t	ảklt (I)	adj. f. or n. f.	devouring	
@@ -95,7 +95,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153274	ḫmr	ḫmr/	ḫmr	n. m.	(sparkling(?)) wine	
 153275	špr	špr/	špr	n. m.	horn	
 153276	w	w	w	conj.	and	
-153277	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
+153277	yšt	!y!št[:pass	/š-t/	vb G/Gpass	to place	
 153277	yšt	!y!št(y[	/š-t-y/	vb G	to drink	
 153278	il	il(I)/	ỉl (I)	n. m.	god	
 # KTU 1.108 11						
@@ -114,7 +114,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153288	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 # KTU 1.108 13						
 153289	xxxxxxxxxḥ	?	?	?	?	DULAT: NOT FOUND
-153290	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
+153290	yšt	!y!št[:pass	/š-t/	vb G/Gpass	to place	
 153290	yšt	!y!št(y[	/š-t-y/	vb G	to drink	
 153291	ilh	il(t(I)/&h	ỉlt (I)	n. f.	goddess	
 153291	ilh	ilh/	ỉlh	DN	the ‘Divine One’	

@@ -897,10 +897,10 @@ def dedupe_entries(entries: List["DulatEntry"]) -> List["DulatEntry"]:
     return out
 
 
-STEM_RE = re.compile(r"\b(Gt|Dt|Lt|Nt|tD|tL|Št|Gpass|Dpass|Špass|G|D|L|N|R|Š)\b")
+STEM_RE = re.compile(r"\b(Gt|Dt|Lt|Nt|tD|tL|Št|Gpass|Dpass|Lpass|Špass|G|D|L|N|R|Š)\b")
 VERB_POS_STEM_RE = re.compile(
-    r"\bvb\.?\s+(?:Gt|Dt|Lt|Nt|tD|tL|Št|Gpass|Dpass|Špass|G|D|L|N|R|Š)"
-    r"(?:/(?:Gt|Dt|Lt|Nt|tD|tL|Št|Gpass|Dpass|Špass|G|D|L|N|R|Š))*\b",
+    r"\bvb\.?\s+(?:Gt|Dt|Lt|Nt|tD|tL|Št|Gpass|Dpass|Lpass|Špass|G|D|L|N|R|Š)"
+    r"(?:/(?:Gt|Dt|Lt|Nt|tD|tL|Št|Gpass|Dpass|Lpass|Špass|G|D|L|N|R|Š))*\b",
     flags=re.IGNORECASE,
 )
 VERBAL_NOUN_POS_RE = re.compile(r"\bvb\.\s*n\.", flags=re.IGNORECASE)
@@ -919,6 +919,7 @@ STEM_DISPLAY_ORDER = (
     "Št",
     "Gpass",
     "Dpass",
+    "Lpass",
     "Špass",
     "Nt",
 )
@@ -938,6 +939,46 @@ def sort_stems_for_display(stems: Iterable[str]) -> List[str]:
 
 def pos_has_verb_stem_label(pos_field: str) -> bool:
     return VERB_POS_STEM_RE.search(pos_field or "") is not None
+
+
+def required_verb_stem_markers_from_pos(pos_field: str) -> set[str]:
+    """Return required analysis markers implied by POS stem labels."""
+    if not pos_field:
+        return set()
+
+    stems: set[str] = set()
+    for token in split_csv_field(pos_field):
+        for opt in split_pos_options(token):
+            opt_text = (opt or "").strip()
+            if not opt_text:
+                continue
+            if not re.search(r"^\s*vb\.?\b", opt_text, flags=re.IGNORECASE):
+                continue
+            if VERBAL_NOUN_POS_RE.search(opt_text):
+                continue
+            stems.update(extract_stems(opt_text))
+
+    required: set[str] = set()
+    if stems & {"D", "Dt", "tD"}:
+        required.add(":d")
+    if stems & {"L", "Lt", "tL"}:
+        required.add(":l")
+    if "R" in stems:
+        required.add(":r")
+    if stems & {"Gpass", "Dpass", "Lpass", "Špass"}:
+        required.add(":pass")
+    return required
+
+
+def missing_required_verb_stem_markers(analysis: str, pos_field: str) -> List[str]:
+    """Return required stem markers from POS that are absent in analysis."""
+    required = required_verb_stem_markers_from_pos(pos_field)
+    if not required:
+        return []
+    a_txt = (analysis or "").strip()
+    if not a_txt or "[" not in a_txt or "[/" in a_txt:
+        return []
+    return sorted(marker for marker in required if marker not in a_txt)
 
 
 @dataclass
@@ -2181,6 +2222,20 @@ def lint_file(
                                 )
                             )
                         continue
+                    missing_pos_markers = missing_required_verb_stem_markers(a_var, p_field)
+                    if missing_pos_markers:
+                        issues.append(
+                            Issue(
+                                "error",
+                                str(path),
+                                i,
+                                line_id,
+                                surface,
+                                a_var,
+                                "Verb stem marker(s) required by POS but missing in analysis: "
+                                + ", ".join(missing_pos_markers),
+                            )
+                        )
                     if len(p_tokens) > len(d_tokens):
                         issues.append(
                             Issue(
@@ -3036,7 +3091,7 @@ def lint_file(
                                     "Xt stem marker present but DULAT lacks *t stem",
                                 )
                             )
-                        if ":d" in analysis and "D" not in stems and "Dt" not in stems:
+                        if ":d" in analysis and not ({"D", "Dt", "tD"} & stems):
                             issues.append(
                                 Issue(
                                     "error",
@@ -3045,10 +3100,10 @@ def lint_file(
                                     line_id,
                                     surface,
                                     analysis,
-                                    "D stem marker present but DULAT lacks D/Dt",
+                                    "D stem marker present but DULAT lacks D/Dt/tD",
                                 )
                             )
-                        if ":l" in analysis and "L" not in stems and "Lt" not in stems:
+                        if ":l" in analysis and not ({"L", "Lt", "tL"} & stems):
                             issues.append(
                                 Issue(
                                     "error",
@@ -3057,10 +3112,24 @@ def lint_file(
                                     line_id,
                                     surface,
                                     analysis,
-                                    "L stem marker present but DULAT lacks L/Lt",
+                                    "L stem marker present but DULAT lacks L/Lt/tL",
                                 )
                             )
-                        if ":pass" in analysis and not ({"Špass", "Gpass", "Dpass", "N"} & stems):
+                        if ":r" in analysis and "R" not in stems:
+                            issues.append(
+                                Issue(
+                                    "error",
+                                    str(path),
+                                    i,
+                                    line_id,
+                                    surface,
+                                    analysis,
+                                    "R stem marker present but DULAT lacks R",
+                                )
+                            )
+                        if ":pass" in analysis and not (
+                            {"Špass", "Gpass", "Dpass", "Lpass", "N"} & stems
+                        ):
                             issues.append(
                                 Issue(
                                     "error",
@@ -3536,6 +3605,8 @@ def lint_file(
                             stem_markers.add(":d")
                         if ":l" in analysis:
                             stem_markers.add(":l")
+                        if ":r" in analysis:
+                            stem_markers.add(":r")
                         if ":pass" in analysis:
                             stem_markers.add(":pass")
                         if "]š]" in analysis:

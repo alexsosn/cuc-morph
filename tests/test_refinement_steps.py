@@ -32,6 +32,7 @@ from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
 from pipeline.steps.surface_option_propagation import SurfaceOptionPropagationFixer
 from pipeline.steps.verb_pos_stem import VerbPosStemFixer
+from pipeline.steps.verb_stem_suffix_marker import VerbStemSuffixMarkerFixer
 from pipeline.steps.weak_final_sc import WeakFinalSuffixConjugationFixer
 from pipeline.steps.weak_verb import WeakVerbFixer
 
@@ -1217,6 +1218,36 @@ class VerbPosStemFixerTest(unittest.TestCase):
             result = fixer.refine_row(row)
 
             self.assertEqual(result.pos, "vb G")
+
+
+class VerbStemSuffixMarkerFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = VerbStemSuffixMarkerFixer()
+
+    def test_adds_d_marker_for_vb_d(self) -> None:
+        row = TabletRow("1", "kbd", "kbd[", "/k-b-d/", "vb D", "to honour", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "kbd[:d")
+
+    def test_adds_l_marker_before_suffix_payload(self) -> None:
+        row = TabletRow("1", "yknh", "!y!knn[+h", "/k-n/", "vb L", "to be stable", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!y!knn[:l+h")
+
+    def test_adds_passive_marker_for_passive_stem(self) -> None:
+        row = TabletRow("1", "qtl", "qtl[", "/q-t-l/", "vb Dpass", "to be killed", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "qtl[:pass")
+
+    def test_keeps_nonverbal_row_unchanged(self) -> None:
+        row = TabletRow("1", "kbd", "kbd/", "kbd (I)", "n. f.", "liver", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "kbd/")
+
+    def test_does_not_touch_deverbal_nominal_analysis(self) -> None:
+        row = TabletRow("1", "qtl", "qtl[/", "/q-t-l/", "vb D", "killing", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "qtl[/")
 
 
 class OfferingListLPrepFixerTest(unittest.TestCase):

@@ -67,7 +67,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 162086	amhth	amt(I)/+h	ảmt (I)	n. f.	(female) slave	
 # KTU 3.32 11						
 162087	d	d	d	det. or rel. functor	the one(s) of	
-162088	ihb	(ʔ&ihb[	/ʔ-h-b/	vb G/D	to love	
+162088	ihb	(ʔ&ihb[:d	/ʔ-h-b/	vb G/D	to love	
 162089	ˤbdmlk	ˤbdmlk/	ʕbdmlk	PN	ʿbdmlk	
 # KTU 3.32 12						
 162090	b	b	b	prep.	in	
@@ -96,7 +96,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 162103	km	+km, +km=	-km			
 # KTU 3.32 18						
 162104	lbh	lb/+h	lb	n. m.	heart	
-162105	yškn	!y!škn[	/š-k-n/	vb D	to be placed	
+162105	yškn	!y!škn[:d	/š-k-n/	vb D	to be placed	
 162106	lhm	l(I)+hm	l (I)	prep.	to	
 # KTU 3.32 19						
 162107	hm	hm(II)	hm (II)	conj./interr. functor	if	
@@ -104,7 +104,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 162108	lb	lb/	lb	n. m.	heart	
 162109	ˤbdmlk	ˤbdmlk/	ʕbdmlk	PN	ʿbdmlk	
 # KTU 3.32 20						
-162110	bhl	bhl[	/b-h-l/	vb D	to dismiss	
+162110	bhl	bhl[:d	/b-h-l/	vb D	to dismiss	
 162111	bnh	bn(I)/+h	bn (I)	n. m.	son	
 162112	w	w	w	conj.	and	
 162113	km	k(III)	k (III)	functor	when	
@@ -114,14 +114,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 162113	km	+km, +km=	-km			
 # KTU 3.32 21						
 162114	lbh	lb/+h	lb	n. m.	heart	
-162115	ybhl	!y!bhl[	/b-h-l/	vb D	to dismiss	
+162115	ybhl	!y!bhl[:d	/b-h-l/	vb D	to dismiss	
 162116	hm	hm(II)	hm (II)	conj./interr. functor	if	
 162116	hm	hm(I)	hm (I)	pers. pn.	they	
 # KTU 3.32 22						
 162117	hm	hm(II)	hm (II)	conj./interr. functor	if	
 162117	hm	hm(I)	hm (I)	pers. pn.	they	
 162118	lbh	lb/+h	lb	n. m.	heart	
-162119	bhl	bhl[	/b-h-l/	vb D	to dismiss	
+162119	bhl	bhl[:d	/b-h-l/	vb D	to dismiss	
 # KTU 3.32 23						
 162120	bnh	bn(I)/+h	bn (I)	n. m.	son	
 162121	bn	bn(I)/	bn (I)	n. m.	son	
@@ -141,7 +141,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 162125	km	+km, +km=	-km			
 162126	lbh	lb/+h	lb	n. m.	heart	
 # KTU 3.32 25						
-162127	ybhl	!y!bhl[	/b-h-l/	vb D	to dismiss	
+162127	ybhl	!y!bhl[:d	/b-h-l/	vb D	to dismiss	
 162128	hm	hm(II)	hm (II)	conj./interr. functor	if	
 162128	hm	hm(I)	hm (I)	pers. pn.	they	
 162129	w	w	w	conj.	and	
@@ -149,7 +149,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 162130	hm	hm(I)	hm (I)	pers. pn.	they	
 # KTU 3.32 26						
 162131	lbh	lb/+h	lb	n. m.	heart	
-162132	bhl	bhl[	/b-h-l/	vb D	to dismiss	
+162132	bhl	bhl[:d	/b-h-l/	vb D	to dismiss	
 162133	bn	bn(I)/	bn (I)	n. m.	son	
 162133	bn	bn(II)	bn (II)	prep.	between	
 162133	bn	bn[	/b-n/	vb G	to understand	
@@ -169,6 +169,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 162139	km	+km, +km=	-km			
 162140	lbh	lb/+h	lb	n. m.	heart	
 # KTU 3.32 29						
-162141	ybhl	!y!bhl[	/b-h-l/	vb D	to dismiss	
+162141	ybhl	!y!bhl[:d	/b-h-l/	vb D	to dismiss	
 162142	hm	hm(II)	hm (II)	conj./interr. functor	if	
 162142	hm	hm(I)	hm (I)	pers. pn.	they	

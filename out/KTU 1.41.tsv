@@ -144,7 +144,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.41 17						
 148538	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 148539	šlm	šlm(I)/	šlm (I)	n. m.	peace	
-148539	šlm	šlm[	/š-l-m/	vb G/D	to be well	
+148539	šlm	šlm[:d	/š-l-m/	vb G/D	to be well	
 148539	šlm	šlm(III)/	šlm (III)	adj. m.	pure	
 148540	gdlt	gdlt(I)/	gdlt (I)	n. f.	head of cattle	
 148541	w	w	w	conj.	and	
@@ -166,7 +166,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148554	wmˤrb	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.41 20						
 148555	d	d	d	det. or rel. functor	the one(s) of	
-148556	yqḥ	lqḥ[	/l-q-ḥ/	vb G/Gpass	to get hold of	
+148556	yqḥ	lqḥ[:pass	/l-q-ḥ/	vb G/Gpass	to get hold of	
 148557	bt	bt(II)/	bt (II)	n. m.	house	
 148557	bt	b(t(I)/t	bt (I)	n. f.	daughter	
 148558	mlk	mlk[	/m-l-k/	vb G	to reign	
@@ -193,7 +193,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148573	bġr	bġr/	bġr	n. m.	shout	
 148574	arbˤ	arbˤ/	ảrbʕ	num.	four	
 148575	ˤšr	ˤšr(I)/	ʕšr (I)	n. num.	ten	
-148575	ˤšr	ˤšr[	/ʕ-š-r/	vb D/Dpass	ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods	
+148575	ˤšr	ˤšr[:d:pass	/ʕ-š-r/	vb D/Dpass	ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods	
 148575	ˤšr	ˤšr(I)/	ʕšr(t) (I)	n. m.	banquet	
 # KTU 1.41 23						
 148576	kdm	kd(I)/m	kd (I)	n. f.	jar	
@@ -308,7 +308,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148655	btm	bt(II)/m	bt (II)	n. m.	house	
 148655	btm	bt(I)/m	bt (I)	n. f. du.	daughter	
 148656	rmm	rm(I)/	rm (I)	adj. m.	high	
-148656	rmm	rm[m	/r-m/	vb L	to go up	
+148656	rmm	rm[m:l	/r-m/	vb L	to go up	
 148657	w	w	w	conj.	and	
 148658	ˤly	ˤly[	/ʕ-l-y/	vb G	to go up	
 # KTU 1.41 38						
@@ -327,7 +327,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148666	p	p(II)	p (II)	adv.	here	
 148667	kbd	kbd(II)/	kbd (II)	n. m.	total (quantity or price)	
 148667	kbd	kbd(I)/	kbd (I)	n. f.	liver	
-148667	kbd	kbd[	/k-b-d/	vb D	to honour	
+148667	kbd	kbd[:d	/k-b-d/	vb D	to honour	
 148668	w	w	w	conj.	and	
 148669	dbḥ	dbḥ/	dbḥ	n. m.	sacrifice	
 148669	dbḥ	dbḥ[	/d-b-ḥ/	vb G	to sacrifice	
@@ -464,7 +464,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148755	k	k(II)	k (II)	emph. functor	yes	
 148756	lbh	lb/+h	lb	n. m.	heart	
 # KTU 1.41 53						
-148757	yrgm	!y!rgm[	/r-g-m/	vb Gpass	to say	
+148757	yrgm	!y!rgm[:pass	/r-g-m/	vb Gpass	to say	
 148758	mlk	mlk[	/m-l-k/	vb G	to reign	
 148758	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 148759	ṣbu	ṣbu(I)/	ṣbủ (I)	n. m.	army	

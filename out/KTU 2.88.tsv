@@ -22,7 +22,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159771	k	k(II)	k (II)	emph. functor	yes	
 159772	ytnt	!y!(ytn[t	/y-t-n/	vb G	to give	
 159773	spr	spr(II)/	spr (II)	n. m.	tablet / register	
-159773	spr	spr[	/s-p-r/	vb G/D	to count	
+159773	spr	spr[:d	/s-p-r/	vb G/D	to count	
 159773	spr	spr(I)/	spr (I)	n. m.	scribe	
 # KTU 2.88 5						
 159774	hnd	hnd	hnd	dem. adj./pn.	this	
@@ -59,7 +59,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159796	at	at(I)	ảt (I)	pers. pn.	you	
 159797	klklk	klkl/	klkl	n. m.	anybody	
 # KTU 2.88 12						
-159798	škn	škn[	/š-k-n/	vb D	to be placed	
+159798	škn	škn[:d	/š-k-n/	vb D	to be placed	
 159799	l	l(I)	l (I)	prep.	to	
 159799	l	l(III)	l (III)	functor	certainly	
 159800	šmk	šlm(I)/	šlm (I)	n. m.	peace	
@@ -99,7 +99,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159822	w	w	w	conj.	and	
 159823	šqt	?	?	?	?	DULAT: NOT FOUND
 # KTU 2.88 20						
-159824	mrḥṣm	rḥṣ[ṣm	/r-ḥ-ṣ/	vb D	to wash	
+159824	mrḥṣm	rḥṣ[ṣm:d	/r-ḥ-ṣ/	vb D	to wash	
 159825	bh	b	b	prep.	in	
 # KTU 2.88 21						
 159826	w	w	w	conj.	and	
@@ -171,7 +171,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.88 30						
 159863	w	w	w	conj.	and	
 159864	rišk	riš(I)/	rỉš (I)	n. m.	head	
-159865	ḫlq	ḫlq[	/ḫ-l-q/	vb G/Dpass	to perish	
+159865	ḫlq	ḫlq[:pass	/ḫ-l-q/	vb G/Dpass	to perish	
 159865	ḫlq	ḫlq/	ḫlq	adj. m. or n. m.	ruined	
 # KTU 2.88 31						
 159866	tḥm	tḥm/	tḥm	n. m.	message	
@@ -222,7 +222,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159893	bt	bt(II)/	bt (II)	n. m.	house	
 159893	bt	b(t(I)/t	bt (I)	n. f.	daughter	
 159893	bt	bt(III)/	bt (III)	n. m.	length	
-159894	uḫd	(ʔ&uḫd[	/ʔ-ḫ-d(/ḏ)/	vb G/Gpass	to collect	
+159894	uḫd	(ʔ&uḫd[:pass	/ʔ-ḫ-d(/ḏ)/	vb G/Gpass	to collect	
 159895	ly	l(I)+y	l (I)	prep.	to	
 # KTU 2.88 38						
 159896	w	w	w	conj.	and	

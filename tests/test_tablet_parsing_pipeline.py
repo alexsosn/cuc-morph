@@ -182,9 +182,13 @@ class TabletParsingPipelineTest(unittest.TestCase):
                 names.index("ydk-context-disambiguator"),
                 names.index("verb-pos-stem"),
             )
-            final_schema_index = len(names) - 1 - names[::-1].index("tsv-schema")
             self.assertLess(
                 names.index("verb-pos-stem"),
+                names.index("verb-stem-suffix-marker"),
+            )
+            final_schema_index = len(names) - 1 - names[::-1].index("tsv-schema")
+            self.assertLess(
+                names.index("verb-stem-suffix-marker"),
                 final_schema_index,
             )
 

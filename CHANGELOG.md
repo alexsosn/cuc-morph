@@ -10,6 +10,20 @@
   - `test_compact_gloss_still_splits_top_level_comma`.
 - Re-ran full reproducible bootstrap+refine+instruction+steps pipeline across all tablets (`KTU *.tsv`, `278` targets), regenerating `out/*.tsv` and `reports/*`.
 
+- Added parser enforcement for POS-implied verbal stem suffix markers:
+  - new step `VerbStemSuffixMarkerFixer` (`pipeline/steps/verb_stem_suffix_marker.py`) inserts required `:d`, `:l`, `:r`, `:pass` from POS stem labels (`vb D/L/R/*pass`),
+  - step is wired after `VerbPosStemFixer` in `pipeline/tablet_parsing.py`.
+- Aligned linter enforcement and stem consistency:
+  - new POS-driven error when required markers are missing (`Verb stem marker(s) required by POS but missing in analysis: ...`),
+  - extended stem compatibility checks for `:r`, `tD/tL`, and `Lpass`.
+- Added regression coverage:
+  - `tests/test_refinement_steps.py`,
+  - `tests/test_linter_warning_predicates.py`,
+  - `tests/test_linter_verb_pos_stem.py`,
+  - `tests/test_tablet_parsing_pipeline.py`.
+- Documented the rule as a reproducible pipeline strategy in `docs/verb_stem_suffix_marker_pipeline.md`.
+- Re-ran the full parsing pipeline over all tablets (`278` targets) with safeguard override for the known high-churn duplicate-pruning stage, then regenerated `out/*.tsv` and `reports/*`.
+
 - Fixed fallback `¶ Forms:` token cleaning to preserve non-ASCII transliteration letters (notably `ś`) instead of stripping them into false short keys:
   - `pipeline/config/dulat_entry_forms_fallback.py` now normalizes fallback form tokens via Unicode-letter filtering (`isalpha`) and keeps `-` where present.
   - Prevents spurious fallback keys like `wm`/`wt` derived from valid forms such as `śśwm`/`śśwt`.
