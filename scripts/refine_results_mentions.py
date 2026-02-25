@@ -266,6 +266,24 @@ def prefixed_verb_tail(surface_plain: str, stem_plain: str) -> Optional[str]:
     return None
 
 
+def mark_hidden_terminal_stem_letters(stem: str, hidden_count: int) -> str:
+    """Prefix '(' on hidden terminal stem letters in contracted prefix forms."""
+    if hidden_count <= 0:
+        return stem
+
+    letter_indices = [idx for idx, ch in enumerate(stem) if LETTER_RE.match(ch)]
+    if not letter_indices:
+        return stem
+    hidden_indices = set(letter_indices[-hidden_count:])
+
+    out: List[str] = []
+    for idx, ch in enumerate(stem):
+        if idx in hidden_indices and (idx == 0 or stem[idx - 1] != "("):
+            out.append("(")
+        out.append(ch)
+    return "".join(out)
+
+
 def is_n_weak_iii_aleph_root(lemma: str) -> bool:
     """Return True for lexical roots of the shape /n-...-ʔ/."""
     lm = (lemma or "").strip()
@@ -342,7 +360,12 @@ def analysis_for_entry(surface: str, e: Entry, morph_values: Optional[Sequence[s
                 return contracted_analysis
         prefix_tail = prefixed_verb_tail(surface_plain=surface_plain, stem_plain=stem_plain)
         if prefix_tail is not None:
-            return f"!{surface_plain[0]}!{stem_marker}{stem}{hom}[{prefix_tail}"
+            stem_out = stem
+            if prefix_tail == "":
+                surface_body_len = len(surface_plain[1:]) if len(surface_plain) > 1 else 0
+                hidden_count = max(0, len(stem_plain) - surface_body_len)
+                stem_out = mark_hidden_terminal_stem_letters(stem_out, hidden_count)
+            return f"!{surface_plain[0]}!{stem_marker}{stem_out}{hom}[{prefix_tail}"
         tail = ""
         if len(surface_plain) > len(stem_plain):
             tail = surface_plain[len(stem_plain) :]

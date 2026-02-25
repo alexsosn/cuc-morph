@@ -78,7 +78,7 @@ class RefineResultsMentionsTest(unittest.TestCase):
         )
         self.assertEqual(
             analysis_for_entry("twtḥ", entry, morph_values=["Gt, prefc."]),
-            "!t!w]t]ḥy[",
+            "!t!w]t]ḥ(y[",
         )
 
     def test_analysis_encodes_contracted_n_weak_iii_aleph_prefixed_forms(self) -> None:

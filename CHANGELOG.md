@@ -2,6 +2,13 @@
 
 ## 2026-02-25
 
+- Fixed contracted prefixed weak-form reconstruction for hidden terminal radicals:
+  - `scripts/refine_results_mentions.py::analysis_for_entry` now marks hidden stem-final letters in contracted prefix forms as reconstructed (`(`),
+  - example correction: `twtḥ` `/w-ḥ-y/` Gt prefc. now emits `!t!w]t]ḥ(y[` (not `!t!w]t]ḥy[`).
+- Added regression update in `tests/test_refine_results_mentions.py` for contracted `twtḥ`.
+- Re-ran targeted regeneration for affected tablets:
+  - `KTU 1.1.tsv`, `KTU 1.3.tsv`, `KTU 1.7.tsv`.
+
 - Fixed contracted `/n-...-ʔ/` prefix-conjugation verb encoding in parser generation:
   - `scripts/refine_results_mentions.py::analysis_for_entry` now uses DULAT form morphology (`prefc.`) + root shape to encode contracted forms as reconstructable prefix analyses (for example `yšu` -> `!y!(nš(ʔ[&u`, `tšun` -> `!t!(nš(ʔ[&un`, `ytšu` -> `!y!(n]t]š(ʔ[&u`).
   - prevents fallback reductions like `nšʔ[` for these prefixed forms.
