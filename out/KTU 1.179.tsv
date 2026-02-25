@@ -51,7 +51,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156098	bšrk	bšr[+k	/b-š-r/	vb	to impart (good) news	
 # KTU 1.179 8						
 156099	kbkb	kbkb/	kbkb	n. m. sg.	heavenly body	
-156100	kbkbm	kbkb/m	kbkb	n. m. pl. / n. m. pl. / n. m. pl. / n. m. du.	heavenly body	
+156100	kbkbm	kbkb/m	kbkb	n. m. pl. / n. m. du.	heavenly body	
 156101	al	al(I)	ảl (I)	neg. functor	no	
 156101	al	al(II)	ảl (II)	pos. functor	surely	
 156102	kbkb	kbkb/	kbkb	n. m. sg.	heavenly body	
@@ -59,12 +59,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156103	dm	dm(II)/	dm (II)	n. m.	blood	
 156103	dm	dm(I)	dm (I)	functor	since	
 156104	kbkb	kbkb/	kbkb	n. m. sg.	heavenly body	
-156105	šmm	šm(m(I)/m	šmm (I)	n. m. pl. tant. pl. / n. m. pl. tant. pl. / n. m. pl. tant. pl. / n. m. pl. tant. du.	heavens	
+156105	šmm	šm(m(I)/m	šmm (I)	n. m. tant. pl. / n. m. tant. du.	heavens	
 156106	wthm	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.179 10						
 156107	kbkb	kbkb/	kbkb	n. m. sg.	heavenly body	
-156108	bˤl	bˤl(II)/	bʕl (II)	n. m./DN sg. / n. m./DN pl. sg. / n. m./DN sg. / n. m./DN pl. pl.	Baʿlu/Baal	
-156108	bˤl	bˤl(I)/	bʕl (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	labourer	
+156108	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+156108	bˤl	bˤl(I)/	bʕl (I)	n. m. sg. / n. m. pl.	labourer	
 156108	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 156109	w	w	w	conj.	and	
 156110	pdry	pdry/	pdry	DN	Pidray	
@@ -107,7 +107,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156132	qdš	qdš(II)/	qdš (II)	n. m. sg.	sanctuary	
 # KTU 1.179 15						
 156133	xm	?	?	?	?	DULAT: NOT FOUND
-156134	ˤbd	ˤbd(I)/	ʕbd (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	servant	
+156134	ˤbd	ˤbd(I)/	ʕbd (I)	n. m. sg. / n. m. pl.	servant	
 156135	ṭl	ṭl/	ṭl	n. m. sg.	dew	
 156136	arbˤtm	arbˤ/	ảrbʕ	num.	four	
 # KTU 1.179 16						
@@ -115,14 +115,15 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156137	y	~y	-y (II)	prep. functor	indeed	
 156137	y	y	y	prep. functor	oh!	
 156138	w	w	w	conj.	and	
-156139	lqḥ	lqḥ[; lqḥ[/	/l-q-ḥ/; /l-q-ḥ/	vb G suffc.; vb G inf.	to get hold of; to get hold of	
+156139	lqḥ	lqḥ[	/l-q-ḥ/	vb G suffc.	to get hold of	
+156139	lqḥ	lqḥ[/	/l-q-ḥ/	vb G inf.	to get hold of	
 156140	prṯt	prṯ(t/t	prṯt	n. f. sg.	secret	
-156141	bˤl	bˤl(II)/	bʕl (II)	n. m./DN sg. / n. m./DN pl. sg. / n. m./DN sg. / n. m./DN pl. pl.	Baʿlu/Baal	
+156141	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
 156141	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 # KTU 1.179 17						
 156142	x	?	?	?	?	
-156143	bˤl	bˤl(II)/	bʕl (II)	n. m./DN sg. / n. m./DN pl. sg. / n. m./DN sg. / n. m./DN pl. pl.	Baʿlu/Baal	
-156143	bˤl	bˤl(I)/	bʕl (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	labourer	
+156143	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
+156143	bˤl	bˤl(I)/	bʕl (I)	n. m. sg. / n. m. pl.	labourer	
 156143	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 156144	qdšm	qdš(I)/m	qdš (I)	adj. m. pl.	holy	
 156145	b	b	b	prep.	in	
@@ -140,15 +141,15 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156153	ym	ym(II)/	ym (II)	n. m. sg.	sea	
 156154	tl	tl(I)/	tl (I)	n. m. sg.	hill	
 156154	tl	tl(II)/	tl (II)	n. m. sg.	weapon	
-156155	bˤl	bˤl(II)/	bʕl (II)	n. m./DN sg. / n. m./DN pl. sg. / n. m./DN sg. / n. m./DN pl. pl.	Baʿlu/Baal	
+156155	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
 156155	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 # KTU 1.179 20						
 156156	prṯt	prṯ(t/t	prṯt	n. f. sg.	secret	
-156157	bˤl	bˤl(II)/	bʕl (II)	n. m./DN sg. / n. m./DN pl. sg. / n. m./DN sg. / n. m./DN pl. pl.	Baʿlu/Baal	
+156157	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
 156157	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 # KTU 1.179 21						
 156158	ṯt	ṯn(I)/	ṯn (I)	nuf.	two	
-156159	bˤl	bˤl(II)/	bʕl (II)	n. m./DN sg. / n. m./DN pl. sg. / n. m./DN sg. / n. m./DN pl. pl.	Baʿlu/Baal	
+156159	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
 156159	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 # KTU 1.179 22						
 156160	xt	?	?	?	?	DULAT: NOT FOUND
@@ -186,13 +187,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156180	rḥq	rḥq[	/r-ḥ-q/	vb G impv.	to go away	
 156180	rḥq	rḥq/	rḥq	adj. m. sg.	distant	
 156181	abn	ab/+n	ảb	n. m.	father	
-156181	abn	abn/	ảbn	n. f. sg. / n. f. pl. sg. / n. f. sg. / n. f. pl. pl.	stone	
+156181	abn	abn/	ảbn	n. f. sg. / n. f. pl.	stone	
 156181	abn	!(ʔ&a!bn[	/b-n/	vb G impv.	to understand	
 156182	l	l(I)	l (I)	prep.	to	
 156182	l	l(II)	l (II)	adv.	no	
 156182	l	l(III)	l (III)	functor	certainly	
 156183	abn	ab/+n	ảb	n. m.	father	
-156183	abn	abn/	ảbn	n. f. sg. / n. f. pl. sg. / n. f. sg. / n. f. pl. pl.	stone	
+156183	abn	abn/	ảbn	n. f. sg. / n. f. pl.	stone	
 156183	abn	!(ʔ&a!bn[	/b-n/	vb G impv.	to understand	
 156184	w	w	w	conj.	and	
 156185	pslt	psl(t(II)/t	pslt (II)	n. f. sg.	sculpture	
@@ -206,13 +207,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156191	špth	špt/h	špt	n. f. sg.	lip	
 156192	rḥqt	rḥq[t:d	/r-ḥ-q/	vb D suffc.	to go away	
 156193	abn	ab/+n	ảb	n. m.	father	
-156193	abn	abn/	ảbn	n. f. sg. / n. f. pl. sg. / n. f. sg. / n. f. pl. pl.	stone	
+156193	abn	abn/	ảbn	n. f. sg. / n. f. pl.	stone	
 156193	abn	!(ʔ&a!bn[	/b-n/	vb G impv.	to understand	
 156194	l	l(I)	l (I)	prep.	to	
 156194	l	l(II)	l (II)	adv.	no	
 156194	l	l(III)	l (III)	functor	certainly	
 156195	abn	ab/+n	ảb	n. m.	father	
-156195	abn	abn/	ảbn	n. f. sg. / n. f. pl. sg. / n. f. sg. / n. f. pl. pl.	stone	
+156195	abn	abn/	ảbn	n. f. sg. / n. f. pl.	stone	
 156195	abn	!(ʔ&a!bn[	/b-n/	vb G impv.	to understand	
 # KTU 1.179 33						
 156196	ˤrb	ˤrb(I)[	/ʕ-r-b/ (I)	vb G suffc.	to enter	
@@ -251,7 +252,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156218	k	k(I)	k (I)	prep.	like	
 156218	k	k(II)	k (II)	emph. functor	yes	
 156219	yṯnyn	!y!ṯny[+n	/ṯ-n-y/	vb	to repeat	
-156220	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	son	
+156220	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
 156220	bn	bn(II)	bn (II)	prep.	between	
 156220	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 156221	ˤnm	ˤn(I)/m	ʕn (I)	n. f. du.	eye	
@@ -259,7 +260,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156222	xxxxr	?	?	?	?	DULAT: NOT FOUND
 156223	hpkm	hpk[/m	/h-p-k/	vb G inf.	to overturn	
 156224	ahpk	!(ʔ&a!hpk[	/h-p-k/	vb G prefc.	to overturn	
-156225	lbš	lbš/	lbš	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	clothing	
+156225	lbš	lbš/	lbš	n. m. sg. / n. m. pl.	clothing	
 156225	lbš	lbš[/	/l-b-š/	vb G act. ptcpl. m. / vb G pass. ptcpl. m.	to dress	
 156226	wahpkn	?	?	?	?	DULAT: NOT FOUND
 156227	ḫlpn	ḫlpn(I)/	ḫlpn (I)	n. m. sg.	Gewand	
@@ -293,12 +294,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156248	mlkt	mlk(t/t	mlkt	n. f. sg.	queen	
 156249	mntn	mnt(I)/+n	mnt (I)	n. f.	portion	
 # KTU 1.179 40						
-156250	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
-156250	spr	spr[:d; spr[/:d	/s-p-r/; /s-p-r/	vb G suffc. / vb D suffc.; vb G inf. / vb D inf.	to count; to count	
+156250	spr	spr(II)/	spr (II)	n. m. sg.	tablet/register	
+156250	spr	spr[:d	/s-p-r/	vb G suffc. / vb D suffc.	to count	
+156250	spr	spr[/:d	/s-p-r/	vb G inf. / vb D inf.	to count	
 156250	spr	spr(I)/	spr (I)	n. m. sg.	scribe	
 156251	ilmlk	ilmlk/	ỉlmlk	PN	ʾIlimalku/Ilimilku/Elimelek	
 156252	šbny	šbny/	šbny	GN	Shubanite	
-156253	lmd	lmd/	lmd	adj. m. or n. m. sg. / adj. m. or n. m. pl. sg. / adj. m. or n. m. sg. / adj. m. or n. m. pl. pl.	trained	
+156253	lmd	lmd/	lmd	adj. m. or n. m. sg. / adj. m. or n. m. pl.	trained	
 156253	lmd	lmd[:d	/l-m-d/	vb D suffc.	to teach	
 156254	atn	ytn[	/y-t-n/	vb G prefc.	to give	
 156255	prln	prln/	prln	n. m. sg.	diviner	
@@ -318,6 +320,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156264	ylmdnn	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.179 43						
 156265	b	b	b	prep.	in	
-156266	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
-156266	spr	spr[:d; spr[/:d	/s-p-r/; /s-p-r/	vb G suffc. / vb D suffc.; vb G inf. / vb D inf.	to count; to count	
+156266	spr	spr(II)/	spr (II)	n. m. sg.	tablet/register	
+156266	spr	spr[:d	/s-p-r/	vb G suffc. / vb D suffc.	to count	
+156266	spr	spr[/:d	/s-p-r/	vb G inf. / vb D inf.	to count	
 156266	spr	spr(I)/	spr (I)	n. m. sg.	scribe	

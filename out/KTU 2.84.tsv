@@ -5,10 +5,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159427	l	l(I)	l (I)	prep.	to	
 159427	l	l(II)	l (II)	adv.	no	
 159427	l	l(III)	l (III)	functor	certainly	
-159428	gr	gr(I)/	gr (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	protected	
+159428	gr	gr(I)/	gr (I)	n. m. sg. / n. m. pl.	protected	
 159428	gr	gr[	/g-r(-y)/	vb G suffc.	to attack	
 # KTU 2.84 3						
-159429	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
+159429	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
+159429	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
 159429	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.84 4						
 159430	lm	l(I)	l (I)	prep.	to	
@@ -53,7 +54,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159452	km	k(IV)	k (IV)	adv.	thus	
 159452	km	km	km	prep./conj./adv.		
 159452	km	+km, +km=	-km			
-159453	mġy	mġy[; mġy[/	/m-ġ-y/; /m-ġ-y/	vb G suffc.; vb G inf.	to come; to come	
+159453	mġy	mġy[	/m-ġ-y/	vb G suffc.	to come	
+159453	mġy	mġy[/	/m-ġ-y/	vb G inf.	to come	
 159454	a	?	?	?	?	
 # KTU 2.84 16						
 159455	mdy	md(I)/+y	md (I)	n. f. sg.	cape	
@@ -68,7 +70,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159461	alpy	alp(I)/y	ảlp (I)	n. m. pl.	(head of) cattle	
 159462		?	?	?	?	
 # KTU 2.84 19						
-159463	hbṭ	hbṭ[:d; hbṭ[/:d	/h-b-ṭ/ẓ/; /h-b-ṭ/ẓ/	vb D suffc.; vb D inf.	to knock down; to knock down	
+159463	hbṭ	hbṭ[:d	/h-b-ṭ/ẓ/	vb D suffc.	to knock down	
+159463	hbṭ	hbṭ[/:d	/h-b-ṭ/ẓ/	vb D inf.	to knock down	
 159464	w	w	w	conj.	and	
 159465	l	l(I)	l (I)	prep.	to	
 159465	l	l(III)	l (III)	functor	certainly	
@@ -78,7 +81,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159468	xx	?	?	?	?	
 # KTU 2.84 21						
 159469	uy	u	ủ	conj.	or	
-159470	alp	alp(I)/	ảlp (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	(head of) cattle	
+159470	alp	alp(I)/	ảlp (I)	n. m. sg. / n. m. pl.	(head of) cattle	
 159470	alp	alp(II)/	ảlp (II)	num.	(one, a) thousand	
 159471	x	?	?	?	?	
 # KTU 2.84 22						
@@ -91,6 +94,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159476	aḫt	aḫ(t(I)/t=	ảḫt (I)	n. f. pl.	sister (related by blood)	
 159477	d	d	d	det. or rel. functor	the one(s) of	
 # KTU 2.84 24						
-159478	hbṭ	hbṭ[:d; hbṭ[/:d	/h-b-ṭ/ẓ/; /h-b-ṭ/ẓ/	vb D suffc.; vb D inf.	to knock down; to knock down	
+159478	hbṭ	hbṭ[:d	/h-b-ṭ/ẓ/	vb D suffc.	to knock down	
+159478	hbṭ	hbṭ[/:d	/h-b-ṭ/ẓ/	vb D inf.	to knock down	
 159479	h	+h, +h=	-h (I)	suff. pn. morph.	his /her (hers) / its	
 159479	h	~h	-h(II)	adv. functor	to, towards	

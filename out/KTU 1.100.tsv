@@ -6,17 +6,17 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151710	pḥlt	pḥl(t/t	pḥlt	n. f. sg.	mare	
 151711	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
 151711	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
-151712	ˤn	ˤn(I)/	ʕn (I)	n. f. sg. / n. f. sg. / n. f. sg. / n. f. du.	eye	
+151712	ˤn	ˤn(I)/	ʕn (I)	n. f. sg. / n. f. du.	eye	
 151712	ˤn	ˤn[	/ʕ-n/	vb G impv.	to see	
 151712	ˤn	ˤn(II)/	ʕn (II)	n. f. sg.	furrow	
 151713	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
 151713	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 151714	abn	ab/+n	ảb	n. m.	father	
-151714	abn	abn/	ảbn	n. f. sg. / n. f. pl. sg. / n. f. sg. / n. f. pl. pl.	stone	
+151714	abn	abn/	ảbn	n. f. sg. / n. f. pl.	stone	
 151714	abn	!(ʔ&a!bn[	/b-n/	vb G impv.	to understand	
 151715	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
 151715	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
-151716	šmm	šm(m(I)/m	šmm (I)	n. m. pl. tant. pl. / n. m. pl. tant. pl. / n. m. pl. tant. pl. / n. m. pl. tant. du.	heavens	
+151716	šmm	šm(m(I)/m	šmm (I)	n. m. tant. pl. / n. m. tant. du.	heavens	
 151717	w	w	w	conj.	and	
 151718	thm	thm/	thm	n. m. sg.	ocean	
 # KTU 1.100 2						
@@ -42,7 +42,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151733	thmtm	thm(t/tm	thmt	n. f.	Primordial Ocean	
 # KTU 1.100 4						
 151734	mnt	mn(t(I)/t	mnt (I)	n. f. sg.	portion	
-151735	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	bite	
+151735	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl.	bite	
 151735	nṯk	nṯk(I)/	nṯk (I)	n. m. sg.	biter	
 151735	nṯk	nṯk[	/n-ṯ-k/	vb G prefc.	to bite	
 151736	nḥš	nḥš/	nḥš	n. m. sg.	serpent	
@@ -56,7 +56,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151742	abd	abd(I)/	ảbd (I)	n. m. sg.	ruin	
 151743	lnh	l(I)+h	l (I)	prep.	to	
 151744	ydy	yd(I)/+y	yd (I)	n. f.	hand	
-151744	ydy	!y!(ydy(I)[; !y!(ydy(I)[/	/y-d-y/ (I); /y-d-y/ (I)	vb G prefc. / vb G impv.; vb G inf. / vb G act. ptcpl. m.	to throw; to throw	
+151744	ydy	!y!(ydy(I)[	/y-d-y/ (I)	vb G prefc. / vb G impv.	to throw	
+151744	ydy	!y!(ydy(I)[/	/y-d-y/ (I)	vb G inf. / vb G act. ptcpl. m.	to throw	
 151744	ydy	!y!(ydy(II)[	/y-d-y/ (II)	vb G	to rip	
 # KTU 1.100 6						
 151745	ḥmt	ḥm(t(III)/t	ḥmt (III)	n. f. sg.	venom	
@@ -72,7 +73,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151751	yˤdb	!y!ˤdb[	/ʕ-d-b/	vb G prefc.	to leave > to put in	
 151752	ksa	ksa/	ksả	DN	second component of the double-barrelled divine name yrḫ w ksả, a lunar deity	
 151753	w	w	w	conj.	and	
-151754	yṯb	!y!(yṯb[; !y!(yṯb[/	/y-ṯ-b/; /y-ṯ-b/	vb G prefc. / vb G suffc.; vb G act. ptcpl.	to sit down; to sit down	
+151754	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc.	to sit down	
+151754	yṯb	!y!(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
 # KTU 1.100 8						
 151755	tqru	!t!qr(ʔ[&u	/q-r-ʔ/	vb G prefc.	to call	
 151756	l	l(I)	l (I)	prep.	to	
@@ -87,12 +89,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151762	bl	bl(III)/	bl (III)	n. m.	blended beer	
 # KTU 1.100 9						
 151763	ˤm	ˤm(I)	ʕm (I)	prep.	to	
-151764	bˤl	bˤl(II)/	bʕl (II)	n. m./DN sg. / n. m./DN pl. sg. / n. m./DN sg. / n. m./DN pl. pl.	Baʿlu/Baal	
+151764	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
 151764	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 151765	mrym	mrym/	mrym	n. m. sg.	height	
 151766	ṣpn	ṣpn/	ṣpn	TN/DN	Ṣapānu/Zaphon/the mountain dwelling of bʕl deified	
 151767	mnty	mnt(I)/y	mnt (I)	n. f. sg.	portion	
-151768	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	bite	
+151768	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl.	bite	
 151768	nṯk	nṯk(I)/	nṯk (I)	n. m. sg.	biter	
 151768	nṯk	nṯk[	/n-ṯ-k/	vb G prefc.	to bite	
 # KTU 1.100 10						
@@ -107,7 +109,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151775	abd	abd(I)/	ảbd (I)	n. m. sg.	ruin	
 151776	lnh	l(I)+h	l (I)	prep.	to	
 151777	ydy	yd(I)/+y	yd (I)	n. f.	hand	
-151777	ydy	!y!(ydy(I)[; !y!(ydy(I)[/	/y-d-y/ (I); /y-d-y/ (I)	vb G prefc. / vb G impv.; vb G inf. / vb G act. ptcpl. m.	to throw; to throw	
+151777	ydy	!y!(ydy(I)[	/y-d-y/ (I)	vb G prefc. / vb G impv.	to throw	
+151777	ydy	!y!(ydy(I)[/	/y-d-y/ (I)	vb G inf. / vb G act. ptcpl. m.	to throw	
 151777	ydy	!y!(ydy(II)[	/y-d-y/ (II)	vb G	to rip	
 151778	ḥmt	ḥm(t(III)/t	ḥmt (III)	n. f. sg.	venom	
 151778	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f. sg.	wall	
@@ -124,7 +127,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151786	ksa	ksa/	ksả	DN	second component of the double-barrelled divine name yrḫ w ksả, a lunar deity	
 # KTU 1.100 13						
 151787	w	w	w	conj.	and	
-151788	yṯb	!y!(yṯb[; !y!(yṯb[/	/y-ṯ-b/; /y-ṯ-b/	vb G prefc. / vb G suffc.; vb G act. ptcpl.	to sit down; to sit down	
+151788	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc.	to sit down	
+151788	yṯb	!y!(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
 # KTU 1.100 14						
 151789	tqru	!t!qr(ʔ[&u	/q-r-ʔ/	vb G prefc.	to call	
 151790	lšpš	?	?	?	?	DULAT: NOT FOUND
@@ -141,7 +145,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151797	dgn	dgn(I)/	dgn (I)	n. m. sg.	grain	
 151798	ttlh	ttl/	ttl	TN	ttl	
 151799	mnt	mn(t(I)/t	mnt (I)	n. f. sg.	portion	
-151800	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	bite	
+151800	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl.	bite	
 151800	nṯk	nṯk(I)/	nṯk (I)	n. m. sg.	biter	
 151800	nṯk	nṯk[	/n-ṯ-k/	vb G prefc.	to bite	
 151801	nḥš	nḥš/	nḥš	n. m. sg.	serpent	
@@ -156,7 +160,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151808	lnh	l(I)+h	l (I)	prep.	to	
 # KTU 1.100 17						
 151809	ydy	yd(I)/+y	yd (I)	n. f.	hand	
-151809	ydy	!y!(ydy(I)[; !y!(ydy(I)[/	/y-d-y/ (I); /y-d-y/ (I)	vb G prefc. / vb G impv.; vb G inf. / vb G act. ptcpl. m.	to throw; to throw	
+151809	ydy	!y!(ydy(I)[	/y-d-y/ (I)	vb G prefc. / vb G impv.	to throw	
+151809	ydy	!y!(ydy(I)[/	/y-d-y/ (I)	vb G inf. / vb G act. ptcpl. m.	to throw	
 151809	ydy	!y!(ydy(II)[	/y-d-y/ (II)	vb G	to rip	
 151810	ḥmt	ḥm(t(III)/t	ḥmt (III)	n. f. sg.	venom	
 151810	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f. sg.	wall	
@@ -172,7 +177,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151817	yˤdb	!y!ˤdb[	/ʕ-d-b/	vb G prefc.	to leave > to put in	
 151818	ksa	ksa/	ksả	DN	second component of the double-barrelled divine name yrḫ w ksả, a lunar deity	
 151819	w	w	w	conj.	and	
-151820	yṯb	!y!(yṯb[; !y!(yṯb[/	/y-ṯ-b/; /y-ṯ-b/	vb G prefc. / vb G suffc.; vb G act. ptcpl.	to sit down; to sit down	
+151820	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc.	to sit down	
+151820	yṯb	!y!(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
 # KTU 1.100 19						
 151821	tqru	!t!qr(ʔ[&u	/q-r-ʔ/	vb G prefc.	to call	
 151822	lšpš	?	?	?	?	DULAT: NOT FOUND
@@ -193,7 +199,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151831	rṯtrt	?	?	?	?	DULAT: NOT FOUND
 151832	inbbh	inbb/	ỉnbb	TN	god (of the) mountain	
 151833	mnt	mn(t(I)/t	mnt (I)	n. f. sg.	portion	
-151834	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	bite	
+151834	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl.	bite	
 151834	nṯk	nṯk(I)/	nṯk (I)	n. m. sg.	biter	
 151834	nṯk	nṯk[	/n-ṯ-k/	vb G prefc.	to bite	
 # KTU 1.100 21						
@@ -209,7 +215,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151842	abd	abd(I)/	ảbd (I)	n. m. sg.	ruin	
 151843	lnh	l(I)+h	l (I)	prep.	to	
 151844	ydy	yd(I)/+y	yd (I)	n. f.	hand	
-151844	ydy	!y!(ydy(I)[; !y!(ydy(I)[/	/y-d-y/ (I); /y-d-y/ (I)	vb G prefc. / vb G impv.; vb G inf. / vb G act. ptcpl. m.	to throw; to throw	
+151844	ydy	!y!(ydy(I)[	/y-d-y/ (I)	vb G prefc. / vb G impv.	to throw	
+151844	ydy	!y!(ydy(I)[/	/y-d-y/ (I)	vb G inf. / vb G act. ptcpl. m.	to throw	
 151844	ydy	!y!(ydy(II)[	/y-d-y/ (II)	vb G	to rip	
 151845	ḥmt	ḥm(t(III)/t	ḥmt (III)	n. f. sg.	venom	
 151845	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f. sg.	wall	
@@ -226,7 +233,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151853	ksa	ksa/	ksả	DN	second component of the double-barrelled divine name yrḫ w ksả, a lunar deity	
 # KTU 1.100 24						
 151854	w	w	w	conj.	and	
-151855	yṯb	!y!(yṯb[; !y!(yṯb[/	/y-ṯ-b/; /y-ṯ-b/	vb G prefc. / vb G suffc.; vb G act. ptcpl.	to sit down; to sit down	
+151855	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc.	to sit down	
+151855	yṯb	!y!(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
 # KTU 1.100 25						
 151856	tqru	!t!qr(ʔ[&u	/q-r-ʔ/	vb G prefc.	to call	
 151857	l	l(I)	l (I)	prep.	to	
@@ -244,7 +252,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151865	yrḫ	yrḫ/	yrḫ	n. m. sg.	moon	
 151866	lrgth	lrgt/+h	lrgt	TN	Larugat	
 151867	mnt	mn(t(I)/t	mnt (I)	n. f. sg.	portion	
-151868	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	bite	
+151868	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl.	bite	
 151868	nṯk	nṯk(I)/	nṯk (I)	n. m. sg.	biter	
 151868	nṯk	nṯk[	/n-ṯ-k/	vb G prefc.	to bite	
 151869	nḥš	nḥš/	nḥš	n. m. sg.	serpent	
@@ -258,7 +266,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151875	abd	abd(I)/	ảbd (I)	n. m. sg.	ruin	
 151876	lnh	l(I)+h	l (I)	prep.	to	
 151877	ydy	yd(I)/+y	yd (I)	n. f.	hand	
-151877	ydy	!y!(ydy(I)[; !y!(ydy(I)[/	/y-d-y/ (I); /y-d-y/ (I)	vb G prefc. / vb G impv.; vb G inf. / vb G act. ptcpl. m.	to throw; to throw	
+151877	ydy	!y!(ydy(I)[	/y-d-y/ (I)	vb G prefc. / vb G impv.	to throw	
+151877	ydy	!y!(ydy(I)[/	/y-d-y/ (I)	vb G inf. / vb G act. ptcpl. m.	to throw	
 151877	ydy	!y!(ydy(II)[	/y-d-y/ (II)	vb G	to rip	
 # KTU 1.100 28						
 151878	ḥmt	ḥm(t(III)/t	ḥmt (III)	n. f. sg.	venom	
@@ -275,7 +284,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151885	yˤdb	!y!ˤdb[	/ʕ-d-b/	vb G prefc.	to leave > to put in	
 151886	ksa	ksa/	ksả	DN	second component of the double-barrelled divine name yrḫ w ksả, a lunar deity	
 151887	w	w	w	conj.	and	
-151888	yṯb	!y!(yṯb[; !y!(yṯb[/	/y-ṯ-b/; /y-ṯ-b/	vb G prefc. / vb G suffc.; vb G act. ptcpl.	to sit down; to sit down	
+151888	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc.	to sit down	
+151888	yṯb	!y!(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
 # KTU 1.100 30						
 151889	tqru	!t!qr(ʔ[&u	/q-r-ʔ/	vb G prefc.	to call	
 151890	l	l(I)	l (I)	prep.	to	
@@ -293,7 +303,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151898	ršp	ršp/	ršp	DN	Rašap	
 151899	bbth	bbt(I)/	bbt (I)	TN	bbt (I)	
 151900	mnt	mn(t(I)/t	mnt (I)	n. f. sg.	portion	
-151901	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	bite	
+151901	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl.	bite	
 151901	nṯk	nṯk(I)/	nṯk (I)	n. m. sg.	biter	
 151901	nṯk	nṯk[	/n-ṯ-k/	vb G prefc.	to bite	
 151902	nḥš	nḥš/	nḥš	n. m. sg.	serpent	
@@ -305,7 +315,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151907	mlḫšabd	?	?	?	?	DULAT: NOT FOUND
 151908	lnh	l(I)+h	l (I)	prep.	to	
 151909	ydy	yd(I)/+y	yd (I)	n. f.	hand	
-151909	ydy	!y!(ydy(I)[; !y!(ydy(I)[/	/y-d-y/ (I); /y-d-y/ (I)	vb G prefc. / vb G impv.; vb G inf. / vb G act. ptcpl. m.	to throw; to throw	
+151909	ydy	!y!(ydy(I)[	/y-d-y/ (I)	vb G prefc. / vb G impv.	to throw	
+151909	ydy	!y!(ydy(I)[/	/y-d-y/ (I)	vb G inf. / vb G act. ptcpl. m.	to throw	
 151909	ydy	!y!(ydy(II)[	/y-d-y/ (II)	vb G	to rip	
 # KTU 1.100 33						
 151910	ḥmt	ḥm(t(III)/t	ḥmt (III)	n. f. sg.	venom	
@@ -325,7 +336,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151918	yˤdb	!y!ˤdb[	/ʕ-d-b/	vb G prefc.	to leave > to put in	
 151919	ksa	ksa/	ksả	DN	second component of the double-barrelled divine name yrḫ w ksả, a lunar deity	
 151920	w	w	w	conj.	and	
-151921	yṯb	!y!(yṯb[; !y!(yṯb[/	/y-ṯ-b/; /y-ṯ-b/	vb G prefc. / vb G suffc.; vb G act. ptcpl.	to sit down; to sit down	
+151921	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc.	to sit down	
+151921	yṯb	!y!(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
 # KTU 1.100 35						
 151922	tqru	!t!qr(ʔ[&u	/q-r-ʔ/	vb G prefc.	to call	
 151923	lšpš	?	?	?	?	DULAT: NOT FOUND
@@ -344,7 +356,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151932	kmṯ	kmṯ/	kmṯ	DN/element of DN	kmṯ	
 151933	ḥryth	ḥryt/~h	ḥryt	TN	ḥryt	
 151934	mnt	mn(t(I)/t	mnt (I)	n. f. sg.	portion	
-151935	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	bite	
+151935	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl.	bite	
 151935	nṯk	nṯk(I)/	nṯk (I)	n. m. sg.	biter	
 151935	nṯk	nṯk[	/n-ṯ-k/	vb G prefc.	to bite	
 151936	nḥš	nḥš/	nḥš	n. m. sg.	serpent	
@@ -359,7 +371,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151943	lnh	l(I)+h	l (I)	prep.	to	
 # KTU 1.100 38						
 151944	ydy	yd(I)/+y	yd (I)	n. f.	hand	
-151944	ydy	!y!(ydy(I)[; !y!(ydy(I)[/	/y-d-y/ (I); /y-d-y/ (I)	vb G prefc. / vb G impv.; vb G inf. / vb G act. ptcpl. m.	to throw; to throw	
+151944	ydy	!y!(ydy(I)[	/y-d-y/ (I)	vb G prefc. / vb G impv.	to throw	
+151944	ydy	!y!(ydy(I)[/	/y-d-y/ (I)	vb G inf. / vb G act. ptcpl. m.	to throw	
 151944	ydy	!y!(ydy(II)[	/y-d-y/ (II)	vb G	to rip	
 151945	ḥmt	ḥm(t(III)/t	ḥmt (III)	n. f. sg.	venom	
 151945	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f. sg.	wall	
@@ -378,7 +391,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151953	yˤdb	!y!ˤdb[	/ʕ-d-b/	vb G prefc.	to leave > to put in	
 151954	ksa	ksa/	ksả	DN	second component of the double-barrelled divine name yrḫ w ksả, a lunar deity	
 151955	w	w	w	conj.	and	
-151956	yṯb	!y!(yṯb[; !y!(yṯb[/	/y-ṯ-b/; /y-ṯ-b/	vb G prefc. / vb G suffc.; vb G act. ptcpl.	to sit down; to sit down	
+151956	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc.	to sit down	
+151956	yṯb	!y!(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
 # KTU 1.100 40						
 151957	tqru	!t!qr(ʔ[&u	/q-r-ʔ/	vb G prefc.	to call	
 151958	lšpš	?	?	?	?	DULAT: NOT FOUND
@@ -396,7 +410,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151965	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 151966	ˤṯtrth	ˤṯtrt(II)/~h	ʕṯtrt (II)	TN	ʿṯtrt (II)	
 151967	mnt	mn(t(I)/t	mnt (I)	n. f. sg.	portion	
-151968	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	bite	
+151968	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl.	bite	
 151968	nṯk	nṯk(I)/	nṯk (I)	n. m. sg.	biter	
 151968	nṯk	nṯk[	/n-ṯ-k/	vb G prefc.	to bite	
 151969	nḥš	nḥš/	nḥš	n. m. sg.	serpent	
@@ -410,7 +424,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151975	abd	abd(I)/	ảbd (I)	n. m. sg.	ruin	
 151976	lnh	l(I)+h	l (I)	prep.	to	
 151977	ydy	yd(I)/+y	yd (I)	n. f.	hand	
-151977	ydy	!y!(ydy(I)[; !y!(ydy(I)[/	/y-d-y/ (I); /y-d-y/ (I)	vb G prefc. / vb G impv.; vb G inf. / vb G act. ptcpl. m.	to throw; to throw	
+151977	ydy	!y!(ydy(I)[	/y-d-y/ (I)	vb G prefc. / vb G impv.	to throw	
+151977	ydy	!y!(ydy(I)[/	/y-d-y/ (I)	vb G inf. / vb G act. ptcpl. m.	to throw	
 151977	ydy	!y!(ydy(II)[	/y-d-y/ (II)	vb G	to rip	
 # KTU 1.100 43						
 151978	ḥmt	ḥm(t(III)/t	ḥmt (III)	n. f. sg.	venom	
@@ -427,7 +442,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151985	yˤdb	!y!ˤdb[	/ʕ-d-b/	vb G prefc.	to leave > to put in	
 151986	ksa	ksa/	ksả	DN	second component of the double-barrelled divine name yrḫ w ksả, a lunar deity	
 151987	w	w	w	conj.	and	
-151988	yṯb	!y!(yṯb[; !y!(yṯb[/	/y-ṯ-b/; /y-ṯ-b/	vb G prefc. / vb G suffc.; vb G act. ptcpl.	to sit down; to sit down	
+151988	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc.	to sit down	
+151988	yṯb	!y!(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
 # KTU 1.100 45						
 151989	tqru	!t!qr(ʔ[&u	/q-r-ʔ/	vb G prefc.	to call	
 151990	lšpš	?	?	?	?	DULAT: NOT FOUND
@@ -446,7 +462,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151999	ḫss	ḫss/	ḫss	element of DN	Ḫasisu/Khasis	
 152000	kptrh	kptr/	kptr	TN	Crete	
 152001	mnt	mn(t(I)/t	mnt (I)	n. f. sg.	portion	
-152002	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	bite	
+152002	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl.	bite	
 152002	nṯk	nṯk(I)/	nṯk (I)	n. m. sg.	biter	
 152002	nṯk	nṯk[	/n-ṯ-k/	vb G prefc.	to bite	
 152003	nḥš	nḥš/	nḥš	n. m. sg.	serpent	
@@ -462,7 +478,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.100 48						
 152011	lnh	l(I)+h	l (I)	prep.	to	
 152012	ydy	yd(I)/+y	yd (I)	n. f.	hand	
-152012	ydy	!y!(ydy(I)[; !y!(ydy(I)[/	/y-d-y/ (I); /y-d-y/ (I)	vb G prefc. / vb G impv.; vb G inf. / vb G act. ptcpl. m.	to throw; to throw	
+152012	ydy	!y!(ydy(I)[	/y-d-y/ (I)	vb G prefc. / vb G impv.	to throw	
+152012	ydy	!y!(ydy(I)[/	/y-d-y/ (I)	vb G inf. / vb G act. ptcpl. m.	to throw	
 152012	ydy	!y!(ydy(II)[	/y-d-y/ (II)	vb G	to rip	
 152013	ḥmt	ḥm(t(III)/t	ḥmt (III)	n. f. sg.	venom	
 152013	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f. sg.	wall	
@@ -479,7 +496,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152021	ksa	ksa/	ksả	DN	second component of the double-barrelled divine name yrḫ w ksả, a lunar deity	
 # KTU 1.100 50						
 152022	w	w	w	conj.	and	
-152023	yṯb	!y!(yṯb[; !y!(yṯb[/	/y-ṯ-b/; /y-ṯ-b/	vb G prefc. / vb G suffc.; vb G act. ptcpl.	to sit down; to sit down	
+152023	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc.	to sit down	
+152023	yṯb	!y!(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
 # KTU 1.100 51						
 152024	tqru	!t!qr(ʔ[&u	/q-r-ʔ/	vb G prefc.	to call	
 152025	lšpš	?	?	?	?	DULAT: NOT FOUND
@@ -500,7 +518,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152034	šlm	šlm(III)/	šlm (III)	adj. m. sg.	pure	
 152035	šmmh	šm(m(I)/m+h	šmm (I)	n. m. pl. tant.	heavens	
 152036	mnt	mn(t(I)/t	mnt (I)	n. f. sg.	portion	
-152037	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	bite	
+152037	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl.	bite	
 152037	nṯk	nṯk(I)/	nṯk (I)	n. m. sg.	biter	
 152037	nṯk	nṯk[	/n-ṯ-k/	vb G prefc.	to bite	
 152038	nḥš	nḥš/	nḥš	n. m. sg.	serpent	
@@ -515,7 +533,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152044	abd	abd(I)/	ảbd (I)	n. m. sg.	ruin	
 152045	lnh	l(I)+h	l (I)	prep.	to	
 152046	ydy	yd(I)/+y	yd (I)	n. f.	hand	
-152046	ydy	!y!(ydy(I)[; !y!(ydy(I)[/	/y-d-y/ (I); /y-d-y/ (I)	vb G prefc. / vb G impv.; vb G inf. / vb G act. ptcpl. m.	to throw; to throw	
+152046	ydy	!y!(ydy(I)[	/y-d-y/ (I)	vb G prefc. / vb G impv.	to throw	
+152046	ydy	!y!(ydy(I)[/	/y-d-y/ (I)	vb G inf. / vb G act. ptcpl. m.	to throw	
 152046	ydy	!y!(ydy(II)[	/y-d-y/ (II)	vb G	to rip	
 152047	ḥmt	ḥm(t(III)/t	ḥmt (III)	n. f. sg.	venom	
 152047	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f. sg.	wall	
@@ -532,7 +551,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.100 56						
 152055	ksa	ksa/	ksả	DN	second component of the double-barrelled divine name yrḫ w ksả, a lunar deity	
 152056	w	w	w	conj.	and	
-152057	yṯb	!y!(yṯb[; !y!(yṯb[/	/y-ṯ-b/; /y-ṯ-b/	vb G prefc. / vb G suffc.; vb G act. ptcpl.	to sit down; to sit down	
+152057	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc.	to sit down	
+152057	yṯb	!y!(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
 # KTU 1.100 57						
 152058	tqru	!t!qr(ʔ[&u	/q-r-ʔ/	vb G prefc.	to call	
 152059	l	l(I)	l (I)	prep.	to	
@@ -554,7 +574,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152069	mṣdh	mṣd(III)/~h	mṣd (III)	TN	mṣd (III)	
 152069	mṣdh	mṣd(II)/+h	mṣd (II)	n. m. sg.	large fortified tower	
 152070	mnt	mn(t(I)/t	mnt (I)	n. f. sg.	portion	
-152071	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	bite	
+152071	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl.	bite	
 152071	nṯk	nṯk(I)/	nṯk (I)	n. m. sg.	biter	
 152071	nṯk	nṯk[	/n-ṯ-k/	vb G prefc.	to bite	
 152072	nḥš	nḥš/	nḥš	n. m. sg.	serpent	
@@ -569,7 +589,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152078	abd	abd(I)/	ảbd (I)	n. m. sg.	ruin	
 152079	lnh	l(I)+h	l (I)	prep.	to	
 152080	ydy	yd(I)/+y	yd (I)	n. f.	hand	
-152080	ydy	!y!(ydy(I)[; !y!(ydy(I)[/	/y-d-y/ (I); /y-d-y/ (I)	vb G prefc. / vb G impv.; vb G inf. / vb G act. ptcpl. m.	to throw; to throw	
+152080	ydy	!y!(ydy(I)[	/y-d-y/ (I)	vb G prefc. / vb G impv.	to throw	
+152080	ydy	!y!(ydy(I)[/	/y-d-y/ (I)	vb G inf. / vb G act. ptcpl. m.	to throw	
 152080	ydy	!y!(ydy(II)[	/y-d-y/ (II)	vb G	to rip	
 152081	ḥmt	ḥm(t(III)/t	ḥmt (III)	n. f. sg.	venom	
 152081	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f. sg.	wall	
@@ -607,7 +628,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152101	aršḫ	aršḫ/	ảršḫ	TN	ảršḫ	
 152102	ṯrrt	ṯrr(t/t	ṯrrt	adj. f. sg.	powerful	
 152103	ydy	yd(I)/+y	yd (I)	n. f.	hand	
-152103	ydy	!y!(ydy(I)[; !y!(ydy(I)[/	/y-d-y/ (I); /y-d-y/ (I)	vb G prefc. / vb G impv.; vb G inf. / vb G act. ptcpl. m.	to throw; to throw	
+152103	ydy	!y!(ydy(I)[	/y-d-y/ (I)	vb G prefc. / vb G impv.	to throw	
+152103	ydy	!y!(ydy(I)[/	/y-d-y/ (I)	vb G inf. / vb G act. ptcpl. m.	to throw	
 152103	ydy	!y!(ydy(II)[	/y-d-y/ (II)	vb G	to rip	
 152104	b	b	b	prep.	in	
 152105	ˤṣm	ˤṣ/m	ʕṣ	n. m. pl.	tree	
@@ -620,7 +642,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152109	bšḫt	?	?	?	?	DULAT: NOT FOUND
 152110	ˤṣ	ˤṣ/	ʕṣ	n. m. sg.	tree	
 152111	mt	m(t(II)/t	mt (II)	n. m. sg.	death	
-152111	mt	mt[; mt[/	/m-t/; /m-t/	vb G suffc.; vb G inf. / vb G ptcpl.	to die; to die	
+152111	mt	mt[	/m-t/	vb G suffc.	to die	
+152111	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
 152111	mt	m(t(I)/t	mt (I)	n. m. sg.	dead person	
 152112	ˤrˤrm	ˤrˤr/	ʕrʕr	n. m.	tamarisk	
 152113	ynˤrah	?	?	?	?	DULAT: NOT FOUND
@@ -633,7 +656,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.100 67						
 152119	ltm	lt+m(I)	lt	?	?	
 152120	yblnh	!y!(ybl[nh	/y-b-l/	vb G suffc.	to carry	
-152121	mġy	mġy[; mġy[/	/m-ġ-y/; /m-ġ-y/	vb G suffc.; vb G inf.	to come; to come	
+152121	mġy	mġy[	/m-ġ-y/	vb G suffc.	to come	
+152121	mġy	mġy[/	/m-ġ-y/	vb G inf.	to come	
 152122	ḥrn	ḥrn/	ḥrn	DN	Ḥôrānu	
 152122	ḥrn	ḥr(I)/+n	ḥr (I)	n. m.	intestine(s)	
 152123	l	l(I)	l (I)	prep.	to	
@@ -677,12 +701,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152144	ṯlṯ	ṯlṯ(I)/	ṯlṯ (I)	n. sg. num.	three	
 152144	ṯlṯ	ṯlṯ(V)/	ṯlṯ (V)	n. m. sg.	copper	
 152144	ṯlṯ	ṯlṯ(II)/	ṯlṯ (II)	adj. m. sg. ord. num.	third	
-152145	ptḥ	ptḥ[; ptḥ[/	/p-t-ḥ/; /p-t-ḥ/	vb G suffc. / vb G impv.; vb G pass. ptcpl.	to open; to open	
+152145	ptḥ	ptḥ[	/p-t-ḥ/	vb G suffc. / vb G impv.	to open	
+152145	ptḥ	ptḥ[/	/p-t-ḥ/	vb G pass. ptcpl.	to open	
 152146	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
 152146	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 152147	mnt	mn(t(I)/t	mnt (I)	n. f. sg.	portion	
 # KTU 1.100 72						
-152148	ptḥ	ptḥ[; ptḥ[/	/p-t-ḥ/; /p-t-ḥ/	vb G suffc. / vb G impv.; vb G pass. ptcpl.	to open; to open	
+152148	ptḥ	ptḥ[	/p-t-ḥ/	vb G suffc. / vb G impv.	to open	
+152148	ptḥ	ptḥ[/	/p-t-ḥ/	vb G pass. ptcpl.	to open	
 152148	ptḥ	ptḥ/	ptḥ	n. m. sg.	entrance	
 152149	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
 152149	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
@@ -709,7 +735,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.100 74						
 152161	mhry	mhr(III)/+y	mhr (III)	n. m. sg.	dowry	
 152162	w	w	w	conj.	and	
-152163	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	son	
+152163	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
 152163	bn	bn(II)	bn (II)	prep.	between	
 152163	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 152164	bṯn	bṯn/	bṯn	n. m. sg.	serpent	
@@ -719,7 +745,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152167	nḥšm	nḥš/m	nḥš	n. m. pl.	serpent	
 152168	mhrk	mhr(I)/	mhr (I)	n. m. sg.	warrior (trained, expert)	
 152168	mhrk	mhr(III)/+k	mhr (III)	n. m. sg.	dowry	
-152169	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	son	
+152169	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
 152169	bn	bn(II)	bn (II)	prep.	between	
 152169	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 152170	bṯn	bṯn/	bṯn	n. m. sg.	serpent	
@@ -735,7 +761,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152177	mrh	mr(VII)/	mr (VII)	TN	mr (VII)	
 # KTU 1.100 79						
 152178	mnt	mn(t(I)/t	mnt (I)	n. f. sg.	portion	
-152179	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	bite	
+152179	nṯk	nṯk(II)/	nṯk (II)	n. m. sg. / n. m. pl.	bite	
 152179	nṯk	nṯk(I)/	nṯk (I)	n. m. sg.	biter	
 152179	nṯk	nṯk[	/n-ṯ-k/	vb G prefc.	to bite	
 152180	nḥš	nḥš/	nḥš	n. m. sg.	serpent	

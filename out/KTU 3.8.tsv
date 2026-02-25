@@ -34,7 +34,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161163	ḥwt	ḥw(t/t	ḥwt	n. f. sg.	country	
 161164	ṯth	ṯn(I)/	ṯn (I)	nuf.	two	
 # KTU 3.8 11						
-161165	alp	alp(I)/	ảlp (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	(head of) cattle	
+161165	alp	alp(I)/	ảlp (I)	n. m. sg. / n. m. pl.	(head of) cattle	
 161165	alp	alp(II)/	ảlp (II)	num.	(one, a) thousand	
 161166	ksp	ksp/	ksp	n. m. sg.	silver	
 # KTU 3.8 12						
@@ -43,7 +43,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161168	w	w	w	conj.	and	
 161169	hm	hm(II)	hm (II)	conj./interr. functor	if	
 161169	hm	hm(I)	hm (I)	pers. pn.	they	
-161170	alp	alp(I)/	ảlp (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	(head of) cattle	
+161170	alp	alp(I)/	ảlp (I)	n. m. sg. / n. m. pl.	(head of) cattle	
 161170	alp	alp(II)/	ảlp (II)	num.	(one, a) thousand	
 # KTU 3.8 14						
 161171	l	l(I)	l (I)	prep.	to	
@@ -59,7 +59,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161175	ypḥ	ypḥ/	ypḥ	n. m. sg.	witness	
 161176	ˤbdilt	ˤbdilt/	ʕbdỉlt	PN	ʿbdỉlt	
 # KTU 3.8 18						
-161177	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	son	
+161177	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
 161177	bn	bn(II)	bn (II)	prep.	between	
 161177	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 161178	m	l(I)	l (I)	prep.	to	
@@ -67,7 +67,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161179	ypḥ	ypḥ/	ypḥ	n. m. sg.	witness	
 161180	ilšlm	ilšlm/	ỉlšlm	PN	ỉlšlm	
 # KTU 3.8 20						
-161181	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	son	
+161181	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
 161181	bn	bn(II)	bn (II)	prep.	between	
 161181	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 161182	prqdš	prqdš/	prqdš	PN	prqdš	
@@ -77,7 +77,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161184	mnḥm	mnḥ[+m(I)	/m-n-ḥ/	vb	to deliver	
 161184	mnḥm	mnḥ/+m(I)	mnḥ	n. m.	delivery	
 # KTU 3.8 22						
-161185	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	son	
+161185	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
 161185	bn	bn(II)	bn (II)	prep.	between	
 161185	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 161186	ḥnn	lqḥ[+nn	/l-q-ḥ/	vb	to get hold of, ?	
@@ -86,6 +86,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 3.8 23						
 161187	brqn	brq(I)/+n	brq (I)	n. m.	ray	
 161187	brqn	brqn/	brqn	PN	brqn	
-161188	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
-161188	spr	spr[:d; spr[/:d	/s-p-r/; /s-p-r/	vb G suffc. / vb D suffc.; vb G inf. / vb D inf.	to count; to count	
+161188	spr	spr(II)/	spr (II)	n. m. sg.	tablet/register	
+161188	spr	spr[:d	/s-p-r/	vb G suffc. / vb D suffc.	to count	
+161188	spr	spr[/:d	/s-p-r/	vb G inf. / vb D inf.	to count	
 161188	spr	spr(I)/	spr (I)	n. m. sg.	scribe	

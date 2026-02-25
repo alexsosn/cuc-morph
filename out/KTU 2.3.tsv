@@ -20,7 +20,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156316	brt	br[t	/b-r(-r)/	vb G suffc.	to be or remain pure	
 156316	brt	br(t/t	brt	n. f. sg.	forecast	
 156317	l	l(I)	l (I)	prep.	to	
-156318	bˤl	bˤl(II)/	bʕl (II)	n. m./DN sg. / n. m./DN pl. sg. / n. m./DN sg. / n. m./DN pl. pl.	Baʿlu/Baal	
+156318	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
 # KTU 2.3 6						
 156319	ušxšir	?	?	?	?	DULAT: NOT FOUND
 156320	k	+k	-k (I)			
@@ -63,7 +63,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156344	w	w	w	conj.	and	
 156345	hw	hw	hw	pers. pn.	he	
 156346	uy	u	ủ	conj.	or	
-156347	ˤn	ˤn(I)/	ʕn (I)	n. f. sg. / n. f. sg. / n. f. sg. / n. f. du.	eye	
+156347	ˤn	ˤn(I)/	ʕn (I)	n. f. sg. / n. f. du.	eye	
 156347	ˤn	ˤn[	/ʕ-n/	vb G impv.	to see	
 156347	ˤn	ˤn(II)/	ʕn (II)	n. f. sg.	furrow	
 # KTU 2.3 14						
@@ -72,7 +72,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156348	l	l(III)	l (III)	functor	certainly	
 156349	ytn	!y!(ytn[	/y-t-n/	vb G prefc. / vb G suffc.	to give	
 156350	w	w	w	conj.	and	
-156351	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
+156351	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
+156351	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
 156351	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.3 15						
 156352	wy	w+y	w	conj.	and	
@@ -125,10 +126,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156380	rxpġt	?	?	?	?	DULAT: NOT FOUND
 # KTU 2.3 24						
 156381	xxxxxxt	?	?	?	?	DULAT: NOT FOUND
-156382	ydˤt	!y!(ydˤ(I)[t; !y!(ydˤ(I)[/t	/y-d-ʕ/ (I); /y-d-ʕ/ (I)	vb G suffc.; vb G pass. ptcpl.	to know; to know	
+156382	ydˤt	!y!(ydˤ(I)[t	/y-d-ʕ/ (I)	vb G suffc.	to know	
+156382	ydˤt	!y!(ydˤ(I)[/t	/y-d-ʕ/ (I)	vb G pass. ptcpl.	to know	
 # KTU 2.3 25						
 156383	xxxxxx	?	?	?	?	
-156384	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
+156384	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
+156384	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
 156384	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.3 26						
 156385	xxxxxxx	?	?	?	?	

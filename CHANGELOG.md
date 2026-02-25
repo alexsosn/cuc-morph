@@ -2,6 +2,19 @@
 
 ## 2026-02-25
 
+- Fixed two regressions introduced by verb-form encoding split rollout:
+  - `nominal-form-morph-pos` ambiguity rendering is now idempotent for
+    slash-packed POS heads (dedupes repeated number alternatives and avoids
+    dropping `du.` during ambiguity normalization).
+  - added a post-verb unwrapping pass so late semicolon payloads from
+    `verb-form-encoding-split` are emitted as separate rows:
+    - `variant-row-unwrapper-post-verb`
+    - `unwrapped-duplicate-pruner-post-verb`
+  - added regression coverage in
+    `tests/test_nominal_form_morph_pos.py` and
+    `tests/test_tablet_parsing_pipeline.py`.
+  - re-ran full `--include-existing` pipeline to apply globally.
+
 - Added verb form encoding split refinement to enforce analysis/POS compatibility:
   - new step `pipeline/steps/verb_form_encoding_split.py`
     (`VerbFormEncodingSplitFixer`) splits mixed finite/non-finite verb POS

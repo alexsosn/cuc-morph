@@ -1,10 +1,12 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.161 1						
-155115	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
-155115	spr	spr[:d; spr[/:d	/s-p-r/; /s-p-r/	vb G suffc. / vb D suffc.; vb G inf. / vb D inf.	to count; to count	
+155115	spr	spr(II)/	spr (II)	n. m. sg.	tablet/register	
+155115	spr	spr[:d	/s-p-r/	vb G suffc. / vb D suffc.	to count	
+155115	spr	spr[/:d	/s-p-r/	vb G inf. / vb D inf.	to count	
 155115	spr	spr(I)/	spr (I)	n. m. sg.	scribe	
-155116	dbḥ	dbḥ/	dbḥ	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	sacrifice	
-155116	dbḥ	dbḥ[; dbḥ[/	/d-b-ḥ/; /d-b-ḥ/	vb G suffc. / vb G impv.; vb G act. ptcpl.	to sacrifice; to sacrifice	
+155116	dbḥ	dbḥ/	dbḥ	n. m. sg. / n. m. pl.	sacrifice	
+155116	dbḥ	dbḥ[	/d-b-ḥ/	vb G suffc. / vb G impv.	to sacrifice	
+155116	dbḥ	dbḥ[/	/d-b-ḥ/	vb G act. ptcpl.	to sacrifice	
 155117	ẓlm	ẓl(I)/m	ẓl (I)	n. m. pl.	shade	
 # KTU 1.161 2						
 155118	qritm	qr(ʔ&i[tm	/q-r-ʔ/	vb G suffc.	to call	
@@ -36,7 +38,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155133	rdn	rdn/	rdn	PN or DN	to rule	
 # KTU 1.161 7						
 155134	qra	qr(ʔ&a[	/q-r-ʔ/	vb G impv.	to call	
-155135	ṯr	ṯr(I)/	ṯr (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	bull	
+155135	ṯr	ṯr(I)/	ṯr (I)	n. m. sg. / n. m. pl.	bull	
 155136	ˤllmn	ˤllmy/	ʕllmy	adj. or n.	eternal	
 # KTU 1.161 8						
 155137	qru	qr(ʔ&u[	/q-r-ʔ/	vb G impv.	to call	
@@ -44,7 +46,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155139	qdmym	qdmy/m	qdmy	adj. m. pl.	ancient	
 # KTU 1.161 9						
 155140	qritm	qr(ʔ&i[tm	/q-r-ʔ/	vb G suffc.	to call	
-155141	rpi	rp(u/&i	rpủ	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	healer	
+155141	rpi	rp(u/&i	rpủ	n. m. sg. / n. m. pl.	healer	
 155142	arṣ	arṣ/	ảrṣ	n. f. sg.	earth	
 # KTU 1.161 10						
 155143	qbitm	qb(ʔ&i[tm	/q-b-ʔ/	vb G suffc.	to send (someone) to say	
@@ -129,7 +131,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155197	rdn	yrd[+n	/y-r-d/	vb	to go down	
 155197	rdn	rdn/	rdn	PN or DN	to rule	
 155198	tḥt	tḥt(I)	tḥt (I)	prep.	under	
-155199	ṯr	ṯr(I)/	ṯr (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	bull	
+155199	ṯr	ṯr(I)/	ṯr (I)	n. m. sg. / n. m. pl.	bull	
 # KTU 1.161 24						
 155200	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
 155201	lmn	šlm[:d	/š-l-m/	vb D prefc.	to be well	

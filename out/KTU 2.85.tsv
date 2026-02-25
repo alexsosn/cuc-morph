@@ -5,7 +5,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159481	urtn	?	?	?	?	DULAT: NOT FOUND
 # KTU 2.85 2						
 159482	adny	adn(I)/+y	ảdn (I)	n. m.	lord	
-159483	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
+159483	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
+159483	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
 159483	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.85 3						
 159484	w	w	w	conj.	and	
@@ -14,12 +15,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159486	bḏmr	?	?	?	?	DULAT: NOT FOUND
 159487	umy	um/y	ủm	n. f. sg.	mother	
 # KTU 2.85 4						
-159488	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
+159488	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
+159488	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
 159488	rgm	rgm/	rgm	n. m. sg.	word	
 159489	tḥm	tḥm/	tḥm	n. m. sg.	message	
 159490	ˤzilt	ˤzilt/	ʕzilt	PN	ʿzilt	
 # KTU 2.85 5						
-159491	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	son	
+159491	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
 159491	bn	bn(II)	bn (II)	prep.	between	
 159491	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 159492	km	k(III)	k (III)	functor	when	
@@ -57,9 +59,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159507	šlm	šlm[:d	/š-l-m/	vb G suffc. / vb D suffc.	to be well	
 159507	šlm	šlm(III)/	šlm (III)	adj. m. sg.	pure	
 # KTU 2.85 12						
-159508	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
+159508	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
+159508	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
 159508	rgm	rgm/	rgm	n. m. sg.	word	
-159509	ṯṯb	]š]ṯb[b; ]š]ṯb[/b	/ṯ-b/; /ṯ-b/	vb Š impv.; vb Š inf.	to return; to return	
+159509	ṯṯb	]š]ṯb[b	/ṯ-b/	vb Š impv.	to return	
+159509	ṯṯb	]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
 # KTU 2.85 13						
 159510	ˤmy	ˤm(I)+y	ʕm (I)	prep.	to	
 # KTU 2.85 14						
@@ -107,7 +111,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159539	aby	ab/+y	ảb	n. m.	father	
 159540	aḫty	aḫt(I)/+y	ảḫt (I)	n. f.	sister (related by blood)	
 # KTU 2.85 25						
-159541	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
+159541	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
+159541	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
 159541	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.85 26						
 159542	yšlm	!y!šlm[	/š-l-m/	vb G prefc.	to be well	
@@ -131,9 +136,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159554	xxx	?	?	?	?	
 159555	xxm	?	?	?	?	DULAT: NOT FOUND
 # KTU 2.85 32						
-159556	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
+159556	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
+159556	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
 159556	rgm	rgm/	rgm	n. m. sg.	word	
-159557	ṯṯb	]š]ṯb[b; ]š]ṯb[/b	/ṯ-b/; /ṯ-b/	vb Š impv.; vb Š inf.	to return; to return	
+159557	ṯṯb	]š]ṯb[b	/ṯ-b/	vb Š impv.	to return	
+159557	ṯṯb	]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
 # KTU 2.85 33						
 159558	xx	?	?	?	?	
 159559	šbk	šb/+k	šb	n. m.	old man	

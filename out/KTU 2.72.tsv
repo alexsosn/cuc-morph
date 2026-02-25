@@ -4,7 +4,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158964	mlkt	mlk(t/t	mlkt	n. f. sg.	queen	
 158965	umy	um/y	ủm	n. f. sg.	mother	
 # KTU 2.72 2						
-158966	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
+158966	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
+158966	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
 158966	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.72 3						
 158967	tḥm	tḥm/	tḥm	n. m. sg.	message	
@@ -39,9 +40,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158987	šlm	šlm(I)/	šlm (I)	n. m. sg.	peace	
 158987	šlm	šlm[:d	/š-l-m/	vb G suffc. / vb D suffc.	to be well	
 158987	šlm	šlm(III)/	šlm (III)	adj. m. sg.	pure	
-158988	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
+158988	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
+158988	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
 158988	rgm	rgm/	rgm	n. m. sg.	word	
-158989	ṯṯb	]š]ṯb[b; ]š]ṯb[/b	/ṯ-b/; /ṯ-b/	vb Š impv.; vb Š inf.	to return; to return	
+158989	ṯṯb	]š]ṯb[b	/ṯ-b/	vb Š impv.	to return	
+158989	ṯṯb	]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
 158990	ly	l(I)+y	l (I)	prep.	to	
 # KTU 2.72 10						
 158991	lm	l(I)	l (I)	prep.	to	
@@ -58,13 +61,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.72 12						
 158998	inn	in/	ỉn	n. m. sg.	lack of	
 158999	im	im	ỉm	conj.	if	
-159000	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	son	
+159000	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
 159000	bn	bn(II)	bn (II)	prep.	between	
 159000	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 159001	qlt	ql[t	/q-l/	vb G suffc.	to fall (down)	
 # KTU 2.72 13						
 159002	im	im	ỉm	conj.	if	
-159003	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	son	
+159003	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
 159003	bn	bn(II)	bn (II)	prep.	between	
 159003	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 159004	alyy	alyy/	ảlyy	PN	ảlyy	
@@ -134,7 +137,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.72 25						
 159042	ybnn	!y!bn(y[+n	/b-n-y/	vb	to build	
 159042	ybnn	ybnn/	ybnn	PN	ybnn	
-159043	hlk	hlk[; hlk[/	/h-l-k/; /h-l-k/	vb G suffc.; vb G act. ptcpl. m.	to go; to go	
+159043	hlk	hlk[	/h-l-k/	vb G suffc.	to go	
+159043	hlk	hlk[/	/h-l-k/	vb G act. ptcpl. m.	to go	
 159043	hlk	hlk(I)/	hlk (I)	n. m. sg.	walk	
 159043	hlk	hlk(II)	hlk (II)	deictic adv. functor	behold!	
 # KTU 2.72 26						
@@ -158,12 +162,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159055	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 159056	amr	amr(I)/	ảmr (I)	n. m. sg.	order	
 159057	w	w	w	conj.	and	
-159058	lqḥ	lqḥ[; lqḥ[/	/l-q-ḥ/; /l-q-ḥ/	vb G suffc.; vb G inf.	to get hold of; to get hold of	
+159058	lqḥ	lqḥ[	/l-q-ḥ/	vb G suffc.	to get hold of	
+159058	lqḥ	lqḥ[/	/l-q-ḥ/	vb G inf.	to get hold of	
 159059	hw	hw	hw	pers. pn.	he	
 # KTU 2.72 30						
 159060	šmn	šmn(I)/	šmn (I)	n. m. sg.	oil	
 159061	b	b	b	prep.	in	
-159062	qrnh	qrn/h	qrn	n. f. sg. / n. f. sg. / n. f. sg. / n. f. du.	horn	
+159062	qrnh	qrn/h	qrn	n. f. sg. / n. f. du.	horn	
 # KTU 2.72 31						
 159063	w	w	w	conj.	and	
 159064	yṣq	!y!(yṣq[	/y-ṣ-q/	vb G suffc.	to pour (out)	
@@ -210,7 +215,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159086	u	u	ủ	conj.	or	
 # KTU 2.72 43						
 159087	my	my(I)	my (I)	pn. interr.	who?	
-159088	ydˤt	!y!(ydˤ(I)[t; !y!(ydˤ(I)[/t	/y-d-ʕ/ (I); /y-d-ʕ/ (I)	vb G suffc.; vb G pass. ptcpl.	to know; to know	
+159088	ydˤt	!y!(ydˤ(I)[t	/y-d-ʕ/ (I)	vb G suffc.	to know	
+159088	ydˤt	!y!(ydˤ(I)[/t	/y-d-ʕ/ (I)	vb G pass. ptcpl.	to know	
 159089	kly	kly[	/k-l-y/	vb G suffc.	to finish	
 159090	b	b	b	prep.	in	
 159091	kpr	kpr(II)/	kpr (II)	n. m. sg.	henna (powder or dye)	

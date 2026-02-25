@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-02-25T15:39:50.565196+00:00",
+  "generated_at_utc": "2026-02-25T15:53:01.596299+00:00",
   "files_checked": 278,
-  "total_issues": 11058,
-  "fallback_parsed": 978,
+  "total_issues": 11308,
+  "fallback_parsed": 291,
   "by_severity": {
-    "ERROR": 6045,
-    "WARNING": 382,
+    "ERROR": 5961,
+    "WARNING": 520,
     "INFO": 1631
   },
   "by_problem_type": [
@@ -22,12 +22,12 @@
     {
       "severity": "ERROR",
       "problem_type": "Deverbal form matches both verb and noun entries in DULAT",
-      "count": 575
+      "count": 1145
     },
     {
       "severity": "ERROR",
       "problem_type": "POS token not allowed for declared DULAT entry",
-      "count": 472
+      "count": 548
     },
     {
       "severity": "ERROR",
@@ -46,27 +46,22 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "rgm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 145
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "Multiple DULAT candidates for surface",
       "count": 123
     },
     {
       "severity": "WARNING",
       "problem_type": "Suffix form without '+'",
-      "count": 113
+      "count": 121
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
+      "count": 90
     },
     {
       "severity": "ERROR",
       "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 86
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
       "count": 86
     },
     {
@@ -95,14 +90,9 @@
       "count": 52
     },
     {
-      "severity": "ERROR",
-      "problem_type": "yṯb Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 49
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "dbḥ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 39
+      "severity": "WARNING",
+      "problem_type": "šmm DULAT plurale tantum noun should include 'pl. tant.' in POS",
+      "count": 41
     },
     {
       "severity": "ERROR",
@@ -115,64 +105,9 @@
       "count": 29
     },
     {
-      "severity": "ERROR",
-      "problem_type": "spr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 29
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šmˤ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 24
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṯṯb Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 24
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "lḥm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 22
-    },
-    {
       "severity": "WARNING",
       "problem_type": "mid Lexeme parse did not match DULAT; matched by surface form",
       "count": 21
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 20
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ydy Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 19
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mġy Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 17
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "hlk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 16
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rkb Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 16
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ydˤt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 15
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤdb Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 15
     },
     {
       "severity": "ERROR",
@@ -183,16 +118,6 @@
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for lexeme/surface",
       "count": 13
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ydˤ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 12
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥš Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 12
     },
     {
       "severity": "WARNING",
@@ -210,26 +135,6 @@
       "count": 12
     },
     {
-      "severity": "ERROR",
-      "problem_type": "lqḥ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 10
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṯny Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 10
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nġr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 9
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šty Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 9
-    },
-    {
       "severity": "WARNING",
       "problem_type": "ḥwt Lexeme parse did not match DULAT; matched by surface form",
       "count": 9
@@ -240,24 +145,9 @@
       "count": 8
     },
     {
-      "severity": "ERROR",
-      "problem_type": "ptḥ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 8
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "grš Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 7
-    },
-    {
       "severity": "WARNING",
       "problem_type": "ḥtkk Lexeme parse did not match DULAT; matched by surface form",
       "count": 7
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šmḫ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 6
     },
     {
       "severity": "WARNING",
@@ -266,27 +156,7 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "lak Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 5
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "nˤmt Adjective POS gender mismatch for nʕm (I): expected adj. m., got adj. f.",
-      "count": 5
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "trḫ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 5
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šl Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 5
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤšy Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
       "count": 5
     },
     {
@@ -310,36 +180,6 @@
       "count": 4
     },
     {
-      "severity": "ERROR",
-      "problem_type": "ndd Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "qm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "rḥṣ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yhpk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ġly Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḫbṯ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 4
-    },
-    {
       "severity": "WARNING",
       "problem_type": "Feminine plural noun in DULAT should use '/t='",
       "count": 4
@@ -351,57 +191,7 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "hbṭ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mmnnm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "pq Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "prˤ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "tmt Adjective POS gender mismatch for tm: expected adj. m., got adj. f.",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "uḫd Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "yld Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šil Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šrh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṣḥq Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 3
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
       "count": 3
     },
     {
@@ -431,52 +221,7 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "aṯr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "bky Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "brkm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mkly Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ngš Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "qlh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "tṯˤr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "ybˤl For /b-ʕ-l/ verbal readings, use canonical analysis with `[/` (e.g., bˤl[/)",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥrṣ Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḫr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
       "count": 2
     },
     {
@@ -520,58 +265,13 @@
       "count": 2
     },
     {
-      "severity": "ERROR",
-      "problem_type": "atwt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "brkn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "bu Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "klyn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "klyy Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
+      "severity": "WARNING",
+      "problem_type": "šmym DULAT plurale tantum noun should include 'pl. tant.' in POS",
+      "count": 2
     },
     {
       "severity": "ERROR",
       "problem_type": "l Formula tbˤ w l yṯb ilm expects l(II) ('not')",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mˤqbk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "npr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "nṭṭt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "pẓr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "sgr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
       "count": 1
     },
     {
@@ -581,67 +281,7 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "wpṯm Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šrgk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "šrk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤdbk Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ˤdbnn Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḥrr Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḫbṯh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḫl Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ḫtny Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṣmt Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "ṣġrt Adjective POS gender mismatch for ṣġr (I): expected adj. m., got adj. f.",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṯbh Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ṯby Semicolon-packed variants are not allowed in out/*.tsv; split each option into its own row",
       "count": 1
     },
     {

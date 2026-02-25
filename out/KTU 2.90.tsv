@@ -8,7 +8,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159974	yrmhd	yrmhd/	yrmhd	PN	yrmhd	
 # KTU 2.90 3						
 159975	iḫy	aḫ(I)/	ảḫ (I)	n. m. sg.	brother (by blood)	
-159976	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
+159976	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
+159976	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
 159976	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.90 4						
 159977	lḥt	lḥ(II)/t=	lḥ (II)	n. m. pl.	missive	
@@ -31,18 +32,19 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159990	hn	b	b	prep.	in	
 159990	hn	w	w	conj.	and	
 159990	hn	hn	hn	deictic functor/adv.	behold!	
-159991	bnš	bnš/	bnš	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	man	
+159991	bnš	bnš/	bnš	n. m. sg. / n. m. pl.	man	
 159992	hw	hw	hw	pers. pn.	he	
 # KTU 2.90 9						
 159993	b	b	b	prep.	in	
 159994	gty	gt/+y	gt	n. f./element of TNN	gittu	
-159995	ḫbṯ	ḫbṯ[:pass; ḫbṯ[/:pass	/ḫ-b-ṯ/; /ḫ-b-ṯ/	vb G suffc.; vb Gpass ptcpl. m. sg.	to flee; to flee	
+159995	ḫbṯ	ḫbṯ[:pass	/ḫ-b-ṯ/	vb G suffc.	to flee	
+159995	ḫbṯ	ḫbṯ[/:pass	/ḫ-b-ṯ/	vb Gpass ptcpl. m. sg.	to flee	
 159995	ḫbṯ	ḫbṯ/	ḫbṯ	adj. m. sg.	emancipated	
 # KTU 2.90 10						
 159996	w	w	w	conj.	and	
 159997	ht	ht	ht	adv.	here	
 159998	hn	hn	hn	deictic functor/adv.	behold!	
-159999	bnš	bnš/	bnš	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	man	
+159999	bnš	bnš/	bnš	n. m. sg. / n. m. pl.	man	
 160000	hw	hw	hw	pers. pn.	he	
 # KTU 2.90 11						
 160001	ˤmm	ˤmm[:pass	/ʕ-m-m/	vb Gpass suffc.	to be covered	
@@ -60,7 +62,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160009	yuḫd	ʔḫd[d:pass	/ʔ-ḫ-d(/ḏ)/	vb G prefc. / vb Gpass prefc.	to collect	
 # KTU 2.90 15						
 160010	hn	hn	hn	deictic functor/adv.	behold!	
-160011	bnš	bnš/	bnš	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	man	
+160011	bnš	bnš/	bnš	n. m. sg. / n. m. pl.	man	
 160012	hw	hw	hw	pers. pn.	he	
 # KTU 2.90 16						
 160013	w	w	w	conj.	and	
@@ -71,7 +73,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.90 18						
 160017	w	w	w	conj.	and	
 160018	kin	?	?	?	?	DULAT: NOT FOUND
-160019	hlk	hlk[; hlk[/	/h-l-k/; /h-l-k/	vb G suffc.; vb G act. ptcpl. m.	to go; to go	
+160019	hlk	hlk[	/h-l-k/	vb G suffc.	to go	
+160019	hlk	hlk[/	/h-l-k/	vb G act. ptcpl. m.	to go	
 160019	hlk	hlk(I)/	hlk (I)	n. m. sg.	walk	
 160019	hlk	hlk(II)	hlk (II)	deictic adv. functor	behold!	
 # KTU 2.90 19						

@@ -14,7 +14,8 @@ _DUAL_POS_RE = re.compile(r"du\.", flags=re.IGNORECASE)
 _PLURAL_POS_RE = re.compile(r"(?:pl\.|plur(?:al)?)", flags=re.IGNORECASE)
 _SINGULAR_POS_RE = re.compile(r"(?:sg\.|sing(?:ular)?)", flags=re.IGNORECASE)
 _NUMBER_TOKEN_RE = re.compile(
-    r"\b(?:sg\.|sing(?:ular)?|pl\.|plur(?:al)?|du\.)\b", flags=re.IGNORECASE
+    r"(?<!\w)(?:sg\.|sing(?:ular)?|pl\.|plur(?:al)?|du\.)(?=$|[\s,;/])",
+    flags=re.IGNORECASE,
 )
 _FEM_SING_ANALYSIS_RE = re.compile(r"/t(?=\s*$|[+~])")
 _FEM_PL_ANALYSIS_RE = re.compile(r"/t=(?=\s*$|[+~])")
@@ -198,7 +199,7 @@ class NominalFormMorphPosFixer(RefinementStep):
         # for the same exact surface form.
         if dual_unambiguous and "du." not in rewritten_head.lower():
             rewritten_head = f"{rewritten_head} du."
-        elif not dual_unambiguous and "du." in rewritten_head.lower():
+        elif not dual_unambiguous and "du." in rewritten_head.lower() and len(number_options) <= 1:
             rewritten_head = _DUAL_POS_RE.sub("", rewritten_head)
             rewritten_head = re.sub(r"\s{2,}", " ", rewritten_head).strip()
 
@@ -270,22 +271,38 @@ def _with_ambiguous_number_options(
     if _FEM_PL_ANALYSIS_RE.search(analysis) or _FEM_SING_ANALYSIS_RE.search(analysis):
         return value
 
-    options = [_replace_number_marker(value, marker) for marker in number_options]
-    return " / ".join(_dedupe(options))
+    head, sep, rest = value.partition(",")
+    head_options = [part.strip() for part in re.split(r"\s*/\s*", head) if part.strip()]
+    if not head_options:
+        head_options = [head.strip()]
 
-
-def _replace_number_marker(pos_value: str, marker: str) -> str:
-    value = (pos_value or "").strip()
-    if not value:
+    base_options = _dedupe([_strip_number_marker(part) for part in head_options])
+    base_options = [part for part in base_options if part]
+    if not base_options:
         return value
 
-    head, sep, rest = value.partition(",")
-    head_text = _NUMBER_TOKEN_RE.sub("", head).strip()
-    head_text = re.sub(r"\s{2,}", " ", head_text).strip()
-    head_text = f"{head_text} {marker}".strip()
+    # Keep behavior conservative for genuinely different POS bases.
+    if len(base_options) > 1:
+        deduped_head = " / ".join(_dedupe(head_options))
+        if not sep:
+            return deduped_head
+        return f"{deduped_head}, {rest.strip()}"
+
+    base = base_options[0]
+    rendered = _dedupe([f"{base} {marker}".strip() for marker in number_options])
+    new_head = " / ".join(rendered)
     if not sep:
-        return head_text
-    return f"{head_text}, {rest.strip()}"
+        return new_head
+    return f"{new_head}, {rest.strip()}"
+
+
+def _strip_number_marker(text: str) -> str:
+    value = (text or "").strip()
+    if not value:
+        return value
+    value = _NUMBER_TOKEN_RE.sub("", value)
+    value = re.sub(r"\s{2,}", " ", value).strip()
+    return value
 
 
 def _dedupe(values: list[str]) -> list[str]:

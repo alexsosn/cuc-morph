@@ -39,6 +39,10 @@ from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
 from pipeline.steps.onomastic_gloss import OnomasticGlossOverrideFixer
 from pipeline.steps.plural_split import PluralSplitFixer
 from pipeline.steps.plurale_tantum_m import PluraleTantumMFixer
+from pipeline.steps.post_verb_variant_unwrapper import (
+    PostVerbUnwrappedDuplicatePruner,
+    PostVerbVariantRowUnwrapper,
+)
 from pipeline.steps.prefixed_iii_aleph_verb import PrefixedIIIAlephVerbFixer
 from pipeline.steps.pronoun_closure import PronounClosureFixer
 from pipeline.steps.redirect_reconstruction_comment import RedirectReconstructionCommentFixer
@@ -136,6 +140,8 @@ class TabletParsingPipeline:
             VerbLStemGeminationFixer(),
             VerbStemSuffixMarkerFixer(),
             VerbNStemAssimilationFixer(),
+            PostVerbVariantRowUnwrapper(),
+            PostVerbUnwrappedDuplicatePruner(),
             # Keep schema pass last so any content-changing steps still end in
             # strict 7-column/quote-safe TSV for GitHub rendering.
             TsvSchemaFormatter(),

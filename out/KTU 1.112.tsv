@@ -35,7 +35,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.112 6						
 153608	ilm	il(I)/m	ỉl (I)	n. m. pl.	god	
 153609	w	w	w	conj.	and	
-153610	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	son	
+153610	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
 153610	bn	bn(II)	bn (II)	prep.	between	
 153610	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 153611	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
@@ -137,7 +137,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153668	lgṯrm	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.112 20						
 153669	w	w	w	conj.	and	
-153670	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
+153670	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
+153670	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
 153670	rgm	rgm/	rgm	n. m. sg.	word	
 153671	gṯrm	gṯr/+m(I)	gṯr	DN	Gaṯaru/Gašru/eponym of the dead and deified kings	
 153672	yṯṯb	]š]ṯb[ṯb	/ṯ-b/	vb Š prefc.	to return	
@@ -152,7 +153,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153678	ˤ	?	?	?	?	
 # KTU 1.112 22						
 153679	šrh	šr(IV)/h	šr (IV)	n. m. sg.	navel	
-153679	šrh	šry[; šry[/	/š-r-y/w/; /š-r-y/w/	vb G suffc.; vb G inf.	to release; to release	
+153679	šrh	šry[	/š-r-y/w/	vb G suffc.	to release	
+153679	šrh	šry[/	/š-r-y/w/	vb G inf.	to release	
 153680	šnpt	šnp(t/t	šnpt	n. f. sg.	wave- offering	
 153681	il	il(I)/	ỉl (I)	n. m.	god	
 153682	šbˤl	šbˤl/	šbʕl	PN	šbʿl	
@@ -161,7 +163,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153684	pn	pn(m/	pnm	n. m. pl. tant.	face	
 153684	pn	pn	pn	functor	lest	
 153685	š	š/	š	n. m. sg.	ram	
-153686	bˤl	bˤl(II)/	bʕl (II)	n. m./DN sg. / n. m./DN pl. sg. / n. m./DN sg. / n. m./DN pl. pl.	Baʿlu/Baal	
+153686	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
 153686	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 153687	ugrt	ugrt/	ủgrt	TN	Ugarit	
 153688	š	š/	š	n. m. sg.	ram	
@@ -205,7 +207,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153712	ˤš	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.112 28						
 153713	rt	rt/	rt	PN	rt	
-153714	šl	šl[; šl[/	/š-l(-l)/; /š-l(-l)/	vb G suffc.; vb G inf.	to plunder; to plunder	
+153714	šl	šl[	/š-l(-l)/	vb G suffc.	to plunder	
+153714	šl	šl[/	/š-l(-l)/	vb G inf.	to plunder	
 153715	btbt	btbt/	btbt	DN	btbt	
 153716	w	w	w	conj.	and	
 153717	x	?	?	?	?	

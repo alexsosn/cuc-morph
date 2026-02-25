@@ -1,18 +1,20 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.169 1						
 155612	ydy	yd(I)/+y	yd (I)	n. f.	hand	
-155612	ydy	!y!(ydy(I)[; !y!(ydy(I)[/	/y-d-y/ (I); /y-d-y/ (I)	vb G prefc. / vb G impv.; vb G inf. / vb G act. ptcpl. m.	to throw; to throw	
+155612	ydy	!y!(ydy(I)[	/y-d-y/ (I)	vb G prefc. / vb G impv.	to throw	
+155612	ydy	!y!(ydy(I)[/	/y-d-y/ (I)	vb G inf. / vb G act. ptcpl. m.	to throw	
 155612	ydy	!y!(ydy(II)[	/y-d-y/ (II)	vb G	to rip	
 155613	dbbm	dbb(II)/m	dbb (II)	n. m. pl.	(sorcerer) adversary	
 155613	dbbm	dbb(I)/m	dbb (I)	n. m. pl.	beast	
 155614	d	d	d	det. or rel. functor	the one(s) of	
-155615	ġzrm	ġzr/m	ġzr	n. m. pl. / n. m. pl. / n. m. pl. / n. m. du.	lad	
+155615	ġzrm	ġzr/m	ġzr	n. m. pl. / n. m. du.	lad	
 155616		?	?	?	?	
 155617	tgḫṭk	!t!gḫṭ[k	/g-ḫ-ṭ/	vb G prefc. / vb G suffc.	to cast out	
-155618	rgm	rgm[; rgm[/	/r-g-m/; /r-g-m/	vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.	to say; to say	
+155618	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
+155618	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
 155618	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 1.169 2						
-155619	bˤl	bˤl(II)/	bʕl (II)	n. m./DN sg. / n. m./DN pl. sg. / n. m./DN sg. / n. m./DN pl. pl.	Baʿlu/Baal	
+155619	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN sg. / DN pl. sg. / DN pl. pl.	Baʿlu/Baal	
 155619	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 155620	tgḫṭk	!t!gḫṭ[k	/g-ḫ-ṭ/	vb G prefc. / vb G suffc.	to cast out	
 155621	w	w	w	conj.	and	
@@ -72,7 +74,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155649	tmntk	tmnt/+k	tmnt	n. f.	frame	
 155649	tmntk	tmn(I)&t/+k	tmn (I)	n. m.	frame	
 155650	tlḥm	!t!lḥm(I)[	/l-ḥ-m/ (I)	vb G prefc.	to eat	
-155651	lḥm	lḥm(I)[; lḥm(I)[/	/l-ḥ-m/ (I); /l-ḥ-m/ (I)	vb G suffc. / vb G impv.; vb G inf.	to eat; to eat	
+155651	lḥm	lḥm(I)[	/l-ḥ-m/ (I)	vb G suffc. / vb G impv.	to eat	
+155651	lḥm	lḥm(I)[/	/l-ḥ-m/ (I)	vb G inf.	to eat	
 155651	lḥm	lḥm/	lḥm	n. m. sg.	grain	
 155651	lḥm	lḥ(I)/m	lḥ (I)	n. f. du.	cheek	
 # KTU 1.169 7						
@@ -123,7 +126,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155682	al	al(II)	ảl (II)	pos. functor	surely	
 155683	tapq	ʔpq[q:d	/ʔ-p-q/	vb D prefc.	to move away	
 155684	apq	apq/	ảpq	n. m. sg.	spring	
-155685	lbš	lbš/	lbš	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	clothing	
+155685	lbš	lbš/	lbš	n. m. sg. / n. m. pl.	clothing	
 155685	lbš	lbš[/	/l-b-š/	vb G act. ptcpl. m. / vb G pass. ptcpl. m.	to dress	
 # KTU 1.169 13						
 155686	il	il(I)/	ỉl (I)	n. m.	god	
@@ -148,7 +151,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155699	l	l(I)	l (I)	prep.	to	
 155699	l	l(II)	l (II)	adv.	no	
 155699	l	l(III)	l (III)	functor	certainly	
-155700	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. sg. / n. m. sg. / n. m. pl. pl.	son	
+155700	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl.	son	
 155700	bn	bn(II)	bn (II)	prep.	between	
 155700	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 155701	adm	adm(I)/	ảdm (I)	n. m. sg.	man	
