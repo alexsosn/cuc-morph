@@ -1,6 +1,6 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 I:1						
-142733	rġb	rġb[/	/r-ġ-b/	vb G inf.	to be hungry	
+142733	rġb	!!rġb[/	/r-ġ-b/	vb G inf.	to be hungry	
 142734	yd	yd(I)/	yd (I)	n. f. sg.	hand	
 142735	mṯkt	mṯk[t	/m-ṯ-k/	vb	to carry	
 # KTU 1.15 I:2						
@@ -86,7 +86,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 II:11						
 142794	aḫr	aḫr	ảḫr	adv./prep./conj.	afterwards	
 142795	mġy	mġy[	/m-ġ-y/	vb G suffc.	to come	
-142795	mġy	mġy[/	/m-ġ-y/	vb G inf.	to come	
+142795	mġy	!!mġy[/	/m-ġ-y/	vb G inf.	to come	
 142796	ˤdt	ˤd(t(I)/t	ʕdt (I)	n. f. sg.	assembly	
 142796	ˤdt	ˤd(t(II)/t	ʕdt (II)	n. f. sg.	date	
 142797	ilm	il(I)/m	ỉl (I)	n. m. pl.	god	
@@ -128,7 +128,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 II:18						
 142822	ymn	ymn(I)/	ymn (I)	n. m. sg.	right (side)	
 142823	brkm	brk(II)[m	/b-r-k/ (II)	vb D suffc.	to be blessed	
-142823	brkm	brk(II)[/m	/b-r-k/ (II)	vb D inf.	to be blessed	
+142823	brkm	!!brk(II)[/m	/b-r-k/ (II)	vb D inf.	to be blessed	
 142824	ybrk	!y!brk(II)[:d	/b-r-k/ (II)	vb D prefc.	to be blessed	
 # KTU 1.15 II:19						
 142825	ˤbdh	ˤbd(I)/+h	ʕbd (I)	n. m.	servant	
@@ -172,7 +172,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142853	yṣb	nṣb[	/n-ṣ-b/	vb G prefc.	to erect	
 142854	ġlm	ġlm/	ġlm	n. m. sg.	boy	
 # KTU 1.15 II:26						
-142855	ynq	!y!(ynq[/	/y-n-q/	vb G act. ptcpl. sg.	to suck	
+142855	ynq	(ynq[/	/y-n-q/	vb G act. ptcpl. sg.	to suck	
 142856	ḥlb	ḥlb/	ḥlb	n. m. sg.	milk	
 142857	aṯrt	aṯr(t(I)/t	ảṯrt (I)	n. f. sg.	back part (of the head)	
 # KTU 1.15 II:27						
@@ -347,7 +347,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142975	yṣḥ	!y!ṣḥ[	/ṣ-ḥ/	vb G prefc.	to exclaim	
 # KTU 1.15 IV:3						
 142976	šmˤ	šmˤ[	/š-m-ʕ/	vb G impv.	to hear	
-142976	šmˤ	šmˤ[/	/š-m-ʕ/	vb G inf.	to hear	
+142976	šmˤ	!!šmˤ[/	/š-m-ʕ/	vb G inf.	to hear	
 142976	šmˤ	šmˤ/	šmʕ	n. m. sg.	auditor	
 142977	lmṯt	?	?	?	?	DULAT: NOT FOUND
 142978	ḥry	ḥr(I)/+y	ḥr (I)	n. m.	intestine(s)	
@@ -461,12 +461,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 IV:27						
 143048	l	l(I)	l (I)	prep.	to	
 143049	lḥm	lḥm(I)[	/l-ḥ-m/ (I)	vb G suffc. / vb G impv.	to eat	
-143049	lḥm	lḥm(I)[/	/l-ḥ-m/ (I)	vb G inf.	to eat	
+143049	lḥm	!!lḥm(I)[/	/l-ḥ-m/ (I)	vb G inf.	to eat	
 143049	lḥm	lḥm/	lḥm	n. m. sg.	grain	
 143049	lḥm	lḥ(I)/m	lḥ (I)	n. f. du.	cheek	
 143050	l	l(I)	l (I)	prep.	to	
 143051	šty	šty[	/š-t-y/	vb G suffc. / vb G impv.	to drink	
-143051	šty	šty[/	/š-t-y/	vb G inf.	to drink	
+143051	šty	!!šty[/	/š-t-y/	vb G inf.	to drink	
 143052	ṣḥtkm	ṣḥ[tkm	/ṣ-ḥ/	vb G	to exclaim	
 # KTU 1.15 IV:28						
 143053	w	w	w	conj.	and	
@@ -527,14 +527,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143088	l	l(II)	l (II)	adv.	no	
 143088	l	l(III)	l (III)	functor	certainly	
 143089	lḥm	lḥm(I)[	/l-ḥ-m/ (I)	vb G suffc. / vb G impv.	to eat	
-143089	lḥm	lḥm(I)[/	/l-ḥ-m/ (I)	vb G inf.	to eat	
+143089	lḥm	!!lḥm(I)[/	/l-ḥ-m/ (I)	vb G inf.	to eat	
 143089	lḥm	lḥm/	lḥm	n. m. sg.	grain	
 143089	lḥm	lḥ(I)/m	lḥ (I)	n. f. du.	cheek	
 143090	l	l(I)	l (I)	prep.	to	
 143090	l	l(II)	l (II)	adv.	no	
 143090	l	l(III)	l (III)	functor	certainly	
 143091	šty	šty[	/š-t-y/	vb G suffc. / vb G impv.	to drink	
-143091	šty	šty[/	/š-t-y/	vb G inf.	to drink	
+143091	šty	!!šty[/	/š-t-y/	vb G inf.	to drink	
 143092	ṣḥtkm	ṣḥ[tkm	/ṣ-ḥ/	vb G	to exclaim	
 # KTU 1.15 V:11						
 143093	xxxbrk	?	?	?	?	DULAT: NOT FOUND
@@ -549,7 +549,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143097	km	km	km	prep./conj./adv.		
 143097	km	+km, +km=	-km			
 143098	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-143098	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+143098	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+143098	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 143098	rgm	rgm/	rgm	n. m. sg.	word	
 143099	ṯrm	ṯr(I)/m	ṯr (I)	n. m. pl.	bull	
 # KTU 1.15 V:14						
@@ -626,7 +627,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143150	xxxxxxxxxxxtm	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.15 VI:1						
 143151	šmˤ	šmˤ[	/š-m-ʕ/	vb G impv.	to hear	
-143151	šmˤ	šmˤ[/	/š-m-ʕ/	vb G inf.	to hear	
+143151	šmˤ	!!šmˤ[/	/š-m-ʕ/	vb G inf.	to hear	
 143151	šmˤ	šmˤ/	šmʕ	n. m. sg.	auditor	
 143152	l	l(I)	l (I)	prep.	to	
 143152	l	l(III)	l (III)	functor	certainly	
@@ -652,12 +653,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143164	l	l(II)	l (II)	adv.	no	
 143164	l	l(III)	l (III)	functor	certainly	
 143165	lḥm	lḥm(I)[	/l-ḥ-m/ (I)	vb G suffc. / vb G impv.	to eat	
-143165	lḥm	lḥm(I)[/	/l-ḥ-m/ (I)	vb G inf.	to eat	
+143165	lḥm	!!lḥm(I)[/	/l-ḥ-m/ (I)	vb G inf.	to eat	
 143166	l	l(I)	l (I)	prep.	to	
 143166	l	l(II)	l (II)	adv.	no	
 143166	l	l(III)	l (III)	functor	certainly	
 143167	šty	šty[	/š-t-y/	vb G suffc. / vb G impv.	to drink	
-143167	šty	šty[/	/š-t-y/	vb G inf.	to drink	
+143167	šty	!!šty[/	/š-t-y/	vb G inf.	to drink	
 143168	ṣḥtkm	ṣḥ[tkm	/ṣ-ḥ/	vb G	to exclaim	
 # KTU 1.15 VI:5						
 143169	dbḥ	dbḥ/	dbḥ	n. m. sg. / n. m. pl. cstr.	sacrifice	
@@ -672,7 +673,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 VI:7						
 143177	rgm	rgm/	rgm	n. m. sg.	word	
 143178	ṯrm	ṯr(I)/m	ṯr (I)	n. m. pl.	bull	
-143178	ṯrm	ṯrm[/	/ṯ-r-m/	vb G inf.	to break	
+143178	ṯrm	!!ṯrm[/	/ṯ-r-m/	vb G inf.	to break	
 143179	rgm	rgm/	rgm	n. m. sg.	word	
 143180	hm	hm(II)	hm (II)	conj./interr. functor	if	
 143180	hm	hm(I)	hm (I)	pers. pn.	they	
@@ -681,7 +682,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143182	ḏrthm	ḏrt/+hm	ḏrt	n. f.	vision	
 143183	mt	mt(II)/	mt (II)	n. m. sg.	death	
 143183	mt	mt[	/m-t/	vb G suffc.	to die	
-143183	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
+143183	mt	!!mt[/	/m-t/	vb G inf.	to die	
+143183	mt	mt[/	/m-t/	vb G ptcpl.	to die	
 143183	mt	mt(I)/	mt (I)	n. m. sg.	dead person	
 143184	krt	krt/	krt	PN	krt	
 # KTU 1.15 VI:9						

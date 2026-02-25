@@ -12,7 +12,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.87 3						
 159632	aḫy	aḫ(I)/+y	ảḫ (I)	n. m.	brother (by blood)	
 159633	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-159633	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+159633	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+159633	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 159633	rgm	rgm/	rgm	n. m. sg.	word	
 159634	hlny	hlny	hlny	deictic adv. functor	behold	
 # KTU 2.87 4						
@@ -132,11 +133,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159709	w	w	w	conj.	and	
 159710	mnm	mnm	mnm	indef. pn.	any(thing)	
 159711	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-159711	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+159711	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+159711	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 159711	rgm	rgm/	rgm	n. m. sg.	word	
 159712	w	w	w	conj.	and	
 159713	ṯṯb	]š]ṯb[b	/ṯ-b/	vb Š impv.	to return	
-159713	ṯṯb	]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
+159713	ṯṯb	!!]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
 # KTU 2.87 25						
 159714	bbd	bb/+d	bb	PN	bb, ?	
 159715	bnil	bnil/	bnỉl	PN	bnỉl	
@@ -148,7 +150,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159719	atm	ʔtw[	/ʔ-t-w/	vb G impv.	to come	
 159719	atm	atm	ảtm	pers. pn.	you	
 159720	ydˤt	!y!(ydˤ(I)[t	/y-d-ʕ/ (I)	vb G suffc.	to know	
-159720	ydˤt	!y!(ydˤ(I)[/t	/y-d-ʕ/ (I)	vb G pass. ptcpl.	to know	
+159720	ydˤt	(ydˤ(I)[/t	/y-d-ʕ/ (I)	vb G pass. ptcpl.	to know	
 159721	lb	lb/	lb	n. m. sg.	heart	
 159722	aḫtk	aḫ(t(I)/t+k	ảḫt (I)	n. f. sg.	sister (related by blood)	
 # KTU 2.87 27						
@@ -191,7 +193,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159747	ly	l(I)+y	l (I)	prep.	to	
 # KTU 2.87 32						
 159748	lakh	l(ʔ&ak[+h	/l-ʔ-k/	vb G impv.	to send (a message)	
-159748	lakh	l(ʔ&ak[/+h	/l-ʔ-k/	vb G inf.	to send (a message)	
+159748	lakh	!!l(ʔ&ak[/+h	/l-ʔ-k/	vb G inf.	to send (a message)	
 159749	ašhkr	!(ʔ&a!]š]hkr[	hkr	vb Š prefc.	to remain tranquil	
 159750	l	l(I)	l (I)	prep.	to	
 159750	l	l(III)	l (III)	functor	certainly	
@@ -208,6 +210,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159758	l	l(II)	l (II)	adv.	no	
 159758	l	l(III)	l (III)	functor	certainly	
 159759	ydˤt	!y!(ydˤ(I)[t	/y-d-ʕ/ (I)	vb G suffc.	to know	
-159759	ydˤt	!y!(ydˤ(I)[/t	/y-d-ʕ/ (I)	vb G pass. ptcpl.	to know	
+159759	ydˤt	(ydˤ(I)[/t	/y-d-ʕ/ (I)	vb G pass. ptcpl.	to know	
 159760	lby	lb/y	lb	n. m. sg.	heart	
 159761	kmrṣ	?	?	?	?	DULAT: NOT FOUND

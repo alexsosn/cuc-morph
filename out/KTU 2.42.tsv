@@ -8,7 +8,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158107	bˤly	bˤl(II)/y	bʕl (II)	n. m. sg./DN	Baʿlu/Baal	
 # KTU 2.42 2						
 158108	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-158108	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+158108	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+158108	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 158108	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.42 3						
 158109	tḥm	tḥm/	tḥm	n. m. sg.	message	
@@ -101,7 +102,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158163	bhm	b	b	prep.	in	
 158164	w	w	w	conj.	and	
 158165	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-158165	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+158165	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+158165	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 158165	rgm	rgm/	rgm	n. m. sg.	word	
 158166	hw	hw	hw	pers. pn.	he	
 158167	al	al(I)	ảl (I)	neg. functor	no	
@@ -142,7 +144,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158190	had	?	?	?	?	DULAT: NOT FOUND
 158191	w	w	w	conj.	and	
 158192	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-158192	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+158192	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+158192	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 158192	rgm	rgm/	rgm	n. m. sg.	word	
 158193	ank	ank	ảnk	pers. pn.	I	
 # KTU 2.42 26						
@@ -158,6 +161,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158202	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 158202	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 158203	lak	l(ʔ&ak[	/l-ʔ-k/	vb G impv.	to send (a message)	
-158203	lak	l(ʔ&ak[/	/l-ʔ-k/	vb G inf.	to send (a message)	
+158203	lak	!!l(ʔ&ak[/	/l-ʔ-k/	vb G inf.	to send (a message)	
 158204	ˤm	ˤm(I)	ʕm (I)	prep.	to	
 158205		?	?	?	?	

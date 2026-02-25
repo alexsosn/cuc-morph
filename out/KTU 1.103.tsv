@@ -19,7 +19,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152318	nḥš	nḥš/	nḥš	n. m. sg.	serpent	
 152319	yaṯr	ʔṯr[r:d	/ʔ-ṯ-r/	vb G prefc. / vb D prefc.	to go	
 152320	yld	!y!](n](yld[	/y-l-d/	vb N suffc.	to give birth (to)	
-152320	yld	!y!(yld[/	/y-l-d/	vb G inf.	to give birth (to)	
+152320	yld	!!(yld[/	/y-l-d/	vb G inf.	to give birth (to)	
 152320	yld	yld/	yld	n. m. sg. / n. m. pl. cstr.	son	
 152321	bhmth	bhm(t/t+h	bhmt	n. f. sg.	cattle	
 152322	tˤṭpn	!t!ˤṭp[n	/ʕ-ṭ-p/	vb	to be weak	
@@ -52,14 +52,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152341	ḥwtntḫlq	?	?	?	?	DULAT: NOT FOUND
 152342	mt	mt(II)/	mt (II)	n. m. sg.	death	
 152342	mt	mt[	/m-t/	vb G suffc.	to die	
-152342	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
+152342	mt	!!mt[/	/m-t/	vb G inf.	to die	
+152342	mt	mt[/	/m-t/	vb G ptcpl.	to die	
 152342	mt	mt(I)/	mt (I)	n. m. sg.	dead person	
 152343	n	~n	-n (I)	encl. morph.		
 152343	n	[n, [n=	-n (II)	suffixed pn. morph. used with vb	me/to me	
 152343	n	+n, +n=	-n (III)	suff. pn. morph. 1.p.pl.	our/us	
 152343	n		-n (IV)	contracted suff. pn. morph. used with a vb	him/her/it	
 152344	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-152344	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+152344	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+152344	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 152344	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 1.103 7						
 152345	win	?	?	?	?	DULAT: NOT FOUND
@@ -156,10 +158,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152413	ibnyḫlq	?	?	?	?	DULAT: NOT FOUND
 152414	mṯn	mṯn/	mṯn	n. m. sg.	repetition	
 152415	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-152415	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+152415	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+152415	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 152415	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 1.103 19						
-152416	rġb	rġb[/	/r-ġ-b/	vb G inf.	to be hungry	
+152416	rġb	!!rġb[/	/r-ġ-b/	vb G inf.	to be hungry	
 152417	w	w	w	conj.	and	
 152418	tp	tp(II)/	tp (II)	n. m. sg.	aspect	
 152418	tp	tp(I)/	tp (I)	n. m. sg.	drum	
@@ -381,7 +384,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152572	bh	b	b	prep.	in	
 152573	ḫrdn	ḫrd/	ḫrd	n. m. sg.	(royal) guard	
 152574	yhpk	!y!hpk[	/h-p-k/	vb G prefc.	to overturn	
-152574	yhpk	!y!hpk[/	/h-p-k/	vb G inf.	to overturn	
+152574	yhpk	!!hpk[/	/h-p-k/	vb G inf.	to overturn	
 152575	l	l(I)	l (I)	prep.	to	
 152575	l	l(II)	l (II)	adv.	no	
 152575	l	l(III)	l (III)	functor	certainly	

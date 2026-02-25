@@ -51,7 +51,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139806	w	w	w	conj.	and	
 139807	l	l(II)	l (II)	adv.	no	
 139808	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc.	to sit down	
-139808	yṯb	!y!(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
+139808	yṯb	(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
 139809	ilm	il(I)/m	ỉl (I)	n. m. pl.	god	
 139810	idk	idk	ỉdk	narrative adv. functor	then	
 # KTU 1.5 I:10						
@@ -245,7 +245,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139943	ṯtˤ	ṯtˤ[	/ṯ-t-ʕ/	vb G suffc.	to be frightened	
 139944	nn	grš[	/g-r-š/	vb G impv.	to eject	
 139944	nn	gr[	/g-r(-y)/	vb G suffc.	to attack	
-139944	nn	gr[/	/g-r(-y)/	vb G inf.	to attack	
+139944	nn	!!gr[/	/g-r(-y)/	vb G inf.	to attack	
 139945	rkb	rkb[	/r-k-b/	vb G suffc. / vb G impv.	to mount (especially a chariot)	
 139945	rkb	rkb[/	/r-k-b/	vb G ptcpl.	to mount (especially a chariot)	
 139945	rkb	rkb(I)/	rkb (I)	n. m. sg.	Charioteer	
@@ -255,18 +255,20 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 II:8						
 139947	tbˤ	tbˤ[	/t-b-ʕ/	vb G suffc.	to go	
 139948	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-139948	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+139948	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+139948	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 139948	rgm	rgm/	rgm	n. m. sg.	word	
 139949	l	l(I)	l (I)	prep.	to	
 139950	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. cstr.	son	
 139951	ilm	il(I)/m	ỉl (I)	n. m. pl.	god	
 139952	mt	mt(II)/	mt (II)	n. m. sg.	death	
 139952	mt	mt[	/m-t/	vb G suffc.	to die	
-139952	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
+139952	mt	!!mt[/	/m-t/	vb G inf.	to die	
+139952	mt	mt[/	/m-t/	vb G ptcpl.	to die	
 139952	mt	mt(I)/	mt (I)	n. m. sg.	dead person	
 # KTU 1.5 II:9						
 139953	ṯny	ṯny[	/ṯ-n-y/	vb G impv.	to repeat	
-139953	ṯny	ṯny[/	/ṯ-n-y/	vb G inf.	to repeat	
+139953	ṯny	!!ṯny[/	/ṯ-n-y/	vb G inf.	to repeat	
 139954	l	l(I)	l (I)	prep.	to	
 139954	l	l(III)	l (III)	functor	certainly	
 139955	ydd	ydd(I)/	ydd (I)	adj. m. sg.	loved	
@@ -286,7 +288,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139967	ilm	il(I)/m	ỉl (I)	n. m. pl.	god	
 139968	mt	mt(II)/	mt (II)	n. m. sg.	death	
 139968	mt	mt[	/m-t/	vb G suffc.	to die	
-139968	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
+139968	mt	!!mt[/	/m-t/	vb G inf.	to die	
+139968	mt	mt[/	/m-t/	vb G ptcpl.	to die	
 139968	mt	mt(I)/	mt (I)	n. m. sg.	dead person	
 # KTU 1.5 II:12						
 139969	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. m. du.	servant	
@@ -300,7 +303,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139975	l	l(II)	l (II)	adv.	no	
 139975	l	l(III)	l (III)	functor	certainly	
 139976	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc.	to sit down	
-139976	yṯb	!y!(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
+139976	yṯb	(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
 139977	ilm	il(I)/m	ỉl (I)	n. m. pl.	god	
 139978	idk	idk	ỉdk	narrative adv. functor	then	
 # KTU 1.5 II:14						
@@ -314,7 +317,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139984	ilm	il(I)/m	ỉl (I)	n. m. pl.	god	
 139985	mt	mt(II)/	mt (II)	n. m. sg.	death	
 139985	mt	mt[	/m-t/	vb G suffc.	to die	
-139985	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
+139985	mt	!!mt[/	/m-t/	vb G inf.	to die	
+139985	mt	mt[/	/m-t/	vb G ptcpl.	to die	
 139985	mt	mt(I)/	mt (I)	n. m. sg.	dead person	
 # KTU 1.5 II:15						
 139986	tk	tk/	tk	n. m.	centre	
@@ -347,7 +351,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140008	ilm	il(I)/m	ỉl (I)	n. m. pl.	god	
 140009	mt	mt(II)/	mt (II)	n. m. sg.	death	
 140009	mt	mt[	/m-t/	vb G suffc.	to die	
-140009	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
+140009	mt	!!mt[/	/m-t/	vb G inf.	to die	
+140009	mt	mt[/	/m-t/	vb G ptcpl.	to die	
 140009	mt	mt(I)/	mt (I)	n. m. sg.	dead person	
 140010	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. m. du.	servant	
 140011	an	an(I)	ản (I)	pers. pn.	I	
@@ -356,7 +361,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140012	w	w	w	conj.	and	
 140013	dˤlmk	?	?	?	?	DULAT: NOT FOUND
 140014	šmḫ	šmḫ[	/š-m-ḫ/	vb G prefc. / vb G suffc.	to be glad	
-140014	šmḫ	šmḫ[/	/š-m-ḫ/	vb G inf.	to be glad	
+140014	šmḫ	!!šmḫ[/	/š-m-ḫ/	vb G inf.	to be glad	
 140015	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. cstr.	son	
 140016	ilm	il(I)/m	ỉl (I)	n. m. pl.	god	
 140017	mt	mt(II)/	mt (II)	n. m. sg.	death	
@@ -384,7 +389,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 II:25						
 140033	xxxxxxxxxx	?	?	?	?	
 140034	šmḥy	šmḫ[+y	/š-m-ḫ/	vb G prefc. / vb G suffc.	to be glad	
-140034	šmḥy	šmḫ[/+y	/š-m-ḫ/	vb G inf.	to be glad	
+140034	šmḥy	!!šmḫ[/+y	/š-m-ḫ/	vb G inf.	to be glad	
 # KTU 1.5 II:26						
 140035	xxxxxxxxxxxtbˤ	?	?	?	?	DULAT: NOT FOUND
 140036	ṯ	ṯ	ṯ	→	?	
@@ -408,7 +413,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140046	y	y	y	prep. functor	oh!	
 140047	arṣ	arṣ/	ảrṣ	n. f. sg.	earth	
 140048	ḥšn	ḥš(I)[+n	/ḥ-š/ (I)	vb G impv.	to hurry	
-140048	ḥšn	ḥš(I)[/+n	/ḥ-š/ (I)	vb G inf.	to hurry	
+140048	ḥšn	!!ḥš(I)[/+n	/ḥ-š/ (I)	vb G inf.	to hurry	
 140048	ḥšn	ḥšn/	ḥšn	n. m.	?	
 # KTU 1.5 III:5						
 140049	tˤtd	?	?	?	?	DULAT: NOT FOUND
@@ -449,7 +454,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140063	dm	dm(I)	dm (I)	functor	since	
 140064	mt	mt(II)/	mt (II)	n. m. sg.	death	
 140064	mt	mt[	/m-t/	vb G suffc.	to die	
-140064	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
+140064	mt	!!mt[/	/m-t/	vb G inf.	to die	
+140064	mt	mt[/	/m-t/	vb G ptcpl.	to die	
 140064	mt	mt(I)/	mt (I)	n. m. sg.	dead person	
 140065	aṣḥ	!(ʔ&a!ṣḥ[	/ṣ-ḥ/	vb G prefc.	to exclaim	
 # KTU 1.5 III:10						
@@ -489,7 +495,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140088	dm	dm(I)	dm (I)	functor	since	
 140089	mt	mt(II)/	mt (II)	n. m. sg.	death	
 140089	mt	mt[	/m-t/	vb G suffc.	to die	
-140089	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
+140089	mt	!!mt[/	/m-t/	vb G inf.	to die	
+140089	mt	mt[/	/m-t/	vb G ptcpl.	to die	
 140089	mt	mt(I)/	mt (I)	n. m. sg.	dead person	
 140090	aṣḥ	!(ʔ&a!ṣḥ[	/ṣ-ḥ/	vb G prefc.	to exclaim	
 # KTU 1.5 III:19						
@@ -506,7 +513,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 III:21						
 140099	w	w	w	conj.	and	
 140100	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-140100	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+140100	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+140100	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 140100	rgm	rgm/	rgm	n. m. sg.	word	
 140101	l	l(I)	l (I)	prep.	to	
 140101	l	l(II)	l (II)	adv.	no	
@@ -530,7 +538,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140111	dm	dm(I)	dm (I)	functor	since	
 140112	mt	mt(II)/	mt (II)	n. m. sg.	death	
 140112	mt	mt[	/m-t/	vb G suffc.	to die	
-140112	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
+140112	mt	!!mt[/	/m-t/	vb G inf.	to die	
+140112	mt	mt[/	/m-t/	vb G ptcpl.	to die	
 140112	mt	mt(I)/	mt (I)	n. m. sg.	dead person	
 140113	aṣḥ	!(ʔ&a!ṣḥ[	/ṣ-ḥ/	vb G prefc.	to exclaim	
 # KTU 1.5 III:26						
@@ -601,7 +610,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140153	x	?	?	?	?	
 # KTU 1.5 IV:12						
 140154	lḥm	lḥm(I)[	/l-ḥ-m/ (I)	vb G suffc. / vb G impv.	to eat	
-140154	lḥm	lḥm(I)[/	/l-ḥ-m/ (I)	vb G inf.	to eat	
+140154	lḥm	!!lḥm(I)[/	/l-ḥ-m/ (I)	vb G inf.	to eat	
 140154	lḥm	lḥm/	lḥm	n. m. sg.	grain	
 140154	lḥm	lḥ(I)/m	lḥ (I)	n. f. du.	cheek	
 140155	mṣdy	mṣd(I)/+y	mṣd (I)	n. m.	(feast / banquet of) game	
@@ -609,16 +618,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140156	ˤd	ˤd(III)/	ʕd (III)	n. m. sg.	throne	
 140156	ˤd	ˤd(II)/	ʕd (II)	n. m. sg.	time	
 140157	lḥm	lḥm(I)[	/l-ḥ-m/ (I)	vb G suffc. / vb G impv.	to eat	
-140157	lḥm	lḥm(I)[/	/l-ḥ-m/ (I)	vb G inf.	to eat	
+140157	lḥm	!!lḥm(I)[/	/l-ḥ-m/ (I)	vb G inf.	to eat	
 140157	lḥm	lḥm/	lḥm	n. m. sg.	grain	
 140157	lḥm	lḥ(I)/m	lḥ (I)	n. f. du.	cheek	
 140158	šty	šty[	/š-t-y/	vb G suffc. / vb G impv.	to drink	
-140158	šty	šty[/	/š-t-y/	vb G inf.	to drink	
+140158	šty	!!šty[/	/š-t-y/	vb G inf.	to drink	
 140159	ilm	il(I)/m	ỉl (I)	n. m. pl.	god	
 # KTU 1.5 IV:14						
 140160	w	w	w	conj.	and	
 140161	pq	pq[	/p-q/	vb G suffc.	to obtain	
-140161	pq	pq[/	/p-q/	vb G inf.	to obtain	
+140161	pq	!!pq[/	/p-q/	vb G inf.	to obtain	
 140162	mrġṯm	mrġṯ/+m(I)	mrġṯ	n. m.	suckling	
 140163	ṯd	ṯd/	ṯd	n. m. sg. / n. m. pl. cstr.	breast	
 # KTU 1.5 IV:15						
@@ -626,11 +635,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140165	ḥrb	ḥrb/	ḥrb	n. f. sg.	knife	
 140166	mlḥt	mlḥ(t/t	mlḥt	n. f. sg.	salt	
 140167	qṣ	qṣ/	qṣ	n. m. sg.	end	
-140167	qṣ	qṣ[/	/q-ṣ(-ṣ)/	vb G inf. / vb G	to carve	
+140167	qṣ	!!qṣ[/	/q-ṣ(-ṣ)/	vb G inf. / vb G	to carve	
 140168	mri	mr(u(I)/&i	mrủ (I)	adj. m. or n. m. sg. / adj. m. or n. m. pl. cstr.	fattened	
 # KTU 1.5 IV:16						
 140169	šty	šty[	/š-t-y/	vb G suffc. / vb G impv.	to drink	
-140169	šty	šty[/	/š-t-y/	vb G inf.	to drink	
+140169	šty	!!šty[/	/š-t-y/	vb G inf.	to drink	
 140170	krpnm	krpn/	krpn	n. m.	cup	
 140171	yn	yn/	yn	n. m. sg.	wine	
 # KTU 1.5 IV:17						
@@ -813,7 +822,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140291	txxrn	?	?	?	?	DULAT: NOT FOUND
 140292	w	w	w	conj.	and	
 140293	tldn	yld[+n	/y-l-d/	vb N suffc.	to give birth (to)	
-140293	tldn	yld[/+n	/y-l-d/	vb G inf.	to give birth (to)	
+140293	tldn	!!yld[/+n	/y-l-d/	vb G inf.	to give birth (to)	
 140294	mṯ	mṯ(I)/	mṯ (I)	n. m. sg.	infant	
 # KTU 1.5 V:23						
 140295	alxx	?	?	?	?	DULAT: NOT FOUND
@@ -890,7 +899,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 VI:9						
 140343	rṣ	?	?	?	?	DULAT: NOT FOUND
 140344	mt	mt[	/m-t/	vb G suffc.	to die	
-140344	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
+140344	mt	!!mt[/	/m-t/	vb G inf.	to die	
+140344	mt	mt[/	/m-t/	vb G ptcpl.	to die	
 140345	aliyn	aliyn/	ảlỉyn	adj. m. sg.	The Very / Most Powerful	
 140346	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 # KTU 1.5 VI:10						
@@ -909,7 +919,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140357	l	l(I)	l (I)	prep.	to	
 140358	ksi	ks/	ks/śủ	n. f. sg.	seat	
 140359	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc.	to sit down	
-140359	yṯb	!y!(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
+140359	yṯb	(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
 # KTU 1.5 VI:13						
 140360	l	l(I)	l (I)	prep.	to	
 140360	l	l(III)	l (III)	functor	certainly	
@@ -919,7 +929,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140363	l	l(III)	l (III)	functor	certainly	
 140364	hdm	hdm/	hdm	n. m. sg.	footstool	
 140365	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc.	to sit down	
-140365	yṯb	!y!(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
+140365	yṯb	(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
 # KTU 1.5 VI:14						
 140366	l	l(I)	l (I)	prep.	to	
 140366	l	l(III)	l (III)	functor	certainly	
@@ -976,7 +986,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.5 VI:23						
 140407	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 140408	mt	mt[	/m-t/	vb G suffc.	to die	
-140408	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
+140408	mt	!!mt[/	/m-t/	vb G inf.	to die	
+140408	mt	mt[/	/m-t/	vb G ptcpl.	to die	
 140409	my	my(I)	my (I)	pn. interr.	who?	
 140410	lim	lim(I)/	lỉm (I)	n. m. sg.	people	
 140411	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. cstr.	son	

@@ -875,3 +875,6 @@
 - Refined `NominalFormMorphPosFixer` so feminine split analyses carry explicit POS number markers: `/t` -> `sg.`, `/t=` -> `pl.` (including `num.` rows such as `rb(b)t`), while preserving existing number labels.
 - Added regression tests in `tests/test_nominal_form_morph_pos.py` for noun and numeral rows with feminine split endings.
 - Re-applied `nominal-form-morph-pos` across `out/KTU *.tsv` to propagate sg./pl. POS normalization after feminine split unwrapping.
+- Refined `VerbFormEncodingSplitFixer` to encode infinitives as `!!...[/` and participles as `...[/`, and to split mixed finite/infinitive/participle POS bundles into distinct aligned variants before unwrapping.
+- Added linter guardrails for verbal non-finite encoding: `vb ... inf.` now warns unless analysis is `!!...[/`, and participles warn when they incorrectly use the infinitive `!!` marker.
+- Added regression tests in `tests/test_verb_form_encoding_split.py` and `tests/test_linter_infinitive_encoding.py`, and applied a targeted global post-refinement pass (`verb-form-encoding-split` + post-verb unwrap/dedupe) across all `out/KTU *.tsv`.

@@ -12,7 +12,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156702	bny	bny/	bny	n. m. sg.	architect	
 156703	aḫy	aḫ(I)/+y	ảḫ (I)	n. m.	brother (by blood)	
 156704	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-156704	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+156704	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+156704	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 156704	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.14 4						
 156705	ilm	il(I)/m	ỉl (I)	n. m. pl.	god	
@@ -25,7 +26,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.14 7						
 156710	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
 156710	spr	spr[	/s-p-r/	vb G suffc. / vb D suffc.	to count	
-156710	spr	spr[/	/s-p-r/	vb G inf. / vb D inf.	to count	
+156710	spr	!!spr[/	/s-p-r/	vb G inf. / vb D inf.	to count	
 156710	spr	spr(I)/	spr (I)	n. m. sg.	scribe	
 156711	d	d	d	det. or rel. functor	the one(s) of	
 156712	likt	l(ʔ&ik[t	/l-ʔ-k/	vb G suffc.	to send (a message)	
@@ -75,11 +76,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156735	ṯryl	ṯryl/	ṯryl	PN	ṯryl	
 156736	w	w	w	conj.	and	
 156737	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-156737	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+156737	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+156737	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 156737	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.14 18						
 156738	ṯṯb	]š]ṯb[b	/ṯ-b/	vb Š impv.	to return	
-156738	ṯṯb	]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
+156738	ṯṯb	!!]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
 156739	l	l(I)	l (I)	prep.	to	
 156739	l	l(III)	l (III)	functor	certainly	
 156740	aḫk	aḫ(I)/+k	ảḫ (I)	n. m.	brother (by blood)	

@@ -9,7 +9,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158721	adny	adn(I)/+y	ảdn (I)	n. m.	lord	
 # KTU 2.64 3						
 158722	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-158722	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+158722	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+158722	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 158722	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.64 4						
 158723	tḥm	tḥm/	tḥm	n. m. sg.	message	
@@ -33,7 +34,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.64 10						
 158733	bˤly	bˤl(II)/y	bʕl (II)	n. m. sg./DN	Baʿlu/Baal	
 158734	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-158734	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+158734	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+158734	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 158734	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.64 11						
 158735	tḥm	tḥm/	tḥm	n. m. sg.	message	
@@ -61,10 +63,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158748	šlm	šlm(III)/	šlm (III)	adj. m. sg.	pure	
 # KTU 2.64 19						
 158749	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-158749	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+158749	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+158749	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 158749	rgm	rgm/	rgm	n. m. sg.	word	
 158750	ṯṯb	]š]ṯb[b	/ṯ-b/	vb Š impv.	to return	
-158750	ṯṯb	]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
+158750	ṯṯb	!!]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
 # KTU 2.64 20						
 158751	l	l(I)	l (I)	prep.	to	
 158751	l	l(III)	l (III)	functor	certainly	

@@ -904,6 +904,11 @@ VERB_POS_STEM_RE = re.compile(
     flags=re.IGNORECASE,
 )
 VERBAL_NOUN_POS_RE = re.compile(r"\bvb\.\s*n\.", flags=re.IGNORECASE)
+VERB_INF_POS_RE = re.compile(r"\binf\.", flags=re.IGNORECASE)
+VERB_PTCP_POS_RE = re.compile(
+    r"(?:\bact\.\s*ptcpl\.|\bpass\.\s*ptcpl\.|\bptcpl\.)",
+    flags=re.IGNORECASE,
+)
 STEM_DISPLAY_ORDER = (
     "G",
     "Gt",
@@ -931,6 +936,26 @@ PREFIXED_VERB_ANALYSIS_INLINE_RE = re.compile(
     r"(?:![ytan](?:=|==|===)?!|!\(ʔ&[aiu]!)",
     flags=re.IGNORECASE,
 )
+
+
+def pos_option_is_verb_infinitive(option: str) -> bool:
+    """Return True when one POS option denotes a verbal infinitive."""
+    text = (option or "").strip()
+    if not re.search(r"^\s*vb\.?\b", text, flags=re.IGNORECASE):
+        return False
+    if VERBAL_NOUN_POS_RE.search(text):
+        return False
+    return bool(VERB_INF_POS_RE.search(text))
+
+
+def pos_option_is_verb_participle(option: str) -> bool:
+    """Return True when one POS option denotes a verbal participle."""
+    text = (option or "").strip()
+    if not re.search(r"^\s*vb\.?\b", text, flags=re.IGNORECASE):
+        return False
+    if VERBAL_NOUN_POS_RE.search(text):
+        return False
+    return bool(VERB_PTCP_POS_RE.search(text))
 
 
 def extract_stems(morph: str) -> set:
@@ -2630,6 +2655,39 @@ def lint_file(
             if not a_txt:
                 continue
             d_field = dulat_variants[vi] if vi < len(dulat_variants) else ""
+            p_field = (
+                pos_variants[vi]
+                if vi < len(pos_variants)
+                else (pos_variants[0] if pos_variants else "")
+            )
+            pos_opts = split_pos_options(p_field) if p_field else []
+            has_infinitive_pos = any(pos_option_is_verb_infinitive(opt) for opt in pos_opts)
+            has_participle_pos = any(pos_option_is_verb_participle(opt) for opt in pos_opts)
+            if has_infinitive_pos and not has_participle_pos:
+                if not (a_txt.startswith("!!") and "[/" in a_txt):
+                    issues.append(
+                        Issue(
+                            "warning",
+                            str(path),
+                            i,
+                            line_id,
+                            surface,
+                            a_txt,
+                            "Infinitive should use `!!...[/` analysis encoding",
+                        )
+                    )
+            if has_participle_pos and not has_infinitive_pos and a_txt.startswith("!!"):
+                issues.append(
+                    Issue(
+                        "warning",
+                        str(path),
+                        i,
+                        line_id,
+                        surface,
+                        a_txt,
+                        "Participles should not use infinitive marker `!!`",
+                    )
+                )
             if "~+" in a_txt:
                 issues.append(
                     Issue(

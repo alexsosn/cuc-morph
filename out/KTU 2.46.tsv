@@ -11,7 +11,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158266	ugrt	ugrt/	ủgrt	TN	Ugarit	
 # KTU 2.46 3						
 158267	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-158267	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+158267	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+158267	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 158267	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.46 4						
 158268	yšlm	!y!šlm[	/š-l-m/	vb G prefc.	to be well	
@@ -40,10 +41,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158280	šlm	šlm[:d	/š-l-m/	vb G suffc. / vb D suffc.	to be well	
 158280	šlm	šlm(III)/	šlm (III)	adj. m. sg.	pure	
 158281	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-158281	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+158281	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+158281	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 158281	rgm	rgm/	rgm	n. m. sg.	word	
 158282	ṯṯb	]š]ṯb[b	/ṯ-b/	vb Š impv.	to return	
-158282	ṯṯb	]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
+158282	ṯṯb	!!]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
 # KTU 2.46 9						
 158283	ky	k(III)	k (III)	Subordinating or completive functor	when	
 158283	ky	k(II)	k (II)	emph. functor	yes	

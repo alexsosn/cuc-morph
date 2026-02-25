@@ -20,10 +20,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158461	šlm	šlm[:d	/š-l-m/	vb G suffc. / vb D suffc.	to be well	
 158461	šlm	šlm(III)/	šlm (III)	adj. m. sg.	pure	
 158462	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-158462	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+158462	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+158462	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 158462	rgm	rgm/	rgm	n. m. sg.	word	
 158463	ṯṯb	]š]ṯb[b	/ṯ-b/	vb Š impv.	to return	
-158463	ṯṯb	]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
+158463	ṯṯb	!!]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
 # KTU 2.50 6						
 158464	l	l(I)	l (I)	prep.	to	
 158464	l	l(III)	l (III)	functor	certainly	
@@ -41,7 +42,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158472	lm	l(I)	l (I)	prep.	to	
 # KTU 2.50 10						
 158473	šil	š(ʔ&il[	/š-ʔ-l/	vb G prefc.	to ask	
-158473	šil	š(ʔ&il[/	/š-ʔ-l/	vb G inf.	to ask	
+158473	šil	!!š(ʔ&il[/	/š-ʔ-l/	vb G inf.	to ask	
 158473	šil	šil(I)/	šỉl (I)	n. m. sg.	interrogator	
 158474	šlm	šlm(I)/	šlm (I)	n. m. sg.	peace	
 158474	šlm	šlm[:d	/š-l-m/	vb G suffc. / vb D suffc.	to be well	

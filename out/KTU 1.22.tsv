@@ -39,7 +39,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.22 I:7						
 146873	yˤbš	!y!ˤbš[	/ʕ-b-š/	vb	to extol	
 146874	brkn	brk(II)[n	/b-r-k/ (II)	vb D suffc.	to be blessed	
-146874	brkn	brk(II)[/n	/b-r-k/ (II)	vb D inf.	to be blessed	
+146874	brkn	!!brk(II)[/n	/b-r-k/ (II)	vb D inf.	to be blessed	
 146875	šm	š/m	š	n. m. du.	ram	
 146875	šm	šm(I)/	šm (I)	n. m. sg.	name	
 146876	il	il(I)/	ỉl (I)	n. m.	god	
@@ -74,7 +74,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146896	ˤnt	ˤn(I)/t=	ʕn (I)	n. f. pl.	eye	
 146896	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 146896	ˤnt	ˤnt(II)	ʕnt (II)	adv.	now	
-146897	ṣd	ṣd[/	/ṣ-d/	vb G inf.	to hunt	
+146897	ṣd	!!ṣd[/	/ṣ-d/	vb G inf.	to hunt	
 146898	tštr	tr[tr	/t-r/	vb Gt prefc.	to scour	
 146899	ˤpt	ˤp(I)/t	ʕp (I)	n. f. sg.	bird	
 146900	šmm	šm(m(I)/m	šmm (I)	n. m. tant. pl. / n. m. tant. du.	heavens	
@@ -85,7 +85,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 146904	ṣin	ṣin(I)/	ṣỉn (I)	n. f. sg.	ewe	
 146905	šql	šql/	šql	TN	šql	
 146906	ṯrm	ṯr(I)/m	ṯr (I)	n. m. pl.	bull	
-146906	ṯrm	ṯrm[/	/ṯ-r-m/	vb G inf.	to break	
+146906	ṯrm	!!ṯrm[/	/ṯ-r-m/	vb G inf.	to break	
 # KTU 1.22 I:13						
 146907	w	w	w	conj.	and	
 146908	mri	mr(u(I)/&i	mrủ (I)	adj. m. or n. m. sg. / adj. m. or n. m. pl. cstr.	fattened	
@@ -172,7 +172,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.22 I:24						
 146967	tštyn	!t!šty[n	/š-t-y/	vb G prefc.	to drink	
 146968	bt	bt(II)/	bt (II)	n. m. sg.	house	
-146969	ikl	(ʔ&ikl[/	/ʔ-k-l/	vb G inf.	to eat	
+146969	ikl	!!(ʔ&ikl[/	/ʔ-k-l/	vb G inf.	to eat	
 146969	ikl	ikl/	ỉkl	n. m. sg.	act of eating	
 146970	b	b	b	prep.	in	
 146971	prˤ	prˤ(I)/	prʕ (I)	n. m. sg.	first fruit	
@@ -284,7 +284,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147035	ḥyly	ḫyly/	ḫyly	adj. m. sg.	fighter	
 # KTU 1.22 II:13						
 147036	šmˤ	šmˤ[	/š-m-ʕ/	vb G impv.	to hear	
-147036	šmˤ	šmˤ[/	/š-m-ʕ/	vb G inf.	to hear	
+147036	šmˤ	!!šmˤ[/	/š-m-ʕ/	vb G inf.	to hear	
 147037	atm	atm	ảtm	pers. pn.	you	
 147038		?	?	?	?	
 # KTU 1.22 II:14						
@@ -360,7 +360,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147083	ṯlṯ	ṯlṯ(V)/	ṯlṯ (V)	n. m. sg.	copper	
 147083	ṯlṯ	ṯlṯ(II)/	ṯlṯ (II)	adj. m. sg. ord. num.	third	
 147084	mġy	mġy[	/m-ġ-y/	vb G suffc.	to come	
-147084	mġy	mġy[/	/m-ġ-y/	vb G inf.	to come	
+147084	mġy	!!mġy[/	/m-ġ-y/	vb G inf.	to come	
 147085	rpum	rp(u&/m	rpủ	n. m. pl.	healer	
 147086	l	l(I)	l (I)	prep.	to	
 147086	l	l(III)	l (III)	functor	certainly	

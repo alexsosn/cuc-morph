@@ -5,7 +5,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157191	umy	um/y	ủm	n. f. sg.	mother	
 # KTU 2.30 2						
 157192	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-157192	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+157192	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+157192	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 157192	rgm	rgm/	rgm	n. m. sg.	word	
 157193	tḥm	tḥm/	tḥm	n. m. sg.	message	
 # KTU 2.30 3						
@@ -46,10 +47,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.30 11						
 157215	w	w	w	conj.	and	
 157216	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-157216	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+157216	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+157216	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 157216	rgm	rgm/	rgm	n. m. sg.	word	
 157217	ṯṯb	]š]ṯb[b	/ṯ-b/	vb Š impv.	to return	
-157217	ṯṯb	]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
+157217	ṯṯb	!!]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
 157218	ly	l(I)+y	l (I)	prep.	to	
 # KTU 2.30 12						
 157219	hlny	hlny	hlny	deictic adv. functor	behold	
@@ -86,7 +88,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 157238	l	l(III)	l (III)	functor	certainly	
 157239	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
 157240	w	w	w	conj.	and	
-157241	lakm	l(ʔ&ak[/m	/l-ʔ-k/	vb G inf.	to send (a message)	
+157241	lakm	!!l(ʔ&ak[/m	/l-ʔ-k/	vb G inf.	to send (a message)	
 # KTU 2.30 20						
 157242	ilak	lʔk[k	/l-ʔ-k/	vb G prefc.	to send (a message)	
 157243	w	w	w	conj.	and	

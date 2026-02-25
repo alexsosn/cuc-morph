@@ -73,7 +73,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156349	ytn	!y!(ytn[	/y-t-n/	vb G prefc. / vb G suffc.	to give	
 156350	w	w	w	conj.	and	
 156351	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-156351	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+156351	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+156351	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 156351	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.3 15						
 156352	wy	w+y	w	conj.	and	
@@ -127,11 +128,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.3 24						
 156381	xxxxxxt	?	?	?	?	DULAT: NOT FOUND
 156382	ydˤt	!y!(ydˤ(I)[t	/y-d-ʕ/ (I)	vb G suffc.	to know	
-156382	ydˤt	!y!(ydˤ(I)[/t	/y-d-ʕ/ (I)	vb G pass. ptcpl.	to know	
+156382	ydˤt	(ydˤ(I)[/t	/y-d-ʕ/ (I)	vb G pass. ptcpl.	to know	
 # KTU 2.3 25						
 156383	xxxxxx	?	?	?	?	
 156384	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-156384	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+156384	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+156384	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 156384	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.3 26						
 156385	xxxxxxx	?	?	?	?	

@@ -79,7 +79,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150044	l	l(III)	l (III)	functor	certainly	
 150045	mt	mt(II)/	mt (II)	n. m. sg.	death	
 150045	mt	mt[	/m-t/	vb G suffc.	to die	
-150045	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
+150045	mt	!!mt[/	/m-t/	vb G inf.	to die	
+150045	mt	mt[/	/m-t/	vb G ptcpl.	to die	
 150045	mt	mt(I)/	mt (I)	n. m. sg.	dead person	
 150046	brtk	br[t+k	/b-r(-r)/	vb G suffc.	to be or remain pure	
 150046	brtk	brt/+k	brt	n. f.	forecast	
@@ -127,7 +128,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150077	ˤlt	ˤl(I)	ʕl (I)	prep.	upon	
 150077	ˤlt	ˤly[t	/ʕ-l-y/	vb G suffc.	to go up	
 150078	bk	b	b	prep.	in	
-150078	bk	bky[/	/b-k-y/	vb G inf.	to weep	
+150078	bk	!!bky[/	/b-k-y/	vb G inf.	to weep	
 150078	bk	bk/	bk	n. m. sg.	beaker	
 150079	lk	l(I)+k	l (I)	prep.	to	
 150080	l	l(I)	l (I)	prep.	to	
@@ -180,7 +181,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.82 15						
 150107	xx	?	?	?	?	
 150108	ḥš	ḥš(I)[	/ḥ-š/ (I)	vb G impv.	to hurry	
-150108	ḥš	ḥš(I)[/	/ḥ-š/ (I)	vb G inf.	to hurry	
+150108	ḥš	!!ḥš(I)[/	/ḥ-š/ (I)	vb G inf.	to hurry	
 150109	nmxxxxxxxxl	?	?	?	?	DULAT: NOT FOUND
 150110	w	w	w	conj.	and	
 150111	yḫnpk	!y!ḫnp[k	/ḫ-n-p/	vb G prefc. / vb G suffc.	to act perversely	

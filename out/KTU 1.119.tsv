@@ -275,7 +275,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154314	ntlk	?	?	?	?	DULAT: NOT FOUND
 154315	w	w	w	conj.	and	
 154316	šmˤ	šmˤ[	/š-m-ʕ/	vb G impv.	to hear	
-154316	šmˤ	šmˤ[/	/š-m-ʕ/	vb G inf.	to hear	
+154316	šmˤ	!!šmˤ[/	/š-m-ʕ/	vb G inf.	to hear	
 154316	šmˤ	šmˤ/	šmʕ	n. m. sg.	auditor	
 154317	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 154317	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
@@ -285,7 +285,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.119 35						
 154320	ydy	yd(I)/+y	yd (I)	n. f.	hand	
 154320	ydy	!y!(ydy(I)[	/y-d-y/ (I)	vb G prefc. / vb G impv.	to throw	
-154320	ydy	!y!(ydy(I)[/	/y-d-y/ (I)	vb G inf. / vb G act. ptcpl. m.	to throw	
+154320	ydy	!!(ydy(I)[/	/y-d-y/ (I)	vb G inf.	to throw	
+154320	ydy	(ydy(I)[/	/y-d-y/ (I)	vb G act. ptcpl. m.	to throw	
 154320	ydy	!y!(ydy(II)[	/y-d-y/ (II)	vb G	to rip	
 154321	ˤz	ˤz[	/ʕ-z(-z)/	vb G suffc.	to be strong	
 154321	ˤz	ˤz(III)/	ʕz (III)	adj. m. or n. m. sg.	strong	

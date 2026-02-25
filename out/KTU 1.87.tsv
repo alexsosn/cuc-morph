@@ -53,12 +53,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150829	dd	dd(II)/	dd (II)	n. m. sg.	cauldronful	
 150830	ilš	ilš(I)/	ỉlš (I)	DN	ỉlš (I)	
 150831	šilhm	š(ʔ&il[+hm	/š-ʔ-l/	vb G prefc.	to ask	
-150831	šilhm	š(ʔ&il[/+hm	/š-ʔ-l/	vb G inf.	to ask	
+150831	šilhm	!!š(ʔ&il[/+hm	/š-ʔ-l/	vb G inf.	to ask	
 150831	šilhm	šil(I)/+hm	šỉl (I)	n. m.	interrogator	
 150832	mlk	mlk[/	/m-l-k/	vb G act. ptcpl.	to reign	
 150832	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 150833	yṯb	!y!(yṯb[	/y-ṯ-b/	vb G prefc. / vb G suffc.	to sit down	
-150833	yṯb	!y!(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
+150833	yṯb	(yṯb[/	/y-ṯ-b/	vb G act. ptcpl.	to sit down	
 150834	br	br/	br(r)	n. m. sg.	tin	
 150834	br	br(I)/	br (I)	n. m. sg.	Art Seeschiff	
 150834	br	br[	/b-r(-r)/	vb G suffc.	to be or remain pure	
@@ -403,7 +403,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151041	inš	inš/	ỉnš	n. m. sg.	people	
 151042	ilm	il(I)/m	ỉl (I)	n. m. pl.	god	
 151043	ṯṯb	]š]ṯb[b	/ṯ-b/	vb Š impv.	to return	
-151043	ṯṯb	]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
+151043	ṯṯb	!!]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
 151044	md	md(II)/	md (II)	n. m. pl.	skilled	
 # KTU 1.87 45						
 151045	bḥ	?	?	?	?	DULAT: NOT FOUND
@@ -443,7 +443,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.87 49						
 151067	brr	brr/	brr	adj. m. sg.	pure	
 151068	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-151068	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+151068	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+151068	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 151068	rgm	rgm/	rgm	n. m. sg.	word	
 151069	yṯṯb	]š]ṯb[ṯb	/ṯ-b/	vb Š prefc.	to return	
 151069	yṯṯb	]š]yṯb[b	/y-ṯ-b/	vb Š prefc.	to sit down	
@@ -460,7 +461,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151076	gdlt	gdl(t(I)/t	gdlt (I)	n. f. sg.	head of cattle	
 151076	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. sg.	head of cattle	
 151077	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-151077	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+151077	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+151077	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 151077	rgm	rgm/	rgm	n. m. sg.	word	
 151078	yṯṯb	]š]ṯb[ṯb	/ṯ-b/	vb Š prefc.	to return	
 151078	yṯṯb	]š]yṯb[b	/y-ṯ-b/	vb Š prefc.	to sit down	

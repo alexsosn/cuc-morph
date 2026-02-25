@@ -9,7 +9,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159428	gr	gr[	/g-r(-y)/	vb G suffc.	to attack	
 # KTU 2.84 3						
 159429	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-159429	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+159429	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+159429	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 159429	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.84 4						
 159430	lm	l(I)	l (I)	prep.	to	
@@ -55,7 +56,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159452	km	km	km	prep./conj./adv.		
 159452	km	+km, +km=	-km			
 159453	mġy	mġy[	/m-ġ-y/	vb G suffc.	to come	
-159453	mġy	mġy[/	/m-ġ-y/	vb G inf.	to come	
+159453	mġy	!!mġy[/	/m-ġ-y/	vb G inf.	to come	
 159454	a	?	?	?	?	
 # KTU 2.84 16						
 159455	mdy	md(I)/+y	md (I)	n. f. sg.	cape	
@@ -71,7 +72,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159462		?	?	?	?	
 # KTU 2.84 19						
 159463	hbṭ	hbṭ[	/h-b-ṭ/ẓ/	vb D suffc.	to knock down	
-159463	hbṭ	hbṭ[/	/h-b-ṭ/ẓ/	vb D inf.	to knock down	
+159463	hbṭ	!!hbṭ[/	/h-b-ṭ/ẓ/	vb D inf.	to knock down	
 159464	w	w	w	conj.	and	
 159465	l	l(I)	l (I)	prep.	to	
 159465	l	l(III)	l (III)	functor	certainly	
@@ -95,6 +96,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159477	d	d	d	det. or rel. functor	the one(s) of	
 # KTU 2.84 24						
 159478	hbṭ	hbṭ[	/h-b-ṭ/ẓ/	vb D suffc.	to knock down	
-159478	hbṭ	hbṭ[/	/h-b-ṭ/ẓ/	vb D inf.	to knock down	
+159478	hbṭ	!!hbṭ[/	/h-b-ṭ/ẓ/	vb D inf.	to knock down	
 159479	h	+h, +h=	-h (I)	suff. pn. morph.	his /her (hers) / its	
 159479	h	~h	-h(II)	adv. functor	to, towards	

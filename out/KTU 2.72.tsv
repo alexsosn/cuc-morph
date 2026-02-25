@@ -5,7 +5,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158965	umy	um/y	ủm	n. f. sg.	mother	
 # KTU 2.72 2						
 158966	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-158966	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+158966	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+158966	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 158966	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.72 3						
 158967	tḥm	tḥm/	tḥm	n. m. sg.	message	
@@ -41,10 +42,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 158987	šlm	šlm[:d	/š-l-m/	vb G suffc. / vb D suffc.	to be well	
 158987	šlm	šlm(III)/	šlm (III)	adj. m. sg.	pure	
 158988	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-158988	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+158988	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+158988	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 158988	rgm	rgm/	rgm	n. m. sg.	word	
 158989	ṯṯb	]š]ṯb[b	/ṯ-b/	vb Š impv.	to return	
-158989	ṯṯb	]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
+158989	ṯṯb	!!]š]ṯb[/b	/ṯ-b/	vb Š inf.	to return	
 158990	ly	l(I)+y	l (I)	prep.	to	
 # KTU 2.72 10						
 158991	lm	l(I)	l (I)	prep.	to	
@@ -161,7 +163,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159056	amr	amr(I)/	ảmr (I)	n. m. sg.	order	
 159057	w	w	w	conj.	and	
 159058	lqḥ	lqḥ[	/l-q-ḥ/	vb G suffc.	to get hold of	
-159058	lqḥ	lqḥ[/	/l-q-ḥ/	vb G inf.	to get hold of	
+159058	lqḥ	!!lqḥ[/	/l-q-ḥ/	vb G inf.	to get hold of	
 159059	hw	hw	hw	pers. pn.	he	
 # KTU 2.72 30						
 159060	šmn	šmn(I)/	šmn (I)	n. m. sg.	oil	
@@ -214,7 +216,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.72 43						
 159087	my	my(I)	my (I)	pn. interr.	who?	
 159088	ydˤt	!y!(ydˤ(I)[t	/y-d-ʕ/ (I)	vb G suffc.	to know	
-159088	ydˤt	!y!(ydˤ(I)[/t	/y-d-ʕ/ (I)	vb G pass. ptcpl.	to know	
+159088	ydˤt	(ydˤ(I)[/t	/y-d-ʕ/ (I)	vb G pass. ptcpl.	to know	
 159089	kly	kly[	/k-l-y/	vb G suffc.	to finish	
 159090	b	b	b	prep.	in	
 159091	kpr	kpr(II)/	kpr (II)	n. m. sg.	henna (powder or dye)	

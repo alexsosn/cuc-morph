@@ -25,9 +25,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151640	ḥmr	ḥmr(I)/	ḥmr (I)	n. m. sg.	donkey	
 151640	ḥmr	ḥmr(II)/	ḥmr (II)	adj. sg.	red	
 151641	tdk	ndd[+k	/n-d-d/	vb G suffc.	to go	
-151641	tdk	ndd[/+k	/n-d-d/	vb G inf.	to go	
+151641	tdk	!!ndd[/+k	/n-d-d/	vb G inf.	to go	
 151641	tdk	ydy(I)[+k	/y-d-y/ (I)	vb G prefc. / vb G impv.	to throw	
-151641	tdk	ydy(I)[/+k	/y-d-y/ (I)	vb G inf. / vb G act. ptcpl. m.	to throw	
+151641	tdk	!!ydy(I)[/+k	/y-d-y/ (I)	vb G inf.	to throw	
+151641	tdk	ydy(I)[/+k	/y-d-y/ (I)	vb G act. ptcpl. m.	to throw	
 151641	tdk	nd[+k	/n-d(-y)/	vb G suffc.	to throw	
 151642	xxxx	?	?	?	?	
 # KTU 1.97 5						
@@ -70,7 +71,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151664	pr	pr(I)/	pr (I)	n. m. sg.	fruit	
 151665	ˤṯrb	ˤṯrb/	ʕṯrb	n. m. sg.	arbrisseau semblable au grenadier	
 151666	drˤ	d/	d/ḏrʕ	n. m. sg.	seed	
-151666	drˤ	drˤ[/	/d-r-ʕ/	vb G inf.	to sow	
+151666	drˤ	!!drˤ[/	/d-r-ʕ/	vb G inf.	to sow	
 151667	xxxxxx	?	?	?	?	
 # KTU 1.97 13						
 151668	w	w	w	conj.	and	

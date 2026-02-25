@@ -21,22 +21,28 @@ class VerbFormEncodingSplitFixerTest(unittest.TestCase):
             "",
         )
         result = self.fixer.refine_row(row)
-        self.assertEqual(result.analysis, "rgm[; rgm[/")
-        self.assertEqual(result.dulat, "/r-g-m/; /r-g-m/")
+        self.assertEqual(result.analysis, "rgm[; !!rgm[/; rgm[/")
+        self.assertEqual(result.dulat, "/r-g-m/; /r-g-m/; /r-g-m/")
         self.assertEqual(
             result.pos,
-            "vb G suffc. / vb G impv.; vb G inf. / vb G pass. ptcpl.",
+            "vb G suffc. / vb G impv.; vb G inf.; vb G pass. ptcpl.",
         )
-        self.assertEqual(result.gloss, "to say; to say")
+        self.assertEqual(result.gloss, "to say; to say; to say")
 
     def test_promotes_single_nonfinite_option_to_nonfinite_encoding(self) -> None:
         row = TabletRow("2", "qtl", "qtl[", "/q-t-l/", "vb G inf.", "to kill", "")
         result = self.fixer.refine_row(row)
-        self.assertEqual(result.analysis, "qtl[/")
+        self.assertEqual(result.analysis, "!!qtl[/")
         self.assertEqual(result.pos, "vb G inf.")
 
+    def test_keeps_participle_as_nonfinite_without_infinitive_marker(self) -> None:
+        row = TabletRow("5", "qtl", "!!qtl[/", "/q-t-l/", "vb G pass. ptcpl.", "killed", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "qtl[/")
+        self.assertEqual(result.pos, "vb G pass. ptcpl.")
+
     def test_demotes_single_finite_option_to_finite_encoding(self) -> None:
-        row = TabletRow("3", "qtl", "qtl[/", "/q-t-l/", "vb G suffc.", "to kill", "")
+        row = TabletRow("3", "qtl", "!!qtl[/", "/q-t-l/", "vb G suffc.", "to kill", "")
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "qtl[")
         self.assertEqual(result.pos, "vb G suffc.")

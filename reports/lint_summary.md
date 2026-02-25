@@ -1,32 +1,32 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `12094`
+- Total issues: `12609`
 - Fallback-parsed issue lines: `342`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 6710 |
-| WARNING | 541 |
-| INFO | 1642 |
+| ERROR | 7126 |
+| WARNING | 627 |
+| INFO | 1644 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3144 |
-| INFO | Surface not found in UDB concordance | 1642 |
-| ERROR | Deverbal form matches both verb and noun entries in DULAT | 1164 |
+| ERROR | Analysis does not reconstruct to surface | 3291 |
+| INFO | Surface not found in UDB concordance | 1644 |
+| ERROR | Deverbal form matches both verb and noun entries in DULAT | 1433 |
 | ERROR | POS token not allowed for declared DULAT entry | 1110 |
 | ERROR | No DULAT entry found for clitic part | 280 |
 | ERROR | DULAT comment does not match candidates | 231 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 180 |
+| WARNING | Feminine adjective/participle in DULAT should mark '-t' explicitly | 176 |
 | WARNING | Suffix form without '+' | 132 |
 | ERROR | Multiple DULAT candidates for surface | 123 |
 | ERROR | Missing DULAT entry token(s) in column 4 | 96 |
-| WARNING | Feminine adjective/participle in DULAT should mark '-t' explicitly | 90 |
 | ERROR | POS ambiguous in DULAT | 80 |
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 70 |
 | WARNING | Plural form missing split ending | 66 |

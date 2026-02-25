@@ -2,7 +2,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.86 1						
 150688	spr	spr(II)/	spr (II)	n. m. sg.	tablet / register	
 150688	spr	spr[	/s-p-r/	vb G suffc. / vb D suffc.	to count	
-150688	spr	spr[/	/s-p-r/	vb G inf. / vb D inf.	to count	
+150688	spr	!!spr[/	/s-p-r/	vb G inf. / vb D inf.	to count	
 150688	spr	spr(I)/	spr (I)	n. m. sg.	scribe	
 150689	ḥlmm	ḥlm(II)/	ḥlm (II)	n. m. pl.	growing animal	
 150690	alp	alp(I)/	ảlp (I)	n. m. sg. / n. m. pl.	(head of) cattle	
@@ -46,10 +46,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150714	hm	hm(II)	hm (II)	conj./interr. functor	if	
 150714	hm	hm(I)	hm (I)	pers. pn.	they	
 150715	yhpk	!y!hpk[	/h-p-k/	vb G prefc.	to overturn	
-150715	yhpk	!y!hpk[/	/h-p-k/	vb G inf.	to overturn	
+150715	yhpk	!!hpk[/	/h-p-k/	vb G inf.	to overturn	
 150716	śśw	ss/	s:śs/św	n. f. sg. / n. f. pl. cstr.	horse	
 150717	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-150717	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+150717	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+150717	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 150717	rgm	rgm/	rgm	n. m. sg.	word	
 150718		?	?	?	?	
 # KTU 1.86 8						
@@ -76,7 +77,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150733	w	w	w	conj.	and	
 150734	mt	mt(II)/	mt (II)	n. m. sg.	death	
 150734	mt	mt[	/m-t/	vb G suffc.	to die	
-150734	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
+150734	mt	!!mt[/	/m-t/	vb G inf.	to die	
+150734	mt	mt[/	/m-t/	vb G ptcpl.	to die	
 150734	mt	mt(I)/	mt (I)	n. m. sg.	dead person	
 # KTU 1.86 12						
 150735	l	l(I)	l (I)	prep.	to	

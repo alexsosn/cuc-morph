@@ -25,7 +25,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141485	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 141486	qrtm	qrt(I)/m	qrt (I)	n. f. du.	city	
 141487	tṯˤr	!t!ṯˤr[	/ṯ-ʕ-r/	vb G prefc.	to prepare (the table)	
-141487	tṯˤr	!t!ṯˤr[/	/ṯ-ʕ-r/	vb G inf.	to prepare (the table)	
+141487	tṯˤr	!!ṯˤr[/	/ṯ-ʕ-r/	vb G inf.	to prepare (the table)	
 141488	ṯlḥntl	?	?	?	?	DULAT: NOT FOUND
 141489	ṣbim	ṣb(u(I)&i/m	ṣbủ (I)	n. m. pl.	army	
 141490	ksat	ksa/t=	ks/śủ	n. f. pl.	seat	
@@ -106,7 +106,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141537	tšbˤ	!t!šbˤ(II)[	/š-b-ʕ/ (II)	vb G prefc.	to be sated	
 # KTU 1.7 19						
 141538	klyn	kly[n	/k-l-y/	vb D suffc.	to finish	
-141538	klyn	kly[/n	/k-l-y/	vb D inf.	to finish	
+141538	klyn	!!kly[/n	/k-l-y/	vb D inf.	to finish	
 # KTU 1.7 20						
 141539	špk	špk[	/š-p-k/	vb G impv.	to spill	
 141540	ux	?	?	?	?	DULAT: NOT FOUND
@@ -125,7 +125,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141549	mšr	mšr(I)/	mšr (I)	n. m. sg.	justice	
 141549	mšr	mšr(II)/	mšr (II)	n. sg.	song	
 141550	ldd	yld[+d	/y-l-d/	vb N suffc.	to give birth (to), ?	
-141550	ldd	yld[/+d	/y-l-d/	vb G inf.	to give birth (to), ?	
+141550	ldd	!!yld[/+d	/y-l-d/	vb G inf.	to give birth (to), ?	
 141551	aliyn	aliyn/	ảlỉyn	adj. m. sg.	The Very / Most Powerful	
 141552	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 # KTU 1.7 24						
@@ -152,14 +152,15 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141564	yˤbdr	yˤbdr/	yʕbdr	DN	Yaʿibdarru/'(Daughter) of the Wide World'/attribute of ảrṣy, daughter of the god bʕl (etym. unc.)	
 # KTU 1.7 26						
 141565	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-141565	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+141565	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+141565	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 141565	rgm	rgm/	rgm	n. m. sg.	word	
 141566	l	l(I)	l (I)	prep.	to	
 141566	l	l(III)	l (III)	functor	certainly	
 141567	btlt	btl(t/t	btlt	n. f. sg.	virgin	
 141568	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 141569	ṯny	ṯny[	/ṯ-n-y/	vb G impv.	to repeat	
-141569	ṯny	ṯny[/	/ṯ-n-y/	vb G inf.	to repeat	
+141569	ṯny	!!ṯny[/	/ṯ-n-y/	vb G inf.	to repeat	
 141570	lybmt	?	?	?	?	DULAT: NOT FOUND
 141571	limm	lim(I)/	lỉm (I)	n. m. pl.	people	
 141572	tḥm	tḥm/	tḥm	n. m. sg.	message	
@@ -202,7 +203,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141602	dm	dm(II)/	dm (II)	n. m.	blood	
 141602	dm	dm(I)	dm (I)	functor	since	
 141603	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-141603	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+141603	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+141603	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 141603	rgm	rgm/	rgm	n. m. sg.	word	
 141604	iṯ	iṯ(I)/	ỉṯ (I)	n. m. sg.	presence	
 141605	ly	l(I)+y	l (I)	prep.	to	
@@ -290,7 +292,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141660	mx	?	?	?	?	DULAT: NOT FOUND
 141661	mt	mt(II)/	mt (II)	n. m. sg.	death	
 141661	mt	mt[	/m-t/	vb G suffc.	to die	
-141661	mt	mt[/	/m-t/	vb G inf. / vb G ptcpl.	to die	
+141661	mt	!!mt[/	/m-t/	vb G inf.	to die	
+141661	mt	mt[/	/m-t/	vb G ptcpl.	to die	
 141661	mt	mt(I)/	mt (I)	n. m. sg.	dead person	
 # KTU 1.7 42						
 141662	tšt	!t!št[	/š-t/	vb G prefc.	to place	

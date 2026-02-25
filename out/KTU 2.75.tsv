@@ -8,7 +8,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159193	xxxx	?	?	?	?	
 # KTU 2.75 2						
 159194	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv.	to say	
-159194	rgm	rgm[/	/r-g-m/	vb G inf. / vb G pass. ptcpl.	to say	
+159194	rgm	!!rgm[/	/r-g-m/	vb G inf.	to say	
+159194	rgm	rgm[/	/r-g-m/	vb G pass. ptcpl.	to say	
 159194	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.75 3						
 159195	tḥm	tḥm/	tḥm	n. m. sg.	message	
@@ -54,4 +55,5 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159219	l	l(II)	l (II)	adv.	no	
 159219	l	l(III)	l (III)	functor	certainly	
 159220	ydˤ	!y!(ydˤ(I)[	/y-d-ʕ/ (I)	vb G suffc.	to know	
-159220	ydˤ	!y!(ydˤ(I)[/	/y-d-ʕ/ (I)	vb G inf. / vb G act. ptcpl.	to know	
+159220	ydˤ	!!(ydˤ(I)[/	/y-d-ʕ/ (I)	vb G inf.	to know	
+159220	ydˤ	(ydˤ(I)[/	/y-d-ʕ/ (I)	vb G act. ptcpl.	to know	

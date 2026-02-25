@@ -2,7 +2,8 @@
 
 Conventions:
 - finite forms (prefc./suffc./impv.) -> `[...]`
-- non-finite forms (inf./ptcpl.) -> `[/...]`
+- infinitive (inf.) -> `!!...[/`
+- participles (ptcpl.) -> `...[/`
 """
 
 from __future__ import annotations
@@ -38,14 +39,26 @@ def _is_target_pos(value: str) -> bool:
     return True
 
 
-def _requires_nonfinite_encoding(pos_option: str) -> bool:
+def _requires_infinitive_encoding(pos_option: str) -> bool:
     text = (pos_option or "").strip()
-    return bool(_FORM_INFINITE_RE.search(text) or _FORM_PTCP_RE.search(text))
+    return bool(_FORM_INFINITE_RE.search(text))
+
+
+def _requires_participle_encoding(pos_option: str) -> bool:
+    text = (pos_option or "").strip()
+    return bool(_FORM_PTCP_RE.search(text))
 
 
 def _requires_finite_encoding(pos_option: str) -> bool:
     text = (pos_option or "").strip()
     return bool(_FORM_FINITE_RE.search(text))
+
+
+def _strip_infinitive_marker(text: str) -> str:
+    value = (text or "").strip()
+    if value.startswith("!!"):
+        return value[2:]
+    return value
 
 
 def _to_nonfinite_encoding(analysis: str) -> str:
@@ -57,11 +70,25 @@ def _to_nonfinite_encoding(analysis: str) -> str:
     return text.replace("[", "[/", 1)
 
 
+def _to_infinitive_encoding(analysis: str) -> str:
+    text = _to_nonfinite_encoding(analysis)
+    if text.startswith("!!"):
+        return text
+    return f"!!{text}"
+
+
+def _to_participle_encoding(analysis: str) -> str:
+    text = _to_nonfinite_encoding(analysis)
+    text = _strip_infinitive_marker(text)
+    return text
+
+
 def _to_finite_encoding(analysis: str) -> str:
     text = (analysis or "").strip()
-    if "[/" not in text:
-        return text
-    return text.replace("[/", "[", 1)
+    if "[/" in text:
+        text = text.replace("[/", "[", 1)
+    text = _strip_infinitive_marker(text)
+    return text
 
 
 def _join_options(options: list[str]) -> str:
@@ -117,8 +144,13 @@ class VerbFormEncodingSplitFixer(RefinementStep):
             options = _split_slash_options(pos)
             if len(options) <= 1:
                 normalized_analysis = analysis
-                if options and _requires_nonfinite_encoding(options[0]):
-                    converted = _to_nonfinite_encoding(analysis)
+                if options and _requires_infinitive_encoding(options[0]):
+                    converted = _to_infinitive_encoding(analysis)
+                    if converted != analysis:
+                        changed = True
+                    normalized_analysis = converted
+                elif options and _requires_participle_encoding(options[0]):
+                    converted = _to_participle_encoding(analysis)
                     if converted != analysis:
                         changed = True
                     normalized_analysis = converted
@@ -135,29 +167,47 @@ class VerbFormEncodingSplitFixer(RefinementStep):
                 continue
 
             finite_options: list[str] = []
-            nonfinite_options: list[str] = []
+            infinitive_options: list[str] = []
+            participle_options: list[str] = []
             neutral_options: list[str] = []
             for option in options:
                 finite = _requires_finite_encoding(option)
-                nonfinite = _requires_nonfinite_encoding(option)
-                if finite and not nonfinite:
+                infinitive = _requires_infinitive_encoding(option)
+                participle = _requires_participle_encoding(option)
+                if finite and not infinitive and not participle:
                     finite_options.append(option)
-                elif nonfinite and not finite:
-                    nonfinite_options.append(option)
-                elif finite and nonfinite:
+                elif infinitive and not finite and not participle:
+                    infinitive_options.append(option)
+                elif participle and not finite and not infinitive:
+                    participle_options.append(option)
+                elif finite or infinitive or participle:
                     neutral_options.append(option)
                 else:
                     neutral_options.append(option)
 
+            has_finite = bool(finite_options)
+            has_infinitive = bool(infinitive_options)
+            has_participle = bool(participle_options)
+            active_groups = sum((has_finite, has_infinitive, has_participle))
+
             # No mixed form classes -> keep row-level variant and normalize encoding if needed.
-            if not finite_options or not nonfinite_options:
+            if active_groups <= 1:
                 normalized_analysis = analysis
-                if nonfinite_options:
-                    converted = _to_nonfinite_encoding(analysis)
+                normalized_pos = pos
+                if has_infinitive:
+                    normalized_pos = _join_options(infinitive_options + neutral_options)
+                    converted = _to_infinitive_encoding(analysis)
                     if converted != analysis:
                         changed = True
                     normalized_analysis = converted
-                elif finite_options:
+                elif has_participle:
+                    normalized_pos = _join_options(participle_options + neutral_options)
+                    converted = _to_participle_encoding(analysis)
+                    if converted != analysis:
+                        changed = True
+                    normalized_analysis = converted
+                elif has_finite:
+                    normalized_pos = _join_options(finite_options + neutral_options)
                     converted = _to_finite_encoding(analysis)
                     if converted != analysis:
                         changed = True
@@ -165,25 +215,36 @@ class VerbFormEncodingSplitFixer(RefinementStep):
 
                 out_analysis.append(normalized_analysis)
                 out_dulat.append(dulat)
-                out_pos.append(pos)
+                out_pos.append(normalized_pos)
                 out_gloss.append(gloss)
                 continue
 
-            # Mixed finite/non-finite options -> split into two aligned variants.
+            # Mixed form classes -> split into aligned variants.
             finite_pos = _join_options(finite_options + neutral_options)
-            nonfinite_pos = _join_options(nonfinite_options + neutral_options)
+            infinitive_pos = _join_options(infinitive_options + neutral_options)
+            participle_pos = _join_options(participle_options + neutral_options)
             finite_analysis = _to_finite_encoding(analysis)
-            nonfinite_analysis = _to_nonfinite_encoding(analysis)
+            infinitive_analysis = _to_infinitive_encoding(analysis)
+            participle_analysis = _to_participle_encoding(analysis)
 
-            out_analysis.append(finite_analysis)
-            out_dulat.append(dulat)
-            out_pos.append(finite_pos)
-            out_gloss.append(gloss)
+            if has_finite:
+                out_analysis.append(finite_analysis)
+                out_dulat.append(dulat)
+                out_pos.append(finite_pos)
+                out_gloss.append(gloss)
 
-            out_analysis.append(nonfinite_analysis)
-            out_dulat.append(dulat)
-            out_pos.append(nonfinite_pos)
-            out_gloss.append(gloss)
+            if has_infinitive:
+                out_analysis.append(infinitive_analysis)
+                out_dulat.append(dulat)
+                out_pos.append(infinitive_pos)
+                out_gloss.append(gloss)
+
+            if has_participle:
+                out_analysis.append(participle_analysis)
+                out_dulat.append(dulat)
+                out_pos.append(participle_pos)
+                out_gloss.append(gloss)
+
             changed = True
 
         deduped: list[tuple[str, str, str, str]] = []
