@@ -2,6 +2,26 @@
 
 ## 2026-02-25
 
+- Added full DULAT form-level POS enrichment for ambiguous exact-surface
+  matches across the corpus:
+  - new step `pipeline/steps/verb_form_morph_pos.py`
+    (`VerbFormMorphPosFixer`) adds verbal form payloads from
+    `forms.morphology` (for example `prefc.`, `suffc.`, `impv.`, `inf.`,
+    `act. ptcpl.`, `pass. ptcpl.`), preserving ambiguity as explicit
+    slash-separated options.
+  - nominal exact-form number ambiguity is now explicit in POS where surface
+    form does not disambiguate (for example `n. m. pl. / n. m. du.`) via
+    `pipeline/steps/nominal_form_morph_pos.py`.
+  - linter POS option splitting now accepts spaced slash options (`A / B`) in
+    `linter/lint.py`.
+  - added tests:
+    - `tests/test_verb_form_morph_pos.py`
+    - `tests/test_nominal_form_morph_pos.py` (ambiguous-number updates)
+    - `tests/test_linter_pos_normalization.py` (slash splitting)
+  - documented the strategy in
+    `docs/verb_form_morph_pos_pipeline.md`.
+  - re-ran full `--include-existing` pipeline to apply changes globally.
+
 - Added DULAT reference-based ambiguity collapse for unwrapped token groups:
   - new index capability in `pipeline/dulat_attestation_index.py`:
     `has_reference_for_variant_token(...)` with normalized `KTU`/`CAT`

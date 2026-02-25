@@ -24,7 +24,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:216 13568
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:217 135688 n POS ambiguous in DULAT: DN, PN, TN, DN, n., num., adj., pers. pn., morph., pers. pn., morph., vb, prep., vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:217 135688 n Multiple DULAT candidates for surface: ʕd(I) [] — up to, until; close to, around; ʕl(I) [prep.] — upon, on top of; ʕl(I) [prep.] — upon, on top of; ʕn(I) [n.] — eye; ʕẓm(III) [n.] — power, excellence; bld [n.] — land, country; /g-r(-y)/ [vb] — to attack; gṯr [DN] — überlegen stark; /ġ-ẓ-y/ [vb] — to win over; /ġ-ẓ-y/ [vb] — to win over; -h(I) [pers. pn., morph.] — his /her (hers) / its; /h-b-ṭ/ẓ/ [vb] — to knock down, hit; /ḫ-š/ [vb] — to tremble, be alarmed; /ḫ-t-ʔ/ [vb] — to be ground up, crushed, annihilated; -k(I) [pers. pn., morph.] — your(s); krt [PN] — —; l(I) [prep.] — to, towards, up to; /l-ʔ-y/w/(I) [vb] — to conquer, prevail, overcome by strength; /l-ḥ-m/(I) [vb] — to eat; mảdt(I) [n.] — great quantity, many people, a crowd; /m-ġ-y/ [vb] — to come, arrive; /m-l-ʔ/ [vb] — to be full; mtnt [n.] — loin; /m-ṭ-r/ [vb] — to rain; -n(II) [pers. pn., morph., vb] — me, to me; /n-g-ḥ/ [vb] — to butt each other; /n-ġ-r/ [vb] — to protect, guard; /n-ḫ/ [vb] — to rest; /n-š-ʔ/ [vb] — to raise, lift, help up; /n-ṭ-ṭ/ [vb] — to shake; pġ(n)dr [n.] — —; pġ(n)dr [n.] — —; qn [n.] — cane; /r-ġ/ [vb] — to get excited, blaze, to be full of rage; rḫnt [n.] — sweetness, tenderness; spr(II) [n.] — tablet / register, list, inventory; in accounting, record of trib-
 ute; of instructions; ṣpn [TN, DN] — north; /š-m-ḫ/ [vb] — to be glad, rejoice; /š-r/(II) [vb] — to threaten; /š-t/ [vb] — to place, set, set up, leave; /t-ʕ/ [vb] — to attack; /t-ʕ/ [vb] — to attack; /t-r-ʕ/ [vb] — to be cracked; ṯn(II) [num., adj.] — second; /ṯ-n-y/ [vb] — to repeat, reiterate; /y/w-ḥ-l/ [vb] — to be worried, to despair, to lose hope
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:267 135723 thmt Duplicate unwrapped row payload (same id, surface, and col3-col6); first seen on line 266
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:276 135728 tdˤ Analysis does not reconstruct to surface (reconstructs as: ydʕ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:297 135745 ˤnn Analysis does not reconstruct to surface (reconstructs as: ʕn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:301 135747 atm Analysis does not reconstruct to surface (reconstructs as: at)
@@ -390,7 +389,8 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.109.tsv:223 153
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.109.tsv:223 153488 ˤlm Suffixed pronominal form in DULAT should use '+' in analysis
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.109.tsv:224 153489 ˤlm Analysis does not reconstruct to surface (reconstructs as: ʕl)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.109.tsv:224 153489 ˤlm Suffixed pronominal form in DULAT should use '+' in analysis
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.111.tsv:5 153513 lmd POS token 'adj. m. or n. m.' not allowed for lmd; choose one of: adj., n
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.111.tsv:5 153513 lmd POS token 'adj. m. or n. m. sg.' not allowed for lmd; choose one of: adj., n
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.111.tsv:5 153513 lmd POS token 'adj. m. or n. m. pl.' not allowed for lmd; choose one of: adj., n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.111.tsv:12 153515 ymm Analysis does not reconstruct to surface (reconstructs as: ym)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.111.tsv:20 153521 atnd Analysis does not reconstruct to surface (reconstructs as: ytnd)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.111.tsv:23 153523 tṯbd Analysis does not reconstruct to surface (reconstructs as: tṯb)
@@ -1388,7 +1388,8 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1398 145
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1421 145105 šnm Analysis does not reconstruct to surface (reconstructs as: šnwm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1448 145128 tšu Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1449 145129 gh Analysis does not reconstruct to surface (reconstructs as: ytn)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1467 145141 lmd POS token 'adj. m. or n. m.' not allowed for lmd; choose one of: adj., n
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1467 145141 lmd POS token 'adj. m. or n. m. sg.' not allowed for lmd; choose one of: adj., n
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1467 145141 lmd POS token 'adj. m. or n. m. pl.' not allowed for lmd; choose one of: adj., n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1469 145142 atn Analysis does not reconstruct to surface (reconstructs as: ytn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.171.tsv:51 155789 śd Analysis does not reconstruct to surface (reconstructs as: kmsd)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.171.tsv:51 155789 śd Non-G stem in DULAT requires stem marker
@@ -1538,7 +1539,8 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv:165 156
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv:166 156167 nm Analysis does not reconstruct to surface (reconstructs as: ʕnm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv:167 156167 nm Analysis does not reconstruct to surface (reconstructs as: bldm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv:225 156200 gh Analysis does not reconstruct to surface (reconstructs as: ytn)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv:301 156253 lmd POS token 'adj. m. or n. m.' not allowed for lmd; choose one of: adj., n
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv:301 156253 lmd POS token 'adj. m. or n. m. sg.' not allowed for lmd; choose one of: adj., n
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv:301 156253 lmd POS token 'adj. m. or n. m. pl.' not allowed for lmd; choose one of: adj., n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv:303 156254 atn Analysis does not reconstruct to surface (reconstructs as: ytn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv:309 156259 mspr Analysis does not reconstruct to surface (reconstructs as: sprr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv:315 156263 ind Analysis does not reconstruct to surface (reconstructs as: in)
@@ -2411,7 +2413,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:745 13746
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:748 137465 ksi Analysis does not reconstruct to surface (reconstructs as: ks)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:748 137465 ksi DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:862 137541 tdˤ Analysis does not reconstruct to surface (reconstructs as: ydʕ)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:876 137551 thmt Duplicate unwrapped row payload (same id, surface, and col3-col6); first seen on line 875
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:888 137558 tdˤ Analysis does not reconstruct to surface (reconstructs as: ydʕ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:890 137560 atm Analysis does not reconstruct to surface (reconstructs as: at)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:891 137560 atm ʔ must be preceded by '(' in column 3
@@ -3313,7 +3314,8 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1465 1413
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1514 141430 ˤdk Analysis does not reconstruct to surface (reconstructs as: ʕd)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1519 141434 ˤdk Analysis does not reconstruct to surface (reconstructs as: ʕd)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1520 141435 kṯrm Analysis does not reconstruct to surface (reconstructs as: kṯr)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1547 141456 lmd POS token 'adj. m. or n. m.' not allowed for lmd; choose one of: adj., n
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1547 141456 lmd POS token 'adj. m. or n. m. sg.' not allowed for lmd; choose one of: adj., n
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1547 141456 lmd POS token 'adj. m. or n. m. pl.' not allowed for lmd; choose one of: adj., n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1548 141457 atn Analysis does not reconstruct to surface (reconstructs as: ytn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1567 141469 bˤl Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.62.tsv:3 149349 h POS token 'suff. pn. morph.' not allowed for -h (I); choose one of: morph., pers. pn.
@@ -3442,7 +3444,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:173 14158
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:173 141582 t No DULAT entry found for clitic part: t, [t=, [t==, [t===
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:173 141582 t Multiple DULAT candidates for surface: /ʕ-s-y:s/ [vb] — ?; /l-q-ḥ/ [vb] — to get hold of, take, grasp; to receive, accept, take (away);
 to collect, hold; to choose, opt for something; /p-r-ʕ/ [vb] — to wash; /p-r-ʕ/ [vb] — to wash; /p-r-ʕ/ [vb] — to wash; /p-r-ʕ/ [vb] — to wash; /ṯ-m-n/ [vb] — to do, give eight; /y-b-m/ [vb] — to proclaim oneself a nubile widow
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:218 141617 thmt Duplicate unwrapped row payload (same id, surface, and col3-col6); first seen on line 217
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:224 141622 tdˤ Analysis does not reconstruct to surface (reconstructs as: ydʕ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:226 141624 atm Analysis does not reconstruct to surface (reconstructs as: at)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:227 141624 atm ʔ must be preceded by '(' in column 3
@@ -3834,7 +3835,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.91.tsv:80 15125
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.91.tsv:82 151257 bhtm Analysis does not reconstruct to surface (reconstructs as: bt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:7 151328 ṣwdt Analysis does not reconstruct to surface (reconstructs as: ṣddt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:9 151329 tlk Analysis does not reconstruct to surface (reconstructs as: hlk)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:22 151336 thmt Duplicate unwrapped row payload (same id, surface, and col3-col6); first seen on line 21
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:36 151344 tṯb Analysis does not reconstruct to surface (reconstructs as: yṯb)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:49 151353 tšu Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:63 151362 tiḫd ʔ must be preceded by '(' in column 3
@@ -4697,7 +4697,8 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:69 16001
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.90.tsv:95 160030 bd Analysis does not reconstruct to surface (reconstructs as: b)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.91.tsv:3 160034 klhmm No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.91.tsv:15 160042 alpm Analysis does not reconstruct to surface (reconstructs as: alp)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.91.tsv:19 160045 lmd POS token 'adj. m. or n. m.' not allowed for lmd; choose one of: adj., n
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.91.tsv:19 160045 lmd POS token 'adj. m. or n. m. sg.' not allowed for lmd; choose one of: adj., n
+ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.91.tsv:19 160045 lmd POS token 'adj. m. or n. m. pl.' not allowed for lmd; choose one of: adj., n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.91.tsv:48 160061 ys Analysis does not reconstruct to surface (reconstructs as: nsy)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.92.tsv:3 160064 klt Analysis does not reconstruct to surface (reconstructs as: klyt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.93.tsv:14 160073 wn Analysis does not reconstruct to surface (reconstructs as: w)
@@ -4994,13 +4995,9 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.8.tsv:83 161186
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:12 161194 btw Analysis does not reconstruct to surface (reconstructs as: bt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:59 161219 tn Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:66 161224 ysˤ Analysis does not reconstruct to surface (reconstructs as: nsʕ)
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:65 135589 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:75 135596 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:94 135608 ḥtkk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:95 135608 ḥtkk Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:115 135620 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:120 135624 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:165 135654 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:248 135711 argmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:386 135805 trmmn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:574 135929 alpm Plural form missing split ending
@@ -5101,7 +5098,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1268 1
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1287 145011 šrgk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1301 145021 spsg Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1323 145037 rgmm Plural form missing split ending
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1424 145107 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.173.tsv:79 155902 pamt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.173.tsv:79 155902 pamt Feminine plural noun in DULAT should be tagged with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv:90 156123 y Lexeme parse did not match DULAT; matched by surface form
@@ -5126,10 +5122,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1581 1
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1644 146657 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1665 146671 alpm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv   Lemma /ʕ-n-w/ has multiple stem markers: :d (ids: 136199; lines: 243); :pass (ids: 136286,136570,136644,136914; lines: 1269,358,784,887)
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:91 136089 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:194 136165 tphhm Suffix form without '+'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:297 136240 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:604 136449 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:624 136465 rmm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:663 136492 trmm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:709 136521 y Lexeme parse did not match DULAT; matched by surface form
@@ -5169,31 +5162,20 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:285 137
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:290 137139 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:366 137193 limm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:391 137210 hdmm Plural form missing split ending
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:474 137267 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:501 137284 limm Plural form missing split ending
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:524 137303 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:529 137307 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:550 137323 argmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:626 137380 bˤdn Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:818 137510 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:822 137514 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:920 137580 limm Plural form missing split ending
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:937 137593 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:942 137597 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:975 137619 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:980 137623 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:984 137627 rgmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:986 137628 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:987 137628 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1185 137762 dmm Plural form missing split ending
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1291 137832 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1294 137834 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1346 137868 aḫdhm Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1361 137880 dmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1427 137927 klnyy Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1431 137930 klnyy Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1446 137942 yknnh Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1709 138093 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.31.tsv:4 147911 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:119 147995 ṯrmnm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:191 148037 pamt Lexeme parse did not match DULAT; matched by surface form
@@ -5210,7 +5192,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:311 138
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:316 138334 bˤdn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:359 138365 aryy Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:423 138408 y Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:875 138695 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:888 138706 yphnh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1017 138801 yknnh Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1232 138933 tblk Suffix form without '+'
@@ -5228,7 +5209,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1774 13
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2078 139504 qlh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2098 139517 tṭṭn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2288 139652 y Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2382 139710 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.40.tsv:9 148054 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:35 148462 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:36 148462 argmn Suffix form without '+'
@@ -5257,13 +5237,9 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:743 140
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:798 140297 šlbšn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:834 140321 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:840 140325 ˤdk Suffix form without '+'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:981 140428 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.50.tsv:50 149250 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:125 140528 tbkynh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:138 140538 rumm Plural form missing split ending
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:256 140608 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:573 140812 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:579 140817 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:608 140838 ˤdbnn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:687 140892 tbqˤnn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:834 140994 aṯbn Suffix form without '+'
@@ -5282,7 +5258,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:1519 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.62.tsv:41 149368 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:35 141493 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:159 141571 limm Plural form missing split ending
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:184 141590 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.71.tsv:8 149557 śśwm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.71.tsv:166 149639 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.72.tsv:8 149653 śśwm Lexeme parse did not match DULAT; matched by surface form
@@ -5312,22 +5287,16 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.90.tsv:72 151
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.91.tsv:60 151246 ršpm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.1.tsv:7 156290 tġrk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.10.tsv:54 156581 mid Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.100.tsv:14 160350 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.100.tsv:23 160357 tġrk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.101.tsv:12 160407 skn Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.101.tsv:20 160413 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.102.tsv:9 160442 skn Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:66 160484 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:122 160515 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.104.tsv:18 160533 tġrk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.105.tsv:17 160575 tġrk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.107.tsv:58 160607 gršthm Suffix form without '+'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:19 156606 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:27 156611 tġrk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:38 156616 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.110.tsv:29 160692 mid Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.12.tsv:17 156639 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:17 156662 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:28 156669 tġrk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv:18 156706 tġrk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.15.tsv:32 156760 iḫdn Suffix form without '+'
@@ -5338,8 +5307,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.17.tsv:40 156
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.21.tsv:22 156916 tġrk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.21.tsv:32 156922 skn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:136 157062 tġrn Suffix form without '+'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.24.tsv:16 157091 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:16 157197 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:26 157204 tġrk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:59 157289 ksiy Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:227 157407 kn Suffix form without '+'
@@ -5352,11 +5319,8 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.37.tsv:38 157
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.37.tsv:39 157840 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.38.tsv:24 157862 tġrk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:15 157929 midm Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:22 157932 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.4.tsv:22 156401 tġrk Suffix form without '+'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.40.tsv:19 158034 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.41.tsv:7 158064 tġrk Suffix form without '+'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.42.tsv:21 158114 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.42.tsv:134 158186 anyt Feminine plural noun in DULAT should use '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.42.tsv:148 158196 anyt Feminine plural noun in DULAT should use '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.44.tsv:25 158226 tġrk Suffix form without '+'
@@ -5365,9 +5329,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:68 158
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.47.tsv:17 158329 anyt Feminine plural noun in DULAT should use '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.49.tsv:53 158446 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:3 158449 tġrk Suffix form without '+'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:7 158452 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.51.tsv:6 158507 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.52.tsv:10 158521 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.54.tsv:16 158539 skn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.56.tsv:19 158564 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.58.tsv:12 158597 y Lexeme parse did not match DULAT; matched by surface form
@@ -5375,17 +5336,12 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.6.tsv:20 1564
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.61.tsv:47 158646 krmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.62.tsv:40 158676 ṯbh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.63.tsv:20 158696 tġrk Suffix form without '+'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:20 158727 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:43 158739 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.68.tsv:15 158795 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.68.tsv:31 158806 tġrk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.68.tsv:42 158811 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.7.tsv:30 156495 yḥ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:32 158847 tġrk Suffix form without '+'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:36 158850 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:68 158872 ḥwt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.71.tsv:17 158925 tġrk Suffix form without '+'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:16 158971 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:25 158978 tġrk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.75.tsv:26 159202 tġrk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.75.tsv:39 159212 anna III-aleph noun/adjective should encode lexeme-final case vowel as '(u|i|a' and inflection as '/&u|&i|&a'
@@ -5399,16 +5355,13 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.84.tsv:24 159
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:42 159498 tġrkm Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:118 159546 tġrk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:17 159584 tġrk Suffix form without '+'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:21 159587 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:41 159598 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:93 159623 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.87.tsv:91 159682 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.89.tsv:10 159915 skn Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.89.tsv:14 159918 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.9.tsv:30 156547 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.9.tsv:33 156548 ṯby Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.91.tsv:15 160042 alpm Plural form missing split ending
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:20 160102 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.1.tsv:84 160793 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.1.tsv:85 160793 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.1.tsv:126 160819 argmn Suffix form without '+'
@@ -5829,7 +5782,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.111.tsv  ṯn Su
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.111.tsv  alpm Surface alpm parsed inconsistently: alp(I)/m (ids: 153554,153560); alp(II)/ (ids: 153554,153560)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.111.tsv  ḥmr Surface ḥmr parsed inconsistently: ḥmr(I)/ (ids: 153558); ḥmr(II)/ (ids: 153558)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.111.tsv  l Surface l parsed inconsistently: l(I) (ids: 153561,153566,153582); l(II) (ids: 153582); l(III) (ids: 153566,153582)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.111.tsv  ṯat Surface ṯat parsed inconsistently: ṯa(t/t (ids: 153565); ṯa(t/t= (ids: 153565)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.111.tsv:18 153519 aṯḫḫlm Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.111.tsv:20 153521 atnd Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.111.tsv:22 153522 ild Surface not found in UDB concordance
@@ -5947,7 +5899,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.115.tsv  bbt Sur
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.115.tsv  bt Surface bt parsed inconsistently: b(t(I)/t (ids: 153955,153968,153974); b(t(II)/t (ids: 153955,153968,153974)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.115.tsv  tr Surface tr parsed inconsistently: tr(II)/ (ids: 153959,153986); tr[ (ids: 153959,153986)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.115.tsv  qdš Surface qdš parsed inconsistently: qdš(I)/ (ids: 153966); qdš(II)/ (ids: 153966)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.115.tsv  aṯt Surface aṯt parsed inconsistently: aṯ(t/t (ids: 153971); aṯ(t/t= (ids: 153971)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.115.tsv  šlmm Surface šlmm parsed inconsistently: šlm(II)/m (ids: 153975); šlm(II)/~m (ids: 153975)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.115.tsv  šqym Surface šqym parsed inconsistently: šq/ (ids: 153981); šqy/m (ids: 153981)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.115.tsv  ym Surface ym parsed inconsistently: ym(I)/ (ids: 153988); ym(II)/ (ids: 153988)
@@ -6135,7 +6086,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.127.tsv  sprt Su
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.127.tsv  l Surface l parsed inconsistently: l(I) (ids: 154502); l(III) (ids: 154502)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.127.tsv  bt Surface bt parsed inconsistently: b(t(I)/t (ids: 154506,154539); b(t(II)/t (ids: 154506,154539)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.127.tsv  šlmm Surface šlmm parsed inconsistently: šlm(II)/m (ids: 154511); šlm(II)/~m (ids: 154511)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.127.tsv  aṯt Surface aṯt parsed inconsistently: aṯ(t/t (ids: 154526); aṯ(t/t= (ids: 154526)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.127.tsv  ˤz Surface ˤz parsed inconsistently: ˤz(II)/ (ids: 154528,154543); ˤz(III)/ (ids: 154528,154543); ˤz[ (ids: 154528,154543)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.127.tsv  hm Surface hm parsed inconsistently: hm(I) (ids: 154532,154535); hm(II) (ids: 154532,154535)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.127.tsv  mt Surface mt parsed inconsistently: m(t(I)/t (ids: 154536); m(t(II)/t (ids: 154536); mt[ (ids: 154536)
@@ -6281,7 +6231,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv  mlk Surf
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv  k Surface k parsed inconsistently: +k (ids: 141683,141769,142381); k(I) (ids: 141683,141769,141813,142014,142197,142381); k(II) (ids: 141683,141769,142381); k(III) (ids: 141683,141769,141801,142381,142525); ~k (ids: 141683,141769,142381)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv  bt Surface bt parsed inconsistently: b(t(I)/t (ids: 141941,142313); b(t(II)/t (ids: 141693,142313)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv  bn Surface bn parsed inconsistently: b (ids: 141926); bn(I)/ (ids: 141701,141841,142132,142181,142300,142565,142618,142665); bn(II) (ids: 142132,142181,142300,142565,142618,142665); bn[ (ids: 142132,142181,142300,142565,142618,142665)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv  aṯt Surface aṯt parsed inconsistently: aṯ(t/t (ids: 141709,141715,142499); aṯ(t/t= (ids: 141709,141715,142499)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv  ym Surface ym parsed inconsistently: ym(I)/ (ids: 142023,142028,142031,142066,142071,142074,142386,142425,142431,142462,142467,142470); ym(II)/ (ids: 141733,142031,142066,142071,142074,142386,142425,142431,142462,142467,142470)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv  yˤn Surface yˤn parsed inconsistently: !y!ˤn(w[:pass (ids: 141741); !y!ˤn(y(I)[ (ids: 141741); !y!ˤn[:d (ids: 141738,141741)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv  ḥtkh Surface ḥtkh parsed inconsistently: ḥtk(II)/h (ids: 141739,141742); ḥtk(III)/+h (ids: 141739,141742)
@@ -6388,7 +6337,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:1408 1425
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:1611 142695 bḥlmy Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:1624 142704 lkrk Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.140.tsv  k Surface k parsed inconsistently: +k (ids: 154908); k(I) (ids: 154908); k(II) (ids: 154908); k(III) (ids: 154904,154908,154912,154918,154923); ~k (ids: 154908)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.140.tsv  aṯt Surface aṯt parsed inconsistently: aṯ(t/t (ids: 154906,154914,154920,154925,154934); aṯ(t/t= (ids: 154906,154914,154920,154925,154934)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.140.tsv  ḥwt Surface ḥwt parsed inconsistently: ḥw(I)[t:d:pass (ids: 154907); ḥw(t/t (ids: 154907,154915)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.140.tsv  ib Surface ib parsed inconsistently: ib(I)/ (ids: 154916); ib(II)/ (ids: 154916)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.140.tsv  l Surface l parsed inconsistently: l(I) (ids: 154927); l(II) (ids: 154927); l(III) (ids: 154927)
@@ -6463,7 +6411,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv  ˤrb Sur
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv  ˤdt Surface ˤdt parsed inconsistently: ˤd(t(I)/t (ids: 142796); ˤd(t(II)/t (ids: 142796)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv  ks Surface ks parsed inconsistently: ks(I)/ (ids: 142815); ks/ (ids: 142815)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv  y Surface y parsed inconsistently: +y, [y (ids: 142821); y (ids: 142821,142836); ~y (ids: 142821)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv  aṯt Surface aṯt parsed inconsistently: aṯ(t/t (ids: 142834,142838); aṯ(t/t= (ids: 142834,142838)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv  ġlmt Surface ġlmt parsed inconsistently: ġlm(t(I)/t (ids: 142841); ġlm(t(II)/t (ids: 142841)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv  bnm Surface bnm parsed inconsistently: b (ids: 142933); bn(I)/m (ids: 142846,142933)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv  rm Surface rm parsed inconsistently: rm(I)/ (ids: 142867,142902); rm(II)/ (ids: 142867); rm[ (ids: 142867)
@@ -6560,7 +6507,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  l Surfac
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  k Surface k parsed inconsistently: +k (ids: 143192,143197,143256,143261,143328,143444,143474,143483,143486,143542,143547,143553,143658,143662,143690,143693,143705,143707,143722,144013,144066); k(I) (ids: 143192,143197,143251,143256,143261,143328,143444,143474,143483,143486,143542,143547,143553,143658,143662,143690,143693,143705,143707,143722,144013,144066); k(II) (ids: 143192,143197,143256,143261,143328,143444,143474,143483,143486,143542,143547,143553,143658,143662,143690,143693,143705,143707,143722,144013,144066); k(III) (ids: 143192,143197,143256,143261,143328,143444,143471,143474,143483,143486,143542,143547,143553,143658,143662,143690,143693,143705,143707,143722,144013,144066); ~k (ids: 143192,143197,143256,143261,143328,143444,143474,143483,143486,143542,143547,143553,143658,143662,143690,143693,143705,143707,143722,144013,144066)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  ap Surface ap parsed inconsistently: ap(I) (ids: 143199,143201,143228,143259,143549,143551,143584,143990); ap(II)/ (ids: 143199,143201,143259,143549,143551,143584)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  mtm Surface mtm parsed inconsistently: mt(I)/m (ids: 143204,143262,143554); mt(II)/~m (ids: 143204,143262,143554); mt[~m (ids: 143204,143262,143554)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  aṯt Surface aṯt parsed inconsistently: aṯ(t/t (ids: 143212,143270); aṯ(t/t= (ids: 143212,143270)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  ġr Surface ġr parsed inconsistently: ġr(I)/ (ids: 143217,143573,143606,143751); ġr(III)/ (ids: 143217,143573,143606)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  bˤl Surface bˤl parsed inconsistently: bˤl(II)/ (ids: 143218,143574,143638,143647,143717,143736,144127); bˤl[/ (ids: 143638,144127)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv  ḥlm Surface ḥlm parsed inconsistently: ḥl(I)/ (ids: 143220); ḥlm(I)/ (ids: 143223,143576,143579)
@@ -6961,7 +6907,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.173.tsv  ṯˤ S
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.173.tsv  mlk Surface mlk parsed inconsistently: mlk(II)/ (ids: 155897); mlk[ (ids: 155897)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.173.tsv  ḥl Surface ḥl parsed inconsistently: ḥl(I)/ (ids: 155908); ḥl(II)/ (ids: 155908)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.173.tsv:14 155864 wš Surface not found in UDB concordance
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.174.tsv  aṯt Surface aṯt parsed inconsistently: aṯ(t/t (ids: 155923); aṯ(t/t= (ids: 155923)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.174.tsv:15 155918 blˤ Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.175.tsv  alp Surface alp parsed inconsistently: alp(I)/ (ids: 155933,155975); alp(II)/ (ids: 155933,155975)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.175.tsv  dk Surface dk parsed inconsistently: d+k (ids: 155942,155970); dll[+k (ids: 155942,155970)
@@ -7020,7 +6965,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv  ˤrb Su
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv  ḥrn Surface ḥrn parsed inconsistently: ḥr(I)/+n (ids: 156197); ḥrn/ (ids: 156197)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv  gh Surface gh parsed inconsistently: g/+h (ids: 156200); ytn[ (ids: 156200)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv  bbt Surface bbt parsed inconsistently: bbt(I)/ (ids: 156204); bbt(II)/ (ids: 156204)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv  aṯt Surface aṯt parsed inconsistently: aṯ(t/t (ids: 156216); aṯ(t/t= (ids: 156216)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv  bn Surface bn parsed inconsistently: bn(I)/ (ids: 156220); bn(II) (ids: 156220); bn[ (ids: 156220)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv  lbš Surface lbš parsed inconsistently: lbš/ (ids: 156225); lbš[ (ids: 156225)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv  nrt Surface nrt parsed inconsistently: nr(t(I)/t (ids: 156237); nr(t(II)/t (ids: 156237)
@@ -7209,7 +7153,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  dbḥ Su
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  dġṯhm Surface dġṯhm parsed inconsistently: dġṯ&h/+m(I) (ids: 146474); dġṯ/+hm (ids: 146474)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  ˤd Surface ˤd parsed inconsistently: ˤd(II)/ (ids: 146488); ˤd(III)/ (ids: 146488)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  tˤn Surface tˤn parsed inconsistently: !t!ˤn(w[ (ids: 146499); !t!ˤn(y(I)[ (ids: 146499); !t!ˤn[:d (ids: 146499)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  aṯt Surface aṯt parsed inconsistently: aṯ(t/t (ids: 146593); aṯ(t/t= (ids: 146593)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  nrt Surface nrt parsed inconsistently: nr(t(I)/t (ids: 146596,146605); nr(t(II)/t (ids: 146596,146605)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  ks Surface ks parsed inconsistently: ks(I)/ (ids: 146634,146645); ks/ (ids: 146645)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv  tšqynh Surface tšqynh parsed inconsistently: !t!šqy[+nh (ids: 146643); !t!šqy[n+h (ids: 146643)
@@ -7333,7 +7276,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv  dm Surfac
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv  kbn Surface kbn parsed inconsistently: kb(I)/+n (ids: 136588); kb(II)/+n (ids: 136588); kbn/ (ids: 136588)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv  bbt Surface bbt parsed inconsistently: bbt(I)/ (ids: 136596); bbt(II)/ (ids: 136596)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv  wn Surface wn parsed inconsistently: w (ids: 136619); w+n (ids: 136619)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv  aṯt Surface aṯt parsed inconsistently: aṯ(t/t (ids: 136621); aṯ(t/t= (ids: 136621)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv  ḥy Surface ḥy parsed inconsistently: ḥy(I)/ (ids: 136660); ḥy(m/ (ids: 136660)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv  ˤn Surface ˤn parsed inconsistently: ˤn(I)/ (ids: 136707); ˤn(II)/ (ids: 136707); ˤn[ (ids: 136707)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv  rkb Surface rkb parsed inconsistently: rkb(I)/ (ids: 136719,136885); rkb(II)/ (ids: 136885); rkb[ (ids: 136885)
@@ -7463,7 +7405,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv  hm Surfa
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv  y Surface y parsed inconsistently: +y, [y (ids: 147323,147350,147378,147532,147535,147575); y (ids: 147323,147350,147378,147532,147535,147575); ~y (ids: 147323,147350,147378,147532,147535,147575)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv  mmnnm Surface mmnnm parsed inconsistently: m(II) (ids: 147328,147355,147383); ymnn[m (ids: 147328,147355,147383)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv  ydk Surface ydk parsed inconsistently: !y!dk[:pass (ids: 147330,147357,147385); !y=!dk[:pass (ids: 147330,147357,147385); yd(I)/+k (ids: 147330,147357,147385); yd(I)/+k= (ids: 147330,147357,147385); yd(II)/+k (ids: 147330,147357,147385); yd(II)/+k= (ids: 147330,147357,147385)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv  aṯt Surface aṯt parsed inconsistently: aṯ(t/t (ids: 147340,147342,147396,147398); aṯ(t/t= (ids: 147340,147342,147396,147398)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv  btm Surface btm parsed inconsistently: bt(I)/m (ids: 147367); bt(II)/m (ids: 147367)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv  bt Surface bt parsed inconsistently: b(t(I)/t (ids: 147368,147370); b(t(II)/t (ids: 147368,147370)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.23.tsv  yšq Surface yšq parsed inconsistently: !y!šq(y[ (ids: 147404,147447); nšq[ (ids: 147404,147447)
@@ -7594,7 +7535,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  yšqynh S
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  rb Surface rb parsed inconsistently: rb(I)/ (ids: 136975,137024,137257,137732,137977); rb(II)/ (ids: 137024,137257,137732,137977); rb/ (ids: 137024,137257,137732,137977)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  mt Surface mt parsed inconsistently: m(t(I)/t (ids: 137848); m(t(II)/t (ids: 137848); mt(III)/ (ids: 136978); mt[ (ids: 137848)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  qdš Surface qdš parsed inconsistently: qdš(I)/ (ids: 136981,137570,138071); qdš(II)/ (ids: 137364,137570,138071)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  aṯt Surface aṯt parsed inconsistently: aṯ(t/t (ids: 136984,137675); aṯ(t/t= (ids: 136984,137675)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  tˤn Surface tˤn parsed inconsistently: !t!ˤn(w[ (ids: 137575,137741,137850,137908); !t!ˤn(y(I)[ (ids: 137575,137741,137850,137908); !t!ˤn[:d (ids: 136987,137142,137575,137741,137850,137908)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  alp Surface alp parsed inconsistently: alp(I)/ (ids: 137233,137663,137679,137702,138049,138088); alp(II)/ (ids: 136989,137233,137663,137702,138049,138088)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv  rbt Surface rbt parsed inconsistently: rb(I)/t (ids: 138053,138090); rb(t(I)/t (ids: 137722,137967,137993,138053,138090); rb(t/t (ids: 136994,137665,138053,138090)
@@ -8232,7 +8172,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  blt Surfa
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  rḥbt Surface rḥbt parsed inconsistently: rḥb(t/t (ids: 140742); rḥb(t/t= (ids: 140742)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  ymm Surface ymm parsed inconsistently: ym(I)/m (ids: 140757,140862,140865); ym(II)/ (ids: 140757)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  rḥm Surface rḥm parsed inconsistently: rḥ(III)/m (ids: 140901); rḥm/ (ids: 140760,140868)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  ṯat Surface ṯat parsed inconsistently: ṯa(t/t (ids: 140769,140878); ṯa(t/t= (ids: 140769,140878)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  an Surface an parsed inconsistently: an(I) (ids: 140805,141119,141121); an(II) (ids: 141113,141115,141119,141121)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  šd Surface šd parsed inconsistently: šd(I)/ (ids: 140832,140904); šd(II)/ (ids: 140832); šdy[ (ids: 140832,141095)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv  nn Surface nn parsed inconsistently: gr[ (ids: 140896); grš[ (ids: 140896)
@@ -8814,7 +8753,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv  btm Surf
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv  bn Surface bn parsed inconsistently: bn(I)/ (ids: 151524); bn(II) (ids: 151524); bn[ (ids: 151524)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv  kb Surface kb parsed inconsistently: kb(I)/ (ids: 151526); kb(II)/ (ids: 151526); kb/ (ids: 151526)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv  k Surface k parsed inconsistently: +k (ids: 151532); k(I) (ids: 151532); k(II) (ids: 151532); k(III) (ids: 151532); ~k (ids: 151532)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv  aṯt Surface aṯt parsed inconsistently: aṯ(t/t (ids: 151537); aṯ(t/t= (ids: 151537)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv  l Surface l parsed inconsistently: l(I) (ids: 151542,151544); l(III) (ids: 151542,151544)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv  n Surface n parsed inconsistently:  (ids: 151554); +n, +n= (ids: 151554); [n, [n= (ids: 151554); ~n (ids: 151554)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.94.tsv  km Surface km parsed inconsistently: +km, +km= (ids: 151555); k(I) (ids: 151555); k(III) (ids: 151555); k(IV) (ids: 151555); km (ids: 151555)
@@ -9056,7 +8994,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.24.tsv  rgm Surf
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.24.tsv  ˤmny Surface ˤmny parsed inconsistently: ˤm(I)+ny (ids: 157099); ˤm(I)+y (ids: 157099)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.24.tsv  šlm Surface šlm parsed inconsistently: šlm(I)/ (ids: 157101,157106); šlm(III)/ (ids: 157101,157106); šlm[:d (ids: 157101,157106)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.25.tsv  al Surface al parsed inconsistently: al(I) (ids: 157115); al(II) (ids: 157115)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.25.tsv  aṯt Surface aṯt parsed inconsistently: aṯ(t/t (ids: 157122); aṯ(t/t= (ids: 157122)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.25.tsv  l Surface l parsed inconsistently: l(I) (ids: 157123); l(III) (ids: 157123)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.25.tsv  ḫtm Surface ḫtm parsed inconsistently: ḫt[+m(I) (ids: 157129); ḫtm/ (ids: 157129)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.25.tsv  aḥd Surface aḥd parsed inconsistently: !(ʔ&a!ḥd(y[ (ids: 157131); aḥd(II)/ (ids: 157131); aḥd/ (ids: 157131)
@@ -9878,7 +9815,6 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.20.tsv  ˤdn Sur
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.21.tsv  bn Surface bn parsed inconsistently: bn(I)/ (ids: 161682,161687,161696,161704,161719,161726); bn(II) (ids: 161682,161687,161696,161704,161719,161726); bn[ (ids: 161682,161687,161696,161704,161719,161726)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.21.tsv  bly Surface bly parsed inconsistently: bl(I)+y (ids: 161683); bly/ (ids: 161683); ybl[+y (ids: 161683)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.21.tsv  l Surface l parsed inconsistently: l(I) (ids: 161691); l(III) (ids: 161691)
-INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.21.tsv  aṯt Surface aṯt parsed inconsistently: aṯ(t/t (ids: 161724); aṯ(t/t= (ids: 161724)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.21.tsv  mrṯd Surface mrṯd parsed inconsistently: mrṯ(I)/+d (ids: 161725); mrṯ(II)/+d (ids: 161725); mrṯd/ (ids: 161725)
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.21.tsv:21 161688 madl Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.21.tsv:36 161697 xxḥkxxxx Surface not found in UDB concordance
@@ -10068,4 +10004,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:19 161199 
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:20 161200 ag Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:22 161201 rškm Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:63 161222 dˤmnk Surface not found in UDB concordance
-Total issues: 9947
+Total issues: 9883

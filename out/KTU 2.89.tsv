@@ -3,7 +3,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159910	l	l(I)	l (I)	prep.	to	
 159911	mlkt	mlk(t/t	mlkt	n. f. sg.	queen	
 159912	adty	adt/+y	ảdt	n. f. sg.	lady	
-159913	rgm	rgm[	/r-g-m/	vb G	to say	
+159913	rgm	rgm[	/r-g-m/	vb G suffc. / vb G impv. / vb G inf. / vb G pass. ptcpl.	to say	
 159913	rgm	rgm/	rgm	n. m. sg.	word	
 # KTU 2.89 2						
 159914	tḥm	tḥm/	tḥm	n. m. sg.	message	
@@ -11,14 +11,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159916	ˤbdk	ˤbd(I)/+k	ʕbd (I)	n. m. du.	servant	
 # KTU 2.89 3						
 159917	l	l(I)	l (I)	prep.	to	
-159918	pˤn	pˤn/	pʕn	n. f. du.	at the feet of	
+159918	pˤn	pˤn/	pʕn	n. f.	at the feet of	
 159919	bˤladty	?	?	?	?	DULAT: NOT FOUND
-159920	qlt	ql[t	/q-l/	vb G	to fall (down)	
+159920	qlt	ql[t	/q-l/	vb G suffc.	to fall (down)	
 # KTU 2.89 4						
 159921	l	l(I)	l (I)	prep.	to	
 159921	l	l(III)	l (III)	functor	certainly	
 159922	adty	adt/+y	ảdt	n. f. sg.	lady	
-159923	yšlm	!y!šlm[	/š-l-m/	vb G	to be well	
+159923	yšlm	!y!šlm[	/š-l-m/	vb G prefc.	to be well	
 # KTU 2.89 5						
 159924	hlny	hlny	hlny	deictic adv. functor	behold	
 159925	hnn	hnn	hnn	adv. functor	here	
@@ -30,12 +30,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159928	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
 159928	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 159928	bt	bt(III)/	bt (III)	n. m. pl.	length	
-159929	mlk	mlk[	/m-l-k/	vb G	to reign	
+159929	mlk	mlk[	/m-l-k/	vb G act. ptcpl.	to reign	
 159929	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 159930	kll	kll/	kll	n. m. sg.	totality	
 # KTU 2.89 7						
 159931	šlm	šlm(I)/	šlm (I)	n. m. sg.	peace	
-159931	šlm	šlm[:d	/š-l-m/	vb G/D	to be well	
+159931	šlm	šlm[:d	/š-l-m/	vb G suffc. / vb D suffc.	to be well	
 159931	šlm	šlm(III)/	šlm (III)	adj. m. sg.	pure	
 159932	ṯmny	ṯm	ṯm	adv.	there	
 # KTU 2.89 8						
@@ -45,7 +45,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.89 9						
 159936	w	w	w	conj.	and	
 159937	rṯgm	?	?	?	?	DULAT: NOT FOUND
-159938	tṯṯb	]š]ṯb[ṯb	/ṯ-b/	vb Š	to return	
+159938	tṯṯb	]š]ṯb[ṯb	/ṯ-b/	vb Š prefc.	to return	
 # KTU 2.89 10						
 159939	ˤm	ˤm(I)	ʕm (I)	prep.	to	
 159940	ˤbdh	ˤbd(I)/+h	ʕbd (I)	n. m.	servant	
@@ -67,8 +67,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159952	ḫmš	ḫmš(I)/	ḫmš (I)	n. sg. num.	five	
 # KTU 2.89 15						
 159953	dbd	db/+d	db	n. m.	threshold, ?	
-159954	nˤr	nˤr(I)/	nʕr (I)	n. m.	boy	
-159954	nˤr	!n!](n]ˤr[	/ʕ-r/	vb G/N	to become agitated	
+159954	nˤr	nˤr(I)/	nʕr (I)	n. m. sg. / n. m. pl.	boy	
+159954	nˤr	!n!](n]ˤr[	/ʕ-r/	vb G prefc. / vb G suffc. / vb N prefc. / vb N suffc.	to become agitated	
 159954	nˤr	nˤr(II)/	nʕr (II)	n. m. sg.	roasted	
 159955	x	?	?	?	?	
 # KTU 2.89 16						
@@ -81,7 +81,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159959	kd	kd(I)/	kd (I)	n. f. sg.	jar	
 159960	šmn	šmn(I)/	šmn (I)	n. m. sg.	oil	
 159961	nr	nr/	nr	n. m. sg.	sheen	
-159961	nr	nr[	/n-r/	vb G	to shine	
+159961	nr	nr[	/n-r/	vb G suffc.	to shine	
 # KTU 2.89 18						
 159962	kd	kd(I)/	kd (I)	n. f. sg.	jar	
 159963	ḥmṣ	ḥmṣ/	ḥmṣ	n. m. sg.	vinegar	

@@ -11,7 +11,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.39 2						
 147923	mtntm	mtnt/m	mtnt	n. f. du.	loin	
 147924	wkbd	?	?	?	?	DULAT: NOT FOUND
-147925	alp	alp(I)/	ảlp (I)	n. m.	(head of) cattle	
+147925	alp	alp(I)/	ảlp (I)	n. m. sg. / n. m. pl.	(head of) cattle	
 147925	alp	alp(II)/	ảlp (II)	num.	(one, a) thousand	
 147926	š	š/	š	n. m. sg.	ram	
 147927	l	l(I)	l (I)	prep.	to	
@@ -34,12 +34,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147936	dqt	dq(t(I)/t=	dqt (I)	adj. f. or n. f. pl.	small	
 147937	šrp	šrp/	šrp	n. m. sg.	burnt sacrifice	
 147938	w	w	w	conj.	and	
-147939	šlmm	šlm(II)/~m	šlm (II)	n. m.	communion victim / sacrifice	
-147939	šlmm	šlm(II)/m	šlm (II)	n. m.	communion victim / sacrifice	
+147939	šlmm	šlm(II)/~m	šlm (II)	n. m. sg. / n. m. pl.	communion victim / sacrifice	
+147939	šlmm	šlm(II)/m	šlm (II)	n. m. sg. / n. m. pl.	communion victim / sacrifice	
 147940	dqtm	dqt(I)/m	dqt (I)	adj. f. or n. f. du.	small	
 # KTU 1.39 5						
 147941	ilh	ilh/	ỉlh	DN	the ‘Divine One’	
-147942	alp	alp(I)/	ảlp (I)	n. m.	(head of) cattle	
+147942	alp	alp(I)/	ảlp (I)	n. m. sg. / n. m. pl.	(head of) cattle	
 147942	alp	alp(II)/	ảlp (II)	num.	(one, a) thousand	
 147943	wš	?	?	?	?	DULAT: NOT FOUND
 147944	ilhm	il(I)/+hm	ỉl (I)	n. m.	god	
@@ -51,8 +51,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147946	ilhm	ilt(I)/+m(I)	ỉlt (I)	n. f.	goddess	
 147946	ilhm	ilh/+m(I)	ỉlh	DN	the ‘Divine One’	
 # KTU 1.39 6						
-147947	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-147947	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
+147947	bˤl	bˤl(II)/	bʕl (II)	n. m./DN sg. / n. m./DN pl.	Baʿlu/Baal	
+147947	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 147948	š	š/	š	n. m. sg.	ram	
 147949	aṯrt	aṯr(t(I)/t	ảṯrt (I)	n. f. sg.	back part (of the head)	
 147950	š	š/	š	n. m. sg.	ram	
@@ -67,15 +67,15 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147955	š	š/	š	n. m. sg.	ram	
 147956	rpšp	?	?	?	?	DULAT: NOT FOUND
 147957	š	š/	š	n. m. sg.	ram	
-147958	dr	dr/	dr	n. m.	circle	
+147958	dr	dr/	dr	n. m. sg. / n. m. pl.	circle	
 147959	il	il(I)/	ỉl (I)	n. m.	god	
 147960	wpḫr	?	?	?	?	DULAT: NOT FOUND
-147961	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-147961	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
+147961	bˤl	bˤl(II)/	bʕl (II)	n. m./DN sg. / n. m./DN pl.	Baʿlu/Baal	
+147961	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 # KTU 1.39 8						
 147962	xgdlt	?	?	?	?	DULAT: NOT FOUND
 147963	šlm	šlm(I)/	šlm (I)	n. m. sg.	peace	
-147963	šlm	šlm[:d	/š-l-m/	vb G/D	to be well	
+147963	šlm	šlm[:d	/š-l-m/	vb G suffc. / vb D suffc.	to be well	
 147963	šlm	šlm(III)/	šlm (III)	adj. m. sg.	pure	
 147964	šgdlt	?	?	?	?	DULAT: NOT FOUND
 147965	w	w	w	conj.	and	
@@ -119,7 +119,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147995	ṯrmnm	ṯrmn(I)/	ṯrmn (I)	DN	term for the kings of Ugarit	
 147996	bt	b(t(II)/t	bt (II)	n. m. sg.	house	
 147996	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
-147997	mlk	mlk[	/m-l-k/	vb G	to reign	
+147997	mlk	mlk[	/m-l-k/	vb G act. ptcpl.	to reign	
 147997	mlk	mlk(II)/	mlk (II)	n. m. sg.	kingdom (power and territory)	
 # KTU 1.39 13						
 147998	il	il(I)/	ỉl (I)	n. m.	god	
@@ -135,8 +135,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148004	gdlt	gdl(t(I)/t	gdlt (I)	n. f. sg.	head of cattle	
 148004	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. pl.	head of cattle	
 # KTU 1.39 14						
-148005	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
-148005	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
+148005	bˤl	bˤl(II)/	bʕl (II)	n. m./DN sg. / n. m./DN pl.	Baʿlu/Baal	
+148005	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 148006	gdlt	gdl(t(I)/t	gdlt (I)	n. f. sg.	head of cattle	
 148006	gdlt	gdl(t(I)/t=	gdlt (I)	n. f. pl.	head of cattle	
 148007	yrḫ	yrḫ/	yrḫ	n. m. sg.	moon	
@@ -168,7 +168,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148021	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 148021	ˤnt	ˤnt(II)	ʕnt (II)	adv.	now	
 148022	ḫbly	ḫbly/	ḫbly	adj. f. or n. f. sg.	distrut- trice	
-148023	dbḥm	dbḥ/m	dbḥ	n. m.	sacrifice	
+148023	dbḥm	dbḥ/m	dbḥ	n. m. pl. / n. m. du.	sacrifice	
 148024	špš	špš/	špš	n. sg.	sun	
 148025	pgr	pgr/	pgr	n. m. sg.	body	
 # KTU 1.39 18						
@@ -191,7 +191,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 148037	pamt	pa/m	pảm(t)	n. f. pl.	time	
 148038	ṯlṯm	ṯlṯm/	ṯlṯm	num.	thirty	
 148039	w	w	w	conj.	and	
-148040	yrdt	!y!(yrd[t	/y-r-d/	vb G	to go down	
+148040	yrdt	!y!(yrd[t	/y-r-d/	vb G act. ptcpl. pl.	to go down	
 148040	yrdt	yrdt/	yrdt	n. f. pl.	step	
 148041	mdbḥt	mdbḥ/t=	mdbḥ	n. m. pl.	altar	
 # KTU 1.39 21						

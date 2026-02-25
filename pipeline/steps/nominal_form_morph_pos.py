@@ -13,6 +13,9 @@ _FEM_RE = re.compile(r"f\.", flags=re.IGNORECASE)
 _DUAL_POS_RE = re.compile(r"du\.", flags=re.IGNORECASE)
 _PLURAL_POS_RE = re.compile(r"(?:pl\.|plur(?:al)?)", flags=re.IGNORECASE)
 _SINGULAR_POS_RE = re.compile(r"(?:sg\.|sing(?:ular)?)", flags=re.IGNORECASE)
+_NUMBER_TOKEN_RE = re.compile(
+    r"\b(?:sg\.|sing(?:ular)?|pl\.|plur(?:al)?|du\.)\b", flags=re.IGNORECASE
+)
 _FEM_SING_ANALYSIS_RE = re.compile(r"/t(?=\s*$|[+~])")
 _FEM_PL_ANALYSIS_RE = re.compile(r"/t=(?=\s*$|[+~])")
 
@@ -55,6 +58,22 @@ def _has_plural_marker(morphologies: set[str]) -> bool:
         if any(part in {"pl.", "plur", "plural"} for part in parts):
             return True
     return False
+
+
+def _number_options_from_morphologies(morphologies: set[str]) -> list[str]:
+    out: set[str] = set()
+    for morph in morphologies:
+        text = (morph or "").lower()
+        if not text:
+            continue
+        if _has_singular_marker({text}):
+            out.add("sg.")
+        if _has_plural_marker({text}):
+            out.add("pl.")
+        if _has_dual_marker({text}):
+            out.add("du.")
+    order = ["sg.", "pl.", "du."]
+    return [marker for marker in order if marker in out]
 
 
 def _pos_gender(head: str) -> str:
@@ -152,6 +171,7 @@ class NominalFormMorphPosFixer(RefinementStep):
         has_dual = _has_dual_marker(morphologies)
         has_singular = _has_singular_marker(morphologies)
         has_plural = _has_plural_marker(morphologies)
+        number_options = _number_options_from_morphologies(morphologies)
         dual_unambiguous = has_dual and not has_singular and not has_plural
         if (
             not has_fem
@@ -188,6 +208,8 @@ class NominalFormMorphPosFixer(RefinementStep):
             out = rewritten_head
         else:
             out = ", ".join([rewritten_head, *parts[1:]])
+
+        out = _with_ambiguous_number_options(out, analysis_variant, number_options)
         return _with_number_from_feminine_split(out, analysis_variant)
 
 
@@ -229,3 +251,50 @@ def _ensure_number_marker(pos_value: str, target: str) -> str:
     if not sep:
         return head_text
     return f"{head_text}, {rest.strip()}"
+
+
+def _with_ambiguous_number_options(
+    pos_value: str,
+    analysis_variant: str,
+    number_options: list[str],
+) -> str:
+    """Render POS number alternatives when DULAT form number is ambiguous."""
+    value = (pos_value or "").strip()
+    if not value:
+        return value
+    if len(number_options) <= 1:
+        return value
+    # Feminine split endings already encode sg/pl in analysis; keep explicit mapping
+    # to _with_number_from_feminine_split instead of generating ambiguous lists here.
+    analysis = (analysis_variant or "").strip()
+    if _FEM_PL_ANALYSIS_RE.search(analysis) or _FEM_SING_ANALYSIS_RE.search(analysis):
+        return value
+
+    options = [_replace_number_marker(value, marker) for marker in number_options]
+    return " / ".join(_dedupe(options))
+
+
+def _replace_number_marker(pos_value: str, marker: str) -> str:
+    value = (pos_value or "").strip()
+    if not value:
+        return value
+
+    head, sep, rest = value.partition(",")
+    head_text = _NUMBER_TOKEN_RE.sub("", head).strip()
+    head_text = re.sub(r"\s{2,}", " ", head_text).strip()
+    head_text = f"{head_text} {marker}".strip()
+    if not sep:
+        return head_text
+    return f"{head_text}, {rest.strip()}"
+
+
+def _dedupe(values: list[str]) -> list[str]:
+    out: list[str] = []
+    for value in values:
+        item = (value or "").strip()
+        if not item:
+            continue
+        if item in out:
+            continue
+        out.append(item)
+    return out

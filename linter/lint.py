@@ -1422,7 +1422,7 @@ def split_pos_options(value: str) -> List[str]:
             else:
                 expanded.append(normalize_pos_label(f"vb {part}"))
         return expanded
-    parts = [p.strip() for p in re.split(r"(?<!\s)/(?!\s)", tok)]
+    parts = [p.strip() for p in re.split(r"\s*/\s*", tok)]
     return [normalize_pos_label(p) for p in parts if p]
 
 
