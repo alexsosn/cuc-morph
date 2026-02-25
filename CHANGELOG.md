@@ -34,6 +34,15 @@
   - `tests/test_refinement_steps.py` (`GenericParsingOverrideFixerTest` default override assertion).
 - Re-ran targeted pipeline regeneration for affected tablets:
   - `KTU 1.1.tsv`, `KTU 1.3.tsv`, `KTU 1.4.tsv`, `KTU 2.36.tsv`, `KTU 2.77.tsv`, `KTU 2.83.tsv`.
+- Extended III-aleph normalization to plural `-m` forms using exact DULAT form morphology (`pl.`):
+  - `pipeline/steps/iii_aleph_case_fixer.py` now rewrites III-aleph plural forms to convention-aligned encodings:
+    - oblique plural: `... (u&i/m` (e.g. `iqnim`),
+    - same-vowel plural: `... (u&/m` (e.g. `rpum`).
+  - wired gate-backed morphology checks into pipeline instantiation (`pipeline/tablet_parsing.py`).
+- Added regression coverage in `tests/test_iii_aleph_case_fixer.py` for both oblique and same-vowel plural `-m` III-aleph cases.
+- Re-ran targeted pipeline regeneration for all detected III-aleph plural `-m` candidates:
+  - `KTU 1.1.tsv`, `KTU 1.161.tsv`, `KTU 1.20.tsv`, `KTU 1.21.tsv`, `KTU 1.22.tsv`,
+    `KTU 1.3.tsv`, `KTU 1.4.tsv`, `KTU 1.6.tsv`, `KTU 1.7.tsv`, `KTU 1.82.tsv`, `KTU 2.73.tsv`.
 
 - Replaced deletion-style variant pruning with linguistics-based reconstructability fixes driven by DULAT form evidence and Tagging conventions:
   - `FeminineTSingularSplitFixer` now handles feminine surface forms of masculine lemmas (for example `pḥl/` + `pḥlt` -> `pḥl/t`),

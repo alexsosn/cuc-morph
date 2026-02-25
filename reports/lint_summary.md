@@ -1,14 +1,14 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `10607`
+- Total issues: `10598`
 - Fallback-parsed issue lines: `235`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 5823 |
+| ERROR | 5814 |
 | WARNING | 430 |
 | INFO | 1617 |
 
@@ -16,7 +16,7 @@
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3565 |
+| ERROR | Analysis does not reconstruct to surface | 3556 |
 | INFO | Surface not found in UDB concordance | 1617 |
 | ERROR | POS token not allowed for declared DULAT entry | 439 |
 | ERROR | No DULAT entry found for clitic part | 337 |

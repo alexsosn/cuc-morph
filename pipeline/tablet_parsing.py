@@ -104,7 +104,7 @@ class TabletParsingPipeline:
             AttestationSortFixer(index=self.attestation_index),
             KnownAmbiguityExpander(),
             OnomasticGlossOverrideFixer(),
-            IIIAlephCaseFixer(),
+            IIIAlephCaseFixer(gate=self.morph_gate),
             NominalCaseEndingYHFixer(gate=self.morph_gate),
             NominalFormMorphPosFixer(gate=self.morph_gate),
             SurfaceReconstructabilityFixer(),

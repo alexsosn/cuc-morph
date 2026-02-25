@@ -9,12 +9,15 @@ surface-only case vowel encoding:
 from __future__ import annotations
 
 import re
+from typing import Optional
 
 from pipeline.steps.analysis_utils import normalize_surface, reconstruct_surface_from_analysis
 from pipeline.steps.base import RefinementStep, TabletRow
+from pipeline.steps.dulat_gate import DulatMorphGate
 
 _TOKEN_RE = re.compile(r"^(.*?)(?:\s*\(([IVX]+)\))?$")
 _ANALYSIS_BASE_RE = re.compile(r"^(?P<lemma>[A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]+)(?P<hom>\([IVX]+\))?/$")
+_ANALYSIS_SPLIT_M_RE = re.compile(r"^(?P<lemma>[A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]+)(?P<hom>\([IVX]+\))?/m$")
 _A_LEPH_VOWELS = {"u", "i", "a"}
 
 
@@ -38,6 +41,9 @@ def _parse_declared_token(token: str) -> tuple[str, str]:
 
 class IIIAlephCaseFixer(RefinementStep):
     """Rewrite III-aleph noun/adjective variants to `(V/&X` encoding."""
+
+    def __init__(self, gate: Optional[DulatMorphGate] = None) -> None:
+        self._gate = gate
 
     @property
     def name(self) -> str:
@@ -95,7 +101,7 @@ class IIIAlephCaseFixer(RefinementStep):
             return value
         if "/&" in value:
             return value
-        if not value.endswith("/"):
+        if not (value.endswith("/") or value.endswith("/m")):
             return value
 
         pos_lower = (pos_head or "").lower()
@@ -112,8 +118,23 @@ class IIIAlephCaseFixer(RefinementStep):
             return value
 
         lex_vowel = lemma_norm[-1]
+        if lex_vowel not in _A_LEPH_VOWELS:
+            return value
+
+        plural_rewrite = self._rewrite_plural_m_variant(
+            value=value,
+            surface_norm=surface_norm,
+            lemma_norm=lemma_norm,
+            lex_vowel=lex_vowel,
+            declared_homonym=declared_homonym,
+            dulat_head=dulat_head,
+            surface=surface,
+        )
+        if plural_rewrite is not None:
+            return plural_rewrite
+
         surface_vowel = surface_norm[-1]
-        if lex_vowel not in _A_LEPH_VOWELS or surface_vowel not in _A_LEPH_VOWELS:
+        if surface_vowel not in _A_LEPH_VOWELS:
             return value
         if surface_norm[:-1] != lemma_norm[:-1]:
             return value
@@ -144,3 +165,66 @@ class IIIAlephCaseFixer(RefinementStep):
             homonym = f"({declared_homonym})"
 
         return f"{rendered_base}({lex_vowel}{homonym}/&{surface_vowel}"
+
+    def _rewrite_plural_m_variant(
+        self,
+        *,
+        value: str,
+        surface_norm: str,
+        lemma_norm: str,
+        lex_vowel: str,
+        declared_homonym: str,
+        dulat_head: str,
+        surface: str,
+    ) -> Optional[str]:
+        """Rewrite III-aleph plural -m forms to `(V&X/m` encoding."""
+        if "&" in value:
+            return None
+        if len(surface_norm) < 3 or not surface_norm.endswith("m"):
+            return None
+        surface_vowel = surface_norm[-2]
+        if surface_vowel not in _A_LEPH_VOWELS:
+            return None
+        if surface_norm[:-2] != lemma_norm[:-1]:
+            return None
+        if not self._has_plural_surface_morphology(dulat_head=dulat_head, surface=surface):
+            return None
+
+        match = _ANALYSIS_SPLIT_M_RE.match(value)
+        if match:
+            analysis_lemma = (match.group("lemma") or "").strip()
+            analysis_homonym = (match.group("hom") or "").strip()
+        else:
+            match = _ANALYSIS_BASE_RE.match(value)
+            if not match:
+                return None
+            analysis_lemma = (match.group("lemma") or "").strip()
+            analysis_homonym = (match.group("hom") or "").strip()
+
+        analysis_lemma_norm = normalize_surface(analysis_lemma).lower()
+        if len(analysis_lemma_norm) < 2:
+            return None
+        if analysis_lemma_norm[-1] not in _A_LEPH_VOWELS:
+            return None
+        if analysis_lemma_norm[:-1] != surface_norm[:-2]:
+            return None
+
+        rendered_base = analysis_lemma[:-1]
+        if not rendered_base:
+            return None
+
+        homonym = analysis_homonym
+        if not homonym and declared_homonym:
+            homonym = f"({declared_homonym})"
+
+        if surface_vowel == lex_vowel:
+            return f"{rendered_base}({lex_vowel}{homonym}&/m"
+        return f"{rendered_base}({lex_vowel}{homonym}&{surface_vowel}/m"
+
+    def _has_plural_surface_morphology(self, *, dulat_head: str, surface: str) -> bool:
+        if self._gate is None:
+            return False
+        morphologies = self._gate.surface_morphologies(dulat_head, surface)
+        if not morphologies:
+            return False
+        return any("pl." in morph for morph in morphologies)

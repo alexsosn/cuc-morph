@@ -6,6 +6,14 @@ from pipeline.steps.base import TabletRow
 from pipeline.steps.iii_aleph_case_fixer import IIIAlephCaseFixer
 
 
+class _StaticGate:
+    def __init__(self, mapping: dict[tuple[str, str], set[str]]) -> None:
+        self._mapping = mapping
+
+    def surface_morphologies(self, token: str, surface: str) -> set[str]:
+        return set(self._mapping.get((token, surface), set()))
+
+
 class IIIAlephCaseFixerTest(unittest.TestCase):
     def setUp(self) -> None:
         self.fixer = IIIAlephCaseFixer()
@@ -47,6 +55,24 @@ class IIIAlephCaseFixerTest(unittest.TestCase):
         )
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "rp(u/&i; !y!qrʔ[")
+
+    def test_rewrites_plural_m_oblique_form_for_iii_aleph(self) -> None:
+        fixer = IIIAlephCaseFixer(gate=_StaticGate({("ỉqnủ", "iqnim"): {"obl., pl."}}))
+        row = TabletRow("7", "iqnim", "iqnu/", "ỉqnủ", "n. m.", "lapis", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "iqn(u&i/m")
+
+    def test_rewrites_existing_split_m_oblique_form_for_iii_aleph(self) -> None:
+        fixer = IIIAlephCaseFixer(gate=_StaticGate({("ỉqnủ", "iqnim"): {"obl., pl."}}))
+        row = TabletRow("8", "iqnim", "iqni/m", "ỉqnủ", "n. m.", "lapis", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "iqn(u&i/m")
+
+    def test_rewrites_plural_m_same_vowel_to_ampersand_only(self) -> None:
+        fixer = IIIAlephCaseFixer(gate=_StaticGate({("rpủ", "rpum"): {"pl."}}))
+        row = TabletRow("9", "rpum", "rpu/m", "rpủ", "n. m.", "healer", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "rp(u&/m")
 
 
 if __name__ == "__main__":
