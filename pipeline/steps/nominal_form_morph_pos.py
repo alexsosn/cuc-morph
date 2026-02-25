@@ -9,6 +9,7 @@ from pipeline.steps.base import RefinementStep, TabletRow
 from pipeline.steps.dulat_gate import DulatMorphGate
 
 _MASC_RE = re.compile(r"m\.", flags=re.IGNORECASE)
+_FEM_RE = re.compile(r"f\.", flags=re.IGNORECASE)
 
 
 def _split_semicolon(value: str) -> list[str]:
@@ -17,6 +18,31 @@ def _split_semicolon(value: str) -> list[str]:
 
 def _split_comma(value: str) -> list[str]:
     return [part.strip() for part in (value or "").split(",")]
+
+
+def _has_feminine_marker(morphologies: set[str]) -> bool:
+    for morph in morphologies:
+        parts = _split_comma((morph or "").lower())
+        if any(part == "f." for part in parts):
+            return True
+    return False
+
+
+def _has_dual_marker(morphologies: set[str]) -> bool:
+    for morph in morphologies:
+        parts = _split_comma((morph or "").lower())
+        if any(part in {"du.", "dual"} for part in parts):
+            return True
+    return False
+
+
+def _pos_gender(head: str) -> str:
+    lower = (head or "").lower()
+    if "f." in lower:
+        return "f."
+    if "m." in lower:
+        return "m."
+    return ""
 
 
 class NominalFormMorphPosFixer(RefinementStep):
@@ -83,12 +109,14 @@ class NominalFormMorphPosFixer(RefinementStep):
         if not morphologies:
             return value
 
-        has_fem = any("f." in (morph or "").lower() for morph in morphologies)
-        has_dual = any(
-            ("du." in (morph or "").lower()) or ("dual" in (morph or "").lower())
-            for morph in morphologies
-        )
-        if not has_fem and not has_dual:
+        token_genders = set()
+        token_gender_getter = getattr(self._gate, "token_genders", None)
+        if callable(token_gender_getter):
+            token_genders = set(token_gender_getter(dulat_head))
+
+        has_fem = _has_feminine_marker(morphologies)
+        has_dual = _has_dual_marker(morphologies)
+        if not has_fem and not has_dual and not token_genders:
             return value
 
         rewritten_head = head
@@ -97,6 +125,11 @@ class NominalFormMorphPosFixer(RefinementStep):
                 rewritten_head = _MASC_RE.sub("f.", rewritten_head)
             else:
                 rewritten_head = f"{rewritten_head} f."
+        elif not has_fem:
+            # Prevent false fem reassignments from suffixal forms like "suff.".
+            # If DULAT token gender is unambiguous masculine, normalize `n. f.` -> `n. m.`.
+            if token_genders == {"m."} and _pos_gender(rewritten_head) == "f.":
+                rewritten_head = _FEM_RE.sub("m.", rewritten_head)
 
         if has_dual and "du." not in rewritten_head.lower():
             rewritten_head = f"{rewritten_head} du."

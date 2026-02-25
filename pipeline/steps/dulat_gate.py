@@ -45,11 +45,13 @@ class DulatMorphGate:
         self._features: Dict[Tuple[str, str], TokenFeatures] = {}
         self._forms_by_token: Dict[Tuple[str, str], List[Tuple[str, str]]] = {}
         self._plurale_tantum_noun_keys: set[Tuple[str, str]] = set()
+        self._genders_by_token: Dict[Tuple[str, str], set[str]] = {}
         if db_path.exists():
             (
                 self._features,
                 self._forms_by_token,
                 self._plurale_tantum_noun_keys,
+                self._genders_by_token,
             ) = self._load_features(db_path)
 
     def is_plural_token(self, token: str, surface: str = "") -> bool:
@@ -66,6 +68,17 @@ class DulatMorphGate:
         if not keys:
             return False
         return any(key in self._plurale_tantum_noun_keys for key in keys)
+
+    def token_genders(self, token: str) -> set[str]:
+        """Return DULAT entry gender markers (e.g. m./f.) for declared token."""
+        lemma, hom = self._parse_declared_token(token)
+        if not lemma or lemma == "?":
+            return set()
+        keys = self._keys_for_token(lemma=lemma, hom=hom)
+        out: set[str] = set()
+        for key in keys:
+            out.update(self._genders_by_token.get(key, set()))
+        return out
 
     def surface_morphologies(self, token: str, surface: str) -> set[str]:
         """Return morphology labels for exact token+surface matches."""
@@ -142,12 +155,14 @@ class DulatMorphGate:
         Dict[Tuple[str, str], TokenFeatures],
         Dict[Tuple[str, str], List[Tuple[str, str]]],
         set[Tuple[str, str]],
+        Dict[Tuple[str, str], set[str]],
     ]:
         conn = sqlite3.connect(str(db_path))
         cur = conn.cursor()
 
         entry_index: Dict[int, Tuple[str, str]] = {}
         entry_pos_index: Dict[int, str] = {}
+        entry_gender_index: Dict[int, str] = {}
         for entry_id, lemma, homonym in cur.execute("SELECT entry_id, lemma, homonym FROM entries"):
             lemma_raw = (lemma or "").strip()
             hom = (homonym or "").strip()
@@ -159,6 +174,13 @@ class DulatMorphGate:
             entry_index[int(entry_id)] = (self._normalize(lemma_raw), hom)
         for entry_id, pos in cur.execute("SELECT entry_id, pos FROM entries"):
             entry_pos_index[int(entry_id)] = (pos or "").strip()
+        try:
+            for entry_id, gender in cur.execute("SELECT entry_id, gender FROM entries"):
+                g = (gender or "").strip().lower()
+                if g:
+                    entry_gender_index[int(entry_id)] = g
+        except sqlite3.Error:
+            entry_gender_index = {}
 
         by_key: Dict[Tuple[str, str], List[str]] = {}
         forms_by_key: Dict[Tuple[str, str], List[Tuple[str, str]]] = {}
@@ -176,6 +198,13 @@ class DulatMorphGate:
 
         features: Dict[Tuple[str, str], TokenFeatures] = {}
         plurale_tantum_noun_keys: set[Tuple[str, str]] = set()
+        genders_by_key: Dict[Tuple[str, str], set[str]] = {}
+        for entry_id, key in entry_index.items():
+            gender = entry_gender_index.get(entry_id, "")
+            if not gender:
+                continue
+            genders_by_key.setdefault(key, set()).add(gender)
+
         for key, morphologies in by_key.items():
             flags = self._flags_from_morphologies(morphologies)
             features[key] = flags
@@ -186,7 +215,7 @@ class DulatMorphGate:
                 entry_pos_index=entry_pos_index,
             ):
                 plurale_tantum_noun_keys.add(key)
-        return features, forms_by_key, plurale_tantum_noun_keys
+        return features, forms_by_key, plurale_tantum_noun_keys, genders_by_key
 
     def _flags_from_morphologies(self, morphologies: Sequence[str]) -> TokenFeatures:
         has_plural = False

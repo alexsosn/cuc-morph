@@ -35,6 +35,14 @@ def _split_comma(value: str) -> list[str]:
     return [part.strip() for part in (value or "").split(",")]
 
 
+def _has_feminine_morph_marker(morphologies: set[str]) -> bool:
+    for morph in morphologies:
+        parts = _split_comma((morph or "").lower())
+        if any(part == "f." for part in parts):
+            return True
+    return False
+
+
 class FeminineTSingularSplitFixer(RefinementStep):
     """Normalize feminine /t split for noun-like analyses (/t and /t=)."""
 
@@ -216,7 +224,7 @@ class FeminineTSingularSplitFixer(RefinementStep):
         morphologies = self._gate.surface_morphologies(token, surface=surface)
         if not morphologies:
             return False
-        return any("f." in (morph or "").lower() for morph in morphologies)
+        return _has_feminine_morph_marker(morphologies)
 
 
 def _has_plurale_tantum_marker(value: str) -> bool:

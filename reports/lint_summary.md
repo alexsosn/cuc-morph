@@ -1,15 +1,15 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `11097`
-- Fallback-parsed issue lines: `259`
+- Total issues: `11136`
+- Fallback-parsed issue lines: `298`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 6262 |
-| WARNING | 373 |
+| ERROR | 6253 |
+| WARNING | 421 |
 | INFO | 1619 |
 
 ### By Problem Type
@@ -31,8 +31,10 @@
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 73 |
 | WARNING | y Lexeme parse did not match DULAT; matched by surface form | 72 |
 | WARNING | Plural form missing split ending | 71 |
+| WARNING | pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of` | 34 |
 | ERROR | rbt Adjective POS gender mismatch for rb (I): expected adj. m., got adj. f. | 27 |
 | WARNING | mid Lexeme parse did not match DULAT; matched by surface form | 21 |
+| WARNING | kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within` | 14 |
 | WARNING | Feminine plural noun in DULAT should be tagged with '/t=' | 12 |
 | WARNING | pamt Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | skn Lexeme parse did not match DULAT; matched by surface form | 12 |
@@ -43,7 +45,6 @@
 | WARNING | yṯṯb Lexeme parse did not match DULAT; matched by surface form | 7 |
 | ERROR | No DULAT entry found for lexeme/surface | 6 |
 | ERROR | nˤmt Adjective POS gender mismatch for nʕm (I): expected adj. m., got adj. f. | 6 |
-| ERROR | mṯn Noun POS gender mismatch for mṯn: expected n. m., got n. f. | 5 |
 | WARNING | yḥ Lexeme parse did not match DULAT; matched by surface form | 5 |
 | ERROR | l Formula idk l ytn expects l(III) ('truly/certainly') | 4 |
 | ERROR | mtqtm Adjective POS gender mismatch for mtq: expected adj. m., got adj. f. | 4 |
@@ -56,14 +57,11 @@
 | WARNING | śśwm Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | šmmh Lexeme-final '-m' noun should encode dropped host -m as '(m/' and keep '/m' only when surface host ends with m | 3 |
 | ERROR | l Formula tbˤ w l yṯb ilm expects l(II) ('not') | 2 |
-| ERROR | mrih Adjective POS gender mismatch for mrủ (I): expected adj. m., got adj. f. | 2 |
 | WARNING | alit Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | aḥw Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | aḥwy Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ibˤlt Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | ksih Lexeme parse did not match DULAT; matched by surface form | 2 |
-| ERROR | mrik Adjective POS gender mismatch for mrủ (I): expected adj. m., got adj. f. | 1 |
-| ERROR | mrm Adjective POS gender mismatch for mr (IV): expected adj. m., got adj. f. | 1 |
 | ERROR | uḫryt Adjective POS gender mismatch for ủḫry: expected adj. m., got adj. f. | 1 |
 | ERROR | ṣġrt Adjective POS gender mismatch for ṣġr (I): expected adj. m., got adj. f. | 1 |
 | ERROR | ṣġrthn Adjective POS gender mismatch for ṣġr (I): expected adj. m., got adj. f. | 1 |

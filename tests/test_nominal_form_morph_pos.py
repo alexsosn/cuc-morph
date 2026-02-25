@@ -7,11 +7,15 @@ from pipeline.steps.nominal_form_morph_pos import NominalFormMorphPosFixer
 
 
 class _MorphGate:
-    def __init__(self, mapping=None) -> None:
+    def __init__(self, mapping=None, token_genders=None) -> None:
         self.mapping = dict(mapping or {})
+        self.genders = dict(token_genders or {})
 
     def surface_morphologies(self, token: str, surface: str) -> set[str]:
         return set(self.mapping.get((token, surface), set()))
+
+    def token_genders(self, token: str) -> set[str]:
+        return set(self.genders.get(token, set()))
 
 
 class NominalFormMorphPosFixerTest(unittest.TestCase):
@@ -35,6 +39,23 @@ class NominalFormMorphPosFixerTest(unittest.TestCase):
         row = TabletRow("3", "hlm", "hl~m", "hl", "deictic adv. functor", "behold", "")
         result = fixer.refine_row(row)
         self.assertEqual(result.pos, "deictic adv. functor")
+
+    def test_does_not_treat_suff_as_feminine_marker(self) -> None:
+        gate = _MorphGate({("ảb", "abn"): {"sg., suff."}})
+        fixer = NominalFormMorphPosFixer(gate=gate)
+        row = TabletRow("4", "abn", "ab/+n", "ảb", "n. m.", "father", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.pos, "n. m.")
+
+    def test_demotes_false_feminine_pos_when_token_gender_is_masculine(self) -> None:
+        gate = _MorphGate(
+            mapping={("ảb", "abn"): {"sg., suff."}},
+            token_genders={"ảb": {"m."}},
+        )
+        fixer = NominalFormMorphPosFixer(gate=gate)
+        row = TabletRow("5", "abn", "ab/+n", "ảb", "n. f.", "father", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.pos, "n. m.")
 
 
 if __name__ == "__main__":

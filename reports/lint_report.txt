@@ -267,7 +267,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:100 152
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:106 152384 mlkn Analysis does not reconstruct to surface (reconstructs as: mlk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:117 152391 bh Analysis does not reconstruct to surface (reconstructs as: b)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:136 152407 ḥ Analysis does not reconstruct to surface (reconstructs as: lqḥ)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:148 152414 mṯn Noun POS gender mismatch for mṯn: expected n. m., got n. f.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:156 152418 tp Analysis does not reconstruct to surface (reconstructs as: npy)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:156 152418 tp Non-G stem in DULAT requires stem marker
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.103.tsv:185 152436 bh Analysis does not reconstruct to surface (reconstructs as: b)
@@ -1140,7 +1139,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:341 1429
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:341 142955 tšu Analysis does not reconstruct to surface (reconstructs as: nšʔ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:346 142958 ph Analysis does not reconstruct to surface (reconstructs as: phy)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:369 142971 gm Analysis does not reconstruct to surface (reconstructs as: g)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:384 142981 mrik Adjective POS gender mismatch for mrủ (I): expected adj. m., got adj. f.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:384 142981 mrik Analysis does not reconstruct to surface (reconstructs as: mru)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:396 142989 ẓbyy Analysis does not reconstruct to surface (reconstructs as: ẓby)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:400 142992 rbt Adjective POS gender mismatch for rb (I): expected adj. m., got adj. f.
@@ -1156,7 +1154,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:419 1430
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:419 143003 t Multiple DULAT candidates for surface: /ʕ-s-y:s/ [vb] — ?; /l-q-ḥ/ [vb] — to get hold of, take, grasp; to receive, accept, take (away);
 to collect, hold; to choose, opt for something; /p-r-ʕ/ [vb] — to wash; /p-r-ʕ/ [vb] — to wash; /p-r-ʕ/ [vb] — to wash; /p-r-ʕ/ [vb] — to wash; /ṯ-m-n/ [vb] — to do, give eight; /y-b-m/ [vb] — to proclaim oneself a nubile widow
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:423 143005 šqym Analysis does not reconstruct to surface (reconstructs as: šq)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:432 143012 mrih Adjective POS gender mismatch for mrủ (I): expected adj. m., got adj. f.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:432 143012 mrih Analysis does not reconstruct to surface (reconstructs as: mru)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:448 143024 rbt Adjective POS gender mismatch for rb (I): expected adj. m., got adj. f.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:458 143029 tbun ʔ must be preceded by '(' in column 3
@@ -1167,7 +1164,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:479 1430
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:480 143044 tštn Analysis does not reconstruct to surface (reconstructs as: tšt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:496 143052 ṣḥtkm Analysis does not reconstruct to surface (reconstructs as: ṣḥ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:502 143056 bˤlkm Analysis does not reconstruct to surface (reconstructs as: bʕl)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:510 143061 mrih Adjective POS gender mismatch for mrủ (I): expected adj. m., got adj. f.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:510 143061 mrih Analysis does not reconstruct to surface (reconstructs as: mru)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:540 143083 tštn Analysis does not reconstruct to surface (reconstructs as: tšt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.15.tsv:543 143085 tˤn Analysis does not reconstruct to surface (reconstructs as: ʕny)
@@ -1751,7 +1747,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1365 145
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1368 145017 mh Analysis does not reconstruct to surface (reconstructs as: m)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1369 145018 yqḥ Analysis does not reconstruct to surface (reconstructs as: lqḥ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1375 145022 ysk Analysis does not reconstruct to surface (reconstructs as: nsk)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1401 145036 mṯn Noun POS gender mismatch for mṯn: expected n. m., got n. f.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1402 145037 rgmm Analysis does not reconstruct to surface (reconstructs as: rgm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1415 145044 tṣdn Analysis does not reconstruct to surface (reconstructs as: tṣd)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1440 145063 aṯb Analysis does not reconstruct to surface (reconstructs as: yṯb)
@@ -2106,7 +2101,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:65 14557
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:69 145578 qmm Analysis does not reconstruct to surface (reconstructs as: qm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:88 145590 yˤn Analysis does not reconstruct to surface (reconstructs as: ʕny)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:90 145590 yˤn Analysis does not reconstruct to surface (reconstructs as: ʕnw)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:106 145594 mrm Adjective POS gender mismatch for mr (IV): expected adj. m., got adj. f.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:106 145594 mrm Analysis does not reconstruct to surface (reconstructs as: mr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:122 145603 imḫṣh Analysis does not reconstruct to surface (reconstructs as: imḫṣ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:127 145607 imḫṣh Analysis does not reconstruct to surface (reconstructs as: imḫṣ)
@@ -3187,7 +3181,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1041 1376
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1043 137603 ybˤr Non-G stem in DULAT requires stem marker
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1044 137603 ybˤr Non-G stem in DULAT requires stem marker
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1062 137616 ask Analysis does not reconstruct to surface (reconstructs as: nsk)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1077 137626 mṯn Noun POS gender mismatch for mṯn: expected n. m., got n. f.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1078 137627 rgmm Analysis does not reconstruct to surface (reconstructs as: rgm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1080 137628 argmn Analysis does not reconstruct to surface (reconstructs as: argm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1084 137631 ˤnn Analysis does not reconstruct to surface (reconstructs as: ʕn)
@@ -3348,7 +3341,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:50 138150
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:50 138150 km No DULAT entry found for clitic part: km, 
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:50 138150 km DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:78 138166 klt Analysis does not reconstruct to surface (reconstructs as: klyt)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:103 138180 mṯn Noun POS gender mismatch for mṯn: expected n. m., got n. f.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:104 138181 rgmm Analysis does not reconstruct to surface (reconstructs as: rgm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:106 138182 argmk Analysis does not reconstruct to surface (reconstructs as: argm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:126 138196 bd Analysis does not reconstruct to surface (reconstructs as: b)
@@ -5692,7 +5684,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.6.tsv:28 156473
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.6.tsv:28 156473 h No DULAT entry found for clitic part: h, 
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.6.tsv:28 156473 h DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.6.tsv:39 156478 tṯṯb Analysis does not reconstruct to surface (reconstructs as: tšṯb)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.60.tsv:3 158615 mṯn Noun POS gender mismatch for mṯn: expected n. m., got n. f.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.60.tsv:7 158617 štn Analysis does not reconstruct to surface (reconstructs as: št)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.60.tsv:9 158618 by Analysis does not reconstruct to surface (reconstructs as: b)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.61.tsv:26 158633 hbṭ Non-G stem in DULAT requires stem marker
@@ -6383,9 +6374,13 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.8.tsv:54 161174
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.8.tsv:62 161178 m Analysis does not reconstruct to surface (reconstructs as: l)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:59 161219 tn Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:67 161224 ysˤ Analysis does not reconstruct to surface (reconstructs as: nsʕ)
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:66 135589 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:76 135596 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:93 135608 ḥtkk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:94 135608 ḥtkk Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:114 135620 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:119 135624 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:165 135654 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:247 135711 argmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:586 135929 alpm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.100.tsv:502 152035 šmmh Lexeme-final '-m' noun should encode dropped host -m as '(m/' and keep '/m' only when surface host ends with m
@@ -6477,6 +6472,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1347 1
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1357 145011 šrgk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1374 145021 spsg Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1402 145037 rgmm Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1501 145107 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.173.tsv:78 155902 pamt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.173.tsv:78 155902 pamt Feminine plural noun in DULAT should be tagged with '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.179.tsv:86 156123 y Lexeme parse did not match DULAT; matched by surface form
@@ -6500,7 +6496,10 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1673 1
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1737 146657 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1745 146660 ilšnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.19.tsv:1759 146671 alpm Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:93 136089 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:314 136240 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:388 136292 y Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:648 136449 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:669 136465 rmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:760 136521 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:1089 136752 ksih Lexeme parse did not match DULAT; matched by surface form
@@ -6541,20 +6540,31 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:329 137
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:334 137139 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:425 137193 limm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:450 137210 hdmm Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:539 137267 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:567 137284 limm Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:592 137303 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:597 137307 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:619 137323 argmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:706 137380 bˤdn For bʕd with enclitic n, use '~n' (not '+n')
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:909 137510 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:913 137514 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1012 137580 limm Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1030 137593 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1035 137597 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1068 137619 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1073 137623 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1078 137627 rgmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1080 137628 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1081 137628 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1300 137762 dmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1376 137810 qlh Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1411 137832 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1414 137834 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1452 137856 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1491 137880 dmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1564 137927 klnyy Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1568 137930 klnyy Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1844 138093 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.31.tsv:4 147911 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:104 147995 ṯrmnm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.39.tsv:162 148037 pamt Lexeme parse did not match DULAT; matched by surface form
@@ -6570,6 +6580,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:334 138
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:339 138334 bˤdn For bʕd with enclitic n, use '~n' (not '+n')
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:384 138365 aryy Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:455 138408 y Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:924 138695 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1261 138906 qlh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1302 138933 tblk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1304 138935 mid Lexeme parse did not match DULAT; matched by surface form
@@ -6586,6 +6597,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1935 13
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2190 139496 qlh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2204 139504 qlh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2439 139652 y Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2545 139710 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.40.tsv:9 148054 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:33 148462 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.41.tsv:34 148462 argmn Suffix form without '+'
@@ -6615,9 +6627,13 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:785 140
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:844 140297 šlbšn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:878 140321 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:884 140325 ˤdk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:1055 140428 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.50.tsv:50 149250 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:154 140538 rumm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:168 140545 alpm Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:278 140608 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:609 140812 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:615 140817 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:646 140838 ˤdbnn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:742 140892 tbqˤnn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:896 140994 aṯbn Suffix form without '+'
@@ -6640,6 +6656,7 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.62.tsv:41 149
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:35 141493 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:107 141538 klyn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:160 141571 limm Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:185 141590 kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.71.tsv:8 149557 śśwm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.71.tsv:167 149639 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.72.tsv:8 149653 śśwm Lexeme parse did not match DULAT; matched by surface form
@@ -6670,16 +6687,22 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.90.tsv:72 151
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.91.tsv:59 151246 ršpm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.1.tsv:8 156291 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.10.tsv:55 156581 mid Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.100.tsv:14 160350 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.100.tsv:25 160358 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.101.tsv:12 160407 skn Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.101.tsv:20 160413 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.102.tsv:9 160442 skn Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:66 160484 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:73 160489 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:120 160515 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.104.tsv:16 160532 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.105.tsv:19 160576 tšlmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:19 156606 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:29 156612 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:36 156616 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.110.tsv:28 160692 mid Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.12.tsv:17 156639 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:17 156662 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:29 156670 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv:20 156707 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:21 156779 tšlmk Suffix form without '+'
@@ -6688,7 +6711,9 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:52 156
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.17.tsv:40 156838 skn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.21.tsv:20 156915 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.21.tsv:32 156922 skn Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.24.tsv:16 157091 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:78 156353 rdnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:16 157197 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:27 157205 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:60 157289 ksiy Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:228 157407 kn Suffix form without '+'
@@ -6701,9 +6726,12 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.37.tsv:38 157
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.37.tsv:39 157840 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.38.tsv:25 157863 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:15 157929 midm Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:22 157932 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.4.tsv:21 156400 tšlmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.40.tsv:19 158034 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.41.tsv:8 158065 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.41.tsv:70 158104 ybˤrn Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.42.tsv:21 158114 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.42.tsv:131 158186 anyt Feminine plural noun in DULAT should use '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.42.tsv:144 158196 anyt Feminine plural noun in DULAT should use '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.44.tsv:26 158227 tšlmk Suffix form without '+'
@@ -6712,6 +6740,9 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.46.tsv:67 158
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.47.tsv:17 158329 anyt Feminine plural noun in DULAT should use '/t='
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.49.tsv:53 158446 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:4 158450 tšlmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:7 158452 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.51.tsv:6 158507 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.52.tsv:10 158521 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.54.tsv:15 158539 skn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.56.tsv:18 158564 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.58.tsv:12 158597 y Lexeme parse did not match DULAT; matched by surface form
@@ -6719,13 +6750,18 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.6.tsv:22 1564
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.61.tsv:45 158646 krmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.62.tsv:40 158676 ṯbh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.63.tsv:22 158697 tšlmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:18 158727 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:39 158739 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.68.tsv:15 158795 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.68.tsv:33 158807 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.68.tsv:40 158811 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.7.tsv:30 156495 yḥ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.7.tsv:36 156499 kn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:31 158848 tšlmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:34 158850 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:57 158866 kḥdnn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.71.tsv:15 158924 tšlmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:16 158971 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:26 158979 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.75.tsv:27 159203 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.79.tsv:36 159310 nˤmm Plural form missing split ending
@@ -6735,13 +6771,16 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.79.tsv:46 159
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.83.tsv:20 159403 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.85.tsv:43 159499 tšlmkm Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:18 159585 tšlmk Suffix form without '+'
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:21 159587 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:38 159598 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:89 159623 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.87.tsv:88 159682 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.89.tsv:10 159915 skn Lexeme parse did not match DULAT; matched by surface form
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.89.tsv:14 159918 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.9.tsv:29 156547 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.9.tsv:32 156548 ṯby Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.91.tsv:16 160042 alpm Plural form missing split ending
+WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:18 160102 pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.1.tsv:86 160793 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.1.tsv:87 160793 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.1.tsv:128 160819 argmn Suffix form without '+'
@@ -11218,4 +11257,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:20 161199 
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:21 161200 ag Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:23 161201 rškm Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:63 161222 dˤmnk Surface not found in UDB concordance
-Total issues: 11097
+Total issues: 11136

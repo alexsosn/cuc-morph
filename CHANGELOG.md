@@ -22,6 +22,14 @@
   - `tests/test_linter_pos_normalization.py`,
   - plus updates to `tests/test_feminine_t_singular_split.py`, `tests/test_refinement_steps.py`, `tests/test_dulat_gate_plurale_tantum.py`, and `tests/test_linter_warning_predicates.py`.
 - Re-ran full parser + refinement pipeline over all `out/KTU *.tsv` files (278 tablets) with `--allow-large-step-changes`, regenerating `reports/*`.
+- Fixed false feminine detection from `suff.` morphology tokens:
+  - parser steps now require token-level `f.` morphology markers (not substring matches),
+  - linter feminine-form override now also uses token-level morphology parsing.
+- Extended `DulatMorphGate` with `token_genders(...)` and updated `NominalFormMorphPosFixer` to correct false `n. f.` assignments back to `n. m.` when token gender is unambiguously masculine and exact form morphology is non-feminine (e.g. `ab/+n` for `ảb`).
+- Added regression tests for the `suff.` vs `f.` collision and token-gender correction:
+  - `tests/test_nominal_form_morph_pos.py`,
+  - `tests/test_dulat_gate_plurale_tantum.py`,
+  - `tests/test_linter_form_gender_match.py`.
 
 - Reverted noun-side POS coercion in `l + noun` compound-preposition passes so suffix-friendly noun payloads are retained:
   - `L_PN_PREP_CANONICAL_PAYLOADS` now keeps `pn*` payloads as `n. m. pl. tant.` (not `prep.`),

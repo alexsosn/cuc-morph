@@ -459,8 +459,8 @@ def surface_form_has_feminine_morph(
             continue
         if token_hom and cand_hom != token_hom:
             continue
-        morph = (candidate.morph or "").lower()
-        if "f." in morph:
+        morph_parts = split_csv_field((candidate.morph or "").lower())
+        if any(part == "f." for part in morph_parts):
             return True
     return False
 

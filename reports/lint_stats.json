@@ -1,11 +1,11 @@
 {
-  "generated_at_utc": "2026-02-25T07:57:35.799766+00:00",
+  "generated_at_utc": "2026-02-25T08:06:55.830669+00:00",
   "files_checked": 278,
-  "total_issues": 11097,
-  "fallback_parsed": 259,
+  "total_issues": 11136,
+  "fallback_parsed": 298,
   "by_severity": {
-    "ERROR": 6262,
-    "WARNING": 373,
+    "ERROR": 6253,
+    "WARNING": 421,
     "INFO": 1619
   },
   "by_problem_type": [
@@ -85,6 +85,11 @@
       "count": 71
     },
     {
+      "severity": "WARNING",
+      "problem_type": "pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of`",
+      "count": 34
+    },
+    {
       "severity": "ERROR",
       "problem_type": "rbt Adjective POS gender mismatch for rb (I): expected adj. m., got adj. f.",
       "count": 27
@@ -93,6 +98,11 @@
       "severity": "WARNING",
       "problem_type": "mid Lexeme parse did not match DULAT; matched by surface form",
       "count": 21
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within`",
+      "count": 14
     },
     {
       "severity": "WARNING",
@@ -143,11 +153,6 @@
       "severity": "ERROR",
       "problem_type": "nˤmt Adjective POS gender mismatch for nʕm (I): expected adj. m., got adj. f.",
       "count": 6
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mṯn Noun POS gender mismatch for mṯn: expected n. m., got n. f.",
-      "count": 5
     },
     {
       "severity": "WARNING",
@@ -210,11 +215,6 @@
       "count": 2
     },
     {
-      "severity": "ERROR",
-      "problem_type": "mrih Adjective POS gender mismatch for mrủ (I): expected adj. m., got adj. f.",
-      "count": 2
-    },
-    {
       "severity": "WARNING",
       "problem_type": "alit Feminine singular noun in DULAT should use '/t'",
       "count": 2
@@ -238,16 +238,6 @@
       "severity": "WARNING",
       "problem_type": "ksih Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mrik Adjective POS gender mismatch for mrủ (I): expected adj. m., got adj. f.",
-      "count": 1
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "mrm Adjective POS gender mismatch for mr (IV): expected adj. m., got adj. f.",
-      "count": 1
     },
     {
       "severity": "ERROR",

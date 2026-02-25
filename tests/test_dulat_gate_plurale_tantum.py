@@ -20,7 +20,8 @@ class DulatGatePluraleTantumTest(unittest.TestCase):
                     entry_id INTEGER PRIMARY KEY,
                     lemma TEXT,
                     homonym TEXT,
-                    pos TEXT
+                    pos TEXT,
+                    gender TEXT
                 )
                 """
             )
@@ -35,15 +36,15 @@ class DulatGatePluraleTantumTest(unittest.TestCase):
             )
 
             cur.executemany(
-                "INSERT INTO entries(entry_id, lemma, homonym, pos) VALUES (?, ?, ?, ?)",
+                "INSERT INTO entries(entry_id, lemma, homonym, pos, gender) VALUES (?, ?, ?, ?, ?)",
                 [
-                    (1, "pnm", "", "n."),
-                    (2, "šlm", "II", "n."),
-                    (3, "qm", "", "n."),
-                    (4, "ḥlm", "II", "n."),
-                    (5, "ʕgm", "", "n."),
-                    (6, "ỉštnm", "", "n."),
-                    (7, "ủm", "", "n."),
+                    (1, "pnm", "", "n.", "m."),
+                    (2, "šlm", "II", "n.", "m."),
+                    (3, "qm", "", "n.", "m."),
+                    (4, "ḥlm", "II", "n.", "m."),
+                    (5, "ʕgm", "", "n.", "m."),
+                    (6, "ỉštnm", "", "n.", "m."),
+                    (7, "ủm", "", "n.", "f."),
                 ],
             )
             cur.executemany(
@@ -90,6 +91,11 @@ class DulatGatePluraleTantumTest(unittest.TestCase):
     def test_treats_dual_surface_form_as_plural_for_split_gate(self) -> None:
         gate = self._build_gate()
         self.assertTrue(gate.is_plural_token("ủm", surface="ủmm"))
+
+    def test_exposes_token_genders(self) -> None:
+        gate = self._build_gate()
+        self.assertEqual(gate.token_genders("ủm"), {"f."})
+        self.assertEqual(gate.token_genders("pnm"), {"m."})
 
 
 if __name__ == "__main__":
