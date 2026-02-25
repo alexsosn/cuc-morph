@@ -2,6 +2,12 @@
 
 ## 2026-02-25
 
+- Added provenance comments for redirect-derived reconstructions:
+  - new step `pipeline/steps/redirect_reconstruction_comment.py` marks non-`→` rows in redirect ambiguity groups with `Based on DULAT reconstruction.`,
+  - wired into pipeline after variant unwrapping so comments are applied per row (not to the whole packed group),
+  - preserved existing comments and prevented duplicate insertions.
+- Added tests in `tests/test_redirect_reconstruction_comment.py`.
+
 - Fixed redirect-derived Š-initial verb reconstruction when DULAT target is a bare root:
   - `scripts/refine_results_mentions.py::analysis_for_entry` now handles redirect-restored verbs where surface is `š + root` but target lemma is bare (for example `/b-ʕ-r/`),
   - emits `]š]...[` instead of fallback `...[last-radical]` tails (for example `šbˤr` no longer becomes `bˤr(I)[r`; now `]š]bˤr(I)[`).
