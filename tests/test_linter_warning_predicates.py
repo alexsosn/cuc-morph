@@ -11,6 +11,7 @@ from linter.lint import (
     analysis_has_missing_plural_split,
     analysis_has_missing_suffix_plus,
     choose_lookup_candidates,
+    missing_required_n_assimilation_marker,
     missing_required_verb_stem_markers,
     required_verb_stem_markers_from_pos,
     row_has_ambiguous_l_in_offering_sequence,
@@ -128,6 +129,12 @@ class LinterWarningPredicateTest(unittest.TestCase):
         self.assertEqual(missing_required_verb_stem_markers("!y!knn[+h", "vb L"), [":l"])
         self.assertEqual(missing_required_verb_stem_markers("qtl[:pass", "vb Gpass"), [])
         self.assertEqual(missing_required_verb_stem_markers("ktl/", "vb D"), [])
+
+    def test_missing_required_n_assimilation_marker_detected(self) -> None:
+        self.assertTrue(missing_required_n_assimilation_marker("!t!ṯbr[", "vb N"))
+        self.assertFalse(missing_required_n_assimilation_marker("!t!](n]ṯbr[", "vb N"))
+        self.assertFalse(missing_required_n_assimilation_marker("!t!nṯbr[", "vb N"))
+        self.assertFalse(missing_required_n_assimilation_marker("!t!ṯbr[", "vb G"))
 
     def test_verb_root_lookup_keys_include_non_slash_variant(self) -> None:
         keys = verb_root_lookup_keys("dk")

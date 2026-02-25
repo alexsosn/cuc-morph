@@ -11,6 +11,7 @@ class LinterVerbPosStemTest(unittest.TestCase):
     WARNING = "Verb POS should include stem label(s):"
     POS_ERROR = "POS token '"
     MISSING_STEM_MARKER = "Verb stem marker(s) required by POS but missing in analysis:"
+    MISSING_N_ASSIMILATION = "Prefixed N-stem forms should encode assimilated nun as '](n]'"
 
     def _lint_messages(
         self,
@@ -106,6 +107,34 @@ class LinterVerbPosStemTest(unittest.TestCase):
             entry_stems_value={"D"},
         )
         self.assertFalse(any(message.startswith(self.MISSING_STEM_MARKER) for message in messages))
+
+    def test_errors_when_prefixed_n_stem_lacks_assimilated_n_marker(self) -> None:
+        messages = self._lint_messages(
+            "vb N",
+            surface="tṯbr",
+            analysis="!t!ṯbr[",
+            dulat_token="/ṯ-b-r/",
+            gloss="to break",
+            entry_morph="N, prefc.",
+            entry_stems_value={"N"},
+        )
+        self.assertTrue(
+            any(message.startswith(self.MISSING_N_ASSIMILATION) for message in messages)
+        )
+
+    def test_no_error_when_prefixed_n_stem_has_assimilated_n_marker(self) -> None:
+        messages = self._lint_messages(
+            "vb N",
+            surface="tṯbr",
+            analysis="!t!](n]ṯbr[",
+            dulat_token="/ṯ-b-r/",
+            gloss="to break",
+            entry_morph="N, prefc.",
+            entry_stems_value={"N"},
+        )
+        self.assertFalse(
+            any(message.startswith(self.MISSING_N_ASSIMILATION) for message in messages)
+        )
 
 
 if __name__ == "__main__":

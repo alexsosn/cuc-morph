@@ -923,6 +923,7 @@ STEM_DISPLAY_ORDER = (
     "Špass",
     "Nt",
 )
+PREFIXED_VERB_ANALYSIS_RE = re.compile(r"^![ytan](?:=+)?!", flags=re.IGNORECASE)
 
 
 def extract_stems(morph: str) -> set:
@@ -941,8 +942,8 @@ def pos_has_verb_stem_label(pos_field: str) -> bool:
     return VERB_POS_STEM_RE.search(pos_field or "") is not None
 
 
-def required_verb_stem_markers_from_pos(pos_field: str) -> set[str]:
-    """Return required analysis markers implied by POS stem labels."""
+def extract_verb_stems_from_pos(pos_field: str) -> set[str]:
+    """Extract verb stem labels from structured POS variants/options."""
     if not pos_field:
         return set()
 
@@ -957,7 +958,12 @@ def required_verb_stem_markers_from_pos(pos_field: str) -> set[str]:
             if VERBAL_NOUN_POS_RE.search(opt_text):
                 continue
             stems.update(extract_stems(opt_text))
+    return stems
 
+
+def required_verb_stem_markers_from_pos(pos_field: str) -> set[str]:
+    """Return required analysis markers implied by POS stem labels."""
+    stems = extract_verb_stems_from_pos(pos_field)
     required: set[str] = set()
     if stems & {"D", "Dt", "tD"}:
         required.add(":d")
@@ -979,6 +985,27 @@ def missing_required_verb_stem_markers(analysis: str, pos_field: str) -> List[st
     if not a_txt or "[" not in a_txt or "[/" in a_txt:
         return []
     return sorted(marker for marker in required if marker not in a_txt)
+
+
+def missing_required_n_assimilation_marker(analysis: str, pos_field: str) -> bool:
+    """Return True when prefixed N-stem forms miss the `](n]` marker."""
+    stems = extract_verb_stems_from_pos(pos_field)
+    if "N" not in stems:
+        return False
+
+    a_txt = (analysis or "").strip()
+    if not a_txt or "[/" in a_txt or "[" not in a_txt:
+        return False
+    match = PREFIXED_VERB_ANALYSIS_RE.match(a_txt)
+    if match is None:
+        return False
+
+    tail = a_txt[match.end() :]
+    if not tail:
+        return False
+    if tail.startswith("](n]") or tail.startswith("(n") or tail.startswith("n"):
+        return False
+    return True
 
 
 @dataclass
@@ -2234,6 +2261,18 @@ def lint_file(
                                 a_var,
                                 "Verb stem marker(s) required by POS but missing in analysis: "
                                 + ", ".join(missing_pos_markers),
+                            )
+                        )
+                    if missing_required_n_assimilation_marker(a_var, p_field):
+                        issues.append(
+                            Issue(
+                                "error",
+                                str(path),
+                                i,
+                                line_id,
+                                surface,
+                                a_var,
+                                "Prefixed N-stem forms should encode assimilated nun as '](n]'",
                             )
                         )
                     if len(p_tokens) > len(d_tokens):

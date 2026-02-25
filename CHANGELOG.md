@@ -2,6 +2,18 @@
 
 ## 2026-02-25
 
+- Added global N-stem assimilated nun enforcement for prefixed verb forms:
+  - new step `VerbNStemAssimilationFixer` (`pipeline/steps/verb_n_stem_assimilation.py`) inserts `](n]` after verbal preformatives for `vb N` rows where assimilated `n` is not visible.
+  - example normalization: `!t!ṯbr[` -> `!t!](n]ṯbr[`.
+- Added matching linter error in `linter/lint.py`:
+  - `Prefixed N-stem forms should encode assimilated nun as '](n]'`.
+- Added regression coverage in:
+  - `tests/test_refinement_steps.py`,
+  - `tests/test_linter_warning_predicates.py`,
+  - `tests/test_linter_verb_pos_stem.py`,
+  - `tests/test_tablet_parsing_pipeline.py`.
+- Documented the rule pipeline in `docs/n_stem_assimilated_n_pipeline.md`.
+
 - Fixed DULAT gloss compaction for comma-bearing parenthetical translations:
   - `scripts/refine_results_mentions.py::compact_gloss` now splits only on top-level commas (outside `()` / `[]`),
   - prevents truncation like `"(one"` for `ảlp (II)` and preserves `"(one, a) thousand"`.

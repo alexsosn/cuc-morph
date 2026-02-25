@@ -31,6 +31,7 @@ from pipeline.steps.plural_split import PluralSplitFixer
 from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
 from pipeline.steps.surface_option_propagation import SurfaceOptionPropagationFixer
+from pipeline.steps.verb_n_stem_assimilation import VerbNStemAssimilationFixer
 from pipeline.steps.verb_pos_stem import VerbPosStemFixer
 from pipeline.steps.verb_stem_suffix_marker import VerbStemSuffixMarkerFixer
 from pipeline.steps.weak_final_sc import WeakFinalSuffixConjugationFixer
@@ -1248,6 +1249,26 @@ class VerbStemSuffixMarkerFixerTest(unittest.TestCase):
         row = TabletRow("1", "qtl", "qtl[/", "/q-t-l/", "vb D", "killing", "")
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "qtl[/")
+
+
+class VerbNStemAssimilationFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = VerbNStemAssimilationFixer()
+
+    def test_inserts_assimilated_n_for_prefixed_n_stem(self) -> None:
+        row = TabletRow("1", "tṯbr", "!t!ṯbr[", "/ṯ-b-r/", "vb N", "to break", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!t!](n]ṯbr[")
+
+    def test_keeps_row_when_marker_already_present(self) -> None:
+        row = TabletRow("1", "tṯbr", "!t!](n]ṯbr[", "/ṯ-b-r/", "vb N", "to break", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!t!](n]ṯbr[")
+
+    def test_keeps_non_prefixed_n_stem_row_unchanged(self) -> None:
+        row = TabletRow("1", "nṯbr", "nṯbr[", "/ṯ-b-r/", "vb N", "to break", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "nṯbr[")
 
 
 class OfferingListLPrepFixerTest(unittest.TestCase):

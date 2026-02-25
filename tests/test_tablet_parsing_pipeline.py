@@ -186,9 +186,13 @@ class TabletParsingPipelineTest(unittest.TestCase):
                 names.index("verb-pos-stem"),
                 names.index("verb-stem-suffix-marker"),
             )
-            final_schema_index = len(names) - 1 - names[::-1].index("tsv-schema")
             self.assertLess(
                 names.index("verb-stem-suffix-marker"),
+                names.index("verb-n-stem-assimilation"),
+            )
+            final_schema_index = len(names) - 1 - names[::-1].index("tsv-schema")
+            self.assertLess(
+                names.index("verb-n-stem-assimilation"),
                 final_schema_index,
             )
 
