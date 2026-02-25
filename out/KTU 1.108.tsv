@@ -38,7 +38,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153237	tp	tp(II)/	tp (II)	n. m.	aspect	
 153237	tp	npy[	/n-p-y/	vb N/Gpass	to be driven away	
 153238	w	w	w	conj.	and	
-153239	mṣltm	mṣlt(I)/m	mṣlt (I)	n. f. du.	cymbal	
+153239	mṣltm	mṣl(t(I)/tm	mṣlt (I)	n. f. du.	cymbal	
 153240	bm	b	b	prep.	in	
 # KTU 1.108 5						
 153241	rqdm	rqd/+m(I)	rqd	TN	rqd	
@@ -106,7 +106,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.108 12						
 153284	xxxxxxxxxd	?	?	?	?	DULAT: NOT FOUND
 153285	il	il(I)/	ỉl (I)	n. m.	god	
-153286	šdy	šdy(II)/	šdy (II)	PN	šdy (II)	
+153286	šdy	šd(I)/+y	šd (I)	n. m.	open field	
+153286	šdy	šdy[+y	/š-d-y/	vb	to pour	
 153287	ṣd	ṣd[	/ṣ-d/	vb G	to hunt	
 153287	ṣd	ṣd(I)/	ṣd (I)	n. m.	hunt	
 153288	mlk	mlk[	/m-l-k/	vb G	to reign	
@@ -172,12 +173,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153323	l	l(I)	l (I)	prep.	to	
 153323	l	l(III)	l (III)	functor	certainly	
 # KTU 1.108 23						
-153324	anh	lan/	lản	n. m.	power	
+153324	anh	lan/+h	lản	n. m.	power	
 153325	b	b	b	prep.	in	
 153326	ḥtkh	ḥtk(II)/h	ḥtk (II)	n. m.	lineage	
 153326	ḥtkh	ḥtk(III)/+h	ḥtk (III)	n. m.	sovereignty	
 153327	b	b	b	prep.	in	
-153328	nmrth	nmr(t/t+h	nmrt	n. f.	splendour	
+153328	nmrth	nmrt/+h	nmrt	n. f.	splendour	
 153329	l	l(I)	l (I)	prep.	to	
 153329	l	l(III)	l (III)	functor	certainly	
 153330	r	?	?	?	?	
@@ -193,7 +194,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153336	nk	bld/+k	bld	n. m.	land	
 153337	ḥtkk	ḥt(I)/+k	ḥtk (I)	n. m.	ruler > progenitor	
 153337	ḥtkk	ḥt(III)/+k	ḥtk (III)	n. m.	sovereignty	
-153338	nmrtk	nmr(t/t+k	nmrt	n. f.	splendour	
+153338	nmrtk	nmrt/+k	nmrt	n. f.	splendour	
 153339	b	b	b	prep.	in	
 153340	tk	tk/	tk	n. m.	centre	
 # KTU 1.108 26						
@@ -208,8 +209,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153346	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 # KTU 1.108 27						
 153347	w	w	w	conj.	and	
-153348	nˤmt	nˤm(I)/t	nʕm (I)	adj. f.	handsome	
+153348	nˤmt	nˤm(I)/	nʕm (I)	adj. f.	handsome	
 153348	nˤmt	nˤm(t(I)/t	nʕmt (I)	adj. f.	graceful	
 153348	nˤmt	nˤm(t(II)/t	nʕmt (II)	n. f.	delight	
 153349	šnt	šn(t(I)/t	šnt (I)	n. f.	year	
+153349	šnt	šn(w[t	/š-n-w/	vb G	to change: a) reflex.	
+153349	šnt	šn(t(II)/t	šnt (II)	n. f.	sleep	
 153350	il	il(I)/	ỉl (I)	n. m.	god	

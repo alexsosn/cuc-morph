@@ -97,7 +97,36 @@ class TabletParsingPipelineTest(unittest.TestCase):
 
             self.assertEqual(result["targets"], ["KTU 1.180.tsv"])
             self.assertEqual(result["target_count"], 1)
+            self.assertEqual(result["bootstrap_target_count"], 1)
+            self.assertEqual(result["preserved_target_count"], 0)
             self.assertTrue(result["dry_run"])
+
+    def test_partition_targets_for_bootstrap_preserves_existing_outputs(self):
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            src = root / "cuc_tablets_tsv"
+            out = root / "out"
+            src.mkdir(parents=True)
+            out.mkdir(parents=True)
+
+            (src / "KTU 1.1.tsv").write_text("", encoding="utf-8")
+            (src / "KTU 1.2.tsv").write_text("", encoding="utf-8")
+            (out / "KTU 1.1.tsv").write_text("id\tsurface form\n", encoding="utf-8")
+
+            config = PipelineConfig(
+                source_dir=src,
+                out_dir=out,
+                dulat_db=root / "dulat.sqlite",
+                udb_db=root / "udb.sqlite",
+                include_existing=True,
+            )
+            pipeline = TabletParsingPipeline(config=config)
+            targets = pipeline.select_targets()
+            bootstrap_targets, preserved_targets = pipeline.partition_targets_for_bootstrap(targets)
+
+            self.assertEqual([p.name for p in targets], ["KTU 1.1.tsv", "KTU 1.2.tsv"])
+            self.assertEqual([p.name for p in bootstrap_targets], ["KTU 1.2.tsv"])
+            self.assertEqual([p.name for p in preserved_targets], ["KTU 1.1.tsv"])
 
     def test_suffix_payload_collapse_runs_after_known_ambiguities(self):
         with tempfile.TemporaryDirectory() as tmp_dir:

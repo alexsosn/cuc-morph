@@ -43,6 +43,15 @@
   - updates in `tests/test_dulat_gate_plurale_tantum.py`,
   - updates in `tests/test_nominal_form_morph_pos.py`.
 - Re-ran only `nominal-form-morph-pos` over all `out/KTU *.tsv` files; 3 row updates (`KTU 2.16.tsv`, `KTU 3.10.tsv`, `KTU 3.20.tsv`).
+- Global rollback/correction for post-`c005507` destructive output drift:
+  - restored all `out/KTU *.tsv` files to pre-regression baseline (`1d1775a`),
+  - re-applied only safe form-driven nominal POS refinement (`nominal-form-morph-pos`) corpus-wide with current DULAT overrides (`415` row updates in `112` files).
+- Updated pipeline execution strategy for `--include-existing` reprocessing:
+  - existing `out/*.tsv` files are now preserved through bootstrap/refine/instruction phases,
+  - bootstrap/refine/instruction run only for targets without an existing output file,
+  - refinement steps still run over all selected targets.
+- Added pipeline regression coverage for target partitioning:
+  - `tests/test_tablet_parsing_pipeline.py::test_partition_targets_for_bootstrap_preserves_existing_outputs`.
 
 - Reverted noun-side POS coercion in `l + noun` compound-preposition passes so suffix-friendly noun payloads are retained:
   - `L_PN_PREP_CANONICAL_PAYLOADS` now keeps `pn*` payloads as `n. m. pl. tant.` (not `prep.`),

@@ -22,7 +22,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151336	thmt	thm/t	thm	n. f.	ocean/deep	
 151337	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
 # KTU 1.92 6						
-151338	yṣi	!y!(yṣ(ʔ&i[	/y-ṣ-ʔ/	vb G	to go out	
+151338	yṣi	!y!(yṣʔ[	/y-ṣ-ʔ/	vb G	to go out	
 151339	ġlh	ġl(I)/h	ġl (I)	n. m.	far extent of desert	
 151340	tḥmd	tḥm/+d	tḥm	n. m.	message	
 # KTU 1.92 7						
@@ -49,7 +49,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151353	tšu	nšʔ[	/n-š-ʔ/	vb G	to raise	
 151354	wt	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.92 11						
-151355	aylt	aylt(I)/	ảylt (I)	n. f.	hind	
+151355	aylt	ayl(t(I)/t=	ảylt (I)	n. f.	hind	
 151356	tġpy	!t!ġpy[	/ġ-p-y/	vb G	to espy	
 151357	ṯr	ṯr(I)/	ṯr (I)	n. m.	bull	
 151358	ṯr	ṯr(I)/	ṯr (I)	n. m.	bull	
@@ -59,12 +59,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151360	qr	qr(II)/	qr (II)	n. m.	noise	
 151360	qr	qr(III)/	qr (III)	n. m.	wall	
 151361	mrḥh	mrḥ/h	mrḥ	n. f.	lance	
-151362	tiḫd	!t!(ʔ&iḫd[	/ʔ-ḫ-d(/ḏ)/	vb G	to collect	
+151362	tiḫd	!t!ʔḫd[	/ʔ-ḫ-d(/ḏ)/	vb G	to collect	
 # KTU 1.92 13						
 151363	šbrh	šbr/+h	šbr	n. m.	stick	
 151364	bm	b	b	prep.	in	
 151365	ymn	ymn(I)/	ymn (I)	n. m.	right (side)	
-151366	tr	tr[	/t-r/	vb G	to scour	
+151366	tr	!t!r[	/t-r/	vb G	to scour	
 151366	tr	tr(II)/	tr (II)	n. m.	turtledove	
 # KTU 1.92 14						
 151367	tšpl	!t!špl[	/š-p-l/	vb G/D	to bend down	
@@ -79,7 +79,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.92 16						
 151374	tšlḥm	!t!]š]lḥm(I)[	/l-ḥ-m/ (I)	vb Š	to eat	
 151375	yrḫ	yrḫ/	yrḫ	n. m.	moon	
-151376	ggn	ggn/	ggn	n. m.	insides	
+151376	ggn	gg(I)/+n	gg (I)	n. m.	roof	
 151377		?	?	?	?	
 # KTU 1.92 17						
 151378	kṯr	kṯr(III)/	kṯr (III)	DN/element of DN	Koṯaru/Kothar	
@@ -107,12 +107,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151391	x	?	?	?	?	
 151392	abh	ab/+h	ảb	n. m.	father	
 151393	krm	krm/	krm	n. m.	vineyard	
-151394	ar	a/	ả/ỉr	n. m.	light	
+151394	ar	a/	ả	n.	light	
 # KTU 1.92 25						
 151395	h	+h, +h=	-h (I)	suff. pn. morph.	his /her (hers) / its	
 151395	h	~h	-h(II)	adv. functor	to, towards	
 151396	mḥtrt	mḥtr(t/t	mḥtrt	n. f.	green (garment)	
-151397	pṯtm	pṯt(I)/m	pṯt (I)	n. m.	linen	
+151397	pṯtm	pṯt(I)/t=	pṯt (I)	n. m.	linen	
 # KTU 1.92 26						
 151398	ˤlh	ˤl(I)+h	ʕl (I)	prep.	upon	
 151399	ušpġt	ušpġ(t/t	ủšpġt	n. f.	ein Gewand	
@@ -130,7 +130,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151406	km	km	km	prep./conj./adv.		
 151406	km	+km, +km=	-km			
 151407	kbkbt	kbkb/t=	kbkb	n. m.	heavenly body	
-151408	kṯn	kṯn(II)/	kṯn (II)	TN	kṯn (II)	
+151408	kṯn	kṯ(I)/+n	kṯ (I)	n. f.	flask	
 # KTU 1.92 29						
 151409	btlt	btl(t/t	btlt	n. f.	virgin	
 151410	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
@@ -196,7 +196,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151449	rkb	rkb[	/r-k-b/	vb G	to mount (especially a chariot)	
 151449	rkb	rkb(I)/	rkb (I)	n. m.	Charioteer	
 151449	rkb	rkb(II)/	rkb (II)	n. m.	?	
-151450	ˤrpt	ˤrpt/	ʕrpt	n. f.	cloud(s)	
+151450	ˤrpt	ˤrp(t/t=	ʕrpt	n. f.	cloud(s)	
 # KTU 1.92 38						
 151451	hn	hn	hn	deictic functor/adv.	behold!	
 151452	xxxxyn	?	?	?	?	DULAT: NOT FOUND
@@ -212,4 +212,4 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151460	rkb	rkb[	/r-k-b/	vb G	to mount (especially a chariot)	
 151460	rkb	rkb(I)/	rkb (I)	n. m.	Charioteer	
 151460	rkb	rkb(II)/	rkb (II)	n. m.	?	
-151461	ˤrpt	ˤrpt/	ʕrpt	n. f.	cloud(s)	
+151461	ˤrpt	ˤrp(t/t=	ʕrpt	n. f.	cloud(s)	

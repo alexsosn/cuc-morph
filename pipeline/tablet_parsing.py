@@ -131,6 +131,20 @@ class TabletParsingPipeline:
     def discover_out_files(self) -> List[Path]:
         return sorted(self.config.out_dir.glob(self.config.source_glob))
 
+    def partition_targets_for_bootstrap(
+        self, targets: Sequence[Path]
+    ) -> tuple[List[Path], List[Path]]:
+        """Split targets into files that need bootstrap and files to preserve."""
+        needs_bootstrap: List[Path] = []
+        preserved_existing: List[Path] = []
+        for src in targets:
+            out_path = self.config.out_dir / src.name
+            if self.config.include_existing and out_path.exists():
+                preserved_existing.append(src)
+                continue
+            needs_bootstrap.append(src)
+        return needs_bootstrap, preserved_existing
+
     def select_targets(self, explicit_names: Optional[Sequence[str]] = None) -> List[Path]:
         source_files = self.discover_source_files()
         source_by_name = {item.name: item for item in source_files}
@@ -246,9 +260,12 @@ class TabletParsingPipeline:
         self, explicit_names: Optional[Sequence[str]] = None, dry_run: bool = False
     ) -> Dict[str, object]:
         targets = self.select_targets(explicit_names=explicit_names)
+        bootstrap_targets, preserved_targets = self.partition_targets_for_bootstrap(targets)
         summary: Dict[str, object] = {
             "targets": [path.name for path in targets],
             "target_count": len(targets),
+            "bootstrap_target_count": len(bootstrap_targets),
+            "preserved_target_count": len(preserved_targets),
             "dry_run": dry_run,
         }
 
@@ -257,9 +274,21 @@ class TabletParsingPipeline:
 
         self.config.out_dir.mkdir(parents=True, exist_ok=True)
 
-        summary.update(self.bootstrap_targets(targets))
-        summary.update(self.refine_targets(targets))
-        summary.update(self.instruction_refine_targets(targets))
+        if bootstrap_targets:
+            summary.update(self.bootstrap_targets(bootstrap_targets))
+            summary.update(self.refine_targets(bootstrap_targets))
+            summary.update(self.instruction_refine_targets(bootstrap_targets))
+        else:
+            summary.update(
+                {
+                    "bootstrap_written": 0,
+                    "refine_rows": 0,
+                    "refine_changed": 0,
+                    "instruction_refine_files": 0,
+                    "instruction_refine_rows": 0,
+                    "instruction_refine_changed": 0,
+                }
+            )
         summary.update(self.apply_refinement_steps(targets))
         summary["report_exit_code"] = self.regenerate_reports()
 

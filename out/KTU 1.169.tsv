@@ -55,12 +55,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155637	skh	sk(II)/+h	sk (II)	n. m.	den	
 # KTU 1.169 5						
 155638	ḫṭ	ḫṭ/	ḫṭ	n.	sceptre	
-155639	nqh	nqh[	/n-q-h/	vb G	to prepare	
+155639	nqh	!n!qh[	/n-q-h/	vb G	to prepare	
 155640	u	u	ủ	conj.	or	
 155641	qrb	qrb[	/q-r-b/	vb G	to approach	
 155641	qrb	qrb/	qrb	n. m.	inside	
 155642	ḫṭ	ḫṭ/	ḫṭ	n.	sceptre	
-155643	tḫṭa	!t!ḫṭ(ʔ&a[	/ḫ-ṭ-ʔ/	vb G	to make a mistake	
+155643	tḫṭa	!t!ḫṭʔ[	/ḫ-ṭ-ʔ/	vb G	to make a mistake	
 155644	l	l(I)	l (I)	prep.	to	
 155644	l	l(III)	l (III)	functor	certainly	
 155645	gbk	gb(II)/+k	gb (II)	n. m.	spine	
@@ -74,7 +74,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155650	tlḥm	!t!lḥm(I)[	/l-ḥ-m/ (I)	vb G	to eat	
 155651	lḥm	lḥm(I)[	/l-ḥ-m/ (I)	vb G	to eat	
 155651	lḥm	lḥm/	lḥm	n. m.	grain	
-155651	lḥm	lḥ(I)/m	lḥ (I)	n. f. du.	cheek	
+155651	lḥm	lḥ(I)/	lḥ (I)	n. f. du.	cheek	
 # KTU 1.169 7						
 155652	ẓm	ẓm/	ẓm	n. m.	fasting	
 155653	tšt	!t!št[	/š-t/	vb G	to place	
@@ -86,7 +86,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155656	bl	bl(III)/	bl (III)	n. m.	blended beer	
 155657	ṣml	ṣml(I)/	ṣml (I)	n. m.	to be hard	
 155658	b	b	b	prep.	in	
-155659	mrmt	mrm/t=	mrm	n. m.	height	
+155659	mrmt	mr/m	mrm	n. m.	height	
 # KTU 1.169 8						
 155660	b	b	b	prep.	in	
 155661	miyt	miy(t/t	mỉyt	n. f.	swamp	
@@ -101,12 +101,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155668	dbbm	dbb(II)/m	dbb (II)	n. m.	(sorcerer) adversary	
 155668	dbbm	dbb(I)/m	dbb (I)	n. m.	beast	
 155669	ygrš	!y!grš[	/g-r-š/	vb G	to eject	
-155670	ḥrn	ḥrn/	ḥrn	DN	Ḥôrānu	
+155670	ḥrn	ḥr(I)/+n	ḥr (I)	n. m.	intestine(s)	
 # KTU 1.169 10						
 155671	ḥbrm	ḥbr(I)/	ḥbr (I)	n. m.	companion	
 155672	w	w	w	conj.	and	
 155673	ġlm	ġlm/	ġlm	n. m.	boy	
-155674	dˤtm	dˤt(I)/m	dʕt (I)	n. f.	knowledge	
+155674	dˤtm	dˤt(t(I)/t=	dʕt (I)	n. f.	knowledge	
 155675	lk	l(I)+k	l (I)	prep.	to	
 # KTU 1.169 11						
 155676	lẓtm	lẓ(t/tm	lẓt	n. f.	severity	
@@ -120,7 +120,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155681	lšnk	lšn/+k	lšn	n. f.	tongue	
 155682	al	al(I)	ảl (I)	neg. functor	no	
 155682	al	al(II)	ảl (II)	pos. functor	surely	
-155683	tapq	!t!(ʔ&apq[	/ʔ-p-q/	vb D	to move away	
+155683	tapq	!t!ʔpq[	/ʔ-p-q/	vb D	to move away	
 155684	apq	apq/	ảpq	n. m.	spring	
 155685	lbš	lbš/	lbš	n. m.	clothing	
 155685	lbš	lbš[	/l-b-š/	vb G	to dress	
@@ -136,7 +136,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155691	l	l(II)	l (II)	adv.	no	
 155691	l	l(III)	l (III)	functor	certainly	
 155692	adm	adm(I)/	ảdm (I)	n. m.	man	
-155692	adm	(ʔ&adm[	/ʔ-d-m/	vb G	to be	
+155692	adm	ʔdm[	/ʔ-d-m/	vb G	to be	
 155693	w	w	w	conj.	and	
 155694	d	d	d	det. or rel. functor	the one(s) of	
 155695	ḫṭm	ḫṭ/	ḫṭ	n.	sceptre	
@@ -151,7 +151,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155700	bn	bn(II)	bn (II)	prep.	between	
 155700	bn	bn[	/b-n/	vb G	to understand	
 155701	adm	adm(I)/	ảdm (I)	n. m.	man	
-155701	adm	(ʔ&adm[	/ʔ-d-m/	vb G	to be	
+155701	adm	ʔdm[	/ʔ-d-m/	vb G	to be	
 155702	b	b	b	prep.	in	
 155703	anšt	anš(t/t	ảnšt	n. f.	illness	
 155704	npẓl	!n!pẓl[	/p-ẓ-l/	vb N	to be overcome by	
@@ -176,10 +176,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 155715	xxxxx	?	?	?	?	
 155716	bt	bt(II)/	bt (II)	n. m.	house	
 155716	bt	b(t(I)/t	bt (I)	n. f.	daughter	
-155717	ubu	!u!b(ʔ&u[	/b-ʔ/	vb G	to enter	
+155717	ubu	!u!bʔ[	/b-ʔ/	vb G	to enter	
 155718	al	al(I)	ảl (I)	neg. functor	no	
 155718	al	al(II)	ảl (II)	pos. functor	surely	
-155719	tbi	!t!b(ʔ&i[	/b-ʔ/	vb G	to enter	
+155719	tbi	!t!bʔ[	/b-ʔ/	vb G	to enter	
 # KTU 1.169 19						
 155720	xxxxxxxx	?	?	?	?	
 155721	al	al(I)	ảl (I)	neg. functor	no	
