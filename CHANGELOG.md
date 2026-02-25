@@ -2,6 +2,14 @@
 
 ## 2026-02-25
 
+- Removed repeated header-like pseudo-data rows from preserved outputs:
+  - `pipeline/steps/schema_formatter.py` now drops junk rows whose first two
+    columns are `id` / `surface form` (for example
+    `id\tsurface form\t?\t?\t?\t?\tDULAT: NOT FOUND`).
+  - added regression in `tests/test_refinement_steps.py`:
+    `test_drops_repeated_header_like_junk_rows`.
+  - re-ran full `--include-existing` tablet pipeline to apply globally.
+
 - Fixed global POS enrichment coverage and made it reproducible for
   `--include-existing` runs:
   - `pipeline/tablet_parsing.py` now runs `instruction_refine_targets(...)` for

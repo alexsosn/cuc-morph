@@ -1757,6 +1757,26 @@ class TsvSchemaFormatterTest(unittest.TestCase):
             self.assertEqual(lines[0], self.header)
             self.assertEqual(lines[1], self.separator)
 
+    def test_drops_repeated_header_like_junk_rows(self) -> None:
+        content = textwrap.dedent(
+            """\
+            id\tsurface form\tmorphological parsing\tDULAT\tPOS\tgloss\tcomments
+            id\tsurface form\tsurface form\t\t\t\tDULAT: NOT FOUND
+            id\tsurface form\t?\t?\t?\t?\tDULAT: NOT FOUND
+            # KTU 1.5 I:4\t\t\t\t\t\t
+            103\tabc\tabc/\tabc\tn. m.\tthing\t
+            """
+        )
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            f = Path(tmp_dir) / "test.tsv"
+            f.write_text(content, encoding="utf-8")
+            result = self.fixer.refine_file(f)
+            self.assertEqual(result.rows_changed, 2)
+            lines = f.read_text(encoding="utf-8").splitlines()
+            self.assertEqual(lines[0], self.header)
+            self.assertEqual(lines[1], self.separator)
+            self.assertEqual(lines[2], "103\tabc\tabc/\tabc\tn. m.\tthing\t")
+
     def test_normalizes_variant_divider_spacing_in_structured_columns(self) -> None:
         content = textwrap.dedent(
             """\
