@@ -1,6 +1,7 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 id	surface form	surface form				DULAT: NOT FOUND
 id	surface form	surface form				DULAT: NOT FOUND
+id	surface form	surface form				DULAT: NOT FOUND
 # KTU 1.2 I:1						
 136029	x	x				
 # KTU 1.2 I:2						
@@ -221,7 +222,7 @@ id	surface form	surface form				DULAT: NOT FOUND
 136172	tġly	!t!ġly[	/ġ-l-y/	vb	to lose the proper aspect	
 136172	tġly	!t!ġl(y[+y	/ġ-l-y/	vb	to lose the proper aspect	
 136173	ilm	il(I)/m	ỉl (I)	n.	god	
-136174	rišthm	riš(I)/+hm	rỉš (I)	n.	head	
+136174	rišthm	riš(I)&t/+hm	rỉš (I)	n.	head	
 136175	l	l(I)	l (I)	prep.	to	
 136176	ẓr	ẓr(I)/	ẓr (I)	n. m.	upon	
 136177	brkthm	brk/	brk	n.	knee	
@@ -337,7 +338,7 @@ id	surface form	surface form				DULAT: NOT FOUND
 136257	lṭšt	lṭš[t	/l-ṭ-š/	vb G	to sharpen	
 # KTU 1.2 I:33						
 136258	lšnhm	lšn/+hm	lšn	n.	tongue	
-136258	lšnhm	lšn/+m(I)	lšn	n.	tongue	
+136258	lšnhm	lšn&h/+m(I)	lšn	n.	tongue	
 136259	rgm	rgm[	/r-g-m/	vb G	to say	
 136259	rgm	rgm/	rgm	n.	word	
 136260	ṣ	mḫṣ[	/m-ḫ-ṣ/	vb G	to wound	

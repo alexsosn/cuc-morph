@@ -7,6 +7,7 @@ from pathlib import Path
 
 from scripts.refine_results_mentions import (
     Entry,
+    Variant,
     analysis_for_entry,
     build_variants,
     compact_gloss,
@@ -212,6 +213,30 @@ class RefineResultsMentionsTest(unittest.TestCase):
             analysis_for_entry("tḫṭu", entry, morph_values=["G, prefc."]),
             "!t!ḫṭ(ʔ[&u",
         )
+
+    def test_render_split_variant_preserves_surface_only_tail_before_suffix(self) -> None:
+        base = Entry(
+            entry_id=6001,
+            lemma="qdqd",
+            hom="",
+            pos="n. m.",
+            gloss="skull",
+            wiki_tr="",
+        )
+        suffix = Entry(
+            entry_id=6002,
+            lemma="-k",
+            hom="",
+            pos="pers. pn.",
+            gloss="your",
+            wiki_tr="",
+        )
+        variant = render_variant(
+            "qdqdhk",
+            Variant((base, suffix), "qdqdh"),
+            forms_morph={},
+        )
+        self.assertEqual(variant[0], "qdqd&h/+k")
 
     def test_analysis_keeps_l_stem_geminate_before_verbal_closure(self) -> None:
         entry = Entry(

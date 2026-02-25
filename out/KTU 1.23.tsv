@@ -1,6 +1,7 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 id	surface form	surface form				DULAT: NOT FOUND
 id	surface form	surface form				DULAT: NOT FOUND
+id	surface form	surface form				DULAT: NOT FOUND
 # KTU 1.23 1						
 147097	iqra	!(ʔ&i!qr(ʔ[&a	/q-r-ʔ/	vb G	to call	
 147098	ilm	il(I)/m	ỉl (I)	n.	god	
@@ -119,7 +120,7 @@ id	surface form	surface form				DULAT: NOT FOUND
 147165	aṯrt	aṯrt(I)/	ảṯrt (I)	n.	back part (of the head)	
 147166	w	w	w	conj.	and	
 147167	rḥmy	rḥm/+y	rḥm	n.	womb	
-147167	rḥmy	rḥ(III)/+y	rḥ (III)	n.	millstone	
+147167	rḥmy	rḥ(III)&m/+y	rḥ (III)	n.	millstone	
 147167	rḥmy	rḥmy/	rḥmy	DN	rḥmy	
 # KTU 1.23 14						
 147168	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
@@ -144,7 +145,7 @@ id	surface form	surface form				DULAT: NOT FOUND
 # KTU 1.23 16						
 147184	tlkm	hlk[m	/h-l-k/	vb G	to go	
 147185	rḥmy	rḥm/+y	rḥm	n.	womb	
-147185	rḥmy	rḥ(III)/+y	rḥ (III)	n.	millstone	
+147185	rḥmy	rḥ(III)&m/+y	rḥ (III)	n.	millstone	
 147185	rḥmy	rḥmy/	rḥmy	DN	rḥmy	
 147186	w	w	w	conj.	and	
 147187	tṣd	!t!ṣd[	/ṣ-d/	vb G	to hunt	
@@ -181,7 +182,7 @@ id	surface form	surface form				DULAT: NOT FOUND
 147208	ilm	il(I)/m	ỉl (I)	n.	god	
 147209	nˤmm	nˤm(I)/	nʕm (I)	adj.	handsome	
 147210	agzrym	agzry/m	ảgzry	adj.	ravenous	
-147211	bnym	bn(I)/+m(I)	bn (I)	n.	son	
+147211	bnym	bn(I)&y/+m(I)	bn (I)	n.	son	
 147211	bnym	bny[+m(I)	/b-n-y/	vb	to build	
 147211	bnym	bny/+m(I)	bny	n.	architect	
 # KTU 1.23 24						
@@ -197,7 +198,7 @@ id	surface form	surface form				DULAT: NOT FOUND
 147218	špš	špš/	špš	n.	sun	
 147219	mṣprt	mṣprt/	mṣprt	n.	she who rearranges	
 147220	dlthm	dlt(III)/+hm	dlt (III)	n.	weakness	
-147220	dlthm	dl/+hm	dl	adj.	poor	
+147220	dlthm	dl&t/+hm	dl	adj.	poor	
 # KTU 1.23 26						
 147221	w	w	w	conj.	and	
 147222	ġnbm	ġnb/m	ġnb	n.	grape(s)	
@@ -225,7 +226,7 @@ id	surface form	surface form				DULAT: NOT FOUND
 147233	aṯrt	aṯrt(I)/	ảṯrt (I)	n.	back part (of the head)	
 147234	w	w	w	conj.	and	
 147235	rḥmy	rḥm/+y	rḥm	n.	womb	
-147235	rḥmy	rḥ(III)/+y	rḥ (III)	n.	millstone	
+147235	rḥmy	rḥ(III)&m/+y	rḥ (III)	n.	millstone	
 147235	rḥmy	rḥmy/	rḥmy	DN	rḥmy	
 # KTU 1.23 29						
 147236	ilm	il(I)/m	ỉl (I)	n.	god	

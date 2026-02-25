@@ -1,37 +1,42 @@
 {
-  "generated_at_utc": "2026-02-25T14:02:57.731397+00:00",
+  "generated_at_utc": "2026-02-25T14:08:00.597920+00:00",
   "files_checked": 278,
-  "total_issues": 32542,
-  "fallback_parsed": 15924,
+  "total_issues": 33884,
+  "fallback_parsed": 16480,
   "by_severity": {
-    "ERROR": 11640,
-    "WARNING": 15651,
-    "INFO": 2189
+    "ERROR": 12426,
+    "WARNING": 15929,
+    "INFO": 2467
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3293
+      "count": 3244
     },
     {
       "severity": "ERROR",
       "problem_type": "Missing DULAT entry token(s) in column 4",
-      "count": 2943
+      "count": 3221
     },
     {
       "severity": "INFO",
       "problem_type": "Surface not found in UDB concordance",
-      "count": 2189
+      "count": 2467
     },
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for lexeme/surface",
-      "count": 1805
+      "count": 2084
     },
     {
       "severity": "WARNING",
       "problem_type": "surface form Non-numeric line id",
+      "count": 836
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "surface form Duplicate unwrapped row payload (same id, surface, and col3-col6); first seen on line 2",
       "count": 558
     },
     {
@@ -63,11 +68,6 @@
       "severity": "WARNING",
       "problem_type": "il Noun POS should include DULAT gender marker for ỉl (I): n. m.",
       "count": 287
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "surface form Duplicate unwrapped row payload (same id, surface, and col3-col6); first seen on line 2",
-      "count": 280
     },
     {
       "severity": "ERROR",

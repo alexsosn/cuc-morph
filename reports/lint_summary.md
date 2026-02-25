@@ -1,33 +1,33 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `32542`
-- Fallback-parsed issue lines: `15924`
+- Total issues: `33884`
+- Fallback-parsed issue lines: `16480`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 11640 |
-| WARNING | 15651 |
-| INFO | 2189 |
+| ERROR | 12426 |
+| WARNING | 15929 |
+| INFO | 2467 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3293 |
-| ERROR | Missing DULAT entry token(s) in column 4 | 2943 |
-| INFO | Surface not found in UDB concordance | 2189 |
-| ERROR | No DULAT entry found for lexeme/surface | 1805 |
-| WARNING | surface form Non-numeric line id | 558 |
+| ERROR | Analysis does not reconstruct to surface | 3244 |
+| ERROR | Missing DULAT entry token(s) in column 4 | 3221 |
+| INFO | Surface not found in UDB concordance | 2467 |
+| ERROR | No DULAT entry found for lexeme/surface | 2084 |
+| WARNING | surface form Non-numeric line id | 836 |
+| ERROR | surface form Duplicate unwrapped row payload (same id, surface, and col3-col6); first seen on line 2 | 558 |
 | ERROR | POS ambiguous in DULAT | 500 |
 | ERROR | POS token not allowed for declared DULAT entry | 439 |
 | ERROR | Noun/adjective lacks '/' ending | 421 |
 | ERROR | Multiple DULAT candidates for lexeme | 397 |
 | ERROR | No DULAT entry found for clitic part | 316 |
 | WARNING | il Noun POS should include DULAT gender marker for ỉl (I): n. m. | 287 |
-| ERROR | surface form Duplicate unwrapped row payload (same id, surface, and col3-col6); first seen on line 2 | 280 |
 | ERROR | DULAT comment does not match candidates | 258 |
 | WARNING | mlk Noun POS should include DULAT gender marker for mlk (II): n. m. | 246 |
 | WARNING | bn Noun POS should include DULAT gender marker for bn (I): n. m. | 216 |

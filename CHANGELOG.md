@@ -2,6 +2,17 @@
 
 ## 2026-02-25
 
+- Fixed suffix-split nominal heads to preserve visible non-lexeme tail letters
+  before clitic suffixes in parser rendering:
+  - `scripts/refine_results_mentions.py` now rewrites split heads like
+    `qdqd/ + +k` to `qdqd&h/+k` when base surface is `qdqdh`.
+  - implemented via `inject_surface_only_tail_before_nominal_closure(...)`
+    in split-variant rendering.
+  - added regression in `tests/test_refine_results_mentions.py`:
+    `test_render_split_variant_preserves_surface_only_tail_before_suffix`.
+  - re-ran parser regeneration and full refinement-step pipeline across all
+    tablets to apply this globally.
+
 - Normalized aleph-prefix preformative encoding in verbal analyses:
   - canonicalized `!a!`, `!i!`, `!u!` to `!(ʔ&a!`, `!(ʔ&i!`, `!(ʔ&u!` in parser generation (`scripts/refine_results_mentions.py`) and legacy III-aleph fixer (`pipeline/steps/prefixed_iii_aleph_verb.py`).
   - updated prefix-marker detection in refinement/lint paths to accept canonical aleph-prefix markers:

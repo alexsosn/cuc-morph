@@ -72,6 +72,9 @@ _PREFORMATIVE_LETTERS = {"y", "t", "a", "n", "i", "u"}
 _REDIRECT_TARGET_RE = re.compile(r"<i>([^<]+)</i>", re.IGNORECASE)
 _REDIRECT_SLASH_TARGET_RE = re.compile(r"/[A-Za-zʔʕʿˤḫḥṭṣṯẓġḏšảỉủ-]+/")
 _L_STEM_MORPH_RE = re.compile(r"\b(L|Lt|tL)\b")
+_BASE_NOMINAL_ANALYSIS_RE = re.compile(
+    r"^(?P<lemma>[A-Za-zʔʕʿˤḫḥṭṣṯẓġḏšảỉủ]+)(?P<hom>\([IVX]+\))?/$"
+)
 
 
 def format_preformative_marker(letter: str) -> str:
@@ -665,6 +668,36 @@ def suffix_fragment(e: Entry) -> str:
     return frag
 
 
+def inject_surface_only_tail_before_nominal_closure(analysis: str, base_surface: str) -> str:
+    """Preserve visible non-lexeme tail letters in nominal split heads.
+
+    Example:
+    - base surface `qdqdh`, nominal head `qdqd/` -> `qdqd&h/`
+    """
+    value = (analysis or "").strip()
+    if not value:
+        return value
+    match = _BASE_NOMINAL_ANALYSIS_RE.match(value)
+    if match is None:
+        return value
+
+    lemma = match.group("lemma") or ""
+    hom = match.group("hom") or ""
+    lex_plain = extract_letters(lemma)
+    surface_plain = extract_letters(normalize_analysis(base_surface))
+    if not lex_plain or not surface_plain:
+        return value
+    if not surface_plain.startswith(lex_plain):
+        return value
+    if len(surface_plain) <= len(lex_plain):
+        return value
+
+    tail = surface_plain[len(lex_plain) :]
+    if not tail:
+        return value
+    return f"{lemma}{hom}&{tail}/"
+
+
 def gloss_for_entry(e: Entry, multi_slot: bool = False) -> str:
     if (e.pos or "").strip() == "→":
         return "?"
@@ -1207,7 +1240,12 @@ def render_variant(
 
     base, suf = entries[0], entries[1]
     mv = sorted(forms_morph.get((normalize_lookup(v.base_surface), base.entry_id), set()))
-    a = f"{analysis_for_entry(v.base_surface, base, morph_values=mv)}+{suffix_fragment(suf)}"
+    base_analysis = analysis_for_entry(v.base_surface, base, morph_values=mv)
+    base_analysis = inject_surface_only_tail_before_nominal_closure(
+        analysis=base_analysis,
+        base_surface=v.base_surface,
+    )
+    a = f"{base_analysis}+{suffix_fragment(suf)}"
     d = f"{entry_label(base)},{entry_label(suf)}"
     p = f"{pos_token(base)},{pos_token(suf)}"
     g = f"{gloss_for_entry(base, multi_slot=True)},{gloss_for_entry(suf, multi_slot=True)}"

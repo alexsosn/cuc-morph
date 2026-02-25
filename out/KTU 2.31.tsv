@@ -1,6 +1,7 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 id	surface form	surface form				DULAT: NOT FOUND
 id	surface form	surface form				DULAT: NOT FOUND
+id	surface form	surface form				DULAT: NOT FOUND
 # KTU 2.31 1						
 157255	xx	xx				
 157256	xxxx	xxxx				
@@ -100,7 +101,7 @@ id	surface form	surface form				DULAT: NOT FOUND
 # KTU 2.31 21						
 157319	pkn	p(I)+kn	p (I)	conj. functor	and	
 157319	pkn	p(III)/+kn	p (III)	n.	mouth	
-157319	pkn	p(III)/+n	p (III)	n.	mouth	
+157319	pkn	p(III)&k/+n	p (III)	n.	mouth	
 # KTU 2.31 22						
 157320	š	š/	š	n.	ram	
 157321	an	an(I)	ản (I)	pers. pn.	I	
