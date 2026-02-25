@@ -2,6 +2,14 @@
 
 ## 2026-02-25
 
+- Fixed DULAT gloss compaction for comma-bearing parenthetical translations:
+  - `scripts/refine_results_mentions.py::compact_gloss` now splits only on top-level commas (outside `()` / `[]`),
+  - prevents truncation like `"(one"` for `ảlp (II)` and preserves `"(one, a) thousand"`.
+- Added regression coverage in `tests/test_refine_results_mentions.py`:
+  - `test_compact_gloss_keeps_parenthetical_comma`,
+  - `test_compact_gloss_still_splits_top_level_comma`.
+- Re-ran full reproducible bootstrap+refine+instruction+steps pipeline across all tablets (`KTU *.tsv`, `278` targets), regenerating `out/*.tsv` and `reports/*`.
+
 - Fixed fallback `¶ Forms:` token cleaning to preserve non-ASCII transliteration letters (notably `ś`) instead of stripping them into false short keys:
   - `pipeline/config/dulat_entry_forms_fallback.py` now normalizes fallback form tokens via Unicode-letter filtering (`isalpha`) and keeps `-` where present.
   - Prevents spurious fallback keys like `wm`/`wt` derived from valid forms such as `śśwm`/`śśwt`.

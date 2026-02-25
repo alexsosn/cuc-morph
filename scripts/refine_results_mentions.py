@@ -120,13 +120,35 @@ def compact_gloss(s: str) -> str:
     g = g.replace('"', "")
     g = re.sub(r"^\s*\d+\)\s*", "", g)
     g = re.sub(r"^\s*[a-z]\)\s*", "", g)
-    # Keep first concise segment.
-    g = g.split(",", 1)[0]
+    # Keep first concise segment, but do not split on commas inside parentheses.
+    g = _split_first_top_level(g, sep=",")[0]
     g = g.strip(" ,;")
     # keep compact first chunk when automated extraction is noisy
     if len(g) > 110:
         g = g[:110].rsplit(" ", 1)[0].strip(" ,;")
     return g
+
+
+def _split_first_top_level(text: str, sep: str = ",") -> Tuple[str, str]:
+    """Split on first separator not nested in parentheses/brackets."""
+    depth_round = 0
+    depth_square = 0
+    for idx, ch in enumerate(text):
+        if ch == "(":
+            depth_round += 1
+            continue
+        if ch == ")" and depth_round > 0:
+            depth_round -= 1
+            continue
+        if ch == "[":
+            depth_square += 1
+            continue
+        if ch == "]" and depth_square > 0:
+            depth_square -= 1
+            continue
+        if ch == sep and depth_round == 0 and depth_square == 0:
+            return text[:idx], text[idx + 1 :]
+    return text, ""
 
 
 def extract_redirect_targets(summary: str, text: str) -> Tuple[str, ...]:

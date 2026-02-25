@@ -9,6 +9,7 @@ from scripts.refine_results_mentions import (
     Entry,
     analysis_for_entry,
     build_variants,
+    compact_gloss,
     entry_label,
     load_entries,
     parse_separator_ref,
@@ -51,6 +52,12 @@ class RefineResultsMentionsTest(unittest.TestCase):
             wiki_tr="",
         )
         self.assertEqual(entry_label(entry), "ỉ/ủšḫry")
+
+    def test_compact_gloss_keeps_parenthetical_comma(self) -> None:
+        self.assertEqual(compact_gloss("(one, a) thousand"), "(one, a) thousand")
+
+    def test_compact_gloss_still_splits_top_level_comma(self) -> None:
+        self.assertEqual(compact_gloss("thousand, herd"), "thousand")
 
     def test_analysis_prefers_surface_for_short_prefix_slash_lemma(self) -> None:
         entry = Entry(
