@@ -796,3 +796,6 @@
 - Extended `FeminineTSingularSplitFixer` to cover unlabeled numeral POS (`num.`) with lexical final `-t` (for example `rb(b)t` -> `rb(t/t`), and prevented numeral rows from auto-expanding to `;.../t=` in sg/pl-ambiguous form lists.
 - Added regression coverage in `tests/test_feminine_t_singular_split.py` for sg/pl-ambiguous feminine `-t` reconstruction.
 - Re-applied the feminine `-t` split step across `out/KTU *.tsv` (66 files touched, 275 rows updated) to propagate this fix corpus-wide.
+- Refined `NominalFormMorphPosFixer` so feminine split analyses carry explicit POS number markers: `/t` -> `sg.`, `/t=` -> `pl.` (including `num.` rows such as `rb(b)t`), while preserving existing number labels.
+- Added regression tests in `tests/test_nominal_form_morph_pos.py` for noun and numeral rows with feminine split endings.
+- Re-applied `nominal-form-morph-pos` across `out/KTU *.tsv` to propagate sg./pl. POS normalization after feminine split unwrapping.

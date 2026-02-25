@@ -62,7 +62,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 135587	ḥẓr	ḥẓr/	ḥẓr	n. m. sg.	mansion	
 # KTU 1.1 II:15						
 135588	l	l(I)	l (I)	prep.	to	
-135589	pˤn	pˤn/	pʕn	n. f.	at the feet of	
+135589	pˤn	pˤn/	pʕn	n. f. du.	at the feet of	
 135590	ˤnt	ˤn(I)/t=	ʕn (I)	n. f. pl.	eye	
 135590	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 135590	ˤnt	ˤnt(II)	ʕnt (II)	adv.	now	
@@ -112,12 +112,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 135618	šlm	šlm[:d	/š-l-m/	vb G/D	to be well	
 135618	šlm	šlm(III)/	šlm (III)	adj. m. sg.	pure	
 135619	l	l(I)	l (I)	prep.	to	
-135620	kbd	kbd(I)/	kbd (I)	n.	within	
+135620	kbd	kbd(I)/	kbd (I)	n. f.	within	
 135621	arṣ	arṣ/	ảrṣ	n. f. sg.	earth	
 # KTU 1.1 II:21						
 135622	arbdd	arbdd/	ảrbdd	n. m. sg.	rest	
 135623	l	l(I)	l (I)	prep.	to	
-135624	kbd	kbd(I)/	kbd (I)	n.	within	
+135624	kbd	kbd(I)/	kbd (I)	n. f.	within	
 135625	šdm	šd(I)/m	šd (I)	n. m. pl.	open field	
 135626	ḥšk	ḥšk[	/ḥ-š-k/	vb G	to seize	
 # KTU 1.1 II:22						
@@ -156,13 +156,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 135650	šd	šd(I)/	šd (I)	n. m. sg.	open field	
 135650	šd	šd(II)/	šd (II)	n. m. sg.	a strip	
 135650	šd	šdy[	/š-d-y/	vb G	to pour	
-135651	rbt	rb(I)/t	rb (I)	adj. f.	great	
-135651	rbt	rb(t/t	rb(b)t	num.	ten thousand	
+135651	rbt	rb(I)/t	rb (I)	adj. f. sg.	great	
+135651	rbt	rb(t/t	rb(b)t	num. sg.	ten thousand	
 135651	rbt	rb(t(I)/t	rbt (I)	n. f. sg.	Lady	
 135652	kmn	kmn(II)/	kmn (II)	n. m. sg.	cumin	
 135652	kmn	kmn(I)/	kmn (I)	n. m. sg.	acre	
 135653	l	l(I)	l (I)	prep.	to	
-135654	pˤn	pˤn/	pʕn	n. f.	at the feet of	
+135654	pˤn	pˤn/	pʕn	n. f. du.	at the feet of	
 135655	kṯr	kṯr(III)/	kṯr (III)	DN/element of DN	Koṯaru/Kothar	
 # KTU 1.1 III:3						
 135656	hbr	hbr[	/h-b-r/	vb G	to bow	
@@ -218,8 +218,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.1 III:9						
 135689	ˤdb	ˤdb[	/ʕ-d-b/	vb G	to leave > to put in	
 135690	b	b	b	prep.	in	
-135691	ġrt	ġr(t(I)/t	ġrt (I)	n. f.	rock	
-135691	ġrt	ġr(t(I)/t=	ġrt (I)	n. f.	rock	
+135691	ġrt	ġr(t(I)/t	ġrt (I)	n. f. sg.	rock	
+135691	ġrt	ġr(t(I)/t=	ġrt (I)	n. f. pl.	rock	
 135692	ṯbt	ṯb(t/t	ṯbt	n. f. sg.	seat	
 # KTU 1.1 III:10						
 135693	ḥšqk	?	?	?	?	DULAT: NOT FOUND
@@ -262,9 +262,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 135720	šmm	šm(m(I)/m	šmm (I)	n. m. pl. tant.	heavens	
 135721	ˤm	ˤm(I)	ʕm (I)	prep.	to	
 135722	arṣ	arṣ/	ảrṣ	n. f. sg.	earth	
-135723	thmt	thm(t/t	thmt	n. f.	Primordial Ocean	
-135723	thmt	thm/t	thm	n. m.	ocean/deep	
-135723	thmt	thm/t	thm	n. f.	ocean/deep	
+135723	thmt	thm(t/t	thmt	n. f. sg.	Primordial Ocean	
+135723	thmt	thm/t	thm	n. f. sg.	ocean/deep	
+135723	thmt	thm/t	thm	n. f. sg.	ocean/deep	
 135724	ˤmn	ˤm(I)+n	ʕm (I)	prep.	to	
 135725	kbkbm	kbkb/m	kbkb	n. m.	heavenly body	
 # KTU 1.1 III:15						
@@ -277,7 +277,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 135729	nšm	nš(m/m	nšm	n. m. pl. tant.	people	
 135730	w	w	w	conj.	and	
 135731	ltbn	?	?	?	?	DULAT: NOT FOUND
-135732	hmlt	hml(t/t=	hmlt	n. f.	multitude	
+135732	hmlt	hml(t/t=	hmlt	n. f. pl.	multitude	
 135733	arṣ	arṣ/	ảrṣ	n. f. sg.	earth	
 # KTU 1.1 III:16						
 135734	at	at(I)	ảt (I)	pers. pn.	you	
@@ -320,7 +320,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 135760	ilnym	ilny/m	ỉlny	adj. m. or n. m. pl.	divine one	
 # KTU 1.1 III:20						
 135761	ṯn	ṯn(I)/	ṯn (I)	num.	two	
-135761	ṯn	ṯn(II)/	ṯn (II)	num./adj. sg.	second	
+135761	ṯn	ṯn(II)/	ṯn (II)	nuf./adj. sg.	second	
 135761	ṯn	ṯn(III)/	ṯn (III)	n. m. sg.	crimson (cloth, wool, purple)	
 135762	mṯpdm	mṯpd/m	mṯpd	n. m. du.	layer	
 135763	tḥt	tḥt(I)	tḥt (I)	prep.	under	
@@ -677,8 +677,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.1 V:19						
 135993	x	?	?	?	?	
 135994	išqb	?	?	?	?	DULAT: NOT FOUND
-135995	aylt	ayl(t(I)/t	ảylt (I)	n. f.	hind	
-135995	aylt	ayl(t(I)/t=	ảylt (I)	n. f.	hind	
+135995	aylt	ayl(t(I)/t	ảylt (I)	n. f. sg.	hind	
+135995	aylt	ayl(t(I)/t=	ảylt (I)	n. f. pl.	hind	
 # KTU 1.1 V:20						
 135996		?	?	?	?	
 135997	mbkm	mbk/m	mbk	n. m. pl.	source	

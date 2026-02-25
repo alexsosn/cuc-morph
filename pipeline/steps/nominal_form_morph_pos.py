@@ -11,6 +11,10 @@ from pipeline.steps.dulat_gate import DulatMorphGate
 _MASC_RE = re.compile(r"m\.", flags=re.IGNORECASE)
 _FEM_RE = re.compile(r"f\.", flags=re.IGNORECASE)
 _DUAL_POS_RE = re.compile(r"du\.", flags=re.IGNORECASE)
+_PLURAL_POS_RE = re.compile(r"(?:pl\.|plur(?:al)?)", flags=re.IGNORECASE)
+_SINGULAR_POS_RE = re.compile(r"(?:sg\.|sing(?:ular)?)", flags=re.IGNORECASE)
+_FEM_SING_ANALYSIS_RE = re.compile(r"/t(?=\s*$|[+~])")
+_FEM_PL_ANALYSIS_RE = re.compile(r"/t=(?=\s*$|[+~])")
 
 
 def _split_semicolon(value: str) -> list[str]:
@@ -80,14 +84,17 @@ class NominalFormMorphPosFixer(RefinementStep):
         if not pos_variants:
             return row
 
+        analysis_variants = _split_semicolon(row.analysis)
         dulat_variants = _split_semicolon(row.dulat)
         out_pos: list[str] = []
         changed = False
 
         for idx, pos_variant in enumerate(pos_variants):
+            analysis_variant = analysis_variants[idx] if idx < len(analysis_variants) else ""
             dulat_variant = dulat_variants[idx] if idx < len(dulat_variants) else ""
             dulat_head = _split_comma(dulat_variant)[0] if dulat_variant else ""
             rewritten = self._rewrite_pos(
+                analysis_variant=analysis_variant,
                 pos_variant=pos_variant,
                 dulat_head=dulat_head,
                 surface=row.surface,
@@ -109,7 +116,13 @@ class NominalFormMorphPosFixer(RefinementStep):
             comment=row.comment,
         )
 
-    def _rewrite_pos(self, pos_variant: str, dulat_head: str, surface: str) -> str:
+    def _rewrite_pos(
+        self,
+        analysis_variant: str,
+        pos_variant: str,
+        dulat_head: str,
+        surface: str,
+    ) -> str:
         value = (pos_variant or "").strip()
         if not value:
             return value
@@ -119,12 +132,16 @@ class NominalFormMorphPosFixer(RefinementStep):
             return value
         head = parts[0].strip()
         head_lower = head.lower()
-        if not (head_lower.startswith("n.") or head_lower.startswith("adj.")):
+        if not (
+            head_lower.startswith("n.")
+            or head_lower.startswith("adj.")
+            or head_lower.startswith("num.")
+        ):
             return value
 
         morphologies = self._gate.surface_morphologies(dulat_head, surface=surface)
         if not morphologies:
-            return value
+            return _with_number_from_feminine_split(value, analysis_variant)
 
         token_genders = set()
         token_gender_getter = getattr(self._gate, "token_genders", None)
@@ -166,7 +183,49 @@ class NominalFormMorphPosFixer(RefinementStep):
             rewritten_head = re.sub(r"\s{2,}", " ", rewritten_head).strip()
 
         if rewritten_head == head:
-            return value
-        if len(parts) == 1:
-            return rewritten_head
-        return ", ".join([rewritten_head, *parts[1:]])
+            out = value
+        elif len(parts) == 1:
+            out = rewritten_head
+        else:
+            out = ", ".join([rewritten_head, *parts[1:]])
+        return _with_number_from_feminine_split(out, analysis_variant)
+
+
+def _with_number_from_feminine_split(pos_value: str, analysis_variant: str) -> str:
+    """Inject missing sg./pl. markers when analysis explicitly uses /t or /t=."""
+    value = (pos_value or "").strip()
+    analysis = (analysis_variant or "").strip()
+    if not value or not analysis:
+        return value
+
+    if _FEM_PL_ANALYSIS_RE.search(analysis):
+        return _ensure_number_marker(value, target="pl")
+    if _FEM_SING_ANALYSIS_RE.search(analysis):
+        return _ensure_number_marker(value, target="sg")
+    return value
+
+
+def _ensure_number_marker(pos_value: str, target: str) -> str:
+    value = (pos_value or "").strip()
+    if not value:
+        return value
+
+    head, sep, rest = value.partition(",")
+    head_text = head.strip()
+    if _DUAL_POS_RE.search(head_text):
+        return value
+    if _PLURAL_POS_RE.search(head_text):
+        return value
+    if _SINGULAR_POS_RE.search(head_text):
+        return value
+
+    if target == "pl":
+        head_text = f"{head_text} pl."
+    elif target == "sg":
+        head_text = f"{head_text} sg."
+    else:
+        return value
+
+    if not sep:
+        return head_text
+    return f"{head_text}, {rest.strip()}"

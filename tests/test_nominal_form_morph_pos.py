@@ -24,7 +24,7 @@ class NominalFormMorphPosFixerTest(unittest.TestCase):
         fixer = NominalFormMorphPosFixer(gate=gate)
         row = TabletRow("1", "pḥlt", "pḥl/t", "pḥl", "n. m.", "ass", "")
         result = fixer.refine_row(row)
-        self.assertEqual(result.pos, "n. f.")
+        self.assertEqual(result.pos, "n. f. sg.")
 
     def test_appends_dual_marker_when_surface_form_is_dual(self) -> None:
         gate = _MorphGate({("š", "šm"): {"du."}})
@@ -77,6 +77,34 @@ class NominalFormMorphPosFixerTest(unittest.TestCase):
         row = TabletRow("5", "abn", "ab/+n", "ảb", "n. f.", "father", "")
         result = fixer.refine_row(row)
         self.assertEqual(result.pos, "n. m.")
+
+    def test_adds_singular_marker_for_feminine_t_split(self) -> None:
+        fixer = NominalFormMorphPosFixer(gate=_MorphGate())
+        row = TabletRow("6", "ṣrrt", "ṣrr(t/t", "ṣrrt", "n. f.", "appearance", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.pos, "n. f. sg.")
+
+    def test_adds_plural_marker_for_feminine_t_equal_split(self) -> None:
+        fixer = NominalFormMorphPosFixer(gate=_MorphGate())
+        row = TabletRow("7", "ṣrrt", "ṣrr(t/t=", "ṣrrt", "n. f.", "appearance", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.pos, "n. f. pl.")
+
+    def test_keeps_existing_number_marker_for_feminine_split_rows(self) -> None:
+        fixer = NominalFormMorphPosFixer(gate=_MorphGate())
+        row = TabletRow("8", "ṯknt", "ṯkn(t/t=", "ṯknt", "n. f. pl.", "appearance", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.pos, "n. f. pl.")
+
+    def test_adds_number_marker_for_feminine_split_numeral_rows(self) -> None:
+        fixer = NominalFormMorphPosFixer(gate=_MorphGate())
+        singular_row = TabletRow("9", "rbt", "rb(t/t", "rb(b)t", "num.", "ten thousand", "")
+        singular_result = fixer.refine_row(singular_row)
+        self.assertEqual(singular_result.pos, "num. sg.")
+
+        plural_row = TabletRow("10", "rbt", "rb(t/t=", "rb(b)t", "num.", "ten thousand", "")
+        plural_result = fixer.refine_row(plural_row)
+        self.assertEqual(plural_result.pos, "num. pl.")
 
 
 if __name__ == "__main__":

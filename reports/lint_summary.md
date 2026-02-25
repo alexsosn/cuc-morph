@@ -1,15 +1,15 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `9832`
-- Fallback-parsed issue lines: `246`
+- Total issues: `9947`
+- Fallback-parsed issue lines: `298`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 4806 |
-| WARNING | 379 |
+| ERROR | 4873 |
+| WARNING | 427 |
 | INFO | 1631 |
 
 ### By Problem Type
@@ -18,7 +18,7 @@
 |---|---|---:|
 | ERROR | Analysis does not reconstruct to surface | 2999 |
 | INFO | Surface not found in UDB concordance | 1631 |
-| ERROR | POS token not allowed for declared DULAT entry | 394 |
+| ERROR | POS token not allowed for declared DULAT entry | 457 |
 | ERROR | No DULAT entry found for clitic part | 280 |
 | ERROR | DULAT comment does not match candidates | 223 |
 | ERROR | Deverbal form matches both verb and noun entries in DULAT | 199 |
@@ -31,10 +31,12 @@
 | WARNING | Plural form missing split ending | 66 |
 | WARNING | y Lexeme parse did not match DULAT; matched by surface form | 63 |
 | ERROR | Each reconstructed letter must be prefixed by '(' | 52 |
+| WARNING | pˤn Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ with POS `n. f.` and gloss `at the feet of` | 34 |
 | ERROR | Non-G stem in DULAT requires stem marker | 33 |
 | ERROR | rbt Adjective POS gender mismatch for rb (I): expected adj. m., got adj. f. | 29 |
 | WARNING | mid Lexeme parse did not match DULAT; matched by surface form | 21 |
 | ERROR | bˤl In KTU 1.*, remove bʕl(I) 'labourer' and keep bʕl (II) /b-ʕ-l/ readings | 14 |
+| WARNING | kbd Compound preposition `l kbd` should use single readings: l(I) and kbd(I) with POS `n.` and gloss `within` | 14 |
 | ERROR | No DULAT entry found for lexeme/surface | 13 |
 | WARNING | Feminine plural noun in DULAT should be tagged with '/t=' | 12 |
 | WARNING | pamt Lexeme parse did not match DULAT; matched by surface form | 12 |
@@ -65,6 +67,10 @@
 | WARNING | trmm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | trmmn Lexeme parse did not match DULAT; matched by surface form | 2 |
 | ERROR | l Formula tbˤ w l yṯb ilm expects l(II) ('not') | 1 |
+| ERROR | thmt Duplicate unwrapped row payload (same id, surface, and col3-col6); first seen on line 21 | 1 |
+| ERROR | thmt Duplicate unwrapped row payload (same id, surface, and col3-col6); first seen on line 217 | 1 |
+| ERROR | thmt Duplicate unwrapped row payload (same id, surface, and col3-col6); first seen on line 266 | 1 |
+| ERROR | thmt Duplicate unwrapped row payload (same id, surface, and col3-col6); first seen on line 875 | 1 |
 | ERROR | uḫryt Adjective POS gender mismatch for ủḫry: expected adj. m., got adj. f. | 1 |
 | ERROR | ṣġrt Adjective POS gender mismatch for ṣġr (I): expected adj. m., got adj. f. | 1 |
 | WARNING | anna III-aleph noun/adjective should encode lexeme-final case vowel as '(u\|i\|a' and inflection as '/&u\|&i\|&a' | 1 |

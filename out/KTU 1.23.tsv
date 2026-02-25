@@ -137,10 +137,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147179	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
 147180	agn	agn/	ảgn	n. m. sg.	cauldron	
 147181	šbˤdm	šbˤd	šbʕ(ỉ)d	adv.	seven times	
-147182	dġṯt	dġṯ(t/t	dġṯt	n. f.	offering of perfumes	
-147182	dġṯt	dġṯ(t/t=	dġṯt	n. f.	offering of perfumes	
-147183	dġṯt	dġṯ(t/t	dġṯt	n. f.	offering of perfumes	
-147183	dġṯt	dġṯ(t/t=	dġṯt	n. f.	offering of perfumes	
+147182	dġṯt	dġṯ(t/t	dġṯt	n. f. sg.	offering of perfumes	
+147182	dġṯt	dġṯ(t/t=	dġṯt	n. f. pl.	offering of perfumes	
+147183	dġṯt	dġṯ(t/t	dġṯt	n. f. sg.	offering of perfumes	
+147183	dġṯt	dġṯ(t/t=	dġṯt	n. f. pl.	offering of perfumes	
 # KTU 1.23 16						
 147184	tlkm	hlk[m	/h-l-k/	vb G	to go	
 147185	rḥmy	rḥm/+y	rḥm	n. f.	womb	
@@ -172,7 +172,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147203	šmt	šm(t(II)/t	šmt (II)	n. f. sg.	reddish shade	
 # KTU 1.23 22						
 147204	ṯn	ṯn(I)/	ṯn (I)	num.	two	
-147204	ṯn	ṯn(II)/	ṯn (II)	num./adj. sg.	second	
+147204	ṯn	ṯn(II)/	ṯn (II)	nuf./adj. sg.	second	
 147204	ṯn	ṯn(III)/	ṯn (III)	n. m. sg.	crimson (cloth, wool, purple)	
 147205	šrm	šr(II)/m	šr (II)	n. m. pl.	musician	
 147206		?	?	?	?	
@@ -211,7 +211,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147227	b	b	b	prep.	in	
 147228	dbḥ	dbḥ/	dbḥ	n. m.	sacrifice	
 147228	dbḥ	dbḥ[	/d-b-ḥ/	vb G	to sacrifice	
-147229	nˤmt	nˤm(I)/t	nʕm (I)	adj. f.	handsome	
+147229	nˤmt	nˤm(I)/t	nʕm (I)	adj. f. sg.	handsome	
 147229	nˤmt	nˤm(t(II)/t	nʕmt (II)	n. f. sg.	delight	
 147229	nˤmt	nˤm(t(I)/t	nʕmt (I)	adj. f. sg.	graceful	
 # KTU 1.23 28						
@@ -391,11 +391,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147338	pḥmm	pḥm/	pḥm	n. m. pl.	ember	
 # KTU 1.23 42						
 147339	aṯtm	aṯt/m	ảṯt	n. f. du.	woman	
-147340	aṯt	aṯ(t/t	ảṯt	n. f.	woman	
-147340	aṯt	aṯ(t/t=	ảṯt	n. f.	woman	
+147340	aṯt	aṯ(t/t	ảṯt	n. f. sg.	woman	
+147340	aṯt	aṯ(t/t=	ảṯt	n. f. pl.	woman	
 147341	il	il(I)/	ỉl (I)	n. m.	god	
-147342	aṯt	aṯ(t/t	ảṯt	n. f.	woman	
-147342	aṯt	aṯ(t/t=	ảṯt	n. f.	woman	
+147342	aṯt	aṯ(t/t	ảṯt	n. f. sg.	woman	
+147342	aṯt	aṯ(t/t=	ảṯt	n. f. pl.	woman	
 147343	il	il(I)/	ỉl (I)	n. m.	god	
 147344	w	w	w	conj.	and	
 147345	ˤlmh	ˤlm(I)/+h	ʕlm (I)	n. m.	eternity	
@@ -483,12 +483,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147393	l	l(III)	l (III)	functor	certainly	
 147394	pḥmm	pḥm/	pḥm	n. m. pl.	ember	
 147395	aṯtm	aṯt/m	ảṯt	n. f. du.	woman	
-147396	aṯt	aṯ(t/t	ảṯt	n. f.	woman	
-147396	aṯt	aṯ(t/t=	ảṯt	n. f.	woman	
+147396	aṯt	aṯ(t/t	ảṯt	n. f. sg.	woman	
+147396	aṯt	aṯ(t/t=	ảṯt	n. f. pl.	woman	
 147397	il	il(I)/	ỉl (I)	n. m.	god	
 # KTU 1.23 49						
-147398	aṯt	aṯ(t/t	ảṯt	n. f.	woman	
-147398	aṯt	aṯ(t/t=	ảṯt	n. f.	woman	
+147398	aṯt	aṯ(t/t	ảṯt	n. f. sg.	woman	
+147398	aṯt	aṯ(t/t=	ảṯt	n. f. pl.	woman	
 147399	il	il(I)/	ỉl (I)	n. m.	god	
 147400	w	w	w	conj.	and	
 147401	ˤlmh	ˤlm(I)/+h	ʕlm (I)	n. m.	eternity	
@@ -548,8 +548,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147438	ˤdb	ˤdb[	/ʕ-d-b/	vb G	to leave > to put in	
 147439	l	l(I)	l (I)	prep.	to	
 147440	špš	špš/	špš	n. sg.	sun	
-147441	rbt	rb(I)/t	rb (I)	adj. f.	great	
-147441	rbt	rb(t/t	rb(b)t	num.	ten thousand	
+147441	rbt	rb(I)/t	rb (I)	adj. f. sg.	great	
+147441	rbt	rb(t/t	rb(b)t	num. sg.	ten thousand	
 147441	rbt	rb(t(I)/t	rbt (I)	n. f. sg.	Lady	
 147442	w	w	w	conj.	and	
 147443	lkbkbm	?	?	?	?	DULAT: NOT FOUND

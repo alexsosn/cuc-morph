@@ -141,13 +141,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142832	ġlm	ġlm/	ġlm	n. m. sg.	boy	
 142833	il	il(I)/	ỉl (I)	n. m.	god	
 # KTU 1.15 II:21						
-142834	aṯt	aṯ(t/t	ảṯt	n. f.	woman	
-142834	aṯt	aṯ(t/t=	ảṯt	n. f.	woman	
+142834	aṯt	aṯ(t/t	ảṯt	n. f. sg.	woman	
+142834	aṯt	aṯ(t/t=	ảṯt	n. f. pl.	woman	
 142835	tqḥ	lqḥ[	/l-q-ḥ/	vb G	to get hold of	
 142836	y	y	y	prep. functor	oh!	
 142837	krt	krt/	krt	PN	krt	
-142838	aṯt	aṯ(t/t	ảṯt	n. f.	woman	
-142838	aṯt	aṯ(t/t=	ảṯt	n. f.	woman	
+142838	aṯt	aṯ(t/t	ảṯt	n. f. sg.	woman	
+142838	aṯt	aṯ(t/t=	ảṯt	n. f. pl.	woman	
 # KTU 1.15 II:22						
 142839	tqḥ	lqḥ[	/l-q-ḥ/	vb G	to get hold of	
 142840	btk	bt(II)/+k	bt (II)	n. m.	house	
@@ -214,27 +214,27 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142882	lk	l(I)+k	l (I)	prep.	to	
 # KTU 1.15 III:7						
 142883	tld	yld[	/y-l-d/	vb G	to give birth (to)	
-142884	pġt	pġ(t/t	pġt	n. f.	girl	
+142884	pġt	pġ(t/t	pġt	n. f. sg.	girl	
 142885	tpxxt	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.15 III:8						
 142886	tld	yld[	/y-l-d/	vb G	to give birth (to)	
-142887	pġt	pġ(t/t	pġt	n. f.	girl	
+142887	pġt	pġ(t/t	pġt	n. f. sg.	girl	
 142888	txxxr	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.15 III:9						
 142889	tld	yld[	/y-l-d/	vb G	to give birth (to)	
-142890	pġt	pġ(t/t	pġt	n. f.	girl	
+142890	pġt	pġ(t/t	pġt	n. f. sg.	girl	
 142891	xxx	?	?	?	?	
 # KTU 1.15 III:10						
 142892	tld	yld[	/y-l-d/	vb G	to give birth (to)	
-142893	pġt	pġ(t/t	pġt	n. f.	girl	
+142893	pġt	pġ(t/t	pġt	n. f. sg.	girl	
 142894	xxx	?	?	?	?	
 # KTU 1.15 III:11						
 142895	tld	yld[	/y-l-d/	vb G	to give birth (to)	
-142896	pġt	pġ(t/t	pġt	n. f.	girl	
+142896	pġt	pġ(t/t	pġt	n. f. sg.	girl	
 142897	xxx	?	?	?	?	
 # KTU 1.15 III:12						
 142898	tld	yld[	/y-l-d/	vb G	to give birth (to)	
-142899	pġt	pġ(t/t	pġt	n. f.	girl	
+142899	pġt	pġ(t/t	pġt	n. f. sg.	girl	
 142900	xxx	?	?	?	?	
 # KTU 1.15 III:13						
 142901	mid	mi/	mỉ/ủd	n. m. sg.	abundance	
@@ -325,7 +325,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 III:29						
 142963	u	u	ủ	conj.	or	
 142964	ṯn	ṯn(I)/	ṯn (I)	num.	two	
-142964	ṯn	ṯn(II)/	ṯn (II)	num./adj. sg.	second	
+142964	ṯn	ṯn(II)/	ṯn (II)	nuf./adj. sg.	second	
 142964	ṯn	ṯn(III)/	ṯn (III)	n. m. sg.	crimson (cloth, wool, purple)	
 142965	ndrm	ndr/+m(I)	ndr	n. m.	vow	
 142966	xxxxx	?	?	?	?	
@@ -357,8 +357,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 IV:5						
 142982	ptḥ	ptḥ[	/p-t-ḥ/	vb G	to open	
 142982	ptḥ	ptḥ/	ptḥ	n. m. sg.	entrance	
-142983	rḥbt	rḥb(t/t	rḥbt	n. f.	amphora	
-142983	rḥbt	rḥb(t/t=	rḥbt	n. f.	amphora	
+142983	rḥbt	rḥb(t/t	rḥbt	n. f. sg.	amphora	
+142983	rḥbt	rḥb(t/t=	rḥbt	n. f. pl.	amphora	
 142984	yn	yn/	yn	n. m. sg.	wine	
 # KTU 1.15 IV:6						
 142985	ṣḥ	ṣḥ[	/ṣ-ḥ/	vb G	to exclaim	
@@ -370,8 +370,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 IV:8						
 142990	ṯr	ṯr(I)/	ṯr (I)	n. m.	bull	
 142991	ḫbr	ḫbr/	ḫbr	TN	Daughter-of-TN	
-142992	rbt	rb(I)/t	rb (I)	adj. f.	great	
-142992	rbt	rb(t/t	rb(b)t	num.	ten thousand	
+142992	rbt	rb(I)/t	rb (I)	adj. f. sg.	great	
+142992	rbt	rb(t/t	rb(b)t	num. sg.	ten thousand	
 142992	rbt	rb(t(I)/t	rbt (I)	n. f. sg.	Lady	
 # KTU 1.15 IV:9						
 142993	ḫbr	ḫbr/	ḫbr	TN	Daughter-of-TN	
@@ -406,8 +406,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143012	mrih	mru(I)/	mrủ (I)	adj. m. or n. m.	fattened	
 # KTU 1.15 IV:16						
 143013	tptḥ	!t!ptḥ[	/p-t-ḥ/	vb G	to open	
-143014	rḥbt	rḥb(t/t	rḥbt	n. f.	amphora	
-143014	rḥbt	rḥb(t/t=	rḥbt	n. f.	amphora	
+143014	rḥbt	rḥb(t/t	rḥbt	n. f. sg.	amphora	
+143014	rḥbt	rḥb(t/t=	rḥbt	n. f. pl.	amphora	
 143015	yn	yn/	yn	n. m. sg.	wine	
 # KTU 1.15 IV:17						
 143016	ˤlh	ˤl(I)+h	ʕl (I)	prep.	upon	
@@ -420,7 +420,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 IV:19						
 143022	ṯr	ṯr(I)/	ṯr (I)	n. m.	bull	
 143023	ḫbr	ḫbr/	ḫbr	TN	Daughter-of-TN	
-143024	rbt	rb(I)/t	rb (I)	adj. f.	great	
+143024	rbt	rb(I)/t	rb (I)	adj. f. sg.	great	
 # KTU 1.15 IV:20						
 143025	ḫbr	ḫbr/	ḫbr	TN	Daughter-of-TN	
 143026	ṯrrt	ṯrr(t/t	ṯrrt	adj. f. sg.	powerful	
@@ -432,7 +432,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 IV:22						
 143030	lm	l(I)	l (I)	prep.	to	
 143031	mṯb	mṯb/	mṯb	n. m. sg.	residence	
-143032	ˤwrt	ˤwr/t	ʕwr	n. f.	blind man	
+143032	ˤwrt	ˤwr/t	ʕwr	n. f. sg.	blind man	
 # KTU 1.15 IV:23						
 143033	w	w	w	conj.	and	
 143034	lḫm	?	?	?	?	DULAT: NOT FOUND
@@ -479,8 +479,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143061	mrih	mru(I)/	mrủ (I)	adj. m. or n. m.	fattened	
 # KTU 1.15 V:2						
 143062	tptḥ	!t!ptḥ[	/p-t-ḥ/	vb G	to open	
-143063	rḥbt	rḥb(t/t	rḥbt	n. f.	amphora	
-143063	rḥbt	rḥb(t/t=	rḥbt	n. f.	amphora	
+143063	rḥbt	rḥb(t/t	rḥbt	n. f. sg.	amphora	
+143063	rḥbt	rḥb(t/t=	rḥbt	n. f. pl.	amphora	
 143064	yn	yn/	yn	n. m. sg.	wine	
 # KTU 1.15 V:3						
 143065	ˤlh	ˤl(I)+h	ʕl (I)	prep.	upon	
@@ -597,8 +597,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.15 V:25						
 143138	xxxx	?	?	?	?	
 143139	ḫbr	ḫbr/	ḫbr	TN	Daughter-of-TN	
-143140	rbt	rb(I)/t	rb (I)	adj. f.	great	
-143140	rbt	rb(t/t	rb(b)t	num.	ten thousand	
+143140	rbt	rb(I)/t	rb (I)	adj. f. sg.	great	
+143140	rbt	rb(t/t	rb(b)t	num. sg.	ten thousand	
 143140	rbt	rb(t(I)/t	rbt (I)	n. f. sg.	Lady	
 # KTU 1.15 V:26						
 143141	ḫbr	ḫbr/	ḫbr	TN	Daughter-of-TN	
