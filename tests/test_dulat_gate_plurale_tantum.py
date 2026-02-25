@@ -46,6 +46,7 @@ class DulatGatePluraleTantumTest(unittest.TestCase):
                     (6, "ỉštnm", "", "n.", "m."),
                     (7, "ủm", "", "n.", "f."),
                     (8, "ỉl", "I", "n.", "m."),
+                    (9, "tḥm", "", "n.", "m."),
                 ],
             )
             cur.executemany(
@@ -67,6 +68,7 @@ class DulatGatePluraleTantumTest(unittest.TestCase):
                     (8, "ỉl", "sg."),
                     (8, "ỉl", "du., cstr."),
                     (8, "ỉly", "du., cstr."),
+                    (9, "tḥmk", "sg."),
                 ],
             )
             conn.commit()
@@ -105,6 +107,10 @@ class DulatGatePluraleTantumTest(unittest.TestCase):
         gate = self._build_gate()
         self.assertEqual(gate.surface_morphologies("ỉl (I)", "il"), {"sg.", "sg., cstr."})
         self.assertEqual(gate.surface_morphologies("ỉl (I)", "ily"), {"pl., cstr."})
+
+    def test_applies_thm_tahmak_suffix_morphology_override(self) -> None:
+        gate = self._build_gate()
+        self.assertTrue(gate.has_suffix_token("tḥm", surface="tḥmk"))
 
 
 if __name__ == "__main__":

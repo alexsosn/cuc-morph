@@ -22,6 +22,18 @@
   - preserves `!preformative!` for contracted prefixed realizations (for example `twtḥ` -> `!t!w]t]ḥy[`).
 - Added regression test coverage for the contracted prefixed case in `tests/test_refine_results_mentions.py`.
 - Re-ran full all-tablet bootstrap+refine+instruction+step pipeline after the fix (`278` targets), regenerating `out/*.tsv` and lint reports from rules only.
+- Corrected DULAT form-morph override for `tḥm` suffixed forms:
+  - added `("tḥm", "", "tḥmk", "sg.") -> "suff."` in `pipeline/config/dulat_form_morph_overrides.py`,
+  - propagated to parser/linter loaders (including `scripts/refine_results_mentions.py`) so `tḥmk` is parsed as `tḥm/+k` corpus-wide.
+- Added reproducible unresolved-surface override for `ḫršnr` in `data/generic_parsing_overrides.tsv`:
+  - now normalized to `ḫršn&r/ | ḫršn (I) | n. m. | (divine) mountain` with UDB note.
+- Added regression coverage:
+  - `tests/test_linter_dulat_form_morph_overrides.py`,
+  - `tests/test_dulat_gate_plurale_tantum.py`,
+  - `tests/test_refine_results_mentions.py`,
+  - `tests/test_refinement_steps.py` (`GenericParsingOverrideFixerTest` default override assertion).
+- Re-ran targeted pipeline regeneration for affected tablets:
+  - `KTU 1.1.tsv`, `KTU 1.3.tsv`, `KTU 1.4.tsv`, `KTU 2.36.tsv`, `KTU 2.77.tsv`, `KTU 2.83.tsv`.
 
 - Replaced deletion-style variant pruning with linguistics-based reconstructability fixes driven by DULAT form evidence and Tagging conventions:
   - `FeminineTSingularSplitFixer` now handles feminine surface forms of masculine lemmas (for example `pḥl/` + `pḥlt` -> `pḥl/t`),

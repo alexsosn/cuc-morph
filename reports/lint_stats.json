@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-02-25T09:29:47.155273+00:00",
+  "generated_at_utc": "2026-02-25T09:37:29.926030+00:00",
   "files_checked": 278,
-  "total_issues": 10615,
+  "total_issues": 10607,
   "fallback_parsed": 235,
   "by_severity": {
-    "ERROR": 5831,
+    "ERROR": 5823,
     "WARNING": 430,
     "INFO": 1617
   },
@@ -12,7 +12,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3573
+      "count": 3565
     },
     {
       "severity": "INFO",

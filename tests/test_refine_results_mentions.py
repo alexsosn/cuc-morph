@@ -191,6 +191,27 @@ class RefineResultsMentionsTest(unittest.TestCase):
             self.assertEqual([entry.entry_id for entry in forms_map["tlsmn"]], [2520])
             self.assertIn(("tlsmn", 2520), forms_morph)
 
+    def test_load_entries_applies_form_morph_override(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            self._init_dulat_schema(db_path)
+            conn = sqlite3.connect(str(db_path))
+            cur = conn.cursor()
+            cur.execute(
+                "INSERT INTO entries(entry_id, lemma, homonym, pos, wiki_transcription) "
+                "VALUES (?, ?, ?, ?, ?)",
+                (4268, "tḥm", "", "n.", ""),
+            )
+            cur.execute(
+                "INSERT INTO forms(text, entry_id, morphology) VALUES (?, ?, ?)",
+                ("tḥmk", 4268, "sg."),
+            )
+            conn.commit()
+            conn.close()
+
+            _entries, _forms_map, _lemma_map, _suffix_map, forms_morph = load_entries(db_path)
+            self.assertEqual(forms_morph[("tḥmk", 4268)], {"suff."})
+
 
 if __name__ == "__main__":
     unittest.main()

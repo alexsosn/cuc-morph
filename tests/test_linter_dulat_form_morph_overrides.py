@@ -85,6 +85,40 @@ class LinterDulatFormMorphOverridesTest(unittest.TestCase):
             tlsmn_rows = forms_map[normalize_surface("tlsmn")]
             self.assertEqual([row.entry_id for row in tlsmn_rows], [2520])
 
+    def test_overrides_thm_tahmak_suffix_morphology(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            conn = sqlite3.connect(str(db_path))
+            cur = conn.cursor()
+            cur.execute(
+                """
+                CREATE TABLE entries(
+                    entry_id INTEGER PRIMARY KEY,
+                    lemma TEXT,
+                    homonym TEXT,
+                    pos TEXT,
+                    data TEXT
+                )
+                """
+            )
+            cur.execute("CREATE TABLE translations(entry_id INTEGER, text TEXT)")
+            cur.execute("CREATE TABLE forms(text TEXT, morphology TEXT, entry_id INTEGER)")
+            cur.execute(
+                "INSERT INTO entries(entry_id, lemma, homonym, pos, data) "
+                "VALUES (4268, 'tḥm', '', 'n.', '{}')"
+            )
+            cur.execute("INSERT INTO translations(entry_id, text) VALUES (4268, 'message')")
+            cur.execute(
+                "INSERT INTO forms(text, morphology, entry_id) VALUES (?, ?, ?)",
+                ("tḥmk", "sg.", 4268),
+            )
+            conn.commit()
+            conn.close()
+
+            forms_map, _entry_meta, _lemma_map, _entry_stems, _entry_gender = load_dulat(db_path)
+            tḥmk_rows = forms_map[normalize_surface("tḥmk")]
+            self.assertEqual({row.morph for row in tḥmk_rows}, {"suff."})
+
 
 if __name__ == "__main__":
     unittest.main()

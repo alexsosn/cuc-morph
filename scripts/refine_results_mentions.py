@@ -20,6 +20,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Sequence, Set, Tuple
 
+from pipeline.config.dulat_form_morph_overrides import override_dulat_form_morphology
 from pipeline.config.dulat_form_text_overrides import expand_dulat_form_texts
 
 SEPARATOR_RE = re.compile(
@@ -405,6 +406,12 @@ def load_entries(
         e = entries_by_id.get(int(entry_id))
         if not e:
             continue
+        morph_value = override_dulat_form_morphology(
+            lemma=e.lemma,
+            homonym=e.hom,
+            form_text=txt or "",
+            morphology=(morph or "").strip(),
+        )
         for form_variant in expand_dulat_form_texts(
             lemma=e.lemma,
             homonym=e.hom,
@@ -413,7 +420,7 @@ def load_entries(
             k = normalize_lookup(form_variant)
             if not k:
                 continue
-            forms_morph.setdefault((k, int(entry_id)), set()).add((morph or "").strip())
+            forms_morph.setdefault((k, int(entry_id)), set()).add(morph_value)
 
     explicit_form_keys = set(forms_map.keys())
 

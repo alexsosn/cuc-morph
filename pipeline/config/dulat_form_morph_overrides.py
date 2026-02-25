@@ -27,6 +27,9 @@ _FORM_MORPH_OVERRIDES: dict[tuple[str, str, str, str], str] = {
     ("il", "I", "il", "du., cstr."): "sg., cstr.",
     ("il", "I", "ily", "du., cstr."): "pl., cstr.",
     ("il", "I", "-y", "du., cstr."): "pl., cstr.",
+    # tḥm: suffixed form tḥmk is tagged as sg. in parsed table data.
+    # DULAT forms: sg. tḥm; suff. tḥmk.
+    ("tḥm", "", "tḥmk", "sg."): "suff.",
 }
 
 

@@ -1473,6 +1473,23 @@ class GenericParsingOverrideFixerTest(unittest.TestCase):
                 "1\tlp\tl+p(I)\tl (I), p (I)\tprep., conj. functor\tto, and\tmanual resolution",
             )
 
+    def test_project_default_overrides_restore_hrshnr_payload(self) -> None:
+        fixer = GenericParsingOverrideFixer()
+        row = TabletRow(
+            line_id="135554",
+            surface="ḫršnr",
+            analysis="?",
+            dulat="?",
+            pos="?",
+            gloss="?",
+            comment="DULAT: NOT FOUND",
+        )
+        result = fixer.refine_row(row)
+        self.assertEqual(result.analysis, "ḫršn&r/")
+        self.assertEqual(result.dulat, "ḫršn (I)")
+        self.assertEqual(result.pos, "n. m.")
+        self.assertEqual(result.gloss, "(divine) mountain")
+
 
 class TsvSchemaFormatterTest(unittest.TestCase):
     def setUp(self) -> None:
