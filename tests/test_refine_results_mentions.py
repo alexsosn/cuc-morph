@@ -81,6 +81,28 @@ class RefineResultsMentionsTest(unittest.TestCase):
             "!t!w]t]ḥy[",
         )
 
+    def test_analysis_encodes_contracted_n_weak_iii_aleph_prefixed_forms(self) -> None:
+        entry = Entry(
+            entry_id=5000,
+            lemma="/n-š-ʔ/",
+            hom="",
+            pos="vb",
+            gloss="",
+            wiki_tr="",
+        )
+        self.assertEqual(
+            analysis_for_entry("yšu", entry, morph_values=["G, prefc."]),
+            "!y!(nš(ʔ[&u",
+        )
+        self.assertEqual(
+            analysis_for_entry("tšan", entry, morph_values=["G, prefc."]),
+            "!t!(nš(ʔ[&an",
+        )
+        self.assertEqual(
+            analysis_for_entry("ytšu", entry, morph_values=["Gt, prefc."]),
+            "!y!(n]t]š(ʔ[&u",
+        )
+
     def test_load_entries_falls_back_to_lemma_when_forms_missing(self) -> None:
         with tempfile.TemporaryDirectory() as tmp_dir:
             db_path = Path(tmp_dir) / "dulat.sqlite"

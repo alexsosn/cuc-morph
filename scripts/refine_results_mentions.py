@@ -67,6 +67,7 @@ POS_LABEL_NORMALIZATION = {
 }
 
 LETTER_RE = re.compile(r"[A-Za-zʔʕʿˤḫḥṭṣṯẓġḏšảỉủ]")
+_PREFORMATIVE_LETTERS = {"y", "t", "a", "n", "i", "u"}
 
 
 @dataclass(frozen=True)
@@ -265,6 +266,58 @@ def prefixed_verb_tail(surface_plain: str, stem_plain: str) -> Optional[str]:
     return None
 
 
+def is_n_weak_iii_aleph_root(lemma: str) -> bool:
+    """Return True for lexical roots of the shape /n-...-ʔ/."""
+    lm = (lemma or "").strip()
+    if not (lm.startswith("/") and lm.endswith("/")):
+        return False
+    parts = [part for part in lm[1:-1].split("-") if part]
+    return len(parts) == 3 and parts[0] == "n" and parts[2] == "ʔ"
+
+
+def has_prefix_morphology(morph_values: Sequence[str]) -> bool:
+    merged = " | ".join(morph_values or []).lower()
+    return "prefc." in merged
+
+
+def build_prefixed_n_weak_iii_aleph_analysis(
+    surface_plain: str,
+    stem: str,
+    hom: str,
+    stem_marker: str,
+) -> Optional[str]:
+    """Encode contracted prefix forms for /n-...-ʔ/ roots.
+
+    Example:
+    - yšu -> !y!(nš(ʔ[&u
+    - tšan -> !t!(nš(ʔ[&an
+    """
+    if not surface_plain or surface_plain[0] not in _PREFORMATIVE_LETTERS:
+        return None
+    body = surface_plain[1:]
+    if not body:
+        return None
+    m = re.search(r"[aiu]", body)
+    if not m:
+        return None
+
+    inflection = body[m.start() :]
+    normalized_stem = stem
+    if normalized_stem.startswith("n"):
+        normalized_stem = "(n" + normalized_stem[1:]
+    elif not normalized_stem.startswith("(n"):
+        normalized_stem = "(n" + normalized_stem
+
+    if normalized_stem.endswith("ʔ"):
+        normalized_stem = normalized_stem[:-1] + "(ʔ"
+    else:
+        aleph_idx = normalized_stem.rfind("ʔ")
+        if aleph_idx >= 0 and (aleph_idx == 0 or normalized_stem[aleph_idx - 1] != "("):
+            normalized_stem = normalized_stem[:aleph_idx] + "(ʔ" + normalized_stem[aleph_idx + 1 :]
+
+    return f"!{surface_plain[0]}!{stem_marker}{normalized_stem}{hom}[&{inflection}"
+
+
 def analysis_for_entry(surface: str, e: Entry, morph_values: Optional[Sequence[str]] = None) -> str:
     s = normalize_analysis(surface)
     hom = f"({e.hom})" if e.hom else ""
@@ -278,6 +331,15 @@ def analysis_for_entry(surface: str, e: Entry, morph_values: Optional[Sequence[s
             stem_marker = ""
         stem_plain = extract_letters(stem)
         surface_plain = extract_letters(s)
+        if is_n_weak_iii_aleph_root(e.lemma) and has_prefix_morphology(morph_values or []):
+            contracted_analysis = build_prefixed_n_weak_iii_aleph_analysis(
+                surface_plain=surface_plain,
+                stem=stem,
+                hom=hom,
+                stem_marker=stem_marker,
+            )
+            if contracted_analysis is not None:
+                return contracted_analysis
         prefix_tail = prefixed_verb_tail(surface_plain=surface_plain, stem_plain=stem_plain)
         if prefix_tail is not None:
             return f"!{surface_plain[0]}!{stem_marker}{stem}{hom}[{prefix_tail}"

@@ -1,14 +1,14 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `10598`
+- Total issues: `10523`
 - Fallback-parsed issue lines: `235`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 5814 |
+| ERROR | 5739 |
 | WARNING | 430 |
 | INFO | 1617 |
 
@@ -16,13 +16,13 @@
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3556 |
+| ERROR | Analysis does not reconstruct to surface | 3493 |
 | INFO | Surface not found in UDB concordance | 1617 |
 | ERROR | POS token not allowed for declared DULAT entry | 439 |
 | ERROR | No DULAT entry found for clitic part | 337 |
-| ERROR | ʔ must be preceded by '(' in column 3 | 313 |
 | ERROR | Non-G stem in DULAT requires stem marker | 298 |
 | ERROR | DULAT comment does not match candidates | 257 |
+| ERROR | ʔ must be preceded by '(' in column 3 | 250 |
 | ERROR | Deverbal form matches both verb and noun entries in DULAT | 184 |
 | WARNING | Suffix form without '+' | 163 |
 | ERROR | Multiple DULAT candidates for surface | 123 |
@@ -31,6 +31,7 @@
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 73 |
 | WARNING | y Lexeme parse did not match DULAT; matched by surface form | 72 |
 | WARNING | Plural form missing split ending | 71 |
+| ERROR | Each reconstructed letter must be prefixed by '(' | 51 |
 | ERROR | rbt Adjective POS gender mismatch for rb (I): expected adj. m., got adj. f. | 33 |
 | WARNING | mid Lexeme parse did not match DULAT; matched by surface form | 21 |
 | WARNING | Feminine plural noun in DULAT should be tagged with '/t=' | 12 |

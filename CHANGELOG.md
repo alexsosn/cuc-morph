@@ -2,6 +2,13 @@
 
 ## 2026-02-25
 
+- Fixed contracted `/n-...-ʔ/` prefix-conjugation verb encoding in parser generation:
+  - `scripts/refine_results_mentions.py::analysis_for_entry` now uses DULAT form morphology (`prefc.`) + root shape to encode contracted forms as reconstructable prefix analyses (for example `yšu` -> `!y!(nš(ʔ[&u`, `tšun` -> `!t!(nš(ʔ[&un`, `ytšu` -> `!y!(n]t]š(ʔ[&u`).
+  - prevents fallback reductions like `nšʔ[` for these prefixed forms.
+- Added regression coverage in `tests/test_refine_results_mentions.py` for `yšu`, `tšan`, and `ytšu`.
+- Re-ran targeted tablet regeneration (source->bootstrap->refine->instruction->steps) for all files containing `/n-...-ʔ/` prefixed verb forms:
+  - `KTU 1.1.tsv`, `KTU 1.103.tsv`, `KTU 1.119.tsv`, `KTU 1.122.tsv`, `KTU 1.14.tsv`, `KTU 1.15.tsv`, `KTU 1.16.tsv`, `KTU 1.167.tsv`, `KTU 1.17.tsv`, `KTU 1.18.tsv`, `KTU 1.19.tsv`, `KTU 1.2.tsv`, `KTU 1.23.tsv`, `KTU 1.3.tsv`, `KTU 1.4.tsv`, `KTU 1.40.tsv`, `KTU 1.41.tsv`, `KTU 1.5.tsv`, `KTU 1.6.tsv`, `KTU 1.92.tsv`, `KTU 2.31.tsv`, `KTU 2.82.tsv`, `KTU 3.19.tsv`.
+
 - Fixed global reverse-mention disambiguation drift for tablets using compact section separators:
   - updated `scripts/refine_results_mentions.py::parse_separator_ref` to support both `KTU x.y COL:line` and `KTU x.y line` separator formats,
   - restored DULAT reverse-mention scoring for no-column tablets (for example `# ... KTU 1.101 5` -> `CAT 1.101:5`),
