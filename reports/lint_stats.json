@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-25T13:06:03.160827+00:00",
+  "generated_at_utc": "2026-02-25T13:11:35.840771+00:00",
   "files_checked": 278,
-  "total_issues": 10083,
-  "fallback_parsed": 234,
+  "total_issues": 10080,
+  "fallback_parsed": 247,
   "by_severity": {
-    "ERROR": 5246,
-    "WARNING": 383,
+    "ERROR": 5230,
+    "WARNING": 396,
     "INFO": 1624
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3291
+      "count": 3275
     },
     {
       "severity": "INFO",
@@ -141,6 +141,11 @@
     },
     {
       "severity": "WARNING",
+      "problem_type": "ypˤ Lexeme parse did not match DULAT; matched by surface form",
+      "count": 6
+    },
+    {
+      "severity": "WARNING",
       "problem_type": "yḥ Lexeme parse did not match DULAT; matched by surface form",
       "count": 5
     },
@@ -167,6 +172,11 @@
     {
       "severity": "WARNING",
       "problem_type": "mud Lexeme parse did not match DULAT; matched by surface form",
+      "count": 4
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "yld Lexeme parse did not match DULAT; matched by surface form",
       "count": 4
     },
     {
@@ -222,6 +232,11 @@
     {
       "severity": "WARNING",
       "problem_type": "ksih Lexeme parse did not match DULAT; matched by surface form",
+      "count": 2
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ynpˤ Lexeme parse did not match DULAT; matched by surface form",
       "count": 2
     },
     {
@@ -297,6 +312,11 @@
     {
       "severity": "WARNING",
       "problem_type": "tḥwy Lexeme parse did not match DULAT; matched by surface form",
+      "count": 1
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "ypˤt Lexeme parse did not match DULAT; matched by surface form",
       "count": 1
     },
     {

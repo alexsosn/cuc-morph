@@ -101,6 +101,16 @@ class SurfaceReconstructabilityFixerTest(unittest.TestCase):
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "ṯa(t/t")
 
+    def test_removes_spurious_non_prefixed_stem_tail(self) -> None:
+        row = TabletRow("12", "šqrb", "]š]qrb[b", "/q-r-b/", "vb Š", "to approach", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "]š]qrb[")
+
+    def test_keeps_prefixed_forms_unchanged_for_tail_rule(self) -> None:
+        row = TabletRow("13", "yšlḥm", "!y!]š]lḥm(I)[", "/l-ḥ-m/", "vb Š", "to fight", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!y!]š]lḥm(I)[")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -128,6 +128,20 @@ class RefineResultsMentionsTest(unittest.TestCase):
             "!y!]š]lḥm(I)[",
         )
 
+    def test_analysis_keeps_non_prefixed_sh_stem_without_spurious_tail(self) -> None:
+        entry = Entry(
+            entry_id=4003,
+            lemma="/q-r-b/",
+            hom="",
+            pos="vb",
+            gloss="",
+            wiki_tr="",
+        )
+        self.assertEqual(
+            analysis_for_entry("šqrb", entry, morph_values=["Š, prefc."]),
+            "]š]qrb[",
+        )
+
     def test_analysis_encodes_contracted_n_weak_iii_aleph_prefixed_forms(self) -> None:
         entry = Entry(
             entry_id=5000,

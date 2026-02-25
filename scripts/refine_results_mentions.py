@@ -489,7 +489,12 @@ def analysis_for_entry(
             # Redirect target can be a weak-initial y-root while surface keeps w.
             return f"{stem_marker}(y&{surface_plain}{hom}["
         tail = ""
-        if len(surface_plain) > len(stem_plain):
+        marker_plus_stem = f"{stem_marker_plain}{stem_plain}"
+        if marker_plus_stem and surface_plain.startswith(marker_plus_stem):
+            tail = surface_plain[len(marker_plus_stem) :]
+        elif stem_plain and surface_plain.startswith(stem_plain):
+            tail = surface_plain[len(stem_plain) :]
+        elif len(surface_plain) > len(stem_plain):
             tail = surface_plain[len(stem_plain) :]
         return f"{stem_marker}{stem}{hom}[{tail}"
 

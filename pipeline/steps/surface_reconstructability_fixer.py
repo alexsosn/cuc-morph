@@ -7,6 +7,8 @@ import re
 from pipeline.steps.analysis_utils import normalize_surface
 from pipeline.steps.base import RefinementStep, TabletRow
 
+_ANALYSIS_LETTER_RE = re.compile(r"[A-Za-zˤʔḫṣṯẓġḏḥṭšʕʿảỉủ]")
+
 
 def _split_semicolon(value: str) -> list[str]:
     return [item.strip() for item in (value or "").split(";")]
@@ -14,6 +16,41 @@ def _split_semicolon(value: str) -> list[str]:
 
 def _split_comma(value: str) -> list[str]:
     return [item.strip() for item in (value or "").split(",")]
+
+
+def _analysis_letters(text: str) -> str:
+    return "".join(ch for ch in (text or "") if _ANALYSIS_LETTER_RE.match(ch))
+
+
+def _remove_spurious_tail_when_head_matches_surface(
+    surface: str,
+    analysis_variant: str,
+) -> str:
+    value = (analysis_variant or "").strip()
+    if not value or "[" not in value:
+        return analysis_variant
+    if value.startswith("!"):
+        return analysis_variant
+
+    head, tail = value.split("[", 1)
+    tail_text = (tail or "").strip()
+    if not tail_text:
+        return analysis_variant
+    if any(ch in tail_text for ch in "+~:&="):
+        return analysis_variant
+
+    tail_letters = _analysis_letters(tail_text)
+    if not tail_letters:
+        return analysis_variant
+    # Only trim pure-letter tails (for this recurrent `]š]qrb[b` class).
+    if tail_letters != tail_text:
+        return analysis_variant
+
+    surface_letters = _analysis_letters(normalize_surface(surface))
+    head_letters = _analysis_letters(head)
+    if head_letters and head_letters == surface_letters:
+        return f"{head}["
+    return analysis_variant
 
 
 class SurfaceReconstructabilityFixer(RefinementStep):
@@ -97,6 +134,10 @@ class SurfaceReconstructabilityFixer(RefinementStep):
         analysis_variant: str,
         dulat_head: str,
     ) -> str:
+        analysis_variant = _remove_spurious_tail_when_head_matches_surface(
+            surface=surface,
+            analysis_variant=analysis_variant,
+        )
         surface_norm = normalize_surface(surface).lower()
         dulat = (dulat_head or "").strip()
 

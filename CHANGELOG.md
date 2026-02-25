@@ -2,6 +2,17 @@
 
 ## 2026-02-25
 
+- Fixed Š-stem non-prefixed verb tail reconstruction bug that produced spurious duplicated final letters (e.g. `]š]qrb[b`):
+  - `scripts/refine_results_mentions.py::analysis_for_entry` now computes non-prefixed verbal tails against `stem-marker + stem` when present, not just bare stem length.
+  - This prevents extra-tail output for surface-aligned forms like `šqrb` (`]š]qrb[`).
+- Added a global cleanup rule in `SurfaceReconstructabilityFixer`:
+  - removes pure-letter tails after `[` when the analysis head already reconstructs the full surface (non-prefixed forms),
+  - fixes existing corpus rows without manual `/out` edits.
+- Added regression coverage:
+  - `tests/test_refine_results_mentions.py`,
+  - `tests/test_surface_reconstructability_fixer.py`.
+- Re-ran full pipeline across all tablets and regenerated reports to apply the fix globally.
+
 - Added global N-stem assimilated nun enforcement for prefixed verb forms:
   - new step `VerbNStemAssimilationFixer` (`pipeline/steps/verb_n_stem_assimilation.py`) inserts `](n]` after verbal preformatives for `vb N` rows where assimilated `n` is not visible.
   - example normalization: `!t!ṯbr[` -> `!t!](n]ṯbr[`.
