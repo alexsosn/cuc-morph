@@ -20,6 +20,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 3.5 5						
 161036	šd	šd(I)/	šd (I)	n. m.	open field	
 161036	šd	šd(II)/	šd (II)	n. m.	a strip	
+161036	šd	šdy[	/š-d-y/	vb G	to pour	
 161037	kḏġdl	kḏġdl/	kḏġdl	PN	kḏġdl	
 # KTU 3.5 6						
 161038	uškn	uškn/	ủškn	TN	ủškn	
@@ -30,17 +31,22 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 3.5 7						
 161042	bmt	bmt/	bmt	n. f.	back	
 161043	yd	yd(I)/	yd (I)	n. f.	hand	
+161043	yd	bd(IV)	bd (IV)	prep.	into the hands of	
 161043	yd	yd(II)/	yd (II)	n. m.	love	
 161044	gth	g(t/t	gt	n. f./element of TNN	gittu	
 # KTU 3.5 8						
 161045	yd	yd(I)/	yd (I)	n. f.	hand	
+161045	yd	bd(IV)	bd (IV)	prep.	into the hands of	
 161045	yd	yd(II)/	yd (II)	n. m.	love	
 161046	zth	zt/+h	zt	n. m.	olive	
 161047	yd	yd(I)/	yd (I)	n. f.	hand	
+161047	yd	bd(IV)	bd (IV)	prep.	into the hands of	
 161047	yd	yd(II)/	yd (II)	n. m.	love	
 # KTU 3.5 9						
 161048	krmh	krm/+h	krm	n. m.	vineyard	
+161048	krmh	kr/+h	kr	n. m.	ram	
 161049	yd	yd(I)/	yd (I)	n. f.	hand	
+161049	yd	bd(IV)	bd (IV)	prep.	into the hands of	
 161049	yd	yd(II)/	yd (II)	n. m.	love	
 # KTU 3.5 10						
 161050	klklh	klkl/h	klkl	n. m.	anybody	
@@ -74,6 +80,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161066	bnšm	bnš/m	bnš	n. m.	man	
 161067	l	l(I)	l (I)	prep.	to	
 161067	l	l(III)	l (III)	functor	certainly	
+161068	y	+y, [y	-y (I)	prep. functor	my	
+161068	y	~y	-y (II)	prep. functor	indeed	
 161068	y	y	y	prep. functor	oh!	
 # KTU 3.5 17						
 161069	l	l(I)	l (I)	prep.	to	

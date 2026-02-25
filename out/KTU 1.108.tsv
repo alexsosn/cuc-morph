@@ -2,12 +2,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.108 1						
 153210	hln	hln	hln	deictic adv. functor	look!	
 153211	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
+153211	yšt	šty[	/š-t-y/	vb G	to drink	
 153212	rpu	rpu/	rpủ	n. m.	healer	
 153213	mlk	mlk[	/m-l-k/	vb G	to reign	
 153213	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
 153214	ˤlm	ˤl(I)	ʕl (I)	prep.	upon	
 153215	w	w	w	conj.	and	
 153216	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
+153216	yšt	šty[	/š-t-y/	vb G	to drink	
 # KTU 1.108 2						
 153217	ilgṯr	?	?	?	?	DULAT: NOT FOUND
 153218	w	w	w	conj.	and	
@@ -34,6 +36,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153236	b	b	b	prep.	in	
 153237	tp	tp(I)/	tp (I)	n. m.	drum	
 153237	tp	tp(II)/	tp (II)	n. m.	aspect	
+153237	tp	npy[	/n-p-y/	vb N/Gpass	to be driven away	
 153238	w	w	w	conj.	and	
 153239	mṣltm	mṣl(t(I)/tm	mṣlt (I)	n. f.	cymbal	
 153240	bm	b	b	prep.	in	
@@ -49,6 +52,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.108 6						
 153248	w	w	w	conj.	and	
 153249	tšt	!t!št[	/š-t/	vb G	to place	
+153249	tšt	šty[	/š-t-y/	vb G	to drink	
 153250	ˤnt	ˤn(I)/t=	ʕn (I)	n. f.	eye	
 153250	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 153250	ˤnt	ˤnt(II)	ʕnt (II)	adv.	now	
@@ -80,6 +84,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153268	šmm	šm(m(I)/m	šmm (I)	n. m. pl. tant.	heavens	
 153269	rmm	rm(I)/	rm (I)	adj. m.	high	
 153269	rmm	rm[	/r-m/	vb L	to go up	
+153270	aklt	!a!ʔkl[	/ʔ-k-l/	vb G	to eat	
 153270	aklt	akl(t(II)/t	ảklt (II)	n. f.	waste land	
 153270	aklt	akl(t(I)/t	ảklt (I)	adj. f. or n. f.	devouring	
 153271	ˤglxl	?	?	?	?	DULAT: NOT FOUND
@@ -90,6 +95,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153275	špr	špr/	špr	n. m.	horn	
 153276	w	w	w	conj.	and	
 153277	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
+153277	yšt	šty[	/š-t-y/	vb G	to drink	
 153278	il	il(I)/	ỉl (I)	n. m.	god	
 # KTU 1.108 11						
 153279	xxxxxxxn	?	?	?	?	DULAT: NOT FOUND
@@ -101,6 +107,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153284	xxxxxxxxxd	?	?	?	?	DULAT: NOT FOUND
 153285	il	il(I)/	ỉl (I)	n. m.	god	
 153286	šdy	šd(I)/+y	šd (I)	n. m.	open field	
+153286	šdy	šdy[+y	/š-d-y/	vb	to pour	
 153287	ṣd	ṣd[	/ṣ-d/	vb G	to hunt	
 153287	ṣd	ṣd(I)/	ṣd (I)	n. m.	hunt	
 153288	mlk	mlk[	/m-l-k/	vb G	to reign	
@@ -108,6 +115,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.108 13						
 153289	xxxxxxxxxḥ	?	?	?	?	DULAT: NOT FOUND
 153290	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
+153290	yšt	šty[	/š-t-y/	vb G	to drink	
 153291	ilh	il(t(I)/&h	ỉlt (I)	n. f.	goddess	
 153291	ilh	ilh/	ỉlh	DN	the ‘Divine One’	
 # KTU 1.108 14						
@@ -141,6 +149,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153309	l	l(III)	l (III)	functor	certainly	
 153310	iršt	irš(t/t	ỉršt	n. f.	request	
 # KTU 1.108 21						
+153311	k	+k	-k (I)			
+153311	k	~k	-k (II)			
 153311	k	k(III)	k (III)	Subordinating or completive functor	when	
 153311	k	k(I)	k (I)	prep.	like	
 153311	k	k(II)	k (II)	emph. functor	yes	
@@ -199,6 +209,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153346	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 # KTU 1.108 27						
 153347	w	w	w	conj.	and	
+153348	nˤmt	nˤm(I)/	nʕm (I)	adj. m.	handsome	
 153348	nˤmt	nˤm(t(I)/t	nʕmt (I)	adj. f.	graceful	
 153348	nˤmt	nˤm(t(II)/t	nʕmt (II)	n. f.	delight	
 153349	šnt	šn(t(I)/t	šnt (I)	n. f.	year	

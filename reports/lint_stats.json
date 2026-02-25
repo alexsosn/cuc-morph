@@ -1,53 +1,53 @@
 {
-  "generated_at_utc": "2026-02-25T01:04:49.137558+00:00",
+  "generated_at_utc": "2026-02-25T01:00:08.745711+00:00",
   "files_checked": 278,
-  "total_issues": 9534,
-  "fallback_parsed": 587,
+  "total_issues": 11753,
+  "fallback_parsed": 656,
   "by_severity": {
-    "ERROR": 4668,
-    "WARNING": 805,
-    "INFO": 1587
+    "ERROR": 6390,
+    "WARNING": 932,
+    "INFO": 1621
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 2757
+      "count": 3823
     },
     {
       "severity": "INFO",
       "problem_type": "Surface not found in UDB concordance",
-      "count": 1587
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "ʔ must be preceded by '(' in column 3",
-      "count": 366
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Non-G stem in DULAT requires stem marker",
-      "count": 275
+      "count": 1621
     },
     {
       "severity": "ERROR",
       "problem_type": "POS token not allowed for declared DULAT entry",
-      "count": 202
+      "count": 443
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "ʔ must be preceded by '(' in column 3",
+      "count": 428
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "DULAT comment does not match candidates",
+      "count": 346
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "No DULAT entry found for clitic part",
+      "count": 324
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Non-G stem in DULAT requires stem marker",
+      "count": 278
     },
     {
       "severity": "ERROR",
       "problem_type": "Deverbal form matches both verb and noun entries in DULAT",
       "count": 175
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "DULAT comment does not match candidates",
-      "count": 173
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "No DULAT entry found for clitic part",
-      "count": 158
     },
     {
       "severity": "WARNING",
@@ -60,14 +60,24 @@
       "count": 123
     },
     {
+      "severity": "WARNING",
+      "problem_type": "Suffix form without '+'",
+      "count": 90
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "TODO/uncertain marker in comment",
+      "count": 89
+    },
+    {
       "severity": "ERROR",
       "problem_type": "Missing DULAT entry token(s) in column 4",
       "count": 87
     },
     {
-      "severity": "WARNING",
-      "problem_type": "Suffix form without '+'",
-      "count": 81
+      "severity": "ERROR",
+      "problem_type": "Unknown DULAT token in column 4",
+      "count": 82
     },
     {
       "severity": "ERROR",
@@ -75,24 +85,24 @@
       "count": 80
     },
     {
-      "severity": "ERROR",
-      "problem_type": "Unknown DULAT token in column 4",
-      "count": 78
-    },
-    {
       "severity": "WARNING",
-      "problem_type": "TODO/uncertain marker in comment",
+      "problem_type": "y Lexeme parse did not match DULAT; matched by surface form",
       "count": 72
     },
     {
       "severity": "ERROR",
       "problem_type": "Suffixed pronominal form in DULAT should use '+' in analysis",
-      "count": 65
+      "count": 67
     },
     {
       "severity": "ERROR",
       "problem_type": "Each reconstructed letter must be prefixed by '('",
-      "count": 62
+      "count": 64
+    },
+    {
+      "severity": "WARNING",
+      "problem_type": "Plural form missing split ending",
+      "count": 36
     },
     {
       "severity": "ERROR",
@@ -101,8 +111,8 @@
     },
     {
       "severity": "WARNING",
-      "problem_type": "Plural form missing split ending",
-      "count": 25
+      "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
+      "count": 29
     },
     {
       "severity": "WARNING",
@@ -150,6 +160,11 @@
       "count": 9
     },
     {
+      "severity": "ERROR",
+      "problem_type": "POS tokens must map to existing DULAT tokens in column 4",
+      "count": 8
+    },
+    {
       "severity": "WARNING",
       "problem_type": "Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)",
       "count": 8
@@ -170,18 +185,8 @@
       "count": 8
     },
     {
-      "severity": "ERROR",
-      "problem_type": "POS tokens must map to existing DULAT tokens in column 4",
-      "count": 7
-    },
-    {
       "severity": "WARNING",
       "problem_type": "Deverbal form marked with '[' but only noun entry found in DULAT",
-      "count": 7
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "Feminine adjective/participle in DULAT should mark '-t' explicitly",
       "count": 7
     },
     {
@@ -231,6 +236,11 @@
     },
     {
       "severity": "ERROR",
+      "problem_type": "Xt stem marker present but DULAT lacks *t stem",
+      "count": 4
+    },
+    {
+      "severity": "ERROR",
       "problem_type": "l Formula idk l ytn expects l(III) ('truly/certainly')",
       "count": 4
     },
@@ -242,11 +252,6 @@
     {
       "severity": "WARNING",
       "problem_type": "klnyy Lexeme parse did not match DULAT; matched by surface form",
-      "count": 4
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "l l(II) ('no/not') should be used only before verbal forms",
       "count": 4
     },
     {
@@ -277,11 +282,6 @@
     {
       "severity": "ERROR",
       "problem_type": "Noun/adjective lacks '/' ending",
-      "count": 3
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Xt stem marker present but DULAT lacks *t stem",
       "count": 3
     },
     {
@@ -597,6 +597,11 @@
     {
       "severity": "ERROR",
       "problem_type": "Verb lacks '[' ending",
+      "count": 1
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "klat Passive stem marker present but DULAT lacks passive/N stem",
       "count": 1
     },
     {

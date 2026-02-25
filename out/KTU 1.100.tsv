@@ -2,6 +2,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.100 1						
 151708	um	um/	ủm	n. f.	mother	
 151709	pḥl	pḥl/	pḥl	n. m.	ass	
+151710	pḥlt	pḥl/	pḥl	n. m.	ass	
 151710	pḥlt	pḥl(t/t	pḥlt	n. f.	mare	
 151711	bt	bt(II)/	bt (II)	n. m.	house	
 151711	bt	b(t(I)/t	bt (I)	n. f.	daughter	
@@ -52,6 +53,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151739	ˤxqšr	?	?	?	?	DULAT: NOT FOUND
 151740	lnh	l(I)+h	l (I)	prep.	to	
 151741	mlḫš	mlḫš/	mlḫš	n. m.	conjuror	
+151742	abd	ʔbd[	/ʔ-b-d/	vb G	be missing	
 151742	abd	abd(I)/	ảbd (I)	n. m.	ruin	
 151743	lnh	l(I)+h	l (I)	prep.	to	
 151744	ydy	yd(I)/+y	yd (I)	n. f.	hand	
@@ -62,6 +64,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151745	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f.	wall	
 151746	hlm	hlm	hlm	conj. functor	and so	
 151746	hlm	hlm[	/h-l-m/	vb G	to hit	
+151746	hlm	hl	hl	deictic adv. functor	behold	
 151747	yṯq	ṯqy[	/ṯ-q-y/	vb D	to elevate	
 151748	nḥš	nḥš/	nḥš	n. m.	serpent	
 151749	yšlḥm	!y!]š]lḥm(I)[	/l-ḥ-m/ (I)	vb Š	to eat	
@@ -101,6 +104,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151773	lnh	l(I)+h	l (I)	prep.	to	
 # KTU 1.100 11						
 151774	mlḫš	mlḫš/	mlḫš	n. m.	conjuror	
+151775	abd	ʔbd[	/ʔ-b-d/	vb G	be missing	
 151775	abd	abd(I)/	ảbd (I)	n. m.	ruin	
 151776	lnh	l(I)+h	l (I)	prep.	to	
 151777	ydy	yd(I)/+y	yd (I)	n. f.	hand	
@@ -110,6 +114,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151778	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f.	wall	
 151779	hlm	hlm	hlm	conj. functor	and so	
 151779	hlm	hlm[	/h-l-m/	vb G	to hit	
+151779	hlm	hl	hl	deictic adv. functor	behold	
 151780	yṯq	ṯqy[	/ṯ-q-y/	vb D	to elevate	
 # KTU 1.100 12						
 151781	nḥš	nḥš/	nḥš	n. m.	serpent	
@@ -147,6 +152,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151804	ˤqšr	aqšr/	ảqšr	adj. m.	which sloughs its skin	
 151805	lnh	l(I)+h	l (I)	prep.	to	
 151806	mlḫš	mlḫš/	mlḫš	n. m.	conjuror	
+151807	abd	ʔbd[	/ʔ-b-d/	vb G	be missing	
 151807	abd	abd(I)/	ảbd (I)	n. m.	ruin	
 151808	lnh	l(I)+h	l (I)	prep.	to	
 # KTU 1.100 17						
@@ -157,6 +163,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151810	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f.	wall	
 151811	hlm	hlm	hlm	conj. functor	and so	
 151811	hlm	hlm[	/h-l-m/	vb G	to hit	
+151811	hlm	hl	hl	deictic adv. functor	behold	
 151812	yṯq	ṯqy[	/ṯ-q-y/	vb D	to elevate	
 151813	nḥš	nḥš/	nḥš	n. m.	serpent	
 151814	yšlḥm	!y!]š]lḥm(I)[	/l-ḥ-m/ (I)	vb Š	to eat	
@@ -199,6 +206,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151840	ml	ml	ml	?	?	
 # KTU 1.100 22						
 151841	ḫš	ḫš/	ḫš	DN or TN	le dieu qui montre la solicitude	
+151842	abd	ʔbd[	/ʔ-b-d/	vb G	be missing	
 151842	abd	abd(I)/	ảbd (I)	n. m.	ruin	
 151843	lnh	l(I)+h	l (I)	prep.	to	
 151844	ydy	yd(I)/+y	yd (I)	n. f.	hand	
@@ -208,6 +216,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151845	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f.	wall	
 151846	hlm	hlm	hlm	conj. functor	and so	
 151846	hlm	hlm[	/h-l-m/	vb G	to hit	
+151846	hlm	hl	hl	deictic adv. functor	behold	
 151847	yṯq	ṯqy[	/ṯ-q-y/	vb D	to elevate	
 # KTU 1.100 23						
 151848	nḥš	nḥš/	nḥš	n. m.	serpent	
@@ -246,6 +255,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151872	ˤqšr	aqšr/	ảqšr	adj. m.	which sloughs its skin	
 151873	lnh	l(I)+h	l (I)	prep.	to	
 151874	mlḫš	mlḫš/	mlḫš	n. m.	conjuror	
+151875	abd	ʔbd[	/ʔ-b-d/	vb G	be missing	
 151875	abd	abd(I)/	ảbd (I)	n. m.	ruin	
 151876	lnh	l(I)+h	l (I)	prep.	to	
 151877	ydy	yd(I)/+y	yd (I)	n. f.	hand	
@@ -256,6 +266,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151878	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f.	wall	
 151879	hlm	hlm	hlm	conj. functor	and so	
 151879	hlm	hlm[	/h-l-m/	vb G	to hit	
+151879	hlm	hl	hl	deictic adv. functor	behold	
 151880	yṯq	ṯqy[	/ṯ-q-y/	vb D	to elevate	
 151881	nḥš	nḥš/	nḥš	n. m.	serpent	
 151882	yšlḥm	!y!]š]lḥm(I)[	/l-ḥ-m/ (I)	vb Š	to eat	
@@ -302,6 +313,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151910	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f.	wall	
 151911	hlm	hlm	hlm	conj. functor	and so	
 151911	hlm	hlm[	/h-l-m/	vb G	to hit	
+151911	hlm	hl	hl	deictic adv. functor	behold	
 151912	yṯq	ṯqy[	/ṯ-q-y/	vb D	to elevate	
 151913	nḥš	nḥš/	nḥš	n. m.	serpent	
 151914	yšlḥm	!y!]š]lḥm(I)[	/l-ḥ-m/ (I)	vb Š	to eat	
@@ -337,6 +349,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151935	nṯk	nṯk(I)/	nṯk (I)	n. m.	biter	
 151935	nṯk	!n!ṯk[	/n-ṯ-k/	vb G	to bite	
 151936	nḥš	nḥš/	nḥš	n. m.	serpent	
+151937	šm	š/	š	n. m.	ram	
 151937	šm	šm(I)/	šm (I)	n. m.	name	
 # KTU 1.100 37						
 151938	rr	?	?	?	?	DULAT: NOT FOUND
@@ -353,6 +366,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151945	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f.	wall	
 151946	hlm	hlm	hlm	conj. functor	and so	
 151946	hlm	hlm[	/h-l-m/	vb G	to hit	
+151946	hlm	hl	hl	deictic adv. functor	behold	
 151947	yṯq	ṯqy[	/ṯ-q-y/	vb D	to elevate	
 151948	nḥš	nḥš/	nḥš	n. m.	serpent	
 151949	yšlḥm	!y!]š]lḥm(I)[	/l-ḥ-m/ (I)	vb Š	to eat	
@@ -393,6 +407,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151972	ˤqšr	aqšr/	ảqšr	adj. m.	which sloughs its skin	
 151973	lnh	l(I)+h	l (I)	prep.	to	
 151974	mlḫš	mlḫš/	mlḫš	n. m.	conjuror	
+151975	abd	ʔbd[	/ʔ-b-d/	vb G	be missing	
 151975	abd	abd(I)/	ảbd (I)	n. m.	ruin	
 151976	lnh	l(I)+h	l (I)	prep.	to	
 151977	ydy	yd(I)/+y	yd (I)	n. f.	hand	
@@ -403,6 +418,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151978	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f.	wall	
 151979	hlm	hlm	hlm	conj. functor	and so	
 151979	hlm	hlm[	/h-l-m/	vb G	to hit	
+151979	hlm	hl	hl	deictic adv. functor	behold	
 151980	yṯq	ṯqy[	/ṯ-q-y/	vb D	to elevate	
 151981	nḥš	nḥš/	nḥš	n. m.	serpent	
 151982	yšlḥm	!y!]š]lḥm(I)[	/l-ḥ-m/ (I)	vb Š	to eat	
@@ -442,6 +458,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152007	lnh	l(I)+h	l (I)	prep.	to	
 152008	mlḫ	?	?	?	?	DULAT: NOT FOUND
 152009	š	š/	š	n. m.	ram	
+152010	abd	ʔbd[	/ʔ-b-d/	vb G	be missing	
 152010	abd	abd(I)/	ảbd (I)	n. m.	ruin	
 # KTU 1.100 48						
 152011	lnh	l(I)+h	l (I)	prep.	to	
@@ -452,6 +469,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152013	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f.	wall	
 152014	hlm	hlm	hlm	conj. functor	and so	
 152014	hlm	hlm[	/h-l-m/	vb G	to hit	
+152014	hlm	hl	hl	deictic adv. functor	behold	
 152015	yṯq	ṯqy[	/ṯ-q-y/	vb D	to elevate	
 152016	nḥš	nḥš/	nḥš	n. m.	serpent	
 # KTU 1.100 49						
@@ -494,6 +512,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152042	lnh	l(I)+h	l (I)	prep.	to	
 152043	mlḫš	mlḫš/	mlḫš	n. m.	conjuror	
 # KTU 1.100 54						
+152044	abd	ʔbd[	/ʔ-b-d/	vb G	be missing	
 152044	abd	abd(I)/	ảbd (I)	n. m.	ruin	
 152045	lnh	l(I)+h	l (I)	prep.	to	
 152046	ydy	yd(I)/+y	yd (I)	n. f.	hand	
@@ -503,6 +522,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152047	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f.	wall	
 152048	hlm	hlm	hlm	conj. functor	and so	
 152048	hlm	hlm[	/h-l-m/	vb G	to hit	
+152048	hlm	hl	hl	deictic adv. functor	behold	
 152049	yṯq	ṯqy[	/ṯ-q-y/	vb D	to elevate	
 # KTU 1.100 55						
 152050	nḥš	nḥš/	nḥš	n. m.	serpent	
@@ -531,6 +551,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152067	ˤm	ˤm(I)	ʕm (I)	prep.	to	
 152068	ḥrn	ḥr(I)/+n	ḥr (I)	n. m.	intestine(s)	
 152069	mṣdh	mṣd(I)/+h	mṣd (I)	n. m.	(feast / banquet of) game	
+152069	mṣdh	mṣd(III)/	mṣd (III)	TN	mṣd (III)	
 152069	mṣdh	mṣd(II)/+h	mṣd (II)	n. m.	large fortified tower	
 152070	mnt	mn(t(I)/t	mnt (I)	n. f.	portion	
 152071	nṯk	nṯk(II)/	nṯk (II)	n. m.	bite	
@@ -544,6 +565,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152076	lnh	l(I)+h	l (I)	prep.	to	
 152077	mlḫš	mlḫš/	mlḫš	n. m.	conjuror	
 # KTU 1.100 60						
+152078	abd	ʔbd[	/ʔ-b-d/	vb G	be missing	
 152078	abd	abd(I)/	ảbd (I)	n. m.	ruin	
 152079	lnh	l(I)+h	l (I)	prep.	to	
 152080	ydy	yd(I)/+y	yd (I)	n. f.	hand	
@@ -623,11 +645,19 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152129	tlu	lʔy(II)[	/l-ʔ-y/w/ (II)	vb G	to lose strength	
 152130	ḥmt	ḥm(t(III)/t	ḥmt (III)	n. f.	venom	
 152130	ḥmt	ḥm(t(I)/t	ḥmt (I)	n. f.	wall	
+152131	km	k(III)	k (III)	functor	when	
+152131	km	k(I)	k (I)	prep.	like	
+152131	km	k(IV)	k (IV)	adv.	thus	
 152131	km	km	km	prep./conj./adv.		
+152131	km	+km, +km=	-km			
 152132	nḫl	nḫl(I)/	nḫl (I)	n. m.	torrent	
 # KTU 1.100 69						
 152133	tplg	!t!plg[	/p-l-g/	vb G/N	to be split	
+152134	km	k(III)	k (III)	functor	when	
+152134	km	k(I)	k (I)	prep.	like	
+152134	km	k(IV)	k (IV)	adv.	thus	
 152134	km	km	km	prep./conj./adv.		
+152134	km	+km, +km=	-km			
 152135	plg	plg[	/p-l-g/	vb G/N	to be split	
 152135	plg	plg/	plg	n. m.	stream	
 # KTU 1.100 70						
@@ -636,6 +666,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152138	mnt	mn(t(I)/t	mnt (I)	n. f.	portion	
 152139	bˤdh	bˤd+h	bʕd	adv. or prep.	behind	
 152140	bhtm	b(II)/t=	bt (II)	n. m.	house	
+152141	sgrt	sgr[	/s-g-r/	vb G	to close	
 152141	sgrt	sgr(t/t	sgrt	n. f.	room	
 # KTU 1.100 71						
 152142	bˤdh	bˤd+h	bʕd	adv. or prep.	behind	
@@ -662,11 +693,17 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152155	tn	(ytn[	/y-t-n/	vb	give	
 152155	tn	(ytn[/	/y-t-n/	vb	give	
 152156	nḥšm	nḥš/m	nḥš	n. m.	serpent	
+152157	y	+y, [y	-y (I)	prep. functor	my	
+152157	y	~y	-y (II)	prep. functor	indeed	
 152157	y	y	y	prep. functor	oh!	
 152158	ḥr	ḥr(I)/	ḥr (I)	n. m.	intestine(s)	
 152159	tn	(ytn[	/y-t-n/	vb	give	
 152159	tn	(ytn[/	/y-t-n/	vb	give	
+152160	km	k(III)	k (III)	functor	when	
+152160	km	k(I)	k (I)	prep.	like	
+152160	km	k(IV)	k (IV)	adv.	thus	
 152160	km	km	km	prep./conj./adv.		
+152160	km	+km, +km=	-km			
 # KTU 1.100 74						
 152161	mhry	mhr(III)/+y	mhr (III)	n. m.	dowry	
 152162	w	w	w	conj.	and	
@@ -678,6 +715,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.100 75						
 152166	ytt	!y!(ytn[	/y-t-n/	vb G	to give	
 152167	nḥšm	nḥš/m	nḥš	n. m.	serpent	
+152168	mhrk	mhr(I)/	mhr (I)	n. m.	warrior (trained	
 152168	mhrk	mhr(III)/+k	mhr (III)	n. m.	dowry	
 152169	bn	bn(I)/	bn (I)	n. m.	son	
 152169	bn	bn(II)	bn (II)	prep.	between	
@@ -687,6 +725,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152171	itnnk	itnn/+k	ỉtnn	n. m.	present	
 # KTU 1.100 77						
 152172	aṯr	aṯr(I)	ảṯr (I)	adv. or prep.	then	
+152172	aṯr	ʔṯr[	/ʔ-ṯ-r/	vb G/D	to go	
 152173	ršp	ršp/	ršp	DN	Rašap	
 152174	ˤṯtrt	ˤṯtrt(II)/	ʕṯtrt (II)	TN	ʿṯtrt (II)	
 # KTU 1.100 78						

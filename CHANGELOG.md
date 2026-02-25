@@ -2,21 +2,6 @@
 
 ## 2026-02-25
 
-- Fixed verb POS validation mismatch between parser and linter:
-  - normalized verb stem-tagged POS options (`vb G`, `vb G/D`, `vb Št`, etc.) to DULAT-compatible `vb` in the linter validation layer while preserving stem-specific lint checks,
-  - expanded slash parsing for verb POS alternations so `vb G/D` is treated as verb alternatives, not `vb G` + bare `D`,
-  - added regressions in `tests/test_linter_verb_pos_stem.py`.
-- Added `ReconstructableVariantPruner` (`pipeline/steps/reconstructable_variant_pruner.py`) and wired it into `pipeline/tablet_parsing.py` after duplicate pruning.
-  - rule: when a token-group has a reconstructable lexical row, prune clitic-only rows and non-reconstructable non-`?` rows in that same group,
-  - keeps all-clitic groups and unresolved `?` rows unchanged.
-- Added regression coverage:
-  - `tests/test_reconstructable_variant_pruner.py`,
-  - updated ordering guard in `tests/test_tablet_parsing_pipeline.py`.
-- Applied only `reconstructable-variant-pruner` across `out/KTU *.tsv`:
-  - 278 files scanned, 35,102 rows processed, 1,620 rows pruned.
-- Updated strategy docs:
-  - `docs/reconstructable_variant_pruner_pipeline.md`.
-
 - Reverted noun-side POS coercion in `l + noun` compound-preposition passes so suffix-friendly noun payloads are retained:
   - `L_PN_PREP_CANONICAL_PAYLOADS` now keeps `pn*` payloads as `n. m. pl. tant.` (not `prep.`),
   - `L_BODY_COMPOUND_PREP_RULES` now keeps `pˤn` as `n. f.` and `ẓr` as `n. m.` (not `prep.`),

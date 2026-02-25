@@ -2,6 +2,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 I:1						
 138122		?	?	?	?	
 # KTU 1.4 I:2						
+138123	y	+y, [y	-y (I)	prep. functor	my	
+138123	y	~y	-y (II)	prep. functor	indeed	
 138123	y	y	y	prep. functor	oh!	
 # KTU 1.4 I:3						
 138124		?	?	?	?	
@@ -39,11 +41,17 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138148	l	l(I)	l (I)	prep.	to	
 138149	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 # KTU 1.4 I:10						
+138150	km	k(III)	k (III)	functor	when	
+138150	km	k(I)	k (I)	prep.	like	
+138150	km	k(IV)	k (IV)	adv.	thus	
 138150	km	km	km	prep./conj./adv.		
+138150	km	+km, +km=	-km			
 138151	ilm	il(I)/m	ỉl (I)	n. m.	god	
 138152	w	w	w	conj.	and	
 138153	ḥẓr	ḥẓr/	ḥẓr	n. m.	mansion	
 # KTU 1.4 I:11						
+138154	k	+k	-k (I)			
+138154	k	~k	-k (II)			
 138154	k	k(III)	k (III)	Subordinating or completive functor	when	
 138154	k	k(I)	k (I)	prep.	like	
 138154	k	k(II)	k (II)	emph. functor	yes	
@@ -190,12 +198,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138259	ṣˤ	ṣˤ(I)/	ṣʕ (I)	n. m.	plate / wide bowl / platter	
 138260	il	il(I)/	ỉl (I)	n. m.	god	
 138261	dqt	dqt(I)/	dqt (I)	adj. f. or n. f.	small	
+138262	k	+k	-k (I)			
+138262	k	~k	-k (II)			
 138262	k	k(III)	k (III)	Subordinating or completive functor	when	
 138262	k	k(I)	k (I)	prep.	like	
 138262	k	k(II)	k (II)	emph. functor	yes	
 138263	amr	amr(III)/	ảmr (III)	TN		
 # KTU 1.4 I:42						
 138264	sknt	skn(t/t	sknt	n. f.	form	
+138265	k	+k	-k (I)			
+138265	k	~k	-k (II)			
 138265	k	k(III)	k (III)	Subordinating or completive functor	when	
 138265	k	k(I)	k (I)	prep.	like	
 138265	k	k(II)	k (II)	emph. functor	yes	
@@ -279,6 +291,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138321	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 138322	aṯtrt	aṯr(t(II)/t	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 # KTU 1.4 II:14						
+138323	k	+k	-k (I)			
+138323	k	~k	-k (II)			
 138323	k	k(III)	k (III)	Subordinating or completive functor	when	
 138323	k	k(I)	k (I)	prep.	like	
 138323	k	k(II)	k (II)	emph. functor	yes	
@@ -344,6 +358,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138367	ksp	ksp/	ksp	n. m.	silver	
 138368	aṯrt	aṯr(t(II)/t	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 # KTU 1.4 II:27						
+138369	k	+k	-k (I)			
+138369	k	~k	-k (II)			
 138369	k	k(III)	k (III)	Subordinating or completive functor	when	
 138369	k	k(I)	k (I)	prep.	like	
 138369	k	k(II)	k (II)	emph. functor	yes	
@@ -398,6 +414,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 II:36						
 138406	hr	hr(II)/	hr (II)	n. m.	conception	
 138407	il	il(I)/	ỉl (I)	n. m.	god	
+138408	y	+y, [y	-y (I)	prep. functor	my	
+138408	y	~y	-y (II)	prep. functor	indeed	
 138408	y	y	y	prep. functor	oh!	
 # KTU 1.4 II:37						
 138409	aliyn	aliyn/	ảlỉyn	adj. m.	The Very / Most Powerful	
@@ -537,6 +555,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138496	tdmm	tdmm/	tdmm	n. m.	lascivious	
 # KTU 1.4 III:21						
 138497	amht	am(t(I)/h	ảmt (I)	n. f.	(female) slave	
+138498	k	+k	-k (I)			
+138498	k	~k	-k (II)			
 138498	k	k(III)	k (III)	Subordinating or completive functor	when	
 138498	k	k(I)	k (I)	prep.	like	
 138498	k	k(II)	k (II)	emph. functor	yes	
@@ -602,7 +622,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138545	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 138546	nmgn	!n!mgn[	/m-g-n/	vb D	to wine and dine	UNP iii 33-36 favors cohortative 'let us entreat/offer'; DULAT /m-g-n/ includes offer/present
 # KTU 1.4 III:34						
+138547	km	k(III)	k (III)	functor	when	
+138547	km	k(I)	k (I)	prep.	like	
+138547	km	k(IV)	k (IV)	adv.	thus	
 138547	km	km	km	prep./conj./adv.		
+138547	km	+km, +km=	-km			
 138548	rbt	rb(t(I)/t	rbt (I)	n. f.	Lady	
 138549	aṯrt	aṯr(t(II)/t	ảṯrt (II)	DN	ʾAṯiratu/Athirat/Asherah/El’s wife	
 138550	ym	ym(II)/	ym (II)	n. m.	sea	
@@ -774,6 +798,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138660	šbˤr	šbˤr	šbʕr	→		
 # KTU 1.4 IV:17						
 138661	amrr	amrr/	ảmrr	DN	“Blessed”, one of the two messenger-boys of the goddess ảṯrt	
+138662	k	+k	-k (I)			
+138662	k	~k	-k (II)			
 138662	k	k(III)	k (III)	Subordinating or completive functor	when	
 138662	k	k(I)	k (I)	prep.	like	
 138662	k	k(II)	k (II)	emph. functor	yes	
@@ -832,6 +858,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138703	hlm	hlm[	/h-l-m/	vb G	to hit	
 138703	hlm	hlm	hl	deictic adv. functor	behold	
 138704	il	il(I)/	ỉl (I)	n. m.	god	
+138705	k	+k	-k (I)			
+138705	k	~k	-k (II)			
 138705	k	k(III)	k (III)	Subordinating or completive functor	when	
 138705	k	k(I)	k (I)	prep.	like	
 138705	k	k(II)	k (II)	emph. functor	yes	
@@ -980,10 +1008,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138813	l	l(I)	l (I)	prep.	to	
 138814	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 # KTU 1.4 IV:51						
+138815	km	k(III)	k (III)	functor	when	
+138815	km	k(I)	k (I)	prep.	like	
+138815	km	k(IV)	k (IV)	adv.	thus	
 138815	km	km	km	prep./conj./adv.		
+138815	km	+km, +km=	-km			
 138816	ilm	il(I)/m	ỉl (I)	n. m.	god	
 138817	w	w	w	conj.	and	
 138818	ḥẓr	ḥẓr/	ḥẓr	n. m.	mansion	
+138819	k	+k	-k (I)			
+138819	k	~k	-k (II)			
 138819	k	k(III)	k (III)	Subordinating or completive functor	when	
 138819	k	k(I)	k (I)	prep.	like	
 138819	k	k(II)	k (II)	emph. functor	yes	
@@ -1057,10 +1091,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138868	l	l(I)	l (I)	prep.	to	
 138869	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 # KTU 1.4 V:1						
+138870	km	k(III)	k (III)	functor	when	
+138870	km	k(I)	k (I)	prep.	like	
+138870	km	k(IV)	k (IV)	adv.	thus	
 138870	km	km	km	prep./conj./adv.		
+138870	km	+km, +km=	-km			
 138871	ilm	il(I)/m	ỉl (I)	n. m.	god	
 138872	w	w	w	conj.	and	
 138873	ḥẓr	ḥẓr/	ḥẓr	n. m.	mansion	
+138874	k	+k	-k (I)			
+138874	k	~k	-k (II)			
 138874	k	k(III)	k (III)	Subordinating or completive functor	when	
 138874	k	k(I)	k (I)	prep.	like	
 138874	k	k(II)	k (II)	emph. functor	yes	
@@ -1226,12 +1266,20 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138985	bt	b(t(I)/t	bt (I)	n. f.	daughter	context favors bt(II) house.';'UNP v 29-31 'let a house be given to you'
 138986	lk	l(I)+k	l (I)	prep.	to	Same phrase requires preposition+suffix 'to you', not /h-l-k/.
 138986	lk	(hlk[	/h-l-k/	vb G	to go	Same phrase requires preposition+suffix 'to you', not /h-l-k/.
+138987	km	k(III)	k (III)	functor	when	
+138987	km	k(I)	k (I)	prep.	like	
+138987	km	k(IV)	k (IV)	adv.	thus	
 138987	km	km	km	prep./conj./adv.		
+138987	km	+km, +km=	-km			
 138988	aḫk	aḫ(I)/+k	ảḫ (I)	n. m.	brother	
 138989	w	w	w	conj.	and	
 138990	ḥẓr	ḥẓr/	ḥẓr	n. m.	mansion	
 # KTU 1.4 V:29						
+138991	km	k(III)	k (III)	functor	when	
+138991	km	k(I)	k (I)	prep.	like	
+138991	km	k(IV)	k (IV)	adv.	thus	
 138991	km	km	km	prep./conj./adv.		
+138991	km	+km, +km=	-km			
 138992	aryk	ary(I)/+k	ảry (I)	n. m.	fellow	
 138993	ṣḥ	ṣḥ[	/ṣ-ḥ/	vb G	to exclaim	
 138994	ḫrn	ḫrn/	ḫrn	n. m.	gang	
@@ -1306,6 +1354,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139043	w	w	w	conj.	and	
 139044	ṯb	ṯb/	ṯb	n. m.	in the month of ỉbʕalatu	
 139045	lmspr	l(I)+mspr/	l (I), mspr	prep., n. m.	to, recitation	
+139046	k	+k	-k (I)			
+139046	k	~k	-k (II)			
 139046	k	k(III)	k (III)	Subordinating or completive functor	when	
 139046	k	k(I)	k (I)	prep.	like	
 139046	k	k(II)	k (II)	emph. functor	yes	
@@ -1810,7 +1860,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139401	b	b	b	prep.	in	
 139402	ġr	ġr(I)/	ġr (I)	n. m.	mountain	
 # KTU 1.4 VII:6						
+139403	km	k(III)	k (III)	functor	when	
+139403	km	k(I)	k (I)	prep.	like	
+139403	km	k(IV)	k (IV)	adv.	thus	
 139403	km	km	km	prep./conj./adv.		
+139403	km	+km, +km=	-km			
 139404	yxxx	yxxx	y	prep. functor	oh!	heavily broken token; unresolved
 139405	ilm	il(I)/m	ỉl (I)	n. m.	god	
 139406	b	b	b	prep.	in	
@@ -2000,6 +2054,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139540	qdm	qdm(II)	qdm (II)	prep.	in front of	
 139541	ydh	yd(I)/+h	yd (I)	n. f.	hand	
 # KTU 1.4 VII:41						
+139542	k	+k	-k (I)			
+139542	k	~k	-k (II)			
 139542	k	k(III)	k (III)	Subordinating or completive functor	when	
 139542	k	k(I)	k (I)	prep.	like	
 139542	k	k(II)	k (II)	emph. functor	yes	
@@ -2088,6 +2144,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139605	ugr	ugr(I)/	ủgr (I)	n. m.	field	UNP vii 52-56 messenger name Ugar; DULAT has ủgr(I) [n.], ủgr(II) [DN], ủgr(III) [PN].
 139605	ugr	ugr(II)/	ủgr (II)	DN	Ugar/one of the two messenger-boys of Baal	UNP vii 52-56 messenger name Ugar; DULAT has ủgr(I) [n.], ủgr(II) [DN], ủgr(III) [PN].
 139606	bnġlmt	b+n+ġlmt(I)/	b	prep., morph., n. f.	in, Sun, damsel	likely segmented
+139606	bnġlmt	b+n+ẓlmt/	b	prep., morph., n. f.	in, Sun, darkness	likely segmented
 # KTU 1.4 VII:55						
 139607	ˤmm	ˤmm[	/ʕ-m-m/	vb Gpass	to be covered	
 139608	ym	ym(II)/	ym (II)	n. m.	sea	
@@ -2150,6 +2207,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139649	arṣ	arṣ/	ảrṣ	n. f.	earth	
 139650	tspr	!t!spr[	/s-p-r/	vb	to count	
 139651	b	b	b	prep.	in	
+139652	y	+y, [y	-y (I)	prep. functor	my	
+139652	y	~y	-y (II)	prep. functor	indeed	
 139652	y	y	y	prep. functor	oh!	
 # KTU 1.4 VIII:9						
 139653	rdm	(yrd[/m	/y-r-d/, -k (I)	vb, pers. pn.	to go down, your(s)	
@@ -2192,6 +2251,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139678	al	al(II)	ảl (II)	pos. functor	surely	
 139679	yˤdbkm	!y!(ˤdb[+m	/ʕ-d-b/	vb G	to leave	
 # KTU 1.4 VIII:18						
+139680	k	+k	-k (I)			
+139680	k	~k	-k (II)			
 139680	k	k(III)	k (III)	Subordinating or completive functor	when	
 139680	k	k(I)	k (I)	prep.	like	
 139680	k	k(II)	k (II)	emph. functor	yes	
@@ -2199,6 +2260,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139682	b	b	b	prep.	in	
 139683	ph	p(III)/+h	p (III)	n. m.	mouth	
 # KTU 1.4 VIII:19						
+139684	k	+k	-k (I)			
+139684	k	~k	-k (II)			
 139684	k	k(III)	k (III)	Subordinating or completive functor	when	
 139684	k	k(I)	k (I)	prep.	like	
 139684	k	k(II)	k (II)	emph. functor	yes	
@@ -2233,6 +2296,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139706	rbt	rbt/	rb(b)t	num.	ten thousand	
 139706	rbt	rb(t(I)/t	rbt (I)	n. f.	Lady	
 139706	rbt	rb(t(II)/t	rbt (II)	n. f.	seine	
+139707	k	+k	-k (I)			
+139707	k	~k	-k (II)			
 139707	k	k(III)	k (III)	Subordinating or completive functor	when	
 139707	k	k(I)	k (I)	prep.	like	
 139707	k	k(II)	k (II)	emph. functor	yes	
@@ -2248,6 +2313,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 VIII:28						
 139715	tštḥwy	!t!]š]]t]ḥwy(II)[	/ḥ-w-y/ (II)	vb Št	to prostrate oneself	
 139716	w	w	w	conj.	and	
+139717	k	+k	-k (I)			
+139717	k	~k	-k (II)			
 139717	k	k(III)	k (III)	Subordinating or completive functor	when	
 139717	k	k(I)	k (I)	prep.	like	
 139717	k	k(II)	k (II)	emph. functor	yes	

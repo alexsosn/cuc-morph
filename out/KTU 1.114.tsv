@@ -38,7 +38,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153809	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 # KTU 1.114 5						
 153810	gbh	gb(II)/+h	gb (II)	n. m.	spine	
+153811	km	k(III)	k (III)	functor	when	
+153811	km	k(I)	k (I)	prep.	like	
+153811	km	k(IV)	k (IV)	adv.	thus	
 153811	km	km	km	prep./conj./adv.		
+153811	km	+km, +km=	-km			
 153812	klb	klb(I)/	klb (I)	n. m.	dog	
 153813	yqṯqṯ	!y!qṯ[	/q-ṯ/	vb R	to drag	
 153814	tḥt	tḥt(I)	tḥt (I)	prep.	under	
@@ -52,11 +56,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153819	yˤdb	!y!ˤdb[	/ʕ-d-b/	vb G	to leave > to put in	
 153820	lḥm	lḥm(I)[	/l-ḥ-m/ (I)	vb G	to eat	
 153820	lḥm	lḥm/	lḥm	n. m.	grain	
+153820	lḥm	lḥ(I)/	lḥ (I)	n. f.	cheek	
 153821	lh	l(I)+h	l (I)	prep.	to	
 153822	w	w	w	conj.	and	
 153823	dl	dl/	dl	adj. m.	poor	
 153824	ydˤnn	!y!(ydˤ(I)[	/y-d-ʕ/ (I)	vb G	to know	
 # KTU 1.114 8						
+153825	y	+y, [y	-y (I)	prep. functor	my	
+153825	y	~y	-y (II)	prep. functor	indeed	
 153825	y	y	y	prep. functor	oh!	
 153826	lmn	šlm[	/š-l-m/	vb D	to be well	
 153827	ḫṭm	ḫṭ/	ḫṭ	n.	sceptre	
@@ -117,6 +124,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153867	mrzḥh	mrzḥ/+h	mrzḥ	n. m.	cultic association	
 # KTU 1.114 16						
 153868	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
+153868	yšt	šty[	/š-t-y/	vb G	to drink	
 153869	yn	yn/	yn	n. m.	wine	
 153870	ˤd	ˤd(III)/	ʕd (III)	n. m.	throne	
 153870	ˤd	ˤd(II)/	ʕd (II)	n. m.	time	
@@ -167,12 +175,18 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153899	ql	ql[	/q-l/	vb G	to fall (down)	
 153899	ql	ql(I)/	ql (I)	n. m.	voice	
 153900	il	il(I)/	ỉl (I)	n. m.	god	
+153901	km	k(III)	k (III)	functor	when	
+153901	km	k(I)	k (I)	prep.	like	
+153901	km	k(IV)	k (IV)	adv.	thus	
 153901	km	km	km	prep./conj./adv.		
+153901	km	+km, +km=	-km			
 153902	mt	mt(II)/	mt (II)	n. m.	death	
 153902	mt	mt[	/m-t/	vb G	to die	
 153902	mt	mt(I)/	mt (I)	n. m.	dead person	
 # KTU 1.114 22						
 153903	il	il(I)/	ỉl (I)	n. m.	god	
+153904	k	+k	-k (I)			
+153904	k	~k	-k (II)			
 153904	k	k(III)	k (III)	Subordinating or completive functor	when	
 153904	k	k(I)	k (I)	prep.	like	
 153904	k	k(II)	k (II)	emph. functor	yes	
@@ -207,7 +221,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153924	lmdh	lmd/+h	lmd	adj. m. or n. m.	trained	
 153924	lmdh	lmd[+h	/l-m-d/	vb	to teach	
 # KTU 1.114 28						
+153925	km	k(III)	k (III)	functor	when	
+153925	km	k(I)	k (I)	prep.	like	
+153925	km	k(IV)	k (IV)	adv.	thus	
 153925	km	km	km	prep./conj./adv.		
+153925	km	+km, +km=	-km			
 153926	trpa	!t!rpʔ[	/r-p-ʔ/	vb G	to heal	
 153927	hn	hn	hn	deictic functor/adv.	behold!	
 153928	nˤr	nˤr(I)/	nʕr (I)	n. m.	boy	
@@ -215,6 +233,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.114 29						
 153929	d	d	d	det. or rel. functor	the one(s) of	
 153930	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
+153930	yšt	šty[	/š-t-y/	vb G	to drink	
 153931	l	l(I)	l (I)	prep.	to	
 153931	l	l(III)	l (III)	functor	certainly	
 153932	lṣbh	lṣb/+h	lṣb	n. m.	brow	
@@ -227,8 +246,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153938	pqq	?	?	?	?	DULAT: NOT FOUND
 153939	w	w	w	conj.	and	
 153940	šrh	šr(IV)/h	šr (IV)	n. m.	navel	
+153940	šrh	šry[	/š-r-y/w/	vb G	to release	
 # KTU 1.114 31						
 153941	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
+153941	yšt	šty[	/š-t-y/	vb G	to drink	
 153942	aḥdh	aḥd/+h	ảḥd	adj. num./adv. num.	one	
 153943	dm	dm(II)/	dm (II)	n. m.	blood	
 153943	dm	dm(I)	dm (I)	functor	since	

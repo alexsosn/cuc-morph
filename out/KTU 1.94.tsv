@@ -57,6 +57,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.94 24						
 151520	t	/t, /t=				
 151520	t	[t, [t=, [t==, [t===				
+151521	btm	bt(II)/t=	bt (II)	n. m.	house	
 151521	btm	b(t(I)/tm	bt (I)	n. f.	daughter	
 151522	qdš	qdš(I)/	qdš (I)	adj. m.	holy	
 151522	qdš	qdš(II)/	qdš (II)	n. m.	sanctuary	
@@ -78,6 +79,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151530	yṯˤk	?	?	?	?	DULAT: NOT FOUND
 151531		?	?	?	?	
 # KTU 1.94 28						
+151532	k	+k	-k (I)			
+151532	k	~k	-k (II)			
 151532	k	k(III)	k (III)	Subordinating or completive functor	when	
 151532	k	k(I)	k (I)	prep.	like	
 151532	k	k(II)	k (II)	emph. functor	yes	
@@ -116,5 +119,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 151554	n	+n, +n=	-n (III)	suff. pn. morph. 1.p.pl.	our/us	
 151554	n		-n (IV)	contracted suff. pn. morph. used with a vb	him/her/it	
 # KTU 1.94 36						
+151555	km	k(III)	k (III)	functor	when	
+151555	km	k(I)	k (I)	prep.	like	
+151555	km	k(IV)	k (IV)	adv.	thus	
 151555	km	km	km	prep./conj./adv.		
+151555	km	+km, +km=	-km			
 151556	tˤrb	!t!ˤrb(I)[	/ʕ-r-b/ (I)	vb G	to enter	

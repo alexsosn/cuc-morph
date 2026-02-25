@@ -39,6 +39,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154170	yrtḥṣ	r]t]ḥṣ[	/r-ḥ-ṣ/	vb Gt	to wash	
 154171	mlk	mlk[	/m-l-k/	vb G	to reign	
 154171	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
+154172	brr	br/	br(r)	n. m.	tin	
 154172	brr	brr/	brr	adj. m.	pure	
 # KTU 1.119 6						
 154173	gdlt	gdl(t(I)/t=	gdlt (I)	n. f.	head of cattle	
@@ -191,6 +192,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154271	mlkm	mlk(I)	mlk (I)		king	
 154272	rišyt	rišy(t/t	rỉšyt	n. f.	beginning	
 # KTU 1.119 26						
+154273	k	+k	-k (I)			
+154273	k	~k	-k (II)			
 154273	k	k(III)	k (III)	Subordinating or completive functor	when	
 154273	k	k(I)	k (I)	prep.	like	
 154273	k	k(II)	k (II)	emph. functor	yes	
@@ -208,6 +211,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154281	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
 154282	tšun	!t!nšʔ[	/n-š-ʔ/	vb G	to raise	
 # KTU 1.119 28						
+154283	y	+y, [y	-y (I)	prep. functor	my	
+154283	y	~y	-y (II)	prep. functor	indeed	
 154283	y	y	y	prep. functor	oh!	
 154284	bˤlm	bˤl(II)/m	bʕl (II)	n. m.	lord	
 154285	al	al(I)	ảl (I)	neg. functor	no	
@@ -218,10 +223,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154287	ˤz	ˤz(III)/	ʕz (III)	adj. m. or n. m.	strong	
 154288	lṯġrn	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.119 29						
+154289	y	+y, [y	-y (I)	prep. functor	my	
+154289	y	~y	-y (II)	prep. functor	indeed	
 154289	y	y	y	prep. functor	oh!	
 154290	qrdlḥmytny	?	?	?	?	DULAT: NOT FOUND
 154291	ibr	ibr(I)/	ỉbr (I)	n. m.	bull	
 154291	ibr	ibr(II)/	ỉbr (II)	n. m.	wing	
+154292	y	+y, [y	-y (I)	prep. functor	my	
+154292	y	~y	-y (II)	prep. functor	indeed	
 154292	y	y	y	prep. functor	oh!	
 # KTU 1.119 30						
 154293	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
@@ -253,6 +262,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154308	qdš	qdš(II)/	qdš (II)	n. m.	sanctuary	
 154309	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
 154309	bˤl	bˤl[/	/b-ʕ-l/	vb G	to make	
+154310	nˤl	ˤly[	/ʕ-l-y/	vb G	to go up	
 154310	nˤl	nˤl/	nʕl	n. m.	portable platform	
 154311	ntbt	ntbt/	ntbt	n. m.	path	
 154312	bt	bt(II)/	bt (II)	n. m.	house	

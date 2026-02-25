@@ -4,6 +4,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143190	l	l(III)	l (III)	functor	certainly	
 143191	krt	krt/	krt	PN	krt	
 # KTU 1.16 I:2						
+143192	k	+k	-k (I)			
+143192	k	~k	-k (II)			
 143192	k	k(III)	k (III)	Subordinating or completive functor	when	
 143192	k	k(I)	k (I)	prep.	like	
 143192	k	k(II)	k (II)	emph. functor	yes	
@@ -11,6 +13,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143194	b	b	b	prep.	in	
 143195	btk	bt(II)/+k	bt (II)	n. m.	house	
 143196	nˤtq	!n!ˤtq[	/ʕ-t-q/	vb N	to pass	
+143197	k	+k	-k (I)			
+143197	k	~k	-k (II)			
 143197	k	k(III)	k (III)	Subordinating or completive functor	when	
 143197	k	k(I)	k (I)	prep.	like	
 143197	k	k(II)	k (II)	emph. functor	yes	
@@ -47,6 +51,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 I:7						
 143219	ṣpn	ṣpn/	ṣpn	TN/DN	Ṣapānu/Zaphon/the mountain dwelling of bʕl deified	
 143220	ḥlm	ḥlm(I)/	ḥlm (I)	n. m.	dream	
+143220	ḥlm	ḥl(I)/	ḥl (I)	n. m.	strength	
 143221	qdš	qdš(I)/	qdš (I)	adj. m.	holy	
 143221	qdš	qdš(II)/	qdš (II)	n. m.	sanctuary	
 # KTU 1.16 I:8						
@@ -63,6 +68,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143228	ap	ap(II)/	ảp (II)	n. m.	nose	
 # KTU 1.16 I:10						
 143229	krt	krt/	krt	PN	krt	
+143230	bnm	b	b	prep.	in	
 143230	bnm	bn(I)/m	bn (I)	n. m.	son	
 143231	il	il(I)/	ỉl (I)	n. m.	god	
 143232	špḥ	špḥ/	špḥ	n. m.	family	
@@ -92,6 +98,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 I:15						
 143249	blmtk	blmt/	blmt	n. m.	immortality	
 143250	ngln	!n!gl[	/g-l/	vb G	to rejoice	
+143251	k	+k	-k (I)			
+143251	k	~k	-k (II)			
 143251	k	k(III)	k (III)	Subordinating or completive functor	when	
 143251	k	k(I)	k (I)	prep.	like	
 143251	k	k(II)	k (II)	emph. functor	yes	
@@ -100,6 +108,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143253	b	b	b	prep.	in	
 143254	btk	bt(II)/+k	bt (II)	n. m.	house	
 143255	nˤtq	!n!ˤtq[	/ʕ-t-q/	vb N	to pass	
+143256	k	+k	-k (I)			
+143256	k	~k	-k (II)			
 143256	k	k(III)	k (III)	Subordinating or completive functor	when	
 143256	k	k(I)	k (I)	prep.	like	
 143256	k	k(II)	k (II)	emph. functor	yes	
@@ -109,6 +119,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143259	ap	ap(I)	ảp (I)	adv./conj.	also	
 143259	ap	ap(II)/	ảp (II)	n. m.	nose	
 143260	ab	ab/	ảb	n. m.	father	
+143261	k	+k	-k (I)			
+143261	k	~k	-k (II)			
 143261	k	k(III)	k (III)	Subordinating or completive functor	when	
 143261	k	k(I)	k (I)	prep.	like	
 143261	k	k(II)	k (II)	emph. functor	yes	
@@ -197,6 +209,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143314	w	w	w	conj.	and	
 143315	tdm	dmm[	/d-m-m/	vb G	to wail	
 143316	ly	l(I)+y	l (I)	prep.	to	
+143317	qmm	qm[	/q-m/	vb G	to stand up	
 143317	qmm	qmm	qmm	?	?	
 # KTU 1.16 I:31						
 143318	aḫr	aḫr	ảḫr	adv./prep./conj.	afterwards	
@@ -214,6 +227,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143326	aḫtk	aḫt(I)/+k	ảḫt (I)	n. f.	sister (related by blood)	
 # KTU 1.16 I:33						
 143327	ydˤt	!y!(ydˤ(I)[	/y-d-ʕ/ (I)	vb G	to know	
+143328	k	+k	-k (I)			
+143328	k	~k	-k (II)			
 143328	k	k(III)	k (III)	Subordinating or completive functor	when	
 143328	k	k(I)	k (I)	prep.	like	
 143328	k	k(II)	k (II)	emph. functor	yes	
@@ -233,6 +248,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 I:36						
 143339	tmtn	!t!mt[	/m-t/	vb G	to die	
 143340	ṣba	ṣb(u(II)/&a	ṣbủ (II)	n. m.	setting	
+143341	rbt	rb(I)/	rb (I)	adj. m.	great	
 143341	rbt	rbt/	rb(b)t	num.	ten thousand	
 143341	rbt	rb(t(I)/t	rbt (I)	n. f.	Lady	
 # KTU 1.16 I:37						
@@ -241,6 +257,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143344	tgh	tgh/	tgh	n. m.	absence	
 143345	nyr	nyr/	nyr	n. f.	luminary	
 # KTU 1.16 I:38						
+143346	rbt	rb(I)/	rb (I)	adj. m.	great	
 143346	rbt	rbt/	rb(b)t	num.	ten thousand	
 143346	rbt	rb(t(I)/t	rbt (I)	n. f.	Lady	
 143347	w	w	w	conj.	and	
@@ -263,6 +280,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143356	ˤšr	ˤšr[	/ʕ-š-r/	vb D/Dpass	ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods	
 143356	ˤšr	ˤšr(I)/	ʕšr(t) (I)	n. m.	banquet	
 # KTU 1.16 I:41						
+143357	ˤšrt	ˤšr(I)/	ʕšr(t) (I)	n. m.	banquet	
 143357	ˤšrt	ˤšr(t(II)/t	ʕšrt (II)	n. f.	group of ten	
 143358	qḥ	lqḥ[	/l-q-ḥ/	vb G	to get hold of	
 143359	tpk	tp(I)/	tp (I)	n. m.	drum	
@@ -291,6 +309,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143375	l	l(III)	l (III)	functor	certainly	
 143376	kl	kl/	kl	n. m.	totality (of)	
 # KTU 1.16 I:46						
+143377	apnk	ap(I)+k	ảp (I)	adv./conj.	also	
 143377	apnk	apnk	ảpnk	adv. functor of illation	then	
 143378	ġzr	ġzr/	ġzr	n. m.	lad	
 143379	ilḥu	ilḥu/	ỉlḥủ	PN	ỉlḥủ	
@@ -326,9 +345,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143400	pnh	pn(m/+h	pnm	n. m. pl. tant.	face	
 143401	ġṯġr	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.16 I:53						
+143402	yṣu	!y!(yṣʔ[	/y-ṣ-ʔ/	vb G	to go out	
 143402	yṣu	yṣu(I)/	yṣủ (I)	n. m.	exit	
 143403	hlm	hlm	hlm	conj. functor	and so	
 143403	hlm	hlm[	/h-l-m/	vb G	to hit	
+143403	hlm	hl	hl	deictic adv. functor	behold	
 143404	aḫh	aḫ(I)/+h	ảḫ (I)	n. m.	brother (by blood)	
 143405	tph	phy[	/p-h-y/	vb G	to see	
 # KTU 1.16 I:54						
@@ -353,7 +374,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143419	adnk	adn(I)/+k	ảdn (I)	n. m.	lord	
 # KTU 1.16 I:58						
 143420	w	w	w	conj.	and	
+143421	yˤn	ˤny(I)[	/ʕ-n-y/ (I)	vb G	to answer	
 143421	yˤn	!y!ˤn[	/ʕ-n/	vb G/D	to see	
+143421	yˤn	ˤnw[	/ʕ-n-w/	vb G/Dpass	to be / remain depressed	
 143422	ġzr	ġzr/	ġzr	n. m.	lad	
 143423	ilḥu	ilḥu/	ỉlḥủ	PN	ỉlḥủ	
 # KTU 1.16 I:59						
@@ -378,6 +401,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143434	ˤšr	ˤšr(I)/	ʕšr (I)	n. num.	ten	
 143434	ˤšr	ˤšr[	/ʕ-š-r/	vb D/Dpass	ʕšr ʕšr b bt ỉlm a banquet is held in the temple of the gods	
 143434	ˤšr	ˤšr(I)/	ʕšr(t) (I)	n. m.	banquet	
+143435	ˤšrt	ˤšr(I)/	ʕšr(t) (I)	n. m.	banquet	
 143435	ˤšrt	ˤšr(t(II)/t	ʕšrt (II)	n. f.	group of ten	
 # KTU 1.16 II:1						
 143436	šxxxxxxxxxxx	?	?	?	?	DULAT: NOT FOUND
@@ -394,6 +418,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 II:6						
 143443	lkxxxxxxxxxx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.16 II:7						
+143444	k	+k	-k (I)			
+143444	k	~k	-k (II)			
 143444	k	k(III)	k (III)	Subordinating or completive functor	when	
 143444	k	k(I)	k (I)	prep.	like	
 143444	k	k(II)	k (II)	emph. functor	yes	
@@ -438,6 +464,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 II:19						
 143469	mn	mn(IV)	mn (IV)	?	?	
 143470	yrḫ	yrḫ/	yrḫ	n. m.	moon	
+143471	k	+k	-k (I)			
+143471	k	~k	-k (II)			
 143471	k	k(III)	k (III)	Subordinating or completive functor	when	
 143471	k	k(I)	k (I)	prep.	like	
 143471	k	k(II)	k (II)	emph. functor	yes	
@@ -445,6 +473,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143472	mrṣ	mrṣ/	mrṣ	n. m.	illness	
 # KTU 1.16 II:20						
 143473	mn	mn(IV)	mn (IV)	?	?	
+143474	k	+k	-k (I)			
+143474	k	~k	-k (II)			
 143474	k	k(III)	k (III)	Subordinating or completive functor	when	
 143474	k	k(I)	k (I)	prep.	like	
 143474	k	k(II)	k (II)	emph. functor	yes	
@@ -461,6 +491,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143481	ṯlṯ	ṯlṯ(II)/	ṯlṯ (II)	adj. m. ord. num.	third	
 143482	yrḫm	yrḫ/+m(I)	yrḫ	n. m.	moon	
 143482	yrḫm	yrḫ/+m(II)	yrḫ	n. m.	moon	
+143483	k	+k	-k (I)			
+143483	k	~k	-k (II)			
 143483	k	k(III)	k (III)	Subordinating or completive functor	when	
 143483	k	k(I)	k (I)	prep.	like	
 143483	k	k(II)	k (II)	emph. functor	yes	
@@ -468,6 +500,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143484	mrṣ	mrṣ/	mrṣ	n. m.	illness	
 # KTU 1.16 II:23						
 143485	arbˤ	arbˤ/	ảrbʕ	num.	four	
+143486	k	+k	-k (I)			
+143486	k	~k	-k (II)			
 143486	k	k(III)	k (III)	Subordinating or completive functor	when	
 143486	k	k(I)	k (I)	prep.	like	
 143486	k	k(II)	k (II)	emph. functor	yes	
@@ -482,6 +516,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 II:25						
 143493	w	w	w	conj.	and	
 143494	qbr	qbr(I)/	qbr (I)	n. m.	grave	
+143495	tṣr	nṣr[	/n-ṣ-r/	vb G	to sob	
 143495	tṣr	!t!ṣr[	/ṣ-r(-r)/	vb G	to besiege	
 143496	ql	ql[	/q-l/	vb G	to fall (down)	
 143496	ql	ql(I)/	ql (I)	n. m.	voice	
@@ -489,17 +524,26 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143497	rm	rm[	/r-m/	vb G	to go up	
 143497	rm	rm(II)/	rm (II)	n. m.	erection	
 # KTU 1.16 II:26						
+143498	tṣr	nṣr[	/n-ṣ-r/	vb G	to sob	
 143498	tṣr	!t!ṣr[	/ṣ-r(-r)/	vb G	to besiege	
 143499	trm	!t!rm[	/r-m/	vb G	to go up	
 143500	tnqth	tnqt(I)/+h=	tnqt (I)	n. f.	scream	
 # KTU 1.16 II:27						
+143501	km	k(III)	k (III)	functor	when	
+143501	km	k(I)	k (I)	prep.	like	
+143501	km	k(IV)	k (IV)	adv.	thus	
 143501	km	km	km	prep./conj./adv.		
+143501	km	+km, +km=	-km			
 143502	nkyt	nky(t/t=	nkyt	n. f.	beaten	
 143503	ṯġr	ṯġr(II)/	ṯġr (II)	n. m.	gatekeeper	
 143503	ṯġr	ṯġr(I)/	ṯġr (I)	n. m.	gate	
 143504	xxxx	?	?	?	?	
 # KTU 1.16 II:28						
+143505	km	k(III)	k (III)	functor	when	
+143505	km	k(I)	k (I)	prep.	like	
+143505	km	k(IV)	k (IV)	adv.	thus	
 143505	km	km	km	prep./conj./adv.		
+143505	km	+km, +km=	-km			
 143506	škllt	škll(t/t=	škllt	n. f.	emaciated	
 143507	xxxx	?	?	?	?	
 # KTU 1.16 II:29						
@@ -534,6 +578,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 II:34						
 143525	trm	!t!rm[	/r-m/	vb G	to go up	
 143525	trm	tr(I)/m	tr (I)	n. m.	pole	
+143525	trm	trm(t/t	trmt	n. f.	offering	
+143526	tṣr	nṣr[	/n-ṣ-r/	vb G	to sob	
 143526	tṣr	!t!ṣr[	/ṣ-r(-r)/	vb G	to besiege	
 143527	trm	!t!rm[	/r-m/	vb G	to go up	
 143528	tnqt	tnq(t(I)/t	tnqt (I)	n. f.	scream	
@@ -559,6 +605,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143540	mtk	mt(II)/+k	mt (II)	n. m.	death	
 143541	ngln	!n!gl[	/g-l/	vb G	to rejoice	
 # KTU 1.16 II:38						
+143542	k	+k	-k (I)			
+143542	k	~k	-k (II)			
 143542	k	k(III)	k (III)	Subordinating or completive functor	when	
 143542	k	k(I)	k (I)	prep.	like	
 143542	k	k(II)	k (II)	emph. functor	yes	
@@ -567,6 +615,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143545	btk	bt(II)/+k	bt (II)	n. m.	house	
 143546	nˤtq	!n!ˤtq[	/ʕ-t-q/	vb N	to pass	
 # KTU 1.16 II:39						
+143547	k	+k	-k (I)			
+143547	k	~k	-k (II)			
 143547	k	k(III)	k (III)	Subordinating or completive functor	when	
 143547	k	k(I)	k (I)	prep.	like	
 143547	k	k(II)	k (II)	emph. functor	yes	
@@ -578,6 +628,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143551	ap	ap(I)	ảp (I)	adv./conj.	also	
 143551	ap	ap(II)/	ảp (II)	n. m.	nose	
 143552	ab	ab/	ảb	n. m.	father	
+143553	k	+k	-k (I)			
+143553	k	~k	-k (II)			
 143553	k	k(III)	k (III)	Subordinating or completive functor	when	
 143553	k	k(I)	k (I)	prep.	like	
 143553	k	k(II)	k (II)	emph. functor	yes	
@@ -630,6 +682,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143584	ap	ap(I)	ảp (I)	adv./conj.	also	
 143584	ap	ap(II)/	ảp (II)	n. m.	nose	
 143585	krt	krt/	krt	PN	krt	
+143586	bnm	b	b	prep.	in	
 143586	bnm	bn(I)/m	bn (I)	n. m.	son	
 143587	il	il(I)/	ỉl (I)	n. m.	god	
 # KTU 1.16 II:49						
@@ -639,6 +692,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143591	qdš	qdš(I)/	qdš (I)	adj. m.	holy	
 143591	qdš	qdš(II)/	qdš (II)	n. m.	sanctuary	
 # KTU 1.16 II:50						
+143592	bkm	b	b	prep.	in	
+143592	bkm	bky[	/b-k-y/	vb G	to weep	
 143592	bkm	bkm	bkm	adv.	next	
 143593	tˤrb	!t!ˤrb(I)[	/ʕ-r-b/ (I)	vb G	to enter	
 143594	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
@@ -681,6 +736,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143618	b	b	b	prep.	in	
 143619	ṣˤ	ṣˤ(I)/	ṣʕ (I)	n. m.	plate / wide bowl / platter	
 143620	w	w	w	conj.	and	
+143621	y	+y, [y	-y (I)	prep. functor	my	
+143621	y	~y	-y (II)	prep. functor	indeed	
 143621	y	y	y	prep. functor	oh!	
 # KTU 1.16 III:2						
 143622	ˤn	ˤn(I)/	ʕn (I)	n. f.	eye	
@@ -740,6 +797,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143656	bm	b	b	prep.	in	
 143657	nrt	nr(t(I)/t	nrt (I)	n. f.	lantern	
 143657	nrt	nr(t(II)/t	nrt (II)	n. f.	ploughed land	
+143658	k	+k	-k (I)			
+143658	k	~k	-k (II)			
 143658	k	k(III)	k (III)	Subordinating or completive functor	when	
 143658	k	k(I)	k (I)	prep.	like	
 143658	k	k(II)	k (II)	emph. functor	yes	
@@ -747,6 +806,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 III:11						
 143660	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
 143661	tlm	tlm/	tlm	n. m.	furrow	
+143662	k	+k	-k (I)			
+143662	k	~k	-k (II)			
 143662	k	k(III)	k (III)	Subordinating or completive functor	when	
 143662	k	k(I)	k (I)	prep.	like	
 143662	k	k(II)	k (II)	emph. functor	yes	
@@ -755,6 +816,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143664	nšu	!n!šʔ[	/n-š-ʔ/	vb G	to raise	
 143665	riš	riš(I)/	rỉš (I)	n. m.	head	
 143666	ḥrṯm	ḥrṯ/m	ḥrṯ	n. m.	ploughman	
+143666	ḥrṯm	ḥrṯ[	/ḥ-r-ṯ/	vb G	to plough	
 # KTU 1.16 III:13						
 143667	l	l(I)	l (I)	prep.	to	
 143668	ẓr	ẓr(I)/	ẓr (I)	n. m.	upon	
@@ -765,6 +827,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 III:14						
 143672	lḥm	lḥm(I)[	/l-ḥ-m/ (I)	vb G	to eat	
 143672	lḥm	lḥm/	lḥm	n. m.	grain	
+143672	lḥm	lḥ(I)/	lḥ (I)	n. f.	cheek	
 143673	b	b	b	prep.	in	
 143674	ˤdnhm	ˤdn(II)/+hm	ʕdn (II)	n. m.	store	
 143675	kly	kly[	/k-l-y/	vb G	to finish	
@@ -789,11 +852,15 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143688	amrk	amr(I)/	ảmr (I)	n. m.	order	
 143689	xxxx	?	?	?	?	
 # KTU 1.16 IV:2						
+143690	k	+k	-k (I)			
+143690	k	~k	-k (II)			
 143690	k	k(III)	k (III)	Subordinating or completive functor	when	
 143690	k	k(I)	k (I)	prep.	like	
 143690	k	k(II)	k (II)	emph. functor	yes	
 143691	il	il(I)/	ỉl (I)	n. m.	god	
 143692	ḥkmt	ḥkm(t/t	ḥkmt	n. f.	wisdom	
+143693	k	+k	-k (I)			
+143693	k	~k	-k (II)			
 143693	k	k(III)	k (III)	Subordinating or completive functor	when	
 143693	k	k(I)	k (I)	prep.	like	
 143693	k	k(II)	k (II)	emph. functor	yes	
@@ -810,13 +877,18 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 IV:4						
 143701	w	w	w	conj.	and	
 143702	aṯth	aṯt/+h	ảṯt	n. f.	woman	
+143703	ngrt	ngr/	ngr	n. m.	herald	
 143703	ngrt	ngr(t/t	ngrt	n. f.	herald	
 143704	ilht	il(t(I)/&ht	ỉlt (I)	n. f.	goddess	
 # KTU 1.16 IV:5						
+143705	k	+k	-k (I)			
+143705	k	~k	-k (II)			
 143705	k	k(III)	k (III)	Subordinating or completive functor	when	
 143705	k	k(I)	k (I)	prep.	like	
 143705	k	k(II)	k (II)	emph. functor	yes	
 143706	ḥṣ	ḥṣ/	ḥṣ	n. m.	gravel	
+143707	k	+k	-k (I)			
+143707	k	~k	-k (II)			
 143707	k	k(III)	k (III)	Subordinating or completive functor	when	
 143707	k	k(I)	k (I)	prep.	like	
 143707	k	k(II)	k (II)	emph. functor	yes	
@@ -838,13 +910,18 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 IV:8						
 143718	w	w	w	conj.	and	
 143719	aṯth	aṯt/+h	ảṯt	n. f.	woman	
+143720	ngrt	ngr/	ngr	n. m.	herald	
 143720	ngrt	ngr(t/t	ngrt	n. f.	herald	
 143721	ilht	il(t(I)/&ht	ỉlt (I)	n. f.	goddess	
 # KTU 1.16 IV:9						
+143722	k	+k	-k (I)			
+143722	k	~k	-k (II)			
 143722	k	k(III)	k (III)	Subordinating or completive functor	when	
 143722	k	k(I)	k (I)	prep.	like	
 143722	k	k(II)	k (II)	emph. functor	yes	
+143723	yˤn	ˤny(I)[	/ʕ-n-y/ (I)	vb G	to answer	
 143723	yˤn	!y!ˤn[	/ʕ-n/	vb G/D	to see	
+143723	yˤn	ˤnw[	/ʕ-n-w/	vb G/Dpass	to be / remain depressed	
 143724	lṭpn	lṭpn/	lṭpn	adj. m.	Benevolent	
 143725	il	il(I)/	ỉl (I)	n. m.	god	
 143726	d	d	d	det. or rel. functor	the one(s) of	
@@ -867,6 +944,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 IV:12						
 143737	w	w	w	conj.	and	
 143738	aṯtk	aṯt/+k	ảṯt	n. f.	woman	
+143739	ngrt	ngr/	ngr	n. m.	herald	
 143739	ngrt	ngr(t/t	ngrt	n. f.	herald	
 143740	ilht	il(t(I)/&ht	ỉlt (I)	n. f.	goddess	
 # KTU 1.16 IV:13						
@@ -887,6 +965,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143750	l	l(I)	l (I)	prep.	to	
 143750	l	l(III)	l (III)	functor	certainly	
 143751	ġr	ġr(I)/	ġr (I)	n. m.	mountain	
+143752	gm	g/	g	n. m.	(loud) voice	
 143752	gm	gm(II)	gm (II)	adv.	also	
 143753	ṣḥ	ṣḥ[	/ṣ-ḥ/	vb G	to exclaim	
 # KTU 1.16 IV:17						
@@ -906,6 +985,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143762	b	b	b	prep.	in	
 143763	ˤdtxxxxxxx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.16 V:6						
+143764	y	+y, [y	-y (I)	prep. functor	my	
+143764	y	~y	-y (II)	prep. functor	indeed	
 143764	y	y	y	prep. functor	oh!	
 143765	aṯrt	aṯr(t(I)/t	ảṯrt (I)	n. f.	back part (of the head)	
 143766	xxxxxx	?	?	?	?	
@@ -1005,12 +1086,15 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143828	ˤnyh	ˤny(I)[	/ʕ-n-y/ (I)	vb G	to answer	
 # KTU 1.16 V:23						
 143829	w	w	w	conj.	and	
+143830	yˤn	ˤny(I)[	/ʕ-n-y/ (I)	vb G	to answer	
 143830	yˤn	!y!ˤn[	/ʕ-n/	vb G/D	to see	
+143830	yˤn	ˤnw[	/ʕ-n-w/	vb G/Dpass	to be / remain depressed	
 143831	ltpn	?	?	?	?	DULAT: NOT FOUND
 143832	il	il(I)/	ỉl (I)	n. m.	god	
 143833	bpid	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.16 V:24						
 143834	ṯb	ṯb[	/ṯ-b/	vb G	to return	
+143835	bny	bn(I)/+ny	bn (I)	n. m.	son	
 143835	bny	bny[	/b-n-y/	vb G	to build	
 143835	bny	bny/	bny	n. m.	architect	
 143836	l	l(I)	l (I)	prep.	to	
@@ -1092,6 +1176,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143883	il	il(I)/	ỉl (I)	n. m.	god	
 143884	pdm	pd(I)/m	pd (I)	n. m.	lock (of hair)	
 # KTU 1.16 V:47						
+143885	ˤrm	ˤr(I)/	ʕr (I)	n. f.	city	
 143885	ˤrm	ˤrm(I)/	ʕrm (I)	adj. m.	naked	
 143886		?	?	?	?	
 # KTU 1.16 V:48						
@@ -1138,6 +1223,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143911	tbu	!t!bʔ[	/b-ʔ/	vb G	to enter	
 143912	pnm	pn(m/m	pnm	n. m. pl. tant.	face	
 # KTU 1.16 VI:6						
+143913	ˤrm	ˤr(I)/	ʕr (I)	n. f.	city	
 143913	ˤrm	ˤrm(I)/	ʕrm (I)	adj. m.	naked	
 143914	tdu	dʔy[	/d-ʔ-y/	vb G	to fly	
 143914	tdu	ndʔ[	/n-d-ʔ/	vb G	to frighten away	
@@ -1151,7 +1237,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143919	ḫṭm	ḫṭ/	ḫṭ	n.	sceptre	
 143920	tˤmt	!t!ˤmt[	/ʕ-m-t/	vb G	to hit	
 143921	pṭr	pṭr/	pṭr	n. m.	aperture	
+143922	km	k(III)	k (III)	functor	when	
+143922	km	k(I)	k (I)	prep.	like	
+143922	km	k(IV)	k (IV)	adv.	thus	
 143922	km	km	km	prep./conj./adv.		
+143922	km	+km, +km=	-km			
 # KTU 1.16 VI:9						
 143923	zbln	zbln/	zbln	n. m.	sickness	
 143924	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
@@ -1159,6 +1249,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 VI:10						
 143926	w	w	w	conj.	and	
 143927	tṯb	!t!ṯb[	/ṯ-b/	vb G/L/R	to return	
+143927	tṯb	yṯb[	/y-ṯ-b/	vb G	to sit down	
 143928	trḥṣ	!t!rḥṣ[	/r-ḥ-ṣ/	vb G	to wash	
 143929	nn	grš[	/g-r-š/	vb G	to eject	
 143929	nn	gr[	/g-r(-y)/	vb G	to attack	
@@ -1171,6 +1262,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143933	l	l(III)	l (III)	functor	certainly	
 143934	lḥm	lḥm(I)[	/l-ḥ-m/ (I)	vb G	to eat	
 143934	lḥm	lḥm/	lḥm	n. m.	grain	
+143934	lḥm	lḥ(I)/	lḥ (I)	n. f.	cheek	
 143935	tptḥ	!t!ptḥ[	/p-t-ḥ/	vb G	to open	
 # KTU 1.16 VI:12						
 143936	brlth	brl(t/t	brlt	n. f.	hunger	
@@ -1226,6 +1318,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143969	w	w	w	conj.	and	
 143970	lḥm	lḥm(I)[	/l-ḥ-m/ (I)	vb G	to eat	
 143970	lḥm	lḥm/	lḥm	n. m.	grain	
+143970	lḥm	lḥ(I)/	lḥ (I)	n. f.	cheek	
 # KTU 1.16 VI:21						
 143971	mgṯ	mgṯ/	mgṯ	n. m.	bestia da macello	
 143972	w	w	w	conj.	and	
@@ -1255,6 +1348,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 143986	l	l(II)	l (II)	adv.	no	
 143986	l	l(III)	l (III)	functor	certainly	
 143987	nḫt	nḫ(t/t	nḫt	n. f.	divan	
+143987	nḫt	!n!nḫ[	/n-ḫ/	vb G	to rest	
 143988	lrkḥṯ	?	?	?	?	DULAT: NOT FOUND
 143989	ddrkth	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.16 VI:25						
@@ -1290,6 +1384,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144010	w	w	w	conj.	and	
 144011	tqġ	yqġ[	/y-q-ġ/	vb G	be alert	
 144012	udn	udn(I)/	ủdn (I)	n. m.	ear	
+144013	k	+k	-k (I)			
+144013	k	~k	-k (II)			
 144013	k	k(III)	k (III)	Subordinating or completive functor	when	
 144013	k	k(I)	k (I)	prep.	like	
 144013	k	k(II)	k (II)	emph. functor	yes	
@@ -1328,11 +1424,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144030	qṣr	qṣr(II)/	qṣr (II)	n. m.	anklebone	
 144031	npš	npš(I)/	npš (I)	n. f.	throat	
 # KTU 1.16 VI:35						
+144032	km	k(III)	k (III)	functor	when	
+144032	km	k(I)	k (I)	prep.	like	
+144032	km	k(IV)	k (IV)	adv.	thus	
 144032	km	km	km	prep./conj./adv.		
+144032	km	+km, +km=	-km			
 144033	aḫt	aḫ(t(I)/t=	ảḫt (I)	n. f.	sister (related by blood)	
 144034	ˤrš	ˤrš/	ʕrš	n. f.	bed	
 144035	mdw	mdw/	mdw	n. m.	sickness	
 # KTU 1.16 VI:36						
+144036	anšt	!a!ʔnš[	/ʔ-n-š/	vb G	generic mng 1) to languish	
 144036	anšt	anš(t/t	ảnšt	n. f.	illness	
 144037	ˤrš	ˤrš/	ʕrš	n. f.	bed	
 144038	zbln	zbln/	zbln	n. m.	sickness	
@@ -1378,6 +1479,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144064	tqġ	yqġ[	/y-q-ġ/	vb G	be alert	
 144065	udn	udn(I)/	ủdn (I)	n. m.	ear	
 # KTU 1.16 VI:43						
+144066	k	+k	-k (I)			
+144066	k	~k	-k (II)			
 144066	k	k(III)	k (III)	Subordinating or completive functor	when	
 144066	k	k(I)	k (I)	prep.	like	
 144066	k	k(II)	k (II)	emph. functor	yes	
@@ -1439,7 +1542,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.16 VI:50						
 144097	kslk	ksl/+k	ksl	n. f.	back	
 144098	almnt	almn(t/t	ảlmnt	n. f.	widow	
+144099	km	k(III)	k (III)	functor	when	
+144099	km	k(I)	k (I)	prep.	like	
+144099	km	k(IV)	k (IV)	adv.	thus	
 144099	km	km	km	prep./conj./adv.		
+144099	km	+km, +km=	-km			
 # KTU 1.16 VI:51						
 144100	aḫt	aḫ(t(I)/t=	ảḫt (I)	n. f.	sister (related by blood)	
 144101	ˤrš	ˤrš/	ʕrš	n. f.	bed	
@@ -1471,6 +1578,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144118	yṯbr	!y!ṯbr[	/ṯ-b-r/	vb G/N	to break	
 # KTU 1.16 VI:55						
 144119	ḥrn	ḥr(I)/+n	ḥr (I)	n. m.	intestine(s)	
+144120	y	+y, [y	-y (I)	prep. functor	my	
+144120	y	~y	-y (II)	prep. functor	indeed	
 144120	y	y	y	prep. functor	oh!	
 144121	bn	bn(I)/	bn (I)	n. m.	son	
 144121	bn	bn(II)	bn (II)	prep.	between	
@@ -1495,7 +1604,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144133	b	b	b	prep.	in	
 144134	ḥpnk	ḥpn(II)/+k	ḥpn (II)	n. m.	greed	
 144135	w	w	w	conj.	and	
+144136	tˤn	ˤny(I)[	/ʕ-n-y/ (I)	vb G	to answer	
 144136	tˤn	!t!ˤn[	/ʕ-n/	vb G/D	to see	
+144136	tˤn	ˤnw[	/ʕ-n-w/	vb G	to be / remain depressed	
 # KTU 1.16 VI:59						
 144137	spr	spr(II)/	spr (II)	n. m.	tablet / register	
 144137	spr	spr[	/s-p-r/	vb G/D	to count	

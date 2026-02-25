@@ -21,7 +21,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 154075	dt	d	d	det. or rel. functor	the one(s) of	
 154076	l	l(I)	l (I)	prep.	to	
 154076	l	l(III)	l (III)	functor	certainly	
+154077	y	+y, [y	-y (I)	prep. functor	my	
+154077	y	~y	-y (II)	prep. functor	indeed	
 154077	y	y	y	prep. functor	oh!	
+154078	k	+k	-k (I)			
+154078	k	~k	-k (II)			
 154078	k	k(III)	k (III)	Subordinating or completive functor	when	
 154078	k	k(I)	k (I)	prep.	like	
 154078	k	k(II)	k (II)	emph. functor	yes	
@@ -51,9 +55,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.117 10						
 154092	ryt	?	?	?	?	DULAT: NOT FOUND
 154093	aṣṣ	nṣṣ[	/n-ṣ-ṣ/	vb G	to take flight	
+154094	k	+k	-k (I)			
+154094	k	~k	-k (II)			
 154094	k	k(III)	k (III)	Subordinating or completive functor	when	
 154094	k	k(I)	k (I)	prep.	like	
 154094	k	k(II)	k (II)	emph. functor	yes	
+154095	nṣ	nsk/	nsk	n. m.	caster	
 154095	nṣ	nṣ(I)/	nṣ (I)	n. m.	bird	
 # KTU 1.117 11						
 154096	m	l(I)	l (I)	prep.	to	
