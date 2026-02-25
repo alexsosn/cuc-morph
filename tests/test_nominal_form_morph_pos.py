@@ -33,6 +33,20 @@ class NominalFormMorphPosFixerTest(unittest.TestCase):
         result = fixer.refine_row(row)
         self.assertEqual(result.pos, "n. m. du.")
 
+    def test_does_not_append_dual_when_same_surface_is_singular_and_dual(self) -> None:
+        gate = _MorphGate({("ỉl (I)", "il"): {"sg.", "du., cstr."}})
+        fixer = NominalFormMorphPosFixer(gate=gate)
+        row = TabletRow("2b", "il", "il(I)/", "ỉl (I)", "n. m.", "god", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.pos, "n. m.")
+
+    def test_removes_existing_dual_when_same_surface_is_singular_and_dual(self) -> None:
+        gate = _MorphGate({("ỉl (I)", "il"): {"sg.", "du., cstr."}})
+        fixer = NominalFormMorphPosFixer(gate=gate)
+        row = TabletRow("2c", "il", "il(I)/", "ỉl (I)", "n. m. du.", "god", "")
+        result = fixer.refine_row(row)
+        self.assertEqual(result.pos, "n. m.")
+
     def test_non_nominal_pos_unchanged(self) -> None:
         gate = _MorphGate({("hl", "hlm"): {"sg."}})
         fixer = NominalFormMorphPosFixer(gate=gate)

@@ -26,6 +26,7 @@
   - parser steps now require token-level `f.` morphology markers (not substring matches),
   - linter feminine-form override now also uses token-level morphology parsing.
 - Extended `DulatMorphGate` with `token_genders(...)` and updated `NominalFormMorphPosFixer` to correct false `n. f.` assignments back to `n. m.` when token gender is unambiguously masculine and exact form morphology is non-feminine (e.g. `ab/+n` for `ảb`).
+- Refined dual POS enrichment in `NominalFormMorphPosFixer`: `du.` is now added only for unambiguous dual-only surfaces, and removed when the same surface is explicitly `sg.`/`pl.`-competing (e.g. `ỉl` no longer forced to `n. m. du.` from `du., cstr.` overlap).
 - Added regression tests for the `suff.` vs `f.` collision and token-gender correction:
   - `tests/test_nominal_form_morph_pos.py`,
   - `tests/test_dulat_gate_plurale_tantum.py`,
