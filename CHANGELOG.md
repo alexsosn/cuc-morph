@@ -2,6 +2,23 @@
 
 ## 2026-02-25
 
+- Reverted noun-side POS coercion in `l + noun` compound-preposition passes so suffix-friendly noun payloads are retained:
+  - `L_PN_PREP_CANONICAL_PAYLOADS` now keeps `pn*` payloads as `n. m. pl. tant.` (not `prep.`),
+  - `L_BODY_COMPOUND_PREP_RULES` now keeps `pˤn` as `n. f.` and `ẓr` as `n. m.` (not `prep.`),
+  - `LKbdCompoundPrepDisambiguator` now emits `kbd(I)` as `n.` with gloss `within`.
+- Updated linter parity in `linter/lint.py` to enforce the same noun-side payload policy and refreshed warning messages accordingly.
+- Added/updated regression coverage for parser+linter alignment:
+  - `tests/test_l_preposition_bigram_context.py`,
+  - `tests/test_l_body_compound_prep.py`,
+  - `tests/test_l_kbd_compound_prep.py`,
+  - `tests/test_linter_l_preposition_bigram_context.py`,
+  - `tests/test_linter_l_body_compound_prep.py`,
+  - `tests/test_linter_l_kbd_compound_prep.py`.
+- Applied only targeted steps across all `out/KTU *.tsv` files:
+  - `l-kbd-compound-prep` (`14` row updates),
+  - `l-body-compound-prep` (`48` row updates),
+  - `l-preposition-bigram-context` (`21` row updates).
+
 - Added `BaalVerbalSlashFixer` (`pipeline/steps/baal_verbal_slash.py`) and wired it into `pipeline/tablet_parsing.py` after `BaalLabourerKtu1Fixer`.
 - New rule: for verbal `/b-ʕ-l/` readings, normalize analysis payloads from bare `...[` to canonical `...[/` (for example `bˤl[` -> `bˤl[/`, `!y!bˤl[` -> `!y!bˤl[/`).
 - Updated `BaalLabourerKtu1Fixer` to emit canonical retained verbal variant `bˤl[/` and accept both legacy and canonical target payloads.

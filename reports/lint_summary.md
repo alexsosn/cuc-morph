@@ -1,22 +1,22 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `17514`
-- Fallback-parsed issue lines: `677`
+- Total issues: `17410`
+- Fallback-parsed issue lines: `656`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 12130 |
-| WARNING | 953 |
+| ERROR | 12047 |
+| WARNING | 932 |
 | INFO | 1621 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | POS token not allowed for declared DULAT entry | 6183 |
+| ERROR | POS token not allowed for declared DULAT entry | 6100 |
 | ERROR | Analysis does not reconstruct to surface | 3823 |
 | INFO | Surface not found in UDB concordance | 1621 |
 | ERROR | ʔ must be preceded by '(' in column 3 | 428 |
@@ -40,7 +40,6 @@
 | WARNING | Feminine plural noun in DULAT should be tagged with '/t=' | 16 |
 | WARNING | mid Lexeme parse did not match DULAT; matched by surface form | 16 |
 | WARNING | nṯk Lexeme parse did not match DULAT; matched by surface form | 14 |
-| WARNING | pn DULAT plurale tantum noun should include 'pl. tant.' in POS | 14 |
 | WARNING | nkt Lexeme parse did not match DULAT; matched by surface form | 13 |
 | WARNING | bhtm Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | pamt Lexeme parse did not match DULAT; matched by surface form | 12 |
@@ -83,7 +82,6 @@
 | WARNING | npk Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | nšq Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | nṣb Lexeme parse did not match DULAT; matched by surface form | 3 |
-| WARNING | pnh DULAT plurale tantum noun should include 'pl. tant.' in POS | 3 |
 | WARNING | tḥ Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | yd Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | yšu Lexeme parse did not match DULAT; matched by surface form | 3 |
@@ -198,11 +196,7 @@
 | WARNING | nšu Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | nḥt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | pglt Lexeme parse did not match DULAT; matched by surface form | 1 |
-| WARNING | pnk DULAT plurale tantum noun should include 'pl. tant.' in POS | 1 |
-| WARNING | pnm DULAT plurale tantum noun should include 'pl. tant.' in POS | 1 |
 | WARNING | pnt Lexeme parse did not match DULAT; matched by surface form | 1 |
-| WARNING | pnwh DULAT plurale tantum noun should include 'pl. tant.' in POS | 1 |
-| WARNING | pny DULAT plurale tantum noun should include 'pl. tant.' in POS | 1 |
 | WARNING | prˤt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | pˤrt Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | qmm Lexeme parse did not match DULAT; matched by surface form | 1 |

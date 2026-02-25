@@ -32,7 +32,7 @@ class LBodyCompoundPrepDisambiguatorTest(unittest.TestCase):
             lines = path.read_text(encoding="utf-8").splitlines()
             self.assertIn("1\tl\tl(I)\tl (I)\tprep.\tto\t", lines)
             self.assertNotIn("1\tl\tl(III)\tl (III)\tfunctor\tcertainly\t", lines)
-            self.assertIn("2\tpˤn\tpˤn/\tpʕn\tprep.\tat the feet of\t", lines)
+            self.assertIn("2\tpˤn\tpˤn/\tpʕn\tn. f.\tat the feet of\t", lines)
             self.assertNotIn("2\tpˤn\tpˤn/\tpʕn\tn. f.\tfoot\t", lines)
 
     def test_collapses_l_zaar_to_compound_prep(self) -> None:
@@ -52,7 +52,7 @@ class LBodyCompoundPrepDisambiguatorTest(unittest.TestCase):
             self.assertEqual(result.rows_processed, 4)
             self.assertEqual(result.rows_changed, 2)
             lines = path.read_text(encoding="utf-8").splitlines()
-            self.assertIn("2\tẓr\tẓr(I)/\tẓr (I)\tprep.\tupon\t", lines)
+            self.assertIn("2\tẓr\tẓr(I)/\tẓr (I)\tn. m.\tupon\t", lines)
             self.assertNotIn("2\tẓr\tẓr(I)/\tẓr (I)\tn. m.\tback\t", lines)
 
     def test_skips_when_second_target_variant_is_missing(self) -> None:

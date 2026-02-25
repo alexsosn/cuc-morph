@@ -17,13 +17,13 @@ L_BODY_COMPOUND_PREP_RULES = {
     "pˤn": LBodyCompoundPrepRule(
         second_analysis="pˤn/",
         second_dulat="pʕn",
-        second_pos="prep.",
+        second_pos="n. f.",
         second_gloss="at the feet of",
     ),
     "ẓr": LBodyCompoundPrepRule(
         second_analysis="ẓr(I)/",
         second_dulat="ẓr (I)",
-        second_pos="prep.",
+        second_pos="n. m.",
         second_gloss="upon",
     ),
 }

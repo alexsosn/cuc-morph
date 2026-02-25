@@ -37,7 +37,7 @@ class LKbdCompoundPrepDisambiguatorTest(unittest.TestCase):
             self.assertIn("1\tl\tl(I)\tl (I)\tprep.\tto\t", lines)
             self.assertNotIn("1\tl\tl(II)\tl (II)\tadv.\tno\t", lines)
             self.assertNotIn("1\tl\tl(III)\tl (III)\tfunctor\tcertainly\t", lines)
-            self.assertIn("2\tkbd\tkbd(I)/\tkbd (I)\tprep.\twithin\t", lines)
+            self.assertIn("2\tkbd\tkbd(I)/\tkbd (I)\tn.\twithin\t", lines)
             self.assertNotIn(
                 "2\tkbd\tkbd(II)/\tkbd (II)\tn. m.\ttotal (quantity or price)\t",
                 lines,
@@ -80,7 +80,7 @@ class LKbdCompoundPrepDisambiguatorTest(unittest.TestCase):
             self.assertEqual(result.rows_changed, 2)
             lines = path.read_text(encoding="utf-8").splitlines()
             self.assertIn("1\tl\tl(I)\tl (I)\tprep.\tto\t", lines)
-            self.assertIn("2\tkbd\tkbd(I)/\tkbd (I)\tprep.\twithin\t", lines)
+            self.assertIn("2\tkbd\tkbd(I)/\tkbd (I)\tn.\twithin\t", lines)
             self.assertNotIn("1\tl\tl(III)\tl (III)\tfunctor\tcertainly\t", lines)
             self.assertNotIn("2\tkbd\tkbd(I)/\tkbd (I)\tn.\tliver\t", lines)
 

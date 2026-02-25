@@ -91,7 +91,7 @@ class LPrepositionBigramContextDisambiguatorTest(unittest.TestCase):
             self.assertEqual(result.rows_changed, 3)
             lines = path.read_text(encoding="utf-8").splitlines()
             self.assertIn("1\tl\tl(I)\tl (I)\tprep.\tto\t", lines)
-            self.assertIn("2\tpn\tpn(m/\tpnm\tprep.\tin front\t", lines)
+            self.assertIn("2\tpn\tpn(m/\tpnm\tn. m. pl. tant.\tin front\t", lines)
             self.assertNotIn("1\tl\tl(III)\tl (III)\tfunctor\tcertainly\t", lines)
             self.assertNotIn("2\tpn\tpn\tpn\tfunctor\tlest\t", lines)
 
@@ -111,7 +111,7 @@ class LPrepositionBigramContextDisambiguatorTest(unittest.TestCase):
             self.assertEqual(result.rows_changed, 2)
             lines = path.read_text(encoding="utf-8").splitlines()
             self.assertIn("1\tl\tl(I)\tl (I)\tprep.\tto\t", lines)
-            self.assertIn("2\tpnh\tpn(m/+h\tpnm\tprep.\tin front\t", lines)
+            self.assertIn("2\tpnh\tpn(m/+h\tpnm\tn. m. pl. tant.\tin front\t", lines)
             self.assertNotIn("1\tl\tl(III)\tl (III)\tfunctor\tcertainly\t", lines)
             self.assertNotIn("2\tpnh\tpn/(m+h=\tpn\tfunctor\tlest\t", lines)
 

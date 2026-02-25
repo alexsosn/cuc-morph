@@ -44,7 +44,7 @@ class LinterLKbdCompoundPrepTest(unittest.TestCase):
         )
         self.assertIn(
             "Compound preposition `l kbd` should use single readings: l(I) and "
-            "kbd(I) with POS `prep.` and gloss `within`",
+            "kbd(I) with POS `n.` and gloss `within`",
             msgs,
         )
 
@@ -52,13 +52,13 @@ class LinterLKbdCompoundPrepTest(unittest.TestCase):
         msgs = self._lint_messages(
             (
                 "1\tl\tl(I)\tl (I)\tprep.\tto\t\n"
-                "2\tkbd\tkbd(I)/\tkbd (I)\tprep.\twithin\t\n"
+                "2\tkbd\tkbd(I)/\tkbd (I)\tn.\twithin\t\n"
                 "3\tarṣ\tarṣ/\tảrṣ\tn. f.\tearth\t\n"
             )
         )
         self.assertNotIn(
             "Compound preposition `l kbd` should use single readings: l(I) and "
-            "kbd(I) with POS `prep.` and gloss `within`",
+            "kbd(I) with POS `n.` and gloss `within`",
             msgs,
         )
 
@@ -73,7 +73,7 @@ class LinterLKbdCompoundPrepTest(unittest.TestCase):
         )
         self.assertNotIn(
             "Compound preposition `l kbd` should use single readings: l(I) and "
-            "kbd(I) with POS `prep.` and gloss `within`",
+            "kbd(I) with POS `n.` and gloss `within`",
             msgs,
         )
 

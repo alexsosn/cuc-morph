@@ -8,7 +8,7 @@ preposition.
 Target payload:
 
 - `l`: `l(I) | l (I) | prep. | to`
-- `kbd`: `kbd(I)/ | kbd (I) | prep. | within`
+- `kbd`: `kbd(I)/ | kbd (I) | n. | within`
 
 ## Pipeline Step
 
@@ -26,7 +26,7 @@ For each token-group pair:
 2. If the `kbd` group contains `kbd(I)`:
    - collapse `l` group to a single `l(I)` row,
    - collapse `kbd` group to a single `kbd(I)` row and set
-     `POS=prep.`, `gloss=within`.
+     `POS=n.`, `gloss=within`.
 3. Preserve token id/surface/comments from retained rows.
 
 This is intentionally conservative: no rewrite happens if `kbd(I)` is absent
@@ -37,4 +37,4 @@ from the `kbd` group.
 `linter/lint.py` warns when a `l + kbd` pair with available `kbd(I)` is not
 collapsed to the canonical compound-preposition payload:
 
-- `Compound preposition \`l kbd\` should use single readings: l(I) and kbd(I) with POS \`prep.\` and gloss \`within\``
+- `Compound preposition \`l kbd\` should use single readings: l(I) and kbd(I) with POS \`n.\` and gloss \`within\``

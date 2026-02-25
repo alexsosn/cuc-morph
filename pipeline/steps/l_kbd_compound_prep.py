@@ -43,7 +43,7 @@ def _forced_kbd_compound_row(source: TabletRow) -> TabletRow:
         surface=source.surface,
         analysis="kbd(I)/",
         dulat="kbd (I)",
-        pos="prep.",
+        pos="n.",
         gloss="within",
         comment=source.comment,
     )

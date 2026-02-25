@@ -22,8 +22,8 @@ Registered after `l-body-compound-prep` and before `k-functor-bigram-context`.
    - collapse `bˤl` to a single `bˤl(II)` row.
 3. Normalize lexicalized `l pn*` prepositions:
    - force single `l(I)`,
-   - canonicalize `pn/pnm/pnh/pnk/pny/pnwh` to `POS=prep.` with gloss
-     `in front`.
+   - canonicalize `pn/pnm/pnh/pnk/pny/pnwh` to noun POS (`n. m. pl. tant.`)
+     with gloss `in front`.
 
 ## Linter Parity
 
@@ -31,4 +31,4 @@ Registered after `l-body-compound-prep` and before `k-functor-bigram-context`.
 
 - `Bigram \`l <surface>\` should use a single l(I) reading`
 - `Outside KTU 4.*, \`l bˤl\` should use single readings: l(I) and bˤl(II)`
-- `Lexicalized preposition \`l <pn-surface>\` should use single readings: l(I) and <analysis> with POS \`prep.\` and gloss \`in front\``
+- `Lexicalized preposition \`l <pn-surface>\` should use single readings: l(I) and <analysis> with POS \`n. m. pl. tant.\` and gloss \`in front\``

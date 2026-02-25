@@ -1506,7 +1506,7 @@ def row_is_kbd_compound_prep_variant(row: Dict[str, str]) -> bool:
     """True when row matches compound-preposition `l kbd` payload."""
     return (
         row_is_kbd_i_variant(row)
-        and (row.get("pos_field", "") or "").strip() == "prep."
+        and (row.get("pos_field", "") or "").strip() == "n."
         and (row.get("gloss_field", "") or "").strip() == "within"
     )
 
@@ -1558,17 +1558,17 @@ L_NEGATION_FORCED_EXCEPTION_MSG = "DULAT exception context requires a single l(I
 L_FUNCTOR_VOCATIVE_FORCED_MSG = "DULAT context requires a single l({homonym}) reading"
 L_KBD_COMPOUND_PREP_MSG = (
     "Compound preposition `l kbd` should use single readings: l(I) and "
-    "kbd(I) with POS `prep.` and gloss `within`"
+    "kbd(I) with POS `n.` and gloss `within`"
 )
 L_BODY_COMPOUND_PREP_MSG = (
     "Compound preposition `l {surface}` should use single readings: l(I) and "
-    "{analysis} with POS `prep.` and gloss `{gloss}`"
+    "{analysis} with POS `{pos}` and gloss `{gloss}`"
 )
 L_FORCE_I_BIGRAM_MSG = "Bigram `l {surface}` should use a single l(I) reading"
 L_BAAL_NON_KTU4_MSG = "Outside KTU 4.*, `l bˤl` should use single readings: l(I) and bˤl(II)"
 L_PN_PREP_MSG = (
     "Lexicalized preposition `l {surface}` should use single readings: l(I) and "
-    "{analysis} with POS `prep.` and gloss `in front`"
+    "{analysis} with POS `{pos}` and gloss `in front`"
 )
 K_FUNCTOR_BIGRAM_MSG = "Formula bigram `k {surface}` should use a single k(III) reading"
 
@@ -3795,6 +3795,7 @@ def lint_file(
                 L_BODY_COMPOUND_PREP_MSG.format(
                     surface=next_surface,
                     analysis=body_rule.second_analysis,
+                    pos=body_rule.second_pos,
                     gloss=body_rule.second_gloss,
                 ),
             )
@@ -3872,7 +3873,11 @@ def lint_file(
                     line_id,
                     next_surface,
                     analysis_field,
-                    L_PN_PREP_MSG.format(surface=next_surface, analysis=pn_payload.analysis),
+                    L_PN_PREP_MSG.format(
+                        surface=next_surface,
+                        analysis=pn_payload.analysis,
+                        pos=pn_payload.pos,
+                    ),
                 )
             )
             continue

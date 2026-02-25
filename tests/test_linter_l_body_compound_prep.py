@@ -43,7 +43,7 @@ class LinterLBodyCompoundPrepTest(unittest.TestCase):
         )
         self.assertIn(
             "Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ "
-            "with POS `prep.` and gloss `at the feet of`",
+            "with POS `n. f.` and gloss `at the feet of`",
             msgs,
         )
 
@@ -51,13 +51,13 @@ class LinterLBodyCompoundPrepTest(unittest.TestCase):
         msgs = self._lint_messages(
             (
                 "1\tl\tl(I)\tl (I)\tprep.\tto\t\n"
-                "2\tpˤn\tpˤn/\tpʕn\tprep.\tat the feet of\t\n"
+                "2\tpˤn\tpˤn/\tpʕn\tn. f.\tat the feet of\t\n"
                 "3\til\til(I)/\tỉl (I)\tn. m.\tgod\t\n"
             )
         )
         self.assertNotIn(
             "Compound preposition `l pˤn` should use single readings: l(I) and pˤn/ "
-            "with POS `prep.` and gloss `at the feet of`",
+            "with POS `n. f.` and gloss `at the feet of`",
             msgs,
         )
 
@@ -72,7 +72,7 @@ class LinterLBodyCompoundPrepTest(unittest.TestCase):
         )
         self.assertIn(
             "Compound preposition `l ẓr` should use single readings: l(I) and ẓr(I)/ "
-            "with POS `prep.` and gloss `upon`",
+            "with POS `n. m.` and gloss `upon`",
             msgs,
         )
 

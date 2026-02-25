@@ -82,17 +82,17 @@ class LinterLPrepositionBigramContextTest(unittest.TestCase):
         )
         self.assertIn(
             "Lexicalized preposition `l pn` should use single readings: l(I) and pn(m/ "
-            "with POS `prep.` and gloss `in front`",
+            "with POS `n. m. pl. tant.` and gloss `in front`",
             msgs,
         )
 
     def test_no_warning_when_l_pn_is_canonical_prep(self) -> None:
         msgs = self._lint_messages(
-            ("1\tl\tl(I)\tl (I)\tprep.\tto\t\n2\tpn\tpn(m/\tpnm\tprep.\tin front\t\n")
+            ("1\tl\tl(I)\tl (I)\tprep.\tto\t\n2\tpn\tpn(m/\tpnm\tn. m. pl. tant.\tin front\t\n")
         )
         self.assertNotIn(
             "Lexicalized preposition `l pn` should use single readings: l(I) and pn(m/ "
-            "with POS `prep.` and gloss `in front`",
+            "with POS `n. m. pl. tant.` and gloss `in front`",
             msgs,
         )
 

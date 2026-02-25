@@ -2,7 +2,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:3 135544 
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:11 135551 twtḥ POS token 'vb Gt' not allowed for /w-ḥ-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:18 135557 št POS token 'vb G' not allowed for /š-t/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:18 135557 št POS token 'Gpass' not allowed for /š-t/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:23 135559 ẓr POS token 'prep.' not allowed for ẓr (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:28 135562 yšu POS token 'vb G' not allowed for /n-š-ʔ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:30 135564 qrb POS token 'vb G' not allowed for /q-r-b/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:35 135566 asr POS token 'vb G' not allowed for /ʔ-s-r/; choose one of: vb
@@ -12,7 +11,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:38 135568
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:46 135573 ˤdb POS token 'vb G' not allowed for /ʕ-d-b/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:53 135578 ˤdb POS token 'vb G' not allowed for /ʕ-d-b/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:57 135580 tˤtqn POS token 'vb G' not allowed for /ʕ-t-q/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:70 135589 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:75 135591 yhbr POS token 'vb G' not allowed for /h-b-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:77 135593 yql POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:78 135594 yštḥwyn POS token 'vb Št' not allowed for /ḥ-w-y/ (II); choose one of: vb
@@ -31,15 +29,12 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:104 13561
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:110 135615 rm POS token 'vb G' not allowed for /r-m/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:115 135618 šlm POS token 'vb G' not allowed for /š-l-m/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:115 135618 šlm POS token 'D' not allowed for /š-l-m/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:118 135620 kbd POS token 'prep.' not allowed for kbd (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:123 135624 kbd POS token 'prep.' not allowed for kbd (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:125 135626 ḥšk POS token 'vb G' not allowed for /ḥ-š-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:134 135633 twtḥ POS token 'vb Gt' not allowed for /w-ḥ-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:139 135637 bdk Analysis does not reconstruct to surface (reconstructs as: bdkk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:141 135638 spr POS token 'vb G' not allowed for /s-p-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:141 135638 spr POS token 'D' not allowed for /s-p-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:162 135650 šd POS token 'vb G' not allowed for /š-d-y/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:168 135654 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:171 135656 hbr POS token 'vb G' not allowed for /h-b-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:173 135658 ql POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.1.tsv:175 135659 tštḥwy POS token 'vb Št' not allowed for /ḥ-w-y/ (II); choose one of: vb
@@ -763,7 +758,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.106.tsv:54 1528
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.106.tsv:55 152835 y POS token 'prep. functor' not allowed for -y (II); choose one of: postp. functor
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.106.tsv:60 152837 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.106.tsv:82 152852 yšr POS token 'vb G' not allowed for /š-r/ (I); choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.106.tsv:89 152856 pn POS token 'prep.' not allowed for pnm; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.106.tsv:91 152857 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.106.tsv:93 152858 ptḥ POS token 'vb G' not allowed for /p-t-ḥ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.106.tsv:96 152859 yd Analysis does not reconstruct to surface (reconstructs as: bd)
@@ -1590,7 +1584,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.132.tsv:51 1546
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.132.tsv:51 154682 ˤlm Suffixed pronominal form in DULAT should use '+' in analysis
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.132.tsv:53 154684 šm Analysis does not reconstruct to surface (reconstructs as: š)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.132.tsv:56 154685 ḫbtd Analysis does not reconstruct to surface (reconstructs as: ḫbt)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.132.tsv:65 154692 pn POS token 'prep.' not allowed for pnm; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.132.tsv:74 154698 alnd Analysis does not reconstruct to surface (reconstructs as: aln)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.132.tsv:77 154700 ḫbtd Analysis does not reconstruct to surface (reconstructs as: ḫbt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.132.tsv:91 154709 alnd Analysis does not reconstruct to surface (reconstructs as: aln)
@@ -1796,8 +1789,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:348 1418
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:355 141889 qḥ POS token 'vb G' not allowed for /l-q-ḥ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:355 141889 qḥ Analysis does not reconstruct to surface (reconstructs as: lqḥ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:360 141892 dbḥ POS token 'vb G' not allowed for /d-b-ḥ/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:374 141904 ẓr POS token 'prep.' not allowed for ẓr (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:380 141909 ẓr POS token 'prep.' not allowed for ẓr (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:382 141911 rkb POS token 'vb G' not allowed for /r-k-b/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:386 141912 ṯkmm Analysis does not reconstruct to surface (reconstructs as: ṯkm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:389 141914 ša POS token 'vb G' not allowed for /n-š-ʔ/; choose one of: vb
@@ -1993,7 +1984,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:994 1422
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:998 142270 dbḥ POS token 'vb G' not allowed for /d-b-ḥ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:1000 142271 yṣq POS token 'vb G' not allowed for /y-ṣ-q/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:1011 142281 ˤly POS token 'vb G' not allowed for /ʕ-l-y/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:1014 142283 ẓr POS token 'prep.' not allowed for ẓr (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:1016 142285 rkb POS token 'vb G' not allowed for /r-k-b/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:1020 142286 ṯkmm Analysis does not reconstruct to surface (reconstructs as: ṯkm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:1023 142288 nša POS token 'vb G' not allowed for /n-š-ʔ/; choose one of: vb
@@ -2821,7 +2811,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:816 1436
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:816 143664 nšu Analysis does not reconstruct to surface (reconstructs as: nšʔ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:819 143666 ḥrṯm POS token 'vb G' not allowed for /ḥ-r-ṯ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:819 143666 ḥrṯm Analysis does not reconstruct to surface (reconstructs as: ḥrṯ)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:822 143668 ẓr POS token 'prep.' not allowed for ẓr (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:828 143672 lḥm POS token 'vb G' not allowed for /l-ḥ-m/ (I); choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:830 143672 lḥm Analysis does not reconstruct to surface (reconstructs as: lḥ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:833 143675 kly POS token 'vb G' not allowed for /k-l-y/; choose one of: vb
@@ -3087,7 +3076,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1517 144
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1519 144083 ṯpṭ POS token 'vb G' not allowed for /ṯ-p-ṭ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1528 144087 tdy POS token 'vb G' not allowed for /y-d-y/ (I); choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1528 144087 tdy Analysis does not reconstruct to surface (reconstructs as: ydy)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1534 144092 pnk POS token 'prep.' not allowed for pnm; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1539 144094 tšlḥm POS token 'vb Š' not allowed for /l-ḥ-m/ (I); choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1541 144096 bˤd POS token 'adv. or prep.' not allowed for bʕd; choose one of: adv., prep.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1545 144099 km POS token 'functor' not allowed for k (III); choose one of: subordinating or completive functor
@@ -3189,7 +3177,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.161.tsv:58 1551
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.161.tsv:58 155153 ksi DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.161.tsv:60 155155 tbky POS token 'vb G' not allowed for /b-k-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.161.tsv:63 155157 ydmˤ POS token 'vb G' not allowed for /d-m-ʕ/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.161.tsv:68 155161 pnh POS token 'prep.' not allowed for pnm; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.161.tsv:69 155162 ybky POS token 'vb G' not allowed for /b-k-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.161.tsv:71 155164 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.161.tsv:75 155166 yblˤ POS token 'vb G' not allowed for /b-l-ʕ/; choose one of: vb
@@ -3870,7 +3857,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1373 145
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1373 145022 ysk POS token 'Gpass' not allowed for /n-s-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1373 145022 ysk Analysis does not reconstruct to surface (reconstructs as: nsk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1376 145024 ḥrṣ POS token 'vb G' not allowed for /ḥ-r-ṣ/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1379 145026 ẓr POS token 'prep.' not allowed for ẓr (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1384 145030 amt POS token 'vb G' not allowed for /m-t/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1391 145033 mtm POS token 'vb G' not allowed for /m-t/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1393 145034 amt POS token 'vb G' not allowed for /m-t/; choose one of: vb
@@ -3907,7 +3893,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1494 145
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1496 145103 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1499 145105 šnm Analysis does not reconstruct to surface (reconstructs as: šnwm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1500 145105 šnm Analysis does not reconstruct to surface (reconstructs as: šnwm)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1503 145107 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1505 145109 thbr POS token 'vb G' not allowed for /h-b-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1507 145111 tql POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.17.tsv:1512 145115 tkbdnh POS token 'vb D' not allowed for /k-b-d/; choose one of: vb
@@ -5238,7 +5223,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:80 136077
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:80 136077 tṯb POS token 'R' not allowed for /ṯ-b/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:81 136077 tṯb POS token 'vb G' not allowed for /y-ṯ-b/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:87 136081 ttn POS token 'vb G' not allowed for /y-t-n/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:97 136089 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:102 136092 tpl POS token 'vb G' not allowed for /n-p-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:102 136092 tpl DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:105 136094 tštḥwy POS token 'vb Št' not allowed for /ḥ-w-y/ (II); choose one of: vb
@@ -5274,7 +5258,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:219 13616
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:220 136166 tphn POS token 'vb G' not allowed for /p-h-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:225 136170 ṯpṭ POS token 'vb G' not allowed for /ṯ-p-ṭ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:232 136174 rišthm No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:234 136176 ẓr POS token 'prep.' not allowed for ẓr (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:242 136183 ygˤr POS token 'vb G' not allowed for /g-ʕ-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:244 136184 bˤl POS token 'vb G' not allowed for /b-ʕ-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:244 136184 bˤl Deverbal form matches both verb and noun entries in DULAT
@@ -5286,22 +5269,18 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:255 13618
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:257 136189 km Analysis does not reconstruct to surface (reconstructs as: kmkm)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:257 136189 km No DULAT entry found for clitic part: km, 
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:257 136189 km DULAT comment does not match candidates
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:259 136191 ẓr POS token 'prep.' not allowed for ẓr (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:266 136197 aḥd POS token 'vb G' not allowed for /ḥ-d-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:270 136199 tˤny POS token 'vb G' not allowed for /ʕ-n-y/ (I); choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:271 136199 tˤny POS token 'vb D' not allowed for /ʕ-n-w/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:278 136204 ṯpṭ POS token 'vb G' not allowed for /ṯ-p-ṭ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:283 136206 šu POS token 'vb G' not allowed for /n-š-ʔ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:285 136208 raštkm No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:287 136210 ẓr POS token 'prep.' not allowed for ẓr (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:295 136217 ˤny POS token 'vb G' not allowed for /ʕ-n-y/ (I); choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:300 136221 ṯpṭ POS token 'vb G' not allowed for /ṯ-p-ṭ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:305 136223 tšu POS token 'vb G' not allowed for /n-š-ʔ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:307 136225 rašthm No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:309 136227 ẓr POS token 'prep.' not allowed for ẓr (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:316 136233 tmġyn POS token 'vb G' not allowed for /m-ġ-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:321 136237 ṯpṭ POS token 'vb G' not allowed for /ṯ-p-ṭ/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:326 136240 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:330 136243 tpl POS token 'vb G' not allowed for /n-p-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:330 136243 tpl DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:332 136245 tštḥwy POS token 'vb Št' not allowed for /ḥ-w-y/ (II); choose one of: vb
@@ -5387,7 +5366,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:660 13644
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:662 136445 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:665 136447 šnm No DULAT entry found for lexeme/surface
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:666 136447 šnm No DULAT entry found for lexeme/surface
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:668 136449 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:671 136451 yhbr POS token 'vb G' not allowed for /h-b-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:673 136453 yql POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:674 136454 yštḥwy POS token 'vb Št' not allowed for /ḥ-w-y/ (II); choose one of: vb
@@ -5438,8 +5416,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:802 13653
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:808 136539 yṯir POS token 'vb G' not allowed for /ṯ-ʔ-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:808 136539 yṯir POS token 'D' not allowed for /ṯ-ʔ-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:810 136541 il POS token 'DN' not allowed for ỉl (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:813 136544 pn POS token 'prep.' not allowed for pnm; choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:819 136548 pn POS token 'prep.' not allowed for pnm; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:820 136549 ṯpṭ POS token 'vb G' not allowed for /ṯ-p-ṭ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:828 136553 yšmˤk POS token 'vb G' not allowed for /š-m-ʕ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:830 136555 il POS token 'DN' not allowed for ỉl (I); choose one of: n
@@ -5474,8 +5450,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:901 13660
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:905 136603 yṯir POS token 'vb G' not allowed for /ṯ-ʔ-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:905 136603 yṯir POS token 'D' not allowed for /ṯ-ʔ-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:907 136605 il POS token 'DN' not allowed for ỉl (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:910 136608 pn POS token 'prep.' not allowed for pnm; choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:917 136612 pn POS token 'prep.' not allowed for pnm; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:918 136613 ṯpṭ POS token 'vb G' not allowed for /ṯ-p-ṭ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:930 136623 km POS token 'functor' not allowed for k (III); choose one of: subordinating or completive functor
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:930 136623 km Analysis does not reconstruct to surface (reconstructs as: k)
@@ -6396,7 +6370,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:21 9514 q
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:22 9515 yṯˤr POS token 'vb G' not allowed for /ṯ-ʕ-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:25 9517 yšlḥmnh POS token 'vb Š' not allowed for /l-ḥ-m/ (I); choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:28 9518 ybr Analysis does not reconstruct to surface (reconstructs as: ybrd)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:32 9522 pnwh POS token 'prep.' not allowed for pnm; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:37 9525 mlḥt Unknown DULAT token in column 4: /m-l-ḥ/
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:40 9527 mri POS token 'adj. m.' not allowed for mrủ (I); choose one of: adj. or n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:40 9527 mri POS token 'n. m.' not allowed for mrủ (I); choose one of: adj. or n
@@ -6485,7 +6458,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:453 9831 
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:453 9831 km No DULAT entry found for clitic part: km, 
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:453 9831 km DULAT comment does not match candidates
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:457 9834 ˤrbn POS token 'vb G' not allowed for /ʕ-r-b/ (I); choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:459 9836 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:461 9838 hbr POS token 'vb G' not allowed for /h-b-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:465 9841 ql POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:466 9842 tštḥwy POS token 'vb Št' not allowed for /ḥ-w-y/ (II); choose one of: vb
@@ -6498,8 +6470,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:494 9865 
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:499 9869 sk POS token 'vb G' not allowed for /n-s-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:499 9869 sk POS token 'Gpass' not allowed for /n-s-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:499 9869 sk Each reconstructed letter must be prefixed by '('
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:502 9872 kbd POS token 'prep.' not allowed for kbd (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:507 9876 kbd POS token 'prep.' not allowed for kbd (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:510 9878 ḥšk POS token 'vb G' not allowed for /ḥ-š/ (I); choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:519 9885 twtḥ POS token 'vb Gt' not allowed for /w-ḥ-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:532 9896 aṯnyk POS token 'vb G' not allowed for /ṯ-n-y/; choose one of: vb
@@ -6576,8 +6546,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:752 10073
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:756 10077 sk POS token 'vb G' not allowed for /n-s-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:756 10077 sk POS token 'Gpass' not allowed for /n-s-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:756 10077 sk Each reconstructed letter must be prefixed by '('
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:760 10080 kbd POS token 'prep.' not allowed for kbd (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:764 10084 kbd POS token 'prep.' not allowed for kbd (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:767 10086 hšk Analysis does not reconstruct to surface (reconstructs as: ḥšk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:768 10086 hšk Analysis does not reconstruct to surface (reconstructs as: ḥšk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:769 10087 ˤṣk Unknown DULAT token in column 4: ʕ-ṣ-y/ṣ
@@ -6598,8 +6566,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:859 10158
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:864 10162 ask POS token 'vb G' not allowed for /n-s-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:864 10162 ask POS token 'Gpass' not allowed for /n-s-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:864 10162 ask Each reconstructed letter must be prefixed by '('
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:867 10165 kbd POS token 'prep.' not allowed for kbd (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:872 10169 kbd POS token 'prep.' not allowed for kbd (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:875 10171 yšt POS token 'vb G' not allowed for /š-t(-t)/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:875 10171 yšt POS token 'Gpass' not allowed for /š-t(-t)/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:881 10176 ybˤr POS token 'vb D' not allowed for /b-ʕ-r/ (I); choose one of: vb
@@ -6611,9 +6577,7 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:893 10185
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:898 10189 ask POS token 'vb G' not allowed for /n-s-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:898 10189 ask POS token 'Gpass' not allowed for /n-s-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:898 10189 ask Each reconstructed letter must be prefixed by '('
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:901 10192 kbd POS token 'prep.' not allowed for kbd (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:903 10193 awṣ Each reconstructed letter must be prefixed by '('
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:906 10196 kbd POS token 'prep.' not allowed for kbd (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:914 10202 lk POS token 'vb G' not allowed for /h-l-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:914 10202 lk Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:915 10203 lk POS token 'vb G' not allowed for /h-l-k/; choose one of: vb
@@ -6664,7 +6628,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1153 1038
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1162 10389 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1165 10391 yˤn POS token 'vb G' not allowed for /ʕ-n-y/ (I); choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1166 10392 il POS token 'DN' not allowed for ỉl (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1188 10408 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1200 10418 ṣḥrrt POS token 'vb G' not allowed for /ṣ-ḥ-r-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1220 10432 y POS token 'prep. functor' not allowed for -y (I); choose one of: prep.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1220 10432 y Analysis does not reconstruct to surface (reconstructs as: yy)
@@ -6729,7 +6692,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1525 1064
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1531 10650 idk POS tokens must map to existing DULAT tokens in column 4
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1535 10652 ttn POS token 'vb G' not allowed for /y-t-n/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1556 10667 rbt Each reconstructed letter must be prefixed by '('
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1559 10670 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1562 10672 hbr POS token 'vb G' not allowed for /h-b-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1564 10674 ql POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:1569 10678 kbd POS token 'vb D' not allowed for /k-b-d/; choose one of: vb
@@ -6808,7 +6770,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:222 13827
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:234 138278 abn POS token 'vb G' not allowed for /b-n/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:237 138280 aḫdt POS token 'vb G' not allowed for /ʔ-ḫ-d(/ḏ)/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:251 138291 tmtˤ POS token 'vb G' not allowed for /m-t-ʕ/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:269 138305 ẓr POS token 'prep.' not allowed for ẓr (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:274 138309 il POS token 'DN' not allowed for ỉl (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:283 138316 nši POS token 'vb G' not allowed for /n-š-ʔ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:286 138319 tphn POS token 'vb G' not allowed for /p-h-y/; choose one of: vb
@@ -6955,7 +6916,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:777 13864
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:786 138652 bmt Analysis does not reconstruct to surface (reconstructs as: bmtt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:792 138656 bmt Analysis does not reconstruct to surface (reconstructs as: bmtt)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:797 138659 yuḫdm POS token 'vb G' not allowed for /ʔ-ḫ-d(/ḏ)/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:808 138665 pnm POS token 'prep.' not allowed for pnm; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:816 138671 tbˤ POS token 'vb G' not allowed for /t-b-ʕ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:822 138676 ttn POS token 'vb G' not allowed for /y-t-n/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:830 138682 qrb POS token 'vb G' not allowed for /q-r-b/; choose one of: vb
@@ -6963,7 +6923,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:835 13868
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:835 138685 tgly POS token 'N' not allowed for /g-l-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:839 138689 tbu POS token 'vb G' not allowed for /b-ʔ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:844 138693 šnnm Analysis does not reconstruct to surface (reconstructs as: šntm)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:847 138695 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:849 138697 thbr POS token 'vb G' not allowed for /h-b-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:851 138699 tql POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:853 138700 tštḥwy POS token 'vb Št' not allowed for /ḥ-w-y/ (II); choose one of: vb
@@ -7239,7 +7198,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1831 1393
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1832 139381 n POS ambiguous in DULAT: DN, PN, TN, DN, n., num., adj., pers. pn., morph., pers. pn., morph., vb, prep., vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1832 139381 n Multiple DULAT candidates for surface: ʕd(I) [] — up to, until; close to, around; ʕl(I) [prep.] — upon, on top of; ʕl(I) [prep.] — upon, on top of; ʕl(I) [prep.] — upon, on top of; ʕn(I) [n.] — eye; ʕn(I) [n.] — eye; ʕẓm(III) [n.] — power, excellence; bld [n.] — land, country; /g-r(-y)/ [vb] — to attack; gṯr [DN] — überlegen stark; /ġ-ẓ-y/ [vb] — to win over; /ġ-ẓ-y/ [vb] — to win over; -h(I) [pers. pn., morph.] — his /her (hers) / its; /h-b-ṭ/ẓ/ [vb] — to knock down, hit; /ḫ-š/ [vb] — to tremble, be alarmed; /ḫ-t-ʔ/ [vb] — to be ground up, crushed, annihilated; -k(I) [pers. pn., morph.] — your(s); krt [PN] — —; l(I) [prep.] — to, towards, up to; /l-ʔ-y/w/(I) [vb] — to conquer, prevail, overcome by strength; /l-ḥ-m/(I) [vb] — to eat; mảdt(I) [n.] — great quantity, many people, a crowd; /m-ġ-y/ [vb] — to come, arrive; /m-l-ʔ/ [vb] — to be full; mtnt [n.] — loin; /m-ṭ-r/ [vb] — to rain; -n(II) [pers. pn., morph., vb] — me, to me; /n-g-ḥ/ [vb] — to butt each other; /n-ġ-r/ [vb] — to protect, guard; /n-ḫ/ [vb] — to rest; /n-š-ʔ/ [vb] — to raise, lift, help up; /n-ṭ-ṭ/ [vb] — to shake; pġ(n)dr [n.] — —; pġ(n)dr [n.] — —; qn [n.] — cane; /r-ġ/ [vb] — to get excited, blaze, to be full of rage; rḫnt [n.] — sweetness, tenderness; spr(II) [n.] — tablet / register, list, inventory; in accounting, record of trib-
 ute; of instructions; ṣpn [TN, DN] — north; /š-m-ḫ/ [vb] — to be glad, rejoice; /š-r/(II) [vb] — to threaten; /š-t/ [vb] — to place, set, set up, leave; /t-ʕ/ [vb] — to attack; /t-ʕ/ [vb] — to attack; /t-r-ʕ/ [vb] — to be cracked; ṯn(II) [num., adj.] — second; /ṯ-n-y/ [vb] — to repeat, reiterate; /y/w-ḥ-l/ [vb] — to be worried, to despair, to lose hope
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1853 139396 ẓr POS token 'prep.' not allowed for ẓr (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1858 139400 rḥq POS token 'vb G' not allowed for /r-ḥ-q/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1863 139403 km POS token 'functor' not allowed for k (III); choose one of: subordinating or completive functor
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:1863 139403 km Analysis does not reconstruct to surface (reconstructs as: k)
@@ -7330,7 +7288,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2161 1396
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2176 139625 ttn POS token 'vb G' not allowed for /y-t-n/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2192 139637 ša POS token 'vb G' not allowed for /n-š-ʔ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2192 139637 ša Each reconstructed letter must be prefixed by '('
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2199 139643 ẓr POS token 'prep.' not allowed for ẓr (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2203 139646 rd POS token 'vb G' not allowed for /y-r-d/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2203 139646 rd Analysis does not reconstruct to surface (reconstructs as: yrd)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2210 139652 y POS token 'prep. functor' not allowed for -y (I); choose one of: prep.
@@ -7353,7 +7310,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2273 1396
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2273 139689 tḫtan Analysis does not reconstruct to surface (reconstructs as: tḫtʔ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2280 139693 ṣḥrrt POS token 'vb G' not allowed for /ṣ-ḥ-r-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2280 139693 ṣḥrrt Analysis does not reconstruct to surface (reconstructs as: ṣḥrr)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2307 139710 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2310 139712 hbr POS token 'vb G' not allowed for /h-b-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2314 139715 tštḥwy POS token 'vb Št' not allowed for /ḥ-w-y/ (II); choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:2333 139726 ṯny POS token 'vb G' not allowed for /ṯ-n-y/; choose one of: vb
@@ -7910,7 +7866,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:673 14022
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:702 140243 ttn POS token 'vb G' not allowed for /y-t-n/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:707 140247 ša POS token 'vb G' not allowed for /n-š-ʔ/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:707 140247 ša Each reconstructed letter must be prefixed by '('
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:714 140253 ẓr POS token 'prep.' not allowed for ẓr (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:717 140256 rd POS token 'vb G' not allowed for /y-r-d/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:725 140262 y POS token 'prep. functor' not allowed for -y (I); choose one of: prep.
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:725 140262 y Analysis does not reconstruct to surface (reconstructs as: yy)
@@ -7971,7 +7926,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:954 14041
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:961 140422 ttlk POS token 'vb Gt' not allowed for /h-l-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:961 140422 ttlk Each reconstructed letter must be prefixed by '('
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:963 140424 tṣd POS token 'vb G' not allowed for /ṣ-d/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:968 140428 kbd POS token 'prep.' not allowed for kbd (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:975 140434 tmġ POS token 'vb G' not allowed for /m-ġ-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:986 140442 tmġ POS token 'vb G' not allowed for /m-ġ-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.5.tsv:989 140445 npl POS token 'vb G' not allowed for /n-p-l/; choose one of: vb
@@ -8071,7 +8025,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:235 14059
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:240 140598 tgly POS token 'vb G' not allowed for /g-l-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:240 140598 tgly POS token 'N' not allowed for /g-l-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:245 140602 tbu POS token 'vb G' not allowed for /b-ʔ/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:252 140608 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:255 140610 thbr POS token 'vb G' not allowed for /h-b-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:257 140612 tql POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:259 140613 tštḥwy POS token 'vb Št' not allowed for /ḥ-w-y/ (II); choose one of: vb
@@ -8141,8 +8094,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:533 14080
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:539 140806 itlk POS token 'vb Gt' not allowed for /h-l-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:539 140806 itlk Analysis does not reconstruct to surface (reconstructs as: ith)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:541 140808 aṣd POS token 'vb G' not allowed for /ṣ-d/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:546 140812 kbd POS token 'prep.' not allowed for kbd (I); choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:552 140817 kbd POS token 'prep.' not allowed for kbd (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:555 140820 ḫsrt POS token 'vb G' not allowed for /ḫ-s-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:555 140820 ḫsrt Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.6.tsv:563 140826 mġt POS token 'vb G' not allowed for /m-ġ-y/; choose one of: vb
@@ -8535,7 +8486,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:174 14158
 to collect, hold; to choose, opt for something; /p-r-ʕ/ [vb] — to wash; /p-r-ʕ/ [vb] — to wash; /p-r-ʕ/ [vb] — to wash; /p-r-ʕ/ [vb] — to wash; /ṯ-m-n/ [vb] — to do, give eight; /y-b-m/ [vb] — to proclaim oneself a nubile widow
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:178 141585 šlm POS token 'vb G' not allowed for /š-l-m/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:178 141585 šlm POS token 'D' not allowed for /š-l-m/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:185 141590 kbd POS token 'prep.' not allowed for kbd (I); choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:187 141592 ḥšk POS token 'vb G' not allowed for /ḥ-š-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:196 141600 twtḥ POS token 'vb Gt' not allowed for /w-ḥ-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.7.tsv:200 141603 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
@@ -8894,7 +8844,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:123 1500
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:124 150078 bk Analysis does not reconstruct to surface (reconstructs as: b)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:125 150078 bk POS token 'vb G' not allowed for /b-k-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:125 150078 bk Analysis does not reconstruct to surface (reconstructs as: bky)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:129 150081 pny POS token 'prep.' not allowed for pnm; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:132 150083 bˤl POS token 'vb G' not allowed for /b-ʕ-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:132 150083 bˤl Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:140 150088 tštšḥ POS token 'vb Št' not allowed for /š-ḥ-y/; choose one of: vb
@@ -9461,7 +9410,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:137 1514
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:138 151411 yḥmdnh POS token 'vb G' not allowed for /ḥ-m-d/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:138 151411 yḥmdnh Analysis does not reconstruct to surface (reconstructs as: yḥmd)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:139 151412 yrty Analysis does not reconstruct to surface (reconstructs as: yrdy)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:144 151416 pnh POS token 'prep.' not allowed for pnm; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:145 151417 yrd POS token 'vb G' not allowed for /y-r-d/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:149 151419 bˤl POS token 'vb G' not allowed for /b-ʕ-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:149 151419 bˤl Deverbal form matches both verb and noun entries in DULAT
@@ -9682,7 +9630,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.10.tsv:72 15659
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.10.tsv:78 156594 spr POS token 'vb G' not allowed for /s-p-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.10.tsv:78 156594 spr POS token 'D' not allowed for /s-p-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.100.tsv:7 160346 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.100.tsv:14 160350 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.100.tsv:16 160352 qlt POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.100.tsv:16 160352 qlt Analysis does not reconstruct to surface (reconstructs as: ql)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.100.tsv:20 160355 yšlm POS token 'vb G' not allowed for /š-l-m/; choose one of: vb
@@ -9703,7 +9650,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.100.tsv:100 160
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.100.tsv:100 160399 mġ Analysis does not reconstruct to surface (reconstructs as: mġy)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.101.tsv:8 160405 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.101.tsv:16 160410 yšlm POS token 'vb G' not allowed for /š-l-m/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.101.tsv:20 160413 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.101.tsv:27 160418 m Analysis does not reconstruct to surface (reconstructs as: l)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.101.tsv:36 160424 m Analysis does not reconstruct to surface (reconstructs as: l)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.101.tsv:43 160428 drˤ Analysis does not reconstruct to surface (reconstructs as: d)
@@ -9732,7 +9678,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:42 1604
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:58 160480 ky Analysis does not reconstruct to surface (reconstructs as: k)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:59 160480 ky Analysis does not reconstruct to surface (reconstructs as: k)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:60 160480 ky Analysis does not reconstruct to surface (reconstructs as: k)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:66 160484 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:67 160485 iḫy Analysis does not reconstruct to surface (reconstructs as: aḫ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:68 160486 qlt POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.103.tsv:68 160486 qlt Analysis does not reconstruct to surface (reconstructs as: ql)
@@ -9841,7 +9786,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.109.tsv:27 1606
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.109.tsv:28 160680 štn POS token 'vb G' not allowed for /š-t/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.109.tsv:28 160680 štn Analysis does not reconstruct to surface (reconstructs as: št)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:8 156599 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:19 156606 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:24 156609 qlny POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:24 156609 qlny Analysis does not reconstruct to surface (reconstructs as: ql)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.11.tsv:27 156611 tġrk POS token 'vb G' not allowed for /n-ġ-r/; choose one of: vb
@@ -9884,7 +9828,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.112.tsv:29 1607
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.113.tsv:10 160737 ty Analysis does not reconstruct to surface (reconstructs as: ʕly)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.113.tsv:11 160737 ty Analysis does not reconstruct to surface (reconstructs as: aḫty)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.12.tsv:8 156634 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.12.tsv:17 156639 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.12.tsv:24 156643 šbˤid Analysis does not reconstruct to surface (reconstructs as: šbʕd)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.12.tsv:28 156645 qlt POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.12.tsv:28 156645 qlt Analysis does not reconstruct to surface (reconstructs as: ql)
@@ -9895,7 +9838,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.12.tsv:40 15665
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.12.tsv:40 156651 tṯṯb Analysis does not reconstruct to surface (reconstructs as: tšṯb)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:7 156657 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:11 156659 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:17 156662 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:20 156664 qlt POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:20 156664 qlt Analysis does not reconstruct to surface (reconstructs as: ql)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:25 156667 yšlm POS token 'vb G' not allowed for /š-l-m/; choose one of: vb
@@ -9981,7 +9923,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:26 15678
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:27 156782 ky Analysis does not reconstruct to surface (reconstructs as: k)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:28 156783 ˤrbt POS token 'vb G' not allowed for /ʕ-r-b/ (I); choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:28 156783 ˤrbt Analysis does not reconstruct to surface (reconstructs as: ʕrb)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:31 156785 pn POS token 'prep.' not allowed for pnm; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:39 156790 nr POS token 'vb G' not allowed for /n-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:41 156791 by Analysis does not reconstruct to surface (reconstructs as: b)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:42 156792 mid Analysis does not reconstruct to surface (reconstructs as: mi)
@@ -10080,16 +10021,12 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:60 15701
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:63 157019 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:77 157026 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:95 157036 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:113 157045 pn POS token 'prep.' not allowed for pnm; choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:125 157054 pn POS token 'prep.' not allowed for pnm; choose one of: n
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:129 157058 pn POS token 'prep.' not allowed for pnm; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:133 157061 dt Analysis does not reconstruct to surface (reconstructs as: d)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:134 157062 tġrn POS token 'vb G' not allowed for /n-ġ-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:134 157062 tġrn Analysis does not reconstruct to surface (reconstructs as: tnġr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:138 157065 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:167 157078 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.24.tsv:7 157086 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.24.tsv:16 157091 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.24.tsv:24 157097 qlt POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.24.tsv:24 157097 qlt Analysis does not reconstruct to surface (reconstructs as: ql)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.24.tsv:28 157099 ˤmny Analysis does not reconstruct to surface (reconstructs as: ʕmy)
@@ -10149,7 +10086,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:125 15638
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:128 156384 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:7 157192 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:11 157194 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:16 157197 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:19 157199 qlt POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:19 157199 qlt Analysis does not reconstruct to surface (reconstructs as: ql)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:23 157202 yšlm POS token 'vb G' not allowed for /š-l-m/; choose one of: vb
@@ -10464,7 +10400,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.38.tsv:117 1579
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:9 157925 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:18 157930 šlm POS token 'vb G' not allowed for /š-l-m/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:18 157930 šlm POS token 'D' not allowed for /š-l-m/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:22 157932 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:30 157938 škn POS token 'vb D' not allowed for /š-k-n/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:44 157946 nġr POS token 'vb G' not allowed for /n-ġ-r/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.39.tsv:50 157950 adny Analysis does not reconstruct to surface (reconstructs as: adn)
@@ -10551,7 +10486,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.4.tsv:97 156445
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.4.tsv:97 156445 bˤl Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.40.tsv:6 158027 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.40.tsv:10 158029 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.40.tsv:19 158034 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.40.tsv:27 158039 qlt POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.40.tsv:27 158039 qlt Analysis does not reconstruct to surface (reconstructs as: ql)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.40.tsv:37 158045 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
@@ -10583,7 +10517,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.41.tsv:70 15810
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.41.tsv:70 158104 ybˤrn Non-G stem in DULAT requires stem marker
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.42.tsv:6 158106 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.42.tsv:10 158108 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.42.tsv:21 158114 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.42.tsv:28 158120 qlt POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.42.tsv:28 158120 qlt Analysis does not reconstruct to surface (reconstructs as: ql)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.42.tsv:30 158121 ankn Analysis does not reconstruct to surface (reconstructs as: ank)
@@ -10752,7 +10685,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:3 158449
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:3 158449 tġrk Analysis does not reconstruct to surface (reconstructs as: tnġr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:4 158450 tšlmk POS token 'vb D' not allowed for /š-l-m/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:4 158450 tšlmk Analysis does not reconstruct to surface (reconstructs as: tšlm)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:7 158452 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:15 158458 qlt POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:15 158458 qlt Analysis does not reconstruct to surface (reconstructs as: ql)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:20 158461 šlm POS token 'vb G' not allowed for /š-l-m/; choose one of: vb
@@ -10771,7 +10703,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:80 15849
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:90 158500 likt POS token 'vb G' not allowed for /l-ʔ-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:90 158500 likt ʔ must be preceded by '(' in column 3
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.50.tsv:90 158500 likt Analysis does not reconstruct to surface (reconstructs as: lʔk)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.51.tsv:6 158507 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.51.tsv:13 158513 qlt POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.51.tsv:13 158513 qlt Analysis does not reconstruct to surface (reconstructs as: ql)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.51.tsv:17 158515 šlm POS token 'vb G' not allowed for /š-l-m/; choose one of: vb
@@ -10787,7 +10718,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.52.tsv:6 158518
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.52.tsv:6 158518 t No DULAT entry found for clitic part: t, [t=, [t==, [t===
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.52.tsv:6 158518 t Multiple DULAT candidates for surface: /ʕ-s-y:s/ [vb] — ?; /l-q-ḥ/ [vb] — to get hold of, take, grasp; to receive, accept, take (away);
 to collect, hold; to choose, opt for something; /p-r-ʕ/ [vb] — to wash; /p-r-ʕ/ [vb] — to wash; /p-r-ʕ/ [vb] — to wash; /p-r-ʕ/ [vb] — to wash; /ṯ-m-n/ [vb] — to do, give eight; /y-b-m/ [vb] — to proclaim oneself a nubile widow
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.52.tsv:10 158521 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.53.tsv:3 158525 lik POS token 'vb G' not allowed for /l-ʔ-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.53.tsv:3 158525 lik ʔ must be preceded by '(' in column 3
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.53.tsv:3 158525 lik Analysis does not reconstruct to surface (reconstructs as: lʔk)
@@ -10924,12 +10854,10 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.63.tsv:53 15871
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.63.tsv:53 158713 likt Analysis does not reconstruct to surface (reconstructs as: lʔk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:7 158721 adny Analysis does not reconstruct to surface (reconstructs as: adn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:9 158722 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:18 158727 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:19 158728 adny Analysis does not reconstruct to surface (reconstructs as: adn)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:21 158729 qlt POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:21 158729 qlt Analysis does not reconstruct to surface (reconstructs as: ql)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:30 158734 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:39 158739 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:47 158744 qlt POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:47 158744 qlt Analysis does not reconstruct to surface (reconstructs as: ql)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.64.tsv:54 158748 šlm POS token 'vb G' not allowed for /š-l-m/; choose one of: vb
@@ -10953,7 +10881,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.67.tsv:10 15878
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.67.tsv:14 158782 šlm POS token 'vb G' not allowed for /š-l-m/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.67.tsv:14 158782 šlm POS token 'D' not allowed for /š-l-m/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.68.tsv:7 158790 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.68.tsv:15 158795 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.68.tsv:24 158801 qlt POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.68.tsv:24 158801 qlt Analysis does not reconstruct to surface (reconstructs as: ql)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.68.tsv:28 158804 yšlm POS token 'vb G' not allowed for /š-l-m/; choose one of: vb
@@ -10997,7 +10924,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:30 15884
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:30 158847 tġrk Analysis does not reconstruct to surface (reconstructs as: tnġr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:31 158848 tšlmk POS token 'vb D' not allowed for /š-l-m/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:31 158848 tšlmk Analysis does not reconstruct to surface (reconstructs as: tšlm)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:34 158850 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:35 158851 bˤlny Analysis does not reconstruct to surface (reconstructs as: bʕl)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:41 158855 qlny POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:41 158855 qlny Analysis does not reconstruct to surface (reconstructs as: ql)
@@ -11066,7 +10992,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.71.tsv:77 15895
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.71.tsv:83 158961 tn Deverbal form matches both verb and noun entries in DULAT
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:7 158966 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:11 158968 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:16 158971 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:18 158973 qlt POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:18 158973 qlt Analysis does not reconstruct to surface (reconstructs as: ql)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:22 158976 yšlm POS token 'vb G' not allowed for /š-l-m/; choose one of: vb
@@ -11106,7 +11031,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:99 15902
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:99 159022 tdbr Non-G stem in DULAT requires stem marker
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:100 159022 tdbr POS token 'vb G' not allowed for /d-b-r/ (I); choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:100 159022 tdbr POS token 'D' not allowed for /d-b-r/ (I); choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:104 159025 pn POS token 'prep.' not allowed for pnm; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:113 159032 yṯbt POS token 'vb G' not allowed for /y-ṯ-b/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:113 159032 yṯbt Analysis does not reconstruct to surface (reconstructs as: yṯb)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:122 159036 likt POS token 'vb G' not allowed for /l-ʔ-k/; choose one of: vb
@@ -11357,7 +11281,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:17 15958
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:17 159584 tġrk Analysis does not reconstruct to surface (reconstructs as: tnġr)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:18 159585 tšlmk POS token 'vb D' not allowed for /š-l-m/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:18 159585 tšlmk Analysis does not reconstruct to surface (reconstructs as: tšlm)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:21 159587 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:30 159593 qlty Analysis does not reconstruct to surface (reconstructs as: qly)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:38 159598 mid Analysis does not reconstruct to surface (reconstructs as: mi)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:40 159599 šlm POS token 'vb G' not allowed for /š-l-m/; choose one of: vb
@@ -11517,7 +11440,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:210 1598
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:210 159882 lak Analysis does not reconstruct to surface (reconstructs as: lʔk)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:215 159886 rgmt POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:215 159886 rgmt Analysis does not reconstruct to surface (reconstructs as: rgm)
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:218 159888 pn POS token 'prep.' not allowed for pnm; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:220 159890 likt POS token 'vb G' not allowed for /l-ʔ-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:220 159890 likt ʔ must be preceded by '(' in column 3
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:220 159890 likt Analysis does not reconstruct to surface (reconstructs as: lʔk)
@@ -11534,7 +11456,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:248 1599
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:248 159907 yṣi ʔ must be preceded by '(' in column 3
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:248 159907 yṣi Analysis does not reconstruct to surface (reconstructs as: yṣʔ)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.89.tsv:6 159913 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.89.tsv:14 159918 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.89.tsv:16 159920 qlt POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.89.tsv:16 159920 qlt Analysis does not reconstruct to surface (reconstructs as: ql)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.89.tsv:21 159923 yšlm POS token 'vb G' not allowed for /š-l-m/; choose one of: vb
@@ -11637,11 +11558,9 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.95.tsv:11 16008
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.95.tsv:14 160089 m Analysis does not reconstruct to surface (reconstructs as: l)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:6 160095 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:10 160097 rgm POS token 'vb G' not allowed for /r-g-m/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:18 160102 pˤn POS token 'prep.' not allowed for pʕn; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:25 160107 qlt POS token 'vb G' not allowed for /q-l/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:25 160107 qlt Analysis does not reconstruct to surface (reconstructs as: ql)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:29 160110 yšlm POS token 'vb G' not allowed for /š-l-m/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:44 160118 pnh POS token 'prep.' not allowed for pnm; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:54 160125 mġyh POS token 'vb G' not allowed for /m-ġ-y/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:54 160125 mġyh Analysis does not reconstruct to surface (reconstructs as: mġy)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:62 160131 ṯmt Analysis does not reconstruct to surface (reconstructs as: ṯm)
@@ -11757,7 +11676,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.10.tsv:86 16128
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.10.tsv:96 161292 bn POS token 'vb G' not allowed for /b-n/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.10.tsv:106 161298 bn POS token 'vb G' not allowed for /b-n/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.10.tsv:116 161304 bn POS token 'vb G' not allowed for /b-n/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.11.tsv:4 161307 pn POS token 'prep.' not allowed for pnm; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.11.tsv:9 161309 bn POS token 'vb G' not allowed for /b-n/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.11.tsv:12 161311 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.11.tsv:23 161316 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
@@ -12036,7 +11954,6 @@ ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.30.tsv:110 1620
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.31.tsv:9 162035 bn POS token 'vb G' not allowed for /b-n/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.31.tsv:23 162045 špšn Analysis does not reconstruct to surface (reconstructs as: špš)
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.31.tsv:33 162051 bn POS token 'vb G' not allowed for /b-n/; choose one of: vb
-ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:10 162058 pn POS token 'prep.' not allowed for pnm; choose one of: n
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:15 162060 bn POS token 'vb G' not allowed for /b-n/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:18 162062 mlk POS token 'vb G' not allowed for /m-l-k/; choose one of: vb
 ERROR /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:22 162064 bhtm Analysis does not reconstruct to surface (reconstructs as: bt)
@@ -12328,7 +12245,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.105.tsv:27 15
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.105.tsv:48 152727 bwtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.105.tsv:91 152756 bhtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.106.tsv:54 152835 y Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.106.tsv:89 152856 pn DULAT plurale tantum noun should include 'pl. tant.' in POS
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.107.tsv:38 152948 nṯk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.107.tsv:390 153176 nṯk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.108.tsv:69 153259 rmm Plural form missing split ending
@@ -12365,7 +12281,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.122.tsv:5 154
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.124.tsv:81 154418 mlakk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.126.tsv:64 154471 yṯṯb Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.129.tsv:21 154558 y Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.132.tsv:65 154692 pn DULAT plurale tantum noun should include 'pl. tant.' in POS
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.133.tsv:34 154741 rumm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:67 141716 trḫ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.14.tsv:113 141744 mid Lexeme parse did not match DULAT; matched by surface form
@@ -12452,10 +12367,8 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1501 1
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1502 144076 ydk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1503 144076 ydk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1504 144076 ydk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1534 144092 pnk DULAT plurale tantum noun should include 'pl. tant.' in POS
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1581 144120 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.16.tsv:1602 144132 šntk Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.161.tsv:68 155161 pnh DULAT plurale tantum noun should include 'pl. tant.' in POS
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.162.tsv:23 155261 alpm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.162.tsv:88 155299 pamt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.162.tsv:88 155299 pamt Feminine plural noun in DULAT should be tagged with '/t='
@@ -12619,8 +12532,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:780 136
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:783 136522 yblmm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:798 136532 tšu Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:808 136539 yṯir Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:813 136544 pn DULAT plurale tantum noun should include 'pl. tant.' in POS
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:819 136548 pn DULAT plurale tantum noun should include 'pl. tant.' in POS
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:828 136553 yšmˤk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:835 136558 ysˤ Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:838 136560 ṯbtk Lexeme parse did not match DULAT; matched by surface form
@@ -12631,8 +12542,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:864 136
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:891 136594 trḥṣn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:893 136596 bbt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:905 136603 yṯir Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:910 136608 pn DULAT plurale tantum noun should include 'pl. tant.' in POS
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:917 136612 pn DULAT plurale tantum noun should include 'pl. tant.' in POS
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:959 136644 yˤn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:979 136658 mtt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.2.tsv:984 136662 ašṣi Lexeme parse did not match DULAT; matched by surface form
@@ -12726,7 +12635,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:312 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.24.tsv:326 147840 ṣġrt Feminine adjective/participle in DULAT should mark '-t' explicitly
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:29 9519 d Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3)
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:29 9519 d TODO/uncertain marker in comment: merge
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:32 9522 pnwh DULAT plurale tantum noun should include 'pl. tant.' in POS
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:37 9525 mlḥt Deverbal form marked with '[' but only noun entry found in DULAT
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:41 9527 mri Deverbal form marked with '[' but only noun entry found in DULAT
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.3.tsv:46 9531 yšqynh TODO/uncertain marker in comment: fix
@@ -12864,7 +12772,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:572 138
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:655 138565 xxxtlḥm Verb POS should include stem label(s): G
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:786 138652 bmt Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:792 138656 bmt Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:808 138665 pnm DULAT plurale tantum noun should include 'pl. tant.' in POS
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:911 138740 lḥm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:916 138743 lḥm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.4.tsv:922 138746 lḥm Lexeme parse did not match DULAT; matched by surface form
@@ -13027,7 +12934,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.72.tsv:251 14
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.78.tsv:21 149897 skn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:64 150037 šntk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:91 150052 ḥw Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:129 150081 pny DULAT plurale tantum noun should include 'pl. tant.' in POS
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:151 150094 ygršk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:165 150104 ydk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.82.tsv:166 150104 ydk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
@@ -13098,7 +13004,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.90.tsv:72 151
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.91.tsv:59 151246 ršpm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.91.tsv:82 151257 bhtm Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:67 151366 tr Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.92.tsv:144 151416 pnh DULAT plurale tantum noun should include 'pl. tant.' in POS
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.97.tsv:43 151651 ydk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.97.tsv:44 151651 ydk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 1.97.tsv:45 151651 ydk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4
@@ -13118,15 +13023,11 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.110.tsv:28 16
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.13.tsv:29 156670 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.14.tsv:20 156707 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:21 156779 tšlmk Suffix form without '+'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:31 156785 pn DULAT plurale tantum noun should include 'pl. tant.' in POS
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:42 156792 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.16.tsv:52 156799 twḥln Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.17.tsv:40 156838 skn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.21.tsv:20 156915 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.21.tsv:32 156922 skn Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:113 157045 pn DULAT plurale tantum noun should include 'pl. tant.' in POS
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:125 157054 pn DULAT plurale tantum noun should include 'pl. tant.' in POS
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.23.tsv:129 157058 pn DULAT plurale tantum noun should include 'pl. tant.' in POS
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.3.tsv:78 156353 rdnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.30.tsv:27 157205 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.31.tsv:60 157289 ksiy Lexeme parse did not match DULAT; matched by surface form
@@ -13170,7 +13071,6 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:31 158
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.70.tsv:57 158866 kḥdnn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.71.tsv:15 158924 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:26 158979 tšlmk Suffix form without '+'
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.72.tsv:104 159025 pn DULAT plurale tantum noun should include 'pl. tant.' in POS
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.75.tsv:27 159203 tšlmk Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.79.tsv:36 159310 nˤmm Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.79.tsv:40 159314 nˤmm Plural form missing split ending
@@ -13182,24 +13082,20 @@ WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:18 159
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:38 159598 mid Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.86.tsv:89 159623 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.87.tsv:88 159682 mid Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.88.tsv:218 159888 pn DULAT plurale tantum noun should include 'pl. tant.' in POS
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.89.tsv:10 159915 skn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.9.tsv:29 156547 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.9.tsv:32 156548 ṯby Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.91.tsv:16 160042 alpm Plural form missing split ending
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 2.97.tsv:44 160118 pnh DULAT plurale tantum noun should include 'pl. tant.' in POS
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.1.tsv:86 160793 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.1.tsv:87 160793 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.1.tsv:128 160819 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.1.tsv:129 160819 argmn Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.1.tsv:219 160882 skn Lexeme parse did not match DULAT; matched by surface form
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.11.tsv:4 161307 pn DULAT plurale tantum noun should include 'pl. tant.' in POS
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.11.tsv:18 161314 skn Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.16.tsv:20 161534 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.20.tsv:3 161648 rišym Plural form missing split ending
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.3.tsv:21 160955 ḫbṯh Suffix form without '+'
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.3.tsv:57 160976 gnˤym Plural form missing split ending
-WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.32.tsv:10 162058 pn DULAT plurale tantum noun should include 'pl. tant.' in POS
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.33.tsv:32 162156 npk Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.33.tsv:87 162185 y Lexeme parse did not match DULAT; matched by surface form
 WARNING /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.4.tsv:64 161014 birtym Plural form missing split ending
@@ -17635,4 +17531,4 @@ INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:20 161199 
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:21 161200 ag Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:23 161201 rškm Surface not found in UDB concordance
 INFO /Users/alexandersosnovschenko/projects/cuc-morph/out/KTU 3.9.tsv:63 161222 dˤmnk Surface not found in UDB concordance
-Total issues: 17514
+Total issues: 17410

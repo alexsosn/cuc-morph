@@ -50,37 +50,37 @@ L_PN_PREP_CANONICAL_PAYLOADS = {
     "pn": CanonicalSecondPayload(
         analysis="pn(m/",
         dulat="pnm",
-        pos="prep.",
+        pos="n. m. pl. tant.",
         gloss="in front",
     ),
     "pnm": CanonicalSecondPayload(
         analysis="pn(m/m",
         dulat="pnm",
-        pos="prep.",
+        pos="n. m. pl. tant.",
         gloss="in front",
     ),
     "pnh": CanonicalSecondPayload(
         analysis="pn(m/+h",
         dulat="pnm",
-        pos="prep.",
+        pos="n. m. pl. tant.",
         gloss="in front",
     ),
     "pnk": CanonicalSecondPayload(
         analysis="pn(m/+k",
         dulat="pnm",
-        pos="prep.",
+        pos="n. m. pl. tant.",
         gloss="in front",
     ),
     "pny": CanonicalSecondPayload(
         analysis="pn(m/+y",
         dulat="pnm",
-        pos="prep.",
+        pos="n. m. pl. tant.",
         gloss="in front",
     ),
     "pnwh": CanonicalSecondPayload(
         analysis="pn&w(m/+h",
         dulat="pnm",
-        pos="prep.",
+        pos="n. m. pl. tant.",
         gloss="in front",
     ),
 }
