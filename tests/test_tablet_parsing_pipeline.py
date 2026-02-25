@@ -180,6 +180,10 @@ class TabletParsingPipelineTest(unittest.TestCase):
             )
             self.assertLess(
                 names.index("ydk-context-disambiguator"),
+                names.index("prefixed-iii-aleph-verb"),
+            )
+            self.assertLess(
+                names.index("prefixed-iii-aleph-verb"),
                 names.index("verb-pos-stem"),
             )
             self.assertLess(

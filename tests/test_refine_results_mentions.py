@@ -164,6 +164,20 @@ class RefineResultsMentionsTest(unittest.TestCase):
             "!y!(n]t]š(ʔ[&u",
         )
 
+    def test_analysis_encodes_prefixed_iii_aleph_forms(self) -> None:
+        entry = Entry(
+            entry_id=5001,
+            lemma="/ḫ-ṭ-ʔ/",
+            hom="",
+            pos="vb",
+            gloss="",
+            wiki_tr="",
+        )
+        self.assertEqual(
+            analysis_for_entry("tḫṭu", entry, morph_values=["G, prefc."]),
+            "!t!ḫṭ(ʔ[&u",
+        )
+
     def test_load_entries_falls_back_to_lemma_when_forms_missing(self) -> None:
         with tempfile.TemporaryDirectory() as tmp_dir:
             db_path = Path(tmp_dir) / "dulat.sqlite"

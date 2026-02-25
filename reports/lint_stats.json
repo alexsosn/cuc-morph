@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-02-25T13:11:35.840771+00:00",
+  "generated_at_utc": "2026-02-25T13:21:48.413397+00:00",
   "files_checked": 278,
-  "total_issues": 10080,
+  "total_issues": 9988,
   "fallback_parsed": 247,
   "by_severity": {
-    "ERROR": 5230,
+    "ERROR": 5138,
     "WARNING": 396,
     "INFO": 1624
   },
@@ -12,7 +12,7 @@
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3275
+      "count": 3229
     },
     {
       "severity": "INFO",
@@ -37,7 +37,7 @@
     {
       "severity": "ERROR",
       "problem_type": "ʔ must be preceded by '(' in column 3",
-      "count": 246
+      "count": 200
     },
     {
       "severity": "ERROR",

@@ -38,6 +38,7 @@ from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
 from pipeline.steps.onomastic_gloss import OnomasticGlossOverrideFixer
 from pipeline.steps.plural_split import PluralSplitFixer
 from pipeline.steps.plurale_tantum_m import PluraleTantumMFixer
+from pipeline.steps.prefixed_iii_aleph_verb import PrefixedIIIAlephVerbFixer
 from pipeline.steps.pronoun_closure import PronounClosureFixer
 from pipeline.steps.redirect_reconstruction_comment import RedirectReconstructionCommentFixer
 from pipeline.steps.schema_formatter import TsvSchemaFormatter
@@ -123,6 +124,7 @@ class TabletParsingPipeline:
             LPrepositionBigramContextDisambiguator(),
             KFunctorBigramContextDisambiguator(),
             YdkContextDisambiguator(),
+            PrefixedIIIAlephVerbFixer(),
             VerbPosStemFixer(dulat_db=self.config.dulat_db),
             VerbStemSuffixMarkerFixer(),
             VerbNStemAssimilationFixer(),

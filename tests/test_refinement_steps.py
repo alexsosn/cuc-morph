@@ -28,6 +28,7 @@ from pipeline.steps.noun_closure import NounPosClosureFixer
 from pipeline.steps.offering_l_prep import OfferingListLPrepFixer
 from pipeline.steps.onomastic_gloss import OnomasticGlossOverrideFixer
 from pipeline.steps.plural_split import PluralSplitFixer
+from pipeline.steps.prefixed_iii_aleph_verb import PrefixedIIIAlephVerbFixer
 from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
 from pipeline.steps.surface_option_propagation import SurfaceOptionPropagationFixer
@@ -1269,6 +1270,31 @@ class VerbNStemAssimilationFixerTest(unittest.TestCase):
         row = TabletRow("1", "nṯbr", "nṯbr[", "/ṯ-b-r/", "vb N", "to break", "")
         result = self.fixer.refine_row(row)
         self.assertEqual(result.analysis, "nṯbr[")
+
+
+class PrefixedIIIAlephVerbFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = PrefixedIIIAlephVerbFixer()
+
+    def test_rewrites_prefixed_iii_aleph_g_form(self) -> None:
+        row = TabletRow("1", "tḫṭu", "ḫṭʔ[u", "/ḫ-ṭ-ʔ/", "vb G", "to make a mistake", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!t!ḫṭ(ʔ[&u")
+
+    def test_rewrites_prefixed_iii_aleph_n_form(self) -> None:
+        row = TabletRow("2", "nḫtu", "ḫtʔ[u", "/ḫ-t-ʔ/", "vb N", "to be ground up", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!n!ḫt(ʔ[&u")
+
+    def test_keeps_already_prefixed_row_unchanged(self) -> None:
+        row = TabletRow("3", "tḫṭu", "!t!ḫṭ(ʔ[&u", "/ḫ-ṭ-ʔ/", "vb G", "to make a mistake", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "!t!ḫṭ(ʔ[&u")
+
+    def test_skips_non_iii_aleph_root(self) -> None:
+        row = TabletRow("4", "tqtl", "qtl[u", "/q-t-l/", "vb G", "to kill", "")
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "qtl[u")
 
 
 class OfferingListLPrepFixerTest(unittest.TestCase):

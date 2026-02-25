@@ -382,9 +382,71 @@ def is_n_weak_iii_aleph_root(lemma: str) -> bool:
     return len(parts) == 3 and parts[0] == "n" and parts[2] == "ʔ"
 
 
+def is_iii_aleph_root(lemma: str) -> bool:
+    """Return True for lexical roots with final aleph (e.g. /q-r-ʔ/, /b-ʔ/)."""
+    lm = (lemma or "").strip()
+    if not (lm.startswith("/") and lm.endswith("/")):
+        return False
+    parts = [part for part in lm[1:-1].split("-") if part]
+    return len(parts) >= 2 and parts[-1] == "ʔ"
+
+
 def has_prefix_morphology(morph_values: Sequence[str]) -> bool:
     merged = " | ".join(morph_values or []).lower()
     return "prefc." in merged
+
+
+def build_prefixed_iii_aleph_analysis(
+    surface_plain: str,
+    stem: str,
+    hom: str,
+    stem_marker: str,
+    restore_initial_n: bool = False,
+) -> Optional[str]:
+    """Encode contracted prefix forms for III-aleph roots.
+
+    Example:
+    - tḫṭu -> !t!ḫṭ(ʔ[&u
+    - yšu  -> !y!(nš(ʔ[&u
+    """
+    if not surface_plain or surface_plain[0] not in _PREFORMATIVE_LETTERS:
+        return None
+    body = surface_plain[1:]
+    if not body:
+        return None
+    m = re.search(r"[aiu]", body)
+    if not m:
+        return None
+
+    inflection = body[m.start() :]
+    visible_stem = body[: m.start()]
+    stem_plain = extract_letters(stem)
+    if not stem_plain:
+        return None
+
+    expected_visible = stem_plain
+    if restore_initial_n and expected_visible.startswith("n"):
+        expected_visible = expected_visible[1:]
+    if expected_visible.endswith("ʔ"):
+        expected_visible = expected_visible[:-1]
+    if visible_stem and expected_visible and not expected_visible.startswith(visible_stem):
+        return None
+
+    normalized_stem = stem
+    if restore_initial_n:
+        if normalized_stem.startswith("n"):
+            normalized_stem = "(n" + normalized_stem[1:]
+        elif not normalized_stem.startswith("(n"):
+            normalized_stem = "(n" + normalized_stem
+
+    if normalized_stem.endswith("ʔ"):
+        normalized_stem = normalized_stem[:-1] + "(ʔ"
+    else:
+        aleph_idx = normalized_stem.rfind("ʔ")
+        if aleph_idx >= 0 and (aleph_idx == 0 or normalized_stem[aleph_idx - 1] != "("):
+            normalized_stem = normalized_stem[:aleph_idx] + "(ʔ" + normalized_stem[aleph_idx + 1 :]
+
+    return f"!{surface_plain[0]}!{stem_marker}{normalized_stem}{hom}[&{inflection}"
 
 
 def build_prefixed_n_weak_iii_aleph_analysis(
@@ -444,6 +506,16 @@ def analysis_for_entry(
         stem_plain = extract_letters(stem)
         stem_marker_plain = extract_letters(stem_marker)
         surface_plain = extract_letters(s)
+        if is_iii_aleph_root(e.lemma) and has_prefix_morphology(morph_values or []):
+            contracted_analysis = build_prefixed_iii_aleph_analysis(
+                surface_plain=surface_plain,
+                stem=stem,
+                hom=hom,
+                stem_marker=stem_marker,
+                restore_initial_n=is_n_weak_iii_aleph_root(e.lemma),
+            )
+            if contracted_analysis is not None:
+                return contracted_analysis
         if is_n_weak_iii_aleph_root(e.lemma) and has_prefix_morphology(morph_values or []):
             contracted_analysis = build_prefixed_n_weak_iii_aleph_analysis(
                 surface_plain=surface_plain,

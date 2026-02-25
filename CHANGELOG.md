@@ -2,6 +2,18 @@
 
 ## 2026-02-25
 
+- Fixed legacy prefixed III-aleph verb rows that were encoded without preformative and aleph-contraction markers (e.g. `ḫṭʔ[u`):
+  - added `PrefixedIIIAlephVerbFixer` (`pipeline/steps/prefixed_iii_aleph_verb.py`) to normalize to reconstructable form (`!t!ḫṭ(ʔ[&u`) from row-local evidence (`surface`, `POS`, `DULAT` root).
+  - wired step into pipeline before verb stem enrichment/assimilation steps.
+- Improved generation parity in `scripts/refine_results_mentions.py`:
+  - prefixed III-aleph roots (`/...-ʔ/`) now generate `!preformative!...[&<vowel>` directly, including non-weak roots (e.g. `/ḫ-ṭ-ʔ/`, `/q-r-ʔ/`, `/b-ʔ/`).
+- Added regression coverage:
+  - `tests/test_refinement_steps.py`,
+  - `tests/test_refine_results_mentions.py`,
+  - `tests/test_tablet_parsing_pipeline.py`.
+- Documented rule in `docs/prefixed_iii_aleph_verb_pipeline.md`.
+- Re-ran full tablet pipeline and reports; target rows like `148130 tḫṭu` now normalize to `!t!ḫṭ(ʔ[&u`.
+
 - Fixed Š-stem non-prefixed verb tail reconstruction bug that produced spurious duplicated final letters (e.g. `]š]qrb[b`):
   - `scripts/refine_results_mentions.py::analysis_for_entry` now computes non-prefixed verbal tails against `stem-marker + stem` when present, not just bare stem length.
   - This prevents extra-tail output for surface-aligned forms like `šqrb` (`]š]qrb[`).
