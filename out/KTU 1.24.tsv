@@ -53,7 +53,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147664	dm	dm(II)/	dm (II)	n. m.	blood	
 147664	dm	dm(I)	dm (I)	functor	since	
 147665	abh	ab/+h	ảb	n. m.	father	
-147666	yḥ	!y!ḥw(I)[	/ḥ-w/y-y/ (I)	vb G	to live	
+147666	yḥ	!y!ḥ(w(I)[	/ḥ-w/y-y/ (I)	vb G	to live	
 # KTU 1.24 10						
 147667	wyn	?	?	?	?	DULAT: NOT FOUND
 147668	k	+k	-k (I)			
@@ -81,7 +81,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147680	l	l(I)	l (I)	prep.	to	
 147680	l	l(III)	l (III)	functor	certainly	
 147681	adnh	adn(I)/+h	ảdn (I)	n. m.	lord	
-147681	adnh	ad/+nh	ảd	n. m.	father	
+147681	adnh	ad/+nh	ảd	n. m.	father, ?	
 147682	xxl	?	?	?	?	DULAT: NOT FOUND
 147683	rxxxxxx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.24 14						
@@ -157,9 +157,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147731	ḥrnqm	ḥrnq/	ḥrnq	n. m.	orchard	
 147732	w	w	w	conj.	and	
 # KTU 1.24 24						
-147733	yˤn	!y!ˤny(I)[	/ʕ-n-y/ (I)	vb G	to answer	
+147733	yˤn	!y!ˤn(y(I)[	/ʕ-n-y/ (I)	vb G	to answer	
 147733	yˤn	!y!ˤn[	/ʕ-n/	vb G/D	to see	
-147733	yˤn	!y!ˤnw[	/ʕ-n-w/	vb G/Dpass	to be / remain depressed	
+147733	yˤn	!y!ˤn(w[	/ʕ-n-w/	vb G/Dpass	to be / remain depressed	
 147734	ḫrḫb	ḫrḫb/	ḫrḫb	DN	ḫrḫb	
 147735	mlk	mlk[	/m-l-k/	vb G	to reign	
 147735	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
@@ -195,14 +195,15 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147757	lbu	lbu/	lbủ	n. m.	lion	
 147758	yˤrr	?	?	?	?	DULAT: NOT FOUND
 147759	w	w	w	conj.	and	
-147760	yˤn	!y!ˤny(I)[	/ʕ-n-y/ (I)	vb G	to answer	
+147760	yˤn	!y!ˤn(y(I)[	/ʕ-n-y/ (I)	vb G	to answer	
 147760	yˤn	!y!ˤn[	/ʕ-n/	vb G/D	to see	
-147760	yˤn	!y!ˤnw[	/ʕ-n-w/	vb G/Dpass	to be / remain depressed	
+147760	yˤn	!y!ˤn(w[	/ʕ-n-w/	vb G/Dpass	to be / remain depressed	
 # KTU 1.24 31						
 147761	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 147762	nyr	nyr/	nyr	n. f.	luminary	
 147763	šmm	šm(m(I)/m	šmm (I)	n. m. pl. tant.	heavens	
-147764	wn	wn	wn	→		
+147764	wn	w	w	conj.	and	
+147764	wn	wn	wn	→	?	
 147765	ˤn	ˤn(I)/	ʕn (I)	n. f.	eye	
 147765	ˤn	ˤn[	/ʕ-n/	vb G	to see	
 147765	ˤn	ˤn(II)/	ʕn (II)	n. f.	furrow	
@@ -217,7 +218,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147771	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 147772	ytrḫ	!y!trḫ[	/t-r-ḫ/	vb G/D	to marry	
 147773	adnh	adn(I)/+h	ảdn (I)	n. m.	lord	
-147773	adnh	ad/+nh	ảd	n. m.	father	
+147773	adnh	ad/+nh	ảd	n. m.	father, ?	
 # KTU 1.24 34						
 147774	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
 147775	mṣb	mṣb(II)/	mṣb (II)	n. m.	place in which something is put	
@@ -285,7 +286,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.24 44						
 147815	llay	llu/+y	llủ	n. m.	suckling (lamb or kid)	
 147816	ˤm	ˤm(I)	ʕm (I)	prep.	to	
-147817	lẓpn	lẓpn	lẓpn	→		
+147817	lẓpn	lṭpn/	lṭpn	adj. m.	Benevolent	
+147817	lẓpn	lẓpn	lẓpn	→	?	
 147818	i	i(I)	ỉ (I)	interj.	woe	
 # KTU 1.24 45						
 147819	l	l(I)	l (I)	prep.	to	

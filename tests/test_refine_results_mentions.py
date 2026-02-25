@@ -13,6 +13,13 @@ from scripts.refine_results_mentions import (
     load_entries,
     parse_separator_ref,
     refine_file,
+    render_variant,
+)
+
+_INSERT_ENTRY_SQL = (
+    "INSERT INTO entries("
+    "entry_id, lemma, homonym, pos, wiki_transcription, summary, text"
+    ") VALUES (?, ?, ?, ?, ?, ?, ?)"
 )
 
 
@@ -23,7 +30,8 @@ class RefineResultsMentionsTest(unittest.TestCase):
         cur.execute(
             "CREATE TABLE entries ("
             "entry_id INTEGER PRIMARY KEY, "
-            "lemma TEXT, homonym TEXT, pos TEXT, wiki_transcription TEXT)"
+            "lemma TEXT, homonym TEXT, pos TEXT, wiki_transcription TEXT, "
+            "summary TEXT, text TEXT)"
         )
         cur.execute(
             "CREATE TABLE senses (id INTEGER PRIMARY KEY, entry_id INTEGER, definition TEXT)"
@@ -141,11 +149,7 @@ class RefineResultsMentionsTest(unittest.TestCase):
             self._init_dulat_schema(db_path)
             conn = sqlite3.connect(str(db_path))
             cur = conn.cursor()
-            cur.execute(
-                "INSERT INTO entries(entry_id, lemma, homonym, pos, wiki_transcription) "
-                "VALUES (?, ?, ?, ?, ?)",
-                (170, "ủgrt", "", "TN", ""),
-            )
+            cur.execute(_INSERT_ENTRY_SQL, (170, "ủgrt", "", "TN", "", "", ""))
             cur.execute(
                 "INSERT INTO senses(id, entry_id, definition) VALUES (?, ?, ?)",
                 (1, 170, "Ugarit"),
@@ -153,7 +157,7 @@ class RefineResultsMentionsTest(unittest.TestCase):
             conn.commit()
             conn.close()
 
-            _entries_by_id, forms_map, _lemma_map, suffix_map, forms_morph = load_entries(db_path)
+            _entries_by_id, forms_map, lemma_map, suffix_map, forms_morph = load_entries(db_path)
             self.assertIn("ugrt", forms_map)
             self.assertEqual([entry.entry_id for entry in forms_map["ugrt"]], [170])
 
@@ -161,6 +165,7 @@ class RefineResultsMentionsTest(unittest.TestCase):
                 surface="ugrt",
                 current_ref="CAT 1.119 I:1",
                 forms_map=forms_map,
+                lemma_map=lemma_map,
                 suffix_map=suffix_map,
                 forms_morph=forms_morph,
                 mention_ids=set(),
@@ -210,6 +215,7 @@ class RefineResultsMentionsTest(unittest.TestCase):
                 path=out_path,
                 out_path=out_path,
                 forms_map=forms_map,
+                lemma_map={},
                 suffix_map={},
                 forms_morph={},
                 reverse_mentions={"CAT 1.101:5": {1}},
@@ -228,11 +234,7 @@ class RefineResultsMentionsTest(unittest.TestCase):
             self._init_dulat_schema(db_path)
             conn = sqlite3.connect(str(db_path))
             cur = conn.cursor()
-            cur.execute(
-                "INSERT INTO entries(entry_id, lemma, homonym, pos, wiki_transcription) "
-                "VALUES (?, ?, ?, ?, ?)",
-                (2520, "/l-s-m/", "", "vb", ""),
-            )
+            cur.execute(_INSERT_ENTRY_SQL, (2520, "/l-s-m/", "", "vb", "", "", ""))
             cur.execute(
                 "INSERT INTO forms(text, entry_id, morphology) VALUES (?, ?, ?)",
                 ("tslmn", 2520, "G, prefc."),
@@ -251,11 +253,7 @@ class RefineResultsMentionsTest(unittest.TestCase):
             self._init_dulat_schema(db_path)
             conn = sqlite3.connect(str(db_path))
             cur = conn.cursor()
-            cur.execute(
-                "INSERT INTO entries(entry_id, lemma, homonym, pos, wiki_transcription) "
-                "VALUES (?, ?, ?, ?, ?)",
-                (4268, "tḥm", "", "n.", ""),
-            )
+            cur.execute(_INSERT_ENTRY_SQL, (4268, "tḥm", "", "n.", "", "", ""))
             cur.execute(
                 "INSERT INTO forms(text, entry_id, morphology) VALUES (?, ?, ?)",
                 ("tḥmk", 4268, "sg."),
@@ -265,6 +263,51 @@ class RefineResultsMentionsTest(unittest.TestCase):
 
             _entries, _forms_map, _lemma_map, _suffix_map, forms_morph = load_entries(db_path)
             self.assertEqual(forms_morph[("tḥmk", 4268)], {"suff."})
+
+    def test_redirect_entry_adds_target_restoration_variant(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            self._init_dulat_schema(db_path)
+            conn = sqlite3.connect(str(db_path))
+            cur = conn.cursor()
+            cur.execute(
+                _INSERT_ENTRY_SQL,
+                (
+                    10,
+                    "rdmn",
+                    "",
+                    "→",
+                    "",
+                    "<b>rdmn</b> cf. <i>prdmn</i>.",
+                    "rdmn <b>rdmn</b> cf. <i>prdmn</i>.",
+                ),
+            )
+            cur.execute(_INSERT_ENTRY_SQL, (11, "prdmn", "", "DN", "", "", ""))
+            cur.execute(
+                "INSERT INTO translations(entry_id, text) VALUES (?, ?)",
+                (11, "unknown deity"),
+            )
+            conn.commit()
+            conn.close()
+
+            _entries, forms_map, lemma_map, suffix_map, forms_morph = load_entries(db_path)
+            variants = build_variants(
+                surface="rdmn",
+                current_ref="CAT 1.3 I:2",
+                forms_map=forms_map,
+                lemma_map=lemma_map,
+                suffix_map=suffix_map,
+                forms_morph=forms_morph,
+                mention_ids=set(),
+                entry_ref_count={},
+                entry_tablets={},
+                entry_family_count={},
+                max_variants=3,
+            )
+
+            rendered = [render_variant("rdmn", variant, forms_morph) for variant in variants]
+            self.assertIn(("rdmn", "rdmn", "→", "?"), rendered)
+            self.assertIn(("(prdmn/", "prdmn", "DN", "unknown deity"), rendered)
 
 
 if __name__ == "__main__":

@@ -68,6 +68,7 @@ POS_LABEL_NORMALIZATION = {
 
 LETTER_RE = re.compile(r"[A-Za-zʔʕʿˤḫḥṭṣṯẓġḏšảỉủ]")
 _PREFORMATIVE_LETTERS = {"y", "t", "a", "n", "i", "u"}
+_REDIRECT_TARGET_RE = re.compile(r"<i>([^<]+)</i>", re.IGNORECASE)
 
 
 @dataclass(frozen=True)
@@ -78,6 +79,7 @@ class Entry:
     pos: str
     gloss: str
     wiki_tr: str
+    redirect_targets: Tuple[str, ...] = ()
 
 
 @dataclass
@@ -85,6 +87,7 @@ class Variant:
     entries: Tuple[Entry, ...]
     base_surface: str
     score: int = 0
+    from_redirect: bool = False
 
 
 # ------------------ helpers ------------------
@@ -122,6 +125,26 @@ def compact_gloss(s: str) -> str:
     if len(g) > 110:
         g = g[:110].rsplit(" ", 1)[0].strip(" ,;")
     return g
+
+
+def extract_redirect_targets(summary: str, text: str) -> Tuple[str, ...]:
+    source = " ".join(part for part in (summary or "", text or "") if part)
+    if not source:
+        return ()
+
+    cf_match = re.search(r"cf\.(.*)$", source, flags=re.IGNORECASE)
+    scope = cf_match.group(1) if cf_match else source
+
+    out: List[str] = []
+    for token in _REDIRECT_TARGET_RE.findall(scope):
+        cleaned = strip_html(token).strip()
+        cleaned = re.sub(r"[.,;:!?]+$", "", cleaned).strip()
+        if cleaned:
+            out.append(cleaned)
+
+    if not out:
+        return ()
+    return tuple(dict.fromkeys(out))
 
 
 def canon_ref(r: str) -> str:
@@ -298,6 +321,22 @@ def mark_hidden_terminal_stem_letters(stem: str, hidden_count: int) -> str:
     return "".join(out)
 
 
+def mark_reconstructed_prefix_letters(form: str, prefix_letters: int) -> str:
+    """Prefix '(' before the first `prefix_letters` lexical letters."""
+    if prefix_letters <= 0:
+        return form
+    out: List[str] = []
+    remaining = prefix_letters
+    for ch in form:
+        if remaining > 0 and LETTER_RE.match(ch):
+            out.append("(")
+            out.append(ch)
+            remaining -= 1
+            continue
+        out.append(ch)
+    return "".join(out)
+
+
 def is_n_weak_iii_aleph_root(lemma: str) -> bool:
     """Return True for lexical roots of the shape /n-...-ʔ/."""
     lm = (lemma or "").strip()
@@ -350,7 +389,12 @@ def build_prefixed_n_weak_iii_aleph_analysis(
     return f"!{surface_plain[0]}!{stem_marker}{normalized_stem}{hom}[&{inflection}"
 
 
-def analysis_for_entry(surface: str, e: Entry, morph_values: Optional[Sequence[str]] = None) -> str:
+def analysis_for_entry(
+    surface: str,
+    e: Entry,
+    morph_values: Optional[Sequence[str]] = None,
+    allow_prefix_restoration: bool = False,
+) -> str:
     s = normalize_analysis(surface)
     hom = f"({e.hom})" if e.hom else ""
     stem_marker = stem_marker_from_morph(morph_values or [])
@@ -400,6 +444,18 @@ def analysis_for_entry(surface: str, e: Entry, morph_values: Optional[Sequence[s
         # fragment if we keep only the first variant. For long surfaces,
         # prefer the observed token shape.
         lex = s
+    if allow_prefix_restoration and is_nominal_pos(e.pos):
+        lex_plain = extract_letters(lex)
+        surface_plain = extract_letters(s)
+        if (
+            lex_plain
+            and surface_plain
+            and len(lex_plain) > len(surface_plain)
+            and lex_plain.endswith(surface_plain)
+        ):
+            prefix_len = len(lex_plain) - len(surface_plain)
+            if prefix_len <= 3:
+                lex = mark_reconstructed_prefix_letters(lex, prefix_len)
     if is_nominal_pos(e.pos):
         return f"{lex}{hom}/"
     return f"{lex}{hom}"
@@ -413,6 +469,8 @@ def suffix_fragment(e: Entry) -> str:
 
 
 def gloss_for_entry(e: Entry, multi_slot: bool = False) -> str:
+    if (e.pos or "").strip() == "→":
+        return "?"
     pos_up = e.pos or ""
     if any(tag in pos_up for tag in ("DN", "PN", "TN", "GN")):
         # Prefer canonical name rendering for proper names if available.
@@ -440,6 +498,10 @@ def load_entries(
 ]:
     conn = sqlite3.connect(str(dulat_db))
     cur = conn.cursor()
+    cur.execute("PRAGMA table_info(entries)")
+    entry_columns = {row[1] for row in cur.fetchall()}
+    has_summary = "summary" in entry_columns
+    has_text = "text" in entry_columns
 
     # compact gloss preference
     sense_map: Dict[int, str] = {}
@@ -464,12 +526,21 @@ def load_entries(
         if entry_id not in trans_map:
             trans_map[entry_id] = compact_gloss(text)
 
-    cur.execute("SELECT entry_id, lemma, homonym, pos, wiki_transcription FROM entries")
+    summary_expr = "summary" if has_summary else "'' AS summary"
+    text_expr = "text" if has_text else "'' AS text"
+    cur.execute(
+        "SELECT entry_id, lemma, homonym, pos, wiki_transcription, "
+        f"{summary_expr}, {text_expr} "
+        "FROM entries"
+    )
     entries_by_id: Dict[int, Entry] = {}
     lemma_map: Dict[str, List[Entry]] = {}
     suffix_map: Dict[str, List[Entry]] = {}
-    for entry_id, lemma, hom, pos, wiki_tr in cur.fetchall():
+    for entry_id, lemma, hom, pos, wiki_tr, summary, text in cur.fetchall():
         lm, hm = parse_optional_hom(lemma or "", hom or "")
+        redirect_targets = ()
+        if (pos or "").strip() == "→":
+            redirect_targets = extract_redirect_targets(summary or "", text or "")
         e = Entry(
             entry_id=int(entry_id),
             lemma=lm,
@@ -477,6 +548,7 @@ def load_entries(
             pos=pos or "",
             gloss=sense_map.get(entry_id) or trans_map.get(entry_id, ""),
             wiki_tr=wiki_tr or "",
+            redirect_targets=redirect_targets,
         )
         entries_by_id[e.entry_id] = e
         key = normalize_lookup(lm)
@@ -715,6 +787,7 @@ def build_variants(
     surface: str,
     current_ref: str,
     forms_map: Dict[str, List[Entry]],
+    lemma_map: Dict[str, List[Entry]],
     suffix_map: Dict[str, List[Entry]],
     forms_morph: Dict[Tuple[str, int], Set[str]],
     mention_ids: Set[int],
@@ -730,6 +803,26 @@ def build_variants(
     direct_ids = {e.entry_id for e in direct}
 
     variants: List[Variant] = [Variant((e,), surface) for e in direct]
+
+    # Expand lexical variants from redirect-only entries (pos = "→") using
+    # explicit cf.-targets from DULAT entry notes.
+    for redirect_entry in [e for e in direct if (e.pos or "").strip() == "→"]:
+        for target in redirect_entry.redirect_targets:
+            target_lemma, target_hom = parse_optional_hom(target, "")
+            target_key = normalize_lookup(target_lemma)
+            if not target_key:
+                continue
+            target_entries = dedupe_entries(lemma_map.get(target_key, []))
+            filtered_targets = [
+                entry
+                for entry in target_entries
+                if entry.entry_id != redirect_entry.entry_id
+                and (entry.pos or "").strip()
+                and (entry.pos or "").strip() != "→"
+                and (not target_hom or (entry.hom or "") == target_hom)
+            ]
+            for target_entry in filtered_targets[:2]:
+                variants.append(Variant((target_entry,), surface, from_redirect=True))
 
     # Conservative suffix splitting, only when direct form mapping failed.
     if not direct:
@@ -811,9 +904,28 @@ def build_variants(
         )
     )
     # Collapse to one variant when evidence is strongly skewed.
-    if len(variants) > 1 and (variants[0].score - variants[1].score) >= 6:
+    has_redirect_pair = any(v.from_redirect for v in variants) and any(
+        len(v.entries) == 1 and (v.entries[0].pos or "").strip() == "→" for v in variants
+    )
+    if not has_redirect_pair and len(variants) > 1 and (variants[0].score - variants[1].score) >= 6:
         return [variants[0]]
-    return variants[:max_variants]
+    top = variants[:max_variants]
+    if has_redirect_pair and not any(
+        len(v.entries) == 1 and (v.entries[0].pos or "").strip() == "→" for v in top
+    ):
+        arrow_variant = next(
+            (
+                v
+                for v in variants
+                if len(v.entries) == 1 and (v.entries[0].pos or "").strip() == "→"
+            ),
+            None,
+        )
+        if arrow_variant is not None:
+            if len(top) >= max_variants:
+                top = top[:-1]
+            top.append(arrow_variant)
+    return top
 
 
 def render_variant(
@@ -823,7 +935,12 @@ def render_variant(
     if len(entries) == 1:
         e = entries[0]
         mv = sorted(forms_morph.get((normalize_lookup(surface), e.entry_id), set()))
-        a = analysis_for_entry(surface, e, morph_values=mv)
+        a = analysis_for_entry(
+            surface,
+            e,
+            morph_values=mv,
+            allow_prefix_restoration=bool(v.from_redirect),
+        )
         d = entry_label(e)
         p = pos_token(e)
         g = gloss_for_entry(e, multi_slot=False)
@@ -842,6 +959,7 @@ def refine_file(
     path: Path,
     out_path: Path,
     forms_map: Dict[str, List[Entry]],
+    lemma_map: Dict[str, List[Entry]],
     suffix_map: Dict[str, List[Entry]],
     forms_morph: Dict[Tuple[str, int], Set[str]],
     reverse_mentions: Dict[str, Set[int]],
@@ -904,6 +1022,7 @@ def refine_file(
             surface,
             current_ref,
             forms_map,
+            lemma_map,
             suffix_map,
             forms_morph,
             mention_ids,
@@ -971,7 +1090,7 @@ def main() -> None:
     )
     args = ap.parse_args()
 
-    _entries_by_id, forms_map, _lemma_map, suffix_map, forms_morph = load_entries(
+    _entries_by_id, forms_map, lemma_map, suffix_map, forms_morph = load_entries(
         Path(args.dulat_db)
     )
     reverse_mentions, entry_ref_count, entry_tablets, entry_family_count = load_reverse_mentions(
@@ -988,6 +1107,7 @@ def main() -> None:
             src,
             dst,
             forms_map,
+            lemma_map,
             suffix_map,
             forms_morph,
             reverse_mentions,

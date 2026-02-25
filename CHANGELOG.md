@@ -2,6 +2,16 @@
 
 ## 2026-02-25
 
+- Added redirect-aware reconstruction for DULAT `→` entries in refinement:
+  - `scripts/refine_results_mentions.py` now parses redirect targets from entry notes (`cf. <i>target</i>`),
+  - keeps the original `→` variant (`gloss = ?`) and adds a lexical target variant when resolvable (for example `rdmn` -> `(prdmn/`),
+  - enables conservative nominal prefix restoration for redirect-derived variants so reconstructed surface loss is explicit.
+- Wired redirect-target resolution into pipeline refinement invocation:
+  - `pipeline/tablet_parsing.py` now passes `lemma_map` to `refine_file` / `build_variants`.
+- Added regression coverage in `tests/test_refine_results_mentions.py`:
+  - `test_redirect_entry_adds_target_restoration_variant` validates dual-row behavior (`→` row + restored lexical row).
+- Re-ran targeted regeneration for tablets containing `→` entries to apply the rule deterministically across outputs.
+
 - Fixed prefix-conjugation detection for Š/Št-stem analyses with explicit stem markers:
   - `scripts/refine_results_mentions.py::analysis_for_entry` now matches preformative bodies against both plain stems and marker+stem realizations (`š+root`, `št+root`),
   - restores missing `!preformative!` for forms like `yštḥwyn`, `tštḥwy`, `yšlḥm`,

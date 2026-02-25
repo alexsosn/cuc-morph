@@ -169,7 +169,7 @@ class TabletParsingPipeline:
         return {"bootstrap_written": written}
 
     def refine_targets(self, targets: Sequence[Path]) -> Dict[str, int]:
-        _entries_by_id, forms_map, _lemma_map, suffix_map, forms_morph = refine.load_entries(
+        _entries_by_id, forms_map, lemma_map, suffix_map, forms_morph = refine.load_entries(
             self.config.dulat_db
         )
         reverse_mentions, entry_ref_count, entry_tablets, entry_family_count = (
@@ -187,6 +187,7 @@ class TabletParsingPipeline:
                 out_file,
                 out_file,
                 forms_map,
+                lemma_map,
                 suffix_map,
                 forms_morph,
                 reverse_mentions,

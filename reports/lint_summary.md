@@ -1,28 +1,28 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `10283`
-- Fallback-parsed issue lines: `235`
+- Total issues: `10314`
+- Fallback-parsed issue lines: `236`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 5499 |
-| WARNING | 430 |
-| INFO | 1617 |
+| ERROR | 5495 |
+| WARNING | 431 |
+| INFO | 1623 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3264 |
-| INFO | Surface not found in UDB concordance | 1617 |
+| ERROR | Analysis does not reconstruct to surface | 3257 |
+| INFO | Surface not found in UDB concordance | 1623 |
 | ERROR | POS token not allowed for declared DULAT entry | 439 |
 | ERROR | No DULAT entry found for clitic part | 327 |
 | ERROR | Non-G stem in DULAT requires stem marker | 298 |
 | ERROR | DULAT comment does not match candidates | 257 |
-| ERROR | ʔ must be preceded by '(' in column 3 | 249 |
+| ERROR | ʔ must be preceded by '(' in column 3 | 247 |
 | ERROR | Deverbal form matches both verb and noun entries in DULAT | 184 |
 | WARNING | Suffix form without '+' | 163 |
 | ERROR | Multiple DULAT candidates for surface | 123 |
@@ -31,16 +31,16 @@
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 73 |
 | WARNING | y Lexeme parse did not match DULAT; matched by surface form | 72 |
 | WARNING | Plural form missing split ending | 71 |
-| ERROR | Each reconstructed letter must be prefixed by '(' | 51 |
+| ERROR | Each reconstructed letter must be prefixed by '(' | 52 |
 | ERROR | rbt Adjective POS gender mismatch for rb (I): expected adj. m., got adj. f. | 33 |
 | WARNING | mid Lexeme parse did not match DULAT; matched by surface form | 21 |
 | WARNING | Feminine plural noun in DULAT should be tagged with '/t=' | 12 |
 | WARNING | pamt Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | skn Lexeme parse did not match DULAT; matched by surface form | 12 |
+| ERROR | Unknown DULAT token in column 4 | 9 |
 | WARNING | ḥwt Lexeme parse did not match DULAT; matched by surface form | 9 |
+| ERROR | No DULAT entry found for lexeme/surface | 8 |
 | WARNING | ḥtkk Lexeme parse did not match DULAT; matched by surface form | 8 |
-| ERROR | Unknown DULAT token in column 4 | 7 |
-| ERROR | No DULAT entry found for lexeme/surface | 6 |
 | ERROR | nˤmt Adjective POS gender mismatch for nʕm (I): expected adj. m., got adj. f. | 6 |
 | WARNING | yḥ Lexeme parse did not match DULAT; matched by surface form | 5 |
 | ERROR | l Formula idk l ytn expects l(III) ('truly/certainly') | 4 |
@@ -62,6 +62,7 @@
 | ERROR | uḫryt Adjective POS gender mismatch for ủḫry: expected adj. m., got adj. f. | 1 |
 | ERROR | ṣġrt Adjective POS gender mismatch for ṣġr (I): expected adj. m., got adj. f. | 1 |
 | ERROR | ṣġrthn Adjective POS gender mismatch for ṣġr (I): expected adj. m., got adj. f. | 1 |
+| WARNING | anna III-aleph noun/adjective should encode lexeme-final case vowel as '(u\|i\|a' and inflection as '/&u\|&i\|&a' | 1 |
 | WARNING | argmnm Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | argmny Lexeme parse did not match DULAT; matched by surface form | 1 |
 | WARNING | ilšnn Lexeme-final n/y should stay in stem; avoid '/+n' or '/+y' split without explicit DULAT suffix token | 1 |
