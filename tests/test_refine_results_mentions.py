@@ -56,6 +56,17 @@ class RefineResultsMentionsTest(unittest.TestCase):
         self.assertEqual(analysis_for_entry("ušḫry", entry), "ušḫry/")
         self.assertEqual(analysis_for_entry("išḫry", entry), "išḫry/")
 
+    def test_analysis_keeps_trailing_prefixed_verb_tail(self) -> None:
+        entry = Entry(
+            entry_id=2520,
+            lemma="/l-s-m/",
+            hom="",
+            pos="vb",
+            gloss="",
+            wiki_tr="",
+        )
+        self.assertEqual(analysis_for_entry("tlsmn", entry), "!t!lsm[n")
+
     def test_load_entries_falls_back_to_lemma_when_forms_missing(self) -> None:
         with tempfile.TemporaryDirectory() as tmp_dir:
             db_path = Path(tmp_dir) / "dulat.sqlite"
@@ -142,6 +153,29 @@ class RefineResultsMentionsTest(unittest.TestCase):
             self.assertEqual(changed, 1)
             lines = out_path.read_text(encoding="utf-8").splitlines()
             self.assertIn("\tṭly/\tṭly\tDN\tTallay\t", lines[1])
+
+    def test_load_entries_applies_form_text_alias_override(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            self._init_dulat_schema(db_path)
+            conn = sqlite3.connect(str(db_path))
+            cur = conn.cursor()
+            cur.execute(
+                "INSERT INTO entries(entry_id, lemma, homonym, pos, wiki_transcription) "
+                "VALUES (?, ?, ?, ?, ?)",
+                (2520, "/l-s-m/", "", "vb", ""),
+            )
+            cur.execute(
+                "INSERT INTO forms(text, entry_id, morphology) VALUES (?, ?, ?)",
+                ("tslmn", 2520, "G, prefc."),
+            )
+            conn.commit()
+            conn.close()
+
+            _entries, forms_map, _lemma_map, _suffix_map, forms_morph = load_entries(db_path)
+            self.assertIn("tlsmn", forms_map)
+            self.assertEqual([entry.entry_id for entry in forms_map["tlsmn"]], [2520])
+            self.assertIn(("tlsmn", 2520), forms_morph)
 
 
 if __name__ == "__main__":

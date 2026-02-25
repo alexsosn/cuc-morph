@@ -11,7 +11,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152313	abn	abn/	ảbn	n. f.	stone	
 152313	abn	!a!bn[	/b-n/	vb G	to understand	
 152314	madtn	mad(t(I)/t+n	mảdt (I)	n. f.	great quantity	
-152315	tqln	!t!ql[	/q-l/	vb G	to fall (down)	
+152315	tqln	!t!ql[n	/q-l/	vb G	to fall (down)	
 152316	bḥwt	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.103 2						
 152317	ˤlh	ˤl(I)+h	ʕl (I)	prep.	upon	
@@ -20,7 +20,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152320	yld	!y!(yld[	/y-l-d/	vb G/N	to give birth (to)	
 152320	yld	yld/	yld	n. m.	son	
 152321	bhmth	bhm(t/t+h	bhmt	n. f.	cattle	
-152322	tˤṭpn	!t!ˤṭp[	/ʕ-ṭ-p/	vb	to be weak	
+152322	tˤṭpn	!t!ˤṭp[n	/ʕ-ṭ-p/	vb	to be weak	
 # KTU 1.103 3						
 152323	gm	g/	g	n. m.	(loud) voice	
 152323	gm	gm(II)	gm (II)	adv.	also	
@@ -65,13 +65,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152350	mrḥy	mrḥ/y	mrḥ	n. f.	lance	
 152351	mlk	mlk[	/m-l-k/	vb G	to reign	
 152351	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
-152352	tdlln	!t!dll[	/d-l-l/	vb D	to oppress	
+152352	tdlln	!t!dll[n	/d-l-l/	vb D	to oppress	
 # KTU 1.103 8						
 152353	ˤnh	ˤn(I)/h	ʕn (I)	n. f. du.	eye	
 152354	mxxxxxxxmḫt	?	?	?	?	DULAT: NOT FOUND
 152355	bhmt	bhm(t/t	bhmt	n. f.	cattle	
 152356	ḥwt	ḥw(t/t	ḥwt	n. f.	country	
-152356	ḥwt	ḥw(I)[	/ḥ-w/y-y/ (I)	vb D/Dpass	to live	
+152356	ḥwt	ḥw(I)[t	/ḥ-w/y-y/ (I)	vb D/Dpass	to live	
 152357	tḫlq	!t!ḫlq[	/ḫ-l-q/	vb G/Dpass	to perish	
 # KTU 1.103 9						
 152358	w	w	w	conj.	and	
@@ -120,7 +120,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152391	bh	b	b	prep.	in	
 152392	ḏrˤ	ḏrˤ(I)/	ḏrʕ (I)	n. f.	arm	
 152393	ḥwt	ḥw(t/t	ḥwt	n. f.	country	
-152393	ḥwt	ḥw(I)[	/ḥ-w/y-y/ (I)	vb D/Dpass	to live	
+152393	ḥwt	ḥw(I)[t	/ḥ-w/y-y/ (I)	vb D/Dpass	to live	
 152394	hytyḥsl	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.103 15						
 152395	w	w	w	conj.	and	
@@ -231,7 +231,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152467	uxxxxxxx	?	?	?	?	DULAT: NOT FOUND
 152468	ib	ib(I)/	ỉb (I)	n. m.	enemy	
 152468	ib	ib(II)/	ỉb (II)	n. m./DN	fruit	
-152469	tqṣrn	!t!qṣr[	/q-ṣ-r/	vb G/D	to be short	
+152469	tqṣrn	!t!qṣr[n	/q-ṣ-r/	vb G/D	to be short	
 # KTU 1.103 34						
 152470	ymy	ym(I)&y/	ym (I)	n. m.	day	
 152471	bˤlhn	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
@@ -248,7 +248,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152480	ibn	ib(I)/+n	ỉb (I)	n. m.	enemy	
 152481	yšdd	!y!šdd(II)[	/š-d-d/ (II)	vb G	to devastate	
 152482	ḥwt	ḥw(t/t	ḥwt	n. f.	country	
-152482	ḥwt	ḥw(I)[	/ḥ-w/y-y/ (I)	vb D/Dpass	to live	
+152482	ḥwt	ḥw(I)[t	/ḥ-w/y-y/ (I)	vb D/Dpass	to live	
 # KTU 1.103 36						
 152483	hyt	hyt	hyt			
 152484	wyḥslnn	?	?	?	?	DULAT: NOT FOUND
@@ -264,7 +264,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152493	ibh	ib(I)/+h	ỉb (I)	n. m.	enemy	
 # KTU 1.103 38						
 152494	w	w	w	conj.	and	
-152495	yḥslnn	!y!ḥsl[	/ḥ-s-l/	vb G	to wipe out	
+152495	yḥslnn	!y!ḥsl[nn	/ḥ-s-l/	vb G	to wipe out	
 # KTU 1.103 39						
 152496	w	w	w	conj.	and	
 152497	qṣrt	qṣr(t/t	qṣrt	n. f.	shortness	
@@ -292,12 +292,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152509	ap	ap(II)/	ảp (II)	n. m.	nose	
 152510	ˤṣr	ˤṣr(I)/	ʕṣr (I)	n. f.	bird	
 152511	ilm	il(I)/m	ỉl (I)	n. m.	god	
-152512	tbˤrn	!t!bˤr(II)[	/b-ʕ-r/ (II)	vb D	to abandon	
+152512	tbˤrn	!t!bˤr(II)[n	/b-ʕ-r/ (II)	vb D	to abandon	
 152513	ḥwt	ḥw(t/t	ḥwt	n. f.	country	
 # KTU 1.103 42						
 152514	hyt	hyt	hyt			
 152515	ḥwt	ḥw(t/t	ḥwt	n. f.	country	
-152515	ḥwt	ḥw(I)[	/ḥ-w/y-y/ (I)	vb D/Dpass	to live	
+152515	ḥwt	ḥw(I)[t	/ḥ-w/y-y/ (I)	vb D/Dpass	to live	
 152516	hy	hy	hy	pers. pn.	she	
 152517	št	št[	/š-t/	vb G/Gpass	to place	
 152517	št	š(t(II)/t	št (II)	n. f.	raíz	
@@ -327,7 +327,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152533	špšn	špš/	špš	n.	sun	
 152534	tpšlt	tpšl(t/t	tpšlt	n. f.	oppression	
 152535	ḥwt	ḥw(t/t	ḥwt	n. f.	country	
-152535	ḥwt	ḥw(I)[	/ḥ-w/y-y/ (I)	vb D/Dpass	to live	
+152535	ḥwt	ḥw(I)[t	/ḥ-w/y-y/ (I)	vb D/Dpass	to live	
 152536	hyt	hyt	hyt			
 # KTU 1.103 46						
 152537	w	w	w	conj.	and	
@@ -343,7 +343,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152546	mrḥy	mrḥ/y	mrḥ	n. f.	lance	
 152547	mlk	mlk[	/m-l-k/	vb G	to reign	
 152547	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
-152548	tnšan	!t!nšʔ[	/n-š-ʔ/	vb N	to raise	
+152548	tnšan	!t!nš(ʔ&a[n	/n-š-ʔ/	vb N	to raise	
 # KTU 1.103 48						
 152549	txxxn	?	?	?	?	DULAT: NOT FOUND
 152550	bydh	?	?	?	?	DULAT: NOT FOUND
@@ -404,23 +404,23 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 152593	bh	b	b	prep.	in	
 152594	ḏrˤ	ḏrˤ(I)/	ḏrʕ (I)	n. f.	arm	
 152595	ḥwt	ḥw(t/t	ḥwt	n. f.	country	
-152595	ḥwt	ḥw(I)[	/ḥ-w/y-y/ (I)	vb D/Dpass	to live	
+152595	ḥwt	ḥw(I)[t	/ḥ-w/y-y/ (I)	vb D/Dpass	to live	
 152596	hyt	hyt	hyt			
 152597	yḥsl	!y!ḥsl[	/ḥ-s-l/	vb N	to wipe out	
 # KTU 1.103 56						
 152598	w	w	w	conj.	and	
 152599	ˤql	?	?	?	?	DULAT: NOT FOUND
 152600	ilm	il(I)/m	ỉl (I)	n. m.	god	
-152601	tbˤrn	!t!bˤr(II)[	/b-ʕ-r/ (II)	vb D	to abandon	
+152601	tbˤrn	!t!bˤr(II)[n	/b-ʕ-r/ (II)	vb D	to abandon	
 152602	ḥwt	ḥw(t/t	ḥwt	n. f.	country	
-152602	ḥwt	ḥw(I)[	/ḥ-w/y-y/ (I)	vb D/Dpass	to live	
+152602	ḥwt	ḥw(I)[t	/ḥ-w/y-y/ (I)	vb D/Dpass	to live	
 152603	hyt	hyt	hyt			
 # KTU 1.103 57						
 152604	w	w	w	conj.	and	
 152605	ˤnhb	?	?	?	?	DULAT: NOT FOUND
 152606	lṣbh	lṣb/+h	lṣb	n. m.	brow	
 152607	mlkn	mlk(I)	mlk (I)		king	
-152608	yˤzz	!y!ˤz[	/ʕ-z(-z)/	vb G	to be strong	
+152608	yˤzz	!y!ˤz[z	/ʕ-z(-z)/	vb G	to be strong	
 152609	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
 152610	ḫpṯh	ḫpṯ/h	ḫpṯ	n. m.	fugitive	
 # KTU 1.103 58						

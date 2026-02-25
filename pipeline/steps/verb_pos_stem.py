@@ -8,6 +8,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, Iterable, List, Set, Tuple
 
+from pipeline.config.dulat_form_text_overrides import expand_dulat_form_texts
 from pipeline.steps.base import RefinementStep, TabletRow
 
 LOOKUP_NORMALIZE = str.maketrans(
@@ -111,6 +112,7 @@ class VerbStemIndex:
         verb_entry_ids: set[int] = set()
         entry_ids_by_lemma_hom: Dict[Tuple[str, str], Set[int]] = {}
         entry_ids_by_lemma: Dict[str, Set[int]] = {}
+        entry_lemma_hom_by_id: Dict[int, Tuple[str, str]] = {}
 
         for entry_id, lemma, homonym, pos in cur.execute(
             "SELECT entry_id, lemma, homonym, pos FROM entries"
@@ -128,6 +130,7 @@ class VerbStemIndex:
 
             entry_id_int = int(entry_id)
             verb_entry_ids.add(entry_id_int)
+            entry_lemma_hom_by_id[entry_id_int] = (parsed_lemma, parsed_homonym)
             key = (lemma_norm, parsed_homonym)
             entry_ids_by_lemma_hom.setdefault(key, set()).add(entry_id_int)
             entry_ids_by_lemma.setdefault(lemma_norm, set()).add(entry_id_int)
@@ -143,12 +146,20 @@ class VerbStemIndex:
             stems = _extract_stems(morphology or "")
             if not stems:
                 continue
-            form_norm = _normalize_form(text or "")
-            if not form_norm:
+            lemma_hom = entry_lemma_hom_by_id.get(entry_id_int)
+            if not lemma_hom:
                 continue
-
-            stems_by_surface_entry.setdefault((form_norm, entry_id_int), set()).update(stems)
-            stems_by_surface.setdefault(form_norm, set()).update(stems)
+            parsed_lemma, parsed_homonym = lemma_hom
+            for form_variant in expand_dulat_form_texts(
+                lemma=parsed_lemma,
+                homonym=parsed_homonym,
+                form_text=text or "",
+            ):
+                form_norm = _normalize_form(form_variant)
+                if not form_norm:
+                    continue
+                stems_by_surface_entry.setdefault((form_norm, entry_id_int), set()).update(stems)
+                stems_by_surface.setdefault(form_norm, set()).update(stems)
 
         conn.close()
         return cls(

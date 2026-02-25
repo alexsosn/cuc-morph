@@ -16,8 +16,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 159979	bnšk	bnš/+k	bnš	n. m.	man	
 # KTU 2.90 5						
 159980	d	d	d	det. or rel. functor	the one(s) of	
-159981	lqḥt	lqḥ[	/l-q-ḥ/	vb G	to get hold of	
-159982	ḫsrt	ḫsr[	/ḫ-s-r/	vb G	to fail	
+159981	lqḥt	lqḥ[t	/l-q-ḥ/	vb G	to get hold of	
+159982	ḫsrt	ḫsr[t	/ḫ-s-r/	vb G	to fail	
 # KTU 2.90 6						
 159983	w	w	w	conj.	and	
 159984	ank	ank	ảnk	pers. pn.	I	
@@ -62,7 +62,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160012	hw	hw	hw	pers. pn.	he	
 # KTU 2.90 16						
 160013	w	w	w	conj.	and	
-160014	štnnh	št[+nh	/š-t/	vb	to place	
+160014	štnnh	št[n+nh	/š-t/	vb	to place	
 # KTU 2.90 17						
 160015	bd	b	b	prep.	in	
 160016	mlakty	mlak(t/t+y	mlảkt	n. f.	message	
@@ -77,7 +77,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160021	l	l(I)	l (I)	prep.	to	
 160021	l	l(II)	l (II)	adv.	no	
 160021	l	l(III)	l (III)	functor	certainly	
-160022	likt	lʔk[	/l-ʔ-k/	vb G	to send (a message)	
+160022	likt	l(ʔ&ik[t	/l-ʔ-k/	vb G	to send (a message)	
 # KTU 2.90 20						
 160023	ˤm	ˤm(I)	ʕm (I)	prep.	to	
 160024	mlk	mlk[	/m-l-k/	vb G	to reign	
@@ -85,7 +85,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 2.90 21						
 160025	w	w	w	conj.	and	
 160026	ˤmkm	ˤm(I)+km	ʕm (I)	prep.	to	
-160027	likt	lʔk[	/l-ʔ-k/	vb G	to send (a message)	
+160027	likt	l(ʔ&ik[t	/l-ʔ-k/	vb G	to send (a message)	
 # KTU 2.90 22						
 160028	w	w	w	conj.	and	
 160029	at	at(I)	ảt (I)	pers. pn.	you	
@@ -94,4 +94,4 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160031	mlakty	mlak(t/t+y	mlảkt	n. f.	message	
 160032	ly	l(I)+y	l (I)	prep.	to	
 # KTU 2.90 24						
-160033	štnn	št[+n	/š-t/	vb	to place	
+160033	štnn	št[n+n	/š-t/	vb	to place	

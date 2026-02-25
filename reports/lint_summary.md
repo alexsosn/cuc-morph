@@ -1,31 +1,31 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `10914`
-- Fallback-parsed issue lines: `253`
+- Total issues: `10386`
+- Fallback-parsed issue lines: `244`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 6171 |
-| WARNING | 389 |
+| ERROR | 5637 |
+| WARNING | 395 |
 | INFO | 1617 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 4016 |
+| ERROR | Analysis does not reconstruct to surface | 3524 |
 | INFO | Surface not found in UDB concordance | 1617 |
 | ERROR | POS token not allowed for declared DULAT entry | 439 |
-| ERROR | No DULAT entry found for clitic part | 303 |
+| ERROR | No DULAT entry found for clitic part | 326 |
 | ERROR | Non-G stem in DULAT requires stem marker | 298 |
 | ERROR | DULAT comment does not match candidates | 257 |
-| ERROR | ʔ must be preceded by '(' in column 3 | 244 |
 | ERROR | Deverbal form matches both verb and noun entries in DULAT | 184 |
+| ERROR | ʔ must be preceded by '(' in column 3 | 179 |
 | ERROR | Multiple DULAT candidates for surface | 123 |
-| WARNING | Suffix form without '+' | 104 |
+| WARNING | Suffix form without '+' | 119 |
 | ERROR | Missing DULAT entry token(s) in column 4 | 86 |
 | ERROR | POS ambiguous in DULAT | 80 |
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 73 |
@@ -37,7 +37,6 @@
 | WARNING | pamt Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | skn Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | ḥwt Lexeme parse did not match DULAT; matched by surface form | 9 |
-| WARNING | ḥwt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t' | 9 |
 | WARNING | ḥtkk Lexeme parse did not match DULAT; matched by surface form | 8 |
 | ERROR | Unknown DULAT token in column 4 | 7 |
 | WARNING | yṯṯb Lexeme parse did not match DULAT; matched by surface form | 7 |

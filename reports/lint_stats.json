@@ -1,18 +1,18 @@
 {
-  "generated_at_utc": "2026-02-25T09:03:21.212968+00:00",
+  "generated_at_utc": "2026-02-25T09:20:23.357190+00:00",
   "files_checked": 278,
-  "total_issues": 10914,
-  "fallback_parsed": 253,
+  "total_issues": 10386,
+  "fallback_parsed": 244,
   "by_severity": {
-    "ERROR": 6171,
-    "WARNING": 389,
+    "ERROR": 5637,
+    "WARNING": 395,
     "INFO": 1617
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 4016
+      "count": 3524
     },
     {
       "severity": "INFO",
@@ -27,7 +27,7 @@
     {
       "severity": "ERROR",
       "problem_type": "No DULAT entry found for clitic part",
-      "count": 303
+      "count": 326
     },
     {
       "severity": "ERROR",
@@ -41,13 +41,13 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "ʔ must be preceded by '(' in column 3",
-      "count": 244
+      "problem_type": "Deverbal form matches both verb and noun entries in DULAT",
+      "count": 184
     },
     {
       "severity": "ERROR",
-      "problem_type": "Deverbal form matches both verb and noun entries in DULAT",
-      "count": 184
+      "problem_type": "ʔ must be preceded by '(' in column 3",
+      "count": 179
     },
     {
       "severity": "ERROR",
@@ -57,7 +57,7 @@
     {
       "severity": "WARNING",
       "problem_type": "Suffix form without '+'",
-      "count": 104
+      "count": 119
     },
     {
       "severity": "ERROR",
@@ -112,11 +112,6 @@
     {
       "severity": "WARNING",
       "problem_type": "ḥwt Lexeme parse did not match DULAT; matched by surface form",
-      "count": 9
-    },
-    {
-      "severity": "WARNING",
-      "problem_type": "ḥwt Weak-final finite verb with surface '-t' should encode suffix-conjugation ending as '[t'",
       "count": 9
     },
     {

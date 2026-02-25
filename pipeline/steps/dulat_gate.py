@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Dict, List, Sequence, Tuple
 
 from pipeline.config.dulat_form_morph_overrides import override_dulat_form_morphology
+from pipeline.config.dulat_form_text_overrides import expand_dulat_form_texts
 from pipeline.config.plurale_tantum_m_overrides import PLURALE_TANTUM_M_EXCLUDED_KEYS
 
 LOOKUP_NORMALIZE = str.maketrans(
@@ -199,7 +200,12 @@ class DulatMorphGate:
                 morphology=(morphology or "").strip(),
             )
             by_key.setdefault(key, []).append(morph)
-            forms_by_key.setdefault(key, []).append((self._normalize_form(text or ""), morph))
+            for form_variant in expand_dulat_form_texts(
+                lemma=lemma,
+                homonym=hom,
+                form_text=text or "",
+            ):
+                forms_by_key.setdefault(key, []).append((self._normalize_form(form_variant), morph))
 
         conn.close()
 

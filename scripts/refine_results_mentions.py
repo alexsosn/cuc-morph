@@ -20,6 +20,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Sequence, Set, Tuple
 
+from pipeline.config.dulat_form_text_overrides import expand_dulat_form_texts
+
 SEPARATOR_RE = re.compile(
     r"^\s*#\s*(?:-+\s*)?(?:KTU|CAT)\s+(\d+\.\d+)"
     r"(?:\s+([IVX]+):(\d+)|:(\d+)|\s+(\d+))\s*$",
@@ -251,9 +253,17 @@ def analysis_for_entry(surface: str, e: Entry, morph_values: Optional[Sequence[s
             # Xt stems place the t infix after the first root radical.
             stem = stem[0] + "]t]" + stem[1:]
             stem_marker = ""
+        stem_plain = extract_letters(stem)
+        surface_plain = extract_letters(s)
         if s and s[0] in {"y", "t", "a", "n", "i", "u"} and len(s) >= len(stem) + 1:
-            return f"!{s[0]}!{stem_marker}{stem}{hom}["
-        return f"{stem_marker}{stem}{hom}["
+            tail = ""
+            if len(surface_plain) > len(stem_plain) + 1:
+                tail = surface_plain[len(stem_plain) + 1 :]
+            return f"!{s[0]}!{stem_marker}{stem}{hom}[{tail}"
+        tail = ""
+        if len(surface_plain) > len(stem_plain):
+            tail = surface_plain[len(stem_plain) :]
+        return f"{stem_marker}{stem}{hom}[{tail}"
 
     lex = lemma_to_letters(e.lemma, fallback=s)
     if (
@@ -360,17 +370,30 @@ def load_entries(
         e = entries_by_id.get(int(entry_id))
         if not e:
             continue
-        k = normalize_lookup(txt)
-        if k:
-            forms_map.setdefault(k, []).append(e)
+        for form_variant in expand_dulat_form_texts(
+            lemma=e.lemma,
+            homonym=e.hom,
+            form_text=txt or "",
+        ):
+            k = normalize_lookup(form_variant)
+            if k:
+                forms_map.setdefault(k, []).append(e)
     cur.execute(
         "SELECT text, entry_id, morphology FROM forms WHERE text IS NOT NULL AND trim(text) != ''"
     )
     for txt, entry_id, morph in cur.fetchall():
-        k = normalize_lookup(txt)
-        if not k:
+        e = entries_by_id.get(int(entry_id))
+        if not e:
             continue
-        forms_morph.setdefault((k, int(entry_id)), set()).add((morph or "").strip())
+        for form_variant in expand_dulat_form_texts(
+            lemma=e.lemma,
+            homonym=e.hom,
+            form_text=txt or "",
+        ):
+            k = normalize_lookup(form_variant)
+            if not k:
+                continue
+            forms_morph.setdefault((k, int(entry_id)), set()).add((morph or "").strip())
 
     explicit_form_keys = set(forms_map.keys())
 

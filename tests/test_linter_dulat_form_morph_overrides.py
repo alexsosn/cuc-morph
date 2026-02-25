@@ -51,6 +51,40 @@ class LinterDulatFormMorphOverridesTest(unittest.TestCase):
             self.assertNotIn("du., cstr.", {row.morph for row in il_rows})
             self.assertEqual({row.morph for row in ily_rows}, {"pl., cstr."})
 
+    def test_load_dulat_applies_form_text_alias_override(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            conn = sqlite3.connect(str(db_path))
+            cur = conn.cursor()
+            cur.execute(
+                """
+                CREATE TABLE entries(
+                    entry_id INTEGER PRIMARY KEY,
+                    lemma TEXT,
+                    homonym TEXT,
+                    pos TEXT,
+                    data TEXT
+                )
+                """
+            )
+            cur.execute("CREATE TABLE translations(entry_id INTEGER, text TEXT)")
+            cur.execute("CREATE TABLE forms(text TEXT, morphology TEXT, entry_id INTEGER)")
+            cur.execute(
+                "INSERT INTO entries(entry_id, lemma, homonym, pos, data) "
+                "VALUES (2520, '/l-s-m/', '', 'vb', '{}')"
+            )
+            cur.execute("INSERT INTO translations(entry_id, text) VALUES (2520, 'to run')")
+            cur.execute(
+                "INSERT INTO forms(text, morphology, entry_id) VALUES (?, ?, ?)",
+                ("tslmn", "G, prefc.", 2520),
+            )
+            conn.commit()
+            conn.close()
+
+            forms_map, _entry_meta, _lemma_map, _entry_stems, _entry_gender = load_dulat(db_path)
+            tlsmn_rows = forms_map[normalize_surface("tlsmn")]
+            self.assertEqual([row.entry_id for row in tlsmn_rows], [2520])
+
 
 if __name__ == "__main__":
     unittest.main()

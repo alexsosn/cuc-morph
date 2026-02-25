@@ -82,7 +82,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141727	zblnm	zbln/	zbln	n. m.	sickness	
 # KTU 1.14 I:18						
 141728	mḫmšt	mḫmš(t/t	mḫmšt	n. f.	the fifth one	
-141729	yitsp	ʔ]t]sp[	/ʔ-s-p/	vb Gt	to gather	
+141729	yitsp	ʔ]t]sp[p	/ʔ-s-p/	vb Gt	to gather	
 # KTU 1.14 I:19						
 141730	ršp	ršp/	ršp	DN	Rašap	
 141731	mṯdṯt	mṯdṯ(t/t	mṯdṯt	n. f.	the sixth	
@@ -116,7 +116,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141747	w	w	w	conj.	and	
 141748	bklhn	?	?	?	?	DULAT: NOT FOUND
 141749	špḥ	špḥ/	špḥ	n. m.	family	
-141750	yitbd	ʔ]t]bd[	/ʔ-b-d/	vb Gt	be missing	
+141750	yitbd	ʔ]t]bd[d	/ʔ-b-d/	vb Gt	be missing	
 # KTU 1.14 I:25						
 141751	w	w	w	conj.	and	
 141752	b	b	b	prep.	in	
@@ -137,7 +137,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141762	w	w	w	conj.	and	
 141763	ydmˤ	!y!dmˤ[	/d-m-ʕ/	vb G	to shed tears	
 # KTU 1.14 I:28						
-141764	tntkn	!t!ntk[	/n-t-k/	vb N	to spill	
+141764	tntkn	!t!ntk[n	/n-t-k/	vb N	to spill	
 141765	udmˤth	dmˤt/	dmʕt	n. f.	tear	
 # KTU 1.14 I:29						
 141766	km	k(III)	k (III)	functor	when	
@@ -158,18 +158,18 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141771	mṭth	mṭ(t/t+h	mṭt	n. f.	bed	
 # KTU 1.14 I:31						
 141772	bm	b	b	prep.	in	
-141773	bkyh	bky[	/b-k-y/	vb G	to weep	
+141773	bkyh	bky[h	/b-k-y/	vb G	to weep	
 141774	w	w	w	conj.	and	
 141775	yšn	!y!(yšn[	/y-š-n/	vb G	to sleep	
 # KTU 1.14 I:32						
 141776	b	b	b	prep.	in	
-141777	dmˤh	dmˤ[	/d-m-ʕ/	vb G	to shed tears	
+141777	dmˤh	dmˤ[h	/d-m-ʕ/	vb G	to shed tears	
 141778	nhmmt	nhmm(t/t	nhmmt	n. f.	drowsiness	
 # KTU 1.14 I:33						
 141779	šnt	šn(t(I)/t	šnt (I)	n. f.	year	
 141779	šnt	šnw[t	/š-n-w/	vb G	to change: a) reflex.	
 141779	šnt	šn(t(II)/t	šnt (II)	n. f.	sleep	
-141780	tluan	!t!lʔy(I)[	/l-ʔ-y/w/ (I)	vb G	to conquer	
+141780	tluan	!t!lʔy(I)[n	/l-ʔ-y/w/ (I)	vb G	to conquer	
 # KTU 1.14 I:34						
 141781	w	w	w	conj.	and	
 141782	yškb	!y!škb[	/š-k-b/	vb G	to lie down	
@@ -299,7 +299,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141860	ġlm	ġlm/	ġlm	n. m.	boy	
 # KTU 1.14 II:9						
 141861	il	il(I)/	ỉl (I)	n. m.	god	
-141862	trtḥṣ	r]t]ḥṣ[	/r-ḥ-ṣ/	vb Gt	to wash	
+141862	trtḥṣ	r]t]ḥṣ[ṣ	/r-ḥ-ṣ/	vb Gt	to wash	
 141863	w	w	w	conj.	and	
 141864	tadm	!t!(ʔ&adm[	/ʔ-d-m/	vb N	to be	
 # KTU 1.14 II:10						
@@ -625,10 +625,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142047	nn	gr[	/g-r(-y)/	vb G	to attack	
 142048	ˤrm	ˤr(I)/	ʕr (I)	n. f.	city	
 142048	ˤrm	ˤrm(I)/	ʕrm (I)	adj. m.	naked	
-142049	šrn	šr(II)[	/š-r/ (II)	vb G	to threaten	
+142049	šrn	šr(II)[n	/š-r/ (II)	vb G	to threaten	
 # KTU 1.14 III:7						
 142050	pdrm	pdr(I)/m	pdr (I)	n. m.	town	
-142051	sˤt	sˤ[	/s-ʕ/	vb G	to sweep	
+142051	sˤt	sˤ[t	/s-ʕ/	vb G	to sweep	
 142052	b	b	b	prep.	in	
 142053	šdm	šd(I)/m	šd (I)	n. m.	open field	
 # KTU 1.14 III:8						
@@ -638,7 +638,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142056	grnt	grn(I)/t=	grn (I)	n. f.	threshing-floor	
 142057	ḥpšt	ḥpšt/	ḥpšt	n. f.	woman gathering (straw)	
 # KTU 1.14 III:9						
-142058	sˤt	sˤ[	/s-ʕ/	vb G	to sweep	
+142058	sˤt	sˤ[t	/s-ʕ/	vb G	to sweep	
 142059	b	b	b	prep.	in	
 142060	npk	nb(I)/	nb/pk (I)	n. m.	fountain	
 142061	šibt	šibt/	šỉbt	n. f.	water bearer	
@@ -646,7 +646,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142063	bqr	bqr(I)/	bqr (I)	n. m.	cattle	
 142063	bqr	m/	m/bqr	n. m.	spring	
 # KTU 1.14 III:10						
-142064	mmlat	mlʔ[	/m-l-ʔ/	vb D	to be full	
+142064	mmlat	mlʔ[at	/m-l-ʔ/	vb D	to be full	
 142065	dm	dm(II)/	dm (II)	n. m.	blood	
 142065	dm	dm(I)	dm (I)	functor	since	
 142066	ym	ym(I)/	ym (I)	n. m.	day	
@@ -683,7 +683,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142080	ydk	!y!dk[	d-k(-k)/	vb Gpass	to be pounded	
 142080	ydk	!y=!dk[	d-k(-k)/	vb Gpass	to be pounded	
 # KTU 1.14 III:14						
-142081	mšdpt	]š]ndp[	/n-d-p/	vb Špass	to throw	
+142081	mšdpt	]š]ndp[pt	/n-d-p/	vb Špass	to throw	
 142082	w	w	w	conj.	and	
 142083	hn	hn	hn	deictic functor/adv.	behold!	
 142084	špšm	špš/	špš	n.	sun	
@@ -815,7 +815,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142160	adm	adm(I)/	ảdm (I)	n. m.	man	
 142160	adm	(ʔ&adm[	/ʔ-d-m/	vb G	to be	
 142161	w	w	w	conj.	and	
-142162	ṯṯb	]š]ṯb[	/ṯ-b/	vb Š	to return	
+142162	ṯṯb	]š]ṯb[b	/ṯ-b/	vb Š	to return	
 # KTU 1.14 III:33						
 142163	mlakm	mlak/m	mlảk	n. m.	messenger	
 142164	lh	l(I)+h	l (I)	prep.	to	
@@ -900,7 +900,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.14 III:44						
 142210	sp	sp/	sp	n. m.	bowl	
 142211	ṯrml	ṯrml/	ṯrml	n. m.	albâtre	
-142212	tḥgrn	!t!ḥgr[	/ḥ-g-r/	vb G	to gird	
+142212	tḥgrn	!t!ḥgr[n	/ḥ-g-r/	vb G	to gird	
 142213	ṯdm	ṯd/+m(I)	ṯd	n. m.	breast	
 142213	ṯdm	ṯd/+m(II)	ṯd	n. m.	breast	
 # KTU 1.14 III:45						
@@ -1241,7 +1241,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142413	bty	bt(II)/+y	bt (II)	n. m.	house	
 # KTU 1.14 IV:41						
 142414	iqḥ	lqḥ[	/l-q-ḥ/	vb G	to get hold of	
-142415	ašˤrb	!a!]š]ˤrb(I)[	/ʕ-r-b/ (I)	vb Š	to enter	
+142415	ašˤrb	!a!]š]ˤrb(I)[b	/ʕ-r-b/ (I)	vb Š	to enter	
 142416	ġlmt	ġlm(t(I)/t	ġlmt (I)	n. f.	damsel	
 142416	ġlmt	ġlm(t(II)/t	ġlmt (II)	n. f.	concealment	
 # KTU 1.14 IV:42						
@@ -1294,7 +1294,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142445	yšrna	?	?	?	?	DULAT: NOT FOUND
 142446	pdrm	pdr(I)/m	pdr (I)	n. m.	town	
 # KTU 1.14 IV:51						
-142447	sˤt	sˤ[	/s-ʕ/	vb G	to sweep	
+142447	sˤt	sˤ[t	/s-ʕ/	vb G	to sweep	
 142448	b	b	b	prep.	in	
 142449	šdm	šd(I)/m	šd (I)	n. m.	open field	
 142450	ḥṭbt	ḥṭbt/	ḥṭbt	n. f.	(female) wood-cutter	
@@ -1302,7 +1302,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142451	w	w	w	conj.	and	
 142452	bgrnmḥpšt	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.14 V:1						
-142453	sˤt	sˤ[	/s-ʕ/	vb G	to sweep	
+142453	sˤt	sˤ[t	/s-ʕ/	vb G	to sweep	
 142454	b	b	b	prep.	in	
 142455	npk	nb(I)/	nb/pk (I)	n. m.	fountain	
 142456	šibt	šibt/	šỉbt	n. f.	water bearer	

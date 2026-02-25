@@ -16,6 +16,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Tuple
 
+from pipeline.config.dulat_form_text_overrides import expand_dulat_form_texts
+
 LOOKUP_NORMALIZE = str.maketrans(
     {
         "ʿ": "ʕ",
@@ -132,9 +134,15 @@ def load_dulat_forms(db_path: Path) -> Dict[str, List[Entry]]:
     forms_map: Dict[str, List[Entry]] = {}
     cur.execute("SELECT text, entry_id FROM forms")
     for form_text, entry_id in cur.fetchall():
-        if not form_text or entry_id not in entries_by_id:
+        entry = entries_by_id.get(entry_id)
+        if not form_text or entry is None:
             continue
-        forms_map.setdefault(normalize_lookup(form_text), []).append(entries_by_id[entry_id])
+        for form_variant in expand_dulat_form_texts(
+            lemma=entry.lemma,
+            homonym=entry.hom,
+            form_text=form_text,
+        ):
+            forms_map.setdefault(normalize_lookup(form_variant), []).append(entry)
 
     explicit_form_keys = set(forms_map.keys())
 

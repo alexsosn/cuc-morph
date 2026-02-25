@@ -1128,6 +1128,7 @@ class VerbPosStemFixerTest(unittest.TestCase):
                 (1, "/y-t-n/", "", "vb"),
                 (2, "/r-g-m/", "", "vb"),
                 (3, "ytn", "I", "n."),
+                (4, "/l-s-m/", "", "vb"),
             ],
         )
         cur.executemany(
@@ -1137,6 +1138,7 @@ class VerbPosStemFixerTest(unittest.TestCase):
                 (1, "ytn", "Š, prefc."),
                 (2, "rgm", "G, suffc."),
                 (3, "ytn", "pl."),
+                (4, "tslmn", "G, prefc."),
             ],
         )
         conn.commit()
@@ -1204,6 +1206,17 @@ class VerbPosStemFixerTest(unittest.TestCase):
             result = fixer.refine_row(row)
 
             self.assertEqual(result.pos, "suffixed pn. morph. used with vb")
+
+    def test_applies_form_text_alias_override_for_stem_lookup(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            self._build_test_db(db_path)
+            fixer = VerbPosStemFixer(dulat_db=db_path)
+
+            row = TabletRow("1", "tlsmn", "!t!lsm[n", "/l-s-m/", "vb", "to run", "")
+            result = fixer.refine_row(row)
+
+            self.assertEqual(result.pos, "vb G")
 
 
 class OfferingListLPrepFixerTest(unittest.TestCase):

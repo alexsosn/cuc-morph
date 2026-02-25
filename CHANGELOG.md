@@ -6,6 +6,16 @@
   - updated `scripts/refine_results_mentions.py::parse_separator_ref` to support both `KTU x.y COL:line` and `KTU x.y line` separator formats,
   - restored DULAT reverse-mention scoring for no-column tablets (for example `# ... KTU 1.101 5` -> `CAT 1.101:5`),
   - added regression tests in `tests/test_refine_results_mentions.py` for separator parsing and mention-driven DN selection.
+- Added global DULAT form-text alias overrides for known source-table form typos:
+  - new `pipeline/config/dulat_form_text_overrides.py`,
+  - wired into bootstrap/refine loaders, linter loader, and verb stem index so form aliases are applied consistently across parser and linter.
+- Fixed verb analysis reconstructability for prefixed forms with residual consonantal tails:
+  - `scripts/refine_results_mentions.py::analysis_for_entry` now preserves trailing form letters after the stem (for example `tlsmn` -> `!t!lsm[n`).
+- Extended tests for the new behavior:
+  - `tests/test_bootstrap_tablet_labeling.py`,
+  - `tests/test_refine_results_mentions.py`,
+  - `tests/test_linter_dulat_form_morph_overrides.py`,
+  - `tests/test_refinement_steps.py` (`VerbPosStemFixerTest` alias coverage).
 - Re-ran the full parser pipeline across all tablets (`278` files) with explicit all-target bootstrap+refine+instruction+step passes and regenerated lint reports, so `out/` reflects only reproducible rule-based transformations.
 
 - Replaced deletion-style variant pruning with linguistics-based reconstructability fixes driven by DULAT form evidence and Tagging conventions:

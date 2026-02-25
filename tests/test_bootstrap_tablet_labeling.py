@@ -166,6 +166,25 @@ class BootstrapTabletLabelingTest(unittest.TestCase):
             self.assertNotIn("DULAT: NOT FOUND", line)
             self.assertIn("\ttnn(I)/\ttnn (I)\tDN\tdragon\t", line)
 
+    def test_load_dulat_forms_applies_form_text_alias_override(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            conn = sqlite3.connect(db_path)
+            _init_bootstrap_schema(conn)
+            cur = conn.cursor()
+            cur.execute(
+                "INSERT INTO entries(entry_id, lemma, homonym, pos) VALUES (1, '/l-s-m/', '', 'vb')"
+            )
+            cur.execute("INSERT INTO forms(entry_id, text) VALUES (1, 'tslmn')")
+            cur.execute("INSERT INTO translations(entry_id, text) VALUES (1, 'to run')")
+            conn.commit()
+            conn.close()
+
+            forms_map = load_dulat_forms(db_path)
+            self.assertIn("tlsmn", forms_map)
+            ids = {e.entry_id for e in forms_map["tlsmn"]}
+            self.assertEqual(ids, {1})
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -20,12 +20,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153796	qṣ	qṣ/	qṣ	n. m.	end	
 153796	qṣ	qṣ[	/q-ṣ(-ṣ)/	vb G	to carve	
 153797	ilm	il(I)/m	ỉl (I)	n. m.	god	
-153798	tlḥmn	!t!lḥm(I)[	/l-ḥ-m/ (I)	vb G	to eat	
+153798	tlḥmn	!t!lḥm(I)[n	/l-ḥ-m/ (I)	vb G	to eat	
 # KTU 1.114 3						
 153799	ilm	il(I)/m	ỉl (I)	n. m.	god	
 153800	w	w	w	conj.	and	
-153801	tštn	!t!št[	/š-t/	vb G	to place	
-153802	tštn	!t!št[	/š-t/	vb G	to place	
+153801	tštn	!t!št[n	/š-t/	vb G	to place	
+153802	tštn	!t!št[n	/š-t/	vb G	to place	
 153803	ynˤd	?	?	?	?	DULAT: NOT FOUND
 153804	šbˤ	šbˤ(I)/	šbʕ (I)	n. num.	seven	
 # KTU 1.114 4						
@@ -44,13 +44,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153811	km	km	km	prep./conj./adv.		
 153811	km	+km, +km=	-km			
 153812	klb	klb(I)/	klb (I)	n. m.	dog	
-153813	yqṯqṯ	!y!qṯ[	/q-ṯ/	vb R	to drag	
+153813	yqṯqṯ	!y!qṯ[qṯ	/q-ṯ/	vb R	to drag	
 153814	tḥt	tḥt(I)	tḥt (I)	prep.	under	
 # KTU 1.114 6						
 153815	ṯlḥnt	ṯlḥn/t=	ṯlḥn	n. m.	table	
 153816	il	il(I)/	ỉl (I)	n. m.	god	
 153817	d	d	d	det. or rel. functor	the one(s) of	
-153818	ydˤnn	!y!(ydˤ(I)[	/y-d-ʕ/ (I)	vb G	to know	
+153818	ydˤnn	!y!(ydˤ(I)[n	/y-d-ʕ/ (I)	vb G	to know	
 # KTU 1.114 7						
 153819	yˤdb	!y!ˤdb[	/ʕ-d-b/	vb G	to leave > to put in	
 153820	lḥm	lḥm(I)[	/l-ḥ-m/ (I)	vb G	to eat	
@@ -59,7 +59,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153821	lh	l(I)+h	l (I)	prep.	to	
 153822	w	w	w	conj.	and	
 153823	dl	dl/	dl	adj. m.	poor	
-153824	ydˤnn	!y!(ydˤ(I)[	/y-d-ʕ/ (I)	vb G	to know	
+153824	ydˤnn	!y!(ydˤ(I)[n	/y-d-ʕ/ (I)	vb G	to know	
 # KTU 1.114 8						
 153825	y	+y, [y	-y (I)	prep. functor	my	
 153825	y	~y	-y (II)	prep. functor	indeed	
@@ -96,13 +96,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153846	pn	pn	pn	functor	lest	
 153847	lm	l(I)	l (I)	prep.	to	
 153848	rlb	?	?	?	?	DULAT: NOT FOUND
-153849	tˤdbn	!t!ˤdb[	/ʕ-d-b/	vb G	to leave > to put in	
+153849	tˤdbn	!t!ˤdb[n	/ʕ-d-b/	vb G	to leave > to put in	
 # KTU 1.114 13						
 153850	nšb	nšb/	nšb	n. m.	slice	
 153851	l	l(I)	l (I)	prep.	to	
 153851	l	l(III)	l (III)	functor	certainly	
 153852	inr	inr/	ỉnr	n. m.	dog	
-153853	tˤdbn	!t!ˤdb[	/ʕ-d-b/	vb G	to leave > to put in	
+153853	tˤdbn	!t!ˤdb[n	/ʕ-d-b/	vb G	to leave > to put in	
 153854	ktp	ktp(I)/	ktp (I)	n. f.	shoulder	
 # KTU 1.114 14						
 153855	b	b	b	prep.	in	
@@ -143,7 +143,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153880	l	l(I)	l (I)	prep.	to	
 153880	l	l(III)	l (III)	functor	certainly	
 153881	ḥẓrh	ḥẓr/h	ḥẓr	n. m.	mansion	
-153882	yˤmsn	!y!ˤms[	/ʕ-m-s/	vb G	to load	
+153882	yˤmsn	!y!ˤms[n	/ʕ-m-s/	vb G	to load	
 153883	nn	grš[	/g-r-š/	vb G	to eject	
 153883	nn	gr[	/g-r(-y)/	vb G	to attack	
 153884	ṯkmn	ṯkmn/	ṯkmn	DN/element of DN	Ṯukamuna/Thukamuna/first element of the double-barrelled DN ṯkmn w šnm, origin unknown	
@@ -151,14 +151,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 153885	w	w	w	conj.	and	
 153886	šnm	šnm/	šnm	DN	Šunama/Shunama/second member of the double-barrelled divine name ṯkmn w šnm, origin unknown	
 153887	w	w	w	conj.	and	
-153888	ngšnn	!n!ngš[	/n-g-š/	vb G	to approach	
+153888	ngšnn	!n!ngš[n	/n-g-š/	vb G	to approach	
 153889	ḥby	ḥby(I)/	ḥby (I)	DN	Apis	
 # KTU 1.114 20						
 153890	bˤl	bˤl(II)/	bʕl (II)	n. m./DN	Baʿlu/Baal	
 153891	qrnm	qrn/m	qrn	n. f. du.	horn	
 153892	w	w	w	conj.	and	
 153893	ḏnb	ḏnb/	ḏnb(t)	n. m.	tail	
-153894	ylšn	!y!lš[	/l-š/	vb G	to soil	
+153894	ylšn	!y!lš[n	/l-š/	vb G	to soil	
 # KTU 1.114 21						
 153895	b	b	b	prep.	in	
 153896	ḫrih	ḫru/	ḫrủ	n. m.	faeces	
@@ -191,7 +191,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.114 23						
 153908	w	w	w	conj.	and	
 153909	ˤṯtrt	ˤṯtrt(II)/	ʕṯtrt (II)	TN	ʿṯtrt (II)	
-153910	tṣdn	!t!ṣd[	/ṣ-d/	vb G	to hunt	
+153910	tṣdn	!t!ṣd[n	/ṣ-d/	vb G	to hunt	
 153911	šdxxxx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.114 24						
 153912	qdš	qdš(I)/	qdš (I)	adj. m.	holy	
@@ -210,7 +210,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.114 27						
 153921	w	w	w	conj.	and	
 153922	bhm	b	b	prep.	in	
-153923	tṯṯb	!t!]š]ṯb[	/ṯ-b/	vb Š	to return	
+153923	tṯṯb	!t!]š]ṯb[b	/ṯ-b/	vb Š	to return	
 153924	lmdh	lmd/+h	lmd	adj. m. or n. m.	trained	
 153924	lmdh	lmd[+h	/l-m-d/	vb	to teach	
 # KTU 1.114 28						

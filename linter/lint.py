@@ -16,6 +16,7 @@ if __package__ in {None, ""}:
         sys.path.insert(0, str(_repo_root))
 
 from pipeline.config.dulat_form_morph_overrides import override_dulat_form_morphology
+from pipeline.config.dulat_form_text_overrides import expand_dulat_form_texts
 from pipeline.config.k_functor_bigram_surfaces import K_FUNCTOR_VERB_BIGRAM_SURFACES
 from pipeline.config.l_body_compound_prep_rules import L_BODY_COMPOUND_PREP_RULES
 from pipeline.config.l_functor_vocative_refs import expected_l_homonym_for_ref
@@ -1026,17 +1027,22 @@ def load_dulat(dulat_db: Path):
         )
         if morph:
             entry_stems.setdefault(entry_id, set()).update(extract_stems(morph))
-        key = normalize_surface(form_text)
-        entry = DulatEntry(
-            entry_id=entry_id,
+        for form_variant in expand_dulat_form_texts(
             lemma=lemma,
             homonym=hom,
-            pos=pos,
-            gloss=gloss,
-            morph=morph or "",
             form_text=form_text,
-        )
-        forms_map.setdefault(key, []).append(entry)
+        ):
+            key = normalize_surface(form_variant)
+            entry = DulatEntry(
+                entry_id=entry_id,
+                lemma=lemma,
+                homonym=hom,
+                pos=pos,
+                gloss=gloss,
+                morph=morph or "",
+                form_text=form_variant,
+            )
+            forms_map.setdefault(key, []).append(entry)
 
     # Optional disambiguated lemma transliterations (if present in DB)
     lemma_translit: Dict[int, set] = {}
