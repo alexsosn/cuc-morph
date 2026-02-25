@@ -123,6 +123,10 @@ class TabletParsingPipelineTest(unittest.TestCase):
             )
             self.assertLess(
                 names.index("unwrapped-duplicate-pruner"),
+                names.index("reconstructable-variant-pruner"),
+            )
+            self.assertLess(
+                names.index("reconstructable-variant-pruner"),
                 names.index("l-negation-verb-context"),
             )
             self.assertLess(

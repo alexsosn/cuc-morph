@@ -25,7 +25,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9517	yšlḥmnh	!y!]š]lḥm[~n+h	/l-ḥ-m/ (I)	vb Š	to eat	
 # KTU 1.3 I:6						
 9518	ybr	!y!br(d[	/b-r-d/	vb	to divide, separate	d on next line should be attached?!
-9518	ybr	!y!br(d[d	/b-r-d/	vb	to divide, separate	d on next line should be attached?!
 9519	d	&d	?	?	?	Merge with previous word.
 9520	ṯd	ṯd/	ṯd	n. m.	breast, bosom, chest, teat, udder	
 9521	l	l(I)	l (I)	prep.	to	
@@ -150,7 +149,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9607	w	w	w	conj.	and	
 9608	anhbm	anhb/m	ảnhb	n. m.	ein Stein	
 9609	klat	kl(ʔ&a[t=	/k-l-ʔ/	vb G	to close	:pass if doors are subject
-9609	klat	kl(ʔ&a[:passt=	/k-l-ʔ/	vb G	to close	:pass if doors are subject
 9610	ṯġrt	ṯġr(I)/t=	ṯġr (I)	n. m.	gate, door	plural
 # KTU 1.3 II:4						
 9611	bht	b&ht(II)/	bt (II)	n. m.	house, building	
@@ -186,8 +184,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.3 II:9						
 9637	špš	špš/	špš	n.	sun	
 9638	tḥth	tḥt(I)/+h=	tḥt (I)	prep.	under, beneath	is = here the sign of
-9639	k	+k	-k (I)			
-9639	k	~k	-k (II)			
 9639	k	k(III)	k (III)	Subordinating or completive functor	when	
 9639	k	k(I)	k (I)	prep.	like	
 9639	k	k(II)	k (II)	emph. functor	yes	
@@ -195,15 +191,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.3 II:10						
 9641	riš	riš/	rỉš (I)	n. m.	head	
 9642	ˤlh	ˤl(I)/+h=	ʕl (I)	prep.	upon, on top of	
-9643	k	+k	-k (I)			
-9643	k	~k	-k (II)			
 9643	k	k(III)	k (III)	Subordinating or completive functor	when	
 9643	k	k(I)	k (I)	prep.	like	
 9643	k	k(II)	k (II)	emph. functor	yes	
 9644	irbym	irby/m	ỉrby	n. m.	locust	
 9645	kp	kp/	kp	n. f.	palm	
-9646	k	+k	-k (I)			
-9646	k	~k	-k (II)			
 9646	k	k(III)	k (III)	Subordinating or completive functor	when	
 9646	k	k(I)	k (I)	prep.	like	
 9646	k	k(II)	k (II)	emph. functor	yes	
@@ -311,8 +303,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9723	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 # KTU 1.3 II:27						
 9724	tšyt	tšy(t/t	tšyt	n. f.	triumph, success	
-9725	k	+k	-k (I)			
-9725	k	~k	-k (II)			
 9725	k	k(III)	k (III)	Subordinating or completive functor	when	
 9725	k	k(I)	k (I)	prep.	like	
 9725	k	k(II)	k (II)	emph. functor	yes	
@@ -351,7 +341,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9753	trḥṣ	!t!rḥṣ[	/r-ḥ-ṣ/	vb G	to wash	G
 9754	ydh	yd(I)/+h=	yd (I)	n. f.	hand	
 9755	bt	b(t(I)/t	bt (I)	n. f.	daughter	MERGE WITh NEXT WORD? btlt
-9755	bt	bt(l(t/t	btlt	n. f.	virgin	MERGE WITh NEXT WORD? btlt
 # KTU 1.3 II:33						
 9756	lt	&l&t	?	?	?	MERGE WITH PREVIOUS WORD
 9757	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
@@ -446,11 +435,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 9828	arṣy	arṣy/	ảrṣy	DN	Arṣay/Arsay	
 9829	bt	b(t(I)/t	bt (I)	n. f.	daughter	so we don't connect fem b(n(t/t with bn/?
 9830	yˤbdr	yˤbdr/	yʕbdr	DN	Yaʿibdarru/'(Daughter) of the Wide World'/attribute of ảrṣy, daughter of the god bʕl (etym. unc.)	UNP: 'Wide World'; TCS keeps Yaʿibdarru as name-like gloss
-9831	km	k(III)	k (III)	functor	when	
-9831	km	k(I)	k (I)	prep.	like	
-9831	km	k(IV)	k (IV)	adv.	thus	
 9831	km	km	km	prep./conj./adv.		
-9831	km	+km, +km=	-km			
 # KTU 1.3 III:9						
 9832	ġlmm	ġlm/m=	ġlm	n. m.	boy, youth	
 9833	w	w	w	conj.	and	
@@ -1012,17 +997,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10281	bt	bt(II)/	bt (II)	n. m.	house, building	line 47 p281
 10282	l	l(I)	l (I)	prep.	to	
 10283	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
-10284	km	k(III)	k (III)	functor	when	???
-10284	km	k(I)	k (I)	prep.	like	???
-10284	km	k(IV)	k (IV)	adv.	thus	???
 10284	km	km	km	prep./conj./adv.		???
-10284	km	+km, +km=	-km			???
 10285	ilm	il(I)/m	ỉl (I)	n. m.	god	
 # KTU 1.3 IV:48						
 10286	w	w	w	conj.	and	
 10287	ḥẓr	ḥẓr/	ḥẓr	n. m.	mansion	
-10288	k	+k	-k (I)			
-10288	k	~k	-k (II)			
 10288	k	k(III)	k (III)	Subordinating or completive functor	when	
 10288	k	k(I)	k (I)	prep.	like	
 10288	k	k(II)	k (II)	emph. functor	yes	
@@ -1076,8 +1055,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10328	xxx	?	?	?	?	
 10329	amṣḫ	?	?	?	?	1.3 V; DULAT: NOT FOUND
 10330	nn	nn/	nn	PN		MERGE WITH PREVIOUS ? No! let us keep it as it is, separately!
-10331	k	+k	-k (I)			???
-10331	k	~k	-k (II)			???
 10331	k	k(III)	k (III)	Subordinating or completive functor	when	???
 10331	k	k(I)	k (I)	prep.	like	???
 10331	k	k(II)	k (II)	emph. functor	yes	???
@@ -1100,16 +1077,12 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10344	l	l(I)	l (I)	prep.	to	
 10345	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
 # KTU 1.3 V:4						
-10346	k	+k	-k (I)			???
-10346	k	~k	-k (II)			???
 10346	k	k(III)	k (III)	Subordinating or completive functor	when	???
 10346	k	k(I)	k (I)	prep.	like	???
 10346	k	k(II)	k (II)	emph. functor	yes	???
 10347	ilm	il(I)/m	ỉl (I)	n. m.	god	
 10348	w	w	w	conj.	and	
 10349	ḥẓr	ḥẓr/	ḥẓr	n. m.	mansion	
-10350	k	+k	-k (I)			???
-10350	k	~k	-k (II)			???
 10350	k	k(III)	k (III)	Subordinating or completive functor	when	???
 10350	k	k(I)	k (I)	prep.	like	???
 10350	k	k(II)	k (II)	emph. functor	yes	???
@@ -1212,13 +1185,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.3 V:20						
 10429	bnt	bn(t(I)/t	bnt (I)	n. f.	masonry, building, construction, creation	
 10430	bht	bht/	bht	→		MERGE WITH NEXT, is pron suffix
-10431	k	+k	-k (I)			
-10431	k	~k	-k (II)			
 10431	k	k(III)	k (III)	Subordinating or completive functor	when	
 10431	k	k(I)	k (I)	prep.	like	
 10431	k	k(II)	k (II)	emph. functor	yes	
-10432	y	+y, [y	-y (I)	prep. functor	my	
-10432	y	~y	-y (II)	prep. functor	indeed	
 10432	y	y	y	prep. functor	oh!	
 10433	ilm	il(I)/m	ỉl (I)	n. m.	god	plural
 10434	bnt	bn(t(I)/t	bnt (I)	n. f.	masonry, building, construction, creation	
@@ -1271,14 +1240,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10470	ydˤtk	!y!(ydˤ[t+k	/y-d-ʕ/ (I)	vb	to know, to recognise, distinguish, consider	
 # KTU 1.3 V:28						
 10471	bt	b(t(I)/t	bt (I)	n. f.	daughter	
-10472	k	+k	-k (I)			???
-10472	k	~k	-k (II)			???
 10472	k	k(III)	k (III)	Subordinating or completive functor	when	???
 10472	k	k(I)	k (I)	prep.	like	???
 10472	k	k(II)	k (II)	emph. functor	yes	???
 10473	anšt	(ʔ&anš[t==	/ʔ-n-š/	vb G	to languish, fall ill	SC or adjective ?
-10474	k	+k	-k (I)			???
-10474	k	~k	-k (II)			???
 10474	k	k(III)	k (III)	Subordinating or completive functor	when	???
 10474	k	k(I)	k (I)	prep.	like	???
 10474	k	k(II)	k (II)	emph. functor	yes	???
@@ -1354,15 +1319,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10531	l	l(I)	l (I)	prep.	to	
 # KTU 1.3 V:39						
 10532	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
-10533	km	k(III)	k (III)	functor	when	
-10533	km	k(I)	k (I)	prep.	like	
-10533	km	k(IV)	k (IV)	adv.	thus	
 10533	km	km	km	prep./conj./adv.		
-10533	km	+km, +km=	-km			
 10534	ilm	il(I)/m	ỉl (I)	n. m.	god	
 10535	ḥẓr	ḥẓr/	ḥẓr	n. m.	mansion	
-10536	k	+k	-k (I)			
-10536	k	~k	-k (II)			
 10536	k	k(III)	k (III)	Subordinating or completive functor	when	
 10536	k	k(I)	k (I)	prep.	like	
 10536	k	k(II)	k (II)	emph. functor	yes	
@@ -1427,17 +1386,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 10579	l	l(I)	l (I)	prep.	to	
 # KTU 1.3 VI:4						
 10580	bˤl	bˤl(II)/	bʕl (II)	DN	Baʿlu/Baal	
-10581	km	k(III)	k (III)	functor	when	
-10581	km	k(I)	k (I)	prep.	like	
-10581	km	k(IV)	k (IV)	adv.	thus	
 10581	km	km	km	prep./conj./adv.		
-10581	km	+km, +km=	-km			
 10582	ilm	il(I)/m	ỉl (I)	n. m.	god	
 10583	w	w	w	conj.	and	
 10584	ḥẓr	ḥẓr/	ḥẓr	n. m.	mansion	
 # KTU 1.3 VI:5						
-10585	k	+k	-k (I)			???
-10585	k	~k	-k (II)			???
 10585	k	k(III)	k (III)	Subordinating or completive functor	when	???
 10585	k	k(I)	k (I)	prep.	like	???
 10585	k	k(II)	k (II)	emph. functor	yes	???

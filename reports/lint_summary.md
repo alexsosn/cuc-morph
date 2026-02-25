@@ -1,42 +1,40 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `11753`
-- Fallback-parsed issue lines: `656`
+- Total issues: `9534`
+- Fallback-parsed issue lines: `587`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 6390 |
-| WARNING | 932 |
-| INFO | 1621 |
+| ERROR | 4668 |
+| WARNING | 805 |
+| INFO | 1587 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3823 |
-| INFO | Surface not found in UDB concordance | 1621 |
-| ERROR | POS token not allowed for declared DULAT entry | 443 |
-| ERROR | ʔ must be preceded by '(' in column 3 | 428 |
-| ERROR | DULAT comment does not match candidates | 346 |
-| ERROR | No DULAT entry found for clitic part | 324 |
-| ERROR | Non-G stem in DULAT requires stem marker | 278 |
+| ERROR | Analysis does not reconstruct to surface | 2757 |
+| INFO | Surface not found in UDB concordance | 1587 |
+| ERROR | ʔ must be preceded by '(' in column 3 | 366 |
+| ERROR | Non-G stem in DULAT requires stem marker | 275 |
+| ERROR | POS token not allowed for declared DULAT entry | 202 |
 | ERROR | Deverbal form matches both verb and noun entries in DULAT | 175 |
+| ERROR | DULAT comment does not match candidates | 173 |
+| ERROR | No DULAT entry found for clitic part | 158 |
 | WARNING | ydk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 140 |
 | ERROR | Multiple DULAT candidates for surface | 123 |
-| WARNING | Suffix form without '+' | 90 |
-| WARNING | TODO/uncertain marker in comment | 89 |
 | ERROR | Missing DULAT entry token(s) in column 4 | 87 |
-| ERROR | Unknown DULAT token in column 4 | 82 |
+| WARNING | Suffix form without '+' | 81 |
 | ERROR | POS ambiguous in DULAT | 80 |
-| WARNING | y Lexeme parse did not match DULAT; matched by surface form | 72 |
-| ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 67 |
-| ERROR | Each reconstructed letter must be prefixed by '(' | 64 |
-| WARNING | Plural form missing split ending | 36 |
+| ERROR | Unknown DULAT token in column 4 | 78 |
+| WARNING | TODO/uncertain marker in comment | 72 |
+| ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 65 |
+| ERROR | Each reconstructed letter must be prefixed by '(' | 62 |
 | ERROR | No DULAT entry found for lexeme/surface | 35 |
-| WARNING | Feminine adjective/participle in DULAT should mark '-t' explicitly | 29 |
+| WARNING | Plural form missing split ending | 25 |
 | WARNING | Feminine plural noun in DULAT should be tagged with '/t=' | 16 |
 | WARNING | mid Lexeme parse did not match DULAT; matched by surface form | 16 |
 | WARNING | nṯk Lexeme parse did not match DULAT; matched by surface form | 14 |
@@ -46,12 +44,13 @@
 | WARNING | skn Lexeme parse did not match DULAT; matched by surface form | 12 |
 | WARNING | Feminine plural noun in DULAT should use '/t=' | 10 |
 | WARNING | yˤn Lexeme parse did not match DULAT; matched by surface form | 9 |
-| ERROR | POS tokens must map to existing DULAT tokens in column 4 | 8 |
 | WARNING | Unresolved DULAT placeholder '?' should also use '?' in morphology (column 3) | 8 |
 | WARNING | lḥm Lexeme parse did not match DULAT; matched by surface form | 8 |
 | WARNING | qšt Lexeme parse did not match DULAT; matched by surface form | 8 |
 | WARNING | tr Lexeme parse did not match DULAT; matched by surface form | 8 |
+| ERROR | POS tokens must map to existing DULAT tokens in column 4 | 7 |
 | WARNING | Deverbal form marked with '[' but only noun entry found in DULAT | 7 |
+| WARNING | Feminine adjective/participle in DULAT should mark '-t' explicitly | 7 |
 | WARNING | nši Lexeme parse did not match DULAT; matched by surface form | 7 |
 | WARNING | aṯr Lexeme parse did not match DULAT; matched by surface form | 6 |
 | WARNING | tbˤ Lexeme parse did not match DULAT; matched by surface form | 6 |
@@ -61,16 +60,17 @@
 | WARNING | uṣbˤth Lexeme parse did not match DULAT; matched by surface form | 5 |
 | WARNING | yḥ Lexeme parse did not match DULAT; matched by surface form | 5 |
 | ERROR | D stem marker present but DULAT lacks D/Dt | 4 |
-| ERROR | Xt stem marker present but DULAT lacks *t stem | 4 |
 | ERROR | l Formula idk l ytn expects l(III) ('truly/certainly') | 4 |
 | WARNING | bht Lexeme parse did not match DULAT; matched by surface form | 4 |
 | WARNING | klnyy Lexeme parse did not match DULAT; matched by surface form | 4 |
+| WARNING | l l(II) ('no/not') should be used only before verbal forms | 4 |
 | WARNING | pat Lexeme parse did not match DULAT; matched by surface form | 4 |
 | WARNING | ydm Lexeme parse did not match DULAT; matched by surface form | 4 |
 | WARNING | ymm Lexeme parse did not match DULAT; matched by surface form | 4 |
 | WARNING | ḥtkk Lexeme parse did not match DULAT; matched by surface form | 4 |
 | WARNING | ḫbtkm Lexeme parse did not match DULAT; matched by surface form | 4 |
 | ERROR | Noun/adjective lacks '/' ending | 3 |
+| ERROR | Xt stem marker present but DULAT lacks *t stem | 3 |
 | WARNING | bmt Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | bˤdn Lexeme parse did not match DULAT; matched by surface form | 3 |
 | WARNING | bˤlkm Lexeme parse did not match DULAT; matched by surface form | 3 |
@@ -134,7 +134,6 @@
 | WARNING | ˤnm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | WARNING | ṣmdm Lexeme parse did not match DULAT; matched by surface form | 2 |
 | ERROR | Verb lacks '[' ending | 1 |
-| ERROR | klat Passive stem marker present but DULAT lacks passive/N stem | 1 |
 | ERROR | tšˤly Passive stem marker present but DULAT lacks passive/N stem | 1 |
 | ERROR | tˤddn L stem marker present but DULAT lacks L/Lt | 1 |
 | ERROR | ytˤdd L stem marker present but DULAT lacks L/Lt | 1 |

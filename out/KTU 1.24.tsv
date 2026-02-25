@@ -56,8 +56,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147666	yḥ	ḥw(I)[	/ḥ-w/y-y/ (I)	vb G	to live	
 # KTU 1.24 10						
 147667	wyn	?	?	?	?	DULAT: NOT FOUND
-147668	k	+k	-k (I)			
-147668	k	~k	-k (II)			
 147668	k	k(III)	k (III)	Subordinating or completive functor	when	
 147668	k	k(I)	k (I)	prep.	like	
 147668	k	k(II)	k (II)	emph. functor	yes	
@@ -110,8 +108,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147702	tn	(ytn[	/y-t-n/	vb	give	
 147702	tn	(ytn[/	/y-t-n/	vb	give	
 147703	nkl	nkl/	nkl	DN	nkl	
-147704	y	+y, [y	-y (I)	prep. functor	my	
-147704	y	~y	-y (II)	prep. functor	indeed	
 147704	y	y	y	prep. functor	oh!	
 # KTU 1.24 18						
 147705	rḫ	?	?	?	?	DULAT: NOT FOUND
@@ -152,14 +148,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.24 23						
 147729	šd	šd(I)/	šd (I)	n. m.	open field	
 147729	šd	šd(II)/	šd (II)	n. m.	a strip	
-147729	šd	šdy[	/š-d-y/	vb G	to pour	
 147730	ddh	dd(I)/h	dd (I)	adj. m. or n. m.	love	
 147731	ḥrnqm	ḥrnq/	ḥrnq	n. m.	orchard	
 147732	w	w	w	conj.	and	
 # KTU 1.24 24						
-147733	yˤn	ˤny(I)[	/ʕ-n-y/ (I)	vb G	to answer	
 147733	yˤn	!y!ˤn[	/ʕ-n/	vb G/D	to see	
-147733	yˤn	ˤnw[	/ʕ-n-w/	vb G/Dpass	to be / remain depressed	
 147734	ḫrḫb	ḫrḫb/	ḫrḫb	DN	ḫrḫb	
 147735	mlk	mlk[	/m-l-k/	vb G	to reign	
 147735	mlk	mlk(II)/	mlk (II)	n. m.	kingdom (power and territory)	
@@ -196,9 +189,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147757	lbu	lbu/	lbủ	n. m.	lion	
 147758	yˤrr	?	?	?	?	DULAT: NOT FOUND
 147759	w	w	w	conj.	and	
-147760	yˤn	ˤny(I)[	/ʕ-n-y/ (I)	vb G	to answer	
 147760	yˤn	!y!ˤn[	/ʕ-n/	vb G/D	to see	
-147760	yˤn	ˤnw[	/ʕ-n-w/	vb G/Dpass	to be / remain depressed	
 # KTU 1.24 31						
 147761	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 147762	nyr	nyr/	nyr	n. f.	luminary	
@@ -221,7 +212,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147773	adnh	ad/+nh	ảd	n. m.	father	
 # KTU 1.24 34						
 147774	yšt	!y!št[	/š-t/	vb G/Gpass	to place	
-147774	yšt	šty[	/š-t-y/	vb G	to drink	
 147775	mṣb	mṣb(II)/	mṣb (II)	n. m.	place in which something is put	
 147775	mṣb	mṣb(I)/	mṣb (I)	n. m.	beam	
 147776	mznm	mzn/	mzn	n. m.	weight	
@@ -249,8 +239,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147792	ar	a/	ả	n.	light	
 147793	yrḫ	yrḫ/	yrḫ	n. m.	moon	
 147794	w	w	w	conj.	and	
-147795	y	+y, [y	-y (I)	prep. functor	my	
-147795	y	~y	-y (II)	prep. functor	indeed	
 147795	y	y	y	prep. functor	oh!	
 # KTU 1.24 39						
 147796	rḫ	?	?	?	?	DULAT: NOT FOUND
@@ -309,8 +297,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147829	hnthn	?	?	?	?	DULAT: NOT FOUND
 147830	ṯlḫh	ṯlḫh/	ṯlḫh	DN	dowry	
 147831	wmlgh	?	?	?	?	DULAT: NOT FOUND
-147832	y	+y, [y	-y (I)	prep. functor	my	
-147832	y	~y	-y (II)	prep. functor	indeed	
 147832	y	y	y	prep. functor	oh!	
 # KTU 1.24 48						
 147833	ṯtqt	ṯtqt/	ṯtqt	DN	ṯtqt	
@@ -323,6 +309,5 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147838	rbḫṯ	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.24 50						
 147839	dmqt	dmqt/	dmqt	DN	gut	
-147840	ṣġrt	ṣġr(I)/	ṣġr (I)	adj. m.	small	
 147840	ṣġrt	ṣġr(t(I)/t	ṣġrt (I)	adj. f.	youngest	
 147841	kṯrt	kṯrt/	kṯrt	DN	Swallows	

@@ -36,6 +36,7 @@ from pipeline.steps.onomastic_gloss import OnomasticGlossOverrideFixer
 from pipeline.steps.plural_split import PluralSplitFixer
 from pipeline.steps.plurale_tantum_m import PluraleTantumMFixer
 from pipeline.steps.pronoun_closure import PronounClosureFixer
+from pipeline.steps.reconstructable_variant_pruner import ReconstructableVariantPruner
 from pipeline.steps.schema_formatter import TsvSchemaFormatter
 from pipeline.steps.suffix_fixer import SuffixCliticFixer
 from pipeline.steps.suffix_paradigm_normalizer import SuffixParadigmNormalizer
@@ -107,6 +108,7 @@ class TabletParsingPipeline:
             SuffixPayloadCollapseFixer(),
             VariantRowUnwrapper(),
             UnwrappedDuplicatePruner(),
+            ReconstructableVariantPruner(),
             LNegationVerbContextPruner(),
             LFunctorVocativeContextDisambiguator(),
             LKbdCompoundPrepDisambiguator(),

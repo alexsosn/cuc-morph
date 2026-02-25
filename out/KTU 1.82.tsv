@@ -36,11 +36,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150021	bn	bn(I)/	bn (I)	n. m.	son	
 150021	bn	bn(II)	bn (II)	prep.	between	
 150021	bn	bn[	/b-n/	vb G	to understand	
-150022	km	k(III)	k (III)	functor	when	
-150022	km	k(I)	k (I)	prep.	like	
-150022	km	k(IV)	k (IV)	adv.	thus	
 150022	km	km	km	prep./conj./adv.		
-150022	km	+km, +km=	-km			
 150023	yr	yr/	yr	n. m.	early rain	
 150024	klyth	kly/t=+h	klyt	n. f.	kidneys	
 150025	w	w	w	conj.	and	
@@ -55,8 +51,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150032	pk	p(III)/+k	p (III)	n. m.	mouth	
 150033	b	b	b	prep.	in	
 150034	ḫlb	ḫlb(I)/	ḫlb (I)	n. m.	massif	
-150035	k	+k	-k (I)			
-150035	k	~k	-k (II)			
 150035	k	k(III)	k (III)	Subordinating or completive functor	when	
 150035	k	k(I)	k (I)	prep.	like	
 150035	k	k(II)	k (II)	emph. functor	yes	
@@ -78,7 +72,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150045	mt	mt(II)/	mt (II)	n. m.	death	
 150045	mt	mt[	/m-t/	vb G	to die	
 150045	mt	mt(I)/	mt (I)	n. m.	dead person	
-150046	brtk	br[+k	/b-r(-r)/	vb	to be or remain pure	
 150046	brtk	brt/+k	brt	n. f.	forecast	
 # KTU 1.82 6						
 150047	xxḫp	?	?	?	?	DULAT: NOT FOUND
@@ -121,8 +114,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150076	xk	?	?	?	?	DULAT: NOT FOUND
 150077	ˤlt	ˤl(I)	ʕl (I)	prep.	upon	
 150077	ˤlt	ˤly[t	/ʕ-l-y/	vb G	to go up	
-150078	bk	b	b	prep.	in	
-150078	bk	bky[	/b-k-y/	vb G	to weep	
 150078	bk	bk/	bk	n. m.	beaker	
 150079	lk	l(I)+k	l (I)	prep.	to	
 150080	l	l(I)	l (I)	prep.	to	
@@ -138,11 +129,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150086	ˤnt	ˤnt(II)	ʕnt (II)	adv.	now	
 150087	šzrm	šzrm	šzrm	→		
 150088	tštšḥ	!t!]š]]t]šḥy[	/š-ḥ-y/	vb Št	?	
-150089	km	k(III)	k (III)	functor	when	
-150089	km	k(I)	k (I)	prep.	like	
-150089	km	k(IV)	k (IV)	adv.	thus	
 150089	km	km	km	prep./conj./adv.		
-150089	km	+km, +km=	-km			
 150090	ḥb	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.82 12						
 150091	xxxxxxxxxxx	?	?	?	?	
@@ -170,7 +157,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150104	ydk	!y=!dk[	d-k(-k)/	vb Gpass	to be pounded	
 150105	amṣ	amṣ/	ảmṣ	adj. m.	strength	
 150106	yd	yd(I)/	yd (I)	n. f.	hand	
-150106	yd	bd(IV)	bd (IV)	prep.	into the hands of	
 150106	yd	yd(II)/	yd (II)	n. m.	love	
 # KTU 1.82 15						
 150107	xx	?	?	?	?	
@@ -186,13 +172,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150114	bn	bn[	/b-n/	vb G	to understand	
 150115	ˤnk	ˤn(I)/	ʕn (I)	n. f.	eye	
 150116	ṣmdm	ṣmd/m	ṣmd	n. m.	pair	
-150116	ṣmdm	ṣmd[	/ṣ-m-d/	vb G	to harness	
 150117	špk	špk[	/š-p-k/	vb G	to spill	
 # KTU 1.82 17						
 150118	xxxntxx	?	?	?	?	DULAT: NOT FOUND
 150119	mbk	mbk/	mbk	n. m.	source	
 150120	kpt	kp/t=	kp	n. f.	palm (of the hand)	
-150120	kpt	ḥkpt/	ḥkpt	TN	ḥkpt	
 150121	wn	w+n	w	conj.	and	
 150122	b	b	b	prep.	in	
 150123	gx	?	?	?	?	DULAT: NOT FOUND
@@ -247,28 +231,16 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150157	xxxx	?	?	?	?	
 # KTU 1.82 24						
 150158	xxxp	?	?	?	?	DULAT: NOT FOUND
-150159	km	k(III)	k (III)	functor	when	
-150159	km	k(I)	k (I)	prep.	like	
-150159	km	k(IV)	k (IV)	adv.	thus	
 150159	km	km	km	prep./conj./adv.		
-150159	km	+km, +km=	-km			
 150160	dlt	dl(t(II)/t	dlt (II)	adj. f.	poor (woman)	
 150160	dlt	dl(t(III)/t	dlt (III)	n. f.	weakness	
 150161	tlk	hlk[	/h-l-k/	vb G	to go	
-150162	km	k(III)	k (III)	functor	when	
-150162	km	k(I)	k (I)	prep.	like	
-150162	km	k(IV)	k (IV)	adv.	thus	
 150162	km	km	km	prep./conj./adv.		
-150162	km	+km, +km=	-km			
 150163	plxxx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.82 25						
 150164	urbt	urb(t/t	ủrbt	n. f.	window	
 150165	tḥbṭ	!t!ḥbṭ[	/ḥ-b-ṭ/	vb G	to perish	
-150166	km	k(III)	k (III)	functor	when	
-150166	km	k(I)	k (I)	prep.	like	
-150166	km	k(IV)	k (IV)	adv.	thus	
 150166	km	km	km	prep./conj./adv.		
-150166	km	+km, +km=	-km			
 150167	ṣq	ṣq/	ṣq	adj. m.	distressed	
 150168	ṣbr	ṣbr/	ṣbr	n. m.	communal plot	
 # KTU 1.82 26						
@@ -411,8 +383,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.82 43						
 150261	xw	?	?	?	?	DULAT: NOT FOUND
 150262	ˤṣm	ˤṣ/m	ʕṣ	n. m.	tree	
-150263	k	+k	-k (I)			
-150263	k	~k	-k (II)			
 150263	k	k(III)	k (III)	Subordinating or completive functor	when	
 150263	k	k(I)	k (I)	prep.	like	
 150263	k	k(II)	k (II)	emph. functor	yes	
@@ -421,8 +391,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 150265	l	l(II)	l (II)	adv.	no	
 150265	l	l(III)	l (III)	functor	certainly	
 150266	ttn	ytn[	/y-t-n/	vb G	to give	
-150267	k	+k	-k (I)			
-150267	k	~k	-k (II)			
 150267	k	k(III)	k (III)	Subordinating or completive functor	when	
 150267	k	k(I)	k (I)	prep.	like	
 150267	k	k(II)	k (II)	emph. functor	yes	
