@@ -13,6 +13,7 @@ from pipeline.instruction_refiner import InstructionRefiner
 from pipeline.steps.attestation_sort import AttestationSortFixer
 from pipeline.steps.baal_labourer_ktu1 import BaalLabourerKtu1Fixer
 from pipeline.steps.baal_plural import BaalPluralGodListFixer
+from pipeline.steps.baal_verbal_slash import BaalVerbalSlashFixer
 from pipeline.steps.base import RefinementStep
 from pipeline.steps.dulat_gate import DulatMorphGate
 from pipeline.steps.feminine_t_singular_split import FeminineTSingularSplitFixer
@@ -83,6 +84,7 @@ class TabletParsingPipeline:
             PluraleTantumMFixer(gate=self.morph_gate),
             FeminineTSingularSplitFixer(gate=self.morph_gate),
             BaalLabourerKtu1Fixer(),
+            BaalVerbalSlashFixer(),
             BaalPluralGodListFixer(),
             Ktu1FamilyHomonymPruner(dulat_db=self.config.dulat_db),
             SuffixCliticFixer(gate=self.morph_gate),

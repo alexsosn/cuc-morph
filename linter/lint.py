@@ -798,6 +798,29 @@ def row_has_baal_labourer_in_ktu1(
     return "labourer" in (gloss_field or "").lower()
 
 
+def row_has_baal_verbal_missing_slash(analysis_field: str, dulat_field: str) -> bool:
+    """Detect /b-ʕ-l/ verbal variants missing the canonical `[/` closure."""
+    analysis_variants = split_semicolon_field(analysis_field)
+    dulat_variants = split_semicolon_field(dulat_field)
+
+    if not analysis_variants or not dulat_variants:
+        return False
+
+    if len(analysis_variants) != len(dulat_variants):
+        if (dulat_field or "").strip() != "/b-ʕ-l/":
+            return False
+        token = (analysis_field or "").strip()
+        return token.endswith("[") and "/" not in token
+
+    for analysis_variant, dulat_variant in zip(analysis_variants, dulat_variants):
+        if (dulat_variant or "").strip() != "/b-ʕ-l/":
+            continue
+        token = (analysis_variant or "").strip()
+        if token.endswith("[") and "/" not in token:
+            return True
+    return False
+
+
 def row_has_mixed_baal_dn_labourer_reading(
     surface: str,
     analysis_field: str,
@@ -1814,6 +1837,22 @@ def lint_file(
                         surface,
                         analysis,
                         "In KTU 1.*, remove bʕl(I) 'labourer' and keep bʕl (II) /b-ʕ-l/ readings",
+                    )
+                )
+
+            if row_has_baal_verbal_missing_slash(
+                analysis_field=parts[2],
+                dulat_field=parts[3],
+            ):
+                issues.append(
+                    Issue(
+                        "error",
+                        str(path),
+                        i,
+                        line_id,
+                        surface,
+                        analysis,
+                        "For /b-ʕ-l/ verbal readings, use canonical analysis with `[/` (e.g., bˤl[/)",
                     )
                 )
 

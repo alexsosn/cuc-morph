@@ -13,6 +13,7 @@ from linter.lint import (
     choose_lookup_candidates,
     row_has_ambiguous_l_in_offering_sequence,
     row_has_baal_labourer_in_ktu1,
+    row_has_baal_verbal_missing_slash,
     row_has_mixed_baal_dn_labourer_reading,
     variant_has_baad_plus_n,
     variant_has_lexeme_terminal_single_suffix_split,
@@ -220,7 +221,7 @@ class LinterWarningPredicateTest(unittest.TestCase):
             row_has_baal_labourer_in_ktu1(
                 file_path="out/KTU 1.105.tsv",
                 surface="bˤl",
-                analysis_field="bˤl(II)/;bˤl(I)/;bˤl[",
+                analysis_field="bˤl(II)/;bˤl(I)/;bˤl[/",
                 dulat_field="bʕl (II);bʕl (I);/b-ʕ-l/",
                 pos_field="n. m./DN;n. m.;vb",
                 gloss_field="Baʿlu;labourer;to make",
@@ -232,10 +233,26 @@ class LinterWarningPredicateTest(unittest.TestCase):
             row_has_baal_labourer_in_ktu1(
                 file_path="out/KTU 4.1.tsv",
                 surface="bˤl",
-                analysis_field="bˤl(II)/;bˤl(I)/;bˤl[",
+                analysis_field="bˤl(II)/;bˤl(I)/;bˤl[/",
                 dulat_field="bʕl (II);bʕl (I);/b-ʕ-l/",
                 pos_field="n. m./DN;n. m.;vb",
                 gloss_field="Baʿlu;labourer;to make",
+            )
+        )
+
+    def test_baal_verbal_missing_slash_detected(self) -> None:
+        self.assertTrue(
+            row_has_baal_verbal_missing_slash(
+                analysis_field="bˤl(II)/;bˤl[",
+                dulat_field="bʕl (II);/b-ʕ-l/",
+            )
+        )
+
+    def test_baal_verbal_with_slash_not_flagged(self) -> None:
+        self.assertFalse(
+            row_has_baal_verbal_missing_slash(
+                analysis_field="bˤl(II)/;bˤl[/",
+                dulat_field="bʕl (II);/b-ʕ-l/",
             )
         )
 

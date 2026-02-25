@@ -1,14 +1,14 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `11724`
+- Total issues: `11852`
 - Fallback-parsed issue lines: `675`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 6342 |
+| ERROR | 6470 |
 | WARNING | 951 |
 | INFO | 1621 |
 
@@ -23,6 +23,7 @@
 | ERROR | DULAT comment does not match candidates | 346 |
 | ERROR | No DULAT entry found for clitic part | 324 |
 | ERROR | Non-G stem in DULAT requires stem marker | 274 |
+| ERROR | Deverbal form matches both verb and noun entries in DULAT | 175 |
 | WARNING | ydk For clitic-bearing analyses, keep suffix/enclitic in col3 only; do not use ', -x' suffix payload in DULAT col4 | 140 |
 | ERROR | Multiple DULAT candidates for surface | 123 |
 | WARNING | Suffix form without '+' | 90 |
@@ -33,7 +34,6 @@
 | WARNING | y Lexeme parse did not match DULAT; matched by surface form | 72 |
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 67 |
 | ERROR | Each reconstructed letter must be prefixed by '(' | 64 |
-| ERROR | Deverbal form matches both verb and noun entries in DULAT | 47 |
 | WARNING | Plural form missing split ending | 36 |
 | ERROR | No DULAT entry found for lexeme/surface | 35 |
 | WARNING | Feminine adjective/participle in DULAT should mark '-t' explicitly | 29 |

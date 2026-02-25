@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-02-24T23:55:12.184154+00:00",
+  "generated_at_utc": "2026-02-25T00:16:45.920725+00:00",
   "files_checked": 278,
-  "total_issues": 11724,
+  "total_issues": 11852,
   "fallback_parsed": 675,
   "by_severity": {
-    "ERROR": 6342,
+    "ERROR": 6470,
     "WARNING": 951,
     "INFO": 1621
   },
@@ -43,6 +43,11 @@
       "severity": "ERROR",
       "problem_type": "Non-G stem in DULAT requires stem marker",
       "count": 274
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Deverbal form matches both verb and noun entries in DULAT",
+      "count": 175
     },
     {
       "severity": "WARNING",
@@ -93,11 +98,6 @@
       "severity": "ERROR",
       "problem_type": "Each reconstructed letter must be prefixed by '('",
       "count": 64
-    },
-    {
-      "severity": "ERROR",
-      "problem_type": "Deverbal form matches both verb and noun entries in DULAT",
-      "count": 47
     },
     {
       "severity": "WARNING",

@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-02-25
+
+- Added `BaalVerbalSlashFixer` (`pipeline/steps/baal_verbal_slash.py`) and wired it into `pipeline/tablet_parsing.py` after `BaalLabourerKtu1Fixer`.
+- New rule: for verbal `/b-ʕ-l/` readings, normalize analysis payloads from bare `...[` to canonical `...[/` (for example `bˤl[` -> `bˤl[/`, `!y!bˤl[` -> `!y!bˤl[/`).
+- Updated `BaalLabourerKtu1Fixer` to emit canonical retained verbal variant `bˤl[/` and accept both legacy and canonical target payloads.
+- Added linter parity:
+  - new predicate `row_has_baal_verbal_missing_slash` in `linter/lint.py`,
+  - new error when `/b-ʕ-l/` variants are encoded without `[/`.
+- Added regression coverage:
+  - parser step tests in `tests/test_refinement_steps.py` (`BaalVerbalSlashFixerTest`),
+  - linter predicate tests in `tests/test_linter_warning_predicates.py`,
+  - lint integration tests in `tests/test_linter_baal_verbal_slash.py`.
+- Documented the strategy in `docs/baal_verbal_slash_pipeline.md`.
+
 ## 2026-02-24
 
 - Added `VariantRowUnwrapper` (`pipeline/steps/variant_row_unwrapper.py`) and wired it into `pipeline/tablet_parsing.py` as the final content step before schema formatting.

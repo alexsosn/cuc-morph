@@ -10,6 +10,7 @@ from pipeline.steps.aleph_prefix import AlephPrefixFixer
 from pipeline.steps.attestation_sort import AttestationSortFixer
 from pipeline.steps.baal_labourer_ktu1 import BaalLabourerKtu1Fixer
 from pipeline.steps.baal_plural import BaalPluralGodListFixer
+from pipeline.steps.baal_verbal_slash import BaalVerbalSlashFixer
 from pipeline.steps.base import (
     TabletRow,
     is_separator_line,
@@ -1030,7 +1031,7 @@ class BaalLabourerKtu1FixerTest(unittest.TestCase):
             line = f.read_text(encoding="utf-8").splitlines()[1]
             self.assertEqual(
                 line,
-                "152715\tbˤl\tbˤl(II)/;bˤl[\tbʕl (II);/b-ʕ-l/\tn. m./DN;vb\tBaʿlu;to make\t",
+                "152715\tbˤl\tbˤl(II)/;bˤl[/\tbʕl (II);/b-ʕ-l/\tn. m./DN;vb\tBaʿlu;to make\t",
             )
 
     def test_keeps_variant_outside_ktu1(self) -> None:
@@ -1052,6 +1053,50 @@ class BaalLabourerKtu1FixerTest(unittest.TestCase):
                 "bʕl (II);bʕl (I);/b-ʕ-l/\tn. m./DN;n. m.;vb\t"
                 "Baʿlu;labourer;to make\t",
             )
+
+
+class BaalVerbalSlashFixerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.fixer = BaalVerbalSlashFixer()
+
+    def test_normalizes_bare_baal_verbal_variant(self) -> None:
+        row = TabletRow(
+            "1",
+            "bˤl",
+            "bˤl[",
+            "/b-ʕ-l/",
+            "vb",
+            "to make",
+            "",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "bˤl[/")
+
+    def test_normalizes_ambiguous_row_variant_in_place(self) -> None:
+        row = TabletRow(
+            "1",
+            "bˤl",
+            "bˤl(II)/;bˤl[",
+            "bʕl (II);/b-ʕ-l/",
+            "n. m./DN;vb",
+            "Baʿlu;to make",
+            "",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "bˤl(II)/;bˤl[/")
+
+    def test_non_baal_verbal_row_unchanged(self) -> None:
+        row = TabletRow(
+            "1",
+            "rkb",
+            "rkb[",
+            "/r-k-b/",
+            "vb",
+            "to mount",
+            "",
+        )
+        result = self.fixer.refine_row(row)
+        self.assertEqual(result.analysis, "rkb[")
 
 
 class OfferingListLPrepFixerTest(unittest.TestCase):
