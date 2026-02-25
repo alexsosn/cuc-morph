@@ -309,6 +309,51 @@ class RefineResultsMentionsTest(unittest.TestCase):
             self.assertIn(("rdmn", "rdmn", "→", "?"), rendered)
             self.assertIn(("(prdmn/", "prdmn", "DN", "unknown deity"), rendered)
 
+    def test_redirect_entry_resolves_slash_root_target_with_weak_restoration(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            self._init_dulat_schema(db_path)
+            conn = sqlite3.connect(str(db_path))
+            cur = conn.cursor()
+            cur.execute(
+                _INSERT_ENTRY_SQL,
+                (
+                    20,
+                    "wld",
+                    "",
+                    "→",
+                    "",
+                    "<b>wld</b>, cf. /y-l-d/.",
+                    "wld <b>wld</b>, cf. /y-l-d/.",
+                ),
+            )
+            cur.execute(_INSERT_ENTRY_SQL, (21, "/y-l-d/", "", "vb", "", "", ""))
+            cur.execute(
+                "INSERT INTO translations(entry_id, text) VALUES (?, ?)",
+                (21, "to give birth"),
+            )
+            conn.commit()
+            conn.close()
+
+            _entries, forms_map, lemma_map, suffix_map, forms_morph = load_entries(db_path)
+            variants = build_variants(
+                surface="wld",
+                current_ref="CAT 1.14 III:48",
+                forms_map=forms_map,
+                lemma_map=lemma_map,
+                suffix_map=suffix_map,
+                forms_morph=forms_morph,
+                mention_ids=set(),
+                entry_ref_count={},
+                entry_tablets={},
+                entry_family_count={},
+                max_variants=3,
+            )
+
+            rendered = [render_variant("wld", variant, forms_morph) for variant in variants]
+            self.assertIn(("wld", "wld", "→", "?"), rendered)
+            self.assertIn(("(y&wld[", "/y-l-d/", "vb", "to give birth"), rendered)
+
 
 if __name__ == "__main__":
     unittest.main()

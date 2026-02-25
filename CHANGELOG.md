@@ -2,6 +2,14 @@
 
 ## 2026-02-25
 
+- Extended redirect (`→`) restoration to support root targets in `cf.` clauses:
+  - `scripts/refine_results_mentions.py::extract_redirect_targets` now recognizes plain `cf. /root/` references (not only `<i>...</i>` targets),
+  - redirect expansion now prefers slash-root entries when the target itself is slash-root notation (for example `/y-l-d/`),
+  - redirect-derived verb rendering now supports weak-initial `y` -> surface `w` reconstructability (`wld` -> `(y&wld[`).
+- Added regression in `tests/test_refine_results_mentions.py`:
+  - `test_redirect_entry_resolves_slash_root_target_with_weak_restoration`.
+- Re-ran targeted pipeline regeneration for all tablets containing `→` entries (38 files), so redirect-based root restoration is applied corpus-wide.
+
 - Added redirect-aware reconstruction for DULAT `→` entries in refinement:
   - `scripts/refine_results_mentions.py` now parses redirect targets from entry notes (`cf. <i>target</i>`),
   - keeps the original `→` variant (`gloss = ?`) and adds a lexical target variant when resolvable (for example `rdmn` -> `(prdmn/`),

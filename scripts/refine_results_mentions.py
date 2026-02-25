@@ -69,6 +69,7 @@ POS_LABEL_NORMALIZATION = {
 LETTER_RE = re.compile(r"[A-Za-zʔʕʿˤḫḥṭṣṯẓġḏšảỉủ]")
 _PREFORMATIVE_LETTERS = {"y", "t", "a", "n", "i", "u"}
 _REDIRECT_TARGET_RE = re.compile(r"<i>([^<]+)</i>", re.IGNORECASE)
+_REDIRECT_SLASH_TARGET_RE = re.compile(r"/[A-Za-zʔʕʿˤḫḥṭṣṯẓġḏšảỉủ-]+/")
 
 
 @dataclass(frozen=True)
@@ -132,8 +133,9 @@ def extract_redirect_targets(summary: str, text: str) -> Tuple[str, ...]:
     if not source:
         return ()
 
-    cf_match = re.search(r"cf\.(.*)$", source, flags=re.IGNORECASE)
+    cf_match = re.search(r"\bcf\.\s*(.*)$", source, flags=re.IGNORECASE)
     scope = cf_match.group(1) if cf_match else source
+    scope = re.split(r"(?:<br\s*/?>|[.;])", scope, maxsplit=1, flags=re.IGNORECASE)[0]
 
     out: List[str] = []
     for token in _REDIRECT_TARGET_RE.findall(scope):
@@ -141,6 +143,17 @@ def extract_redirect_targets(summary: str, text: str) -> Tuple[str, ...]:
         cleaned = re.sub(r"[.,;:!?]+$", "", cleaned).strip()
         if cleaned:
             out.append(cleaned)
+
+    for token in _REDIRECT_SLASH_TARGET_RE.findall(scope):
+        cleaned = token.strip()
+        if cleaned:
+            out.append(cleaned)
+
+    if not out:
+        plain_scope = strip_html(scope)
+        m = re.search(r"([A-Za-zʔʕʿˤḫḥṭṣṯẓġḏšảỉủ][A-Za-zʔʕʿˤḫḥṭṣṯẓġḏšảỉủ-]*)", plain_scope)
+        if m:
+            out.append(m.group(1))
 
     if not out:
         return ()
@@ -428,6 +441,17 @@ def analysis_for_entry(
             if hidden_stem_letters > 0:
                 stem_out = mark_hidden_terminal_stem_letters(stem_out, hidden_stem_letters)
             return f"!{surface_plain[0]}!{stem_marker}{stem_out}{hom}[{prefix_tail}"
+        if (
+            allow_prefix_restoration
+            and stem_plain
+            and surface_plain
+            and len(stem_plain) == len(surface_plain)
+            and stem_plain[0] == "y"
+            and surface_plain[0] == "w"
+            and stem_plain[1:] == surface_plain[1:]
+        ):
+            # Redirect target can be a weak-initial y-root while surface keeps w.
+            return f"{stem_marker}(y&{surface_plain}{hom}["
         tail = ""
         if len(surface_plain) > len(stem_plain):
             tail = surface_plain[len(stem_plain) :]
@@ -812,6 +836,7 @@ def build_variants(
             target_key = normalize_lookup(target_lemma)
             if not target_key:
                 continue
+            target_is_slash_root = target_lemma.startswith("/") and target_lemma.endswith("/")
             target_entries = dedupe_entries(lemma_map.get(target_key, []))
             filtered_targets = [
                 entry
@@ -820,6 +845,10 @@ def build_variants(
                 and (entry.pos or "").strip()
                 and (entry.pos or "").strip() != "→"
                 and (not target_hom or (entry.hom or "") == target_hom)
+                and (
+                    not target_is_slash_root
+                    or (entry.lemma.startswith("/") and entry.lemma.endswith("/"))
+                )
             ]
             for target_entry in filtered_targets[:2]:
                 variants.append(Variant((target_entry,), surface, from_redirect=True))
