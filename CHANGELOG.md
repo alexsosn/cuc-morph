@@ -2,6 +2,17 @@
 
 ## 2026-02-25
 
+- Fixed verb stem/form enrichment gaps for suffixed/enclitic verb spellings:
+  - `pipeline/steps/verb_pos_stem.py` and
+    `pipeline/steps/verb_form_morph_pos.py` now fallback to host-form lookup by
+    reconstructing analysis before suffix/enclitic payload markers (`+`, `~`).
+  - this restores `vb <STEM> <FORM>` enrichment for rows like
+    `yšqynh !y!šqy[+nh /š-q-y/` where DULAT form tables attest only host forms.
+  - added regressions in:
+    - `tests/test_refinement_steps.py` (`VerbPosStemFixerTest`)
+    - `tests/test_verb_form_morph_pos.py`
+  - re-ran full `--include-existing` pipeline to apply globally.
+
 - Fixed include-existing pipeline behavior to keep DULAT-backed lexical refinement
   reproducible on preserved outputs:
   - `pipeline/tablet_parsing.py` now runs `refine_targets(...)` for all selected

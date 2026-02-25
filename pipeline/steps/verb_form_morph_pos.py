@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Dict, Iterable, Optional, Set, Tuple
 
 from pipeline.config.dulat_form_text_overrides import expand_dulat_form_texts
+from pipeline.steps.analysis_utils import reconstruct_surface_from_analysis
 from pipeline.steps.base import RefinementStep, TabletRow
 
 LOOKUP_NORMALIZE = str.maketrans(
@@ -226,6 +227,31 @@ def _dedupe(values: Iterable[str]) -> list[str]:
     return out
 
 
+def _surface_candidates(surface: str, analysis_variant: str) -> list[str]:
+    out: list[str] = []
+    raw_surface = (surface or "").strip()
+    if raw_surface:
+        out.append(raw_surface)
+
+    analysis = (analysis_variant or "").strip()
+    if analysis and ("+" in analysis or "~" in analysis):
+        head = re.split(r"[+~]", analysis, maxsplit=1)[0].strip()
+        if head and head != analysis:
+            reconstructed = reconstruct_surface_from_analysis(head)
+            if reconstructed:
+                out.append(reconstructed)
+
+    deduped: list[str] = []
+    seen: set[str] = set()
+    for candidate in out:
+        key = _normalize_form(candidate)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        deduped.append(candidate)
+    return deduped
+
+
 @dataclass(frozen=True)
 class VerbFormOption:
     stem: str
@@ -364,6 +390,7 @@ class VerbFormMorphPosFixer(RefinementStep):
         if not pos_variants:
             return row
 
+        analysis_variants = _split_semicolon(row.analysis)
         dulat_variants = _split_semicolon(row.dulat)
         changed = False
         out_pos: list[str] = []
@@ -374,9 +401,18 @@ class VerbFormMorphPosFixer(RefinementStep):
                 out_pos.append(current_pos)
                 continue
 
+            analysis_variant = analysis_variants[idx] if idx < len(analysis_variants) else ""
             dulat_variant = dulat_variants[idx] if idx < len(dulat_variants) else ""
             dulat_head = _split_comma(dulat_variant)[0] if dulat_variant else ""
-            morphologies = self._index.morphologies_for(surface=row.surface, dulat_token=dulat_head)
+            morphologies: set[str] = set()
+            for candidate in _surface_candidates(
+                surface=row.surface, analysis_variant=analysis_variant
+            ):
+                morphologies = self._index.morphologies_for(
+                    surface=candidate, dulat_token=dulat_head
+                )
+                if morphologies:
+                    break
             rewritten = self._rewrite_variant(current_pos=current_pos, morphologies=morphologies)
             out_pos.append(rewritten)
             if rewritten != current_pos:

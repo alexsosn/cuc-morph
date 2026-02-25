@@ -83,7 +83,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147680	l	l(III)	l (III)	functor	certainly	
 147681	adnh	adn(I)/+h	ảdn (I)	n. m.	lord	
 147681	adnh	ad/+nh	ảd	n. m.	father, ?	
-147681	adnh	(ʔ&ad[+nh	/ʔ-d/	vb	general commercial mng to overcharge, ?	
+147681	adnh	(ʔ&ad[/+nh	/ʔ-d/	vb G inf.	general commercial mng to overcharge, ?	
 147682	xxl	?	?	?	?	DULAT: NOT FOUND
 147683	rxxxxxx	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.24 14						
@@ -225,7 +225,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147772	ytrḫ	!y!trḫ[:d	/t-r-ḫ/	vb G prefc. / vb D prefc.	to marry	
 147773	adnh	adn(I)/+h	ảdn (I)	n. m.	lord	
 147773	adnh	ad/+nh	ảd	n. m.	father, ?	
-147773	adnh	(ʔ&ad[+nh	/ʔ-d/	vb	general commercial mng to overcharge, ?	
+147773	adnh	(ʔ&ad[/+nh	/ʔ-d/	vb G inf.	general commercial mng to overcharge, ?	
 # KTU 1.24 34						
 147774	yšt	!y!št[:pass	/š-t/	vb G prefc. / vb Gpass prefc.	to place	
 147775	mṣb	mṣb(II)/	mṣb (II)	n. m. sg.	place in which something is put	
@@ -306,7 +306,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147824	sp	sp/	sp	n. m. sg. / n. m. pl. cstr.	bowl	
 # KTU 1.24 46						
 147825	rhn	ġtr[+hn	/ġ-t-r/	vb	to implore	
-147825	rhn	pẓr[+hn	/p-ẓ-r/	vb	to free	
+147825	rhn	pẓr[+hn	/p-ẓ-r/	vb G suffc.	to free	
+147825	rhn	pẓr[/+hn	/p-ẓ-r/	vb G inf.	to free	
 147825	rhn	rks/+hn	rks	n. m.	belt	
 147826	b	b	b	prep.	in	
 147827	špty	šp(t/t	špt	n. f. sg.	lip	

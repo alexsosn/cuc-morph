@@ -937,8 +937,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144753	bd	b	b	prep.	in	
 144754	dnil	dnil/	dnỉl	PN	Raphaite	
 144755	ytnn	!y!(ytn[n	/y-t-n/	vb	to give	
-144755	ytnn	!y!(ytn[+n	/y-t-n/	vb	to give	
-144755	ytnn	šty[+nn	/š-t-y/	vb	to drink, ?	
+144755	ytnn	!y!(ytn[+n	/y-t-n/	vb G prefc. / vb G suffc.	to give	
+144755	ytnn	šty[+nn	/š-t-y/	vb G suffc. / vb G impv.	to drink, ?	
+144755	ytnn	šty[/+nn	/š-t-y/	vb G inf.	to drink, ?	
 # KTU 1.17 V:27						
 144756	qšt	qšt/	qšt	n. m. sg. / n. m. pl.	bow	
 144757	l	l(I)	l (I)	prep.	to	
@@ -1017,11 +1018,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144803	bln	bln/	bln	n. m. sg.	mixed fodder	
 # KTU 1.17 V:38						
 144804	prˤm	prˤ(I)/+m(I)	prʕ (I)	n. m.	first fruit	
-144804	prˤm	prˤ[+m(I)	/p-r-ʕ/	vb	to wash	
+144804	prˤm	prˤ[+m(I)	/p-r-ʕ/	vb G suffc. / vb D suffc.	to wash	
+144804	prˤm	prˤ[/+m(I)	/p-r-ʕ/	vb G inf. / vb D inf.	to wash	
 144805	ṣdk	ṣd(I)/	ṣd (I)	n. m. sg.	hunt	
 144806	hn	hn	hn	deictic functor/adv.	behold!	
 144807	prˤm	prˤ(I)/+m(I)	prʕ (I)	n. m.	first fruit	
-144807	prˤm	prˤ[+m(I)	/p-r-ʕ/	vb	to wash	
+144807	prˤm	prˤ[+m(I)	/p-r-ʕ/	vb G suffc. / vb D suffc.	to wash	
+144807	prˤm	prˤ[/+m(I)	/p-r-ʕ/	vb G inf. / vb D inf.	to wash	
 # KTU 1.17 V:39						
 144808	ṣd	ṣd[/	/ṣ-d/	vb G inf.	to hunt	
 144808	ṣd	ṣd(I)/	ṣd (I)	n. m. sg.	hunt	
@@ -1061,7 +1064,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144832	dm	dm(II)/	dm (II)	n. m.	blood	
 144832	dm	dm(I)	dm (I)	functor	since	
 144833	ˤṣm	ˤṣ/m	ʕṣ	n. m. pl.	tree	
-144834	ymlun	!y!ml(ʔ[&u+n	/m-l-ʔ/	vb	to be full	
+144834	ymlun	!y!ml(ʔ[&u:d+n	/m-l-ʔ/	vb G prefc. / vb D prefc.	to be full	
 144835	krpn	krpn/	krpn	n. m. sg.	cup	
 144836	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
 144837	krpn	krpn/	krpn	n. m. sg.	cup	
@@ -1080,7 +1083,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.17 VI:9						
 144847	w	w	w	conj.	and	
 144848	aqht	aqht/	ảqht	PN	Most Obedient	
-144849	ynḥtn	!y!nḥt[+n	/n-ḥ-t/	vb	to take down (for oneself) > to reach for	
+144849	ynḥtn	!y!nḥt[:d+n	/n-ḥ-t/	vb D prefc.	to take down (for oneself) > to reach for	
 144850	qn	qn/	qn	n. m. sg.	cane	
 144851	ysbt	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.17 VI:10						
@@ -1282,13 +1285,13 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 144981	k	k(II)	k (II)	emph. functor	yes	
 144982	yḥwy	!y!ḥw(I)[y:d	/ḥ-w/y-y/ (I)	vb D prefc.	to live	
 144983	yˤšr	!y!ˤšr[:d	/ʕ-š-r/	vb D prefc.	to invite	
-144984	ḥwy	ḥw(I)[+y	/ḥ-w/y-y/ (I)	vb	to live	
+144984	ḥwy	ḥw(I)[:d+y	/ḥ-w/y-y/ (I)	vb D impv.	to live	
 144985	yˤš	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.17 VI:31						
 144986	r	?	?	?	?	
 144987	w	w	w	conj.	and	
-144988	yšqynh	!y!šqy[n+h	/š-q-y/	vb	to offer (something to) drink	
-144988	yšqynh	!y!šqy[+nh	/š-q-y/	vb	to offer (something to) drink, ?	
+144988	yšqynh	!y!šqy[n+h	/š-q-y/	vb G prefc.	to offer (something to) drink	
+144988	yšqynh	!y!šqy[+nh	/š-q-y/	vb G prefc.	to offer (something to) drink, ?	
 144989	ybd	!y!bd[	/b-d/	vb G prefc.	to intone a song	
 144990	w	w	w	conj.	and	
 144991	yšr	!y!šr(I)[	/š-r/ (I)	vb G prefc.	to sing	

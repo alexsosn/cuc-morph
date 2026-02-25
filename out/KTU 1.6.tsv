@@ -117,7 +117,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140521	ˤnt	ˤn(t(I)/t	ʕnt (I)	DN	ʿAnatu/Anat	
 140521	ˤnt	ˤnt(II)	ʕnt (II)	adv.	now	
 140522	k	k(II)	k (II)	emph. functor	yes	
-140523	tšth	!t!št[+h	/š-t/	vb	to place	
+140523	tšth	!t!št[+h	/š-t/	vb G prefc.	to place	
 140524	tšˤlynh	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.6 I:16						
 140525	b	b	b	prep.	in	
@@ -722,7 +722,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140911	l	l(I)	l (I)	prep.	to	
 140911	l	l(II)	l (II)	adv.	no	
 140911	l	l(III)	l (III)	functor	certainly	
-140912	tklyy	!t!kly[+y	/k-l-y/	vb	to finish	
+140912	tklyy	!t!kly[:d+y	/k-l-y/	vb D prefc.	to finish	
 # KTU 1.6 II:37						
 140913	nprm	npr(I)/m	npr (I)	n. m. pl.	flyer	
 140914	šir	šir(I)/	šỉr (I)	n. m. sg.	flesh	
@@ -1044,7 +1044,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141121	an	an(I)	ản (I)	pers. pn.	I	
 141121	an	an(II)	ản (II)	adv.	wherever	
 141122	il	il(I)/	ỉl (I)	n. m.	god	
-141123	yġrk	nġr[+k	/n-ġ-r/	vb	to protect	
+141123	yġrk	nġr[+k	/n-ġ-r/	vb G impv.	to protect	
+141123	yġrk	nġr[/+k	/n-ġ-r/	vb G act. ptcpl.	to protect	
 # KTU 1.6 IV:24						
 141124	tġrk	nġr[k	/n-ġ-r/	vb G suffc.	to protect	
 141125	šlm	šlm(I)/	šlm (I)	n. m. sg.	peace	
@@ -1236,7 +1237,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 141252		?	?	?	?	
 # KTU 1.6 VI:1						
 141253	xxxxxxx	?	?	?	?	
-141254	ṭrdh	ṭrd[+h	/ṭ-r-d/	vb	to throw out	
+141254	ṭrdh	ṭrd[/+h	/ṭ-r-d/	vb G act. ptcpl.	to throw out	
 # KTU 1.6 VI:2						
 141255	xxxxxxx	?	?	?	?	
 141256	gršh	grš[/h	/g-r-š/	vb G ptcpl. m. sg.	to eject	

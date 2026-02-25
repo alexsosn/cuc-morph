@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Set, Tuple
 
 from pipeline.config.dulat_form_text_overrides import expand_dulat_form_texts
+from pipeline.steps.analysis_utils import reconstruct_surface_from_analysis
 from pipeline.steps.base import RefinementStep, TabletRow
 
 LOOKUP_NORMALIZE = str.maketrans(
@@ -89,6 +90,31 @@ def _parse_declared_token(token: str) -> Tuple[str, str]:
 def _sorted_stems(stems: Iterable[str]) -> List[str]:
     ranking = {stem: idx for idx, stem in enumerate(STEM_ORDER)}
     return sorted(set(stems), key=lambda stem: (ranking.get(stem, 999), stem))
+
+
+def _surface_candidates(surface: str, analysis_variant: str) -> List[str]:
+    out: List[str] = []
+    raw_surface = (surface or "").strip()
+    if raw_surface:
+        out.append(raw_surface)
+
+    analysis = (analysis_variant or "").strip()
+    if analysis and ("+" in analysis or "~" in analysis):
+        head = re.split(r"[+~]", analysis, maxsplit=1)[0].strip()
+        if head and head != analysis:
+            reconstructed = reconstruct_surface_from_analysis(head)
+            if reconstructed:
+                out.append(reconstructed)
+
+    deduped: List[str] = []
+    seen: set[str] = set()
+    for candidate in out:
+        key = _normalize_form(candidate)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        deduped.append(candidate)
+    return deduped
 
 
 @dataclass(frozen=True)
@@ -212,7 +238,11 @@ class VerbPosStemFixer(RefinementStep):
         if _VB_POS_STEM_RE.search(pos_text):
             return row
 
-        stems = self._stem_index.stems_for(surface=row.surface, dulat_token=row.dulat)
+        stems: List[str] = []
+        for candidate in _surface_candidates(surface=row.surface, analysis_variant=row.analysis):
+            stems = self._stem_index.stems_for(surface=candidate, dulat_token=row.dulat)
+            if stems:
+                break
         if not stems:
             return row
 

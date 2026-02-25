@@ -55,7 +55,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161126	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. cstr.	son	
 161126	bn	bn(II)	bn (II)	prep.	between	
 161126	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
-161127	dˤm	ydˤ(I)[+m(I)	/y-d-ʕ/ (I)	vb	to know	
+161127	dˤm	ydˤ(I)[+m(I)	/y-d-ʕ/ (I)	vb G suffc.	to know	
+161127	dˤm	ydˤ(I)[/+m(I)	/y-d-ʕ/ (I)	vb G inf. / vb G act. ptcpl.	to know	
 161127	dˤm	dˤm/	dʕm	PN	dʿm	
 161128	b	b	b	prep.	in	
 # KTU 3.7 9						
@@ -79,7 +80,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161136	tkn	!t!kn[	/k-n/	vb G prefc.	to be (stable)	
 161137		?	?	?	?	
 # KTU 3.7 14						
-161138	knn	ˤny(I)[+nn	/ʕ-n-y/ (I)	vb	to answer, ?	
+161138	knn	ˤny(I)[/+nn	/ʕ-n-y/ (I)	vb G act. ptcpl.	to answer, ?	
 161138	knn	kn(II)+n	kn (II)	adv.	thus	
 161138	knn	knn/	knn	PN	knn	
 161139	b	b	b	prep.	in	
@@ -94,7 +95,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 161143	mṯ	mṯn/	mṯn	n. m.	repetition	
 161143	mṯ	mṯ(I)/	mṯ (I)	n. m. sg.	infant	
 161144	b	b	b	prep.	in	
-161145	qmy	qm[+y	/q-m/	vb	to stand up	
+161145	qmy	qm[+y	/q-m/	vb G suffc. / vb G impv.	to stand up	
+161145	qmy	qm[/+y	/q-m/	vb G act. ptcpl. sg.	to stand up	
 161145	qmy	qmy/	qmy	TN	qmy	
 161145	qmy	qm/+y	qm	n. m.	adversary	
 # KTU 3.7 16						

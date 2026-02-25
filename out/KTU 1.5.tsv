@@ -383,7 +383,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140032	qẓb	qẓb/	qẓb	DN	name of a demon (?)	
 # KTU 1.5 II:25						
 140033	xxxxxxxxxx	?	?	?	?	
-140034	šmḥy	šmḫ[+y	/š-m-ḫ/	vb	to be glad	
+140034	šmḥy	šmḫ[+y	/š-m-ḫ/	vb G prefc. / vb G suffc.	to be glad	
+140034	šmḥy	šmḫ[/+y	/š-m-ḫ/	vb G inf.	to be glad	
 # KTU 1.5 II:26						
 140035	xxxxxxxxxxxtbˤ	?	?	?	?	DULAT: NOT FOUND
 140036	ṯ	ṯ	ṯ	→	?	
@@ -406,7 +407,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140046	y	~y	-y (II)	prep. functor	indeed	
 140046	y	y	y	prep. functor	oh!	
 140047	arṣ	arṣ/	ảrṣ	n. f. sg.	earth	
-140048	ḥšn	ḥš(I)[+n	/ḥ-š/ (I)	vb	to hurry	
+140048	ḥšn	ḥš(I)[+n	/ḥ-š/ (I)	vb G impv.	to hurry	
+140048	ḥšn	ḥš(I)[/+n	/ḥ-š/ (I)	vb G inf.	to hurry	
 140048	ḥšn	ḥšn/	ḥšn	n. m.	?	
 # KTU 1.5 III:5						
 140049	tˤtd	?	?	?	?	DULAT: NOT FOUND
@@ -643,7 +645,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140177	ks	ks(I)/	ks (I)	n. m. sg.	cup	
 140177	ks	ks/	ks/śm(n)	n. m. pl.	emmer-corn	
 140178	ksp	ksp/	ksp	n. m. sg.	silver	
-140179	ymlun	!y!ml(ʔ[&u+n	/m-l-ʔ/	vb	to be full	
+140179	ymlun	!y!ml(ʔ[&u:d+n	/m-l-ʔ/	vb G prefc. / vb D prefc.	to be full	
 # KTU 1.5 IV:19						
 140180	krpn	krpn/	krpn	n. m. sg.	cup	
 140181		?	?	?	?	
@@ -765,7 +767,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140262	y	~y	-y (II)	prep. functor	indeed	
 140262	y	y	y	prep. functor	oh!	
 # KTU 1.5 V:16						
-140263	rdm	yrd[+m(I)	/y-r-d/	vb	to go down	
+140263	rdm	yrd[+m(I)	/y-r-d/	vb G prefc. / vb G suffc.	to go down	
 140264	arṣ	arṣ/	ảrṣ	n. f. sg.	earth	
 140265	w	w	w	conj.	and	
 140266	tdˤ	ydˤ(I)[	/y-d-ʕ/ (I)	vb G prefc.	to know	
@@ -810,7 +812,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 140290	w	w	w	conj.	and	
 140291	txxrn	?	?	?	?	DULAT: NOT FOUND
 140292	w	w	w	conj.	and	
-140293	tldn	yld[+n	/y-l-d/	vb	to give birth (to)	
+140293	tldn	yld[+n	/y-l-d/	vb N suffc.	to give birth (to)	
+140293	tldn	yld[/+n	/y-l-d/	vb G inf.	to give birth (to)	
 140294	mṯ	mṯ(I)/	mṯ (I)	n. m. sg.	infant	
 # KTU 1.5 V:23						
 140295	alxx	?	?	?	?	DULAT: NOT FOUND

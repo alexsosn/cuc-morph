@@ -26,7 +26,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156085	thm	thm/	thm	n. m. sg.	ocean	
 # KTU 1.179 5						
 156086	šk	š/+k	š	n. m.	ram	
-156086	šk	šlm[+k	/š-l-m/	vb	to be well	
+156086	šk	šlm[:d+k	/š-l-m/	vb G suffc. / vb D suffc.	to be well	
 156086	šk	šrt(II)/+k	šrt (II)	n. f.	?	
 156087	qṣḥm	qṣḥ/m	qṣḥ	n. m. pl.	cumin	
 156088	ˤpˤpk	ˤpˤp/+k	ʕpʕp	n. m. pl.	eyelid	
@@ -48,7 +48,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156096	ḥmm	ḥmm/	ḥmm	n. m. sg.	heat	
 156097	b	b	b	prep.	in	
 156098	bšrk	bšr/+k	bšr	n. m.	flesh	
-156098	bšrk	bšr[+k	/b-š-r/	vb	to impart (good) news	
+156098	bšrk	bšr[:pass+k	/b-š-r/	vb Dpass impv.	to impart (good) news	
 # KTU 1.179 8						
 156099	kbkb	kbkb/	kbkb	n. m. sg.	heavenly body	
 156100	kbkbm	kbkb/m	kbkb	n. m. pl. / n. m. du.	heavenly body	
@@ -246,7 +246,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156218	k	k(III)	k (III)	Subordinating or completive functor	when	
 156218	k	k(I)	k (I)	prep.	like	
 156218	k	k(II)	k (II)	emph. functor	yes	
-156219	yṯnyn	!y!ṯny[+n	/ṯ-n-y/	vb	to repeat	
+156219	yṯnyn	!y!ṯny[+n	/ṯ-n-y/	vb G prefc.	to repeat	
 156220	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. cstr.	son	
 156220	bn	bn(II)	bn (II)	prep.	between	
 156220	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
@@ -266,7 +266,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 156231	d	d	d	det. or rel. functor	the one(s) of	
 156232	btkh	bt(II)&k/+h	bt (II)	n. m.	house	
 156233	w	w	w	conj.	and	
-156234	tqdmnnn	!t!qdm[nn+n	/q-d-m/	vb	to proceed	
+156234	tqdmnnn	!t!qdm[nn:d+n	/q-d-m/	vb D prefc. / vb D suffc.	to proceed	
 156235	ilht	il(t(I)/&ht	ỉlt (I)	n. f. pl.	goddess	
 # KTU 1.179 38						
 156236	xxxn	?	?	?	?	DULAT: NOT FOUND

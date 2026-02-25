@@ -1,6 +1,7 @@
 id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 3.8 1						
-161149	tldn	yld[+n	/y-l-d/	vb	to give birth (to)	
+161149	tldn	yld[+n	/y-l-d/	vb N suffc.	to give birth (to)	
+161149	tldn	yld[/+n	/y-l-d/	vb G inf.	to give birth (to)	
 161149	tldn	tldn/	tldn	PN	tldn	
 # KTU 3.8 2						
 161150	ṯrkn	ṯr(I)/+kn	ṯr (I)	n. m.	bull	
@@ -74,13 +75,14 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 3.8 21						
 161183	ypḥ	ypḥ/	ypḥ	n. m. sg.	witness	
 161184	mnḥm	mnḥm/	mnḥm	PN	mnḥm	
-161184	mnḥm	mnḥ[+m(I)	/m-n-ḥ/	vb	to deliver	
+161184	mnḥm	mnḥ[+m(I)	/m-n-ḥ/	vb G suffc.	to deliver	
 161184	mnḥm	mnḥ/+m(I)	mnḥ	n. m.	delivery	
 # KTU 3.8 22						
 161185	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. cstr.	son	
 161185	bn	bn(II)	bn (II)	prep.	between	
 161185	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
-161186	ḥnn	lqḥ[+nn	/l-q-ḥ/	vb	to get hold of, ?	
+161186	ḥnn	lqḥ[+nn	/l-q-ḥ/	vb G suffc.	to get hold of, ?	
+161186	ḥnn	lqḥ[/+nn	/l-q-ḥ/	vb G inf.	to get hold of, ?	
 161186	ḥnn	ḥnn(II)/	ḥnn (II)	PN	ḥnn (II)	
 161186	ḥnn	ḥnn(I)/	ḥnn (I)	n. m.	kindness	
 # KTU 3.8 23						

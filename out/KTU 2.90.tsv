@@ -66,7 +66,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160012	hw	hw	hw	pers. pn.	he	
 # KTU 2.90 16						
 160013	w	w	w	conj.	and	
-160014	štnnh	št[n+nh	/š-t/	vb	to place, ?	
+160014	štnnh	št[n+nh	/š-t/	vb G impv.	to place, ?	
 # KTU 2.90 17						
 160015	bd	b	b	prep.	in	
 160016	mlakty	mlak(t/t+y	mlảkt	n. f. sg.	message	
@@ -100,6 +100,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 160031	mlakty	mlak(t/t+y	mlảkt	n. f. sg.	message	
 160032	ly	l(I)+y	l (I)	prep.	to	
 # KTU 2.90 24						
-160033	štnn	št[n+n	/š-t/	vb	to place	
-160033	štnn	št[+nn	/š-t/	vb	to place, ?	
+160033	štnn	št[n+n	/š-t/	vb G impv.	to place	
+160033	štnn	št[:pass+nn	/š-t/	vb G suffc. / vb G impv. / vb Gpass suffc.	to place, ?	
 160033	štnn	št(II)/+nn	št (II)	n. f.	raíz, ?	

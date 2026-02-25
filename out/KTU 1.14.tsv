@@ -862,7 +862,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.14 III:53						
 142246	yrḥṣ	!y!rḥṣ[	/r-ḥ-ṣ/	vb G prefc.	to wash	
 142247	ydh	yd(I)/+h	yd (I)	n. f.	hand	
-142248	amth	!(ʔ&a!mt[+h	/m-t/	vb	to die	
+142248	amth	!(ʔ&a!mt[+h	/m-t/	vb G prefc.	to die	
 142248	amth	am(t(II)/t	ảmt (II)	n. f. sg.	elbow	
 142248	amth	amt(II)/+h	ảmt (II)	n. f.	elbow	
 # KTU 1.14 III:54						
@@ -941,7 +941,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142297	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
 142298	b	b	b	prep.	in	
 142299	dbḥh	dbḥ/+h	dbḥ	n. m.	sacrifice	
-142299	dbḥh	dbḥ[+h	/d-b-ḥ/	vb	to sacrifice	
+142299	dbḥh	dbḥ[+h	/d-b-ḥ/	vb G suffc. / vb G impv.	to sacrifice	
+142299	dbḥh	dbḥ[/+h	/d-b-ḥ/	vb G act. ptcpl.	to sacrifice	
 142300	bn	bn(I)/	bn (I)	n. m. sg. / n. m. pl. cstr.	son	
 142300	bn	bn(II)	bn (II)	prep.	between	
 142300	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
@@ -976,7 +977,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142317	d	d	d	det. or rel. functor	the one(s) of	
 142318	ḫmš	ḫmš(I)/	ḫmš (I)	n. sg. num.	five	
 # KTU 1.14 IV:12						
-142319	mġd	mġy[+d	/m-ġ-y/	vb	to come, ?	
+142319	mġd	mġy[+d	/m-ġ-y/	vb G suffc.	to come, ?	
+142319	mġd	mġy[/+d	/m-ġ-y/	vb G inf.	to come, ?	
 142319	mġd	mġd/	mġd	n. m.	food	
 142320	ṯdṯ	ṯdṯ/	ṯdṯ	adj. sg./ord. num.	sixth	
 142321	yrḫm	yrḫ/+m(I)	yrḫ	n. m.	moon	
@@ -1466,7 +1468,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 142596	tšan	!t!(nš(ʔ[&an	/n-š-ʔ/	vb G prefc.	to raise	
 142597	ghm	g/+hm	g	n. m. sg.	(loud) voice	
 142598	w	w	w	conj.	and	
-142599	tṣḥn	!t!ṣḥ[+n	/ṣ-ḥ/	vb	to exclaim	
+142599	tṣḥn	!t!ṣḥ[+n	/ṣ-ḥ/	vb G prefc.	to exclaim	
 # KTU 1.14 VI:3						
 142600	tḥm	tḥm/	tḥm	n. m. sg.	message	
 142601	pbl	pbl/	pbl	PN	pbl	
@@ -1676,7 +1678,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.14 VI:39						
 142723	ghm	g/+hm	g	n. m. sg.	(loud) voice	
 142724	w	w	w	conj.	and	
-142725	tṣḥn	!t!ṣḥ[+n	/ṣ-ḥ/	vb	to exclaim	
+142725	tṣḥn	!t!ṣḥ[+n	/ṣ-ḥ/	vb G prefc.	to exclaim	
 # KTU 1.14 VI:40						
 142726	tḥm	tḥm/	tḥm	n. m. sg.	message	
 142727	krt	krt/	krt	PN	krt	

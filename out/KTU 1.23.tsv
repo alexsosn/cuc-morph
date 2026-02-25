@@ -188,10 +188,10 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147209	nˤmm	nˤm(I)/	nʕm (I)	adj. m. pl.	handsome	
 147210	agzrym	agzry/m	ảgzry	adj. m. pl.	ravenous	
 147211	bnym	bn(I)&y/+m(I)	bn (I)	n. m.	son	
-147211	bnym	bny[+m(I)	/b-n-y/	vb	to build	
+147211	bnym	bny[/+m(I)	/b-n-y/	vb G act. ptcpl. m. sg.	to build	
 147211	bnym	bny/+m(I)	bny	n. m.	architect	
 # KTU 1.23 24						
-147212	ynqm	!y!(ynq[+m(I)	/y-n-q/	vb	to suck	
+147212	ynqm	!y!(ynq[/+m(I)	/y-n-q/	vb G act. ptcpl. sg.	to suck	
 147213	b	b	b	prep.	in	
 147214	ap	ap(I)	ảp (I)	adv./conj.	also	
 147214	ap	ap(II)/	ảp (II)	n. m.	nose	
@@ -364,7 +364,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147320	hm	hm(II)	hm (II)	conj./interr. functor	if	
 147320	hm	hm(I)	hm (I)	pers. pn.	they	
 147321	aṯtm	aṯt/m	ảṯt	n. f. du.	woman	
-147322	tṣḥn	!t!ṣḥ[+n	/ṣ-ḥ/	vb	to exclaim	
+147322	tṣḥn	!t!ṣḥ[+n	/ṣ-ḥ/	vb G prefc.	to exclaim	
 # KTU 1.23 40						
 147323	y	+y, [y	-y (I)	prep. functor	my	
 147323	y	~y	-y (II)	prep. functor	indeed	
@@ -415,7 +415,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147347	hm	hm(I)	hm (I)	pers. pn.	they	
 # KTU 1.23 43						
 147348	aṯtm	aṯt/m	ảṯt	n. f. du.	woman	
-147349	tṣḥn	!t!ṣḥ[+n	/ṣ-ḥ/	vb	to exclaim	
+147349	tṣḥn	!t!ṣḥ[+n	/ṣ-ḥ/	vb G prefc.	to exclaim	
 147350	y	+y, [y	-y (I)	prep. functor	my	
 147350	y	~y	-y (II)	prep. functor	indeed	
 147350	y	y	y	prep. functor	oh!	
@@ -460,7 +460,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147374	w	w	w	conj.	and	
 147375	hn	hn	hn	deictic functor/adv.	behold!	
 147376	aṯtm	aṯt/m	ảṯt	n. f. du.	woman	
-147377	tṣḥn	!t!ṣḥ[+n	/ṣ-ḥ/	vb	to exclaim	
+147377	tṣḥn	!t!ṣḥ[+n	/ṣ-ḥ/	vb G prefc.	to exclaim	
 147378	y	+y, [y	-y (I)	prep. functor	my	
 147378	y	~y	-y (II)	prep. functor	indeed	
 147378	y	y	y	prep. functor	oh!	
@@ -533,7 +533,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147418	tqtnṣn	!t!q]t]nṣ[n	/q-n-ṣ/	vb Gt prefc.	to squat	
 147419	w	w	w	conj.	and	
 # KTU 1.23 52						
-147420	tldn	yld[+n	/y-l-d/	vb	to give birth (to)	
+147420	tldn	yld[+n	/y-l-d/	vb N suffc.	to give birth (to)	
+147420	tldn	yld[/+n	/y-l-d/	vb G inf.	to give birth (to)	
 147420	tldn	tldn/	tldn	PN	tldn	
 147421	šḥr	šḥr/	šḥr	n. m. sg.	dawn	
 147422	w	w	w	conj.	and	
@@ -611,9 +612,11 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.23 58						
 147472	tqtnṣn	!t!q]t]nṣ[n	/q-n-ṣ/	vb Gt prefc.	to squat	
 147473	w	w	w	conj.	and	
-147474	tldn	yld[+n	/y-l-d/	vb	to give birth (to)	
+147474	tldn	yld[+n	/y-l-d/	vb N suffc.	to give birth (to)	
+147474	tldn	yld[/+n	/y-l-d/	vb G inf.	to give birth (to)	
 147474	tldn	tldn/	tldn	PN	tldn	
-147475	tldn	yld[+n	/y-l-d/	vb	to give birth (to)	
+147475	tldn	yld[+n	/y-l-d/	vb N suffc.	to give birth (to)	
+147475	tldn	yld[/+n	/y-l-d/	vb G inf.	to give birth (to)	
 147475	tldn	tldn/	tldn	PN	tldn	
 147476	ilm	il(I)/m	ỉl (I)	n. m. pl.	god	
 147477	nˤmm	nˤm(I)/	nʕm (I)	adj. m. pl.	handsome	
@@ -624,7 +627,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147479	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 147480	ym	ym(I)/	ym (I)	n. m. sg.	day	
 147480	ym	ym(II)/	ym (II)	n. m. sg.	sea	
-147481	ynqm	!y!(ynq[+m(I)	/y-n-q/	vb	to suck	
+147481	ynqm	!y!(ynq[/+m(I)	/y-n-q/	vb G act. ptcpl. sg.	to suck	
 147482	b	b	b	prep.	in	
 147483	ap	ap(I)	ảp (I)	adv./conj.	also	
 147483	ap	ap(II)/	ảp (II)	n. m.	nose	
@@ -652,7 +655,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 147497	bn	bn[	/b-n/	vb G suffc. / vb G impv.	to understand	
 147498	ym	ym(I)/	ym (I)	n. m. sg.	day	
 147498	ym	ym(II)/	ym (II)	n. m. sg.	sea	
-147499	ynqm	!y!(ynq[+m(I)	/y-n-q/	vb	to suck	
+147499	ynqm	!y!(ynq[/+m(I)	/y-n-q/	vb G act. ptcpl. sg.	to suck	
 147500	b	b	b	prep.	in	
 147501	ap	ap(I)	ảp (I)	adv./conj.	also	
 147501	ap	ap(II)/	ảp (II)	n. m.	nose	

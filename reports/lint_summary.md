@@ -1,24 +1,24 @@
 ## Morphology Lint Summary
 
 - Files checked: `278`
-- Total issues: `12028`
-- Fallback-parsed issue lines: `340`
+- Total issues: `12094`
+- Fallback-parsed issue lines: `342`
 
 ### By Severity
 
 | Severity | Count |
 |---|---:|
-| ERROR | 6664 |
+| ERROR | 6710 |
 | WARNING | 541 |
-| INFO | 1632 |
+| INFO | 1642 |
 
 ### By Problem Type
 
 | Severity | Problem Type | Count |
 |---|---|---:|
-| ERROR | Analysis does not reconstruct to surface | 3118 |
-| INFO | Surface not found in UDB concordance | 1632 |
-| ERROR | Deverbal form matches both verb and noun entries in DULAT | 1131 |
+| ERROR | Analysis does not reconstruct to surface | 3144 |
+| INFO | Surface not found in UDB concordance | 1642 |
+| ERROR | Deverbal form matches both verb and noun entries in DULAT | 1164 |
 | ERROR | POS token not allowed for declared DULAT entry | 1110 |
 | ERROR | No DULAT entry found for clitic part | 280 |
 | ERROR | DULAT comment does not match candidates | 231 |
@@ -31,9 +31,9 @@
 | ERROR | Suffixed pronominal form in DULAT should use '+' in analysis | 70 |
 | WARNING | Plural form missing split ending | 66 |
 | WARNING | y Lexeme parse did not match DULAT; matched by surface form | 63 |
-| ERROR | Non-G stem in DULAT requires stem marker | 53 |
 | ERROR | Each reconstructed letter must be prefixed by '(' | 52 |
 | WARNING | šmm DULAT plurale tantum noun should include 'pl. tant.' in POS | 41 |
+| ERROR | Non-G stem in DULAT requires stem marker | 38 |
 | ERROR | rbt Adjective POS gender mismatch for rb (I): expected adj. m., got adj. f. | 29 |
 | ERROR | spr Verb stem marker(s) required by POS but missing in analysis: :d | 29 |
 | WARNING | mid Lexeme parse did not match DULAT; matched by surface form | 21 |
@@ -66,6 +66,7 @@
 | ERROR | aṯr Verb stem marker(s) required by POS but missing in analysis: :d | 2 |
 | ERROR | brkm Verb stem marker(s) required by POS but missing in analysis: :d | 2 |
 | ERROR | mkly Verb stem marker(s) required by POS but missing in analysis: :d | 2 |
+| ERROR | prˤm Verb stem marker(s) required by POS but missing in analysis: :d | 2 |
 | ERROR | ybˤl For /b-ʕ-l/ verbal readings, use canonical analysis with `[/` (e.g., bˤl[/) | 2 |
 | WARNING | alit Feminine singular noun in DULAT should use '/t' | 2 |
 | WARNING | aḥw Lexeme parse did not match DULAT; matched by surface form | 2 |

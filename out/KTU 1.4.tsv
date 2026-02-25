@@ -517,7 +517,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 # KTU 1.4 III:13						
 138463	yqm	!y!qm[	/q-m/	vb G prefc.	to stand up	
 138464	w	w	w	conj.	and	
-138465	ywpṯn	!y!wpṯ[+n	/w-p-ṯ/	vb	to spit	
+138465	ywpṯn	!y!wpṯ[:d+n	/w-p-ṯ/	vb D prefc.	to spit	
 138466	b	b	b	prep.	in	
 138467	tk	tk/	tk	n. m.	centre	
 # KTU 1.4 III:14						
@@ -816,7 +816,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138647	w	w	w	conj.	and	
 138648	amrr	amrr/	ảmrr	DN	“Blessed”, one of the two messenger-boys of the goddess ảṯrt	
 # KTU 1.4 IV:14						
-138649	yštn	!y!št[+n	/š-t/	vb	to place	
+138649	yštn	!y!št[:pass+n	/š-t/	vb G prefc. / vb Gpass prefc.	to place	
 138650	aṯrt	aṯr(t(I)/t	ảṯrt (I)	n. f. sg.	back part (of the head)	
 138651	l	l(I)	l (I)	prep.	to	
 138652	bmt	bm(t/t	bmt	n. f. sg.	back	
@@ -1235,7 +1235,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138925	ṣḥ	ṣḥ[	/ṣ-ḥ/	vb G impv. / vb G	to exclaim	
 138926	ḫrn	ḫr(I)/+n	ḫr (I)	n. m.	cave	
 138926	ḫrn	ḫrn/	ḫrn	n. m.	gang	
-138926	ḫrn	ḫr[+n	/ḫ-r(-r)/	vb	to have spasms (of diarrhoea)	
+138926	ḫrn	ḫr[+n	/ḫ-r(-r)/	vb G suffc.	to have spasms (of diarrhoea)	
+138926	ḫrn	ḫr[/+n	/ḫ-r(-r)/	vb G ptcpl.	to have spasms (of diarrhoea)	
 138927	b	b	b	prep.	in	
 138928	bhmk	b+k	b	prep.	in	
 # KTU 1.4 V:14						
@@ -1340,7 +1341,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 138993	ṣḥ	ṣḥ[	/ṣ-ḥ/	vb G impv. / vb G	to exclaim	
 138994	ḫrn	ḫr(I)/+n	ḫr (I)	n. m.	cave	
 138994	ḫrn	ḫrn/	ḫrn	n. m.	gang	
-138994	ḫrn	ḫr[+n	/ḫ-r(-r)/	vb	to have spasms (of diarrhoea)	
+138994	ḫrn	ḫr[+n	/ḫ-r(-r)/	vb G suffc.	to have spasms (of diarrhoea)	
+138994	ḫrn	ḫr[/+n	/ḫ-r(-r)/	vb G ptcpl.	to have spasms (of diarrhoea)	
 # KTU 1.4 V:30						
 138995	b	b	b	prep.	in	
 138996	bhtk	bt(II)/+k	bt (II)	n. m.	house	
@@ -1643,7 +1645,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139190	ym	ym(II)/	ym (II)	n. m. sg.	sea	
 # KTU 1.4 VI:13						
 139191	xxxxx	?	?	?	?	
-139192	qlṣn	qlṣ[+n	/q-l-ṣ/	vb	to resist	
+139192	qlṣn	qlṣ[/+n	/q-l-ṣ/	vb G inf. / vb D inf.	to resist	
 139193	wpṯm	wpṯ[m	/w-p-ṯ/	vb D suffc.	to spit	
 139193	wpṯm	wpṯ[/m	/w-p-ṯ/	vb D inf.	to spit	
 # KTU 1.4 VI:14						
@@ -2242,7 +2244,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139597	ġ	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.4 VII:53						
 139598	lmh	l(I)+h	l (I)	prep.	to	
-139598	lmh	šlm[+h	/š-l-m/	vb	to be well	
+139598	lmh	šlm[:d+h	/š-l-m/	vb G suffc. / vb D suffc.	to be well	
 139598	lmh	lm(II)/+h	lm (II)	interr. pn.	why?	
 139599	bˤl	bˤl(II)/	bʕl (II)	n. m. / DN	Baʿlu/Baal	
 139599	bˤl	bˤl[/	/b-ʕ-l/	vb G act. ptcpl. m.	to make	
@@ -2325,7 +2327,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139652	y	~y	-y (II)	prep. functor	indeed	
 139652	y	y	y	prep. functor	oh!	
 # KTU 1.4 VIII:9						
-139653	rdm	yrd[+m(I)	/y-r-d/	vb	to go down	
+139653	rdm	yrd[+m(I)	/y-r-d/	vb G prefc. / vb G suffc.	to go down	
 139654	arṣ	arṣ/	ảrṣ	n. f. sg.	earth	
 # KTU 1.4 VIII:10						
 139655	idk	idk	ỉdk	narrative adv. functor	then	
@@ -2468,7 +2470,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 139735	aliy	aliy/	ảlỉy	adj. m. sg.	The Most Powerful	
 139736	q	?	?	?	?	
 # KTU 1.4 VIII:35						
-139737	rdm	yrd[+m(I)	/y-r-d/	vb	to go down	
+139737	rdm	yrd[+m(I)	/y-r-d/	vb G prefc. / vb G suffc.	to go down	
 139738	bhty	bt(II)/+y	bt (II)	n. m.	house	
 139739	bnt	bn(t(II)/t	bnt (II)	n. f. sg.	produce	
 139739	bnt	bn(t(I)/t	bnt (I)	n. f. sg.	masonry	

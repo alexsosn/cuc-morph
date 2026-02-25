@@ -74,6 +74,21 @@ class VerbFormMorphPosFixerTest(unittest.TestCase):
         result = fixer.refine_row(row)
         self.assertEqual(result.pos, "vb G prefc.; n. m.")
 
+    def test_uses_analysis_host_when_surface_includes_suffix_payload(self) -> None:
+        index = _FormIndex({("yšqy", "/š-q-y/"): {"G, prefc."}})
+        fixer = VerbFormMorphPosFixer(dulat_db=Path("unused.sqlite"), form_index=index)
+        row = TabletRow(
+            "6",
+            "yšqynh",
+            "!y!šqy[+nh",
+            "/š-q-y/",
+            "vb",
+            "to offer (something to) drink",
+            "",
+        )
+        result = fixer.refine_row(row)
+        self.assertEqual(result.pos, "vb G prefc.")
+
 
 if __name__ == "__main__":
     unittest.main()

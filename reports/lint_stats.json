@@ -1,28 +1,28 @@
 {
-  "generated_at_utc": "2026-02-25T16:09:20.659766+00:00",
+  "generated_at_utc": "2026-02-25T16:14:53.096831+00:00",
   "files_checked": 278,
-  "total_issues": 12028,
-  "fallback_parsed": 340,
+  "total_issues": 12094,
+  "fallback_parsed": 342,
   "by_severity": {
-    "ERROR": 6664,
+    "ERROR": 6710,
     "WARNING": 541,
-    "INFO": 1632
+    "INFO": 1642
   },
   "by_problem_type": [
     {
       "severity": "ERROR",
       "problem_type": "Analysis does not reconstruct to surface",
-      "count": 3118
+      "count": 3144
     },
     {
       "severity": "INFO",
       "problem_type": "Surface not found in UDB concordance",
-      "count": 1632
+      "count": 1642
     },
     {
       "severity": "ERROR",
       "problem_type": "Deverbal form matches both verb and noun entries in DULAT",
-      "count": 1131
+      "count": 1164
     },
     {
       "severity": "ERROR",
@@ -86,11 +86,6 @@
     },
     {
       "severity": "ERROR",
-      "problem_type": "Non-G stem in DULAT requires stem marker",
-      "count": 53
-    },
-    {
-      "severity": "ERROR",
       "problem_type": "Each reconstructed letter must be prefixed by '('",
       "count": 52
     },
@@ -98,6 +93,11 @@
       "severity": "WARNING",
       "problem_type": "šmm DULAT plurale tantum noun should include 'pl. tant.' in POS",
       "count": 41
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "Non-G stem in DULAT requires stem marker",
+      "count": 38
     },
     {
       "severity": "ERROR",
@@ -257,6 +257,11 @@
     {
       "severity": "ERROR",
       "problem_type": "mkly Verb stem marker(s) required by POS but missing in analysis: :d",
+      "count": 2
+    },
+    {
+      "severity": "ERROR",
+      "problem_type": "prˤm Verb stem marker(s) required by POS but missing in analysis: :d",
       "count": 2
     },
     {

@@ -1154,6 +1154,7 @@ class VerbPosStemFixerTest(unittest.TestCase):
                 (2, "/r-g-m/", "", "vb"),
                 (3, "ytn", "I", "n."),
                 (4, "/l-s-m/", "", "vb"),
+                (5, "/š-q-y/", "", "vb"),
             ],
         )
         cur.executemany(
@@ -1164,6 +1165,8 @@ class VerbPosStemFixerTest(unittest.TestCase):
                 (2, "rgm", "G, suffc."),
                 (3, "ytn", "pl."),
                 (4, "tslmn", "G, prefc."),
+                (5, "yšqy", "G, prefc."),
+                (5, "yšqyn", "G, prefc."),
             ],
         )
         conn.commit()
@@ -1239,6 +1242,25 @@ class VerbPosStemFixerTest(unittest.TestCase):
             fixer = VerbPosStemFixer(dulat_db=db_path)
 
             row = TabletRow("1", "tlsmn", "!t!lsm[n", "/l-s-m/", "vb", "to run", "")
+            result = fixer.refine_row(row)
+
+            self.assertEqual(result.pos, "vb G")
+
+    def test_uses_analysis_host_when_surface_includes_suffix_payload(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            db_path = Path(tmp_dir) / "dulat.sqlite"
+            self._build_test_db(db_path)
+            fixer = VerbPosStemFixer(dulat_db=db_path)
+
+            row = TabletRow(
+                "1",
+                "yšqynh",
+                "!y!šqy[+nh",
+                "/š-q-y/",
+                "vb",
+                "to offer (something to) drink",
+                "",
+            )
             result = fixer.refine_row(row)
 
             self.assertEqual(result.pos, "vb G")

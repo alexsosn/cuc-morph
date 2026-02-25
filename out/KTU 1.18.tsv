@@ -75,7 +75,8 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145197	il	il(I)/	ỉl (I)	n. m.	god	
 145198	dpid	?	?	?	?	DULAT: NOT FOUND
 # KTU 1.18 I:16						
-145199	ydˤtk	!y!(ydˤ(I)[t+k	/y-d-ʕ/ (I)	vb	to know	
+145199	ydˤtk	!y!(ydˤ(I)[t+k	/y-d-ʕ/ (I)	vb G suffc.	to know	
+145199	ydˤtk	!y!(ydˤ(I)[/t+k	/y-d-ʕ/ (I)	vb G pass. ptcpl.	to know	
 145200	bt	b(t(I)/t	bt (I)	n. f. sg.	daughter	
 145201	w	w	w	conj.	and	
 145202	anšt	anš(t/t	ảnšt	n. f. sg.	illness	
@@ -195,9 +196,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145284	l	l(I)	l (I)	prep.	to	
 145284	l	l(III)	l (III)	functor	certainly	
 145285	qrt	qr(t(I)/t	qrt (I)	n. f. sg.	city	
-145286	ablm	ybl[+m(I)	/y-b-l/	vb	to carry	
+145286	ablm	ybl[+m(I)	/y-b-l/	vb G prefc. / vb G suffc.	to carry	
 145286	ablm	ablm/	ảblm	TN	meadows	
-145287	ablm	ybl[+m(I)	/y-b-l/	vb	to carry	
+145287	ablm	ybl[+m(I)	/y-b-l/	vb G prefc. / vb G suffc.	to carry	
 145287	ablm	ablm/	ảblm	TN	meadows	
 # KTU 1.18 I:31						
 145288	qrt	qr(t(I)/t	qrt (I)	n. f. sg.	city	
@@ -265,9 +266,9 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145332	xxxxxxxxxxx	?	?	?	?	
 # KTU 1.18 IV:8						
 145333	qrt	qr(t(I)/t	qrt (I)	n. f. sg.	city	
-145334	ablm	ybl[+m(I)	/y-b-l/	vb	to carry	
+145334	ablm	ybl[+m(I)	/y-b-l/	vb G prefc. / vb G suffc.	to carry	
 145334	ablm	ablm/	ảblm	TN	meadows	
-145335	ablm	ybl[+m(I)	/y-b-l/	vb	to carry	
+145335	ablm	ybl[+m(I)	/y-b-l/	vb G prefc. / vb G suffc.	to carry	
 145335	ablm	ablm/	ảblm	TN	meadows	
 145336	qrt	qr(t(I)/t	qrt (I)	n. f. sg.	city	
 145337	zbl	zbl(I)/	zbl (I)	n. m. sg. / n. m. pl. cstr.	prince	
@@ -576,7 +577,7 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145527	w	w	w	conj.	and	
 145528	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
 145529	qštk	qšt/	qšt	n. m. sg.	bow	
-145530	mḫṣtk	mḫṣ[t+k	/m-ḫ-ṣ/	vb	to wound	
+145530	mḫṣtk	mḫṣ[t+k	/m-ḫ-ṣ/	vb G suffc.	to wound	
 145531	ˤl	ˤl(I)	ʕl (I)	prep.	upon	
 # KTU 1.18 IV:41						
 145532	qṣˤtk	qṣˤ(t/t	qṣʕt	n. f. sg.	arrow(s)	
@@ -590,6 +591,6 @@ id	surface form	morphological parsing	DULAT	POS	gloss	comments
 145537	w	w	w	conj.	and	
 145538	ḫlq	ḫlq[:pass	/ḫ-l-q/	vb G suffc. / vb Dpass suffc.	to perish	
 145539	ˤpt	ˤp(I)/t	ʕp (I)	n. f. sg.	bird	
-145540	mḫṣk	mḫṣ[+k	/m-ḫ-ṣ/	vb	to wound	
+145540	mḫṣk	mḫṣ[+k	/m-ḫ-ṣ/	vb G prefc.	to wound	
 145540	mḫṣk	mḫṣ(II)/+k	mḫṣ (II)	n. m.	striking instrument	
 145541	xxxxx	?	?	?	?	
